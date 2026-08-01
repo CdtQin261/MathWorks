@@ -1,0 +1,84 @@
+\section*{空间中的直线与平面基础模式填空}
+
+\begin{enumerate}
+    \item 用符号表示八个定理
+    \begin{dingautolist}{172}
+        \item 线面平行的判定定理：\blkda[10]{$l // a, a \subset \alpha, l \not \subset \alpha \Longrightarrow l // \alpha$}
+        \item 线面平行的性质定理：\blkda[10]{$l // \alpha, l \subset \beta, \alpha \cap \beta = m \Longrightarrow l // m$}
+        \item 线面垂直的判定定理：\blkda[10]{$l \bot a, l \bot b, a \subset \alpha, b \subset \alpha, a \cap b = O \Longrightarrow l \bot \alpha$}
+        \item 线面垂直的性质定理：\blkda[10]{$l \bot \alpha, m \bot \alpha \Longrightarrow l // m$}
+        
+        \item 面面平行的判定定理：\blkda[10]{$a \subset \alpha, b \subset \alpha, a \cap b = A, a // \beta, b // \beta \Longrightarrow \alpha // \beta$}
+        \item 面面平行的性质定理：\blkda[10]{$\alpha // \beta, \gamma \cap \alpha = a, \gamma \cap \beta = b, \Longrightarrow a // b$}
+        \item 面面垂直的判定定理：\blkda[10]{$l \bot \alpha, l \subset \beta \Longrightarrow \alpha \bot \beta$}
+        \item 面面垂直的性质定理：\blkda[10]{$\alpha \bot \beta, \alpha \cap \beta = m, l \subset \alpha, l \bot m \Longrightarrow l \bot \beta$}
+    \end{dingautolist}
+
+    
+    \item 根据已知条件进行转化
+    \begin{enumerate}
+        \item 当条件中出现了线面平行，可能根据\blkda[4]{线面平行的性质定理}推出\blkda[4]{线线平行}，从而寻找交线，还可能是根据\blkda[4]{面面平行的判定定理}推出\blkda[4]{面面平行}.
+
+        \item 当条件中出现了线线平行，在没有结合其他条件时，只能根据\blkda[4]{线面平行的判定定理}推出\blkda[4]{线面平行}
+
+        \item 当条件中出现了面面平行，可能根据\blkda[4]{面面平行的性质定理}推出\blkda[4]{线线平行}，从而寻找交线，还可能是根据\blkda[4]{面面平行的性质}推出\blkda[4]{线面平行}.
+
+        \item 当条件中出现了线线垂直，在没有结合其他条件时，只能根据\blkda[4]{线面垂直的判定定理}推出\blkda[4]{线面垂直}
+        \item 当条件中出现了面面垂直，在没有结合其他条件时，只能根据\blkda[4]{面面垂直的性质定理}推出\blkda[4]{线面垂直}
+        \item 当条件中出现了线面垂直，可能根据\blkda[4]{线面垂直的性质定理}推出\blkda[4]{线线平行}，还可能是根据\blkda[4]{面面垂直的判定定理}推出\blkda[4]{面面垂直}.
+    \end{enumerate}
+
+    \item 根据要证明的结论倒推
+    \begin{enumerate}
+        \item 要证明线线平行，可能涉及到五个方面：
+        
+        \blkda[15]{平面几何性质、公理4、线面平行的性质定理、面面平行的性质定理、线面垂直的性质定理}
+        \item 要证明线面平行，应根据\blkda[4]{线面平行的判定定理}，寻找\blkda[4]{线线平行}
+        \item 要证明面面平行，应根据\blkda[4]{面面的判定定理}，寻找\blkda[4]{线面平行}
+    
+        \item 要证明线线垂直，既可能根据\blkda[4]{平面几何性质}（如正方形对角线，矩形邻边，勾股定理等），也可能根据\blkda[4]{线面垂直}.
+        
+        \item 要证明线面垂直，应根据\blkda[4]{线面垂直的判定定理}，寻找面内和已知直线垂直的\blkda[4]{两条相交直线}，通常这两条直线一条源自于\blkda[4]{平面几何性质}，另一条直源自于\blkda[4]{线面垂直}.
+
+        \item 要证明面面垂直，则应根据\blkda[4]{面面垂直的判定定理}，寻找\blkda[4]{和平面（交线）垂直的垂线}.
+    \end{enumerate}
+
+    \clearpage
+
+    \item 作出空间角的平面角
+    \begin{enumerate}
+        \item 异面直线所成角：
+
+        方法：\blkda[14]{平移至相交，相交直线所成角即为异面直线所成角}，范围是\blkda[4]{$\left(0, \dfrac{\pi}{2}\right]$}
+        \item 线面角
+        
+        方法：\blkda[14]{通过寻找射影点，作出斜线在面内的射影，则斜线和射影所成角即为线面所成角}，范围是\blkda[4]{$\left[0, \dfrac{\pi}{2}\right]$}
+        \item 二面角
+            \begin{enumerate}
+                \item 定义法
+        
+                \blkda[14]{在一个半平面内寻找特殊点，作棱的垂线，过棱上垂足在另一半平面内作出棱的垂线}，适用情况\blkda[4]{棱上垂足较为特殊}
+                \item 垂面法（三垂线法）
+        
+                \blkda[14]{在一个半平面内寻找特殊点，在另一半平面内找到其射影点，过射影点做棱的垂线，连接棱上垂足和起始点}，适用情况\blkda[4]{射影较为特殊}
+            \end{enumerate}
+
+            二面角的范围是\blkda[4]{$[0, \pi]$}
+    \end{enumerate}
+    
+    \item 书写规范（采分点）
+    \begin{enumerate}
+        \item 求空间角的三段论
+        \begin{dingautolist}{172}
+            \item \blkda[4]{证明}
+            \item \blkda[4]{指出平面角}
+            \item \blkda[4]{计算并回答空间角的大小}
+        \end{dingautolist}
+        \item 应用线面平行判定定理要注意书写的条件：\blkda[4]{线在面内和线不在面内}
+        \item 应用线面垂直判定定理要注意书写的条件：\blkda[4]{两线相交}
+        \item 应用面面平行判定定理要注意书写的条件：\blkda[4]{两线相交}
+        \item 应用面面垂直判定定理要注意书写的条件：\blkda[4]{线在面内}
+        \item 做出点在面内的投影后，要证明\blkda[4]{线面垂直}
+        \item 只有做出\blkda[4]{异面直线所成角}后才书写“或其补角”.
+    \end{enumerate}
+\end{enumerate}

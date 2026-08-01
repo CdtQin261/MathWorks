@@ -1,0 +1,636 @@
+\chapter*{解析几何-抛物线}
+\subsection*{抛物线的定义}
+一般地,平面上到一个定点 $F$ 和到一条定直线 $l$ (点 $F$ 不在 $l$ 上) 距离相等的点的轨迹叫做抛物线. 点 $F$ 叫做抛物线的焦点,定直线 $l$ 叫做抛物线的准线.
+
+如图所示,过焦点 $F$ 作垂直于准线 $l$ 的直线交准线 $l$ 于点 $K$ , 以线段 ${KF}$ 的中点为坐标原点,以 $\vv{KF}$ 的方向为 $x$ 轴正方向,建立平面直角坐标系. 显然线段 ${KF}$ 的中点到点 $F$ 和直线 $l$ 的距离相等,我们称它为抛物线的顶点.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d19nc3f7aajc73895nqg_1_1246_670_261_319_0.jpg}
+\end{center}
+
+\subsection*{抛物线的标准方程}
+设 $\left| {KF}\right|  = p\left( {p > 0}\right)$ ,则焦点 $F$ 的坐标为 $\left( {\dfrac{p}{2},0}\right)$ ,准线 $l$ 的方程为 $x =  - \dfrac{p}{2}.$
+
+设点 $M\left( {x,y}\right)$ 为抛物线上任意一点,点 $M$ 到直线 $l$ 的距离为 $d$，则 $\left| {MF}\right|  = \sqrt{{\left( x - \dfrac{p}{2}\right) }^{2} + {y}^{2}},d = \left| {x + \dfrac{p}{2}}\right|$，由抛物线定义知 $\left| {MF}\right|  = d$ ,于是有$\sqrt{{\left( x - \dfrac{p}{2}\right) }^{2} + {y}^{2}} = \left| {x + \dfrac{p}{2}}\right| .$
+
+将上式两边平方, 并化简得${y}^{2} = {2px}\left( {p > 0}\right)$
+
+我们把方程${y}^{2} = {2px}\left( {p > 0}\right)$称为抛物线的标准方程，它表示顶点在坐标原点，焦点在 $x$ 轴正半轴上，且焦点坐标为 $\left( {\dfrac{p}{2},0}\right)$，准线方程为 $x =  - \dfrac{p}{2}$ 的抛物线,我们也形象地称此抛物线开口向右.
+
+按照上述过程,如果抛物线的顶点在坐标原点,焦点分别在 $x$ 轴负半轴上、 $y$ 轴正半轴上和负半轴上,就可以相应地得到抛物线的另外三种标准方程: ${y}^{2} =  - {2px}\text{ 、 }{x}^{2} = {2py}\text{ 、 }{x}^{2} =$  $- {2py}$ . 
+
+\begin{center}
+\adjustbox{width=\textwidth}{
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+标准方程 & ${y}^{2} = {2px}\left( {p > 0}\right)$ & ${y}^{2} =  - {2px}\left( {p > 0}\right)$ & ${x}^{2} = {2py}\left( {p > 0}\right)$ & ${x}^{2} =  - {2py}\left( {p > 0}\right)$ \\
+\cline{1-5}
+图形 &  \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d19nc3f7aajc73895nqg_2_258_273_245_206_0.jpg}  &  \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d19nc3f7aajc73895nqg_2_548_273_241_205_0.jpg}  &  \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d19nc3f7aajc73895nqg_2_837_268_231_206_0.jpg} &  \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d19nc3f7aajc73895nqg_2_1132_264_242_215_0.jpg}  \\
+\cline{1-5}
+准线方程 & $x =  - \dfrac{p}{2}$ & $x =  \dfrac{p}{2}$ & $y =  - \dfrac{p}{2}$ & $y =  \dfrac{p}{2}$ \\
+\cline{1-5}
+焦点 & $F\left( {\dfrac{p}{2},0}\right)$ & $F\left( {-\dfrac{p}{2},0}\right)$ & $F\left(0, {\dfrac{p}{2}}\right)$ & $F\left( 0, -{\dfrac{p}{2}}\right)$ \\
+\cline{1-5}
+\hline
+\end{tabular}
+}
+\end{center}
+\subsection*{抛物线的性质}
+我们以顶点在原点、焦点在 $x$ 轴正半轴上的抛物线${y}^{2} = {2px}\left( {p > 0}\right)$为例,讨论抛物线的性质.
+
+
+\subsubsection*{对称性}
+在方程${y}^{2} = {2px}\left( {p > 0}\right)$中,用 $-y$ 代换 $y$ ,方程不变. 这就是说,若点 ${M}_{1}\left( {x,y}\right)$ 的坐标满足方程，则它关于 $x$ 轴的对称点 ${M}_{2}\left( {x, - y}\right)$ 的坐标也满足方程，所以此抛物线关于 $x$ 轴对称. 
+
+因此,抛物线有唯一的对称轴,对称轴与抛物线的交点就是抛物线的顶点.
+
+\subsubsection*{范围}
+因为 $p > 0$ ,由方程${y}^{2} = {2px}\left( {p > 0}\right)$可知 $x = \dfrac{{y}^{2}}{2p} \geq  0$ ,且随着 $x$ 不断增大, $\left| y\right|$ 也相应地不断增大. 但是对于同一个 $x$ 的值,当 $p$ 越大, $\left| y\right|$ 就越大,这说明抛物线的开口越大. 
+
+所以,抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 的图像开口向右,除顶点外,其他点都在 $y$ 轴右侧,且向右上方和右下方无限延伸,开口大小取决于 $p$ 的大小.
+
+\subsubsection*{离心率}
+因为抛物线上的点到焦点的距离和到准线 $l$ 距离的比等于 1 ,所以定义抛物线的离心率 $e = 1$ .
+
+例题：
+\begin{enumerate}
+    \item 抛物线 $C : y = 2{x}^{2}$ 的焦点坐标为\blkda{$\left(0, \dfrac{1}{8}\right)$},准线方程是\blkda{$y = -\dfrac{1}{8}$}.
+    \item 若抛物线 $y = a{x}^{2}$ 的焦点到准线的距离为 2 ,则实数 $a =$\blkda{$\dfrac{1}{4}$}
+    \begin{jieda}
+        ${x}^{2} = \dfrac{1}{a}y$，故$\dfrac{1}{2a} = 2$，即$a = \dfrac{1}{4}$
+    \end{jieda}
+    \item 下列结论中正确的是\blkda{\ding{175}}
+    \begin{dingautolist}{172}
+        \item 平面内与一个定点 $F$ 和一条定直线 $l$ 的距离相等的点的轨迹是抛物线.
+        \item 方程 $y = 4{x}^{2}$ 表示焦点在 $x$ 轴上的抛物线,焦点坐标是 $\left( {1,0}\right)$
+        \item 抛物线既是中心对称图形 ,又是轴对称图形.
+        \item 以$( 0,1 )$为焦点的抛物线的标准方程为 ${x}^{2} = {4y}$
+    \end{dingautolist}
+    \item 在平面直角坐标系 ${Oxy}$ 中,动点 $P\left( {x,y}\right)$ 到直线 $x = 1$ 的距离比它到定点(-2,0)的距离小 1,则 $P$ 的轨迹方程为 \blkda{${y}^{2} =  - {8x}$}
+    \begin{jieda}
+        由题意知动点 $P\left( {x,y}\right)$ 到直线 $x = 2$ 的距离与到定点$(-2,0)$的距离相等，由抛物线的定义知, $P$ 的轨迹是以(-2,0)为焦点, $x = 2$ 为准线的抛物线，所以 $p = 4$，轨迹方程为 ${y}^{2} =  - {8x}$ .
+    \end{jieda}
+    \item 设 $F$ 为抛物线 $C : {y}^{2} = {4x}$ 的焦点,点 $A$ 在 $C$ 上,点 $B\left( {3,0}\right)$ ,若 $\left| {AF}\right|  = \left| {BF}\right|$ ,则 $\left| {AB}\right|$ 等于\blkda{$2\sqrt{2}$}
+    \begin{jieda}
+        由题意可知 $F\left( {1,0}\right)$ ,故 $\left| {BF}\right|  = 2$，所以 $\left| {AF}\right|  = 2$.
+
+        $|AF|$等于$A$到准线$x = -1$的距离，因此$A$的横坐标为1，故$A(1, \pm 2)$，不妨取 $A\left( {1,2}\right)$，则 $\left| {AB}\right|  = \sqrt{{\left( 1 - 3\right) }^{2} + {\left( 2 - 0\right) }^{2}} = \sqrt{8} = 2\sqrt{2}$ .
+    \end{jieda} 
+
+    \item 根据下列条件求抛物线的标准方程.
+    \begin{enumerate}
+        \item 准线方程是 $y = 2$ 
+        \item 焦点在直线 ${3x} - {4y} - {12} = 0$ 上
+        \item 过点 $A\left( {-3,2}\right)$ .
+        \item 焦点在 $x$ 轴上,其准线 $l$ 与圆 ${\left( x - 2\right) }^{2} + {y}^{2} = {25}$ 相切.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 根据条件可知, $\dfrac{p}{2} = 2$ ,即 $p = 4$ ,且抛物线焦点在 $y$ 轴的负半轴上. 所以抛物线的标准方程为 ${x}^{2} =  - {8y}$ .
+            \item 对于直线方程 ${3x} - {4y} - {12} = 0$ ,令 $x = 0$ ,得 $y =  - 3$ ；令 $y = 0$ ,得 $x = 4$ ,所以抛物线的焦点为$(0, -3)$或$(4,0)$.
+            
+            当焦点为$(0, -3)$时,抛物线焦点在 $y$ 轴的负半轴上,且 $\dfrac{p}{2} = 3$ ,即 $p = 6$ ,此时抛物线的标准方程为 ${x}^{2} =  - {12y}$ ；
+            
+            当焦点为(4,0)时,抛物线焦点在 $x$ 轴的正半轴上,且 $\dfrac{p}{2} = 4$ ,即 $p = 8$ ,此时抛物线的标准方程为 ${y}^{2} = {16x}$ . 所以满足条件的抛物线有两条,它们的标准方程分别为 ${x}^{2} =  - {12y}$ 和 ${y}^{2} = {16x}$ .
+            \item 因为点$(-3,2)$在第二象限,所以满足条件的抛物线的标准方程可以是${y}^{2} =  - 2{p}_{1}x\left( {{p}_{1} > 0}\right) \text{ 或 }{x}^{2} = 2{p}_{2}y\left( {{p}_{2} > 0}\right) .$
+            
+            代入点坐标$(-3,2)$，解得 ${p}_{1} = \dfrac{2}{3},{p}_{2} = \dfrac{9}{4}$ . 因此,满足条件的抛物线有两条,它们的标准方程分别为 ${y}^{2} =  - \dfrac{4}{3}x$ 和 ${x}^{2} = \dfrac{9}{2}y$.
+
+            \item 设抛物线的方程为$y^2 = 2px$，则准线$l$的方程为$x = -\dfrac{p}{2}$，因为准线$l$ 与圆 ${\left( x - 2\right) }^{2} + {y}^{2} = {25}$ 相切，因此$-\dfrac{p}{2} = -3$或$7$，即$p = 6$或$-14$，因此抛物线方程为$y^2 = 12x$或$y^2 = -28x$.
+        \end{enumerate}
+    \end{jieda}
+
+    \item 已知点 $M\left( {{20},{40}}\right)$ 不在抛物线 $C : {y}^{2} = {2px}\left( {p > 0}\right)$ 上,抛物线 $C$ 的焦点为 $F$ . 若对于抛物线上的一点 $P,\left| {PM}\right|  + \left| {PF}\right|$ 的最小值为 41,则 $p$ 的值等于\blkda{42 或 22}.
+    \begin{jieda}
+        当$p = 40$时点$M$在抛物线上，当$0 < p < 40$的时候点$M$在抛物线外，当$p > 40$时点$M$在抛物线内.
+
+        \twotu{\includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_2_583_795_206_245_0.jpg}}{\includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_2_853_796_211_242_0.jpg}}
+        
+        \begin{dingautolist}{172}
+            \item 如左图所示，当点 $M\left( {{20},{40}}\right)$ 位于抛物线内时，过点 $P$ 作抛物线准线的垂线，垂足为 $D$，则 $\left| {PF}\right|  = \left| {PD}\right|$，因此有$\left| {PM}\right|  + \left| {PF}\right|  = \left| {PM}\right|  + \left| {PD}\right| .$
+
+            当点 $M,P,D$ 三点共线时，$\left| {PM}\right|  + \left| {PF}\right|$ 的值最小.
+            
+            由最小值为 41，得 ${20} + \dfrac{p}{2} = {41}$ ,解得 $p = {42}$，符合要求.
+            \item 如右图所示，当点 $M\left( {{20},{40}}\right)$ 位于抛物线上及抛物线外时，当点 $P,M,F$ 三点共线时, $\left| {PM}\right|  + \left| {PF}\right|$ 的值最小.
+
+            由最小值为 41，得 $\sqrt{{40}^{2} + {\left( {20} - \dfrac{p}{2}\right) }^{2}} = {41}$，解得 $p = {22}$ 或 $p = {58}$（舍）.
+        \end{dingautolist}
+        综上, $p = {42}$ 或 $p = {22}$ .
+    \end{jieda}
+    \item 过抛物线 ${y}^{2} = {4x}$ 上一动点 $P$ 作圆 $C : {\left( x - 3\right) }^{2} + {y}^{2} = 4$ 的两条切线,切点分别为 $A,B$ ,则四边形 ${PACB}$ 面积的最小值为\blkda{4}.
+    \begin{jieda}
+        由题意知 $C : {\left( x - 3\right) }^{2} + {y}^{2} = 4$ 的圆心为$(3,0)$,半径为 2.
+
+        \begin{center}
+            \includegraphics[width=0.2\linewidth]{bodyxb//src/paowuxianzuizhi.png}
+        \end{center}
+        
+        如图, ${PA}\bot {AC},{PB}\bot {BC}$ ,则 ${S}_{\text{四边形 }{PACB}} = 2 \times  \dfrac{1}{2}\left| {PA}\right|  \cdot  \left| {CA}\right|  = 2\left| {PA}\right|$ .
+        而 $\left| {PA}\right|  = \sqrt{{\left| PC\right| }^{2} - {\left| CA\right| }^{2}} = \sqrt{{\left| PC\right| }^{2} - 4}$ ,当 $\left| {PC}\right|$ 最小时, $\left| {PA}\right|$ 最小,则 ${S}_{\text{四边形 }{PACB}} = 2\left| {PA}\right|$ 最小;
+        由于 $p$ 在抛物线 ${y}^{2} = {4x}$ 上,设 $P\left( {{t}^{2},{2t}}\right)$ .
+        则 $\left| {PC}\right|  = \sqrt{{\left( {t}^{2} - 3\right) }^{2} + {\left( 2t\right) }^{2}} = \sqrt{{t}^{4} - 2{t}^{2} + 9} = \sqrt{{\left( {t}^{2} - 1\right) }^{2} + 8}$ ,
+        当 ${t}^{2} = 1$ 时, ${\left( {t}^{2} - 1\right) }^{2} + 8$ 取最小值 8 ,即 $\left| {PC}\right|$ 取到最小值 $2\sqrt{2}$ ,
+        则 $\left| {PA}\right|  = \sqrt{{\left| PC\right| }^{2} - 4}$ 取最小值 2 ,故 ${S}_{\text{四边形 }{PACB}} = 2\left| {PA}\right|$ 的最小值为 4.
+    \end{jieda}
+
+    \item 在抛物线 ${y}^{2} = {8x}$ 上有$A,B,C$三点，$F$ 为其焦点,且 $F$ 为 $\bigtriangleup  {ABC}$ 的重心,则 $\left| {AF}\right|  + \left| {BF}\right|  + \left| {CF}\right|$ 等于\blkda{12}
+    \begin{jieda}
+        ${y}^{2} = {8x}$的焦点为$(2, 0)$，准线为$x = -2$
+        
+        根据抛物线的定义可知$|AF|$等于$A$到准线的距离，即$|AF| = x_A + 2$，同理可有$|BF| = x_B + 2, |CF| = x_C + 2$
+    
+        因为$F$ 为 $\bigtriangleup  {ABC}$ 的重心，所以$3x_F = x_A + x_B + x_C$，故$\left| {AF}\right|  + \left| {BF}\right|  + \left| {CF}\right| = x_A + x_B + x_C + 6 = 3x_F + 6 = 12$
+    \end{jieda}
+    
+    \item 已知过抛物线 $C : {y}^{2} = {2px}\left( {p > 0}\right)$ 的焦点 $F$ 的直线与抛物线交于 $A$ 、 $B$ 两点,求证: 以线段 ${AB}$ 为直径的圆与该抛物线的准线相切.
+    \begin{jieda}
+        证明 
+        
+        如图所示,设线段 ${AB}$ 的中点为 $M$ ,且点 $A$ 、 $B$ 、 $M$ 在抛物线的准线 $l$ 上的射影依次是点 ${A}_{1}\text{ 、 }{B}_{1}\text{ 、 }{M}_{1}$ ,则 $M{M}_{1}$ 是直角梯形 $A{A}_{1}{B}_{1}B$ 的中位线.
+        
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d19nc3f7aajc73895nqg_3_1150_1122_357_360_0.jpg}
+        \end{center}
+        
+        因为点 $A$ 、 $B$ 在抛物线上,则由抛物线定义可知$\left| {A{A}_{1}}\right|  = \left| {AF}\right| ,\left| {B{B}_{1}}\right|  = \left| {BF}\right|$
+        
+        于是$\left| {M{M}_{1}}\right|  = \dfrac{1}{2}\left( {\left| {A{A}_{1}}\right|  + \left| {B{B}_{1}}\right| }\right)  = \dfrac{1}{2}\left( {\left| {AF}\right|  + \left| {BF}\right| }\right)  = \dfrac{1}{2}\left| {AB}\right|$
+        
+        即点 $M$ 到准线的距离等于圆的半径. 因此,以线段 ${AB}$ 为直径的圆与该抛物线的准线相切.
+        
+        本例中的线段 ${AB}$ 也称焦点弦,从证明中可知
+        
+        $\left| {AB}\right|  = \left| {AF}\right|  + \left| {BF}\right|  = \left| {A{A}_{1}}\right|  + \left| {B{B}_{1}}\right|  = \left( {{x}_{A} + \dfrac{p}{2}}\right)  + \left( {{x}_{B} + \dfrac{p}{2}}\right)  = {x}_{A} + {x}_{B} + p$
+    \end{jieda}
+    
+    \item 给定抛物线 ${y}^{2} = {2x}$ ,设点 $A\left( {a,0}\right) ,a > 0$ ,点 $P$ 是抛物线上的任一点,且 $\left| {PA}\right|  =$  $d$ ,试求 $d$ 的最小值.
+    \begin{jieda}
+    设 $P\left( {{x}_{0},{y}_{0}}\right) \left( {{x}_{0} \geq  0}\right)$ ,则 ${y}_{0}{}^{2} = 2{x}_{0}$ ,所以$d = \left| {PA}\right|  = \sqrt{{\left( {x}_{0} - a\right) }^{2} + {y}_{0}^{2}} = \sqrt{{\left( {x}_{0} - a\right) }^{2} + 2{x}_{0}} =  \sqrt{{\left\lbrack  {x}_{0} + \left( 1 - a\right) \right\rbrack  }^{2} + {2a} - 1}$
+    
+    因为 $a > 0,{x}_{0} \geq  0$，所以
+    \begin{dingautolist}{172}
+        \item 当 $0 < a < 1$ 时, $1 - a > 0$ ,此时当 ${x}_{0} = 0$ 时, ${d}_{\min } = \sqrt{{\left( 1 - a\right) }^{2} + {2a} - 1} = a$
+        \item 当 $a \geq  1$ 时, $1 - a \leq  0$ ,此时当 ${x}_{0} = a - 1$ 时, ${d}_{\min } = \sqrt{{2a} - 1}$ .
+    \end{dingautolist}
+    \end{jieda}
+    \item 设抛物线 ${y}^{2} = {8x}$ 的焦点为 $F$ ,点 $P\left( {x,y}\right)$ 为该抛物线上的动点,又已知点 $A( - 2$ , $0)$ ,求 $\dfrac{\left| PA\right| }{\left| PF\right| }$ 的取值范围.
+    
+    \begin{jieda}
+        抛物线的定义可得 $\left| {PF}\right|  = x + 2$ ,又 $\left| {PA}\right|  = \sqrt{{\left( x + 2\right) }^{2} + {y}^{2}} = \sqrt{{\left( x + 2\right) }^{2} + {8x}}$ , 所以$\dfrac{\left| PA\right| }{\left| PF\right| } = \dfrac{\sqrt{{\left( x + 2\right) }^{2} + {8x}}}{x + 2}$
+
+        换元$t = x+2, t \in [2, +\infty)$，故$\dfrac{\left| PA\right| }{\left| PF\right| } = \dfrac{\sqrt{t^{2} + 8(t-2)}}{t} = \sqrt{1+\dfrac{8}{t} - \dfrac{16}{t^2}}$
+
+        换元$k = \dfrac{1}{t}, k \in \left(0, \dfrac{1}{2}\right]$，故$\dfrac{\left| PA\right| }{\left| PF\right| } =  \sqrt{1+\dfrac{8}{t} - \dfrac{16}{t^2}} = \sqrt{1+8k-16k^2} \in \left\lbrack  {1,\sqrt{2}}\right\rbrack$
+
+        综上所述, $\dfrac{\left| PA\right| }{\left| PF\right| }$ 的取值范围是 $\left\lbrack  {1,\sqrt{2}}\right\rbrack$ .
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{直线与抛物线的位置关系}
+一般地，设直线的方程为 $y = {kx} + m$ ,抛物线的方程为 ${y}^{2} = {2px}\left( {p > 0}\right)$ .
+
+联立方程组,消元,得 $k{y}^{2} - {2py} + {2pm} = 0$ .
+
+\begin{enumerate}
+    \item 若 $k = 0$ ,则直线与抛物线的对称轴平行或重合,直线与抛物线只有一个公共点
+    \item 若 $k \neq  0$ ,计算判别式 $\Delta  = {\left( -2p\right) }^{2} - 4 \cdot  k \cdot  {2pm}$ ,则
+    \begin{dingautolist}{172}
+        \item $\Delta  > 0 \Longleftrightarrow$ 直线和抛物线相交,有两个公共点
+        \item $\Delta  = 0 \Longleftrightarrow$ 直线和抛物线相切,有一个公共点
+        \item $\Delta  < 0 \Longleftrightarrow$ 直线和抛物线相离,无公共点
+    \end{dingautolist}
+\end{enumerate}
+
+
+切线结论:
+\begin{enumerate}
+    \item 抛物线${y}^{2} = {2px}\left( {p > 0}\right)$在$(x_0, y_0)$处的切线为$y_0y = p(x+x_0)$，切线斜率存在时即$y = \dfrac{y_0}{2x_0}x + \dfrac{y_0}{2}$，对应物理学中平抛运动结论：速度反向延长线过水平位移中点，即$(x_0, y_0)$处切线过$\left(0, \dfrac{y_0}{2}\right)$
+    \item 过点$M(x_0, y_0)$（抛物线外），做抛物线${y}^{2} = {2px}\left( {p > 0}\right)$的切线$l_1, l_2$，切点为$A, B$，则直线$AB$的方程为$y_0y = p(x+x_0)$
+\end{enumerate}
+
+\subsection*{焦点弦}
+设抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 过焦点 $F$ 的一条弦 ${AB}$ 的端点为 $A$  $\left( {{x}_{1},{y}_{1}}\right) \text{ 、 }B\left( {{x}_{2},{y}_{2}}\right)$ ,且 ${AB}$ 的中点为 $M\left( {{x}_{0},{y}_{0}}\right)$ ,过点 $A\text{ 、 }B\text{ 、 }M$ 分别向抛物线的准线作垂线,垂足分别为点 ${A}_{1}\text{ 、 }{B}_{1}\text{ 、 }{M}_{1}$ ,如图所示,则根据抛物线的定义有 $\left| {AF}\right|  = \left| {A{A}_{1}}\right| ,\left| {BF}\right|  = \left| {B{B}_{1}}\right|$ .
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d19nc3f7aajc73895nqg_7_1177_427_309_362_0.jpg}
+\end{center}
+
+又 $M{M}_{1}$ 是梯形 $A{A}_{1}{B}_{1}B$ 的中位线，所以$\left| {AB}\right|  = \left| {AF}\right|  + \left| {BF}\right|  = \left| {A{A}_{1}}\right|  + \left| {B{B}_{1}}\right|  = 2\left| {M{M}_{1}}\right|$.
+
+\begin{dingautolist}{172}
+    \item $\left| {AF}\right|  = {x}_{1} + \dfrac{p}{2},\left| {BF}\right|  = {x}_{2} + \dfrac{p}{2}$ （抛物线的焦半径公式）; 
+    
+    显然 $\left| {AB}\right|  =$  $\left( {{x}_{1} + \dfrac{p}{2}}\right)  + \left( {{x}_{2} + \dfrac{p}{2}}\right)  = {x}_{1} + {x}_{2} + p$（抛物线的焦点弦长公式）.
+    \item $\left| {AB}\right|  = 2\left( {{x}_{0} + \dfrac{p}{2}}\right)$ (焦点弦长与中点的关系)
+
+    \item 若直线 ${AB}$ 的倾斜角为 $\alpha$ ,则 $\left| {AB}\right|  = \dfrac{2p}{{\sin }^{2}\alpha }$ .
+
+    证明如下：
+    
+    焦点 $F$ 的坐标为 $\left( {\dfrac{p}{2},0}\right)$，设直线 ${AB}$ 的方程为$x = my+\dfrac{p}{2}$.
+    
+    联立方程组 $\left\{  \begin{array}{l} 
+        x = my+\dfrac{p}{2}, \\  
+        {y}^{2} = {2px}. \end{array}\right.$ 
+    消去$x$得 ${y}^{2} = 2p\left(my+\dfrac{p}{2}\right)$，整理可得$y^2 - 2pmy - p^2 = 0$，由直线过焦点易知必有$A, B$两个交点
+    
+    ${y}_{1} + {y}_{2} = 2pm$，因为 $x = my + \dfrac{p}{2}$ ,所以$\left| {AB}\right|  = {x}_{1} + {x}_{2} + p = m(y_1+y_2) + {2p} = 2p(m^2+1)$.
+    
+    又 $m = cot \alpha$ ,则 $\left| {AB}\right|  = \left( cot^{2}\alpha  + 1\right)  \cdot  {2p} = \dfrac{2p}{{\sin }^{2}\alpha }$ .
+
+    圆锥曲线焦点弦弦长统一公式$L = \left|\dfrac{2ep}{1-e^2cos^2\alpha}\right|$，其中$p$为焦点到准线距离，对于椭圆和双曲线，$p = \dfrac{b^2}{c}$
+    
+    根据 $\left| {AB}\right|  = \dfrac{2p}{{\sin }^{2}\alpha }$ ,当 $\alpha$ 为 $\dfrac{\pi }{2}$ 时,即 ${AB}$ 垂直于 $x$ 轴时,弦 ${AB}$ 的长最短,最小值为 ${2p}$ . 此时，${AB}$称为抛物线的\textbf{通径}.
+
+    过圆锥曲线的焦点且与过焦点的轴垂直的弦称为通径，通径是长度最短的焦点弦.
+    
+    \item $A$ 、 $B$ 两点的横坐标之积、纵坐标之积为定值,即 ${x}_{1}{x}_{2} = \dfrac{{p}^{2}}{4},{y}_{1}{y}_{2} =  - {p}^{2}$ .
+
+    证明如下：
+    
+    由\ding{174}可知${y}_{1}{y}_{2} =  - {p}^{2},{x}_{1}{x}_{2} = \dfrac{{y}_{1}^{2}}{2p} \cdot  \dfrac{{y}_{2}^{2}}{2p} = \dfrac{{\left( {y}_{1}{y}_{2}\right) }^{2}}{4{p}^{2}} = \dfrac{{p}^{4}}{4{p}^{2}} = \dfrac{{p}^{2}}{4}$ . 
+
+    \item 以$AB$为直径的圆与准线相切于$M_1$，且$M_1F \bot AB$
+    
+    证明如下：
+    
+    $MM_1$垂直于准线，且$|MM_1| = \dfrac{|AA_1|+|BB_1|}{2} = \dfrac{|AB|}{2}$，所以以$AB$为直径的圆与准线相切于$M_1$
+
+    $M_1\left(-\dfrac{p}{2}, \dfrac{y_1+y_2}{2}\right)$，$\vv{FM_1} = \left(-p, \dfrac{y_1+y_2}{2}\right)$，$\vv{FA} = \left(x_1-\dfrac{p}{2}, y_1\right) = \left(\dfrac{y_1^2}{2p}-\dfrac{p}{2}, y_1\right)$
+
+    故$\vv{FA} \cdot \vv{FM_1} = -\dfrac{y_1^2}{2}+\dfrac{p^2}{2}+\dfrac{y_1^2+y_1y_2}{2} = 0$，即$M_1F \bot AB$
+
+    \item $\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| }$ 为定值 $\dfrac{2}{p}$ .
+
+    证明如下：
+    
+    由焦半径公式知, $\left| {AF}\right|  = {x}_{1} + \dfrac{p}{2},\left| {BF}\right|  = {x}_{2} + \dfrac{p}{2}$ . 所以$\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| } = \dfrac{1}{{x}_{1} + \dfrac{p}{2}} + \dfrac{1}{{x}_{2} + \dfrac{p}{2}} = \dfrac{{x}_{1} + {x}_{2} + p}{{x}_{1}{x}_{2} + \dfrac{p}{2}\left( {{x}_{1} + {x}_{2}}\right)  + \dfrac{{p}^{2}}{4}}.$
+    
+    又 ${x}_{1}{x}_{2} = \dfrac{{p}^{2}}{4},{x}_{1} + {x}_{2} = \left| {AB}\right|  - p$，代入上式，得$\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| } = \dfrac{\left| AB\right| }{\dfrac{{p}^{2}}{4} + \dfrac{p}{2}\left( {\left| {AB}\right|  - p}\right)  + \dfrac{{p}^{2}}{4}} = \dfrac{2}{p}$.
+    
+    所以, $\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| }$ 为定值 $\dfrac{2}{p}$ .
+    
+\end{dingautolist}
+
+例题：
+\begin{enumerate}
+    \item 过抛物线 ${y}^{2} = {4x}$ 的焦点的直线 $l$ 交抛物线于 $P\left( {{x}_{1},{y}_{1}}\right) ,Q\left( {{x}_{2},{y}_{2}}\right)$ 两点,如果 ${x}_{1} + {x}_{2} = 6$ ,则 $\left| {PQ}\right|$ 等于\blkda{8}
+    \begin{jieda}
+        抛物线 ${y}^{2} = {4x}$ 的焦点为 $F\left( {1,0}\right)$ ,准线方程为 $x =  - 1$. 根据题意可得，$\left| {PQ}\right|  = \left| {PF}\right|  + \left| {QF}\right|  = {x}_{1} + 1 + {x}_{2} + 1 = {x}_{1} + {x}_{2} + 2 = 8$ .
+    \end{jieda}
+    
+    \item 若直线 $y = {kx} + 2$ 与抛物线 ${y}^{2} = 2px(p>0)$ 只有一个公共点,则实数 $k$ 的值为\blkda{$0$或$\dfrac{p}{4}$}.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 若$y = {kx} + 2$为切线，设切点$\left(\dfrac{y_0^2}{2p}, y_0\right)$，则切线为$y_0y = p\left(x+\dfrac{y_0^2}{2p}\right)$，即$y = \dfrac{p}{y_0}x+\dfrac{y_0}{2}$，故$\dfrac{y_0}{2} = 2$，即$k = \dfrac{p}{y_0} = \dfrac{p}{4}$
+            \item 若$y = {kx} + 2$不是切线，则$k = 0$.
+        \end{dingautolist}
+    \end{jieda}
+    
+    \item 如图，过抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 的焦点 $F$ 的直线依次交抛物线及准线于点 $A,B,C$ ,若 $\left| {BC}\right|  = 2\left| {BF}\right|$ , 且 $\left| {AF}\right|  = 3$ ,则抛物线的方程为 \blkda{${y}^{2} = {3x}$}
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_3_709_1768_225_270_0.jpg}
+    \end{center}
+    \begin{jieda}
+        如图,分别过点 $A,B$ 作准线的垂线,交准线于点 $E,D$ ,
+        
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_4_706_365_228_290_0.jpg}
+        \end{center}
+        
+        设 $\left| {BF}\right|  = a$ ,则 $\left| {BC}\right|  = {2a}$ ,由抛物线的定义得 $\left| {BD}\right|  = a$ ,故 $\angle {BCD} = {30}^{ \circ  }$ ,
+        
+        因此在 Rt $\bigtriangleup  {ACE}$ 中, $2\left| {AE}\right|  = \left| {AC}\right|$，故$\left| {AE}\right|  = \left| {AF}\right|  = 3,\left| {AC}\right|  = 3 + {3a} = 6$，解得 $a = 1$
+        
+        因为${BD}//{FG}$，所以$\dfrac{1}{p} = \dfrac{2}{3}$，即$p = \dfrac{3}{2}$，因此抛物线的方程为 ${y}^{2} = {3x}$ .
+    \end{jieda}
+    
+    \item 已知抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 的焦点 $F$ 到准线的距离为 4,直线 $l$ 过点 $F$ 且与抛物线交于两点 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {x}_{2},{y}_{2}\right)$ ,若 $M\left( {m,2}\right)$ 是线段 ${AB}$ 的中点,则下列结论正确的是\blkda{\ding{172}\ding{174}\ding{175}}
+    \begin{dingautolist}{172}
+        \item $p = 4$
+        \item 抛物线方程为 ${y}^{2} = {16x}$
+        \item 直线 $l$ 的方程为 $y = {2x} - 4$
+        \item $\left| {AB}\right|  = {10}$
+    \end{dingautolist}
+    \begin{jieda}
+        由焦点 $F$ 到准线的距离为 4,根据抛物线的定义可知 $p = 4$,则抛物线的方程为 ${y}^{2} = {8x}$.
+                
+        $M\left( {m,2}\right)$ 是线段 ${AB}$ 的中点,则 ${y}_{1} + {y}_{2} = 4$，因为${y}_{1}^{2} = 8{x}_{1},{y}_{2}^{2} = 8{x}_{2}$，所以${y}_{1}^{2} - {y}_{2}^{2} = 8{x}_{1} - 8{x}_{2}$，即 $\dfrac{{y}_{1} - {y}_{2}}{{x}_{1} - {x}_{2}} = \dfrac{8}{{y}_{1} + {y}_{2}} = \dfrac{8}{4} = 2$，故 直线 $l$ 的方程为 $y = {2x} - 4$
+        
+        由 ${y}_{1} + {y}_{2} = 2\left( {{x}_{1} + {x}_{2}}\right)  - 8 = 4$，得 ${x}_{1} + {x}_{2} = 6$，因此$\left| {AB}\right|  = \left| {AF}\right|  + \left| {BF}\right|  = {x}_{1} + {x}_{2} + 4 = {10}$.
+    \end{jieda}
+    \item 已知抛物线 $C : {y}^{2} = {2px}\left( {p > 0}\right)$ 的焦点到准线的距离为 1,若抛物线 $C$ 上存在关于直线 $l : x - y - 2 = 0$ 对称的不同的两点 $P$ 和 $Q$ ,则线段 ${PQ}$ 的中点坐标为\blkda{$(1, - 1)$}
+    \begin{jieda}
+        因为焦点到准线的距离为 $p$ ,则 $p = 1$，所以 ${y}^{2} = {2x}$ . 
+        
+        设点 $P\left( {{x}_{1},{y}_{1}}\right) ,Q\left( {{x}_{2},{y}_{2}}\right)$，则 $\left\{  \begin{array}{l} {y}_{1}^{2} = 2{x}_{1}, \\  {y}_{2}^{2} = 2{x}_{2}, \end{array}\right.$
+        
+        两式相减可得$\left( {{y}_{1} - {y}_{2}}\right) \left( {{y}_{1} + {y}_{2}}\right)  = 2\left( {{x}_{1} - {x}_{2}}\right)$，故${k}_{PQ} = \dfrac{2}{{y}_{1} + {y}_{2}}$
+        
+        因为$P,Q$ 关于直线 $l$ 对称，所以${k}_{PQ} =  - 1$ ,即 ${y}_{1} + {y}_{2} =  - 2$，因此${PQ}$ 中点的纵坐标为 $\dfrac{{y}_{1} + {y}_{2}}{2} =  - 1$
+        
+        因为${PQ}$ 的中点在直线 $l$ 上，代入直线方程可得${PQ}$ 中点的横坐标为 $\dfrac{{x}_{1} + {x}_{2}}{2} = \left( {-1}\right)  + 2 = 1$ .
+        
+        故线段 ${PQ}$ 的中点坐标为(1, - 1).
+    \end{jieda}
+    \item 设 $A,B$ 是抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 上的两点,且 ${OA} \bot  {OB}$ .
+    \begin{enumerate}
+        \item 求证：$A$ 、 $B$ 两点的横坐标之积,纵坐标之积为定值
+        \item 求证：直线 ${AB}$ 过定点
+        \item 求弦 ${AB}$ 中点 $P$ 的轨迹方程
+        \item 求点 $O$ 在 ${AB}$ 上的射影 $M$ 的轨迹方程
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$ ,则 $\left\{\begin{array}{l}
+                 {y}_{1}^{2} = {2p}{x}_{1}  \\
+                 {y}_{2}^{2} = {2p}{x}_{2}
+            \end{array}\right.$ . 所以 ${y}_{1}^{2}{y}_{2}^{2} = 4{p}^{2}{x}_{1}{x}_{2}$ .
+            
+            又因为 ${OA} \bot  {OB}$ ,所以 ${x}_{1}{x}_{2} + {y}_{1}{y}_{2} = 0$ . 由此,可解得 ${x}_{1}{x}_{2} = 4{p}^{2},{y}_{1}{y}_{2} =  - 4{p}^{2}$ .
+            \item 易知直线$AB$的斜率不为0，$\dfrac{{x}_{2} - {x}_{1}}{{y}_{2} - {y}_{1}} = \dfrac{\dfrac{{y}_{2}^{2}}{2p} - \dfrac{{y}_{1}^{2}}{2p}}{{y}_{2} - {y}_{1}} = \dfrac{{y}_{1} + {y}_{2}}{2p}$ .
+            
+            此时直线 ${AB}$ 的方程为 $x - \dfrac{{y}_{1}^{2}}{2p} = \dfrac{{y}_{1} + {y}_{2}}{2p}\left( y - y_1\right)$ . 即 $y\left( {{y}_{1} + {y}_{2}}\right)  - {y}_{1}{y}_{2} = {2px}$ . 
+
+            由上一问可知${y}_{1}{y}_{2} =  - 4{p}^{2}$，故直线方程为$y\left( {{y}_{1} + {y}_{2}}\right)  +4p^2 = {2px}$，即$x = \dfrac{y_1+y_2}{2p} y + 2p$，过定点$(2p, 0)$
+            \item 设中点$P(x_0, y_0)$，则直线$AB: x = \dfrac{y_0}{p} y + 2p$，故$x_0 = \dfrac{y_0^2}{p}+2p$，因此$P$的轨迹为$x = \dfrac{y^2}{p}+2p$
+            \item $OM$的方程为$y = -\dfrac{y_0}{p}x$，
+            
+            \begin{enumerate}
+                \item 方法1
+
+                $M$满足$OM$和$AB$直线方程，消去$y_0$即可得到$M$的轨迹方程.
+
+                $\left\{\begin{array}{l}
+                 x = \dfrac{y_0}{p} y + 2p  \\
+                 y = -\dfrac{y_0}{p}x 
+                \end{array}\right. \Longleftrightarrow \left\{\begin{array}{l}
+                 y_0 = \dfrac{p(x-2p)}{y}  \\
+                 y_0 = -\dfrac{py}{x} 
+                \end{array}\right.$
+                消去$y_0$得到$-\dfrac{py}{x} = \dfrac{p(x-2p)}{y}$，故$M$ 的轨迹方程为$x^2 - 2px + y^2 = 0 (x \neq 0)$
+                \item 方法2
+
+                联立$OM$和$AB$：$\left\{\begin{array}{l}
+                 x = \dfrac{y_0}{p} y + 2p  \\
+                 y = -\dfrac{y_0}{p}x 
+                \end{array}\right.$，消去$y$可得$x = -\dfrac{y_0^2}{p^2}x + 2p$，故$x_M = \dfrac{2p^3}{p^2+y_0^2}$，将$y_0 = \dfrac{py_M}{-x_M}$代入有$x_M = \dfrac{2p^3}{p^2+\dfrac{p^2y_M^2}{x_M^2}} = \dfrac{2p}{1+\dfrac{y_M^2}{x_M^2}}$，去分母有$x_M + \dfrac{y_M^2}{x_M} = 2p$，进一步变形有$x_M^2 + y_M^2 = 2px_M (x_M \neq 0)$
+    
+                故$M$ 的轨迹方程为$x^2 - 2px + y^2 = 0 (x \neq 0)$
+            \end{enumerate}
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 过抛物线 ${y}^{2} = {4x}$ 的焦点作一条倾斜角为 $\alpha$ ,长度不超过 8 的弦,弦所在的直线与圆 ${x}^{2} +$  ${y}^{2} = \dfrac{3}{4}$ 有公共点,则 $\alpha$ 的取值范围是\blkda[3]{$\left[\dfrac{\pi}{4}, \dfrac{\pi}{3}\right] \cup \left[\dfrac{2\pi}{3}, \dfrac{3\pi}{4}\right]$}.
+    \begin{jieda}
+        设弦所在直线为$y = k(x-1)$
+        \begin{dingautolist}{172}
+            \item 欲使弦与圆${x}^{2} +$  ${y}^{2} = \dfrac{3}{4}$ 有公共点，则原点到弦的距离应当小于等于半径，即$\dfrac{|k|}{\sqrt{1+k^2}} \leq \dfrac{\sqrt{3}}{2}$，故$k \in [-\sqrt{3}, \sqrt{3}]$
+
+            \item $|AB| = \dfrac{2p}{sin^2\alpha} = \dfrac{4}{sin^2\alpha} \leq 8$，故$sin^2\alpha \geq \dfrac{1}{2}$，即$k^2 \geq 1$
+        \end{dingautolist}
+        综上，$k \in [-\sqrt{3}, -1] \cup [1, \sqrt{3}]$，因此$\alpha \in \left[\dfrac{\pi}{4}, \dfrac{\pi}{3}\right] \cup \left[\dfrac{2\pi}{3}, \dfrac{3\pi}{4}\right]$
+    \end{jieda}
+    
+    \item 抛物线 $C : y = \dfrac{1}{4}{x}^{2}$ ,过焦点 $F$ 的直线 $l$ 与抛物线 $C$ 交于 $A,B$ 两点,若 $3\vv{AF} = \vv{FB}$ , 则直线 ${AB}$ 的倾斜角为\dotfill{(\kh{C})}
+    \xx{${30}^{ \circ  }$}{${60}^{ \circ  }$}{${30}^{ \circ  }$ 或 ${150}^{ \circ  }$}{${60}^{ \circ  }$ 或 ${120}^{ \circ  }$}
+    \begin{jieda}
+        由题意可知 $F\left( {0,1}\right)$ ,不妨设 $l : y = {kx} + 1,A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$ ,
+        
+        联立直线与抛物线方程得 $\left\{  \begin{array}{l} {x}^{2} = {4y} \\  y = {kx} + 1 \end{array} \Longrightarrow  {x}^{2} - {4kx} - 4 = 0 \Longrightarrow  \left \{\begin{array}{l}
+             {x}_{1} + {x}_{2} = {4k}  \\
+             {x}_{1}{x}_{2} =  - 4
+        \end{array}\right. \right.$ ,
+        
+        又 $\vv{AF} = \left( {-{x}_{1},1 - {y}_{1}}\right) ,\vv{FB} = \left( {{x}_{2},{y}_{2} - 1}\right)$ ,而 $3\vv{AF} = \vv{FB}$ ,
+        
+        则 $- 3{x}_{1} = {x}_{2} \Longrightarrow  3{x}_{1}^{2} = 4$ ,即 $\left\{  {\begin{array}{l} {x}_{1} = \dfrac{2\sqrt{3}}{3} \\  {x}_{2} =  - 2\sqrt{3} \end{array} \Longrightarrow  k =  - \dfrac{\sqrt{3}}{3}}\right.$ 或 $\left\{  {\begin{array}{l} {x}_{1} =  - \dfrac{2\sqrt{3}}{3} \\  {x}_{2} = 2\sqrt{3} \end{array} \Longrightarrow  k = \dfrac{\sqrt{3}}{3}}\right.$ ,
+        
+        所以直线的倾斜角为 ${30}^{ \circ  }$ 或 ${150}^{ \circ  }$ .
+    \end{jieda}
+    
+    \item 已知抛物线 $C : {y}^{2} = {4x}$ 的焦点为 $F$ ,准线为 $l$ ,过点 $F$ 的直线与抛物线交于 $P\left( {x}_{1}\right.$ , $\left. {y}_{1}\right)$ , $Q\left( {{x}_{2},{y}_{2}}\right)$ 两点,点 $P$ 在 $l$ 上的射影为 ${P}_{1}$ ,则下列说法错误的是\dotfill{(\kh{D})}
+    \xx{若 ${x}_{1} + {x}_{2} = 6$ ,则 $\left| {PQ}\right|  = 8$}{以 ${PQ}$ 为直径的圆与准线 $l$ 相切}{设 $M\left( {0,1}\right)$ ,则 $\left| {PM}\right|  + \left| {P{P}_{1}}\right|  \geq  \sqrt{2}$}{过点 $M\left( {0,1}\right)$ 与抛物线 $C$ 有且仅有一个公共点的直线至多有 2 条}
+    \begin{jieda}
+        对于选项 ${A}$ ,因为 $p = 2$ ,所以 ${x}_{1} + {x}_{2} + 2 = \left| {PQ}\right|$ ,则 $\left| {PQ}\right|  = 8$ ,故 ${A}$ 正确;
+        
+        对于选项 $B$,由抛物线焦点弦的性质可知, ${B}$ 正确；
+        
+        对于选项 ${C}$ ,因为 $F\left( {1,0}\right)$ ,所以 $\left| {PM}\right|  + \left| {P{P}_{1}}\right|  = \left| {PM}\right|  + \left| {PF}\right|  \geq  \left| {MF}\right|  = \sqrt{2}$ ,故 ${C}$ 正确;
+        
+        对于选项 ${D}$ ,显然直线 $x = 0,y = 1$ 与抛物线只有一个公共点,设过 $M$ 的直线方程为 $y = {kx}$  $+ 1\left( {k \neq  0}\right)$ ,
+        
+        联立 $\left\{  \begin{array}{l} y = {kx} + 1, \\  {y}^{2} = {4x}, \end{array}\right.$ 可得 ${k}^{2}{x}^{2} + \left( {{2k} - 4}\right) x + 1 = 0$ ,令 $\Delta  = 0$ ,得 $k = 1$ ,所以直线 $y = x + 1$ 与抛物线也只有一个公共点,此时有三条直线符合题意,故 ${D}$ 错误.
+
+    \end{jieda}
+
+    \item 已知抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 上三点 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {1,2}\right) ,C\left( {{x}_{2},{y}_{2}}\right) ,F$ 为抛物线的焦点, 则下列说法错误的是\dotfill{(\kh{C})}
+    \xx{抛物线的准线方程为 $x =  - 1$}{若 $\vv{FA} + \vv{FB} + \vv{FC} = \vv{0}$ ,则 $2\left| \vv{FB}\right|  = \left| \vv{FA}\right|  + \left| \vv{FC}\right|$}{若 $A,F,C$ 三点共线,则 ${y}_{1}{y}_{2} =  - 1$}{若 $\left| {AC}\right|  = 6$ ,则 ${AC}$ 的中点到 $y$ 轴距离的最小值为 2}
+    \begin{jieda}
+        把点 $B\left( {1,2}\right)$ 代入抛物线 ${y}^{2} = {2px}$ ,得 $p = 2$ ,所以抛物线的准线方程为 $x =  - 1$ ,故 ${A}$ 正确;
+        
+        因为 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {1,2}\right) ,C\left( {{x}_{2},{y}_{2}}\right) ,F\left( {1,0}\right)$ ,所以 $\vv{FA} = \left( {{x}_{1} - 1,{y}_{1}}\right) ,\vv{FB} = \left( {0,2}\right) ,\vv{FC} = \left( {{x}_{2} - 1}\right.$ , $\left. {y}_{2}\right)$ ,又由 $\vv{FA} + \vv{FB} + \vv{FC} = \vv{0}$ ,得 ${x}_{1} + {x}_{2} = 2$ ,
+        
+        所以 $\left| \vv{FA}\right|  + \left| \vv{FC}\right|  = {x}_{1} + 1 + {x}_{2} + 1 = 4 = 2\left| \vv{FB}\right|$ ,故 ${B}$ 正确;
+        
+        因为 $A,F,C$ 三点共线,所以直线 ${AC}$ 是焦点弦,所以 ${y}_{1}{y}_{2} =  - {p}^{2} =  - 4$ ,故 ${C}$ 不正确; 
+        
+        
+        设 ${AC}$ 的中点为 $M\left( {{x}_{0},{y}_{0}}\right)$，因为 $\left| {AF}\right|  + \left| {CF}\right|  \geq  \left| {AC}\right| ,\left| {AF}\right|  + \left| {CF}\right|  = {x}_{1} + 1 + {x}_{2} + 1 = 2{x}_{0} + 2$，所以 $2{x}_{0} + 2 \geq  6$ ,得 ${x}_{0} \geq  2$，即 ${AC}$ 的中点到 $y$ 轴距离的最小值为 2,故 ${D}$ 正确.
+    \end{jieda}
+    
+    \item 如图,过抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 上一点 $P\left( {{x}_{0},{y}_{0}}\right) \left( {{y}_{0} > 0}\right)$ 作两条直线分别交抛物线于 $A\left( {{x}_{1},{y}_{1}}\right) \text{ 、 }B\left( {{x}_{2},{y}_{2}}\right)$ . 
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d3q39gjef24c73d0aopg_2_197_1610_292_304_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 求该抛物线上纵坐标为 $\dfrac{p}{2}$ 的点到其焦点 $F$ 的距离
+        \item 当 ${PA}$ 与 ${PB}$ 的斜率存在且倾斜角互补时,求 $\dfrac{{y}_{1} + {y}_{2}}{{y}_{0}}$ 的值,并证明此时直线 ${AB}$ 的斜率是非零常数.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\left(\dfrac{p}{2}\right)^2 = 2px$，解得$x = \dfrac{p}{8}$，故其到焦点距离为$\dfrac{p}{8} + \dfrac{p}{2} = \dfrac{5p}{8}$
+            \item 
+            $y_0^2 = 2px_0$，故$P\left(\dfrac{y_0^2}{2p}, y_0\right)$，设直线$PA$为$x = m(y - y_0) + \dfrac{y_0^2}{2p}$，则$PB$为$x = -m(y - y_0) + \dfrac{y_0^2}{2p}$
+
+            联立$PA$与抛物线方程$\left\{\begin{array}{l}
+                 y^2 = 2px \\
+                 x = m(y - y_0) + \dfrac{y_0^2}{2p}
+            \end{array}\right.$，消去$x$可得$y^2 = 2p\left(m(y - y_0) + \dfrac{y_0^2}{2p}\right)$，即$y^2 -2pmy + (2pmy_0-y_0^2) = 0$，故根据韦达定理以及$P$点纵坐标可知$A$点纵坐标$y_1 = 2pm - y_0$
+
+            同理$y_2 = -2pm-y_0$，故$\dfrac{{y}_{1} + {y}_{2}}{{y}_{0}} =  - 2$
+            
+            ${k}_{AB} = \dfrac{y_2-y_1}{x_2-x_1} = \dfrac{y_2-y_1}{\dfrac{y_2^2}{2p} - \dfrac{y_1^2}{2p},} = \dfrac{2p}{y_1+y_2}= - \dfrac{p}{{y}_{0}}$
+        \end{enumerate}
+    \end{jieda}
+    \item 过抛物线 ${y^2} = {4x}$ 上点 $P\left( {1,2}\right)$ 作三条斜率分别为 ${k}_{1},{k}_{2},{k}_{3}$ 的直线 ${l}_{1},{l}_{2},{l}_{3}$ . 与抛物线分别交于不同于 $p$ 的点 $A,B,C$ . 若 ${k}_{1} + {k}_{2} = 0,{k}_{2} \cdot  {k}_{3} =  - 1$，则以下结论正确的是\dotfill{(\kh{B})}
+    \xx{直线 ${AB}$ 过定点}{直线 ${AB}$ 斜率一定}{直线 ${BC}$ 斜率一定}{直线 ${AC}$ 斜率一定}
+    \begin{jieda}
+        由题意, ${k}_{1},{k}_{2},{k}_{3}$ 均不为 $0$,设$A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right) ,C\left( {{x}_{3},{y}_{3}}\right)$，则${k}_{1} = \dfrac{{y}_{1} - 2}{{x}_{1} - 1} = \dfrac{{y}_{1} - 2}{\dfrac{{y}_{1}^{2}}{4} - 1} = \dfrac{4}{{y}_{1} + 2}$ ,同理可得 ${k}_{2} = \dfrac{{y}_{2} - 2}{{x}_{2} - 1} = \dfrac{4}{{y}_{2} + 2}$ ,
+        ${k}_{3} = \dfrac{{y}_{3} - 2}{{x}_{3} - 1} = \dfrac{4}{{y}_{3} + 2}$
+
+        由 ${k}_{1} + {k}_{2} = 0$ ,得 $\dfrac{4}{{y}_{1} + 2} + \dfrac{4}{{y}_{2} + 2} = 0$ ,即 ${y}_{1} + {y}_{2} + 4 = 0$. 
+        设直线 ${AB}$ 的方程为 $x = {m}_{1}y + {t}_{1}$ ,联立抛物线方程可得 ${y^2} - 4{m}_{1}y - 4{t}_{1} = 0$. 
+        则 $\Delta  > 0, \left\{\begin{array}{l}
+             {y}_{1} + {y}_{2} = 4{m}_{1}  \\
+             {y}_{1}{y}_{2} =  - 4{t}_{1} 
+        \end{array}\right.$ 代入${y}_{1} + {y}_{2} + 4 = 0$可得 $4{m}_{1} + 4 = 0,{m}_{1} =  - 1$，此时直线 ${AB}$ 的方程为 $x =  - y + {t}_{1}$ ,故直线 ${AB}$ 斜率是定值,故 $\mathrm{B}$ 正确, $\mathrm{A}$ 错误
+
+        由 ${k}_{2} \cdot  {k}_{3} =  - 1$ ,得 $\dfrac{4}{{y}_{2} + 2} \times  \dfrac{4}{{y}_{3} + 2} =  - 1$ ,即 ${y}_{2}{y}_{3} + 2\left( {{y}_{2} + {y}_{3}}\right)  + {20} = 0$.
+        设直线${BC}$ 的方程为 $x = {m}_{2}y + {t}_{2}$ ,联立抛物线方程可得 ${y}^{2} - 4{m}_{2}y - 4{t}_{2} = 0$.
+        则 $\Delta  > 0, \left\{\begin{array}{l}
+             {y}_{3} + {y}_{2} = 4{m}_{2}  \\
+             {y}_{3}{y}_{2} =  - 4{t}_{2} 
+        \end{array}\right.$，代入${y}_{2}{y}_{3} + 2\left( {{y}_{2} + {y}_{3}}\right)  + {20} = 0$可得 $2{m}_{2} - {t}_{2} + 5 = 0$ ,此时 ${BC}$ 的方程为$x = {m}_{2}y + 2{m}_{2} + 5 = {m}_{2}\left( {y + 2}\right)  + 5$ ,恒过定点$(5, -2)$,斜率不是定值,故C错误
+
+        由 ${k}_{2} \cdot  {k}_{3} =  - 1,{k}_{1} + {k}_{2} = 0$ ,得 ${k}_{1} \cdot  {k}_{3} = 1$ ,即 $\dfrac{4}{{y}_{1} + 2} \times  \dfrac{4}{{y}_{3} + 2} = 1$，即 ${y}_{1}{y}_{3} + 2\left( {{y}_{1} + {y}_{3}}\right)  - {12} = 0$.
+        设直线 ${AC}$ 的方程为 $x = {m}_{3}y + {t}_{3}$ ,联立抛物线方程可得 ${y}^{2} - 4{m}_{3}y - 4{t}_{3} = 0$ ,则 $\Delta  > 0, \left\{\begin{array}{l}
+             {y}_{3} + {y}_{1} = 4{m}_{3}  \\
+             {y}_{3}{y}_{1} =  - 4{t}_{3} 
+        \end{array}\right.$代入${y}_{1}{y}_{3} + 2\left( {{y}_{1} + {y}_{3}}\right)  - {12} = 0$可得$2{m}_{3} - {t}_{3} - 3 = 0$ ,此时 ${AC}$ 的方程为 $x = {m}_{3}y + 2{m}_{3} - 3 = {m}_{2}\left( {y + 2}\right)  - 3$ 恒过定点$(-3, -2)$,斜率不为定值，故D错误.
+
+        \ps 过抛物线$y^2 = 2px$上一点$P(a, b)$作两直线分别交抛物线于$A, B$，若两直线斜率之和为0，则$k_{AB} = -\dfrac{p}{b}$ \\
+        \ps 过抛物线$y^2 = 2px$上一点$P(a, b)$作两直线分别交抛物线于$A, B$，若两直线斜率之积为常数$c$，则直线$AB$恒过定点$\left(a-\dfrac{2p}{c}, -b\right)$
+    \end{jieda}
+    \item 设直线过圆锥曲线$\Gamma$的焦点$F$，交$\Gamma$于$A, B$，$A$在对应准线上的投影为$A'$，试证明$A'B$过定点$M$.
+    \begin{jieda}
+        设$F, B$在准线上的投影为$F', B'$，连接$A'B, AB'$，设交点为$M$，根据$\triangle AA'M \sim \triangle BB'M$可知$\dfrac{|AM|}{|B'M|} = \dfrac{|A'M|}{|BM|} = \dfrac{|AA'|}{|BB'|}$，根据圆锥曲线统一定义可知$\dfrac{|AA'|}{|BB'|} = \dfrac{|AF|}{|BF|}$，故$M$在$FF'$上，故$\triangle A'MF' \sim \triangle A'BB', \triangle AMF \sim \triangle AB'B$， 因此有$\dfrac{|MF'|}{|BB'|} = \dfrac{|A'M|}{|A'B|} = \dfrac{|MF|}{|BB'|}$，故$M$为$FF'$中点.
+    
+        % \begin{dingautolist}{172}
+        %     \item $\Gamma: \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$，不妨设直线过右焦点$(c, 0)$，设$A(x_1, y_1), B(x_2, y_2)$，设$A'B$交$x$轴于$M(m+c, 0)$
+
+        %     根据$\triangle BFM \sim \triangle BAA'$可知$\dfrac{a-ex_1}{2a-e(x_1+x_2)} = \dfrac{m}{\dfrac{a^2}{c} - x_2} \Leftrightarrow m = \dfrac{\dfrac{a^3}{c}-a(x_1+x_2)+\dfrac{c}{a}(x_1x_2)}{2a - \dfrac{c}{a}(x_1+x_2)}$
+
+        %     过$A, B$做$x$轴的垂线，垂足为$H_1, H_2$，根据$\triangle FAH_1 \sim \triangle FAH_2$可知$\dfrac{c-x_1}{x_2-c} = \dfrac{a-ex_1}{a-ex_2}$，即$ac-cex_2-ax_1+ex_1x_2 = ax_2-ac-ex_1x_2+ecx_1$，即$\dfrac{2c}{a}(x_1x_2)+2ac = \left(a+\dfrac{c^2}{a}\right)(x_1+x_2)$，故$\dfrac{c}{a}(x_1x_2) = \dfrac{a^2+c^2}{2a}(x_1+x_2)-ac$
+
+        %     因此$m = \dfrac{\dfrac{a^3}{c}-a(x_1+x_2)+\dfrac{a^2+c^2}{2a}(x_1+x_2)-ac}{2a - \dfrac{c}{a}(x_1+x_2)} = \dfrac{\dfrac{a}{c}(a^2-c^2) - \dfrac{a^2-c^2}{2a}(x_1+x_2)}{2a - \dfrac{c}{a}(x_1+x_2)} = \dfrac{b^2}{2c}$
+
+        %     故$M$为焦点与其准线上投影点的中点.
+        %     \item $\Gamma: \dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$ 易知焦点弦和双曲线的焦点在同一支上，故与椭圆类似会有$\dfrac{ex_1-a}{e(x_1+x_2)-2a} = \dfrac{m}{\dfrac{a^2}{c} - x_2}$和$\dfrac{c-x_1}{x_2-c} = \dfrac{ex_1-a}{ex_2-a}$，故所有推导和椭圆一致.
+        %     \item $\Gamma: y^2 = 2px$
+
+        %     根据焦点弦的性质$\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| }$ 为定值 $\dfrac{2}{p}$可知$\dfrac{|AF|+|BF|}{|AF| \cdot |BF|} = \dfrac{2}{p}$，即$\dfrac{p}{2} = \dfrac{|AF| \cdot |BF|}{|AF|+|BF|}$，即$\dfrac{\dfrac{p}{2}}{|AF|} = \dfrac{|BF|}{|AF|+|BF|}$，故判断出$\triangle BFO \sim \triangle BAA'$，即$M$为坐标原点.
+        % \end{dingautolist}
+
+        \ps 圆锥曲线统一结论：焦点弦一顶点在准线上的射影和另一顶点连线过焦点到准线的垂线段的中点.
+    \end{jieda}
+
+    \item 已知点 $M\left( {m,4}\right)$ 在抛物线 $\Gamma  : {x}^{2} = {2py}\left( {p > 0}\right)$ 上,点 $F$ 为 $\Gamma$ 的焦点,且 $\left| {MF}\right|  = 5$ . 过点 $F$ 的直线 $l$ 与 $\Gamma$ 及圆 ${x}^{2} + {\left( y - 1\right) }^{2} = 1$ 依次相交于点 $A,B,C,D$ ,如图.
+    \begin{center}
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/paowuxianqiexian.png}
+    \end{center}
+    \begin{enumerate}
+        \item 求抛物线 $\Gamma$ 的方程及点 $M$ 的坐标
+        \item 求 $\left| {AC}\right|  \cdot  \left| {BD}\right|$ 的值
+        \item 过 $A,B$ 两点分别作 $\Gamma$ 的切线 ${l}_{1},{l}_{2}$ ,且 ${l}_{1}$ 与 ${l}_{2}$ 相交于点 $P$ ,已知三角形 ${ABP}$ 外接圆的圆心为 $N$ ,求 $\vv{PF} \cdot  \vv{PN}$ 的最小值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为点 $M\left( {m,4}\right)$ 在抛物线 $\Gamma  : {x}^{2} = {2py}\left( {p > 0}\right)$ 上,点 $F$ 为 $\Gamma$ 的焦点, $\left| {MF}\right|  = 5$，所以点 $M\left( {m,4}\right)$ 到抛物线准线的距离为 $\dfrac{p}{2} + 4 = 5$ ,得 $p = 2$，所以抛物线 $\Gamma$ 的方程为 ${x}^{2} = {4y}$，代入 $M\left( {m,4}\right)$ ,得 ${m}^{2} = 4 \times  4 = {16}$，所以 $m =  \pm  4$ ,所以 $M\left( {4,4}\right)$ 或 $M\left( {-4,4}\right)$ .
+            \item 由题意得,抛物线 $\Gamma$ 的焦点与 ${x}^{2} + {\left( y - 1\right) }^{2} = 1$ 的圆心重合,即为 $F\left( {0,1}\right)$，显然直线 ${AB}$ 斜率存在,所以设直线 ${AB}$ 方程为 $y = {kx} + 1$ ,点 $A\left( {{x}_{1},{y}_{1}}\right)$ 、 $B\left( {{x}_{2},{y}_{2}}\right)$，将直线 ${AB}$ 的方程与抛物线 $\Gamma$ 的方程联立 $\left\{  \begin{array}{l} y = {kx} + 1 \\  {x}^{2} = {4y} \end{array}\right.$ ,消去 $y$ 并整理得 ${x}^{2} - {4kx} - 4 = 0$，$\Delta  = {16}\left( {{k}^{2} + 1}\right)  > 0$ ,由韦达定理得 ${x}_{1} + {x}_{2} = {4k},{x}_{1}{x}_{2} =  - 4$ .
+            
+            由抛物线的定义可知 $\left| {AF}\right|  = {y}_{1} + 1,\left| {BF}\right|  = {y}_{2} + 1,{x}_{1} < 0,{x}_{2} > 0$ .故 $\left| {AC}\right|  \cdot  \left| {BD}\right|  = \left( {\left| {AF}\right|  - 1}\right)  \cdot  \left( {\left| {BF}\right|  - 1}\right)  = {y}_{1}{y}_{2} = \dfrac{{x}_{1}^{2}{x}_{2}^{2}}{16} = \dfrac{{\left( -4\right) }^{2}}{16} = 1$ ,即 $\left| {AC}\right|  \cdot  \left| {BD}\right|$ 的值为 1 .
+
+            \item 切线 ${AP}$ 的方程为 $y - \dfrac{{x}_{1}^{2}}{4} = \dfrac{1}{2}{x}_{1}\left( {x - {x}_{1}}\right)$ ,即 $y = \dfrac{{x}_{1}x}{2} - \dfrac{{x}_{1}^{2}}{4}$ ,切线 ${BP}$ 的方程为 $y = \dfrac{{x}_{2}x}{2} - \dfrac{{x}_{2}^{2}}{4}$
+            
+            联立两切线方程 $\left\{  \begin{array}{l} y = \dfrac{{x}_{1}x}{2} - \dfrac{{x}_{1}^{2}}{4} \\  y = \dfrac{{x}_{2}x}{2} - \dfrac{{x}_{2}^{2}}{4} \end{array}\right.$ ,解得 $\left\{  \begin{array}{l} x = \dfrac{{x}_{1} + {x}_{2}}{2} = {2k} \\  y = \dfrac{{x}_{1}{x}_{2}}{4} =  - 1 \end{array}\right.$ ,即 $P\left( {{2k}, - 1}\right)$ .
+            
+            由 ${k}_{PA} \cdot  {k}_{PB} = \dfrac{{x}_{1}}{2}\dfrac{{x}_{2}}{2} = \dfrac{{x}_{1}{x}_{2}}{4} =  - 1$ 得 ${PA} \bot  {PB}$ ,故 $N$ 是 ${AB}$ 的中点，而 ${y}_{1} + {y}_{2} = k\left( {{x}_{1} + {x}_{2}}\right)  + 2 = 4{k}^{2} + 2,{y}_{1}{y}_{2} = \dfrac{{x}_{1}^{2}}{4} \cdot  \dfrac{{x}_{2}^{2}}{4} = 1$，由中点坐标公式得 $N\left( {{2k},2{k}^{2} + 1}\right)$ 
+            
+            故 $\vv{PF} = \left( {-{2k},2}\right) ,\vv{PN} = \left( {0,2{k}^{2} + 2}\right) ,\vv{AB} = \left( {{x}_{2} - {x}_{1},{y}_{2} - {y}_{1}}\right)$，$\vv{PF} \cdot  \vv{PN} = 4{k}^{2} + 4 \geq  4$，当且仅当 $k = 0$ 时等号成立,故 $\vv{PF} \cdot  \vv{PN}$ 的最小值是 4 .
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 抛物线 $C : y^2 = 4x$ 的焦点为 $F$ ,点 $D\left(2, 0\right)$ ,过 $F$ 的直线交 $C$ 于 $A,B$ 两点. 设直线 ${AD},{BD}$ 与 $C$ 的另一个交点分别为 $M,N$.
+    \begin{enumerate}
+        \item 证明: 直线$MN$过定点.
+        \item 设直线$MN$与直线$AB$交于点$P$，求$P$点轨迹.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $F(1, 0)$，$A(x_1, y_1), B(x_2, y_2), M(x_3, y_3), N(x_4, y_4)$
+            
+            易知直线$AB$斜率不为0，设直线$AB: x = m_1y+1$，则有$4(m_1y+1) = y^2$，即$y^2-4m_1y-4 = 0, \Delta > 0$，根据韦达定理有$y_1y_2 = -4$.
+            
+            易知直线$AM$斜率不为0，设直线$AM: x = m_2y+2$则有$4(m_2y+2) = y^2$，即$y^2-4m_2y-8 = 0, \Delta > 0$，根据韦达定理有$y_1y_3 = -8$，同理可得$y_2y_4 = -8$，故$y_3 = 2y_2, y_4 = 2y_1$，因此$y_3y_4 = 4y_1y_2 = -16$
+
+            设直线$MN$的直线方程为$x = my+n$，则有$4(my+n) = y^2$，即$y^2-4my-4n = 0, \Delta > 0$，根据韦达定理有$y_3y_4 = -4n$，故$-4n = -16$，$n = 4$，因此$MN$恒过定点$(4, 0)$
+
+            \item 直线$AB: x = m_1y+1$，直线$MN: x = my+4$
+            
+            $m_1 = \dfrac{x_1-x_2}{y_1-y_2} = \dfrac{\dfrac{y_1^2}{4} - \dfrac{y_2^2}{4}}{y_1-y_2} = \dfrac{y_1+y_2}{4}$，同理$m = \dfrac{y_3+y_4}{4}$，故$m = 2m_1$
+
+            \begin{dingautolist}{172}
+                \item 当$m=m_1=0$时，两直线没有交点
+                \item $m_1 = \dfrac{x_P - 1}{y_P}, m = \dfrac{x_P - 4}{y_P}$，故$2\dfrac{x_P - 1}{y_P} = \dfrac{x_P - 4}{y_P}$，故$x_P = -2(y_P \neq 0)$，因此$P$的轨迹是$x = -2(y \neq 0)$.
+            \end{dingautolist}
+            
+        \end{enumerate}
+    \end{jieda}
+    \item 如图,已知椭圆 ${C}_{1} : \dfrac{{x}^{2}}{4} + {y}^{2} = 1$ 和抛物线 ${C}_{2} : {x}^{2} = {2py}\left( {p > 0}\right) ,{C}_{2}$ 的焦点 $F$ 是 ${C}_{1}$ 的上顶点，过 $F$ 的直线交 ${C}_{2}$ 于 $M$ 、 $N$ 两点，连接 ${NO}$ 、 ${MO}$ 并延长之，分别交 ${C}_{1}$ 于 $A$ 、 $B$ 两点， 连接 ${AB}$ ，设 $\bigtriangleup  {OMN}$ 、 $\bigtriangleup  {OAB}$ 的面积分别为 ${S}_{\bigtriangleup {OMN}}$ 、 ${S}_{\bigtriangleup {OAB}}$ .
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/0_238_1291_365_283_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 求 $p$ 的值
+        \item 求 $\overrightarrow{OM} \cdot  \overrightarrow{ON}$ 的值
+        \item 求 $\dfrac{{S}_{\bigtriangleup {OMN}}}{{S}_{\bigtriangleup {OAB}}}$ 的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $F(0, 1)$，$p= 2$
+            \item 设$M(x_1, y_1), N(x_2, y_2)$，则$\vv{OM} \cdot \vv{ON} = x_1x_2+y_1y_2 = x_1x_2 + \dfrac{x_1^2x_2^2}{16}$
+            
+            易知$MN$斜率存在，故设$MN: y = kx+1$，与抛物线联立可得$x^2 - 4kx-4 = 0$，$\Delta > 0$，根据韦达定理可知$x_1x_2 = -4$，故$\vv{OM} \cdot \vv{ON} = -3$
+            \item $\dfrac{{S}_{\bigtriangleup {OMN}}}{{S}_{\bigtriangleup {OAB}}} = \dfrac{|OM||ON|}{|OA||OB|} = \dfrac{\vv{OM} \cdot \vv{ON}}{\vv{OA} \cdot \vv{OB}} = \dfrac{-3}{\vv{OA} \cdot \vv{OB}}$
+
+            设直线 ${NO}$ 、 ${MO}$ 的斜率分别为 ${k}_{1}$ 、 ${k}_{2}$ ,不妨设 ${k}_{1} > 0,{k}_{2} < 0$，$\vv{OA} \cdot \vv{OB} = x_Ax_B(1+k_1k_2)$
+
+            $k_1k_2 = \dfrac{y_1y_2}{x_1x_2} = \dfrac{x_1x_2}{16} = -\dfrac{1}{4}$
+            
+            
+            联立 $\left\{  \begin{array}{l} y = {k}_{1}x \\  {x}^{2} + 4{y}^{2} = 4 \end{array}\right.$ 可得 $\left( {4{k}_{1}^{2} + 1}\right) {x}^{2} = 4$ ,解得 $x =  \pm  \dfrac{2}{\sqrt{4{k}_{1}^{2} + 1}}$ 
+            
+            点 $A$ 在第三象限,则 ${x}_{A} =  - \dfrac{2}{\sqrt{4{k}_{1}^{2} + 1}}$，点 $B$ 在第四象限,同理可得 ${x}_{B} = \dfrac{2}{\sqrt{4{k}_{2}^{2} + 1}} = \dfrac{2}{\sqrt{\dfrac{4}{16k_1^2}+1}} = \dfrac{4k_1}{\sqrt{1+4k_1^2}}$ 
+
+            故$\vv{OA} \cdot \vv{OB} = \dfrac{-6k_1}{1+4k_1^2}$，故$\dfrac{{S}_{\bigtriangleup {OMN}}}{{S}_{\bigtriangleup {OAB}}} = \dfrac{1+4k_1^2}{2k_1} = 2k_1+\dfrac{1}{2k_1} \in [2,+\infty)$
+            
+        \end{enumerate}
+    \end{jieda}
+    \item 如图,已知抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 的焦点 $F$ 到准线的距离为 2,过点 $F$ 的直线交抛物线于 $A,B$ 两点,点 $C$ 在抛物线上,使得 $\bigtriangleup {ABC}$ 的重心 $G$ 在 $x$ 轴上,直线 ${AC}$ 交 $x$ 轴于点 $Q$ ,且 $Q$在点 $F$ 的右侧. 记 $\bigtriangleup {AFG}\text{、}\bigtriangleup {CQG}$ 面积分别为 ${S}_{1}\text{、}{S}_{2}$ .
+    \begin{center}
+        \includegraphics[width=0.2\linewidth]{bodyxb//src/paowuxian14.png}
+    \end{center}
+    \begin{enumerate}
+        \item 求抛物线的标准方程
+        \item 若直线 ${AB}$ 的斜率为 $\dfrac{\sqrt{3}}{3}$ ,求以线段 ${AB}$ 为直径的圆的面积；
+        \item 求 $\dfrac{{S}_{1}}{{S}_{2}}$ 的最小值及此时点 $G$ 的坐标.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $y^2 = 4x$
+            \item 由(1)可知 $F\left( {1,0}\right)$ ,设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$，易知直线 ${AB}$ 的方程为 $y = \dfrac{\sqrt{3}}{3}\left( {x - 1}\right)$，联立 $\left\{  \begin{array}{l} y = \dfrac{\sqrt{3}}{3}\left( {x - 1}\right) \\  {y}^{2} = {4x} \end{array}\right.$ ,整理可得 ${x}^{2} - {14x} + 1 = 0$，所以 ${x}_{1} + {x}_{2} = {14},{x}_{1}{x}_{2} = 1$
+            
+            因此可得 ${AB} = {AF} + {BF} = {x}_{1} + 1 + {x}_{2} + 1 = {16}$，即以线段 ${AB}$ 为直径的圆直径为 16,可得圆面积 ${64\pi }$
+
+            \item $\dfrac{S_1}{S_{\triangle ABG}} = \dfrac{|y_A|}{|y_A - y_B|}$，$\dfrac{S_2}{S_{\triangle ACG}} = \dfrac{|y_C|}{|y_A - y_C|}$
+
+            根据重心性质可知$S_{\triangle ACG} = S_{\triangle CQG}$，因此$\dfrac{S_1}{S_2} = \dfrac{|y_A|}{|y_A - y_B|} \times \dfrac{|y_A-y_C|}{|y_C|}$
+
+            根据重心性质可知$y_A + y_B + y_C = 0$，故$\dfrac{S_1}{S_2} = \dfrac{|y_A|}{|y_A - y_B|} \times \dfrac{|2y_A+y_B|}{|y_A+y_B|} = \left|\dfrac{2y_A^2+y_Ay_B}{y_A^2 - y_B^2}\right| = \left|\dfrac{2+\dfrac{y_B}{y_A}}{1-\left(\dfrac{y_B}{y_A}\right)^2}\right|$
+
+            因为$Q$在点 $F$ 的右侧，因此直线$AB$斜率为正，故$|y_A| > |y_B|$，即$\dfrac{y_B}{y_A} \in (-1, 0)$，故$\dfrac{S_1}{S_2} = \dfrac{2+\dfrac{y_B}{y_A}}{1-\left(\dfrac{y_B}{y_A}\right)^2}$，设$t = 2+\dfrac{y_B}{y_A}$，$t \in (1, 3)$，$\dfrac{S_1}{S_2} = \dfrac{t}{-t^2+4t-3} = \dfrac{1}{4-t - \dfrac{3}{t}} \geq \dfrac{1}{4-2\sqrt{3}} = \dfrac{4+2\sqrt{3}}{4}$，当$t = \sqrt{3}$时取等号.
+
+            $3x_G = x_A+x_B+x_C = \dfrac{y_A^2+y_B^2+y_C^2}{4} = \dfrac{2(y_A^2+y_B^2)+2y_Ay_B}{4}$
+
+            $\dfrac{y_B}{y_A} = \sqrt{3}-2$，$AB:x = my+1$，与抛物线联立可得$y^2-4my-4=0$，因此$y_Ay_B = -4$，故$\left\{\begin{array}{l}
+                 y_A^2 = 4(2+\sqrt{3}) \\
+                 y_B^2 = 4(2-\sqrt{3})
+            \end{array}\right.$，因此$x_G = 2$，$G(2, 0)$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}

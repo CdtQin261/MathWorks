@@ -1,0 +1,599 @@
+\chapter*{概率初步}
+
+\subsection*{概率初步——随机事件与样本空间}
+
+A组：
+\begin{enumerate}
+
+
+\item 下列各项中,属于随机现象的是\dotfill{(\kh{D})}
+\xx{若正方形边长为$a$,则正方形的面积为$a^{2}$}{在没有任何辅助情况下,人在真空中也可以生存}{在一个标准大气压下,温度达到$80^{\circ}\text{C}$时水会沸腾}{抛掷一枚硬币,反面向上}
+
+\item 判断下列事件是否为不确定事件.
+\begin{enumerate}
+\item 长度为3,4,5的三条线段可以构成一个三角形. \blkda{\ding{53}}
+\item 长度为2,3,4的三条线段可以构成一直角三角形.\blkda{\ding{53}}
+\item 方程 $x^{2}+2x+3=0$ 有两个不相等的实根.\blkda{\ding{53}}
+\item 函数 $y=\log_{a}x$ ($a>0$ 且 $a\ne1$)在 $(0,+\infty)$ 上为严格增函数.\blkda{\ding{51}}
+\end{enumerate}
+
+\item 同时掷两颗骰子一次,
+
+\begin{enumerate}
+
+\item “点数之和是13”是\blkda{不可能}事件
+\item “点数之和在$2\sim13$之间”是\blkda{必然}事件
+\item “点数之和是7”是\blkda[5]{不确定/随机}事件
+
+\end{enumerate}
+
+\item 下面给出五个事件: 
+(1)某地2月3日将下雪;(2)函数$x\in\text{R}$, $x>1$; (3)实数的绝对值不小于0;(4)实数$a,b$都不为零,则 $a^{2}+b^{2}=0$; (5)$a, b\in\text{R}$,则 $ab=ba$. 
+其中必然事件是\blkda{(3)(5)};不可能事件是\blkda{(4)};不确定事件是\blkda{(1)(2)}.
+
+\item 写出试验的样本空间,从集合 $A=\{a,b, c, d, e\}$中任取两个元素构成的$A$的子集\blkda[12]{$\{ \{ a,b\} ,\{ a,c\} ,\{ a,d\} ,\{ a,e\} ,\{ b,c\}, \{ b,d\} ,\{ b,e\} ,\{ c,d\} ,\{ c,e\} ,\{ d,e\} \} $}.
+
+\item 若$x,y$为正整数,且 $x+y=6$,则有序自然数对 $(x,y)$ 有\blkda{5}个.
+\end{enumerate}
+
+
+B组：
+\begin{enumerate}
+
+\item 先后三次抛掷同一枚硬币,若正面向上记为1,若反面向上则记为0,则这个试验的样本空间中有\blkda{8}个样本点.
+
+\item 给出下列四个命题: 
+①“当$x\in\text{R}$时, $\sin x+\cos x\le1$”是必然事件;②“当$x\in\text{R}$时, $\sin x+\cos x\le1$”是不可能事件;③“当 $x\in\text{R}$ 时, $\sin x+\cos x<2$”是不确定事件;④“当 $x\in\text{R}$ 时, $\sin x+\cos x<2$”是必然事件;其中正确的命题个数是\blkda{1}.
+
+\item 下列事件中不确定事件的个数为\dotfill{(\kh{B})}
+\begin{enumerate}
+    \item 明天是阴天;
+    \item 方程 $x^{2}+2x+5=0$ 有两个不相等的实根;
+    \item 明年长江武汉段的最高水位是29.8m; 
+    \item 一个三角形的大边对小角,小边对大角.
+\end{enumerate}
+\xx{1}{2}{3}{4}
+
+\item 抛掷两枚骰子一次,记第一枚骰子掷出的点数与第二枚骰子掷出的点数之差为$X$,则“$X\ge5$”表示的实验结果是\dotfill{(\kh{D})}
+\xx{第一枚6点,第二枚2点}{第一枚5点,第二枚1点}{第一枚1点,第二枚6点}{第一枚6点,第二枚1点}
+
+\item 一个家庭有两个小孩,把第一个孩子的性别写在前边,第二个孩子的性别写在后边,则样本空间 $\Omega=$\dotfill{(\kh{C})}
+\xx{\{(男,女),(男,男),(女,女)\}}{\{(男,女),(女,男)\}}{\{(男,男),(男,女),(女,男),(女,女)\}}{\{(男,男),(女,女)\}}
+
+\item 做抛掷红、蓝两枚骰子的试验,用$(x,y)$表示结果,其中$x$表示红色骰子出现的点数,$y$表示蓝色骰子出现的点数,写出:
+\begin{enumerate}
+\item 这个试验的样本空间;
+\item 这个试验的结果的个数;
+\item 指出事件$A=\{(1, 6), (2, 5), (3, 4), (4, 3), (5,2), (6,1)\}$的含义.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 这个试验的样本空间 $\Omega$ 为\\
+$\{ \left( {1,1}\right) ,\left( {1,2}\right) ,\left( {1,3}\right) ,\left( {1,4}\right) ,\left( {1,5}\right) ,\left( {1,6}\right)$ ,\\
+$\left( {2,1}\right) ,\left( {2,2}\right) ,\left( {2,3}\right) ,\left( {2,4}\right) ,\left( {2,5}\right) ,\left( {2,6}\right)$ ,\\
+$\left( {3,1}\right) ,\left( {3,2}\right) ,\left( {3,3}\right) ,\left( {3,4}\right) ,\left( {3,5}\right) ,\left( {3,6}\right)$ ,\\
+$\left( {4,1}\right) ,\left( {4,2}\right) ,\left( {4,3}\right) ,\left( {4,4}\right) ,\left( {4,5}\right) ,\left( {4,6}\right)$ ,\\
+$\left( {5,1}\right) ,\left( {5,2}\right) ,\left( {5,3}\right) ,\left( {5,4}\right) ,\left( {5,5}\right) ,\left( {5,6}\right)$ ,\\
+$\left( {6,1}\right) ,\left( {6,2}\right) ,\left( {6,3}\right) ,\left( {6,4}\right) ,\left( {6,5}\right) ,\left( {6,6}\right) \}$ .
+        \item 36种
+        \item 事件 $A$ 的含义为抛掷红、蓝两枚骰子,掷出的点数之和
+为 7.
+    \end{enumerate}
+\end{jieda}
+
+
+\item 连续掷3枚硬币,观察落地后这3枚硬币是正面朝上还是反面朝上.
+\begin{enumerate}
+\item 写出这个试验的样本空间;
+\item 用集合表示事件$M=$“恰有2枚正面朝上”.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 因此这个试验的样本空间 $\Omega  = \{ \left( \text{正,正,正 }\right)$ ,(正,正,反),
+(正,反,正),(正,反,反),(反,正,正),(反,正,反),(反,
+反,正),(反,反,反)\}.
+        \item “恰有 2 枚正面朝上”包含(正,正,反),(正,反,正),
+(反,正,正),共 3 个样本点. 故 $M = \{$ (正,正,反),(正,反,
+正),(反,正,正)\}.
+    \end{enumerate}
+\end{jieda}
+
+
+
+\item 下列随机事件中,一次试验各指什么?试写出试验的所有样本空间.
+\begin{enumerate}
+\item 先后抛掷两枚质地均匀的硬币多次;
+\item 从集合$A=\{a, b, c,d\}$中任取3个元素.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 一次试验是指“先后抛掷两枚质地均匀的硬币一次”,试验的样本空间为：
+        $\{ \left( {\text{正},\text{反}}\right) ,\left( {\text{正},\text{正}}\right) ,\left( {\text{反},\text{反}}\right) ,\left( {\text{反},\text{正}}\right) \}$ .
+        
+        \item 一次试验是指 “从集合 $A$ 中一次选取 3 个元素”,试验的样本空间为: $\{ \left( {a,b,c}\right) ,\left( {a,b,d}\right)$ ,$\left( {a,c,d}\right) ,\left( {b,c,d}\right) \}$ .
+    \end{enumerate}
+\end{jieda}
+
+\item 指出下列事件是必然事件、不可能事件还是不确定事件:
+\begin{enumerate}
+\item 某人购买福利彩票一注,中奖500万元;
+\item 三角形的内角和为$180^{\circ}$;
+\item 没有空气和水,人类可以生存下去;
+\item 同时抛掷两枚硬币一次,都出现正面向上;
+\item 从分别标有1,2,3,4的四张标签中任取一张,抽到1号标签;
+\item 科学技术达到一定水平后,不需任何能量的“永动机”将会出现.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 不确定事件；
+        \item 必然事件；
+        \item 不可能事件；
+        \item 不确定事件；
+        \item 不确定事件；
+        \item 不可能事件。
+    \end{enumerate}
+\end{jieda}
+
+\item 从含有两件正品$Z_{1},Z_{2}$和一件次品的3件产品中每次任取1件,每次取出后不放回,连续取两次.
+\begin{enumerate}
+\item 写出这个试验的样本空间;
+\item 设$A$为“取出的两件产品中恰有一件次品”,写出集合$A$;
+\item 把“每次取出后不放回”这一条件换成“每次取出后放回”,其余条件不变,请继续回答上述两个问题.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 样本空间为 ${\Omega }_{1} = \left\{  {\left( {{\mathrm{a}}_{1},{\mathrm{a}}_{2}}\right) ,\left( {{\mathrm{a}}_{1},{\mathrm{b}}_{1}}\right) ,\left( {{\mathrm{a}}_{2},{\mathrm{a}}_{1}}\right) ,\left( {{\mathrm{a}}_{2},{\mathrm{b}}_{1}}\right) }\right.$ ,
+$\left. {\left( {{\mathrm{b}}_{1},{\mathrm{a}}_{1}}\right) ,\left( {{\mathrm{b}}_{1},{\mathrm{a}}_{2}}\right) }\right\}$ .
+        \item  $A = \left\{  {\left( {{\mathrm{a}}_{1},{\mathrm{\;b}}_{1}}\right) ,\left( {{\mathrm{a}}_{2},{\mathrm{\;b}}_{1}}\right) ,\left( {{\mathrm{b}}_{1},{\mathrm{a}}_{1}}\right) ,\left( {{\mathrm{b}}_{1},{\mathrm{a}}_{2}}\right) }\right\}  .$
+        
+        \item 若改为取出后放回,则样本空间为 \\
+        ${\Omega }_{2} = \left\{  {\left( {{\mathrm{a}}_{1},{\mathrm{a}}_{1}}\right) ,\left( {{\mathrm{a}}_{1},{\mathrm{a}}_{2}}\right) }\right.$ ,
+$\left. {\left( {{\mathrm{a}}_{1},{\mathrm{\;b}}_{1}}\right) ,\left( {{\mathrm{a}}_{2},{\mathrm{a}}_{1}}\right) ,\left( {{\mathrm{a}}_{2},{\mathrm{a}}_{2}}\right) ,\left( {{\mathrm{a}}_{2},{\mathrm{\;b}}_{1}}\right) ,\left( {{\mathrm{b}}_{1},{\mathrm{a}}_{1}}\right) ,\left( {{\mathrm{b}}_{1},{\mathrm{a}}_{2}}\right) ,\left( {{\mathrm{b}}_{1},{\mathrm{\;b}}_{1}}\right) }\right\}$ ,\\
+$A = \left\{  {\left( {{\mathrm{a}}_{1},{\mathrm{\;b}}_{1}}\right) ,\left( {{\mathrm{a}}_{2},{\mathrm{\;b}}_{1}}\right) ,\left( {{\mathrm{b}}_{1},{\mathrm{a}}_{1}}\right) ,\left( {{\mathrm{b}}_{1},{\mathrm{a}}_{2}}\right) }\right\}  .$
+    \end{enumerate}
+\end{jieda}
+
+\item 设有一列单程北上的火车,已知停靠的站点由南至北分别为$S_{1}, S_{2}, \cdots, S_{10}$,共十站.若甲在$S_3$站买票,乙在$S_6$站买票.设样本空间表示火车所有可能停靠的站,令$A$表示甲可能到达站点的集合,$B$表示乙可能到达站点的集合.
+\begin{enumerate}
+\item 写出该事件的样本空间.
+\item 写出事件$A$、事件$B$包含的样本点.
+\item 铁路局需为该列车准备多少种北上的车票?
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $\Omega  = \left\{  {{S}_{1},{S}_{2},{S}_{3},{S}_{4},{S}_{5},{S}_{6},{S}_{7},{S}_{8}}\right.$ ,
+$\left. {{S}_{9},{S}_{10}}\right\}$ .
+        \item $A = \left\{  {{S}_{4},{S}_{5},{S}_{6},{S}_{7},{S}_{8},{S}_{9},{S}_{10}}\right\}  ,B = \left\{  {S}_{7}\right.$ ,$\left. {{S}_{8},{S}_{9},{S}_{10}}\right\}$ .
+        \item 铁路局需要准备从 ${S}_{1}$ 站发车的车票 9 种,从 ${S}_{2}$ 站发车的车票 8 种, $\cdots$ ,从 ${S}_{9}$ 站发车的车票 1 种,合计 9+8+...+2+1=45 (种).
+    \end{enumerate}
+\end{jieda}
+
+    
+\end{enumerate}
+
+
+\clearpage
+
+\subsection*{古典概率}
+
+\begin{enumerate}
+    \item 一次掷两枚均匀的骰子,得到的点数为$m$和$n$,则关于$x$的方程 $x^{2}+(m+n)x+4=0$无实数根的概率是\blkda{$\dfrac{1}{12}$}.
+
+\item 四面体的顶点和各棱的中点共10个点,在其中任取4个点,则这四个点不共面的概率为\blkda{$\dfrac{47}{70}$}.
+
+\item 袋子里有3颗白球,4颗黑球,5颗红球,由甲,乙,丙三人依次各抽取一个球,抽取后不放回,若每颗球被抽到的机会均等,则甲,乙,丙三人所得之球颜色互异的概率是\blkda{$\dfrac{3}{11}$}.
+
+\item 甲乙两人玩猜数字游戏,先由甲心中想一个数字,记为$a$,再由乙猜甲刚才所想的数字,把乙猜的数字记为 $b$,其中 $a,b\in\{1,2,3,4,5,6\}$,若$a=b$或 $a=b-1$,就称甲乙“心有灵犀”现在任意找两人玩这个游戏,则他们“心有灵犀”的概率为\blkda{$\dfrac{11}{36}$}.
+
+\item 某班共有40名学生,其中只有一对双胞胎,若从中随机抽查三位学生的作业,则这对双胞胎的作业同时被抽中的概率是\blkda{$\dfrac{1}{260}$}.
+
+\item 由1, 2, 3, $\cdots$, 1000这个1000正整数构成集合$A$,先从集合中随机取一个数,取出后把放回集合,然后再从集合中随机取出一个数,则$\dfrac{a}{b}>\dfrac{1}{3}$的概率为\blkda{$\dfrac{1667}{2000}$}.
+
+\item 根据党中央关于精准脱贫的要求,我市某部门派四位专家各自在周一、周二两天中任选一天对某县进行调研活动,选择周一、周二可能性相同,且四位专家周一或是周二去互不影响,则周一、周二都有专家参加调研活动的概率为\blkda{$\dfrac{7}{8}$}.
+
+\item 假设每一架飞机的每一个引擎在飞行中出现故障概率均为$1-p$,且各引擎是否有故障是独立的,已知4引擎飞机中至少有3个引擎飞机正常运行,飞机就可成功飞行;2引擎飞机要2个引擎全部正常运行,飞机才可成功飞行,要使4引擎飞机比2引擎飞机更安全,则 $p$ 的取值范围是\blkda{$(\dfrac{1}{3},1)$}.
+
+\item 数学多选题有A,B,C,D四个选项,在给出的选项中,有多项符合题目要求.全部选对的得5分,部分选对得2分,有选错的不得分,已知某道数学多选题正确答案为B,D,小明同学不会做这道题目,他随机地填涂了至少一个选项,则他能得分的概率为\blkda{$\dfrac{1}{5}$}.
+
+\item 一个数字不重复的三位数的百位、十位、个位上的数字依次记为$a,b,c$,当且仅当$a,b,c$中有两个不同数字的和等于剩下的一个数字时,称这个三位数为“有缘数”(如213,341等) 现从1,2,3,4这四个数字中任取三个数组成一个数字不重复的三位数,则这个三位数为“有缘数”的概率是\blkda{$\dfrac{1}{2}$}.
+
+\item 在一个古典概型(或几何概型)中,若两个不同随机事件$A$、$B$概率相等,则称$A$和$B$是“等概率事件”,如:随机抛掷一枚骰子一次,事件“点数为奇数”和“点数为偶数”是“等概率事件”,关于“等概率事件”,以下判断正确的是\blkda{(1)(4)}.
+\begin{dingautolist}{172}
+\item 在同一个古典概型中,所有的基本事件之间都是“等概率事件”;
+\item 若一个古典概型的基本事件总数为大于2的质数,则在这个古典概型中除基本事件外没有其他“等概率事件”;
+\item 因为所有必然事件的概率都是1,所以任意两个必然事件是“等概率事件”;
+\item 随机同时抛掷三枚硬币一次,则事件“仅有一个正面”和“仅有两个正面”是“等概率事件”.
+\end{dingautolist}
+
+\item 从集合 $A=\{-1,1,2\}$ 中随机选取一个数记为$k$,从集合 $B=\{-2,1,2\}$ 中随机选取一个数记为 $b$,则直线 $y=kx+b$ 不经过第三象限的概率为\blkda{$\dfrac{2}{9}$}.
+
+\item 袋中共有7个大小相同的球,其中3个红球,2个白球,2个黑球,若从袋中任取三个球,则所取3个球中至少有两个红球的概率是\blkda{$\dfrac{13}{35}$}.
+
+\item 设函数 $f(x)=ax+\dfrac{x}{x-1}(x>1)$ ,若$a$是从0,1,2三个数中任取一个,$b$是从1,2,3,4,5五个数中任取一个,那么 $f(x)>b$ 恒成立的概率是\blkda{$\dfrac{3}{5}$}.
+
+\item 某人射击10次击中目标3次,则其中恰有两次连续命中目标的概率为\blkda{$\dfrac{7}{15}$}.
+
+\item 甲、乙两人玩猜数字游戏,先由甲心中想一个数字,记为$a$,再由乙猜甲刚才所想的数字,把乙猜的数字记为$b$,其中 $a,b\in\{1,2,3,4,5,6\}$,若$|a-b|\le1$,就称“甲、乙心有灵犀”,现任意找两人玩这个游戏,则他们“心有灵犀”的概率为\blkda{$\dfrac{4}{9}$}.
+
+\item 吸烟有害健康,小明为了帮助爸爸戒烟,在爸爸包里放一个小盒子,里面随机摆放三支香烟和三支跟香烟外形完全一样的“戒烟口香糖”,并且和爸爸约定,每次想吸烟时,从盒子里任取一支,若取到口香糖则吃一支口香糖,不吸烟;若取到香烟,则吸一支烟,不吃口香糖,假设每次香烟和口香糖被取到的可能性相同,则“口香糖吃完时还剩2支香烟”的概率为\blkda{$\dfrac{3}{20}$}.
+
+\item 某市举行职工技能比赛活动,甲厂派出2男1女共3名职工,乙厂派出2男2女共4名职工.
+\begin{enumerate}
+\item 若从甲厂和乙厂报名的职工中各任选1名进行比赛,求选出的2名职工性别相同的概率;
+\item 若从甲厂和乙厂报名的这7名职工中任选2名进行比赛,求选出的这2名职工来自同一工厂的概率.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $\dfrac{1}{2}$
+        \item $\dfrac{3}{7}$
+    \end{enumerate}
+\end{jieda}
+
+\item 
+\begin{enumerate}
+\item 设集合 $M=\{1,2,3\}$ 和 $N=\{-1,1,2,3,4,5\}$,从集合$M$中随机取一个数作为$a$,从$N$中随机取一个数作为$b$,求所取的两数中能使$2b\le a$时的概率.
+\item 已知关于$x$的一元二次函数 $f(x)=ax^{2}+bx+1$,从集合 $P=\{x|1\le x\le3,x\in Z\}$ 中随机取一个数作为此函数的二次项系数$a$,从集合 $Q=\{x|-4\le x\le-2,x\in Z\}$ 中随机取一个数作为此函数的一次项系数,求函数 $y=f(x)$ 有零点的概率.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 若a=1,b=-1时,满足2b≤a；
+若a=2,b=-1或1时,满足2b≤a；
+若a=3,b=-1或1时,满足2b≤a；
+所取的两个数包含的事件个数=3×6=18,
+记事件A为“所取的两个数中能使2b≤a”,则事件A包
+含的事件个数为1+2+2=5,
+所以所取的两个数中能使 $2\mathrm{\;b} \leq  \mathrm{a}$ 时的概率 $= \dfrac{5}{18}$ . 
+        \item 根据题意, $P = \{ x \mid  1 \leq  x \leq  3,x \in  \mathbf{Z}\}  = \{ 1,2,3\} ,Q = \{ x \mid   - 4 \leq  x \leq   - 2,x \in  \mathbf{Z}\}  = \{  -$
+$4, - 3, - 2\}$ ,
+从集合 $P$ 中随机取一个数作为此函数的二次项系数 $a$ ,有 3 种取法,集合 $Q$ 中随机取一
+个数作为此函数的一次项系数 $b$ ,有 3 种取法,
+则 $a\text{、}b$ 的取法有 $3 \times  3 = 9$ 种,
+若函数 $y = f\left( x\right)$ 有零点,则有 $\Delta  = {b}^{2} - {4a} \geq  0$ ,其取法有 $\left\{  {\begin{array}{l} a = 1 \\  b =  - 4 \end{array}\text{、}\left\{  {\begin{array}{l} a = 1 \\  b =  - 3 \end{array}\text{、}\left\{  {\begin{array}{l} a = 1 \\  b =  - 2 \end{array}\text{、}\left\{  {\begin{array}{l} a = 2 \\  b =  - 4 \end{array}\text{、}}\right. }\right. }\right. }\right.$
+$\left\{  {\begin{array}{l} a = 2 \\  b =  - 3 \end{array},\left\{  \begin{array}{l} a = 3 \\  b =  - 4 \end{array}\right. }\right.$ ,共 6 种取法,
+则函数 $y = f\left( x\right)$ 有零点的概率 $P = \dfrac{6}{9} = \dfrac{2}{3}$ .
+    \end{enumerate}
+\end{jieda}
+
+
+\item 从4名男生和2名女生中任选3人参加演讲比赛.
+\begin{enumerate}
+\item 求所选3人都是男生的概率;
+\item 求所选3人中恰有1名女生的概率;
+\item 求所选3人中至少有1名女生的概率.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $\dfrac{1}{5}$
+        \item $\dfrac{3}{5}$
+        \item $\dfrac{4}{5}$
+    \end{enumerate}
+\end{jieda}
+
+
+\item 某人有5把钥匙,但忘记了开房门的是哪一把,于是,他逐把不重复地试开,问:
+\begin{enumerate}
+\item 恰好第三次打开房门所的概率是多少?
+\item 三次内打开的概率是多少?
+\item 如果5把内有2把房门钥匙,那么三次内打开的概率是多少?
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $\dfrac{1}{5}$
+        \item $\dfrac{3}{5}$
+        \item $\dfrac{9}{10}$
+    \end{enumerate}
+\end{jieda}
+    
+\end{enumerate}
+
+
+\clearpage
+
+\subsection*{事件关系和运算}
+
+
+\begin{enumerate}
+
+\item 掷一粒骰子的试验,事件$A$表示“小于5的偶数点出现”,事件$B$表示“小于5的点数出现”,则事件$A+B$发生的概率为\blkda{$\dfrac{2}{3}$}
+
+\item 某市派出甲、乙两支足球队参加全省足球比赛,甲、乙两队夺取冠军的概率分别为 $\dfrac{3}{7}$ 和 $\dfrac{1}{4}$, 则该市足球队夺得全省足球冠军的概率为\blkda{$\dfrac{19}{28}$}
+
+\item 掷一枚质地均匀的骰子,向上的一面出现1点,2点,3点,4点,5点,6点的概率均为 $\dfrac{1}{6}$, 记事件$A$为“向上的点数是奇数”,事件$B$为“向上的点数不超过3”,求$P(A\cup B)=$\blkda{$\dfrac{2}{3}$}
+
+\item 同时抛掷两枚骰子,没有5点且没有6点的概率是 $\dfrac{4}{9}$, 则至少有一个5点或6点的概率是\blkda{$\dfrac{5}{9}$}
+
+\item 某战士射击一次,击中环数大于7的概率为0.6,击中环数是6或7或8的概率相等,且和为0.3,则该战士射击一次击中环数大于5的概率为\blkda{0.8}
+
+\item 一个口袋内装有大小相同的红球、白球和黑球,从中摸出一个球,摸出红球或白球的概率为0.58,摸出红球或黑球的概率为0.62,摸出红球的概率为\blkda{0.2}
+
+\item 甲、乙两人下棋,甲获胜的概率为$40\%$,甲不输的概率为$90\%$,则甲、乙两人下成和棋的概率为\dotfill{(\kh{D})}
+\xx{$60\%$}{$30\%$}{$10\%$}{$50\%$}
+
+\item 围棋盒子中有多粒黑子和白子,已知从中取出两粒都是黑子的概率是 $\dfrac{1}{7}$, 从中取出两粒都是白子的概率是 $\dfrac{12}{35}$, 则从中取出两粒恰好是同一色的概率是\dotfill{(\kh{C})}
+\xx{$\dfrac{1}{7}$}{$\dfrac{12}{35}$}{$\dfrac{17}{35}$}{1}
+
+\item 用3种不同的颜色给甲、乙两个小球随机涂色,每个小球只涂一种颜色,则两个小球颜色不同的概率为\dotfill{(\kh{C})}
+\xx{$\dfrac{1}{3}$}{$\dfrac{1}{2}$}{$\dfrac{2}{3}$}{$\dfrac{5}{8}$}
+
+\item 袋中有五张卡片,其中红色卡片三张,标号分别为1、2、3;蓝色卡片两张,标号分别为4、5.从这五张卡片中任取两张,如果5张卡片被抽取的机会相等,分别计算下列事件的概率:
+\begin{enumerate}
+\item 事件$A=$“这两张卡片颜色不同”;
+\item 事件$B=$“这两张卡片标号之和小于7”;
+\item 事件$C=$“这两张卡片颜色不同且标号之和小于7”.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item $\dfrac{3}{5}$
+        \item $\dfrac{3}{5}$
+        \item $\dfrac{3}{10}$
+    \end{enumerate}
+\end{jieda}
+
+\item 现从 A, B, C, D, E五人中任选三人参加一个重要会议,五人被选中的机会相等.求:
+\begin{enumerate}
+\item A被选中的概率;
+\item A和B同时被选中的概率;
+\item A或B被选中的概率.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item $\dfrac{3}{5}$
+        \item $\dfrac{3}{10}$
+        \item $\dfrac{9}{10}$
+    \end{enumerate}
+\end{jieda}
+
+\end{enumerate}
+
+
+
+
+\clearpage
+
+\subsection*{可加性}
+
+
+\begin{enumerate}
+
+\item 小王同学有5本不同的语文书和4本不同的英语书,从中任取2本,则语文书和英语书各有1本的概率为\blkda{$\dfrac{5}{9}$}（结果用分数表示）.
+
+\item 某艺校在一天的6节课中随机安排语文、数学、外语三门文化课和其他三门艺术课各1节,则在课表上的相邻两节文化课之间最多间隔1节艺术课的概率为\blkda{$\dfrac{3}{5}$}.
+
+\item 将一颗质地均匀的骰子连续投掷两次,朝上的点数依次为$b$和$c$,则 $b\le2$ 且 $c\ge3$ 的概率是\blkda{$\dfrac{2}{9}$}.
+
+\item 从集合 $A\{\dfrac{1}{3},\dfrac{1}{2},2,3\}$ 中随机抽取一个数记为$a$, 从集合 $B\{-1,1,-2,2\}$ 中随机抽取一个数记为$b$,则函数 $y=a^{x}+b$ 的图像经过第三象限的概率是\blkda{$\dfrac{3}{8}$}.
+
+\item 一台机床有 $\dfrac{1}{3}$ 的时间加工零件A,其余时间加工零件B,加工A时,停机的概率是 $\dfrac{3}{10}$, 加工B时,停机的概率是 $\dfrac{2}{5}$, 则这台机床停机的概率为\dotfill{(\kh{A})}
+\xx{$\dfrac{11}{30}$}{$\dfrac{7}{30}$}{$\dfrac{7}{10}$}{$\dfrac{1}{10}$}
+\begin{jieda}
+    全概率公式
+\end{jieda}
+
+\item 从4名男生和2名女生中任选3人参加演讲比赛.
+\begin{enumerate}
+\item 求所选3人都是男生的概率;
+\item 求所选3人中恰有1名女生的概率;
+\item 求所选3人中至少有1名女生的概率.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $\dfrac{1}{5}$
+        \item $\dfrac{3}{5}$
+        \item $\dfrac{4}{5}$
+    \end{enumerate}
+\end{jieda}
+
+
+
+\item 在一次语文测试中,有一道我国四大文学名著《水浒传》、《三国演义》、《西游记》、《红楼梦》与它们的作者的连线题,已知连对一个得2分,连错一个不得分.
+\begin{enumerate}
+\item 求该同学得0分的概率;
+\item 求该同学至多得4分的概率.
+\end{enumerate}
+\begin{jieda}
+利用全错排
+    \begin{enumerate}
+        \item $\dfrac{3}{8}$
+        \item $\dfrac{23}{24}$
+    \end{enumerate}
+\end{jieda}
+
+\item 甲、乙、丙三台机床各自独立地加工同一种零件,已知甲机床加工的零件是一等品而乙机床加工的零件不是一等品的概率为 $\dfrac{1}{4}$, 乙机床加工的零件是一等品而丙机床加工的零件不是一等品的概率为 $\dfrac{1}{12}$, 甲、丙两台机床加工的零件都是一等品的概率为 $\dfrac{2}{9}$.
+\begin{enumerate}
+\item 分别求甲、乙、丙三台机床各自加工零件是一等品的概率;
+\item 从甲、乙、丙加工的零件中各取一个检验,求至少有一个一等品的概率.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 由事件的独立性，$P(A)=\dfrac{1}{3}$,$P(B)=\dfrac{1}{4}$,$P(C)=\dfrac{2}{3}$
+        \item 由对立事件和独立性，$\dfrac{5}{6}$
+    \end{enumerate}
+\end{jieda}
+
+
+
+
+\item 盒中有6只灯泡,其中2只次品,4只正品,有放回地从中任取两次,每次取一只,试求下列事件的概率:
+\begin{enumerate}
+\item 取到的2只都是次品;
+\item 取到的2只中正品、次品各一只;
+\item 取到的2只中至少有一只正品.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $\dfrac{1}{9}$
+        \item $\dfrac{4}{9}$
+        \item $\dfrac{8}{9}$
+    \end{enumerate}
+\end{jieda}
+
+
+\item 棱长为1的正四面体A-BCD,有一小虫从顶点A处开始按以下规则爬行: 在每一顶点处以同样的概率选择通过这个顶点的3条棱之一,并一直爬到这条棱的尽头,记小虫爬了$n$米后重新回到点A的概率为$P_n$.
+\begin{enumerate}
+\item 求$P_1$和$P_2$的值;
+\item 探寻$P_n$与$P_{n-1}$的关系;
+\item 求$P_n$的表达式.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item $P_1=0$,$P_2=\dfrac{1}{3}$
+        \item $P_n=\dfrac{1}{3}(1-P_{n-1})$
+        \item $P_{n}=\dfrac{1}{4}+\dfrac{3}{4}(-\dfrac{1}{3})^n$
+    \end{enumerate}
+\end{jieda}
+
+\end{enumerate}
+
+\clearpage
+
+\subsection*{频率与概率+随机事件的独立性}
+
+【频率与概率】
+
+\begin{enumerate}
+
+\item 在一次抛硬币的试验中，同学甲用一枚质地均匀的硬币做了$100$次试验，发现正面朝上出现了$45$次，那么出现正面朝上的频率和概率分别为\blkda{$\dfrac{9}{20}$和$\dfrac{1}{2}$}
+
+\item 下列三个命题：①任何事件的概率$P(A)$均满足$0<P(A)<1$；②做$7$次抛硬币的试验，结果$3$次出现正面，因此出现正面的概率是$\dfrac{3}{7}$；③随机事件发生的频率就是这个随机事件发生的概率，其中正确的有\dotfill{(\kh{A})}
+\xx{0个}{1个}{2个}{3个}
+
+\item 从存放号码分别为$1,2,\cdots,10$的卡片的盒子中，有放回地取$100$次，每次取一张卡片并记下号码，统计结果如下：
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+卡片号码 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+\hline
+取到的次数 & 10 & 11 & 8 & 8 & 6 & 10 & 18 & 9 & 11 & 9 \\
+\hline
+\end{tabular}
+\end{center}
+则取到号码为奇数的频率是\blkda{0.53}
+
+\item 下列说法不正确的是\dotfill{(\kh{ABD})}
+\xx{频率就是概率}{任何事件的概率都是在$(0,1)$之间}{概率是客观存在的，与试验次数无关}{概率是随机的，与试验次数有关}
+
+\item 下列说法正确的是\dotfill{(\kh{D})}
+\xx{某人打靶，射击$10$次，中靶$7$次，则此人中靶的概率为$0.7$}{一位同学做抛硬币试验，抛$6$次，一定有$3$次“正面朝上”}{某地发行一种彩票，回报率为$47\%$，若有人花了$100$元钱买此种彩票，则一定会有$47$元的回报}{用某种药物对患有胃溃疡的$500$名病人进行治疗，结果有$380$人有明显的疗效，现在胃溃疡病人服用此药，则可估计有明显疗效的概率约为$0.76$}
+
+\item 南北朝时期的数学家祖冲之，利用“割圆术”得出圆周率的值在$3.1415926$与$3.1415927$之间，成为世界上第一个把圆周率的值精确到$7$位小数的人，他的这项伟大成就比外国数学家得出这样精确数值的时间至少要早一千年，创造了当时世界上的最高水平，我们用概率模型方法估算圆周率，向正方形及其内切圆随机投掷豆子，在正方形中的$80$颗豆子中，落在圆内的有$64$颗，利用面积之比表示概率，则估算圆周率的值为\dotfill{(\kh{D})}
+\xx{$3.1$}{$3.14$}{$3.15$}{$3.2$}
+
+\end{enumerate}
+
+【随机事件的独立性】
+
+> 独立随机事件：$P(A\cap B)=P(A)\cdot P(B)$
+
+> 独立随机事件的性质：
+
+如果事件$A$与事件$B$相互独立，$A$的对立事件$\bar{A}$，$B$的对立事件$\bar{B}$，那么$\bar{A}$与$B$、$A$与$\bar{B}$、$\bar{A}$与$\bar{B}$也相互独立；
+
+> 独立事件是对任意多个事件来讲，而互斥事件是对同一实验来讲的多个事件，且这多个事件不能同时发生，故这些事件相互之间必然影响，因此互斥事件一定不是独立事件。
+
+\begin{enumerate}
+
+\item 在甲盒内的$200$个螺杆中有$160$个是A型，在乙盒内的$240$个螺母中有$180$个是A型，若从甲、乙两盒内各取一个，则能配成A型螺栓的概率为\blkda{$\dfrac{3}{5}$}
+
+\item 两人打靶，甲中靶的概率为$0.8$，乙中靶的概率为$0.7$，若两人同时射击一目标，则它们都中靶的概率是\blkda{0.56}，它们都不中靶的概率为\blkda{0.06}
+
+\item 现有$6$个分别标有数字$1,2,3,4,5,6$的相同小球，从中有放回地随机抽取两次，每次取$1$个球，记事件甲：第一次取出的球的数字是$3$，事件乙：第二次取出的球的数字是$6$，事件丙：两次取出的球的数字之和是$8$，事件丁：两次取出的球的数字之差的绝对值是$3$，则正确的有\blkda{(2)(4)}
+
+\begin{dingautolist}{172}
+\item 甲与丙相互独立
+\item 甲与丁相互独立
+\item 乙与丙相互对立
+\item 丙与丁互斥
+\end{dingautolist}
+
+
+\item 一个盒子装有六张卡片，上面分别写着如下六个函数：$f_{1}(x)=x^{3},f_{2}(x)=5^{|x|},f_{3}(x)=2,f_{4}(x)=\dfrac{2^{x}-1}{2^{x}+1},f_{5}(x)=\sin(\dfrac{\pi}{2}+x),f_{6}(x)=x \cos x.$ 从中任意拿取$2$张卡片，则两张卡片上写着的函数相加得到的新函数为奇函数的概率是\blkda{$\dfrac{1}{5}$}
+
+\item 甲、乙两人参加某项活动，甲获奖的概率为$0.6$，乙获奖的概率为$0.4$，甲、乙两人同时获奖的概率为$0.24$，则甲、乙两人恰有一人获奖的概率为\blkda{0.52}
+
+\item 甲、乙二人进行一场游戏比赛，且比赛中不存在平局，先赢三局者获胜，并可以获得$800$元奖金，已知甲、乙二人在每局比赛中获胜的可能性均相同，已知当甲连赢两局，乙一局未赢时，因某种特殊情况需要终止比赛，现将$800$元奖金按两人各自最终获胜的可能性的比例进行分配，则甲应该分得\blkda{700}元
+
+\item $4$粒种子种在甲坑内，每粒种子发芽的概率为$\dfrac{1}{2}$，若坑内至少有$2$粒种子发芽，则不需要补种；否则需要补种，则甲坑不需要补种的概率为\blkda{$\dfrac{11}{16}$}
+
+\item 某自助银行有A，B，C，D四台ATM，在某一时刻这四台ATM被占用的概率分别为$\dfrac{1}{3},\dfrac{1}{2},\dfrac{1}{2},\dfrac{2}{5}$
+\begin{enumerate}
+\item 若某客户只能使用四台ATM中的A或B，则该客户需要等待的概率为\blkda{$\dfrac{1}{6}$}
+\item 某客户使用ATM取款时，恰好有两台ATM被占用的概率为\blkda{$\dfrac{11}{30}$}
+\end{enumerate}
+
+\item 下列对各事件发生的概率判断正确的是\dotfill{(\kh{AC})}
+\xx{某学生在上学的路上要经过$4$个路口，假设在各路口是否遇到红灯是相互独立的，遇到红灯的概率都是$\dfrac{1}{3}$，那么该生在上学路上到第$3$个路口首次遇到红灯的概率为$\dfrac{4}{27}$}{三人独立地破译一份密码，他们能单独译出的概率分别为$\dfrac{1}{5},\dfrac{1}{3},\dfrac{1}{4}$，假设他们破译密码是彼此独立的，则此密码被破译的概率为$\dfrac{2}{5}$}{甲袋中有$8$个白球，$4$个红球，乙袋中有$6$个白球，$6$个红球，从每袋中各任取一个球，则取到同色球的概率为$\dfrac{1}{2}$}{设两个独立事件A和B都不发生的概率为$\dfrac{1}{9}$，A发生B不发生的概率与B发生A不发生的概率相同，则事件A发生的概率是$\dfrac{2}{9}$}
+
+\item 掷一枚骰子一次，设事件A：“掷出偶数点”，事件B：“掷出$3$点或$6$点”，则事件A，B的关系是\dotfill{(\kh{B})}
+\xx{互斥但不相互独立}{相互独立但不互斥}{互斥且相互独立}{既不相互独立也不互斥}
+
+\item 一个口袋中装有几个红球（$n\ge 5$且$n\in \mathbb{N}$）和$5$个白球，一次摸奖从中摸两个球，两个球颜色不同则为中奖。
+\begin{enumerate}
+\item 试用表示一次摸奖中奖的概率$p$；
+\item 若$n=5$，求三次摸奖（每次摸奖后放回）恰有一次中奖的概率；
+\item 记三次摸奖（每次摸奖后放回）恰有一次中奖的概率为$P$。当取多少时，$P$最大？
+\end{enumerate}
+\begin{jieda}
+\begin{enumerate}
+    \item $\left( 1\right) p = \dfrac{{\mathrm{C}}_{n}^{1}{\mathrm{C}}_{5}^{1}}{{\mathrm{C}}_{n + 5}^{2}} = \dfrac{10n}{\left( {n + 5}\right) \left( {n + 4}\right) }$ .
+    \item 当 $n = 5$ 时, $p = \dfrac{5}{9}$ ,所以所求概率为 ${\mathrm{C}}_{3}^{1}p{\left( 1 - p\right) }^{2} = \dfrac{80}{243}$ .
+    \item 设每次摸奖中奖的概率为 $p$ ,则三次摸奖 (每次摸奖后放回) 恰有一次
+中奖的概率为 $P = {\mathrm{C}}_{3}^{1}p{\left( 1 - p\right) }^{2} = 3{p}^{3} - 6{p}^{2} + {3p}\left( {0 < p < 1}\right)$ .
+用导数可求得: 当且仅当 $p = \dfrac{1}{3}$ 时 $P$ 取最大值. 由 $p = \dfrac{10n}{\left( {n + 5}\right) \left( {n + 4}\right) } = \dfrac{1}{3}$ ,
+得 $n = {20}$ .
+即当 $n$ 取 20 时, $P$ 最大.
+\end{enumerate}
+\end{jieda}
+
+\item 口袋中有质地、大小完全相同的$5$个球，编号分别为$1,2,3,4,5$，甲、乙两人玩一种游戏：甲先摸出一个球，记下编号，放回后乙再摸一个球，记下编号，如果两个编号的和为偶数算甲赢，否则算乙赢。
+\begin{enumerate}
+\item 甲、乙按以上规则各摸一个球，求事件“甲赢且编号的和为$6$”发生的概率；
+\item 这种游戏规则公平吗？试说明理由。
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 设 “甲胜且两数字之和为 6” 为事件 $A$ ,事件$A$ 包含的基本事件为 $\left( {1,5}\right) ,\left( {2,4}\right) ,\left( {3,3}\right) ,\left( {4,2}\right)$ ,(5,1),共 5 个. 又甲、乙二人取出的数字共有 $5 \times$$5 = {25}$ (个) 等可能的结果,所以 $P\left( A\right)  = \dfrac{5}{25} = \dfrac{1}{5}$ .
+        \item 这种游戏规则不公平. 设 “甲胜” 为事件 $B$ , “乙胜”为事件 $C$ ,则甲胜即两数字之和为偶数所包含的基本事件数为 13 个: $\left( {1,1}\right) ,\left( {1,3}\right) ,\left( {1,5}\right)$ ,$\left( {2,2}\right) ,\left( {2,4}\right) ,\left( {3,1}\right) ,\left( {3,3}\right) ,\left( {3,5}\right) ,\left( {4,2}\right) ,\left( {4,4}\right)$ ,$1),\left( {5,3}\right) ,\left( {5,5}\right)$ . 所以甲胜的概率 $P\left( B\right)  = \dfrac{13}{25}$ ,
+    \end{enumerate}
+\end{jieda}
+
+
+\item 盒中有$6$只灯泡，其中$2$只次品，$4$只正品，有放回地从中任取两次，每次取一只，试求下列事件的概率：
+
+\begin{enumerate}
+\item 取到的$2$只都是次品；
+\item 取到的$2$只中正品、次品各一只；
+\item 取到的$2$只中至少有一只正品。
+\end{enumerate}
+
+\begin{jieda}
+    从 6 只灯泡中有放回地任取两只,共有
+36 种不同取法.
+    \begin{enumerate}
+    \item 取到的 2 只都是次品的情况有 4 种,因
+而所求概率为 $\dfrac{4}{36} = \dfrac{1}{9}$ .
+\item 由于取到的 2 只中正品、次品各一只有
+两种可能：第一次取到正品,第二次取到次
+品；以及第一次取到次品,第二次取到正品.
+因而所求概率为 $P = \dfrac{4 \times  2}{36} \times  2 = \dfrac{4}{9}$ .
+    \item  由于“取到的两只中至少有一只正品”
+是事件”取到的两只都是次品”的对立事件,
+因而所求概率为 $P = 1 - \dfrac{1}{9} = \dfrac{8}{9}$ .
+    \end{enumerate}
+\end{jieda}
+
+\end{enumerate}
+
+
+
+
+\clearpage
+

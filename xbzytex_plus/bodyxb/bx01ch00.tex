@@ -1,0 +1,97 @@
+%# -*- coding:utf-8 -*-
+%!TEX root = ../mainxb.tex
+
+
+
+\chapter{章示例} 
+
+
+\section{大节}
+
+\subsection{小节}
+\zsd 
+\begin{itemize}
+\item 单调性
+\end{itemize}
+
+A组: 
+\begin{enumerate}
+\item 题目, \blkda[4]{填空题的答案}. 
+
+\item 题目, 选择题选项及答案\dotfill(\kh{D})
+\xx
+{第一个选项}
+{第二个选项中最大元素与最小元素之差等于该集合的所有元素之和}
+{第三个选项}
+{第四个选项}
+\begin{jieda}
+这里是解析
+\end{jieda}
+
+\item 解答题. 答题空白用\verb|\vsp|, 此时会给出1cm的竖直空白, 如果需要3cm, 则输入\verb|\vsp[3]|. 
+\vsp[3]
+
+\end{enumerate}
+
+
+B组: 
+\begin{enumerate}
+\item 
+
+\end{enumerate}
+
+
+
+
+C组: 
+\begin{enumerate}
+\item 
+
+\end{enumerate}
+
+
+\clearpage
+\subsection{输入规范}
+
+\begin{itemize}
+\item 除非顿号, 其他标点全部用半角. 除非顿号, 文本模式下, 标点符号后面空半格. 
+\item \verb|{}|是保留字符, 作为保留字符时一定要配对. 
+\item \verb|$|是保留字符, 必须配对, 用于数学表达式. \verb|$a+b=3$|. 
+\item \verb|&|是保留字符, 用于分隔对象. 
+\item 分数fraction: 具体数字$\frac{1}{2}$, 包含字母的$\dfrac{2x+1}{3x-2}$. displaystyle fraction. 
+\item 绝对值: $\abs{a+2b-c}$, $\abs{-\frac{1}{2}}$, $\abs{-\dfrac{2x-1}{4x+5}}$. 
+\item 向量
+\item 高斯函数: $\gauss{\dfrac{2x-1}{3x+2}}$. 
+\item 集合的描述法: $\{x\mid y=x^2+\alpha\cdot\abs{x-1}+\abs{\vv{AB}}, x\zr\}$. 此处可见$\{\}$有点短, 更好的写法$\left\{x\mid y=x^2+\alpha\cdot\abs{x-1}+\abs{\vv{AB}}, x\zr\right\}$. 
+\item 空集: $\varnothing$. empty set 不好看. 
+\item 三角函数: $\sin$, $\cos$, $\tan$, $\cot$(cot也许没有). % yao. 
+\item 度数: $\ang{60}$. 
+\item 两个向量的夹角: $\lrangle{\vv{a},\vv{b}}$. 
+\item 求和: $\sum\limits_{i=1}^{n} a_n$, 求积: $\prod\limits_{i=1}^n b_i$, 极限: $\lim\limits_{n\to\infty} c_n$. 
+\item 多个表达式: $a=1$, $b=2$, 而不是$a=1,b=2$. 区别在于中间逗号的后面是否有适当空白. 
+\item 虚数单位: 输入\verb|$\iu$|, 得到$\iu$; 自然对数的底: 输入\verb|$\eu$|, 得到$\eu$. 向欧拉(euler)致敬. 
+\item 填空题的横线: \blkda{短答案}, \blkda[5]{5cm长的横线}. 
+\item 选择题: \verb|\xx{选项}{选项}{选项}{选项}|, 最好\verb|\xx|及四个\verb|{}|各占一行. \\
+选择题的例子题干\dotfill(\kh{B})
+\xx
+{23}
+{$-5$}
+{$x-y$}
+{6}
+\item 分段函数: $\begin{cases}
+2x-1, & x\leq 0\\
+x+5, & x\geq 0
+\end{cases}$. 
+\item 数学表达式中包含汉字: $\{x\mid x\in A\text{或} x\in B\}$. 更好一点的写法: $\{x\mid x\in A~\text{或}~x\in B\}$. 
+\item 逻辑且: $\land$, 逻辑或: $\lor$. logic and, logic or. 用于写参考答案. 
+\item 带圈数字: \ding{172}, \ding{173}, $\cdots$, $\Circled{1}$, $\Circled{2}$, $\cdots$. 
+\item 平行$\px$, 平行四边形$\pxsb$, 垂直$\perp$, 三角形$\triangle{ABC}$, 角$\angle{AOB}$, 弧$\hu{AmB}$, 省略号$\cdots$(center dots). 
+\end{itemize}
+
+
+帮助文档: 
+\begin{enumerate}
+\item 宏包的帮助文档: \verb|命令行下输入 texdoc packagename|, 如\verb|texdoc ctex|. 
+\item \verb|texdoc symbols|是个好文档. 
+\item 教程: lnotes, lshort(cn). 
+\end{enumerate}

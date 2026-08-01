@@ -1,0 +1,221 @@
+\chapter*{专题练习6}
+填空题：
+\begin{enumerate}
+    \item 不等式 $log_{\frac{1}{2}}x+2 > x-1$的解集为\blkda{$(0, 2)$}
+    \item 已知函数$f(x)=\lg(1+2^x+3^x+4^x+a\cdot5^x)$对一切$x\leq 2$有意义, 实数$a$的取值范围是\blkda{$a>-\frac{6}{5}$}
+    \begin{jieda}
+    $1+2^x+3^x+4^x+a\cdot5^x>0$恒成立, 即$a>-\frac{1+2^x+3^x+4^x}{5^x}$恒成立. \\
+    而$y=-\frac{1+2^x+3^x+4^x}{5^x}$在$\bR$上单调递增, 故$a>-\frac{6}{5}$($x=2$时). 
+    \end{jieda}
+    \item 已知函数$f(x) = log_3(\frac{x}{3}) \cdot log_3(\frac{x}{27})$，若对不相等的实数$x_1, x_2$有$f(x_1) = f(x_2)$，求$\frac{1}{x_1} + \frac{9}{x_2}$的最小值为\blkda{$\frac{2}{3}$}
+    \item 已知$log_2(x+y) = log_2x+log_2y$, $\dfrac{4x}{x-1} + \dfrac{9y}{y-1}$的最小值为\blkda{25}
+    \begin{jieda}
+        $log_2(x+y) = log_2(xy)$，故$x+y = xy$，即$x = \dfrac{y}{y-1}$，$y = \dfrac{x}{x-1}$，其中$x > 1, y > 1$.\\
+        $\dfrac{4x}{x-1} + \dfrac{9y}{y-1} = \dfrac{4x}{x-1} + 9x = 9(x-1) + \dfrac{4}{x-1}+13 \geq 25$，在$x = \dfrac{5}{3}, y = \dfrac{5}{2}$时取等号.
+    \end{jieda}
+    \item 已知$(\frac{1}{2})^{sin2\theta} < 1$，则$\theta$所在的象限为\blkda{一或三}象限.
+    \begin{jieda}
+        根据指数函数的单调性可知$sin2\theta > 0$，因此$2\theta \in (2k\pi, 2k\pi+\pi), k \in \mathbf{Z}$。因此$\theta \in (k\pi, k\pi+\dfrac{\pi}{2}), k \in \mathbf{Z}$， 故$\theta$为第一或第三象限角。
+    \end{jieda}
+    \item 已知$\alpha$的终边过点$(sin5, cos5)$，则$\alpha = $\blkda[3.5]{$\frac{\pi}{2} - 5 + 2k\pi, k \in \mathbf{Z}$}
+    \item 已知$\cos(11\pi-3)=p$, 用$p$表示$\tan3$=\blkda[3]{$-\dfrac{\sqrt{1-p^2}}{p}$}. 
+    \item 已知$\sin\beta=\dfrac{1}{3}$, $\sin(\alpha+\beta)=0$, 则$\sin(2\alpha+\beta)$=\blkda{$-\frac{1}{3}$}. 
+    \begin{jieda}
+    $\sin(\alpha+\beta)=0\iff\alpha+\beta=2k\pi$或$2k\pi + \pi$，故 $\sin(2\alpha+\beta) = \sin(2(\alpha+\beta) - \beta) = \sin(-\beta) = -\sin\beta = -\frac{1}{3}$
+    \end{jieda}
+    \item 已知$sin(\dfrac{5\pi}{6} - \alpha) = \sqrt{3}cos(\alpha + \dfrac{\pi}{6})$，则$tan(\alpha + \dfrac{\pi}{6}) = $ \blkda{$\sqrt{3}$}
+    \begin{jieda}
+        设$\alpha + \dfrac{\pi}{6} = t$，故原式化为$sin(\pi - t) = \sqrt{3}cost$，求$tant$。\\
+$sin(\pi - t) = \sqrt{3}cost$即$sint = \sqrt{3}cost$，故$tant = \sqrt{3}$
+    \end{jieda}
+    \item 已知$\dfrac{ cos\alpha}{1+ sin\alpha}=-\dfrac{1}{2}$, 则$\dfrac{ cos\alpha}{ sin\alpha-1}$=\blkda{2}. 
+    \begin{jieda}
+    $\dfrac{ cos\alpha}{1+ sin\alpha}= \dfrac{1-sin\alpha}{cos\alpha}$ \\
+    \ps $\dfrac{ sin\alpha}{1+ cos\alpha}= \dfrac{1-cos\alpha}{sin\alpha}$ 
+    \end{jieda}
+        \item 若角$\alpha$是第三象限角, 则
+        \ding{172} $ sin\alpha+ cos\alpha<0$; 
+        \ding{173} $ tan\alpha- sin\alpha>0$; 
+        \ding{174} $ cot\alpha\cdot\csc\alpha<0$; 
+        \ding{175} $ sin\alpha\cdot\sec\alpha>0$. 
+        其中正确的是\blkda{\ding{172}\ding{173}\ding{174}\ding{175}}.
+        \item 已知$\theta\in\left(0,\frac{\pi}{2}\right)$, 且$\log_{ tan\theta+ cot\theta} sin\theta=-\frac{3}{4}$, 
+        则$\log_{ tan\theta} sin\theta + \log_{ tan\theta} cos\theta=$\blkda{$2$}.
+        \begin{jieda}
+        $( tan\theta+ cot\theta)^{-\frac{3}{4}} =(\frac{sin\theta}{cos\theta} + \frac{cos\theta}{sin\theta})^{-\frac{3}{4}} = (\frac{1}{sin\theta cos\theta})^{-\frac{3}{4}} = sin\theta$，即$sin\theta = cos^3\theta$. 故$ cos^2\theta= tan\theta$, 所以$\log_{ tan\theta} sin\theta + \log_{ tan\theta} cos\theta = \log_{ tan\theta} (sin\theta \cdot cos\theta)=2$. 
+        \end{jieda}
+    \item 使函数$y=\sqrt{\cos x}+\sqrt{25-x^{2}}$有意义的$x$的取值范围是\blkda[5]{$[-5,-\frac{3\pi}{2}]\cup[-\frac{\pi}{2}, \frac{\pi}{2}]\cup[\frac{3\pi}{2}, 5]$}
+    \item 使函数$y=\lg\sin(\cos{x})$有意义的$x$的取值范围是\blkda[5]{$\left(-\dfrac{\pi}{2}+2k\pi,\dfrac{\pi}{2}+2k\pi\right)(k\zz)$}. 
+    \item 在$\triangle{ABC}$中, 给出下列四个式子: 
+    \ding{172} $\sin(A+B)-\sin{C}$, 
+    \ding{173} $\cos(A+B)+\cos{C}$, 
+    \ding{174} $\sin(2A+2B)+\sin2C$, 
+    \ding{175} $\cos(2A+2B)-\cos2C$, 其中恒为常数的是\blkda{\ding{172}\ding{173}\ding{174}\ding{175}}.
+\end{enumerate}
+选择题：
+\begin{enumerate}
+    \item 已知$sin\alpha > sin\beta$，那么下列命题成立的是\dotfill({\kh{D}})
+    \xx{若$\alpha, \beta$为第一象限角，则$cos \alpha > cos \beta$}{若$\alpha, \beta$为第二象限角，则$tan \alpha > tan \beta$}{若$\alpha, \beta$为第三象限角，则$cos \alpha > cos \beta$}{若$\alpha, \beta$为第四象限角，则$tan \alpha > tan \beta$}
+    \item 下列各式为正号的是\dotfill(\kh{C})
+    \xx{$ cos2- sin2$}
+    {$ cos2\cdot sin2$}
+    {$ tan2\cdot\sec2$}
+    {$ sin2\cdot tan2$}
+    \begin{jieda}
+    $2\in(\frac{\pi}{2},\pi)$, 故$ sin2>0$, $ cos2<0$, $ tan2<0$, $ cot2<0$, $\sec2<0$, $\csc2>0$. 
+    \end{jieda}
+    \item 设$y= sin\alpha\cdot cos\alpha\cdot cot\alpha$, 且$\alpha$是象限角, 则$y$的符号为\dotfill(\kh{A})
+    \xx{恒正}{恒负}{可能为0}{不确定}
+    \item 已知实数$\alpha,\beta$满足$\abs{\cos\alpha-\cos\beta}=\abs{\cos\alpha}+\abs{\cos\beta}$, 且$\alpha\in(\frac{\pi}{2},\pi)$, 
+    则化简$\sqrt{(\cos\alpha-\cos\beta)^2}$的结果是\dotfill(\kh{C})
+    \xx{$\cos\alpha-\cos\beta$}
+    {$\abs{\cos\alpha}-\abs{\cos\beta}$}
+    {$\cos\beta-\cos\alpha$}
+    {$\abs{\cos\alpha}+\abs{\cos\beta}$}
+    \begin{jieda}
+    $\abs{\cos\alpha-\cos\beta}=\abs{\cos\alpha}+\abs{\cos\beta}\iff\cos\alpha\cos\beta\leq 0$. \\
+    又$\cos\alpha<0$, 故$\cos\beta\geq 0$. \\
+    故$E=\abs{\cos\alpha-\cos\beta}=\cos\beta-\cos\alpha$. 
+    \end{jieda}
+\end{enumerate}
+解答题：
+\begin{enumerate}
+\item 已知函数$f(x) = x - 2$，$g(x) = mx^2-2mx+1(m \in \mathbf{R})$. 
+\begin{enumerate}
+    \item 对任意的$x \in \mathbf{R}$，不等式$g(x) > f(x)$恒成立，求$m$取值范围.
+    \item 对任意的$x_1 \in [1, 2], x_2 \in [-1, 0]$，不等式$g(x_1) > f(x_2)$恒成立，求$m$取值范围.
+    \item 对任意的$x_1 \in [1, 2]$，存在$x_2 \in [3, 4]$，使得$g(x_1) = f(x_2)$，求$m$取值范围.
+    \item 对任意的$x_1 \in [1, 2]$，存在$x_2 \in [0, 2]$，使得$g(x_1) > f(x_2)$，求$m$取值范围.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 问题转化为$g(x) - f(x) > 0$在$\mathbf{R}$上恒成立，即$mx^2-(2m+1)x+3 > 0$恒成立. $m = 0$不满足要求，$m < 0$不满足要求，$m > 0$时应有$\Delta < 0$，即$m \in (\frac{2-\sqrt{3}}{2}, \frac{2+\sqrt{3}}{2})$
+        \item 问题转化为$g(x)$在$[1, 2]$上的最小值大于$f(x)$在$[3, 4]$上的最大值. $f(x)$在$[-1, 0]$上的最大值为$-2$，故问题转化为$g(x) + 2 > 0$在$[1, 2]$上恒成立，设$h(x) = g(x) + 2 = mx^2-2mx + 3 = m(x-1)^2-(m-3)$，下面分析$h(x)$的最值
+        \begin{dingautolist}{172}
+            \item $m > 0$，$h(x)$在$[1, 2]$内单调递增，因此最小值为$h(1) = 3-m$
+            \item $m = 0$，$h(x) = 3$，最小值为$3$
+            \item $m < 0$，$h(x)$在$[1, 2]$内单调递减，因此最小值为$h(2) = 3$
+        \end{dingautolist}
+        故当$m \in (-\infty, 3)$时，满足要求.
+        \item 问题转化为$g(x)$在$[1, 2]$上的值域是$f(x)$在$[3, 4]$上值域的子集. $f(x)$在$[3, 4]$上值域为$[1, 2]$，$g(x) = m(x-1)^2 + (1-m)$，下面分析$g(x)$的值域
+        \begin{dingautolist}{172}
+            \item $m > 0$，$g(x)$在$[1, 2]$内单调递增，值域为$[1-m, 1]$
+            \item $m = 0$，$g(x) = 1$，值域为$\{1\}$
+            \item $m < 0$，$g(x)$在$[1, 2]$内单调递增，值域为$[1, 1-m]$
+        \end{dingautolist}
+        故当$m \in [-1, 0]$时满足要求.
+        \item 问题转化为$g(x)$在$[1, 2]$上的最小值大于$f(x)$在$[0, 2]$上的最小值. $f(x)$在$[0, 2]$上最小值为-2，下面分析$g(x)$的最值
+        \begin{dingautolist}{172}
+            \item $m > 0$，$g(x)$在$[1, 2]$内单调递增，因此最小值为$g(1) = 1-m$
+            \item $m = 0$，$g(x) = -1$，最小值为$-1$
+            \item $m < 0$，$g(x)$在$[1, 2]$内单调递减，因此最小值为$g(2) = 1$
+        \end{dingautolist}
+        故当$m \in (-\infty, 3)$时，满足要求.
+    \end{enumerate}
+\end{jieda}
+\item 已知 $ sin \alpha+ cos \alpha=\frac{1}{5}(0<\alpha<\pi)$, 求: \\
+\begin{enumerate*}
+    \item  $ sin \alpha- cos \alpha$;
+    \item  $ sin ^3 \alpha+ cos ^3 \alpha$;
+    \item $ sin ^4 \alpha+ cos ^4 \alpha$.
+\end{enumerate*}
+\begin{jieda}
+    \begin{enumerate}
+        \item $(sin\alpha+cos\alpha)^2 = 1 + 2sin\alpha cos\alpha = \frac{1}{25}$，因此$sin\alpha cos\alpha = -\frac{12}{25}$ \\
+        因此有$(sin\alpha - cos\alpha)^2 = 1 - 2sin\alpha cos\alpha = \frac{49}{25}$ \\
+        故$sin\alpha - cos\alpha = \pm \frac{7}{5}$
+        \\
+        根据$\alpha \in (0, \pi)$，故$sin \alpha - cos\alpha > -1$，因此$sin\alpha - cos\alpha = \frac{7}{5}$ \\
+        \ps 可以根据$sin\alpha + cos\alpha$在不同象限的值域直接判断出来$\alpha$是第二象限角.
+        \item $sin^3 \alpha + cos^3 \alpha = (sin\alpha + cos\alpha)(sin^2 \alpha + cos^2 \alpha - sin\alpha cos\alpha) = (\frac{1}{5})(1 + \frac{12}{25}) = \frac{37}{125}$ \\
+        \ps 也可以在第一问的结果上构建方程组$\left \{ \begin{array}{}
+            sin\alpha + cos\alpha = \frac{1}{5} \\
+            sin\alpha - cos\alpha = \frac{7}{5} 
+        \end{array}\right.$解得$\left \{ \begin{array}{}
+            sin\alpha = \frac{4}{5} \\
+            cos\alpha = -\frac{3}{5} 
+        \end{array}\right.$后带入计算（下同）
+        \item $ sin ^4 \alpha+ cos ^4 \alpha = ( sin ^2 \alpha+ cos ^2 \alpha)^2 - 2(sin \alpha cos\alpha)^2 = 1 - 2 \times (-\frac{12}{25})^2 = \frac{337}{625}$
+    \end{enumerate}
+\end{jieda}
+\begin{vspace_}
+\vsp[5]
+\end{vspace_}
+\item 已知$tan\alpha=\sqrt{2}$, 求下列各式的值: \\
+    \begin{enumerate*}[1.]
+    \item $\frac{cos\alpha-5sin\alpha}{3cos\alpha+sin\alpha}$; 
+    \item $\frac{sin^2\alpha-sin\alpha cos\alpha-3cos^2\alpha}{5sin\alpha cos\alpha+sin^2\alpha+1}$; 
+    \item $2sin^2\alpha-sin\alpha cos\alpha+cos^2\alpha$. 
+    \end{enumerate*}
+    \begin{jieda}
+    \begin{enumerate}[1.]
+    \item $\frac{cos\alpha-5sin\alpha}{3cos\alpha+sin\alpha} = \frac{1-5tan\alpha}{3+tan\alpha} = \frac{13-16\sqrt2}{7}$; 
+    \item $\frac{sin^2\alpha-sin\alpha cos\alpha-3cos^2\alpha}{5sin\alpha cos\alpha+sin^2\alpha+1} = \frac{sin^2\alpha-sin\alpha cos\alpha-3cos^2\alpha}{5sin\alpha cos\alpha+2sin^2\alpha+cos^2\alpha} \\
+    = \frac{tan^2\alpha-tan\alpha -3}{5 tan\alpha+2tan^2\alpha + 1} = -\frac{1}{5}$; 
+    \item $2sin^2\alpha-sin\alpha cos\alpha+cos^2\alpha = \frac{2sin^2\alpha-sin\alpha cos\alpha+cos^2\alpha}{sin^2\alpha + cos^2\alpha} \\
+    = \frac{2tan^2\alpha-tan\alpha+1}{tan^2\alpha + 1} = \frac{5-\sqrt{2}}{3}$. 
+    \end{enumerate}
+    \end{jieda}   
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+    \item 化简：$\frac{sin(2\pi - \alpha) cos(\pi + \alpha)cos(\frac{\pi}{2}+\alpha)cos(\frac{11\pi}{2}-\alpha)}{cos(\pi - \alpha)sin(3\pi-\alpha)sin(-\pi-\alpha)sin(\frac{9\pi}{2}+\alpha)}$
+        \begin{jieda}
+            原式 \begin{align*}
+                & = \frac{sin(-\alpha) cos(\pi + \alpha)cos(\frac{\pi}{2}+\alpha)cos(-\frac{\pi}{2}-\alpha)}{cos(\pi - \alpha)sin(\pi-\alpha)sin(-\pi-\alpha)sin(\frac{\pi}{2}+\alpha)} \\
+            & = \frac{(-sin\alpha) (-cos\alpha) (-sin\alpha)cos(\frac{\pi}{2} + \alpha)}{(-cos\alpha)(sin\alpha)(-sin(\pi+\alpha))(cos\alpha)} \\
+            & = \frac{(-sin\alpha) (-cos\alpha) (-sin\alpha)(-sin\alpha)}{(-cos\alpha)(sin\alpha)(sin\alpha)(cos\alpha)} \\ & = -tan\alpha
+            \end{align*}
+        \end{jieda}
+           
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+        \item \begin{enumerate}
+            \item 已知$sin(\frac{\pi}{3}-\alpha) = \frac{1}{2}$，求$cos(\frac{\pi}{6} + \alpha)$的值.
+            \item 已知$cos(\frac{5\pi}{12}+x) = \frac{1}{3}$，且$x \in (-\pi, -\frac{\pi}{2})$，求$cos(\frac{\pi}{12} - x)$的值.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 因为$(\frac{\pi}{3}-\alpha) + (\frac{\pi}{6} + \alpha) = \frac{\pi}{2}$，所以$cos(\frac{\pi}{6} + \alpha) = cos(\frac{\pi}{2} - (\frac{\pi}{3} - \alpha)) = sin(\frac{\pi}{3} - \alpha) = \frac{1}{2}$
+                \item 因为$(\frac{5\pi}{12}+x) + (\frac{\pi}{12} - x) = \frac{\pi}{2}$，所以$cos(\frac{\pi}{12} - x) = cos(\frac{\pi}{2} - (\frac{5\pi}{12}+x)) = sin(\frac{5\pi}{12}+x)$ \\
+                因为$x \in (-\pi, -\frac{\pi}{2})$，所以$\frac{5\pi}{12}+x \in (-\frac{7\pi}{12}, -\frac{\pi}{12})$，又因为$cos(\frac{5\pi}{12}+x) = \frac{1}{3}$，所以$\frac{5\pi}{12}+x$是第四象限角，故$sin(\frac{5\pi}{12}+x) = -\sqrt{1 - cos^2(\frac{5\pi}{12}+x)} = -\sqrt{1 - \frac{1}{9}} = \frac{-2\sqrt{2}}{3}$
+            \end{enumerate}
+            \ps 化简求值的问题，找到已知和未知之间特殊的数量关系可以简化问题.
+        \end{jieda}
+           
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+        \item 已知$sin\theta, cos\theta$是关于$x$的方程$x^2 - ax + a  = 0(a \in \mathbf{R})$的两根，
+        \begin{enumerate*}
+            \item 求$cos^3(\frac{\pi}{2} - \theta) + sin^3(\frac{\pi}{2} + \theta)$的值
+            \item 求$tan(\pi - \theta) - \frac{1}{tan\theta}$的值
+        \end{enumerate*}
+        \begin{jieda}
+            根据韦达定理有$\left \{ \begin{array}{l}
+                 sin\theta + cos\theta = a  \\
+                 sin\theta \cdot cos\theta = a
+            \end{array} \right.$，由$\Delta \geq 0$有$a \in (-\infty, 0] \cup [4, +\infty)$ \\
+            $(sin\theta + cos\theta)^2 = 1 + 2sin\theta \cdot cos\theta = 1 + 2a = a^2$，解得$a = 1 \pm \sqrt{2}$，结合$y = sinx + cosx$的取值范围以及$a \in (-\infty, 0] \cup [4, +\infty)$可知,$a = 1 - \sqrt{2}$
+            \begin{enumerate}
+            \item $cos^3(\frac{\pi}{2} - \theta) + sin^3(\frac{\pi}{2} + \theta) = cos^3\theta + sin^3\theta = (sin\theta + cos\theta)(sin^2\theta + cos^2\theta - sin\theta cos\theta) = a \cdot (1-a) = (1-\sqrt{2})(\sqrt{2}) = \sqrt{2} - 2$ 
+            \item $tan(\pi - \theta) - \frac{1}{tan\theta} = -(tan\theta + \frac{1}{tan\theta}) = -(\frac{sin\theta}{cos\theta} + \frac{cos\theta}{sin\theta}) = - (\frac{1}{sin\theta \cdot cos\theta}) = -\frac{1}{a} = \frac{1}{\sqrt{2} - 1} = \sqrt{2}+1$
+        \end{enumerate}
+        \end{jieda}
+           
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+        \item 在$\triangle ABC$中，若$sin(2\pi - A) = -\sqrt{2}sin(\pi - B)$，$\sqrt{3}cosA = -\sqrt{2}cos(\pi - B)$，求$\triangle ABC$ 的三个内角.
+        \begin{jieda}
+            $sin(2\pi - A) = -\sqrt{2}sin(\pi - B)$即$sinA =\sqrt{2}sinB$ \\
+            $\sqrt{3}cosA = -\sqrt{2}cos(\pi - B)$即$\sqrt{3}cosA = \sqrt{2}cosB$ \\
+            故有$sin^2A + cos^2B = 2sin^2B + \frac{2}{3}cos^2B = \frac{4}{3}sin^2B + \frac{2}{3} = 1$，即$sin^2B = \frac{1}{4}$ \\
+            因此$sinB = \frac{1}{2}, sinA = \frac{\sqrt{2}}{2}$，因为$B$为三角形内角，$sinB = \frac{1}{2}$，所以$B = \frac{\pi}{6}$或$B = \frac{5\pi}{6}$，同理$A = \frac{\pi}{4}$或$\frac{3\pi}{4}$ \\
+            若$B = \frac{5\pi}{6}$，则必有$A+B > pi$，不符合要求，因此$B = \frac{\pi}{6}, cosB = \frac{\sqrt{3}}{2}$，故$cosA = \frac{\sqrt{2}}{2}$，因此$A = \frac{\pi}{4}$. 故$C = \pi - A - B = \frac{7\pi}{12}$
+        \end{jieda}
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+\end{enumerate}

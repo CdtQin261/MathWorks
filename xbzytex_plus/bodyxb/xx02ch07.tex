@@ -1,0 +1,907 @@
+\subsection*{条件概率}
+
+A组
+
+
+\begin{enumerate}
+
+\item 已知 $P(A|B)=\dfrac{3}{7}$， $P(B)=\dfrac{7}{9}$，则 $P(AB)=$\blkda{$\dfrac{1}{3}$}
+
+\item 将一枚骰子连续投掷两次，事件$A=$“得到的两次点数之和为偶数”，$B=$“得到的两次点数均为偶数”，则 $P(B|A)=$\blkda{$\dfrac{1}{2}$}
+
+\item 设$A$，$B$是两个事件，且$B$发生$A$必定发生， $0<P(A)<1$，$0<P(B)<1$，给出下列各式，其中正确的是\dotfill{(\kh{C})}
+\xx{$P(A+B)=P(B)$}{$P(B|A)=\dfrac{P(A)}{P(B)}$}{$P(A|B)=1$}{$P(AB)=P(A)$}
+
+\item 将三颗骰子各掷一次，设事件 $A=$“三个点数都不同”， $B=$“至少出现一个$3$点”，则条件概率$P(A|B)$， $P(B|A)$分别是\dotfill{(\kh{A})}
+\xx{$\dfrac{60}{91}$， $\dfrac{1}{2}$}{$\dfrac{1}{2}$， $\dfrac{60}{91}$}{$\dfrac{5}{18}$， $\dfrac{60}{91}$}{$\dfrac{91}{216}$， $\dfrac{1}{2}$}
+
+\end{enumerate}
+
+B组
+
+\begin{enumerate}
+
+\item 甲乙二人争夺一场围棋比赛的冠军，若比赛为“三局两胜”制（无平局），甲在每局比赛中获胜的概率均为 $\dfrac{2}{3}$ 且各局比赛结果相互独立，则在甲获得冠军的条件下，比赛进行了三局的概率为\blkda{$\dfrac{2}{5}$}
+
+\item 若随机事件$A$，$B$满足 $P(A)=\dfrac{1}{3},P(B)=\dfrac{1}{2},P(A+B)=\dfrac{3}{4}$，则 $P(A|B)=$\blkda{$\dfrac{1}{6}$}
+
+\item 已知$0<P(A)<1$，且 $P(B|A)=P(B)$ 若 $P(\overline{A})=0.6,P(B|\overline{A})=0.3$，则 $P(AB)=$\blkda{$\dfrac{0.12}{}$}
+
+\item 已知随机事件 $A$，$B$，若 $P(B|A)=\dfrac{3}{5},P(\overline{A}|B)=\dfrac{4}{7},P(B)=\dfrac{7}{15}$，则$P(A)=$\blkda{$\dfrac{1}{3}$}
+
+\item 设$A$，$B$是两个随机事件，已知 $P(A)=\dfrac{3}{5}$， $P(B)=\dfrac{2}{3}$， $P(\overline{A}|B)=\dfrac{2}{5}$ 记 $C=A\cup B$，则$P(A|C)=$\blkda{$\dfrac{9}{13}$}
+
+\item 假设$A$，$B$是两个事件，且 $P(A)>0,P(B)>0$，则下列结论一定正确的是\dotfill{(\kh{A})}
+\xx{$P(A|B)P(B)=P(AB)$}{$P(A|B)=P(B|A)$}{$P(A|B)\le P(A)P(B)$}{$P(A|B)\le P(A)$}
+
+\item 某食物的致敏率为$2\%$，在对该食物过敏的条件下，嘴周产生皮疹的概率为$99\%$，则某人食用该食物过敏且嘴周产生皮疹的概率为\blkda{$1.98\% $}
+
+\item 在$5$道试题中有$2$道代数题和$3$道几何题，每次从中抽出$1$道题，抽出的题不再放回，则在第$1$次抽到代数题的条件下，第$2$次抽到几何题的概率为\blkda{$\dfrac{3}{4}$}
+
+\item 袋中有大小和形状都相同的$3$个白球和$2$个黑球，现从袋中不放回地依次抽取两个球，则在第一次取到白球的条件下，第二次也取到白球的概率是\blkda{$\dfrac{1}{2}$}
+
+\item 已知事件 $A$，$B$，且 $P(A)=\dfrac{1}{3},P(B|A)=\dfrac{1}{5},P(B|\overline{A})=\dfrac{2}{5}$，则$P(B)$等于\blkda{$\dfrac{1}{3}$}
+
+\item 已知 $P(A)=0.4$， $P(B)=0.5$， $P(A|B)=0.6$，则$P(B|A)$为\blkda{0.75}
+
+\item 已知某地区内猫的寿命超过$10$岁的概率为$0.9$，超过$12$岁的概率为$0.6$，那么该地区内，一只寿命超过$10$岁的猫的寿命超过$12$岁的概率为\blkda{$\dfrac{2}{3}$}
+
+\item 将一枚质地均匀的骰子连续抛掷两次，先后出现的点数分别为$x,y$，记事件$A$为“$xy>9$”，事件$B$为“$x\ne y$”，则 $P(B|A)=$\blkda{$\dfrac{16}{19}$}
+
+\item 抛掷红，蓝两个骰子，已知两个骰子的点数不同，求其中至少有一个为$6$点的概率。
+\begin{jieda}
+    $\dfrac{1}{3}$
+\end{jieda}
+
+
+\item 抛掷一颗质地均匀的骰子，样本空间 $\Omega=\{1,2,3,4,5,6\}$，事件 $A=\{1,3,5\}$， $B=\{2,3,5,6\}$，求$P(A)$、$P(B)$、$P(AB)$、$P(A|B)$。
+\begin{jieda}
+ $P(A)=\dfrac{1}{2}$\\
+        $P(B)=\dfrac{2}{3}$\\
+        $P(AB)=\dfrac{1}{3}$\\
+        $P(A|B)=\dfrac{1}{2}$
+\end{jieda}
+
+\item 一袋中有$6$个黑球，$4$个白球。
+\begin{enumerate}
+\item 依次取出$3$个球，不放回，已知第一次取出的是白球，求第三次取到黑球的概率；
+\item 有放回地依次取出$3$球，已知第一次取的是白球，求第三次取到黑球的概率。
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 设事件 $A$ 为 “第一次取到白球”,事件 $B$ 为 “第二次取
+到白球”,事件 $C$ 为 “第三次取到白球”.
+则在事件 $A$ 发生的条件下,袋中只剩 6 个黑球和 3 个白球,则 $P\left( {\bar{C} \mid  A}\right)  = \dfrac{n\left( {A\bar{C}}\right) }{n\left( A\right) } = \dfrac{{{C}}_{4}^{1}\left( {{{C}}_{3}^{1}{{C}}_{6}^{1} + {{A}}_{6}^{2}}\right) }{{{C}}_{4}^{1} \cdot  {{A}}_{9}^{2}} = \dfrac{2}{3}$ .
+        \item 因为每次取之前袋中球的情况不变,
+所以 $n$ 次取球的结果互不影响,所以 $P\left( \bar{C}\right)  = \dfrac{6}{10} = \dfrac{3}{5}$ .
+    \end{enumerate}
+\end{jieda}
+
+\end{enumerate}
+
+\clearpage
+\subsection*{全概率公式\&贝叶斯公式}
+
+
+\begin{enumerate}
+
+\item 某大学有A，B两家餐厅，某同学第$1$天午餐时随机地选择一家餐厅用餐，如果第一天去A餐厅，那么第$2$天去A餐厅的概率是$0.4$；如果第一天去B餐厅，那么第二天去A餐厅的概率是$0.8$；则该同学第$2$天去A餐厅用餐的概率是\blkda{0.6}
+
+\item 为了提升全民身体素质，学校十分重视学生体育锻炼，某校篮球运动员进行投篮练习，如果他前一球投进则后一球投进的概率为$\dfrac{3}{4}$；如果他前一球投不进则后一球投进的概率为$\dfrac{1}{4}$。若他第$1$球投进的概率为$\dfrac{3}{4}$，则他第$2$球投进的概率为\blkda{$\dfrac{5}{8}$}
+
+\item 已知在所有男子中有$5\%$患有色盲症，在所有女子中有$0.25\%$患有色盲症，随机抽一人发现患色盲症，其为男子的概率为\blkda{$\dfrac{20}{21}$}（设男子和女子的人数相等）
+
+\item 已知某地区$7\%$的男性和$0.49\%$的女性患色盲，假如男性、女性各占一半，从中随机选一人，则此人恰是色盲的概率是\dotfill{(\kh{D})}
+\xx{$0.01245$}{$0.05786$}{$0.02865$}{$0.03745$}
+
+\item 下列命题中，不正确的是\dotfill{(\kh{D})}
+\xx{若事件$A$、$B$互斥，则$P(A\cup B)=P(A)+P(B)$}{若事件$A$、$B$互为独立，则$P(\overline{A}\overline{B})=P(\overline{A})P(\overline{B})$}{若事件$A$、$B$、$C$两两互斥，则$P(A\cup B\cup C)=P(A)+P(B)+P(C)$}{若事件$A$、$B$、$C$两两独立，则$P(ABC)=P(A)P(B)P(C)$}
+
+\item 有甲、乙两个袋子，甲袋中有$2$个白球，$1$个红球，乙袋中有$2$个红球，一个白球，这$6$个球手感上不可区别，今从甲袋中任取一球放入乙袋，搅匀后再从乙袋中任取一球，此球是红球的概率为\blkda{$\dfrac{7}{12}$}，若已知取到一个红球，则从甲袋放入乙袋的是白球的概率为\blkda{$\dfrac{4}{7}$}
+
+\item 甲乙两个箱子中各装有$5$个大小、质地均相同的小球，其中甲箱中有$3$个红球、$2$个白球，乙箱中有$2$个红球、$3$个白球；抛一枚质地均匀的硬币，若硬币正面向上，从甲箱中随机摸出一个球；若硬币反面向上，从乙箱中随机摸出一个球。则摸到红球的概率为\blkda{$\dfrac{1}{2}$}
+
+\item 袋中装有编号为$1,2,\cdots,N$的$N$个球，先从袋中任取一球，如该球不是$1$号球就放回袋中，是$1$号球就不放回，然后再摸一次，则这一次取到$2$号球的概率为\blkda[5]{$\dfrac{N^2-N+1}{N^2(N-1)}$}
+
+\item 某种疾病能导致心肌受损害，若第一次患该病，则心肌受损害的概率为$0.3$，第一次患病心肌未受损害而第二次再患该病时，心肌受损害的概率为$0.6$，试求某人患病两次心肌未受损害的概率\blkda{$0.28$}
+
+\item 甲箱的产品中有$5$个正品和$3$个次品，乙箱的产品中有$4$个正品和$3$个次品。
+\begin{enumerate}
+\item 从甲箱中任取$2$个产品，求这$2$个产品都是次品的概率；
+\item 若从甲箱中任取$2$个产品放入乙箱中，然后再从乙箱中任取一个产品，求取出的这个产品是正品的概率。
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 从甲箱中任取 2 个产品的事件数为 ${{C}}_{8}^{2} = \dfrac{8 \times  7}{2}$
+$= {28}$ ,这 2 个产品都是次品的事件数为 ${{C}}_{3}^{2} = 3,\therefore$ 这 2
+个产品都是次品的概率为 $\dfrac{3}{28}$ . 
+        \item 设事件 $A$ 为“从
+乙箱中取出的一个产品是正品”,事件 ${B}_{1}$ 为 “从甲箱
+中取出 2 个产品都是正品”,事件 ${B}_{2}$ 为 “从甲箱中取
+出 1 个正品 1 个次品”,事件 ${B}_{3}$ 为 “从甲箱中取出 2
+个产品都是次品”,则事件 ${B}_{1}$ 、事件 ${B}_{2}$ 、事件 ${B}_{3}$ 彼此
+互斥. $P\left( {B}_{1}\right)  = \dfrac{{{C}}_{5}^{2}}{{{C}}_{8}^{2}} = \dfrac{5}{14},P\left( {B}_{2}\right)  = \dfrac{{{C}}_{5}^{1}{{C}}_{3}^{1}}{{{C}}_{8}^{2}} = \dfrac{15}{28},P\left( {B}_{3}\right)$
+$= \dfrac{{{C}}_{3}^{2}}{{{C}}_{8}^{2}} = \dfrac{3}{28},P\left( {A \mid  {B}_{1}}\right)  = \dfrac{2}{3},P\left( {A \mid  {B}_{2}}\right)  = \dfrac{5}{9},P\left( {A \mid  {B}_{3}}\right)$
+$= \dfrac{4}{9},\therefore P\left( A\right)  = P\left( {B}_{1}\right) P\left( {A \mid  {B}_{1}}\right)  + P\left( {B}_{2}\right) P\left( {A \mid  {B}_{2}}\right)$
+$+ P\left( {B}_{3}\right)  \cdot  P\left( {A \mid  {B}_{3}}\right)  = \dfrac{5}{14} \times  \dfrac{2}{3} + \dfrac{15}{28} \times  \dfrac{5}{9} + \dfrac{3}{28} \times  \dfrac{4}{9}$
+$= \dfrac{7}{12}$ .
+    \end{enumerate}
+\end{jieda}
+
+
+\end{enumerate}
+
+\clearpage
+\subsection*{随机变量与分布}
+
+A组
+\begin{enumerate}
+\item 将一颗均匀骰子掷两次,不能作为随机变量的是\dotfill{(\kh{A})}
+\xx{两次掷得的点数}{两次掷得的点数之和}{两次掷得的最大点数}{第一次掷得的点数减去第二次掷得的点数的差}
+
+\item 下列选项中的随机变量不服从伯努利分布的是\dotfill{(\kh{A})}
+\xx{抛掷一枚骰子,所得点数$X$}{某射击手射击一次,击中目标的次数$X$}{从装有除颜色外其余均相同的5个红球,3个白球的袋中任取1个球,设$X=\left\{\begin{array}{ll}1, & \text{取出白球}\\ 0, & \text{取出红球}\end{array}\right.$}{某医生做一次手术,手术成功的次数$X$}
+
+\item 袋中装有除颜色外其余均相同的10个红球,5个黑球,每次任取一球,若取到黑球,则放入袋中,直到取到红球为止,若抽取的次数为$X$,则表示“放回4个球”的事件为\dotfill{(\kh{B})}
+\xx{$X=4$}{$X=5$}{$X=6$}{$X\le4$}
+
+\item 已知离散型随机变量$X$的分布列为
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$X$ & $0$ & $1$ & $2$ \\
+\hline
+$P$ & $0.36$ & $1-2q$ & $q^2$ \\
+\hline
+\end{tabular}
+\end{center}
+则常数$q=$\blkda{0.2}.
+
+\item 已知分布列 $\begin{pmatrix}Y&1&2&3&4&5&6\\ P&0.1&x&0.35&0.1&0.15&0.2\end{pmatrix}$ . 则(1) $x=$\blkda{0.1}; (2) $P(Y>3)=$\blkda{0.45}; (3) $P(1<Y\le 4)=$\blkda{0.55}.
+\end{enumerate}
+ 
+B组
+
+\begin{enumerate}
+
+
+\item 设随机变量$X$的分布列为 $P(X=i)=\dfrac{i}{2a}(i=1,2,3)$ ,则 $P(X\ge2)=$\blkda{$\dfrac{5}{6}$}.
+
+\item 数字1,2,3,4任意排成一列,如果数字$k$恰好出现在第$k$个位置上,则称有一个“巧合”,求“巧合”个数的分布列\blkda[8]{$\begin{pmatrix}
+    0&1&2&4\\$\dfrac{3}{8}$ &$\dfrac{1}{3}$ & $\dfrac{1}{4}$&$\dfrac{1}{24}$
+\end{pmatrix}$}.
+
+\item 随机变量的概率分布规律为 $P(X=n)=\dfrac{a}{n(n+1)}(n=1,2,3,4)$ ,其中$a$为常数,则 $P\left(\dfrac{9}{4}<X<\dfrac{13}{4}\right)$ 的值为\blkda{$\dfrac{5}{48}$}.
+
+\item 设$X$是一个离散型随机变量,其分布列为 $\begin{pmatrix}X&-1&0&1\\ p&\dfrac{1}{3}&2-3q&q^{2}\end{pmatrix}$, 则$q$的值为\blkda{$\dfrac{3}{2}-\dfrac{\sqrt{33}}{6}$}.
+
+\item 某校为宣传《中华人民共和国未成年人保护法》,特举行《中华人民共和国未成年人保护法》知识竞赛,规定两人为一组,每一轮竞赛中,小组两人分别答两题,若答对题数不少于3,则被称为“优秀小组”,已知甲、乙两位同学组成一组,且同学甲和同学乙答对题的概率分别为$p_1, p_2$.若 $p_1=\dfrac{3}{4}, p_2=\dfrac{2}{3}$,则在第一轮竞赛中他们获得“优秀小组”的概率为\dotfill{(\kh{A})}
+\xx{$\dfrac{2}{3}$}{$\dfrac{2}{5}$}{$\dfrac{1}{2}$}{$\dfrac{1}{3}$}
+
+\item 若随机变量$X$服从两点分布,且 $P(X=0)=0.8$.令 $Y=3X-2,$ 则 $P(Y=1)=$\blkda{0.2}.
+
+\item 已知随机变量的分布列为: $\begin{pmatrix}\xi&-2&0&2&3\\ p&\dfrac{1}{4}&\dfrac{1}{4}&\dfrac{1}{4}&a\end{pmatrix},$ 若 $P(\xi^{2}\le x)=\dfrac{3}{4},$ 则实数$x$的最小值为\blkda{4}.
+
+\item 某工厂的某种产品成箱包装,每箱200件,每一箱产品在交付用户之前要对产品作检验,如检验出不合格品,则更换为合格品,检验时,先从这箱产品中任取20件作检验,再根据检验结果决定是否对余下的所有产品作检验,设每件产品为不合格品的概率都为 $p(0<p<1)$,且各件产品是否为不合格品相互独立,记20件产品中恰有2件不合格品的概率为 $f(p)$,则 $f(p)$ 的最大值点$p_0=$\blkda{$\dfrac{1}{10}$}.
+
+\item 某人有5把钥匙,其中只有一把能打开某一扇门,今任取一把试开,不能打开者除去,求打开此门所需试开次数$X$的分布列.
+\begin{jieda}
+    设 $X$ 为打开此门所需的试开次数,则 $X$ 的可能取值为
+1,2,3,4,5.
+$X = k$ 表示前 $k - 1$ 次没打开此门,第 $k$ 次才打开了此门.
+$P\left( {X = 1}\right)  = \dfrac{1}{5},P\left( {X = 2}\right)  = \dfrac{{{C}}_{4}^{1}}{{{C}}_{5}^{1}} \cdot  \dfrac{1}{4} = \dfrac{1}{5},$
+$P\left( {X = 3}\right)  = \dfrac{{{C}}_{4}^{2}}{{{C}}_{5}^{2}} \cdot  \dfrac{1}{3} = \dfrac{1}{5},P\left( {X = 4}\right)  = \dfrac{{{C}}_{4}^{3}}{{{C}}_{5}^{3}} \cdot  \dfrac{1}{2} = \dfrac{1}{5},$
+$P\left( {X = 5}\right)  = \dfrac{{{C}}_{4}^{4}}{{{C}}_{5}^{4}} \cdot  1 = \dfrac{1}{5},$
+故随机变量 $X$ 的概率分布列为
+$\begin{pmatrix}
+    $X$& 1& 2& 3& 4& 5\\
+$P$ & $\dfrac{1}{5}$ & $\dfrac{1}{5}$ &$\dfrac{1}{5}$& $\dfrac{1}{5}$ &$\dfrac{1}{5}$
+\end{pmatrix}$
+\end{jieda}
+
+\item 某同学参加学校组织的科普知识竞赛,需要回答三个问题,其规则是:每题回答正确得100分,回答不正确的得-100分,假设这名同学每题回答正确的概率为0.8,且各题回答正确与否相互之间没有影响.
+\begin{enumerate}
+\item 求这名同学回答三个问题的总分的概率分布;
+\item 求这名同学总分不为负分(即$\ge0$)的概率.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+    \item $\xi$ 的可能值为-300,-100,100,300.
+P $\left( {\xi  =  - {300}}\right)  = {0.2}^{3} = {0.008},$ P $\left( {\xi  =  - {100}}\right)$
+$= 3 \times  {0.2}^{2} \times  {0.8} = {0.096}$ ,
+P $\left( {\xi  = {100}}\right)  = 3 \times  {0.2} \times  {0.8}^{2} = {0.384},$ P $\left( {\xi  = {300}}\right)$
+$= {0.8}^{3} = {0.512}$ ,
+所以 $\xi$ 的概率分布为
+$\begin{pmatrix}
+    ξ& -300& -100& 100 &300\\
+    P & 0.008 & 0.096 & 0.384 &0.512
+\end{pmatrix}$
+    \item 这名同学总得分不为负分的概率为 ${P}\left( {\xi  \geq  0}\right)$$= {0.384} + {0.512} = {0.896}$ .
+    \end{enumerate}
+\end{jieda}
+
+\item 改革开放以来,人们的支付方式发生了巨大转变,近年来,移动支付已成为主要支付方式之一,为了解某校学生上个月A,B两种移动支付方式的使用情况,从全校学生中随机抽取了100人,发现样本中A,B两种支付方式都不使用的有5人,样本中仅使用A和仅使用B的学生的支付金额分布情况如下:
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+支付金额(元) & $(0, 1000]$ & $(1000, 2000]$ & 大于2000 \\
+支付方式 & & & \\
+\hline
+仅使用A & 18人 & 9人 & 3人 \\
+\hline
+仅使用B & 10人 & 14人 & 1人 \\
+\hline
+\end{tabular}
+\end{center}
+\begin{enumerate}
+\item 从全校学生中随机抽取1人,估计该学生上个月A,B两种支付方式都使用的概率;
+\item 从样本仅使用A和仅使用B的学生中各随机抽取1人,以$X$表示这2人中上个月支付金额大于1000元的人数,求$X$的分布列;
+\item 已知上个月样本学生的支付方式在本月没有变化,现从样本仅使用A的学生中,随机抽查3人,发现他们本月的支付金额都大于2000元,根据抽查结果,能否认为样本仅使用A的学生中本月支付金额大于2000元的人数有变化?说明理由.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 由题意得:从全校所有学生中随机抽取的100人中,A,B两种支付方式都不使用的有5人,仅使用A的有30人,仅使用B的有25人,所以A,B两种支付方式都使用的人数有：100-5-30-25=40,$\therefore$ 从全校学生中随机抽取1人,估计该学生上个月A,B两种支付方式都使用的概率 $P = \dfrac{40}{100} = {0.4}$ .
+        
+    \item 分布列为$\begin{pmatrix}
+        0 & 1 & 2\\
+        \dfrac{6}{25} & \dfrac{13}{25} & \dfrac{6}{25}
+    \end{pmatrix}$
+    
+    \item 记事件E为"从样本仅使用A的学生中随机抽查3人,他们本月的支付金额都大于2000元",假设样本仅使用 ${A}$ 的学生中,本月支付金额额大于2000元的人数没有变化,则由上个月的样本数据得 $P\left( E\right)  = \dfrac{1}{{C}_{30}^{3}} = \dfrac{1}{4060}$ ,\\
+    答案示例1：可以认为有变化,理由如下：\\
+    $P\left( E\right)$ 比较小,概率比较小的事件一般不容易发生,
+    一旦发生,就有理由认为本月的支付金额发生了变化,
+    $\therefore$ 可以认为有变化.\\
+    答案示例2：无法确定有没有变化,理由如下：
+    事件E是随机事件,P(E)比较小,一般不容易发生, 但还是有可能发生,
+    $\therefore$ 无法确定有没有变化.
+    \end{enumerate}
+\end{jieda}
+\end{enumerate}
+
+
+
+\clearpage
+
+
+\subsection*{期望与方差}
+
+
+A组
+
+\begin{enumerate}
+\item 随机变量$X$的方差,反映其取值的\dotfill{(\kh{C})}
+\xx{平均水平}{分布规律}{波动大小}{最大值和最小值}
+
+\item 已知离散型随机变量$X$的分布列如下表,则$X$的数学期望 $E(X)=$\blkda{2.1}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$X$ & $1$ & $2$ & $3$ \\
+\hline
+$P$ & $0.2$ & $0.5$ & $0.3$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\item 已知随机变量$X$的分布列如下:若 $Y=2X+1$,则 $E(Y)=$\blkda{5}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$X$ & $1$ & $2$ & $3$ \\
+\hline
+$P$ & $0.3$ & $m$ & $0.3$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\item 已知随机变量的分布为 $\begin{pmatrix}1&3&5\\ 0.4&0.1&m\end{pmatrix}$ 则$X$的方差为\blkda{3.56}
+
+\item 已知离散型随机变量的分布列如下,若 $E(\xi)=0$,则 $D(\xi)=$\blkda{$\dfrac{2}{5}$}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$\xi$ & $-1$ & $0$ & $1$ \\
+\hline
+$P$ & $m$ & $3m$ & $n$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{enumerate}
+
+
+B组
+
+\begin{enumerate}
+\item 已知离散型随机变量$X$的分布列如下,若 $E(X)=2$,则$m=$\blkda{0.3}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$X$ & $0$ & $1$ & $2$ & $3$ & $4$ \\
+\hline
+$P$ & $0.2$ & $0.1$ & $0.3$ & $m$ & $n$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\item 设$0<a\le b$,随机变量$X$的分布是:
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$X$ & $1$ & $2$ & $4$ \\
+\hline
+$P$ & $a$ & $b$ & $a+b$ \\
+\hline
+\end{tabular}
+\end{center}
+则 $E(X)$ 的取值范围是\blkda{$[\dfrac{11}{4},3)$}
+
+\item 有甲、乙两种水稻,测得每种水稻各10株的分蘖数据,计算出样本均值$E[X_{\text{甲}}]=E[X_{\text{乙}}]$,方差分别为 $D[X_{\text{甲}}]=11$, $D[X_{\text{乙}}]=3.4$.由此可以估计 \dotfill{(\kh{B})}
+\xx{甲种水稻比乙种水稻分蘗整齐}{乙种水稻比甲种水稻分蘗整齐}{甲、乙两种水稻分蘗整齐程度相同}{甲、乙两种水稻分蘖整齐程度不能比较}
+
+\item 已知随机变量$X$的取值为0,1,2,若 $P(X=0)=0.2$, $E[X]=1$,则标准差为\blkda{$\dfrac{\sqrt{10}}{5}$}
+
+\item 2021年7月24日,国务院办公厅印发《关于进一步减轻义务教育阶段学生作业负担和校外培训负担的意见》.“双减”政策指出,要全面压减作业总量和时长,某校在“双减”前学生完成作业时长为随机变量$\xi$,$\xi$的期望为4,标准差为3,在“双减”后,该校学生完成作业的时长 $\eta=0.5\xi-0.5$ 的期望为$\mu$,标准差为$\sigma$,则\dotfill{(\kh{A})}
+\xx{$\mu=1.5$, $\sigma=1.5$}{$\mu=1.5$, $\sigma=2$}{$\mu=2,$ $\sigma=1.5$}{$\mu=2,$ $\sigma=2$}
+
+\item 一个均匀小正方体的六个面中,三个面上标有数0,两个面上标有数1,一个面上标有数2,将这个小正方体抛掷2次,则向上两个数的积的均值是\blkda{$\dfrac{4}{9}$}
+
+\item 设$0<a<1$,则随机变量$X$的分布列是 $\begin{pmatrix}X&0&a&1\\ P&\dfrac{1}{3}&\dfrac{1}{3}&\dfrac{1}{3}\end{pmatrix}$ 则当$a$在 $(0,1)$ 内增大时,\dotfill{(\kh{D})}
+\xx{$D[X]$ 增大}{$D[X]$ 减小}{$D[X]$ 先增大后减小}{$D[X]$ 先减小后增大}
+
+\item 已知甲盒中有2个红球,1个蓝球,乙盒中有1个红球,2个蓝球,从甲乙两个盒中各取1球放入原来为空的丙盒中,现从甲盒中取1个球,记红球的个数为 $\xi_{1}$ ,从乙盒中取1个球,记红球的个数为 $\xi_{2}$ ,从丙盒中取1个球,记红球的个数为 $\xi_{3}$,则下列说法正确的是\dotfill{(\kh{C})}
+\xx{$E[\xi_{1}]>E[\xi_{3}]>E[\xi_{2}],D[\xi_{1}]=D[\xi_{2}]>D[\xi_{3}]$}{$E[\xi_{1}]<E[\xi_{3}]<E[\xi_{2}],D[\xi_{1}]=D[\xi_{2}]>D[\xi_{3}]$}{$E[\xi_{1}]>E[\xi_{3}]>E[\xi_{2}],D[\xi_{1}]=D[\xi_{2}]<D[\xi_{3}]$}{$E[\xi_{1}]<E[\xi_{3}]<E[\xi_{2}],D[\xi_{1}]=D[\xi_{2}]<D[\xi_{3}]$}
+\begin{jieda}
+    随机变量 ${\xi }_{1}$ 可取值0,1,其中 $P\left( {{\xi }_{1} = 0}\right)  = \dfrac{2}{3} \times  \dfrac{1}{2} =$
+$\dfrac{1}{3},P\left( {{\xi }_{1} = 1}\right)  = \dfrac{1}{3} \times  1 + \dfrac{2}{3} \times  \dfrac{1}{2} = \dfrac{2}{3}$ ,
+故 $E\left( {\xi }_{1}\right)  = \dfrac{2}{3},D\left( {\xi }_{1}\right)  = \dfrac{2}{3} - \dfrac{4}{9} = \dfrac{2}{9}$ .
+随机变量 ${\xi }_{2}$ 可取值0,1,其中 $P\left( {{\xi }_{2} = 0}\right)  = \dfrac{2}{3} \times  \dfrac{1}{2} + \dfrac{1}{3} \times  1 = \dfrac{2}{3}$ ,
+$P\left( {{\xi }_{2} = 1}\right)  = \dfrac{2}{3} \times  \dfrac{1}{2} = \dfrac{1}{3},$
+故 $E\left( {\xi }_{2}\right)  = \dfrac{1}{3},D\left( {\xi }_{2}\right)  = \dfrac{1}{3} - \dfrac{1}{9} = \dfrac{2}{9}$ .
+随机变量 ${\xi }_{3}$ 可取值 0,1,当 ${\xi }_{3} = 0$ 时,丙盒中无红球或有一个红球,
+无红球的概率为 $\dfrac{1}{3} \times  \dfrac{2}{3}$ ,有一个红球的概率为 $\dfrac{2 \times  2}{9} + \dfrac{1}{9}$ ,
+故 $P\left( {{\xi }_{3} = 0}\right)  = \dfrac{1}{3} \times  \dfrac{2}{3} \times  1 + \left( {\dfrac{2 \times  2}{9} + \dfrac{1}{9}}\right)  \times  \dfrac{1}{2} = \dfrac{1}{2},P\left( {{\xi }_{3} = 1}\right)  = 1$
+$- \dfrac{1}{2} = \dfrac{1}{2},$
+故 $E\left( {\xi }_{3}\right)  = \dfrac{1}{2},D\left( {\xi }_{3}\right)  = \dfrac{1}{2} - \dfrac{1}{4} = \dfrac{1}{4}$ .
+综上所述, $E\left( {\xi }_{1}\right)  > E\left( {\xi }_{3}\right)  > E\left( {\xi }_{2}\right) ,D\left( {\xi }_{1}\right)  = D\left( {\xi }_{2}\right)  < D\left( {\xi }_{3}\right)$ ,故选 C.
+\end{jieda}
+
+\item 已知某8个数的期望为5,方差为3,现又加入一个新数据5,此时这9个数的期望记为$E[X]$,方差记为 $D[X]$,则\dotfill{(\kh{B})}
+\xx{$E[X]=5,D[X]>3$}{$E[X]=5,D[X]<3$}{$E[X]<5,D[X]>3$}{$E[X]<5,D[X]<3$}
+
+\item 在一个袋中放入四种不同颜色的球,每种颜色的球各两个,这些球除颜色外完全相同. 现玩一种游戏:游戏参与者从袋中一次性随机抽取4个球,若抽出的4个球恰含两种颜色,获得2元奖金;若抽出的4个球恰含四种颜色,获得1元奖金;其他情况游戏参与者交费1元,设某人参加一次这种游戏所获得奖金为$X$,则$E[X]=$\blkda{$-\dfrac{2}{7}$}
+
+\item 根据以往的经验,某工程施工期间的降水量$X$(单位:mm)对工期的影响如下表:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+降水量$X$ & $X<300$ & $300\le X<700$ & $700\le X<900$ & $X\ge900$ \\
+\hline
+工期延误天数$Y$ & $0$ & $2$ & $6$ & $10$ \\
+\hline
+\end{tabular}
+\end{center}
+历年气象资料表明,该工程施工期间降水量$X$小于300,700,900的概率分别为0.3, 0.7,0.9,则工期延误天数的方差为\blkda{9.8}
+
+\item 已知离散型随机变量$X$的可能取值为 $x_{1}=-1$, $x_{2}=0$, $x_{3}=1$, 且 $E[X]=0.1$, $D[X]=0.89$,则对应 $x_{1},x_{2},x_{3}$ 的概率 $p_{1},p_{2},p_{3}$ 分别为\blkda[5]{0.4,0.1,0.5}
+
+\item 已知离散型随机变量$X$的分布列为: $\begin{pmatrix}X&0&1&2\\ P&a&b&c\end{pmatrix}$ 且$E[X]=\dfrac{3}{2}$ 则当$a^{2}+b^{2}+c^{2}$ 取最小值时,方差 $D[X]=$\blkda{$\dfrac{5}{12}$}
+
+\item 已知随机变量$X$的分布列为 $\begin{pmatrix}X&0&1&x\\ p&\dfrac{1}{2}&\dfrac{1}{3}&p\end{pmatrix}$, 若 $E[X]=\dfrac{2}{3}$
+\begin{enumerate}
+\item 求 $D[X]$ 的值;
+\item 若 $Y=3X-2$,求 $D[Y]$ 的值.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 由题意可得 $\dfrac{1}{2} + \dfrac{1}{3} + p = 1$ ,得 $p = \dfrac{1}{6}$ ,又$E\left( X\right)  = 0 \times  \dfrac{1}{2} + 1 \times  \dfrac{1}{3} + x \times  \dfrac{1}{6} = \dfrac{2}{3}$ ,解得 $x = 2$ .$\therefore D\left( X\right)  = {\left( 0 - \dfrac{2}{3}\right) }^{2} \times  \dfrac{1}{2} + {\left( 1 - \dfrac{2}{3}\right) }^{2} \times  \dfrac{1}{3} + {\left( 2 - \dfrac{2}{3}\right) }^{2}$$\times  \dfrac{1}{6} = \dfrac{5}{9}$ ;
+        \item $\because Y = {3X} - 2,\therefore D\left( Y\right)  = D\left( {{3X} - 2}\right)  = {9D}\left( X\right)  = 9 \times$$\dfrac{5}{9} = 5$ .
+    \end{enumerate}
+\end{jieda}
+
+\item 某校组织一次冬令营活动,有8名同学参加,其中男同学5名,女同学3名,为了活动的需要,要从这8名同学中随机选出3名去执行一项特殊任务,记其中男同学的人数为$X$. 
+\begin{enumerate}
+\item 求去执行任务的同学中有男有女的概率;
+\item 求$X$的分布列及数学期望和方差.
+\end{enumerate}
+\begin{jieda}
+    
+    \begin{enumerate}
+        \item 去执行任务的同学中有男有女的概率为
+$P\left( {X = 1}\right)  + P\left( {X = 2}\right)  = \dfrac{{{C}}_{5}^{1}{{C}}_{3}^{2}}{{{C}}_{8}^{3}} + \dfrac{{{C}}_{5}^{2}{{C}}_{3}^{1}}{{{C}}_{8}^{3}} = \dfrac{15}{56} + \dfrac{15}{28} = \dfrac{45}{56}.$
+    \item $X$ 的取值范围为 $\{ 0,1,2,3\}$ ,
+$P\left( {X = 0}\right)  = \dfrac{{{C}}_{5}^{0}{{C}}_{3}^{3}}{{{C}}_{8}^{3}} = \dfrac{1}{56},$
+$P\left( {X = 1}\right)  = \dfrac{{{C}}_{5}^{1}{{C}}_{3}^{2}}{{{C}}_{8}^{3}} = \dfrac{15}{56},$
+$P\left( {X = 2}\right)  = \dfrac{{{C}}_{5}^{2}{{C}}_{3}^{1}}{{{C}}_{8}^{3}} = \dfrac{15}{28},$
+$P\left( {X = 3}\right)  = \dfrac{{{C}}_{5}^{3}{{C}}_{3}^{0}}{{{C}}_{8}^{3}} = \dfrac{5}{28},$
+故 $X$ 的分布列为
+$\begin{pmatrix}
+    0&  1&  2 &3\\
+ \dfrac{1}{56} & \dfrac{15}{56} & \dfrac{15}{28} & \dfrac{5}{28}
+\end{pmatrix}$
+
+故 $X$ 的数学期望 $E\left( X\right)  = 0 \times  \dfrac{1}{56} + 1 \times  \dfrac{15}{56} + 2 \times  \dfrac{15}{28} + 3 \times  \dfrac{5}{28} = \dfrac{1}{6}$
+(或 $E\left( X\right)  = \dfrac{3 \times  5}{8} = \dfrac{15}{8}$ ).
+方差 $D\left( X\right)  = {\left( 0 - \dfrac{15}{8}\right) }^{2} \times  \dfrac{1}{56} + {\left( 1 - \dfrac{15}{8}\right) }^{2} \times  \dfrac{15}{56} + {\left( 2 - \dfrac{15}{8}\right) }^{2} \times$
+$\dfrac{15}{28} + {\left( 3 - \dfrac{15}{8}\right) }^{2} \times  \dfrac{5}{28} = \dfrac{225}{448}.$
+    \end{enumerate}
+\end{jieda}
+
+\item 设甲、乙两位同学上学期间,每天7:30之前到校的概率均为 $\dfrac{2}{3}$ 假定甲、乙两位同学到校情况互不影响,且任一同学每天到校情况相互独立.
+\begin{enumerate}
+\item 用$X$表示甲同学上学期间的三天中7:30之前到校的天数,求随机变量$X$的分布列和数学期望;
+\item 设为事件“上学期间的三天中,甲同学在7:30之前到校的天数比乙同学在7:30之前到校的天数恰好多2”,求事件发生的概率.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 因为甲同学上学期间的三天中到校情况相互独立,
+且每天 7:30 之前到校的概率均为 $\dfrac{2}{3}$ ,故 $X \sim  B(3$ ,
+$\left. \dfrac{2}{3}\right)$ ,从而 $P\left( {X = k}\right)  = {{C}}_{3}^{k} \times  {\left( \dfrac{2}{3}\right) }^{k} \times  {\left( \dfrac{1}{3}\right) }^{3 - k},k = 0$ ,
+1,2,3. 所以随机变量 $X$ 的分布列为
+$\begin{pmatrix}
+     0& 1& 2& 3\\
+    \dfrac{1}{27} & \dfrac{2}{9} & \dfrac{4}{9}& \dfrac{8}{27}
+\end{pmatrix}$
+
+故随机变量 $X$ 的数学期望 ${EX} = 3 \times  \dfrac{2}{3} = 2$ .
+    \item 设乙同学上学期间的三天中 7:30 之前到校的天数
+为 $Y$ ,则 $Y \sim  B\left( {3,\dfrac{2}{3}}\right)$ ,且 $M = \{ X = 3,Y = 1\}  \cup$
+$\{ X = 2,Y = 0\}$ . 由题意知事件 $\{ X = 3,Y = 1\}$ 与事件
+$\{ X = 2,Y = 0\}$ 互斥,且事件 $\{ X = 3\}$ 与事件 $\{ Y = 1\}$ ,事
+件 $\{ X = 2\}$ 与事件 $\{ Y = 0\}$ 均相互独立,从而由 (1) 知
+$P\left( M\right)  = P\left( {\{ X = 3,Y = 1\} \bigcup \{ X = 2,Y = 0\} }\right)  = P(X =$
+$3,Y = 1) + P\left( {X = 2,Y = 0}\right)  = P\left( {X = 3}\right) P\left( {Y = 1}\right)  +$
+$P\left( {X = 2}\right) P\left( {Y = 0}\right)  = \dfrac{8}{27} \times  \dfrac{2}{9} + \dfrac{4}{9} \times  \dfrac{1}{27} = \dfrac{20}{243}.$
+    \end{enumerate}
+\end{jieda}
+
+\item 某超市计划按月订购一种酸奶,每天进货量相同,进货成本每瓶4元,售价每瓶6元,未售出的酸奶降价处理,以每瓶2元的价格当天全部处理完,根据往年销售经验,每天需求量与当天最高气温(单位:C)有关,如果最高气温不低于25,需求量为500瓶;如果最高气温位于区间$[20,25)$,需求量为300瓶;如果最高气温低于20,需求量为200瓶,为了确定六月份的订购计划,统计了前三年六月份各天的最高气温数据,得下面的频数分布表:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+最高气温 & $[10, 15)$ & $[15, 20)$ & $[20, 25)$ & $[25, 30)$ & $[30, 35)$ & $[35, 40)$ \\
+\hline
+天数 & $25$ & $16$ & $2$ & $36$ & $7$ & $4$ \\
+\hline
+\end{tabular}
+\end{center}
+以最高气温位于各区间的频率代替最高气温位于该区间的概率.
+\begin{enumerate}
+\item 求六月份这种酸奶一天的需求量$X$(单位:瓶)的分布列;
+\item 设六月份一天销售这种酸奶的利润为$Y$(单位:元),当六月份这种酸奶一天的进货量(单位:瓶)为多少时,$Y$的数学期望达到最大值?
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 由题意, $X$ 可能的取值为 200,300,500,由表格数据知$P\left( {X = {200}}\right)  = \dfrac{2 + {16}}{90} = \dfrac{1}{5},P\left( {X = {300}}\right)  = \dfrac{36}{90} = \dfrac{2}{5},$$P\left( {X = {500}}\right)  = \dfrac{{25} + 7 + 4}{90} = \dfrac{2}{5},$所以 $X$ 的分布列为
+        $\begin{pmatrix}
+         200 & 300& 500\\
+         \dfrac{1}{5} & \dfrac{2}{5} & \dfrac{2}{5}
+        \end{pmatrix}$
+
+        \item 由题意,需求量的最小值为 200,最大值为 500,所以只需考虑 ${200} \leq  n \leq  {500}$ 的情形,当 ${300} \leq  n \leq  {500}$ 时,若最高气温不低于 25,则 $Y =$${6n} - {4n} = {2n}$ ;若最高气温位于 $\lbrack {20},{25})$ ,则 $Y = 2 \times  {300} - 2 \times  (n -$${300}) = {1200} - {2n}$ ;若最高气温低于 20,则 $Y = 2 \times  {200} - 2 \times  \left( {n - {200}}\right)  =$${800} - {2n}$ .故 $E\left( Y\right)  = \dfrac{2}{5} \times  {2n} + \dfrac{2}{5}\left( {{1200} - {2n}}\right)  + \dfrac{1}{5}\left( {{800} - {2n}}\right)$$= {640} - \dfrac{2}{5}n$ ,所以当 $n = {300}$ 时, $E\left( Y\right)$ 最大,为 520.当 ${200} \leq  n < {300}$ 时,若最高气温不低于 20,则 $Y =$${6n} - {4n} = {2n}$ ;若最高气温低于 20,则 $Y = 2 \times  {200} - 2\left( {n - {200}}\right)  =$${800} - {2n}$ .故 $E\left( Y\right)  = \dfrac{4}{5} \times  {2n} + \dfrac{1}{5}\left( {{800} - {2n}}\right)  = {160} + \dfrac{6}{5}n <$${160} + \dfrac{6}{5} \times  {300} = {520}.$综上所述,当 $n = {300}$ 时, $Y$ 的数学期望达到最大值 520.
+    \end{enumerate}
+\end{jieda}
+
+\item 根据以往的经验,某工程施工期间的降水量$X$(单位:mm)对工期的影响如下表:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+降水量$X$ & $X<300$ & $300\le X<700$ & $700\le X<900$ & $X\ge900$ \\
+\hline
+工期延误天数$Y$ & $0$ & $2$ & $6$ & $10$ \\
+\hline
+\end{tabular}
+\end{center}
+历年气象资料表明,该工程施工期间降水量小于300,700,900的概率分别为0.3, 0.7, 0.9,求:
+\begin{enumerate}
+\item 工期延误天数的均值(期望);
+\item 在降水量$X$至少是300的条件下,工期延误不超过6天的概率.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 由题意,$P(X<300)=0.3,P(300\leq X<700) =P (X<700) -P (X<300) =0.7-0.3=0.4$，$P\left( {{700} \leq  {X} < {900}}\right)  = P \left( {{X} < {900}}\right)  - P \left( {{X} < {700}}\right)=0.9-0.7=0.2, P (X\geq900) =1-0.9=0.1$
+        
+        $Y$的分布列为
+        $\begin{pmatrix}
+            0& 2& 6& 10\\  
+            0.3& 0.4& 0.2& 0.1
+        \end{pmatrix}$
+        
+        $\therefore E\left( Y\right)  = 0 \times  {0.3} + 2 \times  {0.4} + 6 \times  {0.2} + {10} \times  {0.1} = 3$
+        $D\left( Y\right)  = {\left( 0 - 3\right) }^{2} \times  {0.3} + {\left( 2 - 3\right) }^{2} \times  {0.4} + \left( {6 - 3}\right)$
+        ${}^{2} \times  {0.2} + {\left( {10} - 3\right) }^{2} \times  {0.1} = {9.8}$
+        $\therefore$ 工期延误天数Y的均值为3,方差为9.8；
+        
+        \item $P\left( {X \geq  {300}}\right)  = 1 - P\left( {X < {300}}\right)  = {0.7},P(300\leq X<900) =P (X<900) -P (X<300) = {0.9} - {0.3} = {0.6}$
+        由条件概率可得$P(Y\leq6|X\geq300)=
+        \dfrac{P\left( {{300} \leq  X < {900}}\right) }{P\left( {X \geq  {300}}\right) } = \dfrac{0.6}{0.7} = \dfrac{6}{7}.$
+    \end{enumerate}
+\end{jieda}
+
+
+
+
+    
+\end{enumerate}
+
+
+
+\clearpage
+
+\subsection*{二项分布}
+
+
+
+一般地,在$n$重伯努利试验中,设每次试验中事件$A$发生的概率为$p(0<p<1)$,用$X$表示事件$A$发生的次数,则$X$的分布列为$P(X=k)=$\blkda[4]{$C^k_np^k(1-p)^{n-k}$}, $k=0, 1, 2, \dots, n$. 如果随机变量$X$的分布列具有上式的形式,则称随机变量$X$服从二项分布,记作\blkda[3]{$X \sim B(n,p)$}.
+
+如果$X\sim B(n, p)$,那么$E(X)=$\blkda[3]{$np$}, $D(X)=$\blkda{$np(1-p)$}.
+
+特别地,若$X$服从两点分布,则$E(X)=$\blkda{$p$}, $D(X)=$\blkda{$p(1-p)$}.
+
+
+A组
+\begin{enumerate}
+\item 下列事件
+\begin{enumerate}
+    \item 运动员甲射击一次,“射中9环”与“射中8环”;
+    \item 甲、乙两运动员各射击一次,“甲射中10环”与“乙射中9环”;
+    \item 甲、乙两运动员各射击一次,“甲、乙都射中目标”与“甲、乙都没射中目标”;
+    \item 在相同的条件下,甲射击10次,5次击中目标.
+\end{enumerate}其中是伯努利试验的是\dotfill{(\kh{D})}
+\xx{①}{②}{③}{④}
+
+\item 下列例子中随机变量服从二项分布的个数为\dotfill{(\kh{B})}
+①某同学投篮的命中率为0.6,他10次投篮中命中的次数;\\
+②某射手击中目标的概率为0.9,从开始射击到击中目标所需的射击次数;\\
+③从装有5个红球,5个白球的袋中,有放回地摸球,直到摸出白球为止,摸到白球时的摸球次数$\xi$;\\
+④有一批产品共有$N$件,其中$M$件为次品,采用不放回抽取方法,表示$n$次抽取中出现次品的件数.
+\xx{0}{1}{2}{3}
+
+\item 若某一试验中事件发生的概率为$p$,则在$n$重伯努利试验中,发生$k$次的概率为\dotfill{(\kh{D})}
+\xx{$C_{n}^{k}p^{k}(1-p)^{n-k}$}{$(1-p)^{k}p^{n-k}$}{$(1-p)^{k}$}{$C_{n}^{k}(1-p)^{k}p^{n-k}$}
+
+\item 一射击测试每人射击三次,每击中目标一次记10分,没有击中记0分.某人每次击中目标的概率为$\dfrac{2}{3}$ ,则此人得分的数学期望为\blkda{20};方差为\blkda{$\dfrac{200}{3}$}.
+
+\end{enumerate}
+
+
+B组
+\begin{enumerate}
+\item 设 $X\sim B(n,\dfrac{1}{3})$,且 $P(X=n)=\dfrac{1}{27}$,那么 $P(X=1)=$\blkda{$\dfrac{4}{9}$}.
+
+\item 设 $X\sim B(3,p)$,且 $P(X=2)=\dfrac{54}{125}$,则$p$的值为\blkda{$\dfrac{3}{5}$或$\dfrac{1+\sqrt{7}}{5}$}.
+
+\item 设随机变量$X\sim B(5,\dfrac{1}{3})$, 则$P(2<X\le 4) =$\blkda{$\dfrac{50}{243}$}.
+
+\item 已知随机变量$X,Y$满足$Y=2X+3$,且 $X\sim B(5,\dfrac{2}{3})$, 则 $D(Y)=$\blkda{$\dfrac{40}{9}$}.
+
+\item “石头、剪刀、布”又称“猜丁壳”,是一种流行多年的猜拳游戏,其游戏规则:出拳之前双方齐喊口令,然后在语音刚落时同时出拳,握紧的拳头代表“石头”,食指和中指伸出代表“剪刀”,五指伸开代表“布”.“石头”胜“剪刀”,“剪刀”胜“布”,而“布”又胜过“石头”,若所出的拳相同,则为和局.小军和大明两位同学进行五局三胜制的“石头、剪刀、布”游戏比赛,则小军和大明比赛至第四局小军胜出的概率是\blkda{$\dfrac{2}{27}$}.
+
+\item 设随机变量 $\xi\sim B(2,p)$, $\eta\sim B(4,p)$,若 $P(\xi\ge1)=\dfrac{5}{9}$,则 $P(\eta\ge2)$ 的值为\blkda{$\dfrac{11}{27}$}.
+
+\item 考察下列两个问题:①已知随机变量 $X\sim B(n,p)$,且 $E[X]=4$, $D[X]=2$, 记 $P(X=1)=a$;②甲、乙、丙三人随机到某3个景点去旅游,每人只去一个景点,设$A$表示“甲、乙、丙所去的景点互不相同”,$B$表示“有一个景点仅甲一人去旅游”,记 $P(A|B)=b$,则\dotfill{(\kh{C})}
+\xx{$a=\dfrac{1}{2^{3}},b=\dfrac{1}{2}$}{$a=\dfrac{1}{2^{4}},b=\dfrac{1}{2^{2}}$}{$a=\dfrac{1}{2^{5}},b=\dfrac{1}{2}$}{$a=\dfrac{1}{2^{6}},b=\dfrac{1}{2^{2}}$}
+
+\item 掷一枚质地均匀的骰子$n$次,设出现$k$次点数为1的概率为 $P_{n}(k)$,若 $n=20$,则当 $P_{n}(k)$ 取最大值时,$k$为\dotfill{(\kh{A})}
+\xx{3}{4}{8}{10}
+
+\item 投掷两枚骰子,当至少一枚5点或一枚6点出现时,就说这次试验成功,则在10次试验中成功次数的均值为\blkda{$\dfrac{50}{9}$}.
+
+\item 甲、乙两队进行篮球决赛,采取七场四胜制(当一队赢得四场胜利时,该队获胜,决赛结束).根据前期比赛成绩,甲队的主客场安排依次为“主主客客主客主”.设甲队主场取胜的概率为0.6,客场取胜的概率为0.5,且各场比赛结果相互独立,则甲队以 $4:1$ 获胜的概率是\blkda{0.18}.
+
+\item 一个口袋内有$n(n\ge 3)$个大小相同的球,其中3个红球和$(n-3)$个白球,已知从口袋中随机取出1个球是红球的概率为$p$, $6p\in \mathbb{N}$,若有放回地从口袋中连续4次取球(每次只取1个球),在4次取球中恰好2次取到红球的概率大于 $\dfrac{8}{27},$ 则$n=$\blkda{6}.
+
+\item 已知随机变量 $X\sim B(6,0.8)$,若 $P(X=k)$ 最大,则 $D[kX+1]=$\blkda{24}.
+
+\item 某人在$n$次射击中击中目标的次数为$X$,且 $X\sim B(n,0.8)$,记 $P_{k}=P(X=k)$, $k=0,1,2,\dots,n$,若是唯一的最大值,则 $D(X)$ 的值为\blkda{1.28}.
+
+\item 一名学生每天骑自行车上学,从家到学校的途中有5个交通岗,假设他在各交通岗遇到红灯的事件是相互独立的,并且概率都是 $\dfrac{1}{3}$ .
+\begin{enumerate}
+\item 求这名学生在途中遇到红灯的次数的分布列和均值;
+\item 求这名学生在首次遇到红灯或到达目的地停车前经过的路口数的分布列;
+\item 求这名学生在途中至少遇到一次红灯的概率.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 由 $\xi  \sim  B\left( {5,\dfrac{1}{3}}\right)$ ,则
+$P\left( {\xi  = k}\right)  = {{C}}_{5}^{k}{\left( \dfrac{1}{3}\right) }^{k}{\left( \dfrac{2}{3}\right) }^{5 - k},k = 0,1,2,3,4,5.$
+即 $P\left( {\xi  = 0}\right)  = {{C}}_{5}^{0} \times  {\left( \dfrac{1}{3}\right) }^{0} \times  {\left( \dfrac{2}{3}\right) }^{5}$
+$= \dfrac{32}{243}$ ;
+$P\left( {\xi  = 1}\right)  = {{C}}_{5}^{1} \times  \dfrac{1}{3} \times  {\left( \dfrac{2}{3}\right) }^{4} = \dfrac{80}{243};$
+$P\left( {\xi  = 2}\right)  = {{C}}_{5}^{2} \times  {\left( \dfrac{1}{3}\right) }^{2} \times  {\left( \dfrac{2}{3}\right) }^{3} = \dfrac{80}{243};$
+$P\left( {\xi  = 3}\right)  = {{C}}_{5}^{3} \times  {\left( \dfrac{1}{3}\right) }^{3} \times  {\left( \dfrac{2}{3}\right) }^{2} = \dfrac{40}{243};$
+$P\left( {\xi  = 4}\right)  = {{C}}_{5}^{4} \times  {\left( \dfrac{1}{3}\right) }^{4} \times  \dfrac{2}{3} = \dfrac{10}{243};$
+$P\left( {\xi  = 5}\right)  = {{C}}_{5}^{5} \times  {\left( \dfrac{1}{3}\right) }^{5} = \dfrac{1}{243}.$
+故 $\xi$ 的分布列为
+$\begin{pmatrix}
+ 0& 1& 2 &3& 4& 5\\
+\dfrac{32}{243}&\dfrac{80}{243}&\dfrac{80}{243}&\dfrac{40}{243}&\dfrac{10}{243}&\dfrac{1}{243}
+\end{pmatrix}$.\\
+期望为$\dfrac{5}{3}$.
+
+    \item  $\eta$ 的分布列为 $P\left( {\eta  = k}\right)  = P$ (前 $k$ 个是绿灯,第 $k + 1$ 个是红灯)
+$= {\left( \dfrac{2}{3}\right) }^{k} \cdot  \dfrac{1}{3},k = 0,1,2,3,4,$
+即 $P\left( {\eta  = 0}\right)  = {\left( \dfrac{2}{3}\right) }^{0} \times  \dfrac{1}{3} = \dfrac{1}{3}$ ;
+$P\left( {\eta  = 1}\right)  = \dfrac{2}{3} \times  \dfrac{1}{3} = \dfrac{2}{9};$
+$P\left( {\eta  = 2}\right)  = {\left( \dfrac{2}{3}\right) }^{2} \times  \dfrac{1}{3} = \dfrac{4}{27};$
+$P\left( {\eta  = 3}\right)  = {\left( \dfrac{2}{3}\right) }^{3} \times  \dfrac{1}{3} = \dfrac{8}{81};$
+$P\left( {\eta  = 4}\right)  = {\left( \dfrac{2}{3}\right) }^{4} \times  \dfrac{1}{3} = \dfrac{16}{243};$
+$P\left( {\eta  = 5}\right)  = P\left( {5\text{ 个均为绿灯 }}\right)  = {\left( \dfrac{2}{3}\right) }^{5}$
+$= \dfrac{32}{243}$ .
+故 $\eta$ 的分布列为
+$\begin{pmatrix}
+   0 & 1&  2& 3 & 4& 5\\
+   \dfrac{1}{3}&\dfrac{2}{9}&\dfrac{4}{27}&\dfrac{8}{81}&\dfrac{16}{243}&\dfrac{32}{243}
+\end{pmatrix}$
+    
+    \item 所求概率为 $P\left( {\xi  \geq  1}\right)  = 1 - P\left( {\xi  = 0}\right)$
+$= 1 - {\left( \dfrac{2}{3}\right) }^{5} = \dfrac{211}{243}$ .
+    \end{enumerate}
+\end{jieda}
+
+
+
+\item 甲、乙、丙三名射击运动员射中目标的概率分别为 $\dfrac{1}{2},$ $a$, $a(0<a<1)$,三人各射击一次,击中目标的次数记为$\xi$.
+\begin{enumerate}
+\item 求$\xi$的概率分布列及数学期望;
+\item 在概率 $P(\xi=i)(i=0,1,2,3)$ 中,若 $P(\xi=1)$ 的值最大,求实数$a$的取值范围.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item $P\left( \xi \right)$ 是“ $\xi$ 个人命中, $3 - \xi$ 个人未命中”的概率。
+其中 $\xi$ 的可能取值为0,1,2,3。
+$P\left( {\xi  = 0}\right)  = {{C}}_{1}^{0}\left( {1 - \dfrac{1}{2}}\right) {{C}}_{2}^{0}{\left( 1 - a\right) }^{2} = \dfrac{1}{2}{\left( 1 - a\right) }^{2}$ ,
+$P\left( {\xi  = 1}\right)  = {C}_{1}^{1} \cdot  \dfrac{1}{2}{C}_{2}^{0}{\left( 1 - a\right) }^{2}$
+$+ {C}_{1}^{0}\left( {1 - \dfrac{1}{2}}\right) {C}_{2}^{1}a\left( {1 - a}\right)  = \dfrac{1}{2}\left( {1 - {a}^{2}}\right) ,$
+$P\left( {\xi  = 2}\right)  = {C}_{1}^{1} \cdot  \dfrac{1}{2}{C}_{2}^{1}a\left( {1 - a}\right)$
+$+ {C}_{1}^{0}\left( {1 - \dfrac{1}{2}}\right) {C}_{2}^{2}{a}^{2} = \dfrac{1}{2}\left( {{2a} - {a}^{2}}\right) ,$
+$P\left( {\xi  = 3}\right)  = {{C}}_{1}^{1} \cdot  \dfrac{1}{2}{{C}}_{2}^{2}{a}^{2} = \dfrac{{a}^{2}}{2}$ 。
+所以 $\xi$ 的分布列为：
+$\begin{pmatrix}
+     0 & 1&  2& 3\\
+    \dfrac{1}{2}{\left( 1 - a\right) }^{2}&\dfrac{1}{2}\left( {1 - {a}^{2}}\right)&\dfrac{1}{2}\left( {{2a} - {a}^{2}}\right)&\dfrac{{a}^{2}}{2}
+\end{pmatrix}$\\
+$\xi$ 的数学期望为：
+${E\xi } = 0 \times  \dfrac{1}{2}{\left( 1 - a\right) }^{2} + 1 \times  \dfrac{1}{2}\left( {1 - {a}^{2}}\right)$
+$+ 2 \times  \dfrac{1}{2}\left( {{2a} - {a}^{2}}\right)  + 3 \times  \dfrac{{a}^{2}}{2} = \dfrac{{4a} + 1}{2}$ 。
+
+    \item $P\left( {\xi  = 1}\right)  - P\left( {\xi  = 0}\right)  = \dfrac{1}{2}\left\lbrack  {\left( {1 - {a}^{2}}\right)  - {\left( 1 - a\right) }^{2}}\right\rbrack   = a(1$
+$P\left( {\xi  = 1}\right)  - P\left( {\xi  = 2}\right)  = \dfrac{1}{2}\left\lbrack  {\left( {1 - {a}^{2}}\right)  - \left( {{2a} - {a}^{2}}\right) }\right\rbrack   = \dfrac{1 - 2}{2}$
+$P\left( {\xi  = 1}\right)  - P\left( {\xi  = 3}\right)  = \dfrac{1}{2}\left\lbrack  {\left( {1 - {a}^{2}}\right)  - {a}^{2}}\right\rbrack   = \dfrac{1 - 2{a}^{2}}{2}$ ,
+由 $\left\{  \begin{array}{l} a\left( {1 - a}\right)  \geq  0 \\  \dfrac{1 - {2a}}{2} \geq  0 \\  \dfrac{1 - 2{a}^{2}}{2} \geq  0 \end{array}\right.$ 和 $0 < a < 1$ ,得 $0 < a \leq  \dfrac{1}{2}$ ,即 $a$ 的取值范围是 $(0,\dfrac{1}{2}\rbrack$ 。
+
+    \end{enumerate}
+\end{jieda}
+
+
+
+\item 高尔顿板是英国生物统计学家高尔顿设计用来研究随机现象的模型,在一块木板上钉着若干排相互平行但相互错开的圆柱形小木块,小木块之间留有适当的空隙作为通道,前面挡着一块玻璃,让一个小球从高尔顿板上方的通道口落下,最后掉入高尔顿板下方的某一球槽内,如图所示的高尔顿板有5层小木块,将小球从顶端放入,小球下落的过程中,每次碰到小木块后都等可能地向左或向右落下,最后掉入编号为1、2、$\dots$、5的球槽内.
+
+\begin{center}
+\includegraphics[width=0.25\linewidth]{bodyxb/src/faljfliajlghtg.jpeg}
+\end{center}
+
+\begin{enumerate}
+\item 如图,让一个小球从高尔顿板上方的通道口落下,设小球落入球槽的号码为$X$,求$X$的分布列与数学期望.
+\item 现小禹同学对高尔顿板进行改进,小球在下落的过程中与小木块碰撞时,有 $\dfrac{1}{3}$ 的概率向左, $\dfrac{2}{3}$ 的概率向右滚下,小球共经过4次碰撞后,最后掉入编号为1、2、$\dots$、5的球槽内.将80个小球依次从高尔顿板上方的通道口落下,试问2号球槽中落入多少个小球的概率最大?
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 若小球落入球槽的号码为 $X = k,k = 1,2,3,4,5$ ,
+则小球共经过 4 次碰撞,向右 $k - 1$ 次,可得 $P\left( {X = k}\right)  = \dfrac{{{C}}_{4}^{k - 1}}{{2}^{4}} = \dfrac{{{C}}_{4}^{k - 1}}{16}$ ,
+则 $P\left( {X = 1}\right)  = \dfrac{{{C}}_{4}^{0}}{16} = \dfrac{1}{16};P\left( {X = 2}\right)  = \dfrac{{{C}}_{4}^{1}}{16} = \dfrac{1}{4};P\left( {X = 3}\right)  = \dfrac{{{C}}_{4}^{2}}{16} = \dfrac{3}{8};P\left( {X = 4}\right)  = \dfrac{{{C}}_{4}^{3}}{16} = \dfrac{1}{4},P\left( {X = 5}\right)  = \dfrac{{{C}}_{4}^{4}}{16} = \dfrac{1}{16}$ ,
+所以 $X$ 的分布列为
+\begin{pmatrix}
+    1& 2& 3& 4& 5\\
+    \dfrac{1}{16}&\dfrac{1}{4}&\dfrac{3}{8}&\dfrac{1}{4} & \dfrac{1}{16}
+\end{pmatrix}
+
+$X$ 的期望为 $E\left( X\right)  = 1 \times  \dfrac{1}{16} + 2 \times  \dfrac{1}{4} + 3 \times  \dfrac{3}{8} + 4 \times  \dfrac{1}{4} + 5 \times  \dfrac{1}{16} = 3$ .
+
+\item 若小球落入 2 号球槽,则小球共经过 4 次碰撞,向右 1 次,且每次向右的概率均为 $\dfrac{2}{3}$ ,
+则小球落入 2 号球槽的概率为 $P = {{C}}_{4}^{1} \times  \dfrac{2}{3} \times  {\left( \dfrac{1}{3}\right) }^{3} = \dfrac{8}{81}$ ,
+设 80 个小球落入 2 号球槽的个数为 $Y$ ,则 $Y \sim  B\left( {{80},\dfrac{8}{81}}\right)$ ,\\
+【法一】令 $\left\{  \begin{array}{l} P\left( {Y = k}\right)  \geq  P\left( {Y = k + 1}\right) \\  P\left( {Y = k - 1}\right)  \leq  P\left( {Y = k}\right)  \end{array}\right.$ ，\\即 $\left\{  \begin{array}{l} {{C}}_{80}^{k} \times  {\left( \dfrac{8}{81}\right) }^{k} \times  {\left( \dfrac{73}{81}\right) }^{{80} - k} \geq  {{C}}_{80}^{k + 1} \times  {\left( \dfrac{8}{81}\right) }^{k + 1} \times  {\left( \dfrac{73}{81}\right) }^{{79} - k} \\  {{C}}_{80}^{k - 1} \times  {\left( \dfrac{8}{81}\right) }^{k - 1} \times  {\left( \dfrac{73}{81}\right) }^{{81} - k} \leq  {{C}}_{80}^{k} \times  {\left( \dfrac{8}{81}\right) }^{k} \times  {\left( \dfrac{73}{81}\right) }^{{80} - k} \end{array}\right.$ ,解得 $7 \leq  k \leq  8$ ,
+且 $k \in  {\mathbf{N}}^{ * }$ ,即 $k = 7,8$ ,
+所以 2 号球槽中落入小球的概率最大的为 7 个或 8 个.\\
+
+【法二】$\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}>1$,解得$k<7$;\\
+$\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}=1$,解得$k=7$;\\
+$\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}<1$,解得$k>7$,根据单调性可得最大项为$k=7\text{or}8$。
+    \end{enumerate}
+\end{jieda}
+
+
+    
+\end{enumerate}
+
+
+\clearpage
+\subsection*{超几何分布}
+\begin{enumerate}
+
+\item 下列随机事件中的随机变量 $X$ 服从超几何分布的是\dotfill{(\kh{B})}
+
+\xx{将一枚硬币连抛 3 次，记正面向上的次数为 $X$}
+{从 7 男 3 女共 10 名学生干部中随机选出 5 名学生干部，记选出女生的人数为 $X$}
+{ 某射手的射击命中率为 0.8 ，现对目标射击 1 次，记命中的次数为 $X$}
+{盒中有 4 个白球和 3 个黑球，每次从中摸出 1 个球且不放回，记第一次摸出黑球时摸取的次数为 $X$}
+
+
+\item 在 15 个村庄中，有 7 个村庄交通不方便，若用随机变量 $X$ 表示任选 10 个村庄中交通不方便的村庄的个数，则 $X$ 服从参数为 $N$ ， $M$ ， $n$ 的超几何分布，则 $P\left( {X = k}\right)  = \dfrac{{C}_{M}^{k}{C}_{N - M}^{n - k}}{{C}_{N}^{n}}$ ，其参数为\dotfill{(\kh{A})}
+
+\xx{${N} = {15},{M} = 7,{n} = {10}$}
+{${N} = {15},{M} = {10},{n} = 7$}
+{${N} = {22},{M} = {10},{n} = 7$ }
+{ ${N} = {22},{M} = 7,{n} = {10}$}  
+
+
+\item 袋中有 3 个白球, 1 个红球, 从中任取 2 个, 取得 1 个白球得 0 分, 取得 1 个红球得 2 分，则所得分数 $X$ 的均值 $E\left\lbrack  X\right\rbrack$ 为\blkda{1}.
+
+\item 设口袋中有黑球、白球共 7 个，从中任取 2 个球，已知取到白球个数的数学期望值为 $\frac{6}{7}$ ，则口袋中白球的个数为\blkda{3}.
+
+\item 某公司有日生产件数为 95 的 “生产能手” 3 人，有日生产件数为 55 的 “菜鸟” 2 人，从这 5 人中任意抽取 2 人，则 2 人的日生产件数之和 $X$ 的方差为\blkda{576}.
+
+
+\item 某大学志愿者协会有 10 名同学，成员构成如下表，表中部分数据不清楚，只知道从这 10 名同学中随机选取 1 名同学，该名同学的专业为数学的概率为 $\frac{2}{5}$ .
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{bodyxb//src/g'apfur]0q83yhfuhoouha.png}
+\end{figure}
+
+现从这 10 名同学中随机选取 3 名同学参加社会公益活动 (每名同学被选到的可能性相同).
+\begin{enumerate}
+    \item 求 $m,n$ 的值；
+    \item 求选出的 3 名同学恰为专业互不相同的男生的概率；
+    \item 设 $\xi$ 为选出的 3 名同学中是女生或专业为数学的人数，求随机变量 $\xi$ 的分布列.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 设事件 $A$ 为 “从 10 名同学中随机选取 1 名
+同学,该名同学的专业为数学”.
+由题意,可知数学专业的同学共有 $\left( {1 + m}\right)$ 名,
+则 $P\left( A\right)  = \dfrac{1 + m}{10} = \dfrac{2}{5}$ ,解得 $m = 3$ .
+因为 $m + n + 6 = {10}$ ,所以 $n = 1$ .
+        \item 设事件 $B$ 为 “选出的 3 名同学恰为专业互不相
+同的男生”,则事件 $B$ 包含两种情况: 一是从数学专
+业的 3 人中选 1 人,再从剩下的三个专业中选 2 人,
+有 ${{C}}_{3}^{1}{{C}}_{3}^{2}$ 种方法,二是选出除数学外的 3 个专业的 3
+人,有 1 种选法,
+所以 $P\left( B\right)  = \dfrac{{{C}}_{3}^{1}{{C}}_{3}^{2} + 1}{{{C}}_{10}^{3}} = \dfrac{1}{12}$ .
+
+\item 由题意,可知这 10 名同学中是女生或专业为数
+学的人数为 $7,\xi$ 的取值范围为 $\{ 0,1,2,3\}$ .
+$P\left( {\xi  = 0}\right)  = \dfrac{{{C}}_{3}^{3}}{{{C}}_{10}^{3}} = \dfrac{1}{120},$
+$P\left( {\xi  = 1}\right)  = \dfrac{{{C}}_{7}^{1}{{C}}_{3}^{2}}{{{C}}_{10}^{3}} = \dfrac{21}{120} = \dfrac{7}{40},$
+$P\left( {\xi  = 2}\right)  = \dfrac{{{C}}_{7}^{2}{{C}}_{3}^{1}}{{{C}}_{10}^{3}} = \dfrac{63}{120} = \dfrac{21}{40},$
+$P\left( {\xi  = 3}\right)  = \dfrac{{{C}}_{7}^{3}}{{{C}}_{10}^{3}} = \dfrac{35}{120} = \dfrac{7}{24},$
+所以 $\xi$ 的分布列为
+$\begin{pmatrix}
+    0 &1& 2& 3 \\
+    \dfrac{1}{120} & \dfrac{7}{40} & \dfrac{21}{40} & \dfrac{7}{24}
+\end{pmatrix}$
+
+    \end{enumerate}
+
+\end{jieda}
+
+\end{enumerate}
+
+
+
+
+
+\clearpage
+\subsection*{正态分布}
+\begin{enumerate}
+    \item 设随机变量 $X$ 的正态分布密度函数为 $f\left( x\right)  = \dfrac{1}{2\sqrt{\pi }} \cdot  {{e}}^{-\dfrac{{\left( x + 3\right) }^{2}}{4}},x \in  \left( {-\infty , + \infty }\right)$ ,则参数 $\mu ,\sigma$ 的值分别是\dotfill{(\kh{D})}
+    \xx{$\mu  = 3,\sigma  = 2$}{$\mu  =  - 3,\sigma  = 2$}{$\mu  = 3,\sigma  = \sqrt{2}$}{$\mu  =  - 3,\sigma  = \sqrt{2}$}
+    
+    \item 设随机变量 $\xi$ 服从正态分布 $N\left( {4,3}\right)$ ,若 $P\left( {\xi  < a - 5}\right)  = P\left( {\xi  > a + 1}\right)$ ,则实数 $a =$\dotfill{(\kh{C})}
+    \xx{2}{4}{6}{8}
+    \begin{jieda}
+        $(a-5) + (a+1) = 2 \times 4$
+    \end{jieda}
+    
+    \item 已知甲、乙两种水果的质量分别服从正态分布 $N\left( {{\mu }_{1},{\sigma }_{1}^{2}}\right) ,N\left( {{\mu }_{2},{\sigma }_{2}^{2}}\right)$ ,其正态分布的密度曲线如图所示, 则\dotfill{(\kh{A})}
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d7enkus91nqc73eqra40_0_1069_791_332_208_0.jpg}
+    \end{center}
+
+    \xx{${\mu }_{1} < {\mu }_{2},{\sigma }_{1} < {\sigma }_{2}$}{${\mu }_{1} < {\mu }_{2},{\sigma }_{1} > {\sigma }_{2}$}{${\mu }_{1} > {\mu }_{2},{\sigma }_{1} < {\sigma }_{2}$}{${\mu }_{1} > {\mu }_{2},{\sigma }_{1} > {\sigma }_{2}$}
+    
+    \item 某工厂有甲乙两条生产线生产同一型号的机械零件，产品的尺寸分别记为 $X$ , $Y$ ,已知 $X,Y$ 均服从正态分布, $X \sim  N\left( {{\mu }_{1},{\sigma }_{1}^{2}}\right) ,Y \sim  N\left( {{\mu }_{2},{\sigma }_{2}^{2}}\right)$ ,其正态分布密度曲线如图所示，则下列结论中正确的是\dotfill{(\kh{A})}
+    
+    \begin{center}
+    \includegraphics[width=0.25\textwidth]{bodyxb/src/bo_d7enkus91nqc73eqra40_0_798_1367_610_295_0.jpg}
+    \end{center}
+
+    \xx{甲生产线产品的稳定性高于乙生产线产品的稳定性}{甲生产线产品的稳定性低于乙生产线产品的稳定性}{甲生产线的产品尺寸平均值大于乙生产线的产品尺寸平均值}{甲生产线的产品尺寸平均值小于乙生产线的产品尺寸平均值}
+    \begin{jieda}
+        曲线瘦，标准差小，稳定度好
+    \end{jieda}
+    
+    \item 已知随机变量 $X$ 服从正态分布 $N\left( {1,{\sigma }^{2}}\right)$ ,若 $P\left( {X \leq  4}\right)  = {0.86}$ ,则 $P\left( {X \leq   - 2}\right)  =$\dotfill{(\kh{A})}
+    \xx{$0.14$}{$0.28$}{$0.68$}{$0.86$}
+    \begin{jieda}
+        $P\left( {X \leq  4}\right) + P\left( {X \leq   - 2}\right)  = 1$
+    \end{jieda}
+    
+    \item 据统计 2021 年 “十一” 黄金周哈尔滨太阳岛每天接待的游客人数 $X$ 服从正态分布 $N\left( {{2000},{100}^{2}}\right)$ ，则在此期间的某一天，太阳岛接待的人数不少于1700的概率为\dotfill{(\kh{D})}
+    \xx{$0.84135$}{$0.9973$}{$0.97725$}{$0.99865$}
+    \begin{jieda}
+        $P(\mu - 3\sigma < x < \mu + 3\sigma) = 0.9973$，$P(\mu - 3\sigma < x) = 1-(1-0.9974) \div 2 = 0.99865$
+    \end{jieda}
+    
+    \item 在某市2019年1月份的高三质量检测考试中，理科生的数学成绩服从正态分布 $N(98,100)$.已知参加本次考试的全市理科生约有9450 人，如果某学生在这次考试中的数学成绩是108分，那么他的数学成绩大约排在全市第\dotfill{(\kh{A})}
+    \xx{1500名}{1700名}{4500名}{8000名}
+    \begin{jieda}
+        $108 = 98+10 = \mu + \sigma$，$P(\mu - \sigma < x < \mu + \sigma) = 0.6826$，$P(x < \mu + \sigma) = 1-(1-0.6826)\div 2 = 0.8413$，$(1-0.8413) \times 9450 = 1499.7$
+    \end{jieda}
+    
+    \item 在如图所示的正方形中随机投掷10000个点，则落入阴影部分 (曲线 ${C}$ 为正态分布 ${N}\left( {-1,1}\right)$ 的密度曲线)的点的个数的估计值为\dotfill{(\kh{C})}
+
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d7enkus91nqc73eqra40_1_1050_827_352_242_0.jpg}
+    \end{center}
+
+    \xx{906}{2718}{1359}{3413}
+    \begin{jieda}
+        $P(\mu + \sigma < x < \mu + 2\sigma) = 0.1359$
+    \end{jieda}
+    
+    \item 若甲、乙两类水果的质量(单位:kg)分别服从正态分布 $N\left( {{\mu }_{1},{\sigma }_{1}^{2}}\right)$ 及 $N\left( {{\mu }_{2},{\sigma }_{2}^{2}}\right)$ ，其正态分布的密度曲线如图所示，则下列说法错误的是\dotfill{(\kh{A})}
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d7enkus91nqc73eqra40_1_1055_1253_309_266_0.jpg}
+    \end{center}
+    \xx{乙类水果的质量服从的正态分布的参数 ${\sigma }_{2} = {64}$}{甲类水果的质量比乙类水果的质量更集中}{甲类水果的平均质量 ${\mu }_{1} = {0.4}{{kg}}$}{甲类水果的平均质量比乙类水果的平均质量小}
+    \begin{jieda}
+        代入$x = \mu_2$，$\dfrac{1}{8\sqrt{2\pi}} = \dfrac{1}{\sqrt{2\pi \sigma_2^2}}$，故$\sigma_2 = 8$
+    \end{jieda}
+    
+    \item 如果正态分布总体的数据落在区间 $\left( {-3, - 1}\right)$ 内的概率和落在区间 $\left( {3,5}\right)$ 内的概率相等，那么这个正态分布总体的数学期望是\blkda{1}.
+    
+    \item 某超市经营的某种包装优质东北大米的重量 $X$ (单位:kg) 服从正态分布 $N\left( {{25},{0.04}}\right)$ ,任意选取一袋这种大米,重量在 ${24.8}{{kg}} \sim  {25.4}{{kg}}$ 的概率为\blkda{$0.8185$}.
+    \begin{jieda}
+        $P(\mu - \sigma < x < \mu + 2\sigma) = 0.8185$
+    \end{jieda}
+
+
+    \item 在产品质量检测中,已知某产品的一项质量指标 $X \sim  N\left( {{100},{100}}\right)$ ,且质量指标在 $\left( {{110},{120}}\right)$ 内的产品数量为 5436,请估计该批次检测的产品数量为\blkda{$40000$}.
+    \begin{jieda}
+        $P(\mu + \sigma < x < \mu + 2\sigma) = 0.1359$，$5436 \div 0.1359 = 40000$
+    \end{jieda}
+
+    \item ${3\sigma }$ 准则又称为拉依达准则，它是先假设一组检测数据只含有随机误差，对其进行计算处理得到标准偏差, 按一定概率确定一个区间, 认为凡超过这个区间的误差, 就不属于随机误差而是粗大误差, 含有该误差的数据应予以剔除. 对于正态分布的随机误差,落在 $\pm  {3\sigma }$ 之外的概率只有 0.27\%,它在有限次测量中发生的可能性很小,故存在 ${3\sigma }$ 准则. ${3\sigma }$ 准则是最常用也是最简单的粗大误差判别准则. 为估计某精密仪器的测量误差,取其 $n$ 次结果的平均值得 ${\varepsilon }_{n} \sim  N\left( {0,\dfrac{1}{{n}^{2}}}\right)$ , 为误差使 ${\varepsilon }_{n}$ 在 $\left( {-{0.3},{0.3}}\right)$ 的概率不小于 0.9973，至少要测量\blkda{10}次.
+    \begin{jieda}
+        $\sigma = \dfrac{1}{n} \geq (0.3 \div 3)$，$n \geq 10$
+    \end{jieda}
+
+    \item 《某市高考改革试点方案》规定:从 2018 年秋季高中入学的新生开始，不分文理科; 2021 年高考总成绩由语数外三门统考科目和物理、化学等六门选考科目组成，将每门选考科目的考生原始成绩从高到低划分为 A、B、C、D、E 共 5 个等级，参照正态分布原则，确定各等级人数所占比例分别为 15\%、35\%、35\%、 13\%、2\%，选考科目成绩计入考生总成绩时，将 A 至 E 等级内的考生原始成绩， 依照等比例转换法则，分别转换到 $\left\lbrack  {{86},{100}}\right\rbrack  ,\left\lbrack  {{71},{85}}\right\rbrack  ,\left\lbrack  {{56},{70}}\right\rbrack  ,\left\lbrack  {{41},{55}}\right\rbrack  ,\left\lbrack  {{30},{40}}\right\rbrack$ 五个分数区间，得到考生的等级成绩. 某市高一学生共 6000 人，为给高一学生合理选科提供依据，对六门选考科目进行测试，其中化学考试原始成绩 $\xi$ 大致服从正态分布 $N\left( {{70},{169}}\right)$ .
+    \begin{enumerate}
+        \item 求该市化学原始成绩在区间 $\left( {{57},{96}}\right)$ 的人数
+        \item 以各等级人数所占比例作为各分数区间发生的概率，按高考改革方案，若从全省考生中随机抽取 3 人，记 $X$ 表示这 3 人中等级成绩在区间 $\left\lbrack  {{56},{85}}\right\rbrack$ 的人数， 求 $P\left( {X \geq  2}\right)$ .
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\because$ 化学原始成绩 $\xi  \sim  N\left( {{70},{13}^{2}}\right)$，$\therefore P\left( {{57} < \xi  < {96}}\right)  = P\left( {{57} < \xi  < {70}}\right)  + P\left( {{70} \leq  \xi  < {96}}\right) = \dfrac{1}{2}P\left( {{70} - {13} < \xi  < {70} + {13}}\right)  + \dfrac{1}{2}P\left( {{70} - 2 \times  {13} < \xi  < {70} + 2 \times  {13}}\right) = \dfrac{0.683}{2} + \dfrac{0.954}{2} = {0.8185}.$
+            
+            $\therefore$ 化学原始成绩在$(57,96)$的人数为 ${6000} \times  {0.8185} = {4911}$ (人)；
+            
+            \item 因为以各等级人数所占比例作为各分数区间发生的概率,且等级成绩在区间$[71, 85]$, $[56, 70]$的人数所占比例分别为$35\%$、$35\%$,则随机抽取1人,其等级成绩在区间 $\left\lbrack  {{56},{85}}\right\rbrack$ 内的概率为 $\dfrac{7}{10}$ ,所以从全省考生中随机抽取3人，则 $X$ 的所有可能取值为0,1,2,3,且 $X \sim  B\left( {3,\dfrac{7}{10}}\right)$
+            
+            $\therefore P\left( {X \geq  2}\right)  = P\left( {X = 2}\right)  + P\left( {X = 3}\right)  = {C}_{3}^{2}{\left( \dfrac{7}{10}\right) }^{2}\dfrac{3}{10} + {C}_{3}^{3}{\left( \dfrac{7}{10}\right) }^{3} = \dfrac{98}{125}$ .
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}

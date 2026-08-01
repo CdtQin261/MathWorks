@@ -1,0 +1,1391 @@
+\chapter* {三角函数}
+\subsection*{任意角}
+为了描述旋转运动，就要对角的概念进行拓展，既要描述旋转的角度的大小，也要描述旋转的方向.
+\subsubsection*{定义}
+\begin{enumerate}
+    \item 角是由一条射线绕其端点旋转到另一个位置所形成的图形.一条射线绕其端点旋转的过程就可以形成角，由其初始位置，终止位置，旋转方向可以确定这个角.
+    \item 射线初始的位置称作是角的\textbf{始边}，终止的位置称作角的\textbf{终边}.
+    \item 逆时针旋转的角我们称为\textbf{正角}，顺时针旋转的角我们称为\textbf{负角}，射线没有绕端点旋转则对应\textbf{零角}.
+    \item 任意角之间加减运算就是角的终边旋转的叠加，例如$540^{\circ} + (-90^{\circ}) = 450^{\circ}$代表着终边绕顶点逆时针旋转$540^{\circ}$后再顺时针旋转$90^{\circ}$，也可以说终边绕顶点旋转$540^{\circ}$后再旋转$-90^{\circ}$，得到了$450^{\circ}$
+\end{enumerate}
+\subsubsection*{象限角}
+\begin{enumerate}
+    \item 平面直角坐标系是我们研究位置的工具，在直角坐标系内，我们可以利用直角坐标系的象限描述角所在的位置.借助平面直角坐标系，可以将几何问题代数化，利用点的坐标来研究与角相关的问题.
+    \item 角的顶点与坐标系原点重合，角的始边与坐标系中$x$轴的非负半轴重合，此时终边位于第几象限，我们就说这个角是\textbf{第几象限角}.
+    \item 终边在坐标轴上时不属于任何象限.
+\end{enumerate}
+\subsubsection*{终边相同的角}
+\begin{enumerate}
+    \item 终边旋转完整的若干周前后位置相同，这样的角我们称为\textbf{终边相同的角}.
+    \item 终边相同的角之间相差$k \cdot 360^{\circ} (k \in \mathbf{Z})$.
+    \item 与角$\alpha$终边相同的角的集合可以写成$\{\beta | \beta = \alpha + k \cdot 360^{\circ} (k \in \mathbf{Z}) \}$
+    \item 利用终边相相同的角可以帮助我们简化问题，例如：判断一个角的象限的时候，可以先找到在$0^{\circ}$到$360^{\circ}$之间的与其终边相同的角，通过判断终边相同的角的象限，进而知道原本的角的象限.
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 试判断下列命题是否正确:
+    \begin{enumerate}
+        \item 小于 $90^{\circ}$ 的角是锐角;\dotfill{( )}
+        \item 第一象限角小于第二象限角；\dotfill{( )}
+        \item 终边相同的角一定相等；\dotfill{( )}
+        \item 相等的角终边一定相同；\dotfill{( )}
+        \item 若 $90^{\circ}<a<180^{\circ}$, 则 $a$ 是第二象限角.\dotfill{( )}
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}[(1)]
+    \item $-\ang{45}$角不是锐角, 故假. 
+    \item $\ang{30}>\ang{120}-\ang{360}=-\ang{240}$, 故假. 
+    \item $\alpha=\ang{30}$, $\beta=\ang{30}+\ang{360}$, 故假. 
+    \item 真. 如果有破绽的话, 破绽在于始边是否重合. 
+    \item 真. 
+    \end{enumerate}
+    \end{jieda}
+
+    \item $-2021^{\circ}$ 是第\blkda{II}象限角.
+    \begin{jieda}
+    $-2021=-5\cdot360-221=-6\cdot 360+139$, 故II. 
+    \end{jieda}
+
+    \item 角 $a$ 是第四象限角, 则角 $180^{\circ}-a$ 是第\blkda{三}象限角.
+
+    
+    \item 分别写出第一、二、三、四象限角的集合. 
+    \begin{jieda}
+    一: $\{\theta\mid\theta=k\cdot\ang{360}+\alpha,\ang{0}<\alpha<\ang{90},k\zz\}$; \\
+    二: $\{\theta\mid\theta=k\cdot\ang{360}+\alpha,\ang{90}<\alpha<\ang{180},k\zz\}$; \\
+    三: $\{\theta\mid\theta=k\cdot\ang{360}+\alpha,\ang{180}<\alpha<\ang{270},k\zz\}$; \\
+    四: $\{\theta\mid\theta=k\cdot\ang{360}+\alpha,\ang{270}<\alpha<\ang{360},k\zz\}$. 
+    \end{jieda}
+
+    \item 角的顶点在坐标系的原点, 始边与$x$轴的正半轴重合, 那么终边在下列位置的角的集合分别是: 
+    \begin{enumerate}[(1)]
+    \item $x$轴正半轴: \blkda[5]{$\{\theta\mid \theta=k\cdot\ang{360},k\zz\}$}; 
+    \item $x$轴: \blkda[5]{$\{\theta\mid \theta=k\cdot\ang{180},k\zz\}$}; 
+    \item $y$轴负半轴: \blkda[5]{$\{\theta\mid \theta=k\cdot\ang{360}-\ang{90},k\zz\}$}; 
+    \item $y$轴: \blkda[5]{$\{\theta\mid \theta=k\cdot\ang{180}+\ang{90},k\zz\}$}; 
+    % \item 坐标轴: \blkda{}; 
+    \item 直线$y=-x$: \blkda[5]{$\{\theta\mid \theta=k\cdot\ang{180}+\ang{135},k\zz\}$}; 
+    \item 直线$y=\pm{x}$: \blkda[5]{$\{\theta\mid \theta=k\cdot\ang{90}+\ang{45},k\zz\}$}. 
+    \end{enumerate}
+    \begin{jieda}
+    以(6)为例: 每逆时针旋转$\ang{90}$, 恰好到达一条射线. 于是从角的角度看, 遍历了所有的角. 
+    相当于有了一个起始值$\ang{45}$, 每次加上或减去$\ang{90}$, 就有了所有角. 
+    \end{jieda}
+
+    \item 如果$\alpha$是第二象限角，那么$\dfrac{\alpha}{2}, \dfrac{\alpha}{3}$是第几象限角？
+    \begin{jieda}
+        $\dfrac{\alpha}{2}$可以为第一象限角或第三象限角.
+        
+        $\dfrac{\alpha}{3}$可以为第一象限角，第二象限角，或第四象限角.
+        \begin{center}
+            \includegraphics[scale=0.8]{./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf}
+        \end{center}
+
+        $\alpha$是第二象限角，故可设$\alpha = 2k\pi + \beta, k \in \mathbf{Z}, \beta \in \left( \dfrac{\pi}{2}, \pi\right)$ \\
+        $\dfrac{\alpha}{2} = k \pi + \dfrac{\beta}{2}$，因此$\dfrac{\alpha}{2}$可以为第一象限角或第三象限角. \\
+        $\dfrac{\alpha}{3} = \dfrac{2k}{3} \pi + \dfrac{\beta}{3}$, 因此$\dfrac{\alpha}{3}$可以为第一象限角，第二象限角，或第四象限角.
+    \end{jieda}
+        
+    \item 若$\alpha$与$\beta$是终边相同的角, 则$\alpha-\beta$的终边一定在\dotfill{(\kh{A})}
+    \xx{$x$轴的非负半轴上}
+    {$x$轴的非正半轴上}
+    {$y$轴的非正半轴上}
+    {$y$轴的非负半轴上}
+    \end{enumerate}
+\subsection*{弧度制}
+度量的单位是可以根据需要和方便来选取的.例如长度单位有米、厘米、毫米等；度量重量，我们可以采用克，千克，或者吨来作为单位.度量角度可以选取弧度制以方便度量.
+\subsubsection*{弧度制的定义}
+\begin{enumerate}
+    \item 角度制的定义：把周角分成360份，以其中的一份叫做$1^{\circ}$的角.这种以“度”作为单位来度量角的单位制叫做角度制.
+    \item 圆心角、半径和弧长之间的关系：圆的半径为$r$，$n^{\circ}$的圆心角所对弧长$l = \dfrac{\pi r n}{180}$. 体现了弧长、半径和圆心角之间的关系.通过进一步变形，得到$n = \dfrac{180}{\pi} \dfrac{l}{r}$，表明圆心角可以由弧长和半径的比值来确定.
+    \item 弧度制的定义：用弧长和半径的比值来表示角的大小$|\alpha| = \dfrac{l}{r}$，将弧长的等于半径的弧所对的圆心角称作是\textbf{1弧度的角（1 rad）}.用弧度作为单位来度量角的单位制叫做弧度制.对于任意角，弧度制和角度值是一样的，正角对应的弧度值为正数，负角对应的弧度值为负数，零角对应的弧度值为0.
+    \item 弧度制下扇形的弧长与面积公式：$l = \alpha \cdot r, S = \dfrac{\alpha \cdot r^2}{2}$
+    \item 弧度制的优点：统一了角度与长度的单位，建立了角和实数之间的一一对应关系，简化了三角计算.
+    \item 注：rad可以省略不写
+\end{enumerate}
+\subsubsection*{弧度制与角度制的转化}
+以周角为桥梁构建换算公式.周角在角度制下是$360^{\circ}$，在弧度制下是$2\pi$ rad.因此，$360^{\circ} = 2\pi$ rad.故对于$n^{\circ}$角（其弧度下为$\alpha$弧度），$\dfrac{360^{\circ}}{n^{\circ}} = \dfrac{2\pi}{\alpha}$，即$n^{\circ} = \dfrac{180}{\pi} \alpha$ rad，$\alpha$ rad $ = \dfrac{\pi}{180} n^{\circ}$.特别地，1弧度所对应的角度制为$\dfrac{180}{\pi}^{\circ}$，$1^{\circ}$对应的弧度制为$\dfrac{\pi}{180}$ rad.
+
+例题：
+\begin{enumerate}
+    \item 已知圆心角为$\dfrac{\pi}{6}$的扇形的半径为1，则该扇形的面积是\blkda{$\dfrac{\pi}{12}$}
+    \begin{jieda}
+        $S = \dfrac{1}{2}\alpha r^2 = \dfrac{\pi}{12}$
+    \end{jieda}
+    \item 一扇形周长是\SI{32}{cm}, 扇形的圆心角为多少弧度时, 这个扇形的面积最大? 最大面积是多少? 
+    \begin{jieda}
+    $l+2r=32$, $S=\dfrac{1}{2}lr=\dfrac{1}{4}\cdot l\cdot2r\leq\dfrac{1}{4}\left(\dfrac{l+2r}{2}\right)^2=64$. \\
+    $\alpha=\dfrac{l}{r}=\SI{2}{rad}$, $S_{\min}=\SI{64}{cm^2}$. 
+    \end{jieda}
+    \item 填写表格
+    \begin{table}[h]
+        \centering
+        \tabcolsep=0.4cm
+        \renewcommand\arraystretch{2}
+        \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
+            \hline
+            弧度制 & $0$ &  &  &  & $\dfrac{\pi}{2}$ & $\dfrac{2\pi}{3}$ & $\dfrac{3\pi}{4}$ &  &  &  &  \\
+            \hline
+            角度制 &  & $30^{\circ}$ & $45^{\circ}$ & $60^{\circ}$ &  &  &  & $180^{\circ}$ & $225^{\circ}$ & $270^{\circ}$ & $360^{\circ}$ \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{jieda}
+        \begin{table}[h]
+            \centering
+            \tabcolsep=0.4cm
+            \renewcommand\arraystretch{2}
+            \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
+                \hline
+                弧度制 & $0$ & $\dfrac{\pi}{6}$ & $\dfrac{\pi}{4}$ & $\dfrac{\pi}{3}$ & $\dfrac{\pi}{2}$ & $\dfrac{2\pi}{3}$ & $\dfrac{3\pi}{4}$ & $\pi$ & $\dfrac{5\pi}{4}$ & $\dfrac{3\pi}{2}$ & $2\pi$ \\
+                \hline
+                角度制 & $0^{\circ}$ & $30^{\circ}$ & $45^{\circ}$ & $60^{\circ}$ & $90^{\circ}$ & $120^{\circ}$ & $135^{\circ}$ & $180^{\circ}$ & $225^{\circ}$ & $270^{\circ}$ & $360^{\circ}$ \\
+                \hline
+            \end{tabular}
+        \end{table}
+    \end{jieda}
+    \item 在与2025弧度角的终边相同的角中, 绝对值最小的角是\blkda[3]{$2025-644\pi$}. 
+    \begin{jieda}
+    $\abs{2025+2k\pi}_{\min}=\abs{2025-322\cdot2\pi}$. 
+    \end{jieda}
+    \item 若角$\alpha$和角$\beta$的和是$1$弧度, 差为$1^{\circ}$, 则$\alpha$和$\beta$的弧度数分别为\blkda{$\dfrac{1}{2}\pm\dfrac{\pi}{360}$}. 
+\end{enumerate}
+
+\subsection*{任意角的正弦、余弦、正切、余切}
+\begin{enumerate}
+    \item 锐角的正弦、余弦、正切、余切（初中所学）：\\
+    给定锐角$\alpha$，在角$\alpha$一边的射线$OA$上取异于$O$点的一点$P$，过$P$做另一边$OB$的垂线，垂足为$M$，形成直角三角形$OMP$，分别度量$|OM|, |OP|, |PM|$，即可得到$sin\alpha = \dfrac{|PM|}{|OP|}, cos\alpha = \dfrac{|OM|}{|OP|}, tan\alpha = \dfrac{|PM|}{|OM|}, cot\alpha = \dfrac{|OM|}{|PM|}$ 
+    \item 任意角的正弦、余弦、正切、余切：\\
+    将任意角$\alpha$置于平面直角坐标系中，角$\alpha$的顶点与坐标系原点重合，角的始边与坐标系中$x$轴的非负半轴重合.在其终边上任取异于$O$的一点$P$,坐标为$(x,y)$,设$|OP| = r$, 则$r = \sqrt{x^2+y^2}$.这样就可以分别定义任意角$\alpha$的正弦、余弦、正切、余切为：$sin\alpha = \dfrac{y}{r}, cos\alpha = \dfrac{x}{r}, tan\alpha = \dfrac{y}{x}(x \neq 0), cot\alpha = \dfrac{x}{y}(y \neq 0)$.
+    \item 利用单位圆简化定义：\\
+    单位圆是指半径为1个单位的圆，在没有特殊说明的时候，单位圆是指圆心在原点，半径为1个单位的圆.\\
+    将任意角$\alpha$置于平面直角坐标系中，角$\alpha$的顶点与坐标系原点重合，角的始边与坐标系中$x$轴的非负半轴重合.设$P$为终边与单位圆的交点，坐标为$(x,y)$.则角$\alpha$的正弦、余弦、正切、余切为：$sin\alpha = y, cos\alpha = x, tan\alpha = \dfrac{y}{x}(x \neq 0), cot\alpha = \dfrac{x}{y}(y \neq 0)$.
+    \item 对于任意角都有正弦和余弦值，当终边位于$y$轴时（$\alpha = k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})$）不存在正切值，当终边位于$x$轴时（$\alpha = k\pi (k \in \mathbf{Z})$）不存在余切值.
+    \item 平面直角坐标系上的点可以用其与原点连线的长度$r$和连线与$x$轴正方向之间夹角$\theta$的三角函数值来表示，即$P(r \cdot cos\theta, r\cdot sin\theta)$
+\end{enumerate}
+\subsubsection*{任意角三角函数值的符号}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|cccc}
+        \hline
+         & $sin\alpha$ & $cos\alpha$ & $tan\alpha$ & $cot\alpha$ \\
+        \hline
+       第一象限角  & + & + & + & + \\
+       第二象限角  & + & - & - & - \\
+       第三象限角  & - & - & + & + \\
+       第四象限角  & - & + & - & - \\
+       \hline
+    \end{tabular}
+\end{table}
+只有给定一个任意角的两个以上的三角函数值，或给定一个三角函数值并明确所在象限，才能唯一确定该角的终边位置.
+\subsubsection*{特殊角的三角函数}
+\begin{table}[h]
+    \centering
+    \tabcolsep=0.4cm
+    \renewcommand\arraystretch{2}
+    \begin{tabular}{c|ccccccccccc}
+        \hline
+        $\alpha$ & $0$ & $\dfrac{\pi}{6}$ & $\dfrac{\pi}{4}$ & $\dfrac{\pi}{3}$ & $\dfrac{\pi}{2}$ & $\dfrac{2\pi}{3}$ & $\dfrac{3\pi}{4}$ & $\pi$ & $\dfrac{5\pi}{4}$ & $\dfrac{3\pi}{2}$ & $2\pi$ \\
+        \hline
+        $sin\alpha$ & 0 & $\dfrac{1}{2}$ & $\dfrac{\sqrt{2}}{2}$ & $\dfrac{\sqrt{3}}{2}$ & 1 & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{\sqrt{2}}{2}$ & 0 & $-\dfrac{\sqrt{2}}{2}$ & -1 & 0 \\
+        $cos\alpha$ & 1 & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{\sqrt{2}}{2}$ & $\dfrac{1}{2}$ & 0 & -$\dfrac{1}{2}$ & $-\dfrac{\sqrt{2}}{2}$ & -1 & $-\dfrac{\sqrt{2}}{2}$ & 0 & 1 \\
+        $tan\alpha$ & 0 & $\dfrac{\sqrt{3}}{3}$ & 1 & $\sqrt{3}$ & - & $-\sqrt{3}$ & -1 & 0 & 1 & - & 0 \\
+        $cot\alpha$ & - & $\sqrt{3}$ & 1 & $\dfrac{\sqrt{3}}{3}$ & 0 & $-\dfrac{\sqrt{3}}{3}$ & -1 & - & 1 & 0 & - \\
+        \hline
+    \end{tabular}
+\end{table}
+\subsubsection*{同角三角函数的关系}
+\begin{enumerate}
+    \item 平方关系：$sin^2\alpha + cos^2\alpha = 1$
+    \item 商数关系：$tan\alpha = \dfrac{sin\alpha}{cos\alpha}$，$cot\alpha = \dfrac{cos\alpha}{sin\alpha}$
+\end{enumerate}
+同角三角函数的关系为恒等式.此处的恒等式不是指对任意角都成立，而是指当角$\alpha$使得等式两边有意义的时候，等式成立.
+
+例题：
+\begin{enumerate}
+    \item 已知角$\alpha$的终边经过下列各点, 求角$\alpha$的正弦、余弦、正切、余切. 
+    \begin{enumerate}[(1)]
+    \item $A\left(-8,-6\right)$,     则$\sin\alpha$=\blkda{$-\dfrac{3}{5}$}, $\cos\alpha$=\blkda{$-\dfrac{4}{5}$}, $\tan\alpha$=\blkda{$\dfrac{3}{4}$}, $\cot\alpha$=\blkda{$\dfrac{4}{3}$}; 
+    \item $B\left(\sqrt3,-1\right)$, 则$\sin\alpha$=\blkda{$-\dfrac{1}{2}$}, $\cos\alpha$=\blkda{$\dfrac{\sqrt{3}}{2}$}, $\tan\alpha$=\blkda{$-\dfrac{\sqrt{3}}{3}$}, $\cot\alpha$=\blkda{$-\sqrt{3}$}. 
+    \end{enumerate}
+
+    \item 已知$\sin\alpha=\dfrac{4}{5}$, $\alpha\in\left(0,\pi\right)$, 则$\tan\alpha$等于\blkda{$\pm\dfrac{4}{3}$}. 
+    \begin{jieda}
+    三角比的值分为两部分: 符号与绝对值. 结合定义, 直接赋值: $y=4,r=5$, 于是$x=\pm3$. 
+    \end{jieda}
+
+    \item 计算: $\cos\dfrac{\pi}{3}-\tan\dfrac{\pi}{4}+\dfrac{3}{4}\tan^2\dfrac{7\pi}{6}-\sin\dfrac{5\pi}{6}+\cos^2\dfrac{\pi}{6}+\sin\dfrac{3\pi}{2}$=\blkda{$-1$}. 
+    
+    \item 已知角 $\theta$ 满足 $\sin \theta<0$ 且 $\cos \theta>0$, 则角 $\theta$ 是第\blkda{四}象限的角.
+
+    \item 设$y=\sin\alpha\cdot\cos\alpha\cdot\cot\alpha$, 且$\alpha$是象限角, 则$y$的符号为\dotfill{(\kh{A})}
+    \xx{恒正}{恒负}{可能为0}{不确定}
+
+    \item 在$\triangle{ABC}$中, 有$\cos{A}\cdot\tan{B}\cdot\cot{C}<0$, 则这三角形是\blkda{钝角}三角形.
+    \begin{jieda}
+    首先没有直角, 否则要么积为零, 要么积不存在. \\
+    其次$\cos,\tan,\cot$在$\left(0,\dfrac{\pi}{2}\right)$上都是正的, 在$\left(\dfrac{\pi}{2},\pi\right)$上都是负的, \\
+    故结合条件可得$\cos{A},\tan{B},\cot{C}$中一负两正, 于是钝角三角形. 
+    \end{jieda}
+
+    \item 若$\tan\alpha=\sqrt3$, $\pi<\alpha<\dfrac{3\pi}{2}$, 那么$\cos\alpha-\sin\alpha$的值是\blkda{$\dfrac{-1+\sqrt3}{2}$}.
+    \begin{jieda}
+    由条件可取终边上一点$\left(-1,-\sqrt{3}\right)$. 
+    \end{jieda}
+
+    \item 若$\sin\theta=\dfrac{m-3}{m+5}$, $\cos\theta=\dfrac{4-2m}{m+5}$都有意义, 则$m$=\blkda{0或8}. 
+    \begin{jieda}
+    $\sin^2\theta+\cos^2\theta=1$. 
+    \end{jieda}
+    \item 已知$sin\alpha + cos\alpha = \dfrac{1}{5}$，$\alpha$是第二象限角，那么$tan\alpha = $\blkda{$-\dfrac{4}{3}$}
+    \begin{jieda}
+        $sin\alpha + cos\alpha = \dfrac{1}{5}\\
+        \Rightarrow 1 + 2sin\alpha \cdot cos\alpha = \dfrac{1}{25} \Rightarrow sin\alpha \cdot cos\alpha = -\dfrac{12}{25} \Rightarrow 1 - 2sin\alpha \cdot cos\alpha = \dfrac{49}{25} \Rightarrow (sin\alpha - cos\alpha)^2 = \dfrac{49}{25}$ \\
+        因为$\alpha$是第二象限角，所以$sin\alpha > 0, cos\alpha < 0$，因此$\left \{ \begin{array}{l}
+             sin\alpha + cos\alpha = \dfrac{1}{5}  \\
+             sin\alpha - cos\alpha = \dfrac{7}{5}
+        \end{array} \right.$，故$\left \{ \begin{array}{l}
+             sin\alpha = \dfrac{4}{5}  \\
+             cos\alpha = -\dfrac{3}{5}
+        \end{array} \right.$
+        故$tan\alpha = -\dfrac{4}{3}$
+    \end{jieda}
+    \item 已知 $\sin \alpha+\cos \alpha=\dfrac{1}{5}\left(0<\alpha<\pi\right)$, 求: \\
+    \begin{enumerate*}
+        \item  $\sin \alpha-\cos \alpha$;
+        \item  $\sin ^3 \alpha+\cos ^3 \alpha$;
+        \item $\sin ^4 \alpha+\cos ^4 \alpha$.
+    \end{enumerate*}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\left(sin\alpha+cos\alpha\right)^2 = 1 + 2sin\alpha cos\alpha = \dfrac{1}{25}$，因此$sin\alpha cos\alpha = -\dfrac{12}{25}$ \\
+            因此有$\left(sin\alpha - cos\alpha\right)^2 = 1 - 2sin\alpha cos\alpha = \dfrac{49}{25}$ \\
+            故$sin\alpha - cos\alpha = \pm \dfrac{7}{5}$
+            \\
+            根据$\alpha \in \left(0, \pi\right)$，故$sin \alpha - cos\alpha > -1$，因此$sin\alpha - cos\alpha = \dfrac{7}{5}$ \\
+            \ps 可以根据$sin\alpha + cos\alpha$在不同象限的值域直接判断出来$\alpha$是第二象限角.
+            \item $sin^3 \alpha + cos^3 \alpha = \left(sin\alpha + cos\alpha\right)\left(sin^2 \alpha + cos^2 \alpha - sin\alpha cos\alpha\right) = \left(\dfrac{1}{5}\right)\left(1 + \dfrac{12}{25}\right) = \dfrac{37}{125}$ \\
+            \ps 也可以在第一问的结果上构建方程组$\left \{ \begin{array}{l}
+                sin\alpha + cos\alpha = \frac{1}{5} \\
+                sin\alpha - cos\alpha = \frac{7}{5} 
+            \end{array}\right.$解得$\left \{ \begin{array}{l}
+                sin\alpha = \frac{4}{5} \\
+                cos\alpha = -\frac{3}{5} 
+            \end{array}\right.$后带入计算(下同)
+            \item $\sin ^4 \alpha+\cos ^4 \alpha = \left(\sin ^2 \alpha+\cos ^2 \alpha\right)^2 - 2\left(sin \alpha cos\alpha\right)^2 = 1 - 2 \times \left(-\dfrac{12}{25}\right)^2 = \dfrac{337}{625}$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 若$cosx + siny = \dfrac{1}{4}$，则$sin^2x - siny$的取值范围是\blkda{$\left[-\dfrac{9}{16}, 1 \right]$}
+    \begin{jieda}
+        $sin^2x - siny = sin^2x - \left(\dfrac{1}{4} - cosx\right) = 1 - cos^2x - \left(\dfrac{1}{4} - cosx\right) = -cos^2x + cosx + \dfrac{3}{4}$ \\
+        换元$t = cosx$，则$t \in \left[-\dfrac{3}{4}, 1\right]$，$-t^2 + t + \dfrac{3}{4}$的取值范围是$\left[-\dfrac{9}{16}, 1 \right]$.
+    \end{jieda}
+    
+    \item 设$\cot{x}=2$, 则$\dfrac{2\cos{x}-4\sin{x}}{5\cos{x}+3\sin{x}}$=\blkda{0}, 
+    $3\sin^2x-4\cos^2x$=\blkda{$-\dfrac{13}{5}$}. 
+    \begin{jieda}
+    $\dfrac{2\cos{x}-4\sin{x}}{5\cos{x}+3\sin{x}}=\dfrac{2\cot{x}-4}{5\cot{x}+3}=0$. \\
+    $3\sin^2x-4\cos^2x=\dfrac{3\sin^2x-4\cos^2x}{\cos^2x+\sin^2x}=\dfrac{3-4\cot^2x}{\cot^2x+1}=-\dfrac{13}{5}$. 
+    \end{jieda}
+    \item 已知$\tan\alpha=\sqrt{2}$, 求下列各式的值:
+    \begin{enumerate}[(1)]
+    \item $\sin\alpha+2\cos\alpha$; 
+    \item $\dfrac{\cos\alpha-5\sin\alpha}{3\cos\alpha+\sin\alpha}$; 
+    \item $\dfrac{\sin^2\alpha-\sin\alpha\cos\alpha-3\cos^2\alpha}{5\sin\alpha\cos\alpha+\sin^2\alpha+1}$; 
+    \item $2\sin^2\alpha-\sin\alpha\cos\alpha+\cos^2\alpha$. 
+    \end{enumerate}
+    \begin{jieda}
+    齐次化. \\
+    \begin{enumerate*}[(1)]
+    \item $\pm\dfrac{\sqrt{6}+2\sqrt{3}}{3}$; 
+    \item $\dfrac{13-16\sqrt2}{7}$; 
+    \item $-\dfrac{1}{5}$; 
+    \item $\dfrac{5-\sqrt{2}}{3}$. 
+    \end{enumerate*}
+    \end{jieda}
+    \item \begin{enumerate}
+        \item 已知$tan\alpha - cot\alpha = \dfrac{1}{4}$，求$tan^3\alpha - cot^3\alpha$
+        \item 已知$\dfrac{sin\alpha + cos\alpha}{sin\alpha - cos\alpha} = 2$，求$sin\alpha \cdot cos\alpha$的值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $tan^3\alpha - cot^3\alpha = (tan\alpha - cot\alpha) \cdot (tan^2\alpha + cot^2\alpha + tan\alpha cot\alpha) = \dfrac{1}{4} \cdot (tan^2\alpha + cot^2\alpha + 1)$ \\
+            $tan^2\alpha + cot^2\alpha = (tan\alpha - cot\alpha)^2 + 2tan\alpha \cdot cot\alpha = \dfrac{1}{16} + 2 = \dfrac{33}{16}$ \\
+            $tan^3\alpha - cot^3\alpha = \dfrac{1}{4} \cdot \dfrac{49}{16} = \dfrac{49}{64}$
+            \item $\dfrac{sin\alpha + cos\alpha}{sin\alpha - cos\alpha} = 2 \Longrightarrow \dfrac{tan\alpha + 1}{tan\alpha-1} = 2 \Longrightarrow tan\alpha = 3$
+            \begin{dingautolist}{172}
+                \item $\alpha$是第一象限角，则$sin\alpha = \dfrac{3\sqrt{10}}{10}, cos\alpha = \dfrac{\sqrt{10}}{10}$，$sin\alpha \cdot cos\alpha = \dfrac{3}{10}$
+                \item $\alpha$是第三象限角，则$sin\alpha = -\dfrac{3\sqrt{10}}{10}, cos\alpha = -\dfrac{\sqrt{10}}{10}$，$sin\alpha \cdot cos\alpha = \dfrac{3}{10}$
+            \end{dingautolist}
+        \end{enumerate}
+    \end{jieda}
+    \item 使函数$y=\sqrt{\sin{x}}+\sqrt{16-x^2}$有意义的$x$的取值范围是\blkda[3]{$[-4,-\pi]\cup[0,\pi]$}; 
+    使函数$y=\lg\sin\left(\cos{x}\right)$有意义的$x$的取值范围是\blkda[5]{$\left(-\dfrac{\pi}{2}+2k\pi,\dfrac{\pi}{2}+2k\pi\right)\left(k\zz\right)$}. 
+    \begin{jieda}
+    $\sin{x}\geq 0\land 16-x^2\geq 0$, 故$x\in[-4,-\pi]\cup[0,\pi]$. \\
+    $\sin\left(\cos{x}\right)>0\land\cos{x}\in[-1,1]\iff\cos{x}\in\left(0,1\right]\iff x\in\left(-\dfrac{\pi}{2}+2k\pi,\dfrac{\pi}{2}+2k\pi\right)\left(k\zz\right)$. 
+    \end{jieda}
+\end{enumerate}
+\subsection*{诱导公式}
+\begin{enumerate}
+    \item 终边相同的角的三角函数值相等： \\
+    $sin(\alpha + 2k\pi) = sin \alpha$，$cos(\alpha + 2k\pi) = cos \alpha$ \\
+    $tan(\alpha + 2k\pi) = tan \alpha$，$cot(\alpha + 2k\pi) = cot \alpha$ \\
+    其中 $k \in \mathbf{Z}$
+    利用这组公式可以将求任意角的三角函数值的问题转化为求一个$[0, 2\pi)$内的角的三角函数值问题.
+    \item 终边关于原点对称的角的正弦与余弦互为相反数，正切和余切相等：\\
+    $sin(\alpha + \pi) = -sin \alpha$，$cos(\alpha + \pi) = -cos \alpha$ \\
+    $tan(\alpha + \pi) = tan \alpha$，$cot(\alpha + \pi) = cot \alpha$\\
+    利用这组公式可以将求$[0, 2\pi)$内角的三角函数值的问题转化为求一个$[0, \pi)$内角的三角函数值的问题.    
+    \item 终边关于$y$轴对称的角的正弦相等，余弦、正切、余切互为相反数：\\
+    $sin(\pi-\alpha) = sin \alpha$，$cos(\pi-\alpha) = -cos \alpha$ \\
+    $tan(\pi-\alpha) = -tan \alpha$，$cot(\pi-\alpha) = -cot \alpha$\\
+    利用这组公式可以将求$[0, \pi)$内角的三角函数值的问题转化为求一个$[0, \dfrac{\pi}{2})$内角的三角函数值的问题.
+    \item 终边关于$x$轴对称的角的正弦，正切，余切互为相反数，余弦相等：\\
+    $sin(-\alpha) = -sin \alpha$，$cos(-\alpha) = cos \alpha$ \\
+    $tan(-\alpha) = -tan \alpha$，$cot(-\alpha) = -cot \alpha$\\
+    利用这组公式可以将求负角的三角函数值的问题转化为求一个正角的三角函数值的问题.
+    \item 终边关于$y = x$对称的两个角，一个角的正弦等于另一个角的余弦，一个角的正切等于另一个角的余切：\\
+    $sin(\dfrac{\pi}{2}-\alpha) = cos \alpha$，$cos(\dfrac{\pi}{2}-\alpha) = sin \alpha$ \\
+    $tan(\dfrac{\pi}{2}-\alpha) = cot \alpha$，$cot(\dfrac{\pi}{2}-\alpha) = tan \alpha$ \\
+    利用这组公式可以实现正弦和余弦的互换，正切和余切的互换.
+    \item 终边逆时针旋转$\dfrac{\pi}{2}$后的角的正弦等于旋转前的角的余弦，旋转后的角的余弦等于旋转前的角的正弦的相反数，旋转后的角的正切等于旋转前的余切的相反数，旋转后的余切等于旋转前的正切的相反数：\\
+    $sin(\dfrac{\pi}{2}+\alpha) = cos \alpha$，$cos(\dfrac{\pi}{2}+\alpha) = -sin \alpha$ \\
+    $tan(\dfrac{\pi}{2}+\alpha) = -cot \alpha$，$cot(\dfrac{\pi}{2}+\alpha) = -tan \alpha$ \\
+    利用这组公式可以实现正弦和余弦的互换，正切和余切的互换.
+\end{enumerate}
+\textbf{奇变偶不变，符号看象限}：诱导公式是体现角$\alpha+k \cdot \dfrac{\pi}{2}(k \in \mathbf{Z})$的三角函数值与角$\alpha$的三角函数值之间的关系.当$k$为奇数的时候，三角函数名相应变化，当$k$为偶数的时候，三角函数名不变.因为当等式两端都有意义的时候，诱导公式是恒成立的，所以诱导公式中的正负号可以通过将$\alpha$视作一个锐角的时候（其三角函数值都是正的），看$\alpha+k \cdot \dfrac{\pi}{2}(k \in \mathbf{Z})$的象限来判断.
+
+例题：
+\begin{enumerate}
+    \item 若 $P\left(-3,4\right)$ 为角 $a$ 终边上一点, 则 $\cos \left(2 \pi-a\right)=$ \blkda{$-\dfrac{3}{5}$}.
+    \item 已知角 $\theta$ 的终边过点 $\left(1,-2\right)$, 则 $\cos \left(\pi+\theta\right)=$ \blkda{$-\dfrac{\sqrt{5}}{5}$}.
+    \item 若 $\cos \alpha=-\dfrac{3}{5}, a$ 是第二象限角, 则 $\sin \left(\alpha+\pi\right)=$ \blkda{$-\dfrac{4}{5}$}.
+    
+    \item 已知 $\sin \alpha=\dfrac{2 \sqrt{5}}{5}$, 则 $\cos \left(\alpha-\dfrac{\pi}{2}\right)=$\blkda{$\dfrac{2\sqrt{5}}{5}$}.
+
+    \item 若 $\sin a=\dfrac{1}{3}, \alpha\in\left(\dfrac{\pi}{2}, \pi\right)$, 则 $\sin \left(\alpha-\dfrac{3 \pi}{2}\right)$ 的值为\blkda{$-\dfrac{2\sqrt{2}}{3}$}.
+
+    \item 已知$\cos\left(\dfrac{\pi}{2}+\varphi\right)=\dfrac{\sqrt3}{2}$, 且$\abs{\varphi}<\dfrac{\pi}{2}$, 则$\tan\varphi$=\blkda{$-\sqrt{3}$}. 
+    \begin{jieda}
+    $-\sin\varphi=\dfrac{\sqrt{3}}{2}$, 故$\sin\varphi=-\dfrac{\sqrt{3}}{2}$. \\
+    又$\abs{\varphi}<\dfrac{\pi}{2}$, 故$-\dfrac{\pi}{2}<\varphi<0$, 于是$\tan\varphi=-\sqrt{3}$. 
+    \end{jieda}
+
+    \item 下列等式中恒成立的是\dotfill{(\kh{A})}
+    \xx{$\sin \left(\dfrac{3 \pi}{2}-\alpha\right)=-\cos a$}
+    {$\cos \left(\dfrac{3 \pi}{2}-\alpha\right)=\sin a$}
+    {$\tan \left(\dfrac{3 \pi}{2}-\alpha\right)=-\cot \alpha$}
+    {$\cot \left(\dfrac{3 \pi}{2}-\alpha\right)=\cot \alpha$}
+
+    \item 已知点$P\left(\sin\left(\pi+\theta\right),\sin\left(\dfrac{3\pi}{2}-\theta\right)\right)$在第三象限, 则角$\theta$所在的象限是\dotfill{(\kh{A})}
+    \xx{第一象限}{第二象限}{第三象限}{第四象限}
+    \begin{jieda}
+    $\begin{cases}
+    \sin\left(\pi+\theta\right)<0\\
+    \sin\left(\dfrac{3\pi}{2}-\theta\right)<0
+    \end{cases}$, 
+    于是$\begin{cases}
+    \sin\theta>0\\
+    \cos\theta>0
+    \end{cases}$. 
+    \end{jieda}
+
+    \item 已知角$\alpha$的顶点与原点$O$重合, 始边与$x$轴的正半轴重合, 将$\alpha$的终边按顺时针方向旋转$\dfrac{\pi}{2}$后, 
+    过点$P\left(\dfrac{3}{5},\dfrac{4}{5}\right)$, 则$\cos\alpha$等于\dotfill{(\kh{A})}
+    \xx{$-\dfrac{4}{5}$}
+    {$\dfrac{4}{5}$}
+    {$-\dfrac{3}{5}$}
+    {$\dfrac{3}{5}$}
+    \begin{jieda}
+    $\beta=\alpha-\dfrac{\pi}{2}$, 则$\alpha=\beta+\dfrac{\pi}{2}$. 
+    故$\cos\alpha=\cos\left(\beta+\dfrac{\pi}{2}\right)=-\sin\beta=-\dfrac{4}{5}$. 
+    \end{jieda}
+    
+    \item 若$\cos\left(\pi-\alpha\right)=\dfrac{\sqrt5}{3}$, 且$\alpha\in\left(\dfrac{\pi}{2},\pi\right)$, 则$\sin\left(\pi+\alpha\right)$=\blkda{$-\dfrac{2}{3}$}. 
+
+    \item 已知$\sin\left(\alpha-\pi\right)=\dfrac{2}{3}$, 且$\alpha\in\left(-\dfrac{\pi}{2},0\right)$, 则$\tan\alpha$=\blkda{$-\dfrac{2}{\sqrt{5}}$}. 
+    
+    \item 已知$\sin\left(\alpha-\dfrac{2\pi}{3}\right)=\dfrac{1}{4}$, 则$\sin\left(\alpha+\dfrac{\pi}{3}\right)$=\blkda{$-\dfrac{1}{4}$}. 
+
+    \item 已知$\sin\left(\dfrac{\pi}{2}-\alpha\right)=\dfrac{3}{5}$, 则$\cos\left(\pi+\alpha\right)$的值为\blkda{$-\dfrac{3}{5}$}. 
+
+    \item 已知$\cos\left(11\pi-3\right)=p$, 用$p$表示$\tan\left(-3\right)$=\blkda{$\dfrac{\sqrt{1-p^2}}{p}$}.  
+
+    \item 已知 $\cos 170^{\circ}=m$, 则 $\tan 10^{\circ}$ 的值为\blkda{$-\dfrac{\sqrt{1-m^2}}{m}$}.
+
+    \item 已知$\sin\left(\dfrac{\pi}{2}+\theta\right)+3\cos\left(\pi-\theta\right)=\sin\left(-\theta\right)$, 则$\sin\theta\cos\theta+\cos^2\theta=$\dotfill{(\kh{C})}
+    \xx{$\dfrac{1}{5}$}
+    {$\dfrac{2}{5}$}
+    {$\dfrac{3}{5}$}
+    {$\dfrac{\sqrt5}{5}$}
+    \begin{jieda}
+    $\cos\theta-3\cos\theta=-\sin\theta$, 故$\tan\theta=2$. \\
+    $\sin\theta\cos\theta+\cos^2\theta=\dfrac{\sin\theta\cos\theta+\cos^2\theta}{\sin^2\theta+\cos^2\theta}=\dfrac{\tan\theta+1}{\tan^2\theta+1}=\dfrac{3}{5}$. 
+    \end{jieda}
+
+    \item 化简：
+    \begin{enumerate}
+        \item $\dfrac{cos(\pi+\alpha)sin(\alpha+2\pi)}{tan(-\alpha-\pi)cos(-\pi+\alpha)}$ 
+        \item $\dfrac{sin(2\pi-\alpha)cos(\pi+\alpha)cos(\dfrac{\pi}{2}+\alpha)cos(\dfrac{11\pi}{2}-\alpha)}{cos(\pi-\alpha)sin(3\pi-\alpha)sin(-\pi-\alpha)sin(\dfrac{9\pi}{2}+\alpha)}$
+        \item $\dfrac{sin(2\pi-\alpha)tan(\pi+\alpha)cot(-\pi-\alpha)}{cos(\pi-\alpha)tan(3\pi-\alpha)}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\dfrac{cos(\pi+\alpha)sin(\alpha+2\pi)}{tan(-\alpha-\pi)cos(-\pi+\alpha)}$ = $\dfrac{(-cos\alpha)(sin\alpha)}{(-tan\alpha)(-cos\alpha)} = -cos\alpha$
+            \item $\dfrac{sin(2\pi-\alpha)cos(\pi+\alpha)cos(\dfrac{\pi}{2}+\alpha)cos(\dfrac{11\pi}{2}-\alpha)}{cos(\pi-\alpha)sin(3\pi-\alpha)sin(-\pi-\alpha)sin(\dfrac{9\pi}{2}+\alpha)} \\ = \dfrac{(-sin\alpha)(-cos\alpha)(-sin\alpha)(cos(\dfrac{\pi}{2}+\alpha))}{(-cos\alpha)(sin\alpha)(sin\alpha)(cos\alpha)} = \dfrac{-sin\alpha}{cos\alpha} = -tan\alpha$
+            \item $\dfrac{sin(2\pi-\alpha)tan(\pi+\alpha)cot(-\pi-\alpha)}{cos(\pi-\alpha)tan(3\pi-\alpha)} = \dfrac{(-sin\alpha)(tan\alpha)(-cot\alpha)}{(-cos\alpha)(-tan\alpha)} = \dfrac{sin\alpha}{sin\alpha} = 1$
+        \end{enumerate}
+    \end{jieda}
+
+    \item 设$f\left(\theta\right)=\dfrac{2\cos^3\theta+\sin^2\left(2\pi-\theta\right)+\cos\left(-\theta\right)-3}{2+2\cos^2\left(\pi+\theta\right)+\cos\left(2\pi-\theta\right)}$, 求$f\left(\dfrac{\pi}{3}\right)$的值. 
+    \begin{jieda}
+    $f\left(\theta\right)=\dfrac{2\cos^3\theta+1-\cos^2\theta+\cos\theta-3}{2\cos^2\theta+\cos\theta-2}=\cos\theta-1$. \\
+    故$f\left(\dfrac{\pi}{3}\right)=-\dfrac{1}{2}$. 
+    \end{jieda}
+    
+    \item 已知$f\left(x\right)=\dfrac{\cos\left(\dfrac{\pi}{2}+x\right)\cos\left(-x\right)\sin\left(\dfrac{3\pi}{2}-x\right)}{\sin\left(-\pi-x\right)\cos\left(2\pi-x\right)}$. 
+    \begin{enumerate}[(1)]
+    \item 化简$f\left(x\right)$; 
+    \item 若$x$是第三象限角, 且$\tan{x}=2$, 求$f\left(x\right)$的值. 
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}[(1)]
+    \item $f\left(x\right)=\dfrac{-\sin{x}\cos{x}\left(-\cos{x}\right)}{\sin{x}\cos{x}}=\cos{x}$. 
+    \item $f\left(x\right)=-\dfrac{1}{\sqrt{5}}$. 
+    \end{enumerate}
+    \end{jieda}
+    
+    \item 已知$\sin\alpha$是方程$3x^2-10x-8=0$的根, 且$\alpha$为第三象限角, \\
+    求$\dfrac{\sin\left(\alpha+\dfrac{3\pi}{2}\right)\sin\left(\dfrac{3\pi}{2}-\alpha\right)\tan^2\left(2\pi-\alpha\right)\tan\left(\pi-\alpha\right)}
+    {\cos\left(\dfrac{\pi}{2}-\alpha\right)\cos\left(\dfrac{\pi}{2}+\alpha\right)}$的值. 
+    \begin{jieda}
+    易得$\sin\alpha=-\dfrac{2}{3}$. 
+    故
+    \begin{align*}
+    E & = \dfrac{-\cos\alpha\left(-\cos\alpha\right)\tan^2\alpha\left(-\tan\alpha\right)}{\sin\alpha\left(-\sin\alpha\right)}\\
+    & = \tan\alpha\\
+    & = \dfrac{2}{\sqrt{5}}.
+    \end{align*}
+    \end{jieda}
+
+    \item 已知$\sin\left(3\pi-\alpha\right)=\sqrt2\sin\left(2\pi+\beta\right)$, $\sqrt3\cos\left(-\alpha\right)=-\sqrt2\cos\left(\pi+\beta\right)$, 
+    且$0<\alpha<\pi$, $0<\beta<\pi$, 求$\sin\alpha,\sin\beta$. 
+    \begin{jieda}
+    $\begin{cases}
+    \sin\alpha=\sqrt{2}\sin\beta\\
+    \sqrt{3}\cos\alpha=\sqrt{2}\cos\beta
+    \end{cases}$, 两式两边平方再相加可得$\sin^2\alpha+3\cos^2\alpha=2$, 故$\sin^2\alpha=\dfrac{1}{2}$. \\
+    又$\alpha\in\left(0,\pi\right)$, 故$\sin\alpha=\dfrac{\sqrt{2}}{2}$. 
+    代入第一式可得$\sin\beta=\dfrac{1}{2}$. 
+    % $\sin\alpha=\dfrac{\sqrt{2}}{2}$, $\sin\beta=\dfrac{1}{2}$. 
+    \end{jieda}
+
+    \item 已知$sin\theta, cos\theta$是关于$x$的方程$x^2-ax+a=0(a \in \mathbf{R})$的两个根.
+    \begin{enumerate}
+        \item 求$cos^3(\dfrac{\pi}{2} - \theta) + sin^3(\dfrac{\pi}{2}+\theta)$的值.
+        \item 求$tan(\pi-\theta)-\dfrac{1}{tan\theta}$
+    \end{enumerate}
+    \begin{jieda}
+        首先需要利用韦达定理得到$sin\theta$、$cos\theta$与$a$的关系. \\
+        $sin\theta + cos\theta = a, \quad sin\theta \cdot cos\theta = a$
+        由于$a$是未知参数，因此考虑利用同角三角函数的基本关系解出$a$.$(sin\theta + cos\theta)^2-2sin\theta \cdot cos\theta = 1$，即有$a^2 - 2a = 1$，故$(a-1)^2 = 2$，即$a = 1+\sqrt{2} \mbox{或} 1 - \sqrt{2}$.根据题干方程的判别式或者正弦与余弦的值域可以判断$a = 1 - \sqrt{2}$.下面分别化简求解.
+        \begin{enumerate}
+            \item $cos^3(\dfrac{\pi}{2} - \theta) + sin^3(\dfrac{\pi}{2}+\theta) = sin^3\theta + cos^3\theta = (sin\theta + cos\theta)(sin^2\theta + cos^2\theta - sin\theta \cdot cos\theta) = a \cdot (1 - a) = \sqrt{2} - 2$
+            \item $tan(\pi-\theta)-\dfrac{1}{tan\theta} = -\dfrac{sin\theta}{cos\theta} - \dfrac{cos\theta}{sin\theta} = -(\dfrac{sin^2\theta + cos^2\theta}{sin\theta \cdot cos\theta}) = -\dfrac{1}{a} = \sqrt{2}+1$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{和角公式、差角公式}
+\subsubsection*{两角差的余弦公式} $cos(\alpha-\beta) = cos\alpha \cdot cos\beta + sin\alpha  \cdot sin\beta$
+\subsubsection*{两角和的余弦公式} $cos(\alpha+\beta) = cos\alpha \cdot cos\beta - sin\alpha  \cdot sin\beta$
+\subsubsection*{两角和的正弦公式} $sin(\alpha+\beta) = sin\alpha \cdot cos\beta + cos\alpha  \cdot sin\beta$
+\subsubsection*{两角差的正弦公式} $sin(\alpha-\beta) = sin\alpha \cdot cos\beta - cos\alpha  \cdot sin\beta$
+\subsubsection*{两角和与差的正切公式} $tan(\alpha+\beta) = \dfrac{tan\alpha + tan\beta}{1 - tan\alpha \cdot tan\beta}$ \quad $tan(\alpha-\beta) = \dfrac{tan\alpha - tan\beta}{1 + tan\alpha \cdot tan\beta}$
+
+例题：
+\begin{enumerate}
+    \item 下列四个命题中, 假命题是\dotfill{(\kh{B})}
+    \xx
+    {存在这样的$\alpha,\beta$值, 使得$\sin\left(\alpha+\beta\right)=\sin\alpha\cos\beta-\cos\alpha\sin\beta$}
+    {不存在无穷多的$\alpha,\beta$值, 使得$\sin\left(\alpha+\beta\right)=\sin\alpha\cos\beta-\cos\alpha\sin\beta$}
+    {对于任意的$\alpha,\beta$值, 都有$\sin\left(\alpha+\beta\right)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$}
+    {不存在$\alpha,\beta$值, 使得$\sin\left(\alpha+\beta\right)\neq\sin\alpha\cos\beta+\cos\alpha\sin\beta$}
+    \begin{jieda}
+    对于B选项, 只要$\cos\alpha\sin\beta=0$, 则必然有$\sin\left(\alpha+\beta\right)=\sin\alpha\cos\beta-\cos\alpha\sin\beta$. \\
+    C与D等价. 
+    \end{jieda}
+    \item 已知$sin\alpha = -\dfrac{3}{5}$，$\alpha$是第四象限角，求$sin\left(\dfrac{\pi}{4} - \alpha\right), cos\left(\dfrac{\pi}{4}+\alpha\right), tan\left(\alpha - \dfrac{\pi}{4}\right)$
+    \begin{jieda}
+        根据$\alpha$是第四象限角，$sin\alpha = -\dfrac{3}{5}$，所以$cos\alpha = \dfrac{4}{5}, tan\alpha = -\dfrac{3}{4}$
+        \begin{dingautolist}{172}
+            \item $sin\left(\dfrac{\pi}{4} - \alpha\right) = sin\dfrac{\pi}{4} cos\alpha - cos\dfrac{\pi}{4} sin\alpha = \dfrac{\sqrt{2}}{2} \cdot \dfrac{4}{5} - \dfrac{\sqrt{2}}{2} \cdot (-\dfrac{3}{5}) = \dfrac{7\sqrt{2}}{10}$
+            \item $cos\left(\dfrac{\pi}{4} + \alpha\right) = cos\dfrac{\pi}{4} cos\alpha - sin\dfrac{\pi}{4} sin\alpha = \dfrac{\sqrt{2}}{2} \cdot \dfrac{4}{5} - \dfrac{\sqrt{2}}{2} \cdot (-\dfrac{3}{5}) = \dfrac{7\sqrt{2}}{10}$
+            \item $tan\left(\alpha - \dfrac{\pi}{4}\right) = \dfrac{tan\alpha - tan\dfrac{\pi}{4}}{1+tan\alpha \cdot tan\dfrac{\pi}{4}} = \dfrac{tan\alpha - 1}{1 + tan\alpha} = -7$
+        \end{dingautolist}
+        \ps $sin\left(\dfrac{\pi}{4} - \alpha\right)$与$cos\left(\dfrac{\pi}{4} + \alpha\right)$恒等，$sin\left(\dfrac{\pi}{4} - \alpha\right) = sin\left(\dfrac{\pi}{2}-\left(\alpha + \dfrac{\pi}{4}\right)\right) = cos\left(\dfrac{\pi}{4} + \alpha\right)$
+    \end{jieda}
+    \item 已知$\alpha, \beta \in \left(0, \dfrac{\pi}{2}\right)$，且$sin\alpha = \dfrac{1}{3}, cos\beta = \dfrac{1}{4}$，则$sin\left(\alpha + \beta\right) = $\blkda[3]{$\dfrac{1 + 2\sqrt{30}}{12}$}
+    \begin{jieda}
+        $cos\alpha = \dfrac{2\sqrt{2}}{3}, sin\beta = \dfrac{\sqrt{15}}{4}$，故$sin\left(\alpha + \beta\right) = \dfrac{1}{3} \cdot \dfrac{1}{4} + \dfrac{\sqrt{15}}{4} \cdot \dfrac{2\sqrt{2}}{3}  = \dfrac{1 + 2\sqrt{30}}{12}$
+    \end{jieda}
+    \item 已知$tan\alpha = 2$，求$tan\left(\alpha + \dfrac{\pi}{4}\right)$，$tan\left(\dfrac{\pi}{6} - \alpha\right)$，$cot\left(\alpha - \dfrac{\pi}{3}\right)$的值
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $tan\left(\alpha + \dfrac{\pi}{4}\right) = \dfrac{1+tan\alpha}{1-tan\alpha} = -3$
+            \item $tan\left(\dfrac{\pi}{6} - \alpha\right) = \dfrac{\dfrac{\sqrt{3}}{3} - tan\alpha}{1 + \dfrac{\sqrt{3}}{3} \cdot tan\alpha} = \dfrac{1-2\sqrt{3}}{\sqrt{3}+2} = 8-5\sqrt{3}$
+            \item $cot\left(\alpha - \dfrac{\pi}{3}\right) = \dfrac{1+\sqrt{3} \cdot tan\alpha}{tan\alpha - \sqrt{3}} = 8+5\sqrt{3}$ 
+        \end{dingautolist}
+    \end{jieda}
+
+
+    \item 已知$sin\left(\alpha + \beta\right) = \dfrac{2}{3}, sin\left(\alpha - \beta\right) = \dfrac{2}{5}$，求$\dfrac{tan\alpha}{tan\beta}$.
+    \begin{jieda}
+        $\left \{ \begin{array}{l}
+             sin\alpha \cdot cos\beta + cos\alpha \cdot sin\beta = \dfrac{2}{3}  \\
+             sin\alpha \cdot cos\beta - cos\alpha \cdot sin\beta = \dfrac{2}{5}
+        \end{array} \right. \Longrightarrow \left \{ \begin{array}{l}
+             sin\alpha \cdot cos\beta = \dfrac{8}{15}  \\
+             cos\alpha \cdot sin\beta = \dfrac{2}{15}
+        \end{array} \right.$，故$\dfrac{tan\alpha}{tan\beta} = 4$
+    \end{jieda}
+    
+    
+    \item 已知$sin\alpha = \dfrac{4}{5}, \alpha \in \left(\dfrac{\pi}{2}, \pi\right)$, $cos\beta = -\dfrac{5}{13}$，$\beta$是第三象限角，求$cos(\alpha - \beta)$的值.
+    \begin{jieda}
+        两角差的余弦公式：$cos(\alpha - \beta) = cos\alpha cos\beta + sin\alpha sin\beta$. \\
+        因为$sin\alpha = \dfrac{4}{5}, \alpha \in \left(\dfrac{\pi}{2}, \pi\right)$，所以$cos\alpha = -\dfrac{3}{5}$.\\
+        因为$cos\beta = -\dfrac{5}{13}$且$\beta$是第三象限角，所以$sin\beta = -\dfrac{12}{13}$.\\
+        因此$cos(\alpha - \beta) = cos\alpha cos\beta + sin\alpha sin\beta = \left(-\dfrac{3}{5}\right)\left(-\dfrac{5}{13}\right)+\left(\dfrac{4}{5}\right)\left(-\dfrac{12}{13}\right) = -\dfrac{33}{65}$
+    \end{jieda}
+
+    \item 已知$\cos\left(\alpha-\beta\right)=\dfrac{5}{13}$, $\sin\alpha=-\dfrac{4}{5}$, $\alpha\in\left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)$, 
+    $\beta\in\left(0,\pi\right)$, 则$\cos\beta$=\blkda{$\dfrac{63}{65}$}. 
+    \begin{jieda}
+    $\sin\alpha=-\dfrac{4}{5}$, $\alpha\in\left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)$, 则$\alpha\in\left(-\dfrac{\pi}{2},0\right)$, 且$\cos\alpha=\dfrac{3}{5}$. \\
+    于是$\alpha-\beta\in\left(-\dfrac{3\pi}{2},0\right)$. \\
+    又$\cos\left(\alpha-\beta\right)=\dfrac{5}{13}>0$, 故$\alpha-\beta\in\left(-\dfrac{\pi}{2},0\right)$, 且$\sin\left(\alpha-\beta\right)=-\dfrac{12}{13}$. \\
+    于是$\cos\beta=\cos\left(-\beta\right)=\cos\left(\alpha-\beta-\alpha\right)=\dfrac{63}{65}$. \\
+    \ps 三角比求值, 麻烦在于确定角的范围. 象限角与三角比的符号相结合是常见的判断角度. \\
+    \ps 利用平方关系解方程计算量大，且多解. 题目中给定的$\alpha, \beta$的范围都更大，利用平方关系处理的时候需判断$\beta$的取值范围，且本题直接判断$\beta$的取值范围并非简单.
+    \end{jieda}
+    
+    \item 
+    \begin{enumerate}
+        \item 已知$\tan\alpha=\dfrac{1}{7}$, $\tan\beta=\dfrac{3}{4}$, 则$\alpha+\beta$=\blkda[3]{$k\pi + \dfrac{\pi}{4}, k \in \mathbf{Z}$}
+        \item 已知$\tan\alpha=\dfrac{1}{7}$, $\tan\beta=\dfrac{3}{4}$, $\alpha,\beta$均为锐角, 则$\alpha+\beta$=\blkda{$\dfrac{\pi}{4}$}
+        \item 已知$\tan\alpha=\dfrac{1}{7}$, $\tan\beta=\dfrac{3}{4}$, $\alpha \in (0, \pi), \beta\ \in (0, 2\pi)$, 则$\alpha+\beta$=\blkda{$\dfrac{\pi}{4}$或$\dfrac{5\pi}{4}$}
+    \end{enumerate}
+    
+    \begin{jieda}
+        $tan(\alpha + \beta) = \dfrac{\frac{1}{7} + \frac{3}{4}}{1 - \frac{1}{7} \cdot \frac{3}{4}} = 1$ 
+        \begin{enumerate}
+            \item $\alpha + \beta = k\pi + \dfrac{\pi}{4}, k \in \mathbf{Z}$
+            \item $\alpha + \beta = \dfrac{\pi}{4}$
+            \item $\alpha \in \left(0, \dfrac{\pi}{4}\right), \beta \in \left(0, \dfrac{\pi}{4}\right) \cup \left(\pi, \dfrac{5\pi}{4}\right)$，$\alpha$一解，$\beta$两解，故$\alpha + \beta = \dfrac{\pi}{4}$或$\dfrac{5\pi}{4}$
+        \end{enumerate}
+    \end{jieda}
+    \item 证明：$sin(\alpha+\beta)sin(\alpha-\beta) = sin^2\alpha - sin^2\beta$
+    \begin{jieda}
+        证明：\\
+        $sin(\alpha+\beta)sin(\alpha-\beta) \\
+        = (sin\alpha cos\beta + cos\alpha sin\beta)(sin\alpha cos\beta - cos\alpha sin\beta) \\
+        = sin^2\alpha cos^2\beta - cos^2\alpha sin^2\beta \\
+        = sin^2\alpha - sin^2\alpha sin^2\beta - sin^2\beta + sin^2\alpha sin^2\beta \\
+        = sin^2\alpha - sin^2\beta$
+    \end{jieda}
+    \item 化简: $\dfrac{\tan\left(\dfrac{\pi}{4}+\alpha\right)-\tan\left(\dfrac{\pi}{4}-\alpha\right)}{\tan2\alpha}-\tan\left(\dfrac{\pi}{4}+\alpha\right)\tan\left(\dfrac{\pi}{4}-\alpha\right)$.
+    \begin{jieda}
+        首先判断出所求和已知的角之间的关系：$\left(\dfrac{\pi}{4}+\alpha\right) - \left(\dfrac{\pi}{4}-\alpha\right) = 2\alpha$ \\
+        原式$ = \dfrac{\tan\left(\dfrac{\pi}{4}+\alpha\right)-\tan\left(\dfrac{\pi}{4}-\alpha\right)}{\tan\left(\left(\dfrac{\pi}{4}+\alpha\right) - \left(\dfrac{\pi}{4}-\alpha\right)\right)}-\tan\left(\dfrac{\pi}{4}+\alpha\right)\tan\left(\dfrac{\pi}{4}-\alpha\right) \\
+        = 1 + \tan\left(\dfrac{\pi}{4}+\alpha\right)\tan\left(\dfrac{\pi}{4}-\alpha\right) -\tan\left(\dfrac{\pi}{4}+\alpha\right)\tan\left(\dfrac{\pi}{4}-\alpha\right) = 1$
+    \end{jieda}
+    \item 若$\triangle ABC$不是直角三角形，求证：$tanA + tanB + tanC = tanA \cdot tanB \cdot tanC$
+    \begin{jieda}
+        $tan(A+B) = \dfrac{tanA + tanB}{1 - tanA \cdot tanB}$ \\
+        $tanA + tanB = tan(A+B) (1 - tanA \cdot tanB) = tan(\pi-C) (1 - tanA \cdot tanB)\\ = tanC (tanA \cdot tanB - 1)$，变形可以得到$tanA + tanB + tanC = tanA \cdot tanB \cdot tanC$
+    \end{jieda}
+    \item 已知关于$x$的方程$mx^2+\left(2m-3\right)x+\left(m-2\right)=0\left(m\neq 0\right)$的两个根为$\tan\alpha,\tan\beta$, 求$\tan\left(\alpha+\beta\right)$的最小值.
+    \begin{jieda}
+    $\Delta\geq 0\land m\neq 0\iff m\leq\dfrac{9}{4}$且$ m\neq 0$. 由韦达定理有$\left \{ \begin{array}{l}
+             tan\alpha + tan\beta = \dfrac{3-2m}{m}  \\
+             tan\alpha \cdot tan\beta = \dfrac{m-2}{m}
+            \end{array}\right.$ \\
+    $\tan\left(\alpha+\beta\right)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}=\dfrac{\dfrac{3-2m}{m}}{1-\dfrac{m-2}{m}} = \dfrac{3}{2}-m\geq-\dfrac{3}{4}$. \\
+    故$\min=-\dfrac{3}{4}$, $m=\dfrac{9}{4}$. 
+    \end{jieda}
+    
+    \item 设$\sin\theta+\cos\theta=\dfrac{\sqrt{2}}{3}$, $\dfrac{\pi}{2}<\theta<\pi$, 求$\tan\theta-\cot\theta$的值. 
+    \begin{jieda}
+    由条件可得$\sin\theta\cos\theta=-\dfrac{7}{18}$, $\sin\theta-\cos\theta=\dfrac{4}{3}$. 
+    $\tan\theta-\cot\theta  = \dfrac{\sin\theta}{\cos\theta}-\dfrac{\cos\theta}{\sin\theta}
+     = \dfrac{\sin^2\theta-\cos^2\theta}{\sin\theta\cos\theta}
+     = \dfrac{(\sin\theta-\cos\theta)(\sin\theta+\cos\theta)}{\sin\theta\cos\theta}
+     = -\dfrac{8\sqrt{2}}{7}.$
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{辅助角}
+$asin\alpha + bcos\alpha = \sqrt{a^2+b^2} sin(\alpha + \varphi)$ （$\dfrac{a}{\sqrt{a^2+b^2}} = cos\varphi$, $\dfrac{b}{\sqrt{a^2+b^2}} = sin\varphi$）
+\par 常用特例：$sin\alpha + cos\alpha = \sqrt{2} sin\left(\alpha + \dfrac{\pi}{4}\right)$
+
+例题：
+\begin{enumerate}
+    \item 用辅助角公式化简，表示为$Asin(\omega x + \varphi), \omega > 0 \mbox{且} |\varphi| < \dfrac{\pi}{2}$的形式
+    \begin{enumerate}
+        \item $\dfrac{\sqrt{3}}{2}\sin\alpha+\dfrac{1}{2}\cos\alpha$=\blkda[3]{$\sin\left(\alpha+\dfrac{\pi}{6}\right)$}. 
+        
+        \item $\dfrac{\sqrt{3}}{2}\sin\alpha-\dfrac{1}{2}\cos\alpha$=\blkda[3]{$\sin\left(\alpha-\dfrac{\pi}{6}\right)$}. 
+        
+        \item $\sin\alpha-\sqrt{3}\cos\alpha$=\blkda[3]{$2\sin\left(\alpha-\dfrac{\pi}{3}\right)$}. 
+        
+        \item $2\cos\alpha+2\sqrt{3}\sin\alpha$=\blkda[3]{$4\sin\left(\alpha+\dfrac{\pi}{6}\right)$}. 
+        
+        \item $\sin\alpha+\cos\alpha$=\blkda[3]{$\sqrt{2}\sin\left(\alpha+\dfrac{\pi}{4}\right)$}. 
+        
+        \item $-\sin\alpha-\cos\alpha$=\blkda[3]{$-\sqrt{2}\sin\left(\alpha+\dfrac{\pi}{4}\right)$}. 
+    \end{enumerate}
+    \item 将下列各式化为$A\sin\left(\alpha+\varphi\right)\left(A>0\right)$的形式: 
+    \begin{enumerate}[(1)]
+    \item $\cos\left(\dfrac{\pi}{3}+x\right)+\cos{x}$; 
+    
+    \item $\sin\left(\dfrac{\pi}{3}-2x\right)+\cos\left(\dfrac{\pi}{3}+2x\right)$. 
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}[(1)]
+    \item $\cos\left(\dfrac{\pi}{3}+x\right)+\cos{x}=\cos\dfrac{\pi}{3}\cos{x}-\sin\dfrac{\pi}{3}\sin{x}+\cos{x}=\dfrac{3}{2}\cos{x}-\dfrac{\sqrt{3}}{2}\sin{x}=\sqrt{3}\sin\left(x+\dfrac{2\pi}{3}\right)$. 
+    
+    \item $\sin\left(\dfrac{\pi}{3}-2x\right)+\cos\left(\dfrac{\pi}{3}+2x\right)=\sin\dfrac{\pi}{3}\cos2x-\cos\dfrac{\pi}{3}\sin2x+\cos\dfrac{\pi}{3}\cos2x-\sin\dfrac{\pi}{3}\sin2x\\
+    =\dfrac{\sqrt{6}+\sqrt{2}}{2}\sin\left(2x+\dfrac{3\pi}{4}\right)$. 
+    \end{enumerate}
+    \end{jieda}
+    \item 函数$y = \sqrt{3}sinx - cosx$的最小值为\blkda{-2}
+        \begin{jieda}
+            由$\sqrt{3}sinx - cosx = 2\left(sin\left(x-\dfrac{\pi}{6}\right)\right)$，故其最小值为$-2$
+        \end{jieda}
+   
+    \item 已知$5\sqrt{3}sin{x}+5cos{x}=6$, $\sqrt{2}sin{y}+\sqrt{6}cos{y}=1$, 
+    且$x\in\left(0,\dfrac{\pi}{3}\right)$, $y\in\left(\dfrac{\pi}{2},\pi\right)$, 
+    求$cos(x+y)$. 
+    \begin{jieda}
+    根据辅助角公式有$\begin{cases}
+    sin\left(x+\dfrac{\pi}{6}\right)=\dfrac{3}{5}\\
+    sin\left(y+\dfrac{\pi}{3}\right)=\dfrac{1}{2\sqrt{2}}
+    \end{cases}$. \\
+    又$x+\dfrac{\pi}{6}\in\left(\dfrac{\pi}{6},\dfrac{\pi}{2}\right)$, $y+\dfrac{\pi}{3}\in \left(\dfrac{5\pi}{6}, \dfrac{4\pi}{3}\right)$, 
+    故$\begin{cases}
+    cos(x+\dfrac{\pi}{6})=\dfrac{4}{5}\\
+    cos(y+\dfrac{\pi}{3})=-\dfrac{\sqrt{7}}{2\sqrt{2}}
+    \end{cases}$. \\
+    故$cos(x+y)=cos\left(x+\dfrac{\pi}{6}+y+\dfrac{\pi}{3}-\dfrac{\pi}{2}\right)=sin\left(x+\dfrac{\pi}{6}+y+\dfrac{\pi}{3}\right)=\dfrac{4\sqrt{2}-3\sqrt{14}}{20}$. 
+    \end{jieda}
+    \item 已知$3sin\alpha + 4cos\alpha = 5sin(\alpha + \beta)$，且$\alpha + \beta = \dfrac{\pi}{4}$，则$tan\alpha = $\blkda{$-\dfrac{1}{7}$或7}
+    \begin{jieda}
+        $\dfrac{3}{5}sin\alpha + \dfrac{4}{5}cos\alpha = sin(\dfrac{\pi}{4})$，$sin(\alpha + \varphi) = sin(\dfrac{\pi}{4})$（$sin\varphi = \dfrac{4}{5}, cos\varphi = \dfrac{3}{5}$）故$\alpha+\varphi = \dfrac{\pi}{4} + 2k\pi$或$\dfrac{3\pi}{4} + 2k\pi$（$k \in \mathbf{Z}$），故$ \dfrac{tan\alpha + \dfrac{4}{3}}{1-\dfrac{4}{3}tan\alpha} = tan(\alpha+\varphi) = \pm 1$
+    \end{jieda}
+    \item $\triangle ABC$的内角$A$满足$sinA + cosA > 0$且$tanA-sinA < 0$，则$A$的取值范围是\blkda{$\left(\dfrac{\pi}{2}, \dfrac{3\pi}{4}\right)$}
+    \begin{jieda}
+        $sinA + cosA = \sqrt{2}sin\left(A + \dfrac{\pi}{4}\right)$，$sinA + cosA > 0  \Rightarrow sin\left(A + \dfrac{\pi}{4}\right) > 0 \\
+        \Longrightarrow A + \dfrac{\pi}{4} \in \left(2k\pi , 2k\pi + \pi\right), k \in \mathbf{Z} \Longrightarrow A \in \left(0, \dfrac{3\pi}{4}\right)$ \\
+        $tanA-sinA < 0 \Longrightarrow A \in \left(\dfrac{\pi}{2}, \pi \right)$，取交集有$A \in \left(\dfrac{\pi}{2}, \dfrac{3\pi}{4}\right)$
+    \end{jieda}
+    \item 求$y = \dfrac{\sqrt{5}sinx+1}{cosx+2}$的值域.
+    \begin{jieda}
+        去分母：$ycosx + 2y = \sqrt{5}sinx+1$ \\
+        利用辅助角公式：$1-2y = \sqrt{y^2+5} \cdot sin(x+\varphi)$ \\
+        解不等式：$|2y-1| \leq \sqrt{5+y^2}$,故$3y^2-4y-4 \leq 0$，解得$y \in \left[-\dfrac{2}{3}, 2\right]$
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{倍角公式}
+$\alpha$倍角的三角函数值可以用$\alpha$的三角函数值来表示
+\subsubsection*{二倍角公式} 
+\begin{enumerate}
+    \item $sin2\alpha = 2sin\alpha cos\alpha$
+    \item $cos2\alpha = cos^2\alpha - sin^2\alpha = 1 - 2sin^2\alpha = 2cos^2\alpha - 1$
+    \item $tan2\alpha = \dfrac{2tan\alpha}{1-tan^2\alpha}$
+\end{enumerate}
+常用变式：$(sin\alpha + cos\alpha)^2 = 1 + sin2\alpha$
+\subsubsection*{三倍角公式}
+\begin{enumerate}
+    \item $sin3\alpha = 3sin\alpha - 4sin^3\alpha$
+    \item $cos3\alpha = 4cos^3\alpha - 3cos\alpha$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 已知$\alpha \in (\dfrac{\pi}{2}, \pi), sin\alpha = \dfrac{12}{13}$，求$sin2\alpha, cos2\alpha, tan2\alpha$
+    \begin{jieda}
+        $cos\alpha = -\dfrac{5}{13}$
+        \begin{enumerate}
+            \item $sin2\alpha = 2sin\alpha cos\alpha = -\dfrac{120}{169}$
+            \item $cos2\alpha = cos^2\alpha - sin^2\alpha = -\dfrac{119}{169}$
+            \item $tan2\alpha = \dfrac{sin2\alpha}{cos2\alpha} = \dfrac{120}{119}$
+        \end{enumerate}
+    \end{jieda}
+    \item 化简：
+    \begin{enumerate*}
+        \item $cos^4\dfrac{\alpha}{2} - sin^4\dfrac{\alpha}{2}$
+        \item $\dfrac{1}{1-tan\alpha} - \dfrac{1}{1+tan\alpha}$
+        \item $1+2cos^2\theta - cos2\theta$
+    \end{enumerate*}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $cos^4\dfrac{\alpha}{2} - sin^4\dfrac{\alpha}{2} = \left(cos^2\dfrac{\alpha}{2} + sin^2\dfrac{\alpha}{2}\right) \left(cos^2\dfrac{\alpha}{2} - sin^2\dfrac{\alpha}{2}\right) = cos\alpha$
+            \item $\dfrac{1}{1-tan\alpha} - \dfrac{1}{1+tan\alpha} = \dfrac{2tan\alpha}{1-tan^2\alpha} = tan2\alpha$
+            \item $1+2cos^2\theta - cos2\theta = 2cos^2\theta + 2sin^2\theta = 2$
+        \end{enumerate}
+    \end{jieda}
+    \item 证明：
+    \begin{enumerate}
+        \item $2cos^2\theta+2sin\theta cos\theta - 1 = \sqrt{2}sin(2\theta+\dfrac{\pi}{4})$
+        \item $\dfrac{1+sin2\theta+cos2\theta}{1+sin2\theta-cos2\theta} = cot\theta$
+    \end{enumerate}
+    \begin{jieda}
+        证明：
+        \begin{enumerate}
+            \item 等式左边根据二倍角公式可以变换为$sin2\theta + cos2\theta$ \\
+            再利用合一公式可以变化得到右边$sin2\theta + cos2\theta = \sqrt{2}sin(2\theta+\dfrac{\pi}{4})$
+            \item 首先进行常数1的代换$1 = sin^2\theta + cos^2\theta$，在此基础上结合二倍角公式配方有$1+sin2\theta = (sin\theta+cos\theta)^2$.\\
+            因此左侧可以化为$\dfrac{(sin\theta+cos\theta)^2 - sin^2\theta + cos^2\theta}{(sin\theta+cos\theta)^2 - cos^2\theta + sin^2\theta}$\\
+            进一步利用平方差公式可以化为$\dfrac{(2sin\theta+cos\theta)(cos\theta)+cos^2\theta}{(sin\theta+2cos\theta)(sin\theta)+sin^2\theta}$ \\
+            合并同类项后可以化为$\dfrac{(2sin\theta+2cos\theta)(cos\theta)}{(2sin\theta+2cos\theta)(sin\theta)}$ \\
+            化简后即为右侧$cot\theta$
+        \end{enumerate}
+    \end{jieda}
+    \item 在$\triangle ABC$中，$cosA = \dfrac{4}{5}, tanB = 2$，求$tan(2A+2B)$的值.
+    \begin{jieda}
+        根据所求的三角函数值，可以判断需要利用两角和的正切公式和二倍角公式.两者使用的顺序不影响计算结果.\\
+        根据$cosA = \dfrac{4}{5}$，我们可以写出对应的$sinA = \dfrac{3}{5}$，故$tanA = \dfrac{3}{4}$.
+        \begin{enumerate}
+            \item 可以利用两角和的正切公式得到$tan(A+B) = \dfrac{tanA+tanB}{1-tanAtanB} = \dfrac{\frac{3}{4}+2}{1-\frac{3}{4}\times2} = -\dfrac{11}{2}$ \\
+            接下来利用正切值的二倍角公式，有$tan(2A+2B) = \dfrac{2tan(A+B)}{1 - tan^2(A+B)} = \dfrac{44}{117}$
+            \item 也可以首先使用正切值的二倍角公式计算$tan2A$与$tan2B$.\\
+            $tan2A = \dfrac{2tanA}{1 - tan^2A} = \dfrac{\frac{3}{4}\times2}{1 - (\frac{3}{4})^2} = \dfrac{24}{7}$ \quad $tan2B = \dfrac{2tanB}{1 - tan^2B} = \dfrac{2\times2}{1 - 2^2} = -\dfrac{4}{3}$ \\
+            $tan(2A+2B) = \dfrac{tan2A+tan2B}{1 - tan2A\cdot tan2B} = \dfrac{\dfrac{24}{7} - \dfrac{4}{3}}{1 - \dfrac{24}{7} \times (-\dfrac{4}{3})} = \dfrac{44}{117}$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知$\tan\alpha=\dfrac{1}{7}$, $\tan\beta=\dfrac{1}{3}$, $\alpha,\beta$均为锐角, 则$\alpha+2\beta$=\blkda{$\dfrac{\pi}{4}$}
+    \begin{jieda}
+        $tan2\beta = \dfrac{2tan\beta}{1-tan^2\beta} = \dfrac{\frac{2}{3}}{\frac{8}{9}} = \dfrac{3}{4}, tan(\alpha + 2\beta) = \dfrac{\frac{1}{7} + \frac{3}{4}}{1 - \frac{1}{7} \cdot \frac{3}{4}} = 1$ \\
+        \ps $\alpha, \beta$都是确定的角，因此不存在多解情况.
+    \end{jieda}
+
+    \item 若$sin(\dfrac{\pi}{6} - \alpha) = \dfrac{1}{3}$，则$cos(\dfrac{2\pi}{3} + 2\alpha) = $\blkda{$-\dfrac{7}{9}$}
+        \begin{jieda}
+            $cos(\dfrac{\pi}{3} + \alpha) = sin(\dfrac{\pi}{6} - \alpha) = \dfrac{1}{3}$，故$cos(\dfrac{2\pi}{3} + 2\alpha) = -\dfrac{7}{9}$
+        \end{jieda}
+
+    \item 若$\dfrac{\sin\alpha+\cos\alpha}{\sin\alpha-\cos\alpha}=\dfrac{1}{2}$, 则$\tan2\alpha$=\blkda{$\dfrac{3}{4}$}. 
+    \begin{jieda}
+    齐次化后得$\tan\alpha=-3$, 故$\tan2\alpha=\dfrac{2\tan\alpha}{1-\tan^2\alpha}=\dfrac{3}{4}$. 
+    \end{jieda}
+    \item 若$\alpha\in(0,\pi)$, $\sin\alpha+\cos\alpha=\dfrac{1}{3}$, 则$\cos2\alpha$=\blkda{$-\dfrac{\sqrt{17}}{9}$}. 
+    \begin{jieda}
+        $\dfrac{1}{9}=(\sin\alpha+\cos\alpha)^2=1+2\sin\alpha\cos\alpha$, 则$2\sin\alpha\cos\alpha=-\dfrac{8}{9}<0$. \\
+    又$\alpha\in(0,\pi)$, 故$\sin\alpha>0>\cos\alpha$. \\
+    于是$\cos\alpha-\sin\alpha=-\sqrt{(\cos\alpha-\sin\alpha)^2}=-\sqrt{1-2\cos\alpha\sin\alpha}=-\dfrac{\sqrt{17}}{3}$. \\
+    故$\cos^2\alpha=(\cos\alpha-\sin\alpha)(\cos\alpha+\sin\alpha)=-\dfrac{\sqrt{17}}{9}$
+    \end{jieda}
+    
+    \item $\sqrt{2}\sin\dfrac{\pi}{32}\cos\dfrac{\pi}{32}\cos\dfrac{\pi}{16}\cos\dfrac{\pi}{8}$=\blkda{$\dfrac{1}{8}$}. 
+
+    \item 已知$\dfrac{3\pi}{2}<\theta<2\pi$, 化简: $\sqrt{\dfrac{1}{2}-\dfrac{1}{2}\sqrt{\dfrac{1}{2}+\dfrac{1}{2}\cos2\theta}}$ =\blkda{$\sin\dfrac{\theta}{2}$}.         
+    \begin{jieda}
+        $\sqrt{\dfrac{1}{2}+\dfrac{1}{2}cos2\alpha} = \sqrt{cos^2\alpha}$，因为$2\alpha \in (\dfrac{3\pi}{2}, 2\pi)$，所以$\sqrt{\dfrac{1}{2}+\dfrac{1}{2}cos2\alpha} = -cos\alpha$，\\
+        $\sqrt{\dfrac{1}{2}-\dfrac{1}{2}cos\alpha} = \sqrt{sin^2\dfrac{\alpha}{2}}$，因为$2\alpha \in (\dfrac{3\pi}{2}, 2\pi)$，所以原式$=sin\dfrac{\theta}{2}$.
+    \end{jieda}
+    
+    \item 已知$\sin\left(\dfrac{\pi}{4}+2\alpha\right)\cdot\sin\left(\dfrac{\pi}{4}-2\alpha\right)=\dfrac{1}{4}$, $\alpha\in\left(\dfrac{\pi}{4},\dfrac{\pi}{2}\right)$, 
+    求$2\sin^2\alpha+\tan\alpha-\cot\alpha-1$的值. 
+    \begin{jieda}
+        首先观察可知$\left(\dfrac{\pi}{4}-2\alpha\right) + \left(\dfrac{\pi}{4}+2\alpha\right) = \dfrac{\pi}{2}$，故$\sin\left(\dfrac{\pi}{4}+2\alpha\right)\cdot\sin\left(\dfrac{\pi}{4}-2\alpha\right)=\dfrac{1}{4}$即$\sin\left(\dfrac{\pi}{4}+2\alpha\right)\cdot\cos\left(\dfrac{\pi}{4}+2\alpha\right)=\dfrac{1}{4}$，即$\dfrac{1}{2} = sin\left(\dfrac{\pi}{2} + 4\alpha \right) = cos4\alpha$，因为$\alpha \in \left(\dfrac{\pi}{4},\dfrac{\pi}{2}\right)$，所以$4\alpha \in \left(\pi, 2\pi\right)$，故$4\alpha = \dfrac{5\pi}{3}$，即$\alpha = \dfrac{5\pi}{12}$ \\
+        $2\sin^2\alpha+\tan\alpha-\cot\alpha-1 = -cos2\alpha + \dfrac{sin^2\alpha - cos^2\alpha}{sin\alpha \cdot cos\alpha} = -\left(cos2\alpha + \dfrac{2cos2\alpha}{sin2\alpha}\right) = \dfrac{5\sqrt{3}}{2}$
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{半角公式}
+$\dfrac{\alpha}{2}$的三角函数值可以用$cos\alpha$来表示，但需要注意：要根据$\dfrac{\alpha}{2}$的象限来确定符号.
+\begin{enumerate}
+    \item $sin\dfrac{\alpha}{2} = \pm \sqrt{\dfrac{1-cos\alpha}{2}}$
+    \item $cos\dfrac{\alpha}{2} = \pm \sqrt{\dfrac{1+cos\alpha}{2}}$
+    \item $tan\dfrac{\alpha}{2} = \pm \sqrt{\dfrac{1-cos\alpha}{1+cos\alpha}}$
+\end{enumerate}
+特别地，$tan\dfrac{\alpha}{2} = \dfrac{sin\dfrac{\alpha}{2}}{cos\dfrac{\alpha}{2}} = \dfrac{2sin\dfrac{\alpha}{2} \cdot cos\dfrac{\alpha}{2}}{2cos\dfrac{\alpha}{2} \cdot cos\dfrac{\alpha}{2}} = \dfrac{sin\alpha}{1+cos\alpha} = \dfrac{1-cos\alpha}{sin\alpha}$
+
+例题：
+\begin{enumerate}
+    \item 已知$cos\alpha = \dfrac{3}{5}$，且$\alpha$的终边在第一象限，求$sin\dfrac{\alpha}{2}, cos\dfrac{\alpha}{2}, tan\dfrac{\alpha}{2}$
+    \begin{jieda}
+        $\alpha \in \{x| 2k\pi < x < 2k\pi + \dfrac{\pi}{2}, k\in \mathbf{Z} \} \Longrightarrow \dfrac{\alpha}{2} \in \{x| k\pi < x < k\pi + \dfrac{\pi}{4}, k\in \mathbf{Z} \}$ \\
+        因为角$\alpha$的终边位于第一象限，所以$\dfrac{\alpha}{2}$的终边的位置具有两种情况，$\dfrac{\alpha}{2}$可以是第一象限角或者第三象限角.
+        \begin{enumerate}
+            \item $\dfrac{\alpha}{2}$是第一象限角 \\
+            根据半角公式有：
+            \begin{enumerate}
+                \item $sin\dfrac{\alpha}{2} = \sqrt{\dfrac{1-cos\alpha}{2}} = \sqrt{\dfrac{\frac{2}{5}}{2}} = \dfrac{\sqrt{5}}{5}$
+                \item $cos\dfrac{\alpha}{2} = \sqrt{\dfrac{1+cos\alpha}{2}} = \sqrt{\dfrac{\frac{8}{5}}{2}} = \dfrac{2\sqrt{5}}{5}$
+                \item $tan\dfrac{\alpha}{2} = \sqrt{\dfrac{1-cos\alpha}{1+cos\alpha}} = \dfrac{1}{2}$
+            \end{enumerate}
+            \item $\dfrac{\alpha}{2}$是第三象限角 \\
+                根据半角公式有：
+            \begin{enumerate}
+                \item $sin\dfrac{\alpha}{2} = -\sqrt{\dfrac{1-cos\alpha}{2}} = -\sqrt{\dfrac{\frac{2}{5}}{2}} = -\dfrac{\sqrt{5}}{5}$
+                \item $cos\dfrac{\alpha}{2} = -\sqrt{\dfrac{1+cos\alpha}{2}} = -\sqrt{\dfrac{\frac{8}{5}}{2}} = -\dfrac{2\sqrt{5}}{5}$
+                \item $tan\dfrac{\alpha}{2} = \sqrt{\dfrac{1-cos\alpha}{1+cos\alpha}} = \dfrac{1}{2}$
+            \end{enumerate}
+        \end{enumerate}
+    \end{jieda}
+    \item 化简: $\dfrac{\sin2x}{1+\cos2x}\cdot\dfrac{\cos{x}}{1+\cos{x}}\cdot\dfrac{\sin{x}}{1-\cos{x}}$=\blkda{$1$}. 
+    \item 若$\alpha \in (0, \pi)$，且$\sqrt{3}sin\alpha + 2 cos\alpha = 2$，则$tan\left(\dfrac{\alpha}{2} - \dfrac{\pi}{3}\right) = $\blkda{$-\dfrac{\sqrt{3}}{5}$}
+    \begin{jieda}
+        根据题目所求猜测考虑利用求$tan\dfrac{\alpha}{2}$（利用辅助角公式不是非常合适）.\\
+        $2\sqrt{3}sin\dfrac{\alpha}{2}cos\dfrac{\alpha}{2} + 2\left(1 - 2sin^2\dfrac{\alpha}{2}\right) = 2$，即$2\sqrt{3}sin\dfrac{\alpha}{2}cos\dfrac{\alpha}{2} = 4sin^2\dfrac{\alpha}{2}$.变形可以得到$\dfrac{\sqrt{3}}{2} = tan\dfrac{\alpha}{2}$.\\
+        因此$tan\left(\dfrac{\alpha}{2} - \dfrac{\pi}{3}\right) = \dfrac{tan\dfrac{\alpha}{2} - tan\dfrac{\pi}{3}}{1 + tan\dfrac{\alpha}{2} tan\dfrac{\pi}{3}} = -\dfrac{\sqrt{3}}{5}$
+    \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 已知$\sin\theta=\dfrac{3}{5}$, $\theta$为第二象限角, 则$\tan\dfrac{\theta}{2}+2\cos{\dfrac{\theta}{2}}$=\blkda{$3\pm\dfrac{\sqrt{10}}{5}$}.
+        \item 已知$\sin\theta=\dfrac{3}{5}$, $\dfrac{5\pi}{2}<\theta<3\pi$, 则$\tan\dfrac{\theta}{2}+2\cos{\dfrac{\theta}{2}}$=\blkda{$3-\dfrac{\sqrt{10}}{5}$}.
+    \end{enumerate}
+    
+    \begin{jieda}
+        $cos\theta = -\dfrac{4}{5}$，$tan\dfrac{\theta}{2} = \dfrac{sin\theta}{1+cos\theta} = 3$
+        \begin{enumerate}
+            \item $\dfrac{\theta}{2}$为第一象限角或第三象限角，$cos\dfrac{\theta}{2} = \pm\sqrt{\dfrac{1+cos\theta}{2}} = \pm\dfrac{\sqrt{10}}{10}$，故$\tan\dfrac{\theta}{2}+2\cos{\dfrac{\theta}{2}} = \dfrac{15\pm\sqrt{10}}{5}$
+            \item $\dfrac{\theta}{2} \in \left(\dfrac{5\pi}{4}, \dfrac{3\pi}{2}\right)$， $cos\dfrac{\theta}{2} = -\sqrt{\dfrac{1+cos\theta}{2}} = -\dfrac{\sqrt{10}}{10}$，故$\tan\dfrac{\theta}{2}+2\cos{\dfrac{\theta}{2}} = \dfrac{15-\sqrt{10}}{5}$
+        \end{enumerate}
+        
+    \end{jieda}
+    \item 若$sin^2\left(x+\dfrac{\pi}{8}\right) - cos^2\left(x-\dfrac{\pi}{8}\right) = \dfrac{1}{4}, x \in \left(\dfrac{\pi}{4}, \dfrac{\pi}{2}\right)$，则$tanx = $\blkda[2]{$\dfrac{2\sqrt{14} + \sqrt{7}}{7}$}
+    \begin{jieda}
+        观察形式可知应考虑降幂后利用诱导公式\\
+        $sin^2\left(x+\dfrac{\pi}{8}\right) - cos^2\left(x-\dfrac{\pi}{8}\right) = \dfrac{1}{4}$即$\dfrac{1-cos\left(2x+\dfrac{\pi}{4}\right)}{2} - \dfrac{1+cos\left(2x-\dfrac{\pi}{4}\right)}{2} = \dfrac{1}{4}$，\\
+        即$\dfrac{sin\left(2x-\dfrac{\pi}{4}\right) - cos\left(2x-\dfrac{\pi}{4}\right)}{2} = \dfrac{1}{4}$，根据辅助角公式可得$sin\left(2x-\dfrac{\pi}{2}\right) = \dfrac{\sqrt{2}}{4}$，因此有$cos2x = -\dfrac{\sqrt{2}}{4}$，因为$x \in \left(\dfrac{\pi}{4}, \dfrac{\pi}{2}\right)$，所以$sin2x = \dfrac{\sqrt{14}}{4}$，故$tanx = \dfrac{sin2x}{1+cos2x} = \dfrac{\sqrt{14}}{4-\sqrt{2}} = \dfrac{2\sqrt{14} + \sqrt{7}}{7}$
+    \end{jieda}
+
+    
+    \item 若$\dfrac{1+tan\alpha}{1-tan\alpha} = 2025$，则$\dfrac{1}{cos2\alpha} + tan2\alpha = $\blkda{2025}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 切割化弦-倍角公式-齐次同除 \\
+            $\dfrac{1}{cos2\alpha} + tan2\alpha = \dfrac{1+sin2\alpha}{cos2\alpha} = \dfrac{(sin\alpha+cos\alpha)^2}{cos^2\alpha - sin^2\alpha} = \dfrac{(1+tan\alpha)^2}{1 - tan^2\alpha} = \dfrac{1+tan\alpha}{1-tan\alpha} = 2025$
+            \item 切割化弦-诱导公式-半角公式-和角公式 \\
+            $\dfrac{1}{cos2\alpha} + tan2\alpha = \dfrac{1+sin2\alpha}{cos2\alpha} = \dfrac{1+cos(\dfrac{\pi}{2} - 2\alpha)}{sin(\dfrac{\pi}{2} - 2\alpha)} = \dfrac{1}{tan(\dfrac{\pi}{4} - \alpha)} = \dfrac{1+tan\alpha}{1-tan\alpha} = 2025$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 设 $\dfrac{1+\sin x}{\cos x}=\dfrac{22}{7}$ 且 $\dfrac{1+\cos x}{\sin x}=\dfrac{m}{n}$ ，其中 $\dfrac{m}{n}$ 为最简分数，则 $m+n=$\blkda{44}．
+    \begin{jieda}
+        $\dfrac{1+\cos x}{\sin x}=\dfrac{m}{n}$，即$tan\dfrac{x}{2} = \dfrac{n}{m}$，
+        $\dfrac{1+\sin x}{\cos x}=\dfrac{22}{7}$，即$tan(\dfrac{\pi}{4} - \dfrac{x}{2}) = \dfrac{7}{22}$，因此有$\dfrac{n}{m} = tan(\dfrac{\pi}{4} - (\dfrac{\pi}{4} - \dfrac{x}{2})) = \dfrac{1-tan(\dfrac{\pi}{4} - \dfrac{x}{2})}{1+tan(\dfrac{\pi}{4}-\dfrac{x}{2})} = \dfrac{15}{29}$， 因为$\dfrac{m}{n}$ 为最简分数，所以$m+n=44$.
+    \end{jieda}
+    
+    \item 在$\triangle ABC$中，$tan\dfrac{A}{2} + cot\dfrac{A}{2} = \dfrac{10}{3}, cosB = \dfrac{5}{13}$
+    \begin{enumerate*}
+        \item 求$cos(A-B)$
+        \item 求$cos\left(\dfrac{A - B}{2}\right)$
+    \end{enumerate*}
+    \begin{jieda}
+        $cosB = \dfrac{5}{13}$即$sinB = \dfrac{12}{13}$，\\
+        $tan\dfrac{A}{2} + cot\dfrac{A}{2} = \dfrac{sin\dfrac{A}{2}}{cos\dfrac{A}{2}} + \dfrac{cos\dfrac{A}{2}}{sin\dfrac{A}{2}} = \dfrac{1}{sin\dfrac{A}{2} \cdot cos\dfrac{A}{2}} = \dfrac{2}{sinA} = \dfrac{10}{3}$，故$sinA = \dfrac{3}{5}$ 
+        \begin{enumerate}
+            \item 若$cosA = \dfrac{-4}{5}$，此时$A$接近$\pi$，$B$接近$\dfrac{\pi}{2}$，故可求$sin(A+B)$验证此时不满足三角形的约束，$sin(A+B) = sinA cosB + cosA sinB = -\dfrac{33}{65} < 0$.
+            \item 若$cosA = \dfrac{4}{5}$，此时$A, B$均为锐角，$cos(A-B) = cosA cosB - sinA sinB = \dfrac{56}{65}$
+        \end{enumerate}
+        根据$sinA < sinB$可知$A < B$，故$A - B \in (-\dfrac{\pi}{2}, 0)$，故$cos(\dfrac{A-B}{2}) = \sqrt{\dfrac{1+cos(A-B)}{2}} = \dfrac{11\sqrt{130}}{130}$
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{万能公式}
+$\alpha$的三角函数值可以用$tan\dfrac{\alpha}{2}$来表示
+\begin{enumerate}
+    \item $sin\alpha = \dfrac{2tan\dfrac{\alpha}{2}}{1+tan^2\dfrac{\alpha}{2}}$
+    \item $cos\alpha = \dfrac{1-tan^2\dfrac{\alpha}{2}}{1+tan^2\dfrac{\alpha}{2}}$
+    \item $tan\alpha = \dfrac{2tan\dfrac{\alpha}{2}}{1-tan^2\dfrac{\alpha}{2}}$
+\end{enumerate}
+
+例题：
+\begin{enumerate}
+    \item 已知 $\alpha  \in  \left( {\dfrac{\pi }{2},\pi }\right) ,\tan \alpha  =  - 2$，则 $\sin \left( {\pi  + {2\alpha }}\right)  =$\blkda{$\dfrac{4}{5}$}.
+    \begin{jieda}
+        $\sin \left( {\pi  + {2\alpha }}\right)  =  - \sin {2\alpha } = \dfrac{-2\tan \alpha }{{\tan }^{2}\alpha  + 1} = \dfrac{4}{4 + 1} = \dfrac{4}{5}$.
+    \end{jieda}
+    
+    \item 若 $\dfrac{\sin \theta  + \cos \theta }{\sin \theta  - 2\cos \theta } = \dfrac{1}{2}$，则 $\sin {2\theta } =$\blkda{$- \dfrac{8}{17}$}.
+
+    \begin{jieda}
+        由题意可得 $\tan \theta  =  - 4,\sin {2\theta } = \dfrac{2\sin \theta \cos \theta }{{\sin }^{2}\theta  + {\cos }^{2}\theta } = \dfrac{2\tan \theta }{{\tan }^{2}\theta  + 1} = \dfrac{-8}{17}$.
+    \end{jieda}
+    
+    \item 若 $\dfrac{\sin \alpha }{1 + \cos \alpha } = \dfrac{1}{2}$，则 $\sin \alpha  + \cos \alpha$的值为\blkda{$\dfrac{7}{5}$}.
+    \begin{jieda}
+        $\dfrac{\sin \alpha }{1 + \cos \alpha } = \tan \dfrac{\alpha }{2} = \dfrac{1}{2}$,
+        
+        $\sin \alpha  + \cos \alpha  = \dfrac{2\tan \dfrac{\alpha }{2}}{1 + {\tan }^{2}\dfrac{\alpha }{2}} + \dfrac{1 - {\tan }^{2}\dfrac{\alpha }{2}}{1 + {\tan }^{2}\dfrac{\alpha }{2}} = \dfrac{2 \times  \dfrac{1}{2} + 1 - \dfrac{1}{4}}{1 + \dfrac{1}{4}} = \dfrac{7}{5}$.
+    \end{jieda}
+    
+    \item 已知 $\alpha  \in  \left\lbrack  {\dfrac{\pi }{4},\dfrac{\pi }{2}}\right\rbrack  ,\tan \alpha  = 2$,则 ${\sin }^{2}\left( {\dfrac{\pi }{4} - \alpha }\right)  - 2{\cos }^{2}\alpha  + 1$的值为\blkda{$\dfrac{7}{10}$}
+
+    \begin{jieda}
+        因为 $\alpha  \in  \left\lbrack  {\dfrac{\pi }{4},\dfrac{\pi }{2}}\right\rbrack$,所以 ${2\alpha } \in  \left\lbrack  {\dfrac{\pi }{2},\pi }\right\rbrack$
+        
+        因为 $\tan \alpha  = 2$，所以 $\sin {2\alpha } = \dfrac{2\tan \alpha }{1 + {\tan }^{2}\alpha } = \dfrac{4}{5}$，$\cos {2\alpha } = \dfrac{1 - {\tan }^{2}\alpha }{1 + {\tan }^{2}\alpha } = \dfrac{1 - 4}{1 + 4} =  - \dfrac{3}{5}$
+        
+        ${\sin }^{2}\left( {\dfrac{\pi }{4} - \alpha }\right)  - 2{\cos }^{2}\alpha  + 1 = \dfrac{1 - \cos \left( {\dfrac{\pi }{2} - {2\alpha }}\right) }{2} - \cos {2\alpha } = \dfrac{1 - \sin {2\alpha }}{2} - \cos {2\alpha } = \dfrac{1 - \dfrac{4}{5}}{2} - \left( {-\dfrac{3}{5}}\right)  = \dfrac{7}{10}$
+    \end{jieda}
+    
+    \item 已知$tan^2\alpha - 2tan^2\beta = 1$，求证$cos2\beta = 2cos2\alpha + 1$
+    \begin{jieda}
+        题目中的特征很明显，正切值的条件式与倍角的余弦值的目标式，因此考虑利用万能公式.\\
+        $cos2\beta = \dfrac{1-tan^2\beta}{1+tan^2\beta},\quad cos2\alpha = \dfrac{1-tan^2\alpha}{1+tan^2\alpha}$\\
+        故要证$cos2\beta = 2cos2\alpha + 1$，即证$\dfrac{1-tan^2\beta}{1+tan^2\beta} = 2 \times \dfrac{1-tan^2\alpha}{1+tan^2\alpha} + 1$ \\
+        根据题目中的条件消元，故 \\
+        要证$\dfrac{1-tan^2\beta}{1+tan^2\beta} = 2 \times \dfrac{1-tan^2\alpha}{1+tan^2\alpha} + 1$， 即证$\dfrac{1-tan^2\beta}{1+tan^2\beta} = 2 \times \dfrac{-2tan^2\beta}{2+2tan^2\beta} + 1$ \\
+        得证.
+    \end{jieda}
+    \item 已知$6\sin^2\alpha+\sin\alpha\cos\alpha-2\cos^2\alpha=0$, $\alpha\in\left[\dfrac{\pi}{2},\pi\right]$, 求$\sin\left(2\alpha+\dfrac{\pi}{3}\right)$的值. 
+    \begin{jieda}
+    $\iff 6\tan^2\alpha+\tan\alpha-2=0$. 又$\alpha\in\left[\dfrac{\pi}{2},\pi\right]$, 故$\tan\alpha=-\dfrac{2}{3}$. \\
+    故$\sin\left(2\alpha+\dfrac{\pi}{3}\right)=\sin2\alpha\cos\dfrac{\pi}{3}+\cos2\alpha\sin\dfrac{\pi}{3}=f(\tan\alpha)=\dfrac{5\sqrt{3}-12}{26}$. 
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{积化和差与和差化积}
+\begin{enumerate}
+    \item $sin\alpha \cdot cos\beta = \dfrac{1}{2}[sin(\alpha+\beta) + sin(\alpha-\beta)]$
+    \item $cos\alpha \cdot sin\beta = \dfrac{1}{2}[sin(\alpha+\beta) - sin(\alpha-\beta)]$
+    \item $cos\alpha \cdot cos\beta = \dfrac{1}{2}[cos(\alpha+\beta) + cos(\alpha-\beta)]$
+    \item $sin\alpha \cdot sin\beta = -\dfrac{1}{2}[cos(\alpha+\beta) - cos(\alpha-\beta)]$
+    
+    \item $sin\alpha + sin\beta = 2sin\left(\dfrac{\alpha+\beta}{2}\right) \cdot cos\left(\dfrac{\alpha-\beta}{2}\right)$
+    \item $sin\alpha - sin\beta = 2cos\left(\dfrac{\alpha+\beta}{2}\right) \cdot sin\left(\dfrac{\alpha-\beta}{2}\right)$
+    \item $cos\alpha + cos\beta = 2cos\left(\dfrac{\alpha+\beta}{2}\right) \cdot cos\left(\dfrac{\alpha-\beta}{2}\right)$
+    \item $cos\alpha - cos\beta = -2sin\left(\dfrac{\alpha+\beta}{2}\right) \cdot sin\left(\dfrac{\alpha-\beta}{2}\right)$
+\end{enumerate}
+
+例题：
+\begin{enumerate}
+    \item 已知$f(\theta) = sin4\theta + sin3\theta$，且$\theta_1, \theta_2, \theta_3$是$f(\theta)$在$(0, \pi)$内的三个不同零点，则$cos\theta_1+cos\theta_2+cos\theta_3 = $\blkda{$-\dfrac{1}{2}$}
+    \begin{jieda}
+        首先根据函数形式可知需要考虑利用和差化积进行变形，这样产生乘积的形式方便寻找零点，即$f(\theta) = 2sin(\dfrac{7\theta}{2})cos(\dfrac{\theta}{2})$，因此其三个零点$\theta_1 = \dfrac{2\pi}{7}, \theta_2 = \dfrac{4\pi}{7}, \theta_3 = \dfrac{6\pi}{7}$ \\
+        $cos\dfrac{2\pi}{7}+cos\dfrac{4\pi}{7}+cos\dfrac{6\pi}{7} = \dfrac{sin\dfrac{\pi}{7} \cdot (cos\dfrac{2\pi}{7}+cos\dfrac{4\pi}{7}+cos\dfrac{6\pi}{7})}{sin\dfrac{\pi}{7}} \\
+        = \dfrac{\dfrac{1}{2}((sin\dfrac{3\pi}{7}+ sin\dfrac{-\pi}{7})+(sin\dfrac{5\pi}{7} + sin\dfrac{-3\pi}{7}) + (sin\pi + sin\dfrac{-5\pi}{7}))}{sin\dfrac{\pi}{7}} = -\dfrac{1}{2}$ \\
+        \ps 对于形如$sin(\alpha + \beta) + sin(\alpha + 2\beta) + sin(\alpha + 3\beta) + ... + sin(\alpha + n\beta)$或$cos(\alpha + \beta) + cos(\alpha + 2\beta) + cos(\alpha + 3\beta) + ... + cos(\alpha + n\beta)$的求和式，均可以乘$\dfrac{sin(\dfrac{\beta}{2})}{sin(\dfrac{\beta}{2})}$并利用积化和差及诱导公式达到消项的目的.
+    \end{jieda}
+    
+    \item 已知$sin(2\alpha-\dfrac{\pi}{12}) = \dfrac{\sqrt{2}}{3}$，则$tan(\alpha+\dfrac{\pi}{3}) \cdot tan(\alpha + \dfrac{\pi}{12}) = $\blkda{5}
+    \begin{jieda}
+        $tan(\alpha+\dfrac{\pi}{3}) \cdot tan(\alpha + \dfrac{\pi}{12}) = \dfrac{sin(\alpha+\dfrac{\pi}{3}) \cdot sin(\alpha + \dfrac{\pi}{12})}{cos(\alpha+\dfrac{\pi}{3}) \cdot cos(\alpha + \dfrac{\pi}{12})} = \dfrac{-\dfrac{1}{2}\left[cos(2\alpha+\dfrac{5\pi}{12}) - cos(\dfrac{\pi}{4})\right]}{\dfrac{1}{2}\left[cos(2\alpha+\dfrac{5\pi}{12}) + cos(\dfrac{\pi}{4})\right]} = \dfrac{\dfrac{\sqrt{2}}{2} - (-\dfrac{\sqrt{2}}{3})}{\dfrac{\sqrt{2}}{2}+(-\dfrac{\sqrt{2}}{3})} = 5$
+    \end{jieda}
+    \item 已知$\sin2\left(\alpha+\gamma\right)=n\sin2\beta$, 求$\dfrac{\tan\left(\alpha+\beta+\gamma\right)}{\tan\left(\alpha-\beta+\gamma\right)}$的值. 
+    \begin{jieda}\\
+        $\dfrac{\tan\left(\alpha+\beta+\gamma\right)}{\tan\left(\alpha-\beta+\gamma\right)} = \dfrac{sin(\alpha+\beta+\gamma)cos(\alpha-\beta+\gamma)}{sin(\alpha-\beta+\gamma)cos(\alpha+\beta+\gamma)} = \dfrac{\dfrac{1}{2}\left[sin2(\alpha+\gamma) + sin2\beta\right]}{\dfrac{1}{2}\left[sin2(\alpha+\gamma) + sin(-2\beta)\right]} = \dfrac{n+1}{n-1}$
+    \end{jieda}
+    \item 已知$sinx + siny = \sqrt{2}, cosx + cosy = \dfrac{2\sqrt{3}}{3}$，求$cos(x+y)$及$tanx + tany$的值.
+    \begin{jieda}
+        $sinx + siny = \sqrt{2}$即$2sin(\dfrac{x+y}{2})cos(\dfrac{x-y}{2}) = \sqrt{2}$，\\
+        $cosx + cosy = \dfrac{2\sqrt{3}}{3}$即$2cos(\dfrac{x+y}{2})cos(\dfrac{x-y}{2}) = \dfrac{2\sqrt{3}}{3}$，故$tan(\dfrac{x+y}{2}) = \dfrac{\sqrt{6}}{2}$，因此$cos(x+y) = \dfrac{1-tan^2(\dfrac{x+y}{2})}{1+tan^2(\dfrac{x+y}{2})} = -\dfrac{1}{5}$ \\
+        $tanx + tany = \dfrac{sinx \cdot cosy + cosx \cdot siny}{cosx \cdot cosy} = \dfrac{sin(x+y)}{cosx \cdot cosy}$ \\
+        $cosx \cdot cosy = \dfrac{1}{2}[cos(x+y) + cos(x-y)]$ \\
+        对$sinx + siny = \sqrt{2}, cosx + cosy = \dfrac{2\sqrt{3}}{3}$两式平方相加得$cos(x-y) = \dfrac{2}{3}$，故$cosx \cdot cosy = \dfrac{7}{30}$ \\
+        $sin(x+y) = \dfrac{2tan(\dfrac{x+y}{2})}{1 + tan^2(\dfrac{x+y}{2})} = \dfrac{\sqrt{6}}{\dfrac{5}{2}} = \dfrac{2\sqrt{6}}{5}$ \\
+        故$tanx + tany = \dfrac{sin(x+y)}{cosx \cdot cosy} = \dfrac{\dfrac{2\sqrt{6}}{5}}{\dfrac{7}{30}} = \dfrac{12\sqrt{6}}{7}$
+    \end{jieda}
+
+\end{enumerate}
+\subsection*{正弦定理和余弦定理}
+\subsubsection*{解三角形}
+解三角形是指在三角形的三条边和三个角中至少已知其中三个(至少已知一条边)求其余的边和角的任务.
+\subsubsection*{正弦定理}
+在三角形中，任意一边与其对角的正弦值之比为确定的常数，该常数为三角形外接圆的直径，即对$\triangle ABC$有：$\dfrac{a}{sinA} = \dfrac{b}{sinB} = \dfrac{c}{sinC} = 2R$.\textbf{已知两角及一边}的情况下的解三角形问题首先考虑正弦定理.
+\subsubsection*{余弦定理}
+在三角形中，任意一边的平方等于其余两边的平方减去二倍的两边及其夹角的余弦值的乘积，即对$\triangle ABC$有：$a^2 = b^2 + c^2 - 2bc \cdot cosA, b^2 = c^2 + a^2 - 2ca \cdot cosB, c^2 = a^2 + b^2 - 2ab \cdot cosC$.\textbf{已知两边及其夹角}的解三角形问题首先考虑余弦定理.余弦定理是勾股定理的推论，勾股定理是余弦定理的特例.
+\par 余弦定理的变形：$cosA = \dfrac{b^2 + c^2 - a^2}{2bc}, cosB = \dfrac{c^2 + a^2 - b^2}{2ca}, cosC = \dfrac{a^2 + b^2 - c^2}{2ab}$.\textbf{已知三边}的解三角形问题首先考虑余弦定理的变形.\\
+注：已知\textbf{两边以及一边的对角}时，利用正弦定理和余弦定理均可作为突破口.
+
+\subsubsection*{三角形面积公式}
+$S_{\triangle ABC} = \dfrac{1}{2}absinC = \dfrac{1}{2}acsinB = \dfrac{1}{2}bcsinA$
+
+例题：
+\begin{enumerate}
+    \item 在 $\triangle{ABC}$中，若 $b=3, c=2$, $\sin C=\dfrac{\sqrt{2}}{3}$，则$B$=\blkda[4]{$\dfrac{\pi}{4}$或$\dfrac{3\pi}{4}$}
+    \begin{jieda}
+        利用正弦定理可解得，但要主要最后解的个数的判断.
+    \end{jieda}
+    
+    \item 在 $\triangle A B C$ 中，$A=60^{\circ}, a=7, b=8$ ，则三角形\dotfill(\kh{B})
+    \xx{有一解}{有两解}{无解}{不确定}
+
+    \item 在 $\triangle A B C$ 中，$A C=8, A=45^{\circ}$ ，要使 $\triangle A B C$ 被唯一确定，那么 $B C$ 的取值范围是 \blkda[3]{$\{4 \sqrt{2}\} \cup[8,+\infty)$}.
+    
+    \item 在$\triangle{ABC}$中，$a=6,B=\ang{30},C=\ang{120}$，则$\triangle{ABC}$的面积是\blkda[3]{$9\sqrt{3}$}
+    \begin{jieda}
+        利用面积公式可解.
+    \end{jieda}
+    
+    
+    \item  在$\triangle{ABC}$中, $a=5$, $B=\ang{105}$, $C=\ang{15}$, 则此三角形的最大边的长为\blkda[3]{$\dfrac{5\sqrt{6}+15\sqrt{2}}{6}$}.
+    \begin{jieda}
+    $A=\ang{60}$, $b=\dfrac{a}{\sin{A}}\sin{B}$. 
+    \end{jieda}
+
+    \item 在$\triangle{ABC}$内，已知三边之比为$2:3:4$，则该三角形的最大角的余弦值为\blkda{$-\dfrac{1}{4}$}
+    \begin{jieda}
+        设$a = 2k, b = 3k, c = 4k (k > 0)$，则根据大角对大边，最大角应为$C$，故$cosC = \dfrac{a^2 + b^2 - c^2}{2ab} = -\dfrac{1}{4}$
+    \end{jieda}
+    \item 在$\triangle{ABC}$内，三边$a, b, c$满足$a^2=b^2+c^2+bc$，则$a$的对角$A = $\blkda{$\dfrac{2\pi}{3}$}
+    \begin{jieda}
+        根据余弦定理有$a^2=b^2+c^2-2bccosA$，故$cosA = -\dfrac{1}{2}$，故$A = \dfrac{2\pi}{3}$
+    \end{jieda}
+    \item 若$\triangle{ABC}$的三个内角满足$sinA : sinB : sinC = 5: 11: 13$，则$\triangle{ABC}$ \dotfill{（\kh{C}）}
+    \xx{一定是锐角三角形}{一定是直角三角形}{一定是钝角三角形}{可能是锐角三角形，也可能是钝角三角形}
+    \begin{jieda}
+        根据正弦定理有$a: b : c = 5 : 11 : 13$，故$cosC = \dfrac{25 + 121 - 169}{110} < 0$，故$\triangle{ABC}$为钝角三角形
+    \end{jieda}
+
+    \item 在$\triangle ABC$中，已知$a = \sqrt{6}, b = \sqrt{3}+1, C = \dfrac{\pi}{4}$，求$c, A, B$
+    \begin{jieda}
+        由于已知两边及其夹角，可以判断要利用余弦定理.\\
+        $c^2 = a^2+b^2 - 2abcosC = 6 + (4 + 2\sqrt{3}) - 2 \times \sqrt{6} \times (\sqrt{3}+1) \times \dfrac{\sqrt{2}}{2} = 10 + 2\sqrt{3} - (6 + 2\sqrt{3}) = 4$ \\
+        故$c = 2$.\\
+        下面求角可以利用正弦定理得到结果$\dfrac{a}{sinA} = \dfrac{b}{sinB} = \dfrac{c}{sinC}$，故$sinA = \dfrac{\sqrt{6} \times \sqrt{2}}{4} = \dfrac{\sqrt{3}}{2}$，即$A = \dfrac{\pi}{3}$.（因为$\sqrt{6} < \sqrt{3}+1$，故$A$不是最大角，因此$A = \dfrac{2\pi}{3}$舍去）\\
+        因此$B = \pi - \dfrac{\pi}{3} - \dfrac{\pi}{4} = \dfrac{5\pi}{12}$ \\
+        提示：$A, B$也可以由余弦定理的推论求得.
+    \end{jieda}
+    \item 在$\triangle ABC$中，若三内角满足$sin^2A = sin^2B + sinBsinC+sin^2C$，则$A = $\blkda{$\dfrac{2\pi}{3}$}
+    \begin{jieda}
+        根据正弦定理可以将条件转化为$a^2 = b^2 + c^2 + bc$，结合余弦定理可知$2cosA = -1$，故$A = \dfrac{2\pi}{3}$.
+    \end{jieda}
+    
+    \item 在$\triangle ABC$中，若$cosA = \dfrac{sinB}{2sinC}, b = 4\sqrt{3}, 2sinB = \sqrt{3}$，则$a = $\blkda{4或$4\sqrt{3}$}.
+    \begin{jieda}
+        根据题干条件有$sinB = \dfrac{\sqrt{3}}{2}$，即$B = \dfrac{\pi}{3}$或$\dfrac{2\pi}{3}$. \\
+        根据正弦定理有$cosA = \dfrac{b}{2c}$；根据余弦定理有$cosA = \dfrac{b^2+c^2-a^2}{2bc} = \dfrac{b}{2c}$，因此$a = c$，故$A = C = \dfrac{\pi}{3}$或$\dfrac{\pi}{6}$. 故$\triangle ABC$为等边三角形或者顶角$120^{\circ}$的等腰三角形，可知$a = 4$ 或$4\sqrt{3}$.
+    \end{jieda}
+    \item 在 $\triangle A B C$ 中，角 $A, B, C$ 所对的边分别为 $a, b, c$ ，若 $a=\sqrt{3}$ ，且 $c-2 b+2 \sqrt{3} \cos C=0$ ，则该三角形外接圆的半径为 \blkda{$1$}．
+
+    \begin{jieda}
+    $\because a=\sqrt{3}, \therefore c-2 b+2 a \cos C=0, \therefore \sin C-2 \sin B+2 \sin A \cos C=0$ ．
+    
+    $\therefore \sin C-2 \sin (A+C)+2 \sin A \cos C=0$
+    
+    $\therefore \sin C-2 \sin A \cos C-2 \sin C \cos A+2 \sin A \cos C=0$
+    
+    $\therefore \sin C-2 \sin C \cos A=0, \because \sin C>0, \therefore \cos A=\dfrac{1}{2}, A \in(0, \pi)$ ，
+    
+    $\therefore A=\dfrac{\pi}{3}$ ，设该三角形外接圆的半径为 $r$，由正弦定理得$\dfrac{a}{\sin A}=\dfrac{\sqrt{3}}{\dfrac{\sqrt{3}}{2}}=2=2 r, \therefore r=1$
+    \end{jieda}
+    \item 在$\triangle{ABC}$中, $a,b,c$分别为内角$A,B,C$的对边，且满足$\sqrt{3}tanAtanB - tanA - tanB = \sqrt{3}$
+    \begin{enumerate}
+        \item 求C的大小
+        \item 若$c = 2$，且$\triangle{ABC}$为锐角三角形，求$a^2+b^2$的取值范围
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\sqrt{3}tanAtanB - tanA - tanB = \sqrt{3}$即$-\sqrt{3}(1-tanAtanB) = -(tanA + tanB)$，即$\sqrt{3} = -tan(A+B) = tanC$，故$C = \dfrac{\pi}{3}$
+            \item 根据正弦定理有$\dfrac{a}{sinA} = \dfrac{b}{sinB} = \dfrac{c}{sinC} = \dfrac{2}{\dfrac{\sqrt{3}}{2}} = \dfrac{4\sqrt{3}}{3}$，因此$a^2+b^2 = \dfrac{16}{3}(sin^2A + sin^2B) = \dfrac{16}{3}(sin^2A + sin^2(\dfrac{2\pi}{3}-A)) = \dfrac{16}{3}(1+\dfrac{1}{2}sin(2A - \dfrac{\pi}{6}))(A \in (\dfrac{\pi}{6}, \dfrac{\pi}{2}))$，因此$a^2+b^2 \in \left(\dfrac{20}{3}, 8 \right]$
+        \end{enumerate}        
+    \end{jieda}
+    \item 已知半径为$R$的圆外接于$\triangle{ABC}$, 且$2R(\sin^2A-\sin^2C)=(\sqrt{3}a-b)\sin{B}$. 
+    \begin{enumerate}
+    \item 求角$C$; 
+    \item 求$\triangle{ABC}$面积的最大值. 
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}
+    \item $\iff a^2-c^2=(\sqrt{3}a-b)b\iff a^2+b^2-c^2=\sqrt{3}ab$, 于是$2ab\cos{C}=\sqrt{3}ab$. \\
+    于是$\cos{C}=\dfrac{\sqrt{3}}{2}$, 故$C=\dfrac{\pi}{6}$. 
+    
+    \item 因为面积必须是长度的平方, 条件中又没有边长, 故$S$用$R$表示. \\
+    $S=2R^2\sin{A}\sin{B}\sin{C}=R^2\sin{C}(\cos(A-B)-\cos(A+B))=\frac{1}{2}R^2(\cos(A-B)+\frac{\sqrt{3}}{2})$, \\
+    故$S_{\max}=\dfrac{2+\sqrt{3}}{4}R^2(A=B=\frac{5\pi}{12})$
+    \end{enumerate}
+    \end{jieda}
+    
+    \item 在$\triangle{ABC}$中, 角$A, B, C$所对的边分别为$a, b, c$，且$sinA = \dfrac{\sqrt{5}}{5}$，$sinB = \dfrac{\sqrt{10}}{10}$
+    \begin{enumerate}
+        \item 求$A+B$的值
+        \item 若$a-b = \sqrt{2} - 1$，求$a, b, c$的值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $cosB = \dfrac{3\sqrt{10}}{10}$，$cosA = \dfrac{2\sqrt{5}}{5}$或$-\dfrac{2\sqrt{5}}{5}$ \\
+            $cos(A+B) = \dfrac{\sqrt{2}}{2}$或$-\dfrac{7\sqrt{2}}{10}$，故$A+B = \dfrac{\pi}{4}$或$arccos(-\dfrac{7\sqrt{2}}{10})$
+            \item 根据$\dfrac{a}{sinA} = \dfrac{b}{sinB}$可知$a:b = \sqrt{2}:1$，故$a = \sqrt{2}, b = 1$ \\
+            $c^2 = a^2+b^2-2abcosC = 2+1+2\sqrt{2}\cdot cos(A+B) = 5$或$\dfrac{1}{5}$
+        \end{enumerate}
+    \end{jieda}
+        
+    \item 在锐角$\triangle{ABC}$中, $\dfrac{b}{a}+\dfrac{a}{b}=6\cos{C}$, 则$\dfrac{\tan{C}}{\tan{A}}+\dfrac{\tan{C}}{\tan{B}}$=\blkda{4}. 
+    \begin{jieda}
+    $\iff a^2+b^2=6ab\cos{C}=3(a^2+b^2-c^2)\iff3c^2=2(a^2+b^2)$, 
+    于是
+    \begin{align*}
+    \dfrac{\tan{C}}{\tan{A}}+\dfrac{\tan{C}}{\tan{B}}
+    & =\dfrac{\sin{C}}{\cos{C}}\left(\dfrac{\cos{A}}{\sin{A}}+\dfrac{\cos{B}}{\sin{B}}\right)\\
+    & =\dfrac{\sin{C}}{\cos{C}}\cdot\dfrac{\cos{A}\sin{B}+\cos{B}\sin{A}}{\sin{A}\sin{B}}\\
+    & =\dfrac{\sin{C}}{\cos{C}}\cdot\dfrac{\sin(A+B)}{\sin{A}\sin{B}}\\
+    & =\dfrac{c^2}{ab\cos{C}}\\
+    & =\dfrac{2c^2}{a^2+b^2-c^2}\\
+    & =4.
+    \end{align*}
+    \end{jieda}
+    
+    \item 在$\triangle{ABC}$中, $A=\ang{60}$, $b=1$, $S_{\triangle{ABC}}=\sqrt{3}$, 则$\dfrac{a+b+c}{\sin{A}+\sin{B}+\sin{C}}$=\blkda{$\dfrac{2\sqrt{39}}{3}$}. 
+    \begin{jieda}
+        $\dfrac{1}{2}bcsinA = \sqrt{3}$，故$c = 4$，故$a^2 = b^2+c^2-2bccosA = 1 + 16 - 4 = 13$，故$a = \sqrt{13}$，因此$\dfrac{a+b+c}{\sin{A}+\sin{B}+\sin{C}} = \dfrac{a}{sinA} = \dfrac{\sqrt{13}}{\dfrac{\sqrt{3}}{2}} = \dfrac{2\sqrt{39}}{3}$
+    \end{jieda}
+    \item $\triangle ABC$中$\dfrac{b}{a} + \dfrac{a}{b} = 4cosC$，且$cos(A-B) = \dfrac{1}{6}$，则$cosC = $\blkda{$\dfrac{2}{3}$}.
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法一 \\
+            $\dfrac{b}{a} + \dfrac{a}{b} = 4cosC$即$\dfrac{a^2+b^2}{ab} = 4cosC$，根据余弦定理有$a^2+b^2 = 4abcosC = 2(a^2+b^2-c^2)$，故$a^2+b^2 = 2c^2$，利用正弦定理有$sin^2A + sin^2B = 2sin^2C$，即$\dfrac{1-cos2A}{2} + \dfrac{1-cos2B}{2} = 2sin^2C$，即$2 - (cos2A + cos2B) = 4sin^2C$，和差化积有$2 - 2cos(A+B) \cdot cos(A-B) = 4-4cos^2C$，即$1+cosC \cdot \dfrac{1}{6} = 2-2cos^2C$，整理有$12cos^2C + cosC - 6 = 0$，$cosC = \dfrac{2}{3}$
+            \item 方法二 \\
+            $\dfrac{b}{a} + \dfrac{a}{b} = 4cosC$即$\dfrac{a^2+b^2}{ab} = 4cosC$，根据余弦定理有$a^2+b^2 = 4abcosC = 2(a^2+b^2-c^2)$，故$a^2+b^2 = 2c^2$，故根据余弦定理有$cosC = \dfrac{c^2}{2ab} = \dfrac{sin^2C}{2sinAsinB} = \dfrac{1-cos^2C}{cos(A-B) - cos(A+B)} = \dfrac{1-cos^2C}{\dfrac{1}{6}+cosC}$，整理有$12cos^2C + cosC - 6 = 0$，$cosC = \dfrac{2}{3}$
+            \item 方法三 \\
+            首先利用正弦定理有$4cosC = \dfrac{sinB}{sinA} + \dfrac{sinA}{sinB} = \dfrac{sin^2A + sin^2B}{sinA \cdot sinB} = \dfrac{(sinA + sinB)^2}{sinA \cdot sinB} - 2$，分母积化和差，分子和差化积有$4cosC + 2 = \dfrac{(2sin(\dfrac{A+B}{2}) \cdot cos(\dfrac{A-B}{2}))^2}{-\dfrac{1}{2}(cos(A+B) - cos(A-B))}$，即$2cosC + 1 = \dfrac{4 \cdot (\dfrac{1-cos(A+B)}{2}) \cdot (\dfrac{1+cos(A-B)}{2})}{cos(A-B)-cos(A+B)} = \dfrac{(1+cosC)\cdot\dfrac{7}{6}}{\dfrac{1}{6}+cosC}$，故$12cos^2C + 8cosC + 1 = 7 + 7cosC$，即$12cos^2C + cosC - 6 = 0$，$cosC = \dfrac{2}{3}$
+        \end{enumerate}
+    \end{jieda}
+    \item 设$\triangle ABC$的三边分别为$a, b, c$，设$BC$边中线为$AM$，高线为$AH$，$A$的角平分线为$AE$，求$AM, AH, AE$及$\triangle ABC$的内切圆和外接圆半径$r, R$的长度
+    \begin{jieda}
+        \begin{dingautolist}{172}
+        \item 求$AM$ \\
+        设$AM = x_1, \angle AMB = \theta$，\\
+        在$\triangle AMB$和$\triangle AMC$中应用余弦定理有$\left \{ \begin{array}{l}
+             c^2 = \left(\dfrac{a}{2}\right)^2 + x_1^2 - ax_1cos\theta \\
+             b^2 = \left(\dfrac{a}{2}\right)^2 + x_1^2 + ax_1cos\theta
+        \end{array} \right.$，两式相加有$b^2 + c^2 = \dfrac{a^2}{2} + 2x_1^2$，故$x_1 = \sqrt{\dfrac{b^2+c^2-\dfrac{a^2}{2}}{2}}$
+        \item 求$AH$ \\
+        设$AH = h$，则$S = \dfrac{1}{2}bcsinA = \dfrac{1}{2}ah$，即$h = \dfrac{bcsinA}{a}$，其中$sinA = \sqrt{1-cos^2A} = \sqrt{1 - \left ( \dfrac{b^2+c^2-a^2}{2bc}\right)^2}$
+        \item 求$AE$ \\
+        $AE$是角平分线，因此有$\dfrac{BE}{CE} = \dfrac{c}{b}$，证明如下：在$\triangle AEB$中应用正弦定理有$\dfrac{BE}{c} = \dfrac{sin\angle BAE}{sin\angle AEB}$，在$\triangle AEC$中应用正弦定理有$\dfrac{CE}{b} = \dfrac{sin\angle CAE}{sin\angle AEC}$，因为$sin\angle CAE = sin\angle BAE$，$sin\angle AEC = sin \angle AEB$，因此$\dfrac{BE}{c} = \dfrac{CE}{b}$，即$\dfrac{BE}{CE} = \dfrac{c}{b}$ \\
+        设$AE = x_2, \angle AEB = \theta$，\\
+        在$\triangle AEB$中应用余弦定理有$x_2^2 = \left(\dfrac{ac}{b+c}\right)^2 + c^2 - \dfrac{2ac^2}{b+c}cosB$，其中$cosB = \dfrac{a^2+c^2-b^2}{2ac}$
+        \item 求$r$ \\
+        $S = \dfrac{1}{2}bcsinA = \dfrac{1}{2}(a+b+c) \cdot r$，即$r = \dfrac{bcsinA}{a+b+c}$，其中$sinA = \sqrt{1-cos^2A} = \sqrt{1 - \left ( \dfrac{b^2+c^2-a^2}{2bc}\right)^2}$
+        \item 求$R$ \\
+        $\dfrac{a}{sinA} = 2R$，$R = \dfrac{a}{2sinA}$，其中$sinA = \sqrt{1-cos^2A} = \sqrt{1 - \left ( \dfrac{b^2+c^2-a^2}{2bc}\right)^2}$
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{三角函数的图像与性质}
+\subsubsection*{函数的周期性}
+    如果对于函数$f(x)$，在定义域内的任意一个自变量$x$，都有一个\textbf{非零的常数}$T$，使得$x+T$也在定义域内，并且$f(x) = f(x+T)$.那么我们说$f(x)$是\textbf{周期函数}，$T$为$f(x)$的一个周期.如果在所有的周期中存在一个最小的正数，那么这个周期我们称作最小正周期.如不加说明，周期通常指最小正周期.
+    
+    性质推论：
+    \begin{enumerate}
+        \item 如果$T$是$f(x)$的周期，那么$k \cdot T (k \in \mathbf{Z} \mbox{且} k \neq 0)$都是$f(x)$的周期
+        \item 不是所有周期函数都有最小正周期，例如：常函数$y = c$
+        \item 若函数在两个不同位置具有对称性，则其具有周期性.
+    \end{enumerate}
+\subsubsection*{正弦函数的图像和性质}
+
+    \begin{center}
+        \includegraphics[width=1\linewidth]{bodyxb//src/sinx.png}
+    \end{center}
+        
+    \begin{enumerate}
+        \item 定义：对于任意一个实数$x$，都有唯一确定的正弦值$sinx$与之对应，按照这个对应关系建立的函数就叫做正弦函数，记作$y = sinx$.正弦函数的定义域是实数集$\mathbf{R}$.
+        \item 绘制函数图像：借助单位圆可以做出图像；绘制简图方法：五点法
+        \item 定义域：$\mathbf{R}$
+        \item 周期性：最小正周期为$2\pi$
+        \item 奇偶性：奇函数
+        \item 对称轴：$k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}$
+        \item 对称中心：$(k\pi, 0), k \in \mathbf{Z}$
+        \item 单调性：在$\left[2k\pi-\dfrac{\pi}{2}, 2k\pi+\dfrac{\pi}{2}\right]$内单调递增，在$\left[2k\pi+\dfrac{\pi}{2}, 2k\pi+\dfrac{3\pi}{2}\right]$内单调递减，其中$k \in \mathbf{Z}$
+        \item 最值：最大值为1，最小值为-1，值域为$[-1, 1]$
+    \end{enumerate}
+\subsection*{余弦函数的图像和性质}
+    \begin{center}
+        \includegraphics[width=1\linewidth]{bodyxb//src/cosx.png}
+    \end{center}
+        
+    \begin{enumerate}
+        \item 定义：对于任意一个实数$x$，都有唯一确定的余弦值$cosx$与之对应，按照这个对应关系建立的函数就叫做余弦函数，记作$y = cosx$.余弦函数的定义域是实数集$\mathbf{R}$.
+        \item 绘制函数图像：借助单位圆可以做出图像；绘制简图方法：五点法；可以利用正弦函数图像向左平移$\dfrac{\pi}{2}$得到余弦函数的图像.
+        \item 定义域：$\mathbf{R}$
+        \item 周期性：最小正周期为$2\pi$
+        \item 奇偶性：偶函数
+        \item 对称轴：$k\pi, k \in \mathbf{Z}$
+        \item 对称中心：$\left(k\pi + \dfrac{\pi}{2}, 0\right), k \in \mathbf{Z}$
+        \item 单调性：在$[2k\pi-\pi, 2k\pi]$内单调递增，在$[2k\pi, 2k\pi+\pi]$内单调递减，其中$k \in \mathbf{Z}$
+        \item 最值：最大值为1，最小值为-1，值域为$[-1, 1]$
+    \end{enumerate}
+例题：
+\begin{enumerate}
+    \item 已知正弦函数过点$\left(\dfrac{\pi}{6}, m\right)$，则$m = $\blkda{$\dfrac{1}{2}$}
+    \item 函数$y=\sin{x}$的单调增区间为\blkda[4]{$\left[2k\pi - \dfrac{\pi}{2}, 2k\pi+\dfrac{\pi}{2}\right], k \in \mathbf{Z}$}
+    \item 函数$y = sin2x$的严格减区间为\blkda[4]{$\left[k\pi+\dfrac{\pi}{4}, k\pi+\dfrac{3\pi}{4}\right], k \in \mathbf{Z}$}
+    \item 函数$y = sinx, x \in \left[-\dfrac{\pi}{6}, \dfrac{2\pi}{3}\right]$的值域是\blkda{$\left[-\dfrac{1}{2}, 1\right]$}
+    \item 函数$y = sin\left(x - \dfrac{\pi}{4}\right)$的图象的对称轴为\blkda[4]{直线$x = k\pi+\dfrac{3\pi}{4}, k \in \mathbf{Z}$}，对称中心为\blkda[4]{点$\left(k\pi + \dfrac{\pi}{4}, 0\right), k\in \mathbf{Z}$}    
+
+    \item 下列说法中不正确的是\dotfill(\kh{C})
+    \xx
+    {正弦函数，余弦函数的定义域是 $\mathbf{R}$ ，值域是 $[-1,1]$}
+    {余弦函数当且仅当 $x=2 k \pi(k \in \mathbf{Z})$ 时，取得最大值 1}
+    {余弦函数在 $\left[2 k \pi+\frac{\pi}{2}, 2 k \pi+\frac{3 \pi}{2}\right](k \in \mathbf{Z})$ 上都是严格减函数}
+    {余弦函数在 $[2 k \pi-\pi, 2 k \pi](k \in \mathbf{Z})$ 上都是严格增函数}
+    
+    \item 函数$f(x)=\cos x, x \in \left[-\dfrac{\pi}{4}, \dfrac{5 \pi}{6}\right]$ 的值域为 \blkda[2]{$\left[-\dfrac{\sqrt{3}}{2},1\right]$}.
+
+    \item 函数$f(x)=\cos{x}+\cos{2x}$的值域是\blkda[2]{$\left[-\dfrac{9}{8},2\right]$}.
+
+    \item 函数$y=\cos{2x},x\in \left[-\dfrac{\pi}{6},\dfrac{2\pi}{3}\right]$的单调增区间是\blkda[4]{$\left[-\dfrac{\pi}{6},0\right]$和$\left[\dfrac{\pi}{2},\dfrac{2\pi}{3}\right]$}.
+
+    \item 已知函数$y = 2\cos \left(2 x-\dfrac{\pi}{4}\right)$  ，当函数值为 -2 时，自变量 $x$ 的取值集合为 \blkda[4]{$\{x|x=\dfrac{5\pi}{8}+k\pi,k\in Z\}$}.
+
+    \item 函数$y=\dfrac{\sqrt{\sin{x}}}{1+\cos{x}}$的定义域是\blkda[4]{$[2k\pi,2k\pi+\pi)(k\zz)$}. 
+
+    \item 函数$y=\cos2x+\sin^2x$的值域是\blkda{$[0,1]$}
+\end{enumerate}
+
+
+\subsection*{$Asin(\omega x+\varphi)$的图像和性质}
+在物理学和工程技术的许多问题中，经常会遇到形如$y = Asin(\omega x + \varphi)$的函数（其中$A, \omega, \varphi$为常数），例如：物体做简谐运动，如单摆摆动或者弹簧在震动的过程中，物体离开平衡位置的位移$y$与时间$x$的关系为$y = Asin(\omega x + \varphi) (A > 0, \omega > 0)$ \\
+若$A < 0$或者$\omega < 0$，可以利用诱导公式$sin(-\alpha) = -sin\alpha, -sin\alpha = sin(\alpha+\pi)$将$A, \omega$化为正数.\\
+下面给出$Asin(\omega x + \varphi) (A > 0, \omega > 0)$的函数图像和性质.
+\begin{enumerate}
+    \item $A$ \\
+    $A$是物体振动时离开平衡位置的最大距离，称为该震动的\textbf{振幅}.$A$越大，震动的幅度越大.
+    \item $\omega$ \\
+    单摆或者弹簧往复振动一次所需的时间$T = \dfrac{2\pi}{\omega}$，称为该震动的\textbf{周期}（最小正周期）.单位时间内振动的次数，$f = \dfrac{1}{T} = \dfrac{\omega}{2\pi}$称为振动的\textbf{频率}.$\omega = 2\pi f$称为\textbf{圆频率}.$\omega$越大，周期越小，频率越大.
+    \item $\varphi$ \\
+    $\omega x + \varphi$称为该振动的\textbf{相位}.当$x=0$时的相位，即$\varphi$称为初始相位，简称\textbf{初相}，$\varphi$的改变会使得图像左右平移.
+\end{enumerate}
+
+例题：
+\begin{enumerate}
+    \item 函数 $y=-2 \sin \left(\frac{\pi}{4}-\frac{x}{2}\right)$ 的振幅为\blkda[1]{2}
+    
+    
+    \item 函数 $y=2 \sin \left[2\left(x+\frac{1}{6}\right)\right]$ 的初始相位是\blkda[1]{$\dfrac{1}{3}$}
+    
+    
+    \item 将函数 $y=\sin x$ 图像上各点的横坐标缩小为原来的 $\dfrac{1}{4}$ ，纵坐标不变，再将所得图像向左平移 $\dfrac{\pi}{24}$ 个单位长度得到函数 $y=f(x)$ 的图像，则 $f(x)$ 的解析式为\blkda[2]{$\sin{\left(4x+\dfrac{\pi}{6}\right)}$}．
+    
+    \item 已知函数 $f(x)=2 \cos \left(\frac{\pi}{4}-3 x\right), x \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ ，则 $f(x)$ 的单调递增区间是\blkda[3]{$\left[-\frac{\pi}{4}, \frac{\pi}{12}\right] $和$ [\frac{5\pi}{12}, \frac{\pi}{2}]$}
+    
+    \item 关于函数$f(x) = 2sin\left(3x - \dfrac{3\pi}{4}\right)$，以下说法：
+    \begin{dingautolist}{172}
+        \item 其最小正周期为$\dfrac{2\pi}{3}$
+        \item 图像关于点$\left(\dfrac{\pi}{4}, 0\right)$对称
+        \item 直线$x = -\dfrac{\pi}{4}$是其一条对称轴
+    \end{dingautolist} 其中说法正确的序号是\blkda{\ding{172}, \ding{173}, \ding{174}}
+
+    \item 已知函数$f(x) = sin\omega x+acos\omega x (\omega > 0)$的最小正周期为$2\pi$
+    \begin{enumerate}
+        \item 求$\omega$的值
+        \item 已知直线$x = -\dfrac{\pi}{4}$是函数$f(x)$的一条对称轴，求$f(x)$的最大值与最小值
+    \end{enumerate}
+    \begin{jieda}
+        $f(x) = \sqrt{a^2+1}sin(\omega x + \varphi)$（$cos\varphi = \dfrac{1}{\sqrt{a^2+1}}, sin\varphi = \dfrac{a}{\sqrt{a^2+1}}$）$\dfrac{2\pi}{\omega} = T = 2\pi$，故$\omega = 1$
+        \begin{enumerate}
+            \item 方法1 \\
+             $f(x) = sinx + a \cdot cosx$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$f\left(-\dfrac{\pi}{4}\right) = \pm \sqrt{a^2+1}$，即$-\dfrac{\sqrt{2}}{2} + a \cdot \dfrac{\sqrt{2}}{2} = \pm \sqrt{a^2+1}$，即$a-1 = \pm \sqrt{2(a^2+1)}$，即$a^2-2a+1 = 2(a^2+1)$，即$a^2+2a+1 = 0$，因此$a = -1$，故$f(x)$的最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
+            \item 方法2 \\
+            $f(x) = \sqrt{a^2+1} sin(x+\varphi)$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$-\dfrac{\pi}{4} + \varphi = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}$，因此$\varphi = k\pi + \dfrac{3\pi}{4}, k \in \mathbf{Z}$因此$tan\varphi = a = -1$，因此$f(x) = \sqrt{2}sin(x - \dfrac{\pi}{4})$，故其最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
+            \item 方法3 \\
+            $f(x) = sinx + a \cdot cosx$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$f(0) = f(-\dfrac{\pi}{2})$，故$a = -1$，经检验$f(x) = sinx - cosx$符合要求，故$f(x)$的最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
+        \end{enumerate}
+        当$x = 2k\pi - \dfrac{\pi}{4}, k \in \mathbf{Z}$的时候取得最小值，当$x = 2k\pi + \dfrac{\pi}{4}, k \in \mathbf{Z}$的时候取得最大值
+    \end{jieda}
+    
+    \item 判断下列函数的奇偶性，并写出最小正周期
+    \begin{dingautolist}{172}
+        \item $f(x) = sin^6x + cos^6x$；\blkda[3]{偶函数}，\blkda{$\dfrac{\pi}{2}$}
+        \item $f(x) = asin^2x + bcos^2x(a^2+b^2 \neq 0, b \neq a)$；\blkda[3]{偶函数}，\blkda{$\pi$}
+    \end{dingautolist}
+
+
+    \item 已知函数 $f(x)=\cos \omega x(\omega>0)$ 在区间 $[0,2 \pi]$ 有且仅有 3 个零点，则 $\omega$ 的取值范围是 \blkda[2]{$\left[\dfrac{5}{4},\dfrac{7}{4}\right)$} ．
+    \begin{jieda}
+        设$t = \omega x$，$f(x) = g(t) = cost$在$\left[0, 2\omega\pi\right]$上有三个零点 \\
+        故$\left[0, 2\omega\pi\right]$与$\left \{ x | x = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\}\right.$有三个公共元素. \\
+        即$\left[0, 2\omega\right]$与$\left \{ x | x = k + \dfrac{1}{2}, k \in \mathbf{Z}\}\right.$有三个公共元素，故公共元素为$\dfrac{1}{2}, \dfrac{3}{2}, \dfrac{5}{2}$，因此$\omega \in \left[\dfrac{5}{4},\dfrac{7}{4}\right)$
+    \end{jieda}
+    \item 已知函数 $f(x)=\cos(\omega x + \dfrac{\pi}{3})(\omega>0)$ 在区间 $[\pi,2 \pi]$ 有且仅有 3 个零点，则 $\omega$ 的取值范围是 \blkda[6]{$\left[\dfrac{25}{12}, \dfrac{13}{6}\right] \cup \left[\dfrac{31}{12}, \dfrac{37}{12}\right)\cup \left(\dfrac{19}{6}, \dfrac{43}{12}\right) $} ．
+    \begin{jieda}
+        设$t = \omega x + \dfrac{\pi}{3}$，$f(x) = g(t) = cost$在$\left[\omega \pi + \dfrac{\pi}{3}, 2\omega\pi+\dfrac{\pi}{3}\right]$上有三个零点 \\
+        故$\left[\omega \pi + \dfrac{\pi}{3}, 2\omega\pi+\dfrac{\pi}{3}\right]$与$\left \{ x | x = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\right\}.$有三个公共元素. \\
+        即$\left[\omega, 2\omega\right]$与$\left \{ x | x = k + \dfrac{1}{6}, k \in \mathbf{Z}\}\right.$有三个公共元素. 
+        故根据区间长度必有$2 < \omega < 4$，故可行的公共元素有$\dfrac{13}{6},\dfrac{19}{6}, \dfrac{25}{6}, \dfrac{31}{6}, \dfrac{37}{6}, \dfrac{43}{6}$
+        \begin{dingautolist}{172}
+            \item 若交集为$\left \{ \dfrac{13}{6}, \dfrac{19}{6}, \dfrac{25}{6} \right \}$，则有$\left \{ \begin{array}{l}
+                 \dfrac{7}{6} < \omega \leq \dfrac{13}{6} \\
+                 \dfrac{25}{6} \leq 2\omega < \dfrac{31}{6}
+            \end{array} \right.$，即$\omega \in \left[\dfrac{25}{12}, \dfrac{13}{6}\right]$
+            \item 若交集为$\left \{ \dfrac{19}{6}, \dfrac{25}{6}, \dfrac{31}{6} \right \}$，则有$\left \{ \begin{array}{l}
+                 \dfrac{13}{6} < \omega \leq \dfrac{19}{6} \\
+                 \dfrac{31}{6} \leq 2\omega < \dfrac{37}{6}
+            \end{array} \right.$，即$\omega \in \left[\dfrac{31}{12}, \dfrac{37}{12}\right)$
+            \item 若交集为$\left \{ \dfrac{25}{6}, \dfrac{31}{6}, \dfrac{37}{6} \right \}$，则有$\left \{ \begin{array}{l}
+                 \dfrac{19}{6} < \omega \leq \dfrac{25}{6} \\
+                 \dfrac{37}{6} \leq 2\omega < \dfrac{43}{6}
+            \end{array} \right.$，即$\omega \in \left(\dfrac{19}{6}, \dfrac{43}{12}\right)$
+            \item 其余情况无解.
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{正切函数的图像和性质}
+    \begin{center}
+        \includegraphics[width=1\linewidth]{bodyxb//src/tanx.png}
+    \end{center}
+    \begin{enumerate}
+        \item 定义：对于任意一个不等于$k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})$的实数$x$，都有唯一确定的正切值$tanx$与之对应，按照这个对应关系建立的函数就叫做正切函数，记作$y = tanx$.正切函数的定义域是$\{x | x \neq k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})\}$.
+        \item 绘制函数图像：借助单位圆可以做出图像.
+        \item 定义域：$\{x | x \neq k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\}$
+        \item 周期性：最小正周期为$\pi$
+        \item 奇偶性：奇函数
+        \item 对称中心：$\left(\dfrac{k\pi}{2}, 0\right), k \in \mathbf{Z}$
+        \item 单调性：在$\left(k\pi - \dfrac{\pi}{2}, k\pi + \dfrac{\pi}{2}\right)$内单调递增，其中$k \in \mathbf{Z}$
+        \item 最值：没有最大值或最小值，值域为$\mathbf{R}$
+    \end{enumerate}
+例题：
+
+\begin{enumerate}
+\item 正切函数的最小正周期是\blkda{$\pi$}，对称中心为\blkda[3]{$\left(\dfrac{k\pi}{2}, 0\right), k \in \mathbf{Z}$}
+\item 有人说: ``正切函数在整个定义域内是单调递增的函数.'' 这句话对吗? 为什么? \blkda{不对}. 
+\begin{jieda}
+反例: $\tan\frac{\pi}{3}>\tan(\pi+\frac{\pi}{6})$. 
+\end{jieda}
+\item 函数$tan(ax+b)(a \neq 0)$的最小正周期为\blkda{$\dfrac{\pi}{|a|}$}
+\item 根据正切函数的图像，写出使下列不等式成立的$x$值的集合：\\
+\begin{enumerate*}
+    \item $1+tanx \geq 0$
+    \item $tanx - \sqrt{3} \geq 0$
+\end{enumerate*}
+\begin{jieda}
+    \begin{enumerate*}
+    \item $\{x | -\dfrac{\pi}{4}+k\pi \leq x < \dfrac{\pi}{2}+k\pi, k \in \mathbf{Z}\}$
+    \item $\{x | \dfrac{\pi}{3}+k\pi \leq x < \dfrac{\pi}{2}+k\pi, k \in \mathbf{Z}\}$
+\end{enumerate*}
+\end{jieda}
+\item 函数$y=\abs{\tan{x}}$的最小正周期为\blkda{$\pi$}
+    \item 函数$y=\sqrt{1-\tan^2x}$的定义域为\blkda[4]{$\left[k\pi-\dfrac{\pi}{4},k\pi+\dfrac{\pi}{4}\right](k\zz)$}
+    \item 关于$x$的不等式$\tan2x\leq-1$的解集为\blkda[4]{$\left(\dfrac{k\pi}{2}-\dfrac{\pi}{4},\dfrac{k\pi}{2}-\dfrac{\pi}{8}\right](k\zz)$}
+    \begin{jieda}
+    $k\pi-\frac{\pi}{2}<2x\leq k\pi-\frac{\pi}{4}$. 
+    \end{jieda}
+    \item $f(x) = \left \{ \begin{array}{l}
+         tan(\pi x), x \geq 0 \\
+         f(x+1), x < 0
+    \end{array} \right.$，则$f\left(-\dfrac{2}{3}\right) = $\blkda{$\sqrt{3}$}
+    \begin{jieda}
+        $f\left(-\dfrac{2}{3}\right) = f\left(\dfrac{1}{3}\right) = tan\left(\dfrac{\pi}{3}\right) = \sqrt{3}$
+    \end{jieda}
+    \item 已知函数$f(x) = tan\left(\omega x + \dfrac{\pi}{3}\right) (\omega > 0)$在区间$\left(-\dfrac{\pi}{3}, \dfrac{\pi}{3}\right)$上单调，则$\omega$的取值范围为\blkda{$\left(0, \dfrac{1}{2}\right]$}
+    \begin{jieda}
+        换元$t = \omega x + \dfrac{\pi}{3}$，故问题等价于$tant$在$\left((1-\omega) \cdot \dfrac{\pi}{3}, (1+\omega) \cdot \dfrac{\pi}{3}\right)$上单调递增，又因为$tant$在$\left(k\pi - \dfrac{\pi}{2}, k\pi+\dfrac{\pi}{2} \right), k \in \mathbf{Z}$上单调递增 \\
+        因此$\left((1-\omega) \cdot \dfrac{\pi}{3}, (1+\omega) \cdot \dfrac{\pi}{3}\right) \subseteq \left(k\pi - \dfrac{\pi}{2}, k\pi+\dfrac{\pi}{2} \right), k \in \mathbf{Z}$，\\
+        即$\left(1-\omega, 1+\omega\right) \subseteq \left(3k-\dfrac{3}{2}, 3k+\dfrac{3}{2}\right), k \in \mathbf{Z}$，易知$1 \in \left(3k-\dfrac{3}{2}, 3k+\dfrac{3}{2}\right), k \in \mathbf{Z}$，因此必有$k = 0$，故$\omega \in \left(0, \dfrac{1}{2}\right]$
+    \end{jieda}
+\end{enumerate}
+\subsection*{反三角函数}
+函数 $y = arcsinx(x \in [-1,1])$、 $y = arccosx (x \in [-1,1])$与 $y = arctanx (x \in (-\infty, +\infty))$分别称为反正弦函数、反余弦函数与反正切函数.这些函数统称为反三角函数.
+\par $y = sinx\left(x \in \left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]\right)$与$y = arcsinx(x \in [-1,1])$互为反函数.
+\par $y = cosx(x \in [0,\pi])$与$y = arccosx(x \in [-1,1])$互为反函数.
+\par $y = tanx\left(x \in \left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)\right)$与$y = arctanx(x \in (-\infty, +\infty))$互为反函数.

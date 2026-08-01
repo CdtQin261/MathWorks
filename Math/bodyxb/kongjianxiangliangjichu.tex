@@ -1,0 +1,44 @@
+\section*{关于空间向量你必须知道的那些事}
+\begin{enumerate}
+    \item 建立空间直角坐标系应用空间向量解决立体几何问题的流程
+    \begin{dingautolist}{172}
+        \item \blkda[8]{说明三条射线两两垂直}
+        \item \blkda[8]{说明原点和三个方向的坐标轴（创建右手系）}
+        \item \blkda[8]{标出关键点的坐标}
+        \item \blkda[8]{写出直线的方向向量，计算法向量的坐标（如需）}
+        \item \blkda[8]{进行向量运算，将几何问题代数化求解}
+        \item \blkda[8]{完整回答问题}
+    \end{dingautolist}
+
+    \item 利用空间向量判断空间中直线和平面的位置关系
+    \begin{enumerate}
+        \item 线线平行：\blkda[4]{两方向向量平行}
+        \item 线线垂直：\blkda[4]{两方向向量垂直}
+        \item 线面平行：\blkda[4]{方向向量和法向量垂直}
+        \item 线面垂直：\blkda[4]{方向向量和法向量平行}
+        \item 面面平行：\blkda[4]{法向量平行}
+        \item 面面垂直：\blkda[4]{法向量垂直}
+    \end{enumerate}
+
+    \item 利用空间向量求夹角
+    \begin{enumerate}
+        \item 利用空间向量计算夹角得到的是\blkda{向量的夹角}，而不是直接得到目标空间角，根据\blkda[4]{$cos<\vv{a}, \vv{b}> = \dfrac{\vv{a} \cdot \vv{b}}{|\vv{a}| \cdot |\vv{b}|}$}可以得到两个向量夹角余弦值
+        \item 异面直线夹角$\theta$和两直线的方向向量夹角$\alpha$之间的关系是\blkda[4.5]{$\theta$和$\alpha$相等或互补}，三角比之间的关系是\blkda[3]{$cos\theta = |cos\alpha|$}
+        \item 线面角$\theta$和斜线的方向向量与平面的法向量夹角$\alpha$之间的关系是\blkda[4.5]{$\theta$的余角和$\alpha$相等或互补}，三角比之间的关系是\blkda[3]{$sin\theta = |cos\alpha|$}
+        \item 二面角的平面角$\theta$和两平面的法向量夹角$\alpha$之间的关系是\blkda[4.5]{$\theta$和$\alpha$相等或互补}，三角比之间的关系是\blkda[3]{$|cos\theta| = |cos\alpha|$}，需要自行判断$\theta$是\blkda[3]{锐角还是钝角}
+    \end{enumerate}
+
+
+    \item 利用空间向量求距离
+    \begin{enumerate}
+        \item 两点间距离（$A$到$B$）：应用\blkda[4]{两点间距离公式}，本质是利用\blkda[4]{数量积求向量的模}
+        \item 点到直线距离（$P$到$l$）：\ding{172}\blkda[4]{求直线$l$的方向向量为$\vv{d}$}，\ding{173}计算$P$到$l$上一点$A$的向量$\vv{AP}$在$\vv{d}$上的投影长度$a = $\blkda[4]{$\left|\dfrac{\vv{AP} \cdot \vv{d}}{|\vv{d}|}\right|$}，\ding{174}点到直线距离$d = $\blkda[4]{$\sqrt{|\vv{AP}|^2 - a^2}$}
+        \item 点到面的距离（$P$到$\alpha$）：\ding{172}\blkda[4]{求平面$\alpha$的法向量为$\vv{n}$}，\ding{173}计算$P$到$\alpha$上一点$A$的向量$\vv{AP}$在$\vv{n}$上的投影长度$a = $\blkda[4]{$\left|\dfrac{\vv{AP} \cdot \vv{n}}{|\vv{n}|}\right|$}，\ding{174}点到平面距离$d = $\blkda[4]{$a$}
+        \item 平行线间距离：\blkda[8]{取一条直线上的一点，转化为点到直线的距离求解}
+        \item 线到平行平面的距离：\blkda[8]{取直线上的一点，转化为点到平面的距离求解}
+        \item 平行平面间的距离：\blkda[8]{取一个平面上的一点，转化为点到平面的距离求解}
+        \item 异面直线间的距离：
+        
+        \blkda[14]{过一直线做出另一直线的平行平面，另一直线上取一点，转化为点到平面的距离求解}
+    \end{enumerate}
+\end{enumerate}

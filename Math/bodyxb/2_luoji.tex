@@ -1,0 +1,405 @@
+\chapter*{预备知识-常用逻辑用语}
+\section*{命题的概念}
+\subsection*{命题的概念}
+\begin{enumerate}
+    \item \textbf{命题}(proposition)是\textbf{可以判断真假}的\textbf{陈述句}。
+    \item 其含义判断为真的命题称为\textbf{真命题}, 其含义判断为假的命题称为\textbf{假命题}
+        \begin{example}
+            \begin{dingautolist}{172}
+                \item 真命题：平行四边形的对边平行。
+                \item 假命题：平行直线具有公共点。
+                \item 不是命题：$x > 3$
+            \end{dingautolist}
+        \end{example}
+    \item 如果一个命题写成“若$p$，则$q$”的形式，那么我们称$p$是命题的\textbf{条件}，$q$是命题的\textbf{结论}。把一些命题改成“若$p$，则$q$”的形式可以更便于我们判断命题的真假。
+    \item 如果命题“若$p$，则$q$”为真命题，是指\textbf{所有}满足条件$p$的对象都满足结论$q$，即$\{x | x \mbox{满足} p\} \subseteq \{x | x \mbox{满足} q\}$。要确定“若$p$，则$q$”为真命题，需要给出证明 \\
+    如果命题“若$p$，则$q$”为假命题，是指\textbf{存在}满足条件$p$的对象不满足结论$q$，即$\{x | x \mbox{满足} p\} $不是$ \{x | x \mbox{满足} q\}$的子集。要确定“若$p$，则$q$”为假命题，需要举出一个反例
+    \begin{example}
+        \begin{dingautolist}{172}
+            \item 若$x > 1$，则$x > 0$是真命题，$\{x | x > 1\} \subseteq \{x | x > 0\}$
+            \item 若$x > 0$，则$x > 1$是假命题，$\{x | x > 0\} $不是$ \{x | x > 1\}$的子集，存在反例$x = \dfrac{1}{2}$
+        \end{dingautolist}
+    \end{example}
+    \item 如果命题“若$p$，则$q$”是真命题，那么我们就说$p$能推出$q$，即$p \Rightarrow q$
+    \item 推出关系具有传递性，$a \Rightarrow b, b \Rightarrow c$，则$a \Rightarrow c$。\textbf{推出关系的传递性是逻辑推理证明的基础工具}
+    \begin{example}
+        “$n$被3除余1$\Rightarrow$ $n^4$被3除余1”可以由“$n$被3除余1$\Rightarrow$ $n^2$被3除余1”和“$n^2$被3除余1$\Rightarrow$ $n^4$被3除余1”证明。
+    \end{example}
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 判断下列语句中哪些是命题？是真命题还是假命题？
+    \begin{dingautolist}{172}
+        \item 空集是任何集合的子集
+        \item 若整数$a$是素数,则$a$是奇数
+        \item 指数函数是增函数吗?
+        \item 若平面内两条直线不相交，则这两条直线平行
+        \item $\sqrt{(-2)^2} = 2$
+        \item $x > 15$
+        \item $\{1\}$是$\{0,1,2\}$的真子集
+        \item 0是$\{0,1,2\}$的真子集
+        \item 如果集合$A$是集合$B$的子集，那么$B$不是$A$的子集
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 真命题 （空集是任意集合的子集，是任意非空集合的真子集）
+            \item 假命题 （反例：$a = 2$）
+            \item 不是命题（疑问句）
+            \item 真命题 （不相交 $\Rightarrow$ 无公共点 $\Rightarrow$ 平行）
+            \item 真命题 （$\sqrt{(-2)^2} = \sqrt{4} = 2$）
+            \item 不是命题（$x$为变量，无法判断真假）
+            \item 真命题 （根据真子集定义可以判定）
+            \item 假命题 （元素和单元素集合不是一个概念）
+            \item 假命题 （反例 A=B）
+        \end{dingautolist}
+    \end{jieda}
+    \item 将下列命题改写成“若$p$，则$q$”的形式，并判断 “$p \Rightarrow q$”是否成立
+    \begin{dingautolist}{172}
+        \item 等腰三角形的两底角相等；
+        \item 凡是素数都是奇数；
+        \item 对顶角相等．
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 若三角形是等腰三角形，则其两底角相等；成立（等腰三角形定义）
+            \item 若$n$是素数，那么$n$一定是奇数；不成立（反例$n = 2$）
+            \item 若两个角是对顶角，那他们的大小相等；成立（对顶角定义）
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{逻辑联结词}
+\begin{enumerate}
+    \item 简单命题是不包含逻辑联结词的命题
+    \item 复合命题是由逻辑联结词和简单命题构成的命题。\\
+            简单的逻辑联结词包含三种：\textbf{且（$\land$）、或($\vee$)、非($\neg$)}
+            \begin{enumerate}
+                \item $p \land q$为真命题当且仅当$p,q$均为真命题；$p,q$有一个为假命题则$p \land q$为假命题
+                \item $p,q$有一个为真命题，则$p \vee q$为真命题；$p \vee q$为假命题当且仅当$p,q$均为假命题
+                \item $p$与$\neg p$含义完全相反，非此即彼。若$p$为真命题，则$\neg p$为假命题；若$p$为假命题，则$\neg p$为真命题
+                \item 逻辑运算（且、或、非）与集合运算（交、并、补）在运算性质上具有一致性。参考表\ref{tab:LogicalConnectives}
+                \item 德摩根律：$\neg (p \land q) = (\neg p) \vee (\neg q)$，$\neg (p \vee q) = (\neg p) \land (\neg q)$
+            \end{enumerate}
+\end{enumerate}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c}
+        \hline
+        逻辑运算 & 集合运算 \\
+        \hline
+        $p$真 & $a \in P$ \\
+        $q$假 & $a \notin Q$ \\
+        $p\land q$假 & $a \notin P \cap Q$ \\
+        $p\vee q$真 & $a \in P \cup Q$ \\
+        $\neg p$假 & $a \notin \overline{P}$ \\
+        \hline
+    \end{tabular}
+    \caption{逻辑运算与集合运算的对比}
+    \label{tab:LogicalConnectives}
+\end{table}
+例题：
+\begin{enumerate}
+    \item 将下列命题用“且”联结成新命题，并判断它们的真假：
+    \begin{enumerate}
+        \item $p$: 平行四边形的对角线互相平分，$q$: 平行四边形的对角线相等；
+        \item $p$: 菱形的对角线互相垂直，$q$: 菱形的对角线互相平分；
+        \item $p$: 35是15的倍数，$q$: 35是7的倍数.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 平行四边形的对角线互相平分且相等，$p$真，$q$假，$p \land q$假
+            \item 菱形的对角线互相垂直且互相平分，$p$真，$q$真，$p \land q$真
+            \item 35是15的倍数且35是7的倍数，$p$假，$q$真，$p \land q$假
+        \end{enumerate}
+    \end{jieda}
+    \item 分别指出下列各组命题构成“$p$或$q$”、“$p$且$q$”、“非$p$”形式的命题的真假：
+    \begin{enumerate}
+        \item $p: 3>3$；$q: 3 = 3$
+        \item $p: \varnothing \subset \{0\}$；$q: 0 \in \varnothing$
+        \item $p: A \subseteq A$；$q: A \cap A = A$
+        \item $p:$函数$y = x^2+3x+4$的图象与$x$轴有公共点；$q:$方程$x^2+3x-4 = 0$没有实根
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $p$假$q$真，所以$p$或$q$真、$p$且$q$假、非$p$真
+            \item $p$真$q$假，所以$p$或$q$真、$p$且$q$假、非$p$假
+            \item $p$真$q$真，所以$p$或$q$真、$p$且$q$真、非$p$假
+            \item $p$假$q$假，所以$p$或$q$假、$p$且$q$假、非$p$真
+        \end{enumerate}
+    \end{jieda}
+    \item 已知命题$\alpha:$方程$x^2+mx+1 = 0$有两个相异的负实数根，命题$\beta:$方程$4x^2+4(m-2)x+1 = 0$无实数根. 命题$\alpha, \beta$中只有一个为真命题，求$m$的取值范围.
+    \begin{jieda}
+        方程$x^2+mx+1 = 0$有两个相异的负实数根$\Longleftrightarrow \left \{\begin{array}{l}
+             \Delta = m^2 - 4 > 0 \\
+             -\dfrac{m}{2} < 0
+        \end{array}\right.$，即$m > 2$ \\
+        方程$4x^2+4(m-2)x+1 = 0$无实数根$\Longleftrightarrow \Delta = 16(m-2)^2-16 < 0$，即$m \in (1, 3)$ \\
+        \begin{dingautolist}{172}
+            \item $\alpha$真，$\beta$假，此时$m \in [3, +\infty)$
+            \item $\alpha$假，$\beta$真，此时$m \in (1, 2]$
+        \end{dingautolist}
+        综上，$m \in (1, 2] \cup [3, +\infty)$
+    \end{jieda}
+\end{enumerate}
+
+\section*{充分性与必要性}
+\begin{enumerate}
+    \item 如果命题“若$p$，则$q$”是真命题($p \Rightarrow q$)，我们就说$p$是$q$的充分条件，$q$是$p$的必要条件。
+    \item 如果命题“若$p$，则$q$”是假命题($p \nRightarrow q$)，我们就说$p$不是$q$的充分条件，$q$不是$p$的必要条件。
+    \item “充分”与“必要”的理解：
+        \begin{enumerate}
+            \item 充分性：当$p$是满足的时候，就足够充分支持我们判断$q$也是满足的。
+            \item 必要性：想要让$p$满足，则$q$被满足是必要的。否则$p$不会被满足。
+        \end{enumerate}
+    \item 如果有$p \Rightarrow q, q \Rightarrow p$，即$p \Leftrightarrow q$ 则说$p$是$q$的充要条件，$q$也是$p$的充要条件。
+    \item 如果有$p \Rightarrow q, q \nRightarrow p$，则说$p$是$q$的充分非必要条件，$q$是$p$的必要非充分条件。
+    \item 如果有$p \nRightarrow q, q \nRightarrow p$，则说$p$是$q$的既非充分也非必要条件，$q$是$p$的既非充分也非必要条件。
+    \item 充分条件、必要条件、充要条件是更为广泛使用的表述推出关系的文字语言。推出关系，逻辑关系，集合关系的总结参考表\ref{tab:Condition}
+        
+    
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            推出关系 & 逻辑关系 & 命题判断 & 集合关系 \\
+            \hline
+            $p \Rightarrow q, q \Rightarrow p$ & $p$是$q$的充要条件 & 若$p$则$q$是真命题，若$q$则$p$是真命题 & $P = Q$\\
+            \hline
+            $p \nRightarrow q, q \Rightarrow p$ & $p$是$q$的必要非充分条件 & 若$p$则$q$是假命题，若$q$则$p$是真命题 & $Q \subset P$ \\
+            \hline
+            $p \Rightarrow q, q \nRightarrow p$ & $p$是$q$的充分非必要条件 & 若$p$则$q$是真命题，若$q$则$p$是假命题 & $P \subset Q$ \\
+            \hline
+            $p \nRightarrow q, q \nRightarrow p$ & $p$是$q$的既非充分也非必要条件 & 若$p$则$q$是假命题，若$q$则$p$是假命题 & $P \not\subseteq Q$，$Q \not\subseteq P$\\
+            \hline
+        \end{tabular}
+        \caption{推出关系，逻辑关系，命题判断和集合关系, 其中$P = \{x|x\mbox{满足}p\}$，$Q = \{x|x\mbox{满足}q\}$}
+        \label{tab:Condition}
+    \end{table}
+\end{enumerate}
+
+\begin{example}
+    \begin{enumerate}
+        \item $p \Leftrightarrow q$：\quad $p:$四边形为平行四边形，$q:$四边形的对边平行且相等。
+        \item $p \Rightarrow q, q \nRightarrow p$：\quad $p:x = 1$，\quad $q:(x-1)(x-2) = 0$
+        \item $p \nRightarrow q, q \nRightarrow p$：\quad $p:x>0$，\quad $q:x < -1$
+    \end{enumerate}
+\end{example}
+
+例题：
+\begin{enumerate}
+    \item 判断下列各组中的$\alpha$分别是$\beta$的什么条件，并说明理由
+    \begin{enumerate}
+        \item $\alpha$：四边形$ABCD$是正方形，$\beta$：四边形$ABCD$的四个内角都是直角
+        \item $\alpha$：$x^2$是有理数，$\beta$：$x$是有理数
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 充分不必要条件，正方形的内角必定都是直角，但是内角都是直角的是长方形，长方形不一定是正方形。
+            \item 必要非充分条件，$x$是有理数则$x^2$必定是有理数，但是$x^2$是有理数，$x$未必是有理数，例如$x = \sqrt{2}$
+        \end{enumerate}
+    \end{jieda}
+    \item 试用子集与推出关系来说明$\alpha$是$\beta$的什么条件：
+    \begin{enumerate}
+        \item $\alpha : x = 1$；$\beta: x^2-3x+2 = 0$.
+        \item $\alpha : x < 1$；$\beta: \dfrac{1}{x} > 1$.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $A = \{x | x = 1\} = \{1\}, B = \{x | x^2-3x+2 = 0\} = \{1, 2\}$，因为$A \subset B$，所以$\alpha \Rightarrow \beta, \beta \nRightarrow \alpha$，因此$\alpha$是$\beta$的充分非必要条件.
+            \item $A = \{x | x < 1\} = (-\infty, 1), B = \left\{x | \dfrac{1}{x} > 1 \right\} = (0, 1)$，因为$B \subset A$，所以$\alpha \nRightarrow \beta, \beta \Rightarrow \alpha$，因此$\alpha$是$\beta$的必要非充分条件.
+        \end{enumerate}
+    \end{jieda}
+    \item “$m = 2$”是“关于$x$的方程$x^2+mx-3=0$有两个相异实根”的\dotfill{(\kh{A})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分也非必要条件}
+    \begin{jieda}
+        关于$x$的方程$x^2+mx-3=0$有两个相异实根$\Longleftrightarrow \Delta = m^2 + 12 > 0$，即$m \in \mathbf{R}$
+    \end{jieda}
+    \item “$(x^2+x+1)(3x+2) < 0$”是“$3x+2 < 0$”的\dotfill{(\kh{C})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分也非必要条件}
+    \begin{jieda}
+        $x^2+x+1 > 0$恒成立.
+    \end{jieda}
+    
+    \item 已知$p: \sqrt{x-1} > 0, q: |x| = -x$，则$p$是$\neg q$的\blkda[2.5]{充分非必要}条件.
+    \begin{jieda}
+        $P = \{x | \sqrt{x-1} > 0\} = (1, +\infty)$，$Q = \{x | |x| = -x\} = (-\infty, 0]$，故$\overline{Q} = (0, +\infty)$，因为$P \subset \overline{Q}$，所以$p$是$\neg q$的充分非必要条件.
+    \end{jieda}
+
+    \item 已知集合$A = \{1, 1+a, 2a+1\}, B = \{1, b, b^2\}$，求$A = B$的充要条件.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $1+a = b$且$2a+1 = b^2$ \\
+            此时有$(a+1)^2 = 2a+1$，即$a^2 = 0$，违背集合互异性
+            \item $1+a = b^2$且$2a+1 = b$ \\
+            此时有$1+a = (2a+1)^2$，即$4a^2+3a = 0$，解得$a = -\dfrac{3}{4}$或$0$（舍）
+        \end{dingautolist}
+        综上，$A = B$的充要条件是$a = -\dfrac{3}{4}, b = -\dfrac{1}{2}$
+    \end{jieda}
+\end{enumerate}
+
+\section*{量词}
+\subsection*{定义}
+    在数学中，有时会遇到一些含有变量的陈述句，由于不知道变量代表什么数，无法判断真假，因此它们不是命题。但是，如果在原语句的基础上，用一个短语对变量的取值范围进行限定，就可以使它们成为一个命题，我们把这样的短语称为量词。
+\subsubsection*{全称量词}
+    \begin{enumerate}
+        \item 短语“所有的”、“任意一个”在逻辑中通常叫做\textbf{全称量词}(universal quantifier)，用符号$\forall$表示。含有全称量词的命题叫做全称量词命题。
+        \item 全称量词命题可以抽象为：$\forall x \in M, p(x)$，只有当取值范围$M$内的所有变量$x$都满足$p(x)$，全称量词命题才是真命题。因此说明全称量词命题为真命题需要严格证明，而说明全称量词命题为假命题只需要找到一个反例。
+    \end{enumerate}
+    \begin{example}
+        \begin{enumerate}
+            \item $x > 3$不是命题，而$\forall x \in \mathbf{R}, x > 3$是假命题。
+            \item $2x+1 \in \mathbf{Z}$不是命题，而$\forall x \in \mathbf{Z}, 2x+1 \in \mathbf{Z}$是真命题。
+        \end{enumerate}
+    \end{example}
+    \ps “若$p$，则$q$”形式的命题是省略了量词的全称量词命题。
+    \begin{example}
+        命题“若两个角互为补角，则这两个角不相等”可以改写为“任意的两个互为补角的角，这两个角的大小不相等。”
+    \end{example}
+    
+\subsection*{存在量词}
+\begin{enumerate}
+    \item 短语“存在一个”、“至少有一个”在逻辑中通常叫做\textbf{存在量词}(existential quantifier)，用符号$\exists$表示。含有存在连词的命题叫做存在量词命题。
+    \item 存在量词命题可以抽象为：$\exists x \in M, p(x)$，只有当取值范围$M$内的所有变量$x$都不满足$p(x)$，存在量词命题才是假命题。因此说明存在量词命题为假命题需要严格证明，而说明存在量词命题为真命题只需要找到一个正例。
+\end{enumerate}
+\begin{example}
+    \begin{enumerate}
+        \item $x > 3$不是命题，而$\exists x \in \mathbf{R}, x > 3$是真命题。
+        \item $2x+1 \notin \mathbf{Z}$不是命题，而$\exists x \in \mathbf{Z}, 2x+1 \notin \mathbf{Z}$是假命题。
+    \end{enumerate}   
+\end{example}
+    
+
+\subsection*{全称量词命题存在量词命题的否定}
+\begin{enumerate}
+    \item 对一个命题进行否定，就可以得到一个新的命题，这一新命题称为原命题的否定。
+    \begin{example}
+        “56是7的倍数”的否定为“56不是7的倍数”。
+    \end{example}
+    \item 对含有一个量词的全称量词命题进行否定，我们只需把“所有的”“任意一个”等全称量词，变成“\textbf{并非所有的}”“\textbf{并非任意一个}”等短语即可。\\
+    即命题“$\forall x \in M, p(x)$”的否定是“并非$\forall x \in M, p(x)$”，也就是“$\exists x \in M, \neg p(x)$”（$\neg p(x)$表示$p(x)$不成立。）
+    \item 对含有一个量词的存在量词命题进行否定，我们只需把“存在一个”“至少有一个”“有些”等存在量词，变成“\textbf{不存在一个}”“\textbf{没有一个}”等短语即可。\\
+    即命题“$\exists x \in M, p(x)$”的否定是“没有一个$x \in M, p(x)$”，也就是“$\forall x \in M, \neg p(x)$”（$\neg p(x)$表示$p(x)$不成立。）
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 写出下列全称量词命题的否定
+    \begin{enumerate}
+        \item 所有能被3整除的整数都是奇数
+        \item 每一个四边形的四个顶点在同一个圆上
+        \item 对任意$x \in \mathbf{Z}$, $x^2$的个位数字不等于3
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 存在一个能被3整除的整数不是奇数。
+            \item 存在一个四边形的四个顶点不在同一个圆上。
+            \item 存在一个整数$x$，他的平方$x^2$个位数字等于3。
+        \end{enumerate}
+    \end{jieda}
+    \item 写出下列存在量词命题的否定
+    \begin{enumerate}
+        \item $\exists x \in \mathbf{R}, x+2 \leq 0$
+        \item 有的三角形是等边三角形
+        \item 有一个偶数是素数
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\forall x \in \mathbf{R}, x + 2 > 0$
+            \item 所有的三角形都不是等边三角形
+            \item 任意一个偶数都不是素数
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 下列语句中说法正确的有\blkda{\ding{172} \ding{173} \ding{174} \ding{175}}
+    \begin{dingautolist}{172}
+        \item $\forall n \in \mathbf{Z}, 2n+1$是奇数
+        \item $\exists x \in \mathbf{R}, x^2 \notin \mathbf{Q}$
+        \item 命题“$\forall n \in \mathbf{Z}, 2n+1$是奇数”的否定是“$\exists n \in \mathbf{Z}$，$2n+1$不是奇数”
+        \item 命题“$\exists x \in \mathbf{R}, x^2 \notin \mathbf{Q}$”的否定是“$\forall x \in \mathbf{R}, x^2 \in \mathbf{Q}$”
+    \end{dingautolist}
+
+\end{enumerate}
+    
+
+\section*{四种命题}
+\subsection*{定义}
+    \begin{enumerate}
+        \item 逆命题 \\
+            如果一个命题的条件和结论恰好是另一个命题的结论和条件，那么就说这两个命题是\textbf{互逆命题}，如果一个称为\textbf{原命题}，另一个就称为是\textbf{逆命题}。即原命题为“若$p$，则$q$”，逆命题为“若$q$，则$p$”。例如：\\
+            原命题：若一个整数的末位数字是0,则这个整数能被5整除 \\
+            逆命题：若一个整数能被5整除，则这个整数的末位数字是0
+        \item 否命题 \\
+            如果一个命题的条件和结论恰好是另一个命题的条件的否定和结论的否定，那么就说这两个命题是\textbf{互否命题}，如果一个称为\textbf{原命题}，另一个就称为是\textbf{否命题}。即原命题为“若$p$，则$q$”，否命题为“若$\neg p$，则$\neg q$”。例如：\\
+            原命题：若一个整数的末位数字是0,则这个整数能被5整除 \\
+            否命题：若一个整数的末位数字不是0,则这个整数不能被5整除
+        \item 逆否命题
+            如果一个命题的条件和结论恰好是另一个命题的结论的否定和条件的否定，那么就说这两个命题是\textbf{互为逆否命题}，如果一个称为\textbf{原命题}，另一个就称为是\textbf{逆否命题}。即原命题为“若$p$，则$q$”，逆否命题为“若$\neg q$，则$\neg p$”。例如：\\
+            原命题：若一个整数的末位数字是0,则这个整数能被5整除 \\
+            逆否命题：若一个整数不能被5整除，则这个整数的末位数字不是0
+    \end{enumerate}
+\subsection*{四种命题间的关系}
+\begin{enumerate}
+    \item 原命题和逆否命题是等价命题
+    \item 原命题和逆命题、原命题和否命题不是等价命题
+    \item 一个原命题的逆命题和其否命题互为逆否命题
+\end{enumerate}
+\begin{example}
+    \begin{enumerate}
+        \item 原命题：若一个数能被6整除，则这个数一定能被3整除 \\
+              逆命题：若一个数能被3整除，则这个数一定能被6整除 \\
+              否命题：若一个数不能被6整除，则这个数一定不能被3整除 \\
+              逆否命题：若一个数不能被3整除，则这个数一定不能被6整除
+        \item 原命题：若两个三角形的三组对应边相等，则这两个三角形全等 \\
+              逆命题：若两个三角形全等，则这两个三角形的三组对应边相等 \\
+              否命题：若两个三角形不存在三组相等对应的边，则这两个三角形不是全等的 \\
+              逆否命题：若两个三角形不是全等的，则这两个三角形不存在三组相等的对应边
+    \end{enumerate}
+\end{example}
+例题：
+\begin{enumerate}
+    \item 命题“如果$a, b$都是偶数，那么$a+b$是偶数”的逆否命题是\dotfill{(\kh{D})}
+    \xx{如果$a, b$都不是偶数，那么$a+b$不是偶数}{如果$a, b$不都是偶数，那么$a+b$不是偶数}{如果$a+b$不是偶数，那么$a, b$都不是偶数}{如果$a+b$不是偶数，那么$a, b$不都是偶数}
+    \item “若$a>1$且$b>2$，则$a+b>3$”的否命题、逆命题、逆否命题中正确的命题个数为\blkda{1}
+    \begin{jieda}
+        容易判断原命题为真，逆命题为假；因此可以确定否命题为假，逆否命题为真.
+    \end{jieda}
+\end{enumerate}
+
+\section*{反证法}
+\begin{equation*}
+    \left \{ \begin{array}{l}  
+            \mbox{直接证明} \left \{ {
+                                  \begin{array}{l}  
+                                        \mbox{综合法} \\
+                                        \mbox{分析法}
+                                   \end{array}
+                                  }
+                            \right. \\
+            \mbox{间接证明：反证法}
+         \end{array}\right.
+\end{equation*}
+\begin{enumerate}
+    \item 综合法（由因导果）：从已知条件、定义、公理、定理出发逐步推导得到结论的证明方法
+    \item 分析法（执果索因）：从要证明的结论出发，逐步寻找使其成立的充分条件，直到将要证明的结论归结为一个明显成立的条件的证明方法
+    \item 反证法（正难则反）：直接证明“若$p$，则$q$”是真命题有时候不是一件容易得事情，但是可能判定$p$与$\neg q$矛盾是容易的。反证法的步骤如下：
+        \begin{enumerate}
+            \item 假设原命题的结论不成立，即假设“$\neg q$”成立
+            \item 推导出矛盾（与条件、或者公理定理等矛盾）
+            \item 证明原命题成立
+        \end{enumerate}
+    反证法的理解：要证明$p \Rightarrow q$，假设$P = \{x | x \mbox{满足}p\}, Q = \{x | x \mbox{满足}q\}$，即要证明$P \subseteq Q$。反证法是通过证明$P \cap \overline{Q} = \varnothing$（包括$\overline{Q} = \varnothing$）来证明$P \subseteq Q$。
+\end{enumerate}
+\begin{example}
+    证明：$\sqrt{2}$是无理数
+    \begin{enumerate}
+        \item 假设原命题不成立，则有$\sqrt{2}$是有理数
+        \item $\sqrt{2}$是有理数 \\
+              $\Rightarrow \quad \exists m \in \mathbf{Z}, n \in \mathbf{N^*}, m,n\mbox{互质，使得}\sqrt{2} = \dfrac{m}{n}$ \\
+              $\Rightarrow \quad 2 = \dfrac{m^2}{n^2}$，即$m^2 = 2 \cdot n^2$ \\
+              $\Rightarrow \quad m$是偶数，设$m = 2k$ \\
+              $\Rightarrow \quad 4k^2 = 2 \cdot n^2 $ \\
+              $\Rightarrow \quad n^2 = 2 \cdot k^2$ \\
+              $\Rightarrow \quad n$是偶数，矛盾
+        \item 故假设不成立，原命题成立，$\sqrt{2}$是无理数
+    \end{enumerate}
+\end{example}

@@ -1,0 +1,272 @@
+\chapter*{专题练习1}
+填空题：
+\begin{enumerate}
+    \item 已知全集$U = \{1,2,3,4,5\}$，集合$M = \{1,2\}, N = \{3,4\}$，则$\overline{M \cup N} =$\blkda{$\{5\}$}
+    \begin{jieda}
+        根据并集的运算可知$M\cup N = \{1,2,3,4\}$，故其补集$\overline{M\cup N} = \{5\}$ \\
+        \ps 看清楚运算符号！
+    \end{jieda}
+    \item 设集合$A = \{1, 4, x\}$，$B = \{1, x^2\}$，且$A \cap B = B$，则$x = $\blkda[3]{$0 \mbox{或} -2 \mbox{或} 2$}
+    \begin{jieda}
+        首先对条件进行转换，$A \cap B = B$即$B \subseteq A$，根据集合中元素的无序性可知需要进行分类讨论。
+        \begin{enumerate}
+            \item $x^2 = x$ \\
+            此时对应于$x = 0 \mbox{或} 1$，但是经过检验发现$x = 1$使得集合中元素违背互异性。
+            \item $x^2 = 4$ \\
+            此时对应于$x = 2 \mbox{或} -2$，均不违背互异性。
+        \end{enumerate}
+        综上，$x = 0 \mbox{或} -2 \mbox{或} 2$
+    \end{jieda}
+    \item 设集合$A=\{1, 2, m\}$，其中$m$为实数，令$B=\{a^2|a \in A\}$， $C = A \cup B$。若$C$中所有元素之和为6，则$C$中所有元素之积为\blkda{$-8$}
+    \begin{jieda}
+        $B = \{1, 4, m^2\}$，则在\textbf{不违背互异性的前提下}有$C = \{1, 2, 4, m, m^2\}$。根据$C$中元素和为6，而$1+2+4 > 6$，又因为$m^2+m > -1$恒成立，故应有$m < 0$ 且 $m^2 \in \{1, 2, 4\}$。故可知$m = -1$, $C = \{1, 2, 4, -1\}$，因此$C$中所有元素之积为-8.
+    \end{jieda}
+    \item  已知集合$A = \{a| x = \dfrac{383a^2 + a}{2a+1}, x \in \mathbf{Z}, a \in \mathbf{Z}\}$，$A$中最大的元素为\blkda{$190$}
+    \begin{jieda}
+        由于$\dfrac{383a^2 + a}{2a+1}$为二次比一次的形式，因此应考虑利用多项式除法来分离。为了方便运算，应考虑进行换元。\\
+        令$t = 2a+1$，因此$t$应为奇数，$a = \dfrac{t-1}{2}$。故$\dfrac{383a^2 + a}{2a+1} = \dfrac{383(\dfrac{t-1}{2})^2 + (\dfrac{t-1}{2})}{t} = \dfrac{1}{4}[\dfrac{383(t-1)^2 + 2(t-1)}{t}] = \dfrac{1}{4}[\dfrac{383t^2 - 764t + 381}{t}] = \dfrac{1}{4}[383t + \dfrac{381}{t}] - 191$ \\
+        易知可以先检验$t = 381$，此时原式为整数，而当$t > 381$易知原式不是整数，因此$t$最大值为381，此时对应于$a = 190$
+    \end{jieda}
+    \item 若集合$A = \{x | (a-1)x^2+3x-2 = 0\}$仅有一个真子集，实数$a = $\blkda{$1 \mbox{或} -\frac{1}{8}$}
+    \begin{jieda}
+        由于只有一个真子集，故集合中只有一个元素。因为二次项系数有参数$a$，所以需要分类讨论\begin{enumerate}
+            \item $a = 1$，此时方程退化回一次方程，只有一个实根，满足题意  
+            \item $a \neq 1$，此时方程为二次方程，若只有一个实根，则判别式为0，即$9 + 8(a-1) = 0$，得$a = -\dfrac{1}{8}$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知集合$A=\{y | x^2+mx-y+2=0, x \in R\}$， $B=\{y | x+y+1=0, 0 \leq x \leq 1\}$，若$A \cap B \neq \varnothing$，$m$的取值范围是\blkda[5]{$(-\infty, -2\sqrt{3}] \cup [2\sqrt{3}, +\infty)$}. 
+        \begin{jieda}
+            首先可以判断出来$B = [-2, -1]$，而$A$是函数$y = x^2+mx+2$的函数值的取值范围。由于函数$y = x^2+mx+2$的开口向上，欲使$A \cap B \neq \varnothing$，则应有其函数值最小值小于等于-1。即$\frac{m^2}{4} - \frac{m^2}{2} + 2 \leq -1$，解得$m \in (-\infty, -2\sqrt{3}] \cup [2\sqrt{3}, +\infty)$
+        \end{jieda}
+    \item 已知集合$A = \{x | \frac{x-2}{x+1} < 0\}$，$x \in A$的一个必要条件是$x \geq a$，则实数$a$的取值范围是\blkda{$a \leq -1$}
+    \begin{jieda}
+        $A = (-1, 2)$，故$a \leq -1$ \\
+        \ps \textbf{小范围可以推出大范围}
+    \end{jieda}
+    \item 已知$x \in \mathbf{R}$，“$(x-2)(x-3) \leq 0$”是“$|x-2|+|x-3| = 1$成立”的\blkda[3]{充要}条件.
+    \begin{jieda}
+        $(x-2)(x-3) \leq 0$解集为$[2, 3]$ \\
+        $|x-2|+|x-3| = 1$解集为$[2, 3]$（平底锅函数，三角不等式）
+    \end{jieda}
+    \item “$x+y \neq 3$”是“$x \neq 1 \mbox{或} y \neq 2$”成立的\blkda[3]{充分非必要}条件.
+    \begin{jieda}
+        “$x+y \neq 3$”对应了平面上除了直线$x + y = 3$的区域 \\
+        “$x \neq 1 \mbox{或} y \neq 2$”对应了平面上除了点$(1,2)$的区域
+    \end{jieda}
+    \item “$x+y \neq 5$”是“$x \neq 2 \mbox{且} y \neq 3$”成立的\blkda[3]{既非充分也非必要}条件.
+    \begin{jieda}
+        “$x+y \neq 5$”对应了平面上除了直线$x + y = 5$的区域 \\
+        “$x \neq 2 \mbox{且} y \neq 3$”对应了平面上除了直线$x = 2$和直线$y = 3$的区域
+    \end{jieda}
+    \item “若$a > 1$且$b > 2$，则$a+b>3$”的否命题、逆命题、逆否命题中真命题的个数是\blkda{$1$}
+    \begin{jieda}
+        原命题为真，故逆否命题为真。\\
+        逆命题：“若$a+b>3$，则$a > 1$且$b > 2$”为假，故否命题也为假.
+    \end{jieda}
+    \item 不等式$\frac{x+5}{x^2+2x+5} \geq 1$的解集为\blkda{$[-1, 0]$}
+        \begin{jieda}
+            因为$x^2+2x+5 > 0$恒成立，因此可以转化为$x+5 \geq x^2+2x+5$，解集为$[-1, 0]$ \\
+            \ps 先判断分母是否恒正或者恒负，再考虑移项通分.
+        \end{jieda}
+        \item 不等式$\frac{x^2(x+2)(x^2-x+1)}{x^2 - 5x + 4} > 0$的解集为\blkda[5]{$(-2, 0) \cup (0, 1) \cup (4, +\infty)$}
+        \begin{jieda}
+            \ps 穿针引线法求解，奇穿偶回，\textbf{偶次方根绝对不能丢弃，且易出错}.
+        \end{jieda}
+    \item 定义区间$(c, d), [c, d), (c, d], [c, d]$的长度均为$d-c (d>c)$。已知实数$a > b$，则满足$\frac{1}{x-a} + \frac{2}{x-b} \geq 3$的$x$构成的区间长度之和为\blkda{1}
+    \begin{jieda}
+        首先通分有$\frac{3x-2a-b}{(x-a)(x-b)} \geq 3$，易知移项通分运算量很大。因此考虑分类讨论乘分母
+        \begin{enumerate}
+            \item $x > a$ 或 $x < b$ \\
+            此时不等式可以转化为$3x-2a-b \geq 3(x-b)(x-a)$
+            \item $a > x > b$ \\
+            此时不等式可以转化为$3x-2a-b \leq 3(x-b)(x-a)$
+        \end{enumerate}
+        绘制$y = 3(x-b)(x-a)$和$y = 3x-2a-b$的草图可知不等式的解集为$(b, x_1) \cup (a, x_2)$，其中$x_1, x_2$是方程$3(x-b)(x-a) = 3x-2a-b$的两根。根据韦达定理可知解集的区间长度和为$x_1 + x_2 - a - b = 1$ \\
+        \ps 本题也可以通过绘制$y = \frac{1}{x-a} + \frac{2}{x-b}$的草图，分析其单调区间，值域来解决。本质是一样的。
+    \end{jieda}
+    \item 若$a < b$，且$a < \frac{1}{x^2-3x+2}<b$的解集为$\varnothing$，则$b-a$的最大值为\blkda{$4$}
+    \begin{jieda}
+        $\frac{1}{x^2-3x+2} \in (-\infty, -4] \cup (0, +\infty)$，故$b-a$取最大值的时候为$b = 0, a = -4$
+    \end{jieda}
+    \item $|x+1| < 3-2x$的解集是\blkda{$(-\infty, \frac{2}{3})$}
+    \begin{jieda}
+        解集为$(-\infty, \frac{2}{3})$ \\
+        \ps \begin{enumerate*}[1.]
+            \item $|f(x)| > g(x)$的充要条件是$f(x) > g(x)$或$f(x) < -g(x)$ 
+            \item $|f(x)| < g(x)$的充要条件是$-g(x) < f(x) < g(x)$
+        \end{enumerate*} \\
+        \ps \textbf{此处绝对不能平方处理}，否则等价于$|x+1| < |3-2x|$会得到$(-\infty, \frac{2}{3}) \cup (4, +\infty)$；当不等式两侧均含有绝对值时才适合平方去绝对值.
+    \end{jieda}
+    \item 若关于$x$的不等式$k|x| > |x - 2|$恰有4个整数解，则实数$k$的取值范围是\blkda{$(\frac{3}{5}, \frac{2}{3}]$}
+    \begin{jieda}
+        易知$x = 0$不是不等式的解，故$k|x| > |x - 2|$进行参变分离，同解变形$k > |\frac{x-2}{x}|$，即$k > |1 - \frac{2}{x}|$ \\
+        由函数$f(x) = |1 - \frac{2}{x}|$的图像可知整根的集合为$\{2, 3, 4, 5\}$，故$f(5) < k \leq f(6)$，即$k \in (\frac{3}{5}, \frac{2}{3}]$
+        \ps \textbf{解决整根问题的第一步往往是确认整根的集合}
+    \end{jieda}
+    \item 已知关于$x$的不等式组$\left \{ \begin{array}{l}
+         \frac{x-a}{x-1+a} < 0\\
+         x+3a>1 
+    \end{array}\right.$的整数解恰有两个，则实数$a$的取值范围是\blkda{$(1, 2]$}
+    \begin{jieda}
+        首先可以确定第一个不等式的解集为$(a, 1-a)$或$(1-a, a)$，因为$a$和$1-a$关于$\frac{1}{2}$对称，因此$\frac{1}{2}$必然在该不等式的解集中。而第二个不等式的解集为$(1-3a, +\infty)$
+        \begin{dingautolist}{172}
+            \item 若$a \in [0, 1]$，则$(a, 1-a)$或$(1-a, a)$没有整数解，故整个不等式组的解集中也没有整数解.
+            \item 若$a < 0$，则$a < 0 < 1 < 1-a < 1-3a$，则整个不等式组解集为空集.
+            \item 若$a > 1$，则$1-3a < 1-a < 0 < 1 < a$整个不等式组的解集为$(1-a, a)$，此时解集中必有两个整数解$0, 1$，故当$a \in (1, 2]$时，满足要求.
+        \end{dingautolist}
+        综上，$a \in (1, 2]$ \\
+        \ps 本题画数轴可以更方便分析，本题判断出$a$和$1-a$关于$\frac{1}{2}$对称后可以猜测到两个整根是0和1.
+    \end{jieda}
+    \item 已知不等式组$ \left\{ \begin{array}{l}
+         x^2-x+a-a^2 < 0  \\
+         x + 2a > 1
+    \end{array} \right.$的整数解恰好有两个，$a$的取值范围是\blkda{$(1, 2]$}
+    \begin{jieda}
+        设函数$f(x) = x^2 - x$，则第一个不等式即$f(x) < f(a)$，根据函数的性质可知不等式即$|x-\frac{1}{2}| < |a - \frac{1}{2}|$，故$\frac{1}{2}-|a - \frac{1}{2}| < x < \frac{1}{2} + |a - \frac{1}{2}|$，故第一个不等式解集为$(1 - a, a)$或$(a, 1-a)$，第二个不等式解集为$(1-2a, +\infty)$
+        \begin{dingautolist}{172}
+            \item $a \in [0, 1]$，此时第一个不等式中不含有两个整数解，不符合要求.
+            \item $a < 0$，第一个不等式解集为$(a, 1-a)$，而$1-a < 1-2a$，故不等式组解集为空集，不符合要求.
+            \item $a > 1$，第一个不等式解集为$(1 - a, a)$，故不等式解集为$(1 - a, a)$，当$a \in (1, 2]$满足要求.
+        \end{dingautolist}
+    \end{jieda}
+    \item 若不等式$x^2+px>4x+p-3$，当$0 \leq p \leq 4$时恒成立，则$x$的取值范围是\blkda[4]{$(-\infty, -1) \cup (3, +\infty)$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1：看做是关于$p$的一元一次不等式求解 \\
+            不等式移项得到$x^2 -4x + 3 > (1-x)p$。\\
+            因式分解有$(x-1)(x-3) > -p(x-1)$ \\
+            下面根据$x$的取值范围进行分类讨论：
+            \begin{dingautolist}{172}
+                \item $x > 1$，不等式转化为$x - 3 > -p$，故$x \in (3, +\infty)$
+                \item $x = 1$，这种情况不成立
+                \item $x < 1$，不等式转化为$x - 3 < -p$，故$x \in (-\infty, -1)$
+            \end{dingautolist}
+            综上，当$x \in (-\infty, -1) \cup (3, +\infty)$时不等式恒成立。
+            \item 方法2：看做是关于$x$的一元二次不等式求解 \\
+            不等式移项得到$x^2 + (p-4)x + (3-p) > 0$。即$(x-(3-p))(x-1) > 0$ \\
+            因此根据两解可以写出不等式的解集为$\left \{
+                \begin{array}{ll}
+                     (-\infty, 3-p) \cup (1, +\infty) & 4 \geq p \geq 2 \\
+                     (-\infty, 1) \cup (3-p, +\infty) & 0 \leq p < 2
+                \end{array}
+            \right. $ \\
+            要使得不等式在$p$取到$[0, 4]$内任意值时成立，则应取所有$p$所对应的解集的交集，故当$x \in (-\infty, -1) \cup (3, +\infty)$时不等式恒成立。
+        \end{enumerate}
+        \ps 通过对比可知以$p$为主元更容易理解和推广。
+    \end{jieda}
+\end{enumerate}
+解答题：
+\begin{enumerate}
+    \item  已知集合$A=\{(x, y) | x^2+mx-y+2=0, x \in R\}$， $B=\{(x, y) | x+y+1=0, 0 \leq x \leq 1\}$，若$A \cap B \neq \varnothing$，求$m$的取值范围. 
+    \begin{jieda}
+        根据题意，两集合交集非空代表两段函数的图像有交点，即方程$x^2+(m+1)x+3 = 0$在$[0, 1]$内有根，因为$x = 0$并非原方程的根，故可等价于方程$-(m+1) = x + \frac{3}{x}$在$(0, 1]$内有根 \\
+        $y = x + \frac{3}{x}$在$(0, 1]$内单调减，故$-(m+1) \in [4, +\infty)$，故$m \in (-\infty, -5]$
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+    \item 集合$A = \{x | x^2-8x+12 = 0\}, B = \{x | ax+1 = 0\}$，且$A \cup B = A$，求$a$的取值范围.
+    \begin{jieda}
+        $A \cup B = A$即$B \subseteq A$
+        \begin{dingautolist}{172}
+            \item $a = 0$，此时$B = \varnothing$，满足要求.
+            \item $a \neq 0$，此时$B = \{-\frac{1}{a}\}$，因为$A = \{2, 6\}$，若$B \subseteq A$，则$-\frac{1}{a} \in A$，因此$a = -\frac{1}{2} \mbox{或} -\frac{1}{6}$
+        \end{dingautolist}
+        综上$a \in \{0, -\frac{1}{2}, \frac{1}{6}\}$
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+    \item 对任意实数$x$，不等式$2kx^2+kx-3<0$恒成立，求实数$k$的取值范围.
+    \begin{jieda}
+        当$k=0$时，不等式成立。\\
+        当$k \neq 0$，从二次函数的角度看一元二次不等式，要使得不等式恒成立，则应有函数开口向下，即$k<0$，并且有$\Delta = k^2 + 24k < 0$，因此$k \in (-24, 0)$。\\
+        综上，$k \in (-24, 0]$
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+    \item 若关于$x$的不等式$ax + 6 + |x^2 - ax - 6| \geq 4$恒成立，求实数$a$的取值范围.
+    \begin{jieda}
+        原不等式转化为$|x^2 - ax - 6| \geq -2 - ax$恒成立，即$x^2 - ax - 6 \geq -2 - ax$与$x^2 - ax - 6 \leq 2 + ax$解集的并集为$\mathbf{R}$ \\
+        前者解集为$(-\infty, -2] \cup [2, +\infty)$，后者解集为$[a-\sqrt{a^2+8}, a + \sqrt{a^2+8}]$，故$(-2, 2) \subseteq [a-\sqrt{a^2+8}, a + \sqrt{a^2+8}]$，因此$a \in [-1, 1]$
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+    \item 关于实数$x$的不等式$\left | x - \frac{(a+1)^2}{2} \right | \leq \frac{(a-1)^2}{2}$与$|x-a-1| \leq a$的解集依次是$A, B$，求使得$A \subseteq B$的$a$的取值范围.
+    \begin{jieda}
+        $\left | x - \frac{(a+1)^2}{2} \right | \leq \frac{(a-1)^2}{2}$即$-\frac{(a-1)^2}{2} \leq x - \frac{(a+1)^2}{2} \leq \frac{(a-1)^2}{2}$，即$2a \leq x \leq a^2+1$ \\
+        $|x-a-1| \leq a$ 即 $-a \leq x-a-1 \leq a$，即$1 \leq x \leq 2a+1$ \\
+        由于$a^2+1 \geq 2a$恒成立，所以$A$必不为空集，故$A \subseteq B$即$1 \leq 2a, a^2+1 \leq 2a+1$，解得$a \in [\frac{1}{2}, 2]$
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+    \item 已知函数$f(x) = |x-2| + |x-a|$，若对于任意的$x \in [1, 2]$，$f(x) \geq |x-4|$恒成立，求实数$a$的范围.
+    \begin{jieda}
+        当$x \in [1, 2]$，$f(x) \geq |x-4|$即$2-x + |x-a| \geq 4-x$，整理得$|x-a| \geq 2$，由绝对值的几何意义可知$a \in (-\infty, -1] \cup [4, +\infty)$ \\
+        \ps 有自变量的具体范围的时候，可以先看一下绝对值是否可以直接去掉.
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+    \item 已知关于$x$的不等式$x^2+9+|x^2-3x| \geq kx$ (*)
+    \begin{enumerate}
+        \item 若(*)在区间$[1,5]$上恒成立，求实数$k$的取值范围.
+        \item 若(*)在区间$[1,5]$上有解，求实数$k$的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        当$x \in [1, 5]$时，原不等式可以转化为$x + \frac{9}{x} + |x - 3| \geq k$
+        \begin{enumerate}
+            \item 不等式恒成立即$k$比左侧最小值小，而易知左侧最小值在$x = 3$时取，故$k \leq 6$
+            \item 不等式有解即$k$比左侧最大值小，设$f(x) = x + \frac{9}{x} + |x - 3|$易知$f(x)$在$[1, 5]$上先减后增，最大值在端点处取. $f(1) = 12, f(5) = \frac{44}{5}$故$k \leq 12$\\
+        \ps \textbf{区分有解问题和恒成立问题}.
+        \end{enumerate}
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[6]
+    \end{vspace_}
+    \item 已知不等式$x^2+(a-2)x+3a>0(*)$
+    \begin{enumerate}
+        \item 若不等式$(*)$对任意的$x \in [-1, 1]$恒成立，求实数$a$的取值范围
+        \item 若不等式$(*)$对任意的$a \in [-1, 1]$恒成立，求实数$x$的取值范围
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 
+            \begin{dingautolist}{172}
+                \item 通解法 \\
+                $f(x) = x^2+(a-2)x+3a$的对称轴为$x = 1-\frac{a}{2}$ \\
+                若$1-\frac{a}{2} < -1$，即$a > 4$，此时$f(x)$在$[-1, 1]$上单调递增，因此$f(-1) > 0$，即$1+2-a+3a > 0$，解得$a > -\frac{3}{2}$，结合对称轴有$a > 4$ \\
+                若$1-\frac{a}{2} > 1$，即$a < 0$，此时$f(x)$在$[-1, 1]$上单调递减，因此$f(1) > 0$，即$1+a-2+3a > 0$，解得$a > \frac{1}{4}$，此种情况无解 \\
+                若$1-\frac{a}{2} \in [-1, 1]$，即$a \in [0, 4]$，此时$f(x)$在$[-1, 1]$内最小值在顶点处取，即$f(1-\frac{a}{2}) > 0$，整理有$a^2-16a+4<0$，解得$a \in (8-2\sqrt{15}, 8+2\sqrt{15})$，结合对称轴有$a \in (8-2\sqrt{15}, 4]$ \\
+                综上，$a \in (8-2\sqrt{15}, +\infty)$
+                \item 参变分离 \\
+                $(x+3)a-2x+x^2 > 0$在$x \in [-1, 1]$恒成立，即$a > \frac{2x-x^2}{x+3}$在$x \in [-1, 1]$恒成立.\\
+                换元$t = x+3$， $t \in [2, 4]$，即$a > \frac{-t^2+8t-15}{t}$在$[2, 4]$恒成立.进一步变形有$a > -(t+\frac{15}{t})+8$在$[2, 4]$恒成立.根据对勾函数性质可知$-(t+\frac{15}{t})+8 \leq 8 - 2\sqrt{15}$（$t = \sqrt{15}$，即$x = \sqrt{15}-3$时取等号）,故$a \in (8-2\sqrt{15}, +\infty)$
+            \end{dingautolist}
+            \item 将$a$做为主元，即$(x+3)a-2x+x^2 > 0$在$a \in [-1, 1]$恒成立，设$f(a) = (x+3)a-2x+x^2$，故只需$f(1) > 0, f(-1) > 0$即可.解得$x \in (-\infty, \frac{3-\sqrt{21}}{2})\cup(\frac{3+\sqrt{21}}{2}, +\infty)$
+        \end{enumerate}
+        \ps 恒成立问题，首先考虑主元应该是谁，然后考虑是否要参变分离.
+        \end{jieda}
+    \begin{vspace_}
+    \vsp[6]
+    \end{vspace_}
+        \item 已知函数$f(x) = |x + \frac{1}{x} - 4|$，若关于$x$的不等式$f(x) \geq m^2-m+2$
+        \begin{enumerate}
+            \item 在区间$[\frac{1}{6}, 3]$总有解，求实数$m$的取值范围.
+            \item 在区间$[\frac{1}{4}, 2]$总有解，求实数$m$的取值范围.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 首先要意识到不等式的右侧没有$x$，因此可以将右侧当做一个整体，直接找$f(x)$在区间$[\frac{1}{6}, 3]$上的最大值. 根据对勾函数的性质可知$f(x)$在$[\frac{1}{6}, 1]$上先减后增，在$[1, 3]$单调递减. 故最大值会在$x = \frac{1}{6}$或$x = 1$处取到.$f(\frac{1}{6}) = \frac{13}{6}, f(1) = 2$，故$f(x)$的最大值为$\frac{13}{6}$ \\
+                问题转化为求解不等式$\frac{13}{6} \geq m^2-m+2$，解集为$[\frac{3-\sqrt{15}}{6}, \frac{3+\sqrt{15}}{6}]$.
+                \item 同理，需要找$f(x)$在区间$[\frac{1}{4}, 2]$上的最大值. 根据对勾函数的性质可知$f(x)$在$[\frac{1}{4}, 1]$上先减后增，在$[1, 2]$单调递减. 故最大值会在$x = \frac{1}{4}$或$x = 1$处取到. $f(\frac{1}{4}) = \dfrac{1}{4}, f(1) = 2$，故$f(x)$的最大值为$2$ \\
+                问题转化为求解不等式$2 \geq m^2-m+2$，解集为$[0, 1]$.
+            \end{enumerate}
+        \end{jieda}
+    \begin{vspace_}
+    \vsp[5]
+    \end{vspace_}
+\end{enumerate}

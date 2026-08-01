@@ -1,0 +1,2151 @@
+\chapter{数列}
+
+\section*{数列的概念}
+\subsection*{数列的概念 (1)}
+
+\zsd 数列的概念、 数列的单调性、部分和公式求通项公式
+
+A组：
+
+\begin{enumerate}
+
+    \item 下列命题中，所有真命题的序号是\blkda{\ding{173}\ding{174}}.
+    \begin{dingautolist}{172}
+            \item 数列的通项公式是唯一的；
+            \item 每个数列可以看作是一个定义在正整数集或其子集上的一个函数；
+            \item 在平面直角坐标系中，表示数列的图像是一列离散的点；
+            \item 每个数列都有通项公式。
+        \end{dingautolist}
+
+\item 下列叙述正确的是\dotfill{}(\kh{A})\xx{数列 $\left\{\frac{n}{n+1}\right\}$ 是递增数列}{数列 $0,1,2,3, \cdots$ 的一个通项公式为 $a_n=n$}{数列 $0,0,0,1, \cdots$ 是常数列}{数列 $1,3,5,7$ 与数列 $7,5,3,1$ 是相同的数列}
+
+
+    \item 下列命题中，所有真命题的序号是\blkda{\ding{174}}.
+    \begin{dingautolist}{172}
+            \item 数列 $2,3,4$ 与数列 $4,3,2$ 是同一数列；
+            \item 数列 $1,2,3$ 与数列 $1,2,3 \cdots$ 是同一数列；
+            \item 分别以 $a_n=\sin \frac{(n+1) \pi}{2}\left(n \in N^*\right)$ 和 $b_n=\frac{1}{2}\left[(-1)^{\frac{n(n+1)}{2}}+(-1)^{\frac{n(n-1)}{2}}\right]\left(n \in N^*\right)$ 为通项／式的数列是同一数列；
+            \item 数列 $\left\{a_n\right\}\left(n \in N^*\right)$ 的前三项为 $2,4,8$ ，则该数列的通项公式一定是 $a_n=2^n$ ．
+        \end{dingautolist}
+
+\item 数列 $1, \frac{4}{3}, \frac{9}{5}, \frac{16}{7}, \cdots$ 的第 8 项是\blkda{$\frac{64}{15}$}.
+
+\item $\frac{1}{64}$ 是数列 $\frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \cdots \cdots$ 的第\blkda{$6$}项.
+
+\item 已知 $a_{n+1}-a_n-6=5\left(n \in \mathrm{~N}^*\right)$ ，则数列 $\left\{a_n\right\}$ 是\dotfill{}(\kh{A})
+\xx{递增数列}{递减数列}{常数列}{不确定}
+
+\item 下列四个数列中，既是无穷数列又是递增数列的是\dotfill{}(\kh{C})
+\xx{$1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \cdots$}{$\sin \frac{\pi}{7}, \sin \frac{2 \pi}{7}, \sin \frac{3 \pi}{7}, \cdots$}{$-1,-\frac{1}{2},-\frac{1}{4},-\frac{1}{8}$ }{$1, \sqrt{2}, \sqrt{3}, \cdots, \sqrt{21}$}
+
+
+\item $S_n$ 表示数列 $\left\{a_n\right\}\left(n \in N^*\right)$ 的前 $n$ 项和，则通项公式 $a_n=$\blkda[4]{$\left\{\begin{array}{l}
+S_n-S_{n-1, n} \geqslant 2 \\
+S_1 n=1
+\end{array}\right.$} ．
+    
+\end{enumerate}
+
+B组：
+\begin{enumerate}
+    \item 已知数列 $\left\{a_n\right\}$ 的一个通项公式为 $a_n=(-1)^n \cdot 2^n+a$ ，且 $a_1=1$ ，则 $a_3$ 等于\blkda{$-5$}。
+
+\item 写出数列的一个通项公式 $a_n=$\blkda[3]{ $\frac{n}{(2 n+1)(2 n+3)} \cdot(-1)^{n-1}$ }，使其前四项为 $\frac{1}{15},-\frac{2}{35}, \frac{1}{21},-\frac{4}{99}$ ．
+
+\item 已知 $a_n=n+\frac{\lambda}{n}$ ，则＂ $0<\lambda<2$＂是＂数列 $\left\{a_n\right\}$ 是递增数列＂的\dotfill{}(\kh{A})
+\xx{充分不必要条件}{必要不充分条件}{充要条件}{既不充分又不必要条件}
+
+\item 已知数列 $\left\{a_n\right\}\left(n \in N^*\right)$ 是严格递增数列且 $a_n=2 n^2+\lambda n$ ，则实数 $\lambda$ 的取值范围为\blkda{$(-6,+\infty)$} ．
+
+\item $S_n$ 表示数列 $\left\{a_n\right\}\left(n \in N^*\right)$ 的前 $n$ 项和，若 $S_n=n^2+1$ ，则该数列的通项公式为\blkda[3]{$\begin{cases}2 n-1 & n \geqslant 2 \\ 2 & n=1\end{cases}$}。
+
+\item 数列 $\left\{a_n\right\}\left(n \in N^*\right)$ 的一个通项公式是 $a_n=2^n-2 n+1$ ，则将此数列中所有奇数项按项数从小到大顺序构成的数列 $\left\{b_k\right\}\left(k \in N^*\right)$ 的一个通项公式是\blkda[4]{$b_n=2^{2n-1}-4n+3$}。
+
+\item 已知数列 $\left\{a_n\right\}$ 的通项公式为 $a_n=n \times\left(\frac{2}{3}\right)^n$ ，则数列 $\left\{a_n\right\}$ 中的最大项的项数为\blkda{$2,3$}。
+
+\item 下列各式中，可以作为数列 $\left\{a_n\right\}\left(n \in N^*\right)$ 的递推公式是\dotfill{}(\kh{D})\xx{$a_n=2 a_{n-1}-1$}{$a_1=a, a_{n+2}=2 a_n+1$}{$a_1=a, a_{n+2}=a_{n+1}+a_n$ }{$a_1=a, a_2=b, a_{n+2}=2 a_n+1$}
+
+\item $S_n$ 表示数列 $\left\{a_n\right\}\left(n \in N^*\right)$ 的前 $n$ 项和，若 $S_n=\frac{3}{2} a_n-3$ ，则数列的一个通项公式是\dotfill{}(\kh{B})\xx{$a_n=3 \cdot 2^n$}{$a_n=2 \cdot 3^n$ }{$a_n=3 n+1$ }{$a_n=2\left(n^2+n+1\right)$}
+
+
+\item 已知数列 $\left\{a_n\right\}$ 的一个通项公式为 $a_n=\frac{n-\sqrt{98}}{n-\sqrt{99}}\left(n \in N^*\right)$ ，则数列 $\left\{a_n\right\}$ 的最大项和最小项分别是\dotfill{}(\kh{C})\xx{最小项是 $a_1$ ，最大项是 $a_{30}$}{最大项是 $a_1$ ，最小项不存在}{最小项是 $a_9$ ，最大项是 $a_{10}$ }{最小项是 $a_{10}$ ，最大项是 $a_9$}
+
+\item 已知数列 $\left\{a_n\right\}\left(n \in N^*\right)$ 的一个通项公式是 $a_n=\left(\frac{3}{4}\right)^{n-1}\left[\left(\frac{3}{4}\right)^{n-1}-1\right]$ ，则此数列\dotfill{}(\kh{D})\xx{最小项是 $a_1$ ，最大项是 $a_3$ }{最大项是 $a_1$ ，最小项不存在}{最大项不存在，最小项是 $a_3$ }{最大项是 $a_1$ ，最小项是 $a_3$}
+
+\item 已知数列 $\left\{a_n\right\}$ 的通项公式是 $a_n=\frac{n^2}{n^2+1}\left(n \in N^*\right), 0.98$ 是否是此数列中的项？ 0.99 呢？并请说明理由．
+
+\begin{jieda}
+     $a_7=\frac{7^2}{7^2+1}=\frac{45}{50}=0.98 \quad \frac{-n^2}{n^2+1}=\frac{99}{100} \Rightarrow y^2=99 \Rightarrow n \notin Z^{+}$\\   $0.98$  是，$0.99$ 不是。
+\end{jieda}
+
+\item 已知数列 $\left\{a_n\right\}$ 的前 n 项和为 $S_n, S_n=2 n^2+5 n+4$ ，求 $\left\{a_n\right\}$ 的通项公式．
+\begin{jieda}
+    $\begin{aligned}
+    & n\geq 2 \text { 时 } S_{n-1}=2(n-1)^2+5(n-1)+4=2 n^2-4 n+2+5 n-5+4=2 n^2+n+1 \\
+    & \quad a_n=S_n-S_{n-1}=4 n+3 \\
+    & n=1 \text { 时 } \cdot S_1=11, a_1=11 \therefore\left\{a_n\right\}= \begin{cases}11 & n=1 \\
+    4 n+3 & n-1\end{cases}
+    \end{aligned}$
+\end{jieda}
+
+\item 已知数列 $\left\{a_n\right\}$ 的通项公式为 $a_n=(n+1) \cdot\left(\frac{2013}{2014}\right)^n\left(n \in N^*\right)$ ，是否存在正整数 $m$ ，使得对一切正整数 $n \in N^*, a_n \leq a_m$ 恒成立？如存在，请求出，如不存在，请说明理由．
+\begin{jieda}
+$a_n \geqslant a_{n-1} \quad \frac{(n+1)}{n} \geqslant \frac{2014}{2013} \Rightarrow n \leqslant 2013 . a_n \geqslant a_{n+1} \quad \frac{n+2}{n+1} \leqslant 2013 \quad n \geqslant 2012$而 $a_{2012}=a_{2013}$ \quad $m=2012$或$2012$．
+\end{jieda}
+
+
+\item 已知数列 $a_n=n^3+2 n^2+b n+c\left(n \in N^*\right), b, c$ 满足何种条件时，可使 $a_{n+1}>a_n$ 对任意正整数 $n$ 恒成立？
+\begin{jieda}
+  $\forall n\neq 0,n\in Z^+ ,a_{n+1}-a_n=(n+1)^3+2(n+1)+b(n+1)+c-n^3-2n^2-bn-c=3 n^2+3 n+1+4 n+2+6=3 n^2+7 n+3+3 b>0 $ 
+又 $f(n)=3 n^2+1 n$ 单调递增。
+$\therefore 3+7+3+6>0$ br $+3 \quad \therefore b>-13,$ $c$为任意实数。
+\end{jieda}
+
+\end{enumerate}
+
+C组：
+\begin{enumerate}
+    \item 1．斐波那契数列，又称黄金分割数列，被誉为最美的数列，若数列 $\left\{a_n\right\}$ 满足 $a_1=1, a_2=1$ ， $a_n=a_{n-1}+a_{n-2}\left(n \geq 3, n \in \mathrm{~N}^*\right)$ ，则称数列 $\left\{a_n\right\}$ 为斐波那契数列，则$\frac{a_1^2+a_2^2+\cdots+a_{2023}^2}{2 a_{2023} a_{2024}}=$\blkda{$\frac{1}{2}$}.
+
+\item 已知无穷项数列 $\left\{a_n\right\}$ 满足：$a_{n+2}=a_n+a_{n+1}(n=1,2,3, \cdots), a_1, a_2$ 为有理数，给出下列四个结论：
+\begin{dingautolist}{172}
+            \item 若 $a_3>a_2>a_1$ ，则数列 $\left\{a_n\right\}$ 单调递增；
+            \item 数列 $\left\{a_n\right\}$ 可能为等比数列；
+            \item 若存在 $k_0 \in \mathrm{~N}^*, k_0 \geq 3, a_{k_0}=0$ ，则对于任意 $n \leq k_0-2$ ，总有 $a_n a_{n+1} \leq 0$；
+            \item 若存在 $M>0$ ，对于任意 $n \in \mathrm{~N}^*$ ，总有 $\left|a_n\right|<M$ ，则 $a_n=0$ ．
+        \end{dingautolist}
+其中全部正确结论的序号为\blkda{\ding{172}\ding{174}\ding{175}}
+    
+\end{enumerate}
+
+
+\subsection*{数列的概念(2)}
+\zsd 数列的概念
+
+\begin{enumerate}
+    \item 若数列 $\left\{a_n\right\}$ 的通项公式是 $a_n=\left(n^2-10 n+21\right) \cdot 0.5^n$ ，则此数列中有\blkda{3}项是负数．
+
+\item 数列 $2013,2014,1,-2013,-2014,-1, \cdots$ 中自第二项起的每一项均为其前后两项之和，则第 2013 项的值为\blkda{1} ．
+
+\item 请用两种不同的方式写出数列的通项公式
+
+    ${a}_{n} =$ \blkda[6]{$\dfrac{\sqrt{2}}{2}sin\dfrac{n\pi}{2}$},
+    
+    ${a}_{n} =$ \blkda[6]{$\left\{\begin{array}{ll}
+        \dfrac{\sqrt{2}}{2}(-1)^{\frac{n-1}{2}}, & n=2k-1 \\
+        0, & n=2k
+    \end{array}\right., k \in \mathbf{N^*}$}
+    
+    使其前四项为 $\dfrac{\sqrt{2}}{2},0, - \dfrac{\sqrt{2}}{2},0$ .
+
+\item 已知数列 $\left\{a_n\right\}$ 前 $n$ 项和 $S_n=\frac{3}{4}\left(1-5^n\right)$ ，则 $a_n=$\blkda{$=-3 \times 5^{n-1}$}.
+
+\item 已知数列 $\left\{a_n\right\}, a_n=\frac{n}{n^2+2025}$ 中的的最大项是第 $k$ 项，则 $k=$ \blkda{45}．
+
+\item 已知数列 $\left\{a_n\right\}, a_n=n(n+4)\left(\frac{2}{3}\right)^n$ 中的最大项是第 $k$ 项，则 $k=$ \blkda{4} ．
+
+\item 已知数列 $\left\{a_n\right\}$ 满足： $\boldsymbol{a}_1=\boldsymbol{m}$（ $\boldsymbol{m}$ 为正整数），$a_{n+1}=\left\{\begin{array}{l}\frac{a_n}{2}, \text { 当 } a_n \text { 为偶数时，} \\ 3 a_n+1, \text { 当 } a_n \text { 为奇数时．}\end{array}\right.$ 若 $a_6=1$ ，则 $m$ 所有可能的取值为\blkda{4,5,32}．
+
+\item 将正偶数按下表排成 5 列：
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline & 第1列 & 第2列 & 第3列 & 第4列 & 第5列 \\
+\hline 第1行 & & 2 & 4 & 6 & 8 \\
+\hline 第2行 & 16 & 14 & 12 & 10 & \\
+\hline 第3行 & & 18 & 20 & 22 & 24 \\
+\hline ．．．．．． & & ．．．．．． & 28 & 26 & \\
+\hline
+\end{tabular}
+
+那么 2024 应该在第\blkda{253}行第\blkda{5}列．
+
+\item 已知数列的通项公式为 $a_n=\frac{n a}{n b+c}(a>0, b>0, c>0)$ ，则 $\left\{a_n\right\}$ 是\dotfill{}(\kh{A})\xx{严格增数列}{严格减数列}{有时增有时减}{以上都不是}
+
+\item 数列 $\left\{a_n\right\}$ 中，$a_{n+1}=\frac{1+a_n}{1-a_n}$ ，且 $a_1=2$ ，则 $a_{2013}$ 的值为\dotfill{}(\kh{A})\xx{2}{-3}{$\frac{1}{3}$}{$-\frac{1}{2}$}
+
+\item 已知数列的通项公式 $a_n=\sqrt{2}+\cos \frac{n \pi}{3}\left(n \in N^*\right)$ ，则\dotfill{}(\kh{D})\xx{$a_{n+3}=a_n$}{$a_{n+4}=a_n$}{$a_{n+5}=a_n$}{$a_{n+6}=a_n$}
+
+\item 若数列前 12 项之值各异，且 $a_{n+12}=a_n$ ，对任意 $n \in N^*$ 都成立，则下列数列 $\left(k \in N^*\right)$ 中可取遍 $a_n$ 中前 12 项值的数列是\dotfill{}(\kh{D})\xx{$\left\{a_{2 k+1}\right\}$}{$\left\{a_{3 k+1}\right\}$}{$\left\{a_{4 k+1}\right\}$}{$\left\{a_{5 k+1}\right\}$}
+
+
+\item 已知数列 $\left\{  {a}_{n}\right\}  \left( {n \in  {N}^{ * }}\right)$ 的一个通项公式是 ${a}_{n} = {\sin }^{n}a + {\cos }^{n}a$ . 
+    \begin{enumerate}
+        \item 试写出数列的一个递推公式 (可用 ${a}_{1},{a}_{n - 1},{a}_{n}$ 表示 $\left. {a}_{n + 1}\right)$
+        \item 求使数列为非零常数数列的 $a$ 的值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 
+            $a_{n+1} = sin^{n+1}\alpha + cos^{n+1}\alpha = (sin\alpha+cos\alpha)(sin^n\alpha+cos^n\alpha) - cos\alpha \cdot sin^n\alpha - sin\alpha \cdot cos^n\alpha \\
+            = (sin\alpha+cos\alpha)(sin^n\alpha+cos^n\alpha) - (sin\alpha \cdots cos\alpha) \cdot (sin^{n-1}\alpha + cos^{n-1}\alpha) = a_1 \cdot a_n + \dfrac{1-a_1^2}{2} \cdot a_{n-1}$
+            
+            \item 
+            由$a_2 = 1$可知该数列为非零常数列必有$a_n = 1$，即$sin^n\alpha + cos^n\alpha = 1$
+
+            当$n = 2k, k \in \mathbf{N^*}$时，令$a = sin^2\alpha$，$a \in [-1, 1]$
+
+            $LHS = a^k + (1-a)^k \leq (a+1-a)^k = 1$，当且仅当$a = 0$或$1$，即$\alpha = \dfrac{m\pi}{2}, m \in \mathbf{Z}$时等号成立
+
+            经检验，$\alpha = 2m\pi \text{或} 2m\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}$时，该数列为非零常数列.
+        \end{enumerate}
+    \end{jieda}
+
+\item 某人今年年初贷款 $M$ 元，年利率为 $5 \%$ ，他计划明年起的每年年初归还相同的款项 $x$ 元， 30 年还清，设明年（作为第一年）起的第 $n$ 年年初归还 $x$ 元后还欠 $a_n$ 元，试写出 $a_{n+1}$ 与 $a_n$ 的关系式．
+\begin{jieda}
+    $a_n=\left\{\begin{array}{l}
+m(1+5 \%)-x, n=1 \\
+a_{n-1}(1+5 \%)-x, n \in[2,30]
+\end{array}\right.$
+\end{jieda}
+
+
+\end{enumerate}
+
+\section*{等差数列}
+\subsection*{等差数列 (1)}
+
+\zsd{等差数列的概念和性质}
+
+等差数列的定义 \\
+如果一个数列从第 2 项起，每一项与其前一项的\blkda{差}都等于\blkda{一个常数}，这个
+数列就叫做等差数列，而这个常数叫做等差数列的\blkda{公差}．公差通常用小写字母\blkda{$d$}表示． 
+
+A组：
+
+\begin{enumerate}
+    \item 下列数列是等差数列的是\dotfill{(\kh{D})}
+    \xx{$\dfrac{1}{3},\dfrac{1}{5},\dfrac{1}{7},\dfrac{1}{9}$}{$1,\sqrt{3},\sqrt{5},\sqrt{7}$}{$1, - 1,1, - 1$}{0,0,0,0}
+    \item 下列数列的通项公式中,能得到 $\left\{  {a}_{n}\right\}$ 为等差数列的是\dotfill{(\kh{B})}
+    \xx{${a}_{n} = {n}^{2} + 2$}{${a}_{n} = {2n} + 2$}{${a}_{n} = {2}^{n} + 2$}{${a}_{n} = {\log }_{2}n + 2$} 
+    \item 一个三角形的三个内角 $A,B,C$ 成等差数列,那么 $\tan \left( {A + C}\right)  =$ \blkda{$-\sqrt{3}$}.
+    \item 已知三个数 ${19},{5x},{31}$ 是等差数列,则 $x =$\blkda{5}.
+    \item 下列命题中错误的是 \dotfill{(\kh{B})} 
+    \xx{一个数列中,若每相邻两项之差是同一个常数,则此数列是等差数列}{数列 $\left\{  {a}_{n}\right\}$ 中,若 ${a}_{n + 1} - {a}_{n} = {2n}$ ,则数列 $\left\{  {a}_{n}\right\}$ 是等差数列}{数列 $\left\{  {a}_{n}\right\}$ 中,若 ${a}_{n + 1} = {a}_{n} + {2t}$ ( $t$ 为常数),则数列 $\left\{  {a}_{n}\right\}$ 是等差数列}{各项都是同一个常数的数列必定是等差数列}
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{n + 1} = {a}_{n} + 2$ ,且 ${a}_{1} = 1$ ,则 ${a}_{4} =$\blkda{7}.
+\end{enumerate}
+B组：
+\begin{enumerate}
+    \item 等差数列$\{a_n\}$中，若$2a_3+a_9 = 18$，则$a_2+3a_6 = $\blkda{24}
+    \begin{jieda}
+        $18 = 2a_3+a_9 = 3a_1+12d \Longrightarrow a_1 + 4d = 6$
+
+        $a_2+3a_6 = 4a_1 + 16d = 24$
+    \end{jieda}
+    \item 在 8 和 28 中间插入四个数,使这六个数成等差数列,则插入的四个数依次为\blkda[3]{$12,16,20,24$}.
+    
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,已知 ${a}_{1} + {a}_{4} + {a}_{7} = {39},{a}_{2} + {a}_{5} + {a}_{8} = {33}$ ,则 ${a}_{3} + {a}_{6} + {a}_{9} =$ \blkda{27}.
+    
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的前三项依次为 $\dfrac{1}{x + 1},\dfrac{5}{6x},\dfrac{1}{x}$ ,则 ${a}_{101} =$ \blkda{$\dfrac{26}{3}$}.
+    
+    \item 已知两等差数列 $x,{a}_{2},{a}_{3},y$ ,与 ${b}_{1},y,{b}_{3},{b}_{4},{b}_{5},{b}_{6},x,\left( {x \neq  y}\right)$ 的公差分别为 ${d}_{1}$ 、 ${d}_{2}$ ,则 $\dfrac{{d}_{1}}{{d}_{2}} =$ \blkda{$-\dfrac{5}{3}$}.
+    
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{5} = {10},{a}_{7}^{2} = {a}_{5} \cdot  {a}_{10}$ ,则数列 $\left\{  {a}_{n}\right\}$ 的通项公式为 ${a}_{n} =$ \blkda[3]{$10$或$\dfrac{5(n-1)}{2}$}.
+    
+    
+    \item 若 ${5}^{m} = {300},{5}^{n} = {60},{5}^{p} = {12}$ ,则 $p,n,m$ \dotfill{(\kh{B})}
+    \xx{是以 -1 为公差的等差数列}{是以 1 为公差的等差数列}{是以 5 为公差的等差数列}{不是等差数列}
+    
+    \item 下列数列中,成等差数列的是\dotfill{(\kh{D})}
+    \xx{$1,1,2,3,5,8,{13},{21},\ldots$}{$x,2{x}^{2},3{x}^{3},4{x}^{4},\ldots \left( {x \in  R}\right)$}{$\dfrac{\sqrt{3}}{3},1,\sqrt{3},3,3\sqrt{3},9,\ldots$}{$\lg 3,\lg 9,\lg {27},\lg {81},\lg {243}\cdots$}
+
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = \dfrac{1}{2}$ ,且 ${a}_{n + 1} = \dfrac{{a}_{n}}{4{a}_{n} + 1}$ ,则 ${a}_{n} =$ \blkda{$\dfrac{1}{4n-2}$}.
+    \begin{jieda}
+        对 ${a}_{n + 1} = \dfrac{{a}_{n}}{4{a}_{n} + 1}$ 两边同时取倒数,所以 $\dfrac{1}{{a}_{n + 1}} = \dfrac{4{a}_{n} + 1}{{a}_{n}} = \dfrac{1}{{a}_{n}} + 4$ ,则 $\dfrac{1}{{a}_{n + 1}} - \dfrac{1}{{a}_{n}} = 4$ , 所以数列 $\left\{  \dfrac{1}{{a}_{n}}\right\}$ 是以 $\dfrac{1}{{a}_{1}} = 2$ 为首项, 4 为公差的等差数列,所以 $\dfrac{1}{{a}_{n}} = 2 + 4\left( {n - 1}\right)  = {4n} - 2$ 
+        
+        所以 ${a}_{n} = \dfrac{1}{{4n} - 2}$ .
+    \end{jieda}
+
+    \item 下列三角比中,成等差数列的是\dotfill{(\kh{B})}
+    \xx{$- {\tan }^{2}\theta ,1,{\sec }^{2}\theta$}{$\tan {150}^{ \circ  }$ , tan ${30}^{ \circ  }$ , tan ${60}^{ \circ  }$}{$\tan {20}^{ \circ  }$ , tan ${45}^{ \circ  }$ , tan ${70}^{ \circ  }$}{${\cos }^{2}\theta ,\cos {2\theta }, - {\sin }^{2}\theta$}
+    
+    \item 若 $\left\{  {a}_{n}\right\}$ 是各项均为正数的等差数列,公差 $d \neq  0$ ,则 $a_1a_8\underline{\quad\quad}a_4a_5$\dotfill{(\kh{A})}
+    \xx{<}{=}{>}{以上均不对}
+    \item 直角三角形的三边成等差数列,斜边长为 15 ,则此三角形的面积为\dotfill{(\kh{D})}
+    \xx{24}{36}{48}{54}
+    \item 三角形的三个角和三条边均成等差数列,则此三角形为\dotfill{(\kh{A})}
+    \xx{等边三角形}{等腰非等边三角形}{直角三角形}{以上均不对}
+    
+
+
+    \item 若三个实数依次成等差数列,公差为 2 ,且它们的和等于它们的积,求这三个数.
+    \begin{jieda}
+        设等差中项为$x$，则$3x = (x-2)\cdot x \cdot (x+2) = x^3 - 4x$，即$x^3 = 7x$，故$x \in \{0, -\sqrt{7}, \sqrt{7}\}$，故这三个数可为：
+        \begin{dingautolist}{172}
+            \item -2, 0, 2
+            \item $-\sqrt{7}-2, -\sqrt{7}, -\sqrt{7}+2$
+            \item $\sqrt{7}-2, \sqrt{7}, \sqrt{7}+2$
+        \end{dingautolist}
+    \end{jieda}
+    
+    \item 已知 5 个数构成等差数列,和为 5 ,平方和为 $\dfrac{85}{9}$ ,求这 5 个数.
+    \begin{jieda}
+        $-\dfrac{1}{3}, \dfrac{1}{3}, 1, \dfrac{5}{3}, \dfrac{7}{3}$
+    \end{jieda}
+
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中,已知 $a_1 = 1, a_{n + 1} = \dfrac{2a_n}{a_{n} + 2}$ ,
+    \begin{enumerate}
+        \item 求证: $\left\{  \dfrac{1}{{a}_{n}}\right\}$ 是等差数列；
+        \item 求 $\left\{  {a}_{n}\right\}$ 的通项.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 等式$a_{n + 1} = \dfrac{2a_n}{a_{n} + 2}$ 两侧取倒数有$\dfrac{1}{a_{n+1}} = \dfrac{1}{a_n} + \dfrac{1}{2}$，移项有$\dfrac{1}{{a}_{n + 1}} - \dfrac{1}{{a}_{n}} = \dfrac{1}{2}$，故$\left\{  \dfrac{1}{{a}_{n}}\right\}$符合等差数列的定义，为首项为1，公差为$\dfrac{1}{2}$的等差数列.
+            \item 
+            根据等差数列的性质可以写出通项公式：$\dfrac{1}{a_n} = \dfrac{n+1}{2}$，取倒数有${a}_{n} = \dfrac{2}{n + 1}$
+            
+        \end{enumerate}
+    \end{jieda}
+
+    \item 已知方程 $\left( {{x}^{2} - {2x} + m}\right) \left( {{x}^{2} - {2x} + n}\right)  = 0$ 的四个根组成一个首项为 $\dfrac{1}{4}$ 的等差数列,求 $\left| {m - n}\right|$ 的值.
+    \begin{jieda}
+        容易判断满足条件的四个根必然是实根
+
+        设方程${{x}^{2} - {2x} + m} = 0$的两实根为$x_1, x_2$，设方程${{x}^{2} - {2x} + n} = 0$的两实根为$x_3, x_4$，不妨设其大小关系为$x_1 < x_3 < x_4 < x_2$（另一种情况对称，不影响求解），根据韦达定理可知$x_1+x_2 = x_3+x_4 = 2$
+
+        由于这四个根组成首项为 $\dfrac{1}{4}$ 的等差数列，设该数列公差为$d$，则必有$\dfrac{1}{4} + \dfrac{3}{2}d = 1$，因此$d = \dfrac{1}{2}$
+
+        因此$\left\{\begin{array}{l}
+             x_1 = \frac{1}{4}  \\
+             x_3 = \frac{3}{4} \\
+             x_4 = \frac{5}{4} \\
+             x_2 = \frac{7}{4}
+        \end{array}\right.$，根据韦达定理可知$m = \dfrac{7}{16}, n = \dfrac{15}{16}$，故$|m-n| = \dfrac{1}{2}$
+    \end{jieda}
+
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,求证: $\dfrac{1}{{a}_{1}{a}_{2}} + \dfrac{1}{{a}_{2}{a}_{3}} + \cdots  + \dfrac{1}{{a}_{n}{a}_{n + 1}} = \dfrac{n}{{a}_{1}{a}_{n + 1}}$ .
+    \begin{jieda}
+        证明: 
+        
+        设公差为 $ d $ ,则 $ \dfrac{1}{{a}_{k}{a}_{k + 1}} = \dfrac{1}{{a}_{k}\left( {{a}_{k} + d}\right) } = \dfrac{1}{d}\left( {\dfrac{1}{{a}_{k}} - \dfrac{1}{{a}_{k} + d}}\right)  = \dfrac{1}{d}\left( {\dfrac{1}{{a}_{k}} - \dfrac{1}{{a}_{k + 1}}}\right) $
+
+        左式 $ = \dfrac{1}{d}\left( {\dfrac{1}{{a}_{1}} - \dfrac{1}{{a}_{2}} + \dfrac{1}{{a}_{2}} - \dfrac{1}{{a}_{3}} + \cdots  + \dfrac{1}{{a}_{n}} - \dfrac{1}{{a}_{n + 1}}}\right)  = \dfrac{1}{d}\left( {\dfrac{1}{{a}_{1}} - \dfrac{1}{{a}_{n + 1}}}\right)  = \dfrac{1}{d} \cdot  \dfrac{{a}_{n + 1} - {a}_{1}}{{a}_{1}{a}_{n + 1}} = \dfrac{n}{{a}_{1}{a}_{n + 1}} $
+    \end{jieda}
+
+    \item 已知 $\left\{  {a}_{n}\right\}$ 是等差数列,公差 $d \neq  0, a_{n} \neq  0$ ,方程 ${a}_{k}{x}^{2} + 2a_{k + 1}x + {a}_{k + 2} = 0$ .
+    \begin{enumerate}
+        \item 求证:不论 $k$ 取何正整数,方程存在公共根.
+        \item 方程不同的根依次为 ${x}_{1},{x}_{2},{x}_{3},\ldots ,{x}_{n}$ . 求证: $\dfrac{1}{1 + {x}_{1}},\dfrac{1}{1 + {x}_{2}},\dfrac{1}{1 + {x}_{3}},\ldots ,\dfrac{1}{1 + {x}_{n}}$ 是等差数列.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 公共根 $x =  - 1$
+            
+            提示: $\left( {x + 1}\right) \left( {{a}_{k}x + {a}_{k + 2}}\right)  = 0$
+            \item ${x}_{k} =  - \dfrac{{a}_{k + 2}}{{a}_{k}},\dfrac{1}{1 + {x}_{k}} =  - \dfrac{{a}_{k}}{2d},\dfrac{1}{1 + {x}_{k + 1}} - \dfrac{1}{1 + {x}_{k}} =  - \dfrac{1}{2}$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+C组：
+\begin{enumerate}
+    \item 已知 $f\left( x\right)  = \sqrt{3}\sin x\cos x - {\cos }^{2}x,x \in  R$ .
+
+    \begin{enumerate}
+        \item 求函数 $y = f\left( x\right)$ 的单调增区间；
+        \item 求函数 $y = f\left( x\right)$ 在区间 $\left\lbrack  {-\dfrac{\pi }{4},\dfrac{\pi }{4}}\right\rbrack$ 上的最大值与最小值.
+        \item 若函数 $y = f\left( x\right)  - m$ 在 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 内有且只有一个零点,求实数 $m$ 的取值范围.
+    \end{enumerate}
+
+    \begin{jieda}
+        \begin{enumerate}
+            \item $f\left( x\right)  = \sqrt{3}\sin x\cos x - \cos {}^{2}x = \dfrac{\sqrt{3}}{2}\sin {2x} - \dfrac{1}{2}\left( {1 + \cos {2x}}\right) = \dfrac{\sqrt{3}}{2}\sin {2x} - \dfrac{1}{2}\cos {2x} - \dfrac{1}{2}$
+            故$f(x) = \sin \left( {{2x} - \dfrac{\pi }{6}}\right)  - \dfrac{1}{2}$，单调递增区间为: $\left( {-\dfrac{\pi }{6} + {k\pi },\dfrac{\pi }{3} + {k\pi }}\right) \left( {k \in  Z}\right)$ 
+            \item $x \in \left\lbrack  {-\dfrac{\pi }{4},\dfrac{\pi }{4}}\right\rbrack$，故$2x-\dfrac{\pi}{6} \in \left\lbrack  {-\dfrac{2\pi }{3},\dfrac{\pi }{3}}\right\rbrack$
+            
+            $f(x)$在$\left[-\dfrac{\pi}{4}, -\dfrac{\pi}{6}\right]$严格减，在$\left(-\dfrac{\pi}{6}, \dfrac{\pi}{4}\right]$严格增
+            
+            故$f{\left( x\right) }_{\max } = f\left(\dfrac{\pi}{4}\right) = \dfrac{\sqrt{3} - 1}{2},f{\left( x\right) }_{\min } = f\left(-\dfrac{\pi}{6}\right) = - \dfrac{3}{2}$
+
+            \item 若函数 $y = f\left( x\right)  - m$ 在 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 内有且只有一个零点,
+            
+            等价于 $\sin \left( {{2x} - \dfrac{\pi }{6}}\right)  = \dfrac{1}{2} + m$ 在 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 内有且只有一个根,
+            
+            等价于 $g\left( x\right)  = \sin \left( {{2x} - \dfrac{\pi }{6}}\right)$ 与 $y = \dfrac{1}{2} + m$ 在 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 内有且只有一个交点.
+            
+            且 $g\left( 0\right)  =  - \dfrac{1}{2},g\left( \dfrac{\pi }{2}\right)  = \dfrac{1}{2}$ ,图像如下
+            
+            \begin{center}
+            \includegraphics[ width=0.3\linewidth]{bodyxb/src/0196e16e-8a19-7d78-8fde-7c304d35bdb0_0_1081_1706_406_381_0.jpg}
+            \end{center}
+            \hspace*{3em} 
+            
+            则 $\dfrac{1}{2} + m = 1$ 或者 $- \dfrac{1}{2} \leq  \dfrac{1}{2} + m < \dfrac{1}{2}$ ,解得 $m = \dfrac{1}{2}$ 或 $- 1 \leq  m < 0$ .
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\clearpage
+\subsection*{等差数列 (2)}
+\zsd{知识点: 等差数列的概念和性质}
+
+A组：
+\begin{enumerate}
+    \item $8 - \sqrt{2}$ 与 $8 + \sqrt{2}$ 的等差中项是\blkda{8}.
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = 1,{a}_{2} + {a}_{4} = 2{a}_{5} - 4$ ,则 $\left\{  {a}_{n}\right\}$ 通项公式为\blkda{$a_n = n$}.
+    \item 已知在等差数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{2} + {a}_{3} + {a}_{4} + {a}_{5} + {a}_{6} = {130}$ ,则 ${a}_{4} =$ \blkda{26}.
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,已知 ${a}_{3} = 5,{a}_{4} + {a}_{7} = {11}$ ,则 ${a}_{8} =$ \blkda{6}.
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,若公差 $d = 2$ ,且 ${a}_{2} + {a}_{4} + {a}_{6} + \cdots  + {a}_{100} = {80}$ ,则${a}_{1} + {a}_{2} + {a}_{3} + \cdots  + {a}_{100} =$ \blkda{60}.
+    \begin{jieda}
+        ${a}_{1} + {a}_{3} + {a}_{5} + \cdots  + {a}_{99} = {a}_{2} + {a}_{4} + {a}_{6} + \cdots  + {a}_{100} - 50d = 80 - 100 = -20$
+
+        故${a}_{1} + {a}_{2} + {a}_{3} + \cdots  + {a}_{100} = 60$.
+    \end{jieda}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 3,\dfrac{1}{{a}_{n}} - \dfrac{1}{{a}_{n - 1}} = 5\left( {n \geq  2}\right)$ ,则 ${a}_{n} =$ \blkda{$\dfrac{3}{15n-14}$}.
+    \begin{jieda}
+        $\dfrac{1}{a_n} = \dfrac{1}{3} + 5(n-1) = \dfrac{15n-14}{3}$，故$a_n = \dfrac{3}{15n-14}$
+    \end{jieda}
+    \item 在正项等差数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{3} = 2$ ,则公差 $d$ 的取值范围是\blkda{$[0, 1)$}
+    \begin{jieda}
+        首先公差$d \geq 0$，否则不可能为正项数列，$a_1 = 2 - 2d > 0$，因此$d \in [0, 1)$
+    \end{jieda}
+\end{enumerate}
+B组：
+\begin{enumerate}
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中, $3{a}_{n + 1} = 3{a}_{n} + 2$ ,且 ${a}_{2} + {a}_{4} + {a}_{7} + {a}_{9} = {20}$ ,则 ${a}_{10} =$ \blkda{8}.
+    
+    \item 数列 $\left\{  {a}_{n}\right\}$ 中,若 ${a}_{2} = 2,\dfrac{1}{{a}_{n}} = \dfrac{1}{{a}_{n + 1}} + 4$ ,则 ${a}_{n} =$ \blkda{$\dfrac{2}{17-8n}$}.
+    
+    \item “ $a$ 、 $b$ 、 $c$ 成等差数列” 是 “ ${am} + p$ 、 ${bm} + p$ 、 ${cm} + p$ 成等差数列” 的\blkda[2]{充分非必要}条件.
+
+    
+    \item 首项为 -24 的等差数列从第 10 项开始为正数,则公差 $d$ 的取值范围为\blkda{$\left(\dfrac{8}{3}, 3\right]$}.
+
+    
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 公差为正数,若 $a_{3}a_7 =  -12, a_4 + a_6 =  - 4$ ,则 $a_{10} =$ \blkda{8}.
+    \item 一个等差数列共100项，其和为80，奇数项和为30，则该数列的公差为\blkda{$0.4$}
+    \item 根据测试得知,运载神州五号的长征四号火箭,点火后 0.1 分钟通过路程 10 米,以后每 0.1 分钟通过的路程比上一个 0.1 分钟增加 20 米,在达到离地面 240 千米高度时,火箭与飞船分离,则点火到分离大概需要时间为\blkda{15.5}分钟. (精确到 0.1 分钟)
+    \item 若$\left\{  {a}_{n}\right\}$是公差为1的等差数列，则数列$\{a_{2n-1}+2a_{2n}\}$  \blkda{是}（选填“是”或“不是”）等差数列．若是等差数列，则公差为\blkda{6}．
+    \begin{jieda}
+        $a_n = a_1 + (n-1)$，$a_{2n-1}+2a_{2n} = 3a_1 + (2n-2) + 2(2n-1) = (3a_1+2) + 6(n-1)$
+    \end{jieda}
+    \item 已知$\{a_n\}$是等差数列，则下列数列中必为等差数列的序号是\blkda{\ding{172}\ding{173}\ding{174}}
+    \begin{dingautolist}{172}
+        \item $\{a_{2n}\}$
+        \item $\{a_n + a_{n+1}\}$
+        \item $\{3a_n+1\}$
+        \item $\{|a_n|\}$
+    \end{dingautolist}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = 1,{a}_{n + 1} = \left\{  \begin{array}{l} {a}_{n} + 1,n\text{ 为奇数,} \\  {a}_{n} + 2,n\text{ 为偶数. } \end{array}\right.$ ,记 ${b}_{n} = {a}_{2n}$ ,则 ${b}_{20} =$ \blkda{59}
+    \begin{jieda}
+        由题意得 ${2n}$ 为偶数,则 ${a}_{{2n} + 1} = {a}_{2n} + 2,{a}_{{2n} + 2} = {a}_{{2n} + 1} + 1$ ,
+        所以 ${a}_{{2n} + 2} = {a}_{2n} + 3$ ,
+        即 ${b}_{n + 1} = {b}_{n} + 3$ ,且 ${b}_{1} = {a}_{2} = {a}_{1} + 1 = 2$ ,
+        所以 $\left\{  {b}_{n}\right\}$ 是以 2 为首项,3 为公差的等差数列,
+        则 ${b}_{n} = 2 + 3 \times  \left( {n - 1}\right)  = {3n} - 1$ ,
+        所以 ${b}_{20} = 2 + 3\left( {{20} - 1}\right)  = {59}$ .
+    \end{jieda}
+    \item 在 1 和 11 之间插入 $m$ 个数,使得这 $m + 2$ 个数成等差数列. 若这 $m$ 个数中第 1 个为 $a$ ,第 $m$个为 $b$ ,则 $\dfrac{1}{a} + \dfrac{25}{b}$ 的最小值是\blkda{3}
+    \begin{jieda}
+        由题可知, $a + b = 1 + {11} = {12},1 < a < b < {11}$ ,
+        所以有 $\dfrac{1}{a} + \dfrac{25}{b} = \left( {\dfrac{a}{12} + \dfrac{b}{12}}\right) \left( {\dfrac{1}{a} + \frac{25}{b}}\right)  = \dfrac{1}{12} + \dfrac{25}{12} + \dfrac{b}{12a} + \dfrac{25a}{12b} \geq  \dfrac{13}{6} + 2\sqrt{\dfrac{b}{12a} \times  \dfrac{25a}{12b}} = 3$ ,
+        当且仅当 $\dfrac{b}{12a} = \dfrac{25a}{12b}$ ,即 $b = {10},a = 2$ 时等号成立,
+        此时 $a,b$ 满足 $1 < a < b < {11},m = 9$ ,所以 $\dfrac{1}{a} + \dfrac{25}{b}$ 的最小值是 3 .
+    \end{jieda}
+    \item 在 $a,b\left(a \neq  b\right)$ 之间插入 $n$ 个数,使它们与 $a,b$ 组成等差数列,则该数列的公差为\dotfill{(\kh{B})}
+    \xx{$\dfrac{b - a}{n}$}{$\dfrac{b - a}{n + 1}$}{$\dfrac{b - a}{n + 2}$}{以上均不对}
+
+    \item 在 $\bigtriangleup \mathrm{{ABC}}$ 中,若 $\lg \sin A,\lg \sin B,\lg \sin C$ 成等差数列,且 $\angle \mathrm{A},\angle \mathrm{B},\angle \mathrm{C}$ 也成等差数列,判断 $\bigtriangleup  \mathrm{{ABC}}$ 的形状,并说明理由.
+    \begin{jieda}
+        $2\lg \sin B = \lg \sin A \cdot \lg \sin C \Longleftrightarrow {\sin }^{2}B = \sin A\sin C \Longleftrightarrow b^2 = ac$
+
+        $2B = \dfrac{A+C}{2}$，因此$B = \dfrac{\pi}{3}$
+
+        根据余弦定理有$b^2 = a^2+c^2-2accosB$，因此$ac = a^2+c^2-ac$，即$(a-c)^2 = 0$，故$a = c$
+        
+        因此$\triangle ABC$为等边三角形.
+        
+    \end{jieda}
+\end{enumerate}
+
+\clearpage
+
+\subsection*{等差数列 (3)}
+
+\zsd{等差数列的求和公式}
+
+等差数列前$n$项和公式：\blkda[8]{$S_n = \dfrac{n \cdot (a_1+a_n)}{2} = n \cdot a_1 + \dfrac{n(n-1)}{2}d$}
+
+A组：
+\begin{enumerate}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,且 ${S}_{n} = 3{n}^{2} - {5n}$ , ${a}_{20} =$ \blkda{112}.
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 为等差数列,其前 $n$ 项和为 ${S}_{n}$ ,若 ${a}_{2} = 2,{S}_{5} = {15}$ ,则数列 $\left\{  {a}_{n}\right\}$的通项公式为 ${a}_{n} =$ \blkda{$n$}.
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,已知 ${a}_{4} + {a}_{8} = {16}$ ,则该数列前 11 项和 ${S}_{11} =$ \blkda{88}.
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,满足 ${S}_{m} = {30}$ , ${S}_{2m} = {100}$ ,则 ${S}_{3m} =$ \blkda{210}.
+    \item 设等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,若 ${S}_{3} = 9,{S}_{6} = {36}$ ,则 ${a}_{7} + {a}_{8} + {a}_{9} =$ \blkda{45}.
+\end{enumerate}
+
+B组：
+\begin{enumerate}
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,前 $n$ 项和为 ${S}_{n}$ ,若 ${S}_{3} = {21},{S}_{8} = {136}$ ,则 ${S}_{n} =$ \blkda[3]{$2n^2+n(n \geq 1)$}.
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 的前 $\mathrm{n}$ 项和为 $S_{n}$ ,若 $a_6 = S_3 = {12}$ ,则 ${a}_{n} =$ \blkda{$2n$}.
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的前三项为 $a,4,{3a}$ ,前 $k$ 项的和 ${S}_{k} = {2550}$ ,则 $k =$ \blkda{$50$}.
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,若 ${a}_{1} + {a}_{2} + \cdots  + {a}_{20} =  - {320},{a}_{21} + {a}_{22} + \cdots  + {a}_{40} = {480}$ ,则 ${a}_{1} =$ \blkda{$-35$}.
+    \item 若等差数列前四项和为 21,末四项和为 67 ,所有项的和为 286 ,则该数列的项数为\blkda{26}.
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,满足 $3{a}_{4} = 7{a}_{7}$ ,且 ${a}_{1} > 0,{S}_{n}$ 为数列 $\left\{  {a}_{n}\right\}$ 前 $n$ 项和. 若 ${S}_{n}$ 取得最大值, 则 $n =$ \blkda{9}.
+    \item 已知集合 $M = \{ x \mid  x = 5k + 2, k \in  \mathbf{Z},{20} < x < {80}\}$ ,集合 $\mathbf{M}$ 的各元素之和为\blkda{594}.
+    
+    \item 若数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 $S_n = n^{2} - 4n + 2$ ,则 $\mathop{\sum }\limits_{{i = 1}}^{n}\left| {a}_{i}\right|  =$ \blkda[4]{$\left\{\begin{array}{ll}              n^2-4n+6, & n \geq 2 \\
+        1, & n=1
+    \end{array}\right.$}.
+    
+    \item 数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 $S_n = a{n}^{2} + bn (a,b$ 为常数, $n \in  {n}^{ * }$ ) 是数列 $a_n$ 成等差数列的 \dotfill{(\kh{C})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分又非必要条件}
+
+    \item 若 $\left\{  {a}_{n}\right\}$ 是等差数列,首项 $a_1 > 0,a_{2013} + a_{2014} > 0,a_{2013} \cdot a_{2014} < 0$ ,则使前 $n$ 项和 ${S}_{n} > 0$ 成立的最大自然数是 \dotfill{(\kh{D})}
+    \xx{2013}{2014}{4025}{4026}
+
+    \item 设数列 $\left\{  {a}_{n}\right\}$ 是等差数列,且 ${a}_{2} =  - 6,{a}_{8} = 6,{S}_{n}$ 是数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和,则 \dotfill{(\kh{B})}
+    \xx{${S}_{4} < {S}_{5}$}{${S}_{4} = {S}_{5}$}{${S}_{6} < {S}_{5}$}{${S}_{6} = {S}_{5}$}
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项的和为 ${S}_{n}$ ,且 ${S}_{n} = {n}^{2} + {3n} - 4$ ,给出下列四个命题,其中正确的是\dotfill{(\kh{D})}
+    \xx{数列 $\left\{  {a}_{n}\right\}$ 是等差数列}{对任意的自然数 $n$ 都有 ${a}_{n} = {S}_{n} - {S}_{n - 1}$}{${S}_{3},{S}_{6} - {S}_{3},{S}_{9} - {S}_{6},{S}_{12} - {S}_{9}$ 是等差数列}{${a}_{1} + 4,{a}_{2},{a}_{3},{a}_{4},\cdots$ 是等差数列}
+
+    \item 设等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,若 ${a}_{1} =  - {11},{a}_{4} + {a}_{6} =  - 6$ ,则当 ${S}_{n}$ 最小值时,求 $n$ 的值.
+    \begin{jieda}
+        $a_5 = -3$，$4d = 8, d = 2$，故$a_n = 2n-13$，当$n \leq 6$时，$a_n < 0$，当$n \geq 7$时，$a_n > 0$，因此当 ${S}_{n}$ 最小值时，$ = 6$
+    \end{jieda}
+
+    \item 记等差数列的前 $n$ 项和为 ${S}_{n}$ ,已知 ${a}_{3} = {12},{S}_{12} > 0,{S}_{13} < 0$ .
+    \begin{enumerate}
+        \item 求公差 $d$ 的取值范围；
+        \item 指出 ${S}_{1},{S}_{2},\cdots ,{S}_{12}$ 中哪一个值最大,并说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\left(-\dfrac{24}{7}, -3\right)$
+            \item $S_6$
+        \end{enumerate}
+    \end{jieda}
+    \item \begin{enumerate}
+        \item 在公差不为零的等差数列 $\left\{  {a}_{n}\right\}$ 中, ${S}_{m} = {S}_{n}\left( {m \neq  n}\right)$ ,求 ${S}_{m + n}$ 的值.
+        \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中, ${S}_{m} = n,{S}_{n} = m,\left( {m \neq  n}\right)$ 求 ${S}_{m + n}$ 的值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 0
+            \item $-m-n$
+        \end{enumerate}
+    \end{jieda}
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${S}_{n} = \dfrac{n\left( {{a}_{1} + {a}_{n}}\right) }{2}$ ,求证: $\left\{  {a}_{n}\right\}$ 为等差数列
+    \begin{jieda}
+        证明：
+        
+        当 $n = 3$ 时, ${a}_{1} + {a}_{2} + {a}_{3} = \dfrac{3\left( {{a}_{1} + {a}_{3}}\right) }{2} \Longrightarrow  {a}_{2} - {a}_{1} = {a}_{3} - {a}_{2}$
+        
+        设 $n = k\left( {k \geq  3}\right)$ 时, ${a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{k}$ 成等差数列,公差为 $d$
+        
+        当 $n = k + 1$ 时, ${a}_{k + 1} = {S}_{k + 1} - {S}_{k} = \dfrac{\left( {k + 1}\right) {a}_{k + 1} - k{a}_{k} + {a}_{1}}{2} \Longrightarrow  {a}_{k + 1} = {a}_{k} + d$
+        
+        即 ${a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{k + 1}$ 成等差数列,公差为 $d$ .
+        
+        综上,由数学归纳法得 $\left\{  {a}_{n}\right\}$ 为等差数列
+    \end{jieda}
+\end{enumerate}
+C组：
+\begin{enumerate}
+    \item 已知 $\theta  \in  \lbrack 0,\pi )$ ,向量 $\vv{a} = \left( {\cos \theta ,\sin \theta }\right) ,\vv{b} = \left( {1,0}\right) ,{P}_{1}\text{、}{P}_{2}\text{、}{P}_{3}$ 是坐标平面上的三点,使得 $\vv{O{P}_{2}} = 2\left\lbrack  {\vv{O{P}_{1}} - \left( {\vv{a} \cdot  \vv{O{P}_{1}}}\right) \vv{a}}\right\rbrack$ ,
+    $\vv{O{P}_{3}} = 2\left\lbrack  {\vv{O{P}_{2}} - \left( {\vv{b} \cdot  \vv{O{P}_{2}}}\right) \vv{b}}\right\rbrack$ . 
+    \begin{enumerate}
+        \item 若 $\theta  = \dfrac{\pi }{2},{P}_{1}$ 的坐标为(20,21),求 $\vv{O{P}_{3}}$
+        \item 若 $\theta  = \dfrac{2\pi }{3},\left| \vv{O{P}_{1}}\right|  = 6$ ,求 $\left| \vv{O{P}_{3}}\right|$ 的最大值
+        \item 若存在 $a \in  \lbrack 0,\pi )$ ,使得当 ${\vv{OP}}_{1} = \left( {\cos a,\sin a}\right)$ 时, $\bigtriangleup {P}_{1}{P}_{2}{P}_{3}$ 为等边三角形,求 $\theta$ 的所有可能值.
+    \end{enumerate}
+    \begin{jieda}
+        
+    \begin{enumerate}
+        \item 由题意, $\vv{O{P}_{1}} = \left( {{20},{21}}\right)$
+        
+        $\therefore \vv{O{P}_{2}} = 2\left\lbrack  {\vv{O{P}_{1}} - \left( {\vv{a} \cdot  \vv{O{P}_{1}}}\right) \vv{a}}\right\rbrack   = 2\left\lbrack  {\left( {{20},{21}}\right)  - \left( {{20}\cos \theta  + {21}\sin \theta }\right) \left( {\cos \theta ,\sin \theta }\right) }\right\rbrack   = \left( {{40}{\sin }^{2}\theta  - {21}\sin {2\theta },{42}{\cos }^{2}\theta  - {20}\sin {2\theta }}\right)$ ,
+        
+        $\vv{O{P}_{3}} = 2\left\lbrack  {\vv{O{P}_{2}} - \left( {\vv{b} \cdot  \vv{O{P}_{2}}}\right) \vv{b}}\right\rbrack \\
+        = 2\left\lbrack  {\left( {{40}{\sin }^{2}\theta  - {21}\sin {2\theta },{42}{\cos }^{2}\theta  - {20}\sin {2\theta }}\right)  - \left( {{40}{\sin }^{2}\theta  - {21}\sin {2\theta }}\right) \left( {1,0}\right) }\right\rbrack\\
+        = \left( {0,{84}{\cos }^{2}\theta  - {40}\sin {2\theta }}\right)$ ,
+        
+        $\therefore$ 由 $\theta  = \dfrac{\pi }{2}$ ,则 $\cos \theta  = 0\text{、}\sin {2\theta } = 0$ ,故 $\vv{O{P}_{3}} = \left( {0,0}\right)$ ;
+        
+        \item 由题意, $\vv{O{P}_{1}} = 6\left( {\cos a,\sin a}\right)$ 
+        
+        $\therefore \vv{O{P}_{2}} = 2\left\lbrack  {\vv{O{P}_{1}} - \left( {\vv{a} \cdot  \vv{O{P}_{1}}}\right) \vv{a}}\right\rbrack   = 2\left\lbrack  {6\left( {\cos a,\sin a}\right)  - 6\cos \left( {a - \theta }\right) \left( {\cos \theta ,\sin \theta }\right) }\right\rbrack   \\
+        = {12}\left( {\sin \theta \sin \left( {\theta  - a}\right) ,\cos \theta \sin \left( {a - \theta }\right) }\right)$
+        
+        $\vv{O{P}_{3}} = 2\left\lbrack  {\vv{O{P}_{2}} - \left( {\vv{b} \cdot  \vv{O{P}_{2}}}\right) \vv{b}}\right\rbrack   \\
+        = 2\left\lbrack  {{12}\left( {\sin \theta \sin \left( {\theta  - a}\right) ,\cos \theta \sin \left( {a - \theta }\right) }\right)  - {12}\sin \theta \sin \left( {\theta  - a}\right) \left( {1,0}\right) }\right\rbrack   = {24}\left( {0,\cos \theta \sin \left( {a - \theta }\right) }\right) ,$
+        $\therefore$ 由 $\theta  = \dfrac{2\pi }{3}$ ,则 $\cos \theta  =  - \dfrac{1}{2}\text{、}\sin \theta  = \dfrac{\sqrt{3}}{2}$ ,即 $\left| \vv{O{P}_{3}}\right|  = 6\left| {\sqrt{3}\cos a + \sin a}\right|  = {12}\left| {\sin \left( {a + \dfrac{\pi }{3}}\right) }\right|$ ,
+        $\therefore$ 当 $\left| {\sin \left( {a + \dfrac{\pi }{3}}\right) }\right|  = 1$ 时, $\left| {\vv{OP}}_{3}\right|$ 的最大值为 12 ;
+        
+        \item $\vv{O{P}_{2}} = 2\left\lbrack  {\vv{O{P}_{1}} - \left( {\vv{a} \cdot  \vv{O{P}_{1}}}\right) \vv{a}}\right\rbrack   = 2\left\lbrack  {\left( {\cos a,\sin a}\right)  - \left( {\cos a\cos \theta  + \sin a\sin \theta }\right) \left( {\cos \theta ,\sin \theta }\right) }\right\rbrack   \\
+        = 2\left( {\sin \theta \sin \left( {\theta  - a}\right) ,\cos \theta \sin \left( {a - \theta }\right) }\right)$
+        
+        $\vv{O{P}_{3}} = 2\left\lbrack  {\vv{O{P}_{2}} - \left( {\vv{b} \cdot  \vv{O{P}_{2}}}\right) \vv{b}}\right\rbrack   \\
+        = 2\left\lbrack  {2\left( {\sin \theta \sin \left( {\theta  - a}\right) ,\cos \theta \sin \left( {a - \theta }\right) }\right)  - 2\sin \theta \sin \left( {\theta  - a}\right) \left( {1,0}\right) }\right\rbrack   = 4\left( {0,\cos \theta \sin \left( {a - \theta }\right) }\right) $
+        
+        $\therefore \vv{{P}_{1}{P}_{2}} = \left( {2\sin \theta \sin \left( {\theta  - a}\right)  - \cos a,2\cos \theta \sin \left( {a - \theta }\right)  - \sin a}\right) \\
+        \vv{{P}_{2}{P}_{3}} = 2\sin \left( {a - \theta }\right) \left( {\sin \theta ,\cos \theta }\right)$ 
+        
+        $\because  \bigtriangleup  {P}_{1}{P}_{2}{P}_{3}$ 为等边三角形
+        
+        $\therefore \left\{  \begin{array}{l} \left| \vv{{P}_{1}{P}_{2}}\right|  = \left| \vv{{P}_{2}{P}_{3}}\right|  = 2\left| {\sin \left( {a - \theta }\right) }\right|  = 1 \\  \cos \left\langle  {\vv{{P}_{1}{P}_{2}},\vv{{P}_{2}{P}_{3}}}\right\rangle   = \dfrac{\vv{{P}_{1}{P}_{2}} \cdot  \vv{{P}_{2}{P}_{3}}}{\left| \vv{{P}_{1}{P}_{2}}\right| \left| \vv{{P}_{2}{P}_{3}}\right| } =  - \dfrac{1}{2} \end{array}\right.$
+        
+        $\therefore \left| {\sin \left( {a - \theta }\right) }\right|  = \dfrac{1}{2}$ , \\
+        $\left( {2\sin \theta \sin \left( {\theta  - a}\right)  - \cos a,2\cos \theta \sin \left( {a - \theta }\right)  - \sin a}\right)  \cdot  \left( {2\sin \left( {a - \theta }\right) \sin \theta ,2\sin \left( {a - \theta }\right) \cos \theta }\right)  =  - \dfrac{1}{2}$ 
+        
+        整理得: $\cos {2a} =  - \dfrac{1}{2}$ 且
+        ${2a} \in  \lbrack 0,{2\pi }),\therefore a = \dfrac{\pi }{3}$ 或 $a = \dfrac{2\pi }{3},$
+        
+        综上,当 $a = \dfrac{\pi }{3},\left| {\sin \left( {a - \theta }\right) }\right|  = \dfrac{1}{2}$ 时, $\theta  = \dfrac{\pi }{6}$ 或 $\theta  = \dfrac{\pi }{2}$ ;
+        当 $a = \dfrac{2\pi }{3},\left| {\sin \left( {a - \theta }\right) }\right|  = \dfrac{1}{2}$ 时, $\theta  = \dfrac{5\pi }{6}$ 或 $\theta  = \dfrac{\pi }{2}$ ;
+        
+        所以 $\theta$ 的所有可能值为 $\dfrac{\pi }{6},\dfrac{\pi }{2},\dfrac{5\pi }{6}$ .
+    \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\clearpage
+
+\subsection*{等差数列 (4)}
+
+\zsd{等差数列的求和公式}
+
+
+
+\begin{enumerate}
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中,已 ${a}_{3} : {a}_{5} = 3 : 4$ ,则 ${S}_{9} : {S}_{5}$ 的值为\blkda{$12:5$}.
+    
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n},6{S}_{5} - 5{S}_{3} = 5,{a}_{4} =$ \blkda{$\dfrac{1}{3}$}.
+
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 中,若前 6 项和为 36 ,前 $n$ 项和为 324 ,且 ${S}_{n - 6} = {144}$ ,则 $n =$ \blkda{18}.
+
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 的前 $m$ 项和为 30 ,前 ${2m}$ 项和为 70 ,则前 ${3m}$ 项和为\blkda{120}.
+
+    
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 和 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和分别为 ${S}_{n}$ 和 ${T}_{n}$ ,且 $\dfrac{{S}_{n}}{{T}_{n}} = \dfrac{{7n} + 1}{{4n} + {27}}\left( {n \in  {N}^{ * }}\right)$，则 $\dfrac{{a}_{11}}{{b}_{11}} =$ \blkda{$\dfrac{4}{3}$}.
+
+    \item 已知 $\left\{  {a}_{n}\right\}$ 为等差数列,且 ${a}_{n - {99}} + {a}_{n - {98}} + \cdots  + {a}_{n - 1} + {a}_{n} = A,{a}_{1} + {a}_{2} + \cdots  + {a}_{100} = B$ , $\left( {n > {100},n \in  {N}^{ * }}\right)$ ,则 ${S}_{n}$ 等于\blkda{$\dfrac{A+B}{200}n$}.
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 前 $n$ 项和 ${S}_{n}$ 满足 ${S}_{n} = \dfrac{1}{2}n\left( {n + 3}\right) ,n \in  {n}^{ \star  }$ ,则数列 $\left\{  \dfrac{1}{n{a}_{n}}\right\}$ 的前 2020 项和为\blkda{$\dfrac{2020}{2021}$}.
+    \begin{jieda}
+        因为数列 $\left\{  {a}_{n}\right\}$ 前 $n$ 项和 ${S}_{n}$ 满足 ${S}_{n} = \dfrac{1}{2}n\left( {n + 3}\right)$ ,
+        当 $n \geq  2$ 时, ${a}_{n} = {S}_{n} - {S}_{n - 1} = \dfrac{1}{2}n\left( {n + 3}\right)  - \dfrac{1}{2}\left( {n - 1}\right) \left( {n + 2}\right)  = n + 1$ ；
+        当 $n = 1$ 时, ${a}_{1} = {S}_{1} = \dfrac{1}{2} \times  1 \times  4 = 2$ 满足上式,
+        所以 ${a}_{n} = n + 1$ ；
+        
+        因此 $\dfrac{1}{n{a}_{n}} = \dfrac{1}{n\left( {n + 1}\right) } = \dfrac{1}{n} - \dfrac{1}{n + 1}$ ,
+        所以数列 $\left\{  \dfrac{1}{n\left( {n + 1}\right) }\right\}$ 的前 2020 项和为
+        $\dfrac{1}{1 \times  2} + \dfrac{1}{2 \times  3} + \cdots  + \dfrac{1}{{2020} \times  {2021}} = \left( {1 - \dfrac{1}{2}}\right)  + \left( {\dfrac{1}{2} - \dfrac{1}{3}}\right)  + \cdots  + \left( {\dfrac{1}{2020} - \dfrac{1}{2021}}\right)$
+        $= 1 - \dfrac{1}{2} + \dfrac{1}{2} - \dfrac{1}{3} + \cdots  + \dfrac{1}{2020} - \dfrac{1}{2021} = 1 - \dfrac{1}{2021} = \dfrac{2020}{2021}$ .
+        
+        故答案为： $\dfrac{2020}{2021}$ .
+    \end{jieda}
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的通项公式为 ${a}_{n} = n + 1$ ,记数列 $\left\{  {{a}_{n} - {tn}}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,若 ${S}_{n} \leq  {S}_{10}$ 对任意的 $n \in  {\mathrm{N}}^{ * }$ 恒成立,则实数 $t$ 的取值范围是\blkda{$\left[\dfrac{12}{11}, \dfrac{11}{10}\right]$}.
+    \begin{jieda}
+        令 ${b}_{n} = {a}_{n} - {tn} = \left( {1 - t}\right) n + 1$ ,则 ${b}_{n + 1} - {b}_{n} = 1 - t$ 为常数,
+        所以数列 $\left\{  {b}_{n}\right\}$ 为等差数列,首项为 ${b}_{1} = 2 - t$ .
+        
+        由已知 ${S}_{n} \leq  {S}_{10}$ 对任意的 $n \in  {\mathrm{N}}^{ * }$ 恒成立,
+        可知有 $\left\{  \begin{array}{l} {b}_{10} \geq  0 \\  {b}_{11} \leq  0 \end{array}\right.$ ,即 $\left\{  \begin{array}{l} {10}\left( {1 - t}\right)  + 1 \geq  0 \\  {11}\left( {1 - t}\right)  + 1 \leq  0 \end{array}\right.$
+        
+        解得 $\dfrac{12}{11} \leq  t \leq  \dfrac{11}{10}$
+    \end{jieda}
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = \dfrac{1}{2},\dfrac{n + 1}{n}{a}_{n + 1} = \dfrac{{a}_{n}}{n{a}_{n} + 1}\left( {n \in  {n}^{ * }}\right)$ ,若不等式 $\dfrac{10}{{n}^{2}} + \dfrac{1}{n} + \lambda {a}_{n} \geq  0$对任意的 $n \in  {n}^{ * }$ 都成立,则实数 $\lambda$ 的取值范围是\blkda[2]{$\left\lbrack  {-\dfrac{52}{3}, + \infty }\right)$}.
+    \begin{jieda}
+        由 ${a}_{1} = \dfrac{1}{2},\dfrac{n + 1}{n}{a}_{n + 1} = \dfrac{{a}_{n}}{n{a}_{n} + 1}$ ,可得 $\left( {n + 1}\right) {a}_{n + 1} = \dfrac{n{a}_{n}}{n{a}_{n} + 1}$ 
+        
+        整理得 $\dfrac{1}{\left( {n + 1}\right) {a}_{n + 1}} - \dfrac{1}{n{a}_{n}} = 1,\dfrac{1}{{a}_{1}} = 2$ ,
+        所以数列 $\left\{  \dfrac{1}{n{a}_{n}}\right\}$ 表示首项为 2,公差为 1 的等差数列.
+        
+        $\therefore \dfrac{1}{n{a}_{n}} = 2 + n - 1 = n + 1$ ,则 ${a}_{n} = \dfrac{1}{n\left( {n + 1}\right) }$
+        
+        又由 $\dfrac{10}{{n}^{2}} + \dfrac{1}{n} + \lambda {a}_{n} \geq  0$ 恒成立,即 $\lambda  \geq   - \left( {\dfrac{10}{{n}^{2}} + \dfrac{1}{n}}\right) \left( {{n}^{2} + n}\right)$ ,对 $\forall n \in  {\mathrm{N}}^{ * }$ 恒成立,
+        令 $f\left( n\right)  =  - \left( {\dfrac{10}{{n}^{2}} + \dfrac{1}{n}}\right) \left( {{n}^{2} + n}\right)  =  - \left( {{11} + \dfrac{10}{n} + n}\right)  \leq   - \left( {{11} + 2\sqrt{10}}\right)$ ,
+        当且仅当 $n = \dfrac{10}{n}$ ,即 $n = \sqrt{10}$ 时等号成立.
+        
+        又 $n \in  {\mathrm{N}}^{ * }$ ,
+        当 $n = 3$ 时, $f\left( 3\right)  =  - \dfrac{52}{3}$ ,当 $n = 4$ 时, $f\left( 4\right)  =  - \dfrac{35}{2}$ ,
+        由对勾函数 $y =  - \left( {\dfrac{10}{n} + n}\right)$ 的单调性,得 $f\left( n\right)  \leq   - \dfrac{52}{3}$ ,所以 $\lambda  \geq   - \dfrac{52}{3}$ .
+        所以实数 $\lambda$ 的取值范围是 $\left\lbrack  {-\dfrac{52}{3}, + \infty }\right)$
+    \end{jieda} 
+    
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} =  - {11}$ , ${a}_{5} =  - 3$ 记 ${T}_{n} = {a}_{1}{a}_{2}\ldots {a}_{n}\left( {n = 1,2\ldots }\right)$ ,则数列 $\left\{  {T}_{n}\right\}$\dotfill{(\kh{C})}
+    \xx{有最大项,有最小项}{有最大项,无最小项}{无最大项,有最小项}{无最大项,无最小项}
+    \begin{jieda}
+        依题意可得公差 $d = \dfrac{{a}_{5} - {a}_{1}}{5 - 1} = \dfrac{-3 + {11}}{4} = 2,{a}_{n} = {a}_{1} + \left( {n - 1}\right) d =  - {11} + {2n} - 2 = {2n} - {13}$ ,
+        所以当 $n \leq  6$ 时, ${a}_{n} < 0$ ,当 $n \geq  7$ 时, ${a}_{n} > 0$ 
+        
+        ${T}_{1} =  - {11} < 0,{T}_{2} =  - {11} \times  \left( {-9}\right)  = {99} > 0,{T}_{3} =  - {11} \times  \left( {-9}\right)  \times  \left( {-7}\right)  =  - {693} < 0$ ,
+        ${T}_{4} =  - {11} \times  \left( {-9}\right)  \times  \left( {-7}\right)  \times  \left( {-5}\right)  = {3465} > 0,\;{T}_{5} = {3465} \times  \left( {-3}\right)  =  - {10395} < 0,$
+        ${T}_{6} =  - {10395} \times  \left( {-1}\right)  = {10395} > 0,$
+        
+        又当 $n \geq  6$ 时, ${T}_{n} = {a}_{1}{a}_{2}{a}_{3}{a}_{4}{a}_{5}{a}_{6}\cdots {a}_{n} > 0$ ,且 $\dfrac{{T}_{n + 1}}{{T}_{n}} = \dfrac{{a}_{1}{a}_{2}\cdots {a}_{n + 1}}{{a}_{1}{a}_{2}\cdots {a}_{n}} = {a}_{n + 1} = {2n} - {11} \geq  1$ ,即 ${T}_{n + 1} \geq  {T}_{n}$ ,
+        所以当 $n \geq  6$ 时,数列 $\left\{  {T}_{n}\right\}$ 单调递增
+        
+        所以数列 $\left\{  {T}_{n}\right\}$ 无最大项,数列 $\left\{  {T}_{n}\right\}$ 有最小项 ${T}_{5} =  - {10395}$ .
+    \end{jieda}
+
+    \item 设 $\left\{  {a}_{n}\right\}$ 是等差数列, ${S}_{n}$ 是其前 $n$ 项和,且 ${S}_{5} < {S}_{6},{S}_{6} = {S}_{7} > {S}_{8}$ ,则下列结论错误的是 \dotfill{(\kh{C})}
+    \xx{$d < 0$}{${a}_{7} = 0$}{${S}_{9} > {S}_{5}$}{${S}_{6}$ 与 ${S}_{7}$ 均为 ${S}_{n}$ 的最大值}
+    \begin{jieda}
+        ${S}_{5} < {S}_{6},{S}_{6} = {S}_{7} > {S}_{8} \Longleftrightarrow a_6 > 0, a_7 = 0, a_8 < 0$，易知$A,B,D$正确
+
+        $S_5 = S_8 > S_9$，C错误
+    \end{jieda}
+    
+    \item 将以 2 为首项的偶数数列,按下列方法分组:(2),(4,6),(8,10,12),...,第 $n$ 组有 $n$ 个数,则第 $n$ 组的首项为 \dotfill{(\kh{D})}
+    \xx{${n}^{2} - n$}{${n}^{2} + n + 2$}{${n}^{2} + n$}{${n}^{2} - n + 2$}
+    \begin{jieda}
+        设第 $n$ 组的首项为第$k$个正偶数，则$k = \left(\sum_{i = 1}^{n-1}i\right)+1 = \dfrac{(n-1)n}{2}+1$，故所求值为$(n-1)n+2$.
+    \end{jieda}
+
+    \item 数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = {15},3{a}_{n + 1} = 3{a}_{n} - 2\left( {n \in  {n}^{ * }}\right)$ ,则该数列中相邻两项的乘积是负数的是\dotfill{(\kh{C})}
+    \xx{${a}_{21}{a}_{22}$}{${a}_{22}{a}_{23}$}{${a}_{23}{a}_{24}$}{${a}_{24}{a}_{25}$}
+    \begin{jieda}
+        ${a}_{n + 1} = {a}_{n} - \dfrac{2}{3}$，故$\{a_n\}$是$15$为首项，$-\dfrac{2}{3}$为公差的等差数列，即$a_n = -\dfrac{2n}{3}+\dfrac{47}{3}$严格减，计算可知$a_{23} = \dfrac{1}{3}, a_{24} = -\dfrac{1}{3}$，因此$a_{23}a_{24} < 0$.
+    \end{jieda}
+    
+    \item 已知正数组成的等差数列 $\left\{  {a}_{n}\right\}$ 的前 20 项的和为 100 ,那么 ${a}_{7} \cdot  {a}_{14}$ 的最大值为 \dotfill{(\kh{A})}
+    \xx{25}{50}{100}{不存在}
+
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} =  - {2024}$ ,其前 $n$ 项和为 ${S}_{n}$ ,若 $\dfrac{{S}_{10}}{10} - \dfrac{{S}_{8}}{8} = 2$ ,则 ${S}_{2024} =$ \dotfill{(\kh{C})}
+    \xx{2023}{-2023}{-2024}{2024}
+    
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 和等差数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和分别为 ${S}_{n}$ 和 ${T}_{n}$ ,且 $\dfrac{{S}_{n}}{T_n} = \dfrac{{5n} + {63}}{n + 3}$ ,则使得 $\dfrac{a_n}{b_n}$整数的正整数 $n$ 的个数为 \dotfill{(\kh{B})}
+    \xx{6}{7}{8}{9}
+    \begin{jieda}
+        由于 ${S}_{{2n} - 1} = \dfrac{\left( {{a}_{1} + {a}_{{2n} - 1}}\right) \left( {{2n} - 1}\right) }{2} = \dfrac{2{a}_{n}\left( {{2n} - 1}\right) }{2} = \left( {{2n} - 1}\right) {a}_{n}$
+        
+        所以 $\dfrac{{a}_{n}}{{b}_{n}} = \dfrac{{S}_{{2n} - 1}}{{T}_{{2n} - 1}} = \dfrac{5\left( {{2n} - 1}\right)  + {63}}{{2n} - 1 + 3} = \dfrac{{5n} + {29}}{n + 1} = 5 + \dfrac{24}{n + 1}$ 
+        
+        要使 $\dfrac{{a}_n}{b_n}$ 为整数,则 $n + 1$ 为 24 的因数,由于 $n + 1 \geq  2$ ,故 $n + 1$ 可以为2,3,4,6,8,12,24,故满足条件的正整数 $n$ 的个数为 7 个
+    \end{jieda}
+
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n},$ 若 ${S}_{23} > 0,{S}_{24} < 0$ ,则下列结论正确的是 \dotfill{(\kh{D})}
+    \xx{数列 $\left\{  {a}_{n}\right\}$ 是递增数列}{${a}_{13} > 0$}{当 ${S}_{n}$ 取得最大值时, $n = {13}$}{$\left| {a}_{13}\right|  > \left| {a}_{12}\right|$}
+    \begin{jieda}
+        因为 $\left\{  {a}_{n}\right\}$ 是等差数列,且 ${S}_{23} > 0,{S}_{24} < 0$ ,所以 $\dfrac{{23}\left( {{a}_{1} + {a}_{23}}\right) }{2} = {23}{a}_{12} > 0,\dfrac{{24}\left( {{a}_{1} + {a}_{24}}\right) }{2} = \dfrac{{24}\left( {{a}_{1} + {a}_{24}}\right) }{2} = {12}\left( {{a}_{12} + {a}_{13}}\right)  < 0$ ,
+        即 ${a}_{12} + {a}_{13} < 0$ ,所以 ${a}_{12} > 0,{a}_{13} < 0$ ,且 $\left| {a}_{13}\right|  > \left| {a}_{12}\right|$ ,所以 $\mathrm{B}$ 错误, $\mathrm{D}$ 正确;
+        
+        因为 $d = {a}_{13} - {a}_{12} < 0$ ,所以等差数列 $\left\{  {a}_{n}\right\}$ 是递减数列,所以 A 错误;
+        所以当 $n = {12}$ 时, ${S}_{n}$ 取得最大值,所以 C 错误.
+        故选：D
+    \end{jieda}
+    \item 设 $\left\{  {a}_{n}\right\}$ 是公差不为 0 的无穷等差数列,现有下述两个命题: \ding{172} “对任意正整数 $n$ ,都有 ${a}_{n} < 0$ 成立”是“ $\left\{  {a}_{n}\right\}$ 为严格递减数列”的充分不必要条件； \ding{173}“$\left\{  {a}_{n}\right\}$ 为严格递增数列”是“存在正整数 ${N}_{0}$ ,当 $n > {N}_{0}$ 时,总有 ${a}_{n} > 0\left( {n \in  {\mathrm{N}}^{ * }}\right)$ ”的充要条件.则说法正确的选项是 \dotfill{(\kh{A})}
+    \xx{命题\ding{172}与\ding{173}均为真命题}{命题\ding{172}为真命题,命题\ding{173}为假命题}{命题\ding{172}为假命题,命题\ding{173}为真命题}{命题\ding{172}与\ding{173}均为假命题}
+    \begin{jieda}
+        由等差数列的通项公式 ${a}_{n} = {a}_{1} + \left( {n - 1}\right) d$ ,不妨设 $f\left( n\right)  = d\left( {n - 1}\right)  + {a}_{1}$ .
+        \begin{dingautolist}{172}
+            \item “对任意正整数 $n$ ,都有 ${a}_{n} < 0$ 成立” 即 $d < 0$ ,那么 “ $\left\{  {a}_{n}\right\}$ 为严格递减数列”,故是充分条件；当 “ $\left\{  {a}_{n}\right\}$ 为严格递减数列”时,首项不一定为负,所以不是必要条件，故正确
+            \item 由一次函数的图像和性质可得,当 $f\left( n\right)$ 单调递增时,存在 ${n}_{0}$ ,当 $n > {n}_{0}$ 时,总有 $f\left( n\right)  > 0$ 的充要条件,当 $n \in  {\mathrm{N}}^{\prime }$时结论仍成立,故“ $\left\{  {a}_{n}\right\}$ 为严格递增数列”是“存在正整数 ${N}_{0}$ ,当 $n > {N}_{0}$ 时,总有 ${a}_{n} > 0\left( {n \in  {n}^{ * }}\right)$ ”的充要条件，故正确
+        \end{dingautolist}
+    \end{jieda}
+    
+    \item 数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{n} = {21} - {2n}$ ,若 ${b}_{n} = \left| {a}_{n}\right|$ ,求数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n}$ .
+    \begin{jieda}
+        ${T}_{n} = \left\{  \begin{array}{l} {20n} - {n}^{2},1 \leq  n \leq  {10} \\  {n}^{2} - {20n} + {200},n \geq  {11} \end{array}\right. ,n \in  {N}^{ * }$
+    \end{jieda}
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n}$ 满足 ${S}_{n} = {n}^{2} + n$ .
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式,并证明数列 $\left\{  {a}_{n}\right\}$ 是等差数列；
+        \item 已知 ${c}_{n} = \left\{  \begin{matrix} \dfrac{1}{n\left( {n + 2}\right) } & n\text{ 为奇数 } \\  {a}_{n} & n\text{ 为偶数 } \end{matrix}\right.$ ,设数列 $\left\{  {c}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n}$
+        \begin{dingautolist}{172}
+            \item 求 ${T}_{5}$
+            \item 求数列 $\left\{  {c}_{n}\right\}$ 的前 ${2n}$ 项和 ${T}_{2n}$ 
+        \end{dingautolist}
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 当 $n \geq  2$ 时, ${a}_{n} = {S}_{n} - {S}_{n - 1} = \left( {{n}^{2} + n}\right)  - \left\lbrack  {{\left( n - 1\right) }^{2} + n - 1}\right\rbrack   = {2n}$ 
+            
+            当 $n = 1$ 时, ${a}_{1} = {S}_{1} = 2$ ,所以 ${a}_{n} = {2n}$
+        
+            因为 ${a}_{n + 1} - {a}_{n} = 2\left( {n + 1}\right)  - {2n} = 2$ ,所以 $\left\{  {a}_{n}\right\}$ 是以 ${a}_{1} = 2$ 为首项, 2 为公差的等差数列；
+            \item 由 ${c}_{n} = \left\{  \begin{matrix} \dfrac{1}{n\left( {n + 2}\right) } & n\text{ 为奇数 } \\  {a}_{n} & n\text{ 为偶数 } \end{matrix}\right.$,
+            \begin{dingautolist}{172}
+                \item ${T}_{5} = {c}_{1} + {c}_{2} + {c}_{3} + {c}_{4} + {c}_{5} = \dfrac{1}{1 \times  3} + 4 + \dfrac{1}{3 \times  5} + 8 + \dfrac{1}{5 \times  7} = \dfrac{87}{7}$
+                \item 因为 $\dfrac{1}{n\left( {n + 2}\right) } = \dfrac{1}{2}\left( {\dfrac{1}{n} - \dfrac{1}{n + 2}}\right)$ ,
+                所以 ${T}_{2n} = {c}_{1} + {c}_{2} + \cdots  + {c}_{2n} = \left( {{c}_{1} + {c}_{3} + \cdots  + {c}_{{2n} - 1}}\right)  + \left( {{c}_{2} + {c}_{4} + \cdots  + {c}_{2n}}\right)$
+                $= \dfrac{1}{2}\left( {1 - \dfrac{1}{3} + \dfrac{1}{3} - \dfrac{1}{5} + \dfrac{1}{5} - \dfrac{1}{7} + \dfrac{1}{{2n} - 1} - \dfrac{1}{{2n} + 1}}\right)  + 2\left( {2 + 4 + \cdots  + {2n}}\right)$
+                $= \dfrac{1}{2}\left( {1 - \dfrac{1}{{2n} + 1}}\right)  + 2 \times  2 \times  \dfrac{n\left( {n + 1}\right) }{2} = \dfrac{n}{{2n} + 1} + 2{n}^{2} + {2n}.$
+            \end{dingautolist}
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} = 3$ ,通项 ${a}_{n}$ 与前 $n$ 项和 ${S}_{n}$ 之间满足 $2{a}_{n} = {S}_{n}{S}_{n - 1}\left( {n \geq  2}\right)$
+    \begin{enumerate}
+        \item 求证: $\left\{  \dfrac{1}{{S}_{n}}\right\}$ 是等差数列,并求公差;
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式；
+        \item 数列 $\left\{  {a}_{n}\right\}$ 中是否存在正整数 $k$ ,使得不等式 ${a}_{n} > {a}_{n + 1}$ 对任意 $n$ 不小于 $k$ 的正整数都成立? 若存在,求出最小的 $k$ ,若不存在,请说明理由
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $d =  - \dfrac{1}{2}$
+            \item ${a}_{n} = \left\{  \begin{array}{ll} 3, & n = 1 \\  \dfrac{18}{\left( {5 - {3n}}\right) \left( {8 - {3n}}\right) }, & n \geq  2 \end{array}\right.$
+            \item ${k}_{\min } = 3$
+        \end{enumerate}
+    \end{jieda}
+
+    \item 设数列 $\left\{  {a}_{n}\right\}$ 的通项公式为 ${a}_{n} = {pn} + q\left( {n \in  {N}^{ * },P > 0}\right)$ . 数列 $\left\{  {b}_{n}\right\}$ 定义如下: 对于正整数 $m,{b}_{m}$ 是使得不等式 ${a}_{n} \geq  m$ 成立的所有 $n$ 中的最小值.
+    \begin{enumerate}
+        \item 若 $p = \dfrac{1}{2},q =  - \dfrac{1}{3}$ ,求 ${b}_{3}$ ；
+        \item 若 $p = 2,q =  - 1$ ,求数列 $\left\{  {b}_{m}\right\}$ 的前 ${2m}$ 项和公式;
+        \item 是否存在 $p$ 和 $q$ ,使得 ${b}_{m} = {3m} + 2\left( {m \in  {N}^{ * }}\right)$ ? 如果存在,求 $p$ 和 $q$ 的取值范围；如果不存在, 请说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item ${b}_{3} = 7$
+            \item ${S}_{2m} = {m}^{2} + {2m}$
+            \item $p = \dfrac{1}{3},q \in  \left\lbrack  {-\dfrac{2}{3}, - \dfrac{1}{3}}\right)$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+
+\section*{等比数列}
+\subsection*{等比数列 (1)}
+\zsd 等比数列的概念和性质
+
+
+定义：如果一个数列从第 \blkda{2}项起，每一项与其前一项的 \blkda{比} 都等于\blkda[2]{同一常数}，这个数列就叫做等比数列，而这个常数叫做等比数列的  \blkda{公比} ．公差通常用小写字母 \blkda{$q$} 表示$q\neq 0$. 等比数列的递推公式\blkda[4]{$a_n=a_{n-1}q$}.
+
+A组：
+\begin{enumerate}
+    \item 2 与 8 的等比中项是\blkda{$\pm 4$}．
+    
+    \item $a_n=a_{n-1} \cdot q(q \neq 0, n=2,3,4, \cdots)$ 是数列 $\left\{a_n\right\}$ 成等比数列的 \blkda[2]{必非充}条件．
+    
+    \item ＂$G=\sqrt{a b}$＂是＂ G 是 $a, b$ 的等比中项＂的 \blkda[4]{既不充分也非必要}条件． 
+    
+    \item 在等比数列 $\left\{a_n\right\}$ 中，$a_2=5, a_4=\frac{1}{5}$ ，则 $a_1=$ \blkda{$\pm 25$}．
+    
+    \item 已知等比数列 $\left\{a_n\right\}$ 中，$a_1+a_2=2, a_3+a_4=4$ ，则 $a_5+a_6=$ \blkda{8}  ．
+    
+\end{enumerate}
+
+B组：
+\begin{enumerate}
+    \item 已知 $\left\{a_n\right\}$ 为等比数列，$a_2 a_4 a_5=a_3 a_6, a_9 a_{10}=-8$ ，则 $a_7=$\blkda{$2$}.
+    
+    \item 在等比数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} + {a}_{2} + {a}_{3} = {26},{a}_{4} - {a}_{1} = {52}$ ,则 ${a}_{n} =$ \blkda{$2 \cdot 3^{n-1}$}.
+    
+    \item 设 $a + {\log }_{2}3,a + {\log }_{4}3,a + {\log }_{8}3$ 成等比数列,则此数列的公比为\blkda{$\dfrac{1}{3}$}.
+    
+    \item 在 6 和 16 之间插入两个数,使前三个数成等差数列,后三个数成等比数列,则这两个数为\blkda[3]{$9, 12$或$1, -4$}.
+    
+    \item 若互不相等的实数 $a,b,c$ 成等差数列, $c,a,b$ 成等比数列,且 $a + {3b} + c = {10}$ ,则 $a =$ \blkda{-4}.
+    
+    
+    \item 记等比数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项的和为 ${S}_{n}$ ,已知 ${S}_{4} = 1,{S}_{8} = {17}$ ,则 ${a}_{11} =$ \blkda[2]{$-\dfrac{1024}{5}$或$\dfrac{1024}{15}$}.
+    
+    \item 下列数列中必是等比数列的是 \dotfill{(\kh{A})}
+    \xx{$\tan {20}^{ \circ  }$ , tan ${45}^{ \circ  }$ , tan ${70}^{ \circ  }$}{$c,c,c$}{$a,\sqrt{ab},b$}{$\sin \theta ,\dfrac{\sin {2\theta }}{2},\cos \theta \left( {\theta  \in  \left( {0,\dfrac{\pi }{2}}\right) }\right)$}
+    
+    \item 设 $x \in  R$ ,记不超过 $x$ 的最大整数为 $\left\lbrack  x\right\rbrack$ ,令 $\{ x\}  = x - \left\lbrack  x\right\rbrack$ ,则 $\left\{  \dfrac{\sqrt{5} + 1}{2}\right\}  ,\left\lbrack  \dfrac{\sqrt{5} + 1}{2}\right\rbrack  ,\dfrac{\sqrt{5} + 1}{2}$ \dotfill{(\kh{B})}
+    \xx{是等差数列但不是等比数列}{是等比数列但不是等差数列}{既是等差数列又是等比数列}{既不是等差数列也不是等比数列}
+    
+    
+    \item 设 $\left\{  {a}_{n}\right\}$ 是各项为正数的无穷数列, ${A}_{i}$ 是边长为 ${a}_{i},{a}_{i + 1}$ 的矩形面积 $\left( {i = 1,2,\cdots }\right)$ ,则 $\left\{  {A}_{n}\right\}$ 为等比数列的充要条件为\dotfill{(\kh{D})}
+    \xx{$\left\{  {a}_{n}\right\}$ 是等比数列}{${a}_{1},{a}_{3},\cdots ,{a}_{{2n} - 1},\cdots$ 或 ${a}_{2},{a}_{4},\cdots ,{a}_{2n},\cdots$ 是等比数列}{${a}_{1},{a}_{3},\cdots ,{a}_{{2n} - 1},\cdots$ 和 ${a}_{2},{a}_{4},\cdots ,{a}_{2n},\cdots$ 均是等比数列}{${a}_{1},{a}_{3},\cdots ,{a}_{{2n} - 1},\cdots$ 和 ${a}_{2},{a}_{4},\cdots ,{a}_{2n},\cdots$ 均是等比数列,且公比相同}
+    
+    \item 已知 $a = {243},b = 3,c$ 是 $a,b$ 的等比中项.
+    \begin{enumerate}
+        \item 若 $d$ 和 $e$ 分别是 $a,c$ 和 $c,b$ 的等差中项,求 $a + b + c + d + e$ ；
+        \item 若 $d$ 和 $e$ 分别是 $a,c$ 和 $c,b$ 的等比中项,求 $a + b + c + d + e$ .
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 423或315
+            \item 363或183或345或201
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 等比数列 $\left\{  {a}_{n}\right\}$ ,公比 $q \neq  1$ ,用 ${S}_{n \rightarrow  m}$ 表示这个数列从第 $\mathrm{n}$ 项到第 $\mathrm{m}$ 项的和
+    \begin{enumerate}
+        \item 证明: ${S}_{1 \rightarrow  3},{S}_{4 \rightarrow  6},{S}_{7 \rightarrow  9}$ 成等比数列.
+        \item 证明: ${S}_{1 \rightarrow  k},{S}_{k + 1 \rightarrow  {2k}},{S}_{{2k} + 1 \rightarrow  {3k}},\ldots$ 是等比数列.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item ${S}_{1 \rightarrow  3} = {a}_{1}\left( {1 + q + {q}^{2}}\right) ,{S}_{4 \rightarrow  6} = {a}_{4}\left( {1 + q + {q}^{2}}\right) ,{S}_{7 \rightarrow  9} = {a}_{7}\left( {1 + q + {q}^{2}}\right)$
+            
+            因为 ${a}_{n}$ 为等比数列,则 ${a}_{4}^{2} = {a}_{1}{a}_{7}$ ,则 ${S}_{1 \rightarrow  3}{S}_{7 \rightarrow  9} = {S}_{4 \rightarrow  6}^{2}$ ,成等比数列
+            \item  ${S}_{1 \rightarrow  k} = {a}_{1}\left( {1 + q + \cdots  + {q}^{k - 1}}\right) ,{S}_{k + 1 \rightarrow  {2k}} = {a}_{k + 1}\left( {1 + q + \cdots  + {q}^{k - 1}}\right)$ ,
+
+            ${S}_{{2k} + 1 \rightarrow  {3k}} = {a}_{{2k} + 1}\left( {1 + q + \cdots  + {q}^{k - 1}}\right)$
+
+            因为 ${a}_{n}$ 为等比数列,则 ${a}_{k + 1}^{2} = {a}_{1}{a}_{{2k} + 1}$ ,则 ${S}_{1 \rightarrow  k}{S}_{{2k} + 1 \rightarrow  {3k}} = {S}_{k + 1 \rightarrow  {2k}}^{2}$ ,成等比数列
+
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 若 $\left\{  {a}_{n}\right\}  ,\left\{  {b}_{n}\right\}$ 是等比数列
+    
+    \begin{enumerate}
+        \item $\left\{  {{a}_{n}{b}_{n}}\right\}$ 是否是等比数列? 请说明理由.
+        \item 若 $\left\{  {a}_{n}\right\}  ,\left\{  {b}_{n}\right\}$ 的公比不同, $\left\{  {{a}_{n} + {b}_{n}}\right\}$ 是否是等比数列? 若 $\left\{  {a}_{n}\right\}  ,\left\{  {b}_{n}\right\}$ 的公比相同并且 ${a}_{1} + {b}_{1} \neq  0,\left\{  {{a}_{n} + {b}_{n}}\right\}$ 是否是等比数列? 请说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 是,用定义证明即可
+            \item $\dfrac{a_{n+1}+b_{n+1}}{a_n+b_n} = \dfrac{q_a \cdot a_n + q_b \cdot b_n}{a_n+b_n} = q_a + \dfrac{(q_b - q_a)b_n}{a_n+b_n} = q_a + \dfrac{q_b - q_a}{1 + \dfrac{a_n}{b_n}} = q_a + \dfrac{q_b - q_a}{1 + \left(\dfrac{a_1}{b_1}\right) \cdot \left(\dfrac{q_a}{q_b}\right)^{n-1}}$
+
+            当$q_a \neq q_b$时，比值不是常数，当$q_a = q_b$时比值为常数. 因此前者不是，后者是.
+        \end{enumerate}
+    \end{jieda}
+
+\end{enumerate}
+
+
+
+\subsection*{等比数列 (2)}
+\zsd 等比数列求和公式
+
+A组：
+\begin{enumerate}
+    \item 若等比数列 $\left\{a_n\right\}$ 的前 $n$ 项和为 $S_n$ ，且 $a_1=1, a_4=\frac{1}{8}$ ，求 $S_{10}=$ \blkda{$\frac{1023}{512}$}
+
+    \item 有 4 个数, 前 3 个数成等比数列, 它们和为 19 , 后 3 个数成等差数列, 他们和为 12 , 则这 4 个数分别为\blkda[4]{9 6 4 2 或者25 -10 4 18}.
+
+    \item 已知 $S_n$ 是实数等比数列 $\left\{a_n\right\}$ 前 $n$ 项和，则在数列 $\left\{S_n\right\}$ 中\dotfill{}(\kh{B})\xx{必有一项为零}{可能有无穷多项为零}{至多一项为零}{任何一项均不为零}
+
+
+    \item 在等比数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 2$ ,前 $n$ 项和为 ${S}_{n}$ ,若数列 $\left\{  {{a}_{n} + 1}\right\}$ 也是等比数列,则${S}_{n} =$ \blkda{$2n$}.
+
+    \item 等比数列 $\left\{a_n\right\}$ 中，$a_1=1, a_5=4 a_3$ ．
+    \begin{enumerate}
+        \item 求 $\left\{a_n\right\}$ 的通项公式；
+        \item 记 $S_n$ 为 $\left\{a_n\right\}$ 的前 $n$ 项和．若 $S_m=63$ ，求 $m$ ．
+    \end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $a_n=2^{n-1}$或$a_n=(-2)^{n-1}$
+        \item 若$q=2$,$m=6$；$q=-2$,无解.
+    \end{enumerate}
+\end{jieda}
+
+\end{enumerate}
+
+
+B组：
+\begin{enumerate}
+\item 在等比数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = \dfrac{1}{2},{a}_{4} =  - 4$ ,则公比 $q =$ \blkda{-2}，$\left| {a}_{1}\right|  + \left| {a}_{2}\right|  + \ldots  + \left| {a}_{n}\right|  =$ \blkda{$2^{n-1}-\dfrac{1}{2}$}.
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 为等比数列, ${a}_{1} = 2$ ,公比 $q =  - \dfrac{1}{2},{S}_{n} = \dfrac{21}{16}$ ,则 $n =$ \blkda{6}.
+    
+    \item 等比数列 $\left\{  {a}_{n}\right\}$ 中已知 ${a}_{1} + {a}_{2} + {a}_{3} = 8,{a}_{4} + {a}_{5} + {a}_{6} =  - 4$ ,则 ${S}_{15} =$ \blkda{5.5}.
+    
+    \item 若数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} = \dfrac{3}{2}{a}_{n} - 3$ ,则这个数列的通项公式是\blkda{$2 \times 3^n$}.
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} = {2}^{n} - 1$ ,则数列 $\left\{  {a}_{n}^{2}\right\}$ 的前 $n$ 项和等于\blkda{$\dfrac{1}{3}(4^n-1)$}.
+    
+    \item 已知 $\left\{  {a}_{n}\right\}$ 是等比数列, ${a}_{2} = 2,{a}_{5} = \dfrac{1}{4}$ ,则 ${a}_{1}{a}_{2} + {a}_{2}{a}_{3} + \cdots  + {a}_{n}{a}_{n + 1} =$ \blkda[2]{$\dfrac{32}{3}(1-4^{-n})$}.
+
+    \item 已知 $\left\{  {a}_{n}\right\}$ 是由正数组成的等比数列, ${S}_{n}$ 表示 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项的和,若 ${a}_{1} = 3,{a}_{2}{a}_{4} = {144}$ , 则 ${S}_{5}$ 的值是\blkda{93}.
+    
+    \item 若等比数列 $\left\{  {a}_{n}\right\}$ 的公比 $q < 0$ ,前 $n$ 项和为 ${S}_{n}$ ,则 ${S}_{8}{a}_{9}$ 和 ${S}_{9}{a}_{8}$ 的大小关系是 \dotfill{(\kh{A})}     
+    \xx{${S}_{8}{a}_{9} > {S}_{9}{a}_{8}$}{${S}_{8}{a}_{9} < {S}_{9}{a}_{8}$}{${S}_{8}{a}_{9} = {S}_{9}{a}_{8}$}{无法确定}
+
+    \item 已知正项等比数列 $\left\{a_n\right\}$ 的公比不是 1，则\dotfill{}(\kh{A})\xx{$\boldsymbol{a}_2+\boldsymbol{a}_8>\boldsymbol{a}_3+\boldsymbol{a}_7$ }{$\boldsymbol{a}_2+\boldsymbol{a}_8<\boldsymbol{a}_3+\boldsymbol{a}_7$}{仅当 $q>1$ 时，$a_2+a_8>a_3+a_7$ }{仅当 $0<q<1$ 时，$a_2+a_8>a_3+a_7$}
+
+    \item 已知等比数列 $\left\{a_n\right\}$ 中，$a_n>0$ ，公比 $q \neq 1$ ，则\dotfill{}(\kh{A})\xx{$a_3^2+a_7^2>a_4^2+a_6^2$}{$a_3^2+a_7^2<a_4^2+a_6^2$}{$a_3^2+a_7^2=a_4^2+a_6^2$}{$a_3^2+a_7^2$ 与 $a_4^2+a_6^2$ 的大小不确定}
+
+    \item 等比数列 $\left\{  {a}_{n}\right\}$ 的公比 $q > 1$ ,第 19 项的平方等于第 26 项,求使${a}_{1} + {a}_{2} + \cdots  + {a}_{n} > \dfrac{1}{{a}_{1}} + \dfrac{1}{{a}_{2}} + \ldots  + \dfrac{1}{{a}_{n}}$ 成立的 $n$ 的范围是 \dotfill{(\kh{D})}     
+    \xx{$1 \leq  n \leq  {22}$}{$n \geq  {23}$}{$1 \leq  n \leq  {23}$}{$n \geq  {24}$}
+
+
+    \item 设 $y = f\left( x\right)$ 是一次函数,若 $f\left( 0\right)  = 1$ ,且 $f\left( 1\right)$ , $f\left( 4\right)$ , $f\left( {13}\right)$ 成等比数列，求 $f\left( 2\right)  + f\left( 4\right)  + \cdots  + f\left( {2n}\right)$
+    \begin{jieda}
+        $n(2n+3)$
+    \end{jieda}
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,且 ${S}_{n} = 1 - {a}_{n}$ .
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式；
+        \item 求数列 $\left\{  {{a}_{n}{S}_{n}}\right\}$ 的前 $n$ 项和 ${T}_{n}$ .
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $a_n = \left(\dfrac{1}{2}\right)^n$
+            \item $T_n = \dfrac{1}{3}\left(\dfrac{1}{4}\right)^n-\left(\dfrac{1}{2}\right)^n+\dfrac{2}{3}$
+        \end{enumerate}
+    \end{jieda}
+
+    \item 
+    \begin{enumerate}
+        \item 求和 $1 + \left( {1 + 2}\right)  + \left( {1 + 2 + 4}\right)  + \cdots  + \left( {1 + 2 + 4 + \cdots  + {2}^{n - 1}}\right)$
+        \item 求和 $1 + {2a} + 3{a}^{2} + \cdots  + n{a}^{n - 1}\left( {a \neq  1}\right)$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $2^{n+1}-2-n$
+            \item $\dfrac{1-a^n}{(1-a)^2} - \dfrac{na^n}{1-a}$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item
+    \begin{enumerate}
+        \item 数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和记为 ${S}_{n}$ ,已知 ${a}_{1} = 1,{a}_{n + 1} = \dfrac{n + 2}{n}{S}_{n}\left( {n = 1,2,3,\cdots }\right)$ ,求证: 数列 $\left\{  \dfrac{{S}_{n}}{n}\right\}$ 是等比数列;
+        \item 设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项的和为 ${S}_{n},{S}_{1} = 1,{S}_{2} = 2$ ,且
+
+        ${S}_{n + 1} - 3{S}_{n} + 2{S}_{n - 1} = 0\left( {n \geq  2\text{ 且 }n \in  {n}^{ * }}\right)$ ,判断数列 $\left\{  {a}_{n}\right\}$ 是不是等比数列.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\dfrac{S_{n+1}}{n+1} = 2 \dfrac{S_n}{n}$
+            \item $a_{n+1} = 2a_n, n \geq 2, a_1 = a_2 = 1$不是等比数列.
+        \end{enumerate}
+    \end{jieda}
+
+    \item 
+    \begin{enumerate}
+        \item 在数列 $\left\{  {a}_{n}\right\}$ 和 $\left\{  {b}_{n}\right\}$ 中, ${a}_{1} = 2,3{a}_{n + 1} - {a}_{n} = 0,{b}_{n}$ 是 ${a}_{n}$ 与 ${a}_{n + 1}$ 的等差中项,求 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n}$
+        \item 在等比数列 $\left\{  {a}_{n}\right\}$ 中,已知 ${a}_{1} = 2,{a}_{4} = {16}$ ,求数列 $\left\{  {a}_{n}\right\}$ 的通项公式；若 ${a}_{3}\text{ 、 }{a}_{5}$ 分别为等差数列 $\left\{  {b}_{n}\right\}$ 的第 3 项和第 5 项,试求数列 $\left\{  {b}_{n}\right\}$ 的通项公式及前 $n$ 项和 ${S}_{n}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $S_n = 2 - \dfrac{2}{3^n}$
+            \item $b_n = 12n-28, S_n = 6n^2-22n$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+    C组：
+    \begin{enumerate}
+        \item 已知定义在 $R$ 上的函数 $f\left( x\right)$ ,对任意实数 ${x}_{1},{x}_{2}$ 都有$f\left( {{x}_{1} + {x}_{2}}\right)  = 1 + f\left( {x}_{1}\right)  + f\left( {x}_{2}\right)$ ,且 $f\left( 1\right)  = 1$ .
+    \begin{enumerate}
+        \item 若对任意正整数 $n$ ,有 ${a}_{n} = f\left( \dfrac{1}{{2}^{n}}\right)  + 1$ ,求 ${a}_{1}$ 、 ${a}_{2}$ 的值,并证明 $\left\{  {a}_{n}\right\}$ 为等比数列；
+        \item 设对任意正整数 $n$ ,有 ${b}_{n} = \dfrac{1}{f\left( n\right) }$ . 若不等式${b}_{n + 1} + {b}_{n + 2} + \cdots  + {b}_{2n} > \dfrac{6}{35}{\log }_{2}\left( {x + 1}\right)$ 对任意不小于 2 的正整数 $n$ 都成立,求实数 $x$ 的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item ${a}_{1} = 1,{a}_{2} = \dfrac{1}{2}$
+            
+            令 ${x}_{1} = {x}_{2} = \dfrac{1}{{2}^{n + 1}},f\left( \dfrac{1}{{2}^{n}}\right)  = 1 + {2f}\left( \dfrac{1}{{2}^{n + 1}}\right) ,f\left( \dfrac{1}{{2}^{n}}\right)  + 1 = 2\left\lbrack  {1 + f\left( \dfrac{1}{{2}^{n + 1}}\right) }\right\rbrack$，即 ${a}_{n} = 2{a}_{n + 1}$ ,则 $\{a_n\}$ 为等比数列.
+
+            \item 令 ${x}_{1} = n,{x}_{2} = 1,f\left( {n + 1}\right)  = 1 + f\left( 1\right)  + f\left( n\right)$，则 $f\left( {n + 1}\right)  = f\left( n\right)  + 2$ ,则 $f\left( n\right)  = {2n} - 1,{b}_{n} = \dfrac{1}{{2n} - 1}$
+
+            记 $g\left( n\right)  = {b}_{n + 1} + \cdots  + {b}_{2n}$ 易证 $g\left( n\right)$ 严格递增,则 $g{\left( n\right) }_{\min } = g\left( 2\right)  = \dfrac{12}{25}$
+            
+            解不等式 $\dfrac{6}{35}{\log }_{2}\left( {x + 1}\right)  < \dfrac{12}{35}$ 得 $x \in  \left( {-1,3}\right)$
+        \end{enumerate}
+    \end{jieda}
+    
+    \end{enumerate}
+
+
+
+
+    
+
+
+
+
+
+
+    
+    
+    
+    \item 已知 $x > 0,y > 0,x,a,b,y$ 成等差数列, $x,c,d,y$ 成等比数列,则 $\dfrac{{\left( a + b\right) }^{2}}{cd}$ 的最小值是\blkda{4}.
+    
+    
+    
+
+    
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 中首项为 ${a}_{1}$ ,公差为 $d\left( {0 < d < {2\pi }}\right) ,\left\{  {\cos {a}_{n}}\right\}$ 成等比数列,则公比 $q =$ \blkda{-1}.
+    
+
+
+    \item 已知等比数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{n} > 0,n = 1,2,\cdots$ ,且 ${a}_{5} \cdot  {a}_{{2n} - 5} = {2}^{2n}\left( {n \geq  3}\right)$ ,则当 $n \geq  1$ 时,${\log }_{2}{a}_{1} + {\log }_{2}{a}_{3} + \cdots  + {\log }_{2}{a}_{{2n} - 1} =$ \dotfill{(\kh{C})}     
+    
+    \xx{$n\left( {{2n} - 1}\right)$}{${\left( n + 1\right) }^{2}$}{ ${n}^{2}$}{${\left( n - 1\right) }^{2}$}
+
+    \item 已知正项等比数列 $\left\{  {a}_{n}\right\}$ 的公比不是 1,则 \dotfill{(\kh{A})}     
+    \xx{${a}_{2} + {a}_{8} > {a}_{3} + {a}_{7}$}{${a}_{2} + {a}_{8} < {a}_{3} + {a}_{7}$}{仅当 $q > 1$ 时, ${a}_{2} + {a}_{8} > {a}_{3} + {a}_{7}$}{仅当 $0 < q < 1$ 时, ${a}_{2} + {a}_{8} > {a}_{3} + {a}_{7}$}
+    
+    \item 已知等比数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{n} > 0$ ,公比 $q \neq  1$ ,则\dotfill{(\kh{A})}     
+    \xx{${a}_{3}^{2} + {a}_{7}^{2} > {a}_{4}^{2} + {a}_{6}^{2}$}{${a}_{3}^{2} + {a}_{7}^{2} < {a}_{4}^{2} + {a}_{6}^{2}$}{${a}_{3}^{2} + {a}_{7}^{2} = {a}_{4}^{2} + {a}_{6}^{2}$}{${a}_{3}^{2} + {a}_{7}^{2}$ 与 ${a}_{4}^{2} + {a}_{6}^{2}$ 的大小不确定}
+    
+    \item 若 $a,b,c$ 成等比数列,其中 $0 < a < b < c,n$ 是大于 1 的整数,那么 ${\log }_{a}n,{\log }_{b}n,{\log }_{c}n$ 组成的数列是 \dotfill{(\kh{D})}     
+    \xx{等比数列}{等差数列}{每项的倒数成等比数列}{每项的倒数成等差数列}
+    
+    \item 7 个数排成一行,奇数项成等差数列,偶数项成等比数列,且奇数项之和与偶数项之积的差为 42 ,首尾两项与中间项的和为 27 ,求中间项.
+    \begin{jieda}
+        $2$
+    \end{jieda}
+    
+    \item 在等比数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} + {a}_{6} = {11}$ , ${a}_{3} \cdot  {a}_{4} = \dfrac{32}{9}$ ,且 $\dfrac{2}{3}{a}_{2},{a}_{3}{}^{2},{a}_{4} + \dfrac{4}{9}$ 依次成等差数列, 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式.
+    \begin{jieda}
+        $\dfrac{1}{3}2^{n-1}$
+    \end{jieda}
+    
+    
+
+
+\subsection*{等比数列 (3)}
+\zsd 等比数列综合
+\begin{enumerate}
+    \item 设 $\left\{  {a}_{n}\right\}$ 是公比为 $q$ 的等比数列, $\left| q\right|  > 1$ ,令 ${b}_{n} = {a}_{n} + 1\left( {n = 1,2,\cdots }\right)$ ,若数列 $\left\{  {b}_{n}\right\}$ 有连续四项在集合 $\{  - {53}, - {23},{19},{37},{82}\}$ 中,则 ${6q} =$ \blkda{-9}.
+    
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{2} = 3,{a}_{5} = {31}$ ,又数列 $\left\{  \dfrac{1}{{a}_{n} + 1}\right\}$ 是等比数列,数列 $\left\{  {a}_{n}\right\}$ 的通项公式是\blkda{$2^n-1$}.
+
+    \item 已知数列$\{a_n\}$是等比数列，公比为$q$，则下列数列一定是等比数列的是\blkda{\ding{172}\ding{175}\ding{176}}\\
+    \ding{172} $\{a_n a_{n+1}\}$；\ding{173} $\{a_n+a_{n+1}\}$；\ding{174} $\{a_n-a_{n+1}\}$；\ding{175} $\left\{\dfrac{1}{a_n}\right\}$；\ding{176} $\{a_n^2\}$；\ding{177} $\{a_n + 6\}$
+    \begin{jieda}
+        \ding{172}\ding{175}\ding{176}可以通过定义证明其符合等比数列的定义，而\ding{173}\ding{174}\ding{177}在$\{a_n\}$为常数列的时候可能会是全零的数列而不是等比数列.
+    \end{jieda}
+    
+    \item 在等比数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{n} > 0$ , ${a}_{2}{a}_{4} + 2{a}_{3}{a}_{5} + {a}_{4}{a}_{6} = {25}$ ,则 ${a}_{3} + {a}_{5} =$ \blkda{5}.
+
+    \item 设等比数列 $\left\{  {a}_{n}\right\}$ 的公比 $q = \dfrac{1}{2}$ ,前 $n$ 项和为 ${S}_{n}$ ,则 $\dfrac{{S}_{4}}{{a}_{4}} =$ \blkda{15}.
+
+    \item 设等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,则 ${S}_{4},{S}_{8} - {S}_{4},{S}_{12} - {S}_{8},{S}_{16} - {S}_{12}$ 成等差数列. 类比以上结论有: 设等比数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项积为 ${T}_{n}$ ,则 ${T}_{4}$ ,\blkda{$\dfrac{T_8}{T_4}$},\blkda{$\dfrac{T_{12}}{T_{8}}$}, $\dfrac{{T}_{16}}{{T}_{12}}$ 成等比数列.
+
+    \item 设 ${a}_{1} = 2,{a}_{n + 1} = \dfrac{2}{{a}_{n} + 1},{b}_{n} = \left| \dfrac{{a}_{n} + 2}{{a}_{n} - 1}\right| ,n \in  {N}^{ * }$ ,则数列 $\left\{  {b}_{n}\right\}$ 的通项公式 ${b}_{n} =$ \blkda{$2^{n+1}$}.
+
+    \item 在 $\dfrac{1}{n}$ 和 $n + 1$ 之间插入 $n$ 个正数,使这 $n + 2$ 个数依次成等比数列,则所插入的 $n$ 个数之积为\blkda{$\left(1+\dfrac{1}{n}\right)^{\frac{n}{2}}$}.
+
+     \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 中公差 $d \neq  0,{a}_{1} = 1$ ,若 ${a}_{1},{a}_{2},{a}_{5}$ 成等比数列,且 ${a}_{1},{a}_{2},{a}_{{k}_{1}},{a}_{{k}_{2}},\ldots {a}_{{k}_{n}},\ldots$ 成等比数列,若对任意 $n \in  {N}^{ * }$ ,恒有 $\dfrac{{a}_{n}}{2{k}_{n} - 1} \leq  \dfrac{{a}_{m}}{2{k}_{m} - 1}\left( {m \in  {N}^{ * }}\right)$ ,则 $m =$ \blkda{1或2}.
+
+    \item 等比数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${\mathbf{S}}_{n}$ ,且 $4{a}_{1},2{a}_{2},{a}_{3}$ 成等差数列。若 ${a}_{1} = 1$ ,则 ${S}_{4} =$ \blkda{$15$}.
+
+
+    \item 设 $\left\{  {a}_{n}\right\}$ 是公差不为 0 的等差数列, ${a}_{1} = 2$ 且 ${a}_{1},{a}_{3},{a}_{6}$ 成等比数列,则 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} =$ \dotfill{(\kh{A})}     
+    \xx{$\dfrac{{n}^{2}}{4} + \dfrac{7n}{4}$}{$\dfrac{{n}^{2}}{3} + \dfrac{5n}{3}$}{$\dfrac{{n}^{2}}{2} + \dfrac{3n}{4}$}{${n}^{2} + n$} .
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} = 2 + \left( {n - 1}\right) {\left( \dfrac{1}{2}\right) }^{n - 1}\left( {n \in  {N}^{ * }}\right)$ ,则存在数列 $\left\{  {x}_{n}\right\}  ,\left\{  {y}_{n}\right\}$ , 使得: \dotfill{(\kh{D})}     
+    \xx{${a}_{n} = {x}_{n} + {y}_{n},n \in  {N}^{ * }$ ,其中 $\left\{  {x}_{n}\right\}  ,\left\{  {y}_{n}\right\}$ 为等差数列}{${a}_{n} = {x}_{n}{y}_{n},n \in  {N}^{ * }$ ,其中 $\left\{  {x}_{n}\right\}  ,\left\{  {y}_{n}\right\}$ 为等比数列}{${a}_{n} = {x}_{n} + {y}_{n},n \in  {N}^{ * }$ ,其中 $\left\{  {x}_{n}\right\}$ 为等差数列, $\left\{  {y}_{n}\right\}$ 为等比数列}{${a}_{n} = {x}_{n}{y}_{n},n \in  {N}^{ * }$ ,其中 $\left\{  {x}_{n}\right\}$ 为等差数列, $\left\{  {y}_{n}\right\}$ 为等比数列}
+
+    \item 已知数列 $\left\{  {\lg {a}_{n}}\right\}$ 为等差数列,且它的第 $m$ 项为 $l$ ,第 $l$ 项为 $m\left( {m \neq  l}\right)$ ,求数列 $\left\{  {a}_{n}\right\}$ 的前 $m + l$ 项之和.
+    \begin{jieda}
+        $\dfrac{10^{m+l} - 1}{9}$
+    \end{jieda}
+
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 1$ , ${a}_{2} = r\left( {r > 0,r \neq  1}\right)$ ,且数列 $\left\{  {{a}_{n}{a}_{n + 1}}\right\}$ 是公比为 $q(q > 0$ 且 $q \neq  1)$ 的等比数列,又 ${b}_{n} = {a}_{{2n} - 1} - {a}_{2n}\left( {n \in  {N}^{ * }}\right)$ .
+    \begin{enumerate}
+        \item 求数列 $\left\{  {b}_{n}\right\}$ 的通项公式及其前 $n$ 项和为 ${S}_{n}$ 
+        \item 设对任意 $n > 1$ 都有 ${S}_{n} > {b}_{n}$ ,求 $r$ 的取值范围
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $b_n = (1-r)q^{n-1}, S_n = (1-r) \cdot \dfrac{1-q^n}{1-q}$
+            \item $r \in (0, 1)$
+        \end{enumerate}
+    \end{jieda}
+
+     \item 若满足 ${a}_{1} = a\left( {a > 0\text{ 且 }a \neq  1}\right)$ ,且对于任意的 $m,n \in  {\mathbb{N}}^{ * }$ ,都有 ${a}_{m + n} = {a}_{m} \cdot  {a}_{n}$ , 则称数列 $\left\{  {a}_{n}\right\}$ 为指数数列.
+    \begin{enumerate}
+        \item 已知数列 $\left\{  {a}_{n}\right\}  ,\left\{  {b}_{n}\right\}$ 的通项公式分别为 ${a}_{n} = 3 \cdot  {2}^{n - 1},{b}_{n} = {3}^{n}$ ,试判断 $\left\{  {a}_{n}\right\}  ,\left\{  {b}_{n}\right\}$ 是否为指数数列(需说明理由)；
+        \item 若数列 $\left\{  {a}_{n}\right\}$ 满足: ${a}_{1} = 2,{a}_{2} = 4,{a}_{n + 2} = 3{a}_{n + 1} - 2{a}_{n}$ ,求证: $\left\{  {a}_{n}\right\}$ 是指数数列； * (3) 若数列 $\left\{  {a}_{n}\right\}$ 是指数数列, ${a}_{1} = \dfrac{t + 3}{t + 4}\left( {t \in  {\mathbb{N}}^{ * }}\right)$ ,求证: 数列 $\left\{  {a}_{n}\right\}$ 中任意三项都不能构成等差数列.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+        \item  $\left\{  {a}_{n}\right\}$ 不是, $\left\{  {b}_{n}\right\}$ 是
+        \item 证明 ${a}_{n} = {2}^{n}$ ,然后便易知是指数数列
+        \item 反证法. 易知 ${a}_{n} = {\left( \frac{t + 3}{t + 4}\right) }^{n}$ ,若存在 $n < q < m$ 使得 ${\left( \frac{t + 3}{t + 4}\right) }^{n} + {\left( \frac{t + 3}{t + 4}\right) }^{m} = 2{\left( \frac{t + 3}{t + 4}\right) }^{q}$ ,两边同时乘以 ${\left( t + 4\right) }^{m}$ ,并移项可得 ${\left( t + 3\right) }^{m} = 2{\left( t + 3\right) }^{q}{\left( t + 4\right) }^{m - q} - {\left( t + 3\right) }^{n}{\left( t + 4\right) }^{m - n}$ ,此时左侧是 $t + 4$ 的倍数而右侧不是,矛盾.
+
+        \end{enumerate}
+    \end{jieda}
+
+     \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = \dfrac{1}{2}$ ,对任意 $m\text{ 、 }p \in  {\mathrm{N}}^{ * }$ 都有 ${a}_{m + p} = {a}_{m} \cdot  {a}_{p}$ .
+
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}  \left( {n \in  {N}^{ * }}\right)$ 的递推公式；
+        \item 数列 $\left\{  {b}_{n}\right\}$ 满足 ${a}_{n} = \dfrac{{b}_{1}}{2 + 1} - \dfrac{{b}_{2}}{{2}^{2} + 1} + \dfrac{{b}_{3}}{{2}^{3} + 1} -  + \cdots  + {\left( -1\right) }^{n + 1}\dfrac{{b}_{n}}{{2}^{n} + 1}\left( {n \in  {\mathrm{N}}^{ * }}\right)$ ,求数列 $\left\{  {b}_{n}\right\}$ 的通项公式
+        \item 设 ${c}_{n} = {2}^{n} + \lambda {b}_{n}$ ,问是否存在实数 $\lambda$ 使得数列 $\left\{  {c}_{n}\right\}  \left( {n \in  {\mathrm{N}}^{ * }}\right)$ 是单调递增数列? 若存在, 求出 $\lambda$ 的取值范围; 若不存在,请说明你的理由.
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}
+        \item ${a}_{n + 1} = \dfrac{1}{2}{a}_{n},n \geq  1$
+        \item 首先算出 ${b}_{1} = \dfrac{3}{2}$ . 作差 ${a}_{n} - {a}_{n - 1} = {\left( -1\right) }^{n + 1} \cdot  \dfrac{{b}_{n}}{{2}^{n} + 1},n \geq  2$ ,因此 ${b}_{n} = {\left( -1\right) }^{n} \cdot  \dfrac{{2}^{n} + 1}{{2}^{n}},n \geq$2. 
+        
+        发现 $n = 1$ 的情况不符合这个通项公式,因此 ${b}_{n} = \left\{  \begin{matrix} \dfrac{3}{2},n = 1 \\  {\left( -1\right) }^{n} \cdot  \dfrac{{2}^{n} + 1}{{2}^{n}},n \geq  2 \end{matrix}\right.$
+
+        \item $\lambda  \in  \left\lbrack  {-\dfrac{128}{35},\dfrac{32}{19}}\right\rbrack$
+    \end{enumerate}
+    \end{jieda}
+    
+    
+    \item （选做）定义满足以下两个条件的有穷数列 ${a}_{1},{a}_{2},\cdots ,{a}_{n}$ 为 $n\left( {n = 2,3,4,\cdots }\right)$ 阶 “期待数列”: ① ${a}_{1} + {a}_{2} + {a}_{3} + \cdots  + {a}_{n} = 0$ ；② $\left| {a}_{1}\right|  + \left| {a}_{2}\right|  + \left| {a}_{3}\right|  + \cdots  + \left| {a}_{n}\right|  = 1$ .
+    
+    \begin{enumerate}
+        \item 若数列 $\left\{  {a}_{n}\right\}$ 的通项公式是 ${a}_{n} = \dfrac{1}{2018} \cdot  \sin \dfrac{\left( {{2n} - 1}\right) \pi }{2}\left( {n = 1,2,\cdots ,{2018}}\right)$ ,试判断数列 $\left\{  {a}_{n}\right\}$ 是否为 2018 阶 “期待数列”,并说明理由；
+        \item 若等比数列 $\left\{  {b}_{n}\right\}$ 为 ${2k}\left( {k \in  {N}^{ * }}\right)$ 阶 “期待数列”,求公比 $q$ 及数列 $\left\{  {b}_{n}\right\}$ 的通项公式;
+        \item 若一个等差数列 $\left\{  {c}_{n}\right\}$ 既是 ${2k}\left( {k \in  {N}^{ * }}\right)$ 阶 “期待数列” 又是严格递减数列,求该数列的通项公式.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 是
+            \item $q = -1, b_n = \dfrac{1}{2k}(-1)^{n-1}, b_n = -\dfrac{1}{2k}(-1)^{n-1}$
+            \item $c_n = \dfrac{2k-1}{2k^2} + (n-1)\left(-\dfrac{1}{k^2}\right) = \dfrac{2k-2n+1}{2k^2}$
+        \end{enumerate}
+    \end{jieda}
+    
+\end{enumerate}
+
+
+\section*{数列的通项公式}
+\subsection*{数列的通项公式}
+\zsd 数列通项
+
+A组：
+\begin{enumerate}
+
+    \item 在数列 $\left\{a_n\right\}$ 中，已知 $a_1=1, a_2=3, a_{n+2}=a_{n+1}-a_n\left(n \in N^*\right)$ ，则 $a_6=$\blkda{$-2$}．
+
+    \item 已知数列 $a_1=1, a_1 a_2 a_3 \cdots a_n=n^2\left(n \in N^*\right)$ ，则 $a_4+a_6=$\blkda{$\frac{724}{225}$}．
+
+    \item 已知数列 $\left\{a_n\right\}$ 中，$a_1=1, n \geq 2$ 时，$a_n=a_{n-1}+2 n-1, a_n=$\blkda{$n^3$} ．
+
+    \item 数列 $\left\{a_n\right\}$ 中，$a_1=3$ 且 $a_{n+1}=a_n^2$（ $n$ 是正整数），则数列的通项公式 $a_n=$ \blkda{$3^{2^{n-1}}$}．
+
+    \item 已知数列 $\left\{a_n\right\}$ 的递推公式为 $\frac{a_n}{a_{n-1}}=\frac{n+1}{n-1}\left(n \geq 2, n \in N^*\right), a_1=1$ ，则通项公式$a_n=$\blkda{$\frac{1}{2}n(n+1)$}
+
+    \item 数列 $\left\{a_n\right\}$ 中 $a_1=2, a_{n+1}=3 a_n+2$（ $n$ 是正整数），则数列的通项公式$a_n=$\blkda{$3^n-1$}.
+
+    \item 已知数列 $\left\{a_n\right\}$ 的前 $n$ 项和 $S_n=n^2+n+1$ ，则数列 $\left\{a_n\right\}$ 的通项公式为 \blkda[3]{$\left\{\begin{array}{ll}
+         3, & n = 1 \\
+         2n, & n \geq 2
+    \end{array}\right.$}．
+
+    \item 若数列 $\left\{a_n\right\}$ 满足 $a_1=2, a_{n+1}=\dfrac{1+a_n}{1-a_n}\left(n \in N^*\right)$ ，则该数列的前 2017 项的乘积$a_1 a_2 a_3 \cdots a_{2017}=$\blkda{$2$}.
+
+    \item 已知数列 1, $- 1,1, - 1,\cdots$ ,则下列各式中,不能作为它的通项公式的是\dotfill{(\kh{D})}     
+    \xx{${a}_{n} = {\left( -1\right) }^{n - 1}$}
+    {${a}_{n} = \sin \dfrac{\left( {{2n} - 1}\right) \pi }
+    {2}$}
+    {${a}_{n} = \left\{ \begin{array}{ll}
+                        1 & \left( {n\text{ 为奇数 }}\right) \\   
+                        -1 & \left( {n\text{ 为偶数}}\right)
+                        \end{array} \right.$}
+    {${a}_{n} = \left( -1\right)^n$}
+
+    \end{enumerate}
+
+B组：
+\begin{enumerate}
+
+    \item 已知数列 $1,0, - \dfrac{1}{3},0,\dfrac{1}{5},0, - \dfrac{1}{7},0\cdots$ 试写出其一个通项公式\blkda[7]{$a_n = \left\{\begin{array}{ll}
+         (-1)^{\frac{n-1}{2}} \cdot \dfrac{1}{n}, & n = 2k-1, k \in \mathbf{N^*} \\
+         0, & n = 2k, k \in \mathbf{N^*}
+    \end{array}\right.$}.
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = 1,{a}_{n + 1} = \dfrac{{a}_{n}}{3{a}_{n} + 1}$ ,则 ${a}_{n} =$ \blkda{$\dfrac{1}{3n-2}$}.
+
+    \item 数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 1$ ,对所有的 $n \geq  2$ 都有 ${a}_{1}{a}_{2}{a}_{3}\cdots {a}_{n} = {n}^{2}$ ,则 ${a}_{n} =$ \blkda[3]{$\left\{\begin{array}{ll}
+         1, & n = 1 \\
+         \dfrac{n^2}{(n-1)^2}, & n \geq 2
+    \end{array}\right.$}.
+
+    \item 数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 2,{a}_{n + 1} - {a}_{n} = {3n},n \in  {N}^{ * }$ ,则数列 $\left\{  {a}_{n}\right\}$ 的通项公式 ${a}_{n} =$ \blkda[3]{$\dfrac{3}{2}n^2-\dfrac{3}{2}n+2$}.
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}  ,{a}_{1} = 1,{a}_{n + 1} = \dfrac{2}{3}{a}_{n} + 1$ ,则 ${a}_{n} =$ \blkda[2]{$3-3\cdot \left(\dfrac{2}{3}\right)^n$}.
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} + 2{a}_{2} + 3{a}_{3} + \cdots  + n{a}_{n} = \left( {n + 1}\right) \left( {n + 2}\right) ,n \in  {N}^{ * }$ ,则 $\left\{  {a}_{n}\right\}$ 的通项公式为\blkda[4]{$a_n = \left\{\begin{array}{ll}
+         6, & n = 1 \\
+         2+\dfrac{2}{n}, & n \geq 2
+    \end{array}\right.$}. 
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 0$ , ${a}_{2} = 2$ , ${a}_{n + 1} + {a}_{n - 1} = 2\left( {{a}_{n} + 1}\right) \left( {n \geq  2}\right)$ ,则 $\left\{  {a}_{n}\right\}$ 的通项公式为\blkda{$n^2-n$}. 
+
+    \item 设数列 $\left\{a_n\right\}$ 是首项为 1 的正项数列，且 $(n+1) a_{n+1}^2-n a_n^2+a_{n+1} \cdot a_n=0$ ，则它的通项公式 $a_n=$\blkda{$\frac{1}{n}$}．
+
+    \item 数列 $\left\{a_n\right\}$ 的 $a_1=1, \vec{a}=\left(n, a_n\right), \vec{b}=\left(a_{n+1}, n+1\right)$ ，且 $\vec{a} \perp \vec{b}$ ，则 $a_{100}=$ \blkda{$2$}．
+
+    \item 设数列 $\left\{a_n\right\}$ 满足 $\left\{\begin{array}{l}a_1=3, a_2=5 \\ a_{n+2}=a_{n+1}-a_n\end{array}\right.$ ，则 $a_{2019}=$\blkda{2}．
+
+    \item 数列 $\left\{a_n\right\}$ 中，若 $a_1=2, a_{n+1}=2 a_n+3$ ，则 $a_{10}=$\blkda{2557}．
+
+    \item 已知数列 $\left\{a_n\right\}$ 满足：$a_1=1, a_{n+1}=\sin \left(\frac{\pi}{2} \cdot a_n\right)+1$ ，则 $a_6=$ \blkda{2}．
+
+    \item 已知 $a_1=1, a_n=n\left(a_{n+1}-a_n\right)$ ，则数列 $\left\{a_n\right\}$ 的通项公式 $a_n=$\blkda{$n$}．
+
+    \item 若数列 $\left\{a_n\right\}$ 满足 $a_1=\frac{1}{2}$ 且 $a_{n+1}=\frac{a_n+(2-\sqrt{3})}{1-(2-\sqrt{3}) a_n}$ ，则 $a_{2018}$ 为\blkda{$\frac{5\sqrt{3}-6}{3}$}．
+
+    \item 求满足下列关系的数列的通项公式:
+    \begin{enumerate}
+        \item ${a}_{1} = 2,{a}_{n + 1} = 2{a}_{n} + {3}^{n + 1}$
+        \item ${a}_{1} = 2,{a}_{n} = \sqrt{{a}_{n - 1}}$
+        \item ${a}_{2} = 6,\left( {n - 1}\right) {a}_{n + 1} = \left( {n + 1}\right) \left( {{a}_{n} - 1}\right)$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $a_n = 3^{n+1}-7\cdot2^{n-1}$
+            \item $a_n = 2^\frac{1}{{2^{n-1}}}$
+            \item $a_n = 2n^2-n$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 求数列 $1,2 + 3,4 + 5 + 6,7 + 8 + 9 + {10},\cdots$ ,的一个通项公式.
+    \begin{jieda}
+        $a_n = \dfrac{n^3+n}{2}$
+    \end{jieda}
+
+    \item 若数列 $\left\{a_n\right\}$ 满足条件 $a_{n+1}=\left\{\begin{array}{ll}2 a_n, & 0 \leq a_n<\frac{1}{2} \\ 2 a_n-1, & \frac{1}{2} \leq a_n<1\end{array}\right.$ 且 $a_1=\frac{6}{7}$ ．
+    \begin{enumerate}
+        \item 求它的前 4 项的值；
+        \item 求 $a_{2017}$ 的值．
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $a_1=\frac{6}{7}, a_2=\frac{5}{7}, a_3=\frac{3}{7}, a_4=\frac{6}{7}$
+            \item $a_{2017}=\frac{6}{7}$
+        \end{enumerate}
+    \end{jieda}
+
+
+
+
+    \item 设数列 $\left\{  {a}_{n}\right\}$ 的首项为 1,前 $n$ 项和为 ${S}_{n}$ ,满足关系: ${3t}{S}_{n} - \left( {{2t} + 3}\right) {S}_{n - 1} = {3t}\left( {t > 0,n \geq  2,n \in  N}\right)$  
+    \begin{enumerate}
+        \item 求证:数列 $\left\{  {a}_{n}\right\}$ 是等比数列
+        \item 设数列 $\left\{  {a}_{n}\right\}$ 的公比为 $f\left( t\right)$ ,作数列 $\left\{  {b}_{n}\right\}$ ,使 ${b}_{1} = 1,{b}_{n} = f\left( \dfrac{1}{{b}_{n - 1}}\right) \;\left( {n = 2,3,4\cdots }\right)$ ,求 $\left\{  {b}_{n}\right\}$ 的通项公式
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $q = \dfrac{2t+3}{3t}$
+            \item $b_n = \dfrac{2}{3}n+\dfrac{1}{3}$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 数列 $\left\{  {a}_{n}\right\}$ 中, ${S}_{n} = 4{a}_{n - 1} + 1\left( {n \geq  2}\right)$ 且 ${a}_{1} = 1$ 
+    \begin{enumerate}
+        \item 若 ${b}_{n} = {a}_{n + 1} - 2{a}_{n}$ ,求证:数列 $\left\{  {b}_{n}\right\}$ 是等比数列
+        \item 若 ${c}_{n} = \dfrac{{a}_{n}}{{2}^{n}}$ ,求证:数列 $\left\{  {c}_{n}\right\}$ 是等差数列
+        \item 求 $\left\{  {a}_{n}\right\}$ 的通项公式
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $b_n = 2^n$
+            \item $c_n = \dfrac{n}{2}$
+            \item $a_n = n \cdot 2^{n-1}$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+    C组：
+    \begin{enumerate}
+        \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足: ${a}_{1} = \dfrac{1}{2},\dfrac{3\left( {1 - {a}_{n + 1}}\right) }{1 - {a}_{n}} = \dfrac{2\left( {1 + {a}_{n}}\right) }{1 + {a}_{n + 1}}$ ,数列 ${b}_{n} = 1 - {a}_{n}^{2}$ ,数列${c}_{n} = {a}_{n + 1}^{2} - {a}_{n}^{2}\left( {n \in  {N}^{ * }}\right) .$
+    \begin{enumerate}
+        \item 证明数列 $\left\{  {b}_{n}\right\}$ 是等比数列
+        \item 求数列 $\left\{  {c}_{n}\right\}$ 的通项公式
+        \item 是否存在数列 $\left\{  {c}_{n}\right\}$ 的不同项 ${c}_{i},{c}_{j},{c}_{k}\left( {i < j < k}\right)$ ,使之成为等差数列？若存在请求出这样的不同项 ${c}_{i},{c}_{j},{c}_{k}\;\left( {i < j < k}\right)$ ; 若不存在,请说明理由
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $b_n = \dfrac{9}{8} \cdot \left(\dfrac{2}{3}\right)^n$
+            \item $c_n = \dfrac{3}{8} \cdot \left(\dfrac{2}{3}\right)^n$
+            \item 不存在
+        \end{enumerate}
+    \end{jieda}
+    \end{enumerate}
+
+    
+
+
+   
+
+\section*{数列求和}
+\subsection*{数列求和}
+A组：
+\begin{enumerate}
+    \item 若数列 $ \left\{  {a}_{n}\right\} $ 为等差数列,且 $ {a}_{2} = 2,{S}_{5} = {20} $ ,则该数列的前 $ n $ 项和为 $ {S}_{n} = $ \blkda{ $ n\left( {n - 1}\right) $}
+    \item $ {Sn} = \dfrac{1}{2} + \dfrac{1}{2} + \dfrac{3}{8} + \ldots  + \dfrac{n}{{2}^{n}} =  $ \dotfill{(\kh{B})}
+    \xx{$ \dfrac{{2}^{n} - n - 1}{{2}^{n}} $}{$ \dfrac{{2}^{n + 1} - n - 2}{{2}^{n}} $}{$ \dfrac{{2}^{n} - n + 1}{{2}^{n}} $}{$ \dfrac{{2}^{n + 1} - n + 2}{{2}^{n}} $}
+    \item 若 $ f\left( x\right)  + f\left( {1 - x}\right)  = 2,{a}_{n} = f\left( 0\right)  + f\left( \dfrac{1}{n}\right)  + f\left( \dfrac{2}{n}\right)  + \ldots  + f\left( \dfrac{n - 1}{n}\right)  + f\left( 1\right) \left( {n \in  {N}^{ * }}\right) $ ,则数列 $ \left\{  {a}_{n}\right\} $ 的通项公式是\blkda[2]{${a}_{n} = n + 1 $}.
+
+\end{enumerate}
+B组：
+\begin{enumerate}
+    \item 5+55+555+5555+…=\blkda[4]{$\dfrac{50}{81} \cdot  {10}^{n} - \dfrac{50}{81} - \dfrac{5}{9}n$} (前 n 项和的表达式)
+    
+    \item 数列 $\dfrac{1}{1 + 2},\dfrac{1}{1 + 2 + 3},\dfrac{1}{1 + 2 + 3 + 4},\cdots$ 的前 $n$ 项之和为\blkda{$\dfrac{n}{n + 2}$}.
+
+    \item 设 $S = {\sin }^{2}{1}^{ \circ  } + {\sin }^{2}{2}^{ \circ  } + {\sin }^{2}{3}^{ \circ  } + \cdots \cdots  + {\sin }^{2}{89}^{ \circ  }$ ,则 $S =$ \blkda{$\dfrac{89}{2}$}.
+
+    \item 设 $S = {1}^{2} - {2}^{2} + {3}^{2} - {4}^{2} + \cdots  + {\left( -1\right) }^{n - 1}{n}^{2}\;\left( {n \in  {N}^{ * }}\right)$ ,则 $S =$ \blkda[3]{${\left( -1\right) }^{n + 1}\dfrac{{n}^{2} + n}{2}$}.
+
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中,已知 ${a}_{1} =  - {20},{a}_{n + 1} = {a}_{n} + 4$ ,则 $\left| {a}_{1}\right|  + \left| {a}_{2}\right|  + \left| {a}_{3}\right|  + \cdots \left| {a}_{20}\right|  =$ \blkda{480}
+
+    \item 已知 ${c}_{n} = \left( {{2n} - 1}\right)  \cdot  {4}^{n - 1}\;\left( {n \in  {N}^{ * }}\right)$ ,则数列 $\left\{  {c}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n} =$ \blkda[4]{$\dfrac{2n}{3} \cdot  {4}^{n} - \dfrac{5}{9} \cdot  {4}^{n} + \dfrac{5}{9}$}.
+
+    \item 设 $m \in  {N}^{ * },{\log }_{2}m$ 的整数部分用 $F\left( m\right)$ 表示,则 $F\left( 1\right)  + F\left( 2\right)  + F\left( 3\right) \cdots  + F\left( {1024}\right)  =$\blkda{8204}.
+
+    \item 已知函数 $f\left( x\right)  = \dfrac{1}{2 + {4}^{x}}$ ,令 ${a}_{n} = f\left( \dfrac{n}{k}\right) \left( {k \in  {N}^{ * }}\right) ,n = 1,2,3,\cdots ,k$ ,则数列 $\left\{  {a}_{n}\right\}$ 的前 $k$ 项和 ${S}_{k} =$\blkda{$\dfrac{k}{4} - \dfrac{1}{12}$}.
+    
+    \item 已知数列$\{a_n\}$满足$a_1 = \dfrac{3}{2}, a_{n+1} = \dfrac{3a_n}{a_n+3}$，若$c_n = \dfrac{3^n}{a_n}$，则$c_1 + c_2 + \cdots + c_n = $\blkda[3]{$\dfrac{(2n+1)\cdot3^n-1}{4}$}
+
+    \item 数列 $1,\left( {1 + 2}\right) ,\left( {1 + 2 + {2}^{2}}\right) ,\cdots ,\left( {1 + 2 + {2}^{2} + \cdots  + {2}^{n - 1}}\right)$ 的前 $n$ 项和是\blkda[3]{${2}^{n + 1} - n - 2$}
+
+    \item 数列 $ \left\{  {b}_{n}\right\} $ 满足 $ {b}_{n + 1} = \dfrac{{b}_{n}}{2} + \dfrac{1}{{2}^{n + 1}} $ ,若 $ {b}_{1} = \frac{1}{2} $ ,则 $ \left\{  {b}_{n}\right\} $ 的前 $ n $ 项和为 \dotfill{(\kh{C})}
+    \xx{$ 1 - \dfrac{n + 2}{{2}^{n + 1}} $}{$ 1 - \dfrac{n + 1}{{2}^{n + 1}} $}{$ 2 - \dfrac{n + 2}{{2}^{n}} $}{$ 2 - \dfrac{{3n} + 3}{{2}^{n + 1}} $}
+
+    \item 已知函数 $ f\left( x\right)  = \dfrac{2}{1 + {x}^{2}}\left( {x \in  R}\right) $ ,若等比数列 $ \left\{  {a}_{n}\right\} $ 满足 $ {a}_{1}{a}_{2020} = 1 $ ,则
+    $ f\left( {a}_{1}\right)  + f\left( {a}_{2}\right)  + f\left( {a}_{3}\right)  + \cdots + f\left( {a}_{2020}\right)  = $ \blkda{2020}.
+    \begin{jieda}
+        $ \because f\left( x\right)  = \dfrac{2}{1 + {x}^{2}}\left( {x \in  R}\right) ,\;\therefore f\left( x\right)  + f\left( \dfrac{1}{x}\right)  = \dfrac{2}{1 + {x}^{2}} + \dfrac{2}{1 + {\left( \dfrac{1}{x}\right) }^{2}} = \dfrac{2}{1 + {x}^{2}} + \dfrac{2{x}^{2}}{{x}^{2} + 1} = 2 $ .
+        
+        $ \because $ 数列 $ \left\{  {a}_{n}\right\} $ 为等比数列,且 $ {a}_{1} \cdot  {a}_{2020} = 1,\therefore {a}_{1}{a}_{2020} = {a}_{2}{a}_{2019} = {a}_{3}{a}_{2018} = \mathrm{L} = {a}_{2020}{a}_{1} = 1 $ .
+        $ \therefore f\left( {a}_{1}\right)  + f\left( {a}_{2020}\right)  = f\left( {a}_{2}\right)  + f\left( {a}_{2019}\right)  = f\left( {a}_{3}\right)  + f\left( {a}_{2018}\right)  = \mathrm{L} = f\left( {a}_{2020}\right)  + f\left( {a}_{1}\right)  = 2 $ ,
+        $ \therefore $ 由倒序求和可得 $ f\left( {a}_{1}\right)  + f\left( {a}_{2}\right)  + f\left( {a}_{3}\right)  + \cdots + f\left( {a}_{2020}\right)  = {2020} $ .
+    \end{jieda}
+
+    
+    \item 已知 $ {S}_{n} $ 是等差数列 $ \left\{  {a}_{n}\right\} $ 的前 $ n $ 项和, $ \left\{  {a}_{n}\right\} $ 的公差 $ d > 0,{a}_{2} = \frac{3}{2},{a}_{3} $ 是 $ {a}_{1} $ 与 $ {S}_{5} $ 的等比中项,设
+    $ {b}_{n} = \dfrac{1}{\left( {{2n} + 1}\right) {a}_{n}} $ ,则 $ \left\{  {b}_{n}\right\} $ 的前 2022 项和为\blkda{$\dfrac{4044}{4045}$}
+    
+    \begin{jieda}
+        由等差数列的前 $ n $ 项和公式得 $ {S}_{5} = \dfrac{5\left( {{a}_{1} + {a}_{5}}\right) }{2} = 5{a}_{3} $ 
+        
+        因为 $ {a}_{3} $ 是 $ {a}_{1} $ 与 $ {S}_{5} $ 的等比中项,所以 $ {a}_{3}^{2} = {a}_{1}{S}_{5} $ ,即 $ {a}_{3}^{2} = 5{a}_{1}{a}_{3} $ 
+        
+        因为 $ d > 0,{a}_{2} = \dfrac{3}{2} $ ,所以 $ {a}_{3} > 0 $ ,所以 $ {a}_{3} = 5{a}_{1} = {a}_{1} + {2d} $ ,即 $ d = 2{a}_{1} $
+    
+        因为 $ {a}_{2} = \dfrac{3}{2} = {a}_{1} + d = 3{a}_{1} $ ,所以 $ {a}_{1} = \dfrac{1}{2},d = 1 $
+        所以 $ {a}_{n} = \dfrac{1}{2} + \left( {n - 1}\right)  = n - \dfrac{1}{2} = \dfrac{{2n} - 1}{2} $
+        所以 $ {b}_{n} = \dfrac{1}{\left( {{2n} + 1}\right) {a}_{n}} = \dfrac{2}{\left( {{2n} - 1}\right) \left( {{2n} + 1}\right) } = \dfrac{1}{{2n} - 1} - \dfrac{1}{{2n} + 1} $
+        
+        所以 $ \left\{  {b}_{n}\right\} $ 的前 $ n $ 项和 $ {T}_{n} = {b}_{1} + {b}_{2} + \cdots  + {b}_{n} = 1 - \dfrac{1}{3} + \dfrac{1}{3} - \dfrac{1}{5} + \cdots  + \dfrac{1}{{2n} - 1} - \dfrac{1}{{2n} + 1} = 1 - \dfrac{1}{{2n} + 1} = \dfrac{2n}{{2n} + 1} $
+        
+        所以 $ \left\{  {b}_{n}\right\} $ 的前 2022 项和为 $ {T}_{2022} = \dfrac{2 \times  {2022}}{2 \times  {2022} + 1} = \dfrac{4044}{4045} $
+        \end{jieda}
+
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的通项公式 ${a}_{n} = \left\{  \begin{array}{l} {6n} - 5\left( {n\text{ 为奇数 }}\right) \\  {2}^{n}\left( {n\text{ 为偶数 }}\right)  \end{array}\right.$ ,求数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项的和 ${S}_{n}$ .
+    \begin{jieda}
+    
+        ${S}_{n} = \left\{  {\begin{array}{l} \dfrac{\left( {{3n} - 5}\right) n}{2} + \dfrac{4}{3}\left( {{2}^{n} - 1}\right) ,n = {2k} \\  \dfrac{\left( {{3n} - 2}\right) \left( {n + 1}\right) }{2} + \dfrac{4}{3}\left( {{2}^{n - 1} - 1}\right) ,n = {2k} - 1 \end{array} = \left\{  \begin{array}{l} \dfrac{9{n}^{2} - {15n} + {2}^{n + 3} - 8}{6},n = {2k} \\  \dfrac{9{n}^{2} + {3n} + {2}^{n + 2} - {14}}{6},n = {2k} - 1 \end{array}\right. }\right.$
+    \end{jieda}
+
+    \item 已知数列 $ \left\{  {a}_{n}\right\} $ 的前 $ n $ 项和为 $ {S}_{n},{a}_{1} = 3,\dfrac{{S}_{n}}{n} - \dfrac{{S}_{n - 1}}{n - 1} = 1\left( {n \geq  2}\right) $
+    \begin{enumerate}
+        \item 求数列 $ \left\{  {a}_{n}\right\} $ 的通项公式
+        \item 令 $ {b}_{n} = \dfrac{{a}_{n}}{{2}^{n}} $ ,求数列 $ \left\{  {b}_{n}\right\} $ 的前 $ n $ 项和 $ {T}_{n} $
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由于 $ {a}_{1} = 3,\dfrac{{S}_{n}}{n} - \dfrac{{S}_{n - 1}}{n - 1} = 1\left( {n \geq  2}\right) ,\dfrac{{S}_{1}}{1} = \dfrac{{a}_{1}}{1} = 3 $ ,所以数列 $ \left\{  \dfrac{{S}_{n}}{n}\right\} $ 是首项为 3 ,公差为 1 的等差数列,所以$ \dfrac{{S}_{n}}{n} = n + 2,{S}_{n} = {n}^{2} + {2n} $
+            当 $ n \geq  2 $ 时, $ {S}_{n - 1} = {\left( n - 1\right) }^{2} + 2\left( {n - 1}\right)  = {n}^{2} - 1 $ ,所以 $ {a}_{n} = {S}_{n} - {S}_{n - 1} = {2n} + 1\left( {n \geq  2}\right) $
+            $ {a}_{1} $ 也符合上式,所以 $ {a}_{n} = {2n} + 1 $ .
+            \item $ {b}_{n} = \dfrac{{a}_{n}}{{2}^{n}} = \dfrac{{2n} + 1}{{2}^{n}} $ ,
+            $ {T}_{n} = \dfrac{3}{2} + \dfrac{5}{{2}^{2}} + \cdots  + \dfrac{{2n} + 1}{{2}^{n}},\;\dfrac{1}{2}{T}_{n} = \dfrac{3}{{2}^{2}} + \dfrac{5}{{2}^{3}} + \cdots  + \dfrac{{2n} + 1}{{2}^{n + 1}}, $
+            两式相减得 $ \dfrac{1}{2}{T}_{n} = \dfrac{3}{2} + \dfrac{1}{2} + \dfrac{1}{{2}^{2}} + \cdots  + \dfrac{1}{{2}^{n - 1}} - \dfrac{{2n} + 2}{{2}^{n + 1}} $
+            $ = \dfrac{3}{2} + \dfrac{\dfrac{1}{2}\left( {1 - \dfrac{1}{{2}^{n - 1}}}\right) }{1 - \dfrac{1}{2}} - \dfrac{{2n} + 1}{{2}^{n + 1}} = \dfrac{5}{2} - \dfrac{1}{{2}^{n - 1}} - \dfrac{{2n} + 1}{{2}^{n + 1}} = \dfrac{5}{2} - \dfrac{{2n} + 5}{{2}^{n + 1}}, $
+            所以 $ {T}_{n} = 5 - \dfrac{{2n} + 5}{{2}^{n}} $ .
+        \end{enumerate}
+    \end{jieda}
+    \item 已知数列 $ \left\{  {a}_{n}\right\} $ 各项均为正数,且满足 $ {a}_{1} = 2,{a}_{n + 1}^{2} - 2{a}_{n}^{2} - {a}_{n}{a}_{n + 1} = 0 $ 
+    \begin{enumerate}
+        \item 求证: 数列 $ \left\{  {a}_{n}\right\} $ 为等比数列
+        \item 令 $ {b}_{n} = \left( {n + 2}\right) {a}_{n} $ ,求数列 $ \left\{  {b}_{n}\right\} $ 的前 $ n $ 项和 $ {S}_{n} $
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 $ {a}_{n + 1}^{2} - 2{a}_{n}^{2} - {a}_{n}{a}_{n + 1} = 0 $ ,则 $ \left( {{a}_{n + 1} - 2{a}_{n}}\right) \left( {{a}_{n + 1} + {a}_{n}}\right)  = 0 $ 
+            
+            又 $ {a}_{n} > 0 $ ,所以 $ {a}_{n + 1} - 2{a}_{n} = 0 $ ,即 $ \dfrac{{a}_{n + 1}}{{a}_{n}} = 2 $ ,所以数列 $ \left\{  {a}_{n}\right\} $ 是以 2 为首项,以 2 为公比的等比数列.
+            \item 由(1)得 $ {a}_{n} = {2}^{n} $ ,则 $ {b}_{n} = \left( {n + 2}\right)  \cdot  {2}^{n} $ 
+            
+            $ {S}_{n} = 3 \times  2 + 4 \times  {2}^{2} + 5 \times  {2}^{3} + \cdots  + \left( {n + 2}\right)  \cdot  {2}^{n}, $
+            $ 2{S}_{n} = 3 \times  {2}^{2} + 4 \times  {2}^{3} + 5 \times  {2}^{4} + \cdots  + \left( {n + 2}\right)  \cdot  {2}^{n + 1}, $
+            两式相减得 $ - {S}_{n} = 3 \times  2 + {2}^{2} + {2}^{3} + \cdots  + {2}^{n} - \left( {n + 2}\right)  \cdot  {2}^{n + 1} $
+            $ = 4 + {2}^{1} + {2}^{2} + {2}^{3} + \cdots  + {2}^{n} - \left( {n + 2}\right)  \cdot  {2}^{n + 1} = 4 + \dfrac{2\left( {1 - {2}^{n}}\right) }{1 - 2} - \left( {n + 2}\right)  \cdot  {2}^{n + 1} = 2 - \left( {n + 1}\right)  \cdot  {2}^{n + 1} $
+            即 $ {S}_{n} = \left( {n + 1}\right)  \cdot  {2}^{n + 1} - 2 $ .
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}  ,{a}_{1} = 1,{a}_{n} = {3}^{n - 1} \cdot  {a}_{n - 1}\left( {n \geq  2,n \in  N}\right)$ ,数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项的和${S}_{n} = {\log }_{3}\left( \dfrac{{a}_{n}}{{9}^{n}}\right) \left( {n \in  {N}^{ * }}\right) $
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式
+        \item 求数列 $\left\{  {b}_{n}\right\}$ 的通项公式
+        \item 求数列 $\left\{  \left| {b}_{n}\right| \right\}$ 的前 $n$ 项和 ${T}_{n}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item ${a}_{n} = {3}^{\frac{{n}^{2} - n}{2}}$
+            \item ${b}_{n} = n - 3$
+            \item ${T}_{n} = \left\{  \begin{array}{l} 2,n = 1 \\  3,n = 2 \\  \dfrac{1}{2}{n}^{2} - \dfrac{5}{2}n + 6,n \geq  3 \end{array}\right.$
+
+        \end{enumerate}
+    \end{jieda}
+
+    \item 设数列 $ \left\{  {a}_{n}\right\} $ 的前 $ n $ 项和 $ {S}_{n} $ . 已知 $ {a}_{1} = 1,\dfrac{2{S}_{n}}{n} = {a}_{n + 1} - \dfrac{1}{3}{n}^{2} - n - \dfrac{2}{3},n \in  {N}^{ * } $ 
+    \begin{enumerate}
+        \item 求数列 $ \left\{  {a}_{n}\right\} $ 的通项公式
+        \item 是否对一切正整数 $ n $ ,有 $ \dfrac{1}{{a}_{1}} + \dfrac{1}{{a}_{2}} + \ldots  + \dfrac{1}{{a}_{n}} < \dfrac{5}{3} - \dfrac{1}{n + 1} $ ？说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \item $ \because \dfrac{2{S}_{n}}{n} = {a}_{n + 1} - \dfrac{1}{3}{n}^{2} - n - \dfrac{2}{3} $
+        $ \therefore 2{S}_{n} = n{a}_{n + 1} - \dfrac{1}{3}{n}^{3} - {n}^{2} - \dfrac{2}{3}n = n{a}_{n + 1} - \dfrac{n\left( {n + 1}\right) \left( {n + 2}\right) }{3} $
+        当 $ n \geq  2 $ 时, $ 2{S}_{n - 1} = \left( {n - 1}\right) {a}_{n} - \dfrac{\left( {n - 1}\right) n\left( {n + 1}\right) }{3} $
+        两式做差得 $ 2{a}_{n} = 2{S}_{n} - 2{S}_{n - 1} = n{a}_{n + 1} - \left( {n - 1}\right) {a}_{n} - n\left( {n + 1}\right) $
+        $ \therefore \dfrac{{a}_{n + 1}}{n + 1} - \dfrac{{a}_{n}}{n} = 1,\;\therefore \dfrac{{a}_{n}}{n} = 1 + n - 1 = n $
+        $ \therefore {a}_{n} = {n}^{2}\left( {n \geq  2}\right) $ ,当 $ n = 1 $ 时,上式显然成立, $ \therefore {a}_{n} = {n}^{2} $ .
+
+        \item 证明：当 $ n \geq  3 $ 时, $ \dfrac{1}{{a}_{n}} = \dfrac{1}{{n}^{2}} < \dfrac{1}{{n}^{2} - 1} = \dfrac{1}{2}\left( {\dfrac{1}{n - 1} - \dfrac{1}{n + 1}}\right) $
+        可得
+        $ \dfrac{1}{{a}_{1}} + \dfrac{1}{{a}_{2}} + \ldots  + \dfrac{1}{{a}_{n}} < 1 + \dfrac{1}{4} + \dfrac{1}{2}\left( {\dfrac{1}{2} - \dfrac{1}{4} + \dfrac{1}{3} - \dfrac{1}{5} + \cdots  + \dfrac{1}{n - 2} - \dfrac{1}{n} + \dfrac{1}{n - 1} - \dfrac{1}{n + 1}}\right)  = \dfrac{5}{3} - \dfrac{1}{2}\left( {\dfrac{1}{n} + \dfrac{1}{n + 1}}\right) $ 
+        
+        由
+        $ \dfrac{1}{2}\left( {\dfrac{1}{n} + \dfrac{1}{n + 1}}\right)  - \dfrac{1}{n + 1} = \dfrac{1}{2}\left( {\dfrac{1}{n} - \dfrac{1}{n + 1}}\right)  = \dfrac{1}{{2n}\left( {n + 1}\right) } > 0 $
+        可得 $ \dfrac{1}{2}\left( {\dfrac{1}{n} + \dfrac{1}{n + 1}}\right)  > \dfrac{1}{n + 1} $
+        
+        即有 $ \dfrac{5}{3} - \dfrac{1}{2}\left( {\dfrac{1}{n} + \dfrac{1}{n + 1}}\right)  < \dfrac{5}{3} - \dfrac{1}{n + 1} $
+        则当 $ n \geq  3 $ 时,不等式成立.
+        
+        检验 $ n = 1,2 $ 时,不等式也成立,综上对一切正整数 $n$ ,有 $ \dfrac{1}{{a}_{1}} + \dfrac{1}{{a}_{2}} + \ldots  + \dfrac{1}{{a}_{n}} < \dfrac{5}{3} - \dfrac{1}{n + 1} $ .
+    \end{jieda}
+    
+    \item 在各项为负的非等比数列 $\left\{  {a}_{n}\right\}$ 中,前 $n$ 项和 ${S}_{n} =  - \dfrac{1}{4}{\left( {a}_{n} - 1\right) }^{2}$
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式
+        \item 设 ${b}_{n} = \dfrac{1}{n\left( {3 - {a}_{n}}\right) }\left( {n \in  {N}^{ * }}\right) ,{T}_{n} = {b}_{1} + {b}_{2} + \cdots  + {b}_{n}$ ,是否存在最大的整数 $m$ ,使得对任意的 $n \in  {N}^{ * }$ 均有 ${T}_{n} > \dfrac{m}{32}$ 总成立? 若存在,求出 $m$ ; 若不存在,请说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item ${a}_{n} = 1 - {2n}$ 
+            \item ${T}_{n} = \dfrac{1}{2} - \dfrac{1}{2\left( {n + 1}\right) }$ 最小值为 $\dfrac{1}{4}$ ,从而最大的 $m = 7$
+            
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+C组：
+\begin{enumerate}
+    \item 对于数列 $ \left\{  {a}_{n}\right\}  ,\left\{  {b}_{n}\right\} $ ,设 $ S\left( n\right)  = {a}_{1}{b}_{n} + {a}_{2}{b}_{n - 1} + {a}_{3}{b}_{n - 2} + \ldots {a}_{n}{b}_{1},n \in  {N}^{ * } $ 
+    \begin{enumerate}
+        \item 若 $ {a}_{1} = 2,{a}_{2} = 4 $ ,且 $ S\left( n\right)  = 3 \cdot  {2}^{n + 1} - {4n} - 4 $ ,求 $ {b}_{1},{b}_{2} $
+        \item 若 $ {a}_{n} = {3}^{n},S\left( n\right)  = {3}^{n + 1} - {3n} - 3 $ ,求数列 $ \left\{  {b}_{n}\right\} $ 的通项公式
+        \item 若 $ {a}_{n} = {4}^{n} $ ,存在正整数 $ i\text{、}j\text{、}k\text{、}\lambda \text{、}\mu \left( {i < j < k}\right) $ ,使 $ \lambda {a}_{j},{10}{a}_{i},\mu {a}_{k} $ 成等差数列,求 $ \lambda ,\mu $ 的值
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $ S\left( n\right)  = {a}_{1}{b}_{n} + {a}_{2}{b}_{n - 1} + {a}_{3}{b}_{n - 2} + \ldots {a}_{n}{b}_{1},n \in  {N}^{ * } $ .
+            取 $ n = 1 $ 得到： $ S\left( 1\right)  = {a}_{1}{b}_{1} = 2{b}_{1} = {12} - 4 - 4 = 4,{b}_{1} = 2 $
+            取 $ n = 2 $ 得到： $ S\left( 2\right)  = {a}_{1}{b}_{2} + {a}_{2}{b}_{1} = 2{b}_{2} + 8 = {24} - 8 - 4 = {12},{b}_{2} = 2 $
+            \item $ {a}_{n} = {3}^{n},S\left( n\right)  = {3}^{n + 1} - {3n} - 3 $
+            $ S\left( {n + 1}\right)  = {a}_{1}{b}_{n + 1} + {a}_{2}{b}_{n} + {a}_{3}{b}_{n - 1} + \ldots {a}_{n + 1}{b}_{1} = {a}_{1}{b}_{n + 1} + 3\left( {{a}_{1}{b}_{n} + {a}_{2}{b}_{n - 1} + \ldots {a}_{n}{b}_{1}}\right)  = {a}_{1}{b}_{n + 1} + {3S}\left( n\right) $ 即
+            $ {b}_{n + 1} = \dfrac{S\left( {n + 1}\right)  - {3S}\left( n\right) }{{a}_{1}} = \dfrac{{6n} + 3}{3} = {2n} + 1 $
+            故 $ {b}_{n} = {2n} - 1\left( {n \geq  2}\right) $ 验证 $ n = 1 $ 时, $ {b}_{1} = 1 $ 成立
+            故 $ {b}_{n} = {2n} - 1 $
+            \item $ \lambda {a}_{j},{10}{a}_{i},\mu {a}_{k} $ 成等差数列,即 $ {20}{a}_{i} = \lambda {a}_{j} + \mu {a}_{k} $
+            $ {20} \times  {4}^{i} = \lambda {4}^{j} + \mu {4}^{k}\therefore 5 = \lambda {4}^{j - i - 1} + \mu {4}^{k - i - 1} $
+            $ j - i - 1 \geq  0,k - i - 1 \geq  1 $
+            $ 5 = \lambda {4}^{j - i - 1} + \mu {4}^{k - i - 1} \geq  \lambda  + {4\mu } \geq  5 $
+            即 $ j - i - 1 = 0,k - i - 1 = 1,\lambda  = 1,\mu  = 1 $ 时,等号成立
+            故 $ \lambda  = 1,\mu  = 1 $
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\section*{综合练习}
+\subsection*{综合练习 (1)}
+\begin{enumerate}
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 前 $n$ 项和为 ${S}_{n}$ . 已知 ${a}_{m - 1} + {a}_{m + 1} - {a}_{-m}^{2} = 0,{S}_{{2m} - 1} = {38}$ ,则 $m =$ \blkda{10}.
+    \item 《九章算术》 “竹九节” 问题:现有一根 9 节的竹子,自上而下各节的容积成等差数列，上面 4 节的容积共 3 升,下面 3 节的容积共 4 升,则第 5 节的容积为\blkda{$\dfrac{67}{66}$}升.
+    \begin{jieda}
+    
+        设该容积的等差数列为$\{a_n\}$，故$\left\{\begin{array}{l}
+             a_1+a_2+a_3+a_4 = 3  \\
+             a_7+a_8+a_9 = 4
+        \end{array}\right.$，设公差为$d$，则$\left\{\begin{array}{l}
+             4a_1 + 6d = 3  \\
+             3a_1 + 21d = 4
+        \end{array}\right.$，解得$a_1 = \dfrac{39}{66}, d = \dfrac{7}{66}$，因此$a_5 = \dfrac{67}{66}$
+    \end{jieda}
+
+    \item 数列 $\left\{  {a}_{n}\right\}$ 为等差数列,首项为 -5 ,前 11 项的平均值为 5 ,若从中抽去一项,余下的 10 项的平均值是 4.6 ,则抽去的一项是第\blkda{8}项.
+    
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} = 3$ ,公差 $d = 3$ . 从数列 $\left\{  {a}_{n}\right\}$ 中依次挑出第 $1,2,{2}^{2},\cdots ,{2}^{n - 1},\cdots$ 项,构成一个新数列 $\left\{  {b}_{n}\right\}$ ,则数列 $\left\{  {b}_{n}\right\}$ 的通项公式为\blkda[2]{$b_n = 3 \cdot 2^{n-1}$}.
+
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{n + 1} = \dfrac{{a}_{n}^{2}}{2{a}_{n} - 5}$ ,已知 $\left\{  {a}_{n}\right\}$ 既是等差数列,又是等比数列,则 $\left\{  {a}_{n}\right\}$ 的 20 项的和为\blkda{100}.
+    \begin{jieda}
+        $\left\{  {a}_{n}\right\}$ 既是等差数列,又是等比数列即$\{a_n\}$是非零常数列，因此$a_{n+1} = a_n$，设其为$x$，故$x = \dfrac{x^2}{2x-5} (x \neq 0)$，即$2x^2 - 5x = x^2 (x \neq 0 \text{或} 2.5)$，解得$x = 5$，因此$a_n = 5$，故$S_{20} = 100$
+    \end{jieda}
+
+    \item 在德国不来梅举行的第 48 届世乒赛期间,某商店橱窗里用同样的乒乓球堆成若干堆“正三棱锥”形的展品,其中第 1 堆只有 1 层,就一个球; 第 $2,3,4,\cdots$ 堆最底层(第一层)分别按图所示方式固定摆放,从第二层开始,每层的小球自然垒放在下一层之上,第 $n$ 堆第 $n$ 层就放一个乒乓球,以 $f\left( n\right)$ 表示第 $n$ 堆的乒乓球总数,则 $f\left( 3\right)  =$ \blkda{10}； $f\left( n\right)  =$ \blkda[3]{$\dfrac{n(n+1)(n+2)}{6}$}(答案用 $n$ 表示)
+
+    \begin{center}
+    \includegraphics[width=0.4\linewidth]{bodyxb/src/019723d4-42ed-7a8b-a488-089bab8dbc1a_13_943_915_489_158_0.jpg}
+    \end{center}
+    \hspace*{3em} 
+
+    \item 观察下列数组:(1)、(2 3 4)、(3 4 5 6 7)、(4 5 6 7 8 9 10)、$\cdots$, 设第 $n$ 个的数组的各数之和为 ${S}_{n}$ ,则 ${S}_{n} =$ \blkda{$(2n-1)^2$}.
+
+    \item 已知$x>0, y>0$，$ x, a, b, y$成等差数列，$x, c, d, y$成等比数列，则$\dfrac{(a+b)^2}{cd}$的最小值为\blkda{4}
+    \begin{jieda}
+         $a+b = x+y, cd = xy$，故$\dfrac{(a+b)^2}{cd} = \dfrac{(x+y)^2}{xy} \geq 4$（当且仅当$x = y$时取等号）
+    \end{jieda}
+
+    \item 设 $1 = {a}_{1} \leq  {a}_{2} \leq  \cdots  \leq  {a}_{7}$ ,其中 ${a}_{1},{a}_{3},{a}_{5},{a}_{7}$ 成公比为 $q$ 的等比数列, ${a}_{2},{a}_{4},{a}_{6}$ 成公差为 1 的等差数列,则 $q$ 的最小值是\blkda{$\sqrt[3]{3}$}.
+    \begin{jieda}
+        设$a_4$为$x$，则有$1 \leq x - 1 \leq q \leq x \leq q^2 \leq x+1 \leq q^3$，因此有必要条件$x \geq 2, q^3 \geq 3$，故$q \geq \sqrt[3]{3}$.
+
+        $q$取$\sqrt[3]{3}$，$x$取$2$时不等式成立，因此$q$ 的最小值是$\sqrt[3]{3}$
+    \end{jieda}
+    
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 是首项为 ${a}_{1}$ ,公差为 $d\left( {0 < d < {2\pi }}\right)$ 的等差数列,若数列 $\left\{  {\cos {a}_{n}}\right\}$ 是等比数列, 则其公比为 \blkda{-1}
+    \begin{jieda}
+        $cos(a_n - d) \cdot cos(a_n+d) = cos^2(a_n)$，即$\dfrac{cos(2d)+cos(2a_n)}{2} = \dfrac{cos(2d)}{2} + cos^2(a_n) - \dfrac{1}{2} = cos^2(a_n)$，因此$cos(2d) = \dfrac{1}{2}$，解得$d = \pi$，故$q = -1$
+    \end{jieda}
+
+    \item 已知等比数列 $ \left\{  {a}_{n}\right\} $ 满足 $ {a}_{n} > 0,n = 1,2,\cdots $ ,且 $ {a}_{5} \cdot  {a}_{{2n} - 5} = {2}^{2n}\left( {n \geq  3}\right) $ ,则当 $ n \geq  1 $ 时,$ {\log }_{2}{a}_{1} + {\log }_{2}{a}_{3} + \cdots  + {\log }_{2}{a}_{{2n} - 1} = $ \dotfill{(\kh{C})}
+    \xx{$ n\left( {{2n} - 1}\right) $}{$ {\left( n + 1\right) }^{2} $}{$ {n}^{2} $}{$ {\left( n - 1\right) }^{2} $}
+
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}\left( {n = 1,2,3,\cdots }\right)$ ,若当首项 ${a}_{1}$ 和公差 $d$ 变化时, ${a}_{5} + {a}_{8}$  $+ {a}_{11}$ 是一个定值,则下列选项中为定值的是 \dotfill{(\kh{C})}
+    \xx{${S}_{17}$}{${S}_{18}$}{${S}_{15}$}{${S}_{14}$}
+    
+    \item 数列 $\left\{  {a}_{n}\right\}$ 的首项为 $3,\left\{  {b}_{n}\right\}$ 为等差数列并且 ${b}_{n} = {a}_{n + 1} - {a}_{n}\left( {n \in  {N}^{ * }}\right)$ ,若 ${b}_{3} =  - 2,{b}_{10} = {12}$ , 则 ${a}_{8} =$ \blkda{3}
+    
+    \item 设等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,且 ${S}_{15} > 0,{S}_{16} < 0$ ,则 $\dfrac{{S}_{1}}{{a}_{1}},\dfrac{{S}_{2}}{{a}_{2}},\cdots ,\dfrac{{S}_{15}}{{a}_{15}}$ 中最大的是 \dotfill{(\kh{C})}     
+    \xx{$\dfrac{{S}_{15}}{{a}_{15}}$}{$\dfrac{{S}_{9}}{{a}_{9}}$}{$\dfrac{{S}_{8}}{{a}_{8}}$}{$\dfrac{{S}_{1}}{{a}_{1}}$}
+
+    \item 若 $ a,b,c $ 成等比数列,其中 $ 0 < a < b < c $ , $ n $ 是大于 1 的整数,那么$ {\log }_{a}n,{\log }_{b}n,{\log }_{c}n $ 组成的数列是\dotfill{(\kh{D})}
+    \xx{等比数列}{等差数列}{每项的倒数成等比数列}{每项的倒数成等差数列}
+
+    \item 7 个数排成一行,奇数项成等差数列,偶数项成等比数列,且奇数项之和与偶数项之积的差为 42 , 首尾两项与中间项的和为 27 , 求中间项.
+    \begin{jieda}
+    
+        $ \left\{  \begin{array}{l} \left( {{a}_{1} + {a}_{3} + {a}_{5} + {a}_{7}}\right)  - \left( {{a}_{2} \cdot  {a}_{4} \cdot  {a}_{6}}\right)  = {42}. \\  {a}_{1} + {a}_{7} + {a}_{4} = {27} \end{array}\right. $
+        
+        由等差中项与等比中项的性质有
+        $ \left\{  \begin{array}{l} 2\left( {{a}_{1} + {a}_{7}}\right)  - {a}_{4}^{3} = {42} \\  \left( {{a}_{1} + {a}_{7}}\right)  + {a}_{4} = {27}\end{array}\right. $ 
+        
+        可得 $ {a}_{4}^{3} + 2{a}_{4} - {12} = 0 $ 解得 $ {a}_{4} = 2 $ .
+        故中间项 $ {a}_{4} = 2 $ .
+    \end{jieda}
+
+    \item 在等比数列 $ \left\{  {a}_{n}\right\} $ 中, $ {a}_{1} + {a}_{6} = {11},{a}_{3} \cdot  {a}_{4} = \dfrac{32}{9} $ ,且 $ \dfrac{2}{3}{a}_{2},{a}_{3}{}^{2},{a}_{4} + \dfrac{4}{9} $ 依次成等差数列,求数列 $ \left\{  {a}_{n}\right\} $ 的通项公式.
+
+    \begin{jieda}
+        由 $ \left\{  {a}_{n}\right\} $ 为等比数列,有 $ {a}_{3} \cdot  {a}_{4} = {a}_{1} \cdot  {a}_{6} = \dfrac{22}{9} $ ,再由 $ {a}_{1} + {a}_{6} = {11} $ .
+        
+        解得 $ {a}_1 = \dfrac{1}{3}, {a}_6 = \dfrac{32}{3} $ 或 ${a}_{1} = \dfrac{32}{3}, a_6 = \dfrac{1}{3}$
+
+        \begin{dingautolist}{172}
+            \item 若 $ {a}_{1} = \dfrac{32}{3} $ ,则 $ q = \dfrac{1}{2},\dfrac{2}{3}{a}_{2} = \dfrac{32}{9},{a}_{3}^{2} = \dfrac{64}{9},{a}_{4} + \dfrac{4}{9} = \dfrac{16}{9} $ 不是等差数列.
+            \item 若 $ {a}_{1} = \dfrac{1}{3} $ ,则 $ q = 2,\dfrac{2}{3}{a}_{2} = \dfrac{4}{9},{a}_{3}^{2} = \dfrac{16}{9},{a}_{4} + \dfrac{4}{9} = \dfrac{28}{9} $ 是等差数列
+        \end{dingautolist}
+        故 $ {a}_{n} = \dfrac{{2}^{n - 1}}{3} $
+    \end{jieda}
+
+    
+    \item 已知数列 $\left\{  {a}_{n}\right\}  \left( {n \in  {N}^{ * }}\right)$ 的一个通项公式是 ${a}_{n} = {\left( -1\right) }^{n}\left( {\lambda  + \dfrac{1}{2n}}\right)  + 3$ ,若此数列的各项都是正数,求实数 $\lambda$ 的取值范围.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 当 $ n $ 为奇数时, $ {a}_{n} =  - \lambda  - \dfrac{1}{2n} + 3  > 0 $ . 即 $ \lambda  < 3 - \dfrac{1}{2n} $ ,而 $ 3 - \dfrac{1}{2n} \geq  \dfrac{5}{2} $ 故 $ \lambda  < \dfrac{5}{2} $
+            
+            \item 当 $ n $ 为偶数时, $ {a}_{n} = \lambda  + \dfrac{1}{2n} + 3 > 0 $ ,即 $ \lambda  >  -3 - \dfrac{1}{2n} $ ,而当 $ n \rightarrow  +\infty $ 时, $ \dfrac{1}{2n} \rightarrow  0 $
+            故 $ - 3 - \dfrac{1}{2n} $ 有取不到的上界(且为上确界)$-3$.那么 $\lambda \geq -3 $ .
+        \end{dingautolist}
+        综上，$\lambda \in \left[-3, \dfrac{5}{2}\right)$
+    \end{jieda}
+
+    \item 某品牌音响经过 4 次降价,价格由原来的 6.5 万元降至当前的 4 万元,若每次降幅相同, 求每次降低的百分率(精确到 0.1\%)
+    \begin{jieda}
+        $11.4\%$
+    \end{jieda}
+
+    \item 等差数列 $\left\{  {a}_{n}\right\}$ ,且对 $n \in  {N}^{ * }$ ,都有 ${a}_{n} > 0$ ,求证:
+
+    \[
+    \dfrac{1}{\sqrt{{a}_{1}} + \sqrt{{a}_{2}}} + \dfrac{1}{\sqrt{{a}_{2}} + \sqrt{{a}_{3}}} + \cdots  + \dfrac{1}{\sqrt{{a}_{n}} + \sqrt{{a}_{n + 1}}} = \dfrac{n}{\sqrt{{a}_{n + 1}} + \sqrt{{a}_{1}}}.
+    \]
+    \begin{jieda}
+        证明: 设公差为 $d$，则 $\dfrac{1}{\sqrt{{a}_{k}} + \sqrt{{a}_{k + 1}}} = \dfrac{\sqrt{{a}_{k}} - \sqrt{{a}_{k + 1}}}{{a}_{k} - {a}_{k + 1}} = \dfrac{1}{d}\left( {-\sqrt{{a}_{k}} + \sqrt{{a}_{k + 1}}}\right)$
+        
+        $LHS = \dfrac{1}{d}\left( {-\sqrt{{a}_{1}} + \sqrt{{a}_{2}} - \sqrt{{a}_{2}} + \sqrt{{a}_{3}} - \cdots  - \sqrt{{a}_{n}} + \sqrt{{a}_{n + 1}}}\right)  = \dfrac{1}{d}\left( {-\sqrt{{a}_{1}} + \sqrt{{a}_{n + 1}}}\right)$
+        $= \dfrac{1}{d} \cdot  \dfrac{{a}_{n + 1} - {a}_{1}}{\sqrt{{a}_{1}} + \sqrt{{a}_{n + 1}}} = \dfrac{n}{\sqrt{{a}_{1}} + \sqrt{{a}_{n + 1}}}$
+    \end{jieda}
+
+    
+\end{enumerate}
+\subsection*{综合练习 (2)}
+\begin{enumerate}
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} + {a}_{7} + {a}_{13} = {12}$ ,则 ${a}_{2} + {a}_{12}$ 的值为\blkda{8}.
+    \item 已知等比数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${Sn}$ ,且 ${a}_{n + 1} = 2{S}_{n} + 2\left( {n \in  {N}^{ \star  }}\right)$ ,则 ${a}_{1} =$ \blkda{2}.
+    \item 数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{n + 1} = 1 - \dfrac{1}{{a}_{n}},{a}_{4} = 2$ ,则 ${a}_{2021} =$ \blkda{$\dfrac{1}{2}$}.
+    \item 在正项等比数列 $\left\{  {a}_{n}\right\}$ 中,若 ${a}_{4}{a}_{8} = 4$ ,则 ${\log }_{2}{a}_{2} + 2{\log }_{2}{a}_{6} + {\log }_{2}{a}_{10} =$ \blkda{4}.
+    \item 已知 $\left\{  {a}_{n}\right\}$ 是公差为 $\dfrac{1}{2}$ 的等差数列, ${S}_{n}$ 为数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和,若 ${a}_{2},{a}_{4},{a}_{8}$ 成等比数列,则 ${S}_{7} =$\blkda{14}
+    \item 数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = 1$ , $\dfrac{{a}_{n}}{{a}_{n - 1}} = \dfrac{{2n} + 1}{{2n} - 1}\left( {n \in  {\mathrm{N}}^{ * },n \geq  2}\right)$ ,则 ${a}_{n} =$ \blkda{$\dfrac{{2n} + 1}{3}$}. 
+    \item 已知 ${S}_{n}$ 为数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和, ${S}_{n} = {\left( -1\right) }^{n}{a}_{n} - \dfrac{1}{{2}^{n}},n \in  {\mathrm{N}}^{ * }$ ,则 ${S}_{1} + {S}_{2} + {S}_{3} + {S}_{4} + {S}_{5} =$ \blkda{$- \dfrac{21}{64}$}
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 2{a}_{2} = 1$ ,且 ${a}_{n + 1} + {a}_{n} = 2{a}_{n + 2}$ . 若存在 $n \in  {\mathbf{N}}^{ * }$ ,使得不等式 ${a}_{n}{a}_{n + 3} < \left( {{a}_{n + 3} - {a}_{n}}\right) m + {m}^{2}$ 成立,则实数 $m$ 的取值范围为\blkda[4]{$\left( {-\infty , - \dfrac{5}{8}}\right)  \cup  \left( {\dfrac{1}{2}, + \infty }\right)$}.
+    \item 下列有关数列的说法正确的是\dotfill{(\kh{D})} 
+    \xx{同一数列的任意两项均不可能相同}{数列 -2,0,2 与数列 2,0,-2 是同一个数列}{数列2,4,6,8可表示为 $\{ 2,4,6,8\}$}{数列中的每一项都与它的序号有关}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = 1,{a}_{n + 1} = {a}_{n} + {2}^{n}$ ,数列 $\left\{  \dfrac{{a}_{n} + 1}{{a}_{n + 1} \cdot  \left( {{a}_{n + 1} - 1}\right) }\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,若对任意的正整数 $n$ ,都有 $k > {S}_{n}$ ,则 $k$ 的最小值为 \dotfill{(\kh{C})} 
+    \xx{$\dfrac{1}{4}$}{$\dfrac{1}{3}$}{$\dfrac{1}{2}$}{$\dfrac{2}{3}$}
+    \begin{jieda}
+        当 $n \geq  2,{a}_{n} - {a}_{n - 1} = {2}^{n - 1},\cdots ,{a}_{2} - {a}_{1} = 2$ ,
+        
+        所以 ${a}_{n} - {a}_{1} = 2 + {2}^{2} + \cdots  + {2}^{n - 1} = \dfrac{2\left( {1 - {2}^{n - 1}}\right) }{1 - 2} = {2}^{n} - 2$ ,
+        
+        解得: ${a}_{n} = {2}^{n} - 1$ ,当 $\mathrm{n} = 1$ 适合
+        
+        因为 $\dfrac{{a}_{n} + 1}{{a}_{n + 1} \cdot  \left( {{a}_{n + 1} - 1}\right) } = \dfrac{{2}^{n - 1}}{\left( {{2}^{n} - 1}\right) \left( {{2}^{n + 1} - 1}\right) } = \dfrac{1}{2}\left( {\dfrac{1}{{2}^{n} - 1} - \dfrac{1}{{2}^{n + 1} - 1}}\right)$ ,
+        
+        所以
+        
+        ${S}_{n} = \dfrac{1}{2}\left\lbrack  {\left( {\dfrac{1}{{2}^{1} - 1} - \dfrac{1}{{2}^{2} - 1}}\right)  + \left( {\dfrac{1}{{2}^{2} - 1} - \dfrac{1}{{2}^{3} - 1}}\right)  + \ldots \ldots  + \left( {\dfrac{1}{{2}^{n} - 1} - \dfrac{1}{{2}^{n + 1} - 1}}\right) }\right\rbrack   = \dfrac{1}{2}\left( {1 - \dfrac{1}{{2}^{n + 1} - 1}}\right) ,$
+        
+        又因为 ${S}_{n}$ 是单调递增数列,
+        
+        所以有 ${S}_{n} \in  \left\lbrack  {{S}_{1},\dfrac{1}{2}}\right)  = \left\lbrack  {\dfrac{1}{3},\dfrac{1}{2}}\right)$ ,对任意的正整数 $n$ ,都有 $k > {S}_{n}$ ,
+        
+        所以 $k \geq  \dfrac{1}{2}$ 
+    \end{jieda}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 是各项为正数的等比数列,公比为 $q$ ,在 ${a}_{1},{a}_{2}$ 之间插入 1 个数,使这 3 个数成等差数列,记公差为 ${d}_{1}$ ,在 ${a}_{2},{a}_{3}$ 之间插入 2 个数,使这 4 个数成等差数列,公差为 ${d}_{2},\cdots$ , 在 ${a}_{n}$ , ${a}_{n + 1}$ 之间插入 $n$ 个数,使这 $n + 2$ 个数成等差数列,公差为 ${d}_{n}$ ,则\dotfill{(\kh{D})} 
+    \xx{当 $0 < q < 1$ 时,数列 $\left\{  {d}_{n}\right\}$ 单调递减}{当 $q > 1$ 时,数列 $\left\{  {d}_{n}\right\}$ 单调递增}{当 ${d}_{1} > {d}_{2}$ 时,数列 $\left\{  {d}_{n}\right\}$ 单调递减}{当 ${d}_{1} < {d}_{2}$ 时,数列 $\left\{  {d}_{n}\right\}$ 单调递增}
+    \begin{jieda}
+        数列 $\left\{  {a}_{n}\right\}$ 是各项为正数的等比数列,则公比为 $q > 0$ ,
+        
+        由题意 ${a}_{n + 1} = {a}_{n} + \left( {n + 1}\right) {d}_{n}$ ,得 ${d}_{n} = \dfrac{{a}_{n + 1} - {a}_{n}}{n + 1} = \dfrac{{a}_{n}\left( {q - 1}\right) }{n + 1}$ ,
+        
+        $0 < q < 1$ 时, ${d}_{n} < 0$ ,有 $\dfrac{{d}_{n + 1}}{{d}_{n}} = \dfrac{q\left( {n + 1}\right) }{n + 2} < 1,{d}_{n + 1} > {d}_{n}$ ,数列 $\left\{  {d}_{n}\right\}$ 单调递增, $\mathrm{A}$ 选项错误；
+        
+        $q > 1$ 时, ${d}_{n} > 0,\dfrac{{d}_{n + 1}}{{d}_{n}} = \dfrac{q\left( {n + 1}\right) }{n + 2}$ ,若数列 $\left\{  {d}_{n}\right\}$ 单调递增,则 $\dfrac{q\left( {n + 1}\right) }{n + 2} > 1$ ,即 $q > \dfrac{n + 2}{n + 1}$ ,由 $n \in  {\mathrm{N}}^{ * }$ ,需要 $q > \dfrac{3}{2}$ ,故 $\mathrm{B}$ 选项错误; ${d}_{1} > {d}_{2}$ 时, $\dfrac{{a}_{1}\left( {q - 1}\right) }{2} > \dfrac{{a}_{1}q\left( {q - 1}\right) }{3}$ ,解得 $1 < q < \dfrac{3}{2}$ , $q > 1$ 时, ${d}_{n} > 0$ ,由 $\dfrac{{d}_{n + 1}}{{d}_{n}} = \dfrac{q\left( {n + 1}\right) }{n + 2}$ ,若数列 $\left\{  {d}_{n}\right\}$ 单调递减,则 $\dfrac{q\left( {n + 1}\right) }{n + 2} < 1$ ,即 $q < \dfrac{n + 2}{n + 1} = 1 + \dfrac{1}{n + 1}$ ,而 $1 < q < \dfrac{3}{2}$ 不能满足 $q < 1 + \dfrac{1}{n + 1}\left( {n \in  {\mathrm{N}}^{ * }}\right)$ 恒成立, $\mathrm{C}$ 选项错误; ${d}_{1} < {d}_{2}$ 时, $\dfrac{{a}_{1}\left( {q - 1}\right) }{2} < \dfrac{{a}_{1}q\left( {q - 1}\right) }{3}$ ,解得 $0 < q < 1$ 或 $q > \dfrac{3}{2}$ ,由 $\mathrm{{AB}}$ 选项的解析可知,数列 $\left\{  {d}_{n}\right\}$ 单调递增, D 选项正确.
+    \end{jieda}
+    \item 等比数列 $\left\{  {a}_{n}\right\}$ 的公比为 2,且 ${a}_{2},{a}_{3} + 2,{a}_{4}$ 成等差数列. 
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式
+        \item 若 ${b}_{n} = {\log }_{2}{a}_{n} + {a}_{n}$ ,求数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 已知等比数列 $\left\{  {a}_{n}\right\}$ 的公比为 2,且 ${a}_{2},{a}_{3} + 2,{a}_{4}$ 成等差数列, $\therefore 2\left( {{a}_{3} + 2}\right)  = {a}_{2} + {a}_{4},\;\therefore 2\left( {4{a}_{1} + 2}\right)  = 2{a}_{1} + 8{a}_{1}$ ,解得 ${a}_{1} = 2$ , $\therefore {a}_{n} = 2 \times  {2}^{n - 1} = {2}^{n},n \in  {\mathrm{N}}^{ * }$
+            \item ${b}_{n} = {\log }_{2}{2}^{n} + {2}^{n} = n + {2}^{n}$ , $\therefore {T}_{n} = \left( {1 + 2 + \cdots  + n}\right)  + \left( {2 + {2}^{2} + \cdots  + {2}^{n}}\right)$ . $= \dfrac{n\left( {n + 1}\right) }{2} + {2}^{n + 1} - 2$ ; 综上, ${T}_{n} = \dfrac{n\left( {n + 1}\right) }{2} + {2}^{n + 1} - 2$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ ,前 $n\left( {n \in  {\mathrm{N}}^{ * }}\right)$ 项和为 ${S}_{n}$ ,又 ${a}_{2} = 4,{S}_{9} = {90}$ .
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式 ${a}_{n}$
+        \item 设 ${b}_{n} = \left| {9 - {a}_{n}}\right|$ ,求数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n}$ .
+    \end{enumerate}
+
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设等差数列的公差为 $d$ ,首项为 ${a}_{1}$ ,
+            
+            因为 ${S}_{9} = {90}$ ,所以 ${S}_{9} = \dfrac{9\left( {{a}_{1} + {a}_{9}}\right) }{2} = 9{a}_{5} = {90}$ ,
+            
+            所以 ${a}_{5} = {10}$ ,由 ${a}_{5} - {a}_{2} = {3d} = {10} - 4 = 6$ ,解得 $d = 2$ ,
+            
+            又 ${a}_{2} = 4$ ,所以 ${a}_{n} = {a}_{2} + \left( {n - 2}\right) d = 4 + \left( {n - 2}\right)  \times  2 = {2n}$
+            \item ${b}_{n} = \left| {9 - {a}_{n}}\right|  = \left| {9 - {2n}}\right|$
+            
+            设 ${c}_{n} = 9 - {2n},\left\{  {c}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,得 ${S}_{n} = \dfrac{7 + \left( {9 - {2n}}\right) }{2} \times  n = {8n} - {n}^{2}$ ,
+            
+            ${c}_{n} = 9 - {2n} > 0$ ,得 $n < \dfrac{9}{2}$
+            
+            当 $1 \leq  n \leq  4$ 时, ${c}_{n} > 0$ ,即 ${b}_{n} = {c}_{n}$ ,所以 $1 \leq  n \leq  4,{T}_{n} = {S}_{n} = {8n} - {n}^{2}$
+            
+            当 $n \geq  5$ 时,得 ${c}_{n} < 0$ ,所以 ${b}_{n} =  - {c}_{n}$ ,
+            
+            则 ${T}_{n} = \left( {{c}_{1} + {c}_{2} + \cdots  + {c}_{4}}\right)  - \left( {{c}_{5} + {c}_{6} + \cdots  + {c}_{n}}\right)$
+            
+            $= {S}_{4} - \left( {{S}_{n} - {S}_{4}}\right)  = 2{S}_{4} - {S}_{n} = {32} - \left( {{8n} - {n}^{2}}\right)  = {n}^{2} - {8n} + {32}$
+            
+            综上所述: ${T}_{n} = \left\{  \begin{array}{l} {8n} - {n}^{2},1 \leq  n \leq  4,\left( {n \in  {\mathrm{N}}^{ * }}\right) \\  {n}^{2} - {8n} + {32},n \geq  5,\left( {n \in  {\mathrm{N}}^{ * }}\right)  \end{array}\right.$
+        \end{enumerate}
+    \end{jieda}
+
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 2,{a}_{n + 1} = 4{a}_{n} - {3n} + 1\;\left( {n \in  {\mathbf{N}}^{ * }}\right) ,{b}_{n} = {a}_{n} - n$ .
+    \begin{enumerate}
+        \item 数列 $\left\{  {b}_{n}\right\}$ 是等比数列;
+        \item 设 ${c}_{n} = \left\{  \begin{matrix} {b}_{n},n\text{ 为偶数 } \\  {\log }_{2}{b}_{n},n\text{ 为奇数,求数列 }\left\{  {c}_{n}\right\}  \text{ 的前 }{2n}\text{ 项和 }{S}_{2n}\text{ . } \end{matrix}\right.$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由已知得 ${a}_{n + 1} - \left( {n + 1}\right)  = 4\left( {{a}_{n} - n}\right) ,{b}_{n} = {a}_{n} - n$，即 ${b}_{n + 1} = 4{b}_{n}$，又 $\because {a}_{1} - 1 = 1 \neq  0,\therefore$ 数列 $\left\{  {b}_{n}\right\}$ 是公比为 4 的等比数列;
+            \item 由(1)知, ${b}_{n} = {4}^{n - 1}$
+            
+            $\therefore {c}_{n} = \left\{  \begin{matrix} {4}^{n - 1},n\text{ 为偶数 } \\  {2n} - 2,n\text{ 为奇数 } \end{matrix}\right.$
+            
+            $\therefore {S}_{2n} = \left\lbrack  {0 + 4 + 8 + \cdots  + \left( {{4n} - 4}\right) }\right\rbrack   + \left( {{4}^{1} + {4}^{3} + {4}^{5} + \cdots {4}^{{2n} - 1}}\right)\\
+            = \dfrac{n\left( {0 + {4n} - 4}\right) }{2} + \dfrac{4\left( {1 - {16}^{n}}\right) }{1 - {16}}
+            = \dfrac{1}{15} \times  {2}^{{4n} + 2} + 2{n}^{2} - {2n} - \dfrac{4}{15}.$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{1} = 1$ , ${a}_{2} = 2$ , ${a}_{n + 1} = 3{a}_{n} - 2{a}_{n - 1}\left( {n \geq  2,n \in  {\mathrm{N}}^{ * }}\right)$ . 设 ${b}_{n} = {a}_{n + 1} - {a}_{n}$ .
+    \begin{enumerate}
+        \item 数列 $\left\{  {b}_{n}\right\}$ 是等比数列
+        \item 设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项的和为 ${S}_{n}$ ,求 ${S}_{n}$
+        \item 设 ${c}_{n} = \dfrac{{a}_{n + 1}}{\left( {1 + {b}_{n}}\right)  \cdot  \left( {2 + {S}_{n}}\right) }$ ,设数列 $\left\{  {c}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n}$ ,求证: ${T}_{n} < 1$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\because {a}_{n + 1} = 3{a}_{n} - 2{a}_{n - 1}\left( {n \geq  2,n \in  {\mathrm{N}}^{ * }}\right)$ ,
+                
+                $\therefore {a}_{n + 1} - {a}_{n} = 2\left( {{a}_{n} - {a}_{n - 1}}\right)$ ,
+                
+                $\because {b}_{n} = {a}_{n + 1} - {a}_{n}$
+                
+                $\therefore {b}_{n} = 2{b}_{n - 1},\;{b}_{1} = {a}_{2} - {a}_{1} = 1$ ,
+                
+                $\therefore$ 数列 $\left\{  {b}_{n}\right\}$ 是等比数列,首项为 1,公比为 2 .
+            \item 由(1)可得 ${b}_{n} = {a}_{n + 1} - {a}_{n} = {2}^{n - 1}$ ,
+            
+            $\therefore n \geq  2$ 时,
+            
+            ${a}_{n} = \left( {{a}_{n} - {a}_{n - 1}}\right)  + \left( {{a}_{n - 1} - {a}_{n - 2}}\right)  + \cdots  + \left( {{a}_{2} - {a}_{1}}\right)  + {a}_{1} = {2}^{n - 2} + {2}^{n - 3} + \cdots  + 2 + 1 + 1 = \dfrac{{2}^{n - 1} - 1}{2 - 1} = {2}^{n - 1},$
+            
+            $n = 1$ 时也成立.
+            
+            $\smallsetminus  {a}_{n} = {2}^{n - 1},$
+            
+            $\because \dfrac{{a}_{n}}{{a}_{n - 1}} = \dfrac{{2}^{n - 1}}{{2}^{n - 2}} = 2$ ,
+            
+            $\therefore$ 数列 $\left\{  {a}_{n}\right\}$ 是等比数列,首项为 1,公比为 2 .
+            
+            $\therefore$ 数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项的和为 ${S}_{n} = \dfrac{{2}^{n} - 1}{2 - 1} = {2}^{n} - 1$ .
+            \item $\because {c}_{n} = \dfrac{{a}_{n + 1}}{\left( {1 + {b}_{n}}\right)  \cdot  \left( {2 + {S}_{n}}\right) } = \dfrac{{2}^{n}}{\left( {1 + {2}^{n - 1}}\right) \left( {2 + {2}^{n} - 1}\right) } = 2\left( {\dfrac{1}{{2}^{n - 1} + 1} - \dfrac{1}{{2}^{n} + 1}}\right)$ ,
+            
+            $\therefore$ 数列 $\left\{  {c}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n} = 2\left( {\dfrac{1}{2} - \dfrac{1}{3} + \dfrac{1}{3} - \dfrac{1}{5} + \cdots  + \dfrac{1}{{2}^{n - 1} + 1}\dfrac{1}{{2}^{n} + 1}}\right)  = 2\left( {\dfrac{1}{2} - \dfrac{1}{{2}^{n} + 1}}\right)  < 2 \times  \dfrac{1}{2} = 1$ ,
+            
+            $\therefore {T}_{n} < 1$ .
+        \end{enumerate}
+    \end{jieda}
+    \item 已知集合 $M = \{ x \mid  1 \leq  x \leq  m,x \in  Z\}$ ( $Z$ 是整数集, $m$ 是大于 3 的正整数). 若含有 $m$ 项的数列 $\left\{  {a}_{n}\right\}$ 满足: 任意的 $i,j \in  M$ ,都有 ${a}_{i} \in  M$ ,且当 $i \neq  j$ 时有 ${a}_{i} \neq  {a}_{j}$ ,当 $i < m$ 时有 $\left| {{a}_{i + 1} - {a}_{i}}\right|  = 2$ 或 $\left| {{a}_{i + 1} - {a}_{i}}\right|  = 3$ ,则称该数列为 $P$ 数列.
+    \begin{enumerate}
+        \item 写出所有满足 $m = 5$ 且 ${a}_{1} = 1$ 的 $P$ 数列；
+        \item 若数列 $\left\{  {a}_{n}\right\}$ 为 $P$ 数列,证明: $\left\{  {a}_{n}\right\}$ 不可能是等差数列;
+        \item 已知含有 100 项的 $P$ 数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{5},{a}_{10},\cdots ,{a}_{5k},\cdots ,{a}_{100}\left( {k = 1,2,3,\cdots ,{20}}\right)$ 是公差为$d\left( {d > 0}\right)$ 等差数列,求 $d$ 所有可能的值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由题意可得满足 $m = 5$ 且 ${a}_{1} = 1$ 的 $P$ 数列为:1,3,5,2,4和1,4,2,5,3
+            \item 假设 $\left\{  {a}_{n}\right\}$ 是等差数列,公差为 $d$ ,当 $d > 0$ 时,由题意, $d = 2$ 或 3,
+            
+            此时 ${a}_{i} \geq  {a}_{1} + 2 > {a}_{1} + 1\left( {i = 2,3,4,\cdots ,m}\right)$ ,
+            
+            所以 ${a}_{1} + 1$ 不是等差数列 $\left\{  {a}_{n}\right\}$ 中的项,与题意不符,所以 $\left\{  {a}_{n}\right\}$ 不可能是等差数列;
+            
+            当 $d < 0$ 时,由题意, $d =  - 2$ 或-3,此时 ${a}_{i} \leq  {a}_{1} - 2 < {a}_{1} - 1\left( {i = 2,3,4,\cdots ,m}\right)$ , 所以 ${a}_{1} - 1$ 不是等差数列 $\left\{  {a}_{n}\right\}$ 中的项,与题意不符,所以 $\left\{  {a}_{n}\right\}$ 不可能是等差数列综上所述, $\left\{  {a}_{n}\right\}$ 不可能是等差数列
+            \item 由题意, $d \in  {\mathrm{N}}^{ * }$ ,
+            
+            当 $d \geq  6$ 时,因为 ${a}_{5} \geq  1$ ,所以 ${a}_{100} = {a}_{5} + {19d} \geq  {115}$ ,与题意不符;
+            
+            当 $d \leq  3$ 时,记 ${M}_{k} = \left\{  {{a}_{{5k} - 4},{a}_{{5k} - 3},{a}_{{5k} - 2},{a}_{{5k} - 1},{a}_{5k}}\right\}  \left( {k = 1,2,3,\cdots ,{20}}\right)$ ,
+            
+            当 ${100} \in  {M}_{i}\left( {i \in  \{ 1,2,3,\cdots ,{20}\} }\right)$ 时, ${a}_{5i} \geq  {100} - 4 \times  3 = {88}$ ,
+            
+            所以 ${a}_{5k} = {a}_{5i} - \left( {i - k}\right) d \geq  {88} - \left( {{20} - 1}\right)  \times  3 = {31}$ ,
+            
+            所以 ${\left( {M}_{k}\right) }_{\min } \geq  {31} - 4 \times  3 = {19}$ ,所以 $1 \notin  {M}_{k}\left( {k = 1,2,3,\cdots {20}}\right)$ ,与题意不符;
+            
+            当 $d = 4$ 时, ${a}_{10} = {a}_{5} + 4$ ,
+            
+            又由题意, ${a}_{10} = {a}_{5} + 2{x}_{1} + 3{x}_{2} - 2{x}_{3} - 3{x}_{4}$ ,其中 ${x}_{i} \in  \mathrm{N}\left( {i = 1,2,3,4}\right)$ ,且 ${x}_{1} + {x}_{2} + {x}_{3} + {x}_{4} = 5$ ,
+            
+            所以 $2\left( {{x}_{1} - {x}_{3}}\right)  + 3\left( {{x}_{2} - {x}_{4}}\right)  = 4$ ,所以 $\left\{  \begin{array}{l} {x}_{1} - {x}_{3} = 2 \\  {x}_{2} = {x}_{4} \end{array}\right.$ ,
+            
+            所以 ${x}_{1} + {x}_{2} + {x}_{3} + {x}_{4} = 2{x}_{3} + 2 + 2{x}_{2} = 5$ ,与 ${x}_{i} \in  \mathrm{N}\left( {i = 1,2,3,4}\right)$ 不符;
+            
+            当 $d = 5$ 时,取 ${a}_{n} = \left\{  \begin{array}{l} n,n = {5k} - 4 \\  n + 1,n = n = {5k} - 3 \\  n + 2,n = {5k} - 2 \\  n - 2,n = {5k} - 1 \\  n - 1,n = {5k} \end{array}\right.$ ,此时的数列 $\left\{  {a}_{n}\right\}$ 满足题意，综上所述, $d = 5$ .
+
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+
+\section*{数学归纳法}
+\subsection*{数学归纳法 (1)}
+\zsd 数学归纳法
+
+一般地,在证明一个与正整数 $n$ 有关的命题时,可按下列步骤进行：
+\begin{enumerate}
+    \item 证明 \blkda{$n = n_0$} 时命题成立
+    \item 假设 \blkda{$n = k$}$\left( {k \in  {\mathbf{N}}_{ + },k \geq  {n}_{0}}\right)$ 时命题成立,证明 \blkda{$n = k+1$}时命题也成立.
+\end{enumerate}
+
+只要完成这两个步骤,就可以知道：对任何从 ${n}_{0}$ 开始的正整数 $n$ ,命题成立. 这种证明方法叫作数学归纳法.
+
+A组
+\begin{enumerate}
+    \item 用数学归纳法证明 $1 + \dfrac{1}{2} + \dfrac{1}{3} + \cdots  + \dfrac{1}{{2}^{n} - 1} < n\left( {n \in  \mathbf{N},n > 1}\right)$ 时,第一步应验证不等式为\blkda[3]{$1+\dfrac{1}{2}+\dfrac{1}{3}<2$}.
+    \item 已知 $f\left( n\right)  = \dfrac{1}{n + 1} + \dfrac{1}{n + 2} + \cdots  + \dfrac{1}{{3n} - 1}\left( {n \in  {\mathrm{N}}^{ * }}\right)$ ,则 $f\left( {k + 1}\right)  = f\left( k\right)  +$ \blkda[5]{$\dfrac{1}{3k}+\dfrac{1}{3k+1}+\dfrac{1}{3k+2}-\dfrac{1}{k+1}$}.
+    \item 用数学归纳法证明 “对于足够大的正整数 $n$ ,总有 ${2}^{n} > {n}^{3}$ ” 时,验证第一步使不等式成立所取的最小值应当是\blkda{10}.
+    \item 下面是某同学用数学归纳法证明命题： $\dfrac{1}{1 \cdot  2} + \dfrac{1}{2 \cdot  3} + \cdots \dfrac{1}{n \cdot  \left( {n + 1}\right) } = \dfrac{n}{n + 1}$ 的过程.
+    \begin{enumerate}
+        \item 当 $n = 1$ 时,左边 $= \dfrac{1}{1 \cdot  2} = \dfrac{1}{2}$ ,右边 $= \dfrac{1}{1 + 1} = \dfrac{1}{2}$ ,左边 $=$ 右边
+        \item 假设 $n = k$ 时命题成立,即
+        $\dfrac{1}{1 \cdot  2} + \dfrac{1}{2 \cdot  3} + \cdots \dfrac{1}{k \cdot  \left( {k + 1}\right) } = \dfrac{k}{k + 1}$，那么 $n = k + 1$ 时,左边 $= \left( {1 - \dfrac{1}{2}}\right)  + \left( {\dfrac{1}{2} - \dfrac{1}{3}}\right)  + \cdots \left( {\dfrac{1}{k + 1} - \dfrac{1}{k + 2}}\right)  = 1 - \dfrac{1}{k + 2} = \dfrac{k + 1}{\left( {k + 1}\right)  + 1} =$ 右边,即
+        $n = k + 1$ 时,命题也成立
+    \end{enumerate}
+    由(1)(2)知,对一切自然数,命题均正确。你认为他的证法正确吗?为什么?
+    \begin{jieda}
+        不正确
+        \begin{enumerate}
+            \item 当$n = k+1$时未使用$n = k$时成立的条件得到结论
+            \item $n \neq 0$，最终结论说对一切自然数命题正确不合理
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+B组
+\begin{enumerate}
+    \item 用数学归纳法证明 $\dfrac{1}{{2}^{2}} + \dfrac{1}{{3}^{2}} + \cdots  + \dfrac{1}{{\left( n + 1\right) }^{2}} > \dfrac{1}{2} - \dfrac{1}{n + 2}$ 时,假设 $n = k$ 时结论成立,则当 $n = k + 1$ 时,应推证的目标不等式是\blkda[6]{$\dfrac{1}{2^2}+\dfrac{1}{3^2}+...+\dfrac{1}{(k+2)^2} > \dfrac{1}{2} - \dfrac{1}{k+3}$}.
+
+    \item $f\left( n\right)  = \dfrac{1}{n + 1} + \dfrac{1}{n + 2} + \cdots  + \dfrac{1}{{3n} - 1}\left( {n \in  {N}^{ * }}\right)$ ,则 $f\left( {n + 1}\right)  - f\left( n\right)  =$ \blkda[6]{$\dfrac{1}{3n+2}+\dfrac{1}{3n+1}+\dfrac{1}{3n}-\dfrac{1}{n+1}$}.
+    
+    \item 某个命题与自然数 $n$ 有关,如当 $n = k\left( {k \in  N}\right)$ 时该命题成立,那么可推得当 $n = k + 1$ 时该命题也成立,则在已知 $n = 5$ 时该命题不成立,那么\dotfill{(\kh{B})}    
+    \xx{$n = 6$ 时该命题不成立}{$n = 4$ 时该命题不成立}{$n = 6$ 时该命题成立}{$n = 4$ 时该命题成立}
+    
+    \item 用数学归纳法证明 ${1}^{2} + {2}^{2} + \cdots  + {\left( n - 1\right) }^{2} + {n}^{2} + {\left( n - 1\right) }^{2} + \cdots  + {2}^{2} + {1}^{2} = \dfrac{n\left( {2{n}^{2} + 1}\right) }{3}$ 时, 由 $n = k$ 的假设到证明 $n = k + 1$ 时,等式左边应添加的式子是 \dotfill{(\kh{B})}     
+    \xx{${\left( k + 1\right) }^{2} + 2{k}^{2}$}{${\left( k + 1\right) }^{2} + {k}^{2}$}{${\left( k + 1\right) }^{2}$}{$\dfrac{1}{3}\left( {k + 1}\right) \left\lbrack  {2{\left( k + 1\right) }^{2} + 1}\right\rbrack$}
+    
+    \item 若把正整数按下图所示的规律排序,则从 2002 到 2004 年的箭头方向依次为 \dotfill{(\kh{D})}     
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.75\linewidth]{bodyxb//src/shuxueguinafa1.png}
+    \end{figure}
+    
+    \item 用数学归纳法证明 “ $1 + \dfrac{1}{2} + \dfrac{1}{3} + \ldots  + \dfrac{1}{{2}^{n} - 1} < n\;\left( {n \in  {\mathbf{N}}^{ * },n > 1}\right)$ ” 时,由 $n = k\left( {k > 1}\right)$ 不等式成立,推证 $n = k + 1$ 时,左边应增加的项数是 \dotfill{(\kh{C})}     
+    \xx{${2}^{k - 1}$}{${2}^{k} - 1$}{${2}^{k}$}{${2}^{k} + 1$}
+    
+    \item 用数学归纳法证明 $1 - \dfrac{1}{2} + \dfrac{1}{3} - \dfrac{1}{4} + \cdots  + \dfrac{1}{{2n} - 1} - \dfrac{1}{2n} = \dfrac{1}{n + 1} + \dfrac{1}{n + 2} + \cdots  + \dfrac{1}{2n}\left( {n \in  N}\right)$ ,则从 $n = k$ 到 $n = k + 1$ 时,左边应添加的项为 \dotfill{(\kh{D})}     
+    \xx{$\dfrac{1}{{2k} + 1}$}{$\dfrac{1}{{2k} + 2} - \dfrac{1}{{2k} + 4}$}{$- \dfrac{1}{{2k} + 2}$}{$\dfrac{1}{{2k} + 1} - \dfrac{1}{{2k} + 2}$}
+
+    \item 设 ${S}_{k} = \dfrac{1}{k + 1} + \dfrac{1}{k + 2} + \dfrac{1}{k + 3} + \cdots  + \dfrac{1}{2k}\left( {k = 1,2,3,\cdots }\right)$ ,则 ${S}_{k + 1} =$ \dotfill{(\kh{C})}     
+    \xx{${S}_{k} + \dfrac{1}{2\left( {k + 1}\right) }$}{${S}_{k} + \dfrac{1}{{2k} + 2} - \dfrac{1}{k + 1}$}{${S}_{k} + \dfrac{1}{{2k} + 1} - \dfrac{1}{{2k} + 2}$}{${S}_{k} + \dfrac{1}{{2k} + 1} + \dfrac{1}{{2k} + 2}$}
+    
+    \item 数列 $\left\{  {a}_{n}\right\}$ 满足: ${a}_{1} = \sqrt{2},{a}_{n + 1} = \sqrt{2 + {a}_{n}}\left( {n \in  {N}^{ * }}\right)$ ,证明: $\left\{  {a}_{n}\right\}$ 是严格递增数列
+    \begin{jieda}
+        证明：
+        易知$a_n > 0$，即$\{a_n\}$为正项数列，下证：$a_{n+1} > a_n$对$n \in N^*$恒成立
+        \begin{dingautolist}{172}
+            \item $n = 1$时，$a_2 = \sqrt{2+\sqrt{2}} > \sqrt{2} = a_1$，命题成立
+            \item 假设当$n = k(k \in \mathbf{N^*})$时，$a_{k+1} = \sqrt{2+a_k} > a_k$成立
+
+            则当$n = k+1$时，要证$a_{k+2} = \sqrt{2+a_{k+1}} > a_{k+1}$，即证$2+a_{k+1} > a^2_{k+1}$，即证$2+\sqrt{2+a_k} > 2+a_k$，由$n = k$时假设可知此时命题成立.
+        \end{dingautolist}
+        综上，$a_{n+1} > a_n$对$n \in N^*$恒成立，即$\left\{  {a}_{n}\right\}$ 是严格递增数列.
+    \end{jieda}
+    
+    \item 用数学归纳法证明: ${1}^{2} - {2}^{2} + {3}^{2} - {4}^{2} + \cdots  + {\left( 2n - 1\right) }^{2} - {\left( 2n\right) }^{2} =  - n\left( {{2n} + 1}\right)$ .
+    \begin{jieda}
+        证明: 
+        \begin{enumerate}
+            \item 当 $n = 1$ 时,左边 $= {1}^{2} - {2}^{2} =  - 3$，右边 $=  - 1 \times  \left( {2 \times  1 + 1}\right)  =  - 3$ ,等式成立.
+            \item 假设当 $n = k\left( {k \geq  1}\right)$ 时,等式成立,即${1}^{2} - {2}^{2} + {3}^{2} - {4}^{2} + \cdots  + {\left( 2k - 1\right) }^{2} - {\left( 2k\right) }^{2} =  - k\left( {{2k} + 1}\right) .$
+            
+            则当 $n = k + 1$ 时, ${1}^{2} - {2}^{2} + {3}^{2} - {4}^{2} + \cdots  + {\left( 2k - 1\right) }^{2} -$
+            ${\left( 2k\right) }^{2} + {\left( 2k + 1\right) }^{2} - {\left\lbrack  2\left( k + 1\right) \right\rbrack  }^{2}$
+            $=  - k\left( {{2k} + 1}\right)  + {\left( 2k + 1\right) }^{2} - {\left\lbrack  2\left( k + 1\right) \right\rbrack  }^{2}$
+            $=  - 2{k}^{2} - {5k} - 3 =  - \left( {k + 1}\right) \left( {{2k} + 3}\right)$
+            $=  - \left( {k + 1}\right) \left\lbrack  {2\left( {k + 1}\right)  + 1}\right\rbrack$
+            即当 $n = k + 1$ 时,等式成立.
+        \end{enumerate}
+        综上，对任何 $n \in  {\mathbf{N}}_{ + }$ ,等式成立.
+    \end{jieda}
+    
+    \item 用数学归纳法证明: $1 + \dfrac{1}{\sqrt{2}} + \cdots  + \dfrac{1}{\sqrt{n}} < 2\sqrt{n}\left( {n \in  {N}^{ * }}\right)$ .
+    \begin{jieda}
+        证明：
+        \begin{dingautolist}{172}
+            \item 当$n = 1$时，$LHS = 1, RHS = 2$，命题成立
+            \item 假设当$n = k(k \in \mathbf{N^*})$时，有$1 + \dfrac{1}{\sqrt{2}} + \cdots  + \dfrac{1}{\sqrt{k}} < 2\sqrt{k}$
+
+            则当$n = k+1$时，$1 + \dfrac{1}{\sqrt{2}} + \cdots  + \dfrac{1}{\sqrt{k}}+\dfrac{1}{\sqrt{k+1}} < 2\sqrt{k} + \dfrac{1}{\sqrt{k+1}}$
+
+            要证$2\sqrt{k} + \dfrac{1}{\sqrt{k+1}} < 2\sqrt{k+1}$，即证$\dfrac{1}{\sqrt{k+1}} < 2\left(\sqrt{k+1}-\sqrt{k}\right)$，即证$\dfrac{1}{\sqrt{k+1}} < \dfrac{2}{\sqrt{k+1}+\sqrt{k}}$，显然成立
+        \end{dingautolist}
+        综上，原命题$1 + \dfrac{1}{\sqrt{2}} + \cdots  + \dfrac{1}{\sqrt{n}} < 2\sqrt{n}\left( {n \in  {N}^{ * }}\right)$成立.
+    \end{jieda}
+    
+    \item 试证当 $n$ 为自然数时, $f\left( n\right)  = {3}^{{2n} + 2} - {8n} - 9$ 能被 64 整除.
+    \begin{jieda}
+        \begin{enumerate}
+            \item 证法 1:
+            \begin{dingautolist}{172}
+                \item 当 $n = 1$ 时, $f\left( 1\right)  = {3}^{4} - 8 - 9 = {64}$ ,命题显然成立.
+                \item 假设当 $n = k$ 时, $f\left( k\right)  = {3}^{{2k} + 2} - {8k} - 9$ 能被 64 整除. 由于 ${3}^{2\left( {k + 1}\right)  + 2} - 8\left( {k + 1}\right)  - 9 = 9\left( {{3}^{{2k} + 2} - {8k} - 9}\right)  + 9 \cdot  {8k} + 9 \cdot  9 - 8\left( {k + 1}\right)  - 9 = 9\left( {{3}^{{2k} + 2} - {8k} - 9}\right)  + {64}\left( {k + 1}\right)$，即 $f\left( {k + 1}\right)  = {9f}\left( k\right)  + {64}\left( {k + 1}\right)$ 
+                
+                $\therefore n = k + 1$ 时命题也成立.
+            \end{dingautolist}
+            综上，对于任意 $n \in  {\mathbf{N}}^{ * }$ ,命题都成立.
+            \item 证法 2
+            \begin{dingautolist}{172}
+                \item 当 $n = 1$ 时, $f\left( 1\right)  = {3}^{4} - 8 - 9 = {64}$ ,命题显然成立.
+                \item 假设当 $n = k$ 时, $f\left( k\right)  = {3}^{{2k} + 2} - {8k} - 9$ 能被 64 整除. 由归纳假设,设 ${3}^{{2k} + 2} - {8k} - 9 = {64m}(m$ 为大于 1 的自然数),将 ${3}^{{2k} + 2} = {64m} + {8k} + 9$ 代入到 $f\left( {k + 1}\right)$ 中得$f\left( {k + 1}\right)  = 9\left( {{64m} + {8k} + 9}\right)  - 8\left( {k + 1}\right)  - 9 = {64}\left( {{9m} + k + 1}\right)$ .
+                
+                $\therefore n = k + 1$ 时命题成立.
+            \end{dingautolist}
+            综上，对于任意 $n \in  {\mathbf{N}}^{ * }$ ,命题都成立.
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+C组
+\begin{enumerate}
+    \item 已知数列 ${a}_{1},{a}_{2},{a}_{3},\ldots ,{a}_{101}$ 的各项均为正整数,其中 ${a}_{1} = {a}_{101} = {4999}$ ,对于每个正整数 $i\left( {2 \leq  i \leq  {100}}\right) ,\dfrac{{a}_{i - 1} + {a}_{i + 1}}{2} - {a}_{i}$ 为相同的正整数,则 ${a}_{100}$ 的值是\blkda{4900}.
+    \begin{jieda}
+        设 $\dfrac{{a}_{i - 1} + {a}_{i + 1}}{2} - {a}_{i} = c$ ,
+        则 $c \in  {\mathrm{Z}}_{ + },{a}_{i + 1} - {a}_{i} = {a}_{i} - {a}_{i - 1} + {2c}$ ,
+        令 ${d}_{i} = {a}_{i + 1} - {a}_{i}\left( {i = 1,2,\cdots ,{100}}\right)$ ,
+        则 ${d}_{i} = {d}_{i - 1} + {2c}\left( {i = 2,3,\cdots ,{100}}\right)$ ,
+        故 ${d}_{i} = {d}_{1} + 2\left( {i - 1}\right) c\left( {i = 1,2,\cdots ,{100}}\right)$ ,
+        当 $i \geq  2$ 时,
+        ${a}_{i} = \mathop{\sum }\limits_{{j = 1}}^{{i - 1}}{d}_{i} + {a}_{1} = {a}_{1} + \mathop{\sum }\limits_{{j = 1}}^{{i - 1}}\left\lbrack  {{d}_{1} + 2\left( {j - 1}\right) c}\right\rbrack   = {a}_{i}$
+        9
+        显然, ${a}_{1}$ 也满足上式,由
+        ${a}_{101} = {a}_{1} + {100}\left( {{d}_{1} + {99c}}\right)  = {a}_{1},$
+        知 ${d}_{1} =  - {99c}$
+        于是, ${a}_{i} = {a}_{1} + \left( {i - 1}\right) \left( {i - {101}}\right) c$ .
+        又 ${a}_{51} = {a}_{1} - {2500c} = {4999} - {2500c} \in  {\mathrm{Z}}^{ + }$ ,
+        则 $c \leq  \dfrac{4999}{2500} < 2 \Rightarrow  c = 1$ .
+        于是,
+        ${a}_{i} = {4999} + \left( {i - 1}\right) \left( {i - {101}}\right) ,{a}_{100} = {4999} + {99}\left( {-1}\right)$
+        故答案为：4900.
+    \end{jieda}
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ,且 $2{a}_{5} - {a}_{3} = {13},{S}_{4} = {16}$ . 
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和
+        \item 是否存在正整数 $m,n\left( {n > m > 2}\right)$ ,使得 ${S}_{2},{S}_{m} - {S}_{2},{S}_{n} - {S}_{m}$ 成等比数列？若存在,求出所有的 $m,n$ ; 若不存在,说明理由
+        \item 设 ${T}_{n} =  - {a}_{1} + {a}_{2} - {a}_{3} + \cdots  + {\left( -1\right) }^{n}{a}_{n}$ ,若对一切正整数 $n$ ,不等式 $\lambda {T}_{n} < \left\lbrack  {{a}_{n + 1} + {\left( -1\right) }^{n + 1}{a}_{n}}\right\rbrack   \cdot  {2}^{n - 1}$ 恒成立,求实数 $\lambda$ 的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $2{a}_{5} - {a}_{3} = {13},{S}_{4} = {16} \Rightarrow  {a}_{1} = 1$ ,
+            $d = 2$ 得到 ${a}_{n} = 1 + 2\left( {n - 1}\right)  = {2n} - 1$ .
+            \item 假设存在正整数 $m$ , $n\left( {n > m > 2}\right)$ 使得 ${S}_{2}$ ,
+            ${S}_{m} - {S}_{2},{S}_{n} - {S}_{m}$ 成等比数列,
+            则 ${\left( {S}_{m} - {S}_{2}\right) }^{2} = {S}_{2} \cdot  \left( {{S}_{n} - {S}_{m}}\right)$ ,
+            即 ${\left( {m}^{2} - 4\right) }^{2} = 4\left( {{n}^{2} - {m}^{2}}\right)$ ,
+            $\therefore 4{n}^{2} = {\left( {m}^{2} - 2\right) }^{2} + {12}$ ,
+            即 $4{n}^{2} - {\left( {m}^{2} - 2\right) }^{2} = {12}$ ,
+            即 $\left( {{2n} - {m}^{2} + 2}\right) \left( {{2n} + {m}^{2} - 2}\right)  = {12}$ ,
+            $\because n > m > 2,n \geq  4,m \geq  3$ ,
+            $\therefore {2n} + {m}^{2} - 2 \geq  {15}$ ,
+            $\because {2n} - {m}^{2} + 2$ 是整数,
+            $\therefore$ 等式 $\left( {{2n} - {m}^{2} + 2}\right) \left( {{2n} + {m}^{2} - 2}\right)  = {12}$ 不成
+            立,
+            故不存在正整数 $m,n\left( {n > m > 2}\right)$ 使 ${S}_{2}$ ,
+            ${S}_{m} - {S}_{2},{S}_{n} - {S}_{m}$ 得成等比数列.
+            \item 偶数时：
+            ${T}_{2k} =  - {a}_{1} + {a}_{2} - {a}_{3} + \cdots  + {\left( -1\right) }^{2k}{a}_{2k} = {2k},$
+            不等式 $\lambda {T}_{n} < \left\lbrack  {{a}_{n + 1} + {\left( -1\right) }^{n + 1}{a}_{n}}\right\rbrack   \cdot  {2}^{n - 1} \Rightarrow  \lambda (2$
+            分离参数得到 $\lambda  < \frac{{4}^{k}}{2k}$ ,研究右边函数性质,此:
+            增,
+            所以 $\lambda  < \frac{{4}^{1}}{2 \times  1} = 2$ ,
+            奇数时:
+            ${T}_{{2k} - 1} =  - {a}_{3} + {a}_{2} - {a}_{3} + \cdots  - {a}_{{2k} - 1} = 1 - {2}_{k},$
+            不等式
+            $\lambda {T}_{n} < \left\lbrack  {{a}_{n + 1} + {\left( -1\right) }^{n + 1}{an}}\right\rbrack   \cdot  {2}^{n - 1} \Rightarrow  \lambda \left( {1 - {2k}}\right)$
+            9
+            从而 $\lambda  >  - {4}^{k} \Rightarrow  \lambda  >  - 4$ ,
+            综上 $\lambda  \in  \left( -4,2\right)$ .
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{数学归纳法 (2)}
+\zsd 归纳, 猜想, 论证
+\begin{enumerate}
+    \item 观察下表:
+    
+    \begin{center}
+    \includegraphics[width=0.3\linewidth]{bodyxb/src/019723d4-42ed-7a8b-a488-089bab8dbc1a_8_659_1267_385_211_0.jpg}
+    \end{center}
+    \hspace*{3em} 
+
+    设第 $n$ 行的各数之和为 ${S}_{n}$ ,则 ${S}_{n} =$ \blkda{$(2n-1)^2$}.
+
+    \item 数列 $\left\{  {a}_{n}\right\}$ 中,已知 ${a}_{1} = 2,{a}_{n + 1} = \dfrac{{a}_{n}}{3{a}_{n} + 1}\left( {n \in  {\mathrm{N}}^{ * }}\right)$ ,依次计算出 ${a}_{2},{a}_{3},{a}_{4}$ 后,归纳、猜测得出 ${a}_{n}$ 的表达式为\blkda{$\dfrac{2}{6n-5}$}.
+
+    \item 数列 $\left\{  {a}_{n}\right\}  ,{a}_{1} = \dfrac{1}{2},{a}_{n}{a}_{n + 1} = \dfrac{n}{n + 2}\left( {n \in  {N}^{ * }}\right)$ ,则 ${a}_{n} =$ \blkda{$\dfrac{n}{n+1}$}.
+
+    \item 用数学归纳法证明不等式 $1 + \dfrac{1}{2} + \dfrac{1}{4} + \cdots  + \dfrac{1}{{2}^{n - 1}} > \dfrac{127}{64}$ 成立,起始值至少应取为\blkda{8}.
+
+    \item 观察下列式子: $1 + \dfrac{1}{{2}^{2}} < \dfrac{3}{2},1 + \dfrac{1}{{2}^{2}} + \dfrac{1}{{3}^{2}} < \dfrac{5}{3},1 + \dfrac{1}{{2}^{2}} + \dfrac{1}{{3}^{2}} + \dfrac{1}{{4}^{2}} < \dfrac{7}{4},\ldots$ ,则可归纳出\blkda[6]{$1+\dfrac{1}{4}+\dfrac{1}{9}+...+\dfrac{1}{n^2} < \dfrac{2n-1}{n}$}.
+
+    \item 对任意 $n \in  {\mathbf{N}}^{ * } \cdot  {3}^{{4n} + 2} + {a}^{{2n} + 1}$ 都能被 14 整除,则最小的自然数 $a =$ \blkda{5}.
+
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} = {n}^{2}{a}_{n}\left( {n \geq  2}\right)$ ,而 ${a}_{1} = 1$ ,通过计算 ${a}_{2}$ 、 ${a}_{3}$ 、 ${a}_{4}$ ,猜想 ${a}_{n} =$ \dotfill{(\kh{B})}     
+    \xx{$\dfrac{2}{{\left( n + 1\right) }^{2}}$}{$\dfrac{2}{n\left( {n + 1}\right) }$}{$\dfrac{2}{{2}^{n} - 1}$}{$\dfrac{2}{{2n} - 1}$}
+    \item 某同学回答用数学归纳法证明 “ $\sqrt{{n}^{2} + n} < n + 1\left( {n \in  {N}^{ * }}\right)$ ” 的过程如下 (1) $n = 1$ 时, $\sqrt{2} < 2$ ,命题成立,( 2 )若 $n= k$ 时, $\sqrt{{k}^{2} + k} < k + 1$ ,则 $n= k + 1$ 时,$\sqrt{{\left( k + 1\right) }^{2} + \left( {k + 1}\right) } = \sqrt{{k}^{2} + 3k + 2} < \sqrt{{k}^{2} + 4k + 4} = \left( {k + 1}\right)  + 1$ ,以上证法\dotfill{(\kh{D})}     
+    \xx{是正确的}{归纳假设的写法不正确}{从 $k$ 到 $k + 1$ 的推理不严密}{没有使用归纳假设}
+    \item 用数学归纳法证明,“当 $n$ 为正奇数时, ${x}^{n} + {y}^{n}$ 能被 $x + y$ 整除”时,第二步归纳假设应写成\dotfill{(\kh{B})}     
+    \xx{假设 $n = {2k} + 1\left( {k \in  {\mathbf{N}}^{ * }}\right)$ 时正确,再推证 $n = {2k} + 3$ 正确}{假设 $n = {2k} - 1\left( {k \in  {\mathbf{N}}^{ * }}\right)$ 时正确,再推证 $n = {2k} + 1$ 正确}{假设 $n = k\left( {k \geq  1,k \in  {\mathbf{N}}^{ * }}\right)$ 的正确,再推证 $n = k + 2$ 正确}{假设 $n \leq  k\left( {k \geq  1,k \in  {\mathbf{N}}^{ * }}\right)$ 时正确,再推证 $n = k + 2$ 正确}
+    \item 用数学归纳法证明 ${3}^{{4n} + 1} + {5}^{{2n} + 1}\left( {n \in  \mathbf{N}}\right)$ 能被 8 整除时,当 $n = k + 1$ 时,对于 ${3}^{4\left( {k + 1}\right)  + 1} + {5}^{2\left( {k + 1}\right)  + 1}$ 可变形为\dotfill{(\kh{A})}     
+    \xx{${56} \cdot  {3}^{{4k} + 1} + {25}\left( {{3}^{{4k} + 1} + {5}^{{2k} + 1}}\right)$}{${3}^{4} \cdot  {3}^{{4k} + 1} + {5}^{2} \cdot  {5}^{2k}$}{${3}^{{4k} + 1} + {5}^{{2k} + 1}$}{${25}\left( {{3}^{{4k} + 1} + {5}^{{2k} + 1}}\right)$}
+    \item 数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} = {2n} - {a}_{n}$ ,先计算数列的前 4 项,后猜想 ${a}_{n}$ 并证明之.
+    \begin{jieda}
+        $\dfrac{2^n - 1}{2^{n-1}}$
+    \end{jieda}
+    \item 是否存在常数 $a,b,c$ 使等式 $1 \cdot  \left( {{n}^{2} - {1}^{2}}\right)  + 2 \cdot  \left( {{n}^{2} - {2}^{2}}\right)  + \cdots  + n \cdot  \left( {{n}^{2} - {n}^{2}}\right)  = a{n}^{4} + b{n}^{2} + c$ 对一切正整数 $n$ 成立?证明你的结论.
+    \begin{jieda}
+        $a = -b = \dfrac{1}{4}, c = 0$
+    \end{jieda}
+    \item 已知 $1 + 2 + 3 + 4 + \cdots  + n = \dfrac{1}{2}{n}^{2} + \dfrac{1}{2}n$，${1}^{2} + {2}^{2} + {3}^{2} + {4}^{2} + \cdots  + {n}^{2} = \dfrac{1}{3}{n}^{3} + \dfrac{1}{2}{n}^{2} + \dfrac{1}{6}n$，${1}^{3} + {2}^{3} + {3}^{3} + {4}^{3} + \cdots  + {n}^{3} = \dfrac{1}{4}{n}^{4} + \dfrac{1}{2}{n}^{3} + \dfrac{1}{4}{n}^{2}$ ,猜测并证明前 $n$ 个正整数的 4 次方之和 ${S}_{n} = {1}^{4} + {2}^{4} + {3}^{4} + {4}^{4} + \cdots  + {n}^{4}$
+    \begin{jieda}
+        $S_n = \dfrac{1}{5}n^5+\dfrac{1}{2}n^4+\dfrac{1}{3}n^3-\dfrac{1}{30}n$
+    \end{jieda}
+    
+    \item 如下图,设 ${P}_{1},{P}_{2},{P}_{3},\cdots ,{P}_{n}\cdots$ 是曲线 $y = \sqrt{x}$ 上的点列, ${Q}_{1},{Q}_{2},{Q}_{3},\cdots ,{Q}_{n}\cdots$ 是 $x$ 轴正半轴上的点列,且 ${\Delta O}{Q}_{1}{P}_{1},\Delta {Q}_{1}{Q}_{2}{P}_{2},\cdots \Delta {Q}_{n - 1}{Q}_{n}{P}_{n}\cdots$ 都是正三角形,设它们的边长为 ${a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{n}\cdots$，求证: ${a}_{1} + {a}_{2} + {a}_{3} + \cdots  + {a}_{n} = \dfrac{1}{3}n\left( {n + 1}\right)$.
+    
+    \begin{center}
+    \includegraphics[width=0.2\linewidth]{bodyxb/src/019723d4-42ed-7a8b-a488-089bab8dbc1a_10_239_696_255_151_0.jpg}
+    \end{center}
+    \hspace*{3em} 
+    
+\end{enumerate}
+
+
+
+\section*{数列极限}
+
+\begin{enumerate}
+
+
+\item $\lim _{n \rightarrow \infty} \frac{3^n}{3^n+1}=$\blkda{1}.
+
+\item $\lim _{n \rightarrow \infty}\left(\sqrt{n^2+2025}-n\right)=$\blkda{0}.
+
+\item 若 $f(n)=1+2+3+\cdots+n$ ，则 $\lim _{n \rightarrow \infty} \frac{f\left(n^2\right)}{[f(n)]^2}=$ $\qquad$ ． $\lim _{n \rightarrow \infty}\left(\frac{1}{n^2}+\frac{4}{n^2}+\frac{7}{n^2}+\cdots+\frac{3 n-2}{n^2}\right)=$ \blkda{2}．
+
+\item 若 $\lim _{n \rightarrow \infty}\left(\frac{1-a}{2 a}\right)^n=0$ ，则 $a$ 的取值范围是\blkda[4]{$(-\infty,-1)\cup(\frac{1}{3},+\infty)$}．
+
+\item $0<a<1$ ，计算 $\lim _{n \rightarrow \infty}(1+a)\left(1+a^2\right)\left(1+a^4\right) \cdots\left(1+a^{2^n}\right)=$ \blkda{$\frac{3}{2}$}．
+
+\item 已知无穷等比数列 $\left\{a_n\right\}$ ，公比为 $q, \lim _{n \rightarrow \infty}\left(\frac{a_1}{1+q}-q^n\right)=\frac{1}{2}$ ，则 $a_1$ 的取值范围\blkda{$(0,\frac{1}{2})\cup(\frac{1}{2},1)\cup{3}$}.
+
+\item 在数列 $\left\{a_n\right\}$ 中，$a_n=\left\{\begin{array}{cl}1+\frac{1}{n} & n \text { 为奇数 } \\ \frac{2^n}{2^n+1} & n \text { 为偶数 }\end{array} \quad\right.$, 则 $\lim _{n \rightarrow \infty} a_n=$\dotfill{}(\kh{A})\xx{1}{2}{0}{不存在}
+
+\item 已知 $a, b$ 都是实数，且 $a>0$ ，如果 $\lim _{n \rightarrow \infty}\left(\frac{b}{a+b}\right)^n=0$ ，那么 $a$ 与 $b$ 的关系是\dotfill{}(\kh{B})\xx{$a<2 b$}{$-a<2 b$}{$-a<b$}{$-a<b<\frac{a}{2}$}
+
+
+\item 无穷等比数列各项和为 15 ，各项平方和为 45 ，则数列首项为\blkda{5}．
+
+\item 设数列 $\left\{a_n\right\}$ 所有项的和为 $S(1)$ ，第二项及以后所有项之和为 $S(2)$ ，第三项及以后所有项之和为 $S(3), \cdots \cdots$ ，第 $n$ 项及以后所有项之和为 $S(n)$ ，若数列 $\{S(n)\}$是以 $\frac{3}{4}$ 为首项，$\frac{1}{3}$ 为公比的等比数列，求数列 $\left\{a_n\right\}$ 的通项公式．
+\begin{jieda}
+    $a_n=\frac{1}{2}\times(\frac{1}{3})^{n-1}$
+\end{jieda}
+
+
+\item Sierpinski 三角形是一种分形图形，它的构造方法如下图所示：把一个边长为 1 的等边三角形分成四等份，挖掉中间那一份，然后继续对另外三个三角形进行这样的操作，并且无限地进行下去．并且将下图依次记为 $M_1, M_2, M_3, \ldots, M_n, \ldots$
+\begin{figure}[!hbtp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{bodyxb//src/shuliejixian.png}
+\end{figure}
+\begin{enumerate}
+    \item 求 $M_n$ 中黑色三角形的个数 $A_n$ 和白色三角形的个数 $B_n$ ；
+    \item 求 $M_n$ 中黑色三角形的周长 $L_n$ 和面积 $S_n$ ；
+    \item 求黑色三角形周长和面积的极限．
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $A_n=3^{n-1}, B_n=\left\{\begin{array}{ll}
+         0, & n = 1 \\
+         \dfrac{3^{n-1}-1}{2}, & n \geq 2
+    \end{array}\right.$
+
+    \item $L_n=3\times(\frac{3}{2})^{n-1}, S_n=\frac{\sqrt{3}}{4}\times(\frac{\sqrt{3}}{4})^{n-1}$
+
+    \item $L_n\rightarrow +\infty, S_n\rightarrow 0$
+    \end{enumerate}
+\end{jieda}
+
+\item 以正方形 $A B C D$ 的四个顶点为圆心，以边长 $a$ 为半径，在正方形内画弧，得四个交点 $A_1, B_1, C_1, D_1$ ，再在正方形 $A_1 B_1 C_1 D_1$ 内用同样的方法得到又一个正方形 $A_2 B_2 C_2 D_2$ ，这样无限继续下去，求所有这些正方形面积之和（包括原正方形）。
+\begin{jieda}
+    $S=\frac{a^2(\sqrt{3}+1)}{2}$
+\end{jieda}
+
+\end{enumerate}

@@ -1,0 +1,910 @@
+\chapter*{等式与不等式}
+\section*{等式与方程}
+\subsection*{等式的性质}
+等式是用的等号“=”将两个表达式连接起来所形成的式子，等式描述了相等关系。例如$sin30^{\circ} = \dfrac{1}{2}$。等式的性质如下($a, b, c$均为实数)：
+\begin{enumerate}
+    \item 传递性 $a = b, b = c \Longrightarrow a = c$
+    \item 加法性质 $a = b \Longrightarrow a + c = b + c \quad (a = b \Longrightarrow a - c = b - c)$
+    \item 乘法性质 $a = b \Longrightarrow ac = bc \quad (a = b, c \neq 0\Longrightarrow \dfrac{a}{c} = \dfrac{b}{c})$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 设$a, b, c, d$是实数，判断下列命题的真假，并说明理由
+    \begin{dingautolist}{172}
+        \item 如果$a = b, \mbox{且}  c= d$， 那么$a + c = b + d$
+        \item 如果$a = b, \mbox{且}  c= d$， 那么$ac = bd$
+        \item 如果$a = b \neq 0$， 那么$\dfrac{1}{a} = \dfrac{1}{b}$
+        \item 如果$a = b$，那么$a^n = b ^n$，其中$n$是正整数
+        \item 如果$ac = bc$，那么$a = b$
+        \item 如果$(a-b)^2+(b-c)^2=0$，那么$a = b = c$
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 由加法性质有$a = b \Longrightarrow a + c = b + c$，$c = d \Longrightarrow b + c = b + d$。又因为传递性，故有$a + c = b + d$
+            \item 由乘法性质有$a = b \Longrightarrow ac = bc$，$c = d \Longrightarrow bc = bd$。又因为传递性，故有$ac = bd$
+            \item 由乘法性质有$a = b \Longrightarrow a \cdot \dfrac{1}{ab} = b \cdot \dfrac{1}{ab} \Longrightarrow \dfrac{1}{b} = \dfrac{1}{a}$
+            \item 上面证明了“如果$a = b, \mbox{且}  c = d$， 那么$ac = bd$”，令其中“$c = a, d = b$”，反复利用结论$n$次即可得到$a^n = b^n$
+            \item 反例：$c = 0$
+            \item 因为$(a-b)^2 \geq 0, (b-c)^2 \geq 0$，又因为$(a-b)^2 + (b-c)^2 = 0$，故$(a-b)^2 = 0, (b-c)^2 = 0$，即$ a= b, b = c$。
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\subsection*{等式常见公式}
+\begin{enumerate}
+    \item $a^2 - b^2 = (a+b)(a-b)$
+    \item $a^3+b^3 = (a+b)(a^2+b^2-ab), \quad a^3 - b^3 = (a-b)(a^2+b^2+ab)$
+    \item $(a+b)^2 = a^2 + 2ab + b^2, \quad (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$
+    \item $\dfrac{1}{n(n+1)} = \dfrac{1}{n} - \dfrac{1}{n+1}$
+    \item $\dfrac{c}{a} = \dfrac{d}{b} = \dfrac{c+d}{a+b} (a+b \neq 0)$
+\end{enumerate}
+\subsection*{方程}
+\subsubsection*{方程的解集}
+\begin{enumerate}
+    \item \textbf{方程}是含有未知数的等式。
+    \item 使得等式成立的未知数的值就是\textbf{方程的解}。
+    \item 以方程所有的解为元素组成的集合称为\textbf{方程的解集}。
+\end{enumerate}
+\subsubsection*{解方程的基本思想}
+\begin{enumerate}
+    \item 多元化为一元
+    \item 无理方程化为有理方程
+    \item 分式方程化为整式方程
+    \item 高次方程化为低次方程
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 设$a, b \in \mathbf{R}$，求关于$x$的方程$ax = b$的解集
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $a \neq 0$, 解集为$\left\{\dfrac{b}{a}\right\}$
+            \item $a = 0, b = 0$，解集为$\mathbf{R}$
+            \item $a = 0, b \neq 0$，解集为$\varnothing$
+        \end{dingautolist}
+        提示：对于含参的情况，要进行分类讨论。
+    \end{jieda}
+    \item 设$k \in \mathbf{R}$，求关于$x$与$y$的二元一次方程组$
+    \left \{ 
+    \begin{array}{c}
+         y = 2x+1  \\
+         y = kx+3 
+    \end{array}
+    \right.$的解集.
+    \begin{jieda}
+        易知$k = 2$时无解. \\
+        当$k \neq 2$时，消去$y$得到$(2-k)x = 2$，故$x = \dfrac{2}{2-k}$，代入得到$y = \dfrac{6-k}{2-k}$ 
+    \end{jieda}
+    \item 已知关于$x$的方程$a(3x-2)+b(2x-3) = 8x-7$有无穷多个解，则$a, b$的值为\blkda[3]{$a=2, b = 1$}
+    \begin{jieda}
+        方程可以变形为$(3a+2b-8)x = 2a+3b-7$，若有无穷个解，即$x$的系数和等式右侧常数均为0.解得$a = 2, b = 1$
+    \end{jieda}
+    \item 若$k$为正整数，且关于$x$的方程$(k^2-1)x^2 - 6(3k-1)x+72=0$有两个相异的整数根，求$k$的值.
+    \begin{jieda}
+        对方程进行因式分解$[(k+1)x-12][(k-1)x-6] = 0$。因此两根为$x_1 = \dfrac{12}{k+1}, x_2 = \dfrac{6}{k-1}$。因为方程的根为整数，当$k \in \{1,2,3,5,11\}, x_1 \in \mathbf{Z}$，当$k \in \{2,3,4,7\}, x_2 \in \mathbf{Z}$。故求交集得$k \in \{2, 3\}$，又因为两根不相等，故得到$\dfrac{12}{k+1} \neq \dfrac{6}{k-1}$。因此$k = 2$
+    \end{jieda}
+\end{enumerate}
+\subsubsection*{一元$n$次方程解的性质}
+我们不加证明地给出以下结论：\\
+代数基本定理：一元$n$次方程$a_nx^n + a_{n-1}x^{n-1} + ... + a_1x+a_0 = 0$一定有$n$个根：$x_1, x_2, ..., x_n$（包含非实数根）并且有$a_nx^n + a_{n-1}x^{n-1} + ... + a_1x+a_0 = a_n(x-x_1)(x-x_2) ... (x-x_n)$，即实系数一元$n$次多项式一定可以因式分解.
+\begin{example}
+    \begin{dingautolist}{172}
+        \item $x^2-3x+2 = 0$可以写作$(x-1)(x-2) = 0$
+        \item $x^3 + x = 0$可以写作$x(x^2+1) = 0$
+    \end{dingautolist}
+\end{example}
+如果在一元$n$次方程总是有$n$个解中，某个解$a$出现了$k$次，则说$a$是该方程的$k$重根.
+\begin{example}
+    6次方程$(x-3)^3 \cdot (x-2)^2 \cdot (x-1) = 0$具有
+    \begin{dingautolist}{172}
+        \item 一个1重根：$1$
+        \item 两个2重根：$2$
+        \item 三个3重根：$3$
+    \end{dingautolist}
+\end{example}
+特别地，方程的解和未知数的\textbf{取值范围}有关，即全集不同的时候，同一个方程的解集也不一样
+\begin{example}
+    $\left(x - \dfrac{1}{2}\right)(x-1)(x-\sqrt{2}) = 0$在整数范围内的解集是$\{1\}$，在有理数范围内的解集是$\left\{1, \dfrac{1}{2}\right\}$，在实数范围内的解集是$\left\{1, \dfrac{1}{2}, \sqrt{2}\right\}$
+\end{example}
+
+\subsubsection*{一元二次方程的解集}
+一元二次方程（$ax^2 + bx + c = 0 (a \neq 0)$）的解也称作是该方程的根，一元二次方程的根有三种情况，两个不等的实根，两个相等的实根（重根），没有实根。
+\begin{dingautolist}{172}
+    \item 对于两个相异实根，有$b^2 - 4ac > 0$，解集为$\left\{\dfrac{-b - \sqrt{b^2 - 4ac}}{2a}, \dfrac{-b + \sqrt{b^2 - 4ac}}{2a}\right\}$
+    \item 对于重根的情况，有$b^2 - 4ac = 0$，解集为$\left\{-\dfrac{b}{2a}\right\}$
+    \item 对于没有实根的情况，必有$b^2 - 4ac < 0$，解集为$\varnothing$
+\end{dingautolist}
+\subsubsection*{一元二次方程的根与系数的关系}
+韦达定理：若一元二次方程$ax^2 + bx + c = 0 (a \neq 0)$的两根分别为$x_1, x_2$，则有$\left\{\begin{array}{l}
+     x_1 + x_2 = -\dfrac{b}{a}  \\
+     x_1x_2 = \dfrac{c}{a}
+\end{array} \right.$
+\subsubsection*{一元$n$次方程的根与系数的关系}
+韦达定理的推广形式：设$n$次方程$a_nx^n + a_{n-1}x^{n-1} + ... + a_1x + a_0=0$的解为$x_1, x_2, ..., x_n$，则有
+$\left\{\begin{array}{l}
+     x_1 + x_2 + ... + x_n = -\dfrac{a_{n-1}}{a_n}  \\
+     x_1x_2...x_n = (-1)^n \dfrac{a_{0}}{a_n}
+\end{array} \right.$ \\
+例题：
+\begin{enumerate}
+    \item 已知方程$x^2+x-3=0$的两个根为$x_1, x_2$，求下列各式的值：
+    \begin{enumerate}
+        \item $x_1^2x_2 + x_2^2x_1$
+        \item $|x_1 - x_2|$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $x_1^2x_2 + x_2^2x_1 = x_1x_2(x_1 + x_2) = -3 \times (-1) = 3$
+            \item $|x_1 - x_2| = \sqrt{(x_1 - x_2)^2} = \sqrt{(x_1 + x_2)^2 - 4x_1x_2} = \sqrt{1 - (-12)} = \sqrt{13}$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知关于$x$的方程$x^2+(2k-1)x+k^2-1 = 0$有两个实数根$x_1, x_2$，若$x_1, x_2$满足$x_1^2+x_2^2 = 16+x_1x_2$，则实数$k = $\blkda{-2}
+    \begin{jieda}
+        因为有两个实数根，因此$\Delta = (2k-1)^2 - 4(k^2-1) = -4k+5 \geq 0$，解得$k \leq \dfrac{5}{4}$ \\
+        $x_1^2+x_2^2 = (x_1+x_2)^2 - 2x_1x_2$，故$(x_1+x_2)^2 = 16+3x_1x_2$ \\
+        根据韦达定理有$\left \{ \begin{array}{l}
+             x_1+x_2 = 1-2k \\
+             x_1x_2 = k^2-1
+        \end{array} \right.$ \\
+        因此$(1-2k)^2 = 16+3(k^2-1)$，解得$k = -2$或$6$（舍）
+    \end{jieda}
+    \item 已知关于$x$的实系数一元二次方程$ax^2+bx+c=0$，求：
+    \begin{enumerate}
+        \item 有两个正根的充要条件
+        \item 有一个正根，一根为零的充要条件
+        \item 有一个小于$-2$的根和一个大于$2$的根的充要条件
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 
+            \begin{dingautolist}{172}
+                \item 根的分布角度 \\
+                有两个正根，等价于判别式大于等于0，且两根之和与两根之积均大于零 \\
+                因此充要条件为$\left \{\begin{array}{l}
+                     b^2-4ac \geq 0  \\
+                     -\dfrac{b}{a} > 0 \\
+                     \dfrac{c}{a} > 0
+                \end{array} \right.$
+                \item 数形结合角度 \\
+                有两个正根，等价于判别式大于等于0，对应二次函数的对称轴在$y$轴右侧，图像和$y$轴交点纵坐标符号与二次项系数符号相同 \\
+                
+                因此充要条件为$\left \{\begin{array}{l}
+                     b^2-4ac \geq 0  \\
+                     -\dfrac{b}{2a} > 0 \\
+                     ac > 0
+                \end{array} \right.$
+            \end{dingautolist}
+            
+            \item 
+            \begin{dingautolist}{172}
+                \item 根的分布角度 \\
+                有一个正根，一根为零，等价于两根之和大于零且$c=0$ \\
+                因此充要条件为$\left \{\begin{array}{l}
+                     -\dfrac{b}{a} > 0 \\
+                     c = 0
+                \end{array} \right.$
+                \item 数形结合角度 \\
+                有一个正根，一根为零，等价于对应的二次函数对称轴在$y$轴右侧且$c=0$ \\
+                
+                因此充要条件为$\left \{\begin{array}{l}
+                     -\dfrac{b}{2a} > 0 \\
+                     c = 0
+                \end{array} \right.$
+            \end{dingautolist}
+            \item 数形结合角度，根据$a$的正负分类讨论
+                \begin{enumerate}
+                    \item $a > 0$，对应函数开口向上，此时应有$x = -2 \mbox{或} 2$时，函数值均小于0
+                    \item $a < 0$，对应函数开口向下，此时应有$x = -2 \mbox{或} 2$时，函数值均大于0
+                \end{enumerate}
+                因此充要条件为$\left \{ 
+                    \begin{array}{l}
+                         a > 0 \\
+                         4a+2b+c < 0 \\
+                         4a-2b+c < 0 
+                    \end{array}
+                \right.$ 或
+                $\left \{ 
+                    \begin{array}{l}
+                         a < 0 \\
+                         4a+2b+c > 0 \\
+                         4a-2b+c > 0 
+                    \end{array}
+                \right.$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\section*{不等式的性质}
+\subsection*{不等式的性质}
+不等式是用不等号（$>, \geq, <, \leq$）将两个表达式连起来所形成的式子，不等式描述了不等关系，例如$sin30^{\circ} > \dfrac{1}{3}$
+\subsubsection*{两个实数大小关系的基本事实}
+\begin{enumerate}
+    \item $b > a \Longleftrightarrow b - a > 0$
+    \item $b = a \Longleftrightarrow b - a = 0$
+    \item $b < a \Longleftrightarrow b - a < 0$
+\end{enumerate}
+两个实数大小关系的基本事实是研究不等式的基础。任意给定两个实数，必然只属于三种关系中的一种。
+\subsubsection*{不等式的性质}
+$a, b, c$均为实数
+\begin{enumerate}
+    \item 传递性 $a > b, b > c \Longrightarrow a > c$
+    \item 加法性质 $a > b \Longrightarrow a + c > b + c \quad (a > b \Longrightarrow a - c > b - c)$
+    \item 乘法性质 $a > b, c > 0 \Longrightarrow ac > bc \quad a > b, c < 0 \Longrightarrow ac < bc$ \\ 
+    $ \quad \left(a > b, c > 0 \Longrightarrow \dfrac{a}{c} > \dfrac{b}{c} \quad a > b, c < 0 \Longrightarrow \dfrac{a}{c} < \dfrac{b}{c}\right)$ 
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 证明不等式的性质
+    \begin{enumerate}
+        \item 传递性 $a > b, b > c \Longrightarrow a > c$
+        \item 加法性质 $a > b \Longrightarrow a + c > b + c$
+        \item 乘法性质 $a > b, c > 0 \Longrightarrow ac > bc \quad a > b, c < 0 \Longrightarrow ac < bc$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 传递性 \\
+                    $a > b, b > c \Longrightarrow a - b > 0, b - c > 0 \Longrightarrow a - c = (a - b) + (b - c) > 0$
+            \item 加法性质 \\
+                    $a > b \Longrightarrow a - b > 0 \Longrightarrow (a+c) - (b+c) > 0 \Longrightarrow a + c > b + c$
+            \item 乘法性质 \\
+                    $a > b, c > 0 \Longrightarrow a - b > 0, c > 0 \Longrightarrow (a - b)c > 0 \Longrightarrow ac - bc > 0 \Longrightarrow ac > bc$ \\
+                    $a > b, c < 0 \Longrightarrow a - b > 0, c < 0 \Longrightarrow (a - b)c < 0 \Longrightarrow ac - bc < 0 \Longrightarrow ac < bc$
+        \end{enumerate}
+    \end{jieda}
+
+    \item 证明如下命题
+    \begin{enumerate}
+        \item $a + b > c \Longrightarrow a > c - b$
+        \item $a > b, c > d \Longrightarrow a + c > b + d$
+        \item $a > b, c > d \Longrightarrow a - d > b - c$
+        \item $a > b > 0 \Longrightarrow \dfrac{1}{b} > \dfrac{1}{a} > 0$
+        \item $a > b > 0, c < 0 \Longrightarrow \dfrac{c}{a} > \dfrac{c}{b}$
+        \item $a > b > 0, c > d > 0 \Longrightarrow ac > bd$
+        \item $a > b > 0, c > d > 0 \Longrightarrow \dfrac{a}{d} > \dfrac{b}{c}$
+        \item $a > b > 0, n \in \mathbf{N^*} \Longrightarrow a^n > b^n$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 两边减b，\quad $a + b > c \Longrightarrow a + b - b > c - b \Longrightarrow a > c - b$
+            \item 借助中间值，\quad $a > b, c > d \Longrightarrow a + c > b + c, b + c > b + d \Longrightarrow a + c > b + d$
+            \item $-c, -d$代替上一命题中的$d, c$，\quad $a > b, c > d \Longrightarrow a > b, -d > -c \Longrightarrow a - d > b - c$
+            \item 乘$\dfrac{1}{ab}$，\quad $a > b > 0 \Longrightarrow a \cdot \dfrac{1}{ab} > b \cdot \dfrac{1}{ab} > 0\Longrightarrow \dfrac{1}{b} > \dfrac{1}{a} > 0$
+            \item 利用上一命题，在上一命题两边乘$c$ \quad $a > b > 0, c < 0 \Longrightarrow \dfrac{1}{a} < \dfrac{1}{b}, c < 0 \Longrightarrow \dfrac{c}{a} > \dfrac{c}{b}$
+            \item 借助中间变量，\quad $a > b > 0, c > d > 0 \Longrightarrow ac > bc > 0, bc > bd > 0 \Longrightarrow ac > bd$
+            \item  $\dfrac{1}{c}, \dfrac{1}{d}$代替上一命题中的$d, c$，\quad $a > b > 0, c > d > 0 \Longrightarrow a > b > 0, \dfrac{1}{d} > \dfrac{1}{c} > 0 \Longrightarrow \dfrac{a}{d} > \dfrac{b}{c}$
+            \item $a, b$代替第五命题中的$c, d$，应用$n-1$次，$a > b > 0, n \in \mathbf{N^*} \Longrightarrow a^2 > b^2 \Longrightarrow ... \Longrightarrow a^n > b^n$
+        \end{enumerate}
+        \ps 第二个称为\textbf{同向可加性}，第六个称为\textbf{同向同正可乘性}，相对更加重要
+    \end{jieda}
+    \item 设$n > -1$，且$n \neq 1$，则$n^3+1$与$n^2+n$的大小关系是\blkda[3]{$n^3+1 > n^2 + n$}
+    \begin{jieda}
+        $n^3+1 - (n^2+n) = n^2(n-1) - (n-1) = (n-1)^2(n+1) > 0$($n > -1$，且$n \neq 1$)
+    \end{jieda}
+    \item 比较大小：$(x+1)(x+5)$与$(x+3)^2$
+    \begin{jieda}
+        $(x+1)(x+5) - (x+3)^2 = -4 < 0$
+    \end{jieda}
+    \item 已知实数$a, b$：
+    \begin{enumerate}
+        \item 若$1<a<2, 2<b<6$，求$2a+b, \dfrac{b}{a}$的取值范围
+        \item 若$1<a+b<3, 3<2a+b<5$，求$2a-b$的取值范围
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $a \in (1, 2)$则$2a \in (2, 4)$，因此$2a+b \in (4, 10)$ \\
+            $a \in (1, 2)$则$\dfrac{1}{a} \in \left(\dfrac{1}{2}, 1\right)$，因此$\dfrac{b}{a} \in (1, 6)$
+            \item 设$2a-b = m(a+b) + n(2a+b)$，解得$m = -4, n = 3$ \\
+            $-4(a+b) \in (-12, -4)$，$3(2a+b) \in (9, 15)$，因此$2a-b \in (-3, 11)$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知$a, b$是正数，$n \in \mathbf{N^*}$，求证$a^n > b^n \Longrightarrow a > b$
+    \begin{jieda}
+        采用反证法。根据实数大小的基本关系，可知$a, b$之间的关系只能是$a < b, a = b, a > b$三者之一。下面进行分类讨论。
+        \begin{dingautolist}{172}
+            \item 假设$a < b$，根据结论“$a > b > 0, n \in \mathbf{N^*} \Longrightarrow a^n > b^n$”可知有$a^n < b^n$，矛盾
+            \item 假设$a = b$，此时应有$a^n = b^n$，矛盾
+            %\item $a > b$，此时跟结论“$a > b > 0, n \in \mathbf{N^*} \Longrightarrow a^n > b^n$”一致。
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{不等式的解}
+在含有未知数的不等式中，能使此不等式成立的未知数的值称为该\textbf{不等式的解}。一个不等式的解的全体所组成的集合称为此\textbf{不等式的解集}。求不等式解集的过程称为不等式的求解或解不等式。将含有相同未知数的多个不等式联立起来， 就得到\textbf{不等式组}．解不等式组就是求不等式组中的所有不等式的解集的\textbf{交集}
+例题：
+\begin{enumerate}
+    \item 设$a$为实数，求关于$x$的不等式$ax < 1$的解集
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $a > 0$， 解集为$\left(-\infty, \dfrac{1}{a}\right)$
+            \item $a = 0$， 解集为$(-\infty, +\infty)$
+            \item $a < 0$， 解集为$\left(\dfrac{1}{a}, +\infty\right)$
+        \end{dingautolist}
+    \end{jieda}
+    \item 设$a$为实数，解关于$x$的一元一次不等式组$
+    \left \{
+        \begin{array}{l}
+             2x+a > 0  \\
+             3x - 6a < 0 
+        \end{array}
+    \right.
+    $
+    \begin{jieda}
+        $2x+a > 0$的解集为$\left(-\dfrac{a}{2}, +\infty\right)$，$3x-6a<0$的解集为$(-\infty, 2a)$
+        \begin{dingautolist}{172}
+            \item 当$-\dfrac{a}{2} < 2a$，即$a > 0$时解集为$\left(-\dfrac{a}{2}, 2a\right)$
+            \item $a \leq 0$，解集为$\varnothing$
+        \end{dingautolist}
+    \end{jieda} 
+\end{enumerate}
+\section*{一元二次不等式}
+\subsubsection*{从二次函数角度看一元二次方程和一元二次不等式}
+\begin{equation*}
+    \left \{
+    \begin{array}{cl}
+         y = ax^2 + bx + c (a \neq 0), & \mbox{二次函数} \\
+         ax^2 + bx + c = 0 (a \neq 0), & \mbox{一元二次方程} \\
+         ax^2 + bx + c > 0 (a \neq 0), &  \mbox{一元二次不等式}
+    \end{array}
+    \right.
+\end{equation*}
+\begin{enumerate}
+    \item $ax^2 + bx + c = 0 (a \neq 0)$的解对应着$y = ax^2 + bx + c (a \neq 0)$的图像和$x$轴交点的横坐标。如果$y = ax^2 + bx + c (a \neq 0)$的图像和$x$轴没有交点，则$ax^2 + bx + c = 0 (a \neq 0)$没有实根。
+    \item $ax^2 + bx + c > 0 (a \neq 0)$的解对应着$y = ax^2 + bx + c (a \neq 0)$在$x$轴上方的部分图像所对应的自变量取值范围。如果$y = ax^2 + bx + c (a \neq 0)$的图像和$x$轴没有交点，则$ax^2 + bx + c > 0 (a \neq 0)$的解集当$a > 0$时为$\mathbf{R}$，当$a < 0$时为$\varnothing$
+    \item $a>0$时不同情况的汇总见表\ref{tab:tab1}：
+\end{enumerate}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        & $\Delta > 0$ & $\Delta = 0$ & $\Delta < 0$\\
+        \hline
+        $y = ax^2 + bx + c (a > 0)$ & \makecell[c]{与$x$轴有两个交点 \\ $(x_1, 0), (x_2, 0)$} & \makecell[c]{与$x$轴有一个交点 \\ $\left(-\dfrac{b}{2a}, 0\right) $} & 与$x$轴没有交点 \\
+        \hline
+        $ax^2 + bx + c = 0 (a > 0)$ & 两个不等实根$x_1, x_2$ & \makecell[c]{两个相等实根 \\ $x_1 = x_2 = -\dfrac{b}{2a}$} & 没有实根\\
+        \hline
+        $ax^2 + bx + c > 0 (a > 0)$ & $(-\infty, x_1) \cup (x_2, +\infty)$ & $\left\{x | x \neq -\dfrac{b}{2a}\right\}$ & $\mathbf{R}$ \\
+        \hline
+        $ax^2 + bx + c < 0 (a > 0)$ & $(x_1, x_2)$  & $\varnothing$ &  $\varnothing$ \\
+        \hline
+    \end{tabular}
+    \caption{二次函数与一元二次方程、一元二次不等式解集的对应关系}
+    \label{tab:tab1}
+\end{table}
+\subsubsection*{解一元二次不等式的步骤}
+\begin{enumerate}
+    \item 将不等式整理成$a>0$的情况
+    \item 求得对应一元二次方程的解集（函数图像和$x$轴交点横坐标）
+    \item 绘制函数图像草图，结合函数图像写出一元二次不等式的解集
+\end{enumerate}
+
+\subsubsection*{从函数角度看方程、不等式}
+    方程$f(x)=0$的实根对应着函数$y=f(x)$和$x$轴的交点的横坐标，不等式$f(x) > 0$的解对应着函数$y=f(x)$图像在$x$轴上方的部分图像所对应的自变量取值范围。
+    \par 对于在区间$I$上某不等式恒成立或存在变量$x$使得该不等式成立的问题，可以通过函数的观点来理解。
+    \begin{enumerate}
+        \item 在区间$I$上不等式$f(x) > 0$恒成立可以转化为对应的函数$y = f(x)$在该区间上的最小值大于零
+        \item 在区间$I$上存在$x$使得不等式$f(x) > 0$成立可以转化为对应的函数$y = f(x)$在该区间上的最大值大于零
+        \item 在区间$I$上不等式$f(x) < 0$恒成立可以转化为对应的函数$y = f(x)$在该区间上的最大值小于零
+        \item 在区间$I$上存在$x$使得不等式$f(x) < 0$成立可以转化为对应的函数$y = f(x)$在该区间上的最小值小于零
+    \end{enumerate}
+    对于一元$n$次方程：
+    \begin{enumerate} 
+        \item 当方程具有偶数重根的时候，对应的函数图像和$x$轴相切，切点两侧函数值符号相同
+        \item 当方程具有奇数重根的时候，对应的函数穿过$x$轴，交点两侧函数值符号不同
+    \end{enumerate}
+    \begin{example}
+        $x^2(x-1) = 0, \quad x_1 = 0, x_2 = 0, x_3 = 1$，对应的函数图像在$x = 0$处和$x$相切，在$x = 1$处穿过$x$轴.
+    \end{example}
+    对于一元$n$次不等式：从函数的角度出发，通过\textbf{数轴标根法}进行求解\\
+
+例题：
+\begin{enumerate}
+    \item 解不等式组
+        \begin{equation*}
+            \left \{
+                \begin{array}{c}
+                    x - 3 > 0 \\
+                    x^2 - 3x -4 > 0
+                \end{array}
+            \right.
+        \end{equation*}
+        \begin{jieda}
+            第一个不等式的解集为$(3, +\infty)$，第二个不等式的解集为$(-\infty, -1) \cup (4, +\infty)$。两者求交集，得到$(4, +\infty)$ 
+        \end{jieda}
+    \item 已知集合$M = \{-2, -1, 0, 1, 2\}$，$N = \{x | x^2 - x -6 \geq 0\}$，则$M \cap N = $\blkda{$\{-2\}$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1 \\
+            $M$中元素逐一带入$N$
+            \item 方法2 \\
+            $N = (-\infty, -2] \cup [3, +\infty)$
+        \end{enumerate}
+    \end{jieda}
+    \item 解不等式：$x^3+3x^2>4x+12$
+    \begin{jieda}
+        原不等式可化为$x^3+3x^2-4x-12 > 0$，即$(x+3)(x+2)(x-2) > 0$，根据数轴标根法可知原不等式解集为$(-3, -2) \cup (2, +\infty)$
+    \end{jieda}
+    \item 若关于$x$的不等式$ax^3+bx^2+cx>0$的解集为$(-2, 0)\cup(1, +\infty)$，则$\dfrac{b}{c} = $\blkda{$-\dfrac{1}{2}$}
+    \begin{jieda}
+        首先根据解集可以确定$a > 0$且$ax^3+bx^2+cx=0$对应的三个根分别是$-2, 0, 1$，代入得到$\left \{ \begin{array}{l}
+             a+b+c = 0 \\
+             -8a+4b-2c = 0 \\
+             a > 0
+        \end{array} \right.$，解得$\left \{ \begin{array}{l}
+             b = a \\
+             c = -2a \\
+             a > 0
+        \end{array} \right.$，因此$\dfrac{b}{c} = -\dfrac{1}{2}$
+    \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 解关于$x$的不等式$x^2-(a+1)x+1 < 0$
+        \item 解关于$x$的不等式$ax^2-(a+1)x+1 < 0$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 
+            \begin{dingautolist}{172}
+                \item 若$a \in (-\infty, -3) \cup (1, +\infty)$，则$\Delta = (a+1)^2 - 4 > 0$，对应方程$x^2-(a+1)x+1 = 0$有两根$x_1 = \dfrac{(a+1)-\sqrt{(a+1)^2 - 4}}{2}, x_2 = \dfrac{(a+1)+\sqrt{(a+1)^2 - 4}}{2}$，故解集为$\left(\dfrac{(a+1)-\sqrt{(a+1)^2 - 4}}{2}, \dfrac{(a+1)+\sqrt{(a+1)^2 - 4}}{2}\right)$
+                \item 若$a+1\in [-2, 2]$，则$\Delta = (a+1)^2 - 4 \leq 0$，不等式解集为$\varnothing$
+            \end{dingautolist}
+            \item 
+            \begin{dingautolist}{172}
+                \item $a = 0$，不等式化为$-x+1 < 0$，解集为$(1, +\infty)$
+                \item $a > 0$，对应的方程$ax^2-(a+1)x+1 = 0$的两根为$x_1 = 1, x_2 = \dfrac{1}{a}$ \\
+                \begin{enumerate}[1.]
+                    \item $a > 1$时解集为$\left(\dfrac{1}{a}, 1\right) $
+                    \item $a = 1$时解集为$\varnothing$
+                    \item $0 < a < 1$时解集为$\left(1, \dfrac{1}{a}\right) $
+                \end{enumerate}
+                \item $a < 0$，对应的方程$ax^2-(a+1)x+1 = 0$的两根为$x_1 = 1, x_2 = \dfrac{1}{a}$，因此解集为$\left(-\infty, \dfrac{1}{a}\right)\cup(1, +\infty) $
+            \end{dingautolist}
+        \end{enumerate}
+        \ps 参数会影响二次方程的两个根的大小关系，而最高次项含参则会涉及到退化回一次函数，以及二次函数开口方向.
+    \end{jieda}
+    \item 解关于$x$的不等式$x^2 - (3a+1)x + 2a^2+2a \leq 0$
+    \begin{jieda}
+        $x^2 - (3a+1)x + 2a^2+2a \leq 0$即$(x-2a)[x-(a+1)] \leq 0$，因此对应的二次方程有两个实根：$x_1 = 2a, x_2 = a+1$
+        \begin{dingautolist}{172}
+            \item 当$x_1 > x_2$，即$a > 1$时，原不等式的解集为$[a+1, 2a]$
+            \item 当$x_1 = x_2$，即$a = 1$时，原不等式的解集为$\{2\}$
+            \item 当$x_1 < x_2$，即$a < 1$时，原不等式的解集为$[2a, a+1]$
+        \end{dingautolist}
+    \end{jieda}
+    \item 若不等式$(a+1)x^2-x+a+1 \leq 0$对任意$x \in \mathbf{R}$恒成立，则实数$a$的最大值为\blkda{$-\dfrac{3}{2}$}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 当$a = -1$时，$-x \leq 0$不恒成立，不符合要求
+            \item 当$a \neq -1$时，应有$\left\{\begin{array}{l}
+                 a+1 < 0 \\
+                 \Delta = 1-4(a+1)^2 \leq 0
+            \end{array}\right.$，解得$a \leq -\dfrac{3}{2}$
+        \end{dingautolist}
+        综上，$a$的最大值为$-\dfrac{3}{2}$
+    \end{jieda}
+    \item 若不等式$(a^2-1)x^2-(a-1)x-1 \geq 0$的解集为$\varnothing$，求实数$a$的取值范围.
+    \begin{jieda}
+        根据题意有$(a^2-1)x^2-(a-1)x-1 < 0$在$\mathbf{R}$上恒成立
+        \begin{dingautolist}{172}
+            \item 当$a^2 \neq 1$时，若要$(a^2-1)x^2-(a-1)x-1 < 0$在$\mathbf{R}$上恒成立，则应有$\left \{\begin{array}{l}
+                 a^2-1 < 0 \\
+                 \Delta = (a-1)^2+4(a^2-1) < 0
+            \end{array} \right. $，解得$a \in \left(-\dfrac{3}{5}, 1\right)$
+            \item 当$a^2 = 1$时，原不等式即$-(a-1)x-1 < 0$在$\mathbf{R}$上恒成立，必有$a = 1$
+        \end{dingautolist}
+        综上，$a \in  \left(-\dfrac{3}{5}, 1\right]    $
+    \end{jieda}
+\end{enumerate}
+
+\section*{分式不等式}
+\begin{enumerate}
+    \item 求解分式不等式的基本思路是要将其\textbf{转化为整式不等式}来求解。
+    \item $\dfrac{f(x)}{g(x)} > 0$的充要条件是$f(x) \cdot g(x) > 0$，即\textbf{分子分母同号}，两个不等式的解集相同
+    \item $\dfrac{f(x)}{g(x)} < 0$的充要条件是$f(x) \cdot g(x) < 0$，即\textbf{分子分母异号}，两个不等式的解集相同
+    \item $\dfrac{f(x)}{g(x)} \geq 0$的充要条件是$f(x) \cdot g(x) \geq 0$且$g(x) \neq 0$
+    \item $\dfrac{f(x)}{g(x)} \leq 0$的充要条件是$f(x) \cdot g(x) \leq 0$且$g(x) \neq 0$
+    \item 若右侧不为0，可以考虑移项后通分，转化成前面的形式
+    \begin{example}
+        $\dfrac{x-1}{x^2-3} \leq 1 \Longrightarrow \dfrac{(x-1) - (x^2-3)}{x^2-3} = \dfrac{-x^2+x+2}{x^2-3} \leq 0 \Longrightarrow (-x^2+x+2)(x^2-3) \leq 0$
+    \end{example}
+    \item 若分母恒正或恒负，则可利用不等式的乘法性质变为整式不等式
+    \begin{example}
+        $\dfrac{x-1}{x^2+1} \leq 1 \Longrightarrow x-1 \leq x^2 + 1$
+    \end{example}
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 解不等式：$\dfrac{16}{x-1} \leq x-1$
+    \begin{jieda}
+        原不等式化为$\dfrac{(x-5)(x+3)}{x-1} \geq 0$，进一步化为$\left \{\begin{array}{l}
+             (x-5)(x+3)(x-1) \geq 0 \\
+             x \neq 1
+        \end{array} \right.$
+        根据数轴标根法可以得原不等式的解集为$[-3,1) \cup [5, +\infty)$
+    \end{jieda}
+    \item 解关于$x$的不等式：$\dfrac{a}{x-2} > 1-a$
+    \begin{jieda}
+        原不等式化为$\dfrac{(a-1)x+(2-a)}{x-2} > 0$，进一步化为$[(a-1)x+(2-a)](x-2) > 0$ 
+        \begin{dingautolist}{172}
+            \item $a > 1$时，不等式等价于$\left[x-\dfrac{a-2}{a-1}\right](x-2) > 0$，又因为$\dfrac{a-2}{a-1} = 1 - \dfrac{1}{a-1} < 1$，所以原不等式的解集为$\left(-\infty, \dfrac{a-2}{a-1}\right) \cup (2, +\infty)$
+            \item $a = 1$时，不等式等价于$x-2 > 0$，解集为$(2, +\infty)$
+            \item $a < 1$时，不等式等价于$\left[x-\dfrac{a-2}{a-1}\right](x-2) < 0$ \\
+            此时$\dfrac{a-2}{a-1} < 2 \Longleftrightarrow a < 0$，因此：\\
+            $a < 0$时原不等式解集为$\left(\dfrac{a-2}{a-1}, 2\right)$ \\
+            $a = 0$时原不等式解集为$\varnothing$ \\
+            $a \in (0, 1)$时原不等式解集为$\left(2, \dfrac{a-2}{a-1}\right)$
+        \end{dingautolist}
+        \ps 参数会影响二次方程的两个根的大小关系，而最高次项含参则会涉及到退化回一次函数，以及二次函数开口方向.
+    \end{jieda}
+    \item 不等式$\dfrac{2x^2+2kx+k}{4x^2+6x+3} < 1$的解集为$\mathbf{R}$，求实数$k$的取值范围.
+    \begin{jieda}
+        因为$4x^2+6x+3 > 0$恒成立，因此原不等式等价于$2x^2+2kx+k < 4x^2+6x+3$，整理有$2x^2+(6-2k)x+(3-k) > 0$在$\mathbf{R}$上恒成立，因此$\Delta = (6-2k)^2 - 8(3-k) < 0$，解得$k \in (1, 3)$
+    \end{jieda}
+\end{enumerate}
+\section*{无理不等式}
+\begin{enumerate}
+    \item $\sqrt{f(x)} > \sqrt{g(x)} \Longleftrightarrow \left\{ \begin{array}{l}
+     f(x) \geq 0  \\
+     g(x) \geq 0  \\
+     f(x) > g(x)
+\end{array}\right.$
+    \item $\sqrt{f(x)} > g(x) \Longleftrightarrow \left\{ \begin{array}{l}
+     f(x) \geq 0  \\
+     g(x) \geq 0  \\
+     f(x) > [g(x)]^2
+\end{array}\right.$ 或 $\left\{ \begin{array}{l}
+     f(x) \geq 0  \\
+     g(x) < 0
+\end{array}\right.$    
+    \item $\sqrt{f(x)} < g(x) \Longleftrightarrow \left\{ \begin{array}{l}
+     f(x) \geq 0  \\
+     g(x) > 0  \\
+     f(x) < [g(x)]^2
+\end{array}\right.$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 解不等式：$\sqrt{x} > x-3$
+    \begin{jieda}
+        原不等式可以化为$\left\{ \begin{array}{l}
+             x \geq 0  \\
+             x - 3 < 0
+        \end{array}\right.$或$\left\{ \begin{array}{l}
+             x \geq 0  \\
+             x - 3 \geq 0 \\ 
+             x > (x-3)^2
+        \end{array}\right.$ \\
+        前者解得$x \in [0, 3)$，后者解得$x \in \left[3, \dfrac{7+\sqrt{13}}{2}\right)$ \\
+        综上，$ x \in \left[0, \dfrac{7+\sqrt{13}}{2}\right)$
+    \end{jieda}
+    \item 解不等式：$\sqrt{x^2-2x-3} < \dfrac{x}{2}$
+    \begin{jieda}
+        原不等式可以化为$\left\{ \begin{array}{l}
+             x^2-2x-3 \geq 0  \\
+             x^2-2x-3 < \dfrac{x^2}{4}  \\
+             \dfrac{x}{2} > 0
+        \end{array}\right.$ \\
+        解得$x \in \left[3, \dfrac{4+2\sqrt{13}}{3}\right)$ 
+    \end{jieda}
+\end{enumerate}
+\section*{含绝对值不等式}
+\begin{enumerate}
+    \item $|x|$的表示实数$x$在数轴上对应的点到原点的距离
+    \item 求解含绝对值不等式的基本思路是要\textbf{将绝对值去掉}
+    \begin{example}
+        \begin{dingautolist}{172}
+            \item 当$a > 0$时,$|x| < a \Longleftrightarrow -a < x < a$
+            \item $|x| > a \Longleftrightarrow x < -a \mbox{或} x > a$
+        \end{dingautolist}
+    \end{example}
+    含绝对值的不等式主要有三种基本类型。
+    \begin{enumerate}
+        \item $|f(x)| < h(x) (\mbox{或}> h(x))$型
+            \begin{dingautolist}{172}
+                \item $|f(x)| < g(x) \Longleftrightarrow -g(x) < f(x) < g(x)$
+                \item $|f(x)| > g(x) \Longleftrightarrow f(x) < -g(x) \mbox{或} f(x) > g(x)$
+            \end{dingautolist}
+            
+        \item $|f(x)| < |h(x)|$ 型 \\
+            $|f(x)| < |h(x)| \Longleftrightarrow [f(x)]^2 < [g(x)]^2$
+            
+        \item $|f(x)| + |g(x)| < h(x) (\mbox{或}> h(x))$型 \\
+            要进行分类讨论，根据$f(x)$和$g(x)$的符号变化情况，将实数集划分成若干区间，在每个区间内将所有的不等号去掉，内部的负值取相反数，形成不含绝对值的不等式，然后依次求解。
+            \begin{example}
+                $|x^2-1| - |x+2| < 6$
+                \begin{dingautolist}{172}
+                    \item $x \in [1, +\infty)$，不等式化为$(x^2-1)-(x+2) < 6$
+                    \item $x \in [-1, 1)$，不等式化为$(1-x^2)-(x+2) < 6$
+                    \item $x \in [-2, -1)$，不等式化为$(x^2-1)-(x+2) < 6$
+                    \item $x \in (-\infty, -2)$，不等式化为$(x^2-1)-(-x-2) < 6$
+                \end{dingautolist}
+            \end{example}
+    \end{enumerate}
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 解不等式：
+    \begin{dingautolist}{172}
+        \item $|x-1| < 2$
+        \item $|3x-1| \leq 2$
+        \item $|2x+1| \geq 3$
+        \item $|1-2x| > x$
+        \item $|1-2x| < 3x$
+        \item $|1-2x| < |3x|$
+        \item $|x-3|+|x-5| < 4$
+        \item $|x-1|+|x+2| \geq 5$
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $x \in (-1, 3)$
+            \item $x \in \left[-\dfrac{1}{3}, 1\right]$
+            \item $x \in (-\infty, -2] \cup [1, +\infty)$
+            \item $x \in \left(-\infty, \dfrac{1}{3}\right) \cup \left(1, +\infty\right)$
+            \item $x \in \left(\dfrac{1}{5}, +\infty\right)$
+            \item $x \in \left(-\infty, -1\right) \cup \left(\dfrac{1}{5}, +\infty\right)$
+            \item $x \in (2, 6)$
+            \item $x \in (-\infty, -3] \cup [2, +\infty)$
+        \end{dingautolist}
+    \end{jieda}
+    \item 解不等式：$\left|\dfrac{2x+1}{3x-4}\right| > x-1$
+    \begin{jieda}
+        $\left|\dfrac{2x+1}{3x-4}\right| > x-1 \Longleftrightarrow \dfrac{2x+1}{3x-4} > x-1$或$\dfrac{2x+1}{3x-4} < 1-x$ \\
+        $\dfrac{2x+1}{3x-4} > x-1$即$\dfrac{2x+1 + (1-x) \cdot (3x-4)}{3x-4} > 0$，即$\dfrac{-3x^2+9x-3}{3x-4} > 0$，即$\dfrac{x^2-3x+1}{3x-4} < 0$，解得$x \in \left(-\infty, \dfrac{3-\sqrt{5}}{2}\right) \cup \left(\dfrac{4}{3}, \dfrac{3+\sqrt{5}}{2}\right)$ \\
+        $\dfrac{2x+1}{3x-4} < 1-x$即$\dfrac{2x+1 + (x-1) \cdot (3x-4)}{3x-4} < 0$，即$\dfrac{3x^2-5x+5}{3x-4} < 0$，$3x^2-5x+5 > 0$恒成立，因此$x \in \left(-\infty, \dfrac{4}{3}\right)$ \\
+        两者取并集得到原不等式解集为$\left(-\infty, \dfrac{4}{3}\right) \cup \left(\dfrac{4}{3}, \dfrac{3+\sqrt{5}}{2}\right)$
+    \end{jieda}
+    \item 解不等式：$|x^2-2x-3|-|2x+3| < 6$
+    \begin{jieda}
+        $|x^2-2x-3|-|2x+3| < 6  \Longleftrightarrow |(x+1)(x-3)|-2\left|x+\dfrac{3}{2}\right| < 6$
+        \begin{dingautolist}{172}
+            \item $x \in \left[-\dfrac{3}{2}, -1\right) \cup [3, +\infty)$，原不等式即$(x^2-2x-3)-(2x+3) < 6$，即$x^2-4x-12 < 0$，解得$x \in \left[-\dfrac{3}{2}, -1\right) \cup [3, 6)$
+            \item $x \in [-1, 3)$原不等式即$-(x^2-2x-3)-(2x+3) < 6$，即$-x^2 < 6$，解得$x \in [-1, 3)$
+            \item $x \in \left(-\infty, -\dfrac{3}{2}\right)$，原不等式即$(x^2-2x-3)+(2x+3) < 6$，即$x^2 < 6$，解得$x \in \left(-\sqrt{6}, -\dfrac{3}{2}\right)$
+        \end{dingautolist}
+        综上，原不等式的解集为$(-\sqrt{6}, 6)$
+    \end{jieda}
+    \item $|x+2| + |x-1| < 4$的解集为\blkda{$\left(-\dfrac{5}{2}, \dfrac{3}{2}\right)$}
+    \begin{jieda}
+        $y = |x+2| + |x-1|$即$y = \left \{ \begin{array}{ll}
+             2x+1, & x \in [1, +\infty) \\
+             3, & x \in (-2, 1) \\
+             -2x-1, & x \in (-\infty, -2]\\
+        \end{array} \right.$为平底锅函数，结合函数图像可知不等式的解集为$\left(-\dfrac{5}{2}, \dfrac{3}{2}\right)$
+    \end{jieda}
+    \item 若不等式$|3x-b| < 4$的解集中的整数仅有$2, 3$，则$b$的取值范围是\blkda{$[7, 8]$}
+    \begin{jieda}
+        $|3x-b| < 4 \Longleftrightarrow -4 < 3x-b < 4 \Longleftrightarrow \dfrac{b-4}{3} < x < \dfrac{b+4}{3}$，故原不等式的解集为$\left(\dfrac{b-4}{3}, \dfrac{b+4}{3}\right)$ 因为原不等式的解集中整数仅有$2, 3$，因此有$1 \leq \dfrac{b-4}{3} < \dfrac{b+4}{3} \leq 4$，解得$b \in [7, 8]$
+    \end{jieda}
+\end{enumerate}
+\subsubsection*{三角不等式}
+含绝对值的不等式有一个重要的结论，即三角不等式：$|a| + |b| \geq |a+b|$，等号仅当$ab \geq 0$的时候成立。三角不等式的意义：两个实数和的绝对值小于等于它们绝对值的和。其几何意义在向量的加法运算中体现。利用三角不等式可以解决一些求最值的问题。\\
+证明：\\
+\par 要证$|a| + |b| \geq |a+b|$，即证$(|a| + |b|)^2 \geq (|a+b|)^2$ \\
+\par 平方打开得$a^2 + 2|ab| + b^2 \geq a^2 + 2ab + b^2$。故要证$(|a| + |b|)^2 \geq (|a+b|)^2$，即证$|ab| \geq ab$ \\
+\par 显然成立\\
+三角不等式的变式：
+\begin{dingautolist}{172}
+    \item $|a-b| \leq |a| + |b|$
+    \item $||a| - |b|| \leq |a-b|$
+    \item $||a| - |b|| \leq |a+b|$
+\end{dingautolist}
+完整不等关系：$||a| - |b|| \leq |a \pm b| \leq |a| + |b|$ \\
+
+例题：
+\begin{enumerate}
+    \item 证明：
+    \begin{dingautolist}{172}
+        \item $|a-b| \leq |a| + |b|$
+        \item $||a| - |b|| \leq |a-b|$
+        \item $||a| - |b|| \leq |a+b|$
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 由$|a| + |b| \geq |a+b|$恒成立，用$-b$代换$b$可得$|a| + |-b| \geq |a-b|$，即$|a-b| \leq |a| + |b|$
+            \item 由$|a| + |b| \geq |a+b|$恒成立
+            \begin{enumerate}
+                \item 移项可得$|a| \geq |a+b| - |b|$恒成立，用$a-b$代换$a$可得$|a-b| \geq |a| - |b|$
+                \item 移项可得$|b| \geq |a+b| - |a|$恒成立，用$b-a$代换$b$可得$|b-a| \geq |b| - |a|$
+            \end{enumerate}
+            综上，$||a| - |b|| \leq |a-b|$
+            \item 由$||a| - |b|| \leq |a-b|$恒成立，用$-b$代换$b$可得$||a| - |-b|| \leq |a+b|$，即$||a| - |b|| \leq |a+b|$
+        \end{dingautolist}
+    \end{jieda}
+    \item 指出\ding{172} $|a|+|b| \geq |a+b|$；\quad \ding{173} $|a|+ |b| \geq |a-b|$；\quad \ding{174} $|a| - |b| \leq |a+b|$的取等条件
+    \begin{jieda}
+        \ding{172} $ab \geq 0$; \ding{173} $ab \leq 0$；\ding{174} $|a| \geq |b|, ab \leq 0$
+    \end{jieda}
+    \item 已知$a, b, c$是实数，求证$|a-c| \leq |a-b| + |b-c|$
+    \begin{jieda}
+        因为$(a-c) = (a-b) + (b-c)$，所以根据三角不等式有$|(a-b) + (b-c)| \leq |a-b| + |b-c|$，即$|a-c| \leq |a-b| + |b-c|$.
+    \end{jieda}
+    \item 若不等式$|x+3|+|x+1| \leq a^2-3a$有解，求实数$a$的取值范围.
+    \begin{jieda}
+        $|x+3|+|x+1| \leq a^2-3a$有解即$a^2-3a \geq (|x+3|+|x+1|)_{min}$，根据三角不等式可知$|x+3|+|x+1| \geq 2$，因此$a^2-3a \geq 2$，解得$a \in \left(-\infty, \dfrac{3 - \sqrt{17}}{2}\right] \cup \left[\dfrac{3 + \sqrt{17}}{2}, +\infty\right)$
+    \end{jieda}
+    \item \begin{enumerate}
+        \item 若关于$x$的不等式$|x-3|-|x+1| \leq a$对任意实数$x$恒成立，求实数$a$的取值范围.
+        \item 若关于$x$的不等式$|x-3|-|x+1| \leq a$的解集不是$\varnothing$，求实数$a$的取值范围.
+        \item 若关于$x$的不等式$|x-3|-|x+1| \leq a$的解集是$\mathbf{R}$的非空真子集，求实数$a$的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        设$y = |x-3|-|x+1|$，因为$||x-3|-|x+1|| \leq |(x-3)-(x+1)| = 4$，因此$y \in [-4, 4]$
+        \begin{enumerate}
+            \item $|x-3|-|x+1| \leq a$的解集为$\mathbf{R}$，即$y_{max} \leq a$，可得$a \geq 4$
+            \item $|x-3|-|x+1| \leq a$的解集不为$\varnothing$，即$y_{min} \leq a$，可得$a \geq -4$
+            \item $|x-3|-|x+1| \leq a$的解集不为$\varnothing$，也不为$\mathbf{R}$，即$y_{min} \leq a < y_{max}$，即$a \in [-4, 4)$
+        \end{enumerate}
+    \end{jieda}
+    
+\end{enumerate}
+\section*{平均值不等式}
+\subsubsection*{平均值不等式基础}
+平均值不等式：$\dfrac{a+b}{2} \geq \sqrt{ab}, a > 0, b > 0$，等号当且仅当$a = b$的时候成立。平均值不等式的意义：两个\textbf{正数}算数平均值大于其几何平均值。利用平均值不等式可以解决一些求最值的问题。\\
+证明：\\
+\par 要证$\dfrac{a+b}{2} \geq \sqrt{ab}, a > 0, b > 0$，即证$a+b \geq 2\sqrt{ab}, a > 0, b > 0$ \\
+\par 要证$a+b \geq 2\sqrt{ab}, a > 0, b > 0$，即证$a- 2\sqrt{ab}+b \geq 0, a > 0, b > 0$ \\
+\par 要证$a- 2\sqrt{ab}+b \geq 0, a > 0, b > 0$，即证$(\sqrt{a} - \sqrt{b})^2 \geq 0, a > 0, b > 0$ \\
+\par 显然成立\\
+平均值不等式的几何意义：半弦长小于半径长。下图中半弦$CD$长为$\sqrt{ab}$，半径长$\dfrac{a+b}{2}$
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.2\linewidth]{bodyxb/src/均值不等式.png}
+    \label{fig:inequlity}
+\end{figure}\\
+平均值不等式及其变式
+\renewcommand\arraystretch{1.75}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        名称 & 平均值不等式 & 重要不等式 & 常用不等式 \\
+        \hline
+        符号表述 & $\dfrac{a+b}{2} \geq \sqrt{ab}$ & $a^2+b^2 \geq 2ab$ & $\left(\dfrac{a+b}{2}\right)^2 \geq ab$ \\
+        \hline
+        适用条件 & $a \geq 0, b \geq 0$ & $a, b \in \mathbf{R}$ & $a, b \in \mathbf{R}$ \\
+        \hline
+        等号成立条件 & $a = b$ & $a = b$ & $a = b$ \\
+        \hline
+    \end{tabular}
+\end{table}
+
+例题：
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item 已知$xy > 0$，求证$\dfrac{y}{x} + \dfrac{x}{y} \geq 2$
+        \item 已知$xy < 0$，求证$\dfrac{y}{x} + \dfrac{x}{y} \leq -2$
+        \item 试比较$\left|\dfrac{y}{x} + \dfrac{x}{y}\right|$与2的大小
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为$xy > 0$，所以$\dfrac{x}{y}, \dfrac{y}{x} > 0$，由平均值不等式可知$\dfrac{x}{y} + \dfrac{y}{x} \geq 2\sqrt{\dfrac{x}{y} \cdot \dfrac{y}{x}} = 2$，当且仅当$\dfrac{y}{x} = \dfrac{x}{y}$时取等号.
+            \item 因为$xy > 0$，所以$-\dfrac{x}{y}, -\dfrac{y}{x} > 0$，由平均值不等式可知$\left(-\dfrac{x}{y}\right) + \left(-\dfrac{y}{x}\right) \geq 2\sqrt{\left(-\dfrac{x}{y}\right)\cdot \left(-\dfrac{y}{x}\right)} = 2$，即$\dfrac{y}{x} + \dfrac{x}{y} \leq -2$，当且仅当$\dfrac{y}{x} = \dfrac{x}{y}$时取等号.
+            \item 由前两问可知$\left|\dfrac{y}{x} + \dfrac{x}{y}\right| \geq 2$，当且仅当$\dfrac{y}{x} = \dfrac{x}{y}$时取等号.
+        \end{enumerate}
+    \end{jieda}
+    \item 已知$a, b > 0$
+    \begin{enumerate}
+        \item 若$ab = P$（$P > 0$，$P$为定值），求证：当且仅当$a = b$时$a+b$有最小值$2\sqrt{P}$
+        \item 若$a+b = S$（$S > 0$，$S$为定值），求证：当且仅当$a = b$时$ab$有最大值$\dfrac{S^2}{4}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 当$ab$为定值$P$时，$\dfrac{a+b}{2} \geq \sqrt{ab} = \sqrt{P}$恒成立，即$a+b \geq 2\sqrt{P}$恒成立，因此当且仅当$a = b$时$a+b$有最小值$2\sqrt{P}$
+            \item 当$a+b$为定值$S$时，$\dfrac{S}{2} = \dfrac{a+b}{2} \geq \sqrt{ab}$恒成立，即$ab \leq \dfrac{S^2}{4}$恒成立，因此当且仅当$ab$有最大值$\dfrac{S^2}{4}$
+        \end{enumerate}
+        \ps 一正二定三相等 \\
+        \ps 和定积最大，积定和最小
+    \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 若$x > 0$，求$4x+\dfrac{9}{x+1}$的最小值.
+        \item 若$x, y > 0$，且$\dfrac{1}{x} + \dfrac{9}{y} = 1$，求$x+y$的最小值.
+        \item 正实数$x, y$满足$\dfrac{1}{x} + \dfrac{4}{y} = 2$，且不等式$x + \dfrac{y}{4} \geq m^2 - m$恒成立，求实数$m$的取值范围
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $4x+\dfrac{9}{x+1} = 4(x+1)+\dfrac{9}{x+1} - 4 \geq 2\sqrt{4(x+1) \cdot \dfrac{9}{x+1}} - 4 = 8$，当且仅当$x = \dfrac{1}{2}$时等号成立.
+            \item 
+            \begin{dingautolist}{172}
+                \item 消元法 \\
+                $\dfrac{1}{x} + \dfrac{9}{y} = 1 \Longrightarrow x = \dfrac{1}{1-\dfrac{9}{y}} = \dfrac{y}{y-9} = 1 + \dfrac{9}{y-9}$，因此$x+y = \dfrac{9}{y-9} + (y+1) = \dfrac{9}{y-9} + (y-9) + 10 \geq 2\sqrt{9} + 10 = 16$，当且仅当$x = 4, y = 12$时取得最小值.
+                \item 常数法 \\
+                $x+y = (x+y) \cdot \left(\dfrac{1}{x} + \dfrac{9}{y}\right) = 10 + \dfrac{y}{x} + \dfrac{9x}{y} \geq 10 + 2\sqrt{9} = 16$，当且仅当$x = 4, y = 12$时取得最小值.
+            \end{dingautolist}
+            \item 问题可以转化为$x+\dfrac{y}{4}$的最小值大于等于$m^2 - m$，因此要考虑利用平均值不等式求出$x+\dfrac{y}{4}$的最小值
+            \begin{enumerate}
+                \item 常数法 \\
+                $x+\dfrac{y}{4} = \left(x+\dfrac{y}{4}\right) \cdot \left(\dfrac{1}{x} + \dfrac{4}{y}\right) \cdot \dfrac{1}{2} = \dfrac{1}{2}\left(1 + 1 + \dfrac{y}{4x} + \dfrac{4x}{y}\right) \geq \dfrac{1}{2}(2 + 2\sqrt{1}) = 2$ \\
+                （$x = 1, y = 4$时取等）
+                \item 消元法 \\
+                $\dfrac{1}{x} + \dfrac{4}{y} = 2$可以变形为$\dfrac{y}{4} = \dfrac{1}{2-\dfrac{1}{x}} = \dfrac{x}{2x-1} = \dfrac{1}{2} + \dfrac{1}{2(2x-1)}$。 \\
+                因此$x+\dfrac{y}{4} = x + \dfrac{1}{2} + \dfrac{1}{2(2x-1)} = \dfrac{2x-1}{2} + \dfrac{1}{2(2x-1)} + 1 \geq 1 + 2\sqrt{\dfrac{1}{4}} = 2$\\
+                （$x = 1, y = 4$时取等）
+            \end{enumerate}
+            因此有$m^2 - m \leq 2$，解得$m \in [-1, 2]$
+            \end{enumerate}
+    \end{jieda}
+    \item 已知正数$x, y$满足$x+y = 5$，则$\dfrac{1}{x+2} + \dfrac{1}{y+2}$的最小值是 \blkda{$\dfrac{4}{9}$ }
+    \begin{jieda}
+        $x+y=5 \Rightarrow (x+2)+(y+2) = 9$，因此$\dfrac{1}{x+2}+\dfrac{1}{y+2} = \left(\dfrac{1}{x+2}+\dfrac{1}{y+2}\right) \cdot ((x+2)+(y+2)) \cdot \dfrac{1}{9} = \dfrac{1}{9} \left(2 + \dfrac{x+2}{y+2} + \dfrac{y+2}{x+2}\right) \geq \dfrac{4}{9}$
+    \end{jieda}
+
+    \item 已知$x > 0, y > 0$，$2xy = x + 4y + a$
+    \begin{enumerate}
+        \item 当$a = 16$时，求$xy$的最小值
+        \item 当$a = 0$时，求$x+y+\dfrac{2}{x}+\dfrac{1}{2y}$的最小值
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 
+            \begin{dingautolist}{172}
+                \item 方法1
+
+                $2xy = x + 4y + 16$，故$(2x-4)y = x+16, y = \dfrac{x+16}{2x-4} = \dfrac{1}{2} + \dfrac{18}{2x-4}$，故$xy = \dfrac{x}{2} + \dfrac{18x}{2x-4} = \dfrac{x}{2} + 9 + \dfrac{36}{2x-4} = \dfrac{x-2}{2} + 10 + \dfrac{36}{2x-4} = \geq 10 + 2\sqrt{\dfrac{x-2}{2} \cdot \dfrac{36}{2x-4}} = 16$
+
+                \item 方法2
+
+                $2xy = x + 4y + 16 \geq 16 + 4\sqrt{xy}$，故$\sqrt{xy} \geq 4$，因此$xy \geq 16$
+                
+            \end{dingautolist}
+            
+            \item 
+            \begin{dingautolist}{172}
+                \item 方法1
+                
+                $2xy = x + 4y$，故$(2x-4)y = x$，即$y = \dfrac{x}{2x-4}$。\\
+                故$x+y+\dfrac{2}{x}+\dfrac{1}{2y} = x + \dfrac{x}{2x-4} + \dfrac{2}{x} + \dfrac{2x-4}{2x} = x + \dfrac{x}{2x-4} + 1 = \dfrac{3}{2} + x + \dfrac{2}{2x-4} = \dfrac{7}{2} + (x-2) + \dfrac{2}{2x-4} \geq \dfrac{7}{2} + 2 = \dfrac{11}{2}$
+
+                \item 方法2
+
+                $2xy = x + 4y$即$1 = \dfrac{1}{2y} + \dfrac{2}{x}$，因此$x+y+\dfrac{2}{x}+\dfrac{1}{2y} = 1+x+y = 1+(x+y)\left(\dfrac{1}{2y} + \dfrac{2}{x}\right) = 1 + \left(\dfrac{x}{2y}+\dfrac{2y}{x} + \dfrac{5}{2}\right) \geq \dfrac{7}{2} + 2\sqrt{1} = \dfrac{11}{2}$
+            \end{dingautolist}
+            
+        \end{enumerate}
+    \end{jieda}\end{enumerate}
+\subsubsection*{对勾函数}
+形如$y = ax + \dfrac{b}{x} (a > 0, b > 0)$的函数我们称为对勾函数。对勾函数经常出现在题目中，其图象如图\ref{fig:nike_function}所示。对勾函数有两条渐近线$x = 0$和$y = ax$。对勾函数在$(0, +\infty)$的最小值在$x = \sqrt{\dfrac{b}{a}}$取得，此时$ax = \dfrac{b}{x}$。该结论可由平均值不等式证明。对勾函数的图像关于原点对称，与之对称的位置,$x = -\sqrt{\dfrac{b}{a}}$取到函数在$(-\infty, 0)$的最大值。
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{bodyxb/src/对勾函数.png}
+    \caption{对勾函数的图象}
+    \label{fig:nike_function}
+\end{figure}
+\subsubsection*{平均值不等式推广}
+推广形式：$H_n \leq G_n \leq A_n \leq Q_n$，其中：
+\begin{enumerate}
+    \item $H_n = \dfrac{n}{\sum_{i=1}^{n}\dfrac{1}{x_i}} = \dfrac{n}{\dfrac{1}{x_1} + \dfrac{1}{x_2} + ... + \dfrac{1}{x_n}}$
+    \item $G_n = \sqrt[n]{\prod_{i=1}^{n}x_i} = \sqrt[n]{x_1 \cdot x_2 \cdot ... \cdot x_n}$
+    \item $A_n = \dfrac{\sum_{i=1}^{n}x_i}{n} = \dfrac{x_1 + x_2 + ... + x_n}{n}$
+    \item $Q_n = \sqrt{\dfrac{\sum_{i=1}^{n}x_i^2}{n}} = \sqrt{\dfrac{x_1^2 + x_2^2 + ... + x_n^2}{n}}$
+\end{enumerate}
+
+特别地，二维的情况为：$\dfrac{2}{\dfrac{1}{a} + \dfrac{1}{b}} \leq \sqrt{ab} \leq \dfrac{a+b}{2} \leq \sqrt{\dfrac{a^2 + b^2}{2}}$ \\
+\par 三维的情况为：$\dfrac{3}{\dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c}} \leq \sqrt[3]{abc} \leq \dfrac{a+b+c}{3} \leq \sqrt{\dfrac{a^2 + b^2 + c^2}{3}}$
+
+例题：
+\begin{enumerate}
+    \item 若$a > 0, b > 0$，且$a^2+\dfrac{b^2}{2} = 1$，求$a\sqrt{1+b^2}$的最大值.
+    \begin{jieda}
+        $a\sqrt{1+b^2} = \sqrt{2} \cdot a \sqrt{\dfrac{1+b^2}{2}} \leq \sqrt{2} \cdot \dfrac{a^2 + \left(\sqrt{\dfrac{1+b^2}{2}}\right)^2}{2} = \dfrac{3\sqrt{2}}{4}$，当且仅当$a = \dfrac{\sqrt{3}}{2}, b = \dfrac{\sqrt{2}}{2}$时取等号.
+    \end{jieda}
+    
+    \item 
+    \begin{enumerate}
+        \item 求$x^2+\dfrac{2}{x}(x>0)$的最小值
+        \item 设$a > b > 0$，求$y = 2a + \dfrac{1}{b(a-b)}$的最小值
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $x^2+\dfrac{2}{x} = x^2 + \dfrac{1}{x} + \dfrac{1}{x} \geq 3\sqrt[3]{1} = 3$，当且仅当$x = 1$时取等号.
+            \item 首先考虑消去$b$，根据平均值不等式有$b(a-b) \leq \dfrac{(b+(a-b))^2}{4} = \dfrac{a^2}{4}$ ($a = 2b$取等)\\
+            因此有$y \geq 2a + \dfrac{4}{a^2}$，可以将$2a$拆开后利用三维平均值不等式（$\sqrt[3]{abc} \leq \dfrac{a+b+c}{3}$）计算其最值。$y \geq 2a + \dfrac{4}{a^2} = a + a + \dfrac{4}{a^2} \geq 3\sqrt[3]{a\cdot a \cdot \dfrac{4}{a^2}} = 3\sqrt[3]{4}$（$a = \sqrt[3]{4}, b = \dfrac{\sqrt[3]{4}}{2}$时取等）
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{柯西不等式}
+二维形式：$(a^2+b^2)\cdot(c^2+d^2) \geq (ac+bd)^2$，取等条件为$ad 
+ = bc$ \\
+证明：\\
+$LHS = a^2c^2 + a^2d^2 + b^2c^2 + b^2d^2$， $RHS = a^2c^2 + b^2d^2 + 2abcd$ \\
+$LHS - RHS = a^2d^2 + b^2c^2 - 2abccd = (ad-bc)^2 \geq 0$
+\par 高维形式：$(a_1^2 + a_2^2 + ... + a_n^2) \cdot (b_1^2 + b_2^2 + ... + b_n^2) \geq (a_1b_1 + a_2b_2 + ... +a_nb_n)^2$，取等条件为对所有$i$同时满足$a_i = 0$或同时满足$b_i = 0$或同时满足$k = \dfrac{b_i}{a_i}$

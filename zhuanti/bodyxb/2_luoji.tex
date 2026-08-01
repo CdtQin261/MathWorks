@@ -1,0 +1,227 @@
+\chapter*{逻辑用语专题练习}
+\begin{enumerate}
+\item 逻辑联结词与集合运算
+\begin{enumerate}
+    \item 完成表格
+        \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            陈述句 & 对应区间 \\
+            \hline
+            $x > 3$ & $(3, +\infty)$\\
+            \hline
+            $x > 3$的否定 & \blkda[5]{$(-\infty, 3]$}\\
+            \hline
+            $x \leq 5$ & \blkda[5]{$(-\infty, 5]$}\\
+            \hline
+            $x \neq 2$ & \blkda[5]{$(-\infty, 2) \cup (2, +\infty)$} \\
+            \hline
+            $x > 3$且$x \leq 5$ & \blkda[5]{$(3, 5]$} \\
+            \hline
+            $x > 3$或$x \leq 5$ & \blkda[5]{$\mathbf{R}$} \\
+            \hline
+            $x \neq 2$且$x \neq 4$ & \blkda[5]{$(-\infty, 2) \cup (2, 4) \cup (4, +\infty)$} \\
+            \hline
+            $x \neq 2$或$x \neq 4$ & \blkda[5]{$\mathbf{R}$} \\
+            \hline
+            $3 < x \leq 5$的否定 & \blkda[5]{$(-\infty, 3] \cup (5, +\infty)$} \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \item 完成表格
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            陈述句 & 对应的点 \\
+            \hline
+            $x + y = 3$ & 直线$x + y = 3$上的点 \\
+            \hline
+            $x + y \neq 3$ & \blkda[10]{直线$x + y = 3$以外的点} \\
+            \hline
+            $x + y > 3$ & \blkda[10]{直线$x + y = 3$右上方的点（不包含边界）} \\
+            \hline
+            $x^2 + y^2 < 1$ & \blkda[10]{以原点为圆心，半径为1的圆内部的点（不包含边界）} \\
+            \hline
+            $x^2 + y^2 = 0$ & \blkda[10]{原点} \\
+            \hline
+            $xy \geq 1$ &  \blkda[10]{双曲线$y = \frac{1}{x}$左支左下方和右支右上方的点（包含边界）}\\
+            \hline
+            $xy < 0$ & \blkda[10]{第二象限和第四象限的点} \\
+            \hline
+            $x = 1$且$y = 2$ & \blkda[10]{点$(1, 2)$} \\
+            \hline
+            $x \neq 1$且$y \neq 2$ & \blkda[10]{两直线$x = 1, y = 2$以外的点} \\
+            \hline
+            $x = 2$或$y = 4$ & \blkda[10]{两直线$x = 2, y = 4$上的点 }\\
+            \hline
+            $x \neq 2$或$y \neq 4$ & \blkda[10]{除点$(2, 4)$以外的点} \\
+            \hline
+        \end{tabular}
+    \end{table}
+\end{enumerate}
+\item 根据命题的真假求参数范围
+\begin{enumerate}
+    \item 已知$p: \exists x < 0, x + a - 1 = 0$，若$p$的否定为真命题，则$a$的取值范围是\blkda{$(-\infty, 1]$}
+    \begin{jieda}
+        首先写出$p$的否定：$\forall x < 0, x + a - 1 \neq 0$，该命题为真命题可以转化为$(-\infty, 0) \subseteq \{x | x \neq 1-a\}$，由此可以推出$1 - a \geq 0$，即$a \leq 1$
+    \end{jieda}
+    \item 已知命题$p: \forall x \in \{x | -3 \leq x \leq 2\}$，都有$x \in \{x|a-4 \leq x \leq a+5\}$，且$\neg p$是假命题，求实数$a$的取值范围．
+    \begin{jieda}
+        $\neg p$是假命题即$p$是真命题。$p: \forall x \in \{x | -3 \leq x \leq 2\}$，都有$x \in \{x|a-4 \leq x \leq a+5\}$可以转化为$[-3, 2] \subseteq [a-4, a+5]$。故有$a + 5 \geq 2, a -4 \leq -3$，综上$a \in [-3, 1]$
+    \end{jieda}
+    \item 已知集合$A = [2, 5]$，$B = \{x | m+1 \leq x \leq 2m-1\}$，且$B \neq \varnothing$，若命题$p: \exists x \in A, x \in B$为真命题，求$m$的取值范围．
+    \begin{jieda}
+        首先根据$B \neq \varnothing$知$2m-1 \geq m+1$，即$m \geq 2$ \\ 根据$p$是真命题可知$A \cap B \neq \varnothing$故有$2 \leq 2m-1$且$5 \geq m+1$，解得$m \in [\dfrac{3}{2}, 4]$，结合$m \geq 2$，有$m \in [2, 4]$
+    \end{jieda}
+    \item 已知$p: -5 < a < 7$；$q:$“集合$A = \{x | x^2 + (a+2)x + 1 = 0, x \in \mathbf{R}\}$”，“$B = \{x | x > 0\}$，且$A \cap B = \varnothing$”，求实数$a$的取值范围，使得$p, q$中只有一个为真。
+    \begin{jieda}
+        首先应分析$p, q$的真假与$a$的取值之间的对应关系。
+        \begin{dingautolist}{172}
+            \item $p$真，则$a \in (-5, 7)$
+            \item $p$假，则$a \in (-\infty, -5) \cup [7, +\infty)$
+            \item $q$真，应分情况进行讨论
+                \begin{enumerate}[1.]
+                    \item $A = \varnothing$ \\
+                    A为空集对应着方程$x^2 + (a+2)x + 1 = 0$的判别式小于0，即$(a+2)^2 - 4 < 0$，因此有$a + 2 \in (-2, 2)$，即$a \in (-4, 0)$
+                    \item $A \neq \varnothing$ \\
+                    A不为空集对应着方程$x^2 + (a+2)x + 1 = 0$只有负根（必没有零根）。根据判别式大于等于0，应有$a \in (-\infty, -4] \cup [0, +\infty)$。考察函数$y = x^2 + (a+2)x + 1$，开口向上，过$(0, 1)$，对称轴为$x = -\dfrac{a+2}{2}$。若要方程只有负根则应使得$-\dfrac{a+2}{2} < 0$，因此$a \in (-2 +\infty)$ \\
+                    故此时有$a \in [0, +\infty)$
+                \end{enumerate}
+                综上，$a \in (-4, +\infty)$
+            \item $q$假，则对应着$a \in (-\infty, -4]$
+        \end{dingautolist}
+        
+        两者只有一真，则对应着$p$真$q$假，或者$p$假$q$真。
+        \begin{dingautolist}{172}
+            \item $p$真$q$假：$a \in (-5, -4]$
+            \item $p$假$q$真：$a \in [7, +\infty)$
+        \end{dingautolist}
+        故$a$的取值范围是$(-5, -4] \cup [7, +\infty)$
+    \end{jieda}
+\end{enumerate}
+\item 关于充分条件、必要条件的判断
+\begin{enumerate}
+    \item 如果$a, b, c$都是实数，那么“$ac < 0$”是“关于$x$的方程$ax^2+bx+c = 0$有一个正根和负根”的\dotfill{(\kh{C})}
+    \xx{必要非充分条件}{充分非必要条件}{充要条件}{既非充分也非必要条件}
+    \begin{jieda}
+        设$f(x) = ax^2+bx+c$，则$f(0) = c$，结合二次函数的图像可知两者互为充要条件.
+    \end{jieda}
+    \item 设$\alpha, \beta$是方程$x^2-ax+b=0$的两实根，则“$a > 2, b > 1$”是“两根$\alpha, \beta$均大于1”的\dotfill{(\kh{A})}
+    \xx{必要非充分条件}{充分非必要条件}{充要条件}{既非充分也非必要条件}
+    \begin{jieda}
+        设$f(x) = x^2-ax+b$，则函数$f(x)$为开口向上的抛物线，两根$\alpha, \beta$均大于1即$f(1) > 0$且对称轴$x = \dfrac{a}{2}$在直线$x = 1$右侧，即$a < b+1$且$a > 2$. 因此“$a > 2, b > 1$”是“两根$\alpha, \beta$均大于1”的必要非充分条件.（体现非充分性的反例：$a = 5, b = 2$）
+    \end{jieda}
+    \item 对于集合$P$，$Q$下列四个命题中正确的是\dotfill{(\kh{D})}
+    \xx{“$P$不是$Q$的子集”的充要条件是“对任意$x \in P$，都有$x \notin Q$”}{“$P$不是$Q$的子集”的充要条件是“$P \cap Q = \varnothing$”}{“$P$不是$Q$的子集”的充要条件是“$Q$不是$P$的子集”}{“$P$不是$Q$的子集”的充要条件是“存在$x \in P$，使得$x \notin Q$”}
+    \item 有限集$S$中的元素个数记作$card(S)$，设$A, B$都是有限集合，以下命题中正确的是\blkda{\ding{172}\ding{173}}
+    \begin{dingautolist}{172}
+        \item $A \cap B = \varnothing$的充要条件是$card(A \cup B) = card(A) + card(B)$
+        \item $A \subseteq B$的必要非充分条件是$card(A) \leq card(B)$
+        \item $A \nsubseteq B$的充分非必要条件是$card(A) \leq card(B)$
+        \item $A = B$的充要条件是$card(A) = card(B)$
+    \end{dingautolist}
+    \item 三个数$x,y,z$不全为负数的充要条件是\dotfill{(\kh{D})}
+    \xx{$x,y,z$中至少有一个是正数}{$x,y,z$全不是负数}{$x,y,z$中只有一个是负数}{$x,y,z$中至少有一个是非负数}
+    \item 下列说法中错误的是\dotfill{(\kh{C})}
+    \xx{“$a > 1$”是“$\dfrac{1}{a} < 1$”的充分不必要条件}{命题“任意$x \in \mathbf{R}$, 则$x^2+x+1 < 0$”的否定是“存在$x \in \mathbf{R}$, 则$x^2+x+1 \geq 0$”}{设$x, y \in \mathbf{R}$， 则“$x \geq 2 \mbox{且} y \geq 2$”是“$x^2 + y^2 \geq 4$”的必要不充分条件}{设$x, y \in \mathbf{R}$， 则“$x \neq 0$”是“$xy \neq 0$”的必要不充分条件}
+    \begin{jieda}
+        \begin{enumerate}[A.]
+            \item 当$a > 1$，必然有$\dfrac{1}{a} < 1$，但反过来不一定，$a$可以是负数
+            \item 全称量词命题的否定是存在量词命题，同时命题中变量的性质$p(x)$取非
+            \item 应当是充分非必要条件，$x = y = -3$时$p$不满足，$q$满足
+            \item $xy \neq 0 \Leftrightarrow x \neq 0 \mbox{且} y \neq 0$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知全集$U = \{(x, y) | x \in \mathbf{R}, y \in \mathbf{R}\}$，集合$A = \{(x, y) | 2x-y+m > 0\}, B = \{(x, y)| x+y-n \leq 0\}$，那么$(2, 3) \in A \cap \overline{B}$的充要条件是\dotfill{(\kh{A})}
+    \xx{$m > -1, n < 5$}{$m < -1, n < 5$}{$m > -1, n > 5$}{$m < -1, n > 5$}
+    \begin{jieda}
+        $(2, 3) \in A$则$4-3+m > 0$，即$m > -1$，$(2, 3) \in \overline{B}$则$2 + 3 - n > 0$，即$n < 5$，因此选A.
+    \end{jieda}
+    \item “$x+y \neq 3$”是“$x \neq 1 \mbox{或} y \neq 2$”成立的\blkda[3]{充分非必要}条件.
+    \begin{jieda}
+        “$x+y \neq 3$”对应了平面上除直线$x + y = 3$以外的区域 \\
+        “$x \neq 1 \mbox{或} y \neq 2$”对应了平面上除点$(1,2)$以外的区域
+    \end{jieda}
+    \item “$x+y \neq 5$”是“$x \neq 2 \mbox{且} y \neq 3$”成立的\blkda[3]{既非充分也非必要}条件.
+    \begin{jieda}
+        “$x+y \neq 5$”对应了平面上除直线$x + y = 5$以外的区域 \\
+        “$x \neq 2 \mbox{且} y \neq 3$”对应了平面上除直线$x = 2$和直线$y = 3$以外的区域
+    \end{jieda}
+    \item 已知$p$是$r$的充分非必要条件，$s$是$r$的必要条件，$q$是$s$的必要条件，那么$p$是$q$的\blkda[3]{充分非必要}条件
+    \begin{jieda}
+        $p \Rightarrow r \Rightarrow s \Rightarrow q$，且$r \nRightarrow p$
+    \end{jieda}
+\end{enumerate}
+\item 子集与推出关系
+\begin{enumerate}
+    \item 已知$p: 1 \leq x \leq 4, q: x \in (-\infty, -3) \cup (4, +\infty)$，则$p$是$\neg{q}$的\dotfill{(\kh{B})}
+    \xx{必要非充分条件}{充分非必要条件}{充要条件}{既非充分也非必要条件}
+    \begin{jieda}
+        $\neg{q}: x \in [-3, 4]$，根据“小推大”可知$p$是$\neg{q}$的充分非必要条件.
+    \end{jieda}
+    \item 已知$p: x^2 +x - 2 > 0$，$q: x > a$.若$q$是$p$的充分非必要条件，则实数$a$的取值范围是\blkda{$[1, +\infty)$}
+    \begin{jieda}
+        $p$所对应的集合$P = (-\infty, -2) \cup (1, +\infty)$，$q$所对应的集合$Q = (a, +\infty)$，因为$q$是$p$的充分非必要条件，所以有$Q \subset P$，因此有$a \geq 1$
+    \end{jieda}
+    \item 已知$p: x-3 \leq 2, q: (x-m+1)(x-m-1) \leq 0$，若$\neg p$是$\neg q$的充分非必要条件，求实数$m$的取值范围.
+    \begin{jieda}
+        $p$所对应的集合$P = (-\infty, 5]$，故$\neg p$对应的集合$\overline{P} = (5, +\infty)$ \\
+        $q$所对应的集合$Q = [m-1, m+1]$，故$\neq q$对应的集合$\overline{Q} = (-\infty, m-1) \cup (m+1, +\infty)$ \\
+        $\neg p$是$\neg q$的充分非必要条件即$\overline{P} \subset \overline{Q}$，即$m+1 \leq 5$，解得$m \in (-\infty, 4]$.
+    \end{jieda}
+    \item 设集合$A = \{x | x-3 < 2\}, B = \{x |3 < x < 3m+1\}$，若“$x \in A$”是“$x \in B$”的必要不充分条件，实数$m$的取值范围是\blkda{$(-\infty, \dfrac{4}{3}]$}.
+    \begin{jieda}
+        $A = (-\infty, 5)$，因为“$x \in A$”是“$x \in B$”的必要不充分条件,所以$B \subset A$，故应有$3m+1 \leq 5$，即$m \leq \dfrac{4}{3}$
+    \end{jieda}
+\end{enumerate}
+
+\item 充分条件、必要条件的证明
+\begin{enumerate}
+    \item 已知$m$是实数，集合$M = \{2, 3, m+6\}, N= \{0, 7\}$。求证$m = 1$是$M \cap N = \{7\}$的充要条件。
+    \begin{jieda}
+    \begin{dingautolist}{172}
+        \item \textbf{充分性}: 当$m = 1$, $M = \{2,3,7\}$, 又因为$N = \{0, 7\}$，故$M \cap N = \{7\}$
+        \item \textbf{必要性}: 当$M \cap N = \{7\}$，必有$7 \in M$，故必有$m+6=7$，即$m = 1$
+    \end{dingautolist}
+    \end{jieda}
+    
+    \item 已知集合 ${A}$ 为非空数集,定义: $T = \{ x \mid  x = \left| {a - b}\right| ,a,b \in  A\}$，若集合 $A = \left\{  {{x}_{1},{x}_{2},{x}_{3},{x}_{4}}\right\}  ,{x}_{1} < {x}_{2} < {x}_{3} < {x}_{4}$，求证: $T = A$的充要条件是$x_2 = x_2-x_1 = x_3 - x_2 = x_4 - x_3$
+    \begin{jieda}
+    \begin{dingautolist}{172}
+        \item \textbf{充分性}: 若$x_2 = x_2-x_1 = x_3 - x_2 = x_4 - x_3$，则$\left\{\begin{array}{l}
+             x_1 = 0 \\
+             x_3 = 2x_2 \\
+             x_4 = 3x_2
+        \end{array}\right.$
+        
+        故$A = \{0, x_2, 2x_2, 3x_2\}$，$T = \{0, x_2, 2x_2, 3x_2\}$，可知$A = T$
+        \item \textbf{必要性}: 易知$T$中最大的元素为$x_4 - x_1$，由$T = A$可知$x_4 - x_1 = x_4$，故$x_1 = 0, 0 < x_2 < x_3 < x_4$，因此有$0, x_2, x_3, x_4, x_3-x_2, x_4-x_2, x_4 - x_3 \in T$
+
+        因为$\left\{\begin{array}{l}
+             x_4 - x_2 < x_4 \\
+             x_4 - x_2 > x_3 - x_2 \\
+             x_4 - x_2 > x_4 - x_3
+        \end{array}\right.$，故必有$\left \{ \begin{array}{l}
+             x_4 - x_2 = x_3 \\
+             x_4 - x_3 = x_3 - x_2 = x_2
+        \end{array} \right.$
+        
+        即$x_2 = x_2-x_1 = x_3 - x_2 = x_4 - x_3$
+    \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\item 反证法
+\begin{enumerate}
+    \item 证明：$n \in \mathbf{Z}$，若$n^2$是偶数，则$n$是偶数。
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item \textbf{假设} $n$是奇数。
+            \item 设$n = 2k + 1$，则$n^2 = 4k^2 + 4k + 1$，因为$4k^2 + 4k = 4(k^2 + k)$是偶数，故$n^2$是奇数，矛盾。
+            \item 故原命题成立，$n$是偶数。
+        \end{dingautolist}
+    \end{jieda}
+    
+\end{enumerate}
+\end{enumerate}

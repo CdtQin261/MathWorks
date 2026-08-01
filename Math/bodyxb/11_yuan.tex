@@ -1,0 +1,488 @@
+\chapter*{解析几何-圆}
+\subsection*{圆的标准方程}
+\begin{enumerate}
+    \item 平面上到定点的距离等于定长（大于零）的点的轨迹（或集合）叫做圆，定点称作是圆的圆心，定长为圆的半径. 因此只要圆心的位置和半径确定了，圆就唯一确定了.
+    \item 设圆心坐标为$(a, b)$，圆的半径为$r$，圆上任意一点的坐标为$(x, y)$，则根据两点间距离公式有$\sqrt{(x-a)^2 + (y-b)^2} = r$，变形可得\textbf{圆的标准方程}：$(x-a)^2 + (y-b)^2 = r^2$
+    \item 根据圆心和半径就可以写出圆的标准方程，圆的标准方程体现了圆的几何特征
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 圆心为(1,1)且过原点的圆的方程是\blkda[4]{${\left( x - 1\right) }^{2} + {\left( y - 1\right) }^{2} = 2$}
+
+    \begin{jieda}
+        因为圆心为(1,1)且过原点,所以该圆的半径 $r = \sqrt{{1}^{2} + {1}^{2}} = \sqrt{2}$ ,则该圆的方程为 ${\left( x - 1\right) }^{2} + {\left( y - 1\right) }^{2} = 2$ .
+    \end{jieda}
+    
+    \item 求满足下列条件的圆的方程：
+    \begin{enumerate*}
+        \item 过$A(0, 5), B(1, -2), C(-3, -4)$三点
+        \item 过$A(1, 2), B(1, 10)$两点，且与直线$x-2y-1=0$相切
+    \end{enumerate*}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 
+            \begin{enumerate}
+                \item 方法1 \\
+                设圆的方程为$(x-a)^2+(y-b)^2 = r^2$ \\
+                代入三个点的坐标，得到方程组$\left\{\begin{array}{l}
+                     (0-a)^2+(5-b)^2 = r^2  \\
+                     (1-a)^2+(-2-b)^2 = r^2  \\
+                     (-3-a)^2+(-4-b)^2 = r^2
+                \end{array}\right.$，解得$\left\{\begin{array}{l}
+                     a = -3  \\
+                     b = 1  \\
+                     r = 5
+                \end{array}\right.$ \\
+                故所求圆的标准方程为$(x+3)^2+(y-1)^2=25$
+                \item 方法2 \\
+                $AB$中点坐标$M\left(\dfrac{1}{2}, \dfrac{3}{2}\right)$，故$AB$中垂线所在直线方程为$y = \dfrac{1}{7}\left(x - \dfrac{1}{2}\right)+\dfrac{3}{2}$ \\
+                $AC$中点坐标$M\left(-\dfrac{3}{2}, \dfrac{1}{2}\right)$，故$AC$中垂线所在直线方程为$y = -\dfrac{1}{3}\left(x + \dfrac{3}{2}\right)+\dfrac{1}{2}$ \\
+                联立两直线方程得到圆心坐标为$(-3, 1)$，根据两点间距离公式可得半径为$r = 5$
+            \end{enumerate}
+            \item 因为$AB$的中垂线为直线$y = 6$，因此可设圆心坐标为$(a, 6)$，计算圆心到点$A$距离可知半径$r = \sqrt{(a-1)^2+16}$，根据点到直线距离公式可知半径为$r = \dfrac{|a-13|}{\sqrt{5}}$，因此$\sqrt{(a-1)^2+16} = \dfrac{|a-13|}{\sqrt{5}}$，解得$a = 3$或$-7$
+            \begin{dingautolist}{172}
+                \item 圆心为$(3, 6)$，则半径为$2\sqrt{5}$，因此圆的方程为$(x-3)^2+(y-6)^2=20$
+                \item 圆心为$(-7, 6)$，则半径为$4\sqrt{5}$，因此圆的方程为$(x+7)^2+(y-6)^2=80$
+            \end{dingautolist}
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 设点 $M$ 在直线 ${2x} + y - 1 = 0$ 上,点(3,0)和(0,1)均在 $\odot  M$ 上,则 $\odot  M$ 的方程为\blkda[4]{${\left( x - 1\right) }^{2} + {\left( y + 1\right) }^{2} = 5$}.
+        \begin{jieda}
+            \begin{enumerate}
+                \item 方法一 \\
+                设 $\odot  M$ 的方程为 ${\left( x - a\right) }^{2} + {\left( y - b\right) }^{2} = {r}^{2}$ , 则 $\left\{  \begin{array}{l} {2a} + b - 1 = 0, \\  {\left( 3 - a\right) }^{2} + {b}^{2} = {r}^{2}, \\  {a}^{2} + {\left( 1 - b\right) }^{2} = {r}^{2}, \end{array}\right.$
+                
+                解得 $\left\{  \begin{array}{l} a = 1, \\  b =  - 1, \\  {r}^{2} = 5, \end{array}\right.$
+                
+                $\therefore  \odot  M$ 的方程为 ${\left( x - 1\right) }^{2} + {\left( y + 1\right) }^{2} = 5$ .
+                \item 方法二 \\
+                设 $A\left( {3,0}\right) ,B\left( {0,1}\right) , \odot  M$ 的半径为 $r$，则 ${k}_{AB} = \dfrac{1 - 0}{0 - 3} =  - \dfrac{1}{3},{AB}$ 的中点坐标为 $\left( {\dfrac{3}{2},\dfrac{1}{2}}\right)$ ,
+                
+                $\therefore {AB}$ 的垂直平分线方程为 $y - \dfrac{1}{2} = 3\left( {x - \dfrac{3}{2}}\right)$ ,即 ${3x} - y - 4 = 0$ .
+                
+                联立 $\left\{  \begin{array}{l} {3x} - y - 4 = 0, \\  {2x} + y - 1 = 0, \end{array}\right.$ 解得 $\left\{  \begin{array}{l} x = 1, \\  y =  - 1, \end{array}\right.$
+                
+                $\therefore M\left( {1, - 1}\right)$ ,
+                
+                $\therefore {r}^{2} = {\left| MA\right| }^{2} = {\left( 3 - 1\right) }^{2} + {\left\lbrack  0 - \left( -1\right) \right\rbrack  }^{2} = 5$ ,
+                
+                $\therefore  \odot  M$ 的方程为 ${\left( x - 1\right) }^{2} + {\left( y + 1\right) }^{2} = 5$ .
+            \end{enumerate}
+        \end{jieda}
+    \item 设平面上有一条长度为4的线段$AB$，$A(-2, 0), B(2, 0)$，求到$A$距离与到$B$距离之比为2的点的轨迹方程.
+    \begin{jieda}
+        设轨迹上的点的坐标为$(x, y)$，则$\sqrt{(x+2)^2+y^2} = 2\sqrt{(x-2)^2+y^2}$，平方化简得$\left(x-\dfrac{10}{3}\right)^2 + y^2 = \dfrac{64}{9}$，故轨迹为以$C\left(\dfrac{10}{3}, 0\right)$为圆心，$\dfrac{8}{3}$为半径的圆
+    \end{jieda}
+\end{enumerate}
+\subsection*{圆的一般方程}
+\begin{enumerate}
+    \item 将圆的标准方程$(x-a)^2+(y-b)^2 = r^2$展开可得$x^2+y^2-2ax-2by+a^2+b^2-r^2 = 0$，由此可见任意一个圆的方程均可以写成：$x^2+y^2+Dx+Ey+F = 0$的形式，其中$D,E,F$均为实常数.
+    \item 对于任意一个$x^2+y^2+Dx+Ey+F = 0$形式的方程，我们可以将其配方整理得$\left(x + \dfrac{D}{2}\right)^2+\left(y+\dfrac{E}{2}\right)^2 = \dfrac{D^2+E^2-4F}{4}$
+    \begin{dingautolist}{172}
+        \item 当$\dfrac{D^2+E^2-4F}{4} > 0$时，$x^2+y^2+Dx+Ey+F = 0$表示圆心为$\left(-\dfrac{D}{2}, -\dfrac{E}{2}\right)$，半径为$\dfrac{\sqrt{D^2+E^2-4F}}{2}$的圆
+        \item 当$\dfrac{D^2+E^2-4F}{4} = 0$时，$x^2+y^2+Dx+Ey+F = 0$对应点$\left(-\dfrac{D}{2}, -\dfrac{E}{2}\right)$
+        \item 当$\dfrac{D^2+E^2-4F}{4} < 0$时，$x^2+y^2+Dx+Ey+F = 0$不表示任何图形.
+    \end{dingautolist}
+    $\dfrac{D^2+E^2-4F}{4} > 0$时，我们将$x^2+y^2+Dx+Ey+F = 0$叫做圆的一般方程，将$\dfrac{D^2+E^2-4F}{4}$称作是方程的判别式
+    \item 圆的一般方程体现的是圆的代数特征，任何一个圆的方程都是一个特殊的二元二次方程.
+    \item 特别地，若已知$A(x_1, y_2), B(x_2, y_2)$，则以$AB$为直径的圆上任意一点$M(x, y)$满足$\vv{MA} \cdot \vv{MB} = 0$，故以$AB$为直径的圆的方程可以表示为$(x-x_1)(x-x_2) + (y-y_1)(y-y_2) = 0$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 若曲线 $C : {x}^{2} + {y}^{2} + {2ax} - {4ay} - {10a} = 0$ 表示圆,则实数 $a$ 的取值范围为\blkda[4]{$\left( {-\infty , - 2}\right)  \cup  \left( {0, + \infty }\right)$}
+    \begin{jieda}
+        由 ${x}^{2} + {y}^{2} + {2ax} - {4ay} - {10a} = 0$ ，得 ${\left( x + a\right) }^{2} + {\left( y - 2a\right) }^{2} = 5{a}^{2} + {10a}$ ,
+        
+        由该曲线表示圆,可知 $5{a}^{2} + {10a} > 0$ ,解得 $a > 0$ 或 $a <  - 2$ .
+    \end{jieda} 
+    \item 已知 $a \in  \mathbf{R}$ ,方程 ${a}^{2}{x}^{2} + \left( {a + 2}\right) {y}^{2} + {4x} + {8y} + {5a} = 0$ 表示圆,则圆心坐标为\blkda{$\left( {-2, - 4}\right)$},半径为\blkda{5}.
+    \begin{jieda}
+        由圆的一般方程的形式知, $a + 2 = {a}^{2}$ ,解得 $a = 2$ 或 $a =  - 1$ .
+        \begin{dingautolist}{172}
+            \item 当 $a = 2$ 时,该方程可化为 ${x}^{2} + {y}^{2} + x + {2y} + \dfrac{5}{2} = 0$ ,
+            
+            $\because {D}^{2} + {E}^{2} - {4F} = {1}^{2} + {2}^{2} - 4 \times  \dfrac{5}{2} < 0$ ,
+            
+            $\therefore a = 2$ 不符合题意;
+            \item 当 $a =  - 1$ 时,方程可化为 ${x}^{2} + {y}^{2} + {4x} + {8y} - 5 = 0$ ,
+            
+            即 ${\left( x + 2\right) }^{2} + {\left( y + 4\right) }^{2} = {25}$ ,
+            
+            $\therefore$ 圆心坐标为(-2, - 4),半径为 5 .
+        \end{dingautolist}        
+    \end{jieda}
+    \item 已知$\triangle ABC$的顶点坐标为$A(2, -1), B(6, 3), C(-2, 3)$，求$\triangle ABC$的外接圆方程
+    \begin{jieda}
+        设圆的方程为$x^2+y^2+Dx + Ey+F = 0$，代入三个顶点坐标可得方程组：\\
+        $\left\{\begin{array}{l}
+             5+2D-E+F = 0  \\
+             45+6D+3E+F=0 \\
+             13-2D+3E+F = 0
+        \end{array} \right.$，\\
+        解得$D =-4, E = -6, F = -3$，此时$D^2+E^2-4F > 0$，因此外接圆的方程为$x^2+y^2-4x-6y-3=0$
+    \end{jieda}
+    \item 设方程$x^2+y^2-2(m+3)x+2(1-4m^2)y+16m^4+9=0$表示一个圆
+    \begin{enumerate}
+        \item 求实数$m$的取值范围
+        \item 当$m$取何值时，圆的半径最大？并求出半径的最大值
+        \item 求圆心的轨迹方程
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方程$x^2+y^2-2(m+3)x+2(1-4m^2)y+16m^4+9=0$表示一个圆即$4(m+3)^2+4(1-4m^2)^2-4(16m^4+9)>0$，即$(m^2+6m+9)+(1-8m^2+16m^4)-(16m^4+9) > 0$，即$-7m^2+6m+1>0$，解得$m \in \left(-\dfrac{1}{7}, 1\right)$
+            \item 方程$x^2+y^2-2(m+3)x+2(1-4m^2)y+16m^4+9=0$表示一个圆心为$\left((m+3), (4m^2-1)\right)$，$\sqrt{-7m^2+6m+1}$为半径的圆，因此当$m = \dfrac{3}{7}$时圆的半径最大为$\dfrac{4\sqrt{7}}{7}$
+            \item 圆心为$\left((m+3), (4m^2-1)\right)$，故圆心的参数方程为$\left\{\begin{array}{l}
+                 x = m+3 \\
+                 y = 4m^2-1
+            \end{array}\right.$，因此圆心轨迹方程为$y = 4(x-3)^2-1, x \in \left(\dfrac{20}{7}, 4\right)$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{点和圆的位置关系}
+\begin{enumerate}
+    \item 平面上的点和圆的位置关系有三种：点在圆内，点在圆上，点在圆外
+    \item 借助点的坐标和圆的标准方程，通过代数计算判断它们的位置关系，设点$P(x_0, y_0)$与圆$C:(x-a)^2 + (y-b)^2 = r^2$，若点$P$到圆心$C$的距离为$d$，则$d = \sqrt{(x_0-a)^2 + (y_0-b)^2}$，故有：
+    \begin{dingautolist}{172}
+        \item 点$P$在圆外$\Longleftrightarrow (x_0-a)^2 + (y_0-b)^2 > r^2$
+        \item 点$P$在圆上$\Longleftrightarrow (x_0-a)^2 + (y_0-b)^2 = r^2$
+        \item 点$P$在圆内$\Longleftrightarrow (x_0-a)^2 + (y_0-b)^2 < r^2$
+    \end{dingautolist}
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 下列结论正确的有\blkda{\ding{172}\ding{174}\ding{175}}
+    \begin{dingautolist}{172}
+        \item 确定圆的几何要素是圆心与半径
+        \item  ${\left( x - 2\right) }^{2} + {\left( y + 1\right) }^{2} = {a}^{2}\left( {a \neq  0}\right)$ 表示以(2,1)为圆心, $a$ 为半径的圆. 
+        \item 方程 $A{x}^{2} + {Bxy} + C{y}^{2} + {Dx} + {Ey} + F = 0$ 表示圆的充要条件是 $A = C \neq  0,B = 0,{D}^{2} + {E}^{2} - {4AF} > 0.$
+        \item 若点 $M\left( {{x}_{0},{y}_{0}}\right)$ 在圆 ${x}^{2} + {y}^{2} + {Dx} + {Ey} + F = 0$ 外,则 ${x}_{0}^{2} + {y}_{0}^{2} + D{x}_{0} + E{y}_{0} + F > 0.$
+    \end{dingautolist}
+    \item 判断点$M_1(6, -6)$、$M_2(-5, -1)$、$M_3(3, 1)$与圆$C: (x-2)^2+(y+3)^2 = 25$的位置关系
+    \begin{jieda}
+        $M_1$在圆上，$M_2$在圆外，$M_3$在圆内.
+    \end{jieda}
+    \item 已知圆$C: x^2+y^2-2x-4y-20 = 0$和直线$l: (2m+1)x + (m+1)y-7m-4 = 0$，求证：直线$l$与圆$C$恒有两个交点.
+    \begin{jieda}
+        将圆写成标准方程为$(x-1)^2+(y-2)^2 = 25$，观察可知直线$l$恒过点$M(3, 1)$，而$M$到圆心$(1, 2)$的距离为$\sqrt{5}$，故点$M$在圆内部，因此直线$l$与圆$C$恒有两个交点.
+    \end{jieda}
+\end{enumerate}
+\subsection*{直线和圆的位置关系}
+\begin{enumerate}
+    \item 直线和圆有三种位置关系：相交、相切、相离
+    \item 设直线$L$方程为：$Ax+By+C = 0$，圆$C$的方程为：$(x-a)^2+(y-b)^2 = r^2$ \\
+    \begin{center}
+        \begin{tabular}{c|c|c|c}
+            \hline
+             & 图形 & 代数角度 & 几何角度 \\
+             \hline
+            相交 & \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_1107_647_108_103_0.jpg} & $\left \{\begin{array}{l}
+                      Ax+By+C = 0  \\
+                      (x-a)^2+(y-b)^2 = r^2
+                 \end{array} \right.$有两组解 & $d = \dfrac{|Aa+Bb+C|}{\sqrt{A^2+B^2}} < r$ \\
+            相切 & \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_922_646_124_108_0.jpg}& $\left \{\begin{array}{l}
+                      Ax+By+C = 0  \\
+                      (x-a)^2+(y-b)^2 = r^2
+                 \end{array} \right.$有一组解 & $d = \dfrac{|Aa+Bb+C|}{\sqrt{A^2+B^2}} = r$ \\
+            相离 & \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_738_646_142_108_0.jpg} & $\left \{\begin{array}{l}
+                      Ax+By+C = 0  \\
+                      (x-a)^2+(y-b)^2 = r^2
+                 \end{array} \right.$无解 & $d = \dfrac{|Aa+Bb+C|}{\sqrt{A^2+B^2}} > r$ \\
+             \hline
+        \end{tabular}
+    \end{center}
+    \item 垂径定理：当直线$L$与圆$C$相交的情况下，设直线被圆所截弦长为$l$，则有$\left(\dfrac{l}{2}\right)^2+d^2 = r^2$，即$l = 2\sqrt{r^2-d^2}$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 若直线$mx+ny = 4$和圆$C: x^2+y^2 = 4$没有公共点，试判断$P(m,n)$与圆$C$的位置关系.
+    \begin{jieda}
+        $d = \dfrac{4}{\sqrt{m^2+n^2}} > 2$，故$\sqrt{m^2+n^2} \in (0, 2)$，因此$P$到圆心的距离小于半径，因此$P$在圆内.
+    \end{jieda}
+    \item 已知圆$C: x^2+y^2 = 2$和直线$l: y = x + b$，当$b$为何值时，
+    \begin{enumerate}
+        \item 直线$l$与圆$C$有两个公共点
+        \item 直线$l$与圆$C$有一个公共点
+        \item 直线$l$与圆$C$没有公共点
+    \end{enumerate}
+    \begin{jieda}
+        直线与圆的距离$d = \dfrac{\sqrt{2}|b|}{2}$，圆的半径为$r = \sqrt{2}$，因此
+        \begin{dingautolist}{172}
+            \item $b \in (-2, 2)$时，直线与圆有两个公共点
+            \item $b \in \{-2, 2\}$时，直线与圆有一个公共点
+            \item $b \in (-\infty, -2) \cup (2, +\infty)$时，直线与圆没有公共点
+        \end{dingautolist}
+    \end{jieda}
+    
+    \item 直线 ${kx} - y + 2 - k = 0$ 与圆 ${x}^{2} + {y}^{2} - {2x} - 8 = 0$ 的位置关系为\dotfill{(\kh{C})}
+    \xx{相交、相切或相离}{相交或相切}{相交}{相切}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1 \\
+            直线 ${kx} - y + 2 - k = 0$ 的方程可化为 $k\left( {x - 1}\right)  - \left( {y - 2}\right)  = 0$ ,该直线恒过定点(1,2).
+            
+            因为 ${1}^{2} + {2}^{2} - 2 \times  1 - 8 < 0$ ，所以点(1,2)在圆 ${x}^{2} + {y}^{2} - {2x} - 8 = 0$ 的内部，所以直线 ${kx} - y + 2 - k = 0$ 与圆 ${x}^{2} + {y}^{2} - {2x} - 8 = 0$ 相交.
+
+            \item 方法2 \\
+            圆的方程可化为 ${\left( x - 1\right) }^{2} + {y}^{2} = {3}^{2}$，所以圆的圆心为$(1,0)$，半径为 $3$ . 
+            
+            圆心到直线 ${kx} - y + 2 - k = 0$ 的距离为$\dfrac{\left| k + 2 - k\right| }{\sqrt{1 + {k}^{2}}} = \dfrac{2}{\sqrt{1 + {k}^{2}}} \leq  2 < 3$ ,所以直线与圆相交.
+        \end{enumerate}
+    \end{jieda}
+    \item 已知圆$C$的圆心在直线$l_1: 2x-y=0$上，且圆$C$与$x$轴相切，直线$l_2: 3x-4y=0$被圆$C$截得的弦长为$2\sqrt{3}$，求圆$C$的标准方程
+    \begin{jieda}
+        设圆心坐标为$(a, 2a)$，则圆的标准方程为$(x-a)^2+(x-2a)^2 = 4a^2$，圆心到$l_2$的距离为$d = |a|$，因此根据垂径定理可知$3+a^2 = (2a)^2$，因此$|a| = 1$，故圆的标注方程为$(x-1)^2+(x-2)^2 = 4$或$(x+1)^2+(x+2)^2 = 4$
+    \end{jieda}
+    \item 已知圆$C:(x+1)^2+y^2=r^2 (r>0)$
+    \begin{enumerate}
+        \item 当$r = 2$时，过点$P(1, 3)$作圆的切线，求切线$l$的方程
+        \item 已知圆$C$上只有两个点到直线$l': 4x-3y-6 = 0$的距离为1，求$r$的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 易知点$P$在圆外，因此过$P$有两条切线
+            \begin{dingautolist}{172}
+                \item 若切线斜率不存在，过$P$斜率不存在的直线为$x = 1$，经检验该直线为圆的切线
+                \item 若切线斜率存在，设切线方程为：$y = k(x-1)+3$，圆心到直线的距离$d = \dfrac{|3-2k|}{\sqrt{1+k^2}} = 2$，即$\dfrac{4k^2-12k+9}{1+k^2} = 4$，解得$k = \dfrac{5}{12}$，因此切线方程为：$y = \dfrac{5}{12}(x-1)+3$
+            \end{dingautolist}
+            \item 圆心到直线$l'$的距离$d' = 2$，因此当$r \in (1, 3)$时满足要求.
+        \end{enumerate}
+    \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 已知点$M(x_0, y_0)$为圆$C: x^2+y^2 = 4$上一点，求过点$M$的与圆$C$相切的直线方程.
+        \item 已知点$M(x_0, y_0)$为圆$C: x^2+y^2 = 4$外一点，过点$M$的两直线$l_1, l_2$与圆$C$相切，切点分别为$A, B$，求直线$AB$的方程.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 
+            \begin{enumerate}
+                \item 方法1 \\
+                易知$\vv{n} = (x_0, y_0)$是切线的法向量，因此可以写出切线的点法式方程$x_0(x-x_0) + y_0(y-y_0) = 0$，代入圆的方程化简得到切线方程为$x_0x+y_0y = 4$ 
+                \item 方法2 \\
+                设圆$C$关于$M$的对称圆$C'$上的点$P'$坐标为$(x, y)$，则圆$C$上$P'$的对称点坐标为$P(2x_0 - x, 2y_0-y)$，又因为$P$满足圆$C$的方程因此有$(2x_0 - x)^2+(2y_0 - y)^2 = 4$，即圆$C'$的方程为$(x-2x_0)^2+(y-2y_0)^2 = 4$
+                圆$C$和圆$C'$外切，两方程相减可得其具有公共点的公切线方程$4x_0^2-4x_0x+4y_0^2-4y_0y = 0$，又因为$x_0^2+y_0^2 = 4$，所以切线方程为$x_0x+y_0y = 4$ 
+            \end{enumerate}
+            \ps $(x-a)^2+(y-b)^2 = r^2$在$(x_0, y_0)$处的切线为$(x-a)(x_0-a) + (y-b)(y_0-b) = r^2$，此切线形式称为“换一半”，在圆锥曲线中也有类似结论. 所有结论均可通过隐函数求导推导出来.
+            \item 
+            \begin{enumerate}
+                \item 方法1 
+                
+                设$A(x_1, y_1), B(x_2, y_2)$
+                $A$处切线方程为$xx_1+yy_1 = 4$，$B$处切线方程为$xx_2+yy_2 = 4$，两者交点为$M(x_0, y_0)$，因此有$\left\{\begin{array}{l}
+                         x_0x_1+y_0y_1 = 4 \\
+                         x_0x_2+y_0y_2 = 4
+                \end{array}\right.$，故$A, B$两点均满足方程$y_0y+x_0x = 4$，因此切点弦$AB$方程为$y_0y+x_0x = 4$
+                \item 方法2
+
+                设圆心为$O$，直线上的点为$P(x, y)$，设$OH \bot AB$则根据垂径定理有$\vv{OP} \cdot \vv{OM} = \vv{OH} \cdot \vv{OM} = |\vv{OH}| \cdot |\vv{OM}|$. 根据几何关系可知$\triangle OHA \sim \triangle OAM$，因此有$\dfrac{|\vv{OH}|}{|\vv{OA}|} = \dfrac{|\vv{OA}|}{|\vv{OM}|}$，故$\vv{OP} \cdot \vv{OM} = |\vv{OA}|^2$，即$x_0x+y_0y = 4$. 
+            \end{enumerate}
+            \ps 过$(x_0, y_0)$做$(x-a)^2+(y-b)^2 = r^2$的两切线的切点连线所在直线为$(x-a)(x_0-a) + (y-b)(y_0-b) = r^2$，此弦形式称为“换一半”，在圆锥曲线中也有类似结论. 
+        \end{enumerate}
+    \end{jieda}
+    \item \begin{enumerate}
+        \item 探究圆$(x-a)^2+(y-b)^2 = r^2$、$(x-a)(x_0-a) + (y-b)(y_0-b) = r^2$、和$(x_0, y_0)$之间的位置关系.
+        \begin{jieda}
+            $d = \dfrac{|r^2|}{\sqrt{(x_0-a)^2+(y_0-b)^2}}$，设圆心和$(x_0, y_0)$距离为$D = \sqrt{(x_0-a)^2+(y_0-b)^2}$，则$d = \dfrac{r^2}{D}$
+            \begin{dingautolist}{172}
+                \item $D > r$：直线和圆相交
+                \item $D = r$：直线和圆相切
+                \item $D < r$：直线和圆相离
+            \end{dingautolist}
+        \end{jieda}
+        \item 对于圆$(x-a)^2+(y-b)^2 = r^2$，$(x-a)(x_0-a) + (y-b)(y_0-b) = r^2$称作是$(x_0, y_0)$的极线，$(x_0, y_0)$称作是$(x-a)(x_0-a) + (y-b)(y_0-b) = r^2$的极点，试探究配极原则：若$P$在$Q$的极线$l_Q$上，则$Q$在$P$的极线$l_P$上
+        \begin{jieda}
+            若$P$在$Q$的极线$l_Q$上，则$P(x_p, y_p)$满足$l_Q$的方程$(x-a)(x_q-a) + (y-b)(y_q-b) = r^2$，即$(x_p-a)(x_q-a) + (y_p-b)(y_q-b) = r^2$，即$Q(x_q, y_q)$满足$l_P$的方程$(x-a)(x_p-a) + (y-b)(y_p-b) = r^2$
+
+            \ps 极点$P$在曲线上，则极线是切线$l_P$；极点$P$若在曲线外，则过$P$有曲线的两条切线，两个切点的极线过$P$，则两个切点在$P$的极线$l_P$上，两点确定一条直线，则$l_P$为切点弦；极点$P$若在曲线内，假设$l_P$和曲线有交点，则$P$在交点处的切线上，矛盾，故$l_P$和曲线相离.
+        \end{jieda}
+        \item 举例验证极线的几何定义：过极点$P$做曲线的两条割线$AB, CD$，$AC, BD$交于$M$，$AD, BC$交于$N$，则$MN$为极线.
+        \begin{jieda}
+            $x^2+y^2=25$，$A(0, 5), B(-5, 0), C(4,3), D(5, 0)$，$AB: y = x+5$，$CD: y = -3x+15$，$P\left(\dfrac{5}{2}, \dfrac{15}{2}\right)$，$l_P: x+3y = 10$
+
+            $AC: y = -\dfrac{x}{2}+5, BD: y = 0$，$M(10, 0)$
+
+            $AD: y = -x+5, BC: y = \dfrac{x}{3}+\dfrac{5}{3}$，$N\left(\dfrac{5}{2}, \dfrac{5}{2}\right)$
+        \end{jieda}
+    \end{enumerate}
+    \item 已知过原点的动直线$l$与圆$C: x^2+y^2-6x+5=0$相交于不同两点$A, B$
+    \begin{enumerate}
+        \item 求线段$AB$中点$M$的轨迹$\Gamma$
+        \item 是否存在实数$k$使得直线$l: y = k(x-4)$与曲线$\Gamma$只有一个公共点，若存在，求出$k$的取值范围，若不存在，说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 圆$C$的标准方程为$(x-3)^2+y^2 = 4$，故圆心在$C(3, 0)$，半径$r = 2$ \\
+                因为$M$是$AB$的中点，所以$CM \perp OM$，即$\vv{OM} \cdot \vv{CM} = 0$ \\
+                设$M(x, y)$，则$\vv{CM} = (x-3, y), \vv{OM} = (x, y)$，因此有$x(x-3) + y^2 = 0$，即$\left(x-\dfrac{3}{2}\right)^2+y^2 = \dfrac{9}{4}$ \\
+                当直线$AB$与圆$C$相切时，根据几何关系可得切点横坐标为$\dfrac{5}{3}$，因此$\Gamma : \left(x-\dfrac{3}{2}\right)^2+y^2 = \dfrac{9}{4} \left(x \in \left(\dfrac{5}{3}, 3\right]\right)$
+            \item $\Gamma$为圆$C': \left(x-\dfrac{3}{2}\right)^2+y^2 = \dfrac{9}{4}$的部分圆弧，数形结合可知当直线$l$与$\Gamma$只有一个公共点存在两种可能情况：\ding{172}$l$与圆$C'$相交且仅有一个交点在$\Gamma$上；\ding{173}$l$与圆$C'$相切且切点在$\Gamma$上
+            \begin{dingautolist}{172}
+                \item 设$\Gamma$端点（取不到）为$E\left(\dfrac{5}{3}, \dfrac{2\sqrt{5}}{3}\right), F\left(\dfrac{5}{3}, -\dfrac{2\sqrt{5}}{3}\right)$，$D(4, 0)$，故$k_{DE} = \dfrac{2\sqrt{5}}{7}, k_{DF} = -\dfrac{2\sqrt{5}}{7}$，因此当$k \in \left[-\dfrac{2\sqrt{5}}{7}, \dfrac{2\sqrt{5}}{7}\right]$时满足要求
+                \item 当$l$与圆$C'$相切时，$d = \dfrac{\left|k\left(\dfrac{3}{2} - 4\right)\right|}{\sqrt{1+k^2}} = \dfrac{3}{2}$，解得$k = \pm \dfrac{3}{4}$
+            \end{dingautolist}
+            综上，当$k \in \left\{-\dfrac{3}{4}, \dfrac{3}{4}\right\} \cup \left[-\dfrac{2\sqrt{5}}{7}, \dfrac{2\sqrt{5}}{7}\right]$时满足要求.
+            
+            \ps 求切点和切线的几个方法
+            \begin{dingautolist}{172}
+                \item 利用圆的切线和半径所在直线垂直的性质（圆的切线所特有）
+
+                设切点$P\left(\dfrac{3}{2}+\dfrac{3}{2}cos\alpha, \dfrac{3}{2}sin\alpha\right)$，圆心$C\left(\dfrac{3}{2}, 0\right)$，$A(4, 0)$，则$\vv{PC} \cdot \vv{PA} = 0$，因此有$\left(-\dfrac{3}{2}cos\alpha\right)\left(\dfrac{5}{2}-\dfrac{3}{2}cos\alpha\right) + \dfrac{9}{4}sin^2\alpha = 0$，故$\dfrac{9}{4} = \dfrac{15}{4}cos\alpha$，即$cos\alpha = \dfrac{3}{5}$，故切点$P\left(\dfrac{12}{5}, \pm \dfrac{6}{5}\right)$，切线斜率$k = \pm \dfrac{3}{4}$
+
+                \item 利用极点在圆外，极线是切点弦
+
+                $A(4, 0), l_A: \left(x-\dfrac{3}{2}\right)\left(\dfrac{5}{2}\right)+0 \cdot y = \dfrac{9}{4}$，即$l_A: x = \dfrac{12}{5}$，故切点$P\left(\dfrac{12}{5}, \pm \dfrac{6}{5}\right)$，切线斜率$k = \pm \dfrac{3}{4}$
+
+                \item 设出切点，根据极点在圆上，极线是切线
+                
+                设切点$P(x_0, y_0)$，则切线为$\left(x-\dfrac{3}{2}\right)\left(x_0 - \dfrac{3}{2}\right)+  y_0 y = \dfrac{9}{4}$，代入切线所过定点$(4, 0)$，则$x_0 = \dfrac{12}{5}$，故切点$P\left(\dfrac{12}{5}, \pm \dfrac{6}{5}\right)$，切线斜率$k = \pm \dfrac{3}{4}$
+
+                \item 联立直线和圆方程，令判别式为0（通过点到直线距离为半径得到$k$也要用同样方法求切点）
+                
+                $\left(x-\dfrac{3}{2}\right)^2+[k(x-4)]^2 = \dfrac{9}{4}$，即$\left( {1 + {k}^{2}}\right) {x}^{2} - \left( {3 + 8{k}^{2}}\right) x + {16}{k}^{2} = 0$
+                
+                令$\Delta = 0$，可得$k = \pm \dfrac{3}{4}$，此时方程为$\dfrac{25}{16}{x}^{2} - \dfrac{15}{2}x + 9 = 0$
+                
+                故切点横坐标为$x_0 = \dfrac{12}{5}$，故切点$P\left(\dfrac{12}{5}, \pm \dfrac{6}{5}\right)$，切线斜率$k = \pm \dfrac{3}{4}$
+            \end{dingautolist}
+        \end{enumerate}        
+    \end{jieda}
+\end{enumerate}
+\subsection*{圆和圆的位置关系}
+\begin{enumerate}
+    \item 两个圆的位置关系包括：外离、外切、相交、内切、内含
+    \item 设圆$C_1: (x-a_1)^2+(y-b_1)^2 = r_1^2, C_2: (x-a_2)^2+(y-b_2)^2 = r_2^2(r_1, r_2 > 0)$，两圆的弦心距为$d = \sqrt{(a_1-a_2)^2+(b_1-b_2)^2}$
+
+    \begin{center}
+        \begin{tabular}{c|c|c|c}
+            \hline
+                图形 & $d$与$r_1, r_2$的关系 & 位置关系 & 公切线条数 \\
+            \hline
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_679_1053_158_107_0.jpg} & $d > r_1 + r_2$ & 外离 & 4\\
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_680_1182_151_111_0.jpg} & $d = r_1 + r_2$ & 外切 & 3\\
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_682_1310_149_112_0.jpg} & $|r_1 - r_2| < d < r_1 + r_2$ & 相交 & 2\\
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_681_1440_149_126_0.jpg} & $d = |r_1-r_2|$ & 内切 & 1 \\
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_676_1583_158_130_0.jpg} & $d < |r_1-r_2|$ & 内含 & 0 \\
+            \hline
+        \end{tabular}
+    \end{center}    
+    \item $C_1(x, y) = 0$和$C_2(x, y) = 0$的公共弦为$C_1(x, y) - C_2(x, y) = 0$
+    \item 圆系：
+    \begin{dingautolist}{172}
+        \item 当直线$L(x, y)=0$和圆$C_(x, y)=0$交于$M(x_1, y_1), N(x_2, y_2)$两点时，$C(x, y) + \lambda \cdot L(x, y)=0$表示过$M,N$两点的圆.
+        \item 当直线$L(x, y)=0$和圆$C_(x, y)=0$切于$M(x_1, y_1)$时，$C(x, y) + \lambda \cdot L(x, y)=0$表示和$L$切于$M$的圆.
+        \item 圆$C_1(x, y) = 0$和圆$C_2(x, y) = 0$交于$M(x_1, y_1), N(x_2, y_2)$两点时，$C_1(x, y) + \lambda \cdot C_2(x, y)=0 (\lambda \neq -1)$表示除$C_2$外过$M,N$两点的圆.
+        \item 圆$C_1(x, y) = 0$和圆$C_2(x, y) = 0$切于$M(x_1, y_1)$时，$C_1(x, y) + \lambda \cdot C_2(x, y)=0 (\lambda \neq -1)$表示和$C_2(x, y) = 0$切于$M$的圆.
+    \end{dingautolist}
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 下列说法中正确的有\blkda{\ding{174}\ding{175}}
+    \begin{dingautolist}{172}
+        \item 若两圆没有公共点,则两圆一定外离.
+        \item 若两圆的圆心距小于两圆的半径之和,则两圆相交. 
+        \item 若直线的方程与圆的方程组成的方程组有且只有一组实数解, 则直线与圆相切.
+        \item 在圆中最长的弦是直径.
+    \end{dingautolist}
+    \item 在平面直角坐标系中,圆 ${O}_{1} : {\left( x - 1\right) }^{2} + {y}^{2} = 1$ 和圆 ${O}_{2} : {x}^{2} + {\left( y - 2\right) }^{2} = 4$ 的位置关系是\dotfill{(\kh{B})}
+    \xx{外离}{相交}{外切}{内切}
+    \begin{jieda}
+        由题意知,圆 ${O}_{1} : {\left( x - 1\right) }^{2} + {y}^{2} = 1$ ,可得圆心坐标 ${O}_{1}\left( {1,0}\right)$ ,半径 ${r}_{1} = 1$
+        
+        圆 ${O}_{2} : {x}^{2} + {\left( y - 2\right) }^{2} = 4$ ,可得圆心坐标为 ${O}_{2}\left( {0,2}\right)$ ,半径 ${r}_{2} = 2$
+        
+        则两圆的圆心距 $\left| {{O}_{1}{O}_{2}}\right|  = \sqrt{1 + 4} = \sqrt{5}$ ,
+        
+        则 $2 - 1 < \sqrt{5} < 2 + 1$ ,即 $\left| {{r}_{2} - {r}_{1}}\right|  < \left| {{O}_{1}{O}_{2}}\right|  < {r}_{1} + {r}_{2}$ ,
+        
+        所以圆 ${O}_{1}$ 与圆 ${O}_{2}$ 相交.
+    \end{jieda}
+    
+    \item 若圆 ${C}_{1} : {x}^{2} + {y}^{2} = {16}$ 与圆 ${C}_{2} : {\left( x - a\right) }^{2} + {y}^{2} = 1$ 相切,则 $a$ 的值为\blkda[2]{$\pm  3$ 或 $\pm  5$}
+    \begin{jieda}
+        圆 ${C}_{1}$ 与圆 ${C}_{2}$ 的圆心距为 $d = \sqrt{{\left( a - 0\right) }^{2} + {\left( 0 - 0\right) }^{2}} = \left| a\right|$ . 
+        \begin{dingautolist}{172}
+            \item 当两圆外切时，有 $\left| a\right|  = 4 + 1 = 5$，故$a =  \pm  5$
+            \item 当两圆内切时，有 $\left| a\right|  = 4 - 1 = 3$，故$a =  \pm  3$
+        \end{dingautolist}
+    \end{jieda}
+    
+    \item 已知圆$C_1: x^2+y^2-2mx+4y+m^2-5 = 0$与圆$C_2: x^2+y^2+2x-2my+m^2-3=0$，当$m$为何值时：
+    \begin{enumerate*}
+        \item 两圆相交
+        \item 两圆外切
+        \item 两圆内含
+    \end{enumerate*}
+    \begin{jieda}
+        $C_1: (x-m)^2 + (y+2)^2 = 9$，$C_2: (x+1)^2+(y-m)^2 = 4$ \\
+        故圆心$O_1(m, -2), O_2(-1, m)$，半径分别是$r_1 = 3, r_2 = 2$ 
+        \begin{dingautolist}{172}
+            \item 相交：$1 < \sqrt{(m+1)^2+(m+2)^2} < 5$，解得$m \in (-1, 2) \cup (-5, -2)$
+            \item 外切：$\sqrt{(m+1)^2+(m+2)^2} = 5$， 解得$m = -5$或2
+            \item 内含：$\sqrt{(m+1)^2+(m+2)^2} < 1$，解得$m \in (-2, -1)$
+        \end{dingautolist}
+    \end{jieda}
+    \item 根据下列条件, 求圆的一般方程:
+    \begin{enumerate}
+        \item 以两圆 ${x}^{2} + {y}^{2} + {4x} + {2y} + 1 = 0$ 与 ${x}^{2} + {y}^{2} + {2x} + {2y} - 2 = 0$ 的公共弦为直径的圆
+        \begin{jieda}
+            \begin{dingautolist}{172}
+                \item 公共弦$2x+3 = 0$，圆心$O_1(-2, -1)$，圆心连线和公共弦垂直，故圆心连线方程为$y = -1$，故目标圆圆心为$\left(-\dfrac{3}{2}, -1\right)$，公共弦长为$\sqrt{15}$，故圆的方程为$\left(x+\dfrac{3}{2}\right)^2+(y-1)^2 = \dfrac{15}{4}$，即$x^2+y^2+3x+2y-\dfrac{1}{2} =0$
+                \item 公共弦$2x+3 = 0$，过两圆公共点的圆的方程为${x}^{2} + {y}^{2} + {4x} + {2y} + 1 + \lambda \cdot (2x+3) = 0$，即$(x+\lambda+2)^2+\left(y+1\right)^2 = (\lambda+2)^2-3\lambda-1$，令半径的平方$\lambda^2+\lambda+3$最小，可得$\lambda = -\dfrac{1}{2}$，故一般方程为：$x^2+y^2+3x+2y-\dfrac{1}{2} =0$
+            \end{dingautolist}
+            
+        \end{jieda}
+        \item 过两圆 ${x}^{2} + {y}^{2} + {4x} - 3 = 0$ 与 ${x}^{2} + {y}^{2} - {4y} - 3 = 0$ 的交点,且圆心在直线 ${2x} - y - 4 = 0$ 上的圆
+        \begin{jieda}
+            公共弦为$x+y = 0$，过两交点的圆可表示为${x}^{2} + {y}^{2} + {4x} - 3 + \lambda \cdot (x+y)= 0$，圆心为$\left(-\dfrac{4+\lambda}{2}, -\dfrac{\lambda}{2}\right)$，代入${2x} - y - 4 = 0$，解得$\lambda = -16$，故一般方程为：${x}^{2} + {y}^{2} -12x - 16y - 3= 0$
+        \end{jieda}
+        \item 过点 $P\left( {4, - 1}\right)$ 且与已知圆 ${x}^{2} + {y}^{2} + {2x} - {6y} + 5 = 0$ 切于点 $Q\left( {1,2}\right)$ 的圆
+        \begin{jieda}
+            切线$x+2y+(x+1)-3(y+2)+5=0$，即$2x-y=0$，切于点 $Q\left( {1,2}\right)$ 的圆为${x}^{2} + {y}^{2} + {2x} - {6y} + 5 + \lambda \cdot (2x-y) = 0$，代入$P\left( {4, - 1}\right)$，可得$16+1+8+6+5+\lambda(8+1) = 0$，故$\lambda = -4$，一般方程为${x}^{2} + {y}^{2} -6x - 2y + 5 = 0$
+        \end{jieda}
+    \end{enumerate}
+    
+    \item 已知圆$C_1: x^2+y^2+2x+2y-8=0$与圆$C_2: x^2+y^2-2x+10y-24 = 0$相交于$A, B$两点
+    \begin{enumerate}
+        \item 求公共弦$AB$所在的直线的方程
+        \item 求公共弦$AB$的长
+        \item 求经过$A, B$两点且面积最小的圆的方程
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为$A, B$两点为两圆的交点，故联立两圆方程的解为两点坐标，\\
+            $\left\{\begin{array}{l}
+             x^2+y^2+2x+2y-8=0 \\
+             x^2+y^2-2x+10y-24 = 0
+            \end{array}\right.$，\\
+            两式相减可得$4x-8y+16=0$，故$AB$所在直线方程为$x-2y+4=0$
+            \item $C_1: x^2+y^2+2x+2y-8=0$的标准方程为$(x+1)^2+(y+1)^2 = 10$，根据点到直线距离可知圆心$O_1(-1, -1)$到直线$x-2y+4=0$的距离为$d = \sqrt{5}$，故根据垂径定理可知$|AB| = 2\times \sqrt{10-5} = 2\sqrt{5}$
+            \item 经过$A, B$两点且面积最小的圆的方程即以$AB$为直径的圆的方程
+            \begin{enumerate}
+                \item 方法1 \\
+                设$AB$中点，即圆心为$M$，故$MO_1 \perp AB$，$MO_1$的斜率为$k = -2$，因此$MO_1$方程为$y = -2(x+1)-1$，其与直线$AB$交于点$M(-2, 1)$，因此满足要求的圆的标准方程为$(x+2)^2+(y-1)^2 = 5$
+                \item 方法2 \\
+                根据公共弦可以写出过两圆交点的圆系方程为$x^2+y^2+2x+2y-8+\lambda(x-2y+4)=0$，即$x^2 + y^2+(2+\lambda)x+(2-2\lambda)y+(4\lambda-8) = 0$，配方有${\left( x + \dfrac{2 + \lambda }{2}\right) }^{2} + {\left( y + 1 - \lambda \right) }^{2} = \dfrac{5{\lambda }^{2}}{4} - {5\lambda } +10$，故半径平方$r^2 = \dfrac{5{\lambda }^{2}}{4} - {5\lambda } +10$
+
+                当$\lambda = 2$时半径平方最小，故圆的方程为$(x+2)^2+(y-1)^2 = 5$
+            \end{enumerate}
+            
+        \end{enumerate}
+    \end{jieda}
+    \item 如图，已知圆心坐标为$(\sqrt{3}, 1)$的圆$M$与$x$轴及直线$y = \sqrt{3}x$分别相切于$A, B$两点，另一圆$N$与圆$M$外切且与$x$轴及$y = \sqrt{3}x$分别相切与$C, D$两点.
+    \begin{center}
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/cd337247ddf6e26618bee99814784b36.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 求圆$M$与圆$N$的方程
+        \item 过点$B$作直线$MN$的平行线$l$，求$l$被圆$N$所截得的弦的长度.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为圆$M$与$x$轴相切，所以圆$M$的半径$r_M = 1$，故圆$M$的方程为$(x-\sqrt{3})^2+(y-1)^2 = 1$ \\
+            根据几何关系可知$O,M,N$三点共线，因此可设$N(\sqrt{3}k, k)$，又因为圆$N$与$x$轴相切，故$r_N = k(k > 0)$. 因为圆$M$与圆$N$相切，故$|MN| = r_M + r_N$，即$\sqrt{3(k-1)^2 + (k-1)^2} = k+1$，即$4(k-1)^2 = (k+1)^2$，解得$k = 3$，因此圆$N$的方程为$(x-3\sqrt{3})^2+(y-3)^2 = 9$
+            \item 因为$l // MN$，因此$N$到$l$的距离即$B$到$MN$的距离，根据对称性可知其等于$A$到$MN$的距离，即$d = \dfrac{\sqrt{3}}{2}$ \\
+            根据垂径定理可知所截弦长为$2 \times \sqrt{9-\dfrac{3}{4}} = \sqrt{33}$
+        \end{enumerate}
+    \end{jieda}
+    \end{enumerate}

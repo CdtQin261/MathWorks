@@ -1,0 +1,1191 @@
+\chapter{平面向量}
+
+\section{向量的概念}
+\zsd 向量的概念与线性运算 \\
+A组：
+\begin{enumerate}
+    \item 在$\triangle{ABC}$中, $AB=AC$, $D$、$E$分别是$AB$、$AC$的中点, 则\dotfill(\kh{B})
+    \xx
+    {$\vv{AB}$与$\vv{AC}$共线}
+    {$\vv{DE}$与$\vv{CB}$共线}
+    {$\vv{AD}$与$\vv{AE}$相等}
+    {$\vv{AD}$与$\vv{BD}$相等}
+    \item 两个向量共线是两个向量相等的\blkda[2]{必要非充分}条件.
+    \item 下列四式不能化简为$\vv{AD}$的是\dotfill(\kh{C})
+    \xx{$(\vv{AB}+\vv{CD})+\vv{BC}$}
+    {$(\vv{AD}+\vv{MB})$+($\vv{BC}+\vv{CM})$}
+    {$\vv{MB}+\vv{AD}-\vv{BM}$}
+    {$\vv{OC}-\vv{OA}+\vv{CD}$}
+    \item 在四边形$ABCD$中, 若$\vv{AC}=\vv{AB}+\vv{AD}$, 则四边形$ABCD$为\blkda[2]{平行四边形}. 
+    \item 在$\pxsb{ABCD}$中, 已知$\vv{AB}=\vv{a}$, $\vv{DB}=\vv{b}$, 则$\vv{AD}=$\blkda{$\vv{a}-\vv{b}$}, $\vv{AC}=$\blkda{$2\vv{a}-\vv{b}$}.
+    \item 下列命题中正确的是\blkda{\ding{175}\ding{176}}
+    \begin{dingautolist}{172}
+        \item 两个向量相等，则他们的起点相同，终点相同
+        \item 若$|\vv{a}| = |\vv{b}|$，则$\vv{a} = \vv{b}$
+        \item 若$\vv{AB} = \vv{DC}$，则$A,B,C,D$四点构成平行四边形
+        \item 在$\pxsb{ABCD}$中，一定有$\vv{AB} = \vv{DC}$
+        \item 若$\vv{a} = \vv{b}, \vv{b} = \vv{c}$，则$\vv{a} = \vv{c}$
+        \item 若$\vv{a} // \vv{b}, \vv{b} // \vv{c}$，则$\vv{a} // \vv{c}$
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 错误，方向和大小相同即可
+            \item 错误，方向未必相同
+            \item 错误，四点可能共线
+            \item 正确
+            \item 正确
+            \item 错误，反例：$\vv{b}$为零向量
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+B组：
+\begin{enumerate}
+    \item 下面给出四个命题: 
+    \begin{dingautolist}{172}
+    \item 对于实数$m$和向量$\vv{a}, \vv{b}$恒有: $m\left(\vv{a}-\vv{b}\right)=m\vv{a}-m\vv{b}$; 
+    \item 对于实数$m,n$和向量$\vv{a}$恒有: $\left(m-n\right)\vv{a}=m\vv{a}-n\vv{a}$; 
+    \item 若$m\vv{a}=m\vv{b}(m\zr)$, 则$\vv{a}=\vv{b}$; 
+    \item 若$m\vv{a}=n\vv{a}(m,n\zr,\vv{a}\neq\vv{0})$, 则$m=n$. 
+    \end{dingautolist}
+    其中正确命题的个数是\blkda{3}
+    \begin{jieda}
+        \ding{174}错误，反例：$m = 0$
+    \end{jieda}
+
+    
+    \item 若点$G$是$\triangle{ABC}$的重心, $D$是$AB$的中点, 则$\vv{GA}+\vv{GB}-\vv{GC}$等于\dotfill(\kh{A})
+    \xx
+    {$4\vv{GD}$}
+    {$-4\vv{GD}$}
+    {$6\vv{GD}$}
+    {$-6\vv{GD}$}
+    \item 设命题p: 向量$\vv{b}$与$\vv{a}$共线, 命题q: 有且只有一实数$\lambda$使得$\vv{b}=\lambda\vv{a}$, 则p是q的\blkda[2]{必要不充分}条件
+    \begin{jieda}
+        若$\vv{a} = \vv{0}, \vv{b} \neq \vv{0}$，则$p$满足而$q$不满足.
+    \end{jieda}
+
+    
+    \item 若$\vv{a},\vv{b}$是不共线的两向量, 且$\vv{AB}=\lambda_1\vv{a}+\vv{b}$, $\vv{AC}=\vv{a}+\lambda_2\vv{b}(\lambda_1,\lambda_2\zr)$, 则$A,B,C$三点共线的充要条件是\dotfill(\kh{D})
+    \xx{$\lambda_1=\lambda_2=-1$}
+    {$\lambda_1=\lambda_2=1$}
+    {$\lambda_1\lambda_2=-1$}
+    {$\lambda_1\lambda_2=1$}
+
+    
+    \item 若$M$是$\triangle{ABC}$的重心, 则下列向量中与$\vv{AB}$共线的是\dotfill(\kh{D})
+    \xx{$\vv{AM}+\vv{MB}+\vv{BC}$}
+    {$3\vv{AM}+\vv{AC}$}
+    {$\vv{AB}+\vv{BC}+\vv{AC}$}
+    {$\vv{AM}+\vv{BM}+\vv{CM}$}
+
+    
+    \item 已知$\vv{OA}=\vv{a}$, $\vv{OB}=\vv{b}$, 且$\abs{\vv{a}}=\abs{\vv{b}}=4$, $\angle{AOB}=\ang{60}$, 
+    则$\abs{\vv{a}+\vv{b}}=$\blkda{$4\sqrt{3}$}, $\abs{\vv{a}-\vv{b}}=$\blkda{4}. 
+
+    
+    \item 已知$\vv{a_0}$为单位向量, 下列命题中假命题有\blkda{\ding{172}\ding{173}\ding{174}}
+    \begin{dingautolist}{172}
+    \item 若$\vv{a}$为平面内的某个向量, 则$\vv{a}=\abs{\vv{a}}\cdot\vv{a_0}$;
+    \item 若$\vv{a}$与$\vv{a_0}$平行, 则$\vv{a}=\abs{\vv{a}}\cdot\vv{a_0}$;
+    \item 若$\vv{a}$与$\vv{a_0}$平行, 且$\abs{\vv{a}}=1$, 则$\vv{a}=\vv{a_0}$. 
+    \end{dingautolist}
+    \item 已知$\triangle{ABC}$所在平面内一点$P$满足$\vv{PA}+\vv{PB}+\vv{PC}=\vv{AB}$, 下列结论中正确的是\dotfill(\kh{D})
+    \xx{$P$在$\triangle{ABC}$内部}
+    {$P$在$\triangle{ABC}$外部}
+    {$P$在$AB$边所在直线上}
+    {$P$是$AC$边的三等分点}
+    \item 若命题P: 非零向量$\vv{a},\vv{b},\vv{c}$满足$\vv{a}+\vv{b}+\vv{c}=\vv{0}$; 
+    命题Q:表示$\vv{a},\vv{b},\vv{c}$的向量可构成三角形, 则$P$是$Q$的\blkda[3]{既不充分也不必要} 条件. 
+    \item 已知向量$\vv{a}$,$\vv{b}$的模分别是3,4, 则$\abs{\vv{a}-\vv{b}}$的取值范围为\blkda{$[1,7]$}. 
+    \item 设等边$\triangle{ABC}$的边长为1, $O$是平面内任意一点, 则$\abs{\vv{OA}+\vv{OB}-2\vv{OC}}=$\blkda{$\sqrt{3}$}. 
+    \item 若$\pxsb{ABCD}$的中心为$O$, $P$为该平面上一点, $\vv{PO}=\vv{a}$, 那么$\vv{PA}+\vv{PB}+\vv{PC}+\vv{PD}=$\blkda{$4\vv{a}$}. 
+    \item 如图所示，已知梯形$ABCD$中，$AB // CD$，且$|\vv{AB}| = 2|\vv{CD}|$，$M,N$分别是$DC, AB$的中点，若$\vv{AB} = \vv{a}, \vv{AD} = \vv{b}$，用$\vv{a}, \vv{b}$表示$\vv{BC}, \vv{MN}$：$\vv{BC} = $\blkda{$\vv{b}-\dfrac{1}{2}\vv{a}$}，$\vv{MN} = $\blkda{$\dfrac{1}{4}\vv{a}-\vv{b}$}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/pingmianxiangliang1.png}
+        \caption*{第13题图}
+    \end{figure}
+    \item 设$\vv{e_1}$和$\vv{e_2}$为两个不共线的向量, 则$\vv{a}=2\vv{e_1}-\vv{e_2} $与$\vv{b}=\vv{e_1}+\lambda\vv{e_2} (\lambda\zr$)共线的充要条件是\blkda{$\lambda=-\frac{1}{2}$}. 
+    \item 在$\pxsb{ABCD}$中，$\vv{AC} = \vv{a}, \vv{BD} = \vv{b}$，则$\vv{AD} = $\blkda{$\dfrac{1}{2}(\vv{a} + \vv{b})$}
+    \begin{jieda}
+        $\left\{\begin{array}{l}
+             \vv{AB} + \vv{AD} = \vv{a} \\
+             \vv{AB} - \vv{AD} = \vv{b}
+        \end{array} \right.$
+    \end{jieda}
+    \item 若$\vv{AB}=2\vv{BC}$, $\vv{AC}=\lambda\vv{CB}$, 则$\lambda=$\blkda{$-3$}. 
+    \item 已知$\vv{e_1},\vv{e_2}$不共线, $\vv{AB}=\vv{e_1}+\vv{e_2}$, $\vv{BC}=2\vv{e_1}+3\vv{e_2}$, $\vv{CD}=2\vv{e_1}+k\vv{e_2}$, $k$为实数. 
+    若$A,B,D$三点共线, 则实数$k=$\blkda{1}. 
+    \item 一条由西向东的河流, 它的水流速度为1千米/时, 一艘小船在静水中速度为5千米/时, 小船从南向北行驶. 
+    \begin{enumerate}[(1)]
+    \item 若驾驶员保持小船航向为正北, 求小船在渡河中的实际速度;
+    \item 若欲使实际航向为自南向北(即垂直于河流方向), 驾驶员应保持怎样的航向?船的实际航速是什么? 
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}[(1)]
+    \item $v=\sqrt{26}$; 
+    \item 北偏西$\arcsin\frac{1}{5}$弧度, $v=2\sqrt{6}$. 
+    \end{enumerate}
+    \end{jieda}
+    \item 已知向量$\vv{a}$和$\vv{b}$, 证明: $\abs{\abs{\vv{a}}-\abs{\vv{b}}}\leq\abs{\vv{a}\pm\vv{b}}\leq\abs{\vv{a}}+\abs{\vv{b}}$, 并说明等号成立的条件. 
+    \begin{jieda}
+        两向量方向相同右侧不等号取等，方向相反左侧不等号取等.
+    \end{jieda}    
+    \item 已知$G$是$\triangle{ABC}$所在平面上一点, 求证: $G$为$\triangle{ABC}$的重心的充要条件是$\vv{AG}+\vv{BG}+\vv{CG}=\vv{0}$. 
+    \begin{jieda}
+        充分性：$\vv{AG}+\vv{BG}+\vv{CG}=\vv{0}$即$\vv{GC} = -(\vv{GA} + \vv{GB})$，故$G$为$AB$边上中线靠近底边的三等分点，因此$G$为重心. \\
+        必要性：若$G$为重心，则其为底边中线上靠近底边的三等分点，即有$\vv{GC} = -2\times \dfrac{1}{2}(\vv{GA} + \vv{GB})$, 因此$\vv{AG}+\vv{BG}+\vv{CG}=\vv{0}$
+    \end{jieda}
+    \item 在四边形$ABCD$中, $M,N$分别为线段$AD,BC$的中点, $G$为线段$MN$的中点, $O$为平面内的任意一点. 
+    \begin{enumerate}[(1)]
+    \item 求证: $\vv{GA}+\vv{GB}+\vv{GC}+\vv{GD}=\vv{0}$; 
+    \item 求证: $\vv{OG}=\frac{1}{4}\left(\vv{OA}+\vv{OB}+\vv{OC}+\vv{OD}\right)$.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $G$为平行四边形对角线交点，故$\vv{GA} + \vv{GC} = \vv{0}, \vv{GB} + \vv{GD} = \vv{0}$，故$\vv{GA}+\vv{GB}+\vv{GC}+\vv{GD}=\vv{0}$
+            \item $\left \{ \begin{array}{l}
+                 \vv{OG} = \vv{OA} + \vv{AG}  \\
+                 \vv{OG} = \vv{OB} + \vv{BG} \\
+                 \vv{OG} = \vv{OC} + \vv{CG} \\
+                 \vv{OG} = \vv{OD} + \vv{DG}
+            \end{array} \right. $，四式相加除4，结合上一问结论即证.
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\clearpage
+\section*{平面向量基本定理(1)}
+\zsd 平面向量基本定理 \\
+A组：\\
+定理内容：如果$\vv{e_1}, \vv{e_2}$是平面内两个\blkda{不共线}的向量，那么对于平面内\textbf{任意}的一个向量$\vv{a}$，\textbf{有且仅有\blkda{一}对}实数$\lambda_1, \lambda_2$，使得\blkda[3]{$\vv{a} = \lambda_1 \vv{e_1} + \lambda_2 \vv{e_2}$}，其中不共线的向量$\vv{e_1}, \vv{e_2}$称作是表示这个平面内所有向量的一组\blkda{基}.
+\begin{enumerate}
+    \item 下列命题中是真命题的有\blkda{\ding{173}\ding{174}}: 
+    \begin{dingautolist}{172}
+    \item 一个平面内只有一对不共线向量可作为表示该平面所有向量的基底; 
+    \item 一个平面内有无数多对不共线向量可表示该平面所有向量的基底; 
+    \item 零向量不能作为基底中的向量. 
+    \end{dingautolist}
+    
+    
+    \item 若$\vv{e_1},\vv{e_2}$(不共线)是表示平面内所有向量的一组基底, 有下列四组向量: 
+    \ding{172} $\vv{e_1}+\vv{e_2}$和$\vv{e_1}-\vv{e_2}$; 
+    \ding{173} $3\vv{e_1}-\vv{e_2}$和$2\vv{e_2}-6\vv{e_1}$; 
+    \ding{174} $\vv{e_1}+2\vv{e_2}$和$\vv{e_2}+2\vv{e_1}$; 
+    \ding{175} $\vv{e_2}$和$\vv{e_1}+\vv{e_2}$. \\
+    其中不能作为一组基底的是\blkda{\ding{173}}. 
+    
+    \item 已知向量$\vv{a},\vv{b}$不共线, 实数$x,y$满足$(2x-y)\vv{a}+4\vv{b}=5\vv{a}+(x-2y)\vv{b}$, 则$x+y=$\blkda{1}. 
+
+    \item 设$\vv{a},\vv{b}$都是非零向量, 下列四个条件中, 使$\dfrac{\vv{a}}{\abs{\vv{a}}}=\dfrac{\vv{b}}{\abs{\vv{b}}}$成立的充分条件是\dotfill(\kh{C})
+    \xx
+    {$\vv{a}=-\vv{b}$}
+    {$\vv{a}\px\vv{b}$}
+    {$\vv{a}=2\vv{b}$}
+    {$\vv{a}\px\vv{b}$且$\abs{\vv{a}}=\abs{\vv{b}}$}
+\end{enumerate}
+B组：
+\begin{enumerate}
+    \item 在$\triangle{ABC}$中，点$D, E$分别在边$BC,AC$上，且$\vv{BD} = 2\vv{DC}, \vv{CE} = 3\vv{EA}$，若$\vv{AB} = \vv{a}, \vv{AC} = \vv{b}$，则$\vv{DE} = $\dotfill{(\kh{C})}
+    \xx{$\dfrac{1}{3}\vv{a}+\dfrac{5}{12}\vv{b}$}{$\dfrac{1}{3}\vv{a}-\dfrac{13}{12}\vv{b}$}{$-\dfrac{1}{3}\vv{a}-\dfrac{5}{12}\vv{b}$}{$-\dfrac{1}{3}\vv{a}+\dfrac{13}{12}\vv{b}$}
+    \begin{jieda}
+        $\vv{DE} = \vv{DC} + \vv{CE} = \dfrac{1}{3}\vv{BC} + \dfrac{3}{4}\vv{CA} = \dfrac{1}{3}(\vv{AC} - \vv{AB}) - \dfrac{3}{4}\vv{AC} = -\dfrac{1}{3}\vv{AB} - \dfrac{5}{12}\vv{AC}$
+    \end{jieda}
+    \item 已知$\triangle{ABC}$，若$D$满足$\vv{AD} = \dfrac{3\vv{AB} + \vv{AC}}{4}$，且$\vv{BD} = \lambda \vv{CD} (\lambda \in \mathbf{R})$，则$\lambda = $\blkda{$-\dfrac{1}{3}$}
+    \begin{jieda}
+        $\vv{BD} = \vv{BA} + \vv{AD} = \dfrac{\vv{BC}}{4}$，$\vv{CD} = \vv{CA} + \vv{AD} = \dfrac{3\vv{CB}}{4}$，故$\lambda = -\dfrac{1}{3}$
+    \end{jieda}
+    \item 已知$\vv{AP}=\frac{4}{3}\vv{AB}$, $\vv{AQ}=\frac{1}{3}\vv{AB}$, $O$为直线$AB$外一点, 用$\vv{OA}$、$\vv{OB}$表示$\vv{OP}=$\blkda[3]{$-\frac{1}{3}\vv{OA}+\frac{4}{3}\vv{OB}$}. 
+    \item 设$D$、$E$分别是$\triangle{ABC}$的边$AB$、$BC$上的点, $AD=\frac{1}{2}AB$, $BE=\frac{2}{3}BC$. 若$\vv{DE}=\lambda_1\vv{AB}+\lambda_2\vv{AC}$($\lambda_1,\lambda_2$为实数), 则$\lambda_1+\lambda_2$的值为\blkda{$\frac{1}{2}$}. 
+    \item 设点$O$在$\triangle{ABC}$的外部, 且$\vv{OA}-2\vv{OB}-3\vv{OC}=\vv{0}$, 则$S_{\triangle{ABC}}:S_{\triangle{OBC}}=$\blkda{$4:1$}. 
+
+    \item 已知$\vv{OP}=\frac{1}{3}\vv{OA}+\frac{2}{3}\vv{OB}$, 则点$P$与线段$AB$的关系是\dotfill(\kh{D})
+    \xx
+    {$P$不在线段$AB$上}
+    {$P$在线段$AB$上, 但不是线段$AB$的三等分点}
+    {$P$点与$O,A,B$这三点构成平行四边形}
+    {$P$点是线段$AB$的一个三等分点}
+    
+    \item 已知$P$是$\triangle{ABC}$所在平面内任一点, 若$\vv{CB}=\lambda\vv{PA}+\vv{PB}$, $\lambda\zr$, 则$P$一定在\dotfill(\kh{B})
+    \xx{$\triangle{ABC}$内部}{$AC$边所在的直线上}{$AB$边上}{$BC$边上}
+
+    \item 已知$\triangle{ABC}$中, 点$D$在边$AB$上, $CD$平分$\angle{ACB}$. 
+    若$\vv{CB}=\vv{a}$,$\vv{CA}=\vv{b}$, $\abs{\vv{a}}=1$, $\abs{\vv{b}}=2$, 
+    则$\vv{CD}=$\dotfill(\kh{B})
+    \xx
+    {$\frac{1}{3}\vv{a}+\frac{2}{3}\vv{b}$}
+    {$\frac{2}{3}\vv{a}+\frac{1}{3}\vv{b}$}
+    {$\frac{3}{5}\vv{a}+\frac{4}{5}\vv{b}$}
+    {$\frac{4}{5}\vv{a}+\frac{3}{5}\vv{b}$}
+    
+    \item 在$\triangle{ABC}$中, 点$P$是$AB$上一点, $\vv{CP}=\frac{2}{3}\vv{CA}+\frac{1}{3}\vv{CB}$, $Q$是$BC$中点, $AQ$与$CP$交点为$M$, $\vv{CM}=t\vv{CP}$, 则$t=$\blkda{$\frac{3}{4}$}
+    \begin{jieda}
+        $\vv{CM} = \lambda \vv{CA} + (1-\lambda) \vv{CQ} = \lambda \vv{CA} + \dfrac{1-\lambda}{2} \vv{CB}$，因此$\vv{CP} = \dfrac{\lambda}{t} \vv{CA} + \dfrac{1-\lambda}{2t} \vv{CB}$，由平面向量基本定理可推得$\dfrac{1-\lambda}{2t} = \dfrac{1}{2} \cdot \dfrac{\lambda}{t}$，因此$\lambda = \dfrac{1}{2}$，即$\vv{CM} = \dfrac{1}{2}\vv{CA} + \dfrac{1}{4}\vv{CB}$，因此$t = \dfrac{3}{4}$
+    \end{jieda}
+
+    \item 向量$\vv{a}, \vv{b}, \vv{c}$在正方形网格中的位置如图所示；若$\vv{c} = \lambda \vv{a} + \mu \vv{b} (\lambda, \mu \in \mathbf{R})$，则$\dfrac{\lambda}{\mu} = $\blkda{$4$}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/pingmianxiangliang2.png}
+        \caption*{第10题图}
+    \end{figure}
+    \begin{jieda}
+        $\left \{\begin{array}{l}
+             -1 = -\lambda + 6\mu \\
+             -3 = \lambda + 2\mu
+        \end{array} \right.$，解得$\lambda = -2, \mu = -\dfrac{1}{2}$
+    \end{jieda}
+    
+    \item 已知$\triangle{ABC}$的重心为$G$, $O$为三角形外任意一点, $\vv{OA}=\vv{a}$, $\vv{OB}=\vv{b}$, $\vv{OC}=\vv{c}$, 试用$\vv{a},\vv{b},\vv{c}$表示$\vv{OG}$. 
+    \begin{jieda}
+        $\vv{OG} = \vv{OA} + \vv{AG} = \vv{OA} - (\vv{BG} + \vv{CG}) = \vv{OA} - (\vv{BO} + \vv{OG}) - (\vv{CO} + \vv{OG})$，故$3\vv{OG} = \vv{a} + \vv{b} + \vv{c}$，即$\vv{OG} = \dfrac{1}{3}(\vv{a} + \vv{b} + \vv{c})$
+    \end{jieda}
+    \item 在$\triangle{ABC}$中, $M$在边$AB$上, $N$在边$AC$上, $AM:AB=1:3$, $AN:AC=1:4$, $BN$与$CM$相交于点$P$, 设$\vv{AB}=\vv{a}$, $\vv{AC}=\vv{b}$, 试用$\vv{a},\vv{b}$表示$\vv{AP}$. 
+    \begin{jieda}
+        $\left \{ \begin{array}{l}
+             \vv{AP} = \lambda \vv{AB} + (1-\lambda) \vv{AN} =  \lambda \vv{AB} + \dfrac{(1-\lambda)}{4} \vv{AC} \\
+             \vv{AP} = \mu \vv{AM} + (1-\mu) \vv{AC} =  \dfrac{\mu}{3} \vv{AB} + (1-\mu) \vv{AC}
+        \end{array} \right. $
+        因此$\left \{ \begin{array}{l}
+             \lambda = \dfrac{\mu}{3} \\
+             \dfrac{1-\lambda}{4} = 1-\mu
+        \end{array} \right.$，解得$\left \{ \begin{array}{l}
+             \lambda = \frac{3}{11} \\
+             \mu = \frac{9}{11}
+        \end{array} \right.$，因此$\vv{AP} = \dfrac{3}{11}\vv{AB} + \dfrac{2}{11} \vv{AC}$
+    \end{jieda}
+    \item 如图, 已知$\triangle{AOB}$的重心为$G$, 过点$G$的直线与边$OA,OB$分别交于点$P,Q$, 
+    设$\vv{OP}=h\vv{OA}$, $\vv{OQ}=k\vv{OB}$, $\triangle{AOB}$、 $\triangle{POQ}$的面积分别为$S$、$T$. 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/pingmianxiangliang3.png}
+        \caption*{第13题图}
+    \end{figure}
+    \begin{enumerate}[(1)]
+    \item 求证: $\frac{1}{h}+\frac{1}{k}=3$; 
+    \item 求证: $\frac{4}{9}S\leq T\leq\frac{1}{2}S$. 
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\vv{OG} = \lambda \vv{OP} + (1-\lambda)\vv{OQ} = h\lambda \vv{OA} + k(1-\lambda)\vv{OB}$，故$\left\{\begin{array}{l}
+                 h\lambda = \frac{1}{3}  \\
+                 k(1-\lambda) = \frac{1}{3}
+            \end{array}\right. $，因此$\dfrac{1}{h} + \dfrac{1}{k} = 3$
+            \item $T = hkS = \dfrac{k^2}{3k-1}S, k \in \left[\dfrac{1}{2}, 1\right]$，\\
+            设$t = 3k-1, t \in \left[\dfrac{1}{2}, 2\right]$，$\dfrac{k^2}{3k-1} = \dfrac{\left(\dfrac{t+1}{3}\right)^2}{t}  = \dfrac{1}{9}\left(t+\dfrac{1}{t}+2\right) \in \left[\dfrac{4}{9}, \dfrac{1}{2}\right]$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+C组：
+\begin{enumerate}
+    \item 已知在$\triangle{ABC}$中，$AC = 8, BC = 10, 32cos(A-B) = 31$，则$\triangle{ABC}$的面积是\blkda{$15\sqrt{7}$}
+    \begin{jieda}
+        $S = \dfrac{1}{2}absinC = 40sinC = 40sin(A+B)$ \\
+        $cos(A-B) = \dfrac{31}{32}$，因为$a > b$，所以$sin(A-B) = \dfrac{3\sqrt{7}}{32}$\\
+        $sinA = sin(A-B+B) = sin(A-B) cosB + cos(A-B)sinB = \dfrac{3\sqrt{7}}{32}cosB+\dfrac{31}{32}sinB$，根据正弦定理有$\dfrac{sinA}{sinB} = \dfrac{a}{b} = \dfrac{5}{4}$，故$\dfrac{5}{4}sinB = \dfrac{3\sqrt{7}}{32}cosB+\dfrac{31}{32}sinB$，即$tanB = \dfrac{\sqrt{7}}{3}$，故$cosB = \dfrac{3}{4}, sinB = \dfrac{\sqrt{7}}{4}$ \\
+        故$cos2B = 2sinBcosB = \dfrac{1}{8}, sin2B = cos^2B - sin^2B = \dfrac{3\sqrt{7}}{8}$ \\
+        故$sin(A+B) = sin((A-B)+2B) = \dfrac{3\sqrt{7}}{32} \times \dfrac{1}{8} + \dfrac{31}{32} \times \dfrac{3\sqrt{7}}{8} = \dfrac{3\sqrt{7}}{8}$，故$S = 40 \times \dfrac{3\sqrt{7}}{8} = 15\sqrt{7}$
+    \end{jieda}
+    \item 在锐角三角形$ABC$中，$sinA = \dfrac{4\sqrt{5}}{9}$，且$a,b,c$为$A,B,C$的对边
+    \begin{enumerate}
+        \item 求$sin2(B+C) + sin^2\left(\dfrac{B+C}{2}\right)$的值
+        \item 若$a = 4$，试求当$\vv{AB} \cdot \vv{AC}$取得最大值时，$\triangle{ABC}$的面积.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $cosA = \dfrac{1}{9}, sin2A = \dfrac{8\sqrt{5}}{81}$，故$sin2(B+C) + sin^2\left(\dfrac{B+C}{2}\right) = -sin2A + \dfrac{1+cosA}{2} = \dfrac{45 - 8\sqrt{5}}{81}$
+            \item $\vv{AB} \cdot \vv{AC} = bccosA$，故当$bc$取最大值的时候$\vv{AB} \cdot \vv{AC}$取最大值. \\
+            根据余弦定理有$16 = b^2 + c^2 - \dfrac{2}{9}bc$，根据平均值不等式有$16 \geq 2bc - \dfrac{2}{9}bc = \dfrac{16}{9}bc$，故$bc \leq 9$，当且仅当$b = c = 3$时取最值. 此时$S = \dfrac{1}{2}bcsinA = 2\sqrt{5}$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\clearpage
+
+\section*{平面向量的数量积(1)}
+\zsd 平面向量的数量积 \\
+A组：\\
+向量的夹角：两向量的夹角与两直线的夹角范围不同，向量的夹角范围是\blkda{$[0, \pi]$}，而两直线夹角范围是\blkda{$\left[0, \dfrac{\pi}{2}\right]$}\\
+已知两个向量$\vv{a}$和$\vv{b}$，他们的夹角为$\theta$，我们把数量\blkda[3]{$|\vv{a}||\vv{b}|cos\theta$}叫做向量$\vv{a}$和$\vv{b}$的数量积（或内积），记作\blkda{$\vv{a} \cdot \vv{b}$}. 规定：零向量与任意向量的数量积为\blkda{0}
+\begin{enumerate}
+    \item 已知$\abs{\vv{a}}=3$, $\abs{\vv{b}}=2$, 且$\vv{a}$与$\vv{b}$的夹角为$\ang{60}$, 那么$\vv{a}\cdot\vv{b}=$\blkda{3}. 
+    
+    \item 已知$\abs{\vv{a}}=12$, $\abs{\vv{b}}=9$, 且$\vv{a}\cdot\vv{b}=-54\sqrt{2}$, 那么$\vv{a}$与$\vv{b}$的夹角大小为\blkda{$\frac{3\pi}{4}$}. 
+    
+    \item 在$\triangle{ABC}$中, 若$\abs{\vv{AB}}=\abs{\vv{AC}}=4$, 且$\vv{AB}\cdot\vv{AC}=8$, 则$\triangle{ABC}$的形状是\blkda{正三角形}. 
+
+    \item 已知$\vv{a},\vv{b},\vv{c}$是三个向量, 下列命题中, 其中正确命题的编号为\blkda{\ding{174}\ding{175}}
+    \begin{dingautolist}{172}
+    \item 若$\vv{a}\cdot\vv{b}=\vv{a}\cdot\vv{c}$, 且$\vv{a}\neq\vv{0}$, 则$\vv{b}=\vv{c}$;
+    \item 若$\vv{a}\cdot\vv{b}=0$, 则$\vv{a}=\vv{0}$或$\vv{b}=\vv{0}$; 
+    \item 若$\vv{a}\bot\vv{b}$, 则$\vv{a}\cdot\vv{b}=0$; 
+    \item 向量$\vv{a}$在$\vv{b}$的方向上的投影向量是一个模等于$\abs{\vv{a}}\abs{\cos\theta}$($\theta$是$\vv{a}$与$\vv{b}$的夹角), 方向与$\vv{b}$相同或相反的一个向量. 
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 错误；仅代表$\vv{b}, \vv{c}$在$\vv{a}$方向上的投影数量相等，不代表两向量相等
+            \item 错误；等价于$\vv{a}, \vv{b}$垂直，可以不是零向量
+            \item 正确
+            \item 正确
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知$\vv{a},\vv{b}$为两个单位向量, 下列命题正确的是\dotfill(\kh{D})
+    \xx
+    {$\vv{a}=\vv{b}$}
+    {$\vv{a}\cdot\vv{b}=0$}
+    {$\abs{\vv{a}\cdot\vv{b}}<1$}
+    {$\vv{a}^2=\vv{b}^2$}
+    \item 已知$\vv{a}$、$\vv{b}$为非零向量, 则$\vv{a}\cdot\vv{b}=\abs{\vv{a}}\abs{\vv{b}}$是$\vv{a},\vv{b}$共线的\blkda[2]{充分不必要} 条件.
+\end{enumerate}
+B组：
+\begin{enumerate}
+    \item 在$\triangle{ABC}$中, 若$BC=5$, $AC=4$, $\angle{C}=\ang{45}$, 则$\vv{BC}\cdot\vv{CA}=$\blkda{$-10\sqrt{2}$}. 
+    \item 已知$\abs{\vv{a}}=6$, $\abs{\vv{b}}=4$, $\vv{a}$与$\vv{b}$的夹角为$\ang{60}$, 那么$(\vv{a}+2\vv{b})\cdot(\vv{a}-3\vv{b})=$\blkda{$-72$}.
+    \item 已知$\abs{\vv{a}}=2$, $\abs{\vv{b}}=3$, $\vv{a}$与$\vv{b}$的夹角为$\ang{120}$, 那么$\abs{\vv{a}+2\vv{b}}=$\blkda{$2\sqrt{7}$}. 
+    \item 下面关于向量的数量积的关系式, 其中正确的序号是\blkda{\ding{172}\ding{174}}
+    \begin{dingautolist}{172}
+    \item $\vv{0}\cdot\vv{0}=0$; 
+    \item $(\vv{a}\cdot\vv{b})\cdot\vv{c}=\vv{a}\cdot(\vv{b}\cdot\vv{c})$; 
+    \item $\vv{a}\cdot\vv{b}=\vv{b}\cdot\vv{a}$; 
+    \item $\abs{\vv{a}\cdot\vv{b}}\leq\vv{a}\cdot\vv{b}$; 
+    \item $\abs{\vv{a}\cdot\vv{b}}=\abs{\vv{a}}\cdot\abs{\vv{b}}$. 
+    \end{dingautolist}
+    
+    
+    \item 若$\vv{a}$,$\vv{b}$都是非零向量, 则$\vv{a}^{2}+\vv{b}^{2}$与$2\vv{a}\cdot\vv{b}$的大小关系是\dotfill(\kh{A})
+    \xx
+    {$\vv{a}^{2}+\vv{b}^{2}\geq2\vv{a}\cdot\vv{b}$}
+    {$\vv{a}^{2}+\vv{b}^{2}\leq2\vv{a}\cdot\vv{b}$}
+    {不能比较大小}
+    {能比较大小, 但不能确定其大小关系}
+    
+    \item 两个非零向量$\vv{a},\vv{b}$互相垂直的充要条件是\dotfill(\kh{C})
+    \xx
+    {$\vv{a}\cdot\vv{b}=\abs{\vv{a}}\cdot\abs{\vv{b}}$}
+    {$\vv{a}\cdot\vv{b}=\vv{0}$}
+    {$\abs{\vv{a}+\vv{b}}=\abs{\vv{a}-\vv{b}}$}
+    {$(\vv{a}+\vv{b})\cdot(\vv{a}-\vv{b})=0$}
+    \item 在边长为1的正三角形$ABC$中, 若$\vv{BC}=\vv{a}$, $\vv{CA}=\vv{b}$, $\vv{AB}=\vv{c}$, 则$\vv{a}\cdot\vv{b}+\vv{b}\cdot\vv{c}+\vv{c}\cdot\vv{a}=$\dotfill(\kh{B})
+    \xx
+    {$\frac{3}{2}$}{$-\frac{3}{2}$}{0}{3}
+
+    \item 已知$\vv{a}, \vv{b}$是两个不共线的向量，$|\vv{a}| = 2, \vv{a} \cdot \vv{b} = 4\sqrt{3}$，若$\forall t \in \mathbf{R}$，$|\vv{b} - t \vv{a}| \geq 2$，则$|\vv{b}|$的最小值为\blkda{4}
+    \begin{jieda}
+        $|\vv{b} - t \vv{a}| = \sqrt{|\vv{b}|^2 + t^2|\vv{a}|^2 - 2t\vv{a} \cdot \vv{b}} = \sqrt{|\vv{b}|^2 + 4t^2 - 8\sqrt{3}t} \geq \sqrt{|\vv{b}|^2 -12} \geq 2$，故$|\vv{b}| \geq 4$
+    \end{jieda}
+    \item 若$|\vv{AB}| = 4$，$\vv{AC} = 3\vv{CB}$，平面内一点$P$满足$\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$，则$sin\angle PAB$的最大值为\blkda{$\dfrac{1}{3}$}
+    \begin{jieda}
+        $\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$即$cos\angle CPA = cos\angle CPB$，即$PC$为$\angle APB$的角平分线. \\
+        根据角平分线定理，以及$\vv{AC} = 3\vv{CB}$可知$\dfrac{|\vv{PA}|}{|\vv{PB}|} = 3$ \\
+        根据大角对大边可知$\angle PAB$为锐角（或零角，此时不构成三角形），因此其正弦值的最大值对应余弦值最小值，设$x = |\vv{PB}|$根据余弦定理有$cos\angle PAB = \dfrac{9x^2 + 16 - x^2}{24x} = \dfrac{1}{3} \cdot \left(x + \dfrac{2}{x}\right) \geq \dfrac{2\sqrt{2}}{3}$（当$x = \sqrt{2}$时取等号），因此$sin\angle PAB$的大值为$\dfrac{1}{3}$
+    \end{jieda}
+    
+    \item 已知$\abs{\vv{a}}=1$, $\abs{\vv{b}}=2$, $\vv{a}$与$\vv{b}$的夹角为$\frac{\pi}{3}$, $\vv{c}=5\vv{a}+3\vv{b}$, $\vv{d}=3\vv{a}+k\vv{b}$, 
+    试问: 当实数$k$为何值时? 
+    \begin{enumerate}[(1)]
+    \item $\vv{c}\px\vv{d}$; 
+    \item $\vv{c}\bot\vv{d}$. 
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $5k = 3\times3$，$k = \dfrac{9}{5}$
+            \item $\vv{c} \cdot \vv{d} = 15|\vv{a}|^2 + (9+5k)\vv{a}\cdot\vv{b}+3k|\vv{b}|^2 = 0$，即$24 + 17k = 0$，$k = -\dfrac{24}{17}$
+        \end{enumerate}
+    \end{jieda}
+    
+    
+    \item 已知$\vv{x}=2\vv{b}-3\vv{a}$, $\vv{y}=2\vv{a}+\vv{b}$, $\abs{\vv{a}}=\abs{\vv{b}}=1$, $\vv{a}$与$\vv{b}$的夹角为$\ang{60}$, 求$\vv{x}$与$\vv{y}$的夹角. 
+    \begin{jieda}
+        设$\vv{x}$与$\vv{y}$的夹角为$\theta$，则$cos\theta = \dfrac{\vv{x} \cdot \vv{y}}{|\vv{x}| \cdot |\vv{y}|}$ \\
+        $\vv{x} \cdot \vv{y} = \vv{a}\cdot\vv{b} -6|\vv{a}|^2+2|\vv{b}|^2 = -\dfrac{7}{2}$，$|\vv{x}| = \sqrt{4|\vv{b}|^2 + 9|\vv{a}|^2 - 12\vv{a}\cdot\vv{b}} = \sqrt{7}$，$|\vv{y}| = \sqrt{4|\vv{a}|^2 + |\vv{b}|^2 + 4\vv{a}\cdot\vv{b}} = \sqrt{7}$\\
+        故$cos\theta = -\dfrac{1}{2}$，因此$\vv{x}$与$\vv{y}$的夹角为$\dfrac{2\pi}{3}$
+    \end{jieda}
+\end{enumerate}
+C组：
+\begin{enumerate}
+    \item 在$\triangle{ABC}$中，内角$A,B,C$所对的边分别是$a, b, c$，且$sinC cos\dfrac{A}{2} = (2-cosC)sin\dfrac{A}{2}, cosA = \dfrac{3}{5}, a = 4$，则$\triangle{ABC}$的面积为\blkda{6}
+    \begin{jieda}
+        根据$cosA = \dfrac{3}{5}$可知$A$为锐角，因此$cos\dfrac{A}{2} = \sqrt{\dfrac{1+cosA}{2}} = \dfrac{2\sqrt{5}}{5}$，$sin\dfrac{A}{2} = \dfrac{\sqrt{5}}{5}$，故$sinC cos\dfrac{A}{2} = (2-cosC)sin\dfrac{A}{2}$即$2sinC+cosC = 2$，因此$C = \dfrac{\pi}{2}$或$arccos\left(\dfrac{4}{5}\right)$，对应$B = arccos\left(\dfrac{4}{5}\right)$或$\dfrac{\pi}{2}$，两种情况对称，面积相同，按照其一求面积即可. \\
+        $\triangle{ABC}$为边长为$3,4,5$的直角三角形，面积为6.
+    \end{jieda}
+    \item 在非等腰三角形$ABC$中，内角$A,B,C$所对的边分别是$a, b, c$，且满足$(2c-b)cosC = (2b-c)cosB$
+    \begin{enumerate}
+        \item 求角$A$的大小
+        \item 若$a = 4$，求$\triangle{ABC}$面积的取值范围
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $(2c-b)cosC = (2b-c)cosB$即$(2sinC-sinB)cosC = (2sinB - sinC)cosB$，即$sin2C-sin2B = sin(B-C)$，左侧和差化积有$2cos(B+C)sin(C-B) = sin(B-C)$，即$cos(B+C) = -\dfrac{1}{2}$，即$cosA = \dfrac{1}{2}$，故$A = \dfrac{\pi}{3}$
+            \item $S = \dfrac{1}{2}bcsinA = \dfrac{1}{2} \cdot \left(\dfrac{a}{sinA}\right)^2 sinAsinBsinC = \dfrac{16\sqrt{3}}{3}sinBsinC = \\
+            \dfrac{16\sqrt{3}}{3}\left[-\dfrac{1}{2}(cos(B+C) - cos(B-C))\right] = \dfrac{8\sqrt{3}}{3}(\dfrac{1}{2} + cos(B-C))$，因为$\triangle{ABC}$非等腰三角形，因此$B-C \in \left(-\dfrac{2\pi}{3}, 0\right) \cup \left(0, \dfrac{2\pi}{3}\right)$，因此$S \in \left(0, 4\sqrt{3}\right)$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\clearpage
+\section*{平面向量的数量积(2)}
+\zsd 向量的应用. 投影与垂直联系起来考虑. 
+
+A组：
+
+\begin{enumerate}
+
+\item 已知$\vv{a}$、$\vv{b}$为非零向量, 则$\vv{a}\cdot\vv{b}=\abs{\vv{a}}\abs{\vv{b}}$是$\vv{a},\vv{b}$共线的\blkda[2]{充分不必要} 条件.
+
+
+\item 设向量$\vv{b}$的模$\vert\vv{b}\vert=4$, $\vv{a}\cdot\vv{b}=-8\sqrt{3}$, 则$\vv{a}$在方向$\vv{b}$上的数量投影为\dotfill(\kh{B})
+\xx
+{$2\sqrt 3$}
+{$-2\sqrt 3$}
+{$2$}
+{$-2$}
+
+\item 已知两个非零向量 $\vec{a}, \vec{b}$ 满足 $|\vec{a}+\vec{b}|=|\vec{a}-2 \vec{b}|$ ，则向量 $\vec{a}$ 在向量 $\vec{b}$ 方向上的投影向量为\blkda{$\dfrac{1}{2}\vec{b}$}．
+
+\item 已知向量 $\vec{a}$ 与 $\vec{b}$ 的夹角为 $\frac{\pi}{6},|\vec{a}|=\sqrt{3},|\vec{b}|=2$ ．
+（1）求 $|\vec{a}-\vec{b}|$ ；
+（2）若向量 $\vec{a}+\vec{b}$ 与 $\lambda \vec{a}+\vec{b}$ 夹角为锐角，求实数 $\lambda$ 的取值范围．
+\begin{jieda}
+    (1)利用数量积可得$|\vec{a}-\vec{b}|=1$ ；（2）$(\vec{a}+\vec{b}) \cdot(\lambda \vec{a}+\vec{b})>0$ 且 $\vec{a}+\vec{b}$ 与 $\lambda \vec{a}+\vec{b}$ 不平行，得$\lambda \in (-\frac{7}{6},1)\cup (1,+\infty)$ ．
+\end{jieda}
+
+\item 用向量方法证明: 平行四边形两条对角线平方和等于四条边的平方和. 
+\begin{jieda}
+    用数量积计算对角线的模.
+\end{jieda}
+\end{enumerate}
+
+B组：
+\begin{enumerate}
+
+\item 已知 $|\vec{a}|=6,|\vec{b}|=4$ ，且 $(\vec{a}+2 \vec{b}) \cdot(\vec{a}-3 \vec{b})=-72$ ，则 $\vec{a}$ 与 $\vec{b}$ 的夹角大小为 \blkda[2]{$\dfrac{\pi}{3}$} ．
+
+\item 已知 $\vec{a}, \vec{b}$ 满足 $|\vec{a}+\vec{b}|=8,|\vec{a}-\vec{b}|=6$ ，求 $\vec{a} \cdot \vec{b}=$\blkda[2]{7}.
+
+
+\item 已知 $|\vec{a}|=13,|\vec{b}|=19$ ，且 $|\vec{a}+\vec{b}|=24$ ，则 $|\vec{a}-\vec{b}|=$ \blkda[2]{22}．
+
+
+\item 已知 $\vec{a}, ~ \vec{b}$ 为非零向量．若 $|\vec{a}|=|\vec{b}|=|\vec{a}-\vec{b}|$ ，则 $\vec{a}$ 与 $\vec{a}+\vec{b}$ 的夹角大小为 \blkda[2]{$\dfrac{\pi}{6}$} ．
+
+
+\item 已知 $\vec{a}+\vec{b}+\vec{c}=0,|\vec{a}|=3,|\vec{b}|=5,|\vec{c}|=7$ ，则 $\vec{a}$ 与 $\vec{b}$ 的夹角的大小是 \blkda[2]{$\dfrac{\pi}{3}$} ．
+
+
+\item 如下图所示，在 $\triangle {A B C}$ 中， ${D}$ 是${B} {C}$边的中点， ${E}$ 在边 ${A B}$ 上， ${B E}={2} {E} {A}$ ， $A D$ 与 $C E$ 交于点 $O$ ．若 $\vec{A} B \cdot \vec{A} C=6 \vec{A} O \cdot \vec{E} C$ ，则 $\dfrac{A B}{A C}$ 的值是 \blkda[2]{$\sqrt{3}$} ．
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{xiangliangdeshuliangji.jpg}
+        \caption*{第6题图}
+    \end{figure}
+
+\item 若 $\vec{a}, \vec{b}, \vec{c}$ 均为单位向量，且 $\vec{a} \cdot \vec{b}=0,(\vec{a}-\vec{c}) \cdot(\vec{b}-\vec{c}) \leqslant 0$ ，则 $|\vec{a}+\vec{b}-\vec{c}|$ 的最大值为\blkda[2]{1}.
+
+
+
+\item 如图，已知正六边形，下列向量的数量积中最大的是
+\dotfill(\kh{A})
+\xx
+{$\overrightarrow{P_1 P_2} \cdot \overrightarrow{P_1 P_3}$}
+{$\overrightarrow{P_1 P_2} \cdot \overrightarrow{P_1 P_5}$}
+{$\overrightarrow{P_1 P_2} \cdot \overrightarrow{P_1 P_5}$}
+{$\overrightarrow{P_1 P_2} \cdot \overrightarrow{P_1 P_6}$}
+     \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{xiaobenshuliangjitupian2.jpg}
+        \caption*{第8题图}
+    \end{figure}
+
+
+\item $\triangle A B C$ 中，若 $\overrightarrow{B C}=\vec{a}, \overrightarrow{C A}=\vec{b}, \overrightarrow{A B}=\vec{c}$ ，且 $\vec{a} \cdot \vec{b}=\vec{b} \cdot \vec{c}=\vec{c} \cdot \vec{a}$ ，则 $\triangle A B C$ 的形状是
+\dotfill(\kh{C})
+\xx
+{等腰三角形但不是等边三角形}
+{直角三角形}
+{等边三角形}
+{以上均不正确}
+
+
+\item 半圆的半径 $O A=3, O$ 为圆心，$A B$ 为半圆的直径，$C$ 为半圆上不同于 $A, ~ B$的任意一点，若 $P$ 为半径 $O C$ 上的动点，则 $(\overrightarrow{P A}+\overrightarrow{P B}) \cdot \overrightarrow{P C}$的最小值为\blkda[2]{$-\dfrac{9}{2}$}.
+     \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{xiangliangdeshuliangjitupian3.jpg}
+        \caption*{第10题图}
+    \end{figure}
+
+
+\item 已知向量$\vv{a}\neq\vv{e}$, $\vert\vv{e}\vert=1$, 对任意$t\zr$, 恒有$\vert\vv{a}-t\vv{e}\vert\geq\vert\vv{a}-\vv{e}\vert$, 则\dotfill(\kh{B})
+\xx
+{$\vv{a}\bot\vv{e}$}
+{$\vv{e}\bot(\vv{a}-\vv{e})$}
+{$\vv{a}\bot(\vv{a}-\vv{e})$}
+{$(\vv{a}+\vv{e})\bot(\vv{a}-\vv{e})$}
+
+
+\item 已知非零$\vv{a}$与$\vv{b}$满足$(\vv{a}+\vv{b})\bot(2\vv{a}-\vv{b})$, $(\vv{a}-2\vv{b})\bot(2\vv{a}+\vv{b})$, 
+求$\vv{a}$与$\vv{b}$夹角的大小.
+\begin{jieda}
+    由两个垂直关系列方程组，解方程组，可得$\arccos{-\dfrac{\sqrt{10}}{10}}$
+\end{jieda}
+
+
+\item 给定两个长度为 1 的平面向量 $\overrightarrow{O A}$ 和 $\overrightarrow{O B}$ ，它们的夹角为 $120^{\circ}$ ，如图所示，点 $C$ 在以 $O$ 为圆心的圆弧 $\overrightarrow{A B}$ 上变动，若 $\overrightarrow{O C}=x \overrightarrow{O A}+y \overrightarrow{O B}$ ，其中 $x, y \in R$ ，求 $x+y$的最大值．
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.25\linewidth]{fjlakdsjflsewrtae.png}
+\end{figure}
+\begin{jieda}
+    等和线易得，max：2.
+\end{jieda}
+
+\item 如图，在 $\triangle A B C$ 中，$A B=8, A C=6, A D \perp B C, M, N$ 分别为${A B}, {A C}$ 的中点．
+\begin{enumerate}
+    \item 若 $\overrightarrow{D M} \cdot \overrightarrow{DN}=-6$ ，求 $B C$ ；
+    \item 若 $\dfrac{\overrightarrow{D M} \cdot \overrightarrow{D B}}{|\overrightarrow{D B}|}+\dfrac{\overrightarrow{D N} \cdot \overrightarrow{DC}} {\overrightarrow{D C}}=5$ ，求 $\angle B A C$ 的大小．
+\end{enumerate}
+
+\begin{jieda}
+    (1)$BC=2\sqrt{37}$;(2)$\angle BAC=\dfrac{\pi}{2} $
+\end{jieda}
+
+\end{enumerate}
+
+
+
+
+\clearpage
+\section*{平面向量的坐标表示(1)}
+\zsd 向量的应用. 投影与垂直联系起来考虑. 
+
+\begin{enumerate}
+\item 若$\vv{a}=(1,1)$, $\vv{b}=(3,-1)$, 则$\vert2\vv{a}-\vv{b}\vert=$\blkda{$\sqrt{10}$}. 
+
+\item 已知向量$\vv{a},\vv{b},\vv{c}$在正方形网格中的位置如图所示, 
+若$\vv{c}=\lambda\vv{a}+\mu\vv{b}(\lambda,\mu\zr)$, 则$\frac{\lambda}{\mu}=$\blkda{4}. 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.25\linewidth]{xiangliangdezuobiao1.jpg}
+\end{figure}
+
+
+
+\item 在平行四边形$ABCD$中, 若$A(0,0)$, $B(1,3)$, $C(5,3)$, 则$D$的坐标是\blkda{$(4,0)$}. 
+
+\item 已知点 $A(1,3), B(4,-1)$ ，则与向量 $\overrightarrow{A B}$ 同方向的单位向量为 $\qquad$
+
+
+\item 若 $A(0,-3), ~ B(3,3), ~ C(x, 1)$ ，且 $\overrightarrow{A B} / / \overrightarrow{B C}$ ，则 $x=$\blkda{$2$}．
+
+\end{enumerate}
+
+B组
+
+\begin{enumerate}
+
+\item 已知$\vv{a}=(1,2)$, $\vv{b}=(x,1)$. 若$\vv{a}-3\vv{b}$与$2\vv{a}+\vv{b}$平行, 则实数$x$的值为\blkda{$\frac{1}{2}$}. 
+
+\item 设$\vv{OA}=(1,-2)$, $\vv{OB}=(a,-1)$, $\vv{OC}=(-b,0)$, 其中$a>0,b>0$, $O$为坐标原点, 若$A,B,C$三点共线, 则$\frac{1}{a}+\frac{2}{b}$的最小值是\blkda{8}. 
+
+
+\item 在平面直角坐标系中，分别取与 $x$ 轴，$y$ 轴方向相同的两个单位向量 $\vec{i}, \vec{j}$ 作为基底，设 $\vec{a}=\left(-x^2+2 x-5\right) \vec{i}+\left(x^2+1\right) \vec{j}$（其中 $x \in \mathrm{R}$ ），则向量 $\vec{a}$ 对应的坐标位于\blkda[2]{第二象限}.
+
+
+\item 已知向量 $\vec{a}=(2,1), \vec{b}=(-2,1)$ ，则 $|\vec{a}-\lambda \vec{b}|(\lambda \in \mathbf{R})$的最小值是 \blkda[2]{$\dfrac{4\sqrt{5}}{5}$}.
+
+
+\item 已知 $\vec{m}=(-1, a), \vec{n}=(2 a, 4)$ ．若 $\vec{p}=\vec{m}+\frac{1}{2} \vec{n}$ ，且 $|\vec{p}|=3$ ，则 实 数 $a$ 的值等于 \blkda[2]{-2或1} ．
+
+\item 已知点 $\mathrm{A}(\sqrt{3}, 1), \mathrm{B}(0,0) \mathrm{C}(\sqrt{3}, 0)$ ．设 $\angle \mathrm{BAC}$ 的平分线 AE 与 BC 相交于 $E$ ，那么有 $\overrightarrow{B C}=\lambda \overrightarrow{C E}$ ，其中 $\lambda$ 等于 \blkda[2]{-3} ．
+
+\item 三角板是一种用于几何绘图和测量的工具．如图，这是由两块三角板拼出的一个几何图形，其中 $A B \perp B C, A C \perp A D, A B=B C=2, A D=A C$ ，若 $\overrightarrow{B D}=x \overrightarrow{A C}+y \overrightarrow{A D}$ ，则 $x y=$\blkda{$-\frac{3}{4}$}． \label{zuobiaobiaoshi:sanjiaoban}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.1\textwidth]{zuobiaobiaoshi07.png}
+    \caption*{第\ref{zuobiaobiaoshi:sanjiaoban}题图}
+\end{figure}
+
+\item 设两个向量 $\vec{a}=\left(\lambda+2, \lambda^2-\cos ^2 a\right)$ 和 $\vec{b}=\left(m, \frac{m}{2}+\sin a\right)$ ，其中 $\lambda, m, a$ 为实数．若 $\vec{a}=2 \vec{b}$ ，求 $\frac{\lambda}{m}$ 的取值范围．
+\begin{jieda}
+$[-6,1]$
+\end{jieda}
+
+\item 已知平面内三个向量 $\vec{a}=(3,2), \vec{b}=(-1,2), \vec{c}=(4,1)$ ．
+\begin{enumerate}
+    \item 求满足 $\vec{a}=m \vec{b}+n \vec{c}$ 的实数 $m, n$ ；
+    \item 若 $(\vec{a}+k \vec{c}) / /(2 \vec{b}-\vec{a})$ ，求实数 $k$ ，平行时它们是同向还是反向？
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $m=\frac{5}{9}, n=\frac{8}{9}$
+        \item $k=-\frac{16}{13}$
+    \end{enumerate}
+\end{jieda}
+
+\item 已知向量 $\vec{a}=(1,2), \vec{b}=(-2,1), k, t \in \mathbf{R}^{+}, \vec{x}=\vec{a}+\left(t^2+1\right) \vec{b}, \vec{y}=-k \vec{a}+\frac{1}{t} \vec{b}$ ．是否存在 $k$ ，$t$ ，使 $\vec{x} / / \vec{y}$ ？若存在，求出 $k$ 的取值范围；若不存在，请说明理由．
+\begin{jieda}
+    $k\in(-\infty,0)$
+\end{jieda}
+
+\item 已知 $\vec{AB}=(4,3), \vec{BC}=(m, 2)$ ，当实数 $m$ 为何值时，$\triangle A B C$ 是等腰三角形？
+\begin{jieda}
+    $m=\pm\sqrt{21}或-4或-\frac{37}{8}$
+\end{jieda}
+
+\item 已知点 $O, ~ A, ~ B$ 的坐标分别为 $(0,0),(1,2),(4,5)$ ，且 $\overrightarrow{O P}=\overrightarrow{O A}+t \overrightarrow{A B}$ ．
+\begin{enumerate}
+    \item 当 $t$ 分别为何值时，点 $P$ 在 $x$ 轴上？点 $P$ 在 $y$ 轴上？点 $P$ 在第二象限？
+    \item 四边形 $O A B P$ 能否为平行四边形？若能，求出相应的 $t$ 值；若不能，请说明理由。
+\end{enumerate}
+\begin{jieda}
+    (1)$t\in(-\frac{2}{3},-\frac{1}{3})$；(2)不存在
+\end{jieda}
+\end{enumerate}
+
+C组：
+\begin{enumerate}
+    \item 已知函数 $f(x)=\sin (\omega x+\varphi)(\omega>0,0<\varphi<\pi)$ 的最小正周期为 $\pi$ ，且直线 $x=-\frac{\pi}{2}$ 是其图象的一条对称轴．将函数 $y=f(x)$ 的图象向右平移 $\frac{\pi}{4}$ 个单位，再将所得的图象上每一点的纵坐标不变，横坐标变为原来的 2 倍所得的图象对应函数记作 $y=g(x)$ ，令函数 $F(x)=f(x)+\lambda g(x)$ ．
+    \begin{enumerate}
+        \item 求函数 $y=g(x)$ 的函数解析式；
+        \item 求函数 $y=F(x)$ 的最大值及相对应的 $x$ 的值；
+        \item 若函数 $F(x)=f(x)+\lambda g(x)$ 在 $(0, n \pi)$ 内恰有 2021 个零点，其中常数 $\lambda \in R, n \in N, n \geq 1$ ，求常数 $\lambda$ 与 $n$ 的值．
+    \end{enumerate}
+\begin{jieda}
+\begin{enumerate}
+    \item $g(x)=\cos(x-\frac{\pi}{2})=\sin x$
+    \item 当 $-4 \leq \lambda \leq 4$ 时，$F(x)_{\max}=\frac{\lambda^2}{8}+1$ ，此时 $x=2 k \pi+\arcsin \frac{\lambda}{4}(k \in Z)$或 $x=2 k \pi+\pi-\arcsin \frac{\lambda}{4}(k \in Z)$；
+    
+    当 $\lambda>4$ 时，$F(x)_{\text {max }}=1-2+\lambda=\lambda-1$ ，此时 $x=2 k \pi+\frac{\pi}{2}(k \in \mathrm{Z})$ ；
+    
+    当 $\lambda<-4$ 时，$F(x)_{\text {max }}=1-2-\lambda=-\lambda-1$ ，此时 $x=2 k \pi+\frac{3 \pi}{2}(k \in Z)$ ；
+
+    \item $\lambda=-1, n=1347$.
+\end{enumerate}
+\end{jieda}
+
+\end{enumerate}
+
+\section*{向量的坐标表示(2)}
+\zsd 向量的坐标表示
+
+A组
+\begin{enumerate}
+    \item 若 $A(2,3), B(3,4), C(1,5)$ ，则 $\triangle A B C$ 的重心 $G$ 的坐标为\blkda{$(2,4)$}.
+
+    \item 已知 $P_1(-3,4), P_2(x, y)$ ．若线段 $P_1 P_2$ 的中点坐标为 $(1,-1)$ ，则点 $P_2$ 的坐标为\blkda{$(5,-6)$}．
+
+    \item 已知 $\lambda \in \mathrm{R}$ ，平面向量 $\vec{a}=(\lambda,-1), \vec{b}=(2, \lambda)$ ，则 $|\vec{a}+\vec{b}|$ 的最小值为\blkda{$\frac{3\sqrt{2}}{2}$}．
+
+    \item 已知平面上四个点 $A(-1,2), B(1,1), C(2,1), D(3,4)$ ，则向量 $\overrightarrow{A B}$ 在向量 $\overrightarrow{C D}$ 上的投影向量为\blkda{($-\frac{1}{10}$,$-\frac{3}{10}$)}．
+
+    \item 如图，在扇形 $A O B$ 中，扇形的半径为 $1, \angle A O B=\frac{2 \pi}{3}$ ，点 $P$ 在弧 $\overparen{A B}$ 上移动， $\overrightarrow{O P}=a \overrightarrow{O A}+b \overrightarrow{O B}$ ．当 $\angle A O P=\frac{\pi}{2}$ 时，$a+b=$\blkda{$\sqrt{3}$} ．\label{zuobiaobiaoshi(2):shanxing}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{faoiiahgargalrrq.png}
+        \caption*{第\ref{zuobiaobiaoshi(2):shanxing}题图}
+    \end{figure}
+\end{enumerate}
+
+B组：
+\begin{enumerate}
+    \item 已知 $\vec{a}=(-1,2), \vec{b}=(1,-1), \vec{c}=(2,1)$ ．若 $\vec{c}=p \vec{a}+q \vec{b}$ ，其中 $p, ~ q$ 均为实数，则向量 $\vec{m}=(p, q)$ 的单位向量为\blkda[2]{$(\frac{3\sqrt{34}}{34},\frac{5\sqrt{34}}{34})$}．
+
+    \item 已知 $\vec{a}(-3,2), \vec{b}=(-1,0)$ ，向量 $\lambda^{\prime} \vec{a}+\vec{b}$ 与$\vec{a}-2 \vec{b}$ 垂直，则实数 $\lambda$ 的值为\blkda{$-\frac{1}{7}$}．
+
+    \item 在直角 $\triangle A B C$ 中， $\overrightarrow{A B}=(k, 1), \overrightarrow{A C}=(2,3)$ ，则 $k$ 的值是\blkda[3]{$-\frac{3}{2}$或$5$或$1\pm\sqrt{3}$}．
+
+    \item 在四边形 $ABCD$ 中， $\overrightarrow{A C}=(1,2), \overrightarrow{B D}=(-4,2)$ ，则四边形的面积为\blkda{5}．
+
+    \item 已知点 $A(-1,1), ~ B(1,2), ~ C(-2,-1), ~ D(3,4)$ ，则向量 $\overrightarrow{A B}$ 在 $\overrightarrow{C D}$ 方向上的数量投影为\blkda{$\frac{3\sqrt{2}}{2}$}．
+
+    \item 已知 $A, B, C$ 三点共线，且 $A, B, C$ 三点的纵坐标分别为 $2, 5, 10$ ，则 $A$ 点分 $\overrightarrow{B C}$ 所成的比是\blkda{$-\frac{3}{8}$}．
+
+    \item 已知 $P_1(2,-1), P_2(0,5)$ ．若 $P$ 在 $P_1 P_2$ 的延长线上，使 $\left|\overrightarrow{P_1 P}\right|=2\left|\overrightarrow{P P}_2\right|$ ，则点 $P$为\blkda{$(-2,11)$}．
+
+    \item 平面向量 $\vec{a}=(1,2), \vec{b}=(4,2), \vec{c}=m \vec{a}+\vec{b} \quad(m \in R)$ ，且 $\vec{c}$ 与 $\vec{a}$ 的夹角等于 $\vec{c}$ 与 $\vec{b}$ 的夹角，则 $m=$ \blkda{2}．
+
+    \item 如下图，在梯形 $A B C D$ 中，$A D / / B C, \angle B=60^{\circ}, A B=3, B C=6, \overrightarrow{A D} \cdot \overrightarrow{A B}=-\frac{3}{2}$ ，则 $|\overrightarrow{A D}|=$\blkda{1}，若 $M, N$ 是线段 $B C$ 上的动点，且 $|\overrightarrow{M N}|=1$ ，则 $\overrightarrow{D M} \cdot \overrightarrow{D N}$ 的最小值为\blkda{$\frac{13}{2}$}．\label{zuobiaobiaoshi:tixing}
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/ldsflairwiorqtoqrnf.png}
+        \caption*{图B-\ref{zuobiaobiaoshi:tixing}}
+    \end{figure}
+
+    \item 在 $\triangle A B C$ 中，$A B=A C=4 \sqrt{2}$ ，当 $\lambda \in \mathrm{R}$ 时，$|\overrightarrow{A B}+\lambda \overrightarrow{B C}|$ 的最小值为 4 ．若 $\overrightarrow{A M}=\overrightarrow{M B}, \overrightarrow{A P}=\sin ^2 \theta \overrightarrow{A B}+\cos ^2 \theta \overrightarrow{A C}$ ，其中 $\theta \in\left[\frac{\pi}{6}, \frac{\pi}{3}\right]$ ，则 $|\overrightarrow{M P}|$ 的最大值为 \blkda{$2\sqrt{5}$}．
+
+\item 在 $\triangle A B C$ 中，已知各顶点的坐标分别为 $A(1,1), ~ B(-3,-5), ~ C(8,-3), G$ 是 $\triangle A B C$ 的重心，试在 $B C$ 边上找一点 $D$ ，使得 $D G / / A B$ ，求点 $D$ 的坐标．
+\begin{jieda}
+    $D(\frac{2}{3},-\frac{13}{3})$
+\end{jieda}
+
+\item 在平面直角坐标系 $x O y$ 中，点 $A(-1,-2), B(2,3), C(-2,-1)$ ．
+\begin{enumerate}
+    \item 求以线段 $A B,  A C$ 为邻边的平行四边形两条对角线的长；
+    \item 设实数 $t$ 满足 $(\overrightarrow{A B}-t \overrightarrow{O C}) \cdot \overrightarrow{O C}=0$ ，求 $t$ 的值．
+\end{enumerate}
+\begin{jieda}
+    (1)$2\sqrt{10},4\sqrt{2}$；(2)$-\frac{11}{5}$
+\end{jieda}
+
+
+\item 已知 $\triangle A B C$ 的角 $A, ~ B, ~ C$ 所对的边分别是 $a, ~ b, ~ c$ ，设向量 $\vec{m}=(a, b)$ ， $\vec{n}=(\sin B, \sin A), \vec{p}=(b-2, a-2)$ ．
+\begin{enumerate}
+    \item 若 $\vec{m} / / \vec{n}$ ，求证：$\triangle A B C$ 为等腰三角形；
+    \item 若 $\vec{m} \perp \vec{p}$ ，边长 $c=2$ ，角 $C=\frac{\pi}{3}$ ，求 $\triangle A B C$ 的面积．
+\end{enumerate}
+\begin{jieda}
+    (1)易证得$a=b$
+    (2)$\sqrt{3}$
+\end{jieda}
+
+\item 已知 $\vec{a}=3\vec{i}-4\vec{j},\vec{a}+\vec{b}=4\vec{i}-3\vec{j}$ ．
+    \begin{enumerate}
+        \item 求向量 $\vec{a}$ 和 $\vec{b}$ 的夹角 $\theta$ ；
+        \item 对两个向量 $\vec{p}, \vec{q}$ ，如果存在不全为零的常数 $a, ~ \beta$ ，使 $a \vec{p}+\beta \vec{q}=\overrightarrow{0}$ ，那么称向量 $\vec{p}, \vec{q}$ 是线性相关的；否则称 $\vec{p}, \vec{q}$ 是线性无关的．向量 $\vec{a}$ 和 $\vec{b}$ 是线性相关的还是线性无关的？请说明理由．
+    \end{enumerate}
+\begin{jieda}
+    (1)$\theta=\arccos(-\frac{\sqrt{2}}{10})$
+    (2)无解，线性无关
+\end{jieda}
+\end{enumerate}
+
+    
+C组：
+\begin{enumerate}
+    \item 已知函数 $f(x)=4 \sin x \cos \left(x+\frac{\pi}{3}\right)+\sqrt{3}$ ，
+    \begin{enumerate}
+        \item 化简 $f(x)$ 到 $y=A \sin (\omega x+\varphi)+B\left(A>0, \omega>0,|\varphi|<\frac{\pi}{2}\right)$ ，并求最小正周期；
+        \item 求函数 $f(x)$ 在区间 $\left[-\frac{\pi}{4}, \frac{\pi}{6}\right]$ 上的单调减区间；
+        \item 将函数 $f(x)$ 图像向右移动 $\frac{\pi}{6}$ 个单位，再将所得图像上各点的横坐标缩短到原来的 $a(0<a<1)$ 倍得到 $y=g(x)$ 的图像，若 $y=g(x)$ 在区间 $[-1,1]$ 上至少有 100 个最大值，求 $a$ 的取值范围．
+    \end{enumerate}
+\begin{jieda}
+    (1)$T=\pi$
+    (2)$(\frac{\pi}{12},\frac{\pi}{6})$
+    (3)$a\in(0,\frac{4\pi}{199}]$
+\end{jieda}
+
+\end{enumerate}
+
+\section*{向量的坐标表示(3)}
+\zsd 向量的坐标表示
+
+A组：
+\begin{enumerate}
+    \item $\vec{a}=(x, y)$ ，请写出一个与 $\vec{a}$ 垂直的非零向量坐标\blkda{$(-y,x)$}.
+\end{enumerate}
+
+B组：
+\begin{enumerate}
+    \item 若 $|\vec{a}|=2 \sqrt{13}, \vec{b}=(-2,3)$ ，且 $\vec{a} \perp \vec{b}$ ，则 $\vec{a}=$\blkda[3]{$(6,4)$或$(-6,-4)$}．
+
+    \item 若 $\vec{a}=(-1,-3), \vec{b}=(2,-5)$ ，且 $\vec{a} \cdot \vec{c}=5, \vec{b} \cdot \vec{c}=1$ ，则 $\vec{c}=$=\blkda{$(-2,-1)$}．
+
+    \item 已知 $A(2,-1), B(-1,3)$ ．若点 $C$ 在 $y$ 轴上，且满足 $\overrightarrow{A C} \cdot \overrightarrow{B C}=3$ ，则点 $C$ 的坐标为\blkda[3]{$(0,4)$或$(0,-2)$}．
+
+    \item 已知 $\vec{a}=\left(1, \frac{1}{2}\right), \vec{b}=\left(0,-\frac{1}{2}\right), \vec{c}=\vec{a}+k \vec{b}, \vec{d}=\vec{a}-\vec{b}$ ，且 $\langle\vec{c}, \vec{d}\rangle=45$ ，则实数 $k$ 的值为\blkda{1}．
+
+    \item 已知 $O$ 为原点， $\overrightarrow{O A}=(3,1), \overrightarrow{O B}=(-1,2)$ ，且 $\overrightarrow{O C} \perp \overrightarrow{O B}, \overrightarrow{B C} / / \overrightarrow{O A}, \overrightarrow{O D}+\overrightarrow{O A}=\overrightarrow{O C}$ ，则向量 $\overrightarrow{O D}=$\blkda{$(11,6)$}．
+
+    \item 已知 $2 \vec{a}+3 \vec{b}=(-2,4), \vec{c}=(1,-1)$ ，且 $\vec{a} \cdot \vec{c}=3,|\vec{b}|=4$ ，则向量 $\vec{b}$ 和 $\vec{c}$ 的夹角为 \blkda{$\dfrac{3\pi}{4}$}．
+
+    \item 已知向量 $\vec{a}=(k, 3), \vec{b}=(1,4), \vec{c}=(2,1)$ ，且 $(2 \vec{a}-3 \vec{b}) \perp \vec{c}$ ，则实数 $k=$\blkda{$3$}．
+
+    \item 设 $x, y \in \mathrm{R}$ ，向量 $\vec{a}=(x, 1), \vec{b}=(1, y), \vec{c}=(2,-4)$ ，且 $\vec{a} \perp \vec{c}, \vec{b} / / \vec{c}$ ，则 $|\vec{a}+\vec{b}|=$ \blkda{$\sqrt{10}$}．
+
+    \item 设 $\vec{a}=(4,3), \vec{a}$ 在上 $\vec{b}$ 上的数量投影为 $\frac{5 \sqrt{2}}{2}, \vec{b}$ 在 $x$ 轴上的投影为 2 ，且 $|\vec{b}| \leq 14$ ，则 $\vec{b}$ 为\blkda{$(2,-\frac{2}{7})$}．
+
+    \item 在平面直角坐标系中，$O(0,0), P(6,8)$ ，将向量 $\overrightarrow{O P}$ 按逆时针旋转 $\frac{3 \pi}{4}$ 后，得向量 $\overrightarrow{O Q}$ ，则点 $Q$ 的坐标是 \blkda[2]{$(-7\sqrt{2},-\sqrt{2})$}．
+
+    \item 平面向量 $\vec{a}=(3,-4), \vec{b}=(2, x), \vec{c}=(2, y)$ ，已知 $\vec{a} / / \vec{b}, \vec{a} \perp \vec{c}$ ，求 $\vec{b}, ~ \vec{c}$及 $\vec{b}$ 与 $\vec{c}$ 夹角．
+    \begin{jieda}
+        $\vec{b}=(2,-\frac{8}{3}),\vec{c}=(2,\frac{3}{2}),<\vec{b},\vec{c}>=\frac{\pi}{2}$
+    \end{jieda}
+
+    \item 若向量 $\vec{a}=(\cos a, \sin a), \vec{b}=(\cos \beta, \sin \beta)$ ，且 $|k \vec{a}+\vec{b}|=\sqrt{3}|\vec{a}-k \vec{b}|, k$为正实数．（1）用 $k$ 表示 $\vec{a} \cdot \vec{b}$ ；（2）求 $\vec{a} \cdot \vec{b}$ 的最小值，并求出此时向量 $\vec{a}, \vec{b}$ 的夹角 $\theta$ 的大小．
+
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\vec{a}\cdot\vec{b}=\frac{1}{4k}+\frac{k}{4}$
+            \item $\beta=\frac{\pi}{3}$
+        \end{enumerate}
+    \end{jieda}
+
+\item 在平行四边形 $A B C D$ 中，$\angle A=\frac{\pi}{3}$ ，边 $A B, A D$ 的长分别为 $2, 1$ ．若 $M, N$ 分别是边 $B C, C D$ 上的点，且满足 $\frac{|\overrightarrow{B M}|}{|\overrightarrow{B C}|}=\frac{|\overrightarrow{C N}|}{|\overrightarrow{C D}|}$ ，求 $\overrightarrow{A M} \cdot \overrightarrow{A N}$ 的取值范围．
+\begin{jieda}
+    $[2,5]$
+\end{jieda}
+
+\item 如图所示，$\triangle A O E$ 和 $\triangle B O E$ 都是边长为 1 的正三角形，延长 $O B$ 至点 $C$ ，使得 $|B C|=t$ ，其中 $t$ 为正实数．联结 $A C$ ，交 $B E$ 于 $D$ ．\label{zuobiaobiaoshi:zhengsanjiaoxing}
+\begin{enumerate}
+    \item 用 $t$ 分别表示 $\overrightarrow{O C}, ~ \overrightarrow{O D}$ 和 $\overrightarrow{E C}$ 的坐标；
+    \item 求 $\overrightarrow{O D}$ 和 $\overrightarrow{E C}$ 的夹角．
+\end{enumerate}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.25\linewidth]{bodyxb//src/sakjglkadsjljdg.png}
+    \caption{B-\ref{zuobiaobiaoshi:zhengsanjiaoxing}}
+\end{figure}
+\begin{jieda}
+    (1)$\vec{OC}=(\frac{1+t}{2},-\frac{\sqrt{3}(1+t)}{2}), \vec{OD}=(\frac{1+2t}{2+2t},\frac{-\sqrt{3}}{2+2t}), \vec{EC}=(\frac{t-1}{2},-\frac{\sqrt{3}(1+t)}{2})$
+
+    (2)$\frac{\pi}{3}$
+\end{jieda}
+\end{enumerate}
+
+C组：
+\begin{enumerate}
+    \item 对于函数 $f(x)(x \in D)$ ，若存在非零常数 $T$ ，使得对任意的 $x \in D$ ，都有 $f(x+T) \geq f(x)$ 成立，我们称函数 $f(x)$ 为＂$T$ 函数＂，若对任意的 $x \in D$ ，都有 $f(x+T)>f(x)$ 成立，则称函数 $f(x)$ 为＂严格 $T$ 函数＂．
+    
+    \begin{enumerate}
+        \item 求证：$f(x)=\sin x, x \in \mathbf{R}$ 是＂$T$ 函数＂；
+        \item 若函数 $f(x)=k x+\sin ^2 x$是＂$\frac{\pi}{2}$ 函数＂，求 $k$ 的取值范围；
+        \item 对于定义域为 R 的函数 $f(x), f(0)=0$ ．函数 $\sin f(x)$ 是奇函数，且对任意的正实数 $T, \sin f(x)$ 均是＂严格 $T$ 函数＂．若 $f(a)=\frac{\pi}{2}, f(b)=-\frac{\pi}{2}$ ，求 $a+b$的值
+    \end{enumerate}
+
+    \begin{jieda}
+        (1)$T=2\pi$
+
+        (2)$k\geq\frac{2}{\pi}$
+
+        (3)$0$
+    \end{jieda}
+
+    
+\end{enumerate}
+
+    
+
+
+
+
+
+\clearpage
+\section*{平面向量的应用(1)}
+\zsd 向量的应用. 投影与垂直联系起来考虑. 
+
+\begin{enumerate}
+\item 已知Rt$\triangle{ABC}$的斜边$BC=5$, 则$\vv{AB}\cdot\vv{BC}+\vv{BC}\cdot\vv{CA}+\vv{CA}\cdot\vv{AB}$的值等于\blkda{$-25$}. 
+
+
+\item 在$\triangle{ABC}$中, $\vv{AB}\cdot\vv{BC}=\vv{BC}\cdot\vv{CA}=\vv{CA}\cdot\vv{AB}=-1$, 则$\triangle{ABC}$的周长为\blkda{$3\sqrt{2}$}. 
+
+
+\item 在$\triangle{ABC}$中, $AD\bot AB$, $\vv{BC}=\sqrt{3}\vv{BD}$, $\abs{\vv{AD}}=1$, 则$\vv{AC}\cdot\vv{AD}=$\blkda{$\sqrt{3}$}. 
+
+\item 设$\vv{a}$、$\vv{b}$、$\vv{c}$是单位向量, 若$\vv{a}+\vv{b}=\vv{c}$, 则$\vv{a}\cdot\vv{c}$的值为\blkda{$\frac{1}{2}$}. 
+
+\item 若向量$\vv{a} = (1, x)$与向量$\vv{b} = (x, 2)$的夹角为钝角，则实数$x$的取值范围是\blkda[3.5]{$(-\infty, -\sqrt{2})\cup(-\sqrt{2}, 0)$}
+\begin{jieda}
+    向量$\vv{a} = (1, x)$与向量$\vv{b} = (x, 2)$的夹角为钝角$ \Longleftrightarrow \left\{\begin{array}{l}
+         x + 2x < 0 \\
+         x^2 \neq 2
+    \end{array}\right.$\\
+    因此$x \in (-\infty, -\sqrt{2})\cup(-\sqrt{2}, 0)$
+\end{jieda}
+
+\item 在$\triangle{ABC}$中, $AB=3$, $AC=5$, 若$O$为$\triangle{ABC}$的外心, 则$\vv{AO}\cdot\vv{BC}$的值为\blkda{8}. 
+
+\item 在$\triangle{ABC}$中, $AB=1$, $BC=\sqrt{7}$, $AC=3$, 若$O$为$\triangle{ABC}$的垂心, 则$\vv{AO}\cdot\vv{AC}$的值为\blkda{$\frac{3}{2}$}. 
+\begin{jieda}
+    设$BH \perp AC$，$H$为垂足，则$\vv{AO} \cdot \vv{AC} = (\vv{AH} + \vv{HO}) \cdot \vv{AC} = |\vv{AH}| \cdot |\vv{AC}| = |\vv{AB}| \cdot |\vv{AC}| \cdot cosA$， $cosA = \dfrac{1+9-7}{2\times 3} = \dfrac{1}{2}$，故$\vv{AO}\cdot\vv{AC} = \dfrac{3}{2}$
+\end{jieda}
+
+\item 已知在$\triangle{ABC}$中，点$O$是$\triangle{ABC}$的外心，若$|\vv{AB}| = 4$，$\vv{AO} \cdot \vv{BC} = 4$，$\vv{AB} \cdot \vv{AC} = 12\sqrt{2}$，则$\triangle{ABC}$的面积为\blkda{$2\sqrt{6}$}
+\begin{jieda}
+    设$BC$边中点为$D$，因此$\vv{AD} \cdot \vv{BC} = \vv{AO} \cdot \vv{BC} = 4$，进一步以$\vv{AB}, \vv{AC}$为基进行拆解，得到$\dfrac{1}{2}(\vv{AB}+\vv{AC}) \cdot (\vv{AC} - \vv{AB}) = 4$，即$|\vv{AC}|^2 - |\vv{AB}|^2 = 8$，因此$|\vv{AC}| = 2\sqrt{6}$\\
+    故$cosA = \dfrac{\vv{AB} \cdot \vv{AC}}{|\vv{AB}| \cdot |\vv{AC}|} = \dfrac{\sqrt{3}}{2}$，因此$sinA = \dfrac{1}{2}$，故$S = \dfrac{1}{2} \times 4 \times 2\sqrt{6} \times \dfrac{1}{2} = 2\sqrt{6}$
+\end{jieda}
+
+\item 已知$\vv{a}$、$\vv{b}$是两个非零向量, 则``$\vv{a}$与$\vv{b}$不共线''是``$\abs{\abs{\vv{a}}-\abs{\vv{b}}}<\abs{\vv{a}-\vv{b}}<\abs{\vv{a}}+\abs{\vv{b}}$''的\dotfill(\kh{C})
+\xx{充分而不必要条件}{必要而不充分条件}{充要条件}{既不充分也不必要条件}
+
+\item 设点$M$是线段$BC$的中点, 点$A$在直线$BC$外, $\vv{BC}^2=16$, $\abs{\vv{AB}+\vv{AC}}=\abs{\vv{AB}-\vv{AC}}$, 则$\abs{\vv{AM}}=$\blkda{2}
+
+\item 已知非零向量$\vv{AB}$与$\vv{AC}$满足$\left(\frac{\vv{AB}}{\abs{\vv{AB}}}+\frac{\vv{AC}}{\abs{\vv{AC}}}\right)\cdot\vv{BC}=0$, 
+且$\frac{\vv{AB}}{\abs{\vv{AB}}}\cdot\frac{\vv{AC}}{\abs{\vv{AC}}}=\frac{1}{2}$, 则$\triangle{ABC}$为\dotfill(\kh{D})
+\xx{三边均不相等的三角形}{直角三角形}{等腰非等边三角形}{等边三角形}
+
+\item 已知$\triangle{ABC}$满足$\vv{AB}^2=\vv{AB}\cdot\vv{AC}+\vv{BA}\cdot\vv{BC}+\vv{CA}\cdot\vv{CB}$, 则$\triangle{ABC}$是\dotfill(\kh{C})
+\xx{等边三角形}{锐角三角形}{直角三角形}{钝角三角形}
+
+\item 已知线段$AB$经过半径为12的圆的圆心$C$，且$AC=6, CB = 6$，若$D, E$为圆上两个动点，则$\vv{DA} \cdot \vv{EB}$的取值范围为\blkda[3]{$[-324, 126]$}
+\begin{jieda}
+    以$C$为原点，$\vv{CB}$为$x$轴正方向建系，因此$A(-6, 0), B(6, 0)$，设$D(12cos\alpha, 12sin\alpha)$，$E(12cos\beta, 12sin\beta)$，故$\vv{DA} = (-6-12cos\alpha, -12sin\alpha), \vv{EB} = (6 - 12cos\beta, -12sin\beta)$，因此$\vv{DA} \cdot \vv{EB} = 36(1+2cos\alpha)(2cos\beta-1) + 144 sin\alpha \cdot sin\beta = 72( cos\beta- cos\alpha ) + 144cos(\alpha - \beta) - 36 = -144sin\left(\dfrac{\alpha+\beta}{2}\right)sin\left(\dfrac{\alpha-\beta}{2}\right) + 144cos(\alpha - \beta) - 36$\\
+    设$m = sin\left(\dfrac{\alpha+\beta}{2}\right), n = sin\left(\dfrac{\alpha-\beta}{2}\right)$，则$\vv{DA} \cdot \vv{EB} = -144mn + 144(1-2n^2) - 36 = -288n^2-144mn+108, m \in [-1, 1], n \in [-1, 1]$，故$\vv{DA} \cdot \vv{EB} \leq 18m^2 + 108 \leq 126$（$n=-\dfrac{1}{4}, m=1$，即$\left\{\begin{array}{l}
+         \alpha = \frac{\pi}{2} + arcsin \frac{1}{4} \\
+         \beta = \frac{\pi}{2} - arcsin \frac{1}{4}
+    \end{array}\right.$时可取最大值），且$\vv{DA} \cdot \vv{EB} \geq min\{-288-144m+108, -288+144m+108\} = -324$（$n=1, m=1$，即$\left\{\begin{array}{l}
+         \alpha = \pi \\
+         \beta = 0
+    \end{array}\right.$时可取最小值），综上，$\vv{DA} \cdot \vv{EB} \in [-324, 126]$
+\end{jieda}
+\item 在$\triangle{ABC}$中，$AC = 6, BC = 8, \angle C = 90^{\circ}$， $P$在$\triangle{ABC}$所在平面内的动点，且$PC = 1$，则$\vv{PA} \cdot \vv{PB}$的取值范围\blkda{$[-9, 11]$}
+\begin{jieda}
+    \begin{enumerate}
+        \item 利用极化恒等式 \\
+        根据几何关系可知$AB = 10$，设$BC$中点为$D$，根据极化恒等式$\vv{PA} \cdot \vv{PB} = |\vv{PD}|^2 - |\vv{DA}|^2 = |\vv{PD}|^2 - 25 \in [-9, 11]$
+        \item 建系 \\
+        以$C$为原点，$\vv{CA}$为$x$轴的正方向建系，$A(6, 0), B(0, 8), P(cos\theta, sin\theta)$，因此$\vv{PA} = (6-cos\theta, -sin\theta), \vv{PB} = (-cos\theta, 8-sin\theta)$，故$\vv{PA} \cdot \vv{PB} = cos^2\theta - 6cos\theta + sin^2\theta -8sin\theta = 1-(6cos\theta+8sin\theta) = 1-10sin\left(\theta+arctan\dfrac{4}{3}\right) \in [-9, 11]$
+    \end{enumerate}
+\end{jieda}
+\item 已知平面向量$\vv{a}, \vv{b}$满足$|\vv{a}| = 3, |\vv{b}| = 1$，且$|\vv{a} + 2\vv{b}| = \sqrt{7}$
+\begin{enumerate*}
+    \item 求向量$\vv{a}, \vv{b}$的夹角$\theta$
+    \item 若$(\vv{a}+\lambda\vv{b}) \perp (2\vv{a} - \vv{b})$，求实数$\lambda$的值
+\end{enumerate*}
+\begin{jieda}
+    \begin{enumerate}
+        \item $|\vv{a} + 2\vv{b}| = \sqrt{7}$即$|\vv{a}|^2+4|\vv{b}|^2+4\vv{a}\cdot \vv{b} = 7$，故$\vv{a} \cdot \vv{b} = -\dfrac{3}{2}$，即$|\vv{a}|\cdot |\vv{b}| \cdot cos\theta = -\dfrac{3}{2}$，因此$cos\theta = -\dfrac{1}{2}$，因此$\theta = \dfrac{2\pi}{3}$
+        \item $(\vv{a}+\lambda\vv{b}) \perp (2\vv{a} - \vv{b})$即$(\vv{a}+\lambda\vv{b}) \cdot (2\vv{a} - \vv{b}) = 0$，故$2|\vv{a}|^2+(2\lambda-1)\vv{a}\cdot\vv{b}-\lambda|\vv{b}|^2 = 0$，即$18-\dfrac{3}{2}(2\lambda-1) - \lambda = 0$，解得$\lambda = \dfrac{39}{8}$
+    \end{enumerate}
+\end{jieda}
+\item 在$\triangle{ABC}$中, $AB=AC$, $D$是$BC$的中点, $DE\bot AC$于点$E$, $F$是$DE$的中点. 求证: $AF\bot BE$. 
+\begin{jieda}
+    $\vv{AF} \cdot \vv{BE} = \dfrac{1}{2}(\vv{AE}+\vv{AD})\cdot(\vv{BD}+\vv{DE}) = \dfrac{1}{2}(\vv{AE}\cdot\vv{BD} + \vv{AD} \cdot \vv{DE}) = \dfrac{1}{2}((\vv{AD}+\vv{DE}) \cdot \vv{DC} + \vv{AD} \cdot \vv{DE}) = \dfrac{1}{2}(|\vv{DE}|^2 - |\vv{DE}|^2) = 0$
+\end{jieda}
+\item 如图所示, 线段$AB$的中点为$C$, 分别以$AC$、$BC$为对角线作平行四边形$AECD$、平行四边形$BFCG$, 再作平行四边形$CFHD$和平行四边形$CGKE$. 求证: $H,C,K$三点共线. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.2\linewidth]{bodyxb//src/xiangliangdeyingyong1.png}
+    \caption*{第17题图}
+\end{figure}
+\begin{jieda}
+    $\left\{ \begin{array}{l}
+         \vv{CK} = \vv{CG} + \vv{CE}  \\
+         \vv{CH} = \vv{CD} + \vv{CF}  
+    \end{array}\right.$，
+    $\left\{ \begin{array}{l}
+         \vv{CG} + \vv{CF} = \vv{CB}  \\
+         \vv{CE} + \vv{CD} = \vv{CA}
+    \end{array}\right.$，故$\left\{ \begin{array}{l}
+         \vv{CK} = \vv{CB} + \vv{CE} - \vv{CF} \\
+         \vv{CH} = \vv{CA} + \vv{CF} - \vv{CE}
+    \end{array}\right.$\\
+    因此$\vv{CK} = -\vv{CH}$，故$H,C,K$三点共线. 
+\end{jieda}
+\end{enumerate}
+C组：
+\begin{enumerate}
+    \item 设向量$\vv{a} = (cos\alpha, sin\alpha), \vv{b} = (-sin\alpha, cos\alpha)$. 向量$\vv{x_1}, \vv{x_2}, ..., \vv{x_7}$中有3个$\vv{a}$，其余为$\vv{b}$；向量$\vv{y_1}, \vv{y_2}, ..., \vv{y_7}$中有2个$\vv{a}$，其余为$\vv{b}$，则$\sum_{i=1}^{7}\vv{x_i}\cdot\vv{y_i}$的可能取值中最小的是\blkda{2}
+    \begin{jieda}
+        易知$\vv{a}\cdot\vv{b} = 0, \vv{a} \cdot \vv{a} = \vv{b} \cdot \vv{b} = 1$，因此$\sum_{i=1}^{7}\vv{x_i}\cdot\vv{y_i} \geq 0+0+0+0+0+1+1 = 2$
+    \end{jieda}
+    \item 设平面向量$\vv{\alpha}, \vv{\beta}$满足$|\vv{\alpha}+2\vv{\beta}| = 3, |2\vv{\alpha}+3\vv{\beta}| = 4$，则$\vv{\alpha} \cdot \vv{\beta}$的最小值为\blkda{$-170$}
+    \begin{jieda}
+        设$\vv{a} = \vv{\alpha}+2\vv{\beta}, \vv{b} = 2\vv{\alpha}+3\vv{\beta}$，故$\left\{\begin{array}{l}
+             \vv{\alpha} = 2\vv{b} - 3\vv{a} \\
+             \vv{\beta} = 2\vv{a} - \vv{b}
+        \end{array}\right.$，$|\vv{a}| = 3, |\vv{b}| = 4$\\
+        $\vv{\alpha} \cdot \vv{\beta} = -6|\vv{a}|^2-2|\vv{b}|^2+7\vv{a}\cdot\vv{b} \geq -54-32-84 = -170$
+    \end{jieda}
+    \item 已知函数$f(x) = Asin\left(\dfrac{\pi}{2}x + \varphi\right) (A > 0, |\varphi| < \pi)$的图像如图所示，点$B,D,F$为$f(x)$与$x$轴的交点，点$C, E$分别为$f(x)$的最高点和最低点，而函数$f(x)$在$x = -\dfrac{1}{2}$处取得最小值.
+    \begin{enumerate*}
+        \item 求参数$\varphi$的值
+        \item 若$A = 1$，求向量$2\vv{BC} - \vv{CD}$与向量$\vv{BC} + 3\vv{CD}$的夹角
+        \item 若点$P$为函数$f(x)$函数图象上的动点，当点$P$在$C,E$间运动时，$\vv{BP}\cdot\vv{PF} \geq 1$恒成立，求$A$的取值范围.
+    \end{enumerate*}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/xiangliangdeyingyong2.png}
+    \end{figure}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $f\left(-\dfrac{1}{2}\right) = -1$，故$\varphi - \dfrac{\pi}{4} = 2k\pi - \dfrac{\pi}{2}, k \in \mathbf{Z}$，又因为$|\varphi| < \pi$，因此$\varphi = -\dfrac{\pi}{4}$
+            \item 若$A = 1$，则$B\left(\dfrac{1}{2}, 0\right), C\left(\dfrac{3}{2}, 1\right), D\left(\dfrac{5}{2}, 0\right)$，因此$\vv{BC} = (1, 1), \vv{CD} = (1, -1)$，故$2\vv{BC} - \vv{CD} = (1, 3), \vv{BC} + 3\vv{CD} = (4, -2)$，故两者夹角$\theta$满足$cos\theta = \dfrac{4-6}{\sqrt{10} \cdot 2\sqrt{5}} = \dfrac{-\sqrt{2}}{10}$，故$\theta = arccos\left(\dfrac{-\sqrt{2}}{10}\right)$
+            \item 由极化恒等式有$\vv{BP}\cdot\vv{PF} = 4-|\vv{DP}|^2 \geq 1$，故$|\vv{DP}|\leq \sqrt{3}$恒成立，即$|\vv{DC}| \leq \sqrt{3}$，故$A \in (0, \sqrt{2}]$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\clearpage
+\section*{平面向量的应用(2)}
+\zsd 向量的应用. 
+\begin{enumerate}
+\item 已知$O$是$\triangle{ABC}$所在平面内一点, $D$是边$BC$的中点, 且$2\vv{OA}+\vv{OB}+\vv{OC}=\vv{0}$, 那么\dotfill(\kh{A})
+\xx
+{$\vv{AO}=\vv{OD}$}
+{$\vv{AO}=2\vv{OD}$}
+{$\vv{AO}=3\vv{OD}$}
+{$2\vv{AO}=\vv{OD}$}
+\begin{jieda}
+    设重心为$G$，$2\vv{OA}+\vv{OB}+\vv{OC}=\vv{0}$即$4\vv{OG} + \vv{GA} = \vv{0}$，故根据几何关系可知$O$为$AD$中点
+\end{jieda}
+
+
+\item 在$\triangle{ABC}$中, $D$是边$AB$上的一点, 且$\vv{AD}=2\vv{DB}$, $\vv{CD}=\frac{1}{3}\vv{CA}+\lambda\vv{CB}$, 则$\lambda=$\blkda{$\dfrac{2}{3}$}
+
+\item 已知$P$为$\triangle{ABC}$所在平面内一点, 当$\vv{PA}+\vv{PB}=\vv{PC}$时, 点$P$位于$\triangle{ABC}$的\dotfill(\kh{D})
+\xx{重心}{垂心}{内心}{外部}
+
+
+\item 在$\triangle{OAB}$中, $\vv{OA}=\vv{a}$, $\vv{OB}=\vv{b}$, $\vv{OP}=\vv{p}$, 
+若$\vv{p}=t\left(\frac{\vv{a}}{\abs{\vv{a}}}+\frac{\vv{b}}{\abs{\vv{b}}}\right)$, $t\zr$, 则点$P$在\dotfill(\kh{A})
+\xx
+{$\angle{AOB}$的平分线所在直线上}
+{边$AB$的中垂线上}
+{边$AB$的中线上}
+{边$AB$所在的直线上}
+
+
+\item 已知$O,N,P$在$\triangle{ABC}$所在平面内, 且$\abs{\vv{OA}}=\abs{\vv{OB}}=\abs{\vv{OC}}$, $\vv{NA}+\vv{NB}+\vv{NC}=\vv{0}$, 
+且$\vv{PA}\cdot\vv{PB}=\vv{PB}\cdot\vv{PC}=\vv{PC}\cdot\vv{PA}$, 则点$O,N,P$依次是$\triangle{ABC}$的\dotfill(\kh{C})
+\xx
+{重心、外心、垂心}
+{重心、外心、内心}
+{外心、重心、垂心}
+{外心、重心、内心}
+
+\item 非零向量$\vv{OA}=\vv{a}$, $\vv{OB}=\vv{b}$, 若点$B$关于$\vv{OA}$所在直线的对称点为$B_1$, 则向量$\vv{OB_1}$为\dotfill{(\kh{A})}
+\xx
+{$\dfrac{2(\vv{a}\cdot\vv{b})\vv{a}}{\vert\vv{a}\vert^2}-\vv{b}$}
+{$2\vv{a}-\vv{b}$}
+{$\dfrac{2(\vv{a}\cdot\vv{b})\vv{a}-\vv{b}}{\vert\vv{a}\vert^2}$}
+{$\dfrac{2(\vv{a}\cdot\vv{b})\vv{a}-\vv{b}}{\vert\vv{a}\vert}$}
+\begin{jieda}
+    设$\vv{OD}$为$\vv{OB}$在$\vv{OA}$方向上的投影向量，则$\vv{OB_1} = \vv{OD} - \vv{DB} = 2\vv{OD} - \vv{OB}$\\
+    $\vv{OD} = \dfrac{2(\vv{a}\cdot\vv{b})\vv{a}}{\vert\vv{a}\vert^2}, \vv{OB} = \vv{b}$，故选$A$.
+\end{jieda}
+
+\item 在$\triangle{OAB}$中, $\vv{OA}=\vv{a}$, $\vv{OB}=\vv{b}$, $OD$是$AB$边上的高, 若$\vv{AD}=\lambda\vv{AB}$, 则实数$\lambda$等于\dotfill(\kh{B})
+\xx
+{$\dfrac{\vv{a}\cdot(\vv{b}-\vv{a})}{\vert\vv{a}-\vv{b}\vert^2}$}
+{$\dfrac{\vv{a}\cdot(\vv{a}-\vv{b})}{\vert\vv{a}-\vv{b}\vert^2}$}
+{$\dfrac{\vv{a}\cdot(\vv{b}-\vv{a})}{\vert\vv{a}-\vv{b}\vert}$}
+{$\dfrac{\vv{a}\cdot(\vv{a}-\vv{b})}{\vert\vv{a}-\vv{b}\vert}$}
+\begin{jieda}
+    $|\vv{AD}| = \dfrac{\vv{AD} \cdot \vv{AB}}{|\vv{AB}|}$，故$\lambda = \dfrac{\vv{AD} \cdot \vv{AB}}{|\vv{AB}|^2} = \dfrac{\vv{a}\cdot(\vv{a}-\vv{b})}{\vert\vv{a}-\vv{b}\vert^2}$
+\end{jieda}
+
+\item 设$I$为$\triangle{ABC}$的内心，且$2\vv{IA} + 3\vv{IB} + \sqrt{7}\vv{IC} = \vv{0}$，则$C=$\blkda{$\dfrac{\pi}{3}$}
+\begin{jieda}
+    因为$I$为$\triangle ABC$的内心，根据奔驰模型推论可知$|BC| : |AC| : |AB|  = S_{\triangle BIC} : S_{\triangle AIC}:S_{\triangle AIB} = 2 : 3 : \sqrt{7}$，故$cos C = \dfrac{4 + 9 - 7}{12} = \dfrac{1}{2}$，故$C = \dfrac{\pi}{3}$
+\end{jieda}
+
+\item 设$P$在$\triangle ABC$内且为$\triangle ABC$的外心，$\angle BAC = \dfrac{\pi}{6}$.若$\triangle PBC, \triangle PCA, \triangle PAB$的面积分别是$\dfrac{1}{2}, x, y$，则$x+y$的最大值是\blkda{$\dfrac{\sqrt{3}}{3}$}
+\begin{jieda}
+    根据奔驰模型可知$\dfrac{1}{2}\vv{PA} + x\vv{PB} + y\vv{PC} = \vv{0}$，即$\vv{AP} = 2x\vv{PB} + 2y\vv{PC}$\\
+    因此$|\vv{PA}|^2 = 4x^2|\vv{PB}|^2 + 4y^2|\vv{PC}|^2 + 8xy\vv{PB} \cdot \vv{PC}$， 因为$P$为$\triangle ABC$的外心所以$|\vv{PA}| = |\vv{PB}| = |\vv{PC}|$，故有$1 = 4x^2 + 4y^2 + 8xy \cdot cos\angle BPC$\\
+    因为$P$为$\triangle ABC$的外心所以$cos\angle BPC = cos 2\angle BAC = \dfrac{1}{2}$，故有$1 = 4x^2 + 4y^2 + 4xy$\\
+    故有$\dfrac{1}{4} = (x+y)^2 - xy$，又因为$xy \leq \left(\dfrac{x+y}{2}\right)^2$，因此$\dfrac{1}{4} \geq \dfrac{3}{4}(x+y)^2$，因此$x+y$最大值为$\dfrac{\sqrt{3}}{3}$，当$x = y = \dfrac{\sqrt{3}}{6}$时取得最大值.
+\end{jieda}
+
+\item 已知圆$O$的半径为1，$PA, PB$为该圆的两条切线，$A, B$为两切点，那么$\vv{PA} \cdot \vv{PB}$的最小值是\blkda[2]{$-3 + 2\sqrt{2}$}
+\begin{jieda}
+    \begin{enumerate}
+        \item 若设$|\vv{OP}| = x, \angle POA = \alpha$，易知$cos\alpha = \dfrac{1}{x}, |\vv{PA}| = |\vv{PB}| = x \cdot sin\alpha$，则$\vv{PA} \cdot \vv{PB} = |\vv{PA}| \cdot |\vv{PB}| \cdot cos2\alpha = x^2 \cdot sin^2\alpha \cdot cos2\alpha = x^2\left(1-\dfrac{1}{x^2}\right) \cdot \left(\dfrac{2}{x^2} - 1\right) = -3 + x^2 + \dfrac{2}{x^2} \geq -3 + 2\sqrt{2}$，当$x = \sqrt[4]{2}$时取等.
+        \item $\vv{PA} = \vv{PO} + \vv{OA}, \vv{PB} = \vv{PO} + \vv{OB}, \vv{PA} \cdot \vv{PB} = |\vv{PO}|^2 + \vv{PO} \cdot (\vv{OA} + \vv{OB}) + \vv{OA} \cdot \vv{OB}$ \\
+        若设$|\vv{OP}| = x, \angle POA = \alpha$，易知$cos\alpha = \dfrac{1}{x}$，则$\vv{PA} \cdot \vv{PB} = x^2 - 2x\cdot cos\alpha + cos2\alpha = x^2 - 2 + \left(\dfrac{2}{x^2} - 1\right) = -3 + x^2 + \dfrac{2}{x^2} \geq -3 + 2\sqrt{2}$，当$x = \sqrt[4]{2}$时取等.
+    \end{enumerate}
+\end{jieda}
+
+\item 设$\vv{a},\vv{b},\vv{c}$是单位向量, 且$\vv{a}\cdot\vv{b}=0$, 则$\left(\vv{a}-\vv{c}\right)\cdot\left(\vv{b}-\vv{c}\right)$的最小值为\blkda{$1-\sqrt{2}$}
+
+\item 已知$A,B,C$是平面上不共线上三点, 动点$P$满足$\vv{OP}=\frac{1}{3}((1-\lambda)\vv{OA}+(1-\lambda)\vv{OB}+(1+2\lambda)\vv{OC})(\lambda\zr,\lambda\neq 0)$, 
+则$P$的轨迹一定通过$\triangle{ABC}$的\dotfill(\kh{D})
+\xx{内心}{垂心}{重心}{$AB$边的中点}
+\begin{jieda}
+    $\vv{OP}=\frac{1}{3}((1-\lambda)\vv{OA}+(1-\lambda)\vv{OB}+(1+2\lambda)\vv{OC}) = \dfrac{1}{3}\vv{OA} + \dfrac{1}{3}\vv{OB} + \dfrac{1}{3} \vv{OC} + \dfrac{\lambda}{3}(\vv{AC} + \vv{BC})$\\
+    设$G$为重心，$\vv{OP} = \vv{OG} + \dfrac{\lambda}{3}(\vv{AC} + \vv{BC})$，即$\vv{GP} = -\lambda \vv{CG}$,由于$\lambda \neq 0$，所以选D.
+\end{jieda}
+
+\item 在平面四边形$ABCD$中, $\vv{AB}=\vv{a}$, $\vv{BC}=\vv{b}$, $\vv{CD}=\vv{c}$, $\vv{DA}=\vv{d}$, 
+且$\vv{a}\cdot\vv{b}=\vv{b}\cdot\vv{c}=\vv{c}\cdot\vv{d}=\vv{d}\cdot\vv{a}$, 判断四边形$ABCD$的形状. 
+\begin{jieda}
+    $\vv{a}\cdot\vv{b}=\vv{b}\cdot\vv{c}$，即$\vv{b} \cdot (\vv{a} - \vv{c}) = 0$，又有$\vv{a}\cdot\vv{d}=\vv{d}\cdot\vv{c}$，因此$\vv{d} \cdot (\vv{a} - \vv{c}) = 0$ \\
+    因为$\vv{b} \neq \vv{0}, \vv{d} \neq \vv{0}, \vv{a} - \vv{c} \neq \vv{0}$（否则不构成平面四边形），因此必有$\vv{b} // \vv{d}$，同理可得$\vv{a} // \vv{c}$，因此$ABCD$为平行四边形. \\
+    $\vv{b} \cdot (\vv{a} - \vv{c}) = 0$即$\vv{BC} \perp \vv{AB}$，故$\angle B = \dfrac{\pi}{2}$，同理可知$A = B = C = D = \dfrac{\pi}{2}$，因此平面四边形$ABCD$为矩形.
+\end{jieda}
+
+\item 已知$\text{Rt}\triangle{ABC}$, 两条直角边$BA=3$, $BC=4$, 一动点$P$在平面内运动, 点$P$落在何处时, $\abs{PA}^2+\abs{PB}^2+\abs{PC}^2$取到最小值? 
+\begin{jieda}
+    以B为原点，$\vv{BC}$为$x$轴正方向，$\vv{BA}$为$y$轴正方向.设$\triangle ABC$的重心为$G\left(\dfrac{4}{3}, 1\right)$，$P$到$\triangle ABC$的顶点的平方和为$S = |\vv{PA}|^2 +|\vv{PB}|^2 +|\vv{PC}|^2$，\\
+    $S = |\vv{PG} + \vv{GA}|^2 +|\vv{PG} + \vv{GB}|^2 +|\vv{PG} + \vv{GC}|^2 = 3|\vv{PG}|^2 + 2\vv{PG} \cdot (\vv{GA} + \vv{GB} + \vv{GC}) + |\vv{GA}|^2 + |\vv{GB}|^2 + |\vv{GC}|^2 = 3|\vv{PG}|^2 +  |\vv{GA}|^2 + |\vv{GB}|^2 + |\vv{GC}|^2 \geq |\vv{GA}|^2 + |\vv{GB}|^2 + |\vv{GC}|^2$（当$P, G$重合时取等）
+\end{jieda}
+
+\item 已知在凸四边形$ABCD$中, $P,Q$分别为对角线$BD,AC$的中点, 求证: $AB^2+BC^2+CD^2+AD^2=AC^2+BD^2+4PQ^2$. 
+\begin{jieda}
+    先证以下结论：$\triangle{ABC}$中设底边中点为$D$，则$|\vv{AB}|^2+|\vv{AC}|^2 = 2(|\vv{AD}|^2+|\vv{DC}|^2)$ \\
+    根据极化恒等式有$\vv{AB} \cdot \vv{AC} = |\vv{AD}|^2 - |\vv{DC}|^2$，故$4|\vv{AD}|^2 = (\vv{AB} + \vv{AC})^2 = |\vv{AB}|^2+|\vv{AC}|^2+2\vv{AB} \cdot \vv{AC} = |\vv{AB}|^2+|\vv{AC}|^2+2|\vv{AD}|^2 - 2|\vv{DC}|^2 $，整理可得$|\vv{AB}|^2+|\vv{AC}|^2 = 2(|\vv{AD}|^2+|\vv{DC}|^2)$ \\
+    （\ps 本结论也可以从平行四边形两条对角线平方和等于两倍的两邻边边长平方和进行推导.）
+    \\
+    因此对于本题有$|\vv{QB}|^2+|\vv{QD}|^2 = 2|\vv{PQ}|^2 + 2|\vv{PB}|^2$，整理可得$4|\vv{PQ}|^2 = 2(|\vv{QB}|^2+|\vv{QD}|^2) - |\vv{BD}|^2$ \\
+    同理有$|\vv{QB}|^2 = \dfrac{|\vv{BA}|^2+|\vv{BC}|^2}{2} - \dfrac{|\vv{AC}|^2}{4}$，$|\vv{QD}|^2 = \dfrac{|\vv{DA}|^2+|\vv{DC}|^2}{2} - \dfrac{|\vv{AC}|^2}{4}$，\\
+    代入前式可得$4|\vv{PQ}|^2 = 2( \dfrac{|\vv{BA}|^2+|\vv{BC}|^2}{2} - \dfrac{|\vv{AC}|^2}{4}+\dfrac{|\vv{DA}|^2+|\vv{DC}|^2}{2} - \dfrac{|\vv{AC}|^2}{4}) - |\vv{BD}|^2 = |\vv{BA}|^2+|\vv{BC}|^2 + |\vv{DA}|^2+|\vv{DC}|^2 - |\vv{AC}|^2 - |\vv{BD}|^2$，即$4|\vv{PQ}|^2 + |\vv{AC}|^2 + |\vv{BD}|^2 = |\vv{BA}|^2+|\vv{BC}|^2 + |\vv{DA}|^2+|\vv{DC}|^2$ 
+\end{jieda}
+\item 已知$O$是平面上一定点, $A,B,C$是平面上不共线的三个点, 若动点$P$满足: $\vv{OP}=\vv{OA}+\lambda\left(\dfrac{\vv{AB}}{\abs{\vv{AB}}\cos{B}}+\dfrac{\vv{AC}}{\abs{\vv{AC}}\cos{C}}\right)$. 
+求证: 点$P$的轨迹一定通过$\triangle{ABC}$的垂心. 
+\begin{jieda} \\
+    $\vv{AP}=\lambda\left(\dfrac{\vv{AB}}{\abs{\vv{AB}}\cos{B}}+\dfrac{\vv{AC}}{\abs{\vv{AC}}\cos{C}}\right)$，$\vv{AP} \cdot \vv{BC} = \lambda\left(\dfrac{-|\vv{AB}||\vv{BC}|cosB}{\abs{\vv{AB}}\cos{B}}+\dfrac{|\vv{AC}||\vv{BC}|cosC}{\abs{\vv{AC}}\cos{C}}\right) = 0$\\
+    故点$P$的轨迹一定通过$\triangle{ABC}$的垂心. 
+\end{jieda}
+
+\item 在锐角$\triangle{ABC}$中，$cosB = \dfrac{1}{2}$，$O$为$\triangle{ABC}$的外心
+\begin{enumerate}
+    \item 若$\vv{BO} = x\vv{BA} + y \vv{BC}$，求$x+y$的最大值
+    \item 若$b = \sqrt{3}$，求$|3\vv{OB} + \vv{OA} + 2\vv{OC}|$的取值范围
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate} 
+        \item 
+        \begin{enumerate}
+            \item $\vv{BO} = x\vv{BA} + y \vv{BC}$，故$\left \{ \begin{array}{l}
+                 \vv{BO} \cdot \vv{BA} = x|\vv{BA}|^2 + y \vv{BC}\cdot \vv{BA} \\
+                 \vv{BO} \cdot \vv{BC} = x\vv{BA} \cdot \vv{BC} + y |\vv{BC}|^2
+            \end{array}
+            \right.$，\\
+            即$\left \{ \begin{array}{l}
+                 \dfrac{|\vv{BA}|^2}{2} = x|\vv{BA}|^2 + y \vv{BC}\cdot \vv{BA} \\
+                 \dfrac{|\vv{BC}|^2}{2} = x\vv{BA} \cdot \vv{BC} + y |\vv{BC}|^2
+            \end{array}
+            \right.$，设$|\vv{BA}| = c, |\vv{BC}| = a$，则有\\
+            $\left \{ \begin{array}{l}
+                 \dfrac{c^2}{2} = x \cdot c^2 + \dfrac{y}{2} \cdot ac \\
+                 \dfrac{a^2}{2} = \dfrac{x}{2} \cdot ac + y \cdot a^2
+            \end{array}
+            \right.$，即$\left \{ \begin{array}{l}
+                 \dfrac{c}{2} = x \cdot c + \dfrac{y}{2} \cdot a \\
+                 \dfrac{a}{2} = \dfrac{x}{2} \cdot c + y \cdot a
+            \end{array}
+            \right.$，解得$\left \{ \begin{array}{l}
+                 x = \dfrac{2c-a}{3c} \\
+                 y = \dfrac{2a-c}{3a}
+            \end{array}
+            \right.$，故$x+y \leq \dfrac{2}{3}$，此时$x = y = \dfrac{1}{3}$
+            \item $\vv{BO} = x(\vv{BO} + \vv{OA}) + y(\vv{BO} + \vv{OC})$，故$(x+y-1)\vv{OB} = x\vv{OA} + y \vv{OC}$，两侧平方有$(x+y-1)^2|\vv{OB}|^2 = x^2|\vv{OA}|^2+y^2|\vv{OC}|^2+2xy|\vv{OB}|\cdot|\vv{OC}|cos\angle BOC$，即$(x+y-1)^2 = x^2+y^2-xy$，即$(x+y-1)^2 -(x+y)^2 = -3xy$，即$2(x+y) = 3xy+1$，根据基本不等式有$2(x+y) \leq \dfrac{3}{4}(x+y)^2+1$（$x=y$时取等号），故$x+y\leq\dfrac{2}{3}$或$x+y\geq2$（舍）因此$x+y$的最大值为$\dfrac{2}{3}$，此时$x = y = \dfrac{1}{3}$
+        \end{enumerate}
+        \ps 根据等和线的结论可以进行验证
+        \item 
+        \begin{enumerate}
+            \item $cosB = \dfrac{1}{2}$，故$sinB = \dfrac{\sqrt{3}}{2}$，根据正弦定理可知外接圆半径$R = 1$，$|3\vv{OB} + \vv{OA} + 2\vv{OC}|^2 = 9|\vv{OB}|^2+|\vv{OA}|^2+4|\vv{OC}|^2 + 6\vv{OA} \cdot \vv{OB} + 4\vv{OA} \cdot \vv{OC} + 12\vv{OB} \cdot \vv{OC} = 14 + (6cos\angle AOB -2 + 12cos\angle BOC)$，设$\angle BOC$为$\theta, \theta \in \left(\dfrac{\pi}{3}, \pi\right)$，则原式$ = 12+12cos\theta + 6 cos\left(\dfrac{4\pi}{3} - \theta\right) = 12 + 6\sqrt{3}sin\left(\dfrac{\pi}{3} - \theta\right) \in [12-6\sqrt{3}, 12)$ \\
+            因此$|3\vv{OB} + \vv{OA} + 2\vv{OC}| \in [3-\sqrt{3}, 2\sqrt{3})$
+            \item $cosB = \dfrac{1}{2}$，故$sinB = \dfrac{\sqrt{3}}{2}$，根据正弦定理可知外接圆半径$R = 1$，故以$O$为原点，$\vv{AC}$方向为$x$轴正方向建系，有$A\left(-\dfrac{\sqrt{3}}{2}, -\dfrac{1}{2}\right), C\left(\dfrac{\sqrt{3}}{2}, -\dfrac{1}{2}\right)$因为$\triangle{ABC}$为锐角三角形，因此$B(cos\theta, sin\theta), \theta \in \left(\dfrac{\pi}{6}, \dfrac{5\pi}{6}\right)$，故$3\vv{OB} + \vv{OA} + 2\vv{OC} = \left(3cos\theta+\dfrac{\sqrt{3}}{2}, 3sin\theta-\dfrac{3}{2}\right)$，故$|3\vv{OB} + \vv{OA} + 2\vv{OC}| = \sqrt{12+3\sqrt{3}cos\theta-9sin\theta} = \sqrt{12+6\sqrt{3}\left(\dfrac{1}{2}cos\theta - \dfrac{\sqrt{3}}{2}sin\theta\right)} = \sqrt{12+6\sqrt{3}sin\left(\dfrac{\pi}{6}-\theta\right)} \in [3-\sqrt{3}, 2\sqrt{3})$
+        \end{enumerate}
+    \end{enumerate}
+\end{jieda}
+\end{enumerate}
+线段的定比分点
+\begin{enumerate}
+    \item 已知$A(2, 3), B(4, -3)$，点$P$在线段$BA$的延长线上，且$2BP = 3AP$，则$P$的坐标为\blkda{$\left(-2, 15\right)$}
+    \begin{jieda}
+        $2\vv{BP} = 3\vv{AP}$，$2(\vv{OP} - \vv{OB}) = 3(\vv{OP} - \vv{OA})$，故$\vv{OP} = 3\vv{OA} - 2\vv{OB} = (-2, 15)$
+    \end{jieda}
+    \item 已知两点$M(7,8), N(1, -6)$，$P$点是线段$MN$靠近点$M$的三等分点，则点$P$的坐标为\blkda{$\left(5, \dfrac{10}{3}\right)$}
+    \begin{jieda}
+        $\vv{OP} = \dfrac{2}{3}\vv{OM} + \dfrac{1}{3} \vv{ON} = \left(5, \dfrac{10}{3}\right)$
+    \end{jieda}
+    \item 直线$l$经过两个定点$P(x_1, y_1), Q(x_2, y_2)$，其中$x_1 \neq x_2$，则直线$l$的参数方程为$\left \{ \begin{array}{l}
+         x = \dfrac{x_1 + \lambda x_2}{1+\lambda} \\
+         y = \dfrac{y_1 + \lambda y_2}{1+\lambda}
+    \end{array} \right.$（$\lambda$为参数，$\lambda \neq -1$）.其中$M(x, y)$为直线$l$上任意一点，下列说法不正确的是\dotfill{(\kh{B})}
+    \xx{参数$\lambda$的几何意义是动点$M$分有向线段$\vv{PQ}$的数量比$\dfrac{PM}{MQ}$}{可以用$\left(\dfrac{x_1 + \lambda x_2}{1+\lambda}, \dfrac{y_1 + \lambda y_2}{1+\lambda}\right)$表示直线$l$上任意一点}{当$\lambda < 0$且$\lambda \neq -1$时，$M$为外分点}{当$\lambda = 0$时，点$M$与点$P$重合}
+    \begin{jieda}
+        表示不了$Q$点
+    \end{jieda}
+\end{enumerate}
+C组
+\begin{enumerate}
+    \item 在$\triangle{ABC}$中，$M$是边$BC$的中点，$N$是线段$BM$的中点.若$A = \dfrac{\pi}{3}$，$\triangle{ABC}$的面积为$\sqrt{3}$，则$\vv{AM}\cdot\vv{AN}$的最小值为\blkda{$1+\sqrt{3}$}
+    \begin{jieda}
+        $S = \dfrac{1}{2}bcsinA = \dfrac{\sqrt{3}}{4}bc = \sqrt{3}$，故$bc = 4$, $\vv{AM} = \dfrac{1}{2}(\vv{AB} + \vv{AC}), \vv{AN} = \dfrac{1}{2}(\vv{AB} + \vv{AM}) = \dfrac{3}{4}\vv{AB} + \dfrac{1}{4}\vv{AC}$ \\
+        $\vv{AM}\cdot\vv{AN} = \dfrac{3}{8}|\vv{AB}|^2 + \dfrac{1}{8}|\vv{AC}|^2 + \dfrac{1}{2}\vv{AB}\cdot\vv{AC} = \dfrac{3c^2}{8} + \dfrac{b^2}{8} + \dfrac{1}{4}bc \geq \dfrac{\sqrt{3}+1}{4}bc = \sqrt{3}+1$，当$b = 2\sqrt[4]{3}, c = \dfrac{2}{\sqrt[4]{3}}$时取得最小值.
+    \end{jieda}
+\end{enumerate}

@@ -1,0 +1,384 @@
+\begin{enumerate}
+    \item 直线的7种方程
+    \begin{jieda}      
+        \begin{center}
+        \adjustbox{width=0.75\linewidth}{
+        \begin{tabular}{|c|c|c|}
+        \hline
+        名称 & 方程 & 适用范围 \\
+        \cline{1-3}
+        点斜式 & $y - {y}_{0} = k\left( {x - {x}_{0}}\right)$ & 不含直线 $x = {x}_{0}$ \\
+        \cline{1-3}
+        斜截式 & $y = {kx} + b$ & 不含垂直于 $x$ 轴的直线 \\
+        \cline{1-3}
+        点法式 & $a(x-x_0)+b(y-y_0) = 0$ & 平面直角坐标系内的直线都适用 \\
+        \cline{1-3}
+        两点式 & $\frac{y - {y}_{1}}{{y}_{2} - {y}_{1}} = \frac{x - {x}_{1}}{{x}_{2} - {x}_{1}}\left( {{x}_{1} \neq  {x}_{2},{y}_{1} \neq  {y}_{2}}\right)$ & 不含直线 $x = {x}_{1}$ 和直线 $y = {y}_{1}$ \\
+        \cline{1-3}
+        点方向式 & $\frac{y - {y}_{1}}{b} = \frac{x - {x}_{1}}{a}\left( ab \neq 0 \right)$ & 不含直线 $x = {x}_{1}$ 和直线 $y = {y}_{1}$ \\
+        \cline{1-3}
+        截距式 & $\frac{x}{a} + \frac{y}{b} = 1$ & 不含垂直于坐标轴和过原点的直线 \\
+        \cline{1-3}
+        一般式 & ${ax} + {by} + c = 0\left( {{a}^{2} + {b}^{2} \neq  0}\right)$ & 平面直角坐标系内的直线都适用 \\
+        \cline{1-3}
+        \hline
+        \end{tabular}
+        }
+        \end{center}
+    \end{jieda}
+    \item 截距
+    \begin{jieda}
+        截距不是距离、题干提到截距应采用截距式并分类讨论.
+    \end{jieda}
+    \item 判断直线位置关系（一般式）
+    \begin{jieda}
+        判断法向量位置关系（交叉相乘是否相等），法向量不平行则直线相交；法向量平行带回检验是平行还是重合
+    \end{jieda}
+    \item 夹角、旋转类问题
+    \begin{jieda}
+        关注是否是特殊角简化运算
+        
+        关注是否多解
+        
+        判断采用法向量（方向向量）求解还是采用斜率求解
+    \end{jieda}
+    \item 对称类问题
+    \begin{jieda}
+        直线的对称问题向点的对称问题转化
+    \end{jieda}
+    \item 到定点距离为定值的直线
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 过点$A$到$B$的距离为$d$的直线有两条（可能会因为直线的形式约束导致只有一个解）
+            \item 到点$A$和点$B$的距离为$d$的直线最多有四条，随着$d$的增大，会逐渐减少到两条.
+        \end{dingautolist}
+    \end{jieda}
+    \item 点的同侧于异侧
+    \begin{jieda}
+        $M(x_1, y_1), N(x_2, y_2)$在直线$ax+by+c=0$的同侧$\Longleftrightarrow (ax_1+by_1+c)(ax_2+by_2+c)>0$
+        
+        $M(x_1, y_1), N(x_2, y_2)$在直线$ax+by+c=0$的异侧$\Longleftrightarrow (ax_1+by_1+c)(ax_2+by_2+c)<0$
+    \end{jieda}
+    \item $x^2+y^2+Dx+Ey+F = 0$表示圆的充要条件
+    \begin{jieda}
+        $x^2+y^2+Dx+Ey+F = 0$表示圆$\Longleftrightarrow D^2+E^2-4F > 0$
+    \end{jieda}
+    \item 垂径定理
+    \begin{jieda}
+        $\left(\dfrac{l}{2}\right)^2 + d^2 = r^2$，利用垂径定理可以将弦长和圆心到直线的距离进行转化.
+    \end{jieda}
+    \item 过圆内一点的最长弦与最短弦
+    \begin{jieda}
+        最长弦为过该点的直径，根据垂径定理可知最短弦为过该点于直径垂直的弦
+    \end{jieda}
+
+    \item 过圆外一点$P$做圆$C$的两条切线，设切点为$A,B$，关于四边形$PACB$有怎样性质
+    \begin{jieda}
+        $P,A,C,B$四点共圆，在以$PC$为直径的圆上
+
+        四边形$PACB$面积等于两个直角三角形的面积之和
+
+        $PC$长度越小则四边形$PACB$面积越小，以$PC$为直径的圆面积越小，$\angle APB$越大
+    \end{jieda}
+
+    \item $P$在以$A, B$为直径的圆上的充要条件
+    \begin{jieda}
+        $P$在以$A, B$为直径的圆上的充要条件$\Longleftrightarrow PA \bot PB \Longleftrightarrow \vv{PA} \cdot \vv{PB} = 0 \Longleftrightarrow |PA|^2+|PB|^2 = |AB|^2$
+
+        不涉及求距离（长度）时考虑数量积为0，涉及求距离（长度）时考虑勾股定理.
+    \end{jieda}
+    
+    \item $A = \sqrt{B}$（$y = \sqrt{ax^2+bx+c}$）
+    \begin{jieda}
+        平方处理得到$A^2 = B$（得到二次曲线的形式，一般是个圆），其中$A$的范围被扩大
+    \end{jieda}
+
+    \item 圆和圆的位置关系与公切线条数
+    \begin{jieda}
+        设圆$C_1: (x-a_1)^2+(y-b_1)^2 = r_1^2, C_2: (x-a_2)^2+(y-b_2)^2 = r_2^2(r_1, r_2 > 0)$，两圆的弦心距为$d = \sqrt{(a_1-a_2)^2+(b_1-b_2)^2}$
+        
+        \begin{table}[h]
+            \centering
+            \begin{tabular}{c|c|c|c}
+            \hline
+                图形 & $d$与$r_1, r_2$的关系 & 位置关系 & 公切线条数 \\
+            \hline
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_679_1053_158_107_0.jpg} & $d > r_1 + r_2$ & 外离 & 4\\
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_680_1182_151_111_0.jpg} & $d = r_1 + r_2$ & 外切 & 3\\
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_682_1310_149_112_0.jpg} & $|r_1 - r_2| < d < r_1 + r_2$ & 相交 & 2\\
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_681_1440_149_126_0.jpg} & $d = |r_1-r_2|$ & 内切 & 1 \\
+                \includegraphics[width=0.1\textwidth]{bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_676_1583_158_130_0.jpg} & $d < |r_1-r_2|$ & 内含 & 0 \\
+            \hline
+            \end{tabular}
+        \end{table}
+    \end{jieda}
+
+    \item 求公共弦、公切线
+    \begin{jieda}
+        设圆$C_1: x^2+y^2+D_1x+E_1y+F_1 = 0, C_2: x^2+y^2+D_2x+E_2y+F_2 = 0$
+
+        直线$l: (D_1 - D_2)x + (E_1 - E_2)y + (F_1-F_2) = 0$
+
+        当两圆相切时直线$l$为公切线，当两圆相交时$l$为公共弦
+    \end{jieda}
+
+    \item 平面内到两定点距离之和为定值$2a$的点的轨迹（两定点距离为$2c$）
+    \begin{jieda}
+        $a > c$：椭圆；$a = c$：线段；$a < c$：不存在
+    \end{jieda}
+    
+    \item 平面内到两定点距离之差的绝对值为定值$2a$的点的轨迹（两定点距离为$2c$）
+    \begin{jieda}
+        $a > c$：不存在；$a = c$：两条射线；$0 < a < c$：双曲线；$a = 0$：一条直线（垂直平分线）
+    \end{jieda}
+
+    \item 双曲线第一定义相关
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 如果没有绝对值则只对应着双曲线的一支
+            \item 根据双曲线的第一定义计算出焦半径要检验，判断焦点三角形是否存在.
+        \end{dingautolist}
+    \end{jieda}
+    
+    \item 椭圆和双曲线中$a,b,c$的判断方法
+    \begin{jieda}
+        椭圆中系数分母大者为$a^2$，小者为$b^2$，满足$a^2 = b^2+c^2$
+
+        双曲线中系数分母正者为$a^2$，负者为$b^2$（不考虑负号），满足$c^2 = a^2+b^2$
+    \end{jieda}
+
+    \item 离心率的范围
+    \begin{jieda}
+        $e = \dfrac{c}{a}$，椭圆的离心率的取值范围是$(0, 1)$，双曲线的离心率取值范围是$(1, +\infty)$
+    \end{jieda}
+    
+    \item 如何求双曲线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$的渐近线
+    \begin{jieda}
+        $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 0$
+    \end{jieda}
+    
+    \item 如何表示与双曲线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$的共渐近线的一族双曲线
+    \begin{jieda}
+        $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = t(t \neq 0)$
+    \end{jieda}
+
+    \item 双曲线焦点到渐近线的距离
+    \begin{jieda}
+        $b$
+    \end{jieda}
+
+    \item 双曲线渐近线斜率与离心率的关系
+    \begin{jieda}
+        焦点在$x$轴：$k^2 = e^2 - 1$；焦点在$y$轴：$k^2 = \dfrac{1}{e^2-1}$
+    \end{jieda}
+
+    \item 焦点三角形
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 椭圆焦点三角形面积公式$S = b^2tan\dfrac{\theta}{2}$，三角形顶点越接近短轴顶点，三角形面积越大，$\theta$越大
+            \item 椭圆焦点三角形周长为$2a+2c$
+            \item 双曲线焦点三角形面积公式$S = b^2cot\dfrac{\theta}{2}$，三角形顶点越远离顶点，三角形面积越大，$\theta$越小
+            \item 双曲线焦点三角形周长为$2a+2c+2x$（$x$为短焦半径长度）
+        \end{dingautolist}
+
+        可以利用结论，配合等面积法求点的坐标；解答题、不能直接利用面积结论的情况，要利用第一定义和余弦定理进行推导
+
+        结合解三角形（已知三边）：
+
+        求内切圆半径$r$：等面积法，$S = \dfrac{1}{2} \times \text{周长} \times r$
+        
+        求外接圆半径$R$：正弦定理，$2R = \dfrac{a}{sinA}$
+        
+        求中线长：利用互补两角列两个小三角形余弦定理/利用向量极化恒等式
+
+        求角分线长：角分线定理+利用底角列一个小三角形的余弦定理
+
+        求高线长：等面积法
+    \end{jieda}
+
+    \item 双曲线焦点三角形的内切圆
+    \begin{jieda}
+        双曲线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$的焦点三角形的内心在$x = a$或$x = -a$上
+    \end{jieda}
+
+    \item 点和圆的位置关系
+    \begin{jieda}
+        $P(x_0, y_0)$在$(x-a)^2+(y-b)^2 = r^2$内$\Longleftrightarrow (x_0-a)^2+(y_0-b)^2 < r^2$
+        
+        $P(x_0, y_0)$在$(x-a)^2+(y-b)^2 = r^2$上$\Longleftrightarrow (x_0-a)^2+(y_0-b)^2 = r^2$
+        
+        $P(x_0, y_0)$在$(x-a)^2+(y-b)^2 = r^2$外$\Longleftrightarrow (x_0-a)^2+(y_0-b)^2 > r^2$
+        
+        $P(x_0, y_0)$在$x^2+y^2+Dx+Ey+F = 0$内$\Longleftrightarrow x_0^2+y_0^2+Dx_0+Ey_0+F < 0$
+        
+        $P(x_0, y_0)$在$x^2+y^2+Dx+Ey+F = 0$上$\Longleftrightarrow x_0^2+y_0^2+Dx_0+Ey_0+F = 0$
+        
+        $P(x_0, y_0)$在$x^2+y^2+Dx+Ey+F = 0$外$\Longleftrightarrow x_0^2+y_0^2+Dx_0+Ey_0+F > 0$
+    \end{jieda}
+
+    \item 点和椭圆的位置关系
+    \begin{jieda}
+        $P(x_0, y_0)$在$\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$内$\Longleftrightarrow \dfrac{x_0^2}{a^2} + \dfrac{y_0^2}{b^2} < 1$
+        
+        $P(x_0, y_0)$在$\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$上$\Longleftrightarrow \dfrac{x_0^2}{a^2} + \dfrac{y_0^2}{b^2} = 1$
+        
+        $P(x_0, y_0)$在$\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$外$\Longleftrightarrow \dfrac{x_0^2}{a^2} + \dfrac{y_0^2}{b^2} > 1$
+    \end{jieda}
+
+    \item 点和双曲线的位置关系
+    \begin{jieda}
+        $P(x_0, y_0)$在渐近线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 0$无双曲线一侧$\Longleftrightarrow \dfrac{x_0^2}{a^2} - \dfrac{y_0^2}{b^2} < 0$
+        
+        $P(x_0, y_0)$在渐近线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 0$上$\Longleftrightarrow \dfrac{x_0^2}{a^2} - \dfrac{y_0^2}{b^2} = 0$
+        
+        $P(x_0, y_0)$在$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$和渐近线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 0$之间区域$\Longleftrightarrow \dfrac{x_0^2}{a^2} - \dfrac{y_0^2}{b^2} \in (0, 1)$
+        
+        $P(x_0, y_0)$在$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$上$\Longleftrightarrow \dfrac{x_0^2}{a^2} - \dfrac{y_0^2}{b^2} = 1$
+        
+        $P(x_0, y_0)$在$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$无渐近线一侧$\Longleftrightarrow \dfrac{x_0^2}{a^2} - \dfrac{y_0^2}{b^2} > 1$
+    \end{jieda}
+
+    \item 双曲线弦中点不会出现的区域
+    \begin{jieda}
+        弦中点$M(x_0, y_0)$满足$\dfrac{x_0^2}{a^2} - \dfrac{y_0^2}{b^2} \in (-\infty, 0) \cup (1, +\infty)$或$x_0 = y_0 = 0$.
+    \end{jieda}
+
+    \item 中点弦问题
+    \begin{jieda}
+        出现弦的中点、弦的垂直平分线等条件时考虑利用点差法，点差法可以给出弦的斜率和中点坐标之间的关系，点差法可以规避掉联立消元
+
+        若是双曲线的中点弦问题需要检验（渐近线相同的一族双曲线对于同一个中点算出来的都是同一条中点弦方程，对于互为共轭的两个双曲线，只会是其中一个的弦）
+    \end{jieda}
+
+    \item 切线结论与切点弦结论
+    \begin{jieda}
+        若$M(x_1, y_1)$在圆$(x-a)^2+(y-b)^2 = r^2$上，则该处切线方程为$(x-a)(x_1-a)+(y-b)(y_1-b) = r^2$
+
+        若$M(x_1, y_1)$在椭圆$\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$上，则该处切线方程为$\dfrac{x_1x}{a^2} + \dfrac{y_1y}{b^2} = 1$
+
+        若$M(x_1, y_1)$在双曲线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$上，则该处切线方程为$\dfrac{x_1x}{a^2} - \dfrac{y_1y}{b^2} = 1$
+
+        
+        若$N(x_2, y_2)$在圆$(x-a)^2+(y-b)^2 = r^2$外，则能做出圆的两切线，则切点弦方程为$(x-a)(x_2-a)+(y-b)(y_2-b) = r^2$
+
+        若$N(x_2, y_2)$在椭圆$\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$外，则能做出椭圆的两切线，则切点弦方程为$\dfrac{x_2x}{a^2} + \dfrac{y_2y}{b^2} = 1$
+
+        若$N(x_2, y_2)$在双曲线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$“外”，且能做出双曲线的两切线（$\dfrac{x_2x}{a^2} - \dfrac{y_2y}{b^2} = t, t \in (-\infty, 0)\cup(0, 1)$），则切点弦方程为$\dfrac{x_2x}{a^2} - \dfrac{y_2y}{b^2} = 1$
+    \end{jieda}
+
+    \item 椭圆的焦半径公式
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 焦点在$x$轴
+            
+                    椭圆上一点$P(x_0, y_0)$到左焦点$F_1(-c, 0)$的距离：$a+ex_0$
+            
+                    椭圆上一点$P(x_0, y_0)$到右焦点$F_2(c, 0)$的距离：$a-ex_0$
+
+            \item 焦点在$y$轴
+            
+                    椭圆上一点$P(x_0, y_0)$到下焦点$F_1(0, -c)$的距离：$a+ey_0$
+            
+                    椭圆上一点$P(x_0, y_0)$到上焦点$F_2(0, c)$的距离：$a-ey_0$
+        \end{dingautolist}
+    \end{jieda}
+
+    
+    \item 双曲线的焦半径公式
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 焦点在$x$轴
+            
+                    双曲线左支上一点$P(x_0, y_0)$到左焦点$F_1(-c, 0)$的距离：$-a-ex_0$
+            
+                    双曲线左支上一点$P(x_0, y_0)$到右焦点$F_2(c, 0)$的距离：$a-ex_0$
+                    
+                    双曲线右支上一点$P(x_0, y_0)$到左焦点$F_1(-c, 0)$的距离：$a+ex_0$
+            
+                    双曲线右支上一点$P(x_0, y_0)$到右焦点$F_2(c, 0)$的距离：$ex_0-a$
+
+            \item 焦点在$y$轴
+            
+                    双曲线下支上一点$P(x_0, y_0)$到下焦点$F_1(0, -c)$的距离：$-a-ey_0$
+            
+                    双曲线下支上一点$P(x_0, y_0)$到上焦点$F_2(0, c)$的距离：$a-ey_0$
+                    
+                    双曲线上支上一点$P(x_0, y_0)$到下焦点$F_1(0, -c)$的距离：$a+ey_0$
+            
+                    双曲线上支上一点$P(x_0, y_0)$到上焦点$F_2(0, c)$的距离：$ey_0-a$
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 弦长公式
+    \begin{jieda}
+        $L = \sqrt{1+k^2}|x_1-x_2| = \sqrt{1+k^2}\sqrt{(x_1+x_2)^2 - 4x_1x_2}$
+
+        $L = \sqrt{1+\dfrac{1}{k^2}}|y_1-y_2| = \sqrt{1+\dfrac{1}{k^2}}\sqrt{(y_1+y_2)^2 - 4y_1y_2}$
+    \end{jieda}
+
+    \item 最短的焦点弦
+    \begin{jieda}
+        对于椭圆和双曲线最短的焦点弦为通径，长度为$\dfrac{2b^2}{a}$
+    \end{jieda}
+
+    \item 斜率之积为定值$m$
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $m > 0$， 必为双曲线，若双曲线焦点在$x$轴，则$m = e^2 - 1$，若双曲线焦点在$y$轴，则$m = \dfrac{1}{e^2-1}$
+            \item $m = 0$，则为两直线（可重合）
+            \item $-1 < m < 0$，则为焦点在$x$轴的椭圆，满足$m = e^2 - 1$
+            \item $m = -1$，则为圆
+            \item $m < -1$，则为焦点在$y$轴的椭圆，满足$m = \dfrac{1}{e^2-1}$
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 三角代换
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 圆$(x-a)^2+(y-b)^2 = r^2$：$\left\{\begin{array}{l}
+                 x = a + r \cdot cos\theta \\
+                 y = b + r \cdot sin\theta
+            \end{array}\right.$
+            \item 椭圆$\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$：$\left\{\begin{array}{l}
+                 x = a \cdot cos\theta \\
+                 y = b \cdot sin\theta
+            \end{array}\right.$
+            \item 双曲线$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$：$\left\{\begin{array}{l}
+                 x = a \cdot \dfrac{1}{cos\theta} \\
+                 y = b \cdot tan\theta
+            \end{array}\right.$
+        \end{dingautolist}
+    \end{jieda}
+    \item 直线和圆锥曲线的位置关系通解法
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 设点、设线、坐标表示
+
+            找到关键的两个点，设出坐标
+            
+            用其坐标表示其他相关的点/题干条件/求解目标，整理出两根之和和两根之积的形式
+            
+            设出两点所在的直线（特殊情况分类讨论）：$y = kx+b$、$x = my+n$、$y = k(x-x_0)+y_0$、$x = m(y-y_0) + x_0$
+
+            \item 联立直线和圆锥曲线，消元，验判别式，韦达定理
+
+            \item 整理出参数关系式，按照题目要求求解
+        \end{dingautolist}
+    \end{jieda}
+    \item 光学性质
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 椭圆：从一个焦点射出的光线经过椭圆反射后会经过另一个焦点
+            \item 双曲线：从一个焦点射出的光线经过双曲线反射后反向延长线会经过另一个焦点
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 三角形相关面积表示
+    \begin{jieda}
+        一般情景要计算弦长和点到直线距离以采用底乘高除以二计算面积，通常不会遇到，一般会是以下情况
+        \begin{dingautolist}{172}
+            \item 底是确定的（在坐标轴上/为焦距/为长轴长等）情况下，采用底乘高除以二，特别地，有的四边形可以割成两个底固定的三角形，也应利用底是确定的这一性质.
+            \item 利用三个点（尤其是一个点为原点时）写出两邻边向量$\vv{a} = (x_1, y_1), \vv{b} = (x_2, y_2)$，$S = \dfrac{1}{2}\left|x_1y_2-x_2y_1\right|$
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}

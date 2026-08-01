@@ -1,0 +1,91 @@
+\section*{圆锥曲线结论}
+
+\begin{enumerate}
+    \item 基础几何性质
+    \begin{enumerate}
+        \item 焦点在$x$轴的椭圆的标准方程为\blkda[3]{$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$}，长轴长为\blkda[3]{$2a$}，短轴长为\blkda[3]{$2b$}，焦距为\blkda[3]{$2c$}，左准线是\blkda[3]{直线$x = -\dfrac{a^2}{c}$}，离心率取值范围是\blkda[3]{$(0, 1)$}
+        \item 焦点在$y$轴的双曲线的标准方程为\blkda[3]{$-\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2} = 1$}，半实轴长为\blkda[3]{$a$}，半虚轴长为\blkda[3]{$b$}，半焦距为\blkda[3]{$c$}，渐近线是\blkda[3]{$y=\pm \dfrac{a}{b}x$}，离心率取值范围是\blkda[3]{$(1,+\infty)$}
+        \item 开口向右的抛物线的标准方程是\blkda[3]{$y^2=2px$}，焦点是\blkda[3]{$\left(\dfrac{p}{2},0\right)$}，准线是\blkda[3]{直线$x=-\dfrac{p}{2}$}，焦点到准线的距离是\blkda[3]{$p$}，离心率取值范围是\blkda[3]{$\{1\}$}
+    \end{enumerate}
+    \item 焦点三角形
+    \begin{enumerate}
+        \item 椭圆的顶角为$\theta$的焦点三角形的面积为\blkda[3]{$b^2tan\dfrac{\theta}{2}$}，在\blkda[3]{短轴顶点}处取得面积最大值，周长为\blkda[3]{$2a+2c$}
+        \item 双曲线的顶角为$\theta$的焦点三角形的面积为\blkda[3]{$b^2cot\dfrac{\theta}{2}$}，若短焦半径长为$m$，则周长为\blkda[3]{$2a+2c+2m$}
+    \end{enumerate}
+    \item 焦半径
+    \begin{enumerate}
+        \item $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$上点$P(x_0, y_0)$到左焦点$F(-c, 0)$的距离为\blkda[3]{$a+ex_0$}
+        \item $\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2} = 1$上点$P(x_0, y_0)$到上焦点$F(0, c)$的距离为\blkda[3]{$a-ey_0$}
+        \item $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$左支上点$P(x_0, y_0)$到左焦点$F(-c, 0)$的距离为\blkda[3]{$-ex_0-a$}
+        \item $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$右支上点$P(x_0, y_0)$到左焦点$F(-c, 0)$的距离为\blkda[3]{$a+ex_0$}
+        \item $-\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2} = 1$上支上点$P(x_0, y_0)$到下焦点$F(0, -c)$的距离为\blkda[3]{$a+ey_0$}
+        \item $-\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2} = 1$下支上点$P(x_0, y_0)$到上焦点$F(0, c)$的距离为\blkda[3]{$a-ey_0$}
+        \item $y^2 = 2px(p>0)$上$P(x_0, y_0)$到焦点$F\left(\dfrac{p}{2}, 0\right)$的距离为\blkda[3]{$x_0+\dfrac{p}{2}$}
+        \item $x^2 = 2py(p>0)$上$P(x_0, y_0)$到焦点$F\left(0, \dfrac{p}{2}\right)$的距离为\blkda[3]{$y_0+\dfrac{p}{2}$}
+    \end{enumerate}
+    \item 焦点弦长
+    \begin{enumerate}
+        \item $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$上所在直线倾斜角为$\alpha$的焦点弦长为\blkda[3]{$\dfrac{2ep}{1-e^2cos^2\alpha}, p=\dfrac{b^2}{c}$}，对应的两个焦半径分别为\blkda[3]{$\dfrac{ep}{1-ecos\alpha}, p=\dfrac{b^2}{c}$}和\blkda[3]{$\dfrac{ep}{1+ecos\alpha}, p=\dfrac{b^2}{c}$}
+        \item $\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2} = 1$上所在直线倾斜角为$\alpha$的焦点弦长为\blkda[3]{$\dfrac{2ep}{1-e^2sin^2\alpha}, p=\dfrac{b^2}{c}$}，对应的两个焦半径分别为\blkda[3]{$\dfrac{ep}{1-esin\alpha}, p=\dfrac{b^2}{c}$}和\blkda[3]{$\dfrac{ep}{1+esin\alpha}, p=\dfrac{b^2}{c}$}
+        \item $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$上所在直线倾斜角为$\alpha$的焦点弦长为\blkda[3]{$\left|\dfrac{2ep}{1-e^2cos^2\alpha}\right|, p=\dfrac{b^2}{c}$}，对应的两个焦半径分别为\blkda[3]{$\left|\dfrac{ep}{1-ecos\alpha}\right|, p=\dfrac{b^2}{c}$}和\blkda[3]{$\left|\dfrac{ep}{1+ecos\alpha}\right|, p=\dfrac{b^2}{c}$}
+        \item $-\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2} = 1$上所在直线倾斜角为$\alpha$的焦点弦长为\blkda[3]{$\left|\dfrac{2ep}{1-e^2sin^2\alpha}\right|,p=\dfrac{b^2}{c}$}，对应的两个焦半径分别为\blkda[3]{$\left|\dfrac{ep}{1-esin\alpha}\right|, p=\dfrac{b^2}{c}$}和\blkda[3]{$\left|\dfrac{ep}{1+esin\alpha}\right|, p=\dfrac{b^2}{c}$}
+        \item $y^2 = 2px(p>0)$上所在直线倾斜角为$\alpha$的焦点弦长为\blkda[3]{$\dfrac{2p}{sin^2\alpha}$}，对应的两个焦半径分别为\blkda[3]{$\dfrac{p}{1-cos\alpha}$}和\blkda[3]{$\dfrac{p}{1+cos\alpha}$}
+        \item $x^2 = 2py(p>0)$上所在直线倾斜角为$\alpha$的焦点弦长为\blkda[3]{$\dfrac{2p}{cos^2\alpha}$}，对应的两个焦半径分别为\blkda[3]{$\dfrac{p}{1-sin\alpha}$}和\blkda[3]{$\dfrac{p}{1+sin\alpha}$}
+    \end{enumerate}
+    \item 双曲线渐近线相关
+    \begin{enumerate}
+        \item $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$渐近线斜率$k$与离心率$e$的关系是\blkda[3]{$k^2=e^2-1$}
+        \item $-\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2} = 1$渐近线斜率$k$与离心率$e$的关系是\blkda[3]{$k^2=\dfrac{1}{e^2-1}$}
+        \item 双曲线焦点到渐近线的距离是\blkda[3]{$b$}
+        \item 和$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$共渐近线的双曲线可表示为\blkda[3]{$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = t, t \neq 0$}
+    \end{enumerate}
+    \item 点和圆锥曲线的位置关系
+    \begin{enumerate}
+        \item 点$P(x_0, y_0)$在$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$内的代数表达是\blkda[3]{$\dfrac{x_0^2}{a^2}+\dfrac{y_0^2}{b^2} < 1$}
+        \item 点$P(x_0, y_0)$在$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$的蝴蝶区的代数表达是\blkda[3]{$\dfrac{x_0^2}{a^2}-\dfrac{y_0^2}{b^2} \in (0, 1)$}
+        \item $\dfrac{x_0^2}{a^2}-\dfrac{y_0^2}{b^2} < 0$等价于点$P(x_0, y_0)$在\blkda[6]{两渐近线之间无双曲线的区域内}
+    \end{enumerate}
+    \item 中点弦
+    \begin{enumerate}
+        \item $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$的弦中点$P(x_0, y_0)$和椭圆的位置关系是\blkda[3]{$\dfrac{x_0^2}{a^2}+\dfrac{y_0^2}{b^2} < 1$}
+        \item $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$的中点坐标为$(x_0, y_0)$的弦的斜率为\blkda[3]{$-\dfrac{b^2x_0}{a^2y_0}$}
+        \item $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$的弦中点$P(x_0, y_0)$和双曲线的位置关系是\blkda[7]{$\dfrac{x_0^2}{a^2}+\dfrac{y_0^2}{b^2} \in (-\infty, 0) \cup (1, +\infty)$或$x_0 = y_0 = 0$}
+        \item $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$的中点坐标为$(x_0, y_0)$的弦的斜率为\blkda[3]{$\dfrac{b^2x_0}{a^2y_0}$}
+        \item $y^2 = 2px(p>0)$的弦中点$P(x_0, y_0)$和抛物线的位置关系是\blkda[3]{$y^2 < 2px$}
+        \item $y^2 = 2px$的中点坐标为$(x_0, y_0)$的弦的斜率为\blkda[3]{$\dfrac{p}{y_0}$}
+    \end{enumerate}
+    \item 切线与切点弦
+    \begin{enumerate}
+        \item $P(x_0, y_0)$在$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$外，则过$P(x_0, y_0)$所做两切线的切点连线的方程为\blkda[3]{$\dfrac{x_0x}{a^2}+\dfrac{y_0y}{b^2} = 1$}
+        \item $P(x_0, y_0)$在$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$上，则$P(x_0, y_0)$处的切线方程为\blkda[3]{$\dfrac{x_0x}{a^2}-\dfrac{y_0y}{b^2} = 1$}
+        \item $P(x_0, y_0)$在$x^2 = 2py$上，则$P(x_0, y_0)$处的切线方程为\blkda[3]{$x_0x = p(y_0+y)$}
+    \end{enumerate}
+    \item 切线条数与交点个数
+    \begin{enumerate}
+        \item 若过$P(x_0, y_0)$的直线和$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$总有两个交点，则$P$满足约束\blkda[3]{$\dfrac{x_0^2}{a^2}+\dfrac{y_0^2}{b^2} < 1$}
+        \item 若过$P(x_0, y_0)$能做出$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$的两条切线，则$P$满足约束\blkda[5]{$\dfrac{x_0^2}{a^2}-\dfrac{y_0^2}{b^2} \in (-\infty, 0)\cup(0, 1)$}
+        \item 若过$P(x_0, y_0)$在$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$的渐近线上（不为原点），则过$P$可以做出\blkda[3]{1}条切线，可以做出\blkda[3]{2}条直线和双曲线只有一个交点
+        \item 当直线与抛物线对称轴平行时，直线和抛物线有\blkda[3]{1}个交点
+        \item 若$P(x_0, y_0)$在$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$内，则$\dfrac{x_0x}{a^2}+\dfrac{y_0y}{b^2} = 1$和$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1$的位置关系为\blkda[3]{相离}
+        \item 若$P(x_0, y_0)$满足$\dfrac{x_0^2}{a^2}-\dfrac{y_0^2}{b^2} > 1$，则$\dfrac{x_0x}{a^2}-\dfrac{y_0y}{b^2} = 1$和$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$的位置关系为\blkda[3]{相离}
+    \end{enumerate}
+    \item 第三定义
+    \begin{enumerate}
+        \item $\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2} = 1$上有关于原点对称的两个点$M,N$，则椭圆上和他们不重合的第三个点$P$满足$k_{PM} \cdot k_{PN} = $\blkda[3]{$\dfrac{1}{e^2-1}$}
+        \item $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1$上有关于原点对称的两个点$M,N$，则椭圆上和他们不重合的第三个点$P$满足$k_{PM} \cdot k_{PN} = $\blkda[3]{$e^2-1$}
+    \end{enumerate}
+    \item 抛物线的焦点弦及其推广
+    \begin{enumerate}
+        \item $AB$是抛物线$y^2 = 2px(p>0)$的焦点弦，则$y_Ay_B = $\blkda[3]{$-p^2$}
+        \item $AB$是抛物线$y^2 = 2px(p>0)$的焦点弦，则$x_Ax_B = $\blkda[3]{$\dfrac{p^2}{4}$}
+        \item $AB$是抛物线$x^2 = 2py(p>0)$的焦点弦，则$y_Ay_B = $\blkda[3]{$\dfrac{p^2}{4}$}
+        \item $AB$是抛物线$x^2 = 2py(p>0)$的焦点弦，则$x_Ax_B = $\blkda[3]{$-p^2$}
+        \item $AB$是抛物线$y^2 = 2px(p>0)$的过$(t, 0)$的弦，则$y_Ay_B = $\blkda[3]{$-2pt$}
+        \item $AB$是抛物线$x^2 = 2py(p>0)$的过$(0, t)$的弦，则$y_Ay_B = $\blkda[3]{$t^2$}
+        \item $AB$是抛物线$y^2 = 2px(p>0)$的焦点弦，则以$AB$为直径的圆和准线切于$M$\blkda[3]{$\left(-\dfrac{p}{2}, \dfrac{y_A+y_B}{2}\right)$}，$F$是抛物线的焦点，则$\vv{FM} \cdot \vv{AB} = $\blkda[3]{0}，$O$为坐标原点，若$AB$的倾斜角为$\alpha$，则$S_{AOB} = $\blkda[3]{$\dfrac{p^2}{2sin\alpha}$}
+    \end{enumerate}
+    \item 统一定义过定点结论
+    \begin{enumerate}
+        \item 设直线过圆锥曲线$\Gamma$的焦点$F$，交$\Gamma$于$A, B$，$A$在对应准线上的投影为$A'$，则$A'B$所过定点为\blkda[6]{焦点到准线的垂线段中点}
+    \end{enumerate}
+\end{enumerate}

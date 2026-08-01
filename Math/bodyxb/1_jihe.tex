@@ -1,0 +1,321 @@
+\chapter*{预备知识-集合}
+\section*{元素与集合}
+\begin{enumerate}
+    \item 定义：一些确定对象的全体叫做\textbf{集合}, 集合中确定的对象称为\textbf{元素}
+    \begin{example}
+        \begin{dingautolist}{172}
+            \item 1$\sim$10之间的所有偶数；
+            \item 立德中学今年入学的全体高一学生；
+            \item 所有的正方形；
+            \item 到直线$l$的距离等于定长$d$的所有点；
+            \item 方程$x^2-3x+2=0$的所有实数根；
+            \item 地球上的四大洋.
+        \end{dingautolist}
+    \end{example}
+    \item 符号表示：通常用小写字母表示元素，用大写字母表示集合
+    \item \textbf{元素与集合的关系}
+            \begin{enumerate}
+                \item 元素$a$属于集合A，记做$a \in A$
+                \item 元素$b$不属于集合A，记做$b \notin A$
+            \end{enumerate}
+        \item \textbf{集合中元素的性质}
+            \ding{172}确定性 \ding{173}互异性 \ding{174} 无序性
+        \item 集合的分类 \\
+            \ding{172}有限集: 元素个数有限的集合称为有限集；\ding{173}无限集：元素个数无限的集合称为无限集；\ding{174}不含有任何元素的集合称为空集，用$\varnothing$表示。\\
+            数学中常见的集合：点集、数集
+        \item 常见数集符号：
+            \begin{center}
+            \setlength{\tabcolsep}{7mm}{
+            \begin{tabular}{cc}
+            \hline
+                 数集& 符号 \\
+            \hline
+                 自然数集& $\mathbf{N}$ \\
+                 正整数集& $\mathbf{N}^*$\\
+                 整数集& $\mathbf{Z}$\\
+                 有理数集& $\mathbf{Q}$\\
+                 实数集& $\mathbf{R}$\\
+             \hline
+            \end{tabular}
+            }
+            \end{center}
+            有时也用数集符号加正负角标的表示形式，例如:$\mathbf{R^+}$表示正实数集，$\mathbf{Z^-}$表示负整数集。
+        \item 集合的表示方法：
+            \begin{enumerate}
+            \item 列举法：把集合的所有元素不重复地一一列举出来，并用花括号括起来表示集合的方法叫做列举法。\\
+            例如：\{太平洋，大西洋，印度洋，北冰洋\}
+            \item 描述法：在大括号内先写出这个集合中元素的一个记号，再画一条竖线，并在竖线的右边写上集合中所有元素具有的共同特征。“集合中所有元素具有的共同特征”是指：在该集合内的元素都具有这个特征，而不在这个集合内的元素都不具有这个特征。\\
+            例如：$\{x|x>0\}$
+            \item 区间：数学中常常需要表示满足一些不等式的全体实数所组成的集合，由此引入了区间的概念。区间可以在数轴上表示出来
+                \begin{dingautolist}{172}
+                    \item 满足不等式$a \leq x \leq b$的全体实数$x$组成的集合称为一个\textbf{闭区间}，记作$[a, b]$
+                    \item 满足不等式$a < x < b$的全体实数$x$组成的集合称为一个\textbf{开区间}，记作$(a, b)$
+                    \item 满足不等式$a \leq x < b$或$a < x \leq b$的全体实数$x$所组成的集合称为一个\textbf{半开半闭区间}，分别记作 $[a, b)$或 $(a, b]$
+                    \item 用符号$+\infty$代表正无穷，满足不等式$x > a$的全体实数$x$组成的区间即是$(a, +\infty)$, 符号$-\infty$代表负无穷，$(-\infty, +\infty)$就等价于实数集$\mathbf{R}$。
+                \end{dingautolist}
+                \ps 特别注意，规定区间的左端点应小于右端点.
+            \item 文氏图（Venn图）：用平面上封闭曲线的内部代表集合
+            \end{enumerate}
+            列举法只适合有限集，并且常用来表示元素个数不多的有限集，例如列举法表示不了不等式$x-3 < 7$的解集。 \\ 
+            描述法只能描述集合中元素具有共同特征的集合，例如描述法表示不了集合$\{1, \mbox{太阳}, \mbox{上海}\}$。\\
+            区间对应的集合一定是实数集的子集。
+        \item 特殊的元素与集合：一个集合可以作为另一个集合的元素（集合集）
+            \begin{example}
+                \begin{dingautolist}{172}
+                    \item 家庭这个集合可以包含家庭成员、宠物等元素，同时家庭这个集合也可以看作是社会这个集合中的一个元素。
+                    \item $\{\varnothing\}$代表一个以空集为一个元素的集合。
+                \end{dingautolist}
+            \end{example}
+\end{enumerate} 
+例题：
+\begin{enumerate}
+    \item 判断下列各组对象是否组成集合，如果是集合，那么是有限集还是无限集。说明理由。
+    \begin{enumerate}
+        \item 6的正整数倍的全体
+        \item 600的所有正约数
+        \item 2019年在上海出生的所有人
+        \item 给定的一条长度为1的线段
+        \item 高一（8）班所有比较高的男同学
+        \item $\{1, 3, 5, 3, 6, 9\}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 无限集；一个数字是否是6的正整数倍是确定的，这样的数字有无限多个
+            \item 有限集；一个数字是否是600的正约数是确定的，这样的数字只有有限个
+            \item 有限集；一个人是否是在2019年出生于上海市确定的，这样的人是有限多个
+            \item 无限集；一个点是否位于给定线段上是确定的，这样的点的数目是无限个（线段，直线，平面等都可以看做是点组成的集合）
+            \item 不是集合；违背确定性
+            \item 不是集合；违背互异性
+        \end{enumerate}
+        \ps 判断是否为集合就是看其中的元素是否满足确定性和互异性。判断集合是有限集还是无限集是利用集合中的元素的个数。
+    \end{jieda}
+    \item 用符号$\in , \notin$填空\\
+        $\begin{array}{llll}
+             0  \blkda{$\notin$}  \mathbf{N^+}, &  0   \blkda{$\notin$}   \mathbf{Z^*},  & 0   \blkda{$\notin$}   \varnothing, &  \sqrt{3}   \blkda{$\notin$}   \mathbf{N} \\
+             -\sqrt{9}  \blkda{$\in$}  \mathbf{Z^-}, &   -\dfrac{\sqrt{2}}{2}   \blkda{$\notin$}   \mathbf{Q}, &   \pi   \blkda{$\notin$}   \mathbf{Q}, &  3.14   \blkda{$\in$}   \mathbf{R^+} \\
+        \end{array}$
+        
+        $0  \blkda{$\notin$}  \{x | x^2 + 1 = 0\},   2   \blkda{$\in$}    \{x | x \geq \sqrt[3]{3}\},  (0, 0) \blkda{$\notin$}    \{(x,y) | 2x + 3y + 1 \leq 0\}$
+    \item 用适当的方法表示下列集合：
+        \begin{enumerate}
+            \item 所有不大于10的正整数组成的集合
+            \item 方程$(x-1)(x-2)(x-3)(x-4)=0$的所有解组成的集合
+            \item 集合$\{1,2,3,4\}$中任意两个不同元素之和组成的集合
+            \item 大于0且小于10的全体偶数组成的集合
+            \item 被3除余2的所有自然数组成的集合
+            \item 直角坐标平面上由第二象限与第四象限中的所有点组成的集合
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\{1,2,3,4,5,6,7,8,9,10\}$ 或 $\{x \in \mathbf{Z} | 0 < x \leq 10 \}$
+                \item $\{1,2,3,4\}$ 或 $\{x | (x-1)(x-2)(x-3)(x-4)=0 \}$
+                \item $\{3,4,5,6,7\}$ 
+                \item $\{2,4,6,8\}$ 或 $\{x | x = 2k, k \in \mathbf{Z}, 0 < k < 5\}$
+                \item $\{x | x = 2+3k, k \in \mathbf{N} \}$
+                \item $\{(x, y) | xy < 0\}$
+            \end{enumerate}
+        \end{jieda}
+    \item 已知$A = \{1,2,3,4\}$，$B = \{(x,y)|x \in A, y \in A, x - y \in A\}$，用列举法表示集合$B$
+    \begin{jieda}
+        $B = \{(2,1), (3,2), (4,3), (3,1), (4,2), (4,1)\}$
+    \end{jieda}
+    \end{enumerate}
+\section*{集合间的关系}
+    \begin{enumerate}
+        \item 包含关系：
+            \begin{enumerate}
+                \item $\mbox{任意} a \in A$, 满足 $a \in B$， 则称集合A包含于集合B(集合B包含集合A)，记做$A \subseteq B$，也称集合A是集合B的\textbf{子集}。规定空集是任意集合的子集。
+                \item 若 $A \subseteq B, \mbox{存在}  b \in B, b \notin A$, 则称集合A真包含于集合B(集合B真包含集合A)，记做$A \subset B$(或者$A \subsetneqq B$)，也称集合A是集合B的\textbf{真子集}。
+            \end{enumerate}
+        注：任意两集合间\textbf{未必}存在包含关系，例如：$\{1,2\}$和$\{2,3\}$。
+        \item 相等关系：$A \subseteq B$，$B \subseteq A$ 则 $A = B$
+    \end{enumerate}
+    相关结论：
+    \begin{enumerate}
+        \item 空集是一切集合的子集，是一切非空集合的真子集
+        \item 含有$n$个元素的有限集$A$的子集有$2^n$个，其中$2^n-1$个为真子集，其中$2^n-2$个为非空真子集
+        \item $A \subseteq B, B \subseteq C \Longrightarrow A \subseteq C$
+    \end{enumerate}
+例题：
+\begin{enumerate}
+    \item 确定$x$与$y$，使得集合$\{2x, x+y\} = \{4, 8\}$
+    \begin{jieda}
+        根据题意，可以有两种对应关系：
+            \begin{equation*}
+                \left\{  
+                         \begin{array}{l}  
+                            2x = 4\\  
+                            x+y = 8
+                         \end{array}
+                \right.
+                \quad \mbox{或} \quad
+                \left\{  
+                         \begin{array}{l}  
+                            2x = 8\\  
+                            x+y = 4
+                         \end{array}
+                \right.
+            \end{equation*}
+            分别对应了：
+            \begin{equation*}
+                \left\{  
+                         \begin{array}{l}  
+                            x = 2\\  
+                            y = 6
+                         \end{array}
+                \right.
+                \quad \mbox{或} \quad
+                \left\{  
+                         \begin{array}{l}  
+                            x = 4\\  
+                            y = 0
+                         \end{array}
+                \right.
+            \end{equation*}
+    \end{jieda}
+    
+    \item 确定下列每组中两个集合之间的关系：
+    \begin{enumerate}
+        \item $A ＝\{n | n \mbox{是}12\mbox{的正约数}\}, \quad B＝\{1,2,3,6\}$
+        \item $C ＝\{n | n = 3k+1, k \in \mathbf{N}\}, \quad D＝\{n|n = 3m-2, m \in \mathbf{N}\}$
+    \end{enumerate}
+    \begin{jieda}
+    
+    \begin{enumerate}
+        \item $A = \{1,2,3,4,6,12\}, 12 \in A, 12 \notin B, 4 \in A, 4 \notin B$，故 $B \subset A$
+        \item 取$m = k + 1$，对应的元素相等，所以$C \subseteq D$，又有$-2 \in D, -2 \notin C$，故$C \subset D$
+    \end{enumerate}
+    \end{jieda} 
+    \item 用适当的符合填空：\\
+    $\varnothing \blkda{$=$} \quad \{x \in \mathbf{R} | x^2 + 2 = 0\}, \quad \{x | x = 4m -1, m \in \mathbf{Z}\} \blkda{$\subset$} \quad \{x | x = 2n -1, n \in \mathbf{Z}\}$ \\
+    $\{(x,y) | |x| + |y| = 1\} \blkda{$\subset$} \quad \{(x,y) | x^2 + y^2 \leq 1\}, \quad \{y | y = x^2-4x+3 \} \blkda{$\supset$} \quad \{y | y = x^2+1\}
+    $
+    \item 写出集合$\{a,b\}$的所有子集，并指出哪些是它的真子集
+    \begin{jieda}
+        \begin{enumerate}
+            \item 子集：$\{a, b\}$, $\{a\}$, $\{b\}$, $\varnothing$
+            \item 真子集：$\{a\}$, $\{b\}$, $\varnothing$
+        \end{enumerate}
+        \ps 含有$n$个元素的有限集$A$的子集有$2^n$个，其中$2^n-1$个为真子集
+    \end{jieda}
+    \item 已知集合$A$中有10个元素，那么集合$A$的真子集个数为\blkda{1023}.
+
+    \item 已知$b \in \mathbf{R}$为常数，集合$A = \left\{x | \dfrac{b}{x} = a\right\}, B = \left \{b, \dfrac{1}{b} \right\}, A \subseteq B$，则$a$的取值集合为\blkda{$\{0, 1, b^2\}$}
+    \begin{jieda}
+        首先根据$B = \left \{b, \dfrac{1}{b} \right\}$可知$b \notin \{0, \pm 1\}$.由于$A$是用描述法表示的集合，因此可以为空集，若A不为空集，其中只有一个元素。由此可知需要进行分类讨论。
+        \begin{enumerate}
+            \item $A = \varnothing$，此时$a = 0$
+            \item $\dfrac{b}{a} = b$，此时$a = 1$
+            \item $\dfrac{b}{a} = \dfrac{1}{b}$，此时$a = b^2$
+        \end{enumerate}
+    \end{jieda}
+    \item 若集合$A = \{x | (a-1)x^2+3x-2 = 0\}$仅有一个真子集，求实数$a$的值.
+    \begin{jieda}
+        由于只有一个真子集，故集合中只有一个元素。因为二次项系数有参数$a$，所以需要分类讨论
+        \begin{enumerate}
+            \item $a = 1$，此时方程退化回一次方程，只有一个实根，满足题意  
+            \item $a \neq 1$，此时方程为二次方程，若只有一个实根，则判别式为0，即$9 + 8(a-1) = 0$，得$a = -\dfrac{1}{8}$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\section*{集合间的运算}
+\begin{example}
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{cccc}
+            \hline 
+             & 情景1 & 情景2 & 情景3 \\
+            \hline 
+            集合A & 有理数集 & $\{1,2,3\}$ & 高一1班男生集合 \\
+            集合B & 无理数集 & $\{1,2,4\}$ & 高一1班学生集合 \\
+            集合C & $\varnothing$ & $\{1,2\}$ & 高一1班男生集合 \\
+            集合D & 实数集 & $\{1,2,3,4\}$ & 高一1班学生集合\\
+            \hline 
+        \end{tabular}
+    \end{table}
+\end{example}
+\begin{enumerate}
+\item 由\textbf{所有既属于集合$A$又属于集合$B$}的元素组成的集合，叫做集合$A$与$B$的\textbf{交集}(intersection)，记作$A \cap B$（读作“$A$交$B$”），即有$A \cap B = \{x|x \in A \mbox{且} x \in B\}$ \\
+运算前后集合间的关系：$A \cap B \subseteq B, A \cap B \subseteq A$
+\item 由\textbf{所有属于集合$A$或属于集合$B$}的元素所组成的集合，叫做集合$A$与$B$的\textbf{并集}(union)，记作$A \cup B$（读作“$A$并$B$”），即有$A \cup B = \{x|x \in A \mbox{或} x \in B\}$ \\
+运算前后集合间的关系：$A \cup B \supseteq B, A \cup B \supseteq A$
+\item 设$U$为全集，$A$是$U$的子集．由$U$中所有\textbf{不属于$A$}的元素组成的集合称为集合$A$在全集$U$中的\textbf{补集}(complementary set)，记作$C_UA$，即有$\{x|x \in U \mbox{且} x \notin A\}$，当全集明确时也可以将$C_UA$记作$\overline{A}$\\
+集合与其补集具有性质：$\overline{\overline{A}} = A, A \cup \overline{A} = U, A \cap \overline{A} = \varnothing$
+\end{enumerate}
+\textbf{两个集合的运算本质上是对集合中元素的再分类}。
+
+德摩根律：$\overline{A \cap B}= \overline{A} \cup \overline{B}, \overline{A \cup B}= \overline{A} \cap \overline{B}$
+
+相关结论：
+\begin{enumerate}
+\item $A \cap B = A \Longleftrightarrow A \subseteq B$，$A \cup B = B \Longleftrightarrow A \subseteq B$
+\item $A \cap A = A$, $A \cup A = A$
+\item $A \cap \varnothing = \varnothing$, $A \cup \varnothing = A$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 集合$A = \{0, 1,2,4, 8\}, B = \{0,1,2,3\}$，将集合$A, B$分别用如下图中的两个圆表示，则圆中阴影部分表示的集合中元素个数恰好为2的是\dotfill{(\kh{B})}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.55\linewidth]{bodyxb//src/jihe2.png}
+    \end{figure}
+    \begin{jieda}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.2\linewidth]{bodyxb//src/jihe3.png}
+        \end{figure}
+    \end{jieda}
+    \item 已知全集$U = \mathbf{R}, A = \{x | x \leq 3\}, B = \{x | -1 < x < 6\}$，则图中阴影部分表示的集合为\blkda{$(3, 6)$}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.15\linewidth]{bodyxb/src/jihe1.png}
+    \end{figure}
+    \begin{jieda}
+        首先判断图中阴影部分表示的是由集合$B$中特有的元素所组成的集合。因此可以结合数轴判断出结果为$(3, 6)$
+    \end{jieda}
+    \item 已知全集$U = \{1,2,3,4,5,6\}$，集合$M = \{1,2\}, N = \{2,3,4\}$，则$\overline{M \cup N} = $ \blkda{$\{5,6\}$}
+    \item 
+    \begin{enumerate}
+        \item 设集合$M = \{y | y = x^2 - 1, x \in \mathbf{R} \}$，$N = \{y | y = -x^2+1, x \in \mathbf{R} \}$，则$M \cap N =$ \blkda{$[-1, 1]$}
+        \item 设集合$M = \{(x, y) | y = x^2 - 1, x \in \mathbf{R} \}$，$ N = \{(x, y) | y = -x^2+1, x \in \mathbf{R} \}$，则$M \cap N =$ \blkda[3]{$\{(1, 0), (-1, 0)\}$}
+    \end{enumerate}
+    
+    \item 设$M=\{x|x^2-2x-3=0\}$，$N = \{x|ax-1=0\}$， 若$M \cap N = N$, 则$a=$\blkda{0, -1, $\dfrac{1}{3}$}. 
+    \begin{jieda}
+        $M = \{-1, 3\}$
+        \begin{dingautolist}{172}
+            \item 若$a = 0$，则$N = \varnothing$, 符合
+            \item 若$a \neq 0$，则$N = \{\dfrac{1}{a}\}$， 因此$a = -1 \mbox{或} \dfrac{1}{3}$
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知集合$A = \{1,2,3\}, B = \{2a, a^2+a\}$，若$A \cap B = \{2\}$，则$a =$\blkda{-2}
+    \begin{jieda}
+        由两者交集可知$2 \in B, 1 \notin B, 3 \notin B$，由于集合元素的无序性，此时需要分类讨论
+        \begin{enumerate}
+            \item $2a = 2$ \\
+            此时$a = 1, B = \{2, 2\}$，违背互异性。
+            \item $a^2+a = 2$ \\
+            此时$a = 1 \mbox{或} -2$，已知$a \neq 1$，故$a = -2, B = \{-4, 2\}$，满足题意。
+        \end{enumerate}
+    \end{jieda}
+    \item 设集合A，B，D满足$A \cup \overline{B} = A \cup \overline{D}$，则必有\dotfill{(\kh{D})}
+    \xx{$B=D$}{$A \cap B = A \cap D$}{$A \cap \overline{B} = A \cap \overline{D}$}{$\overline{A} \cap B = \overline{A} \cap D$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1：利用德摩根律： $\overline{A \cap B}= \overline{A} \cup \overline{B}, \overline{A \cup B}= \overline{A} \cap \overline{B}$ \\
+            $\overline{A \cup \overline{B}} = \overline{A \cup \overline{D}} \Longrightarrow \overline{A} \cap B = \overline{A} \cap D$
+            \item 方法2：逻辑推理 \\
+            假设$x \notin D \Longrightarrow x \in \overline{D} \quad \Longrightarrow x \in A \cup \overline{D} \quad \Longrightarrow x \in A \cup \overline{B}$ \\
+            假设$x \in B \Longrightarrow x \notin \overline{B}$\\
+            则当$x \in B, x \notin D \Longrightarrow x \in A$ \\
+          同理可得$x \in D, x \notin B \Longrightarrow x \in A$ \\
+          因此题干条件表明：集合B和集合D中各自特有的元素都是A的元素，因此$B \cap D \subseteq \overline{A}$，所以$\overline{A} \cap B = \overline{A} \cap D = B \cap D$
+          \item 方法3：画文氏图，逐一判断
+        \end{enumerate}
+    \end{jieda}
+    \item 定义集合运算$A \oplus B = \left\{(x, y) | \dfrac{x}{2} \in A, \dfrac{2}{y} \in B\right\}$。若集合$A = B = \{x \in N| 1 < x < 4\}, C = \left\{(x, y) | y = -\dfrac{1}{6}x + \dfrac{5}{3} \right\}$，则$(A \oplus B) \cap C = $\blkda[3]{$\left\{(4,1), \left(6, \dfrac{2}{3}\right)\right\}$}
+    \begin{jieda}
+        首先将$A, B$用列举法表示，$A = B = \{2,3\}$，故$A \oplus B = \left\{(4,1), (6,1), \left(4,\dfrac{2}{3}\right), \left(6, \dfrac{2}{3}\right) \right\}$ \\
+        因此$(A \oplus B) \cap C = \left\{(4,1), \left(6, \dfrac{2}{3}\right)\right\}$
+    \end{jieda} 
+\end{enumerate}

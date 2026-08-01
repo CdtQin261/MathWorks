@@ -1,0 +1,858 @@
+\chapter*{解析几何-双曲线}
+\subsection*{双曲线的定义}
+我们把\textbf{平面上到两个不同定点 ${F}_{1}\text{ 、 }{F}_{2}$ 的距离之差的绝对值等于常数 (大于零且小于 $\left| {{F}_{1}{F}_{2}}\right|$ ) 的点的轨迹叫做双曲线}. 这两个定点 ${F}_{1}\text{ 、 }{F}_{2}$ 叫做双曲线的\textbf{焦点},两个焦点之间的距离 $\left| {{F}_{1}{F}_{2}}\right|$ 叫做双曲线的\textbf{焦距}.
+\begin{example}
+    将一条拉链先拉开一部分,并将拉开的一支的一端固定在 ${F}_{2}$ 处,在另一支上选择一点固定在 ${F}_{1}$ 处,使 $\left| {M{F}_{2}}\right|  - \left| {M{F}_{1}}\right|  = \left| {P{F}_{1}}\right|$ 为常数,在点 $M$ 处放上一支铅笔, 然后逐渐拉开拉链,让铅笔尖 $M$ 顺势移动,则笔尖 $M$ 画出的图形就是使 $\left| {M{F}_{2}}\right|  - \left| {M{F}_{1}}\right|$ 为常数 $\left| {P{F}_{1}}\right|$ 的点 $M$ 的轨迹的一部分.
+
+    \twotu{\includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_410_747_306_289_0.jpg}}{\includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_896_784_308_255_0.jpg}}
+\end{example}
+
+\subsection*{双曲线的标准方程}
+\begin{center}
+\includegraphics[width=0.25\linewidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_1185_1610_309_261_0.jpg}
+\end{center}
+
+设双曲线的焦距 $\left| {{F}_{1}{F}_{2}}\right|  = {2c}\left( {c > 0}\right)$ ,则点 ${F}_{1}\text{ 、 }{F}_{2}$ 的坐标分别为 $\left( {-c,0}\right) ,\left( {c,0}\right)$ .
+
+设动点 $M\left( {x,y}\right)$ 是双曲线上任意一点,则点 $M$ 到两个定点 ${F}_{1}\text{ 、 }{F}_{2}$ 的距离之差的绝对值等于常数,设为 ${2a}\left( {0 < {2a} < {2c}}\right)$ ,即双曲线就是由下面的集合所描述的图形: $\left\{  {M\left| \right| \left| {M{F}_{1}}\right|  - \left| {M{F}_{2}}\right|  \mid   = {2a},{2c} > {2a} > 0}\right\}.$
+
+所以有$\left| {M{F}_{1}}\right|  - \left| {M{F}_{2}}\right|  =  \pm  {2a}$，即$\sqrt{{\left( x + c\right) }^{2} + {y}^{2}} - \sqrt{{\left( x - c\right) }^{2} + {y}^{2}} =  \pm  {2a}$，即$\sqrt{{\left( x + c\right) }^{2} + {y}^{2}} = \sqrt{{\left( x - c\right) }^{2} + {y}^{2}} \pm  {2a}$
+
+将上式两边平方,并整理后可得 ${cx} - {a}^{2} =  \pm  a\sqrt{{\left( x - c\right) }^{2} + {y}^{2}}$.
+
+再将上式两边平方,并整理后可得 $\left( {{c}^{2} - {a}^{2}}\right) {x}^{2} - {a}^{2}{y}^{2} = {a}^{2}\left( {{c}^{2} - {a}^{2}}\right)$ ,因为 ${2c} > {2a} > 0$ ,即 $c >$  $a > 0$ ,所以 ${c}^{2} - {a}^{2} > 0$ ,令 ${b}^{2} = {c}^{2} - {a}^{2}$ ,且 $b > 0$，则得到双曲线的标准方程$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1\left( a > 0,b > 0\right).$
+
+类似地,如果以焦点 ${F}_{1}\text{ 、 }{F}_{2}$ 所在直线为 $y$ 轴,线段 ${F}_{1}{F}_{2}$ 的垂直平分线为 $x$ 轴，建立平面直角坐标系如图所示,则可得到双曲线的方程为$\dfrac{{y}^{2}}{{a}^{2}} - \dfrac{{x}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_1_1178_939_284_357_0.jpg}
+\end{center}
+
+
+例题：
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item 已知点 $M\left( {x,y}\right)$ 到点 ${F}_{1}\left( {-3,0}\right)$ 的距离减去它到点 ${F}_{2} (3,0)$的距离的差是 4,求点 $M$ 的轨迹方程
+        
+        \item 已知点 $M\left( {x,y}\right)$ 到点 ${F}_{1}\left( {-3,0}\right)$ 的距离与它到点 ${F}_{2}\left( {3,0}\right)$ 的距离的差的绝对值等于 6,求点 $M$ 的轨迹方程.
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}
+        \item 依题意, $\left| {M{F}_{1}}\right|  - \left| {M{F}_{2}}\right|  = 4\left( {4 < \left| {{F}_{1}{F}_{2}}\right| }\right)$ ,所以点 $M$ 的轨迹是以 ${F}_{1}\text{ 、 }{F}_{2}$ 为焦点的双曲线的右支,且 $c = 3,{2a} = 4$ .
+        
+        因此 ${b}^{2} = {c}^{2} - {a}^{2} = 5$ ,所以点 $M$ 的轨迹方程为 $\dfrac{{x}^{2}}{4} - \dfrac{{y}^{2}}{5} = 1\left( {x \geq  2}\right)$ .
+        \item 因为 $\left| \right| M{F}_{1}\left| -\right| M{F}_{2}\left| \right|  = 6$ ,而 $\left| {{F}_{1}{F}_{2}}\right|  = 6$ ,所以当 $\left| {M{F}_{1}}\right|  - \left| {M{F}_{2}}\right|  = 6$ 时,点 $M$ 的轨迹是在 $x$ 轴上以 ${F}_{2}$ 为端点向右的一条射线 $y = 0\left( {x \geq  3}\right)$ ;
+        
+        当 $\left| {M{F}_{1}}\right|  - \left| {M{F}_{2}}\right|  =  - 6$ 时,点 $M$ 的轨迹是在 $x$ 轴上以 ${F}_{1}$ 为端点向左的一条射线 $y =$  $0\left( {x \leq   - 3}\right)$ .
+        
+        所以点 $M$ 的轨迹方程为 $y = 0\left( {\left| x\right|  \geq  3}\right)$ .
+    \end{enumerate}
+    \end{jieda}
+    \item 设 $P$ 是双曲线 $\dfrac{{x}^{2}}{16} - \dfrac{{y}^{2}}{20} = 1$ 上一点, ${F}_{1}$ , ${F}_{2}$ 分别是双曲线的左、右焦点,若 $\left| {P{F}_{1}}\right|  = 9$ ,则 $\left| {P{F}_{2}}\right|  =$ \blkda{17}
+    
+    \begin{jieda}
+        根据双曲线的定义得 $||P{F}_{1}| - |P{F}_{2}||= 8$. 因为 $\left| {P{F}_{1}}\right|  = 9$，所以 $\left| {P{F}_{2}}\right|  = 1$ 或 17.
+        
+        又 $\left| {P{F}_{2}}\right|  \geq  c - a = 2$ ,故 $\left| {P{F}_{2}}\right| = 17$
+    \end{jieda}
+    \item 已知曲线 $C$ 的方程为 $\dfrac{{x}^{2}}{k + 1} + \dfrac{{y}^{2}}{5 - k} = 1\left( {k \in  \mathbf{R}}\right)$ ,若曲线 $C$ 是焦点在 $y$ 轴上的双曲线,则实数 $k$ 的取值范围是\blkda{$k <  - 1$}
+    \begin{jieda}
+        若曲线 $C$ 是焦点在 $y$ 轴上的双曲线，则 $\left\{  \begin{array}{l} k + 1 < 0, \\  5 - k > 0, \end{array}\right.$ 解得 $k <  - 1$ .
+    \end{jieda}
+    \item 方程 ${x}^{2} + \left( {\cos \theta }\right) {y}^{2} = 1,\theta  \in  \left( {0,\pi }\right)$ 表示的曲线不可能为\dotfill{(\kh{B})}
+    \xx{两条直线}{圆}{椭圆}{双曲线}
+    \begin{jieda}
+        因为 $\theta  \in  \left( {0,\pi }\right)$ ,所以 $\cos \theta  \in  \left( {-1,1}\right)$
+        \begin{dingautolist}{172}
+            \item 当 $\cos \theta  \in  \left( {-1,0}\right)$ 时,方程 ${x}^{2} + \left( {\cos \theta }\right) {y}^{2} = 1$ 表示双曲线
+            \item 当 $\cos \theta  = 0$ 时,方程 ${x}^{2} + \left( {\cos \theta }\right) {y}^{2} = 1$ 表示两条直线 $x =  \pm  1$
+            \item 当 $\cos \theta  \in  \left( {0,1}\right)$ 时,方程 ${x}^{2} + \left( {\cos \theta }\right) {y}^{2} = 1$ 可化为 ${x}^{2} + \dfrac{{y}^{2}}{\dfrac{1}{\cos \theta }} = 1$
+            
+            因为 $\dfrac{1}{\cos \theta } > 1$ ,所以方程表示焦点在 $y$ 轴上的椭圆
+        \end{dingautolist}
+    \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 求与双曲线 $C : \dfrac{{x}^{2}}{2} - {y}^{2} = 1$ 有公共的焦点,且过点 $P\left( {\sqrt{2},\sqrt{2}}\right)$ 的双曲线的标准方程
+        \item 求经过两点 $P\left( {-\sqrt{3},2\sqrt{2}}\right)$ 、 $Q\left( {\sqrt{6}, - 2\sqrt{3}}\right)$ 的双曲线 $C$ 的标准方程.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 在双曲线 $C : \dfrac{{x}^{2}}{2} - {y}^{2} = 1$ 中, ${a}^{2} = 2,{b}^{2} = 1$ ,则 ${c}^{2} = {a}^{2} + {b}^{2} = 3$ ,所以双曲线 $C$ 的焦点坐标为 ${F}_{1}\left( {-\sqrt{3},0}\right) \text{ 、 }{F}_{2}\left( {\sqrt{3},0}\right)$ .
+            
+            设所求双曲线的方程为: $\dfrac{{x}^{2}}{{a}_{1}^{2}} - \dfrac{{y}^{2}}{{b}_{1}^{2}} = 1\left( {{a}_{1} > 0,{b}_{1} > 0}\right)$ ,则 ${c}_{1}^{2} = {a}_{1}^{2} + {b}_{1}^{2} = 3$.
+            \begin{dingautolist}{172}
+                \item 定义法
+                
+                由双曲线定义, 得${2a_1} = \left| \right| P{F}_{1}\left| -\right| P{F}_{2}\left| \right|  = \left| {\sqrt{{\left( \sqrt{2} + \sqrt{3}\right) }^{2} + 2} - \sqrt{{\left( \sqrt{2} - \sqrt{3}\right) }^{2} + 2}}\right|  = \left| {\left( {\sqrt{6} + 1}\right)  - \left( {\sqrt{6} - 1}\right) }\right|  = 2.$ 
+                
+                所以 $a_1 = 1,b_1 = \sqrt{2}$ . 
+
+                \item 待定系数法
+
+                代入$P$点坐标可得$\dfrac{2}{{a}_{1}^{2}} - \dfrac{2}{{b}_{1}^{2}} = 1 \left( {{a}_{1} > 0,{b}_{1} > 0}\right)$，故$\left\{\begin{array}{l}
+                     {a}_{1}^{2} + {b}_{1}^{2} = 3  \\
+                     \dfrac{1}{{a}_{1}^{2}} - \dfrac{1}{{b}_{1}^{2}} = \dfrac{1}{2}
+                \end{array}\right.$，解得$\left\{\begin{array}{l}
+                     a_1^2 = 1  \\
+                     b_1^2 = 2
+                \end{array}\right.$
+            \end{dingautolist}
+            因此，所求双曲线的标准方程为 ${x}^{2} - \dfrac{{y}^{2}}{2} = 1$ .
+            
+            \item 根据题意,可设双曲线 $C$ 的方程为 $A{x}^{2} - B{y}^{2} = 1\left( {{AB} > 0}\right)$ . 因为双曲线 $C$ 过 $P\left( {-\sqrt{3},2\sqrt{2}}\right) \text{ 、 }Q\left( {\sqrt{6}, - 2\sqrt{3}}\right)$ 两点,所以 $\left\{  \begin{array}{l} {3A} - {8B} = 1, \\  {6A} - {12B} = 1, \end{array}\right.$ 解得 $\left\{  \begin{array}{l} A =  - \dfrac{1}{3}, \\  B =  - \dfrac{1}{4}. \end{array}\right.$
+            
+            因此,双曲线的标准方程为 $\dfrac{{y}^{2}}{4} - \dfrac{{x}^{2}}{3} = 1$ .
+        \end{enumerate}
+    \end{jieda}
+    \item 已知圆 ${C}_{1} : {\left( x + 3\right) }^{2} + {y}^{2} = 1,{C}_{2} : {\left( x - 3\right) }^{2} + {y}^{2} = 9$ ,动圆 $M$ 同时与圆 ${C}_{1}$ 和圆 ${C}_{2}$ 相外切,则动圆圆心 $M$ 的轨迹方程为\blkda[4]{${x}^{2} - \dfrac{{y}^{2}}{8} = 1\left( {x \leq   - 1}\right)$}
+
+    \begin{jieda}
+        设动圆 $M$ 的半径为 $r$ ,由动圆 $M$ 同时与圆 ${C}_{1}$ 和圆 ${C}_{2}$ 相外切，$\left| {M{C}_{1}}\right|  = 1 + r,\left| {M{C}_{2}}\right|  = 3 + r$，$\left| {M{C}_{2}}\right|  - \left| {M{C}_{1}}\right|  = 2 < 6,$
+        
+        所以动圆圆心 $M$ 的轨迹是以点 ${C}_{1}\left( {-3,0}\right)$ 和 ${C}_{2}\left( {3,0}\right)$ 为焦点的双曲线的左支，且 ${2a} = 2$ ,解得 $a = 1$ ,又 $c = 3$，则 ${b}^{2} = {c}^{2} - {a}^{2} = 8$ ,
+        
+        所以动圆圆心 $M$ 的轨迹方程为 ${x}^{2} - \dfrac{{y}^{2}}{8} = 1\left( {x \leq   - 1}\right)$ .
+    \end{jieda}
+    
+
+    \item 设点 $P$ 是双曲线 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 上任一点,且 $\angle {F}_{1}P{F}_{2} = {\theta }\left( {0 < \theta  < \pi}\right)$ , 求 $\bigtriangleup P{F}_{1}{F}_{2}$ 的面积.
+    \begin{jieda}
+        根据双曲线的定义有$||PF_1| - |PF_2|| = 2a$，平方有$|PF_1|^2+|PF_2|^2-2|PF_1||PF_2| = 4a^2$
+
+        根据余弦定理有$|PF_1|^2 + |PF_2|^2 - 2|PF_1||PF_2|cos\theta = 4c^2$
+
+        两式做差得到$2|PF_1||PF_2|(1-cos\theta) = 4b^2$
+
+        根据半角公式变形有$\dfrac{1}{2}|PF_1||PF_2|sin\theta \cdot tan\dfrac{\theta}{2} = b^2$，即$S_{\triangle PF_1F_2} = \dfrac{b^2}{tan\dfrac{\theta}{2}} = b^2cot\dfrac{\theta}{2}$
+    \end{jieda}
+      \item 已知双曲线 $\dfrac{{x}^{2}}{4} - \dfrac{{y}^{2}}{5} = 1$ 的左焦点为 $F$ ,点 $P$ 在双曲线上且在 $x$ 轴上方,若线段 ${PF}$ 的中点在以 $O$ 为圆心, $\left| {OF}\right|$ 为半径的圆上,则直线 ${PF}$ 的斜率为\blkda[3]{$\dfrac{\sqrt{11}}{5}$ 或 $\sqrt{35}$}.
+    \begin{jieda}
+        由双曲线 $\dfrac{{x}^{2}}{4} - \dfrac{{y}^{2}}{5} = 1$ 可知 $a = 2,b = \sqrt{5},c = \sqrt{{a}^{2} + {b}^{2}} = 3$ ,
+        
+        设线段 ${PF}$ 的中点为 $M$ ,双曲线的右焦点为 ${A}$，则 $\left| {OM}\right|  = 3,\left| {AF}\right|  = 6$
+        \begin{center}
+            \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d3eri7s601uc738iqr70_2_240_1616_444_409_0.jpg}
+        \end{center}
+        \begin{dingautolist}{172}
+            \item 若点 $P$ 在第一象限,则 $\left| {PA}\right|  = 2\left| {OM}\right|  = 6,\left| {PF}\right|  = \left| {PA}\right|  + 4 = {10}$，可得 $\cos \angle {PFA} = \dfrac{{\left| PA\right| }^{2} + {\left| AF\right| }^{2} - {\left| AP\right| }^{2}}{2\left| {PA}\right|  \cdot  \left| {AF}\right| } = \dfrac{{10}^{2} + {6}^{2} - {6}^{2}}{2 \times  {10} \times  6} = \dfrac{5}{6}$，则 $\sin \angle {PFA} = \sqrt{1 - {\cos }^{2}\angle {PFA}} = \dfrac{\sqrt{11}}{6}$
+            
+            可得 $\tan \angle {PFA} = \dfrac{\sin \angle {PFA}}{\cos \angle {PFA}} = \dfrac{\sqrt{11}}{5}$ ,所以直线 ${PF}$ 的斜率为 $\dfrac{\sqrt{11}}{5}$ .
+            
+            \item 若点 $P$ 在第二象限，则$\left| {PA}\right|  = 2\left| {OM}\right|  = 6,\left| {PF}\right|  = \left| {PA}\right|  - 4 = 2$
+
+            ，可得 $\cos \angle {PFA} = \dfrac{{\left| PA\right| }^{2} + {\left| AF\right| }^{2} - {\left| AP\right| }^{2}}{2\left| {PA}\right|  \cdot  \left| {AF}\right| } = \dfrac{2^{2} + {6}^{2} - {6}^{2}}{2 \times  2 \times  6} = \dfrac{1}{6}$，$\sin \angle {PFA} = \sqrt{1 - {\cos }^{2}\angle {PFA}} = \dfrac{\sqrt{35}}{6}$
+
+            可得 $\tan \angle {PFA} = \dfrac{\sin \angle {PFA}}{\cos \angle {PFA}} = \sqrt{35}$ ,所以直线 ${PF}$ 的斜率为 $\sqrt{35}$ .
+        
+        \end{dingautolist}
+        \ps 直接求解$\left\{  \begin{array}{l} \dfrac{{\left( s - 3\right) }^{2}}{4} + \dfrac{81}{4} = 9 \\  \dfrac{{s}^{2}}{4} - \dfrac{81}{5} = 1  \\  t > 0 \end{array}\right.$即可得$P$在一二两个象限的坐标$(s, t)$.
+    \end{jieda}
+\end{enumerate}
+
+
+\subsection*{双曲线的性质}
+
+下面根据双曲线 $C$ 的标准方程$\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$来研究它的性质.
+
+\subsubsection*{对称性}
+
+与研究椭圆的对称性类似,可知双曲线既是轴对称图形,也是中心对称图形,它有两条互相垂直的对称轴,其唯一的对称中心叫做双曲线的中心. 在双曲线的标准方程的条件下,双曲线的对称轴就是坐标轴,双曲线的中心就是坐标原点.
+
+\subsubsection*{顶点}
+
+双曲线与它的对称轴的交点叫做双曲线的顶点.在方程$\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$中
+\begin{dingautolist}{172}
+    \item 令 $y = 0$，得 $x =  \pm  a$ ,因此 ${A}_{1}\left( -a,0\right)$ 、 ${A}_{2}\left( a,0\right)$ 是双曲线的两个顶点. 
+    \item 令 $x = 0$，得 ${y}^{2} =  - {b}^{2}$，此时$y$ 没有实数根,因此双曲线与 $y$ 轴没有交点，但我们也把 ${B}_{1}\left( {0, - b}\right) ,{B}_{2}\left( {0,b}\right)$ 画在 $y$ 轴上,如图所示.
+\end{dingautolist}
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1205_1034_270_314_0.jpg}
+\end{center}
+
+线段 ${A}_{1}{A}_{2}$ 和 ${B}_{1}{B}_{2}$ 分别在双曲线的两条对称轴上,我们把线段 ${A}_{1}{A}_{2}$ 叫做双曲线的实轴,实轴的长等于 $2a$，$a$ 为双曲线的实半轴长; 
+
+线段 ${B}_{1}{B}_{2}$ 叫做双曲线的虚轴,虚轴的长等于 ${2b},b$ 为双曲线的虚半轴长. 
+
+双曲线的焦距为 ${2c}$ ,半焦距为 $c$ ,且满足 ${c}^{2} = {a}^{2} + {b}^{2}$ . 显然，双曲线的两个焦点都在它的实轴上.
+
+特别地，我们把实轴和虚轴等长的双曲线叫做\textbf{等轴双曲线},即在标准方程中 $a = b$ ；我们把实轴和虚轴对换的两个双曲线叫做一对\textbf{共轭双曲线},即方程$\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$与方程 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} =  - 1\left( {a > 0,b > 0}\right)$ 代表一对共轭双曲线.
+
+\subsubsection*{范围}
+由方程$\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$可知 $\dfrac{{x}^{2}}{{a}^{2}} - 1 = \dfrac{{y}^{2}}{{b}^{2}} \geq  0$ ,所以 $\dfrac{{x}^{2}}{{a}^{2}} \geq  1$ ,即 $\left| x\right|  \geq  a$ ,且随着 $\left| x\right|$ 不断增大, $\left| y\right|$ 也相应地不断增大. 所以,双曲线 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1(a > 0$ , $b > 0$ ) 在不等式 $x \geq  a$ 或 $x \leq   - a$ 所表示的区域内,且由两支组成:一支双曲线在直线 $x =  - a$ 的左侧,向左上、左下两方无限延伸; 另一支双曲线在直线 $x = a$ 的右侧,向右上、右下两方无限延伸.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1180_1728_303_298_0.jpg}
+\end{center}
+
+\subsubsection*{渐近线}
+
+过双曲线的实轴顶点 ${A}_{1}\left( {-a,0}\right) \text{ 、 }{A}_{2}\left( {a,0}\right)$ 作 $y$ 轴的平行线 $x =  \pm  a$ ,过双曲线的虚轴顶点 ${B}_{1}\left( {0, - b}\right) \text{ 、 }{B}_{2}\left( {0,b}\right)$ 作 $x$ 轴的平行线 $y =  \pm  b$ ,它们围成一个矩形,如图所示. 
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1157_270_304_303_0.jpg}
+\end{center}
+
+这个矩形的两条对角线所在的直线的方程是 $y =  \pm  \dfrac{b}{a}x$ ,当双曲线的两支向外无限延伸时,双曲线与这两条直线无限趋近,但永不相交. 所以，称直线 $y =  \pm  \dfrac{b}{a}x$ 为双曲线 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0\text{ 、 }b > 0}\right)$ 的两条渐近线，而双曲线位于以两条渐近线为边界的左、右平面区域内.
+
+证明如下：
+
+双曲线在第一象限内部分的方程为 $y = \dfrac{b}{a}\sqrt{{x}^{2} - {a}^{2}}\left( {x > a}\right)$ . 如图所示，设点 $M\left( {{x}_{0},{y}_{0}}\right)$ 是第一象限内双曲线上面的任意一点,且 ${x}_{0} > a > 0$ ; 点 $P\left( {{x}_{0},{y}_{1}}\right)$ 是直线 $y = \dfrac{b}{a}x$ 上与 $M$ 有相同横坐标的点,则 ${y}_{1} = \dfrac{b}{a}{x}_{0}$ .
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1060_879_413_292_0.jpg}
+\end{center}
+
+因为 ${y}_{0} = \dfrac{b}{a}\sqrt{{x}_{0}^{2} - {a}^{2}} = \dfrac{b}{a}{x}_{0}\sqrt{1 - {\left( \dfrac{a}{{x}_{0}}\right) }^{2}} < \dfrac{b}{a}{x}_{0} = {y}_{1}$ , 所以$\left| {MP}\right|  = {y}_{1} - {y}_{0} = \dfrac{b}{a}\left( {{x}_{0} - \sqrt{{x}_{0}^{2} - {a}^{2}}}\right)  = \dfrac{b}{a} \cdot  \dfrac{\left( {{x}_{0} - \sqrt{{x}_{0}^{2} - {a}^{2}}}\right) \left( {{x}_{0} + \sqrt{{x}_{0}^{2} - {a}^{2}}}\right) }{{x}_{0} + \sqrt{{x}_{0}^{2} - {a}^{2}}} = \dfrac{ab}{{x}_{0} + \sqrt{{x}_{0}^{2} - {a}^{2}}}.
+$
+
+当 ${x}_{0} \Longrightarrow     + \infty$ 时, $\left| {MP}\right|  \Longrightarrow    0$ ,即双曲线的右支向右上方无限延伸时,它总在渐近线 $y = \dfrac{b}{a}x$ 的下方,与渐近线 $y = \dfrac{b}{a}x$ 无限趋近,但永不相交.
+
+根据双曲线的对称性可知，双曲线 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 和两条渐近线在其他象限也有类似性质. 可以证明, 对于焦点在 $y$ 轴上的双曲线 $\dfrac{{y}^{2}}{{a}^{2}} - \dfrac{{x}^{2}}{{b}^{2}} = 1$ ,其渐近线相应的为 $x = \pm  \dfrac{b}{a}y$，即 $y =  \pm  \dfrac{a}{b}x$.
+
+结论：
+\begin{enumerate}
+    \item 双曲线$Ax^2+By^2 = 1 (AB < 0)$的渐近线为$Ax^2+By^2 = 0 (AB < 0)$
+    \item 等轴双曲线（$x^2-y^2 = A$）的渐近线斜率为$\pm 1$，共轭双曲线（$\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1$与$\dfrac{{y}^{2}}{{b}^{2}} - \dfrac{{x}^{2}}{{a}^{2}} = 1$）的渐近线相同，$\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1$与$\dfrac{{y}^{2}}{{a}^{2}} - \dfrac{{x}^{2}}{{b}^{2}} =  1$）的渐近线斜率互为倒数.
+    \item 与双曲线 $Ax^2+By^2 = 1 (AB < 0)$ 有共同渐近线的方程可表示为 $Ax^2+By^2 = t (AB < 0) \left( {t \neq  0}\right)$.
+    \item 渐近线与实轴夹角正切值为$\dfrac{b}{a}$，正弦值为$\dfrac{b}{c}$，余弦值为$\dfrac{a}{c}$，因此焦点到渐近线的距离为$b$.
+    \item 计算两渐近线之间的夹角：
+    
+    $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$的两条渐近线为$y = \pm \dfrac{b}{a}x$，写成一般式为$ay \pm bx = 0$，设两渐近线的夹角为$\theta$
+    \begin{dingautolist}{172}
+        \item 计算$tan\theta$
+    
+        两渐近线的斜率为$k_1 = \dfrac{b}{a}, k_2 = -\dfrac{b}{a}$
+        
+        $tan\theta = \left|\dfrac{k_1 - k_2}{1 + k_1k_2}\right| = \left|\dfrac{\dfrac{2b}{a}}{1 - \dfrac{b^2}{a^2}}\right| = \left|\dfrac{2ab}{a^2-b^2}\right|$
+        \item 计算$cos\theta$
+    
+        两渐近线的方向向量为$\vv{d_1} = (a, b), \vv{d_2} = (-a, b)$
+    
+        $cos\theta = \dfrac{|b^2-a^2|}{a^2+b^2}$
+    \end{dingautolist}
+\end{enumerate}
+
+
+
+
+\subsubsection*{离心率}
+
+双曲线的焦距与实轴长的比 $\dfrac{c}{a}$叫做双曲线的离心率，记作 $e = \dfrac{c}{a}$，因为 $c > a > 0$ ,所以双曲线的离心率 $e > 1$ . 
+
+由等式 ${c}^{2} - {a}^{2} = {b}^{2}$ ,可得$\dfrac{b}{a} = \dfrac{\sqrt{{c}^{2} - {a}^{2}}}{a} = \sqrt{{\left( \dfrac{c}{a}\right) }^{2} - 1} = \sqrt{{e}^{2} - 1}.$
+
+结论：
+\begin{dingautolist}{172}
+    \item 双曲线的离心率越大，它的开口就越开阔；反之，离心率越小，双曲线的开口就越狭窄
+    \item $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$的渐近线的斜率$k$与离心率满足$k^2+1 = e^2$
+\end{dingautolist}
+
+\begin{center}
+\adjustbox{width=\textwidth}{
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{标准方程} & $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ & $\dfrac{{y}^{2}}{{a}^{2}} - \dfrac{{x}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ \\
+\cline{1-4}
+\multicolumn{2}{|c|}{图形} &  \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_624_857_239_159_0.jpg}  &  \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_1042_851_203_176_0.jpg}  \\
+\cline{1-4}
+\multirow{8}{*}{性质} & 焦点 & ${F}_{1}\left( {-c,0}\right) ,{F}_{2}\left( {c,0}\right)$ & ${F}_{1}\left( {0, - c}\right) ,{F}_{2}\left( {0,c}\right)$ \\
+\cline{2-4}
+ & 焦距 & \multicolumn{2}{|c|}{$\left| {{F}_{1}{F}_{2}}\right|  = {2c}$} \\
+\cline{2-4}
+ & 范围 & $x \leq   - a$ 或 $x \geq  a,y \in  \mathbf{R}$ & $y \leq   - a$ 或 $y \geq  a,x \in  \mathbf{R}$ \\
+\cline{2-4}
+ & 对称性 & \multicolumn{2}{|c|}{对称轴:坐标轴；对称中心:原点} \\
+\cline{2-4}
+ & 顶点 & ${A}_{1}\left( {-a,0}\right) ,{A}_{2}\left( {a,0}\right)$ & ${A}_{1}\left( {0, - a}\right) ,{A}_{2}\left( {0,a}\right)$ \\
+\cline{2-4}
+ & 轴 & \multicolumn{2}{|c|}{实轴:线段 ${A}_{1}{A}_{2}$ ,长: ${2a}$ ；虚轴:线段 ${B}_{1}{B}_{2}$ ,长: ${2b}$ ,实半 轴长: $a$ ,虚半轴长: $b$} \\
+\cline{2-4}
+ & 渐近线 & $y =  \pm  \dfrac{b}{a}x$ & $y =  \pm  \dfrac{a}{b}x$ \\
+\cline{2-4}
+ & 离心率 & \multicolumn{2}{|c|}{$e = \dfrac{c}{a} \in  \left( {1, + \infty }\right)$} \\
+\cline{1-4}
+\multicolumn{2}{|c|}{$a,b,c$ 的关系} & \multicolumn{2}{|c|}{${c}^{2} = {a}^{2} + {b}^{2}\left( {c > a > 0,c > b > 0}\right)$} \\
+\cline{1-4}
+\hline
+\end{tabular}
+}
+\end{center}
+
+例题：
+\begin{enumerate}
+    \item 下列结论中正确的是\blkda{\ding{174}\ding{175}}
+    \begin{dingautolist}{172}
+        \item 平面内到点 ${F}_{1}\left( {0,4}\right) ,{F}_{2}\left( {0, - 4}\right)$ 的距离之差的绝对值等于 8 的点的轨迹是双曲线.
+        \item 方程 $\dfrac{{x}^{2}}{m} - \dfrac{{y}^{2}}{n} = 1\left( {{mn} > 0}\right)$ 表示焦点在 $x$ 轴上的双曲线. 
+        \item 双曲线 $\dfrac{{x}^{2}}{{m}^{2}} - \dfrac{{y}^{2}}{{n}^{2}} = 1\left( {m > 0,n > 0}\right)$ 的渐近线方程是 $\dfrac{x}{m} \pm  \dfrac{y}{n} = 0.$ 
+        \item 等轴双曲线的渐近线互相垂直,离心率等于 $\sqrt{2}$
+    \end{dingautolist}
+    
+    \item 求下列双曲线的实轴和虚轴的长、离心率、焦点和顶点坐标、渐近线方程:
+    \begin{enumerate}
+        \item ${x}^{2} - 7{y}^{2} = 7$
+        \item ${x}^{2} - 2{y}^{2} =  -8$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\dfrac{x^2}{7} - {y}^{2} = 1$，$a = \sqrt{7}, b = 1, c = 2\sqrt{2}$，实轴长$2\sqrt{7}$，虚轴长$2$，离心率$\dfrac{2\sqrt{14}}{7}$，焦点$(-2\sqrt{2}, 0)$和$(2\sqrt{2}, 0)$，顶点$(-\sqrt{7}, 0)$和$(\sqrt{7}, 0)$，渐近线方程为$y = \dfrac{\sqrt{7}}{7}x$和$y = -\dfrac{\sqrt{7}}{7}x$
+            \item $\dfrac{y^2}{4} - \dfrac{x^2}{8} = 1$，$a = 2, b = 2\sqrt{2}, c = 2\sqrt{3}$，实轴长$4$，虚轴长$4\sqrt{2}$，离心率$\sqrt{3}$，焦点$(0, 2\sqrt{3})$和$(0, -2\sqrt{3})$，顶点$(0, 2)$和$(0, -2)$，渐近线方程$y = \dfrac{\sqrt{2}}{2}x$或$y = -\dfrac{\sqrt{2}}{2}x$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知直线 $y = x$ 与双曲线 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 无公共点,则双曲线的离心率的取值范围是\blkda{$(1, \sqrt{2}]$}
+    \begin{jieda}
+        双曲线的一条渐近线为 $y = \dfrac{b}{a}x$，因为直线 $y = x$ 与双曲线无公共点，故有 $\dfrac{b}{a} \leq  1$，即 $\dfrac{{b}^{2}}{{a}^{2}} = \dfrac{{c}^{2} - {a}^{2}}{{a}^{2}} = {e}^{2} - 1 \leq  1$
+        
+        所以 ${e}^{2} \leq  2$ ,所以 $1 < e \leq  \sqrt{2}$ .
+    \end{jieda}
+    \item 双曲线 $2{y}^{2} - {x}^{2} = 1$ 的渐近线方程是\dotfill{(\kh{C})}
+    \xx{$y =  \pm  \dfrac{1}{2}x$}{$y =  \pm  {2x}$}{$y =  \pm  \dfrac{\sqrt{2}}{2}x$}{$y =  \pm  \sqrt{2}x$}
+
+    \begin{jieda}
+        双曲线 $2{y}^{2} - {x}^{2} = 1$ 的渐近线方程是 $2{y}^{2} - {x}^{2} = 0$，即$y =  \pm  \dfrac{\sqrt{2}}{2}x$.
+    \end{jieda}
+
+
+    \item 求满足下列条件的双曲线的标准方程:
+    \begin{enumerate}
+        \item 与双曲线 $\dfrac{{x}^{2}}{9} - \dfrac{{y}^{2}}{16} = 1$ 有共同渐近线,且过点 $\left( {-3,2\sqrt{3}}\right)$
+        \item 与双曲线 $\dfrac{{x}^{2}}{16} - \dfrac{{y}^{2}}{4} = 1$ 有公共焦点,且过点 $\left( {3\sqrt{2},2}\right)$ .
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设所求双曲线方程为 $\dfrac{{x}^{2}}{9} - \dfrac{{y}^{2}}{16} = \lambda \left( {\lambda  \neq  0}\right)$ . 因为双曲线过点 $\left( {-3,2\sqrt{3}}\right)$ ,所以 $\dfrac{9}{9} - \dfrac{12}{16} = \lambda$ ,解得 $\lambda  = \dfrac{1}{4}$ ,所以有 $\dfrac{{x}^{2}}{9} - \dfrac{{y}^{2}}{16} = \dfrac{1}{4}$ . 故所求双曲线的标准方程为 $\dfrac{{x}^{2}}{\dfrac{9}{4}} - \dfrac{{y}^{2}}{4} = 1$ .
+            \item 设所求双曲线方程为 $\dfrac{{x}^{2}}{{16} - k} - \dfrac{{y}^{2}}{4 + k} = 1\left( {-4 < k < {16}}\right)$ . 因为双曲线过点 $\left( {3\sqrt{2},2}\right)$ , 所以 $\dfrac{18}{{16} - k} - \dfrac{4}{4 + k} = 1$ ,得 ${k}^{2} + {10k} - {56} = 0$ ,解得 $k = 4$ 或 $k =  - {14}$ (舍).
+            
+            故所求双曲线的标准方程为 $\dfrac{{x}^{2}}{12} - \dfrac{{y}^{2}}{8} = 1$ .
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 在平面直角坐标系中,已知双曲线 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的右焦点为 $F$ ,点 $A$ 在双曲线的渐近线上, $\bigtriangleup {OAF}$ 是边长为 2 的等边三角形,则双曲线的标准方程为\blkda[3]{${x}^{2} - \dfrac{{y}^{2}}{3} = 1$}
+    
+    \begin{jieda}
+        由方程 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1$，得双曲线的渐近线方程为 $y =  \pm  \dfrac{b}{a}x$
+        
+        不妨设 $A$ 在直线 $y = \dfrac{b}{a}x$ 上，由 $\bigtriangleup {OAF}$ 是边长为 2 的等边三角形可得 $c = 2$ ,直线 $y = \dfrac{b}{a}x$ 的倾斜角为 ${60}^{ \circ  }$，即 $\dfrac{b}{a} = \sqrt{3}$ ,
+        
+        联立 $\left\{  {\begin{array}{l} b = \sqrt{3}a, \\  {a}^{2} + {b}^{2} = {c}^{2} = 4, \end{array}\text{ 可得 }\left\{  \begin{array}{l} b = \sqrt{3}, \\  a = 1, \end{array}\right. }\right.$
+        
+        故双曲线的标准方程为 ${x}^{2} - \dfrac{{y}^{2}}{3} = 1$ .
+    \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 已知双曲线 $C : \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的离心率 $e = 2$ ,则该双曲线 $C$ 的渐近线方程为\blkda[3]{$y =  \pm  \sqrt{3}x$}.
+        \item 已知双曲线 $C : \dfrac{{y}^{2}}{{a}^{2}} - \dfrac{{x}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的离心率 $e = 2$ ,则该双曲线 $C$ 的渐近线方程为\blkda[3]{$y =  \pm  \dfrac{\sqrt{3}}{3}x$}.
+    \end{enumerate}
+    
+
+    \begin{jieda}
+        \begin{enumerate}
+            \item 双曲线的渐近线为$\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 0$，故其斜率平方$k^2 = \dfrac{b^2}{a^2} = \dfrac{c^2-a^2}{a^2} = e^2 - 1 = 3$
+        
+            所以该双曲线的渐近线方程为 $y =  \pm  \dfrac{b}{a}x =  \pm  \sqrt{3}x$ .
+            \item 双曲线的渐近线为$\dfrac{{y}^{2}}{{a}^{2}} - \dfrac{{x}^{2}}{{b}^{2}} = 0$，故其斜率平方$k^2 = \dfrac{a^2}{b^2} = \dfrac{a^2}{c^2-a^2} = \dfrac{1}{e^2 - 1} = \dfrac{1}{3}$
+        
+            所以该双曲线的渐近线方程为 $y =  \pm  \dfrac{a}{b}x =  \pm  \dfrac{\sqrt{3}}{3}x$ .
+        \end{enumerate}
+        
+    \end{jieda}
+
+
+    \item 已知双曲线 $C : \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的左、右焦点分别 ${F}_{1},{F}_{2}$，${A}$ 是 $C$ 上一点(在第一象限),直线 $A{F}_{2}$ 与轴 $y$ 交于点 $B$ ,若 $A{F}_{1} \bot BF_1$且$3\left| {A{F}_{2}}\right|  = 2\left| {{F}_{2}B}\right|$ ,则 $C$ 的渐近线方程为\blkda[3]{$y =  \pm  \dfrac{2\sqrt{5}}{5}x$}
+    \begin{jieda}
+        示意图如下：
+        \begin{center}
+            \includegraphics[width=0.25\linewidth]{bodyxb//src/jianjinxian2.png}
+        \end{center}
+    
+        设 $\left| {B{F}_{1}}\right|  = m$ ,则 $\left| {B{F}_{2}}\right|  = m$ ,因为 $3\left| {A{F}_{2}}\right|  = 2\left| {{F}_{2}B}\right|$ ,
+        所以 $\left| {A{F}_{2}}\right|  = \dfrac{2}{3}m$ ,根据双曲线的定义： $\left| {A{F}_{1}}\right|  = \dfrac{2}{3}m + {2a}$
+
+        因为 $A{F}_{1} \bot  B{F}_{1}$ ,由勾股定理得： ${\left( \dfrac{2}{3}m + 2a\right) }^{2} + {m^2} = {\left( \dfrac{5}{3}m\right) }^{2} \Longrightarrow    \left( {m - {3a}}\right) \left( {m + a}\right)  = 0$ ,
+        所以 $m = {3a}$ ,则 $\left| {B{F}_{1}}\right| = \left| {B{F}_{2}}\right| = {3a}$ , $\left| {A{F}_{2}}\right| = {2a}$ , $\left| {A{F}_{1}}\right| = {4a}$ 
+        
+        在 ${\triangle A}{F}_{1}{F}_{2}$ 中, $\cos \angle A{F}_{1}{F}_{2} = \dfrac{{\left| A{F}_{1}\right| }^{2} + {\left| {F}_{1}{F}_{2}\right| }^{2} - {\left| A{F}_{2}\right| }^{2}}{2\left| {A{F}_{1}}\right|  \cdot  \left| {{F}_{1}{F}_{2}}\right| } = \dfrac{3{a}^{2} + {c}^{2}}{4ac}$ .
+        
+        在 $\bigtriangleup BF_1F_2$ 中, $\cos \angle B{F}_{1}F_2 = \dfrac{{\left| B{F}_{1}\right| }^{2} + {\left| {F}_{1}{F}_{2}\right| }^{2} - {\left| B{F}_{2}\right| }^{2}}{2\left| {B{F}_{1}}\right|  \cdot  \left| {{F}_{1}{F}_{2}}\right| } = \dfrac{c}{3a}$ .
+
+        因为$\angle{A{F}_{1}F_2} + \angle{B{F}_{1}F_2} = \ang{90}$，所以$\left(\dfrac{3{a}^{2} + {c}^{2}}{4ac}\right)^2 + \left(\dfrac{c}{3a}\right)^2 = 1$
+
+        整理有$25e^4-90e^2+81 = 0$，解得$e^2 = \dfrac{9}{5}$，$\dfrac{b}{a} = \sqrt{e^2-1} = \dfrac{2\sqrt{5}}{5}$，
+        所以双曲线渐近线的方程为: $y =  \pm  \dfrac{2\sqrt{5}}{5}x$ .
+    \end{jieda}
+
+    
+
+    
+    \item 双曲线 $C : \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 上任意一点到其渐近线 ${l}_{1} : y = \dfrac{b}{a}x$ 和 ${l}_{2}$ : $y =  - \dfrac{b}{a}x$ 的距离之积是常数.
+    \begin{jieda}
+        设双曲线上点$P(x_0, y_0)$，则其到两条渐近线的距离分别是$\dfrac{|ay_0-bx_0|}{\sqrt{a^2+b^2}}$和$\dfrac{|ay_0+bx_0|}{\sqrt{a^2+b^2}}$，其乘积为$\dfrac{|a^2y_0^2 - b^2x_0^2|}{a^2+b^2} = \dfrac{a^2b^2}{a^2+b^2}$
+    \end{jieda}
+    
+    \item 某电厂冷却塔的外形是由双曲线 ${C}_{1}$ 的一部分绕其虚轴所在的直线旋转所形成的曲面,如图所示,已知它的最小半径为 ${20}{m}$ ,上口半径为 ${10}\sqrt{5}{m}$，下口半径为 ${20}\sqrt{2}{m}$ ,高为 ${60}{m}$，以冷却塔的轴截面的最窄处所在的直线为 $x$ 轴且与曲面交于点 $A{A}^{\prime }$ ,以线段 $A{A}^{\prime }$ 的垂直平分线为 $y$ 轴建立平面直角坐标系.
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{bodyxb/src/bo_d17r1jf7aajc7388ojlg_8_433_1272_768_453_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 求此双曲线 ${C}_{1}$ 的方程
+        \item 求双曲线 ${C}_{1}$ 的共轭双曲线 ${C}_{2}$ 的方程
+        \item 设(2)中的双曲线 ${C}_{1}$ 、 ${C}_{2}$ 的离心率分别为 ${e}_{1}$ 、 ${e}_{2}$ ,请写出 ${e}_{1}$ 与 ${e}_{2}$ 满足的一个关系式, 并证明之.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设双曲线的方程为 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$，由题意知，$\left| {A{A}^{\prime }}\right|  = {2a} = {40},a = {20},\left| {C{C}^{\prime }}\right|  = {20}\sqrt{5},\left| {B{B}^{\prime }}\right|  = {40}\sqrt{2}$
+    
+            所以，设点 $C\left( {{10}\sqrt{5},t}\right) \left( {t > 0}\right)$，点 $B\left( {{20}\sqrt{2}, - {60} + t}\right)$，
+            
+            则$\left\{  \begin{array}{l} \dfrac{{\left( {10}\sqrt{5}\right) }^{2}}{{20}^{2}} - \dfrac{81}{{b}^{2}} = 1, \\  \dfrac{{\left( {20}\sqrt{2}\right) }^{2}}{{20}^{2}} - \dfrac{{\left( t - {60}\right) }^{2}}{{b}^{2}} = 1, \end{array}\right. \text{ 解得 }\left\{  \begin{array}{l} b = {40}, \\  t = {20}, \end{array}\right.$
+            
+            所以双曲线 ${C}_{1}$ 的方程为 $\dfrac{{x}^{2}}{400} - \dfrac{{y}^{2}}{1600} = 1$ .
+            
+            \item 双曲线 ${C}_{1}$ 的共轭双曲线 ${C}_{2}$ 的方程为 $\dfrac{{y}^{2}}{1600} - \dfrac{{x}^{2}}{400} = 1$ .
+            
+            \item 双曲线 ${C}_{1}$ 与 ${C}_{2}$ 的离心率 ${e}_{1}$ 与 ${e}_{2}$ 满足关系式为 $\dfrac{1}{{e}_{1}^{2}} + \dfrac{1}{{e}_{2}^{2}} = 1$
+            
+            证明如下：
+            
+            $\dfrac{1}{{e}_{1}^{2}} + \dfrac{1}{{e}_{2}^{2}} = {\left( \dfrac{a}{c}\right) }^{2} + {\left( \dfrac{b}{c}\right) }^{2} = \dfrac{a^2+b^2}{c^2} = 1$
+            
+        \end{enumerate} 
+    \end{jieda}
+\end{enumerate}
+\subsection*{双曲线的第二定义}
+平面内到定点的距离和定直线的距离之比为定值$e$($e > 1$)的点的轨迹为双曲线. 这个定点就是双曲线的一个焦点, 这条定直线叫做双曲线的\textbf{准线},而常数 $e\left( {e > 1}\right)$ 是双曲线的离心率.
+        
+由双曲线的对称性可知,双曲线 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0, b > 0}\right)$ 有两条准线: 与焦点 ${F}_{1}\left( {-c,0}\right)$ 的对应的准线方程是 $x =  - \dfrac{{a}^{2}}{c}$ ; 与焦点 ${F}_{2}\left( {c,0}\right)$ 对应的准线方程是 $x = \dfrac{{a}^{2}}{c}$ .
+
+例题：
+\begin{enumerate}
+    \item 已知动点 $M\left( {x,y}\right)$ 到定点 ${F}_{1}\left( {-c,0}\right)$ 的距离和它到定直线 $l : x =  - \dfrac{{a}^{2}}{c}$ 的距离之比为常数 $\dfrac{c}{a}\left( {c > a > 0}\right)$ ,求动点 $M$ 的轨迹.
+
+    \begin{jieda}
+        设 $d$ 是动点 $M\left( {x,y}\right)$ 到直线 $l : x =  - \dfrac{{a}^{2}}{c}$ 的距离,则 $\dfrac{\left| M{F}_{1}\right| }{d} = \dfrac{c}{a}$ .
+        
+        即$\dfrac{\sqrt{{\left( x + c\right) }^{2} + {y}^{2}}}{\left| -\dfrac{{a}^{2}}{c} - x\right| } = \dfrac{c}{a}.$
+        
+        化简, 得$\left( {{a}^{2} - {c}^{2}}\right) {x}^{2} + {a}^{2}{y}^{2} = {a}^{2}\left( {{a}^{2} - {c}^{2}}\right) .$
+        
+        设 ${c}^{2} - {a}^{2} = {b}^{2}\left( {b > 0}\right)$ ,则有 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ . 这就是双曲线的标准方程,所以点 $M$ 的轨迹是双曲线.
+    \end{jieda}
+    \item 设点$M(m, n)$为双曲线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1(a>0,b>0)$上的一点，$r_1, r_2$分别是$M$与双曲线左右焦点$F_1, F_2$的距离，试用双曲线离心率$e$和$M$的坐标表示$r_1, r_2$.
+    \begin{jieda}
+        根据双曲线的第二定义有$\dfrac{r_1}{\left|m - \left(-\dfrac{a^2}{c}\right)\right|} = \dfrac{r_2}{\left|m - \dfrac{a^2}{c}\right|} = e$，因此有$\left\{\begin{array}{l}
+             r_1 = |a+em| \\
+             r_2 = |a-em|
+        \end{array}\right.$
+        
+        \ps 去绝对值：同负异正.
+    \end{jieda}
+    
+    \item 过双曲线 ${x}^{2} - {y}^{2} = 4$ 的右焦点 $F$ 作倾斜角为 ${30}^{ \circ  }$ 的直线,交双曲线于 $A,B$ 两点,则弦长 $\left| {AB}\right|  =$ \blkda{8}.
+    \begin{jieda}
+        $e = \sqrt{2}$，$p = \dfrac{b^2}{c} = \dfrac{4}{2\sqrt{2}} = \sqrt{2}$，$|AB| = \left|\dfrac{2ep}{1-e^2cos^2\ang{30}}\right| = \left|\dfrac{4}{1-2\times \dfrac{3}{4}}\right| = 8$
+    \end{jieda}
+    
+\end{enumerate}
+\subsection*{双曲线的第三定义}
+平面内的动点到两定点（设为$A, B$）的斜率乘积等于常数$m > 0$的点的轨迹是双曲线（刨除两定点）
+\begin{dingautolist}{172}
+    \item 当$m > k^2_{AB}$时，双曲线的实轴与$x$轴平行，$m = e^2 - 1$
+    \item 当$k^2_{AB} > m > 0$时，双曲线的实轴与$y$轴平行，$m = \dfrac{1}{e^2-1}$
+    \item 当$m = k^2_{AB}$时，双曲线退化为两相交直线.
+\end{dingautolist}
+
+特别地，不考虑$m = k^2_{AB}$的特殊情况下，根据双曲线离心率与渐近线斜率的关系可知，双曲线的第三定义可表述为：平面内的动点到两定点的斜率乘积等于常数$m > 0$的点的轨迹是实轴与坐标轴平行的双曲线（刨除两定点），且常数$m$为双曲线的渐近线的斜率平方.
+
+证明：
+
+设$A(x_1, y_1)$，$B(x_2, y_2)$，设$P(x, y)$，$k_{PA} = \dfrac{y-y_1}{x-x_1}$，$k_{PB} = \dfrac{y - y_2}{x-x_2}$
+
+归一化（把对称中心移到原点）：
+
+设$\left\{ \begin{array}{l}
+     Y = y - \dfrac{y_1+y_2}{2}  \\
+     X = x - \dfrac{x_1+x_2}{2}
+\end{array}\right.$，$\left\{ \begin{array}{l}
+     Y_1 = y_1 - \dfrac{y_1+y_2}{2} = \dfrac{y_1-y_2}{2}  \\
+     X_1 = x_1 - \dfrac{x_1+x_2}{2} = \dfrac{x_1-x_2}{2}
+\end{array}\right.$，$\left\{ \begin{array}{l}
+     Y_2 = y_2 - \dfrac{y_1+y_2}{2} = -Y_1 \\
+     X_2 = x_2 - \dfrac{x_1+x_2}{2} = -X_1
+\end{array}\right.$
+
+$m = k_{AP} \cdot k_{BP} = \dfrac{(y-y_1)(y-y_2)}{(x-x_1)(x-x_2)} = \dfrac{(Y-Y_1)(Y-Y_2)}{(X-X_1)(X-X_2)} = \dfrac{Y-Y_1^2}{X-X_1^2}$，即$Y^2- Y_1^2 = m(X^2-X_1^2)$
+
+\begin{enumerate}
+    \item $m = 0$，$Y = \pm Y_1$，即$y = y_1$或$y = y_2$.
+    \item $m \neq 0$
+    
+    $Y^2- Y_1^2 = m(X^2-X_1^2) \Longleftrightarrow Y^2 - mX^2 = Y_1^2 - mX_1^2$
+    \begin{dingautolist}{172}
+        \item $m > \dfrac{Y_1^2}{X_1^2}$（即$m > k_{AB}^2$）
+
+        $\dfrac{Y^2}{Y_1^2 - mX_1^2} - \dfrac{mX^2}{Y_1^2 - mX_1^2} = 1$
+
+        $Y_1^2 - mX_1^2 < 0$，$\dfrac{Y^2}{Y_1^2 - mX_1^2} - \dfrac{mX^2}{Y_1^2 - mX_1^2} = 1$为实轴和$X$轴平行的双曲线方程.代换回$x, y$则是实轴与$x$轴平行的，以$\left(\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}\right)$为对称中心的双曲线.
+
+        $a^2 = -\dfrac{Y_1^2 - mX_1^2}{m}$，$b^2 = -(Y_1^2 - mX_1^2)$，$c^2 = -(Y_1^2 - mX_1^2)\left(1+\dfrac{1}{m}\right)$，故$e^2 = m\left(1+\dfrac{1}{m}\right) = 1+m$
+        \item $m = \dfrac{Y_1^2}{X_1^2}$（即$m = k_{AB}^2$）
+
+        $Y = \pm \sqrt{m}X$为两相交直线.代换回$x, y$则是过$\left(\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}\right)$，斜率为$k_{AB}$和$-k_{AB}$的相交直线.
+
+        \item $\dfrac{Y_1^2}{X_1^2} > m > 0$（即$0 < m < k_{AB}^2$）
+
+        $\dfrac{Y^2}{Y_1^2 - mX_1^2} - \dfrac{mX^2}{Y_1^2 - mX_1^2} = 1$
+
+        $Y_1^2 - mX_1^2 > 0$，$\dfrac{Y^2}{Y_1^2 - mX_1^2} - \dfrac{mX^2}{Y_1^2 - mX_1^2} = 1$为实轴和$Y$轴平行的双曲线方程.代换回$x, y$则实轴是与$y$轴平行的，以$\left(\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}\right)$为对称中心的双曲线.
+
+        $b^2 = \dfrac{Y_1^2 - mX_1^2}{m}$，$a^2 = (Y_1^2 - mX_1^2)$，$c^2 = (Y_1^2 - mX_1^2)\left(1+\dfrac{1}{m}\right)$，故$e^2 = \left(1+\dfrac{1}{m}\right)$
+        \item $0 > m > -1$
+
+        $\dfrac{Y^2}{Y_1^2 - mX_1^2} - \dfrac{mX^2}{Y_1^2 - mX_1^2} = 1$为长轴和$X$轴平行的椭圆，代换回$x, y$则是长轴与$x$轴平行的，以$\left(\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}\right)$为对称中心的椭圆.
+
+        $a^2 = -\dfrac{Y_1^2 - mX_1^2}{m}$，$b^2 = (Y_1^2 - mX_1^2)$，$c^2 = -(Y_1^2 - mX_1^2)\left(1+\dfrac{1}{m}\right)$，故$e^2 = m\left(1+\dfrac{1}{m}\right) = 1+m$
+        
+        \item $m = -1$
+
+        $\dfrac{Y^2}{Y_1^2 - mX_1^2} - \dfrac{mX^2}{Y_1^2 - mX_1^2} = 1$为圆，代换回$x, y$则、以$\left(\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}\right)$为圆心的圆.
+        
+        \item $m < -1$
+
+        $\dfrac{Y^2}{Y_1^2 - mX_1^2} - \dfrac{mX^2}{Y_1^2 - mX_1^2} = 1$为长轴和$Y$轴平行的椭圆，代换回$x, y$则是长轴与$y$轴平行的，以$\left(\dfrac{x_1+x_2}{2}, \dfrac{y_1+y_2}{2}\right)$为对称中心的椭圆.
+
+        
+        $b^2 = -\dfrac{Y_1^2 - mX_1^2}{m}$，$a^2 = (Y_1^2 - mX_1^2)$，$c^2 = (Y_1^2 - mX_1^2)\left(1+\dfrac{1}{m}\right)$，故$e^2 = \left(1+\dfrac{1}{m}\right)$
+    \end{dingautolist}
+\end{enumerate}
+
+双曲线（椭圆）的第三定义说明双曲线（椭圆）的性质：在曲线上选取一组关于对称中心对称的点，那么双曲线上除两定点外的任意一点和他们连线的斜率乘积是定值.
+
+例题：
+\begin{enumerate}
+    \item 过原点 $O$ 的直线 $l$ 与双曲线 $C : \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 交于 $A,B$ 两点, $D$ 为 $C$ 的右顶点,直线 ${DA}$ 与直线 ${DB}$ 的斜率之积为3,则 $C$ 的渐近线方程为\blkda[2]{$y = \pm \sqrt{3}x$}
+    \begin{jieda}
+        根据双曲线的第三定义可知$e^2 - 1 = 3$
+
+        根据双曲线渐近线斜率和离心率的关系可知$k^2 = e^2 - 1$，故$k = \pm \sqrt{3}$
+    \end{jieda}
+    \item 如图所示, $P$ 是双曲线 $\dfrac{{x}^{2}}{4} - {y}^{2} = 1$ 右支(在第一象限内)上的任意一点, ${A}_{1},{A}_{2}$ 分别是左右顶点, $O$ 是坐标原点,直线 $P{A}_{1},{PO},P{A}_{2}$ 的斜率分别为 ${k}_{1},{k}_{2},{k}_{3}$ ,则斜率之积 ${k}_{1}{k}_{2}{k}_{3}$ 的取值范围是\blkda{$\left(0, \dfrac{1}{8}\right)$}.
+    \begin{center}
+        \includegraphics[width=0.2\linewidth]{bodyxb//src/shuangquxiandisandingyi.png}
+    \end{center}
+    \begin{jieda}
+        $k_1k_2 = \dfrac{1}{4}$
+    \end{jieda}
+    \item 若双曲线 ${x}^{2} - {y}^{2} = {a}^{2}\left( {a > 0}\right)$ 的左、右顶点分别为 $A\text{ 、 }B$ ,点 $P$ 是第一象限内双曲线上的点. 若直线 ${PA}\text{ 、 }{PB}$ 的倾斜角分别为 $\alpha ,\beta$ ,那么 $\alpha + \beta = $\blkda{$\dfrac{\pi}{2}$}
+    \begin{jieda}
+        等轴双曲线的渐近线斜率$k = \pm 1$，故根据双曲线第三定义可知$PA, PB$斜率乘积为$e^2-1 = k^2 = 1$，即$PA, PB$斜率互为倒数，根据正切和余切的商数关系和诱导公式可知两直线的倾斜角互余.
+    \end{jieda}
+    \item 如图所示,已知 $M$ , $N$ 为双曲线 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1$ ( $a > 0$ , $b > 0$ )上关于原点对称的两点,点 $M$ 与点 $Q$ 关于 $x$ 轴对称, $Q$为$ME$中点,直线 ${NE}$ 交双曲线右支于点 $P$ ,若 $\angle {NMP} = \dfrac{\pi }{2}$ ,则 $e =$\blkda{$\sqrt{2}$}
+    \begin{center}
+        \includegraphics[width=0.2\linewidth]{bodyxb//src/disandingyi3.png}
+    \end{center}
+    \begin{jieda}
+        设$M(x_0, y_0)$，则$N(-x_0, -y_0)$，$Q(x_0, -y_0)$，$E(x_0, -3y_0)$，故$k_{NP} = -\dfrac{y_0}{x_0}, k_{MN} = \dfrac{y_0}{x_0}, k_{MP} = -\dfrac{x_0}{y_0}$，根据第三定义有$1 = k_{NP} \cdot k_{MP} = e^2 - 1$，故$e =\sqrt{2}$
+    \end{jieda}
+\end{enumerate}
+\subsection*{点和双曲线的位置关系}
+$\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1$双曲线及其渐近线$y = \pm \dfrac{b}{a}x$将空间分成五个区域，对于点$(x_0, y_0)$设$t = \dfrac{x_0^2}{a^2} - \dfrac{y_0^2}{b^2}$，则有$
+\begin{cases}
+t < 0 & \text{点在渐近线之间无双曲线的区域内}, \\
+t = 0 & \text{点在渐近线上}, \\
+0 < t < 1 & \text{点在渐近线与双曲线之间的区域内}, \\
+t = 1 & \text{点在双曲线上}, \\
+t > 1 & \text{点在双曲线内}.
+\end{cases}$
+\subsection*{直线和双曲线的位置关系}
+直线与双曲线的位置关系可以通过代数方法进行判断.
+\begin{enumerate}
+    \item 联立:把直线与双曲线的方程联立,构成二元二次方程组
+    \item 消元:消去未知数 $x$ (或 $y$ ),得到关于 $y$ (或 $x$ )的一元二次方程（\textbf{二次项系数为0对应着直线与双曲线的渐近线平行}）
+    \item 计算该一元二次方程的判别式 $\Delta$ ,并得出结论:
+    \begin{dingautolist}{172}
+        \item $\Delta  > 0 \Longleftrightarrow$ 有两个公共点
+        \item $\Delta  = 0 \Longleftrightarrow$ 有且只有一个公共点
+        \item $\Delta  < 0 \Longleftrightarrow$ 没有公共点
+    \end{dingautolist}
+\end{enumerate}
+直线$l$的斜率$k$和双曲线$C: \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0, b > 0}\right)$的渐近线的斜率$\pm k'$大小关系与$l$与$C$交点个数之间的关系
+\begin{enumerate}
+    \item $|k| < |k'|$时与双曲线的两支各有一个交点，共两个交点
+    \item $|k| = |k'|$时有一个交点（直线与渐近线重合时没有交点）
+    \item $|k| > |k'|$时与双曲线的一支有两个交点或相切或与双曲线没有交点
+\end{enumerate}
+
+切线结论:
+\begin{enumerate}
+    \item 双曲线$C: \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0, b > 0}\right)$在$(x_0, y_0)$处的切线为$\dfrac{{x}x_0}{{a}^{2}} - \dfrac{{y}y_0}{{b}^{2}} = 1$
+    \item 过点$M(x_0, y_0)$（在双曲线外且不在渐近线上），做双曲线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2} = 1({a > 0, b > 0})$的切线$l_1, l_2$，切点为$A, B$，则直线$AB$的方程为$\dfrac{x_0x}{a^2}-\dfrac{y_0y}{b^2} = 1$
+\end{enumerate}
+
+例题：
+\begin{enumerate}
+    \item 设 $k$ 为实数,已知双曲线 $C$ 的方程为 $\dfrac{{x}^{2}}{4} - {y}^{2} = 1$ ,直线 $l$ 的方程是 $y = {kx} + 1$ . 当实数 $k$ 为何值时,直线 $l$ 与双曲线 $C$ 满足:
+    \begin{dingautolist}{172}
+        \item 有两个公共点
+        \item 仅有一个公共点
+        \item 没有公共点
+    \end{dingautolist}
+    \begin{jieda}
+        联立方程组 $\left\{  \begin{array}{l} \dfrac{{x}^{2}}{4} - {y}^{2} = 1, \\  y = {kx} + 1. \end{array}\right.$ 消去 $y$，整理得$\left( {1 - 4{k}^{2}}\right) {x}^{2} - {8kx} - 8 = 0.$
+        \begin{dingautolist}{172}
+            \item 当直线 $l$ 与双曲线 $C$ 有两个公共点时,有 $\left\{  \begin{array}{l} 1 - 4{k}^{2} \neq  0, \\  \Delta  = {64}{k}^{2} + {32}\left( {1 - 4{k}^{2}}\right)  > 0. \end{array}\right.$
+            
+            解得 $k \in  \left( {-\dfrac{\sqrt{2}}{2}, - \dfrac{1}{2}}\right)  \cup  \left( {-\dfrac{1}{2},\dfrac{1}{2}}\right)  \cup  \left( {\dfrac{1}{2},\dfrac{\sqrt{2}}{2}}\right)$ .
+            \item 当直线 $l$ 与双曲线 $C$ 仅有一个公共点时,有 $1 - 4{k}^{2} = 0$ 或 $\left\{  \begin{array}{l} 1 - 4{k}^{2} \neq  0, \\  \Delta  = {64}{k}^{2} + {32}\left( {1 - 4{k}^{2}}\right)  = 0. \end{array}\right.$ 解得 $k =  \pm  \dfrac{1}{2}$ 或 $\pm  \dfrac{\sqrt{2}}{2}$ .
+            \item 当直线 $l$ 与双曲线 $C$ 没有公共点时,有 $\left\{  \begin{array}{l} 1 - 4{k}^{2} \neq  0, \\  \Delta  = {64}{k}^{2} + {32}\left( {1 - 4{k}^{2}}\right)  < 0. \end{array}\right.$ 解得 $k \in  \left( {-\infty , - \dfrac{\sqrt{2}}{2}}\right)  \cup  \left( {\dfrac{\sqrt{2}}{2}, + \infty }\right)$ .
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知直线 $l$ 的方程为 $y = {kx} - 1$ ,双曲线 $C$ 的方程为 ${x}^{2} - {y}^{2} = 1$ . 若直线 $l$ 与双曲线 $C$ 的右支交于不同的两点,则实数 $k$ 的取值范围是\blkda{$\left( {1,\sqrt{2}}\right)$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1 
+
+            联立 $\left\{  \begin{array}{l} y = {kx} - 1, \\  {x}^{2} - {y}^{2} = 1, \end{array}\right.$，整理得 $\left( {1 - {k}^{2}}\right) {x}^{2} + {2kx} - 2 = 0$，因为直线 $y = {kx} - 1$ 与双曲线 ${x}^{2} - {y}^{2} = 1$ 的右支交于不同的两点，所以 $\left\{  \begin{array}{l} 1 - {k}^{2} \neq  0, \\  \Delta  = 4{k}^{2} + 8\left( {1 - {k}^{2}}\right)  > 0, \\  \dfrac{-{2k}}{1 - {k}^{2}} > 0, \\  \dfrac{-{2}}{1 - {k}^{2}} > 0, \end{array}\right.$
+            
+            解得 $1 < k < \sqrt{2}$，所以实数 $k$ 的取值范围为 $\left( {1,\sqrt{2}}\right)$ .
+
+            \item 方法2 
+
+             $y = {kx} - 1$恒过定点$(0， -1)$，易知当$k = 1$时和双曲线的渐近线平行，而当直线斜率增大的过程中会先与双曲线右支交于两点，而后达到相切的状态，因此只需再求得相切时斜率的右边界即可.
+
+             联立 $\left\{  \begin{array}{l} y = {kx} - 1, \\  {x}^{2} - {y}^{2} = 1, \end{array}\right.$，整理得 $\left( {1 - {k}^{2}}\right) {x}^{2} + {2kx} - 2 = 0$，令$\Delta = 0$，即$4{k}^{2} + 8\left( {1 - {k}^{2}}\right) = 0$，得到$k = \pm \sqrt{2}$，结合上述分析可知右边界为$\sqrt{2}$
+
+             因此$k$ 的取值范围为 $\left( {1,\sqrt{2}}\right)$ .
+        \end{enumerate}
+        
+    \end{jieda}
+    \item 如图,已知 $M$ 为双曲线 $E : \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 上一动点,过 $M$ 作双曲线 $E$ 的切线交 $x$ 轴于点 $A$ ,过点 $A$ 作 ${AD}\bot {OM}$ 于点 $D,\left| {OD}\right|  \cdot  \left| {OM}\right|  = 2{b}^{2}$ ,则双曲线 $E$ 的离心率为\blkda{$\dfrac{\sqrt{6}}{2}$}
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d3mggojef24c73cuv41g_0_235_629_430_302_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        如图所示，根据$\triangle OAD \sim \triangle OMB$可知$\dfrac{|OD|}{|OB|} = \dfrac{|OA|}{|OM|}$，故$|OA| \cdot |OB| = 2b^2$
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d3mggojef24c73cuv41g_3_236_262_430_302_0.jpg}
+        \end{center}
+
+        设$M(x_0, y_0)$，则$AM: \dfrac{x_0x}{a^2}-\dfrac{y_0y}{b^2} = 1$，故$|OA| = \dfrac{a^2}{x_0}$，因此$|OA| \cdot |OB| = a^2 = 2b^2$，故$e = \dfrac{\sqrt{6}}{2}$
+    \end{jieda}
+    \item 已知倾斜角为 $\dfrac{\pi }{4}$ 的直线与双曲线 $C : \dfrac{{y}^{2}}{{a}^{2}} - \dfrac{{x}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ ,相交于 $A,B$ 两点, $M\left( {1,3}\right)$是弦 ${AB}$ 的中点,则双曲线的渐近线方程为\blkda[3]{$y =  \pm  \sqrt{3}x$}.
+    \begin{jieda}
+        设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$，则 $\dfrac{{x}_{1} + {x}_{2}}{2} = 1,\dfrac{{y}_{1} + {y}_{2}}{2} = 3,\dfrac{{y}_{1} - {y}_{2}}{{x}_{1} - {x}_{2}} = 1$ 
+        
+        由 $\left\{  \begin{array}{l} \dfrac{{y}_{1}^{2}}{{a}^{2}} - \dfrac{{x}_{1}^{2}}{{b}^{2}} = 1, \\  \dfrac{{y}_{2}^{2}}{{a}^{2}} - \dfrac{{x}_{2}^{2}}{{b}^{2}} = 1, \end{array}\right.$两式相减可得 $\dfrac{\left( {{y}_{1} - {y}_{2}}\right) \left( {{y}_{1} + {y}_{2}}\right) }{{a}^{2}} - \dfrac{\left( {{x}_{1} - {x}_{2}}\right) \left( {{x}_{1} + {x}_{2}}\right) }{{b}^{2}} = 0$
+        
+        则 $\dfrac{6}{{a}^{2}} - \dfrac{2}{{b}^{2}} = 0$ ,即 ${a}^{2} = 3{b}^{2}$ ,则 $a = \sqrt{3}b$ ,则 $\dfrac{a}{b} = \sqrt{3}$，故双曲线的渐近线方程为 $y =  \pm  \sqrt{3}x$ .
+    \end{jieda}
+    
+    \item 已知双曲线 ${C}$ 的方程为 ${x}^{2} - \dfrac{{y}^{2}}{2} = 1$ ,试判断过点 $P\left( {1,1}\right)$ 能否作一条直线 $l$ 与双曲线交于 $A\text{ 、 }B$ 两点,且 $P$ 为 ${AB}$ 的中点,并说明理由.
+    \begin{jieda}
+        设双曲线上两点$A(x_1, y_1), B(x_2, y_2)$，$P$ 为 ${AB}$ 的中点，则有$\left\{\begin{array}{l}
+             {x_1}^{2} - \dfrac{{y_1}^{2}}{2} = 1  \\
+             {x_2}^{2} - \dfrac{{y_2}^{2}}{2} = 1
+        \end{array}\right.$，两式作差有$(x_1+x_2)(x_1-x_2) - \dfrac{(y_1+y_2)(y_1-y_2)}{2} = 0$，根据$P$为中点有$x_1+x_2 = 2, y_1+y_2 = 2$，故$2(x_1-x_2) - (y_1-y_2) = 0$，即$k_{AB} = 2$，故$AB: y = 2x-1$
+
+        联立直线和双曲线方程有$\left\{\begin{array}{l}
+             y = 2x-1  \\
+             {x}^{2} - \dfrac{{y}^{2}}{2} = 1
+        \end{array}\right.$，消去$y$可得$2x^2-(2x-1)^2 = 2$，即$-2x^2+4x-3=0$，方程无解，故不存在.
+    \end{jieda}
+
+    \item 已知 $F\left( {2,0}\right)$ 为双曲线 $C : \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的右焦点,且点 $F$ 到双曲线 $C$ 的一条渐近线的距离为 $\sqrt{3}$ .
+    \begin{enumerate}
+        \item 求双曲线 $C$ 的方程
+        \item 设过点 $F$ 的直线 $l$ 与双曲线 $C$ 相交于点 $P$ 、 $Q$ ,线段 ${PQ}$ 的垂直平分线与 $x$ 轴交于点 $M$ ,若 $\left| {MF}\right|  = 6$ ,求直线 $l$ 的方程.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 ${bx} - {ay} = 0$ 是双曲线 $C$ 的一条渐近线方程,则 $\dfrac{\left| 2b\right| }{\sqrt{{a}^{2} + {b}^{2}}} = \sqrt{3}$ ,所以 $b = \sqrt{3}$ , 又因为 $c = 2$ ,所以 ${a}^{2} = {c}^{2} - {b}^{2} = 1$ ,即 $a = 1$ .
+            
+            所以双曲线 $C$ 的方程为 ${x}^{2} - \dfrac{{y}^{2}}{3} = 1$ .
+            \item 
+            设$P\left( {{x}_{1},{y}_{1}}\right)$ 、 $Q\left( {{x}_{2},{y}_{2}}\right)$，其中点为$N(x_0, y_0)$则$\left\{\begin{array}{l}
+                 x_1^{2} - \dfrac{y_1^{2}}{3} = 1 \\
+                 x_2^{2} - \dfrac{y_2^{2}}{3} = 1
+            \end{array}\right.$
+            两式做差可得$(x_1+x_2)(x_1-x_2) - \dfrac{(y_1+y_2)(y_1-y_2)}{3} = 0$，易知$k_{PQ}$存在，故$k_{PQ} = \dfrac{y_1-y_2}{x_1-x_2} = \dfrac{3(x_1+x_2)}{y_1+y_2} = \dfrac{3x_0}{y_0}$，故$PQ$为$y = \dfrac{3x_0}{y_0}(x-2)$，代入$N(x_0, y_0)$有$y_0^2= 3x_0^2-6x_0$
+            
+            $PQ$的垂直平分线为$y = -\dfrac{1}{k_{PQ}}(x-x_0)+y_0 = -\dfrac{y_0}{3x_0}(x-x_0)+y_0 = -\dfrac{y_0}{3x_0}x+\dfrac{4y_0}{3}$
+            \begin{dingautolist}{172}
+                \item $PQ$的垂直平分线过$(8, 0)$，则有$-\dfrac{8y_0}{3x_0}+\dfrac{4y_0}{3} = 0$，故$x_0 = 2$，根据$y_0^2= 3x_0^2-6x_0$可知$y_0 = 0$(舍)
+                \item $PQ$的垂直平分线过$(-4, 0)$，则有$\dfrac{4y_0}{3x_0}+\dfrac{4y_0}{3} = 0$，故$x_0 = -1$，根据$y_0^2= 3x_0^2-6x_0$可知$y_0 = \pm 3$，故直线 $l$ 的方程为 $x + y - 2 = 0$ 或 $x - y - 2 = 0$ .
+            \end{dingautolist}
+        \end{enumerate}
+    \end{jieda}
+    \item 已知双曲线 $C : \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的两个焦点分别为 ${F}_{1}\left( {-2,0}\right) ,{F}_{2}\left( {2,0}\right)$ ,点 $P\left( {5,\sqrt{23}}\right)$ 在双曲线 $C$ 上.
+    \begin{enumerate}
+        \item 求双曲线 $C$ 的方程
+        \item 记 $O$ 为坐标原点,过点 $Q\left( {0,2}\right)$ 的直线 $l$ 与双曲线 $C$ 交于不同的两点 $A,B$ ,若 $\bigtriangleup {OAB}$ 的面积为 $2\sqrt{2}$ ,求直线 $l$ 的方程.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 依题意, $c = 2$ ,所以 ${a}^{2} + {b}^{2} = 4$，则双曲线 $C$ 的方程为 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{4 - {a}^{2}} = 1\left( {0 < {a}^{2} < 4}\right)$，将点 $P\left( {5,\sqrt{23}}\right)$ 代入上式,得 $\dfrac{25}{{a}^{2}} - \dfrac{23}{4 - {a}^{2}} = 1$，解得 ${a}^{2} = {50}$ (舍去) 或 ${a}^{2} = 2$，故所求双曲线的方程为 $\dfrac{{x}^{2}}{2} - \dfrac{{y}^{2}}{2} = 1$ .
+            \item 依题意,可设直线 $l$ 的方程为 $y = {kx} + 2$，设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$，则 $S_{\bigtriangleup {OAB}} =S_{\triangle OAQ}
+            + S_{\triangle OBQ}= |x_1-x_2| = \sqrt{{\left( {x}_{1} + {x}_{2}\right) }^{2} - 4{x}_{1}{x}_{2}}$
+            
+            联立直线和双曲线方程并整理,得 $\left( {1 - {k}^{2}}\right) {x}^{2} - {4kx} - 6 = 0$ . 因为直线 $l$ 与双曲线 $C$ 交于不同的两点 $A,B$，所以 $\left\{  \begin{array}{l} 1 - {k}^{2} \neq  0, \\  {\left( -4k\right) }^{2} + {24}\left( {1 - {k}^{2}}\right)  > 0, \end{array}\right.$，解得 $\left\{  \begin{array}{l} k \neq   \pm  1, \\   - \sqrt{3} < k < \sqrt{3}. \end{array}\right.$
+            
+            根据韦达定理有$\left\{\begin{array}{l}
+                 x_1 + x_2 = \dfrac{4k}{1 - {k}^{2}}  \\
+                 x_1x_2 =  - \dfrac{6}{1 - {k}^{2}} 
+            \end{array}\right.$ ，故$S_{\bigtriangleup {OAB}} = \dfrac{2\sqrt{2} \times  \sqrt{3 - {k}^{2}}}{\left| 1 - {k}^{2}\right| } = 2\sqrt{2}$，因此$\dfrac{\sqrt{3 - {k}^{2}}}{\left| 1 - {k}^{2}\right| } = 1$，所以 ${k}^{4} - {k}^{2} - 2 = 0$ ,解得 $k =  \pm  \sqrt{2}$ ,满足要求.
+            
+            故满足条件的直线 $l$ 有两条，其方程分别为 $y = \sqrt{2}x + 2$ 和 $y =  - \sqrt{2}x + 2$ .
+        \end{enumerate}
+    \end{jieda}
+    \item  如图,已知双曲线的中心在原点, ${F}_{1},{F}_{2}$ 为左、右焦点,焦距是实轴长的 $\sqrt{2}$ 倍,双曲线过点 $\left( {4, - \sqrt{10}}\right)$ . 
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg}
+    \end{center}
+
+    \begin{enumerate}
+        \item 求双曲线的标准方程；
+        \item 若点 $M\left( {3,m}\right)$ 在双曲线上,求证: 点 $M$ 在以 ${F}_{1}{F}_{2}$ 为直径的圆上
+        \item 在上一问的条件下,若点 $M$ 在第一象限,且直线 $M{F}_{2}$ 交双曲线于另一点 $N$ ,求 $\bigtriangleup {F}_{1}{MN}$ 的面积.
+    \end{enumerate}
+
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设双曲线的标准方程为 $\dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$，$c = \sqrt{2}a$ ,
+            
+            故${b}^{2} = {c}^{2} - {a}^{2} = {a}^{2}$，因此双曲线方程为 ${x}^{2} - {y}^{2} = {a}^{2}$ ,
+            
+            将 $\left( {4, - \sqrt{10}}\right)$ 代入得${a}^{2} = {16} - {10} = 6$，因此$\therefore$ 双曲线的标准方程为 $\dfrac{{x}^{2}}{6} - \dfrac{{y}^{2}}{6} = 1$ .
+            \item 根据标准方程可知${F}_{1}\left( {-2\sqrt{3},0}\right) ,{F}_{2}\left( {2\sqrt{3},0}\right)$，故以 ${F}_{1}{F}_{2}$ 为直径的圆为 ${x}^{2} + {y}^{2} = {12}$
+            
+            因为$M\left( {3,m}\right)$ 在双曲线上，所以$9 - {m}^{2} = 6$，即 ${m}^{2} = 3$，因此$M\left( {3,m}\right)$ 满足圆的方程，故$M$ 在以 ${F}_{1}{F}_{2}$ 为直径的圆上.
+            \item 点 $M$ 的坐标为 $\left( {3,\sqrt{3}}\right)$ ,直线 $M{F}_{2}$ 的方程为 $y - \sqrt{3} = \dfrac{-\sqrt{3}}{2\sqrt{3} - 3}\left( {x - 3}\right)  =  - \left( {2 + \sqrt{3}}\right) \left( {x - 3}\right)$
+            
+            即 $y = \left( {-2 - \sqrt{3}}\right) x + \left( {6 + 4\sqrt{3}}\right)$，代入双曲线方程整理可得 $\left( {6 - 4\sqrt{3}}\right) {y}^{2} - 4\sqrt{3}\left( {2 - \sqrt{3}}\right) y + 6 = 0$
+            
+            因为$M$ 的纵坐标为 $\sqrt{3}$，根据韦达定理可知$N$ 的纵坐标为 $\dfrac{6}{\left( {6 - 4\sqrt{3}}\right)  \times  \sqrt{3}} =  - \left( {\sqrt{3} + 2}\right)$ ,
+            
+            故$\bigtriangleup {F}_{1}{MN}$ 的面积为 $S = \dfrac{1}{2}\left| {{F}_{1}{F}_{2}}\right|  \cdot  \left( {\sqrt{3} + \sqrt{3} + 2}\right)  = 2\sqrt{3} \times  \left( {2 + 2\sqrt{3}}\right)  = {12} + 4\sqrt{3}$ .
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 已知双曲线 $\Gamma  : \dfrac{{x}^{2}}{2} - \dfrac{{y}^{2}}{2} = 1$ ,过点 $M\left( {m,0}\right)$ 作不垂直于 $x$ 轴的直线 $l$ 交双曲线 $\Gamma$ 于 $A$ 、 $B$ 两点.
+    \begin{enumerate}
+        \item 求双曲线离心率
+        \item 若点 $A\left( {\sqrt{3},1}\right)$ ,点 $B$ 在双曲线的右支上,且 $B$ 是 ${AM}$ 的中点,求直线 $l$ 的斜率
+        \item 若 $m > 0,{F}_{1},{F}_{2}$ 分别是双曲线 $\Gamma$ 的左右焦点, ${A}^{\prime }$ 是 $A$ 关于 $y$ 轴的对称点,若存在直线 $l$使得 $\vv{{F}_{1}{A}^{\prime }} \cdot  \vv{{F}_{2}B} = 0$ ,求 $m$ 的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $c = 2, a = \sqrt{2}, e = \dfrac{c}{a} = \sqrt{2}$
+            \item $B\left(\dfrac{\sqrt{3}+m}{2}, \dfrac{1}{2}\right)$在双曲线上，$\left(\dfrac{\sqrt{3}+m}{2}\right)^2 - \dfrac{1}{4} = 2$，故$(\sqrt{3}+m)^2 =9$又因为$B$在右支上，所以$\dfrac{\sqrt{3}+m}{2} > 0$，因此$m = 3-\sqrt{3}$，即$B\left(\dfrac{3}{2}, \dfrac{1}{2}\right)$，因此$k_l = \dfrac{1-\dfrac{1}{2}}{\sqrt{3}-\dfrac{3}{2}} = \dfrac{1}{2\sqrt{3}-3} = \dfrac{2\sqrt{3}+3}{3}$
+            \item $F_1(-2, 0)$，$F_2(2, 0)$
+            
+            当$l$为$y = 0$时不满足要求，故设直线$l:  x = ty + m$，设$A(x_1, y_1), B(x_2, y_2)$，因此$A'(-x_1, y_1)$
+
+            $\vv{F_1A'} = (2-x_1, y_1)$，$\vv{F_2A} = (x_2-2, y_2)$，$\vv{F_1A'} \cdot \vv{F_2A} =(2-x_1)(x_2-2)+y_1y_2 = 0$，即$(2-m-ty_1)(ty_2+m-2)+y_1y_2 = 0$，即$(1-t^2)y_1y_2+(2-m)t(y_1+y_2)-(m-2)^2 = 0$
+
+            联立直线与双曲线$\left\{\begin{array}{l}
+                 x = ty+m  \\
+                 x^2-y^2 = 2
+            \end{array}\right.$，消去$x$得$(ty+m)^2-y^2 = 2$，即$(t^2-1)y^2+2tmy+(m^2-2) = 0$，$t \neq \pm 1$，$\Delta = 4t^2m^2 - 4(m^2-2)(t^2-1) = 4m^2+8t^2-8 > 0$
+
+            根据韦达定理有$\left\{\begin{array}{l}
+                 y_1+y_2 = \dfrac{2tm}{1-t^2} \\
+                 y_1y_2 = \dfrac{2-m^2}{1-t^2}
+            \end{array}\right.$，代入$(1-t^2)y_1y_2+(2-m)t(y_1+y_2) -(m-2)^2 = 0$得$(1-t^2)\cdot\dfrac{2-m^2}{1-t^2}+(2-m)t\cdot\dfrac{2tm}{1-t^2}-(m-2)^2 = 0$，即$\dfrac{t^2-m^2+2m-1}{1-t^2} = 0$，故$t^2 = (m-1)^2$
+
+            代入$4m^2+8t^2-8 > 0$可得$m^2+2(m-1)^2-2>0$，解得$m < 0$或$m > \dfrac{4}{3}$，又因为$m > 0, t^2 \neq 1$，所以$m \in \left(\dfrac{4}{3}, 2\right) \cup (2, +\infty)$
+        \end{enumerate}
+        
+    \end{jieda}
+
+    \item 定义 $\Gamma  : {x}^{2} - {y}^{2} = 1,{F}_{1}\text{、}{F}_{2}$ 为 $\Gamma$ 的左右焦点 
+    \begin{enumerate}
+        \item 求点$(2,0)$到 $\Gamma$ 渐近线的距离
+        \item ${P}$ 为 $\Gamma$ 上一点, $\vv{P{F}_{1}} \cdot  \vv{P{F}_{2}} = 1$ ,求 $\bigtriangleup P{F}_{1}{F}_{2}$ 的面积
+        \item 设 $\Omega  : {x}^{2} - {y}^{2} = 1$ ,其中 $\left\{  \begin{array}{l} x < 0 \\  y \leq   - 1 \end{array}\right.$ 或 $\left\{  \begin{array}{l} x > 0 \\  y \geq   - 1 \end{array}\right.$ ,过点 ${F}_{2}$ 的直线 $l$ 交 $\Omega$ 于 $P\text{、}Q$ 两点(分别位于一、四象限),过点 ${F}_{2}$ 直线 $m$ 交$\Omega$ 于 $M\text{、}N$ 两点 (分别位于三、四象限),是否存在正数 $\lambda$ ,对于任意的 $l$ ,都存在唯一的 $m$ ,使 $\left| {MN}\right|  = \lambda \left| {PQ}\right|$ 成立,若存在,求出所有的 $\lambda$ ,若不存在,请说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 渐近线为$y = \pm x$，$(2, 0)$到渐近线的距离为$d = \sqrt{2}$
+            \item $F_1(-\sqrt{2}, 0), F_2(\sqrt{2}, 0)$
+            \begin{dingautolist}{172}
+                \item 设$P(x_0, y_0)$，$\vv{PF_1} \cdot \vv{PF_2} = |\vv{OP}|^2 - 2 = 1$，故$\left\{\begin{array}{l}
+                     x_0^2 + y_0^2 = 3 \\
+                     x_0^2 - y_0^2 = 1
+                \end{array}\right.$，故$y_0 = \pm 1$
+                \item 设$P\left(\dfrac{1}{cos\theta}, tan\theta\right), \theta \in \left[0, 2\pi\right)$且$\theta \neq \dfrac{\pi}{2}, \dfrac{3\pi}{2}$，则$\vv{PF_1} = \left(-\sqrt{2} - \dfrac{1}{cos\theta}, -tan\theta\right)$，$\vv{PF_2} = \left(\sqrt{2} - \dfrac{1}{cos\theta}, -tan\theta\right)$，$1 = \vv{PF_1} \cdot \vv{PF_2} = \dfrac{1}{cos^2\theta} - 2 + tan^2\theta$，即$3cos^2\theta = 1 + sin^2\theta$，即$cos^2\theta = \dfrac{1}{2}$，故$y_P = \pm 1$
+            \end{dingautolist}
+            故$S_{\triangle{PF_1F_2}} = \sqrt{2}$
+            
+            \item 由题可知$x_M < 0 < x_N$，$x_Q < \sqrt{2} < x_P$，$k_l \in (1, +\infty)$，或$k_l$不存在，$k_m \in \left[\dfrac{\sqrt{2}}{4}, 1\right)$
+            
+            $|F_2M| = \sqrt{(x_M-\sqrt{2})^2+y_M^2} = -\sqrt{2}x_M+1$，同理$|F_2N| = \sqrt{2}x_N - 1$，故$|MN| = 2-\sqrt{2}(x_M+x_N)$
+
+            $|F_2P| = \sqrt{2}x_P - 1$，$|F_2Q| = \sqrt{2}x_Q - 1$，故$|PQ| = \sqrt{2}(x_P + x_Q) - 2$
+
+            设直线$PQ: y = k_l(x-\sqrt{2})$，与双曲线联立得$(1-k_l^2)x^2+2\sqrt{2}k_l^2x-(2k_l^2+1)=0$
+
+            $\Delta>0$, $x_P+x_Q=-\dfrac{2\sqrt{2}k_l^2}{1-k_l^2}$，故$|PQ|= \dfrac{-4k_l^2}{1-k_l^2}-2 \in (2,+\infty)$, 当$k_l$不存在时，$|PQ|=2$，故$|PQ|\in [2,+\infty)$
+
+            同理可得$|MN|=2+\dfrac{4k_m^2}{1-k_m^2}$，故$|MN|$随$k_m$增大严增，$|MN|\in \left[\dfrac{18}{7},+\infty\right)$
+
+            因此当$\lambda \geq \dfrac{9}{7}$满足要求.
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 设 $a > 0,b > 0,m\text{、}t \in  \mathbf{R}$ ,双曲线 $\Gamma  : \dfrac{{x}^{2}}{{a}^{2}} - \dfrac{{y}^{2}}{{b}^{2}} = 1$ 的一条渐近线方程是 $y = 2\sqrt{2}x$ ,点 $P$为 $\Gamma$ 右支上的一点,直线 $l$ 的方程是 $x - {my} - t = 0,O$ 是坐标原点.
+    \begin{enumerate}
+        \item 若点 $P$ 的坐标为(3,8),求双曲线 $\Gamma$ 的方程
+        \item 若直线 $l$ 经过点 $O$，且与 $\Gamma$ 交于 $A$ 、 $B$ 两点,直线 ${PA}$ 、 ${PB}$ 的斜率分别为 ${k}_{1}$ 、 ${k}_{2}$，求 ${k}_{1} \cdot  {k}_{2}$ 的值
+        \item 设点 ${F}_{1}$ 是 $\Gamma$ 的左焦点,点 ${A}_{1}$ 、 ${A}_{2}$ 是 $\Gamma$ 的左、右两个顶点,直线 ${A}_{1}P$ 与直线 $x = 1$ 交于点 $M$ ,直线 $l$ 经过点 $P$ 与 $\Gamma$ 的右支交于另外一点 $Q$ ,若 $a = 3$ ,且直线 ${MQ}$ 恒过点 ${A}_{2}$ ,求$\bigtriangleup {F}_{1}{PQ}$ 周长的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\dfrac{x^2}{a^2} - \dfrac{y^2}{8a^2} = 1$，代入$P(3, 8)$，$\dfrac{9}{a^2} - \dfrac{64}{8a^2} = 1$，解得$a = 1$，故$x^2 - \dfrac{y^2}{8} = 1$.
+            \item \ps 背景为第三定义$k_1k_2 = e^2 - 1 = k^2 = 8$
+
+            设$A(x_0, y_0), B(-x_0, -y_0), P(x_p, y_p)$，故$k_1 = \dfrac{y_p - y_0}{x_p - x_0}, k_2 = \dfrac{y_p + y_0}{x_p + x_0}$，$k_1k_2 = \dfrac{y_p^2-y_0^2}{x_p^2-x_0^2}$
+
+            $\dfrac{x^2}{a^2} - \dfrac{y^2}{8a^2} = 1$即$x^2 = a^2 + \dfrac{y^2}{8}$
+
+            $k_1k_2 = \dfrac{y_p^2-y_0^2}{x_p^2-x_0^2} = \dfrac{y_p^2-y_0^2}{\left(a^2+\dfrac{y_p^2}{8}\right) - \left(a^2+\dfrac{y_0^2}{8}\right)} = 8$
+
+            \item \ps 背景为极点极线，$M$在极线（准线$x = 1$）上，则$PQ$过极点($F_2(9, 0)$)，故可以先证明$PQ$过$F_2$，再利用双曲线的第一定义将$\bigtriangleup {F}_{1}{PQ}$ 周长转化到$|PQ|$上.
+
+            根据$a = 3$可知双曲线方程为$\dfrac{x^2}{9} - \dfrac{y^2}{72} = 1$
+
+            设$M(1, n)$，$n \in (-8\sqrt{2}, -4\sqrt{2}) \cup (4\sqrt{2}, 8\sqrt{2})$
+
+            $A_1M: x = \dfrac{4y}{n} - 3$，$A_2M: x = -\dfrac{2y}{n}+3$
+
+            联立$A_1M$和$\dfrac{x^2}{9} - \dfrac{y^2}{72} = 1$可得$\left(\dfrac{4y}{n}-3\right)^2 - \dfrac{y^2}{8} = 9$，一解为$y = 0$，另一解为$P$的纵坐标$y_p = \dfrac{192n}{128-n^2}$，代入直线方程可得$P\left(\dfrac{768}{128-n^2}-3, \dfrac{192n}{128-n^2}\right)$
+
+            联立$A_2M$和$\dfrac{x^2}{9} - \dfrac{y^2}{72} = 1$可得$\left(3-\dfrac{2y}{n}\right)^2 - \dfrac{y^2}{8} = 9$，同理可得$Q\left(\dfrac{-192}{32-n^2}+3, \dfrac{96n}{32-n^2}\right)$
+
+            故$\vv{F_2P} = \left(\dfrac{12n^2-768}{128-n^2}, \dfrac{192n}{128-n^2}\right), \vv{F_2Q} = \left(\dfrac{6n^2-384}{32-n^2}, \dfrac{96n}{32-n^2}\right)$
+
+            故$\vv{F_2P} // \vv{F_2Q}$，故$P,F_2,Q$三点共线
+
+            $C_{\bigtriangleup {F}_{1}{PQ}} = |PQ| + |PQ| + 12$
+
+            设$PQ: x = my + 9$，和$\dfrac{x^2}{9} - \dfrac{y^2}{72} = 1$ 得 $\left( {8{m}^{2} - 1}\right) {y}^{2} + {144my} + 576 = 0$
+            
+            $\left\{  \begin{array}{l} 8{m}^{2} - 1 \neq  0 \\  \Delta  > 0 \end{array}\right.$，且$P,Q$均在右一支可得$m \in \left(-\dfrac{\sqrt{2}}{4}, \dfrac{\sqrt{2}}{4}\right)$
+            
+            由韦达定理可得 $\left\{\begin{array}{l}
+                 {y}_{1} + {y}_{2} =  - \dfrac{144m}{8{m}^{2} - 1}  \\
+                 {y}_{1}{y}_{2} = \dfrac{576}{8{m}^{2} - 1}
+            \end{array}\right.$
+
+            $|PQ| = \sqrt{1+m^2} \sqrt{(y_1+y_2)^2 - 4y_1y_2} = \sqrt{1 + {m}^{2}} \cdot  \dfrac{{48}\sqrt{1 + {m}^{2}}}{\left| 8{m}^{2} - 1\right| } = \dfrac{{48}\left( {1 + {m}^{2}}\right) }{1 - 8{m}^{2}} = \dfrac{-6\left( {1 - 8{m}^{2}}\right)  + {54}}{1 - 8{m}^{2}} = \dfrac{54}{1 - 8{m}^{2}} - 6 \in  \lbrack {48}, + \infty )$
+
+            因此$C_{\bigtriangleup {F}_{1}{PQ}} = |PQ| + |PQ| + 12 \in [108, +\infty)$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}

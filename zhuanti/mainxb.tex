@@ -1,0 +1,73 @@
+%%# -*- coding:utf-8 -*-
+%!TEX program  = xelatex
+
+\documentclass{xbcls}
+
+
+% 答案部分是否显示: 0不显示, 1显示
+\myanswer{1}
+
+\newif\ifjieda
+\jiedatrue % 添加此句将输出答案
+
+\newif\ifvspace
+%\vspacetrue % 添加此句将输出垂直空白
+
+
+\begin{document}
+% 以下两行是为了目录只显示到节, 因为小节是单节课分成一二三四几部分过程.
+\setcounter{tocdepth}{2}      % 控制目录的深度:  0表示只有章,1表示到节,2表示到小节.
+\setcounter{secnumdepth}{3}   % 实际正文章节编号的深度. LaTeX标准文档类用来控制章节编号深度，book和report默认为2，article默认为3.  secnumdepth≥tocdepth
+
+% \tableofcontents            % 生成目录
+% \mainmatter                 % 正文开始重新排页码. 
+
+%\include{bodyxb/bx01ch00}  
+%\include{bodyxb/bx01ch00}           % 测试用
+% \part{必修一}
+%\include{bodyxb/bx01ch01}           % 第一章
+%\include{bodyxb/bx01ch03}           % 第三章
+%\include{bodyxb/bx01ch04}           % 第四章
+%\include{bodyxb/yct1}           % 易错题
+%\include{bodyxb/yct2}           % 易错题
+%\include{bodyxb/qimo1}           % 易错题
+%\include{bodyxb/qimo2}           % 易错题
+%\include{bodyxb/qimo3}           % 易错题
+%\include{bodyxb/qimo4}           % 易错题
+%\include{bodyxb/qimo5}           % 易错题
+%\include{bodyxb/qimo6}           % 易错题
+%\include{bodyxb/1_jihe}           % 易错题
+%\include{bodyxb/2_luoji}           % 易错题
+%\include{bodyxb/3_budengshi}           
+%\include{bodyxb/4_hanshuxingzhi}           % 易错题
+%\include{bodyxb/5_mizhidui}           % 易错题
+%\include{bodyxb/6_hanshuzonghe}           % 易错题
+%\include{bodyxb/7_sanjiao}           % 易错题
+%\include{bodyxb/8_pingmianxiangliang}           % 易错题
+%\include{bodyxb/9_fushu}           % 易错题
+%\include{bodyxb/10_shulie}           % 易错题
+%\include{bodyxb/12_zhixianheyuan}           % 易错题
+%\include{bodyxb/pattern}           % 易错题
+%\include{bodyxb/temp2}           % 易错题易错题
+%\include{bodyxb/temp}           % 易错题
+%\include{bodyxb/xuanxiuke}           % 易错题
+%\include{bodyxb/fencengke}           % 易错题
+%\include{bodyxb/13_tuoyuan}           % 易错题
+%\include{bodyxb/14_shuangquxian}           % 易错题
+%\include{bodyxb/15_paowuxian}           % 易错题
+%\include{bodyxb/16_kongjianzhixianyupingmian}
+\include{bodyxb/17_jiandanjiheti}
+%\include{bodyxb/18_daoshu}           % 易错题
+%\include{bodyxb/19_jishuyuanli}           % 易错题
+%\include{bodyxb/20_gailv}           % 易错题
+%\include{bodyxb/xx}
+
+%\include{bodyxb/yct3}           % 易错题
+%\part{必修二}
+
+% \include{bodyxb/bx02ch05}           % 第五章
+% \include{bodyxb/bx02ch06}           % 第六章
+
+% \backmatter 				% 结束章节自动编号
+% \clearpage
+\end{document}

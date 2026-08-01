@@ -1,0 +1,78 @@
+%# -*- coding:utf-8 -*-
+%!TEX program  = xelatex
+
+\documentclass{xbcls}
+
+\usepackage{makecell}
+
+% 答案部分是否显示: 0不显示, 1显示
+\myanswer{1}
+
+\newif\ifjieda
+\jiedatrue % 添加此句将输出解析
+
+\newif\ifvspace
+%\vspacetrue % 添加此句将输出垂直空白
+
+
+\begin{document}
+% 以下两行是为了目录只显示到节, 因为小节是单节课分成一二三四几部分过程.
+\setcounter{tocdepth}{2}      % 控制目录的深度:  0表示只有章,1表示到节,2表示到小节.
+\setcounter{secnumdepth}{3}   % 实际正文章节编号的深度. LaTeX标准文档类用来控制章节编号深度，book和report默认为2，article默认为3.  secnumdepth≥tocdepth
+
+% \tableofcontents            % 生成目录
+% \mainmatter                 % 正文开始重新排页码. 
+
+%\include{bodyxb/bx01ch00}  
+%\include{bodyxb/bx01ch00}           % 测试用
+% \part{必修一}
+%\include{bodyxb/bx01ch01}           % 第一章
+%\include{bodyxb/bx01ch03}           % 第三章
+%\include{bodyxb/bx01ch04}           % 第四章
+%\include{bodyxb/yct1}           % 易错题
+%\include{bodyxb/yct2}           % 易错题
+%\include{bodyxb/qimo1}           % 易错题
+%\include{bodyxb/qimo2}           % 易错题
+% \include{bodyxb/qimo3}           % 易错题
+% \include{bodyxb/qimo4}           % 易错题
+%\include{bodyxb/qimo5}           % 易错题
+%\include{bodyxb/qimo6}           % 易错题
+% \include{bodyxb/yct3}           % 易错题
+%\part{必修二}
+
+%\include{bodyxb/bx02ch05}           % 第五章
+%\include{bodyxb/bx02ch06}           % 第六章
+% \include{bodyxb/bx02ch07}           % 第六章
+%\include{bodyxb/bx02ch08}           % 第六章
+
+%\include{bodyxb/xx01ch04}  
+%\include{bodyxb/xx01ch01}  
+%\include{bodyxb/xx01ch02}
+
+%\include{bodyxb/yuekao202510}
+%\include{bodyxb/qizhong202511}
+
+%\include{bodyxb/bx03ch10-part1}
+%\include{bodyxb/bx03ch10-part2}
+%\include{bodyxb/bx03ch10-part3}
+
+%\include{bodyxb/xx01ch03}
+\include{bodyxb/bx03ch11}
+
+
+%\include{bodyxb/qizhong202604}
+
+%\include{bodyxb/xx02ch05}  
+
+%\include{bodyxb/xx02ch06}  
+
+%\include{bodyxb/bx03ch12}
+%\include{bodyxb/xx02ch07}
+
+%\include{bodyxb/bx03ch13}
+%\include{bodyxb/xx02ch08}
+
+
+% \backmatter 				% 结束章节自动编号
+\end{document}
+

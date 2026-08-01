@@ -1,0 +1,108 @@
+二次方程根的分布
+    \begin{enumerate}
+        \item 已知$a, b$为常数，函数$f(x) = x^2 - bx + a$，当$a = 2b-1$时，若方程$f(x) = 0$在$(-2, 1)$上有解，求实数$b$的取值范围.
+        \begin{jieda}
+            $f(x) = x^2 - bx + 2b - 1$.
+            \begin{dingautolist}{172}
+                \item 分对称轴位置讨论 \\
+                $f(x)$的对称轴为$x = \dfrac{b}{2}$，$f(-2) = 4b+3$，$f(1) = b$，$\Delta = b^2 - 4(2b-1) = b^2 - 8b + 4$
+                \begin{enumerate}[1.]
+                    \item 若$\dfrac{b}{2} \leq -2$，则$f(x)$在$(-2, 1)$单调增，故“方程$f(x) = 0$在$(-2, 1)$上有解”即$f(-2) < 0, f(1) > 0$，此种情况解集为空集.
+                    \item 若$\dfrac{b}{2} \geq 1$，则$f(x)$在$(-2, 1)$单调减，故“方程$f(x) = 0$在$(-2, 1)$上有解”即$f(-2) > 0, f(1) < 0$，此种情况解集为空集.
+                    \item 若$\dfrac{b}{2} \in (-2, 1)$，则$f(x)$在$(-2, 1)$先减后增，故“方程$f(x) = 0$在$(-2, 1)$上有解”即$\Delta \geq 0$且有$f(-2) > 0$或$f(1) > 0$，此种情况解集为$(-\dfrac{3}{4}, 4-2\sqrt{3}]$
+                \end{enumerate}
+                综上，$b \in (-\dfrac{3}{4}, 4-2\sqrt{3}]$
+                \item 参变分离 \\
+                “方程$f(x) = 0$在$(-2, 1)$上有解”即“$b = \dfrac{1-x^2}{2-x}$在$(-2, 1)$上有解”，即“$b = \dfrac{3}{x-2} + (x-2) + 4$在$(-2, 1)$上有解” \\
+                因此$b$的取值范围即$y = \dfrac{3}{x-2} + (x-2) + 4$在$(-2, 1)$上的值域. \\
+                $y = \dfrac{3}{x-2} + (x-2) + 4$在$(-2, \sqrt{3}-2)$单调递增，在$[2-\sqrt{3}, 1)$单调递减，值域为$(-\dfrac{3}{4}, 4-2\sqrt{3}]$，故$b \in (-\dfrac{3}{4}, 4-2\sqrt{3}]$
+            \end{dingautolist}
+            \ps 有解问题可以采用分对称轴位置讨论或参变分离解决，\textbf{小题推荐参变分离，大题可以分类讨论写步骤，参变分离检验}。分对称轴位置讨论时，对于对称轴在目标区间内的情况要注意其充要条件。参变分离会把方程有解问题转化成函数求值域问题。
+        \end{jieda}
+        \item 已知函数$f(x) = x^2 + 2mx + 2m + 3$至少有一个零点在区间$(0, 2)$内，求实数$m$的取值范围.    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 分对称轴位置讨论 \\
+            $f(x)$对称轴为$x = -m$，$f(0) = 2m+3$，$f(2) = 7+6m$，$\Delta = 4m^2 - 8m - 12$
+            \begin{enumerate}[1.]
+                \item 若$-m \leq 0$，则$f(x)$在$(0, 2)$单调增，故“$f(x)$在$(0, 2)$上有零点”即$f(0) < 0, f(2) > 0$，此种情况无解.
+                \item $-m \geq 2$，则$f(x)$在$(0, 2)$单调减，故“$f(x)$在$(0, 2)$上有零点”即$f(0) > 0, f(2) < 0$，此种情况无解.
+                \item $-m \in (0, 2)$，则$f(x)$在$(0, 2)$先减后增，“$f(x)$在$(0, 2)$上有零点”即$\Delta \geq 0$，且有$f(0) > 0$或$f(2) > 0$，此种情况解得$m \in \left(-\dfrac{3}{2}, -1\right]$
+            \end{enumerate}
+            综上，$m \in \left(-\dfrac{3}{2}, -1\right]$
+            \item 参变分离 \\
+            $f(x)$至少有一个零点在区间$(0, 2)$内，即$f(x) = 0$在$(0, 2)$内有根，即方程$m = \dfrac{-3-x^2}{2x+2}$在$(0, 2)$内有根，即方程$m = \dfrac{1}{2} \cdot \dfrac{-3-(t-1)^2}{t}$在$t \in (1, 3)$内有根，即方程$m = \dfrac{1}{2} \cdot \left[-(t+\dfrac{4}{t})+2\right]$在$t \in (1, 3)$内有根.\\
+            因此$m$的取值范围即$y = \dfrac{1}{2} \cdot [-(t+\dfrac{4}{t})+2]$在$t \in (1, 3)$内的值域. \\
+            $y = \dfrac{1}{2} \cdot \left[-(t+\dfrac{4}{t})+2\right]$在$(1, 2)$单调增，在$(2, 3)$单调减，因此值域为$\left(-\dfrac{3}{2}, -1\right]$，故$m \in \left(-\dfrac{3}{2}, -1\right]$
+        \end{dingautolist}
+    \end{jieda}
+        \item 已知函数$f(x) = x^2 + 2mx + 2m + 3$恰有一个零点在区间$(0, 2)$内，求实数$m$的取值范围.
+        \begin{jieda}
+            \begin{dingautolist}{172}
+                \item 通解法 \\
+                $f(x)$对称轴为$x = -m$，$f(0) = 2m+3$，$f(2) = 7+6m$，$\Delta = 4m^2 - 8m - 12$
+                \begin{enumerate}[1.]
+                    \item 符合函数零点存在定理，此时有$f(0) \cdot f(2) < 0$，即$m \in (-\dfrac{3}{2}, -\dfrac{7}{6})$
+                    \item 二次函数与$x$轴相切在区间内，此时有$\Delta = 0$，且$-m \in (0, 2)$即$m = -1$
+                    \item 左端点函数值为0，此时有$m = -\dfrac{3}{2}$，此时$f(2) < 0$，$f(x)$在$(0, 2)$内先减后增，故不存在零点.
+                    \item 右端点函数值为0，此时有$m = -\dfrac{7}{6}$，此时$f(0) > 0$，$f(x)$在$(0, 2)$内先减后增，存在唯一零点.
+                \end{enumerate}
+                综上，$m \in (-\dfrac{3}{2}, -\dfrac{7}{6}] \cup \{-1\}$
+                \item 参变分离 \\
+                $f(x)$有一个零点在区间$(0, 2)$内，即方程$m = \dfrac{-3-x^2}{2x+2}$在$(0, 2)$内有一根，即方程$m = \dfrac{1}{2} \cdot \dfrac{-3-(t-1)^2}{t}$在$t \in (1, 3)$内有一根，即方程$m = \dfrac{1}{2} \cdot [-(t+\dfrac{4}{t})+2]$在$t \in (1, 3)$内有一根，即函数$y = m$与函数$y = \dfrac{1}{2} \cdot [-(t+\dfrac{4}{t})+2]$在$t \in (1, 3)$内只有一个交点.\\
+                $y = \dfrac{1}{2} \cdot [-(t+\dfrac{4}{t})+2]$在$(1, 2)$单调增，在$(2, 3)$单调减，因此当$m \in (-\dfrac{3}{2}, -\dfrac{7}{6}] \cup \{-1\}$时满足要求.
+            \end{dingautolist}
+            \ps 二次函数在区间内只有一个零点的通解法对应着\textbf{四种情况}：\begin{enumerate*}[1.]
+                \item 符合函数零点存在定理
+                \item $\Delta = 0$且对称轴在区间内
+                \item 左端点为函数的一个零点（应根据区间开闭情况单独检验）
+                \item 右端点为函数的一个零点（应根据区间开闭情况单独检验）
+            \end{enumerate*} \\
+            参变分离会将问题转化为动直线和定曲线只有唯一交点，要\textbf{注意相切的情况和端点情况}。\\
+            这种情况参变分离和通解法都没有明显优势.
+        \end{jieda}
+        \item 已知函数$f(x) = x^2 + 2mx + 2m + 3$恰有一个零点在区间$(0, +\infty)$内，求实数$m$的取值范围.
+        \begin{jieda}
+            \begin{dingautolist}{172}
+                \item 通解法 \\
+                $f(x)$对称轴为$x = -m$，$f(0) = 2m+3$，$\Delta = 4m^2 - 8m - 12$
+                \begin{enumerate}[1.]
+                    \item “符合函数零点存在定理”，此时有$f(0) < 0$，即$m \in (-\infty, -\dfrac{3}{2})$
+                    \item 二次函数与$x$轴相切在区间内，此时有$\Delta = 0$，且$-m \in (0, +\infty)$即$m = -1$
+                    \item 左端点函数值为0，此时有$m = -\dfrac{3}{2}$，$f(x)$在$(0, +\infty)$内先减后增，存在唯一零点.
+                \end{enumerate}
+                综上，$m \in (-\infty, -\dfrac{3}{2}] \cup \{-1\}$
+                \item 参变分离 \\
+                $f(x)$有一个零点在区间$(0, +\infty)$内，即方程$m = \dfrac{-3-x^2}{2x+2}$在$(0, +\infty)$内有一根，即方程$m = \dfrac{1}{2} \cdot \dfrac{-3-(t-1)^2}{t}$在$t \in (1, +\infty)$内有一根，即方程$m = \dfrac{1}{2} \cdot [-(t+\dfrac{4}{t})+2]$在$t \in (1, +\infty)$内有一根，即函数$y = m$与函数$y = \dfrac{1}{2} \cdot [-(t+\dfrac{4}{t})+2]$在$t \in (1, +\infty)$内只有一个交点.\\
+                $y = \dfrac{1}{2} \cdot [-(t+\dfrac{4}{t})+2]$在$(1, 2)$单调增，在$(2, +\infty)$单调减，因此当$m \in (-\infty, -\dfrac{3}{2}] \cup \{-1\}$时满足要求.
+            \end{dingautolist}
+            \ps 区间一侧为无穷的情况对于通解法可以根据开口方向将问题简化.
+        \end{jieda}
+        \item 已知$g(x) = -x^2+2x$，若关于$x$的方程$g(x) = -mx-m$在$(0, 2)$上恰有两个不等实根，求$m$的取值范围.
+        \begin{jieda}
+            \begin{dingautolist}{172}
+                \item 通解法 \\
+                “方程$g(x) = -mx-m$在$(0, 2)$上恰有两个不等实根”即“方程$-x^2+(2+m)x+m = 0$在$(0, 2)$上恰有两个不等实根”，设$h(x) = -x^2+(2+m)x+m$，对称轴为$x = \dfrac{2+m}{2}$，$\Delta = (2+m)^2 + 4m$，$h(0) = m$，$h(2) = 3m$ \\
+                $h(x) = 0$在$(0, 2)$上恰有两个不等实根的充要条件是$\left \{\begin{array}{l}
+                    \Delta > 0  \\
+                    \dfrac{2+m}{2} \in (0, 2) \\
+                    h(0) < 0 \\
+                    h(2) < 0
+                \end{array} \right.$，解得$m \in (2\sqrt{3}-4, 0)$
+                \item 参变分离 \\
+                “方程$g(x) = -mx-m$在$(0, 2)$上恰有两个不等实根”即“方程$m = \dfrac{x^2-2x}{x+1}$在$(0, 2)$上恰有两个不等实根”，即“函数$y = m$与函数$y = t + \dfrac{3}{t} - 4$在$(1, 3)$上恰有两个交点” \\
+                $y = t + \dfrac{3}{t} - 4$在$(1, \sqrt{3})$单调减，在$[\sqrt{3}, 3)$上单调增，因此当$m \in (2\sqrt{3}-4, 0)$时满足要求.
+            \end{dingautolist}
+        \end{jieda}
+        \item 已知方程$x^2+2mx+m+2 = 0$有两个不相等的正实根，则实数$m$的取值范围是\blkda{$(-2, -1)$}
+        \begin{jieda}
+            设$f(x) = x^2+2mx+m+2$，则$f(x) = 0$有两个不相等的正实根即$\left \{ \begin{array}{l}
+                 \Delta > 0 \\ 
+                 f(0) > 0  \\
+                 -m > 0
+            \end{array}\right .$，即$\left \{ \begin{array}{l}
+                 m \in (-\infty, -1) \cup (2, +\infty) \\ 
+                 m > -2  \\
+                 m < 0
+            \end{array}\right .$，因此$m \in (-2, -1)$
+        \end{jieda}
+    \end{enumerate}

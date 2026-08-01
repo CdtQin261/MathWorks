@@ -1,0 +1,1336 @@
+\chapter*{立体几何-空间直线与平面}
+\section*{平面及其基本性质}
+\subsection*{平面}
+\begin{enumerate}
+    \item 平面也是从实际生活中抽象出来的一个数学概念
+    \begin{example}
+        \begin{dingautolist}{172}
+            \item 光滑的桌面
+            \item 平整的墙面
+        \end{dingautolist}
+    \end{example}
+    数学上的平面是不加定义的原始概念，\textbf{平面无厚薄，无边界，在空间可无限延展}. 
+    \item 我们习惯上用一个平行四边形来表示平面. 当平面水平放置时,通常把这个平行四边形的锐角画成 ${45}^{ \circ  }$ ,且横边长等于邻边长的 2 倍,如图所示. 
+    
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_0_172_1604_682_264_0.jpg}
+    \end{center}
+    
+    如图所示，如果一个平面被另一个平面遮住时,应把被遮挡的部分画成虚线或者不画,这样看起来立体感强一些. 
+    
+    \begin{center}
+    \includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_0_930_1612_573_248_0.jpg}
+    \end{center}
+    \item 通常用一个小写的希腊字母来表示，如平面 $\alpha$ 、平面 $\beta$ 等；也可以用表示平面的平行四边形的四个顶点字母或一条对角线端点的字母来表示,如平面 ${ABCD}$ 、平面 ${AC}$ 等
+    \item 位置关系
+
+    \begin{center}
+    \adjustbox{width=\textwidth}{
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \phantom{X} & 位置关系 & 符号表示 & 图形表示 \\
+    \cline{1-4}
+    \multirow{2}{*}{点与直线} & 点 $A$ 在直线 $l$ 上,也称直线 $l$ 经过点 $A$ & $A \in  l$ &  \includegraphics[width=0.15\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_1_1262_702_165_57_0.jpg}  \\
+    \cline{2-4}
+     & 点 $B$ 不在直线 $l$ 上,也称直线 $l$ 不经过点 $B$ & $B \notin  l$ &  \includegraphics[width=0.15\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_1_1259_809_171_81_0.jpg}  \\
+    \cline{1-4}
+    \multirow{2}{*}{点与平面} & 点 $A$ 在平面 $\alpha$ 上,也称平面 $\alpha$ 经过点 $A$ & $A \in  \alpha$ &  \includegraphics[width=0.15\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_1_1214_927_253_107_0.jpg}  \\
+    \cline{2-4}
+     & 点 $B$ 不在平面 $\alpha$ 上,也称平面 $\alpha$ 不经过点 $B$ & $B \notin  \alpha$ &  \includegraphics[width=0.15\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_1_1212_1076_268_129_0.jpg}  \\
+    \cline{1-4}
+    \hline
+    \end{tabular}
+    }
+    \end{center}
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 下列说法中正确的是\blkda{\ding{173}\ding{175}\ding{176}}
+    \begin{dingautolist}{172}
+        \item 一个平面长 4 米, 宽 2 米
+        \item 平面是无限延展的
+        \item 一个平面的厚度是 0.001 毫米
+        \item 某个平行四边形的面积是 $4{{{cm}}}^{2}$ 
+        \item 一个平面可以把空间分成两部分
+    \end{dingautolist}
+
+    \item 用符号表示下列语句.
+    \begin{enumerate}
+        \item 点 $A$ 、 $B$ 在平面 $\alpha$ 上,直线 $a$ 与平面 $\alpha$ 交于点 $C$ ,点 $C$ 不在直线 ${AB}$ 上
+        \item 直线 $a$ 和直线 $b$ 相交于平面 $\alpha$ 上的一点 $M$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $A, B \in \alpha$，$a \cap \alpha = C$，$C \notin AB$
+            \item $a \cap b = M$，$M \in C$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{点、直线、平面的基本事实}
+
+
+\begin{enumerate}
+    \item \textbf{公理 1：如果一条直线上有两个点在一个平面上, 那么这条直线上所有的点都在这个平面上}
+
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_2_1145_119_356_125_0.jpg}
+    \end{center}
+    
+    公理 1 可用集合语言描述为：若点 $A \in  \alpha$ ,点 $B \in  \alpha$ ,则直线 ${AB} \subset  \alpha$.
+
+    由公理 1 可知, 如果一条直线不在平面上, 那么这条直线与平面至多只有一个公共点.
+    
+    \begin{center}
+    \includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_2_288_556_570_206_0.jpg}
+    
+    \end{center}
+    \begin{dingautolist}{172}
+        \item 如果直线 $l$ 与平面 $\alpha$ 只有一个公共点 $A$ ,就称直线 $l$ 与平面 $\alpha$ 相交于点 $A$ ,或称 $A$ 是直线 $l$ 与平面 $\alpha$ 的交点,记作 $l \cap  \alpha  = A$
+        \item 如果直线 $l$ 与平面 $\alpha$ 没有公共点,就称直线 $l$ 与平面 $\alpha$ 平行,记作 $l//\alpha$ 或 $l \cap  \alpha  = \varnothing$
+    \end{dingautolist}
+    \item \textbf{公理 2: 不在同一直线上的三点确定一个平面}
+
+    “确定一个平面”指的是经过不在同一直线上三点有且仅有一个平面, 即存在一个平面经过这三个点, 而且这样的平面是唯一的
+    
+    \begin{center}
+    \includegraphics[width=1.0\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_3_234_1409_1175_159_0.jpg}
+    \end{center}
+    
+    根据公理 2 , 我们可以得到下面的推论.
+    \begin{enumerate}
+        \item 推论 1:一条直线和这条直线外的一点确定一个平面.
+        \item 推论 2: 两条相交直线确定一个平面.
+        \item 推论 3: 两条平行直线确定一个平面.
+    \end{enumerate}
+    证明：
+    \begin{enumerate}
+        \item 设 $A$ 是直线 $l$ 外一点,在直线 $l$ 上任取两点 $B$ 和 $C$，则 $A\text{ 、 }B\text{ 、 }C$ 是不在同一直线上的三点. 由公理 2 可知,经过此三点的平面有且仅有一个,记为平面 $\alpha$. 根据公理1,有 $l \subset  \alpha$，从而平面 $\alpha$ 是由直线 $l$ 和点 $A$ 确定的, 即经过直线和直线外一点的平面有且仅有一个.
+        \item 设两直线$l,m$相交于点$A$，取$l$上异于$A$的一点$B$和$m$上异于$A$的一点$C$，则 $A\text{ 、 }B\text{ 、 }C$ 是不在同一直线上的三点. 由公理 2 可知,经过此三点的平面有且仅有一个,记为平面 $\alpha$. 根据公理1,有 $l \subset  \alpha$，$m \subset  \alpha$，从而平面 $\alpha$ 是由两相交直线 $l$ 和 $m$ 确定的, 即经过两条相交直线的平面有且仅有一个.
+        \item 设直线 $a // b$ ,由平行线的定义, $a,b$ 在同一平面内. 这就是说,过 $a,b$ 有平面 $\alpha$，设 $A$ 为直线 $a$ 上任意一点,则点 $A$ 不在直线 $b$ 上,点 $A$ 和直线 $b$在过 $a,b$ 的平面内. 由推论 1,过点 $A$ 和直线 $b$ 的平面只有一个. 所以过平行直线 $a,b$ 的平面
+只有一个.
+    \end{enumerate}
+    
+
+    公理 2 及其三条推论,可以用来构造平面,或者用来判断点与直线是不是在同一个平面上,如果可以判断某个空间图形在同一个平面上,那么它实际上就是一个平面图形,从而应用平面几何的知识和方法来解决相应的问题.
+    \item \textbf{公理 3: 如果两个不同的平面有一个公共点, 那么它们有且只有一条过该点的公共直线}
+    
+    \textbf{公理 3 可以具体表述为:若两个平面有一个公共点,则它们有唯一的公共直线,且这个公共点在这条直线上. }
+    
+    用符号语言可以描述为: 若 $A \in  \alpha$ 且 $A \in  \beta$ ,则 $A \in  l$ , $\alpha  \cap  \beta  = l$
+    \twotu{\includegraphics[width=0.5\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_5_1256_121_250_241_0.jpg}}{\includegraphics[width=0.5\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_5_1208_416_298_154_0.jpg}}
+
+    根据公理 3 ,我们可以看出,两个平面的位置关系只有两种,
+    \begin{dingautolist}{172}
+        \item 相交：$\alpha  \cap  \beta  = l$
+        \item 平行：$\alpha // \beta$ 或 $\alpha  \cap  \beta  = \varnothing$
+    \end{dingautolist}
+
+        
+    公理3的理解：
+    \begin{dingautolist}{172}
+        \item 如果两个相交平面有两个公共点，那么过这两点的直线就是他们的交线
+        \item 如果两个相交平面有三个公共点，那么这三点共线
+        \item 如果两个平面相交，那么一个平面内的直线和另一个平面的交点必在这两个平面的交线上
+    \end{dingautolist}
+\end{enumerate}
+三条公理的作用：
+\begin{center}
+    \begin{tabular}{c|c}
+        \hline
+        公理 & 作用\\
+        \hline
+        公理1 & \ding{172} 证明点在平面上；\ding{173}证明直线在平面上.\\
+        公理2及其推论 & \ding{172} 作辅助平面 \ding{173} 证明平面的唯一性,即证明两个平面重合\\
+        公理3 & \ding{172}确定两个平面的交线 \ding{173} 证明三点共线或证明点在直线上\\
+        \hline
+    \end{tabular}
+\end{center}
+例题：
+\begin{enumerate}
+    \item 已知三角形 ${ABC}$ 的三个顶点 $A$ 、 $B$ 、 $C$ 都在平面 $\alpha$ 上,求证: 该三角形 ${ABC}$ 的重心 $G$ 也在平面 $\alpha$ 上.
+    \begin{jieda}
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_2_1146_1114_360_121_0.jpg}
+        \end{center}
+        证明 
+        
+        记线段 ${AB}$ 的中点为 $M$ . 
+        
+        因为 $A \in  \alpha ,B \in$  $\alpha$ ,由公理 1 可知,直线 ${AB} \subset  \alpha$ ,而 $M \in  {AB}$ ,从而 $M \in  \alpha$ .
+        
+        又因为 $C \in  \alpha$ ,仍由公理 1 知, ${CM} \subset  \alpha$ . 由于重心 $G$ 是线段 ${CM}$ 的一个三等分点,因此 $G \in  \alpha$ .
+    \end{jieda}
+    \item 已知三条直线两两相交, 且不过同一点, 证明这三条直线共面
+    \begin{jieda}
+        证明：
+        
+        设直线$a,b,c$两两相交，$a \cap b = A, b \cap c = B, c \cap a = C$，因为$a, b, c$不过同一点, 所以$A,B,C$不重合，由公理2可知$A,B,C$三点确定一个平面，设为$\alpha$，由公理1可知$a,b,c \subset \alpha$，因此三条直线共面.
+    \end{jieda}
+    \item 设直线$l_1 // l_2$，$l \cap l_1 = A, l \cap l_2 = B$，求证$l, l_1, l_2$共面.
+    \begin{jieda}
+        证明：
+        \begin{dingautolist}{172}
+            \item 根据公理2的推论可知$l_1, l_2$确定一个平面$\alpha$，则$A, B \in \alpha$，因此$l \in \alpha$
+            \item 根据公理2的推论可知$l_1, l_2$确定一个平面$\alpha$，$l, l_2$确定一个平面$\beta$，在$l_2$上取异于$B$的点$C, D$，则有$A,C,D \in \alpha$，$A,C,D \in \beta$，根据公理2可知$\alpha = \beta$.
+        \end{dingautolist}
+    \end{jieda}
+    \item 如图所示,在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,点 $O$ 为正方形 ${ABCD}$ 的中心, $H$ 为直线 ${B}_{1}D$ 与平面 ${AC}{D}_{1}$ 的交点. 求证: ${D}_{1}\text{ 、 }H\text{ 、 }O$ 三点共线.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_5_406_1683_258_275_0.jpg}
+    \end{center}
+    \begin{jieda}
+        连接 ${BD}$ 、 ${B}_{1}{D}_{1}$
+
+        因为${B}_{1}D \cap \text{平面} {AC}{D}_{1} = H$，所以$H \in $平面$BB_1D_1D$且$H \in$平面 ${AC}{D}_{1}$
+        
+        因为点 $O$ 为正方形 ${ABCD}$ 的中心，所以$O \in BD, O \in AC$，因此$O \in $平面$BB_1D_1D$且$O \in$平面 ${AC}{D}_{1}$
+
+        易知所以$D_1 \in$平面$BB_1D_1D$且$D_1 \in$平面 ${AC}{D}_{1}$
+
+        根据公理3可知三点共线
+    \end{jieda}
+    \item 已知三个平面 $\alpha \text{ 、 }\beta \text{ 、 }\gamma$ 两两相交,有三条交线 $a\text{ 、 }b\text{ 、 }c$ ,且 $\alpha  \cap  \beta  = a,\alpha  \cap  \gamma  = b,\beta  \cap$  $\gamma  = c$ ,若直线 $a \cap  b = O$ ,求证: $O \in  c$.
+    \begin{jieda}
+        $a \cap  b = O \Longrightarrow O \in a, O \in b \Longrightarrow O \in \beta, O \in \gamma \Longrightarrow O \in c$
+    \end{jieda}
+    \item 四条直线过同一点,过每两条直线作一个平面,则可以作\blkda[2]{1 或 4 或 6}个不同的平面
+    \begin{jieda}
+        记直线为 $a,b,c,d$ ,根据共面直线条数,分以下 3 种情况讨论: 
+        \begin{dingautolist}{172}
+            \item 四条直线共面,只能作 1 个平面
+            \item 三条直线共面,不失一般性,假设 $a,b,c \subset  {\alpha }$ 但 $d \not \subset {\alpha }$ . 由于直线 $a,b,c$ 互不重合,根据公理 3,直线 $d$ 与直线 $a$ 或 $b$ 或 $c$ 确定的平面也互不重合,且异于平面 $\alpha$ (例:正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,直线 ${AB}$ 、直线 ${AC}$ 、直线 ${AD}$ 、直线 $\left. AA^{\prime }\right)$ ,此时可作 4 个不同平面
+            \item 任意三条直线都不共面,根据公理 2 的推论 2,此时最多能作 ${C}_{4}^{2} = 6$ 个平面 (例: 四棱锥的四条棱), 且这 6 个面两两不重合 (否则至少有三条直线共面), 因此可作 6 个不同平面.
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知一条直线与三条平行直线都相交, 求证: 这四条直线在同一平面上.
+    \begin{jieda}
+        证明：设平行直线为 ${l}_{1}//{l}_{2}//{l}_{3}$ ,且直线 ${l}_{i} \cap  l = {P}_{i}\left( {i = 1,2,3}\right)$ . 不妨先取 ${l}_{1},{l}_{2},l$ ,根据公理 2 的推论 $3,{l}_{1},{l}_{2}$ 确定一个平面 (记为 $\alpha$ ). 再根据公理 $1,l \subset  \alpha$ . 同理, ${l}_{2},{l}_{3},l$ 也共面,记为 ${\alpha }^{\prime }$ . 若 $\alpha  \neq  {\alpha }^{\prime }$ ,则有 ${l}_{2} \subset  \alpha ,{l}_{2} \subset  {\alpha }^{\prime },l \subset  \alpha ,l \subset  {\alpha }^{\prime }$ ,即 $\alpha$ 与 ${\alpha }^{\prime }$ 的交线为 ${l}_{2}$ 或 $l$ ,而 ${l}_{2} \neq  l$ ,这显然与公理 3 矛盾,因此 $\alpha  = {\alpha }^{\prime }$ .
+    \end{jieda}
+\end{enumerate}
+\subsection*{斜二测画法}
+\begin{example}
+    \begin{dingautolist}{172}
+        \item 用斜二测画法画一个水平放置的正六边形的直观图.
+        \begin{center}
+        \includegraphics[width=0.9\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_7_278_1122_1096_335_0.jpg}
+        \end{center}
+        \begin{enumerate}
+            \item 在已知正六边形 ${ABCDEF}$ 中,取 ${AD}$ 所在直线为 $x$ 轴,取 ${AD}$ 的垂直平分线 ${MN}$ 为 $y$ 轴,两轴相交于点 $O$ (坐标原点). 
+            
+            \item 在直观图画相应的 ${x}^{\prime }$ 轴和 ${y}^{\prime }$ 轴,两轴相交于点 ${O}^{\prime }$ ,且使 $\angle {x}^{\prime }{O}^{\prime }{y}^{\prime } = {45}^{ \circ  }$ .
+
+            \item 在直观图中,以 ${O}^{\prime }$ 为中点,在 ${x}^{\prime }$ 轴上取线段 ${A}^{\prime }{D}^{\prime } = {AD}$ ,在 ${y}^{\prime }$ 轴上取线段 ${M}^{\prime }{N}^{\prime }$ ,使 ${M}^{\prime }{O}^{\prime } = {N}^{\prime }{O}^{\prime } = \dfrac{1}{2}{MO}$ . 以 ${M}^{\prime }$ 为中点画线段 ${E}^{\prime }{F}^{\prime }$ 平行于 ${x}^{\prime }$ 轴,并使 ${E}^{\prime }{F}^{\prime } = {EF}$ ；类似地,再以 ${N}^{\prime }$ 为中点画线段 ${B}^{\prime }{C}^{\prime }$ 平行于 ${x}^{\prime }$ 轴,并使 ${B}^{\prime }{C}^{\prime } = {BC}$ .
+            \item 顺次连接 ${A}^{\prime }$ 、 ${B}^{\prime }$ 、 ${C}^{\prime }$ 、 ${D}^{\prime }$ 、 ${E}^{\prime }$ 、 ${F}^{\prime }$ 、 ${A}^{\prime }$ ,所得到的六边形 ${A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }{E}^{\prime }{F}^{\prime }$ 就是水平放置的正六边形 ${ABCDEF}$ 的直观图. 画好图后,要擦去辅助线
+        \end{enumerate}
+        
+        \item 用斜二测画法画长、宽、高分别为 4、3、2 的长方体的直观图
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_7_327_1792_993_234_0.jpg}
+        \end{center}
+        \begin{dingautolist}{172}
+            \item 画底面:画平行四边形 ${OABC}$ ,使得 ${OA} = 4,{OC} = \dfrac{3}{2},\angle {AOC} = {45}^{ \circ  }$.
+            \item 画侧棱:过 $O\text{ 、 }A\text{ 、 }B\text{ 、 }C$ 各点分别作 ${OA}$ 和 ${BC}$ 的垂线,在这些垂线上分别截取长为 2 的线段 $O{O}^{\prime }$ 、 $A{A}^{\prime }$ 、 $B{B}^{\prime }$ 、 $C{C}^{\prime }$.
+            \item 成图:顺次连接 ${O}^{\prime }$ 、 ${A}^{\prime }$ 、 ${B}^{\prime }$ 、 ${C}^{\prime }$ ,并擦去辅助线,将被遮挡的部分改为虚线,可得长方体的直观图.
+        \end{dingautolist}
+    \end{dingautolist}
+\end{example}
+\section*{直线与直线的位置关系}
+\subsection*{平行直线}
+\begin{enumerate}
+    \item 在同一平面内，永不相交（也永不重合）的两条直线叫做平行线
+    \item 公理 4 平行于同一条直线的两条直线相互平行.
+
+    符号语言可以表示为: 若 $a//b$ ,且 $a//c$ ,则 $b//c$ . 
+    
+    公理 4 表明,\textbf{直线的平行关系在空间同样具有传递性}.
+    
+    \item 等角定理: 如果一个角的两边和另一个角的两边分别平行并且方向相同, 那么这两个角相等.
+
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 已知空间不共面四点 $A\text{ 、 }B\text{ 、 }C\text{ 、 }D$ 首尾相连所构成的四边形叫做空间四边形,若 $E\text{ 、 }F\text{ 、 }G\text{ 、 }H$ 分别是空间四边形 ${ABCD}$ 的边 ${AB}\text{ 、 }{BC}\text{ 、 }{CD}\text{ 、 }{DA}$ 的中点,求证: 四边形 ${EFGH}$ 是平行四边形.
+
+    \begin{jieda}
+        \begin{center}
+            \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_10_1171_884_321_281_0.jpg}
+        \end{center}
+        
+        证明 如图所示，连接 ${AC}$ 、 ${BD}$ .
+        
+        在 $\bigtriangleup {ABD}$ 中,因为 $E\text{ 、 }H$ 分别为 ${AB}\text{ 、 }{AD}$ 的中点,所以 ${EH}//{BD}$ .
+        
+        同理在 $\bigtriangleup {CBD}$ 中, ${FG}//{BD}$ .
+        
+        根据公理 4,得 ${EH}//{FG}$ ; 同理 ${EF}//{GH}$ .
+        
+        因此,四边形 ${EFGH}$ 为平行四边形.
+    \end{jieda}
+
+    \item 如图, $A$ 是 $\bigtriangleup {BCD}$ 所在平面外一点, $M\text{ 、 }N$ 分别是 $\bigtriangleup {ABC}$ 和 $\bigtriangleup {ACD}$ 的重心.
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_12_1108_427_290_286_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 求证: ${MN}//{BD}$
+        \item 若 ${BD} = 6$ ,求 ${MN}$ 的长
+    \end{enumerate}
+    \begin{jieda}
+        取$AC$中点$E$，连接$BE, DE$，则$\dfrac{ME}{BE} = \dfrac{NE}{DE} = \dfrac{1}{3}$，故$MN // BD$且$MN = \dfrac{1}{3}BD = 2$
+    \end{jieda}
+    
+    \item 如图，已知 $\angle {BAC}$ 与 $\angle {B}^{\prime }{A}^{\prime }{C}^{\prime }$ 的边 ${AB}//{A}^{\prime }{B}^{\prime }$ , ${AC}//{A}^{\prime }{C}^{\prime }$ ,并且方向相同,即 $\overrightarrow{AB}$ 与 $\overrightarrow{{A}^{\prime }{B}^{\prime }},\overrightarrow{AC}$ 与 $\overrightarrow{{A}^{\prime }{C}^{\prime }}$ 方向相同. 求证: $\angle {BAC} = \angle {B}^{\prime }{A}^{\prime }{C}^{\prime }$ .
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_10_1140_1450_349_258_0.jpg}
+    \end{center}
+    \begin{jieda}
+        证明 因为 ${AB}//{A}^{\prime }{B}^{\prime },{AC}//{A}^{\prime }{C}^{\prime }$ ,由公理 2 推论 3 可知, ${AB}\text{ 、 }{A}^{\prime }{B}^{\prime }$ 确定一个平面,记为 $\alpha ;{AC}\text{ 、 }{A}^{\prime }{C}^{\prime }$ 也确定一个平面,记为 $\beta$ . 
+        
+        在直线 ${AB}\text{ 、 }{AC}$ 上分别取点 $D\text{ 、 }E$ ,在直线 ${A}^{\prime }{B}^{\prime }\text{ 、 }{A}^{\prime }{C}^{\prime }$ 上分别取点 ${D}^{\prime }$ 、 ${E}^{\prime }$ ,使得 ${AD} = {A}^{\prime }{D}^{\prime },{AE} = {A}^{\prime }{E}^{\prime }$ . 
+        
+        因为在平面 $\alpha$ 上, ${AD}//{A}^{\prime }{D}^{\prime },{AD} = {A}^{\prime }{D}^{\prime }$ ,所以四边形 ${A}^{\prime }{D}^{\prime }{DA}$ 是一个平行四边形,从而 $A{A}^{\prime }//D{D}^{\prime }$ ,且 $A{A}^{\prime } = D{D}^{\prime }$ . 同理, $A{A}^{\prime }//E{E}^{\prime }$ ,且 $A{A}^{\prime } =$  $E{E}^{\prime }$ .
+        
+        这样就有 $D{D}^{\prime }//E{E}^{\prime }$ ,且 $D{D}^{\prime } = E{E}^{\prime }$ ,即四边形 ${D}^{\prime }{E}^{\prime }{ED}$ 是一个平行四边形. 于是, ${ED} =$  ${E}^{\prime }{D}^{\prime }$ ,从而 $\bigtriangleup {ADE} \cong  \bigtriangleup {A}^{\prime }{D}^{\prime }{E}^{\prime }$ ,即得 $\angle {BAC} = \angle {B}^{\prime }{A}^{\prime }{C}^{\prime }$ .
+        
+        \ps 由上述定理, 我们容易得出下面两个推论.
+        
+        推论 1: 如果一个角的两边和另一个角的两边分别平行, 那么这两个角相等或者互补.
+        
+        推论 2:如果两条相交直线和另两条相交直线分别平行,那么这两组直线所成的锐角(或直角)相等.
+    \end{jieda}
+    
+    \item 如图,在空间四边形 ${ABCD}$ 中, $M\text{ 、 }N\text{ 、 }P\text{ 、 }Q\text{ 、 }E$ 分别是 ${AB}$ 、 ${BC}\text{ 、 }{CD}\text{ 、 }{AD}\text{ 、 }{AC}$ 的中点,则下列说法中正确的有\blkda{\ding{173}\ding{174}\ding{175}}
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_11_1174_1754_320_265_0.jpg}
+    \end{center}
+    \begin{dingautolist}{172}
+        \item ${AB}//{NQ}$
+        \item $\angle {QME} = \angle {CBD}$
+        \item $\bigtriangleup  {BCD} \backsim   \bigtriangleup  {MEQ}$
+        \item 四边形 ${MNPQ}$ 为平行四边形
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 根据公理2的推论1可知直线$AB$和点$N$确定的平面$ABC$是唯一的，而$Q \notin $平面$ABC$，因此直线$NQ \not \subset $平面$ABC$，故${AB},{NQ}$不共面，两者必不平行
+            \item 根据题意可知$MQ // BD$，$ME // BC$，根据等角定理可知$\angle {QME} = \angle {CBD}$
+            \item 根据题意可知$\dfrac{MQ}{BD} = \dfrac{1}{2}$，$\dfrac{ME}{BC} = \dfrac{1}{2}$，又因为$\angle {QME} = \angle {CBD}$，所以$\bigtriangleup  {BCD} \backsim   \bigtriangleup  {MEQ}$
+            \item 根据题意可知$MN // AC$，$MN = \dfrac{1}{2}AC$且$QP // AC$，$QP = \dfrac{1}{2}AC$，故$MN // QP$且$MN = QP$，故四边形 ${MNPQ}$ 为平行四边形
+        \end{dingautolist}
+    \end{jieda}
+    \item 如图所示，在空间四边形 ${ABCD}$ 中, $H\text{ 、 }G$ 分别是 ${AD}$ 、 ${CD}$ 的中点, $E\text{ 、 }F$ 分别是边 ${AB}\text{ 、 }{BC}$ 上的点,且 $\dfrac{CF}{FB} = \dfrac{AE}{EB} = \dfrac{1}{3}$ . 求证: 直线 ${EH}\text{ 、 }{BD}\text{ 、 }{FG}$ 相交于一点.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_11_1209_854_284_272_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        证明
+        
+        如图所示，连接 ${EF}\text{ 、 }{GH}$ .
+        
+        在三角形 ${ACD}$ 中,因为 $H\text{ 、 }G$ 分别是 ${AD}\text{ 、 }{CD}$ 的中点,所以 ${GH}//{AC}$ ,且 ${GH} = \dfrac{1}{2}{AC}$ .
+        
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_11_1112_1181_382_267_0.jpg}
+        \end{center}
+        
+        在三角形 ${ABC}$ 中,因为 $\dfrac{CF}{FB} = \dfrac{AE}{EB} = \dfrac{1}{3}$ ,所以 ${EF}//{AC}$ ,且 ${EF} = \dfrac{3}{4}{AC}$ .
+        
+        由公理 4,得 ${GH}//{EF}$ ,所以 $E\text{ 、 }F\text{ 、 }G\text{ 、 }H$ 四点共面.
+        
+        又因为 ${GH} \neq  {EF}$ ,所以 ${EH}$ 与 ${FG}$ 相交,设交点为 $P$ . 因为 ${EH} \subset$ 平面 ${ABD}$ ,所以 $P \in$ 平面 ${ABD}$ ,同理 $P \in$ 平面 ${BCD}$ . 又由平面 ${ABD} \cap$ 平面 ${BCD} = {BD}$ ,因此 $P \in  {BD}$ . 所以,直线 ${EH}\text{ 、 }{BD}\text{ 、 }{FG}$ 相交于一点.
+    \end{jieda}
+\end{enumerate}
+\subsection*{异面直线}
+\begin{enumerate}
+    \item 定义: \textbf{不同在任何一个平面上的两条直线叫做异面直线.}
+    
+    必须要说明的是,这里“不同在任何一个平面上的两条直线”是指不存在任何一个平面,使得这两条直线都在这个平面上.
+    \begin{example}
+        把高铁轨道和其下的高速公路分别看作是两条直线，那么它们看起来不会在同一个平面上
+    
+        \begin{center}
+            \includegraphics[width=0.25\linewidth]{bodyxb//src/yimianzhixian1.png}
+        \end{center}
+    \end{example}
+    \item 异面直线的画法：用一个或者两个平面来衬托
+    \begin{center}
+    \includegraphics[width=0.8\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_13_299_577_1025_257_0.jpg}
+    \end{center}
+    \item $\left\{  \begin{array}{l} \text{ 共面直线 }\left\{  \begin{array}{l} \text{ 相交直线: 在同一平面内,有且只有一个公共点; } \\  \text{ 平行直线: }\text{ 在同一平面内,没有公共点;\ } \end{array}\right. \\  \text{ 异面直线: 不同在任何一个平面内,没有公共点. } \end{array}\right.$
+    \item 异面直线判定定理:过平面外一点与平面上一点的直线, 和此平面上不经过该点的任何一条直线都是异面直线.
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 证明异面直线判定定理
+    
+    已知: 直线 $a$ 在平面 $\alpha$ 上,点 $A$ 不在平面 $\alpha$ 上,直线 ${AB}$ 与平面 $\alpha$ 交于点 $B$ ,点 $B$ 在平面 $\alpha$ 上但不在直线 $a$ 上. 求证: 直线 ${AB}$ 和 $a$ 是异面直线.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_13_1169_1691_314_253_0.jpg}
+    \end{center}
+    \begin{jieda}
+        证明 
+        
+        假设存在一个平面 $\beta$ ,使得直线 ${AB}$ 与 $a$ 均在平面 $\beta$ 上,那么平面 $\beta$ 一定经过点 $A$ 、 $B$ 和直线 $a$ . 因为 $B \notin  a$ ,由公理 2 推论 1,经过点 $B$ 与直线 $a$ 只能有一个平面,它就是 $\alpha$ ,从而平面 $\alpha$ 与 $\beta$ 是同一个平面. 这样,点 $A$ 就应在平面 $\alpha$ 上,与已知 $A \notin  \alpha$ 矛盾. 所以,直线 ${AB}$ 和 $a$ 必为异面直线.
+    \end{jieda}
+    \item 
+    如图,已知不共面的三条直线 $a$ 、 $b$ 、 $c$ 相交于点 $P,A \in  a,B \in$  $a,C \in  b,D \in  c$ ,求证: ${AD}$ 与 ${BC}$ 是异面直线.
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_15_1198_126_298_263_0.jpg}
+    \end{center}
+    \begin{jieda}
+        根据公理2的推论可知直线$a$与直线$b$唯一确定平面$PBC$，而直线$c \not \subset $平面$PBC$. 因为$A \in a$，所以$A \in $平面$PBC$，而$D \notin$平面$PBC$，故根据异面直线判定定理可知${AD}$ 与 ${BC}$ 是异面直线.
+    \end{jieda}
+    \item 下列说法中错误的是\blkda{\ding{172}\ding{173}\ding{174}\ding{175}}
+    \begin{dingautolist}{172}
+        \item 没有公共点的两条直线是异面直线
+        \item 两直线间的位置关系只有平行、垂直两种
+        \item 如果两个平面有三个公共点,则这两个平面重合
+        \item 两两相交的三条直线共面
+    \end{dingautolist}
+    
+    \item 下列说法中正确的是\blkda{\ding{178}}
+    \begin{dingautolist}{172}
+        \item 分别在两个不同平面上的两条直线是异面直线
+        \item 分别与两条异面直线平行的两条直线也是异面直线
+        \item 分别与两条异面直线相交的两条直线也是异面直线
+        \item 若 $a$ 、 $b$ 是异面直线且 $a$ 、 $c$ 是异面直线,则 $b$ 、 $c$ 也是异面直线
+        \item 若一条直线与两条相交直线中的一条直线平行,则必与另一条直线成异面直线
+        \item 垂直于同一直线的两条直线一定平行
+        \item 平行于同一直线的两直线平行
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 错误，三种位置关系均有可能
+            \item 错误，可以相交或者异面
+            \item 错误，三种位置关系均有可能
+            \item 错误，三种位置关系均有可能
+            \item 错误，可以相交或者异面
+            \item 错误，可以异面
+            \item 正确，符合公理4
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\subsection*{异面直线所成角}
+\begin{enumerate}
+    \item 定义:两条异面直线平移到相交位置时所得到的锐角或直角, 称为这两条异面直线所成的角.
+
+    由定义可知,两条异面直线所成角 $\alpha$ 的范围是 ${0}^{ \circ  } < \alpha  \leq  {90}^{ \circ  }$ ,或 $\alpha  \in  \left( {0,\dfrac{\pi }{2}}\right\rbrack$
+
+    \begin{center}
+    \includegraphics[width=0.6\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_15_432_1022_770_304_0.jpg}
+    \end{center}
+
+    如图所示，直线 $a$ 、 $b$ 是异面直线,则经过空间任意一点 $O$ ,分别引直线 ${a}_{1}//$  $a,{b}_{1}//b$ ,则直线 ${a}_{1}$ 和 ${b}_{1}$ 是相交直线，它们所成的锐角 (或直角) 是确定的,根据等角定理的推论 2,这个角的大小与点 $O$ 的位置无关.
+
+    \item 特别地,如果两条异面直线 $a$ 、 $b$ 所成的角是直角,就说这两条异面直线互相垂直,记作 $a \bot  b$ . 由上述定义容易推出: 如果 $a \bot  b,b//c$ ,那么 $a \bot  c$ .
+\end{enumerate}
+\clearpage
+例题：
+\begin{enumerate}
+    \item 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,求下列异面直线所成角的大小.
+    \begin{enumerate}
+        \item ${AC}$ 与 $B{C}_{1}$
+        \item ${B}_{1}D$ 与 $B{C}_{1}$ .
+    \end{enumerate}
+    \begin{center}
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/yimianzhixiandejiajiao1.png}
+    \end{center}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\angle{A_1C_1B}$即异面直线所成角（或其补角），$\triangle A_1C_1B$为正三角形，故$\angle{A_1C_1B} = \dfrac{\pi}{3}$
+            \item 取$AB$中点$M$，$C_1D_1$中点$N$，$MN$交$B_1D$于$O$，$\angle{MOD}$为异面直线所成角（或其补角），根据勾股定理可知$\triangle MOD$为直角三角形，$\angle{MOD} = \dfrac{\pi}{2}$
+        \end{enumerate}
+    \end{jieda}
+    \item 如图所示，在空间四边形 ${ABCD}$ 中, ${AB} = {CD} = 8$ , $E\text{ 、 }F\text{ 、 }G\text{ 、 }H$ 分别是线段 ${BC}\text{ 、 }{CA}\text{ 、 }{AD}\text{ 、 }{DB}$ 的中点, ${FH} = 6$ .
+    
+    \begin{center}
+    \includegraphics[width=0.25\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_16_1115_1305_388_322_0.jpg}
+    \end{center}
+    求异面直线 ${AB}$ 与 ${CD}$ 所成角的大小
+    \begin{jieda}
+        $AB // GH, CD // GF$，$\angle{HGF}$即为异面直线所成角（或其补角），$GH = 4, GF = 4, HF = 6$，根据余弦定理可知$cos\angle{HGF} = \dfrac{16+16-36}{32} = -\dfrac{1}{8}$，因此$\angle{HGF}$即为异面直线所成角的补角，故异面直线所成角为$arccos\left(\dfrac{1}{8}\right)$
+    \end{jieda}
+    \item 在空间四边形 ${ABCD}$ 中, ${AD} = {BC} = 2,E\text{ 、 }F$ 分别是 ${AB}$ 、 ${CD}$ 的中点,异面直线 ${AD}\text{ 、 }{BC}$ 所成角为 ${60}^{ \circ  }$ . 求线段 ${EF}$ 的长度.
+    \begin{center}
+    \includegraphics[width=0.25\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_17_1169_1044_320_288_0.jpg}
+    \end{center}
+    \begin{jieda}
+        取$AC$中点$G$，则$FG // AD$，$FG = 1$，$EG // BC$，$EG = 1$
+
+        $\angle{EGF}$即异面直线所成角（或其补角），故$\angle{EGF} = \dfrac{\pi}{3}$或$\dfrac{2\pi}{3}$，故$EF = 1$或$\sqrt{3}$
+    \end{jieda}
+\end{enumerate}
+\section*{直线与平面平行}
+\subsection*{线面平行的定义}
+当直线与平面平行时, 直线与平面没有公共点. 
+
+画直线 $l$ 与平面 $\alpha$ 垂直的示意图时,把平面的垂线 $l$ 画成与表示平面 $\alpha$ 的平行四边形的水平边平行, 用符号表示为: $l //  \alpha$ 
+\begin{center}
+    \includegraphics[width=0.3\linewidth]{bodyxb//src/xianmianpingxing1.png}
+\end{center}
+
+\subsection*{线面平行判定定理}
+考虑到直线的无限延伸性和平面是无限延展的, 根据定义来判断直线与平面是否平行不太可行, 所以我们就需要一个判定直线与平面平行的法则.
+
+\textbf{线面平行判定定理}：如果平面外的一条直线平行于平面内的一条直线,那么这条直线平行于这个平面.
+
+符号表达：$a // b, a \not \subset \alpha, b \subset \alpha \Longrightarrow a // \alpha$
+
+核心思想：将线面平行的判定转化为线线平行的判定.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_18_1146_1062_354_226_0.jpg}
+\end{center}
+
+证明：
+
+假设直线 $a$ 不平行于平面 $\alpha$ ,由于 $a \not \subset \alpha$ ,所以直线 $a$ 与平面 $\alpha$ 相交,记交点为 $A$ . 因为 $a//b$ ,所以 $a$ 、 $b$ 确定一个平面,记为平面 $\beta$ ,则由已知得 $\alpha  \cap  \beta  = b$ . 由 $A \in  a,a \subset  \beta$ ,得点 $A \in  \beta$ . 又因为 $A \in  \alpha$ ,根据公理 3,得 $A \in  \alpha  \cap  \beta  = b$ . 这与已知条件 $a//b$ 相矛盾,所以假设不成立,即直线 $a//$ 平面 $\alpha$ .
+
+例题：
+\begin{enumerate}
+    \item 下列命题中正确的是\blkda{\ding{175}}
+    \begin{dingautolist}{172}
+        \item 若直线 $a$ 上有无数个点不在平面 $\alpha$ 上,则 $a//\alpha$
+        \item 若直线 $a$ 与平面 $\alpha$ 上的一条直线平行,则 $a$ 与平面 $\alpha$上的任意一条直线都平行
+        \item 若两条平行直线中的一条平行于一个平面,则另一条直线也平行于这个平面
+        \item 设直线 $a$ 在平面 $\alpha$ 上,直线 $b$ 不在平面 $\alpha$ 上,并且 $a//b$ ,则 $b//\alpha$ .
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 直线与平面相交时也符合
+            \item 存在异面直线
+            \item 可能线在面内
+            \item 符合线面平行判定定理
+        \end{dingautolist}
+    \end{jieda}
+    \item 求证:空间四边形的对角线平行于四边中点所确定的平面.
+    
+    已知: 在空间四边形 ${ABCD}$ 中, $E\text{ 、 }F\text{ 、 }G\text{ 、 }H$ 分别是边 ${AB}\text{ 、 }{BC}\text{ 、 }{CD}\text{ 、 }{DA}$ 的中点. 求证: ${AC}//$ 平面 ${EFGH},{BD}//$ 平面 $EFGH$.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_18_1166_1590_337_343_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        根据中位线定理可知$AC // EF$，$AC \not \subset$平面 ${EFGH}$，$EF \subset$平面 ${EFGH}$，故根据线面平行判定定理可知${AC}//$ 平面 ${EFGH}$
+
+        根据中位线定理可知$BD // EH$，$BD \not \subset$平面 ${EFGH}$，$EH \subset$平面 ${EFGH}$，故根据线面平行判定定理可知$BD//$ 平面 ${EFGH}$
+    \end{jieda}
+    \item 在正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中, $E$ 是 $D{D}^{\prime }$ 的中点 (如图),求证: ${B}^{\prime }D//$ 平面 ${A}^{\prime }{C}^{\prime }E$
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_139_366_1352_239_241_0.jpg}
+        \end{center}
+        \begin{jieda}
+            连接 ${B}^{\prime }{D}^{\prime }$ 与 ${A}^{\prime }{C}^{\prime }$ 相交于点 $O$ ,连接 ${OE}$ . 在 $\bigtriangleup {B}^{\prime }{D}^{\prime }D$ 中,易知 ${OE}$ 是 ${B}^{\prime }D$ 边对应的中位线,故 ${OE}//{B}^{\prime }D$ . 又 ${OE} \subset$ 平面 ${A}^{\prime }{C}^{\prime }E,{B}^{\prime }D$ 在平面 ${A}^{\prime }{C}^{\prime }E$ 外,故 ${B}^{\prime }D//$ 平面 ${A}^{\prime }{C}^{\prime }E$ ,证毕.
+        \end{jieda}
+    \item 如图,在直角梯形 ${ABCD}$ 中, ${BC}\bot {CD},{AB} = {BC} = 2,{CD} =$  $4,E$ 为 ${CD}$ 中点, $M\text{ 、 }N$ 分别为 ${AD}\text{ 、 }{BC}$ 的中点,将 $\bigtriangleup {ADE}$ 沿 ${AE}$ 折起,使点 $D$ 到 ${D}_{1}$ ,点 $M$ 到 ${M}_{1}$ ,求证: 在翻折过程中, ${M}_{1}N//$ 平面 $C{D}_{1}E$ .
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_20_1177_1260_315_256_0.jpg}
+    \end{center}
+    \begin{jieda}
+        取$D_1E$的中点$M_2$，根据几何条件可知$AE // CN$，$AE = 2, CN = 1$，$M_1M_2 // AE$，$M_1M_2 = 1$，故$M_1M_2 // CN$，因此$M_1M_2CN$为平行四边形，故$M_1N // CM_2$，而$CM_2 \subset CED_1$，故${M}_{1}N//$ 平面 $C{D}_{1}E$ 
+    \end{jieda}
+    
+    \item 已知两个全等的正方形 ${ABCD}$ 和 ${ABEF}$ 所在平面相交于 ${AB}$ ,点 $M$ 、 $N$ 分别在线段 ${AC}$ 、 ${FB}$ 上(与端点不重合),且 ${AM} = {FN}$ . 求证: ${MN}//$ 平面 ${BCE}$ .
+
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_19_1194_240_312_235_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_19_1191_547_315_234_0.jpg}
+    \end{center}
+    作 ${MP}//{AB}$ 交 ${BC}$ 于点 $P,{NQ}//$  ${AB}$ 交 ${BE}$ 于点 $Q$ ,所以 ${MP}//{NQ}$ .
+    
+    因为 ${AM} = {FN}$ ,所以 ${MP} = \dfrac{\sqrt{2}}{2}{MC} = \dfrac{\sqrt{2}}{2}{BN} = {NQ}$ . 所以 ${MP} // {NQ}$且$MP = NQ$ . 所以四边形 ${MNQP}$ 为平行四边形,所以 ${MN}//{PQ}$ .
+    
+    因为 ${MN} \not \subset$ 平面 ${BCE},{PQ} \subset$ 平面 ${BCE}$ ,所以 ${MN}//$ 平面 ${BCE}$ .
+    \end{jieda}
+\end{enumerate}
+\subsection*{线面平行性质定理}
+\textbf{线面平行性质定理}：如果一条直线和一个平面平行, 过这条直线的一个平面与这个平面相交, 那么这条直线与交线平行.
+
+符号表达：$a // \alpha, a \subset \beta, \alpha \cap \beta = b \Longrightarrow a // b$
+
+核心思想：线面平行里蕴含着线线平行.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_19_1194_1277_303_160_0.jpg}
+\end{center}
+
+证明 
+
+由 $a//\alpha$ ,故直线 $a$ 和 $\alpha$ 没有公共点. 又因为 $b \subset  \alpha$ ,所以直线 $a$ 和 $b$ 没有公共点. 因为直线 $a$ 和 $b$ 同在平面 $\beta$ 上,且没有公共点,所以 $a//b$ .
+
+例题
+\begin{enumerate}
+    \item 回答下列问题,并说明理由. 
+    \begin{dingautolist}{172}
+        \item 若一条直线平行于一个平面内的无数条直线,则这条直线平行于这个平面吗？
+        \item 若两条平行直线中有一条平行于一个平面,则另一条也平行于这个平面吗？
+        \item 平行于同一个平面的两条直线的位置关系如何？
+        \item 若一条直线平行于一个平面,则这条直线与这个平面内的任意直线平行吗？ 
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 不一定，应为平行或者线在面内
+            \item 不一定，应为平行或者线在面内
+            \item 三种位置关系均有可能
+            \item 平行或者异面
+        \end{dingautolist}
+    \end{jieda}
+    \item \begin{enumerate}
+        \item 若直线 $l$ 与平面 $\alpha$ 平行,则在平面 $\alpha$ 内与 $l$ 平行的直线有\blkda{无数}条
+        \item 若直线 $l$ 与平面 $\alpha$ 平行,则在平面 $\alpha$ 内与 $l$ 不平行的直线有\blkda{无数}条
+        \item 若 $P$ 是平面 $\alpha$ 外一点,则过 $P$ 作 $\alpha$ 的平行线有\blkda{无数}条
+        \item 已知两直线 $a//b,a,b \subset$ 平面 $\alpha$ ,直线 $c$ 与 $a$ 异面, $c \cap  b = \varnothing$ ,则 $c$ 与 $\alpha$ 的位置关系是\blkda[2]{平行或相交}
+    \end{enumerate}
+    \item 下列命题正确的是\blkda{\ding{175}}
+    \begin{dingautolist}{172}
+        \item 若两直线$a$、$b$互相平行，则$a$平行于经过$b$的任何平面
+        \item 若直线 $a$ 与平面 $\alpha$ 平行,则 $a$ 平行于 $\alpha$ 内的任何直线
+        \item 若两直线 $a$ 、 $b$ 都与平面 $\alpha$ 平行,则 $a//b$
+        \item 若直线 $a$ 平行于平面 $\alpha$ ,直线 $b$ 在平面 $\alpha$ 上,则 $a//b$ 或者 $a$ 与 $b$ 为异面直线.
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 对于两者公共平面而言不符合
+            \item 存在异面直线
+            \item 三种位置关系都存在
+            \item $a$与$\alpha$没有公共点推出$a, b$没有公共点，位置关系只能是平行或异面
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知直线 $a$ 、 $b$ 和平面 $\alpha ,a//b,a//\alpha$ ,直线 $a$ 、 $b$ 都不在平面 $\alpha$ 上,求证: $b//\alpha$ .
+
+    \begin{jieda}
+        证明 
+
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_19_1125_1666_374_270_0.jpg}
+        \end{center}
+        
+        
+        如图所示,过直线 $a$ 作平面 $\beta$ ,使 $\alpha  \cap  \beta  =$ 直线 $c$ ,因为 $a//\alpha ,a \subset  \beta ,\alpha  \cap  \beta  = c$ ,根据直线与平面平行的性质定理,得到 $a//c$ .
+        
+        由已知 $a//b$ ,所以 $b//c$ ,又 $c \subset  \alpha ,b \not \subset \alpha$ ,根据直线与平面平行的判定定理,得到 $b//\alpha$ .
+    \end{jieda}
+
+    \item 求证: 如果一条直线与两个相交平面都平行, 那么这条直线与这两个平面的交线平行.
+
+    即：已知直线 $l//$ 平面 $\alpha ,l//$ 平面 $\beta$ ,且 $\alpha  \cap  \beta  = m$ (如图),求证: $l//m$ .
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_141_342_212_217_226_0.jpg}
+    \end{center}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1
+            
+            过 $l$ 作平面 $\gamma$ ,使 $\gamma  \cap  \alpha  = a$ ,过 $l$ 作平面 $\delta$ ,使 $\delta  \cap  \beta  = b$ ,则 $l//a,l//b$ ,于是 $a//b$ ,故 $a//\beta$ ,由此得 $a//m,\therefore l//m$
+
+            \item 方法2
+            
+            在$m$上取点$A$，则根据公理2的推论可知点$A$和$l$确定一个平面，记为$\gamma$，设$\gamma \cap \alpha = l_1, \gamma \cap \beta = l_2$，则根据线面平行性质定理可知$l // l_1, l // l_2$
+
+            因为在$\gamma$内过一点$A$有且仅有一条直线与$l$平行，所以$l_1 = l_2$
+            
+            因此$\gamma \cap \beta = l_1$，所以$l_1 \subset \alpha, l_1 \subset \beta$，故根据公理3可知$l_1 = m$
+    
+            故$m // l$
+        \end{enumerate}
+    \end{jieda}
+
+    \item 已知异面直线 ${AB},{CD}$ 都平行于平面 $\alpha$ ,且 ${AB},{CD}$ 在 $\alpha$ 的两侧,若 ${AC},{BD}$ 与 $\alpha$ 分别交于 $M,N$ 两点 (如图),求证: $\dfrac{AM}{MC} = \dfrac{BN}{ND}$ .
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_140_1201_1111_236_211_0.jpg}
+    \end{center}
+    \begin{jieda}
+        连接 ${AD}$ 交 $\alpha$ 于 $Q$ ,则可证 ${CD}//{MQ}$ ,于是 $\dfrac{AM}{MC} = \dfrac{AQ}{QD}$ . 同理可证 $\dfrac{AQ}{QD} = \dfrac{BN}{ND}$，故$\dfrac{AM}{MC} = \dfrac{NB}{ND}$ 
+    \end{jieda}
+    
+    \item 如果 $a,b$ 是异面直线,给出以下三个结论:
+    \begin{dingautolist}{172}
+        \item 过空间内任何一点可以作一个和 $a,b$ 都平行的平面
+        \item 过直线 $a$ 有且只有一个平面和 $b$ 平行
+        \item 过空间内任何一点可以作一条直线和 $a,b$ 都相交
+    \end{dingautolist}
+    其中错误的个数是 \dotfill{(\kh{C})}
+    \xx{0}{1}{2}{3}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 一个特殊的反例是点 $M$ 在直线 $a$ 或 $b$ 上，一般的反例是\ding{173}的平面内
+            \item 存在性及具体作法: 在直线 $b$ 上任取一点 $P$ ,在直线 $a$ 上任取两点 $Q\text{ 、 }R$ ,在平面 ${PQR}$ 中 (即点 $P$ 和直线 $a$ 确定的平面),过点 $P$ 作直线 $a$ 的平行线 ${a}^{\prime }$ (可由尺规作图,构造平行四边形得到). 此时,相交直线 ${a}^{\prime }$ 和 $b$ 确定的平面即为平面 $\alpha$
+            
+            唯一性证明如下: (反证法) 假设所求平面不唯一,记平面 $\alpha ,\beta$ 均满足题意. 在直线 $a$ 上任取一点 $M$ ,则过点 $M$ 和直线 $b$ 可以确定一个平面 $\gamma .\because M \in  \gamma$ 且 $M \in  \alpha ,M \in  \beta$ ,根据公理 $3,\gamma$ 与 $\alpha$ 和 $\beta$ 都相交,交线记为 ${l}_{\alpha }$ 和 ${l}_{\beta }$ . 由线面平行的性质定理, ${l}_{\alpha }//b,{l}_{\beta }//b$ ,根据公理 $4,{l}_{\alpha }//{l}_{\beta }$ ,这与 ${l}_{\alpha } \cap  {l}_{\beta } = M$ 矛盾,故所求平面是唯一的,证毕.
+            \item 反例：不在直线上，但在\ding{173}的平面内
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\section*{直线与平面垂直}
+\subsection*{线面垂直的定义}
+如果一条直线与一个平面上的任意一条直线都垂直, 就说这条直线与这个平面互相垂直.
+
+其中这条直线叫做这个平面的\textbf{垂线} (或法线),这个平面也叫做该直线的\textbf{垂面},垂线和这个平面的交点称为\textbf{垂足}.
+
+画直线 $l$ 与平面 $\alpha$ 垂直的示意图时,把平面的垂线 $l$ 画成与表示平面 $\alpha$ 的平行四边形的水平边垂直, 用符号表示为: $l \bot  \alpha$ .
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_21_1034_643_309_215_0.jpg}
+\end{center}
+
+\subsection*{线面垂直判定定理}
+显然, 用上述线面垂直的定义来判断直线与平面是否垂直是行不通的.
+
+\textbf{线面垂直判定定理}: 如果一条直线垂直于一个平面上的两条相交直线, 那么这条直线垂直于这个平面.
+
+符号表达：$a \subset  \alpha ,b \subset  \alpha$ , $a \cap  b = O,l \bot  a,l \bot  b \Longrightarrow l \bot \alpha$
+
+核心思想：将线面垂直的判定转化为线线垂直的判定.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_21_1187_1145_306_263_0.jpg}
+\end{center}
+
+证明：
+    
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_21_1171_1537_321_326_0.jpg}
+\end{center}
+
+设直线 $c$ 是平面 $\alpha$ 上任意一条直线.
+
+\begin{dingautolist}{172}
+    \item 当直线 $l$ 与直线 $c$ 都经过点 $O$ 时，在直线 $l$ 上点 $O$ 的两侧分别取点 $P\text{ 、 }Q$ 使得 ${OP} = {OQ}$
+
+    在平面 $\alpha$ 上作一条直线,使它与 $a$ 、 $b$ 、 $c$ 分别交于点 $A$ 、 $B$ 、 $C$ ,连接 ${PA}$ 、 ${PB}$ 、 ${PC}$ 、 ${QA}$ 、 ${QB}$ 、 ${QC}$ .因为 ${OA}$ 垂直平分 ${PQ}$ ,所以 ${PA} = {QA}$ . 同理 ${PB} = {QB}$ .
+
+    因为 ${PA} = {QA},{PB} = {QB},{AB} = {AB}$ ,所以 $\bigtriangleup  {PAB} \cong   \bigtriangleup  {QAB}$ ,得 $\angle {PAC} = \angle {PAB} = \angle {QAB} = \angle {QAC}$ ,而 ${PA} = {QA},{AC}$ 为公共边,所以 $\bigtriangleup {PAC} \cong  \bigtriangleup {QAC}$ ,所以 ${PC} = {QC}$ . 所以 ${PQ} \bot  c$ ,即 $l \bot  c$ .
+    \item 若直线 $l$ 与直线 $c$ 不都经过点 $O$ ,则过 $O$ 引与直线 $l$ 、 $c$ 的平行线 ${l}_{1}\text{ 、 }{c}_{1}$ ,由 (1) 可知 ${l}_{1}\bot {c}_{1}$ . 又由等角定理可知 $l\bot c$ .
+\end{dingautolist}
+综上所述,直线 $l$ 垂直于平面 $\alpha$ 上任意一条直线 $c$ ,即 $l\bot \alpha$ .
+
+
+例题：
+\begin{enumerate}
+    \item 如果一条直线垂直于一个平面内的: \ding{172}三角形的两边; \ding{173}梯形的两边; \ding{174}圆的两条直径；\ding{175}正六边形的两条边,则能保证该直线与平面垂直的是\blkda{\ding{172}\ding{174}}.
+    \item  已知 $O$ 是平行四边形 ${ABCD}$ 两条对角线的交点, $P$ 是平面 ${ABCD}$ 外一点,且 ${PA} = {PC},{PB} = {PD}$ . 求证: ${PO} \bot$ 平面 ${ABCD}$ .
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_22_1121_129_373_283_0.jpg}
+    \end{center}
+    \begin{jieda}
+        证明 
+        
+        因为 $O$ 为平行四边形 ${ABCD}$ 对角线的交点,所以 $O$ 为线段 ${AC}$ 的中点. 又因为 ${PA} = {PC}$ ,所以 ${PO} \bot  {AC}$ . 同理可证 ${PO} \bot  {BD}$ . 又因为 ${AC} \cap  {BD} =$  $O,{AC} \subset$ 平面 ${ABCD},{BD} \subset$ 平面 ${ABCD}$ ,所以 ${PO} \bot$ 平面 ${ABCD}$ .
+    \end{jieda}
+    \item 如图,已知 ${PA} \bot  \alpha ,{PB} \bot  \beta$ ,垂足分别为 $A\text{ 、 }B$ ,且 $\alpha  \cap  \beta  = m$ . 求证: $m \bot$ 平面 ${PAB}$ 
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_24_330_1705_359_253_0.jpg}
+    \end{center}
+    \begin{jieda}
+        ${PA} \bot  \alpha, m \in \alpha \Longrightarrow m \bot PA$，同理$m \bot PB$，因此$m \bot$平面 ${PAB}$ 
+    \end{jieda}
+    \item “直线 $l$ 垂直于平面 $\alpha$ 内的无数条直线”是“ $l\bot \alpha$ ”的\blkda[2]{必要不充分}条件.
+    \begin{jieda}
+        根据定义必要性显然，充分性的反例：$l // \alpha$，过$l$做平面$\beta$，$\alpha \cap \beta = m$，$\alpha$内有无数直线垂直于$m$，即有无数直线垂直于$l$
+    \end{jieda}
+    \item 如图,在正方形 ${ABCD}$ 中, $E$ 、 $F$ 分别是 ${AB}$ 、 ${BC}$ 的中点,现在沿 ${DE}$ 、 ${DF}$ 及 ${EF}$ 把 $\bigtriangleup {ADE}\text{ 、 }\bigtriangleup {CDF}\text{ 、 }\bigtriangleup {BEF}$ 折起,使 $A\text{ 、 }B\text{ 、 }C$ 三点重合,重合后的点记为 $P$ ,那么关于下面四个命题:
+    \begin{dingautolist}{172}
+        \item ${DM} \bot$ 平面 ${PEF}$
+        \item ${PM} \bot$ 平面 ${DEF}$
+        \item ${DP} \bot$ 平面 ${PEF}$
+        \item ${EF} \bot$ 平面 ${DPM}$
+    \end{dingautolist}
+    其中能够成立的是\blkda{\ding{174}\ding{175}}. (写出所有正确答案的序号)
+    
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_24_470_1153_677_275_0.jpg}
+    \end{center}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $DM:MP:DP = 3\sqrt{2}:\sqrt{2}:4$，故$\angle{DPM} = \ang{90}, \angle{DMP} \neq \ang{90}$
+            \item 同上
+            \item $\angle{DPM} = \ang{90}$即$DP \bot PM$，$EF \bot $平面 ${DPM}$（证明见下）即$EF \bot DP$，故${DP} \bot$ 平面 ${PEF}$
+
+            \item $EF \bot PM, EF \bot DM$，故$EF \bot $平面 ${DPM}$
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{线面垂直性质定理}
+\textbf{线面垂直的性质定理}:垂直于同一个平面的两条直线相互平行.
+
+符号表达：$a\bot \alpha ,b\bot \alpha \Longrightarrow a // b$
+
+核心思想：平行和垂直之间存在特殊联系，可以相互转化
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_22_1147_677_340_218_0.jpg}
+\end{center}
+
+证明 
+
+假设 $a$ 与 $b$ 不平行,直线 $b$ 与平面 $\alpha$ 的交点为 $B$ . 过点 $B$ 作直线 ${b}^{\prime }$ ,使得 ${b}^{\prime }//a$ . 由直线 $b$ 与 ${b}^{\prime }$ 确定的平面记为 $\beta$ ,设平面 $\beta$ 与平面 $\alpha$ 的交线为 $l$ . 因为 $a \bot  \alpha ,b \bot  \alpha$ ,所以 $a \bot  l,b \bot  l$ ; 由 ${b}^{\prime }//a$ ,又可得出 ${b}^{\prime }\bot l$ . 直线 $b$ 与 ${b}^{\prime }$ 都在平面 $\beta$ 上,都过点 $B$ ,且都垂直于直线 $l$ ,这与 “在同一个平面上,过一点有且只有一条直线与已知直线垂直” 矛盾. 所以假设不成立,即 $a//b$ .
+
+\subsubsection*{点和线与平面的距离}
+由上述线面垂直的定义及定理能得到下面两个推论.
+
+推论 1: 过一点有且只有一个平面与给定的直线垂直.
+
+推论 2: 过一点有且只有一条直线与给定的平面垂直.
+
+
+\begin{dingautolist}{172}
+    \item 点到平面的距离
+
+    由推论 2 可知,过平面 $\alpha$ 外一点 $M$ 作平面 $\alpha$ 的垂线,这样的垂线有且只有一条,我们把点 $M$ 和垂足 $N$ 之间的距离叫做点 $M$ 到平面 $\alpha$ 的距离. 
+    \item 平行于平面的直线到平面的距离
+
+    如果一条直线 $l$ 与平面 $\alpha$ 平行,那么可以证明直线 $l$ 上任意一点到平面 $\alpha$ 的距离都相等,因此,我们把直线 $l$ 上任意一点 $M$ 到平面 $\alpha$ 的距离叫做直线 $l$ 到与它平行的平面 $\alpha$ 的距离
+\end{dingautolist}
+
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_22_372_1537_858_236_0.jpg}
+\end{center}
+
+例题：
+\begin{enumerate}
+    \item 已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的边长为 $a$ .
+    \begin{enumerate}
+        \item 求证: ${B}_{1}D \bot  C{D}_{1}$
+        \item 求证: ${B}_{1}D \bot$ 平面 ${AC}{D}_{1}$
+        \item 求点 $D$ 到平面 ${AC}{D}_{1}$ 的距离
+    \end{enumerate}
+    
+    \begin{jieda}
+        \begin{enumerate}
+            \item 证明 
+            
+            由正方体的性质,可知 ${B}_{1}{C}_{1} \bot$ 平面 ${C}_{1}{D}_{1}{DC}$，$C{D}_{1} \subset$ 平面 ${C}_{1}{D}_{1}{DC}$ ,所以 ${B}_{1}{C}_{1} \bot  C{D}_{1}$ . 
+            
+            由四边形 ${C}_{1}{D}_{1}{DC}$ 为正方形,可知 ${C}_{1}D \bot  C{D}_{1}$
+            
+            ${B}_{1}{C}_{1} \cap  {C}_{1}D = {C}_{1}$ ,所以 $C{D}_{1} \bot$ 平面 $D{B}_{1}{C}_{1}$
+            
+            ${B}_{1}D \subset$ 平面 $D{B}_{1}{C}_{1}$ ,所以 ${B}_{1}D \bot  C{D}_{1}$ .
+            \item 证明 
+            
+            由(1)可知 ${B}_{1}D \bot  C{D}_{1}$ ,同理可证 ${B}_{1}D \bot  A{D}_{1}$ ,又 $C{D}_{1} \cap  A{D}_{1} = {D}_{1}$ ,所以 ${B}_{1}D \bot$ 平面 ${AC}{D}_{1}$ .
+            \item 如图，
+                \begin{center}
+                    \includegraphics[width=0.7\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_23_400_104_858_344_0.jpg}
+                \end{center}
+            设 ${AC} \cap  {BD} = O$ ,则平面 ${BD}{D}_{1}{B}_{1} \cap$ 平面 ${AC}{D}_{1} = {D}_{1}O$ . 设 ${B}_{1}D \cap$ 平面 ${AC}{D}_{1} = H$ ,则 $H \in  {D}_{1}O$ ,即 ${B}_{1}D \cap  {D}_{1}O = H$ . 由 (2) 可知 ${DH} \bot$ 平面 ${AC}{D}_{1}$ ,所以 ${DH}$ 的长度是点 $D$ 到平面 ${AC}{D}_{1}$ 的距离. 
+            
+            因为 $\bigtriangleup {D}_{1}{DO}$ 是直角三角形且 $\angle {OD}{D}_{1} = {90}^{ \circ  },{DO} = \dfrac{\sqrt{2}}{2}a,D{D}_{1} = a,O{D}_{1} = \dfrac{\sqrt{6}}{2}a$ ,解得 ${DH} = \dfrac{\sqrt{3}}{3}a$ ,即点 $D$ 到平面 ${AC}{D}_{1}$ 的距离为 $\dfrac{\sqrt{3}}{3}a$ .
+            
+            \ps 截面$ACD_1$、$BA_1C_1$三等分体对角线$B_1D$，且$BD_1$与垂直于两截面.
+        \end{enumerate}
+    \end{jieda}
+    \item 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中, ${AB} = 2,O$ 为 ${AC}$ 与 ${BD}$ 的交点, $G$ 为 $C{C}_{1}$ 的中点. 求:
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_25_1211_125_298_300_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 点 ${A}_{1}$ 到平面 ${GBD}$ 的距离
+        \item 直线 $A{C}_{1}$ 到平面 ${GBD}$ 的距离
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 连接$A_1O$，$tan\angle{A_1OA} = \sqrt{2}$，$tan\angle{GOC} = \dfrac{1}{\sqrt{2}}$，故$\angle{A_1OA} + \angle{GOC} = \ang{90}$，因此$\angle{A_1OG} = \ang{90}$，即$A_1O \bot OG$
+
+            $AA_1 \bot $面$ABCD$，故$AA_1 \bot BD$，$BD \bot AC$，$AC \cap AA_1 = A$，故$BD \bot $面$AA_1C$，$A_1O \subset $面$AA_1C$，所以$A_1O \bot BD$
+
+            因此$A_1O \bot $面 ${GBD}$，故$A_1O$长度即点 ${A}_{1}$ 到平面 ${GBD}$ 的距离，计算可知$A_1O = \sqrt{6}$
+
+            \item 根据三角形中位线定理可知$AC_1 // OG$，故$AC_1 // $面 ${GBD}$
+
+            连接$A_1C$，交$A_1O$于$M$，故$OM$长度即直线 $A{C}_{1}$ 到平面 ${GBD}$ 的距离，计算可知$OM = \dfrac{\sqrt{6}}{3}$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\section*{直线与平面所成的角}
+直线与平面垂直, 这只是直线与平面相交的特殊情形, 还有一种更为一般的位置关系,即直线 $l$ 与平面 $\alpha$ 相交,但不垂直,我们称直线 $l$ 与平面 $\alpha$ 斜交. 
+
+如图$(1)$所示，此时直线 $l$ 叫做平面 $\alpha$ 的斜线,直线 $l$ 与平面 $\alpha$ 的交点 $A$ 叫做斜足.
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_25_404_730_843_268_0.jpg}
+\end{center}
+
+平面的不同斜线相对于平面的倾斜程度一般并不相同, 那么为了度量这种倾斜程度呢，我们引入直线与平面所成角的概念.
+
+如图$(2)$所示，我们在平面 $\alpha$ 的斜线 $l$ 上任取一个不同于斜足的点 $P$ ,过点 $P$ 作平面 $\alpha$ 的垂线,垂足记为 $O$ . 连接 ${OA}$ ,直线 ${OA}$ 叫做斜线 $l$ 在平面 $\alpha$ 上的投影 (也称射影). 线段 ${PA}$ 的投影是线段 ${OA}$. 利用反证法可以证明平面的一条斜线在平面上的投影与点 $P$ 的选择无关,是唯一确定的, 从而可以用斜线与它的投影所成的锐角 $\theta$ 来定义此斜线与平面所成的角.
+
+定义: \textbf{平面的一条斜线和它在平面上的投影所成的锐角, 叫做这条直线和这个平面所成的角}.如果一条直线垂直于平面, 我们说它们所成的角是直角; 如果一条直线和平面平行或在该平面上,就说它们所成的角是 ${0}^{ \circ  }$ 的角. 
+
+这样,直线与平面所成角的范围是 ${0}^{ \circ  } \leq  \theta  \leq  {90}^{ \circ  }$ ,或表示为 $\theta  \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ .
+
+例题：
+\begin{enumerate}
+    \item 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,求直线 ${B}_{1}D$ 与平面 ${AB}{C}_{1}{D}_{1}$ 所成角的大小.
+    \begin{jieda}
+        因为 ${AB} \bot  {BC},{AB} \bot  {B}_{1}B$，且${BC} \cap  B{B}_{1} = B$ ,所以 ${AB} \bot$ 平面 ${B}_{1}{C}_{1}{CB}$ ,又 ${B}_{1}C \subset$ 平面 ${B}_{1}{C}_{1}{CB}$ ,所以 ${AB} \bot  {B}_{1}C$ .
+        
+        因为四边形 ${B}_{1}{C}_{1}{CB}$ 为正方形,所以 ${B}_{1}C \bot  B{C}_{1}$ ,又 ${AB} \bot  {B}_{1}C,{AB} \cap  B{C}_{1} = B$ ,可得 ${B}_{1}C \bot$ 平面 ${AB}{C}_{1}{D}_{1}$ .
+        
+        设 ${B}_{1}C \cap  B{C}_{1} = M$ ,则 ${B}_{1}$ 在平面 ${AB}{C}_{1}{D}_{1}$ 上的射影为点 $M$ .
+        
+        设正方体的中心为 $O$ ,则 $O \in  {B}_{1}D,O \in$ 平面 ${AB}{C}_{1}{D}_{1}$ ,所以 ${B}_{1}D$ 在平面 ${AB}{C}_{1}{D}_{1}$ 上的射影为 ${OM}$ ,即 $\angle {B}_{1}{OM}$ 为直线 ${B}_{1}D$ 与平面 ${AB}{C}_{1}{D}_{1}$ 所成角.
+        
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_26_1197_122_297_302_0.jpg}
+        \end{center}
+        
+        在直角三角形 $\bigtriangleup {B}_{1}{OM}$ 中,易得 $\tan \angle {B}_{1}{OM} = \dfrac{{B}_{1}M}{OM} = \sqrt{2}$ ,所以 $\angle {B}_{1}{OM} = \arctan \sqrt{2}$ . 即直线 ${B}_{1}D$ 与平面 ${AB}{C}_{1}{D}_{1}$ 所成角的大小为  $\arctan\sqrt{2}$ .
+    \end{jieda}
+    \item 在 ${{Rt}} \bigtriangleup  {ACB}$ 中,已知 $\angle {ACB} = {90}^{ \circ  },{AC} = {BC} = 1,{PA}\bot$ 平面 ${ABC}$ ,且 ${PA} = \sqrt{2}$ (如图),则 ${BP}$ 与平面 ${PAC}$ 所成的角等于\blkda{$\ang{30}$}
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_148_454_647_255_218_0.jpg}
+    \end{center}
+    \begin{jieda}
+        ${BC}$ 垂直于相交直线 ${AC}\text{ 、 }{AP}$ ,故 ${BC} \bot$ 平面 ${PAC}$ , $\therefore {BP}$ 与平面 ${PAC}$ 所成的角为 $\angle {BPC}$ (锐角). 不难求得 ${AB} = \sqrt{2},{BP} = 2,\therefore \sin \angle {BPC} = \dfrac{BC}{BP} = \dfrac{1}{2},\therefore \angle {BPC} = {30}^{ \circ  }$ 
+    \end{jieda}
+      \item 已知 $P$ 为 $\bigtriangleup {ABC}$ 所在平面外一点,且在平面 ${ABC}$ 上的射影为 $O$ .
+      \begin{enumerate}
+          \item 若 ${PA} = {PB} = {PC}$ ,则 $O$ 为 $\bigtriangleup  {ABC}$ 的\blkda{外}心,又若 $\angle {ACB} = {90}^{ \circ  }$ ,则 $O$ 在\blkda[2.5]{边 ${AB}$ 的中点}
+          \begin{jieda}
+              ${PA} = {PB} = {PC} \Longrightarrow  {OA} = {OB} = {OC}$ ,故 $O$ 为 $\bigtriangleup  {ABC}$ 的外心；又直角三角形的外心在斜边的中点,故 $\angle {ACB} = {90}^{ \circ  }$ 时, $O$ 在边 ${AB}$ 的中点.
+          \end{jieda}
+          \item 若 ${PA},{PB},{PC}$ 与平面 ${ABC}$ 所成的角相等,则 $O$ 为 $\bigtriangleup  {ABC}$ 的\blkda{外}心
+          \begin{jieda}
+              由题意, $\bigtriangleup {PAO}$ , $\bigtriangleup {PBO}$ , $\bigtriangleup {PCO}$ 是全等三角形,故 ${OA} = {OB} = {OC}$ , $O$ 为 $\bigtriangleup {ABC}$ 的外心.
+          \end{jieda}
+          \item 若 $O$ 在 $\bigtriangleup {ABC}$ 内,且 $P$ 到 $\bigtriangleup {ABC}$ 的三边距离相等,则 $O$ 为 $\bigtriangleup {ABC}$ 的\blkda{内}心
+          \begin{jieda}
+              过点 $O$ 作 $\bigtriangleup {ABC}$ 三边 ${AB},{BC},{CA}$ 的垂线,垂足分别为 $D,E,F$ . 由三垂线定理,点 $P$ 到 $\bigtriangleup {ABC}$ 三边 ${AB}$ 、 ${BC}\text{ 、 }{CA}$ 的距离就是 ${PD},{PE},{PF}\text{ 、 }{PD} = {PE} = {PF} \Longrightarrow  {OD} = {OE} = {OF}$ ,又 $O$ 在 $\bigtriangleup {ABC}$ 内,故 $O$ 为 $\bigtriangleup {ABC}$ 的内心. (注: 若不限定 $O$ 在 $\bigtriangleup {ABC}$ 内,则 $O$ 为 $\bigtriangleup {ABC}$ 的内心或旁心)
+          \end{jieda}
+          \item 若四面体 ${PABC}$ 的两组对棱互相垂直,则 $O$ 为 $\bigtriangleup  {ABC}$ 的\blkda{垂}心
+          \begin{jieda}
+              连接 ${AO}$ ,它是 ${AP}$ 在平面 ${ABC}$ 上的射影. 由三垂线定理, ${PA} \bot  {BC} \Longrightarrow  {AO} \bot  {BC}$ . 同理 ${CO} \bot  {AB}$ 、 ${BO} \bot  {AC}$ , 故 $O$ 为 $\bigtriangleup {ABC}$ 的垂心.
+          \end{jieda}
+      \end{enumerate}
+    \item 已知不共面的三条射线 ${OA}\text{ 、 }{OB}\text{ 、 }{OC}$ 两两成 ${60}^{ \circ  }$ 角,求直线 ${OA}$ 与平面 ${BOC}$ 所成角的大小.
+    \begin{jieda}
+        在$OA, OB, OC$上取$A',B',C'$，满足$OA' = OB' = OC' = d$，则根据题意可知$A'B' =  B'C' = A'C' = d$. 设$A'$在平面$BOC$内的投影点为$H$，取$B'C'$中点$M$，则$H$在$OM$上，故$\angle{A'OM}$即为所求
+
+        根据几何关系有$A'M = OM = \dfrac{\sqrt{3}}{2}d$，故$cos\angle{A'OM} = \dfrac{\left(\dfrac{\sqrt{3}}{2}d\right)^2+d^2-\left(\dfrac{\sqrt{3}}{2}d\right)^2}{2 \times \left(\dfrac{\sqrt{3}}{2}d\right) \times d} = \dfrac{\sqrt{3}}{3}$
+
+        故直线 ${OA}$ 与平面 ${BOC}$ 所成角的大小为$arccos\left(\dfrac{\sqrt{3}}{3}\right)$
+    \end{jieda}
+\end{enumerate}
+\section*{三垂线定理}
+\subsection*{三垂线定理}
+在空间图形的位置关系中,线线垂直和线面垂直是可以相互转化的,下面给出平面上的直线与平面的斜线及其在平面上的射影之间垂直关系的一种直接判断方法.
+
+\textbf{三垂线定理: 平面上的一条直线和这个平面的一条斜线垂直的充要条件是它和这条斜线在平面上的投影垂直.}
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_27_1180_1570_331_278_0.jpg}
+\end{center}
+
+证明：
+
+已知 ${PA}\text{ 、 }{PO}$ 分别是平面 $\alpha$ 的垂线、斜线, ${AO}$ 是 ${PO}$ 在平面 $\alpha$ 上的射影,直线 $a \subset  \alpha$ ,且 $a \bot  {AO}$ . 因为 ${PA} \bot  \alpha ,a \subset  \alpha$ , 得到 ${PA} \bot  a$ ,又 ${AO} \bot  a,{PA} \cap  {AO} = A$ ,所以, $a \bot$ 平面 ${PAO}$ ,又因为 ${PO} \subset$ 平面 ${PAO}$ ,所以 $a \bot  {PO}$ .
+
+已知 ${PA}\text{ 、 }{PO}$ 分别是平面 $\alpha$ 的垂线、斜线, ${AO}$ 是 ${PO}$ 在平面 $\alpha$ 上的射影,直线 $a \subset  \alpha$ ,且 $a\bot {PO}$ . 因为 ${PA}\bot \alpha ,a \subset  \alpha$ ,得到 ${PA}\bot a$ ,又 ${PO}\bot a,{PA} \cap  {PO} = P$ ,所以, $a \bot$ 平面 ${PAO}$ ,又因为 ${AO} \subset$ 平面 ${PAO}$ ,所以 $a \bot  {AO}$ .
+
+例题：
+\begin{enumerate}
+    \item 给定不共面的 4 点,其中任意 3 个点都确定 1 个平面,这样由 4 个平面所围成的几何体称为四面体,其中这 4 个点称为四面体的顶点,2 个顶点的连线称为四面体的棱,3 个顶点所确定的三角形称为四面体的面. 已知在四面体 ${ABCD}$ 中, ${AB} \bot  {CD},{AC} \bot  {BD}$ ,求证: ${AD} \bot  {BC}$ .
+    \begin{jieda}
+        证明 如图所示，设点 $A$ 在平面 ${BCD}$ 上的射影是 $O$ 点,则 ${AO} \bot$ 平面 ${BCD}$ ,连接 ${BO}\text{ 、 }{CO}\text{ 、 }{DO}$ .
+        
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_28_1190_509_311_345_0.jpg}
+        \end{center}
+        
+        因为 ${AB} \bot  {CD},{AB}$ 是平面 ${BCD}$ 的斜线, ${BO}$ 是其在平面 ${BCD}$ 上的射影,且 ${CD} \subset$ 平面 ${BCD}$ ,所以根据三垂线定理可得 ${BO} \bot  {CD}$ .
+        
+        同理 ${CO} \bot  {BD}$ ,于是点 $O$ 是 $\bigtriangleup {BCD}$ 的垂心,所以 ${DO} \bot  {BC}$ .
+        
+        因为 ${AD}$ 是平面 ${BCD}$ 的斜线, ${DO}$ 是其在平面 ${BCD}$ 上的射影,且 ${BC} \subset$ 平面 ${BCD},{BC} \bot  {DO}$ ,所以根据三垂线定理可得 ${AD} \bot  {BC}$ .
+    \end{jieda}
+    \item 已知矩形 ${ABCD}$ 的边长 ${AB} = 6{{cm}},{BC} = 4{{cm}}$ ,在 ${CD}$ 上截取 ${CE} =$  $4{{cm}}$ ,以 ${BE}$ 为棱将矩形折起,使 $\bigtriangleup B{C}^{\prime }E$ 的高 ${C}^{\prime }F \bot$ 平面 ${ABED}$ (如图), 求:
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_149_1145_141_264_187_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 点 ${C}^{\prime }$ 到平面 ${ABED}$ 的距离
+        \item 点 ${C}^{\prime }$ 到边 ${AB}$ 的距离
+        \item 点 ${C}^{\prime }$ 到 ${AD}$ 的距离
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 作 ${FH}\bot {AB}$ 于 $H$ ,作 ${FG}\bot {AD}$ 于 $G$ ,则 ${C}^{\prime }H\bot {AB}$ , ${C}^{\prime }G\bot {AD}$ ,可算得 ${BE} = 4\sqrt{2}{{cm}}$ , ${HB} = 2{{cm}}$，$\therefore {C}^{\prime }$ 到面 ${ABED}$ 的距离为 ${C}^{\prime }F = 2\sqrt{2}{{cm}}$ .
+            \item ${C}^{\prime }$ 到 ${AB}$ 的距离为 ${C}^{\prime }H = 2\sqrt{3}{{cm}}$ .
+            \item ${C}^{\prime }$ 到 ${AD}$ 的距离为 ${C}^{\prime }G = 2\sqrt{6}{{cm}}$ .
+        \end{enumerate}
+    \end{jieda}
+    \item 已知 ${PA}\text{ 、 }{PB}\text{ 、 }{PC}$ 两两互相垂直,且 ${PA} = 3,{PB} = 4,{PC} = 6$ ,求点 $P$ 到平面 ${ABC}$ 的距离.
+    \begin{jieda}
+        \begin{enumerate}
+            \item 等体积法
+
+            由题意知 ${PA},{PB},{PC}$ 两两垂直，${V}_{C - {PAB}} = \dfrac{1}{3}{S}_{\bigtriangleup {PAB}} \cdot  {PC} = \dfrac{1}{3} \times  \dfrac{1}{2} \times  3 \times  4 \times  6 = {12},$
+
+                
+            在直角三角形 ${PAB}$ 中, ${AB} = \sqrt{P{A}^{2} + P{B}^{2}} = \sqrt{{3}^{2} + {4}^{2}} = 5$
+            
+            在直角三角形 ${PAC}$ 中, ${AC} = \sqrt{P{A}^{2} + P{B}^{2}} = \sqrt{{3}^{2} + {6}^{2}} = 3\sqrt{5}$
+            
+            在直角三角形 ${PBC}$ 中, ${BC} = \sqrt{P{B}^{2} + P{C}^{2}} = \sqrt{{4}^{2} + {6}^{2}} = 2\sqrt{13}$
+        
+            由余弦定理得$\cos \angle {ACB} = \dfrac{A{C}^{2} + B{C}^{2} - A{B}^{2}}{{2AC} \cdot  {BC}} = \dfrac{{\left( 3\sqrt{5}\right) }^{2} + {\left( 2\sqrt{13}\right) }^{2} - {5}^{2}}{2 \times  3\sqrt{5} \times  2\sqrt{13}} = \dfrac{6\sqrt{65}}{65}$
+            
+            故$\sin \angle {ACB} = \sqrt{1 - {\cos }^{2}\angle {ACB}} = \sqrt{1 - {\left( \dfrac{6\sqrt{65}}{65}\right) }^{2}} = \dfrac{\sqrt{1885}}{65}$
+            
+            设点 $P$ 到平面 ${ABC}$ 的距离为 $h$，所以 ${V}_{P - {ABC}} = \dfrac{1}{3}{S}_{\bigtriangleup {ABC}} \cdot  h = \dfrac{1}{3} \times  \dfrac{1}{2}{AC} \cdot  {BC}\sin \angle {ACB} \cdot  h = \dfrac{1}{3} \times  \dfrac{1}{2} \times  3\sqrt{5} \times  2\sqrt{13} \times  \dfrac{\sqrt{1885}}{65}h = \sqrt{29}h$
+            
+            由${V}_{P - {ABC}} = {V}_{C - {PAB}}$可知$h = \dfrac{{12}\sqrt{29}}{29}$
+            \item 解三角形
+            
+            设点 $P$ 在平面 ${ABC}$ 的投影为$H$，根据三垂线定理可知$H$为$\triangle ABC$的垂心
+
+            根据垂心到顶点距离可知$CH = 2R \cdot |cos\angle{ACB}| = \dfrac{AB}{\sin \angle {ACB}} \cdot cos\angle{ACB}$
+            
+            同上可知${AB} = 5, {AC} = 3\sqrt{5}, {BC} = 2\sqrt{13}$，$\cos \angle {ACB} = \dfrac{6\sqrt{65}}{65}, \sin \angle {ACB} = \dfrac{\sqrt{1885}}{65}$，故$CH = \dfrac{30\sqrt{29}}{29}$
+
+            故根据勾股定理可知$PH = \dfrac{12\sqrt{29}}{29}$
+
+            \ps 证明垂心到顶点距离公式：$CH = 2R \cdot |cosC|$
+
+            设$BC$边上的高的垂足为$F$，则$CF = AC \cdot |cosC|$，$CH = \dfrac{CF}{sin\angle{CHF}}$，根据三角形相似可知$\angle{B} = \angle{CHF}$，故$CH = \dfrac{CF}{sinB} = \dfrac{AC}{sinB}\cdot |cosC| = 2R |cosC|$
+        \end{enumerate}
+        
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{三余弦定理}
+已知直线 ${PA},{PB},{PC}$ 两两相交成直角,一平面与 ${PA},{PB},{PC}$ 分别相交于点 $A,B,C$，证明：$\bigtriangleup {ABC}$ 的形状是锐角三角形.
+\begin{jieda}
+    如图,作 ${PD}\bot {BC}$ 于 $D$ ,连接 ${AD}$ . 由题意, ${AP}\bot$ 平面 ${BPC}$ ,故斜线 ${AC},{AD}$ 在平面 ${BPC}$ 上的射影是 ${PC},{PD}$ ,由三垂线定理, ${AD} \bot  {BC}.\cos \angle {ACB} = \dfrac{DC}{AC} = \dfrac{DC}{PC} \cdot  \dfrac{PC}{AC} = \cos \angle {PCD}$ . $\cos \angle {PCA}$ ,而 $\angle {PCD},\angle {PCA}$ 必为锐角,故 $\angle {ACB}$ 也是锐角. 同理, $\bigtriangleup {ABC}$ 的三个角都是锐角. 
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d20cdrf7aajc73bfmvhg_122_1287_1612_247_227_0.jpg}
+    \end{center}
+\end{jieda}
+
+从上述例题中可以总结得到三余弦定理：
+
+设点 $ O $ 为空间一点，自 $ O $ 出发的三条射线 $ OA $、$ OB $、$ OC $，记$ \angle AOB = \alpha $，$ \angle AOC = \theta $，$ \angle BOC = \beta $. 当 $ AB $ 垂直于平面 $ BOC $ 时，此时满足$\cos \theta = \cos \alpha \cos \beta$
+\begin{center}
+    \includegraphics[width=0.4\linewidth]{bodyxb//src/sanyuxiandingli.png}
+\end{center}
+\subsection*{最小角定理}
+设点 $ O $ 为空间一点，自 $ O $ 出发的三条射线 $ OA $、$ OB $、$ OC $，记$ \angle AOB = \alpha $，$ \angle AOC = \theta $，$ \angle BOC = \beta $. 当 $ AB $ 垂直于平面 $ BOC $ 时，$\alpha$为线面成角，$\theta$为斜线和平面内直线所成角，根据三余弦定理可知$\cos \theta = \cos \alpha \cos \beta \leq cos\alpha$，故线面成角是斜线和平面内直线所成角中最小的.
+
+例题：
+\begin{enumerate}
+    \item 已知 ${AD}$ 是平面 $\alpha$ 的斜线, $D$ 为斜足, ${BD}$ 是 ${AD}$ 在 $\alpha$ 上的射影, ${DC}$ 在 $\alpha$ 内,且 $\angle {BDC} = \angle {ADB} = {45}^{ \circ  }$ (如图),则锐角 $\angle {ADC}$ 为\blkda{${60}^{ \circ  }$}
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_148_967_661_300_202_0.jpg}
+    \end{center}
+    \begin{jieda}
+        $cos\angle{ADC} = cos\angle{ADB} \cdot cos\angle{CDB}$
+    \end{jieda}
+    
+    \item 已知直线 $a$ 是与平面 $\alpha$ 成 $\theta$ 角的一条斜线, $b$ 是 $\alpha$ 上与 $a$ 异面的任意一条直线,则 $a$ 与 $b$ 所成角\dotfill{(\kh{A})}
+    \xx{有最小值 $\theta$ ,也有最大值 $\dfrac{\pi }{2}$}{有最小值 $\theta$ ,也有最大值 $\pi$}{有最小值 $\theta$ ,但没有最大值}{没有最小值,但有最大值 $\dfrac{\pi }{2}$}
+    \item 已知 ${AC}$ 是平面 $\alpha$ 上的一条射线, $P$ 为 $\alpha$ 外一点,且 ${PA} = 2,P$ 到 $\alpha$ 的距离为 1 . 设 $\angle {PAC}$  $= \theta$ ,则下列式子成立的是\dotfill{(\kh{B})}
+    \xx{ $\theta  = {30}^{ \circ  }$}{$- \dfrac{\sqrt{3}}{2} \leq  \cos \theta  \leq  \dfrac{\sqrt{3}}{2}$}{$\sin \theta  < \dfrac{1}{2}$}{$\tan \theta  \geq  \dfrac{\sqrt{3}}{3}$}
+    \begin{jieda}
+        设$P$在$\alpha$内射影为$P'$，则根据三余弦定理可知$cos\angle{PAC} = cos\angle{P'AC} \cdot cos\angle{PAP'}$，根据几何关系可知$\angle{PAP'} = \ang{30}$，而$cos\angle{P'AC} \in [-1, 1]$，故选B.
+    \end{jieda}
+\end{enumerate}
+\section*{平面与平面平行}
+\subsection*{面面平行的定义}
+若两平面没有公共点，则说明两平面平行.
+
+\subsection*{面面平行的判定定理}
+
+\textbf{面面平行的判定定理}：如果一个平面上的两条相交直线与另一个平面平行, 那么这两个平面平行.
+
+已知: $a\text{ 、 }b$ 是平面 $\alpha$ 上的两条相交直线,且 $a\text{ 、 }b$ 都与平面 $\beta$ 平行，求证$\alpha // \beta$
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_30_1211_124_303_202_0.jpg}
+\end{center}
+
+证明 用反证法. 假设平面 $\alpha$ 与平面 $\beta$ 相交于直线 $l$ ,因为直线 $a//$ 平面 $\beta ,a \subset$ 平面 $\alpha$ ,且 $\alpha  \cap  \beta  = l$ ,根据直线与平面平行的性质定理,得 $a//l$ . 同理可得 $b//l$ . 由公理 $4,a//b$ ,这与已知 $a\text{ 、 }b$ 是平面 $\alpha$ 上的两条相交直线相矛盾. 所以假设不成立,即 $\alpha //\beta$.
+
+推论: 如果一平面内有两条相交直线分别平行于另一个平面内的两条相交直线, 那么这两个平面平行.
+
+\subsection*{面面平行性质定理}
+\textbf{面面平行性质定理}: 如果两个平行平面同时和第三个平面相交, 那么它们的交线平行.
+证明 如图所示，设平面 $\gamma$ 与平行平面 $\alpha$ 、 $\beta$ 相交,有两条交线 $a$ 、 $b$ . 因为 $\alpha //\beta$ ,所以 $\alpha \text{ 、 }\beta$ 没有公共点,从而交线 $a\text{ 、 }b$ 也没有公共点. 又因为 $a\text{ 、 }b$ 都在平面 $\gamma$ 上,所以 $a//b$ .
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_30_420_1572_313_338_0.jpg}
+\end{center}
+
+其他性质:
+\begin{enumerate}
+    \item 如果两个平面平行，则其中一个平面上的任意直线都平行于另一个平面
+    \item 如果两个平面平行，则一个平面内的直线和另一个平面内的直线的位置关系是平行或异面
+    \item 如果两个平面分别与第三个平面平行,则这两个平面也相互平行
+    \item 如果一条直线垂直于两个平行平面中一个平面,则它必垂直于另一个平面
+    \item 如果一条直线与两个平行平面相交,则这条直线与这两个平面所成的角相等
+    \item 如果两个平面平行,则其中一个平面上的任意一点到另一个平面的距离都相等. 我们把它定义为两个平行平面之间的距离
+\end{enumerate}
+
+例题：
+\begin{enumerate}
+    \item 判断下列结论是否正确, 并说明理由.
+    \begin{dingautolist}{172}
+        \item 平行于同一条直线的两个平面平行
+        \item 与同一条直线所成角相等的两个平面平行
+        \item 垂直于同一条直线的两个平面平行
+        \item 若一个平面上有 3 个不同的点到另一个平面的距离相等,则这两个平面相互平行
+        \item 夹在两个平行平面间的平行线段相等
+        \item 如果一个平面内任意直线都平行于另一个平面,那么这两个平面平行
+        \item 如果 $a$ 、 $b$ 是异面直线,且 $a//\alpha ,b//\alpha ,a//\beta ,b//\beta$ ,那么 $\alpha //\beta$
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 错误，可能相交
+            \item 错误，反例：两平面垂直，直线和两平面夹角均为$\ang{45}$
+            \item 正确
+            \item 错误，两平面相交，一个平面上的三个点分布在另一个平面两侧
+            \item 正确，两平行线段确定一个平面，根据面面平行的性质定理，可知交线平行，故平行线段和交线确定一个平行四边形，因此两平行线段相等.
+            \item 正确
+            \item 正确，在平面$\alpha$内做$a' // a, b' // b$，两直线相交，故根据面面平行的判定定理可知两平面平行.
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 已知平面 $\alpha //$ 平面 $\beta$ ,直线 $l \subset  \alpha$ ,点 $P \in  l$ ,且平面 $\alpha$ 与平面 $\beta$ 间的距离为 4,则在平面 $\beta$ 上到点 $P$ 的距离为 $5$ 且到直线 $l$ 距离为 $4.5$ 的点的轨迹 (图像) 是\dotfill{(\kh{C})}
+    \xx{一个圆}{两条平行直线}{四个点}{两个点}
+    \begin{jieda}
+        到直线 $l$ 距离为 $4.5$ 的点的轨迹是两条直线，在两直线上，到点 $P$ 的距离为$5$的点有4个.
+    \end{jieda}
+
+    \item 如图,已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 $2,E\text{ 、 }F\text{ 、 }G$ 分别为 ${AB}\text{ 、 }{BC}\text{ 、 }B{B}_{1}$ 的中点.
+    \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_32_987_1290_312_314_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 若 ${O}_{1}\text{ 、 }{O}_{2}$ 分别是 ${A}_{1}{C}_{1}\text{ 、 }{EF}$ 的中点,求证: $D{O}_{1}//G{O}_{2}$
+        \item 求平面 ${A}_{1}D{C}_{1}$ 与平面 ${EFG}$ 间的距离
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $EF // AC // A_1C_1$，同理$EG // DC_1$，故平面$EFG //$平面$A_1DC_1$，平面$DD_1B_1B \cap $平面$EFG = O_2G$，平面$DD_1B_1B \cap $平面$A_1DC_1 = DO_1$，故$D{O}_{1}//G{O}_{2}$
+            \item $\sqrt{3}$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 如图，已知四边形 ${ABCD}$ 是矩形,点 $P$ 是平面 ${ABCD}$ 外一点, $M\text{ 、 }N$ 分别为 ${BC}\text{ 、 }{PD}$ 的中点.
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_30_937_1612_316_290_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 证明: ${MN}//$ 平面 ${PAB}$
+        \item 若 $K$ 为 ${AD}$ 的中点,证明:平面 ${MNK}//$ 平面 ${PAB}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 证明
+            
+            如图，因为 $M\text{ 、 }N$ 分别为 ${BC}\text{ 、 }{PD}$ 的中点. 取 ${PA}$ 的中点 $R$ ,连接 ${NR}$ 、 ${BR}$ ,所以 ${NR}//{AD}$ ,且 ${NR} = \dfrac{1}{2}{AD}$ , ${BM} = \dfrac{1}{2}{BC}$ ,因为四边形 ${ABCD}$ 是矩形,所以 ${AD}//$  ${BC}$ ,且 ${AD} = {BC}$ ,所以 ${NR}//{BM}$ ,且 ${NR} = {BM}$ ,所以四边形 ${BMNR}$ 是平行四边形,所以 ${MN}//{BR}$ ,因为 ${MN} \not \subset$ 平面 ${PAB},{BR} \subset$ 平面 ${PAB}$ ,所以 ${MN}//$ 平面 ${PAB}$ .
+            
+            \begin{center}
+            \includegraphics[width=0.6\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_31_424_564_815_335_0.jpg}
+            \end{center}
+            \item 如图，由(1)知 ${MN}//$ 平面 ${PAB}$ ,因为 $K$ 为 ${AD}$ 的中点, $M$ 为 ${BC}$ 的中点. 四边形 ${ABCD}$ 是矩形,所以 ${MK}//{AB}$ ,因为 ${MK} \not \subset$ 平面 ${PAB},{AB} \subset$ 平面 ${PAB}$ ,所以 ${MK}//$ 平面 ${PAB}$ ,因为 ${MK} \cap  {MN} = M$ ,所以平面 ${MNK}//$ 平面 ${PAB}$ .
+        \end{enumerate}
+    \end{jieda}
+
+    \item 如图，${AE} \bot$ 平面 ${ABCD},{BF}//$ 平面 ${ADE}$ , ${CF}//{AE},{AD} \bot  {AB},{AB} = {AD} = 1,{AE} = {BC} = 2$ .
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_31_1171_1180_343_271_0.jpg}
+    \end{center}
+
+    \begin{enumerate}
+        \item 求证: ${AD}//{BC}$
+        \item 求点 $F$ 到平面 ${ADE}$ 的距离
+    \end{enumerate}
+
+    \begin{jieda}
+        \begin{enumerate}
+            \item 证明 
+            
+            依题意 ${CF}//{AE},{CF} \not \subset$ 平面 ${ADE},{AE} \subset$ 平面 ${ADE}$ ,所以 ${CF}//$ 平面 ${ADE}$ ,又 ${BF}//$ 平面 ${ADE},{BF} \cap  {CF} = F$ , ${BF}\text{ 、 }{CF} \subset$ 平面 ${BCF}$ ,所以平面 ${BCF}//$ 平面 ${ADE}$ ,又因为平面 ${BCF} \cap$ 平面 ${ABCD} = {BC}$ ,平面 ${ADE} \cap$ 平面 ${ABCD} = {AD}$ ,所以,根据平面与平面平行的性质定理,得 ${AD}//{BC}$ .
+            \item 由(1)可知,平面 ${BCF}//$ 平面 ${ADE}$ ,所以点 $F$ 到平面 ${ADE}$ 的距离就是平面 ${BCF}$ 到平面 ${ADE}$ 的距离,因为平面 ${BCF}$ 上的任意一点到平面 ${ADE}$ 的距离都相等,所以可求点 $B$ 到平面 ${ADE}$ 的距离. 因为 ${AE} \bot$ 平面 ${ABCD},{AB} \subset$ 平面 ${ABCD}$ ,所以 ${AE} \bot  {AB}$ ,又已知 ${AD} \bot$  ${AB},{AE} \cap  {AD} = A$ ,所以 ${AB} \bot$ 平面 ${ADE}$ . 即 ${AB}$ 的长度就是点 $B$ 到平面 ${ADE}$ 的距离,因为 ${AB} = 1$ ,所以点 $F$ 到平面 ${ADE}$ 的距离等于 1 .
+        \end{enumerate}
+    \end{jieda}
+
+\end{enumerate}
+\section*{平面与平面垂直}
+\subsection*{二面角}
+
+在生活中, 有很多平面相交的情形，但给我们的直观感受却不一样,有些平面之间的“夹角”比较大,有些平面之间的“夹角”就比较小, 那么, 这里所指的平面之间的夹角是如何定义的呢? 下面,我们给出二面角及其平面角的概念.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_33_1156_541_360_252_0.jpg}
+\end{center}
+
+一般地,一个平面内的一条直线将这个平面分成两部分,其中每一部分都叫半平面. 从一条直线出发的两个半平面所组成的图形叫二面角. 这条直线叫做二面角的棱, 这两个半平面叫做二面角的面. 记作二面角 $\alpha  - l - \beta$ 或 $P - {AB} - Q$ 或 $\alpha  - {AB} - \beta$ 或 $P - l - Q$ 等.
+
+我们知道,二面角是一个空间图形,那么该如何刻画“角”的大小呢? 与异面直线所成角以及直线与平面所成角类似, 我们通过平面角来度量这些空间角的大小.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_33_1272_871_242_272_0.jpg}
+\end{center}
+
+如图，在二面角 $\alpha  - l - \beta$ 的棱 $l$ 上任取一点 $P$ ,过点 $P$ 分别在两个半平面 $\alpha$ 与 $\beta$ 上作垂直于棱 $l$ 的两条射线 ${PA}\text{ 、 }{PB}$ ,则射线 ${PA}\text{ 、 }{PB}$ 构成 $\angle {APB}$ . 在二面角 $\alpha  - l - \beta$ 的棱 $l$ 上另取一点 ${P}_{1}$ ,用同样的方式得到 $\angle {A}_{1}{P}_{1}{B}_{1}$ . 由等角定理容易证明 $\angle {APB} = \angle {A}_{1}{P}_{1}{B}_{1}$ ,即射线 ${PA}\text{ 、 }{PB}$ 所构成的 $\angle {APB}$ 的大小与点 $P$ 的取法无关. 因此,我们可以用 $\angle {APB}$ 的大小来度量二面角 $\alpha  - l - \beta$ 的大小,并称其为二面角 $\alpha  - l - \beta$ 的平面角. 因此,今后所说的二面角大小,即指其平面角的大小,由定义,其取值范围为 $\left\lbrack  {0,\pi }\right\rbrack$ .
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_33_429_1395_827_219_0.jpg}
+\end{center}
+
+当二面角 $\alpha  - l - \beta$ 的大小等于直角时,我们称这个二面角为直二面角. 当两个平面相交所成的二面角是直二面角时,我们就说这两个平面互相垂直,记作 $\alpha  \bot  \beta$ .
+
+\subsubsection*{二面角的作法}
+\begin{dingautolist}{172}
+    \item 定义法. 当点 $A$ 在二面角 $\alpha  - l - \beta$ 的棱 $l$ 上时,可过 $A$ 分别在 $\alpha ,\beta$ 内作棱 $l$ 的垂线 (射线) ${AB},{AC}$ ,由二面角平面角的定义,可知 $\angle {BAC}$ 就是二面角 $\alpha  - l - \beta$ 的平面角.
+    \item 三垂线法. 当点 $A$ 在二面角 $\alpha  - l - \beta$ 的一个面 $\alpha$ 内时,可作 ${AO}\bot \beta$ 于点 $O$ ,再作 ${OB} \bot  l$ 于点 $B$ ,连接 ${AB}$ ,则由三垂线定理,得 ${AB} \bot  l$ ,故 $\angle {ABO}$ 就是二面角 $\alpha  - l - \beta$ 的平面角或其补角.
+\end{dingautolist}
+
+\subsection*{二面角的间接计算方法}
+当二面角的平面角不易作出时,可考虑运用间接法.
+
+设 $\alpha$ 内的一个封闭几何图形的面积为 $S$ ,此几何图形在 $\beta$ 上的射影面积为 ${S}^{\prime }$ ,二面角 $\alpha  - l$  $- \beta$ 的大小为 $\theta$ ,可以证明 $\left| {\cos \theta }\right|  = \dfrac{{S}^{\prime }}{S}$ (证明略). 由于运用了射影的手段,因此该方法也称为射影法.
+
+例题：
+
+\begin{enumerate}
+    \item 过 ${60}^{ \circ  }$ 的二面角 $\alpha  - l - \beta$ 的棱上一点 $O$ ,分别在 $\alpha ,\beta$ 内 $O$ 的同侧引两条射线 ${OP},{OQ}$ ,使 ${OP},{OQ}$ 与 $l$ 都成 ${45}^{ \circ  }$ 角,求 $\angle {POQ}$ 的余弦值.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_154_1256_771_242_160_0.jpg}
+    \end{center}
+    \begin{jieda}
+        在 $l$ 上取一点 $A$ ,过 $A$ 分别在 $\alpha ,\beta$ 内作 $l$ 的垂线,与 ${OP},{OQ}$ 交于点 $P,Q$ ,则 $\angle {PAQ}$ 即二面角 $\alpha  - l - \beta$ 的平面角.
+        
+        不妨设 ${OA} = 1$ ,则 ${AP} = {AQ} = 1$ ,则 ${OP} = {OQ} = \sqrt{2}$ .
+        
+        又 $\angle {PAQ} = {60}^{ \circ  },\therefore {PQ} = 1$ ,于是利用余弦定理,得 $\cos \angle {POQ} = \dfrac{2 + 2 - 1}{2 \cdot  \sqrt{2} \cdot  \sqrt{2}} = \dfrac{3}{4}$ .
+    \end{jieda}
+    
+    \item 已知 $E,F$ 分别是正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱 ${BC},C{C}_{1}$ 的中点,则截面 ${AEF}{D}_{1}$ 与底面 ${ABCD}$ 所成二面角的正弦值等于\dotfill{(\kh{C})}.
+    \xx{$\dfrac{2\sqrt{2}}{3}$}{$\dfrac{\sqrt{2}}{3}$}{$\dfrac{\sqrt{5}}{3}$}{$\dfrac{2}{3}$}
+    \begin{jieda}
+        过$D$做$AE$的垂线，垂足为$H$，$\angle{DHD_1}$为二面角的平面角，$DH = \dfrac{2\sqrt{5}}{5}$，$D_1H = \sqrt{1+\dfrac{4}{5}} = \dfrac{3\sqrt{5}}{5}$，故目标正弦值为$\dfrac{\sqrt{5}}{3}$.
+    \end{jieda}
+
+    \item 如图,在四棱锥 $P - {ABCD}$ 中,已知 ${PA}\bot$ 底面 ${ABCD}$ ,底面 ${ABCD}$为等腰梯形, ${AD}//{BC},{AB} = {AD} = {CD} = 1,{BC} = {PA} = 2,{BC}$ 的中点为 $E$ ,则平面 ${PDE}$ 与平面 ${CED}$所成角的余弦值为\blkda{$\dfrac{\sqrt{57}}{19}$}
+    \begin{center}
+        \includegraphics[width=0.2\linewidth]{bodyxb//src/ermianjiao2.png}
+    \end{center}
+    \begin{jieda}
+        取 ${DE}$ 的中点 $O$ ,连接 ${AO},{PO},{AE}$ 
+
+        \begin{center}
+            \includegraphics[width=0.2\linewidth]{bodyxb//src/ermianjiao2_jieda.png}
+        \end{center}
+        因为 ${AD}//{BC},{BC} = 2,{BC}$ 的中点为 $E$ ,则 ${AD}//{BE}$ 且 ${AD} = {BE}$ ,
+        则四边形 ${ABED}$ 为平行四边形,则 ${ED} = {AB} = 1 = {EC} = {CD}$ ,
+        则三角形 ${CDE}$ 为等边三角形,则 $\angle {DCE} = {60}^{ \circ  }$ ,
+        又四边形 ${ABCD}$ 为等腰梯形,则 $\angle {ABE} = {60}^{ \circ  }$ ,
+        则三角形 ${ADE}$ 为等边三角形,则 ${AO} \bot  {DE}$ ,
+        又因为 ${PA} \bot$ 平面 ${ABCD},{DE} \subset$ 平面 ${ABCD}$ ,则 ${PA} \bot  {DE}$ ,
+        又 ${PA} \cap  {AO} = A,{PA},{AO} \subset$ 平面 ${PAO}$ ,则 ${DE} \bot$ 平面 ${PAO}$ ,
+        又因为 ${PO} \subset$ 平面 ${PAO}$ ,则 ${DE} \bot  {PO}$ ,
+        则 $\angle {POA}$ 为平面 ${PDE}$ 与平面 ${CED}$ 所成角的平面角
+        
+        在 ${{Rt}} \bigtriangleup  {PAO}$ 中, ${PA} = 2,{AO} = \dfrac{\sqrt{3}}{2}{AD} = \dfrac{\sqrt{3}}{2}$ ,则 ${PO} = \sqrt{P{A}^{2} + A{O}^{2}} = \dfrac{\sqrt{19}}{2}$ ,
+        则 $\cos \angle {POA} = \dfrac{AO}{PO} = \dfrac{\sqrt{57}}{19}$ .
+    \end{jieda}
+
+    \item 设 $E$ 为正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱 $C{C}_{1}$ 的中点，求平面 $A{B}_{1}E$ 和底面 ${A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 所成锐二面角的余弦值.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_155_1144_1527_261_262_0.jpg}
+    \end{center}
+    \begin{jieda}
+        连接 ${A}_{1}{C}_{1}$ ,显然, $\bigtriangleup {A}_{1}{B}_{1}{C}_{1}$ 是 $\bigtriangleup A{B}_{1}E$ 的底面上的射影,设正方体的棱长为 2,则 $A{B}_{1} = 2\sqrt{2},{B}_{1}E = \sqrt{5},{AE} = 3$ ,于是 $\cos \angle {B}_{1}{AE} =$  $\dfrac{A{B}_{1}^{2} + A{E}^{2} - {B}_{1}{E}^{2}}{2 \cdot  A{B}_{1} \cdot  {AE}} = \dfrac{8 + 9 - 5}{2 \cdot  2\sqrt{2} \cdot  3} = \dfrac{\sqrt{2}}{2},\therefore \angle {B}_{1}{AE} = {45}^{ \circ  }$ .
+        
+        故 ${S}_{\bigtriangleup {B}_{1}{AE}} = \dfrac{1}{2} \cdot  2\sqrt{2} \cdot  3 \cdot  \sin {45}^{ \circ  } = 3$，而 ${S}_{\bigtriangleup {A}_{1}{B}_{1}{C}_{1}} = 2$ ,于是,平面 $A{B}_{1}E$ 与底面 ${A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 所成锐二面角 $\theta$ 的余弦值为 $\cos \theta  =$  $\dfrac{{S}_{\bigtriangleup {A}_{1}{B}_{1}{C}_{1}}}{{S}_{\bigtriangleup A{B}_{1}E}} = \dfrac{2}{3}.$
+    \end{jieda}
+    
+    \item 已知 $A,B$ 是 ${120}^{ \circ  }$ 的二面角 $\alpha  - l - \beta$ 棱 $l$ 上的两点,线段 ${AC},{BD}$ 分别在面 $\alpha ,\beta$ 内,且 ${AC} \bot  l,{BD} \bot  l$ (如图). 已知 ${AC} = 2,{BD} = 1,{AB} = 3$ ,求线段 ${CD}$ 之长
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_158_1009_1247_272_209_0.jpg}
+    \end{center}
+    \begin{jieda}
+        在平面 $\alpha$ 内,作 ${EB}\bot l$ 于 $B$ ,并取 ${EB} = {CA}$ ,连接 ${EC},{ED}$ ,则四边形 ${ACEB}$ 为矩形,且 $l \bot$ 平面 ${EBD},\angle {EBD}$ 就是二面角 $\alpha  - l - \beta$ 的平面角. $l \bot  {ED},l//{EC},\therefore {EC} \bot  {ED}$ . 在 $\bigtriangleup {EBD}$ 中使用余弦定理: $E{D}^{2} = B{E}^{2} + B{D}^{2} - 2 \cdot  {BE} \cdot  {BD} \cdot  \cos \angle {EBD}$ ; 在 Rt $\bigtriangleup {CED}$ 中,由勾股定理: ${CD} = \sqrt{E{C}^{2} + E{D}^{2}} =$  $\sqrt{A{B}^{2} + A{C}^{2} + B{D}^{2} - 2 \cdot  {AC} \cdot  {BD} \cdot  \cos \angle {EBD}} = 4$ . 
+        
+        \ps 一般地,若异面直线 ${AC}\text{ 、 }{BD}$ 的公垂线段为 ${AB} = d$ ,夹角为 $\theta$ ,线段 ${AC} = a$ ,线段 ${BD} = b$ ,则 ${CD} = \sqrt{{d}^{2} + {a}^{2} + {b}^{2} \pm  {2ab}\cos \theta }$ ,向量 $\vv{AC},\vv{BD}$ 夹角为 $\theta \left( {\pi  - \theta }\right)$ 时取负 (正) 号.
+    \end{jieda}
+
+    
+    \item 在 ${120}^{ \circ  }$ 的二面角 $\alpha  - l - \beta$ 的面 $\alpha ,\beta$ 内分别有 $A,B$ 两点,且 $A,B$ 到棱 $l$ 的距离 ${AC},{BD}$ 分别是 $2,4,{AB} = {10}$ (如图),求:
+    \begin{enumerate*}
+        \item 直线 ${AB}$ 与棱 $l$ 所成角的正弦值
+        \item 直线 ${AB}$ 与平面 $\beta$ 所成角的正弦值
+    \end{enumerate*}
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_159_337_1831_318_172_0.jpg}
+    \end{center}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 在平面 $\beta$ 内,作 ${EC}\bot l$ 于 $C$ ,并取 ${EC} = {BD}$ ,连接 ${EA},{EB}$ ,则四边形 ${CEBD}$ 为矩形,且 $l\bot$ 平面 ${ACE},\angle {ACE}$ 就是二面角 $\alpha  - l - \beta$ 的平面角. 在 $\bigtriangleup {ACE}$ 中使用余弦定理: ${AE} = \sqrt{C{A}^{2} + C{E}^{2} - 2 \cdot  {CA} \cdot  {CE} \cdot  \cos \angle {ACE}} = 2\sqrt{7} \cdot  l \bot$  ${AE},l//{BE},\therefore {BE}\bot {AE}$ ,且直线 ${AB}$ 与棱 $l$ 所成角即 $\angle {ABE}.\sin \angle {ABE} = \dfrac{AE}{AB} = \dfrac{\sqrt{7}}{5}$ 
+            \item 延长 ${EC}$ 至点 $F$ ,使得 ${CF} = {AC} \cdot  \sin {30}^{ \circ  } = 1$ ,连接 ${FA},{FB}$ . 此时 $l\bot {CA},l\bot {CF},\therefore l\bot$ 平面 ${CFA},\therefore l\bot$  ${FA}$ ；又由余弦定理, ${FA} = \sqrt{3},\therefore {FA}\bot {FC},\therefore {FA}\bot \beta ,\therefore \angle {ABF}$ 即为直线 ${AB}$ 与平面 $\beta$ 所成的角, $\sin \angle {ABF} = \dfrac{FA}{AB} = \dfrac{\sqrt{3}}{10}.$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 
+    \begin{enumerate}
+        \item 如图,已知锐二面角 $\alpha  - l - \beta$ 的平面角为 $\theta ,m$ 是 $\alpha$ 内异于 $l$ 的一条直线,则 $m$ 与 $\beta$ 所成角的范围是\dotfill{(\kh{A})}   
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_159_422_363_237_183_0.jpg}
+        \end{center}
+        \xx{$\left\lbrack  {0,\theta }\right\rbrack$}{$\left\lbrack  {\theta ,\dfrac{\pi }{2}}\right\rbrack$}{$\left\lbrack  {\theta ,\pi  - \theta }\right\rbrack$}{$\left( {0,\dfrac{\pi }{2}}\right\rbrack$}
+        \begin{jieda}
+            记 $m$ 与 $\beta$ 所成角为 $\gamma .m$ 异于 $l$ 有两种情况: \ding{172} $m//l$ . 又 $l \subset  \beta ,\therefore m//\beta$ ,此时 $\gamma  = 0;\text{ \ding{173} }m$ 与 $l$ 相交,此时 $\gamma  \in$  $\left( {0,\dfrac{\pi }{2}}\right\rbrack$ ,记 $m$ 与 $l$ 所成锐角或直角为 $\delta  \in  \left( {0,\dfrac{\pi }{2}}\right\rbrack$ 
+            
+            根据三正弦定理, $\sin \theta \sin \delta  = \sin \gamma$ ,且 $\theta  \in  \left( {0,\dfrac{\pi }{2}}\right)$ ,故 $\sin \theta  \geq  \sin \gamma ,\therefore \gamma  \in  (0,\theta \rbrack$ (可以取遍这个区间内的任意值). 综上 $\gamma  \in  \left\lbrack  {0,\theta }\right\rbrack$ 
+        \end{jieda}    
+        
+        \item 如图,已知二面角 $\alpha  - l - \beta$ 的平面角为 $\theta$ ,在面 $\alpha$ 内有一条射线 ${AB}$ 与棱 $l$ 成锐角 $\delta$ ,与面 $\beta$ 成角 $\gamma$ ,则必有 \dotfill{(\kh{A})}
+        
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_159_819_355_247_187_0.jpg}
+        \end{center}
+        \xx{$\sin \theta \sin \delta  = \sin \gamma$}{$\sin \theta \sin \delta  = \cos \gamma$}{$\cos \theta \cos \delta  = \sin \gamma$}{$\cos \theta \cos \delta  = \cos \gamma$} 
+        \begin{jieda}
+            需分类讨论: $\text{ \ding{172} }\theta  \in  \left( {0,\dfrac{\pi }{2}}\right)$ . 记点 $B$ 在平面 $\beta$ 上的射影是点 $O$ ,作 ${OC}\bot l$ 于 $C$ ,连接 ${BC},{BO},{OA}.{BA}$ 在平面 $\beta$ 上的射影是 ${OA},\therefore \angle {BAO}$ 就是 ${AB}$ 与平面 $\beta$ 所成的角, $\sin \gamma  = \dfrac{BO}{BA}$ . 由三垂线定理, ${OC} \bot  l \Longrightarrow  {BC} \bot  l,\therefore \angle {BCO}$ 就是二面角 $\alpha  - l - \beta$ 的平面角, $\sin \theta  = \dfrac{BO}{BC},\sin \delta  = \dfrac{BC}{BA}$ . 此时, $\sin \theta \sin \delta  = \sin \gamma$ . \ding{173} $\theta  = \dfrac{\pi }{2}$ . 此时作 ${BC}\bot l$ 于 $C$ ,则有 ${BC}\bot$ 平面 $\beta$ ,即 $\angle {BAC}$ 就是 ${AB}$ 与平面 $\beta$ 所成的角, $\delta  = \gamma ,\sin \theta \sin \delta  = \sin \gamma$ 仍成立. \ding{174} $\theta  \in  \left( {\dfrac{\pi }{2},\pi }\right)$ . 和\ding{172}类似,记点 $B$ 在平面 $\beta$ 上的射影是点 $O$ (在半平面 $\beta$ 之外),作 ${OC} \bot  l$ 于 $C$ ,连接 ${BC}\text{ 、 }{BO}\text{ 、 }{OA}$ . 此时仍有 $\sin \gamma  = \sin \angle {BAO} = \dfrac{BO}{BA}$ 和 $\sin \delta  = \sin \angle {BAC} = \dfrac{BC}{BA}$ ,但 $\angle {BCO}$ 的补角才是二面角 $\alpha  - l - \beta$ 的平面角, $\sin \left( {\pi  - \theta }\right)  = \dfrac{BO}{BC} = \sin \theta ,\therefore \sin \theta \sin \delta  = \sin \gamma$ 仍成立. \ding{175}若允许 $\theta  =$ 0 或 $\theta  = \pi$ ,则平面 $\alpha \text{ 、 }\beta$ 共面,不论 $\delta  \in  \left( {0,\dfrac{\pi }{2}}\right)$ 取值为何,必有 $\gamma  = 0\left( {{AB}\text{ 在 }\beta \text{ 上 }}\right) ,\sin \theta \sin \delta  = \sin \gamma$ 仍成立. 综上, $\sin \theta \sin \delta  =$  $\sin \gamma$ 对任意 $\theta  \in  \left\lbrack  {0,\pi }\right\rbrack$ 和 $\delta  \in  \left( {0,\dfrac{\pi }{2}}\right)$ 均成立. 
+            
+            \ps $\delta$ 的范围可以拓展至 $\delta  \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ ,结论仍然成立.
+        \end{jieda}
+        
+        \item 已知 $P$ 为锐二面角 $\alpha  - l - \beta$ 棱上的点, ${PQ} \subset  \alpha ,{PQ}$ 与 $l$ 成 ${45}^{ \circ  }$ 角,与 $\beta$ 成 ${30}^{ \circ  }$ 角 (如图),则二面角 $\alpha  - l - \beta$ 的平面角的度数是 \dotfill{(\kh{B})}
+        
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_158_1258_1979_236_160_0.jpg}
+        \end{center}
+    
+        \xx{${30}^{ \circ  }$}{${45}^{ \circ  }$}{${60}^{ \circ  }$}{${75}^{ \circ  }$}
+        \begin{jieda}
+            记所求平面角为 $\theta  \in  \left( {0,\dfrac{\pi }{2}}\right)$ . 根据三正弦定理可知 $\sin \theta  \cdot  \sin {45}^{ \circ  } = \sin {30}^{ \circ  }$，$\therefore \theta  = {45}^{ \circ  }$
+        \end{jieda}
+    \end{enumerate}
+
+\end{enumerate}
+
+
+\subsection*{面面平行判定定理}
+\subsection*{面面平行性质定理}

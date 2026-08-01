@@ -1,0 +1,80 @@
+
+\begin{enumerate}
+    \item 已知向量 $\vv{a}$ 与 $\vv{b}$ 的夹角为 ${60}^{ \circ  }$ ,且 $\left| \vv{b}\right|  = 2\left| \vv{a}\right|  = 2$ ,若 $\vv{c} = \lambda \vv{a} +$  $\mu \vv{b}$ ,其中 $\lambda  + {2\mu } = 2$ ,则向量 $\vv{a}$ 在 $\vv{c}$ 上的数量投影的取值范围为\blkda{$\left(-\dfrac{1}{2}, 1\right]$}.
+    \begin{jieda}
+        $\vv{c} = \dfrac{\lambda}{2}(2\vv{a})+\mu \vv{b}$，则$\vv{c}$的终点$C$在$2\vv{a}$的终点和$\vv{b}$的终点连线上
+
+        以$O$为原点，以$\vv{OA'} = 2\vv{a}$为$x$轴正方向建立平面直角坐标系，则$C$在$y = -\sqrt{3}(x-2)$上
+        \begin{enumerate}
+            \item 方法1 \\
+            $\vv{a}$在$\vv{c}$上的数量投影为$|\vv{a}|\cdot cos<\vv{a}, \vv{c}>$
+            
+            数形结合可知$<\vv{a}, \vv{c}> \in \left[0, \dfrac{2\pi}{3}\right)$，故$cos<\vv{a}, \vv{c}> \in \left(-\dfrac{1}{2}, 1\right]$，故$\vv{a}$ 在 $\vv{c}$ 上的数量投影的取值范围为$\left(-\dfrac{1}{2}, 1\right]$.
+            \item 方法2 \\
+            设$C(x_0, -\sqrt{3}(x_0-2))$
+            
+            $\vv{a}$在$\vv{c}$上的数量投影为$\dfrac{\vv{a}\cdot \vv{c}}{|\vv{c}|} = \dfrac{x_0}{\sqrt{x_0^2+3(2-x_0)^2}} = \left\{\begin{array}{ll}
+                 \dfrac{1}{\sqrt{1+3\left(\dfrac{2}{x_0}-1\right)^2}}, & x_0 > 0  \\
+                 0, & x_0 = 0 \\
+                 -\dfrac{1}{\sqrt{1+3\left(\dfrac{2}{x_0}-1\right)^2}}, & x_0 < 0  
+            \end{array}\right.$
+
+            \begin{dingautolist}{172}
+                \item $x_0 > 0, \dfrac{2}{x_0} \in (0, +\infty), \sqrt{1+3\left(\dfrac{2}{x_0}-1\right)^2} \in [1, +\infty), \dfrac{x_0}{\sqrt{x_0^2+3(2-x_0)^2}} \in (0, 1]$
+                \item $x_0 = 0, \dfrac{x_0}{\sqrt{x_0^2+3(2-x_0)^2}} = 0$
+                \item $x_0 > 0, \dfrac{2}{x_0} \in (-\infty, 0), \sqrt{1+3\left(\dfrac{2}{x_0}-1\right)^2} \in [2, +\infty), \dfrac{x_0}{\sqrt{x_0^2+3(2-x_0)^2}} \in \left(-\dfrac{1}{2}, 0\right]$
+            \end{dingautolist}
+
+            综上，$\vv{a}$ 在 $\vv{c}$ 上的数量投影的取值范围为$\left(-\dfrac{1}{2}, 1\right]$.
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 已知向量 $\vv{a} = \left( {\cos \alpha ,\sin \alpha }\right) ,\vv{b} = \left( {\cos \beta ,\sin \beta }\right)$ ,且 $\alpha  - \beta  = \dfrac{\pi }{3}$ ,若向量 $\vv{c}$ 满足 $\left| {\vv{c} - \vv{a} - \vv{b}}\right| = 1$,则 $\left| \vv{c}\right|$ 的最大值为\blkda{$\sqrt{3}+1$}.
+    \begin{jieda}
+        根据几何关系可知$|\vv{a}+\vv{b}| = \sqrt{3}$，设$\vv{OC} = \vv{c}$，$\vv{OP} = \vv{a}+\vv{b}$，因为$\left| {\vv{c} - \vv{a} - \vv{b}}\right| = 1$，则$C$在以$P$为圆心，半径为1的圆上，当$C$在$OP$连线上时，取得最值，最大值为$\sqrt{3}+1$
+    \end{jieda}
+    \item 已知平面向量 $\vv{a}\text{ 、 }\vv{b}$ 满足条件: $\vv{a} \cdot  \vv{b} = 0,\left| \vv{a}\right|  = \cos \alpha ,\left| \vv{b}\right|  = \sin \alpha ,\alpha  \in  \left( {0,\dfrac{\pi }{2}}\right)$ ,若向量 $\vv{c} =$  $\lambda \vv{a} + \mu \vv{b}\left( {\lambda ,\mu  \in  \mathbf{R}}\right)$ ,且 ${\left( 2\lambda  - 1\right) }^{2}{\cos }^{2}\alpha  + {\left( 2\mu  - 1\right) }^{2}{\sin }^{2}\alpha  = \dfrac{1}{9}$ ,则 $\left| \vv{c}\right|$ 的最小值为\blkda{$\dfrac{1}{3}$}.
+    \begin{jieda}
+        设$\vv{a} = (cos\alpha, 0), \vv{b} = (0, sin\alpha)$
+        
+        ${\left( 2\lambda  - 1\right) }^{2}{\cos }^{2}\alpha  + {\left( 2\mu  - 1\right) }^{2}{\sin }^{2}\alpha  = \dfrac{1}{9}$可以看做是横纵坐标平方和/模长平方，即有$|(2\lambda-1)\vv{a}+(2\mu-1)\vv{b}| = \dfrac{1}{3}$
+
+        整理变形有$|2(\lambda\vv{a}+\mu\vv{b})-(\vv{a}+\vv{b})| = \dfrac{1}{3}$，即$|2\vv{c}-(\vv{a}+\vv{b})| = \dfrac{1}{3}$
+
+        设$\vv{OP} = \vv{a}+\vv{b}, \vv{OC'} = \vv{c}$，则$C'$在以$P$为圆心，$\dfrac{1}{3}$为半径的圆弧上.
+
+        又因为$P(cos\alpha. sin\alpha)$在以原点为圆心的单位圆在第一象限的圆弧上，因此$|\vv{OC'}| \geq \dfrac{2}{3}$，即$|\vv{c}| \geq \dfrac{1}{3}$
+    \end{jieda}
+    \item 正方形$ABCD$的边长为2，对角线$AC, BD$相交于$O$，动点$P$满足$|OP| = \dfrac{\sqrt{2}}{2}$，若$\vv{AP} = m \vv{AB} + n \vv{AD}$（$m, n \in \mathbf{R}$），则$\dfrac{2m+1}{2n+2}$的最大值是\blkda{1}
+        \begin{jieda}
+            $\vv{AP} = \vv{AO} + \vv{OP} = \dfrac{1}{2}(\vv{AB} + \vv{AD}) + \dfrac{\sqrt{2}}{4}(cos\theta \cdot \vv{AB} + sin\theta \cdot \vv{AD}) = \dfrac{2+\sqrt{2}cos\theta}{4} \cdot \vv{AB} + \dfrac{2+\sqrt{2}sin\theta}{4} \cdot \vv{AD}$（其中$\theta$为$\vv{OP}$与$\vv{AB}$的夹角）\\
+            故$m = \dfrac{2+\sqrt{2}cos\theta}{4}, n = \dfrac{2+\sqrt{2}sin\theta}{4}$，则$2m+1 = 2+\dfrac{\sqrt{2}cos\theta}{2}, 2n+2 = 3+\dfrac{\sqrt{2}sin\theta}{2}$，故$\dfrac{2m+1}{2n+2} = \dfrac{4+\sqrt{2}cos\theta}{6+\sqrt{2}sin\theta}$
+            
+            \begin{enumerate}
+                \item 方法1（看做斜率）
+                
+                即点$P'(6+\sqrt{2}sin\theta, 4+\sqrt{2}cos\theta)$与原点$O$连线的斜率（点$P'$在圆心为$M(6, 4)$， 半径为$\sqrt{2}$的圆上）.\\
+                当$OP'$斜率取最大值时，$OP'$与圆$M$相切，设$OM$的斜率为$tan\alpha = \dfrac{2}{3}$，计算可得$tan\beta = tan\angle MOP' = \dfrac{1}{5}$，故$OP'$斜率最大值为$tan(\alpha+\beta) = 1$.
+                \item 方法2（辅助角法）
+                
+                设$y = \dfrac{4+\sqrt{2}cos\theta}{6+\sqrt{2}sin\theta}$
+                
+                \ding{172}去分母：$6y+\sqrt{2}ysin\theta = 4+\sqrt{2}cos\theta$，整理有$6y-4 = \sqrt{2}cos\theta - \sqrt{2}ysin\theta$
+                
+                \ding{173}辅助角公式：$6y-4 = \sqrt{2+2y^2}sin(\theta+\varphi)$
+                
+                \ding{174}解不等式：上式可转化为$6y-4 \leq \sqrt{2+2y^2}$，两侧平方有$36y^2-48y+16 \leq 2+2y^2$，即$34y^2-48y+14 \leq 0$，解得$y \in \left[\dfrac{7}{17}, 1\right]$
+            \end{enumerate}
+            综上，$\dfrac{2m+1}{2n+2}$的最大值是1.
+        \end{jieda}
+    \item 已知 $P$ 是半径为 2,圆心角为 $\dfrac{\pi }{3}$ 的一段圆弧 ${AB}$ 上的一点,若 $\vv{AB} = 2\vv{BC}$ ,则 $\vv{PC} \cdot  \vv{PA}$ 的值域是\blkda[3]{$[5-2\sqrt{13}, 0]$}.
+    \begin{jieda}
+        以圆弧圆心建立平面直角坐标系，$A(-1, \sqrt{3}), B(1, \sqrt{3}), C(2, \sqrt{3})$，设$P(2cos\theta, 2sin\theta), \theta \in \left[\dfrac{\pi}{3}, \dfrac{2\pi}{3}\right]$
+
+        $\vv{PC} = (2-2cos\theta, \sqrt{3}-2sin\theta), \vv{PA} = (-1-2cos\theta, \sqrt{3}-2sin\theta)$
+
+        $\vv{PC} \cdot \vv{PA} = 5-(4\sqrt{3}sin\theta+2cos\theta) = 5-2\sqrt{13}sin\left(\theta + arctan\dfrac{\sqrt{3}}{6}\right)$
+
+        因为$arctan\dfrac{\sqrt{3}}{6}$是一个很小的锐角，故显然可以取到最小值$5-2\sqrt{13}$，根据单调性可知最大值在端点取，将$\dfrac{\pi}{3}, \dfrac{2\pi}{3}$代入应用辅助角之前的式子可得其最大值为0.
+    \end{jieda}
+\end{enumerate}

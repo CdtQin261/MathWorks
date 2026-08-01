@@ -1,0 +1,706 @@
+\chapter* {平面向量}
+\subsection*{平面向量的概念}
+\begin{enumerate}
+    \item \textbf{向量}（矢量）：既有大小又有有方向的量；\textbf{数量}（标量）：只有大小没有方向的量
+    \item 向量的表示方式
+        \begin{enumerate}
+            \item \textbf{有向线段}：以A为起点，以B为终点的有向线段记作$\vv{AB}$，如图\ref{fig:vAB}所示
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=0.1\linewidth]{bodyxb/src/vAB.png}
+                \caption{向量 $\vv{AB}$}
+                \label{fig:vAB}
+            \end{figure}
+            \item 箭头加小写字母：$\vv{a}$
+        \end{enumerate}
+    \item 向量的现实原型：力、位移、速度等
+    
+    \ps 高中数学中研究的向量是\textbf{自由向量}，只有两个要素\textbf{大小和方向}，而物理学中的力是有大小、方向和作用点三个要素
+    \item 向量的大小称作向量的模，记作$|\vv{a}|, |\vv{AB}|$，向量的大小等于其所对应的有向线段的长度
+    \item 特殊的向量
+        \begin{enumerate}
+            \item 模长为1的向量称作\textbf{单位向量}
+            \item 模长为0的向量称作\textbf{零向量}，记作$\vv{0}$约定零向量的方向是任意的
+        \end{enumerate}
+    \item 特殊关系的向量
+        \begin{enumerate}
+            \item 如果两个非零向量所在的直线平行或者重合，则称这两个向量平行，记作$\vv{a} // \vv{b}$即方向相同或相反的非零向量称作\textbf{平行向量}，也可称作\textbf{共线向量}
+            \item 当两个向量的大小和方向都相同的时候，两者就是同一个向量，通常称为\textbf{相等向量}
+            \item \textbf{零向量与任意非零向量平行}，两个零向量相等
+        \end{enumerate}
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 如图所示，等边三角形$ABC$中，$D, E, F$分别是边$BC, AB, AC$的中点，写出图中与$\vv{EF}$平行和相等的向量
+    \begin{center}
+        \includegraphics[width=0.2\linewidth]{bodyxb/src/q2.png}
+    \end{center}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 平行向量：$\vv{BD}$，$\vv{DB}$，$\vv{CD}$，$\vv{DC}$，$\vv{FE}$，$\vv{BC}$，$\vv{CB}$
+            \item 相等向量：$\vv{BD}$，$\vv{DC}$
+        \end{enumerate}
+    \end{jieda} 
+    \item 指出图中向量的长度
+    \begin{center}
+        \includegraphics[width=0.3\linewidth]{bodyxb/src/q3.png}
+    \end{center}
+    \begin{jieda}
+        $|\vv{EF}| = \sqrt{5}, \quad |\vv{MN}| = \sqrt{5}, \quad |\vv{GH}| = 2, \quad |\vv{CD}| = 3, \quad |\vv{PQ}| = \sqrt{10}$
+    \end{jieda}
+    \item 在$\triangle{ABC}$中, $AB=AC$, $D$、$E$分别是$AB$、$AC$的中点, 则\dotfill(\kh{B})
+    \xx
+    {$\vv{AB}$与$\vv{AC}$共线}
+    {$\vv{DE}$与$\vv{CB}$共线}
+    {$\vv{AD}$与$\vv{AE}$相等}
+    {$\vv{AD}$与$\vv{BD}$相等}
+    \item 当$\vv{OM}$与$\vv{ON}$平行向量，且$|\vv{OM}| = 2, |\vv{ON}| = 1$时，求$|\vv{MN}|$
+    \begin{jieda}
+        当$\vv{OM}$与$\vv{ON}$方向相同时，$|\vv{MN}| = 1$;当$\vv{OM}$与$\vv{ON}$方向相反时，$|\vv{MN}| = 3$
+    \end{jieda}
+    \item 两个向量共线是两个向量相等的\blkda[2]{必要非充分}条件.
+    \item 下列命题中正确的有\blkda{\ding{173}\ding{176}\ding{177}}
+    \begin{dingautolist}{172}
+        \item 若$\vv{a}$与$\vv{b}$都是单位向量，则$\vv{a}$=$\vv{b}$.
+        \item 方向为南偏西$\ang{60}$的向量与北偏东60°的向量是共线向量，
+        \item 直角坐标平面上的$x$轴、$y$轴都是向量.
+        \item 若$\vv{a}$与$\vv{b}$是平行向量，则$\vv{a}$=$\vv{b}$.
+        \item 若用有向线段表示的向量$\vv{AM}$与$\vv{AN}$不相等，则点M与N不重合.
+        \item 海拔、温度、角度都不是向量.
+    \end{dingautolist}
+    \item 下列命题中正确的是\blkda{\ding{175}\ding{176}}
+    \begin{dingautolist}{172}
+        \item 两个向量相等，则他们的起点相同，终点相同
+        \item 若$|\vv{a}| = |\vv{b}|$，则$\vv{a} = \vv{b}$
+        \item 若$\vv{AB} = \vv{DC}$，则$A,B,C,D$四点构成平行四边形
+        \item 在$\pxsb{ABCD}$中，一定有$\vv{AB} = \vv{DC}$
+        \item 若$\vv{a} = \vv{b}, \vv{b} = \vv{c}$，则$\vv{a} = \vv{c}$
+        \item 若$\vv{a} // \vv{b}, \vv{b} // \vv{c}$，则$\vv{a} // \vv{c}$
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 错误，方向和大小相同即可
+            \item 错误，方向未必相同
+            \item 错误，四点可能共线
+            \item 正确
+            \item 正确
+            \item 错误，反例：$\vv{b}$为零向量
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\subsection*{平面向量的线性运算}
+\subsubsection*{平面向量的加法运算}
+\begin{enumerate}
+    \item 平行四边形法则 \\
+    从力的合成中可以抽象出向量加法的平行四边形法则：对于两个不平行的向量$\vv{a}, \vv{b}$如图\ref{fig:parallelogram}所示，可以在平面内任取一点$O$，作$\vv{OA} = \vv{a}, \vv{OB} = \vv{b}$，以$\vv{OA}, \vv{OB}$为邻边得平行四边形的对角线所表示的向量$\vv{OC} = \vv{c}$就定义为向量$\vv{a}, \vv{b}$的和，记作$\vv{c} = \vv{a} + \vv{b}$ \\
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.3\linewidth]{bodyxb/src/Parallelogram.png}
+        \caption{平行四边形法则}
+        \label{fig:parallelogram}
+    \end{figure}\\
+    平行四边形法则的关键点：\textbf{“共起点”}
+    \item 三角形法则 \\
+    从位移的合成中可以抽象出向量加法的三角形法则：对于两个不平行的向量$\vv{a}, \vv{b}$如图\ref{fig:triangle}所示，可以在平面内任取一点$O$，作$\vv{OA} = \vv{a}, \vv{AC} = \vv{b}$，向量$\vv{OC} = \vv{c}$就定义为向量$\vv{a}, \vv{b}$的和，记作$\vv{c} = \vv{a} + \vv{b}$ \\
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.3\linewidth]{bodyxb/src/triangle.png}
+        \caption{三角形法则}
+        \label{fig:triangle}
+    \end{figure}\\
+    三角形法则的关键点：\textbf{“首尾相接”}
+    \item 任意向量与零向量的和仍然是其本身
+    \item 法则的一致性 \\
+    在图\ref{fig:parallelogram}中，$AC \paraleq OB$因此$\vv{OB} = \vv{AC} = \vv{b}$
+    \item 平行向量的和 \\
+    当两个向量平行的时候（包括其中出现零向量的情况），和向量的方向与模长大的向量方向一致，两个向量方向相同的时候和向量的大小等于两个向量大小的和，两个向量方向相反的时候和向量的大小等于两个向量大小差的绝对值虽然此时三角形和平行四边形均不能绘出，但是按照三角形法则进行首尾相接的操作，依然可以得到两个向量的和
+    \item 三角不等式 \\
+    $||\vv{a}| - |\vv{b}|| \leq |\vv{a} + \vv{b}| \leq |\vv{a}| + |\vv{b}|$
+    \item 向量加法的运算律 
+        \begin{enumerate}
+            \item 交换律：$\vv{a} + \vv{b} = \vv{b} + \vv{a}$
+            \item 结合律：$(\vv{a} + \vv{b}) + \vv{c} = \vv{a} + (\vv{b} + \vv{c})$
+        \end{enumerate}
+\end{enumerate}
+\subsubsection*{平面向量的减法运算}
+\begin{enumerate}
+    \item \textbf{负向量（相反向量）}：与向量$\vv{a}$大小相同，方向相反的向量称为$\vv{a}$的负向量，记作$-\vv{a}$一个向量与其负向量互为负向量一个向量与其负向量的和向量是零向量
+    \item 向量的减法：减去一个向量就等价于加上其负向量，即$\vv{a} - \vv{b} = \vv{a} + (-\vv{b})$
+    \item $\vv{a} - \vv{b}$ 可以表示为从向量 $\vv{b}$ 的终点指向向量 $\vv{a}$ 的终点的向量, 这是向量减法的几何意义.
+    \begin{center}
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/xiangliangdejianfa.png}
+    \end{center}
+\end{enumerate}
+\subsubsection*{平面向量的数乘运算}
+\begin{enumerate}
+    \item 实数$\lambda$与向量$\vv{a}$的乘积是一个向量，记作$\lambda \vv{a}$\\
+    $\lambda \vv{a}$的大小等于$|\lambda|\cdot|\vv{a}|$，故当$\lambda = 0$时，运算的结果为零向量\\
+    $\lambda \vv{a}$与$\vv{a}$平行，其方向在$\lambda > 0$时与$\vv{a}$相同，在$\lambda < 0$时与$\vv{a}$相反
+    
+    \item 向量数乘的运算律
+    \begin{enumerate}
+        \item 对实数的分配率：$(\lambda+\mu)\vv{a} = \lambda \vv{a} + \mu \vv{a}$
+        \item 对向量的分配率：$\lambda(\vv{a}+\vv{b}) = \lambda \vv{a} + \lambda \vv{b}$
+        \item 对实数的结合律：$\lambda(\mu \vv{a}) = (\lambda \mu)\vv{a}$
+    \end{enumerate}
+    
+    \item 向量$\vv{a}$与非零向量$\vv{b}$平行的充要条件：存在唯一的实数$\lambda$，使得$\vv{a} = \lambda \vv{b}(\vv{b} \neq \vv{0})$
+
+    $A,B,P$三点共线的充要条件：$\vv{OP} = \lambda \vv{OA} + \mu \vv{OB}$，且$\lambda + \mu = 1$.
+    
+    等和线：若$\vv{OP} = \lambda \vv{OA} + \mu \vv{OB}$，且$\lambda + \mu = k$（$k$为常数），则$P$在直线$AB$或与直线$AB$平行的直线上（三点共线的推广）
+    \item 向量与其方向相同的单位向量之间的关系 \\
+    向量除以其模长即得到与其方向相同的单位向量：$\vv{a_0} = \dfrac{\vv{a}}{|\vv{a}|}$
+\end{enumerate}
+\subsubsection*{平面向量的线性运算}
+向量的加法、减法以及数乘运算统称为向量的\textbf{线性运算}从一个或几个向量出发通过线性运算得到的\textbf{新向量}称为原来向量的\textbf{线性组合}
+
+例题：
+\begin{enumerate}
+    \item 当$\vv{a}$与$\vv{b}$满足什么条件时$|\vv{a} + \vv{b}| = ||\vv{a}| - |\vv{b}||$，满足什么条件的时候$|\vv{a} + \vv{b}| = |\vv{a}| + |\vv{b}|$?
+    \begin{jieda}
+        两个向量方向相反或有一个是零向量；两个向量方向相同
+    \end{jieda}
+    \item 在$\param ABCD$中，$P$是边$BC$上的一点，下列命题中为真的是\blkda{\ding{173}}
+    \begin{dingautolist}{172}
+        \item $\vv{DA} + \vv{DP} = \vv{PA}$
+        \item $\vv{DA} + \vv{AB} + \vv{BP} = \vv{DP}$
+        \item $\vv{AB} + \vv{BC} + \vv{CP} = \vv{PA}$
+    \end{dingautolist}
+    \item 化简：
+    \begin{enumerate}
+        \item $\vv{AB} + \vv{BC}$
+        \item $\vv{AB} - \vv{AC}$
+        \item $\vv{BC} - \vv{AC}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\vv{AC}$
+            \item $\vv{CB}$
+            \item $\vv{BA}$
+        \end{enumerate}
+    \end{jieda}
+    \item 下列四式不能化简为$\vv{AD}$的是\dotfill(\kh{C})
+    \xx{$(\vv{AB}+\vv{CD})+\vv{BC}$}
+    {$(\vv{AD}+\vv{MB})$+($\vv{BC}+\vv{CM})$}
+    {$\vv{MB}+\vv{AD}-\vv{BM}$}
+    {$\vv{OC}-\vv{OA}+\vv{CD}$}
+    \item 化简
+    \begin{enumerate}
+        \item $(-2) \times (\dfrac{1}{2} \vv{a})$
+        \item $2(\vv{a} - \vv{b}) + 3(\vv{a} + \vv{b})$
+        \item $(\lambda - \mu)(\vv{a} + \vv{b}) - (\lambda + \mu)(\vv{a} - \vv{b})$
+        \item $4(2\vv{a} - \vv{b}) + 3(3\vv{a}-2\vv{b})$
+        \item $\dfrac{1}{4}(\vv{a} + 2\vv{b}) - \dfrac{1}{6}(5\vv{a} - 2\vv{b}) + \dfrac{1}{4}\vv{b}$
+        \item $2(3\vv{a} - 4\vv{b}+\vv{c}) - 3(2\vv{a} + \vv{b} - 3\vv{c})$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $(-2) \times (\dfrac{1}{2} \vv{a}) = -\vv{a}$
+            \item $2(\vv{a} - \vv{b}) + 3(\vv{a} + \vv{b}) = 5\vv{a} + \vv{b}$
+            \item $(\lambda - \mu)(\vv{a} + \vv{b}) - (\lambda + \mu)(\vv{a} - \vv{b}) = -2\mu \vv{a} + 2\lambda \vv{b}$
+            \item $4(2\vv{a} - \vv{b}) + 3(3\vv{a}-2\vv{b}) = 17\vv{a} - 10\vv{b}$
+            \item $\dfrac{1}{4}(\vv{a} + 2\vv{b}) - \dfrac{1}{6}(5\vv{a} - 2\vv{b}) + \dfrac{1}{4}\vv{b} = -\dfrac{7}{12}\vv{a} + \dfrac{13}{12}\vv{b}$
+            \item $2(3\vv{a} - 4\vv{b}+\vv{c}) - 3(2\vv{a} + \vv{b} - 3\vv{c}) = -11\vv{b} + 11\vv{c}$
+        \end{enumerate}
+    \end{jieda}
+    \item 在$\triangle ABC$中，$D$是$AB$的中点，$E$是$BC$延长线上一点，且$BE = 2BC$
+    \begin{enumerate}
+        \item 用向量$\vv{BA}, \vv{BC}$表示$\vv{DE}$
+        \item 用向量$\vv{CA}, \vv{CB}$表示$\vv{DE}$
+    \end{enumerate}
+    \begin{center}
+        \includegraphics[width=0.2\linewidth]{bodyxb/src/q14.png}
+    \end{center}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\vv{DE} = \vv{DB} + \vv{BE} = -\dfrac{1}{2}\vv{BA} + 2\vv{BC}$
+            \item $\vv{DE} = \vv{DB} + \vv{BE} = -\dfrac{1}{2}\vv{BA} + 2\vv{BC} = \dfrac{1}{2}\vv{CB} -\dfrac{1}{2}\vv{CA} - 2 \vv{CB} = -\dfrac{1}{2}\vv{CA} - \dfrac{3}{2}\vv{CB}$
+        \end{enumerate}
+    \end{jieda}
+    \item 在$\param ABCD$中，两条对角线相交于点$M$，$\vv{AB} = \vv{a}, \vv{AD} = \vv{b}$，试用$\vv{a}, \vv{b}$表示$\vv{MA}, \vv{MB}, \vv{MC}, \vv{MD}$
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\vv{MA} = \dfrac{1}{2} \vv{CA} = -\dfrac{1}{2} \vv{AC} = -\dfrac{1}{2}(\vv{a} + \vv{b})$
+            \item $\vv{MB} = \dfrac{1}{2} \vv{DB} = \dfrac{1}{2} (\vv{a} - \vv{b})$
+            \item $\vv{MC} = -\vv{MA} = \dfrac{1}{2}(\vv{a} + \vv{b})$
+            \item $\vv{MD} = -\vv{MB} = -\dfrac{1}{2} (\vv{a} - \vv{b})$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知$P$是$\triangle{ABC}$所在平面内任一点, 若$\vv{CB}=\lambda\vv{PA}+\vv{PB}$, $\lambda\zr$, 则$P$一定在\dotfill(\kh{B})
+    \xx{$\triangle{ABC}$内部}{$AC$边所在的直线上}{$AB$边上}{$BC$边上}
+    \item 已知任意两个非零向量$\vv{a}, \vv{b}$，设$\vv{OA} = \vv{a} + \vv{b}, \vv{OB} = \vv{a} + 2\vv{b}, \vv{OC} = \vv{a} + 3\vv{b}$，试证明$A,B,C$三者共线
+    \begin{jieda}
+        $\vv{AB} = \vv{OB} - \vv{OA} = \vv{b}$ \\
+        $\vv{AC} = \vv{OC} - \vv{OA} = 2\vv{b}$ \\
+        因此$\vv{AC} = 2 \vv{AB}$，故$A,B,C$三者共线
+    \end{jieda} 
+
+    
+    \item 若$M$是$\triangle{ABC}$的重心, 则下列向量中与$\vv{AB}$共线的是\dotfill(\kh{D})
+    \xx{$\vv{AM}+\vv{MB}+\vv{BC}$}
+    {$3\vv{AM}+\vv{AC}$}
+    {$\vv{AB}+\vv{BC}+\vv{AC}$}
+    {$\vv{AM}+\vv{BM}+\vv{CM}$}
+    
+    \item 已知$\vv{e_1},\vv{e_2}$不共线, $\vv{AB}=\vv{e_1}+\vv{e_2}$, $\vv{BC}=2\vv{e_1}+3\vv{e_2}$, $\vv{CD}=2\vv{e_1}+k\vv{e_2}$, $k$为实数. 
+    若$A,B,D$三点共线, 则实数$k=$\blkda{1}. 
+
+    \item 已知 $\vv{a}$ 与 $\vv{b}$不共线, $\vv{OA} = \vv{a} + \vv{b},\vv{OB} = 2\vv{a} - \vv{b},\vv{OC} = \lambda \vv{a} + \mu \vv{b},$ 若 $A,B,C$ 三点共线,则 ${2\lambda } + \mu  =$\blkda{3}
+    \begin{jieda}
+        由题意知, $A,B,C$ 三点共线,故 $\vv{AB} = \vv{a} - 2\vv{b},\vv{BC} = \left( {\lambda  - 2}\right) \vv{a} + \left( {\mu  + 1}\right) \vv{b}$ ,
+        且 $\vv{AB},\vv{BC}$ 共线,
+        故不妨设 $\vv{AB} = k\vv{BC},\left( {k \neq  0}\right)$ ,则 $\left\{  {\begin{matrix} 1 = k\left( {\lambda  - 2}\right) \\   - 2 = k\left( {\mu  + 1}\right)  \end{matrix}\text{,}}\right.$
+        所以 $\lambda  - 2 = \dfrac{\mu  + 1}{-2}$ ,解得 ${2\lambda } + \mu  = 3$
+    \end{jieda}
+    
+    \item 已知$\triangle{ABC}$所在平面内一点$P$满足$\vv{PA}+\vv{PB}+\vv{PC}=\vv{AB}$, 下列结论中正确的是\dotfill(\kh{D})
+    \xx{$P$在$\triangle{ABC}$内部}
+    {$P$在$\triangle{ABC}$外部}
+    {$P$在$AB$边所在直线上}
+    {$P$是$AC$边的三等分点}
+    
+    \item 已知$\vv{OP}=\dfrac{1}{3}\vv{OA}+\dfrac{2}{3}\vv{OB}$, 则点$P$与线段$AB$的关系是\dotfill(\kh{D})
+    \xx
+    {$P$不在线段$AB$上}
+    {$P$在线段$AB$上, 但不是线段$AB$的三等分点}
+    {$P$点与$O,A,B$这三点构成平行四边形}
+    {$P$点是线段$AB$的一个三等分点}
+    
+    \item 若$\vv{a},\vv{b}$是不共线的两向量, 且$\vv{AB}=\lambda_1\vv{a}+\vv{b}$, $\vv{AC}=\vv{a}+\lambda_2\vv{b}(\lambda_1,\lambda_2\zr)$, 则$A,B,C$三点共线的充要条件是\dotfill(\kh{D})
+    \xx{$\lambda_1=\lambda_2=-1$}
+    {$\lambda_1=\lambda_2=1$}
+    {$\lambda_1\lambda_2=-1$}
+    {$\lambda_1\lambda_2=1$} 
+    
+    \item 如图,在 $\bigtriangleup {ABC}$ 中,点 $M\text{、}N$ 满足 $\vv{AM} = m\vv{AB},\vv{AN} = n\vv{AC}\left( {m > 0,n > 0}\right)$ ,点 $D$
+    满足 $\vv{BD} = \dfrac{1}{3}\vv{BC},E$ 为 ${AD}$ 的中点,且 $M\text{、}N\text{、}E$ 三点共线.
+
+    \begin{center}
+        \includegraphics[width=0.2\linewidth]{bodyxb//src/sandiangongxian.png}
+    \end{center}
+    
+    \begin{enumerate*}
+        \item 用 $\vv{AB}$ 、 $\vv{AC}$ 表示 $\vv{AE}$
+        \item 求 $\dfrac{1}{m} + \dfrac{1}{2n}$ 的值
+    \end{enumerate*}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 $\vv{BD} = \dfrac{1}{3}\vv{BC}$ . 则 $\vv{AD} - \vv{AB} = \dfrac{1}{3}\left( {\vv{AC} - \vv{AB}}\right)$ ,所以 $\vv{AD} = \dfrac{2}{3}\vv{AB} + \dfrac{1}{3}\vv{AC}$，因为 $E$ 为 ${AD}$ 的中点,故 $\vv{AE} = \dfrac{1}{2}\vv{AD} = \dfrac{1}{2}\left( {\dfrac{2}{3}\vv{AB} + \dfrac{1}{3}\vv{AC}}\right)  = \dfrac{1}{3}\vv{AB} + \dfrac{1}{6}\vv{AC}$ .
+            \item 因为 $M\text{、}E\text{、}N$ 三点共线,则 $\vv{ME}//\vv{MN},\vv{AM} = m\vv{AB},\vv{AN} = n\vv{AC}\left( {m > 0,n > 0}\right)$ ,
+            所以存在 $\lambda  \in  R$ ,使得 $\vv{ME} = \lambda \vv{MN}$ ,即 $\vv{AE} - \vv{AM} = \lambda \left( {\vv{AN} - \vv{AM}}\right)$ ,
+            所以 $\vv{AE} = \left( {1 - \lambda }\right) \vv{AM} + \lambda \vv{AN} = \left( {1 - \lambda }\right) m\vv{AB} + {\lambda n}\vv{AC}$ ,
+            又因为 $\vv{AE} = \dfrac{1}{3}\vv{AB} + \dfrac{1}{6}\vv{AC}$ ,且 $\vv{AB}\text{、}\vv{AC}$ 不共线,
+            所以 $\left\{  \begin{matrix} \left( {1 - \lambda }\right) m = \dfrac{1}{3} \\  {\lambda n} = \dfrac{1}{6} \end{matrix}\right.$ ,则 $\left\{  \begin{matrix} \dfrac{1}{3m} = 1 - \lambda \\  \dfrac{1}{6n} = \lambda  \end{matrix}\right.$ ,
+            所以 $\dfrac{1}{3m} + \dfrac{1}{6n} = \left( {1 - \lambda }\right)  + \lambda  = 1$ ,故 $\dfrac{1}{m} + \dfrac{1}{2n} = 3$ .
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{平面向量的数量积}
+向量是沟通几何和代数的桥梁，向量的线性运算的结果都是向量，而无法通过运算结果表示长度，角度等几何量，因此需要考虑引入新的运算，即数量积运算。
+\begin{enumerate}
+    \item 数量积的物理模型：\\
+        功的计算：功等于位移方向上的分力大小与位移大小的乘积，其计算公式为：$W = |\vv{f}|\cdot|\vv{s}| \cdot cos\theta$。功的计算可以看作是力和位移的运算，结果为一个实数。
+    \item $\vv{a}$与$\vv{b}$的夹角：任取一点$O$，做$\vv{OA} = \vv{a}, \vv{OB} = \vv{b}$，将射线$OA, OB$之间的夹角称为$\vv{a}$与$\vv{b}$的夹角，记作$<\vv{a}, \vv{b}>$。易知向量间夹角的取值范围是$[0, \pi]$
+    \item 投影向量
+        \begin{enumerate}
+            \item 力在位移方向上的分力对应的就是投影向量。
+            \item 过平面上一点$A$作直线$l$的垂线，垂足为$A'$，则称$A'$为$A$在直线$l$上的投影。
+            \item 如果向量$\vv{AB}$的起点和终点在直线$l$的投影分别为$A', B'$，则向量$\vv{A'B'}$称作是向量$\vv{AB}$在$l$上的\textbf{投影向量}。
+            \item 如图所示，对于向量$\vv{OA}$与向量$\vv{OB}$，$\vv{OB}$在$\vv{OA}$方向上的投影向量为$\vv{OB'}$。\\
+            当两者夹角小于$\dfrac{\pi}{2}$的时候，$\vv{OB'}$与$\vv{OA}$与$\vv{OB'}$方向相同。\\
+            当两者夹角大于$\dfrac{\pi}{2}$的时候，$\vv{OB'}$与$\vv{OA}$与$\vv{OB'}$方向相反。\\
+            当两者夹角等于$\dfrac{\pi}{2}$的时候，$\vv{OB'}$为零向量。 \\
+            无论夹角如何，都有$|\vv{OB'}| = ||\vv{OB}| \cdot cos<\vv{OA}, \vv{OB}>|$ ，将$|\vv{OB}| \cdot cos<\vv{OA}, \vv{OB}>$称为$\vv{OB}$在$\vv{OA}$方向上的\textbf{数量投影}。故投影数量的正负号完全由夹角余弦值的正负号决定。
+            \begin{figure}[h]
+                \centering\includegraphics[width=0.45\linewidth]{bodyxb/src/projection.png}
+            \end{figure}
+        \end{enumerate}
+    \item 向量的数量积运算
+    \begin{enumerate}
+        \item 对功的计算进行数学抽象可以得到向量的\textbf{数量积}运算（也称点积、内积）。
+        \item 对于非零向量$\vv{a}$与$\vv{b}$的数量积定义为$\vv{a}$的模长$\vv{b}$在$\vv{a}$方向上的投影数量的乘积，也可以等价定义为$\vv{a}$的模长，与$\vv{b}$的模长以及两者夹角的余弦值的乘积。
+        \item 数量积运算的符号表达：$\vv{a} \cdot \vv{b} = |\vv{a}| |\vv{b}| cos<\vv{a}, \vv{b}>$
+        \item 约定零向量与任意向量的数量积为0。
+        \item 需要注意数量积运算不是线性运算。数量积运算的结果是一个\textbf{实数}。
+    \end{enumerate}
+    \item 数量积的运算律
+    \begin{enumerate}
+        \item 交换律：$\vv{a} \cdot \vv{b} = \vv{b} \cdot \vv{a}$
+        \item 对数乘的结合律：$(\lambda \vv{a}) \cdot \vv{b} = \vv{a} \cdot (\lambda \vv{b}) = \lambda (\vv{a} \cdot \vv{b})$
+        \item 对加法的分配律：$\vv{a} \cdot (\vv{b}+\vv{c}) = \vv{a} \cdot \vv{b} + \vv{a} \cdot \vv{c}$
+    \end{enumerate}
+    特别需要注意的是：
+    \begin{enumerate}
+        \item 不能通过数量积相等推断出向量相等，即$\vv{a} \cdot \vv{b} = \vv{a} \cdot \vv{c}$\textbf{不能推出}$\vv{b} = \vv{c}$。 \\
+        $\vv{a} \cdot \vv{b} = \vv{a} \cdot \vv{c}$可能因为$\vv{a}$是零向量，在$\vv{a}$是非零向量的情况下，仅能说明$\vv{b}$与$\vv{c}$在$\vv{a}$上的投影数量相同。
+        \item 通常$\vv{a} \cdot (\vv{b} \cdot \vv{c}) \neq (\vv{a} \cdot \vv{b}) \cdot \vv{c}$，左侧运算的结果是与$\vv{a}$平行的向量，而右侧运算的结果是与$\vv{c}$平行的向量。而$\vv{a}$未必和$\vv{c}$平行。
+    \end{enumerate}
+    \item 数量积运算的应用
+        \begin{enumerate}
+            \item 求模长 \\
+            一个向量与其自身的数量积得到的结果就是其模长的平方：$|\vv{a}|^2 = \vv{a} \cdot \vv{a} = \vv{a}^2$
+            \item 求夹角 \\
+            两个向量的夹角余弦等于其数量积与两向量模长乘积的比值：$cos<\vv{a}, \vv{b}> = \dfrac{\vv{a} \cdot \vv{b}}{|\vv{a}||\vv{b}|}$。\\
+            特别地，\textbf{两个非零向量相互垂直的充要条件是其数量积为0}。
+        \end{enumerate}
+    \item 常用运算公式
+        \begin{enumerate}
+            \item $(\vv{a} + \vv{b})^2 = |\vv{a}|^2 + 2\vv{a} \cdot \vv{b} + |\vv{b}|^2$
+            \item $(\vv{a} - \vv{b})^2 = |\vv{a}|^2 - 2\vv{a} \cdot \vv{b} + |\vv{b}|^2$
+            \item $(\vv{a} + \vv{b})(\vv{a} - \vv{b}) = |\vv{a}|^2 - |\vv{b}|^2$
+        \end{enumerate}
+\end{enumerate}
+
+例题：
+\begin{enumerate}
+    \item 向量的夹角：两向量的夹角与两直线的夹角范围不同，向量的夹角范围是\blkda{$[0, \pi]$}，而两直线夹角范围是\blkda{$\left[0, \dfrac{\pi}{2}\right]$}\\
+    已知两个向量$\vv{a}$和$\vv{b}$，他们的夹角为$\theta$，我们把数量\blkda[3]{$|\vv{a}||\vv{b}|cos\theta$}叫做向量$\vv{a}$和$\vv{b}$的数量积（或内积），记作\blkda{$\vv{a} \cdot \vv{b}$}. 规定：零向量与任意向量的数量积为\blkda{0}
+    \item 已知向量$\vv{a}, \vv{b}$的夹角为$\dfrac{2\pi}{3}$，且$|\vv{a}| = 3, |\vv{b}| = 4$，求$\vv{b}$在$\vv{a}$上的投影向量和数量投影以及$\vv{a} \cdot \vv{b}$
+    \begin{jieda}
+        投影数量为$|\vv{b}|cos<\vv{a}, \vv{b}> = -2$
+    
+        $\vv{b}$在$\vv{a}$上的投影向量为$\dfrac{|\vv{b}|cos<\vv{a}, \vv{b}>}{|\vv{a}|}\vv{a} = -\dfrac{2}{3}\vv{a}$
+        
+        $\vv{a} \cdot \vv{b} = |\vv{a}||\vv{b}|cos<\vv{a}, \vv{b}> = -6$
+    \end{jieda}
+    \item 已知$\abs{\vv{a}}=3$, $\abs{\vv{b}}=2$, 且$\vv{a}$与$\vv{b}$的夹角为$\ang{60}$, 那么$\vv{a}\cdot\vv{b}=$\blkda{3}. 
+    
+    \item 已知$\abs{\vv{a}}=12$, $\abs{\vv{b}}=9$, 且$\vv{a}\cdot\vv{b}=-54\sqrt{2}$, 那么$\vv{a}$与$\vv{b}$的夹角大小为\blkda{$\dfrac{3\pi}{4}$}. 
+
+    
+    \item 已知$\vv{a},\vv{b},\vv{c}$是三个向量, 下列命题中, 其中正确命题的编号为\blkda{\ding{174}\ding{175}}
+    \begin{dingautolist}{172}
+    \item 若$\vv{a}\cdot\vv{b}=\vv{a}\cdot\vv{c}$, 且$\vv{a}\neq\vv{0}$, 则$\vv{b}=\vv{c}$;
+    \item 若$\vv{a}\cdot\vv{b}=0$, 则$\vv{a}=\vv{0}$或$\vv{b}=\vv{0}$; 
+    \item 若$\vv{a}\bot\vv{b}$, 则$\vv{a}\cdot\vv{b}=0$; 
+    \item 向量$\vv{a}$在$\vv{b}$的方向上的投影向量是一个模等于$\abs{\vv{a}}\abs{\cos\theta}$($\theta$是$\vv{a}$与$\vv{b}$的夹角), 方向与$\vv{b}$相同或相反的一个向量. 
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 错误；仅代表$\vv{b}, \vv{c}$在$\vv{a}$方向上的投影数量相等，不代表两向量相等
+            \item 错误；等价于$\vv{a}, \vv{b}$垂直，可以不是零向量
+            \item 正确
+            \item 正确
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知$\vv{a},\vv{b}$为两个单位向量, 下列命题正确的是\dotfill(\kh{D})
+    \xx
+    {$\vv{a}=\vv{b}$}
+    {$\vv{a}\cdot\vv{b}=0$}
+    {$\abs{\vv{a}\cdot\vv{b}}<1$}
+    {$\vv{a}^2=\vv{b}^2$}
+    \item 已知$\vv{a}$、$\vv{b}$为非零向量, 则$\vv{a}\cdot\vv{b}=\abs{\vv{a}}\abs{\vv{b}}$是$\vv{a},\vv{b}$共线的\blkda[2]{充分不必要} 条件.
+
+    
+    \item 已知$\abs{\vv{a}}=6$, $\abs{\vv{b}}=4$, $\vv{a}$与$\vv{b}$的夹角为$\ang{60}$, 那么$(\vv{a}+2\vv{b})\cdot(\vv{a}-3\vv{b})=$\blkda{$-72$}.
+    \item 已知$\abs{\vv{a}}=2$, $\abs{\vv{b}}=3$, $\vv{a}$与$\vv{b}$的夹角为$\ang{120}$, 那么$\abs{\vv{a}+2\vv{b}}=$\blkda{$2\sqrt{7}$}. 
+    \item 已知$|\vv{a}| = 3, |\vv{b}| = 4$，且$\vv{a}, \vv{b}$不共线，当向量$\vv{a} + k \vv{b}$与$\vv{a} - k \vv{b}$互相垂直时，$k = $\blkda{$\pm \dfrac{3}{4}$}
+    \begin{jieda}
+        $(\vv{a} + k \vv{b}) \cdot (\vv{a} - k \vv{b}) = |\vv{a}|^2 - k^2 |\vv{b}|^2 = 0$，故$k = \pm \dfrac{3}{4}$
+    \end{jieda}
+    \item 下面关于向量的数量积的关系式, 其中正确的序号是\blkda{\ding{172}\ding{174}}
+    \begin{dingautolist}{172}
+    \item $\vv{0}\cdot\vv{0}=0$; 
+    \item $(\vv{a}\cdot\vv{b})\cdot\vv{c}=\vv{a}\cdot(\vv{b}\cdot\vv{c})$; 
+    \item $\vv{a}\cdot\vv{b}=\vv{b}\cdot\vv{a}$; 
+    \item $\abs{\vv{a}\cdot\vv{b}}\leq\vv{a}\cdot\vv{b}$; 
+    \item $\abs{\vv{a}\cdot\vv{b}}=\abs{\vv{a}}\cdot\abs{\vv{b}}$. 
+    \end{dingautolist}
+    
+    
+    \item 若$\vv{a}$,$\vv{b}$都是非零向量, 则$\vv{a}^{2}+\vv{b}^{2}$与$2\vv{a}\cdot\vv{b}$的大小关系是\dotfill(\kh{A})
+    \xx
+    {$\vv{a}^{2}+\vv{b}^{2}\geq2\vv{a}\cdot\vv{b}$}
+    {$\vv{a}^{2}+\vv{b}^{2}\leq2\vv{a}\cdot\vv{b}$}
+    {不能比较大小}
+    {能比较大小, 但不能确定其大小关系}
+    
+    \item 两个非零向量$\vv{a},\vv{b}$互相垂直的充要条件是\dotfill(\kh{C})
+    \xx
+    {$\vv{a}\cdot\vv{b}=\abs{\vv{a}}\cdot\abs{\vv{b}}$}
+    {$\vv{a}\cdot\vv{b}=\vv{0}$}
+    {$\abs{\vv{a}+\vv{b}}=\abs{\vv{a}-\vv{b}}$}
+    {$(\vv{a}+\vv{b})\cdot(\vv{a}-\vv{b})=0$}
+    
+    \item 在$\triangle{ABC}$中, 若$BC=5$, $AC=4$, $\angle{C}=\ang{45}$, 则$\vv{BC}\cdot\vv{CA}=$\blkda{$-10\sqrt{2}$}. 
+    
+    \item 在$\triangle{ABC}$中, 若$\abs{\vv{AB}}=\abs{\vv{AC}}=4$, 且$\vv{AB}\cdot\vv{AC}=8$, 则$\triangle{ABC}$的形状是\blkda{正三角形}. 
+    
+    \item 在边长为1的正三角形$ABC$中, 若$\vv{BC}=\vv{a}$, $\vv{CA}=\vv{b}$, $\vv{AB}=\vv{c}$, 则$\vv{a}\cdot\vv{b}+\vv{b}\cdot\vv{c}+\vv{c}\cdot\vv{a}=$\dotfill(\kh{B})
+    \xx
+    {$\dfrac{3}{2}$}{$-\dfrac{3}{2}$}{0}{3}
+    
+    \item 已知$\vv{a}, \vv{b}$是两个不共线的向量，$|\vv{a}| = 2, \vv{a} \cdot \vv{b} = 4\sqrt{3}$，若$\forall t \in \mathbf{R}$，$|\vv{b} - t \vv{a}| \geq 2$，则$|\vv{b}|$的最小值为\blkda{4}
+    \begin{jieda}
+        $|\vv{b} - t \vv{a}| = \sqrt{|\vv{b}|^2 + t^2|\vv{a}|^2 - 2t\vv{a} \cdot \vv{b}} = \sqrt{|\vv{b}|^2 + 4t^2 - 8\sqrt{3}t} \geq \sqrt{|\vv{b}|^2 -12} \geq 2$，故$|\vv{b}| \geq 4$
+    \end{jieda}
+    \item 若$|\vv{AB}| = 4$，$\vv{AC} = 3\vv{CB}$，平面内一点$P$满足$\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$，则$sin\angle PAB$的最大值为\blkda{$\dfrac{1}{3}$}
+    \begin{jieda}
+        $\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$即$cos\angle CPA = cos\angle CPB$，即$PC$为$\angle APB$的角平分线. \\
+        根据角平分线定理，以及$\vv{AC} = 3\vv{CB}$可知$\dfrac{|\vv{PA}|}{|\vv{PB}|} = 3$ \\
+        根据大角对大边可知$\angle PAB$为锐角（或零角，此时不构成三角形），因此其正弦值的最大值对应余弦值最小值，设$x = |\vv{PB}|$根据余弦定理有$cos\angle PAB = \dfrac{9x^2 + 16 - x^2}{24x} = \dfrac{1}{3} \cdot \left(x + \dfrac{2}{x}\right) \geq \dfrac{2\sqrt{2}}{3}$（当$x = \sqrt{2}$时取等号），因此$sin\angle PAB$的大值为$\dfrac{1}{3}$
+    \end{jieda}
+\end{enumerate}
+\subsection*{平面向量基本定理}
+如果$\vv{e_1}$, $\vv{e_2}$是平面上\textbf{不平行}的向量，那么对于平面内的任意向量$\vv{a}$，都可以\textbf{唯一}地表示为$\vv{e_1}$和$\vv{e_2}$的线性组合，即\textbf{存在唯一}的有序实数对$(\lambda_1, \lambda_2)$使得$\vv{a} = \lambda_1 \vv{e_1} + \lambda_2 \vv{e_2}$ \\
+给定平面上的一组向量，如何平面上任意向量都可以唯一地表示成这组向量的线性组合，那么就成这组向量是平面向量的一组\textbf{基}
+
+例题：
+\begin{enumerate}
+    \item 平面向量基本定理：如果$\vv{e_1}, \vv{e_2}$是平面内两个\blkda{不共线}的向量，那么对于平面内\textbf{任意}的一个向量$\vv{a}$，\textbf{有且仅有\blkda{一}对}实数$\lambda_1, \lambda_2$，使得\blkda[3]{$\vv{a} = \lambda_1 \vv{e_1} + \lambda_2 \vv{e_2}$}，其中不共线的向量$\vv{e_1}, \vv{e_2}$称作是表示这个平面内所有向量的一组\blkda{基}.
+    \item 下列命题中是真命题的有\blkda{\ding{173}\ding{174}}: 
+    \begin{dingautolist}{172}
+    \item 一个平面内只有一对不共线向量可作为表示该平面所有向量的基底; 
+    \item 一个平面内有无数多对不共线向量可表示该平面所有向量的基底; 
+    \item 零向量不能作为基底中的向量. 
+    \end{dingautolist}
+    
+    
+    \item 若$\vv{e_1},\vv{e_2}$(不共线)是表示平面内所有向量的一组基底, 有下列四组向量: 
+    \ding{172} $\vv{e_1}+\vv{e_2}$和$\vv{e_1}-\vv{e_2}$; 
+    \ding{173} $3\vv{e_1}-\vv{e_2}$和$2\vv{e_2}-6\vv{e_1}$; 
+    \ding{174} $\vv{e_1}+2\vv{e_2}$和$\vv{e_2}+2\vv{e_1}$; 
+    \ding{175} $\vv{e_2}$和$\vv{e_1}+\vv{e_2}$. \\
+    其中不能作为一组基底的是\blkda{\ding{173}}. 
+    
+    \item 已知向量$\vv{a},\vv{b}$不共线, 实数$x,y$满足$(2x-y)\vv{a}+4\vv{b}=5\vv{a}+(x-2y)\vv{b}$, 则$x+y=$\blkda{1}. 
+
+    \item 设$\vv{a},\vv{b}$都是非零向量, 下列四个条件中, 使$\dfrac{\vv{a}}{\abs{\vv{a}}}=\dfrac{\vv{b}}{\abs{\vv{b}}}$成立的充分条件是\dotfill(\kh{C})
+    \xx
+    {$\vv{a}=-\vv{b}$}
+    {$\vv{a}\px\vv{b}$}
+    {$\vv{a}=2\vv{b}$}
+    {$\vv{a}\px\vv{b}$且$\abs{\vv{a}}=\abs{\vv{b}}$}
+
+    \item 已知$\triangle{ABC}$中, 点$D$在边$AB$上, $CD$平分$\angle{ACB}$. 
+    若$\vv{CB}=\vv{a}$,$\vv{CA}=\vv{b}$, $\abs{\vv{a}}=1$, $\abs{\vv{b}}=2$, 
+    则$\vv{CD}=$\dotfill(\kh{B})
+    \xx
+    {$\dfrac{1}{3}\vv{a}+\dfrac{2}{3}\vv{b}$}
+    {$\dfrac{2}{3}\vv{a}+\dfrac{1}{3}\vv{b}$}
+    {$\dfrac{3}{5}\vv{a}+\dfrac{4}{5}\vv{b}$}
+    {$\dfrac{4}{5}\vv{a}+\dfrac{3}{5}\vv{b}$}
+
+    \item 设$D$、$E$分别是$\triangle{ABC}$的边$AB$、$BC$上的点, $AD=\dfrac{1}{2}AB$, $BE=\dfrac{2}{3}BC$. 若$\vv{DE}=\lambda_1\vv{AB}+\lambda_2\vv{AC}$($\lambda_1,\lambda_2$为实数), 则$\lambda_1+\lambda_2$的值为\blkda{$\dfrac{1}{2}$}. 
+
+    \item 在$\triangle{ABC}$中, 点$P$是$AB$上一点, $\vv{CP}=\dfrac{2}{3}\vv{CA}+\dfrac{1}{3}\vv{CB}$, $Q$是$BC$中点, $AQ$与$CP$交点为$M$, $\vv{CM}=t\vv{CP}$, 则$t=$\blkda{$\dfrac{3}{4}$}
+    \begin{jieda}
+        $\vv{CM} = \lambda \vv{CA} + (1-\lambda) \vv{CQ} = \lambda \vv{CA} + \dfrac{1-\lambda}{2} \vv{CB}$，因此$\vv{CP} = \dfrac{\lambda}{t} \vv{CA} + \dfrac{1-\lambda}{2t} \vv{CB}$，由平面向量基本定理可推得$\dfrac{1-\lambda}{2t} = \dfrac{1}{2} \cdot \dfrac{\lambda}{t}$，因此$\lambda = \dfrac{1}{2}$，即$\vv{CM} = \dfrac{1}{2}\vv{CA} + \dfrac{1}{4}\vv{CB}$，因此$t = \dfrac{3}{4}$
+    \end{jieda}
+
+    
+    \item 在$\triangle{ABC}$中, $M$在边$AB$上, $N$在边$AC$上, $AM:AB=1:3$, $AN:AC=1:4$, $BN$与$CM$相交于点$P$, 设$\vv{AB}=\vv{a}$, $\vv{AC}=\vv{b}$, 试用$\vv{a},\vv{b}$表示$\vv{AP}$. 
+    \begin{jieda}
+        $\left \{ \begin{array}{l}
+             \vv{AP} = \lambda \vv{AB} + (1-\lambda) \vv{AN} =  \lambda \vv{AB} + \dfrac{(1-\lambda)}{4} \vv{AC} \\
+             \vv{AP} = \mu \vv{AM} + (1-\mu) \vv{AC} =  \dfrac{\mu}{3} \vv{AB} + (1-\mu) \vv{AC}
+        \end{array} \right. $
+        因此$\left \{ \begin{array}{l}
+             \lambda = \dfrac{\mu}{3} \\
+             \dfrac{1-\lambda}{4} = 1-\mu
+        \end{array} \right.$，解得$\left \{ \begin{array}{l}
+             \lambda = \dfrac{3}{11} \\
+             \mu = \dfrac{9}{11}
+        \end{array} \right.$，因此$\vv{AP} = \dfrac{3}{11}\vv{AB} + \dfrac{2}{11} \vv{AC}$
+    \end{jieda}
+    
+    \item 如图, 已知$\triangle{AOB}$的重心为$G$, 过点$G$的直线与边$OA,OB$分别交于点$P,Q$, 
+    设$\vv{OP}=h\vv{OA}$, $\vv{OQ}=k\vv{OB}$, $\triangle{AOB}$、 $\triangle{POQ}$的面积分别为$S$、$T$. 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/pingmianxiangliang3.png}
+    \end{figure}
+    \begin{enumerate}[(1)]
+    \item 求证: $\dfrac{1}{h}+\dfrac{1}{k}=3$; 
+    \item 求证: $\dfrac{4}{9}S\leq T\leq\dfrac{1}{2}S$. 
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\vv{OG} = \lambda \vv{OP} + (1-\lambda)\vv{OQ} = h\lambda \vv{OA} + k(1-\lambda)\vv{OB}$，故$\left\{\begin{array}{l}
+                 h\lambda = \dfrac{1}{3}  \\
+                 k(1-\lambda) = \dfrac{1}{3}
+            \end{array}\right. $，因此$\dfrac{1}{h} + \dfrac{1}{k} = 3$
+            \item $T = hkS = \dfrac{k^2}{3k-1}S, k \in \left[\dfrac{1}{2}, 1\right]$，\\
+            设$t = 3k-1, t \in \left[\dfrac{1}{2}, 2\right]$，$\dfrac{k^2}{3k-1} = \dfrac{\left(\dfrac{t+1}{3}\right)^2}{t}  = \dfrac{1}{9}\left(t+\dfrac{1}{t}+2\right) \in \left[\dfrac{4}{9}, \dfrac{1}{2}\right]$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{平面向量及其运算的坐标表示}
+\subsubsection*{平面向量的坐标表示}
+\begin{enumerate}
+    \item 将向量$\vv{a}$写成所在平面上两个不平行向量$\vv{e_1}$和$\vv{e2}$的线性组合的过程称作是向量$\vv{a}$关于$\vv{e_1}$和$\vv{e2}$的分解。特别地，当$\vv{e_1}$和$\vv{e2}$互相垂直的时候，称作是正交分解，例如：斜面上的物体所受重力分解成平行于斜面的分力和垂直于斜面的分力。
+    \item 对于平面直角坐标系内任意一个向量$\vv{a}$都可以进行关于$x$轴单位向量$\vv{i}$与$y$轴单位向量$\vv{j}$的分解：$\vv{a} = x \cdot \vv{i} + y \cdot \vv{j}$。由此$(x, y)$称为向量$\vv{a}$的坐标，表示为$\vv{a} = (x, y)$。特别地$\vv{i} = (1, 0), \vv{j} = (0, 1), \vv{0} = (0, 0)$ \\
+    以原点为起点的向量$\vv{OA}$，其坐标等于终点$A$的坐标。$\vv{OA} = \vv{a}$，称$\vv{OA}$为$\vv{a}$的位置向量。
+\end{enumerate}
+通过正交分解，平面直角坐标系内的向量可以和有序实数对$(x, y)$建立了一一对应关系。
+\subsubsection*{平面向量的运算的坐标表示}
+设$\vv{a} = (x_1, y_1), \vv{b} = (x_2, y_2)$
+\begin{enumerate}
+    \item 两个向量的和（差）的坐标等于这两个向量相应坐标的和（差）\\
+    $\vv{a} + \vv{b} = (x_1 + x_2, y_1 + y_2)$ \\
+    $\vv{a} - \vv{b} = (x_1 - x_2, y_1 - y_2)$ \\
+    推论：一个向量的坐标等于其终点坐标减去其起点坐标
+    \item 一个实数乘以一个向量的坐标等于用这个实数乘以原向量的相应坐标 \\
+    $\lambda \vv{a} = (\lambda x_1, \lambda y_1)$ \\
+    推论：两个向量平行的充要条件的坐标表示为$x_1 y_2 - x_2 y_1 = 0$
+    \item 两个向量的数量积等于这两个向量相应地坐标乘积的和 \\
+    $\vv{a} \cdot \vv{b} = x_1 x_2 + y_1 y_2$ \\
+    推论1：两个向量垂直的充要条件的坐标表示为$x_1 x_2 + y_1 y_2 = 0$ \\
+    推论2：一个向量的模长等于根号下其坐标平方和$|\vv{a}| = \sqrt{x^2_1 + y^2_1}$
+\end{enumerate}
+
+例题：
+\begin{enumerate}
+    \item 若$\vv{a}=(1,1)$, $\vv{b}=(3,-1)$, 则$\vert2\vv{a}-\vv{b}\vert=$\blkda{$\sqrt{10}$}. 
+    
+    \item 在平行四边形$ABCD$中, 若$A(0,0)$, $B(1,3)$, $C(5,3)$, 则$D$的坐标是\blkda{$(4,0)$}. 
+    
+    \item 已知点 $A(1,3), B(4,-1)$ ，则与向量 $\vv{A B}$ 同方向的单位向量为\blkda{$\left(\dfrac{3}{5}, -\dfrac{4}{5}\right)$}
+    
+    
+    \item 若 $A(0,-3), ~ B(3,3), ~ C(x, 1)$ ，且 $\vv{A B} / / \vv{B C}$ ，则 $x=$\blkda{$2$}．
+    
+    \item 已知$\vv{a}=(1,2)$, $\vv{b}=(x,1)$. 若$\vv{a}-3\vv{b}$与$2\vv{a}+\vv{b}$平行, 则实数$x$的值为\blkda{$\dfrac{1}{2}$}. 
+    
+    \item 设$\vv{OA}=(1,-2)$, $\vv{OB}=(a,-1)$, $\vv{OC}=(-b,0)$, 其中$a>0,b>0$, $O$为坐标原点, 若$A,B,C$三点共线, 则$\dfrac{1}{a}+\dfrac{2}{b}$的最小值是\blkda{8}. 
+    
+    
+    \item 在平面直角坐标系中，分别取与 $x$ 轴，$y$ 轴方向相同的两个单位向量 $\vv{i}, \vv{j}$ 作为基底，设 $\vv{a}=\left(-x^2+2 x-5\right) \vv{i}+\left(x^2+1\right) \vv{j}$（其中 $x \in \mathbf{R}$ ），则向量 $\vv{a}$ 对应的坐标位于\blkda[2]{第二象限}.
+    
+    
+    \item 已知向量 $\vv{a}=(2,1), \vv{b}=(-2,1)$ ，则 $|\vv{a}-\lambda \vv{b}|(\lambda \in \mathbf{R})$的最小值是 \blkda[2]{$\dfrac{4\sqrt{5}}{5}$}.
+    
+    
+    \item 已知 $\vv{m}=(-1, a), \vv{n}=(2 a, 4)$ ．若 $\vv{p}=\vv{m}+\dfrac{1}{2} \vv{n}$ ，且 $|\vv{p}|=3$ ，则 实 数 $a$ 的值等于 \blkda[2]{-2或1} ．
+
+    \item 若 $A(2,3), B(3,4), C(1,5)$ ，则 $\triangle A B C$ 的重心 $G$ 的坐标为\blkda{$(2,4)$}.
+
+    \item 已知 $P_1(-3,4), P_2(x, y)$ ．若线段 $P_1 P_2$ 的中点坐标为 $(1,-1)$ ，则点 $P_2$ 的坐标为\blkda{$(5,-6)$}．
+
+    \item 已知 $\lambda \in \mathbf{R}$ ，平面向量 $\vv{a}=(\lambda,-1), \vv{b}=(2, \lambda)$ ，则 $|\vv{a}+\vv{b}|$ 的最小值为\blkda{$\dfrac{3\sqrt{2}}{2}$}．
+
+    \item 已知平面上四个点 $A(-1,2), B(1,1), C(2,1), D(3,4)$ ，则向量 $\vv{A B}$ 在向量 $\vv{C D}$ 上的投影向量为\blkda{$\left(-\dfrac{1}{10}, -\dfrac{3}{10}\right)$}．
+
+    \item $\vv{a}=(x, y)$ ，请写出一个与 $\vv{a}$ 垂直的非零向量坐标\blkda{$(-y,x)$}.
+
+    \item 若 $|\vv{a}|=2 \sqrt{13}, \vv{b}=(-2,3)$ ，且 $\vv{a} \perp \vv{b}$ ，则 $\vv{a}=$\blkda[3]{$(6,4)$或$(-6,-4)$}．
+
+    \item 若 $\vv{a}=(-1,-3), \vv{b}=(2,-5)$ ，且 $\vv{a} \cdot \vv{c}=5, \vv{b} \cdot \vv{c}=1$ ，则 $\vv{c}=$\blkda{$(-2,-1)$}．
+
+    \item 已知 $A(2,-1), B(-1,3)$ ．若点 $C$ 在 $y$ 轴上，且满足 $\vv{A C} \cdot \vv{B C}=3$ ，则点 $C$ 的坐标为\blkda[3]{$(0,4)$或$(0,-2)$}．
+
+    \item 已知 $\vv{a}=\left(1, \dfrac{1}{2}\right), \vv{b}=\left(0,-\dfrac{1}{2}\right), \vv{c}=\vv{a}+k \vv{b}, \vv{d}=\vv{a}-\vv{b}$ ，且 $\langle\vv{c}, \vv{d}\rangle=\ang{45}$ ，则实数 $k$ 的值为\blkda{1}．
+
+    \item 已知 $O$ 为原点， $\vv{O A}=(3,1), \vv{O B}=(-1,2)$ ，且 $\vv{O C} \perp \vv{O B}, \vv{B C} / / \vv{O A}, \vv{O D}+\vv{O A}=\vv{O C}$ ，则向量 $\vv{O D}=$\blkda{$(11,6)$}．
+
+    \item 设 $\vv{a}=(4,3), \vv{a}$ 在上 $\vv{b}$ 上的数量投影为 $\dfrac{5 \sqrt{2}}{2}, \vv{b}$ 在 $x$ 轴上的投影为 2 ，且 $|\vv{b}| \leq 14$ ，则 $\vv{b}$ 为\blkda{$\left(2,-\dfrac{2}{7}\right)$}．
+\end{enumerate}
+
+\subsection*{平面向量的应用}
+利用向量解决几何问题的基本步骤：
+\begin{enumerate}
+    \item 将几何问题转化为向量问题，用向量表示相应的几何量
+    \item 进行向量运算，得到向量问题的结论
+    \item 将向量问题的结论翻译成几何问题的结论
+\end{enumerate}
+例题
+\begin{enumerate}
+    \item 用向量法证明两角差的余弦公式
+    \begin{jieda}
+        证明：\\
+        设$\alpha$终边与单位圆交点为$A$，$\beta$终边与单位圆交点为$B$，则$\vv{OA} = (cos\alpha, sin\alpha), \vv{OB} = (cos\beta, sin\beta)$。设两终边所夹锐角为$\theta$，则$|\alpha - \beta| = \theta + 2k\pi, k \in \mathbf{Z}$. 根据诱导公式有$cos(\alpha - \beta) = cos\theta = cos\alpha cos\beta + sin\alpha sin \beta$
+    \end{jieda}
+    \item 用向量法证明正弦定理
+    \begin{jieda}
+        证明：\\
+        在$\triangle ABC$中，做向量$\vv{AB}, \vv{AC}, \vv{BC}$，满足$\vv{AC} = \vv{AB} 
+         + \vv{BC}$，取向量$\vv{j} \perp \vv{AB}$且$\vv{j}, \vv{BC}$的夹角小于$\dfrac{\pi}{2}$。\\
+         $\vv{j} \cdot \vv{AC} = \vv{j} \cdot (\vv{AB} 
+         + \vv{BC}) = \vv{j} \cdot \vv{BC}$，即$|\vv{j}| \cdot |\vv{AC}| \cdot cos(|\dfrac{\pi}{2} - \angle A|) = |\vv{j}| \cdot |\vv{BC}| \cdot cos(|\dfrac{\pi}{2} - \angle B|)$ \\
+         根据诱导公式化简有$|\vv{AC}| \cdot sin\angle A = |\vv{BC}| \cdot sin \angle B$，即$b sinA = a sinB$ \\
+         同理可证$b sinC = c sinB$ \\
+         故正弦定理得证
+    \end{jieda} 
+    \item 用向量法证明余弦定理
+    \begin{jieda}
+        证明：\\
+        在$\triangle ABC$中，做向量$\vv{AB}, \vv{AC}, \vv{BC}$，满足$\vv{AC} = \vv{AB} 
+         + \vv{BC}$，因此有$|\vv{AC}|^2 = |\vv{AB} 
+         + \vv{BC}|^2$，即$|\vv{AC}|^2 = |\vv{AB}|^2 
+         + |\vv{BC}|^2 + 2|\vv{AB}||\vv{BC}|cos\theta$，得证
+    \end{jieda}
+    \item 如图所示，证明$|AC|^2 + |DB|^2 = 2(|AB|^2 + |AD|^2)$
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.3\linewidth]{bodyxb/src/q40.png}
+    \end{figure}
+    \begin{jieda}
+        证明：\\
+        $\vv{AC} = \vv{AB} + \vv{AD}$，$\vv{DB} = \vv{AB} - \vv{AD}$ \\
+        故$|\vv{AC}|^2 = |\vv{AB} + \vv{AD}|^2 = |\vv{AB}|^2 + |\vv{AD}|^2 + 2|\vv{AB}|\cdot|\vv{AD}|\cdot cos\theta$ \\
+        $|\vv{DB}|^2 = |\vv{AB} - \vv{AD}|^2 = |\vv{AB}|^2 + |\vv{AD}|^2 - 2|\vv{AB}|\cdot|\vv{AD}|\cdot cos\theta$ \\
+        因此$|\vv{AC}|^2 + |\vv{DB}|^2 = 2(|\vv{AB}|^2 + |\vv{AD}|^2)$
+    \end{jieda}
+    \item 已知Rt$\triangle{ABC}$的斜边$BC=5$, 则$\vv{AB}\cdot\vv{BC}+\vv{BC}\cdot\vv{CA}+\vv{CA}\cdot\vv{AB}$的值等于\blkda{$-25$}. 
+
+    
+    \item 在$\triangle{ABC}$中, $\vv{AB}\cdot\vv{BC}=\vv{BC}\cdot\vv{CA}=\vv{CA}\cdot\vv{AB}=-1$, 则$\triangle{ABC}$的周长为\blkda{$3\sqrt{2}$}. 
+    
+    
+    \item 在$\triangle{ABC}$中, $AD\bot AB$, $\vv{BC}=\sqrt{3}\vv{BD}$, $\abs{\vv{AD}}=1$, 则$\vv{AC}\cdot\vv{AD}=$\blkda{$\sqrt{3}$}. 
+    
+    \item 设$\vv{a}$、$\vv{b}$、$\vv{c}$是单位向量, 若$\vv{a}+\vv{b}=\vv{c}$, 则$\vv{a}\cdot\vv{c}$的值为\blkda{$\frac{1}{2}$}. 
+    
+    \item 若向量$\vv{a} = (1, x)$与向量$\vv{b} = (x, 2)$的夹角为钝角，则实数$x$的取值范围是\blkda[3.5]{$(-\infty, -\sqrt{2})\cup(-\sqrt{2}, 0)$}
+    \begin{jieda}
+        向量$\vv{a} = (1, x)$与向量$\vv{b} = (x, 2)$的夹角为钝角$ \Longleftrightarrow \left\{\begin{array}{l}
+             x + 2x < 0 \\
+             x^2 \neq 2
+        \end{array}\right.$\\
+        因此$x \in (-\infty, -\sqrt{2})\cup(-\sqrt{2}, 0)$
+    \end{jieda}
+
+    
+    \item 在$\triangle{ABC}$中, $D$是边$AB$上的一点, 且$\vv{AD}=2\vv{DB}$, $\vv{CD}=\frac{1}{3}\vv{CA}+\lambda\vv{CB}$, 则$\lambda=$\blkda{$\dfrac{2}{3}$}
+    
+    \item 在$\triangle{ABC}$中, $AB=3$, $AC=5$, 若$O$为$\triangle{ABC}$的外心, 则$\vv{AO}\cdot\vv{BC}$的值为\blkda{8}. 
+    
+    \item 在$\triangle{ABC}$中, $AB=1$, $BC=\sqrt{7}$, $AC=3$, 若$O$为$\triangle{ABC}$的垂心, 则$\vv{AO}\cdot\vv{AC}$的值为\blkda{$\frac{3}{2}$}. 
+    \begin{jieda}
+        设$BH \perp AC$，$H$为垂足，则$\vv{AO} \cdot \vv{AC} = (\vv{AH} + \vv{HO}) \cdot \vv{AC} = |\vv{AH}| \cdot |\vv{AC}| = |\vv{AB}| \cdot |\vv{AC}| \cdot cosA$， $cosA = \dfrac{1+9-7}{2\times 3} = \dfrac{1}{2}$，故$\vv{AO}\cdot\vv{AC} = \dfrac{3}{2}$
+    \end{jieda}
+    
+    
+    \item 已知$O$是$\triangle{ABC}$所在平面内一点, $D$是边$BC$的中点, 且$2\vv{OA}+\vv{OB}+\vv{OC}=\vv{0}$, 那么\dotfill(\kh{A})
+    \xx
+    {$\vv{AO}=\vv{OD}$}
+    {$\vv{AO}=2\vv{OD}$}
+    {$\vv{AO}=3\vv{OD}$}
+    {$2\vv{AO}=\vv{OD}$}
+    \begin{jieda}
+        设重心为$G$，$2\vv{OA}+\vv{OB}+\vv{OC}=\vv{0}$即$4\vv{OG} + \vv{GA} = \vv{0}$，故根据几何关系可知$O$为$AD$中点
+    \end{jieda}
+    
+    \item 已知$P$为$\triangle{ABC}$所在平面内一点, 当$\vv{PA}+\vv{PB}=\vv{PC}$时, 点$P$位于$\triangle{ABC}$的\dotfill(\kh{D})
+    \xx{重心}{垂心}{内心}{外部}
+    
+    
+    \item 在$\triangle{OAB}$中, $\vv{OA}=\vv{a}$, $\vv{OB}=\vv{b}$, $\vv{OP}=\vv{p}$, 
+    若$\vv{p}=t\left(\frac{\vv{a}}{\abs{\vv{a}}}+\frac{\vv{b}}{\abs{\vv{b}}}\right)$, $t\zr$, 则点$P$在\dotfill(\kh{A})
+    \xx
+    {$\angle{AOB}$的平分线所在直线上}
+    {边$AB$的中垂线上}
+    {边$AB$的中线上}
+    {边$AB$所在的直线上}
+    
+    
+    \item 已知$O,N,P$在$\triangle{ABC}$所在平面内, 且$\abs{\vv{OA}}=\abs{\vv{OB}}=\abs{\vv{OC}}$, $\vv{NA}+\vv{NB}+\vv{NC}=\vv{0}$, 
+    且$\vv{PA}\cdot\vv{PB}=\vv{PB}\cdot\vv{PC}=\vv{PC}\cdot\vv{PA}$, 则点$O,N,P$依次是$\triangle{ABC}$的\dotfill(\kh{C})
+    \xx
+    {重心、外心、垂心}
+    {重心、外心、内心}
+    {外心、重心、垂心}
+    {外心、重心、内心}
+\end{enumerate}

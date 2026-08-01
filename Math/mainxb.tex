@@ -1,0 +1,59 @@
+%%# -*- coding:utf-8 -*-
+%!TEX program  = xelatex
+
+\documentclass{xbcls}
+
+% 答案部分是否显示: 0不显示, 1显示
+\myanswer{1}
+
+\newif\ifjieda
+\jiedatrue % 添加此句将输出答案
+
+\newif\ifvspace
+%\vspacetrue % 添加此句将输出垂直空白
+
+
+\begin{document}
+% 以下两行是为了目录只显示到节, 因为小节是单节课分成一二三四几部分过程.
+\setcounter{tocdepth}{2}      % 控制目录的深度:  0表示只有章,1表示到节,2表示到小节.
+\setcounter{secnumdepth}{3}   % 实际正文章节编号的深度. LaTeX标准文档类用来控制章节编号深度，book和report默认为2，article默认为3.  secnumdepth≥tocdepth
+
+% \tableofcontents            % 生成目录
+% \mainmatter                 % 正文开始重新排页码. 
+
+%\include{bodyxb/bx01ch00}  
+%\include{bodyxb/bx01ch00}           % 测试用
+% \part{必修一}
+\include{bodyxb/1_jihe}           % 易错题
+\include{bodyxb/2_luoji}           % 易错题
+\include{bodyxb/3_budengshi}           % 易错题
+\include{bodyxb/4_hanshu}           % 易错题
+\include{bodyxb/5_mizhidui}
+\include{bodyxb/6_sanjiao}
+\include{bodyxb/7_pingmianxiangliang}
+\include{bodyxb/8_fushu}           % 易错题
+\include{bodyxb/9_shulie}           % 易错题
+\include{bodyxb/tmp}           % 易错题
+\include{bodyxb/10_zhixian}           % 易错题
+\include{bodyxb/11_yuan}           % 易错题
+\include{bodyxb/12_tuoyuan}           % 易错题
+\include{bodyxb/13_shuangquxian}           % 易错题
+\include{bodyxb/14_paowuxian}           % 易错题
+\include{bodyxb/15_kongjianzhixianyupingmian}
+% \include{bodyxb/yuanzhuiquxianjielun}           % 易错题
+% \include{bodyxb/litijihezhongdian}           % 易错题
+% \include{bodyxb/kongjianxiangliangjichu}           % 易错题
+%\include{bodyxb/tmp}           % 易错题
+%\include{bodyxb/jiexijihe}           % 易错题
+%\include{bodyxb/daoshu}           % 易错题
+
+%\include{bodyxb/yct3}           % 易错题
+%\part{必修二}
+
+% \include{bodyxb/bx02ch05}           % 第五章
+% \include{bodyxb/bx02ch06}           % 第六章
+
+
+% \backmatter 				% 结束章节自动编号
+% \clearpage
+\end{document}

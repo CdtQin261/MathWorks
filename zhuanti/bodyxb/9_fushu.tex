@@ -1,0 +1,397 @@
+\chapter*{复数专题练习}
+\begin{enumerate}
+\item 复数的概念
+\begin{enumerate}
+    \item 若复数$m-3+(m^2-9)i \geq 0$，则实数$m$的值为\blkda{3}
+    \begin{jieda}
+        因为虚数不能比较大小，所以必有虚部为0，即$m^2 - 9 = 0$，故$m = \pm 3$，经检验可知$m = 3$满足要求.
+    \end{jieda}
+    \item 已知$a, b \in \mathbf{R}$，则“$a = b$”是“复数$(a-b) + (a+b)i$是纯虚数”的\blkda[3]{必要不充分}条件.
+    \begin{jieda}
+        复数$(a-b) + (a+b)i$是纯虚数$\Longleftrightarrow a = b \neq 0$
+    \end{jieda}
+    \item $m \in \mathbf{R}$，已知集合$M = \{1, 2, (m^2-3m-1) + (m^2-5m+6)i\}, N = \{-1, 3\}$满足$M \cap N \neq \varnothing$，则$m = $\blkda{3}
+    \begin{jieda}
+        $M \cap N \neq \varnothing$即$(m^2-3m-1) + (m^2-5m+6)i$为实数，故$m = 2$或$3$，代入检验，当$m = 2$时$M = \{1,2,-3\}$不满足要求，$m = 3$时$M = \{1,2,-1\}$，满足要求.
+    \end{jieda}
+    \item 已知复数$z = \dfrac{a^2+a-2}{a-3} + (a^2 - 4a+3)i$，\ding{172}若$z \in \mathbf{R}$，则$a = $\blkda{1}，\ding{173}若$z$是纯虚数，则$a = $\blkda{-2}
+    \begin{jieda}
+        若$z \in \mathbf{R}$，则$a^2 - 4a+3 = 0$，解得$a = 1$或$3$，考虑到实部的分母，故$a = 1$. \\
+        若$z$是纯虚数，则$\dfrac{a^2+a-2}{a-3} = 0$且$a^2-4a+3 \neq 0$，解得$a = -2$.
+    \end{jieda}
+    \item “两个复数的和是虚数”的一个必要非充分条件是\dotfill{(\kh{C})}
+    \xx{两个数都是虚数}{两个数中一个是虚数，一个是实数}{两个数中至少有一个是虚数}{两个数都是纯虚数}
+    \item 对任意复数$z = x + yi (x, y \in \mathbf{R})$，则下列结论中正确的是\dotfill{(\kh{D})}
+    \xx{$|z - \overline{z}| = 2y$}{$|z - \overline{z}| \geq 2x$}{$z^2 = x^2+y^2$}{$|z| \leq |x| + |y|$}
+    \begin{jieda}
+        \begin{enumerate}[A.]
+            \item $|z - \overline{z}| = 2|y|$
+            \item 理由同上，反例：$z = 1$
+            \item $z^2 = (x^2 - y^2) + (2xy)i$
+        \end{enumerate}
+    \end{jieda}
+    \item 设复数$z = log_2\left(cos\alpha + \dfrac{1}{2}\right) + i log_2\left(sin\alpha + \dfrac{1}{2}\right)$，求$\alpha$使：\ding{172}$z$为实数，\ding{173}$z$为纯虚数，\ding{174}$z$的实部与虚部相等
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $z$为实数等价于$\left \{ \begin{array}{l}
+                 sin\alpha = \dfrac{1}{2}  \\
+                 cos\alpha > -\dfrac{1}{2}
+            \end{array} \right.$，解得$\alpha
+             = 2k\pi + \dfrac{\pi}{6}, k \in \mathbf{Z}$
+             \item $z$为纯虚数等价于$\left \{ \begin{array}{l}
+                 cos\alpha = \dfrac{1}{2}  \\
+                 sin\alpha > -\dfrac{1}{2} \\
+                 sin\alpha \neq \dfrac{1}{2}
+            \end{array} \right.$，解得$\alpha = 2k\pi + \dfrac{\pi}{3}, k \in \mathbf{Z}$
+            \item $z$的实部与虚部相等即$\left \{ \begin{array}{l}
+                 sin\alpha = cos\alpha  \\
+                 sin\alpha > -\dfrac{1}{2}
+            \end{array} \right.$，解得$\alpha = 2k\pi + \dfrac{\pi}{4}, k \in \mathbf{Z}$
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\item 复数的相等
+\begin{enumerate}
+    \item 已知$z_1 = (a^2-a-6) + (1-2a)i, z_2 = (a-3) + (a^2 - 2a + 2)i$，其中$a \in \mathbf{R}$. 若$\overline{z_1} = z_2$，则$a = $\blkda{3}.
+    \begin{jieda}
+        $\overline{z_1} = (a^2-a-6) + (2a-1)i$，$\overline{z_1} = z_2$即$\left \{ \begin{array}{l}
+             a^2 - a - 6 = a - 3  \\
+             2a-1 = a^2 - 2a + 2
+        \end{array}\right.$，即$\left \{ \begin{array}{l}
+             a^2 - 2a - 3 = 0  \\
+             a^2 - 4a + 3 = 0
+        \end{array}\right.$，解得$a = 3$.
+    \end{jieda}
+    \item 已知复数$z_1 = m + (4-m^2)i$，复数$z_2 = 2cos\theta + (\lambda + 3sin\theta)i$，其中$m, \lambda \in \mathbf{R}$，且$z_1 = z_2$，则$\lambda$的取值范围是\blkda{$\left[-\dfrac{9}{16}, 7\right]$}
+    \begin{jieda}
+        $z_1 = z_2$则$\left \{ \begin{array}{l}
+             m = 2cos\theta  \\
+             4 - m^2 = \lambda + 3sin\theta 
+        \end{array}\right.$，整理得$4sin^2\theta = \lambda + 3sin\theta$，即$\lambda = 4sin^2\theta - 3sin\theta$.\\
+        令$t = sin\theta, t \in [-1, 1]$，故$\lambda = 4t^2 - 3t \in \left[-\dfrac{9}{16}, 7\right]$
+    \end{jieda}
+\end{enumerate}
+\item 复数的几何意义
+\begin{enumerate}
+    \item 复平面内，已知复数$z = x - \dfrac{1}{3}i$所对应的点都在单位圆内，则实数$x$的取值范围是\blkda[2.5]{$\left(-\dfrac{2\sqrt{2}}{3}, \dfrac{2\sqrt{2}}{3}\right)$}
+    \item 在复平面上，一个正方形的三个顶点对应的复数分别是$0, 1+2i, -2+i$，则该正方向的第四个顶点所对应的复数是\blkda{$-1+3i$}
+    \begin{jieda}
+        设目标复数为$x+yi$，则根据几何关系有$x+yi - 0 = (-2+i) - (1+2i) = -1+3i$
+    \end{jieda}
+    \item 复平面内，若复数$z = (m^2-m-2) + (m^2-3m+2)i$所对应的点在虚轴上，则实数$m$的值等于\blkda{-1或2}
+    \begin{jieda}
+        $z$对应的点在虚轴上，即$m^2-m-2 = 0$，解得$m = -1$或$2$.
+    \end{jieda}
+    \item 复平面内，若复数$z = (m^2-8m+15) + (m^2-5m-14)i$所对应的点在第四象限，则实数$m$的取值范围是\blkda[3]{$(-2, 3) \cup (5,7)$}
+    \begin{jieda}
+        $z$对应的点在第四象限，即$\left \{ \begin{array}{l}
+             m^2-8m+15 > 0  \\
+             m^2-5m-14 < 0 
+        \end{array}\right.$，解得$m \in (-2, 3) \cup (5,7)$.
+    \end{jieda}
+    \item 已知复数$z_1 = -1+2i, z_2 = 1-i, z_3 = 3-2i$，它们所对应的点分别是$A, B, C$.若$\overrightarrow{OC} = x \overrightarrow{OA} + y \overrightarrow{OB}$，则$x+y$的值是\blkda{5}
+    \begin{jieda}
+        $A(-1, 2), B(1, -1), C(3, -2)$，故$\left \{ \begin{array}{l}
+             -x+y = 3  \\
+             2x-y = -2
+        \end{array}\right.$，解得$x = 1, y = 4$.
+    \end{jieda}
+\end{enumerate}
+\item 复数的运算
+\begin{enumerate}
+    \item $z, z_1, z_2$都是复数，判断下列命题的真假：
+    \begin{dingautolist}{172}
+        \item $z + \overline{z}$必是实数.
+        \item $z - \overline{z}$必是纯虚数.
+        \item $z^2 \geq 0$恒成立.
+        \item 若$z = \overline{z}$，则$z \in \mathbf{R}$.
+        \item 若$z_1^2 + z_2^2 = 0$，则$z_1  = z_2 = 0$.
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 真.
+            \item 假，反例：$z \in \mathbf{R}$.
+            \item 假，$z^2$是虚数则不能比较大小.
+            \item 真.
+            \item 假，反例：$z_1 = i, z_2 = -1$.
+    \end{dingautolist}
+    \end{jieda}
+    
+    \item $\left(i - \dfrac{1}{i}\right)^6$的虚部是\blkda{0}
+    \begin{jieda}
+        $\left(i - \dfrac{1}{i}\right)^6 = (i+i)^6 = -64$
+    \end{jieda}
+    \item 计算：$(1+i)^{20} - (1-i)^{20} = $\blkda{0}
+    \begin{jieda}
+        $(1+i)^{20} - (1-i)^{20} = (2i)^{10} - (-2i)^{10} = 0$
+    \end{jieda}
+    \item 计算：$\dfrac{(1+i)^5}{1-i} + \dfrac{(1-i)^5}{1+i} = $\blkda{0}
+    \begin{jieda}
+        $\dfrac{(1+i)^5}{1-i} + \dfrac{(1-i)^5}{1+i} = \dfrac{(1+i)^6}{2} + \dfrac{(1-i)^6}{2} = \dfrac{(2i)^3 + (-2i)^3}{2} = 0$
+    \end{jieda}
+    \item 计算：$\left ( \dfrac{-1+i}{1+\sqrt{3}i}\right)^3$
+    \begin{jieda}
+        $\left ( \dfrac{-1+i}{1+\sqrt{3}i}\right)^3 = \left ( \dfrac{\dfrac{-1+i}{2}}{\dfrac{1+\sqrt{3}i}{2}}\right)^3 = \dfrac{\left ( \dfrac{-1+i}{2}\right)^3}{\left ( \dfrac{1+\sqrt{3}i}{2}\right)^3} = -\left ( \dfrac{-1+i}{2}\right)^3 = \dfrac{-1-i}{4}$
+    \end{jieda}
+    \item 计算：$\dfrac{(\sqrt{3}+i)^5}{-1+\sqrt{3}i}$
+    \begin{jieda}
+        $\dfrac{(\sqrt{3}+i)^5}{-1+\sqrt{3}i} = \dfrac{\left ( \dfrac{\sqrt{3}+i}{2}\right )^5}{\dfrac{-1+\sqrt{3}i}{2}} \cdot 16 = \dfrac{\dfrac{-\sqrt{3}+i}{2}}{\dfrac{-1+\sqrt{3}i}{2}} \cdot 16 = \dfrac{(-1-\sqrt{3}i)(-\sqrt{3}+i)}{4} \cdot 16 = 8\sqrt{3}+8i$
+    \end{jieda}
+    \item 已知$\omega = -\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i$，则：\ding{172}$\omega^2+\dfrac{1}{\omega^2} = $\blkda{-1}，\ding{173}$\omega^3+\dfrac{1}{\omega^3} = $\blkda{2}，\ding{174}$\omega^{14}+\dfrac{1}{\omega^{14}} = $\blkda{-1}，
+    \ding{175}$1 + \omega + \omega^2 + ... + \omega^{10} = $\blkda{$\dfrac{1+\sqrt{3}i}{2}$}
+    \begin{jieda}
+        $\omega^k = \left \{ \begin{array}{ll}
+             1, & k = 3n, n \in \mathbf{Z} \\
+            \dfrac{-1+\sqrt{3}i}{2}, & k = 3n+1, n \in \mathbf{Z} \\
+             \dfrac{-1-\sqrt{3}i}{2}, & k = 3n+2, n \in \mathbf{Z}
+        \end{array}\right.$ \\
+        \ps 从复数的三角表示来看则结论很显然.
+    \end{jieda}
+    \item 若$z = \dfrac{-3-i}{1+2i}$，则$z^2 = $\blkda{$-2i$}
+    \begin{jieda}
+        $z = \dfrac{-(3+i)(1-2i)}{5} = -\dfrac{1}{5}(3+i-6i+2) = -1+i$，故$z^2 = -2i$
+    \end{jieda}
+    \item 复数$\dfrac{2+i}{i-1}$的共轭复数是\blkda{$\dfrac{-1+3i}{2}$}
+    \begin{jieda}
+        $\dfrac{2+i}{i-1} = \dfrac{(2+i)(-1-i)}{2} = \dfrac{-1-3i}{2}$，故其共轭复数为$\dfrac{-1+3i}{2}$.
+    \end{jieda}
+    \item 已知复数$\omega $满足$\omega  - 4 = (3-2\omega )i$（$i$为虚数单位）,$z = \dfrac{5}{\omega } + |\omega -2|$，则$z = $\blkda{$3+i$}
+    \begin{jieda}
+        $\omega -4 = 3i - 2\omega  \cdot i$，即$\omega (1+2i) = 3i+4, \omega = \dfrac{4+3i}{1+2i} = \dfrac{(4+3i)(1-2i)}{5} = 2-i$，故$z = \dfrac{5}{2-i} + |-i| = 3+i$
+    \end{jieda}
+    \item 已知$z = 1+i$，且$\dfrac{z^2+az+b}{z^2-z+1} = 1-i$，求实数$a, b$的值.
+    \begin{jieda}
+        $\dfrac{z^2+az+b}{z^2-z+1} = 1-i$即$z^2+az+b = (1-i)(z^2-z+1)$，代入$z = 1+i$有$2i+a(1+i)+b = (1-i)(2i-(1+i)+1)$，即$(a+b)+(a+2)i = 1+i$，因此$a = -1, b = 2$
+    \end{jieda}
+    \item 已知$\dfrac{z}{z-1}$是纯虚数，求复数$z$在复平面内对应点的轨迹的普通方程.
+    \begin{jieda}
+        设$z = x + yi$，因此有$\dfrac{z}{z-1} = \dfrac{x+yi}{x-1+yi} = \dfrac{(x+yi)(x-1-yi)}{(x-1)^2 + y^2} = \dfrac{x^2-x+y^2 - yi}{(x-1)^2 + y^2}$，则其为纯虚数等价于$\left \{ \begin{array}{l}
+             x^2-x+y^2 = 0  \\
+             y \neq 0 
+        \end{array}\right .$，对应于挖两点的圆$(x - \dfrac{1}{2})^2 + y^2 = \dfrac{1}{4}(y \neq 0)$
+    \end{jieda}
+\end{enumerate}
+\item 复数的模的代数性质
+\begin{enumerate}
+    \item $z, z_1, z_2$都是复数，判断下列命题的真假：
+    \begin{dingautolist}{172}
+        \item $|z|^2 = z^2$恒成立.
+        \item $|z|^2 \neq z^2$恒成立.
+        \item $|z^2| = |z|^2$恒成立.
+        \item $\sqrt{|z|^2} = |z|$恒成立.
+        \item 若$|z| \leq 1$，则$-1 \leq z \leq 1$.
+        \item 若$|z_1| = |z_2|$，则$z_1 = \pm z_2$.
+        \item 若$|z| = 1$，则$\overline{z} = \dfrac{1}{z}$.
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 假，$|z|^2 \in \mathbf{R}$，而$z^2$则不一定，例如$z = 1+i$.
+            \item 假，反例：$z \in \mathbf{R}$.
+            \item 真.
+            \item 真.
+            \item 假，反例：$z$是模长小于等于1的虚数.
+            \item 假，反例：$z_1 = 1, z_2 = i$
+            \item 真.
+        \end{dingautolist}
+    \end{jieda}
+    \item 求下列复数的模：\ding{172} $(3+4i)\left(-\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i\right)$；\ding{173}$\dfrac{5-12i}{-8+15i}$
+    \begin{jieda}
+        \ding{172}$\left|(3+4i)\left(-\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i\right)\right| = |(3+4i)|\cdot\left|\left(-\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i\right)\right| = 5 \cdot 1 = 5$ \\
+        \ding{173}$\left |\dfrac{5-12i}{-8+15i} \right | = \dfrac{|5-12i|}{|-8+15i|} = \dfrac{13}{17}$
+    \end{jieda}
+    \item 满足$|log_3x + 4i| = 5$的实数$x$的值是\blkda{$27$或$\dfrac{1}{27}$}
+    \begin{jieda}
+        $|log_3x + 4i| = 5$即$log_3x = \pm 3$，故$x = 27$或$\dfrac{1}{27}$
+    \end{jieda}
+    \item 已知复数$z = x + yi (x, y \in \mathbf{R})$，满足$|z - 4i| = |z+2|$，求$2^x + 4^y$的最小值以及相应的$x, y$的值.
+    \begin{jieda}
+        $|z - 4i| = |z+2|$即$|z - 4i|^2 = |z+2|^2$，即$(z-4i)(\overline{z} + 4i) = (z+2)(\overline{z}-2)$ \\
+        代入$z = x + yi$得到$x^2+(y-4)^2 = (x+2)^2 + y^2$，化简有$x+2y = 3$ \\
+        故$2^x + 4^y = 2^x + 2^{2y} = 2^x + 2^{3-x} \geq 4\sqrt{2}$（当$x = \dfrac{3}{2}, y = \dfrac{3}{4}$时取等.）
+    \end{jieda}    
+    \item 已知复数$|z_1| = |z_2| = |z_3| = \sqrt{2}$，则$\dfrac{|z_1 + z_2 + z_3|}{\left | \dfrac{1}{z_1} + \dfrac{1}{z_2} + \dfrac{1}{z_3}\right|} = $\blkda{2}
+    \begin{jieda}
+        因为$\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}$，所以$\dfrac{1}{z_1} = \dfrac{\overline{z_1}}{2}, \dfrac{1}{z_2} = \dfrac{\overline{z_2}}{2}, \dfrac{1}{z_3} = \dfrac{\overline{z_3}}{2}$，\\
+        故$\dfrac{|z_1 + z_2 + z_3|}{\left | \dfrac{1}{z_1} + \dfrac{1}{z_2} + \dfrac{1}{z_3}\right|} = 2\dfrac{|z_1 + z_2 + z_3|}{|\overline{z_1} + \overline{z_2} + \overline{z_3}|} = 2\dfrac{|z_1 + z_2 + z_3|}{|\overline{z_1+z_2+z_3}|} = 2$
+    \end{jieda}
+    \item 已知复数$z_1 = 1 + icos\theta, z_2 = sin\theta - i$，则$|z_1 - z_2|$的最大值为\blkda{$1+\sqrt{2}$}
+    \begin{jieda}
+        $z_1 - z_2 = (1-sin\theta) + i (cos\theta-1)$，故$|z_1 - z_2| = \sqrt{1 + sin^2\theta - 2sin\theta + cos^2\theta + 1 - 2cos\theta} = \sqrt{3 - 2(sin\theta+cos\theta)} \leq \sqrt{3 + 2\sqrt{2}} = 1+\sqrt{2}$
+    \end{jieda}
+\end{enumerate}
+\item 复数的模的几何性质
+\begin{enumerate}
+    \item 若$|z + 1 - i| = 1$，则$|z - 3 + 4i|$的取值范围是\blkda[4]{$[\sqrt{41}-1, \sqrt{41}+1]$}.
+    \begin{jieda}
+        $|z + 1 - i| = 1$即$z$在复平面上对应的点$Z$在以$(-1, 1)$为圆心，半径为1的圆上，而$|z - 3 + 4i|$即$Z$与点$(3, -4)$之间的距离，根据几何关系可知其取值范围为$[\sqrt{41}-1, \sqrt{41}+1]$
+    \end{jieda}
+    \item 若$|z - 25i| \leq 15, z \in \mathbf{C}$，则$|z|$最小时$z = $\blkda{$10i$}，$|z|$最大时$z = $\blkda{$40i$}.
+    \begin{jieda}
+        $|z - 25i| \leq 15, z \in \mathbf{C}$即$z$在复平面上对应的点$Z$在以$(0, 25)$为圆心，半径为15的圆内（包含边界），而$|z|$是$Z$到原点的距离，故根据几何关系显然有$|z|$最小时$z = 10i$，$|z|$最大时$z = 40i$.
+    \end{jieda}
+    \item 已知$z \in \mathbf{C}$且$|z + 3 + 4i| \leq 2$，则$|z|$的最大值为\blkda{7}
+    \begin{jieda}
+        $|z + 3 + 4i|$即$z$在复平面上的点对应的点与$(-3, -4)$之间的距离，因此$z$对应的点在以$(-3, -4)$为圆心，半径为2的圆上，而$|z|$即$z$对应的点与原点之间的距离，根据几何关系可知其最大值为7.
+    \end{jieda}
+    \item 如果复数$z$满足$|z+i| + |z-i| = 2$，那么$|z+i+1|$的最小值是\blkda{1}
+    \begin{jieda}
+        根据复数的几何意义可知，$|z+i| + |z-i| = 2$即$z$在复平面上的点$Z$在$(0, 1), (0, -1)$两点间的线段上（含端点），$|z+i+1|$即$Z$与点$(-1, -1)$之间的距离，由几何关系可知该距离的最小值是1.
+    \end{jieda}
+    \item 设$z_1, z_2$为复数，$a$是正实数，则下列命题一定成立的有\blkda{\ding{174}\ding{175}}.
+    \begin{dingautolist}{172}
+        \item 若$z_1^2 + z_2^2 = 0$，则$z_1  = z_2 = 0$
+        \item 若$|z_1| = |z_2|$，则$z_1 = \pm z_2$
+        \item 若$|z_1| = a$，则$z_1 \cdot \overline{z_1} = a^2$
+        \item 若$|z_1| = 1, |z_2 - 5i| = 2$，则$2 \leq |z_1 - z_2| \leq 8$
+    \end{dingautolist}
+    \begin{jieda}
+        \ding{172}、\ding{173}的反例：$z_1 = i, z_2 = -1$；\ding{174}是复数运算性质：$z \cdot \overline{z} = |z|^2$；\ding{175}根据复数的模的性质可知$z_1$对应的复平面上的点在以原点为圆心，半径为1的圆上，$z_2$对应的复平面上的点在以$(0, 5)$为圆心，半径为2的圆上，$z_1 - z_2$的模即两点间的距离，根据几何关系可知两点间的距离范围是$[2, 8]$.
+    \end{jieda}
+    \item 若$|z| = 1$，则$|z+i|+|z-6|$的最小值等于\blkda{$\sqrt{37}$}
+    \begin{jieda}
+        $|z| = 1$即$z$所对应的点$Z$在以原点为圆心，半径为1的圆上，$|z+i|+|z-6|$即$Z$到点$(0, -1)$和点$(6,0)$的距离之和.根据几何关系可知两点连线与单位圆相交，因此$|z+i|+|z-6|$的最小值即两点连线的线段距离，长度为$\sqrt{37}$
+    \end{jieda}
+    \item 若虚数$z = (x-2)+yi(x, y \in \mathbf{R})$，且$|z| = 1$，则$\dfrac{y}{x}$的取值范围为\blkda[2]{$\left[-\dfrac{\sqrt{3}}{3}, \dfrac{\sqrt{3}}{3}\right]$}
+    \begin{jieda}
+        $|z| = 1$即$z$所对应的点$Z$在以原点为圆心，半径为1的圆上，因此$z' = z + 2 = x + yi$对应的点在以$(2, 0)$为圆心，半径为1的圆上.而$\dfrac{y}{x}$的几何意义是$z'$对应的点$Z'$和原点连线的斜率，根据几何关系可知斜率的取值范围是$\left[-\dfrac{\sqrt{3}}{3}, \dfrac{\sqrt{3}}{3}\right]$.
+    \end{jieda}
+    \item 设$z_1, z_2 \in \mathbf{C}$，已知$|z_1| = 3, |z_2| = 5, |z_1 - z_2| = \sqrt{10}$，则$|z_1+z_2| = $\blkda{$\sqrt{58}$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 代数方法 \\
+            $|z_1| = 3$即$z_1 \overline{z_1} = 9$，$|z_2| = 5$即$z_2 \overline{z_2} = 25$，$|z_1 - z_2| = \sqrt{10}$即$(z_1 - z_2)(\overline{z_1} - \overline{z_2}) = 10$ \\
+            故$z_1\overline{z_2} + \overline{z_1}z_2 = 24$，故$(z_1 + z_2)(\overline{z_1} + \overline{z_2}) = 58, |z_1+z_2| = \sqrt{58}$
+            \item 几何方法 \\
+            设$z_1, z_2$在复平面上对应的点为$Z_1, Z_2$，则$|\vv{OZ_1}| = 3, |\vv{OZ_2}|=5, |\vv{Z_2Z_1}| = \sqrt{10}$，设$\vv{OZ} = \vv{OZ_1} + \vv{OZ_2}$，则$|z_1 + z_2| = |\vv{OZ}|$，根据几何关系有$|\vv{OZ}|^2 + |\vv{Z_2Z_1}|^2 = 2(|\vv{OZ_1}|^2+|\vv{OZ_2}|^2)$，因此$|\vv{OZ}|^2 = 2\cdot(9+25) - 10 = 58$，因此$|z_1+z_2| = \sqrt{58}$
+        \end{enumerate}
+        
+    \end{jieda}
+    \item 若复平面内的点$A, B$分别对应于复数$2+i$和$1-i$，则线段$AB$的中垂线方程的复数形式为\blkda[4]{$|z - 2 - i| = |z-1+i|$}
+    \begin{jieda}
+        中垂线上的点到两端点的距离相等.
+    \end{jieda}
+\end{enumerate}
+\item 复数的三角表示
+\begin{enumerate}
+    \item 复数$z = 2\sqrt{3} - 2i$的辐角主值为\blkda{$\dfrac{11\pi}{6}$}
+    \item 复数$z = 1+sin\theta +  i cos\theta (0 < \theta < \dfrac{\pi}{2})$的辐角主值是\blkda{$\dfrac{\pi}{4} - \dfrac{\theta}{2}$}
+    \begin{jieda}
+        $\left \{ \begin{array}{l}
+             r \cdot cos\alpha = 1+sin\theta \\
+             r \cdot sin\alpha = cos\theta
+        \end{array} \right.$，故$tan\alpha = \dfrac{cos\theta}{1+sin\theta} = \dfrac{sin(\dfrac{\pi}{2} - \theta)}{1+cos(\dfrac{\pi}{2} - \theta)} = tan(\dfrac{\pi}{4} - \dfrac{\theta}{2})$
+    \end{jieda}
+    \item 若复数$z = a+bi(a, b \in \mathbf{R})$所对应的点在第四象限，则$arg z = $\dotfill{(\kh{D})}
+    \xx{$arcsin\dfrac{b}{\sqrt{a^2+b^2}}$}{$arcsin\dfrac{a}{\sqrt{a^2+b^2}}$}{$arctan\dfrac{b}{a}$}{$2\pi + arctan\dfrac{b}{a}$}
+    \begin{jieda}
+        $z$所对应的点在第四象限即$a > 0, b < 0$，故$tan(argz) = \dfrac{b}{a} < 0$，所以$arctan\dfrac{b}{a} < 0$，故$argz = 2\pi + arctan\dfrac{b}{a}$
+    \end{jieda}
+    \item 若$argz = \alpha (0 < \alpha < \dfrac{\pi}{2})$，则$arg\overline{z} = $\blkda{$2\pi - \alpha$}
+    \item 若复数$z$满足$|z+3i| \leq 2$，则$argz$的最大值为\blkda[3]{$2\pi - arccos\dfrac{2}{3}$}
+    \begin{jieda}
+        $|z+3i| \leq 2$即$z$在复平面内对应的点$Z$在以$(0, -3)$为原点，半径为2的圆的内部（包括边界），故根据几何关系可知当$Z$和原点连线与圆相切时$z$的辐角主值取到最值，最大值为$2\pi - arccos\dfrac{2}{3}$
+    \end{jieda}
+    \item 将下列复数写成代数形式：\\
+    \begin{enumerate*}
+        \item $6(cos\dfrac{3\pi}{2} + i sin\dfrac{3\pi}{2}) = $\blkda{$-6i$}
+        \item $2(cos\dfrac{5\pi}{3} + i sin\dfrac{5\pi}{3}) = $\blkda{$1-\sqrt{3}i$}
+    \end{enumerate*}
+    \item 将下列复数用三角形式表示：
+    \begin{enumerate}
+        \item $\pi(sin1 + i cos1) = $\blkda[5]{$\pi\left(cos\left(\dfrac{\pi}{2} - 1\right) + i sin\left(\dfrac{\pi}{2} - 1\right)\right)$}
+        \item $-\sqrt{2}\left(sin\dfrac{\pi}{3}+icos\dfrac{\pi}{3}\right) = $\blkda[5]{$\sqrt{2}\left(cos\dfrac{7\pi}{6} + i sin\dfrac{7\pi}{6}\right)$}
+    \end{enumerate}
+\end{enumerate}
+\item 复数的乘除与三角表示
+\begin{enumerate}
+    \item 已知复数$z_1 = cos\alpha + i  sin\alpha$和复数$z_2 = cos\beta + i  sin\beta$，则$z_1 \cdot z_2 = $\blkda[4]{$cos(\alpha+\beta) + i sin(\alpha + \beta)$}
+    \item 已知$|z| = 1$，且$z^2+2z+\dfrac{1}{z}$是负实数，则复数$z = $\blkda[3]{$-\dfrac{1}{2} \pm \dfrac{\sqrt{3}}{2} i$或$-1$}
+    \begin{jieda}
+        $\dfrac{1}{z} = \dfrac{\overline{z}}{|z|^2}$，因为$|z| = 1$，所以$\dfrac{1}{z} = \overline{z}$，设$z = cos\alpha+i sin\alpha$，故$z^2+2z+\dfrac{1}{z} = cos2\alpha + i sin2\alpha + 2 cos\alpha + i(2sin\alpha) + cos\alpha - i(sin\alpha) = (cos2\alpha + 3cos\alpha) + i(sin\alpha + sin2\alpha)$ \\
+        因为$z^2+2z+\dfrac{1}{z}$是负实数，所以$\left \{ \begin{array}{l}
+            cos2\alpha + 3cos\alpha < 0   \\
+            sin\alpha + sin2\alpha = 0  
+        \end{array}\right.$，下式解得$sin\alpha = 0$或$cos\alpha = -\dfrac{1}{2}$，即$z = \pm1$或$-\dfrac{1}{2} \pm \dfrac{\sqrt{3}}{2} i$，代入上式检验可知$z = -\dfrac{1}{2} \pm \dfrac{\sqrt{3}}{2} i$或$-1$
+    \end{jieda}
+    \item 方程$z^7 = -1+\sqrt{3}i$的七个根在复平面上对应了7个点，第\blkda{三}象限值包含了其中一个点.
+    \begin{jieda}
+        $-1+\sqrt{3}i = 2(cos\dfrac{2\pi}{3} + i sin\dfrac{2\pi}{3})$，设$w = cos\dfrac{2\pi}{3} + i sin\dfrac{2\pi}{3}$ \\
+        $z_1 = \sqrt[7]{2}(cos\dfrac{2\pi}{21} + i sin\dfrac{2\pi}{21})$，$z_2 = z_1 \cdot w = \sqrt[7]{2}(cos\dfrac{8\pi}{21} + i sin\dfrac{8\pi}{21}), z_3 = z_1 \cdot w^2 = \sqrt[7]{2}(cos\dfrac{14\pi}{21} + i sin\dfrac{14\pi}{21}), z_4 = z_1 \cdot w^3 = \sqrt[7]{2}(cos\dfrac{20\pi}{21} + i sin\dfrac{20\pi}{21}), z_5 = z_1 \cdot w^4 = \sqrt[7]{2}(cos\dfrac{26\pi}{21} + i sin\dfrac{26\pi}{21}), z_6 = z_1 \cdot w^5 = \sqrt[7]{2}(cos\dfrac{32\pi}{21} + i sin\dfrac{32\pi}{21}), z_7 = z_1 \cdot w^6 = \sqrt[7]{2}(cos\dfrac{38\pi}{21} + i sin\dfrac{38\pi}{21})$
+    \end{jieda}
+    \item \begin{enumerate*}
+        \item $1$的所有四次方根：\blkda{$\pm 1, \pm i$}
+        \item $-i$的所有立方根：\blkda[3]{$i, -\dfrac{\sqrt{3}+i}{2}, \dfrac{\sqrt{3}-i}{2}$}
+        \item $1-i$的所有立方根：\blkda[12]{$\sqrt[6]{2}\left(cos\dfrac{7\pi}{12} + i sin\dfrac{7\pi}{12}\right), \sqrt[6]{2}\left(cos\dfrac{5\pi}{4} + i sin\dfrac{5\pi}{4}\right), \sqrt[6]{2}\left(cos\dfrac{23\pi}{12} + i sin\dfrac{23\pi}{12}\right)$}
+    \end{enumerate*}
+    \item 已知复数$z_1 = i(1-i)^3$，
+    \begin{enumerate}
+        \item 求$arg z_1$及$|z_1|$
+        \item 当复数$z$满足$|z| = 1$时，求$|z - z_1|$的最大值.
+    \end{enumerate}
+    \begin{jieda}
+        $z_1 = i \cdot (1-i) \cdot (1-i)^2 = (1+i)(-2i) = 2(1-i)$，故$arg z_1 = \dfrac{7\pi}{4}, |z_1| = 2\sqrt{2}$ \\
+        $|z - z_1| \leq |z| + |z_1| = 1+2\sqrt{2}$
+    \end{jieda}
+    \item 已知$z_1$,$ z_2$均为非零复数, 且$\abs{z_1+z_2}=\abs{z_1-z_2}$, 求证: $\left(\dfrac{z_1}{z_2}\right)^2$为负实数. 
+    \begin{jieda}
+        设复平面内的向量$\vv{OZ_1}$对应复数$z_1$，$\vv{OZ_2}$对应复数$z_2$\\
+        $\abs{z_1+z_2}=\abs{z_1-z_2} \Longleftrightarrow |\vv{OZ_1} + \vv{OZ_2}| = |\vv{OZ_1} - \vv{OZ_2}|$，故$<\vv{OZ_1}, \vv{OZ_2}> = \dfrac{\pi}{2}$，设$z_1 = r_1[cos\theta + i sin\theta]$，则$z_2 = r_2\left[cos\left(\theta+\dfrac{\pi}{2}\right) + i sin\left(\theta+\dfrac{\pi}{2}\right)\right]$或者$z_2 = r_2\left[cos\left(\theta-\dfrac{\pi}{2}\right) + i sin\left(\theta-\dfrac{\pi}{2}\right)\right]$可满足要求（$r_1, r_2, \theta \in \mathbf{R}$）.
+        因此$\dfrac{z_1}{z_2} = \dfrac{r_1}{r_2}\left[cos\left(-\dfrac{\pi}{2}\right) + i sin\left(-\dfrac{\pi}{2}\right)\right] = \dfrac{r_1}{r_2}i$或$\dfrac{z_1}{z_2} = \dfrac{r_1}{r_2}\left[cos\left(\dfrac{\pi}{2}\right) + i sin\left(\dfrac{\pi}{2}\right)\right] = -\dfrac{r_1}{r_2}i$ \\
+        故$\left(\dfrac{z_1}{z_2}\right)^2 = -\left(\dfrac{r_1}{r_2}\right)^2 \in \mathbf{R^-}$
+    \end{jieda}
+\end{enumerate}
+\item 复数域实系数方程
+\begin{enumerate}
+    \item 若方程$x^2 - ax + 2 = 0 (a \in \mathbf{R})$有虚根$z$，则$|z| = $\blkda{$\sqrt{2}$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1 \\
+            $z = \dfrac{a \pm \sqrt{a^2 - 8}}{2}$，$|z| = \dfrac{1}{2}\sqrt{a^2 + 8 - a^2} = \sqrt{2}$
+            \item 方法2 \\
+            $|z|^2 = z \cdot \overline{z} = 2$，故$|z| = \sqrt{2}$
+        \end{enumerate}
+    \end{jieda}
+    \item 若$-1+\sqrt{3}i$是实系数方程$x^2+ax+b=0$的根，则实数$a = $\blkda{2}，$b = $\blkda{4}.
+    \begin{jieda}
+        $-1+\sqrt{3}i$是方程一根，则$-1-\sqrt{3}i$是另一根，故根据韦达定理有$a = -(x_1 + x_2) = 2, b = x_1 \cdot x_2 = 4$
+    \end{jieda}
+    \item 若$3+2i$是实系数方程$2x^2+bx+c=0$的根，则实数$c = $\blkda{26}.
+    \begin{jieda}
+        $3+2i$是方程一根，则$3-2i$是另一根，故根据韦达定理有$c = 2 \cdot x_1 \cdot x_2 = 26$
+    \end{jieda}
+    \item 若$1-i$是实系数方程$x^2+px+q = 0$的根，则$p\cdot q = $\blkda{-4}
+    \begin{jieda}
+        $1-i$是方程一根则$1+i$是另一根，故根据韦达定理有$p = -(x_1 + x_2) = -2, q = x_1 \cdot x_2 = 2$，故$p\cdot q = -4$.
+    \end{jieda}
+\end{enumerate}
+\item 复数域复系数方程
+\begin{enumerate}
+    \item 在复数域内解关于$x$的方程：$x^2-3x+3-i = 0$.
+    \begin{jieda}
+        配方有$\left(x-\dfrac{3}{2}\right)^2 = -\dfrac{3}{4} + i$，故由复数的三角表示或待定系数法可得$x_1-\dfrac{3}{2} = \dfrac{5}{2} - i$，$x_2 - \dfrac{3}{2} = \dfrac{7}{2}+i$，因此$x_1  = 1 - i$，$x_2  = 2+i$
+    \end{jieda}
+    \item 已知$z \in \mathbf{C}$，解方程：$z\overline{z} - 3i\overline{z} = 1+3i$
+    \begin{jieda}
+        设$z = x + y i(x, y \in \mathbf{R})$，代入原方程有$x^2+y^2-3y-3xi = 1+3i$，即$\left \{\begin{array}{l}
+             -3x = 3  \\
+             x^2+y^2 - 3y = 1 
+        \end{array} \right.$，解得$x = -1$，$y = 0$或$3$，故$z = -1$或$-1+3i$
+    \end{jieda}
+    \item 方程$a(1+i)x^2 + (1+a^2i)x + (a^2+i) = 0$由实根，则实数$a = $\blkda{-1}
+    \begin{jieda}
+        原方程整理得$(ax^2+x+a^2) + i(ax^2+a^2x+1) = 0$，故$\left \{ \begin{array}{l}
+             ax^2+x+a^2 = 0  \\
+             ax^2+a^2x+1 = 0
+        \end{array}\right .$有公共实根.两式相减得到$(a^2-1)(x-1) = 0$，得$x = 1$或$a = \pm 1$，代回检验可知$x = 1$时无实根，$a = 1$时无实根，$a = -1$时有实根$x = \dfrac{1\pm \sqrt{5}}{2}$.
+    \end{jieda}
+    
+    \item 方程 $ {z}^{2} - 5\left| z\right|  + 6 = 0 $ 在复数集中解的个数为\blkda{6}
+    \begin{jieda}
+        ${z}^{2} - 5\left| z\right|  + 6 = 0 \Longleftrightarrow z^2 = 5|z| - 6$，因此$z$是实数或者纯虚数
+        \begin{dingautolist}{172}
+            \item 设$z = a, a \in \mathbf{R}$，则$a^2 = 5|a|-6$，即$\left|a + \dfrac{6}{a}\right| = 5$，有四个根
+            \item 设$z = bi, b \in \mathbf{R}$，则$-b^2 = 5|b|-6$，即$\left|b - \dfrac{6}{b}\right| = 5 (b \in [-\sqrt{6}, 0) \cup(0, \sqrt{6}])$，有两个根
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\end{enumerate}

@@ -1,0 +1,744 @@
+\chapter*{数列}
+\section*{数列的概念}
+\subsubsection*{基础概念}
+\begin{enumerate}
+    \item 一般地，我们把按照确定的顺序排列的一列数称为\textbf{数列}(sequence of number)，数列中的每一个数叫做这个数列的\textbf{项}。数列的第一个位置上的数叫做这个数列的第$1$项，常用符号$a_1$表示，第二个位置上的数叫做这个数列的第$2$项，用$a_2$表示$\cdots$第$n$个位置上的数叫做这个数列的第$n$项，用$a_n$表示.其中第$1$项也叫做\textbf{首项}
+    \begin{example}
+        斐波那契数列：$1,1,2,3,5,8,13,\cdots$
+    \end{example}
+    \item 数列的分类：
+    \begin{enumerate}
+        \item 项数有限的数列称为\textbf{有穷数列}；项数无限的数列称为\textbf{无穷数列}
+        \begin{example}
+            \begin{dingautolist}{172}
+                \item 有穷数列：$1,2,3$
+                \item 无穷数列：$1,2,3,\cdots$
+            \end{dingautolist}
+        \end{example}
+        \item 所有项都相等的叫\textbf{常数列}；从第二项起每一项都大于前一项的称为\textbf{(严格)递增数列}；从第二项起每一项都小于前一项的称为\textbf{（严格）递减数列}
+    \end{enumerate}
+\end{enumerate}
+
+数列是一种特殊的\textbf{函数}，其定义域为自然数集的子集.数列也可以利用解析法，列表法，图像法来表示. 数列的解析式就是其\textbf{通项公式}，将有序实数对$(n, a_n)$在平面直角坐标系中表示出来，所得到的数列的图象是一系列离散的点.
+\begin{example} \\
+    数列$1, \dfrac{1}{2}, \dfrac{1}{4}, \dfrac{1}{8},\dfrac{1}{16},\cdots$的通项公式是$\dfrac{1}{2^{n-1}}$
+\end{example}
+例题：
+\begin{enumerate}
+    \item 写出数列的通项公式，使得其前五项为
+    \begin{enumerate}
+        \item $1, -\dfrac{1}{2}, \dfrac{1}{3}, -\dfrac{1}{4}, \cdots$
+        \item $\dfrac{1}{2}, -\dfrac{1}{6}, \dfrac{1}{12}, -\dfrac{1}{20}, \dfrac{1}{30}, \cdots$
+        \item $2, 0, 2, 0, 2, \cdots$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $a_n = \dfrac{(-1)^{n+1}}{n}$
+            \item $a_n = (-1)^{n+1} \cdot \dfrac{1}{n(n+1)}$
+            \item $a_n = (-1)^{n+1}+1$或$a_n = 2\left|sin\dfrac{n\pi}{2}\right|$
+        \end{enumerate}
+        \ps $(-1)^n$或者$(-1)^{n+1}$通常用来表示正负相间的变化规律 \\
+        \ps 数列的通项公式是不唯一的.
+    \end{jieda}    
+    \item 数列$\{a_n\}$的通项公式为$a_n = n^2+2n$，那么$120$是否是这个数列的项，如果是，是第几项？
+    \begin{jieda}
+        $n^2+2n = 120$，解得$n = 10$或$-12$(舍去)，因此是第$10$项.
+    \end{jieda}
+    \item 给出数列 $ \left\{  {a}_{n}\right\} $ 的下述通项公式,判断这些数列是否为单调数列, 请说明理由.
+    \begin{enumerate}
+        \item  $ {a}_{n} = 1 + {\left( \dfrac{1}{2}\right) }^{n} $
+        \item $ {a}_{n} = n - \dfrac{1}{n} $
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $ {a}_{n + 1} - {a}_{n} = \left\lbrack  {1 + {\left( \dfrac{1}{2}\right) }^{n + 1}}\right\rbrack   - \left\lbrack  {1 + {\left( \dfrac{1}{2}\right) }^{n}}\right\rbrack $
+            $ =  - {\left( \dfrac{1}{2}\right) }^{n + 1} < 0, $
+            所以 $ {a}_{n + 1} < {a}_{n} $ . 因此数列 $ \left\{  {a}_{n}\right\} $ 为严格减数列,从而是单调数列.
+            \item 因为$ {a}_{n + 1} - {a}_{n} = \left( {n + 1 - \dfrac{1}{n + 1}}\right)  - \left( {n - \dfrac{1}{n}}\right) $
+            $ = 1 + \dfrac{1}{n\left( {n + 1}\right) } > 0, $
+            所以 $ {a}_{n + 1} > {a}_{n} $ . 因此数列 $ \left\{  {a}_{n}\right\} $ 为严格增数列,从而是单调数列. \\
+            \ps 如果数列对应的函数是单调函数，那么数列的增减性和函数相同.
+        \end{enumerate}
+    \end{jieda}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的一个通项公式为 ${a}_{n} = \dfrac{n - \sqrt{98}}{n - \sqrt{99}}\left( {n \in  {N}^{ * }}\right)$ ,则数列 $\left\{  {a}_{n}\right\}$ 的最大项和最小项分别是\dotfill{(\kh{C})}
+    \xx{最小项是 ${a}_{1}$ ,最大项是 ${a}_{30}$}{最大项是 ${a}_{1}$ ,最小项不存在}{最小项是 ${a}_{9}$ ,最大项是 ${a}_{10}$}{最小项是 ${a}_{10}$ ,最大项是 ${a}_{9}$}
+    \item 设数列$\{a_n\}$的通项公式为$a_n = n^2+kn$，若该数列为严格增数列，求实数$k$的取值范围.
+    \begin{jieda}
+        数列严格递增即$a_{n+1} - a_n > 0$恒成立 \\
+        $a_{n+1} - a_n = ((n+1)^2+k(n+1))-(n^2+kn) = (2n+1)+k$，故应有$k > -(2n+1)$恒成立，所以$k > -3$
+    \end{jieda}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 的通项公式为 ${a}_{n} = \left( {n + 1}\right)  \cdot  {\left( \dfrac{2013}{2014}\right) }^{n}\left( {n \in  {N}^{ * }}\right)$ ,是否存在正整数 $m$ ,使得对一切正整数 $n \in  {\mathbf{N}}^{ * },a_{n} \leq  a_{m}$ 恒成立? 如存在,请求出,如不存在,请说明理由.
+    \begin{jieda}
+        $a_{n+1} - a_n = (n+2) \cdot \left(\dfrac{2013}{2014}\right)^{n+1} - (n+1) \cdot \left(\dfrac{2013}{2014}\right)^n = \left[\dfrac{2012-n}{2014}\right] \cdot \left(\dfrac{2013}{2014}\right)^n$
+
+        \begin{dingautolist}{172}
+            \item $n \geq 2013$时，$a_{n+1}-a_n < 0$
+            \item $n = 2012$时，$a_{n+1}-a_n = 0$
+            \item $1 \leq n \leq 2011$时，$a_{n+1}-a_n > 0$
+        \end{dingautolist}
+        
+        故存在$m = 2012$或$2013$满足要求.
+    \end{jieda}
+\end{enumerate}
+\subsubsection*{递推公式}
+数列作为特殊的函数，其最大特点就是自变量具有离散性，因此可以通过递推的方式确定数列，表示递推关系的公式称为\textbf{递推公式}.
+\begin{example}
+    斐波那契数列的递推公式：$a_1 = 1, a_2 = 1, a_{n+2} = a_{n+1}+a_n$
+\end{example}
+例题：
+\begin{enumerate}
+    \item 根据递推公式写出通项公式：
+    \begin{enumerate}
+        \item $\left\{\begin{array}{l}
+             a_1 = 0  \\
+             a_{n+1} = a_n + (2n-1)
+        \end{array}\right.$
+        \item $\left\{\begin{array}{l}
+             a_1 = 1  \\
+             a_{n+1} = \dfrac{2a_n}{a_n+2}
+        \end{array}\right.$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 写出前$5$项：$0, 1, 4, 9, 16$，观察可知通项可为：$a_n = (n-1)^2$，经检验可知$a_{n+1} = a_n + (2n-1)$
+            \item 写出前$5$项：$1, \dfrac{2}{3}, \dfrac{1}{2}, \dfrac{2}{5}, \dfrac{1}{3}$，观察可知通项可为：$a_n = \dfrac{2}{n+1}$，经检验可知$a_{n+1} = \dfrac{2a_n}{a_n+2}$.
+        \end{enumerate}
+    \end{jieda}
+    \item 已知数列$\{a_n\}$中，$a_1 = 3, a_{n+1} = \sqrt{a_n + 2}$ \dotfill{(\kh{A})}
+        \xx{数列$\{a_n\}$严格减}{数列$\{a_n\}$严格增}{数列$\{a_n\}$先减后增}{数列$\{a_n\}$先增后减}
+    \begin{jieda}
+        $y = x$与$y = \sqrt{x+2}$相交于$(2,2)$，当$x > 2$时$y = x$在$y = \sqrt{x+2}$上方. 因为$a_1 = 3$，所以$\{a_n\}$为严格减数列，趋于$2$.
+    \end{jieda}
+\end{enumerate}
+\subsubsection*{前$n$项和}
+一般在数列中用$S_n$表示数列$\{a_n\}$的前$n$项之和，即$S_n = a_1+a_2+\cdots+a_n$ \\
+利用$S_n$可以表示$a_n$，即$a_n = \left\{\begin{array}{ll}
+             a_1 = S_1, & n = 1  \\
+             a_n = S_n - S_{n-1}, & n \geq 2
+        \end{array}\right.$
+        
+例题：
+\begin{enumerate}
+    \item 已知$S_n = n^2+n$，求$\{a_n\}$的通项公式
+    \begin{jieda}
+        $a_1 = S_1 = 2$，当$n \geq 2$时，$a_n = S_n - S_{n-1} = n^2+n-[(n-1)^2+(n-1)] = 2n$，故$a_n = 2n$
+    \end{jieda}
+    \item 已知$S_n = n^2+n+1$，求$\{a_n\}$的通项公式    \begin{jieda}
+        $a_1 = S_1 = 3$，当$n \geq 2$时，$a_n = S_n - S_{n-1} = n^2+n+1-[(n-1)^2+(n-1)+1] = 2n$，故$a_n = \left\{\begin{array}{ll}
+             3, & n = 1 \\
+             2n, & n \geq 2
+        \end{array}\right.$
+    \end{jieda}
+    \item 已知$S_n = 2^n+1$，求$\{a_n\}$的通项公式
+    \begin{jieda}
+        $a_1 = S_1 = 3$，当$n \geq 2$时，$a_n = S_n - S_{n-1} = (2^n+1) - (2^{n-1}+1) = 2^{n-1}$，故$a_n = \left\{\begin{array}{ll}
+             3, & n = 1 \\
+             2^{n-1}, & n \geq 2
+        \end{array}\right.$
+    \end{jieda}
+\end{enumerate}
+\subsubsection*{累乘法}
+\begin{enumerate}
+    \item 已知数列$\{a_n\}$对任意$n \in \mathbf{N^*}$满足$a_{n+1} = \dfrac{n}{n+2}a_n, a_1 = 1$，则$a_n$ = \blkda{$\dfrac{2}{n(n+1)}$}，$S_n = $\blkda{$\dfrac{2n}{n+1}$}
+    \begin{jieda}
+        $a_{n+1} = \dfrac{n}{n+2}a_n$即$\dfrac{a_{n+1}}{a_n} = \dfrac{n}{n+2}$，故$\dfrac{a_n}{a_{n-1}} \times \dfrac{a_{n-1}}{a_{n-2}} \times \cdots \times \dfrac{a_2}{a_1} = \dfrac{n-1}{n+1} \times \dfrac{n-2}{n} \times \cdots \times \dfrac{2}{4} \times \dfrac{1}{3}$，即$\dfrac{a_n}{a_1} = \dfrac{2}{n(n+1)}$，因此$a_n = \dfrac{2}{n(n+1)}$ \\
+        $a_n = 2\left[\dfrac{1}{n} - \dfrac{1}{n+1}\right]$，因此$S_n = 2\left(1-\dfrac{1}{n+1}\right) = \dfrac{2n}{n+1}$
+    \end{jieda}
+    
+    \item 已知数列$\{a_n\}$对任意$n \in \mathbf{N^*}$满足$a_1+\dfrac{1}{2}a_2+\dfrac{1}{3}a_3+\cdots+\dfrac{1}{n}a_n = a_{n+1}-1, a_1 = 1$，则$a_n = $\blkda{$n$}
+    \begin{jieda}
+        迭代可得$a_1+\dfrac{1}{2}a_2+\dfrac{1}{3}a_3+\cdots+\dfrac{1}{n}a_n+\dfrac{1}{n+1}a_{n+1} = a_{n+2}-1$，与题干中的式子相减可得$\dfrac{1}{n+1}a_{n+1} = a_{n+2} - a_{n+1}$，即$\dfrac{n+2}{n+1}a_{n+1} = a_{n+2}$，进一步变化有$\dfrac{a_{n+2}}{a_{n+1}} = \dfrac{n+2}{n+1}$，因此$\dfrac{a_n}{a_{n-1}} \times \dfrac{a_{n-1}}{a_{n-2}} \times \cdots \times \dfrac{a_3}{a_2} = \dfrac{n}{n-1} \times \dfrac{n-1}{n-2} \times \cdots \times \dfrac{3}{2}$，因此$\dfrac{a_n}{a_2} = \dfrac{n}{2}$ \\
+        $1 = a_1 = a_2 - 1$，因此$a_2 = 2$，故$a_n = n$
+    \end{jieda}
+
+    \item 已知数列$\{a_n\}$对任意$n \in \mathbf{N^*}$满足$a_n \cdot a_{n+1} = 2^n, a_1 = 1$，则$a_{2024} = $\blkda{$2^{1012}$}
+    \begin{jieda}
+         迭代可得$a_{n+1}\cdot a_{n+2} = 2^{n+1}$，与题干中的式子相除可得$\dfrac{a_{n+2}}{a_n} = 2$，因此$\dfrac{a_{2024}}{a_{2022}} \times \dfrac{a_{2022}}{a_{2020}} \times \cdots \times \dfrac{a_4}{a_2} = 2^{1011}$，即$a_{2024} = 2^{1011} \cdot a_2$，又因为$a_1 \cdot a_2 = 2$，所以$a_2 = 2$，故$a_{2024} = 2^{1012}$.
+    \end{jieda}
+    \item 已知$a_1 = 1, S_n = n^2a_n$，求$\{a_n\}$的通项公式
+    \begin{jieda}
+        当$n \geq 2$时，$a_n = S_n - S_{n-1} = n^2a_n - (n-1)^2a_{n-1}$，整理可得$(n^2-1)a_n = (n-1)^2a_{n-1}$，因此$\dfrac{a_n}{a_{n-1}} = \dfrac{n-1}{n+1}$，因此$a_n = \dfrac{n-1}{n+1} \times \dfrac{n-2}{n} \times \cdots \times \dfrac{2}{4} \times \dfrac{1}{3} = \dfrac{2}{n(n+1)}$，经检验$a_1 = 1$，满足通项公式.
+    \end{jieda}
+\end{enumerate}
+\section*{等差数列}
+\subsubsection*{等差数列的概念}
+从第二项起，每一项与前一项的差是一个常数的数列称为\textbf{等差数列}，这常数称为公差，通常用$d$表示。
+\begin{example}
+    正奇数列：$1,3,5,7,9,\cdots$
+\end{example}
+给定一个数列$a, A, b$.若$a, A, b$是等差数列，这时，$A$叫做$a$与$b$的\textbf{等差中项}.
+
+由定义可得$A-a=b-A$，从而$A = \dfrac{a+b}{2}$. 反之，若$A = \dfrac{a+b}{2}$，则$2A=a+b$，即$A-a=b-A$，从而$a, A,b$成等差数列，即$A = \dfrac{a+b}{2} \Longleftrightarrow a, A, b$成等差数列
+\begin{example}
+    $\{a_n\}$是等差数列，则$a_3$是$a_1, a_5$的等差中项，也是$a_2, a_4$的等差中项.
+\end{example}
+\subsubsection*{等差数列的递推公式}
+$a_n = a_{n-1} + d$
+\subsubsection*{等差数列的通项公式}
+$a_n = a_1 + (n-1)d$
+
+例题：
+\begin{enumerate}
+    \item 已知$\{a_n\}$是等差数列，则下列数列中必为等差数列的序号是\blkda{\ding{172}\ding{173}\ding{174}}
+    \begin{dingautolist}{172}
+        \item $\{a_{3n-1}\}$
+        \item $\{a_n + a_{n+1} + a_{n+5}\}$
+        \item $\{3a_n-1\}$
+        \item $\{|a_n|\}$
+    \end{dingautolist}
+    \item 已知数列$\{a_n\}$是等差数列，$p, q, s, t \in N^{*}$，且$p+q = s+t$，求证：$a_p + a_q = a_s + a_t$
+    \begin{jieda}
+        证明：\\
+        设$\{a_n\}$的公差为$d$，首项为$a_1$，则$a_n = a_1 + (n-1)d$。由此有：\\
+        $a_p = a_1 + (p-1)d, \quad a_q = a_1 + (q-1)d, \\
+        a_s = a_1 + (s-1)d, \quad a_t = a_1 + (t-1)d$ \\
+        因此有$a_p + a_q = 2a_1 + (p+q-2)d, a_s + a_t = 2a_1 + (s+t-2)d$ \\
+        因为$p+q = s+t$，所以有$a_p + a_q = a_s + a_t$
+        
+        \ps 等差数列中的$n$项相加，只要其项数和相等与项的和相等
+    \end{jieda}
+    \item 在等差数列 $\left\{  {a}_{n}\right\}$ 中, ${a}_{5} = {10},{a}_{7}^{2} = {a}_{6} \cdot  {a}_{10}$ ,则数列 $\left\{  {a}_{n}\right\}$ 的通项公式为 ${a}_{n} =$ \blkda[3]{$10$或$110 - 20n$}.
+    \begin{jieda}
+        $(10+2d)^2 = (10+d)(10+5d)$，即$d^2+20d = 0$，解得$d = 0$或$-20$，故$a_n = 10$或$110 - 20n$
+    \end{jieda}
+    \item 若等差数列$\{a_n\}$中$a_m = p, a_n = q (m \neq n)$，则$a_{m+n} = $\blkda{$\dfrac{nq - mp}{n-m}$}
+    \begin{jieda}
+        $(m-n)d = p-q$，即$d = \dfrac{p - q}{m - n}$，故$a_{m+n} = a_m + nd = p + n \cdot \dfrac{p - q}{m - n} = \dfrac{pm - nq}{m-n}$
+        
+        \ps 给定等差数列中的两项的值和项数，就可以确定这个等差数列
+    \end{jieda}
+    \item 若等差数列$\{a_n\}$中$a_3+a_4+a_5+a_6+a_7 = 450$，则$a_2+a_8 = $\blkda{$180$}
+    \begin{jieda}
+        $a_3+a_4+a_5+a_6+a_7 = 5a_5$，故$a_5 = 90$，而$a_2+a_8 = 2a_5 = 180$.
+    \end{jieda}
+    \item 若等差数列$\{a_n\}$的公差为$\dfrac{1}{2}$，且$a_1 + a_3 + a_5 +\cdots + a_{95} + a_{97} + a_{99} = 60$，则该数列前100项的和$S_{100} = $\blkda{145}
+    \begin{jieda}
+        易知$a_2 + a_4 + a_6 +\cdots + a_{96} + a_{98} + a_{100} = a_1 + a_3 + a_5 +\cdots + a_{95} + a_{97} + a_{99} + 50d = 60 + 25 = 85$，故$S_{100} = 60+85 = 145$. 
+    \end{jieda}
+
+    
+    \item 若等差数列$20, 15, 10, \cdots$的前$n$项和最大，则$n = $\blkda{4或5}
+    \begin{jieda}
+        首先可以写出通项公式$a_n = 25-5n$，则易知$a_5 = 0$，$\{a_n\}$为严格减数列，故4或5满足条件.
+    \end{jieda}
+    
+    \item 设数列$\{a_n\}$是等差数列，数列$\{b_n\}$满足$b_n = \left(\dfrac{1}{2}\right)^{a_n}$，已知$b_1 + b_2 + b_3 = \dfrac{21}{8}$，$b_1b_2b_3 = \dfrac{1}{8}$，则$a_n = $\blkda[3]{$2n-3$或$5-2n$}
+    \begin{jieda}
+        $b_1b_2b_3 = \left(\dfrac{1}{2}\right)^{a_1 + a_2 + a_3} = \dfrac{1}{8}$，故$a_1 + a_2 + a_3 = 3$，即$a_2 = 1$，故$b_2 = \dfrac{1}{2}$ \\
+        由$\left \{ \begin{array}{l}
+             b_1 b_3 = \dfrac{1}{4}  \\
+             b_1+b_3 = \dfrac{17}{8} 
+        \end{array} \right.$解得$b_1 = 2, b_3 = \dfrac{1}{8}$或$b_1 = \dfrac{1}{8}, b_3 = 2$，因此有$d = 2$或$-2$. \\
+        故$a_n = 2n-3$或$5-2n$
+    \end{jieda}
+    
+    \item 在数列 $\left\{  {a}_{n}\right\}$ 中,已知 $a_1 = 1, a_{n + 1} = \dfrac{2a_n}{a_{n} + 2}$，求 $\left\{  {a}_{n}\right\}$ 的通项.
+    \begin{jieda}
+        等式$a_{n + 1} = \dfrac{2a_n}{a_{n} + 2}$ 两侧取到数有$\dfrac{1}{a_{n+1}} = \dfrac{1}{a_n} + \dfrac{1}{2}$，移项有$\dfrac{1}{{a}_{n + 1}} - \dfrac{1}{{a}_{n}} = \dfrac{1}{2}$，故$\left\{  \dfrac{1}{{a}_{n}}\right\}$符合等差数列的定义，为首项为1，公差为$\dfrac{1}{2}$的等差数列.
+        
+        根据等差数列的性质可以写出通项公式：$\dfrac{1}{a_n} = \dfrac{n+1}{2}$，取倒数有${a}_{n} = \dfrac{2}{n + 1}$
+    \end{jieda}
+\end{enumerate}
+\subsubsection*{等差数列的前n项和}
+$S_n = \dfrac{(a_1 + a_n) \times n}{2} = n \times a_1 + \dfrac{n(n-1)}{2}d$
+
+等差数列的通项公式是$pn+q$型，等差数列前$n$项和的公式是$an^2+bn+c$型，并且有两个特征：\ding{172}对应的函数$y = ax^2+bx+c$过原点 \ding{173} 二次项系数为公差的一半，即$a = \dfrac{d}{2}$（可以为0）
+
+例题：
+\begin{enumerate}
+    \item 已知$\{a_n\}$是等差数列
+    \begin{enumerate}
+        \item 若$a_1 = 7, a_{50} = 101$，求$S_{50}$
+        \item 若$a_1 = 2, a_2 = \dfrac{5}{2}$，求$S_{10}$
+        \item 若$a_1 = \dfrac{1}{2}, d = -\dfrac{1}{6}, S_n = -5$，求$n$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $S_{50} = \dfrac{(7 + 101) \cdot 50}{2} = 2700$
+            \item $d = \dfrac{1}{2}, a_{10} = \dfrac{13}{2}, S_{10} = \dfrac{(2+\dfrac{13}{2}) \cdot 10}{2} = \dfrac{85}{2}$
+            \item $n \times \dfrac{1}{2} + \dfrac{n(n-1)}{2} \times (-\dfrac{1}{6}) = -5$，解得$n = 12 \mbox{或} -5$ (舍去)
+        \end{enumerate}
+    \end{jieda}
+    \item 已知一个等差数列$\{a_n\}$的前10项和为310， 前20项和为1220，求$\{a_n\}$的通项公式
+    \begin{jieda}
+        \begin{enumerate}
+        \item 方法1 \\
+            $S_n = n \times a_1 + \dfrac{n(n-1)}{2}d$，代入$S_{10} = 310, S_{20} = 1220$可得$\left \{ \begin{array}{ll}
+            10a_1+45d = 310 &  \\
+            20a_1+190d = 1220 & 
+            \end{array}\right.$
+            解得$a_1 = 4, d = 6$
+            \item 方法2 \\
+            $S_{20} - 2S_{10} = 10 \times 10 \times d$，故$d = 6$，代入$10a_1+45d = 310$，得到$a_1 = 4$，故$a_n = 6n-2$
+            \ps $\{a_n\}$为等差数列，则$S_n, S_{2n}-S_n, S_{3n} - S_{2n}, \cdots$为等差数列，公差为$n^2d$
+        \end{enumerate}
+    \end{jieda}
+
+    \item 若等差数列$\{a_n\}$中$a_1 + a_2 + a_3 + a_4 + a_5 = 30$，$a_6 + a_7 + a_8 + a_9 + a_{10} = 80$，则$a_{11} + a_{12} + a_{13} + a_{14} + a_{15} = $\blkda{130}
+    \item 若等差数列$\{a_n\}$中$a_1 + a_4 + a_7 = 39$，$a_2 + a_5 + a_8 = 33$，则$a_3 + a_6 + a_9 = $\blkda{$27$}
+    \begin{jieda}
+        $a_1 + a_4 + a_7, a_2 + a_5 + a_8, a_3 + a_6 + a_9$构成等差数列，故$a_3 + a_6 + a_9 = 2(a_2 + a_5 + a_8) - (a_1 + a_4 + a_7) = 33 \times 2 - 39 = 27$
+    \end{jieda}
+    
+    \item 若等差数列$\{a_n\}$中，$a_1 + a_2 + \cdots + a_9 = a$，$a_{n-8} + a_{n-7} + \cdots + a_n = b$，则$\{a_n\}$的前$n$项和为\blkda{$\dfrac{n(a+b)}{18}$}
+    \begin{jieda}
+        $a+b = a_1 + a_2 + \cdots + a_9 + a_{n-8} + a_{n-7} + \cdots + a_n = 10(a_1 + a_n)$，故$S_n = \dfrac{a+b}{9} \times \dfrac{n}{2} = \dfrac{n(a+b)}{18}$
+    \end{jieda}
+    \item 记两个等差数列$\{a_n\}, \{b_n\}$的前$n$项和分别是$S_n$和$T_n$，且$\dfrac{S_n}{T_n} = \dfrac{7n+1}{4n+27}(n \in \mathbf{N^*})$，则$\dfrac{a_{11}}{b_{11}} = $\blkda{$\dfrac{4}{3}$}
+    \begin{jieda}
+        $\dfrac{a_{11}}{b_{11}} = \dfrac{21 \cdot a_{11}}{21 \cdot b_{11}} = \dfrac{S_{21}}{T_{21}} = \dfrac{148}{111} = \dfrac{4}{3}$.
+
+        关键结论：$(2n-1)a_n = S_{2n-1}$
+    \end{jieda}
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 和等差数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和分别为 ${S}_{n}$ 和 ${T}_{n}$ ,且 $\dfrac{{S}_{n}}{T_n} = \dfrac{{5n} + {63}}{n + 3}$ ,则使得 $\dfrac{a_n}{b_n}$整数的正整数 $n$ 的个数为 \dotfill{(\kh{B})}
+    \xx{6}{7}{8}{9}
+    \begin{jieda}
+        由于 ${S}_{{2n} - 1} = \dfrac{\left( {{a}_{1} + {a}_{{2n} - 1}}\right) \left( {{2n} - 1}\right) }{2} = \dfrac{2{a}_{n}\left( {{2n} - 1}\right) }{2} = \left( {{2n} - 1}\right) {a}_{n}$
+        
+        所以 $\dfrac{{a}_{n}}{{b}_{n}} = \dfrac{{S}_{{2n} - 1}}{{T}_{{2n} - 1}} = \dfrac{5\left( {{2n} - 1}\right)  + {63}}{{2n} - 1 + 3} = \dfrac{{5n} + {29}}{n + 1} = 5 + \dfrac{24}{n + 1}$ 
+        
+        要使 $\dfrac{{a}_n}{b_n}$ 为整数,则 $n + 1$ 为 24 的因数,由于 $n + 1 \geq  2$ ,故 $n + 1$ 可以为2,3,4,6,8,12,24,故满足条件的正整数 $n$ 的个数为 7 个
+    \end{jieda}
+    \item 设 $\left\{  {a}_{n}\right\}$ 是等差数列, ${S}_{n}$ 是其前 $n$ 项和,且 ${S}_{5} < {S}_{6},{S}_{6} = {S}_{7} > {S}_{8}$ ,则下列结论错误的是 \dotfill{(\kh{C})}
+    \xx{$d < 0$}{${a}_{7} = 0$}{${S}_{9} > {S}_{5}$}{${S}_{6}$ 与 ${S}_{7}$ 均为 ${S}_{n}$ 的最大值}
+    \begin{jieda}
+        ${S}_{5} < {S}_{6},{S}_{6} = {S}_{7} > {S}_{8} \Longleftrightarrow a_6 > 0, a_7 = 0, a_8 < 0$，易知$A,B,D$正确
+
+        $S_5 = S_8 > S_9$，C错误
+    \end{jieda}
+    
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n},$ 若 ${S}_{23} > 0,{S}_{24} < 0$ ,则下列结论正确的是 \dotfill{(\kh{D})}
+    \xx{数列 $\left\{  {a}_{n}\right\}$ 是递增数列}{${a}_{13} > 0$}{当 ${S}_{n}$ 取得最大值时, $n = {13}$}{$\left| {a}_{13}\right|  > \left| {a}_{12}\right|$}
+\end{enumerate}
+
+\section*{等比数列}
+\subsubsection*{等比数列的概念}
+从第二项起，每一项与前一项的比值是一个常数的数列称为\textbf{等比数列}，这常数称为公比，通常用$q$表示。
+\begin{example}
+    $1,2,4,8, 16,\cdots$
+\end{example}
+给定一个数列$a, G, b$.若$a, G, b$是等比数列，这时，$G$叫做$a$与$b$的\textbf{等比中项}.
+
+对比等差数列和等比数列
+\begin{enumerate}
+    \item $A = \dfrac{a+b}{2} \Longleftrightarrow a, A, b$成等差数列 \\
+    当$ab \neq 0$时，$G^2 = ab \Longleftrightarrow a, G, b$成等比数列, $G = \sqrt{ab} \Longrightarrow a, G, b$成等比数列
+    \item 等差数列一定不是摆动数列 \\
+    等比数列在公比小于零的时候一定是摆动数列.
+    \item 等差数列的公差可以为0 \\
+    等比数列的公比一定不为0
+    \item 常数列都是等差数列 \\
+    非零常数列是等比数列
+\end{enumerate}
+
+
+\subsubsection*{等比数列的递推公式}
+$a_n = a_{n-1} \times q$
+\subsubsection*{等比数列的通项公式}
+$a_n = a_1 \times q^{n-1}$
+
+例题：
+\begin{enumerate}
+    \item 已知数列$\{a_n\}$是等比数列，公比为$q$，则下列数列一定是等比数列的是\blkda{\ding{172}\ding{175}\ding{176}}\\
+        \ding{172} $\{a_n a_{n+1}\}$；\ding{173} $\{a_n+a_{n+1}\}$；\ding{174} $\{a_n-a_{n+1}\}$；\ding{175} $\left\{\dfrac{1}{a_n}\right\}$；\ding{176} $\{a_n^2\}$；\ding{177} $\{a_n + 6\}$
+        \begin{jieda}
+            \ding{172}\ding{175}\ding{176}可以通过定义证明其符合等比数列的定义，而\ding{173}\ding{174}\ding{177}在$\{a_n\}$为常数列的时候可能会是全零的数列而不是等比数列.
+        \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 若等比数列$\{a_n\}$满足$a_4 = 48$，$a_6 = 12$，则$a_5 = $\blkda{24或-24}
+        \item 若等比数列$\{a_n\}$满足$a_3 = 48$，$a_7 = 12$，则$a_5 = $\blkda{24}
+    \end{enumerate}
+    \begin{jieda}
+        序数差是偶数，则必然一解，序数差为奇数，则会有两解.
+    \end{jieda}
+    
+    \item 已知等比数列$\{a_n\}$中，$a_1 + a_2 + a_3 = 7, a_1a_2a_3 = 8$，求数列$\{a_n\}$的通项公式.
+    \begin{jieda}
+        设$\{a_n\}$的公比为$q$，由此可以列出方程$\left \{ \begin{array}{l}
+             a_1 + a_1q + a_1q^2 = 7  \\
+             a_1 \cdot a_1q \cdot a_1q^2 = 8
+        \end{array} \right.$ \\
+        解得$a_1 = 1, q = 2$或者$a_1 = 4, q = \dfrac{1}{2}$，所以$a_n = 2^{3-n}$或$a_n = 2^{n-1}$
+    \end{jieda}
+    \item 设$a+log_23, a+log_43, a+log_83$成等比数列，则此数列的公比为\blkda{$\dfrac{1}{3}$}
+    \begin{jieda}
+        设$t = log_23$，则$a+t, a+\dfrac{t}{2}, a+\dfrac{t}{3}$成等比数列，故$(a+t)\left(a+\dfrac{t}{3}\right) = \left(a+\dfrac{t}{2}\right)^2$，故$a^2 + \dfrac{4at}{3} + \dfrac{t^2}{3} = a^2 + at + \dfrac{t^2}{4}$，因此$\dfrac{t^2}{12} + \dfrac{at}{3} = 0$，故$a = -\dfrac{t}{4}$，故$a+log_23, a+log_43, a+log_83$即$\dfrac{3t}{4}, \dfrac{t}{4}, \dfrac{t}{12}$，因此公比$q = \dfrac{1}{3}$.
+    \end{jieda}
+    
+    \item 若等比数列$\{a_n\}$的前$n$项和为$S_n$，则$S_8a_9$和$S_9a_8$的大小关系是？
+    \begin{jieda}
+        $S_8a_9 = (S_9 - S_1) \cdot a_8$，因此$S_8a_9 - S_9a_8 = (S_9 - S_1) \cdot a_8 - S_9 \cdot a_8 = -a_1a_8 = -a_1^2q^7$
+
+        \begin{dingautolist}{172}
+            \item 当$q > 0$时，$S_8a_9 < S_9a_8$
+            \item 当$q < 0$时，$S_8a_9 > S_9a_8$
+        \end{dingautolist}
+        
+    \end{jieda}
+
+    \item 等比数列$\{a_n\}$的前$n$项和为$S_n$，已知$S_4 = 1$，$S_8 = 17$，则$q=$\blkda{$\pm 2$}
+    \begin{jieda}
+        $S_8 - S_4 = a_5+a_6+a_7+a_8 = q^4 \cdot S_4$
+
+        代入数据有$17-1 = q^4 \cdot 1$，因此$q = \pm 2$
+
+        \ps 等差数列的前$n$项和满足$S_n, S_{2n}-S_n, S_{3n}-S_{2n}, \cdots$成等差数列，公差为$n^2d$ \\
+        等比数列的前$n$项和满足$S_n, S_{2n}-S_n, S_{3n}-S_{2n}, \cdots$成等比数列（或全0常数列），公比为$q^n$
+    \end{jieda}
+
+    \item 在等比数列$\{a_n\}$中，$a_1 + a_2 + a_3 = 8$，$a_4 + a_5 + a_6 = -4$，则$S_{15} = $\blkda{$\dfrac{11}{2}$}
+    \begin{jieda}
+        $a_7 + a_8 + a_9 = 2, a_{10} + a_{11} + a_{12} = -1, a_{13} + a_{14} + a_{15} = \dfrac{1}{2}$. 故$S_{15} = 8 - 4 + 2 - 1 + \dfrac{1}{2} = \dfrac{11}{2}$
+    \end{jieda}
+\end{enumerate}
+\subsubsection*{等差数列+等比数列}
+例题：
+\begin{enumerate}
+    \item 数列$\{a_n\}$共有5项，前三项成等比数列，后三项成等差数列，第3项等于80，第2项与第4项的和为136，第一项和第五项的和为132，求这个数列.
+    \begin{jieda}
+        设前三项的公比为$q$，后三项的公差为$d$。因此有$\left \{
+        \begin{array}{l}
+            \dfrac{80}{q} + (80 + d) = 136   \\
+            \dfrac{80}{q^2} + (80 + 2d) = 132  
+        \end{array}\right.$
+        解得$q = 2, d = 16$或者$q = \dfrac{2}{3}, d = -64$ \\
+        故这个数列是$20, 40, 80, 96, 112$或者$180, 120, 80, 16, -48$
+    \end{jieda}
+    
+    \item 设$1 = a_1 \leq a_2 \leq \cdots \leq a_7$，其中$a_1, a_3, a_5, a_7$成公比为$q$的等比数列，$a_2, a_4, a_6$成公差为1的等差数列，则$q$的最小值是\blkda{$\sqrt[3]{3}$}.
+    \begin{jieda}
+        易知当$a_2 = 1$时可使得$q$最小，故$a_4 = 2, a_6 = 3$，故$1 \leq 1 \leq q \leq 2 \leq q^2 \leq 3 \leq q^3$. 故$q^3 \geq 3, q\geq \sqrt[3]{3}$.
+    \end{jieda}
+    
+    \item 已知等差数列 $\left\{{a}_{n}\right\}$ 中 ${a}_{1} = 1$ ,公差 $d \neq  0$ ,若 ${a}_{1},{a}_{2},{a}_{5}$ 成等比数列,且 ${a}_{1},{a}_{2},{a}_{{k}_{1}}$，${a}_{{k}_{2}},\cdots ,{a}_{{k}_{n}},\cdots$ 成等比数列.
+    \begin{enumerate}
+        \item 求数列 $\left\{  {k}_{n}\right\}$ 的通项公式
+        \item 若对任意正整数 $n$ ,恒有 $\dfrac{{a}_{n}}{2{k}_{n} - 1} \leq  \dfrac{{a}_{m}}{2{k}_{m} - 1}\left( {m \in  \mathbf{N},m \geq  1}\right)$ ,求 $m$ 的值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由题意可得 ${a}_{2}^{2} = {a}_{1}{a}_{5}$ ,即 ${\left( {a}_{1} + d\right) }^{2} = {a}_{1} \times  \left( {{a}_{1} + {4d}}\right)$ . 又 ${a}_{1} = 1$ ,得 $d\left( {d - 2}\right)  = 0$，$d \neq  0$ ,解得 $d = 2$ ,所以数列 $\left\{  {a}_{n}\right\}$ 的通项公式为 ${a}_{n} = 1 + \left( {n - 1}\right)  \times  2 = {2n} - 1$ .
+            
+            因此数列 ${a}_{1},{a}_{2},{a}_{{k}_{1}},{a}_{{k}_{2}},\cdots ,{a}_{{k}_{n}},\cdots$ 是以 1 为首项，3 为公比的等比数列，故${a}_{{k}_{n}} = {3}^{n + 1} = 2{k}_{n} - 1$ ,所以 ${k}_{n} = \dfrac{{3}^{n + 1} + 1}{2}$ ,即数列 $\left\{  {k}_{n}\right\}$ 的通项公式为 ${k}_{n} = \dfrac{{3}^{n + 1} + 1}{2}$ .
+
+            \item 由 (1) 可知 $\dfrac{{a}_{n}}{2{k}_{n} - 1} = \dfrac{{2n} - 1}{{3}^{n + 1}}$ .
+            令 ${b}_{n} = \dfrac{{2n} - 1}{{3}^{n + 1}}$，则$b_{n+1} - b_n = \dfrac{{2n} + 1}{{3}^{n + 2}} - \dfrac{{2n} - 1}{{3}^{n + 1}} = \dfrac{({2n} + 1) - 3(2n-1)}{{3}^{n + 2}} = \dfrac{4-4n}{{3}^{n + 2}}$
+            \begin{dingautolist}{172}
+                \item 当$n = 1$时，$b_2 = b_1$
+                \item 当$n \geq 1$时，$b_{n+1} < b_n$
+            \end{dingautolist}
+            由此，数列 $\left\{  {b}_{n}\right\}$ 的最大项是 ${b}_{1}$ 与 ${b}_{2}$ .
+            
+            所以，对任意正整数 $n$ ,恒有 $\dfrac{{a}_{n}}{2{k}_{n} - 1} \leq  \dfrac{{a}_{m}}{2{k}_{m} - 1}\left( {m \in  \mathbf{N},m \geq  1}\right)$ 时, $m = 1$ 或 2 .
+        \end{enumerate}
+    \end{jieda}
+    \item 在 $\bigtriangleup \mathrm{{ABC}}$ 中,若 $\lg \sin A,\lg \sin B,\lg \sin C$ 成等差数列,且 $\angle \mathrm{A},\angle \mathrm{B},\angle \mathrm{C}$ 也成等差数列,判断 $\bigtriangleup  \mathrm{{ABC}}$ 的形状,并说明理由.
+    \begin{jieda}
+        $2\lg \sin B = \lg \sin A + \lg \sin C \Longleftrightarrow {\sin }^{2}B = \sin A\sin C \Longleftrightarrow b^2 = ac$
+
+        $2B = \dfrac{A+C}{2}$，因此$B = \dfrac{\pi}{3}$
+
+        根据余弦定理有$b^2 = a^2+c^2-2accosB$，因此$ac = a^2+c^2-ac$，即$(a-c)^2 = 0$，故$a = c$
+        
+        因此$\triangle ABC$为等边三角形.
+
+        \ps 本题中$\lg \sin A,\lg \sin B,\lg \sin C$ 成等差数列即$sinA, sinB, sin C$成等比数列，有如下结论：
+        \begin{dingautolist}{172}
+            \item $a, b, c \in \mathbf{R}$，且$b$是$a, c$的等差中项 $ \Longrightarrow 10^b$是$10^a$与$10^b$的等比中项
+            \item $a, b, c >0$且$b$是$a, c$的等比中项$ \Longrightarrow lgb$是$lga$与$lgc$的等差中项
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\subsubsection*{等比数列的前n项和}
+$S_n = \left \{\begin{array}{ll}
+    n \cdot a_1 & q = 1 \\
+    \dfrac{a_1 \cdot (1-q^n)}{1-q} & q \neq 1
+\end{array} \right. $
+
+例题：
+\begin{enumerate}
+    \item 已知等比数列$\{a_n\}$，首项$a_1 = 2$，公比$q = -\dfrac{1}{2}$，前$n$项和$S_n = \dfrac{21}{16}$，则$n = $\blkda{6}
+    \begin{jieda}
+        $S_n = \dfrac{2\left(1-\left(-\dfrac{1}{2}\right)^n\right)}{1 - \left(-\dfrac{1}{2}\right)} = \dfrac{21}{16}$，解得$n = 6$.
+    \end{jieda}
+    \item 在等比数列$\{a_n\}$中，$a_1 = \dfrac{1}{2}, a_4 = -4$，则$|a_1| + |a_2| + \cdots + |a_n| = $\blkda{$\dfrac{2^n-1}{2}$}
+    \begin{jieda}
+        $a_1 = \dfrac{1}{2}, a_4 = -4$故$q = -\dfrac{1}{2}, a_n = (-1)^{n-1} \cdot 2^{n-2}$，故$|a_n| = 2^{n-2}$，\\
+        因此$|a_1| + |a_2| + \cdots + |a_n| = \dfrac{2^n-1}{2}$
+    \end{jieda}
+    \item 已知等比数列$\{a_n\}$的前$n$项和$S_n = 2^n - 1$，则数列$\{a_n^2\}$的前$n$项和$T_n = $\blkda{$\dfrac{4^n - 1}{3}$}
+    \begin{jieda}
+        前$n$项和$S_n = 2^n - 1 \Rightarrow a_n = 2^{n-1}$，故$a_n^2 = 4^{n-1}$，故$T_n = \dfrac{1-4^n}{1-4} = \dfrac{4^n - 1}{3}$
+    \end{jieda}
+    \item 设数列$\{a_n\}$的通项公式为$a_n = (2n-1)\times(2\times3^n)$，求$S_n$
+    \begin{jieda}
+    
+        $\left\{\begin{array}{l}
+             S_n = a_1 + a_2 + \cdots + a_n = 1 \times 6 + 3 \times 18 + \cdots + (2n-3)\times(2\times3^{n-1}) + (2n-1)\times(2\times3^n)  \\
+             3S_n = 3a_1 + 3a_2 + \cdots + 3a_n = 1 \times 18 + 3 \times 54 + \cdots + (2n-3)\times(2\times3^{n}) + (2n-1)\times(2\times3^{n+1})
+        \end{array}\right.$
+        
+        $2S_n = (2n-1)\times(2\times3^{n+1}) - 2 \times (18 + 54 + \cdots + 2\times3^n) - 6 \\
+        = (12n-6) \times 3^n - 2 \times \dfrac{18(1-3^{n-1})}{1-3} - 6 \\
+        = (12n-6) \times 3^n + 12 - 6 \times 3^n \\
+        = 12 \times (n-1) \times 3^n +12$ \\
+        故$S_n = 6 \times [(n-1) \times 3^n + 1]$
+    \end{jieda} 
+\end{enumerate}
+
+\section*{由递推公式求通项公式}
+\subsection*{不动点法构造辅助数列求$a_{n+1} = f(a_n)$的通项公式}
+不动点法的本质是构造同构
+
+例题：
+\begin{enumerate}
+    \item 已知数列$\{a_n\}$，$a_1 = 1, a_{n+1} = 2a_n+3$，求$a_n$.
+    \begin{jieda}
+        \begin{enumerate}
+            \item 待定系数法 \\
+            设$a_{n+1} - t = 2(a_n-t)$，则$a_{n+1} = 2a_n - t$，与已知条件进行比较可知$t = -3$，即$a_{n+1} + 3 = 2(a_n+3)$ 
+
+            设$b_n = a_n+3$，则$b_1 = 4$，$\dfrac{b_{n+1}}{b_n} = 2$，因此$\{b_n\}$是以$4$为首项，$2$为公比的等比数列，因此$b_n = 4\cdot 2^{n-1} = 2^{n+1}$，即$a_n = 2^{n+1} - 3$
+
+            \item 不动点法 \\
+            找到递推公式对应的函数$f(x) = 2x+3$，解方程$x = 2x+3$，得到函数的不动点$x = -3$，递推公式两侧减掉不动点有$a_{n+1} + 3 = 2(a_n+3)$ 
+
+            设$b_n = a_n+3$，则$b_1 = 4$，$\dfrac{b_{n+1}}{b_n} = 2$，因此$\{b_n\}$是以$4$为首项，$2$为公比的等比数列，因此$b_n = 4\cdot 2^{n-1} = 2^{n+1}$，即$a_n = 2^{n+1} - 3$
+            
+            因式定理：若$f(x)$为关于$x$的$n$次多项式，则$f(a) = 0 \Longleftrightarrow f(x) = (x-a)g(x)$，其中$g(x)$是关于$x$的$n-1$次多项式
+
+            方程$f(x) = x$的根$x = x_0$称作是函数$y = f(x)$的不动点，故$\exists G(x)$，使得$f(x) - x_0 = (x-x_0) \cdot G(x)$
+
+            \textbf{结论}：对于一阶线性递推式：$a_{n+1} = A \cdot a_n+B (A \neq 1)$，设$f(x) = Ax+B$，则$a_{n+1} = f(a_n)$，设$x = x_0$为$f(x)$的不动点，因此$a_{n+1} - x_0 = f(a_n) - x_0 = Aa_n + B - x_0 = (a_n - x_0) \cdot A$，即$\left\{\begin{array}{ll}
+                 \dfrac{a_{n+1}-x_0}{a_n-x_0} = A, & x_0 \neq a_1 \\
+                 a_n = a_1, & x_0 = a_1
+            \end{array}\right.$
+
+            \ps 当$A = 1$时为等差数列，除常数列外，对应函数不存在不动点，因此不适用.
+        \end{enumerate}
+    \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 已知数列$\{a_n\}$满足$a_{n+1} = \dfrac{5a_n-1}{a_n+3}$，且$a_1 = 2$，求$a_n$
+        \item 已知数列$\{a_n\}$满足$a_{n+1} = \dfrac{a_n+4}{2a_n+3}$，且$a_1 = 3$，求$a_n$
+        \item 已知数列$\{a_n\}$满足$a_{n+1} = \dfrac{1+a_n}{1-a_n}$，且$a_1 = k$，求$a_n$
+    \end{enumerate}
+    
+    \begin{jieda}
+        \begin{enumerate}
+            \item 找到递推公式对应的函数$f(x) = \dfrac{5x-1}{x+3}$，解方程$x = \dfrac{5x-1}{x+3}$，得到函数的不动点$x = 1$，递推公式两侧减掉不动点有$a_{n+1} - 1 = \dfrac{5a_n-1}{a_n+3} - 1 = \dfrac{4(a_n-1)}{a_n+3}$，等式两侧取倒数有$\dfrac{1}{a_{n+1} - 1} = \dfrac{a_n+3}{4(a_n - 1)} = \dfrac{1}{a_n - 1} + \dfrac{1}{4}$
+
+            设$b_n = \dfrac{1}{a_n - 1}$，则$\{b_n\}$是以$1$为首项，$\dfrac{1}{4}$为公差的等差数列，因此$b_n = \dfrac{n+3}{4}$，故$a_n = \dfrac{n+7}{n+3}$
+            
+            \item 找到递推公式对应的函数$f(x) = \dfrac{x+4}{2x+3}$，解方程$x = \dfrac{x+4}{2x+3}$，得到函数的不动点$x_1 = 1, x_2 = -2$，递推公式两侧减掉不动点有$\left\{\begin{array}{l}
+             a_{n+1}-1 = \dfrac{a_n+4}{2a_n+3} - 1 = \dfrac{-(a_n-1)}{2a_n+3} \\
+             a_{n+1}+2 = \dfrac{a_n+4}{2a_n+3} + 2 = \dfrac{5(a_n+2)}{2a_n+3}
+            \end{array}\right.$，两式相除$\dfrac{a_{n+1}-1}{a_{n+1}+2} = -\dfrac{1}{5} \cdot \dfrac{a_n-1}{a_n+2}$
+            
+            设$b_n = \dfrac{a_n - 1}{a_n+2}$，则$\{b_n\}$是以$\dfrac{2}{5}$为首项，$-\dfrac{1}{5}$为公比的等比数列，因此$b_n = -2\left(-\dfrac{1}{5}\right)^n$，即$\dfrac{a_n - 1}{a_n+2} = 1 - \dfrac{3}{a_n+2} = -2\left(-\dfrac{1}{5}\right)^n$，所以$\dfrac{3}{a_n+2} = 1+2\left(-\dfrac{1}{5}\right)^n = \dfrac{2+(-5)^n}{(-5)^n}$，故$a_n = \dfrac{(-5)^n - 4}{2+(-5)^n}$
+
+            \item 周期数列，$a_n = \left\{\begin{array}{ll}
+                k & n = 4m+1, m \in \mathbf{N} \\
+                \dfrac{1+k}{1-k} & n = 4m+2, m \in \mathbf{N} \\
+                -\dfrac{1}{k} & n = 4m+3, m \in \mathbf{N} \\
+                -\dfrac{1-k}{1+k} & n = 4m, m \in \mathbf{N} \\
+            \end{array}\right.$
+        \end{enumerate}
+        
+
+        \textbf{结论}：对于一阶一次分式递推式：$a_{n+1} = \dfrac{A \cdot a_n+B}{C \cdot a_n+D} \left(AD \neq BC, C \neq 0, a_1 \neq -\dfrac{D}{C}\right)$，设$f(x) = \dfrac{Ax+B}{Cx+D}$，则$a_{n+1} = f(a_n)$
+        \begin{enumerate}
+            \item 若$f(x)$有唯一的不动点$x = x_0 = \dfrac{A-D}{2C}$，\\
+            则$a_{n+1} - x_0 = f(a_n) - x_0 = \dfrac{(A-C \cdot x_0)a_n + B - Dx_0}{C\cdot a_n + D} = (a_n - x_0) \cdot \dfrac{A-C \cdot x_0}{C\cdot a_n + D}$
+
+            \begin{dingautolist}{172}
+                \item $x_0 = a_1$ \\
+                则$a_n = x_0$，为常数列
+                \item $x_0 \neq a_1$ \\
+                等式两侧取倒数有$\dfrac{1}{a_{n+1} - x_0} = \dfrac{C(a_n - x_0)+(D+C\cdot x_0)}{(A-C \cdot x_0)(a_n - x_0)} = \dfrac{D+C \cdot x_0}{(A-C \cdot x_0)(a_n - x_0)} + \dfrac{C}{A-C \cdot x_0} = \dfrac{1}{(a_n - x_0)} + \dfrac{2C}{A+D} $ \\
+                因此$\left\{\dfrac{1}{a_n-x_0}\right\}$是以$\dfrac{1}{a_1 - x_0}$为首项，$\dfrac{2C}{A+D}$为公差的等差数列.
+            \end{dingautolist}
+
+            \item 若$f(x)$有两个不同的不动点$x_1, x_2$，\\
+            则$\left\{\begin{array}{l}
+                 a_{n+1} - x_1 = f(a_n) - x_1 = \dfrac{(A-C \cdot x_1)a_n + B - Dx_1}{C\cdot a_n + D} = (a_n - x_1) \cdot \dfrac{A-C \cdot x_1}{C\cdot a_n + D} \\
+                 a_{n+1} - x_2 = f(a_n) - x_2 = \dfrac{(A-C \cdot x_2)a_n + B - Dx_2}{C\cdot a_n + D} = (a_n - x_2) \cdot \dfrac{A-C \cdot x_2}{C\cdot a_n + D} 
+            \end{array}\right.$
+            \begin{dingautolist}{172}
+                \item 存在不动点与$a_1$相等 \\
+                $\{a_n\}$为常数列
+                \item 两不动点均与$a_1$不相等 \\
+                两式做商，则有$\dfrac{a_{n+1}-x_1}{a_{n+1}-x_2} = \dfrac{a_n - x_1}{a_n - x_2} \cdot \dfrac{A-Cx_1}{A-Cx_2}$，因此$\left\{\dfrac{a_n-x_1}{a_n-x_2}\right\}$是以$\dfrac{a_1-x_1}{a_1-x_2}$为首项，$\dfrac{A-Cx_1}{A-Cx_2}$为公比的等比数列
+            \end{dingautolist}
+            \item 若$f(x)$没有不动点，则应考虑$\{a_n\}$为周期数列
+        \end{enumerate}
+    \end{jieda}
+    \item 已知数列$\{a_n\}$中，$a_1 = 2, a_{n+1} = \dfrac{1}{2}\left(a_n+\dfrac{1}{a_n}\right)$，求$a_n$.
+    \begin{jieda}
+        找到递推公式对应的函数$f(x) = \dfrac{1}{2}\left(x + \dfrac{1}{x}\right)$，解方程$x = \dfrac{1}{2}\left(x + \dfrac{1}{x}\right)$，得到函数的不动点$x_1 = 1, x_2 = -1$
+        递推公式两侧减掉不动点有$\left\{\begin{array}{l}
+             a_{n+1} - 1 = \dfrac{1}{2}\left(a_n+\dfrac{1}{a_n}\right) - 1 = \dfrac{(a_n-1)^2}{2a_n}  \\
+             a_{n+1} + 1 = \dfrac{1}{2}\left(a_n+\dfrac{1}{a_n}\right) + 1 = \dfrac{(a_n+1)^2}{2a_n}
+        \end{array}\right.$，上下两式做商，有$\dfrac{a_{n+1} - 1}{a_{n+1} + 1} = \left(\dfrac{a_n - 1}{a_n + 1}\right)^2$
+        
+        根据$a_1$可知$\dfrac{a_n - 1}{a_n + 1} > 0$恒成立，故设$b_n = ln\left(\dfrac{a_n - 1}{a_n + 1}\right)$，因此$b_{n+1} = 2b_n$，故$\{b_n\}$是以$-ln3$为首项，$2$为公比的等比数列，因此$b_n = -ln3 \cdot 2^{n-1}$，即$\dfrac{a_n-1}{a_n+1} = \left(\dfrac{1}{3}\right)^{2^{n-1}}$，故$a_n = \dfrac{1+\left(\dfrac{1}{3}\right)^{2^{n-1}}}{1-\left(\dfrac{1}{3}\right)^{2^{n-1}}} = \dfrac{3^{2^{n-1}}+1}{3^{2^{n-1}}-1}$
+    \end{jieda}
+\end{enumerate}
+\subsection*{其他一阶递推公式}
+\begin{enumerate}
+    \item $a_{n+1} = pa_n + An+B (p \neq 1)$型 \\
+    设数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = 4,{a}_{n} = 3{a}_{n - 1} + {2n} - 1\left( {n \geq  2}\right)$ ,求 ${a}_{n}$ .
+    \begin{jieda}
+        设$a_n + (An+B) = 3(a_{n-1} + (A(n-1)+B)), n \geq 2$，整理有$a_n = 3a_{n-1} + 2An - 3A + 2B, n \geq 2$
+        
+        比较等式两边的系数可知, $\left\{  \begin{array}{l} 
+                                            2A = 2, \\  
+                                            - 3A + 2B = -1, 
+                                        \end{array}\right.$ 
+        即 $\left\{  \begin{array}{l} A = 1, \\  B = 1 \end{array}\right.$ 
+        
+        因此数列 $\left\{  a_n + n + 1\right\}$ 是以$6$为首项，$3$为公比的等比数列,
+        设${b}_{n} = {a}_{n} + n + 1$ ,则 ${b}_{n} = 6 \times  {3}^{n - 1} = 2 \times  {3}^{n}$ ,所以 ${a}_{n} = {b}_{n} - n - 1 = 2 \times  {3}^{n} - n - 1.$
+    \end{jieda}
+    
+    \item $a_{n+1} = pa_n + k \cdot q^{n+1} (p \neq 1)$型 \\
+    在数列 $\left\{  {a}_{n}\right\}$ 中,已知 ${a}_{1} = 1,{a}_{n} = 2{a}_{n - 1} + {3}^{n}\left( {n \geq  2}\right)$ ,求 $\left\{  {a}_{n}\right\}$ 的通项公式.
+    \begin{jieda}
+        两边同除$3^n$，得到$\dfrac{a_n}{3^n} = \dfrac{2}{3} \cdot \dfrac{a_{n-1}}{3^{n-1}} + 1\left( {n \geq  2}\right)$
+
+        解方程$x = \dfrac{2}{3}x + 1$得到对应的不动点$x = 3$，故有$\dfrac{a_n}{3^n} - 3 = \dfrac{2}{3}\left(\dfrac{a_{n-1}}{3^{n-1}} - 3\right)$，因此数列$\left\{\dfrac{a_n}{3^n} - 3\right\}$是以$-\dfrac{8}{3}$为首项，$\dfrac{2}{3}$为公比的等比数列，设$b_n = \dfrac{a_n}{3^n} - 3$，则$b_n = -4\left(\dfrac{2}{3}\right)^n$
+        
+        故$a_n = \left(3-4\left(\dfrac{2}{3}\right)^n\right) \times 3^n = 3^{n+1}-2^{n+2}$
+    \end{jieda} 
+
+    
+    \item $a_{n+1} = \dfrac{p(n) \cdot a_n}{qa_n+r(n)}$型 \\
+    在数列 $\left\{  {a}_{n}\right\}$ 中,已知 ${a}_{1} = 2,{a}_{n + 1} = \dfrac{{2}^{n + 1}{a}_{n}}{{a}_{n} + {2}^{n + 1}}$ ,求 $\left\{  {a}_{n}\right\}$ 的通项公式.
+    \begin{jieda}
+        等式两侧取倒数有$\dfrac{1}{a_{n+1}} = \dfrac{1}{a_n} + \dfrac{1}{2^{n+1}}$
+
+        等式两侧同乘$2^{n+1}$有$\dfrac{2^{n+1}}{a_{n+1}} = 2 \cdot \dfrac{2^n}{a_n} + 1$
+
+        解方程$x = 2x+1$，得到对应的不动点$x = -1$，故有$\left(\dfrac{2^{n+1}}{a_{n+1}}+1\right) = 2 \cdot \left(\dfrac{2^n}{a_n} + 1\right)$，因此数列$\left\{\dfrac{2^n}{a_n} + 1 \right\}$是以$2$为首项，$2$为公比的等比数列，故$\dfrac{2^n}{a_n} + 1 = 2^n$，故$a_n = \dfrac{2^n}{2^n - 1}$
+    \end{jieda}
+    
+    \item $a_{n+1} = pa_n^k$型 \\
+    设正项数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = 1,{a}_{n} = 2{a}_{n - 1}^{2}\left( {n \geq  2}\right)$ ,求数列 $\left\{  {a}_{n}\right\}$ 的通项公式.
+    
+    \begin{jieda}
+        两边取对数, 得${\log }_{2}{a}_{n} = 1 + 2{\log }_{2}{a}_{n - 1}$
+
+        解方程$x = 1+2x$得到对应的不动点$x = -1$，故有${\log }_{2}{a}_{n} + 1 = 2\left( {{\log }_{2}{a}_{n - 1} + 1}\right) .$
+        
+        设 ${b}_{n} = {\log }_{2}{a}_{n} + 1$ ,则 $\left\{  {b}_{n}\right\}$ 是以 1为首项，2 为公比的等比数列，进而得 ${b}_{n} = {2}^{n - 1}$
+        
+        于是 ${\log }_{2}{a}_{n} + 1 = {2}^{n - 1},{\log }_{2}{a}_{n} = {2}^{n - 1} - 1$ ,所以 ${a}_{n} = {2}^{{2}^{n - 1} - 1}$ .
+    \end{jieda}   
+\end{enumerate}
+\subsection*{二阶线性递推}
+\begin{enumerate}
+    \item 已知数列$\{a_n\}$中，$a_1 = 1, a_2 = 2$，$a_{n+2} = \dfrac{2}{3}a_{n+1}+\dfrac{1}{3}a_n$，求$a_n$.
+    \begin{jieda}
+        \begin{enumerate}
+            \item 待定系数法 \\
+            设$a_{n+2} - s \cdot a_{n+1} = t(a_{n+1} - s\cdot a_n)$，则$a_{n+2} = (s+t)a_{n+1} - (st)a_n$，与已知条件比较可知$\left\{\begin{array}{l}
+                 s+t = \dfrac{2}{3} \\
+                 -st = \dfrac{1}{3}
+            \end{array}\right.$，故$\left\{\begin{array}{l}
+                 s = 1 \\
+                 t = -\dfrac{1}{3}
+            \end{array}\right.$或$\left\{\begin{array}{l}
+                 s = -\dfrac{1}{3} \\
+                 t = 1
+            \end{array}\right.$ \\
+            选择$\left\{\begin{array}{l}
+                 s = 1 \\
+                 t = -\dfrac{1}{3}
+            \end{array}\right.$，故$a_{n+2} - a_{n+1} = -\dfrac{1}{3}(a_{n+1} - a_n)$，因此$\{a_{n+1}-a_n\}$是以$1$为首项，$-\dfrac{1}{3}$为公比的等比数列，所以$a_{n+1} - a_n = \left(-\dfrac{1}{3}\right)^{n-1}$，通过累加法可得$a_n = \dfrac{7}{4} - \dfrac{3}{4}\left(-\dfrac{1}{3}\right)^{n-1}$
+            \item 特征根法 \\
+            二阶递推式所对应的特征方程为$x^2 = \dfrac{2}{3}x+\dfrac{1}{3}$，故两特征根分别为$x_1 = 1, x_2 = -\dfrac{1}{3}$，因此$a_n = e \cdot 1^n + f \cdot \left(-\dfrac{1}{3}\right)^n$，代入$a_1, a_2$，得到$\left\{\begin{array}{l}
+                 e - \frac{1}{3}f = 1 \\
+                 e + \frac{1}{9}f = 2
+            \end{array}\right.$，解得$e = \dfrac{7}{4}, f = \dfrac{9}{4}$，故$a_n = \dfrac{7}{4} + \dfrac{9}{4} \cdot \left(-\dfrac{1}{3}\right)^n$
+
+            \textbf{结论}：对于二阶线性递推式：$a_{n+2} = A \cdot a_{n+1} + B \cdot a_n (B \neq 0)$，根据待定系数法构造$a_{n+2} - s \cdot a_{n+1} = t(a_{n+1} - s\cdot a_n)$，可知$s,t$为特征方程$x^2 = Ax+B$的两根
+
+            设$b_n = a_{n+1}-s \cdot a_n$因此$\{b_n\}$是以$b_1 = a_2-s\cdot a_1$为首项，$t$为公比的等比数列，设$k = \dfrac{b_1}{t}$，则$b_n = k \cdot t^n$
+
+            因此有$a_{n+1} = s \cdot a_n + k \cdot t^n$，同除$t^{n+1}$有$\dfrac{a_{n+1}}{t^{n+1}} = \dfrac{s}{t} \cdot \dfrac{a_n}{t^n} + \dfrac{k}{t}$
+            \begin{dingautolist}{172}
+                \item $s, t$为两相异实根 \\
+                设$x = x_0$为函数$f(x) = \dfrac{s}{t} x + \dfrac{k}{t}$的不动点，则$\left\{\dfrac{a_n}{t^n} - x_0 \right\}$为以$\dfrac{s}{t}$为公比的等比数列，设首项为$\dfrac{mt}{s}$，则$\dfrac{a_n}{t^n} - x_0 = m\left(\dfrac{s}{t}\right)^n$，$a_n = x_0 \cdot t^n + m \cdot s^n$
+
+                因此可以设$a_n = e \cdot s^n + f \cdot t^n$，并根据$a_1, a_2$求出$e, f$
+                \item $s, t$为两共轭虚根 \\
+                因为前述推导与$s, t$的实虚无关，所以也满足$a_n = e \cdot s^n + f \cdot t^n$
+
+                考虑到$a_n \in \mathbf{R}, s = \overline{t}$，因此$e = \overline{f}$，$a_n = 2Re(e \cdot s^n)$
+
+                写出$s$的三角表示$s = r(cos\theta + isin\theta), r > 0$，设$e = E + Fi$，则$a_n = 2r^nE \cdot cos(n\theta) - 2r^nF \cdot sin(n\theta)$
+
+                因此可以设$a_n = e \cdot r^n cos(n\theta) + f \cdot r^n sin(n\theta)$，并根据$a_1, a_2$求出$e, f$
+                \item $s, t$为两相等实根 \\
+                $\dfrac{a_{n+1}}{t^{n+1}} = \dfrac{a_n}{t^n} + \dfrac{k}{t}$，则$\left\{\dfrac{a_n}{t^n}\right\}$是以$\dfrac{a_1}{t}$为首项，$\dfrac{k}{t}$为公差的等差数列，因此$\dfrac{a_n}{t^n} = \dfrac{a_1-k}{t} + \dfrac{kn}{t}$，故$a_n = (a_1-k) \cdot t^{n-1} + kn \cdot t^{n-1}$
+
+                因此可设$a_n = (e+nf) \cdot t^n$，并根据$a_1, a_2$求出$e, f$
+            \end{dingautolist}
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\section*{数列求和}
+\begin{enumerate}
+    \item 倒序相加法 \\
+    已知 $ f\left( x\right)  = \dfrac{x}{1 + x} $ ,则 $ f\left( 1\right)  + f\left( 2\right)  + f\left( 3\right)  + \cdots  + f\left( {2018}\right)  + f\left( \dfrac{1}{2}\right)  + f\left( \dfrac{1}{3}\right)  + \cdots  + f\left( \dfrac{1}{2018}\right)  = $ \blkda{$\dfrac{4035}{2} $}.
+    \begin{jieda}
+        因为 $ f\left( x\right)  = \dfrac{x}{1 + x} $ ,所以 $ f\left( x\right)  + f\left( \dfrac{1}{x}\right)  = \dfrac{x}{1 + x} + \dfrac{\dfrac{1}{x}}{1 + \dfrac{1}{x}} = \dfrac{x}{1 + x} + \dfrac{1}{x + 1} = 1 $ ,
+        故 $ f\left( 1\right)  + f\left( 2\right)  + f\left( 3\right)  + \cdots  + f\left( {2018}\right)  + f\left( \dfrac{1}{2}\right)  + f\left( \dfrac{1}{3}\right)  + \cdots  + f\left( \dfrac{1}{2018}\right) $
+        $ = \dfrac{1}{2} + 1 + 1 + 1 + \cdots  + 1 $
+        $ = \dfrac{1}{2} + {2017} $
+        $ = \dfrac{4035}{2} $
+    \end{jieda}
+    
+    \item 错项相减法 \\
+    已知数列 $ \left\{  {a}_{n}\right\} $ 的通项公式为 $ {a}_{n} = \dfrac{n}{{2}^{n}} $ ,则此数列的前 $ n $ 项和 $ {S}_{n} = $\blkda[3]{$ 2 - \dfrac{1}{{2}^{n - 1}} - \dfrac{n}{{2}^{n}} $}
+    \begin{jieda}
+        由题知 $ {S}_{n} = \dfrac{1}{2} + \dfrac{2}{4} + \dfrac{3}{8} + \cdots  + \dfrac{n}{{2}^{n}} $
+        
+        所以 $ \dfrac{1}{2}{S}_{n} = \dfrac{1}{4} + \dfrac{2}{8} + \dfrac{3}{16} + \cdots  + \dfrac{n - 1}{{2}^{n}} + \dfrac{n}{{2}^{n + 1}} $ 
+        
+        两式相减有 $ \dfrac{1}{2}{S}_{n} = \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \cdots  + \dfrac{1}{{2}^{n}} - \dfrac{n}{{2}^{n + 1}} = \dfrac{\dfrac{1}{2}\left( {1 - \dfrac{1}{{2}^{n}}}\right) }{1 - \dfrac{1}{2}} - \dfrac{n}{{2}^{n + 1}} $ ,
+        所以 $ {S}_{n} = 2 - \dfrac{1}{{2}^{n - 1}} - \dfrac{n}{{2}^{n}} $ .
+        故答案为: $ 2 - \dfrac{1}{{2}^{n - 1}} - \dfrac{n}{{2}^{n}} $
+    \end{jieda}
+    
+    \item 累加法（等差型） \\
+    已知数列$\{a_n\}$满足$a_1 = 3, a_{n+1} = a_n + 8n+4$，则$\dfrac{1}{a_1} + \dfrac{1}{a_2} + \cdots +\dfrac{1}{a_{2025}} = $\blkda{$\dfrac{2025}{4051}$}
+    \begin{jieda}
+        根据$a_{n+1} - a_n = 8n+4$，累加可得$a_n = a_1 + (12 + 8n-4) \times \dfrac{n-1}{2} = 4n^2-1 (n\geq2)$，经检验$a_n = 4n^2 - 1$，故$\dfrac{1}{a_n} = \dfrac{1}{(2n-1)\cdot(2n+1)} = \dfrac{1}{2}\left(\dfrac{1}{2n-1} - \dfrac{1}{2n+1}\right)$，故$\dfrac{1}{a_1} + \dfrac{1}{a_2} + \cdots +\dfrac{1}{a_{2025}} = \dfrac{1}{2}\left(1 - \dfrac{1}{4051}\right) = \dfrac{2025}{4051}$
+    \end{jieda}
+
+    \item 累加法（无理型） \\
+    已知各项均为正数的等差数列$\{a_n\}$满足$a_1 = 1, a_{n+1}^2 = a_n^2+2(a_{n+1} + a_n)$，设$b_n = \dfrac{1}{\sqrt{a_n} + \sqrt{a_{n+1}}}$，则数列$\{b_n\}$的前$n$项和$S_n = $\blkda[2]{$\dfrac{\sqrt{2n+1} - 1}{2}$}
+    \begin{jieda}
+        $a_1 = 1, a_{n+1}^2 = a_n^2+2(a_{n+1} + a_n)$即$(a_{n+1} + a_n)(a_{n+1} - a_n) = 2(a_{n+1} + a_n)$，因为$\{a_n\}$各项均为正数，所以$a_{n+1} - a_n = 2$，故$\{a_n\}$是公差为2的等差数列，$a_n = 2n-1$ \\
+        故$b_n = \dfrac{1}{\sqrt{2n-1} + \sqrt{2n+1}} = \dfrac{\sqrt{2n+1} - \sqrt{2n-1}}{2}$，故$S_n = \dfrac{\sqrt{2n+1} - 1}{2}$
+    \end{jieda}
+    
+    \item 分组求和\\
+    已知等比数列$\{a_n\}$的各项均为正数，前$n$项和为$S_n$，若$a_{n+1} + a_{n+2} = 12a_n(n \in \mathbf{N^*}), S_5 = 121$，则$a_n = $\blkda[1]{$3^{n-1}$}，若$b_n = a_n + ln (a_n)$，则数列$b_n$的前$n$项和$T_n = $\blkda[4]{$\dfrac{(3^n - 1) + ln3 \cdot n(n-1)}{2}$}
+    \begin{jieda}
+        $a_{n+1} + a_{n+2} = 12a_n$即$a_1 \cdot q^n + a_1 \cdot q^{n+1} = 12(a_1 \cdot q^{n-1})$，即$q + q^2 = 12$，解得$q = 3$或$-4$，因为$\{a_n\}$的各项均为正数，所以$q = 3$. 故$S_n = \dfrac{a_1 \cdot (3^n - 1)}{2}$，因为$S_5 = 121$，所以$a_1 = 1$，故$a_n = 3^{n-1}$，$b_n = 3^{n-1} + ln3 \cdot (n-1)$，因此$T_n = \dfrac{(3^n - 1) + ln3 \cdot n(n-1)}{2}$
+    \end{jieda}
+    \item 并项求和 \\
+    已知等差数列$\{a_n\}$的前$n$项和为$S_n$，$S_7 = 56, a_2 + a_8 = 20$，则$a_n = $\blkda{$2n$}；等比数列$\{b_n\}$满足$b_1 = a_1$，$b_3$是$a_2, a_8$的等比中项，则$b_n = $\blkda[2.5]{$2^n$或$-(-2)^n$}；若数列$\{c_n\} = a_n cos\dfrac{n\pi}{2} + |b_n|sin\dfrac{n\pi}{2}$，求数列$\{c_n\}$的前$4n$项的和$T_{4n} = $\blkda[3]{$4n - \dfrac{2}{5} \cdot (16^n - 1)$}
+    \begin{jieda}
+        $a_2 + a_8 = 20$，即$2a_5 = 10$，而$S_7 = 56$，即$a_4=8$，故$d = 2$，$a_1 + 3d = 8$，故$a_1 = 2$，因此$a_n = 2n$. \\
+        $b_1 = 2$，$a_2 = 4, a_8 = 16$，故$b_3 = 8$或$-8$（舍）,因此$q = 2$或$-2$，故$b_n = 2^n$或$-(-2)^n$ \\
+        $c_n = (2n) \cdot cos\dfrac{n\pi}{2} + 2^n \cdot sin\dfrac{n\pi}{2}$
+        
+        因此有$c_{4} = (8n), c_{4n-1} = -2^{4n-1}, c_{4n-2} = -(8n-4), c_{4n-3} = 2^{4n-3}$
+        
+        设$C_n = c_{4n} + c_{4n-1} + c_{4n-2} + c_{4n-3} = 4 - 2^{4n-1} + 2^{4n-3} = 4 - \dfrac{3}{8} \cdot 16^n$，因此$T_{4n} = C_1 + C_2 + \cdots + C_n = 4n - 6 \cdot \dfrac{(16^n - 1)}{15} = 4n - \dfrac{2}{5} \cdot (16^n - 1)$
+    \end{jieda}
+\end{enumerate}

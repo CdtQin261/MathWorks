@@ -1,0 +1,307 @@
+\chapter*{专题练习2}
+填空题：
+\begin{enumerate}
+    \item ``$ab \leq 0$''是``$\abs{a-b}=\abs{a}+\abs{b}$''的\blkda{充要} 条件.
+    \begin{jieda}
+    考察三角不等式的\textbf{取等条件}. \\
+    $\abs{a+b} \leq \abs{a}+\abs{b}$的取等条件是$ab\geq 0$ \\
+    $\abs{a-b} \leq \abs{a}+\abs{b}$的取等条件是$ab\leq 0$
+    \end{jieda}
+    \item 若实数$a$使得不等式$|x-2a| + |2x-a| \geq a^2$对任意的$x$恒成立，实数$a$的取值范围是\blkda{$[-\frac{3}{2}, \frac{3}{2}]$}
+    \begin{jieda}
+        \begin{enumerate}
+        \item 方法1 \\
+        首先将问题转化为左侧的最小值大于等于右侧，设函数$f(x) = |x-2a| + |2x-a|$，根据斜底锅函数的图象可知，其最低点必然位于系数绝对值最大的一项取零的位置，即$x = \frac{a}{2}$，最小值为$|\frac{3a}{2}|$，由此不等式可以转化为$|\frac{3a}{2}| \geq a^2$，即$|\frac{3}{2}| \geq |a|$，故$a \in [-\frac{3}{2}, \frac{3}{2}]$
+        \item 方法2 \\
+        通过设$x = ka(k \in \mathbf{R})$来简化计算。\\
+        根据$x = ka(k \in \mathbf{R})$，不等式可以化为$|ka - 2a| + |2ka - a| \geq a^2$，\\
+        消去$|a|$，不等式变为$|k - 2| + |2k - 1| \geq |a|$。\\
+        通过对$k$进行分类讨论，可以得到$|k - 2| + |2k - 1|$的取值范围为$[\frac{3}{2}, +\infty)$，故$|a| \leq \frac{3}{2}$，即$a \in [-\frac{3}{2}, \frac{3}{2}]$
+        \end{enumerate}
+        \ps 斜底锅函数$f(x) = |ax+b|+|cx+d|$（$|a| \neq |c|$），若$|a| > |c|$，则取最小值时$x = -\frac{b}{a}$，若$|a| < |c|$，则取最小值时$x = -\frac{d}{c}$
+    \end{jieda}
+    \item 若$a>b>0$, 则$a^2+\frac{16}{b(a-b)}$的最小值是\blkda{16}. 
+    \begin{jieda}
+    先考虑消元，$b(a-b) \leq \left (\frac{b+(a-b)}{2}\right )^2$，取等条件为$a = 2b$. \\
+    故$a^2+\frac{16}{b(a-b)} \geq a^2 + \frac{64}{a^2} \geq 16$. 取等条件为$a = 2\sqrt{2}, b = \sqrt{2}$
+    \end{jieda}
+    \item 已知$a > 0, b > 0$，且$ab = 1$，则$\frac{1}{2a} + \frac{1}{2b} + \frac{8}{a+b}$的最小值为\blkda{4}.
+    \begin{jieda}
+        \begin{enumerate}
+            \item 消元法 \\
+            用$a$表示$b$有$b = \frac{1}{a}$。原式可以化为$\frac{a}{2} + \frac{1}{2a} + \frac{8}{\frac{1}{a} + a} = \frac{1+a^2}{2a} + \frac{8a}{1+a^2} \geq 2\sqrt{\frac{1+a^2}{2a} \cdot \frac{8a}{1+a^2}} = 4$，当且仅当$a+b = a + \frac{1}{a} = 4$时取等号。 
+            \item 乘常数 \\
+            原式$=(\frac{1}{2a} + \frac{1}{2b}) \times ab + \frac{8}{a+b} = \frac{a+b}{2} + \frac{8}{a+b} \geq 2\sqrt{\frac{a+b}{2} \cdot \frac{8}{a+b}} = 4$，当且仅当$\frac{a+b}{2} = \frac{8}{a+b}$，即$a+b=4$时取等号。
+        \end{enumerate}
+        \ps 容易出现的错解：消元后分别利用均值不等式得到答案5。\textbf{应用多次平均值不等式时应注意不等式方向是否相同，取等条件是否一致。}
+    \end{jieda}
+    \item 
+    \begin{enumerate}
+        \item 已知正实数$a, b$满足$a+b = 4$，则$\frac{1}{a+1} + \frac{1}{b+3}$的最小值是\blkda{$\frac{1}{2}$}.
+        \begin{jieda}
+            $\frac{1}{a+1} + \frac{1}{b+3} = (\frac{1}{a+1} + \frac{1}{b+3}) \times (a+1+b+3) \times \frac{1}{8} = (2+\frac{b+3}{a+1} + \frac{a+1}{b+3}) \times \frac{1}{8} \geq \frac{1}{2}$，当且仅当$a = 3, b = 1$时取等号.
+        \end{jieda}
+        \item 已知正实数$a, b$满足$4a+3b = 1$，则$\frac{1}{2a+b} + \frac{1}{a+b}$的最小值是\blkda{$3+2\sqrt{2}$}.
+        \begin{jieda}
+            $\frac{1}{2a+b} + \frac{1}{a+b} = \frac{1}{2a+b} + \frac{2}{2a+2b} = (\frac{1}{2a+b} + \frac{2}{2a+2b}) \times (2a + b + 2a + 2b) = 1 + 2 + \frac{2a+2b}{a+b} + \frac{2(2a+b)}{2a+2b} \geq 3+2\sqrt{2}$，当且仅当$a = \frac{3\sqrt{2}}{2}-2, b = 3-2\sqrt{2}$时取等号. \\
+            \ps 体会“基”的思想：将分母看做一组“基”，线性组合表示限制条件，根据系数对目标式进行变形.
+        \end{jieda}
+    \end{enumerate}
+    \item 已知$a,b,c,d$满足$a^2-ab+4 = 0, c^2+d^2 = 1$，则当$(a-c)^2 + (b-d)^2$取最小值的时候，$abcd = $\blkda{$1+\sqrt{2}$}
+    \begin{jieda}
+        $(a-c)^2 + (b-d)^2$的几何意义为$A(a, b), B(c,d)$两点间距离的平方，$A$在对勾函数$y = x + \dfrac{4}{x}$上，$B$在单位圆$x^2+y^2 = 1$上。$(a-c)^2 + (b-d)^2$为$|AB|^2$ \\
+        固定点$A$时，$OAB$构成三角形$|AB| + 1 > |OB|$,仅当$B$在$OA$上时此时$|AB| = |OB| - 1$最小。 \\
+        $|OA|^2 = a^2 + b^2 = a^2 + (a + \dfrac{4}{a})^2 = 2a^2 + 8 + \dfrac{16}{a^2} \geq 8 + 2\sqrt{32} = 8 + 8\sqrt{2}$（$a = \sqrt[4]{8}$时取等）\\
+        此时$ab = a^2+4 = 4 + 2\sqrt{2}$，此时根据相似三角形可知$\dfrac{a}{c} = \dfrac{b}{d} = \dfrac{|OA|}{1} = \sqrt{8 + 8\sqrt{2}}$，故$\dfrac{ab}{cd} = 8 + 8\sqrt{2}$，因此$cd = \dfrac{4 + 2\sqrt{2}}{8+8\sqrt{2}}$，故$abcd = \dfrac{(4 + 2\sqrt{2})^2}{8+8\sqrt{2}} = \dfrac{24 + 16\sqrt{2}}{8+8\sqrt{2}} = \dfrac{3+2\sqrt{2}}{1+\sqrt{2}} = 1+\sqrt{2}$
+    \end{jieda}
+    \item 已知$f(x)=x+2, x\in[1,4]$, 则$y=f(x^2)+f^2(x)$的最大值是\blkda{22}. 
+    \begin{jieda}
+    先看定义域: $f(x)$的定义域为$[1,4]$，因此$f(x^2)$中$x^2\in[1,4]$, 故$f(x^2)$的定义域为$x\in[-2,-1] \cup [1,2]$. 而$f^2(x)$的定义域与$f(x)$的定义域相同.\\
+    两者相加，定义域取交集，因此$y=f(x^2)+f^2(x)$的定义域为$[1, 2]$ \\
+    于是$y=x^2+2+(x+2)^2=2x^2+4x+6=2(x+1)^2+4\in[12,22]$.
+    \end{jieda}
+    \item 已知$y = f(2x+1)$的定义域为$(1, 3]$，则$y = f(x+1)$的定义域为\blkda{$(2, 6]$}. 
+    \begin{jieda}
+        因为$y = f(2x+1)$的定义域为$(1, 3]$，所以$y = f(x)$的定义域是$(3,7]$，故$y = f(x+1)$的定义域为$(2, 6]$. \\
+        \ps 此类题目的桥梁是\textbf{$f$括号内的取值范围是一致的}.
+    \end{jieda}
+    \item 下列两组函数中表示同一函数的有\blkda{\ding{172}}. \\
+    \begin{enumerate*}
+        \item $y = \frac{\sqrt{1-x^2}}{|x+2|}$ 和 $y = \frac{\sqrt{1-x^2}}{x+2}$
+        \item $y = \sqrt{x-1} \cdot \sqrt{x-2}$和$y = \sqrt{x^2-3x+2}$
+    \end{enumerate*}
+    \begin{jieda}
+        本质上还是在考察定义域.
+    \end{jieda}
+    \item 函数$y=\sqrt{\log_{\frac{1}{3}}\left(\log_{\frac{1}{3}}\left(\log_{\frac{1}{3}}x\right)\right)}$的定义域是\blkda{$\left(\frac{1}{3},\sqrt[3]{\frac{1}{3}}\right]$}.
+    \begin{jieda}
+    $\log_{\frac{1}{3}}\left(\log_{\frac{1}{3}}\left(\log_{\frac{1}{3}}x\right)\right)\geq 0\iff 0<\log_{\frac{1}{3}}\left(\log_{\frac{1}{3}}x\right)\leq 1
+    \iff 1>\log_{\frac{1}{3}}x\geq\frac{1}{3}\iff (\frac{1}{3})^1<x\leq(\frac{1}{3})^{\frac{1}{3}}$. 
+    \end{jieda}
+            \item 若函数$f(x)=x^2-3x-4$的定义域为$[0,m]$, 值域为$\left[-\frac{25}{4},-4\right]$, 则实数$m$的取值范围是\blkda{$[\frac{3}{2},3]$}. 
+        \begin{jieda}
+        $f(x)=x^2-3x-4=(x-\frac{3}{2})^2-\frac{25}{4}$，因此$x = \frac{3}{2}$是函数值$-\frac{25}{4}$对应的唯一自变量，必然要在定义域内. 又因为$f(0)=f(3)=-4$, 是$f(x)=-4$唯二的解. 于是由二次函数的图像易得$m\in[\frac{3}{2},3]$. 
+        \end{jieda}
+        \item 若一系列函数的解析式相同, 值域相同, 但其定义域不同, 则称这些函数为``同族函数'', 
+        那么函数解析式为$f(x)=x^2$, 值域为$\{1,4\}$的``同族函数''共有\blkda{$9$}个.
+        \begin{jieda}
+        $1,-1,\pm1\to 1$, $2,-2,\pm2\to 4$, 于是从值域的角度, $x$的组合共有$3\times3=9$种选择. \\
+        \ps 关键是要清楚一个$y$对应几个$x$.
+        \end{jieda} 
+        \item 设函数$f(x)$满足$f(x) = f(\frac{1}{1+x})$对任意$x \in [0, +\infty)$都成立，其值域是$A_f$，已知对任何满足上述条件的$f(x)$都有$\{y| y = f(x), 0 \leq x \leq a \} = A_f$，则$a$的取值范围为 \blkda[2]{$[\frac{\sqrt{5}-1}{2}, +\infty)$}
+        \begin{jieda}
+            易知$y = x$与$y = \frac{1}{1+x}$在$x \in [0, +\infty)$只有一个交点$(\frac{\sqrt{5}-1}{2}, \frac{\sqrt{5}-1}{2})$\\
+            设$g(x) = x$，在$(0,\frac{\sqrt{5}-1}{2})$的值域为$R_{g1}$，在$(\frac{\sqrt{5}-1}{2}, +\infty)$内值域为$R_{g2}$，
+            设$h(x) = x$，在$(0,\frac{\sqrt{5}-1}{2})$的值域为$R_{h1}$，在$(\frac{\sqrt{5}-1}{2}, +\infty)$内值域为$R_{h2}$，易知$R_{g1} = R_{h2}, R_{g2} = R_{h1}$ \\
+            因此必有$f(x)$在$(0,\frac{\sqrt{5}-1}{2})$的值域与在$(\frac{\sqrt{5}-1}{2}, +\infty)$内值域相同. 而$f(0) = f(1)$. 所以$f(x)$在$[0,\frac{\sqrt{5}-1}{2})$的值域$A_{f1}$与在$(\frac{\sqrt{5}-1}{2}, +\infty)$内值域$A_{f2}$相同. 但是$f(\frac{\sqrt{5}-1}{2})$可以和其他任意的函数值不相等。因此$A_f = A_{f1} \cup \{f(\frac{\sqrt{5}-1}{2})\}$ \\
+            故当$a \geq \frac{\sqrt{5}-1}{2}$时满足$[0, a]$上$f(x)$的值域也是$A_f$
+        \end{jieda}
+\end{enumerate}
+选择题：
+\begin{enumerate}
+    \item 下列各式中, 最小值为4的是\dotfill(\kh{B})
+    \xx
+    {$x+2\sqrt{x}+5$}
+    {$\frac{x^2+5}{\sqrt{x^2+1}}$}
+    {$x^2+3+\frac{4}{x^2+3}$}
+    {$x+\frac{4}{x}$}
+    \begin{jieda}
+        注意取等条件是否可以取到！
+    \end{jieda}
+    \item 已知不等式$(x+y)\left(\frac{a}{x}+\frac{1}{y}\right)\geq 9$对任意正实数$x,y$恒成立, 则正实数$a$的最小值是\dotfill(\kh{B})
+    \xx
+    {2}
+    {4}
+    {6}
+    {8}
+    \begin{jieda}
+        首先求出$(x+y)\left(\frac{a}{x}+\frac{1}{y}\right)$最小值(含$a$)，然后令其大于等于9，得到$a$的取值范围，从中选取最小值\\
+        $(x+y)\left(\frac{a}{x}+\frac{1}{y}\right) = a + 1 + \frac{ay}{x} + \frac{x}{y} \geq a + 1 + 2\sqrt{a}$（$x  = \sqrt{a}y$时取等）\\
+        设$f(a) = a+1+2\sqrt{a}$，显然$f(a)$单调递增，且有$f(4) = 9$. 故$a \geq 4$时原始$\geq 9$，因此$a$最小值为4.
+    \end{jieda}
+    \item 若实数$a, b$满足$a > b > 0$，下列不等式中恒成立的是\dotfill(\kh{A})
+    \xx{$a+b > 2\sqrt{ab}$}{$a+b < 2\sqrt{ab}$}{$\dfrac{a}{2} + 2b > 2\sqrt{ab}$}{$\dfrac{1}{2} + 2b < 2\sqrt{ab}$}
+    \item 下列不等式恒成立的是\dotfill(\kh{B})
+    \xx{$a^2+b^2 \leq 2ab$}{$a^2+b^2 \geq -2ab$}{$a+b \geq -2\sqrt{|ab|}$}{$a+b \leq 2\sqrt{|ab|}$}
+    \item 已知两两不同的$x_1, y_1, x_2, y_2, x_3, y_3$满足$x_1 + y_1 = x_2 + y_2 = x_3 + y_3$，且$x_1 < y_1$，$x_2 < y_2$，$x_3 < y_3$，$x_1y_1+x_3y_3=2x_2y_2 > 0$，则下列选项中恒成立的是 \dotfill(\kh{A})
+    \xx{$2x_2 < x_1 + x_3$}{$2x_2 > x_1 + x_3$}{$x_2^2 < x_1x_3$}{$x_2^2 > x_1x_3$}
+    \begin{jieda}
+        设$x_1+y_1 = 2m$，故可设$\left \{
+\begin{array}{lll}
+     x_1 = m - a, & y_1 = m + a, & a > 0\\
+     x_2 = m - b, & y_2 = m + b, & b > 0\\
+     x_3 = m - c, & y_3 = m + c, & c > 0
+\end{array}
+\right.$  \\
+由此，题目中的条件可以转化为 $m^2 - a^2 + m^2 - c^2 = 2(m^2-b^2)$，即$a^2+c^2 = 2b^2$，且有$m^2 - b^2 > 0$。下面推导$a+c<2b$
+\begin{enumerate}
+    \item 方法1：利用平方差公式 \\
+    原式移项后可以进一步可以转化为$(a+b)(a-b) + (c+b)(c-b) = 0$。\\
+    $(a+b)(a-b) + (c+b)(c-b) = 0$说明$a < b < c$或者$c < b < a$，不妨设$a < b < c$（另一种情况对称），此时必有$(a+b) < (c+b)$，因此有$|a-b| > |c-b|$，即$b-a > c-b$，故$a+c<2b$
+    \item 方法2：利用平均值不等式 \\
+    由平均值不等式有$\sqrt{\dfrac{a^2+c^2}{2}} > \dfrac{a+c}{2}$，根据$a^2+c^2 = 2b^2$，可以转化为$2b > a + c$
+\end{enumerate}
+    \end{jieda} 
+\end{enumerate}
+\clearpage
+解答题：
+\begin{enumerate}
+    \item 已知函数$f(x) = |x+m| + |x-2m|$，若$f(x) \geq 3$恒成立，求$m$的取值范围.
+    \begin{jieda}
+        问题可以转化为$f(x)$的最小值大于等于3恒成立，而 $f(x)$是一个平底锅函数，最小值可以通过三角不等式求得，即 $f(x) = |x+m| + |x-2m| \geq |3m|$，因此有$|3m| \geq 3$，得到$m \in (-\infty, -1] \cup [1, +\infty)$ \\
+        \ps 注意\textbf{问题转化}的逻辑；注意两个绝对值的式子相加减，想一下三角不等式
+    \end{jieda}
+    \begin{vspace_}
+        \vsp[6]
+    \end{vspace_}
+    \item 已知关于$x$的不等式$\abs{x-1}-\abs{x-2}<a$(*)
+    \begin{enumerate}
+        \item 若(*)解集为$\bR$, 求实数$a$的取值范围.
+        \item 若(*)有实数解, 求实数$a$的取值范围. 
+        \item 若(*)的解集为$\varnothing$, 求实数$a$的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}
+        \item $(1, +\infty)$
+        \item $(-1, +\infty)$
+        \item $(-\infty, -1]$
+    \end{enumerate}
+    \end{jieda}
+    \begin{vspace_}
+        \vsp[6]
+    \end{vspace_}
+    \item 已知$a, b$为常数，函数$f(x) = x^2 - bx + a$，当$a = 2b-1$时，若方程$f(x) = 0$在$(-2, 1)$上有解，求实数$b$的取值范围.
+    \begin{jieda}
+        $f(x) = x^2 - bx + 2b - 1$.
+        \begin{dingautolist}{172}
+            \item 分对称轴位置讨论 \\
+            $f(x)$的对称轴为$x = \frac{b}{2}$，$f(-2) = 4b+3$，$f(1) = b$，$\Delta = b^2 - 4(2b-1) = b^2 - 8b + 4$
+            \begin{enumerate}[1.]
+                \item 若$\frac{b}{2} \leq -2$，则$f(x)$在$(-2, 1)$单调增，故“方程$f(x) = 0$在$(-2, 1)$上有解”即$f(-2) < 0, f(1) > 0$，，此种情况解集为空集.
+                \item 若$\frac{b}{2} \geq 1$，则$f(x)$在$(-2, 1)$单调减，故“方程$f(x) = 0$在$(-2, 1)$上有解”即$f(-2) > 0, f(1) < 0$，此种情况解集为空集.
+                \item 若$\frac{b}{2} \in (-2, 1)$，则$f(x)$在$(-2, 1)$先减后增，故“方程$f(x) = 0$在$(-2, 1)$上有解”即$\Delta \geq 0$且有$f(-2) > 0$或$f(1) > 0$，此种情况解集为$(-\frac{3}{4}, 4-2\sqrt{3}]$
+            \end{enumerate}
+            综上，$b \in (-\frac{3}{4}, 4-2\sqrt{3}]$
+            \item 参变分离 \\
+            “方程$f(x) = 0$在$(-2, 1)$上有解”即“$b = \frac{1-x^2}{2-x}$在$(-2, 1)$上有解”，即“$b = \frac{3}{x-2} + (x-2) + 4$在$(-2, 1)$上有解” \\
+            因此$b$的取值范围即$y = \frac{3}{x-2} + (x-2) + 4$在$(-2, 1)$上的值域. \\
+            $y = \frac{3}{x-2} + (x-2) + 4$在$(-2, \sqrt{3}-2)$单调递增，在$[2-\sqrt{3}, 1)$单调递减，值域为$(-\frac{3}{4}, 4-2\sqrt{3}]$，故$b \in (-\frac{3}{4}, 4-2\sqrt{3}]$
+        \end{dingautolist}
+        \ps 有解问题可以采用分对称轴位置讨论或参变分离解决，\textbf{小题推荐参变分离，大题可以分类讨论写步骤，参变分离检验}。分对称轴位置讨论时，对于对称轴在目标区间内的情况要注意其充要条件。参变分离会把方程有解问题转化成函数求值域问题。
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[6]
+    \end{vspace_}
+    \clearpage
+    \item 已知函数$f(x) = x^2 + 2mx + 2m + 3$
+    \begin{enumerate}
+        \item 若$f(x)$至少有一个零点在区间$(0, 2)$内，求实数$m$的取值范围.
+        \item 若$f(x)$恰有一个零点在区间$(0, 2)$内，求实数$m$的取值范围.
+        \item 若$f(x)$恰有一个零点在区间$(0, +\infty)$内，求实数$m$的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+    \begin{enumerate}
+        \item 
+        \begin{dingautolist}{172}
+            \item 分对称轴位置讨论 \\
+            $f(x)$对称轴为$x = -m$，$f(0) = 2m+3$，$f(2) = 7+6m$，$\Delta = 4m^2 - 8m - 12$
+            \begin{enumerate}[1.]
+                \item 若$-m \leq 0$，则$f(x)$在$(0, 2)$单调增，故“$f(x)$在$(0, 2)$上有零点”即$f(0) < 0, f(2) > 0$，此种情况无解.
+                \item $-m \geq 2$，则$f(x)$在$(0, 2)$单调减，故“$f(x)$在$(0, 2)$上有零点”即$f(0) > 0, f(2) < 0$，此种情况无解.
+                \item $-m \in (0, 2)$，则$f(x)$在$(0, 2)$先减后增，“$f(x)$在$(0, 2)$上有零点”即$\Delta \geq 0$，且有$f(0) > 0$或$f(2) > 0$，此种情况解得$m \in (-\frac{3}{2}, -1]$
+            \end{enumerate}
+            综上，$m \in (-\frac{3}{2}, -1]$
+            \item 参变分离
+            $f(x)$至少有一个零点在区间$(0, 2)$内，即$f(x) = 0$在$(0, 2)$内有根，即方程$m = \frac{-3-x^2}{2x+2}$在$(0, 2)$内有根，即方程$m = \frac{1}{2} \cdot \frac{-3-(t-1)^2}{t}$在$t \in (1, 3)$内有根，即方程$m = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$t \in (1, 3)$内有根.\\
+            因此$m$的取值范围即$y = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$t \in (1, 3)$内的值域. \\
+            $y = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$(1, 2)$单调增，在$(2, 3)$单调减，因此值域为$(-\frac{3}{2}, -1]$，故$m \in (-\frac{3}{2}, -1]$
+        \end{dingautolist}
+        \item 
+        \begin{dingautolist}{172}
+            \item 通解法 \\
+            $f(x)$对称轴为$x = -m$，$f(0) = 2m+3$，$f(2) = 7+6m$，$\Delta = 4m^2 - 8m - 12$
+            \begin{enumerate}[1.]
+                \item 符合函数零点存在定理，此时有$f(0) \cdot f(2) < 0$，即$m \in (-\frac{3}{2}, -\frac{7}{6})$
+                \item 二次函数与$x$轴相切在区间内，此时有$\Delta = 0$，且$-m \in (0, 2)$即$m = -1$
+                \item 左端点函数值为0，此时有$m = -\frac{3}{2}$，此时$f(2) < 0$，$f(x)$在$(0, 2)$内先减后增，故不存在零点.
+                \item 右端点函数值为0，此时有$m = -\frac{7}{6}$，此时$f(0) > 0$，$f(x)$在$(0, 2)$内先减后增，存在唯一零点.
+            \end{enumerate}
+            综上，$m \in (-\frac{3}{2}, -\frac{7}{6}] \cup \{-1\}$
+            \item 参变分离
+            $f(x)$恰有一个零点在区间$(0, 2)$内，即方程$m = \frac{-3-x^2}{2x+2}$在$(0, 2)$内有一根，即方程$m = \frac{1}{2} \cdot \frac{-3-(t-1)^2}{t}$在$t \in (1, 3)$内有一根，即方程$m = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$t \in (1, 3)$内有一根，即函数$y = m$与函数$y = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$t \in (1, 3)$内只有一个交点.\\
+            $y = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$(1, 2)$单调增，在$(2, 3)$单调减，因此当$m \in (-\frac{3}{2}, -\frac{7}{6}] \cup \{-1\}$时满足要求.
+        \end{dingautolist}
+        \ps 二次函数在区间内恰有一个零点的通解法对应着\textbf{四种情况}：\begin{enumerate*}[1.]
+            \item 符合函数零点存在定理
+            \item $\Delta = 0$且对称轴在区间内
+            \item 左端点为函数的一个零点（应根据区间开闭情况单独检验）
+            \item 右端点为函数的一个零点（应根据区间开闭情况单独检验）
+        \end{enumerate*} \\
+        参变分离会将问题转化为动直线和定曲线只有唯一交点，要\textbf{注意相切的情况和端点情况}。\\
+        这种情况参变分离和通解法都没有明显优势.
+        \item 
+        \begin{dingautolist}{172}
+            \item 通解法 \\
+            $f(x)$对称轴为$x = -m$，$f(0) = 2m+3$，$\Delta = 4m^2 - 8m - 12$
+            \begin{enumerate}[1.]
+                \item “符合函数零点存在定理”，此时有$f(0) < 0$，即$m \in (-\infty, -\frac{3}{2})$
+                \item 二次函数与$x$轴相切在区间内，此时有$\Delta = 0$，且$-m \in (0, +\infty)$即$m = -1$
+                \item 左端点函数值为0，此时有$m = -\frac{3}{2}$，$f(x)$在$(0, +\infty)$内先减后增，存在唯一零点.
+            \end{enumerate}
+            综上，$m \in (-\infty, -\frac{3}{2}] \cup \{-1\}$
+            \item 参变分离
+            $f(x)$恰有一个零点在区间$(0, +\infty)$内，即方程$m = \frac{-3-x^2}{2x+2}$在$(0, +\infty)$内有一根，即方程$m = \frac{1}{2} \cdot \frac{-3-(t-1)^2}{t}$在$t \in (1, +\infty)$内有一根，即方程$m = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$t \in (1, +\infty)$内有一根，即函数$y = m$与函数$y = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$t \in (1, +\infty)$内只有一个交点.\\
+            $y = \frac{1}{2} \cdot [-(t+\frac{4}{t})+2]$在$(1, 2)$单调增，在$(2, +\infty)$单调减，因此当$m \in (-\infty, -\frac{3}{2}] \cup \{-1\}$时满足要求.
+        \end{dingautolist}
+        \ps 区间一侧为无穷的情况对于通解法可以根据开口方向将问题简化.
+    \end{enumerate}
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[12]
+    \end{vspace_}
+    \item 已知$g(x) = -x^2+2x$，若关于$x$的方程$g(x) = -mx-m$在$(0, 2)$上恰有两个不等实根，求$m$的取值范围.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 通解法 \\
+            “方程$g(x) = -mx-m$在$(0, 2)$上恰有两个不等实根”即“方程$-x^2+(2+m)x+m = 0$在$(0, 2)$上恰有两个不等实根”，设$h(x) = -x^2+(2+m)x+m$，对称轴为$x = \frac{2+m}{2}$，$\Delta = (2+m)^2 + 4m$，$h(0) = m$，$h(2) = 3m$ \\
+            $h(x) = 0$在$(0, 2)$上恰有两个不等实根的充要条件是$\left \{\begin{array}{l}
+                \Delta > 0  \\
+                \frac{2+m}{2} \in (0, 2) \\
+                h(0) < 0 \\
+                h(2) < 0
+            \end{array} \right.$，解得$m \in (2\sqrt{3}-4, 0)$
+            \item 参变分离 \\
+            “方程$g(x) = -mx-m$在$(0, 2)$上恰有两个不等实根”即“方程$m = \frac{x^2-2x}{x+1}$在$(0, 2)$上恰有两个不等实根”，即“函数$y = m$与函数$y = t + \frac{3}{t} - 4$在$(1, 3)$上恰有两个交点” \\
+            $y = t + \frac{3}{t} - 4$在$(1, \sqrt{3})$单调减，在$[\sqrt{3}, 3)$上单调增，因此当$m \in (2\sqrt{3}-4, 0)$时满足要求.
+        \end{dingautolist}
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[9]
+    \end{vspace_}
+    \item 已知一元二次函数$f(x) = ax^2 + bx + c (a > 0, c > 0)$的图像与$x$轴有两个不同的公共点，其中一个公共点的坐标为$(c, 0)$，且当$0 < x < c$时，恒有$f(x) > 0$。
+    \begin{enumerate}
+        \item 当$a = 1, c = \dfrac{1}{2}$时，求出不等式$f(x) < 0$的解
+        \item 求出不等式$f(x) < 0$的解（用$a, c$表示）
+        \item 若以二次函数的图象与坐标轴的三个交点为顶点的三角形面积为8，求$a$的取值范围
+        \item 若不等式$m^2-2km+1+b+ac \geq 0$对所有$k \in [-1, 1]$恒成立，求$m$的取值范围。
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 当$a = 1, c = \dfrac{1}{2}$时，$f(x) = x^2 + bx + \dfrac{1}{2}$，因为过$(\dfrac{1}{2}, 0)$，所以$b = -\dfrac{3}{2}$，因此有$f(1) = 0$，因此$f(x) < 0$的解集为$(\dfrac{1}{2}, 1)$
+            \item 根据韦达定理可知$f(\dfrac{1}{a}) = f(c) = 0$，因为当$0 < x < c$时，恒有$f(x) > 0$，所以必有$\dfrac{1}{a} > c$，因此$f(x) < 0$的解集为$(c, \dfrac{1}{a})$
+            \item 根据题意可知该三角形面积为$S = \dfrac{1}{2}(\dfrac{1}{a} - c) \times c = 8$，故$\dfrac{1}{a} = c + \dfrac{16}{c} \in [8, +\infty)$，因此$a \in (0, \dfrac{1}{8}]$
+            \item 根据$f(c) = 0$可知$1+b+ac = 0$，因此不等式变为$m^2-2km \geq 0$，设$g(k) = m^2-2km$，故应有$g(-1) \geq 0, g(1) \geq 0$，即$m^2-2m \geq 0, m^2 + 2m \geq 0$，解得$m \in (-\infty, -2] \cup [2, +\infty) \cup \{0\}$
+        \end{enumerate}
+    \end{jieda}    
+    \begin{vspace_}
+    \vsp[9]
+    \end{vspace_}
+    \item 已知正实数$x, y$满足$xy^2(x+y) = 4$，求$2x+y$的最小值.
+    \begin{jieda}
+        观察可知$xy^2(x+y) = 4$不能够将$x, y$分离，且$2x+y$为一次相加的形式。此时应考虑设$2x+y = k$，代入$xy^2(x+y) = 4$中求$k$的最小值即可。因为$xy^2(x+y) = 4$中$x$为二次，$y$为三次，因此考虑代换$x$，即$x = \dfrac{k-y}{2}$ \\
+        $\dfrac{k-y}{2}y^2(\dfrac{k+y}{2}) = 4$，即$(k-y)y^2(k+y) = 16$，进一步整理得$k^2y^2 - y^4 = 16$，参变分离得到$k^2 = \dfrac{16}{y^2} + y^2$，根据对勾函数性质知$k^2$最小值为8，故$k$最小值为$2\sqrt{2}$
+    \end{jieda}
+    \begin{vspace_}
+    \vsp[9]
+    \end{vspace_}
+\end{enumerate}

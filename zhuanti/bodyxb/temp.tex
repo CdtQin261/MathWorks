@@ -1,0 +1,96 @@
+\begin{table}[h]
+\centering
+
+\caption{两点分布、二项分布、超几何分布、几何分布的对比：一个盒子中有\(3\) 个红球、\(7\) 个白球}
+\begin{tabular}{>{\centering\arraybackslash}p{2.8cm}
+                >{\centering\arraybackslash}p{2cm}
+                >{\centering\arraybackslash}p{4cm}
+                >{\centering\arraybackslash}p{6cm}}
+\toprule
+\textbf{分布} & \textbf{是否放回} & \textbf{试验/摸球次数} & \textbf{随机变量 \(X\) 的含义} \\
+\midrule
+两点分布      & 不涉及 & 固定为 \(1\) 次      & 成功（红球）与否（\(X=1\) 或 \(0\)） \\
+\hline
+二项分布      & 有放回           & 固定（例如 \(n=5\) 次） & 成功（红球）的总次数 \\
+\hline
+超几何分布    & 不放回           & 固定（例如 \(n=5\) 次） & 成功（红球）的总次数 \\
+\hline
+几何分布      & 有放回           & 不固定（直到首次成功） & 首次成功时的摸球次数 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{两点分布、二项分布、超几何分布、几何分布的期望与方差}
+\begin{tabular}{>{\centering\arraybackslash}p{3cm}
+                >{\centering\arraybackslash}p{3.5cm}
+                >{\centering\arraybackslash}p{4cm}}
+\toprule
+\textbf{分布} & \textbf{均值 \(E(X)\)} & \textbf{方差 \(D(X)\)} \\
+\midrule
+两点分布 \(X \sim \text{Bernoulli}(p)\) 
+& \(p\) 
+& \(p(1-p)\) \\
+\hline
+二项分布 \(X \sim B(n, p)\) 
+& \(np\) 
+& \(np(1-p)\) \\
+\hline
+超几何分布 \(X \sim H(n, M, N)\) 
+& \(n \cdot \dfrac{M}{N}\) 
+& \(n \cdot \dfrac{M}{N} \cdot \left(1-\dfrac{M}{N}\right) \cdot \dfrac{N-n}{N-1}\) \\
+\hline
+几何分布 \(X \sim \text{Geometric}(p)\) 
+& \(\dfrac{1}{p}\) 
+& \(\dfrac{1-p}{p^{2}}\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{参数说明}
+\begin{itemize}
+  \item 两点分布（伯努利分布）：每次试验成功概率为 \(p\)，\(X=1\) 表示成功，\(X=0\) 表示失败。
+  \item 二项分布：\(n\) 次独立重复伯努利试验，每次成功概率 \(p\)。
+  \item 超几何分布：总体大小 \(N\)，其中成功个体数 \(M\)，不放回抽取 \(n\) 个，\(X\) 为成功个数。
+  \item 几何分布：每次试验成功概率 \(p\)，\(X\) 为首次成功时的总试验次数。
+\end{itemize}
+
+\clearpage
+
+设 $X \sim \text{Geometric}(p)$，表示首次成功所需的总试验次数，每次试验成功概率为 $p$，失败概率为 $q = 1-p$。分布列为：
+$
+P(X=k) = q^{k-1} p, \quad k=1,2,3,\dots
+$
+
+\subsection*{第一步：利用无记忆性建立递推}
+
+考虑第一次试验的结果：
+\begin{itemize}
+    \item 以概率 $p$：第一次成功，此时 $X=1$。
+    \item 以概率 $q$：第一次失败，此时局面“重置”，但已消耗 1 次试验，后续还需 $X'$ 次（$X'$ 与 $X$ 同分布且独立），故 $X = 1 + X'$。
+\end{itemize}
+
+\subsection*{第二步：推导 $E[X]$ }
+$
+E[X] = p\cdot1 + q\cdot(1+E[X]) \quad\Rightarrow\quad E[X]=\dfrac{1}{p}
+$
+
+\subsection*{第三步：推导 $E[X^2]$}
+$
+E[X^2] = p\cdot1^2 + q\cdot E[(1+X)^2] = p + q\bigl(1+2E[X]+E[X^2]\bigr)
+$
+
+代入 $E[X]=\dfrac{1}{p}$：
+$
+E[X^2] = 1 + \dfrac{2q}{p} + qE[X^2] \quad\Rightarrow\quad pE[X^2] = 1 + \dfrac{2q}{p}
+$
+
+$
+E[X^2] = \dfrac{1}{p} + \dfrac{2q}{p^2} = \dfrac{p+2q}{p^2} = \dfrac{2-p}{p^2}
+$
+
+\subsection*{第四步：计算方差}
+$
+D(X) = E[X^2] - (E[X])^2 = \dfrac{2-p}{p^2} - \dfrac{1}{p^2} = \dfrac{1-p}{p^2}
+$

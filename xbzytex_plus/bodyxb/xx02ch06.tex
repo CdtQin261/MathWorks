@@ -1,0 +1,1121 @@
+\chapter*{计数原理}
+\subsection*{乘法原理与加法原理}
+
+A 组：
+
+\begin{enumerate}
+    \item 将 3 封信投到 4 个邮筒中，一个邮筒最多投一封信，有\blkda{24}种不同的投法.
+    \begin{jieda}
+        $4\times3\times2 = 24$
+    \end{jieda}
+
+    \item 有 5 名高中毕业生报考三所重点大学自主招生考，每人限报一所大学，则不同的报名方法共有\blkda{243}种.
+    \begin{jieda}
+        $3^5 = 243$
+    \end{jieda}
+
+    \item "IMO" 是国际数学奥林匹克的缩写，若把这三个字母写成三种不同颜色，现有五种不同颜色的笔，则按上述要求能写出\blkda{60}种不同颜色搭配的 “IMO”.
+    \begin{jieda}
+        $5\times4\times3 = 60$
+    \end{jieda}
+
+    \item 某兴趣小组由 5 名高一学生、7 名高二学生和 8 名高三学生组成，选 1 名代表小组参加比赛，不同的选法有\blkda{20}种.
+    \begin{jieda}
+        $5+7+8=20$
+    \end{jieda}
+
+    \item 如图所示，电影院有六个门，其中 $A$ 、 $B$ 、 $C$ 、 $D$ 门只供退场时作出口，甲、 乙门作为入口也作为出口. 则进出电影院共有\blkda{12}种不同的路线.
+
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d6ud6cs91nqc73ekcln0_0_664_974_352_178_0.jpg}
+    \end{center}
+    \begin{jieda}
+        $2\times 6 = 12$
+    \end{jieda}
+
+\end{enumerate}
+
+B 组：
+
+\begin{enumerate}
+    \item 某市的电话号码有 8 个数字, 其中第一个数字不为 0 , 也不为 1 , 则这个城市不同的电话号码共有\blkda{$8 \times 10^7$}个.
+
+    \item 如图所示是一个棋盘，将一个白子和一个黑子放在棋盘线的交叉点上，但不能在同一条棋盘线上，共有\blkda{$72$}种不同的放法.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d6ud6cs91nqc73ekcln0_0_239_1482_274_200_0.jpg}
+    \end{center}
+    \begin{jieda}
+        $12\times6 = 72$
+    \end{jieda}
+
+    \item 若安排 7 位工作人员在 10 月 1 日到 7 日值班，每人值班一天，其中甲、乙二人都不能安排在 1 日和 2 日，则不同的安排方法共有\blkda{$2400$}种.
+    \begin{jieda}
+        $5\times4\times5\times4\times3\times2\times1 = 2400$
+    \end{jieda}
+
+    \item 有一角硬币三枚，贰元币 6 张，百元币 4 张，共可组成\blkda{139}种不同的币值. (一张不取的不计)
+    \begin{jieda}
+        易知不会因进位导致重复计算，一角硬币可构成4种币值，贰元币可构成7种币值，百元币可构成5种币值，故总共$4\times7\times5 = 140$，排除掉一张不取的情况，故有$139$种币值.
+    \end{jieda}
+
+    \item 给程序模块命名，需要用 3 个字符，其中首字符要求用字母 $A \sim  G$ 或 $U \sim  Z$ ， 后两个字符要求用数字 $1 \sim  9$ ，最多可以给\blkda{1053}个程序模块命名.
+    \begin{jieda}
+        首字符要求用字母 $A \sim  G$ 或 $U \sim  Z$ ,共 13 种可能，后两个字符要求用数字 $1 \sim 9$,所以后两个字符中每个各有 9 种可能，${13} \times  9 \times  9 = {1053}$ ,所以最多可以给1053个程序模块命名.
+    \end{jieda}
+
+    \item 现有 5 名同学去听同时进行的 4 个课外知识讲座, 每名同学可自由选择其中的一个讲座，不同选法的种数是\blkda{$4^5$}.
+
+    \item 三边长均为整数，且最大边长为 11 的三角形的个数是\blkda{36}.
+    \begin{jieda}
+        不妨设三边为$a, b, 11$，且$0 < a \leq b \leq 11$
+        \begin{dingautolist}{172}
+            \item $a = 1$，$b = 11$
+            \item $a = 2$，$b \in \{10, 11\}$
+            \item $a = 3$，$b \in \{9, 10, 11\}$
+            \item $a = 4$，$b \in \{8, 9, 10, 11\}$
+            \item $a = 5$，$b \in \{7, 8, 9, 10, 11\}$
+            \item $a = 6$，$b \in \{6, 7, 8, 9, 10, 11\}$
+            \item $a = 7$，$b \in \{7, 8, 9, 10, 11\}$
+            \item $a = 8$，$b \in \{8, 9, 10, 11\}$
+            \item $a = 9$，$b \in \{9, 10, 11\}$
+            \item $a = 10$，$b \in \{10, 11\}$
+            \item $a = 11$，$b = 11$
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 由 1、2、3、4、5 组成没有重复数字且 1、2 都不与 5 相邻的五位数的个数是\blkda{36}.
+    \begin{jieda}
+        $P_5^5 - P_4^4 \times P_2^2 - P_4^4 \times P_2^2 + P^3_3 \times 2 = 120-24\times2-24\times2+6\times2 = 36$
+    \end{jieda}
+
+    \item 某电脑用户计划使用不超过 500 元的资金购买单价分别为 60 元、70 元的单片软件和盒装磁盘. 根据需要, 软件至少买 3 片, 磁盘至少买 2 盒, 则不同的选购方式共有\blkda{7}种.
+    \begin{jieda}
+        最低消费$3 \times 60 + 2 \times 70 = 320$元，可用余额$180$元，设额外购买软件$m$片，磁盘$n$盒
+        \begin{dingautolist}{172}
+            \item $m = 0$，$n \in \{0, 1, 2\}$
+            \item $m = 1$，$n \in \{0, 1\}$
+            \item $m = 2$，$n \in \{0 \}$
+            \item $m = 3$，$n \in \{0 \}$
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 用 1, 2, 3, 4, 5, 6 组成六位数(没有重复数字)，要求任何相邻两个数字的奇偶性不同，且 1 和 2 相邻，则这样的六位数的个数是\blkda{40}.
+    \begin{jieda}
+        第一步：先将3,5排列有 $2$ 种
+        
+        第二步：再将4,6插空排列(满足奇偶性不同)有 $2 \times 2 = 4$ 种
+        
+        第三步：将1,2捆绑插空排列有 $5$ 种
+        
+        由分步计数原理可得 $2 \times 4 \times 5 = {40}$ 种
+    \end{jieda}
+
+    \item 某信号兵用红、黄、蓝三面旗从上到下挂在旗杆上表示信号，每次可以挂一面、二面或三面，并且不同的顺序表示不同的信号，则最多可组成不同的信号有种.
+    \begin{jieda}
+        $3+6+6 = 15$
+    \end{jieda}
+
+    \item 某台小型晚会由 6 个节目组成，演出顺序有如下要求:节目甲必须排在前两位、节目乙不能排在第一位，节目丙必须排在最后一位，该台晚会节目演出顺序的编排方案共有\blkda{42}种.
+    \begin{jieda}
+        问题简化为5个节目，节目甲必须排在前两位、节目乙不能排在第一位
+        \begin{dingautolist}{172}
+            \item 甲排第一位，则有$P_4^4 = 24$种方案
+            \item 甲排第二位，则有$P_3^3 \times 3 = 18$种方案
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 用 0 到 9 这 10 个数字，可以组成没有重复数字的三位偶数的个数为\blkda{328}.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 个位为$0$：$P_9^2 = 72$种
+            \item 个位非$0$偶数：$8 \times 8 = 64$种
+        \end{dingautolist}
+        $64 \times 4 + 72 = 328$.
+    \end{jieda}
+
+    \item 六个人从左至右排成一行，最左端只能排甲或乙，最右端不能排甲，则不同的排法共有\blkda{216}种.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 甲在最左：$P_5^5 = 120$种
+            \item 乙在最左：$4\times P_4^4 = 96$种
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 满足 $A \cup  B \cup  C = \{ 1,2,3\}$ 的集合 $A\text{ 、 }B\text{ 、 }C$ 共有多少组?
+    \begin{jieda}
+        问题转化成每个元素至少出现在其中一个集合中，那么对于一个元素有7种不同的可能，彼此之间不相关，故有$7^3 = 343$组.
+    \end{jieda}
+
+    \item 
+    \begin{enumerate}
+        \item 3 张卡片正反面分别写有2、3；4、5；7、8；将3张卡片排放在一起， 可以组成多少个不同的3位数？
+        \item 4 张卡片正反面分别写有0、1；2、、3；4、 5；7、8；将其中3张卡片排放在一起，可以组成多少个不同的 3 位偶数？
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 48
+            \item 84
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 对于正整数 2160，求:
+    \begin{enumerate}
+        \item 它有多少个不同的正偶约数?
+        \item 它的所有正约数的和是多少？
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 32
+            \item 7440
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 方程 ${ay} = {b}^{2}{x}^{2} + c$ 中的 $a,b,c \in  \{  - 3, - 2,0,1,2,3\}$ ,且 $a,b,c$ 互不相同,在所有这些方程所表示的曲线中, 表示不同的抛物线共有多少条?
+    \begin{jieda}
+        62
+    \end{jieda}
+    
+    \item 在 $1 \sim  {20}$ 共 20 个整数中取两个数相加:
+    \begin{enumerate}
+        \item 使其和为奇数的不同取法共有多少种？
+        \item 使其和为偶数的不同取法共有多少种? 
+        \item 其和大于 20 的不同取法共有多少种? 
+        \item 其和是 3 的倍数的不同取法共有多少种?
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 100
+            \item 90
+            \item 100
+            \item 64
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 由0,1,2,3,4,5这六个数字.
+    \begin{enumerate}
+        \item 能组成多少个无重复数字的四位数？
+        \item 能组成多少个无重复数字的四位偶数?
+        \item 能组成多少个无重复数字且被 25 整除的四位数?
+        \item 组成无重复数字的四位数中比 4032 大的数有多少个?
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 300
+            \item 156
+            \item 21
+            \item 112
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+C 组：
+\begin{enumerate}
+    \item 一对非负整数组成的有序数对 $\left( {x,y}\right)$ ,如果在做 $x$ 与 $y$ 的加法时不用进位,则称 $\left( {x,y}\right)$ 为 “中国梦数对”， $x + y$ 称为 “中国梦数对” $(x,y)$ 的和，则和为 2018 的 “中国梦数对”的个数为\blkda{54}个。
+    \begin{jieda}
+        设 $x = {1000}{a}_{1} + {100}{b}_{1} + {10}{c}_{1} + {d}_{1},y = {1000}{a}_{2} + {100}{b}_{2} + {10}{c}_{2} + {d}_{2}$，则 $x + y = {1000}\left( {{a}_{1} + {a}_{2}}\right)  + {100}\left( {{b}_{1} + {b}_{2}}\right)  + {10}\left( {{c}_{1} + {c}_{2}}\right)  + \left( {{d}_{1} + {d}_{2}}\right)$ 
+        
+        根据题意得 $\left\{  \begin{array}{l} {a}_{1} + {a}_{2} = 2, \\  {b}_{1} + {b}_{2} = 0, \\  {c}_{1} + {c}_{2} = 1, \\  {d}_{1} + {d}_{2} = 8, \end{array}\right.$ 其中 ${a}_{i},{b}_{i},{c}_{i},{d}_{i}\left( {i = 1,2}\right)$ 均为自然数，满足条件 ${a}_{1} + {a}_{2} = 2$ 的自然数对 $\left( {{a}_{1},{a}_{2}}\right)$ ,有 $\left( {0,2}\right) ,\left( {1,1}\right) ,\left( {2,0}\right)$ ,共 3 对;
+        满足条件 ${b}_{1} + {b}_{2} = 0$ 的自然数对 $\left( {{b}_{1},{b}_{2}}\right)$ 只有(0,0);
+        满足条件 ${c}_{1} + {c}_{2} = 1$ 的自然数对 $\left( {{c}_{1},{c}_{2}}\right)$ 有 $\left( {0,1}\right) ,\left( {1,0}\right)$ ,共 2 对;
+        满足条件 ${d}_{1} + {d}_{2} = 8$ 的自然数对 $\left( {{d}_{1},{d}_{2}}\right)$ 有 $\left( {0,8}\right) ,\left( {1,7}\right) ,\left( {2,6}\right) ,\left( {3,5}\right) ,\left( {4,4}\right) ,\left( {5,3}\right) ,\left( {6,2}\right)$ ,
+        $\left( {7,1}\right) ,\left( {8,0}\right)$ ,共 9 对.
+        由分步乘法计数原理可知,和为 2018 的“中国梦数对”的个数为 $3 \times  1 \times  2 \times  9 = {54}$ .
+    \end{jieda}
+
+    \item 设集合 $I = \{ 1,2,3,4,5\}$ ，选择集合 $I$ 的两个非空子集 $A$ 和 $B$ ，要使 $B$ 中最小的数大于 $A$ 中最大的数，则不同的选择方法共有\blkda{49}种.
+    \begin{jieda}
+        依 $A$ 中的最大数进行分类:
+        \begin{dingautolist}{172}
+            \item 若 $A$ 中的最大数为 1,则 $A$ 有 1 种,则 $B$ 是集合 $\{ 2,3,4,5\}$ 的非空子集,有 ${2}^{4} - 1 = {15}$ 种，所以有 $1 \times  {15} = {15}$ (种);
+            \item 若 $A$ 中的最大数为 2,则 $A$ 有 2 种,则 $B$ 是集合 $\{ 3,4,5\}$ 的非空子集,有 ${2}^{3} - 1 = 7$ 种，所以有 $2 \times  7 = {14}$ 种;
+            \item 若 $A$ 中的最大数为 3 ,则 $A$ 有 4 种,则 $B$ 是集合 $\{ 4,5\}$ 的非空子集,有 ${2}^{2} - 1 = 3$ 种，所以有 $4 \times  3 = {12}$ 种;
+            \item 若 $A$ 中的最大数为 4 ,则 $A$ 有 8 种,则 $B$ 是集合 $\{ 5\}$ 的非空子集,有 1 种,所以有 $8 \times  1 = 8$种.
+        \end{dingautolist}
+        所以可得 ${15} + {14} + {12} + 8 = {49}$ ,故不同的选择方法共有 49 种.
+    \end{jieda}
+
+    \item 甲、乙、丙、丁、戊五位同学课间玩 “击鼓传花” 游戏.第 1 次由甲传给乙、 丙、丁、戊四人中的任意一人，第 2 次由持花者传给另外四人中的任意一人，往后依此类推，经过 4 次传花，花仍回到甲手中，则传法总数为\blkda{52}.
+    \begin{jieda}
+        5 人传花,第 1 次由甲传给乙、丙、丁、戊四人中的任意一人,第 2 次由持花者传给另外四人中的任意一人,经过 4 次传花,花仍回到甲手
+        
+        $\therefore$ 第 1 次传花有 4 种方法,第 3 次传花分成“花在甲手中”和“花不在甲手中”两类方法，第 4 次传花只能传到甲手中.
+        
+        $\therefore$ 当第 2 次传花后花在甲手中时,则第 3 次传花,花可能在丙或乙或丁或戊手中,共 4 种方法;
+        
+        当第 2 次传花后花不在甲手中时,有 3 种方法,则第 3 次传花有 3 种方法.
+        
+        $\therefore$ 经过 4 次传花,花仍回到甲的传法总数为: $4 \times  \left( {1 \times  4 + 3 \times  3}\right)  = {52}$，故花仍回到甲的传法总数为 52 种
+    \end{jieda}
+\end{enumerate}
+
+\clearpage
+\subsection*{排列组合的定义与计算}
+\begin{enumerate}
+    \item 从 $n$ 不同元素中选 $m\left( {2 < m \leq  n}\right)$ 个元素作排列，排列总数为\blkda{$P_n^m$}，其中某个元素只能排在某个位置上的排列数为\blkda{$P_{n-1}^{m-1}$}.
+
+    \item 化简: $\dfrac{n\left\lbrack  {n! + \left( {n - 1}\right) !}\right\rbrack  }{\left( {n + 1}\right) ! - n!} =$ \blkda{$\dfrac{n+1}{n}$}.
+    \begin{jieda}
+        $\dfrac{n\left\lbrack  {n! + \left( {n - 1}\right) !}\right\rbrack  }{\left( {n + 1}\right) ! - n!} = \dfrac{n\left\lbrack  {n! + \left( {n - 1}\right) !}\right\rbrack  }{n \cdot n!} = \dfrac{n! + \left( {n - 1}\right) !}{n!} = 1+\dfrac{1}{n} = \dfrac{n+1}{n}$
+    \end{jieda}
+
+    \item 若 ${C}_{17}^{2x} + {C}_{17}^{{2x} - 1} = {C}_{18}^{6}$ ，则 $x =$ \blkda{$3$或$6$}.
+    \begin{jieda}
+        ${C}_{17}^{2x} + {C}_{17}^{{2x} - 1} = {C}_{18}^{2x} = {C}_{18}^{6}$，故$x = 3$或$6$.
+    \end{jieda}
+
+    \item 若 ${C}_{n}^{3} = {12}{P}_{n}^{1}$ ，则 $n$ 的值为\blkda{$10$}.
+    \begin{jieda}
+        ${C}_{n}^{3} = {12}n \Longleftrightarrow \dfrac{n(n-1)(n-2)}{6} = 12n \Longleftrightarrow (n-1)(n-2) = 72$，故$n = 10$
+    \end{jieda}
+
+    \item ${C}_{3n}^{{38} - n} + {C}_{{21} + n}^{3n} =$ \blkda{466}.
+    \begin{jieda}
+        $\left\{\begin{array}{l}
+             0 \leq 38-n \leq 3n \\
+             0 \leq 3n \leq 21+n
+        \end{array}\right.$，故$n = 10$，${C}_{3n}^{{38} - n} + {C}_{{21} + n}^{3n} = C^{28}_{30}+C^{30}_{31} = C^2_{30}+C^1_{31}=466$.
+    \end{jieda}
+
+    \item 关于 $x$ 的方程 ${C}_{34}^{{x}^{2} - {2x}} = {C}_{34}^{{5x} - 6}$ 的解集是\blkda{$\{5,6\}$}.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item ${x}^{2} - {2x} = {5x} - 6$，$x = 1$或$6$
+            \item ${x}^{2} - {2x} + {5x} - 6 = 34$，$x = 5$或$-8$
+        \end{dingautolist}
+        经检验$5, 6$满足要求.
+    \end{jieda}
+
+    \item 若 ${C}_{{2n} + 3}^{{2n} + 1} = {C}_{{2n} + 1}^{{2n} - 1} + {C}_{n + 3}^{2} + {C}_{n}^{2}$ ,则 $n =$ \blkda{2}.
+    \begin{jieda}
+        ${C}_{{2n} + 3}^{{2n} + 1} = {C}_{{2n} + 3}^{2} = \dfrac{(2n+3)(2n+2)}{2} = (2n+3)(n+1)$
+
+        ${C}_{{2n} + 1}^{{2n} - 1} = {C}_{{2n} + 1}^{2} = \dfrac{(2n+1)(2n)}{2} = n(2n+1)$
+
+        故$(2n+3)(n+1) = n(2n+1) + \dfrac{(n+2)(n+3)}{2} + \dfrac{n(n-1)}{2}$，即$4n+3 = n^2+2n+3$，解得$n = 2$
+    \end{jieda}
+
+    \item $1! + 2! + 3! + \cdots  + {1000}!$ 的个位数字是\blkda{3}.
+    \begin{jieda}
+        当$n \geq 5$时$n!$的个位数字为0
+    \end{jieda}
+
+    \item 已知从装有 $n + 1$ 个球 (其中 $n$ 个白球,1个黑球) 的口袋中取出 $m$ 个球 $\left( {0 < m < n,n,m \in  N}\right)$ ，共有 ${C}_{n + 1}^{m}$ 种取法. 在这 ${C}_{n + 1}^{m}$ 种取法中，可以分成两类:一类是取出的 $m$ 个球全部为白球,另一类是取出一个黑球和 $\left( {m - 1}\right)$ 个白球,共有 ${C}_{1}^{0}{C}_{n}^{m} + {C}_{1}^{1}{C}_{n}^{m - 1}$ 种取法,即有等式 ${C}_{n}^{m} + {C}_{n}^{m - 1} = {C}_{n + 1}^{m}$ 成立. 试根据上述,化简下列式子: ${C}_{n}^{m} + {C}_{k}^{1}{C}_{n}^{m - 1} + {C}_{k}^{2}{C}_{n}^{m - 2} + \ldots  + {C}_{k}^{k}{C}_{n}^{m - k} =$ \blkda{$C_{n+k}^m$}. $\left( {1 \leq  k < m \leq  n,k,m,n \in  N}\right)$ 
+    
+    \item ${C}_{10}^{r + 1} + {C}_{10}^{{17} - r}$ 可能的值的个数为\dotfill{(\kh{B})}
+    \xx{1}{2}{3}{不确定}
+    
+    \item 设函数 $f\left( x\right)  = {C}_{20}^{{10} - x}$ ,集合 $A = \{  - {10}, - 9, - 8,\cdots ,9,{10}\}$ ,判断 $f\left( x\right)$ 在 $A$ 上的奇偶性为\dotfill{(\kh{A})}
+    \xx{偶函数}{奇函数}{非奇非偶函数}{既奇又偶函数}
+    
+    \item 设正整数 $m < {45}$ ,则 $\left( {{45} - m}\right) \left( {{46} - m}\right) \left( {{47} - m}\right) \cdots \left( {{60} - m}\right)$ 用排列数符号表示为\dotfill{(\kh{B})}
+    \xx{${P}_{{60} - m}^{15}$}{${P}_{{60} - m}^{16}$}{${P}_{{60} - m}^{{45} - m}$}{${P}_{{45} - m}^{16}$}
+    
+    \item \begin{enumerate}
+        \item 解方程 ${{C}}_{12}^{{x}^{2} - {2x}} = {{C}}_{12}^{{3x} + 6}$
+        \item 解不等式 ${C}_{m}^{m - 4} > {C}_{m - 1}^{5} + {C}_{m - 1}^{6}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $x = -1, 2$
+            \item $m = 7,8,9$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item \begin{enumerate}
+        \item 计算: ${C}_{3}^{3} + {C}_{4}^{3} + {C}_{5}^{3} + \cdots  + {C}_{98}^{3} + {C}_{99}^{3}$
+        \item 证明: ${C}_{m}^{m} + {C}_{m + 1}^{m} + {C}_{m + 2}^{m} + \cdots  + {C}_{m + k - 2}^{m} + {C}_{m + k - 1}^{m} = {C}_{m + k}^{m + 1}$ .
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item ${C}_{3}^{3} + {C}_{4}^{3} + {C}_{5}^{3} + \cdots  + {C}_{98}^{3} + {C}_{99}^{3} = {C}_{4}^{4} + {C}_{4}^{3} + {C}_{5}^{3} + \cdots  + {C}_{98}^{3} + {C}_{99}^{3} = {C}_{5}^{4} + {C}_{5}^{3} + \cdots  + {C}_{98}^{3} + {C}_{99}^{3} = \cdots = {C}_{100}^{4} = 3921225$
+            \item ${C}_{m}^{m} + {C}_{m + 1}^{m} + {C}_{m + 2}^{m} + \cdots  + {C}_{m + k - 2}^{m} + {C}_{m + k - 1}^{m} = {C}_{m+1}^{m+1} + {C}_{m + 1}^{m} + {C}_{m + 2}^{m} + \cdots  + {C}_{m + k - 2}^{m} + {C}_{m + k - 1}^{m} = {C}_{m + 2}^{m+1} + {C}_{m + 2}^{m} + \cdots  + {C}_{m + k - 2}^{m} + {C}_{m + k - 1}^{m} = \cdots = {C}_{m + k}^{m + 1}$
+        \end{enumerate}
+    \end{jieda}
+    \item \begin{enumerate}
+        \item 解关于 $x$ 的方程: ${\left( {C}_{4}^{x}\right) }^{-1} = {\left( {C}_{5}^{x}\right) }^{-1} + 3 \cdot  {\left( {C}_{6}^{x}\right) }^{-1}$
+        \item 求证: $\mathop{\sum }\limits_{{k = 1}}^{n}k\left( {k + 1}\right) \left( {k + 2}\right)  = \dfrac{n \cdot  \left( {n + 1}\right)  \cdot  \left( {n + 2}\right)  \cdot  \left( {n + 3}\right) }{4}$ .
+    \end{enumerate} 
+    \begin{jieda}
+        \begin{enumerate}
+            \item $x = 3$
+            \item $\mathop{\sum }\limits_{{k = 1}}^{n}k\left( {k + 1}\right) \left( {k + 2}\right)  = 6\mathop{\sum }\limits_{{k = 1}}^{n}C_{k+2}^3 = 6C_{n+3}^4 = 6 \times \dfrac{n(n+1)(n+2)}{P_4^4} = \dfrac{n \cdot  \left( {n + 1}\right)  \cdot  \left( {n + 2}\right)  \cdot  \left( {n + 3}\right) }{4}$
+        \end{enumerate}
+    \end{jieda}
+    \item \begin{enumerate}
+        \item 解方程: ${P}_{{2n} + 1}^{4} = {140}{P}_{n}^{3}$
+        \item 解不等式: ${P}_{9}^{x} > 6{P}_{9}^{x - 2}$
+        \item 求证: ${P}_{n + 1}^{m} = {P}_{n}^{m} + m{P}_{n}^{m - 1}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $n = 3$
+            \item $\{2,3,4,5,6,7\}$
+            \item $P_{n}^{m} + mP_{n}^{m - 1} = \dfrac{n!}{\left( {n - m}\right) !} + \dfrac{m \times  n!}{\left( {n - m + 1}\right) !} = \dfrac{\left( {n - m + 1}\right)  \times  n! + m \times  n!}{\left( {n - m + 1}\right) !} = \dfrac{\left( {n + 1}\right) !}{\left( {n - m + 1}\right) !} = P_{n + 1}^{m}$.
+        \end{enumerate}
+    \end{jieda}
+    
+\end{enumerate}
+
+
+\clearpage
+\subsection*{排列组合应用（1）}
+
+A组：
+\begin{enumerate}
+
+\item 若将 $5$ 名男生和 $3$ 名女生排成一排，则 $3$ 名女生相邻的不同排法种数为\blkda{$4320$}.
+\begin{jieda}
+    捆绑法
+\end{jieda}
+
+\item 某班上午要上语文、数学、体育和外语四门课，体育老师因故不能上第一节和第二节，则不同的排课方法有\blkda{$12$}种.
+\begin{jieda}
+    特殊元素优先法
+\end{jieda}
+
+
+\item $8$ 名同学排成 $2$ 排照相，每排 $4$ 人，共有\blkda{$40320$}种排法.
+\begin{jieda}
+    $8!$或$40320$.
+\end{jieda}
+
+\item 某班要安排毕业晚会的 $4$ 个音乐节目, $2$ 个舞蹈节目和 $1$ 个曲艺节目的演出顺序，要求两个舞蹈节目不连排，则不同排法的种数是\blkda{$3600$}.
+\begin{jieda}
+    不相邻问题插空法
+\end{jieda}
+
+\item 由 $1$、$2$、$3$、$5$ 四个数组成的无重复数字的四位数中，能被 $5$ 整除的有\blkda{$6$}个.
+\begin{jieda}
+    特殊元素优先法
+\end{jieda}
+
+\item 甲、乙、丙 $3$ 位同学选修课程，从 $4$ 门课程中，甲选修 $2$ 门，乙、丙各选修 $3$ 门，则不同的选修方案共有\blkda{$96$}种.
+\begin{jieda}
+    乘法原理
+\end{jieda}
+    
+\end{enumerate}
+
+
+B组：
+\begin{enumerate}
+\item 安排 $5$ 名歌手的演出顺序时，要求某名歌手不第一个出场，另一名歌手不最后一个出场，不同排法的总数是\blkda{$78$}.
+\begin{jieda}
+    特殊元素优先法
+\end{jieda}
+
+\item 记者要为 $5$ 名志愿者和他们帮助的 $2$ 位老人拍照，要求排成一排，$2$ 位老人相邻但不排在两端，不同的排法共有\blkda{$960$}种.
+
+\item 要排有 $5$ 个独唱节目和 $3$ 个舞蹈节目的节目单，如果舞蹈节目不在排头，且任何两个舞蹈节目不相邻，则不同的排法总数为\blkda{$7200$}.
+
+\item 从 $5$ 名男医生、$4$ 名女医生中选 $3$ 名医生组成一个医疗小分队，要求其中男、女医生都有，则不同的组队方案共有\blkda{$70$}种.
+
+\item 甲组有 $5$ 名男同学、$3$ 名女同学；乙组有 $6$ 名男同学、$2$ 名女同学，若从甲、乙两组中各选出 $2$ 名同学，则选出的 $4$ 人中恰有 $1$ 名女同学的不同选法共有\blkda{$345$}种.
+
+\item 今有 $2$ 个红球、$3$ 个黄球、$4$ 个白球，同色球不加以区分，将这 $9$ 个球排成一列有\blkda{$1260$}种不同的方法.
+
+\item 由 $1$、$2$、$3$、$4$、$5$、$6$ 组成没有重复数字且 $1$、$3$ 都不与 $5$ 相邻的六位偶数个数是\blkda{$108$}.
+
+\item 某班级要从 $4$ 名男生、$2$ 名女生中选派 $4$ 人参加某次社区服务，如果要求至少有 $1$ 名女生，那么不同的选派方案种数为\blkda{$14$}.
+
+
+\item 某人计划到山东旅游，打算用连续 $5$ 天时间游玩泰山、崂山、蓬莱阁 $3$ 个景点，其中泰山、崂山 $2$ 个景点分别安排连续的两天游玩，则不同的日程安排种数为\blkda{$6$}.
+
+\item 由 $1$、$4$、$5$ 和 $x$ 四个不同数字组成的数字不重复的所有四位数的数字之和为 $288$，则数字 $x=$\blkda{$2$}.
+
+\item 有 $5$ 名学生排成一排，其中甲不在排头，乙不在排尾的排法数有\blkda{$78$}种.
+
+\item 有 $3$ 张卡片的正反面分别写着数字 $1$ 和 $2$， $3$ 和 $4$， $5$ 和 $6$，若将 $3$ 张卡片并列组成一个三位数，可得到\blkda{$48$}个不同的三位数($6$ 不能作 $9$ 用).
+
+\item 由 $1$、$2$、$3$、$4$、$5$ 组成没有重复数字且 $1$、$2$ 都不与 $5$ 相邻的五位数的个数是\blkda{$36$}.
+
+
+\item 计划展出 $10$ 幅不同的画，其中 $1$ 幅水彩画、$4$ 幅油画、$5$ 幅国画，排成一行陈列，要求同一品种的画必须连在一起，并且水彩画不放在两端，那么不同的陈列方式有\dotfill{(\kh{D})}
+\xx{$P_{4}^{4}P_{5}^{5}$ 种}{$P_{3}^{3}P_{4}^{4}P_{5}^{5}$ 种}{$P_{3}^{1}P_{4}^{4}P_{5}^{5}$ 种}{$P_{2}^{2}P_{4}^{4}P_{5}^{5}$ 种}
+
+\item 书架上原来摆放着 $6$ 本书，现在要插入 $3$ 本不同的书，则不同的插法为\dotfill{(\kh{C})}
+\xx{$P_{7}^{3}$}{$P_{8}^{3}$}{$P_{9}^{3}$}{$2P_{3}^{3}$}
+
+
+\item 有 $4$ 名男生、$5$ 名女生，全体排成一行，问下列情形中各有多少种不同的排法？
+\begin{enumerate}
+\item 甲不在中间也不在两端;
+\item 甲、乙两人必须排在两端;
+\item 男、女生分别排在一起;
+\item 男女相间隔;
+\item 甲在乙的右边，甲、乙可以不相邻;
+\item 甲、乙、丙三人从左到右顺序保持一定顺序.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 241920
+        \item 10080
+        \item 5760
+        \item 2880
+        \item 181440
+        \item 60480
+    \end{enumerate}
+\end{jieda}
+
+\item 由 $1$ 到 $9$ 这九个数字中每次选出 $5$ 个组成无重复数字的 $5$ 位数.
+\begin{enumerate}
+\item 其中奇数位置上只能是奇数，问有多少个这样的 $5$ 位数？
+\item 其中奇数只能在奇数位置上，又有多少个这样的 $5$ 位数？
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 1800
+        \item 2520
+    \end{enumerate}
+\end{jieda}
+
+\item 某次文艺晚会上计划演出 $7$ 个节目，其中 $2$ 个歌曲节目，$3$ 个舞蹈节目，$2$ 个小品节目，需要制作节目单：
+\begin{enumerate}
+\item 唱歌节目排在两头，有多少种排法？
+\item 唱歌节目相邻，舞蹈节目相邻，两个小品节目不相邻，有多少种排法？
+\item 三个舞蹈节目出场顺序固定，有多少种排法？
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item 240
+        \item 144
+        \item 840
+    \end{enumerate}
+\end{jieda}
+\end{enumerate}
+
+
+C组：
+\begin{enumerate}
+\item 从集合 $\{1,2,3,\cdots,2009\}$ 中任取三个不同的数构成等差数列，有多少个不同数列？
+\begin{jieda}
+    2016032
+\end{jieda}
+
+\item 如图 (1)，由两个半径相等的圆柱体呈直角相交而得到的公共部分对应的几何体称为“牟合方盖”（如图 (2)），牟合方盖的表面可以看成四个曲面拼接成的.将一个牟合方盖的四个曲面编号为 $1,2,3,4$，然后每个曲面染一种颜色，相邻（有公共图边）的两面颜色不能相同，如果只有 $n$ 种颜色可供使用，则不同的染色方法种数\dotfill{(\kh{D})}
+\begin{center}
+    \includegraphics[width=0.25\linewidth]{bodyxb//src/pailiezuheyingyong1.jpeg}
+\end{center}
+
+\xx{若 $n=3$，不同的染色方法种数为 $6$}{若 $n=3$，不同的染色方法种数为 $12$}{若 $n=4$，不同的染色方法种数为 $60$}{若 $n=4$，不同的染色方法种数为 $84$}
+
+    
+\end{enumerate}
+\clearpage
+
+
+\subsection*{排列组合应用（2）}
+
+
+\begin{enumerate}
+
+\item 若安排7位工作人员在10月1日到7日值班,每人值班一天,其中甲、乙二人都不能安排在1日和2日,则不同的安排方法共有\blkda{2400}种.
+
+\item 4个同学各拿一张贺卡,先集中起来,然后每人从中拿出一张别人送的贺卡,则四张贺卡的不同分配方式共有\blkda{9}种.
+\begin{jieda}
+    设$D_n$为错排问题的方案数，下面推导其通项公式.
+
+    设第一个人甲取到了非自己的贺卡（$n-1$个可能)，对应的人是乙，那么此时乙有两种不同的选择
+    \begin{dingautolist}{172}
+        \item 乙选了甲的贺卡，那么将两个人摘除，此时问题缩小到了$n-2$个人的错排问题，
+        \item 乙没选甲的贺卡，那么此时若将甲的贺卡视作是乙的贺卡，把甲摘除，问题缩小到了$n-1$个人的错排问题（将乙看作第一个人）
+    \end{dingautolist}
+    因此可以得到递推公式$D_n=(n-1)(D_{n-1}+D_{n-2}),D_1=0,D_2=1$
+
+    故$D_3=3$,$D_4=9$.
+\end{jieda}
+
+\item 甲、乙、丙3人站到共有7级的台阶上,若每级台阶最多站2人,同一级台阶上的人不区分站的位置,则不同的站法种数是\blkda{336}.
+
+\item 5名乒乓球队员中,有2名老队员和3名新队员,现从中选出3名队员排成1、2、3号参加团体比赛,则入选的3名队员中至少有一名老队员,且1、2号中至少有1名新队员的排法有\blkda{48}种.
+\begin{jieda}
+    \begin{dingautolist}{172}
+        \item 两新一老：$[C_3^2C_2^1] \times [P_3^3] = 36$
+        \item 两老一新：$[C_3^1C_2^2] \times [C_2^1P_2^2] = 12$
+    \end{dingautolist}
+\end{jieda}
+
+\item 2位男生和3位女生共5位同学站成一排,若男生甲不站两端,3位女生中有且只有2位女生相邻,则不同排法的种数是\blkda{48}种.
+\begin{jieda}
+    \begin{dingautolist}{172}
+        \item 将女生分成$2+1$两组：$C_3^1$种方案
+        \item 2个女生内部顺序：$P_2^2$
+        \item 两个男生排好：$P_2^2$
+        \item 两组女生插空
+        
+        要满足甲不在两端，甲旁边端侧的空必须占位，所以考虑该位置从两组女生中选一组，$C_2^1$，剩下一组女生从余下两个空位中选择一个$C_2^1$
+    \end{dingautolist}
+    $C_3^1 \times P_2^2 \times P_2^2 \times C_2^1 \times C_2^1 = 48$
+\end{jieda}
+
+\item 将甲、乙、丙、丁四名学生分到三个不同的班,每个班至少分到一名学生,且甲、乙两名学生不能分到同一个班,则不同分法的种数为\blkda{30}种.
+\begin{jieda}
+    先分组，共$\dfrac{C_4^2C_2^1C_1^1}{P_2^2} - 1 = 5$种分组方案
+
+    再分配，共$P_3^3 = 6$种分配方案
+
+    $5 \times 6 = 30$.
+\end{jieda}
+
+\item 一铁路线上原有$n$个车站,为适应客运需要,新增加了$m$个车站($m>1$),客运车票因此增加了62种,问现有\blkda{17}个车站?(来回的车票不同)
+
+\item 从10名大学生毕业生中选3个人担任村长助理,则甲、乙至少有1人入选,而丙没有入选的不同选法的种数为\blkda{49}.
+
+\item 设坐标平面内一个质点从原点出发,沿$x$轴跳动,每次向正方向或负方向跳1个单位,经过5次跳动质点落在点$(3,0)$(允许重复过此点)处,则质点不同的运动方法共有\blkda{5}种.
+\begin{jieda}
+    5次跳动中4次向右，1次向左.
+\end{jieda}
+
+\item 某校从8名教师中选派4名教师同时去4个边远地区支教(每地1人),其中甲和乙不同去,甲和丙只能同去或同不去,则不同的选派方案共有\blkda{600}种.
+
+\item 四面体的一个顶点为$A$,从其他顶点与棱的中点中取3个点,使它们和点$A$在同一平面上,不同的取法有\blkda{33}种.
+\begin{jieda}
+    \begin{dingautolist}{172}
+        \item 当所取的3点在同一个侧面上时，每个侧面上有 ${{C}}_{5}^{3}$ 种取法，所以共有 $3{{C}}_{5}^{3} = {30}$ 种不同的取法
+        \item 当所取的3点不在同一个侧面上时，含顶点 $A$ 的三条棱中,每条棱上有三个点,它们分别与所对的棱的中点共面，共有3种取法
+    \end{dingautolist}
+    综上,共有 ${30} + 3 = {33}$ 种不同的取法
+    \begin{center}
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/pailiezuhe2_11.png}
+    \end{center}
+\end{jieda}
+
+\item 甲、乙等6人围成一圈,且甲、乙两人相邻,则不同的排法共有\blkda{48}种.
+\begin{jieda}
+    $P_2^2 \times \dfrac{P_5^5}{5} = 48$
+\end{jieda}
+
+\item 一所医院派出5名医生到3所乡镇卫生院指导,要求每所卫生院院至少派遣一名医生，每个医生只去一个卫生院，则不同的派出方法有\blkda{150}种.
+\begin{jieda}
+    先分组，共$\dfrac{C_5^3C_2^1C_1^1}{P_2^2} + \dfrac{C_5^2C_3^2C_1^1}{P_2^2} = 25$种分组方案
+
+    再分配，共$P_3^3 = 6$种分配方案
+
+    $25 \times 6 = 150$.
+\end{jieda}
+
+\item 运动会组委会要从小张、小赵、小李、小罗、小王五名志愿者中选派四人分别从事翻译、导游、礼仪、司机四项不同工作,若其中小张和小赵只能从事前两项工作,其余三人均能从事这四项工作,则不同的选派方案共有\blkda{36}种.
+
+\item 如图,一个地区分为5个行政区域,现给地图着色,要求相邻区域不得使用同一颜色,现有4种颜色可供选择,则不同的着色方法共有\blkda{72}种.
+\begin{center}
+    \includegraphics[width=0.25\linewidth]{bodyxb//src/15351513.jpeg}
+\end{center}
+\begin{jieda}
+    先涂$3$号，有4种，再涂2号，有3种，再涂1号，有2种，4号有两种颜色选择，需分类讨论
+
+    \begin{dingautolist}{172}
+        \item 4和2相同颜色，5有2种选择
+        \item 4和2不同颜色，5有1种选择
+    \end{dingautolist}
+    $4 \times 3 \times 2 \times(1+2) = 72$
+\end{jieda}
+
+\item 停车场上有一排7个停车位,现有4辆汽车需要停放,若要使3个空位连在一起,则停放方法数为\dotfill{(\kh{C})}
+\xx{$P_{7}^{4}$}{$P_7^3$}{$P_{5}^{5}$}{$P_{5}^{5}P_{3}^{3}$}
+
+\item 某学校图书室内,有10位同学围着一张圆桌坐成一圈,共有多少种不同的坐法\dotfill{(\kh{B})}
+\xx{$P_{10}^{10}$}{$P_{9}^{9}$}{$\dfrac{1}{2}P_{10}^{10}$}{$\dfrac{1}{2}P_{9}^{9}$}
+
+\item 有4名男生,5名女生.
+\begin{enumerate}
+    \item 从中选出5名代表,有多少种选法?
+    \item 从中选出5名代表,男生2名,女生3名且某女生必须在内有多少种选法?
+    \item 从中选出5名代表,男生不少于2名,有多少种选法?
+    \item 分成三个小组,每组依次有4、3、2人有多少种分组方法?
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item ${C}_{9}^{5} = {126}$
+        \item $ {C}_{4}^{2} \times  1 \times  {C}_{4}^{2} = {36}$
+        \item $\left( {{C}_{4}^{2} \times  {C}_{5}^{3}}\right)  + \left( {{C}_{4}^{3} \times  {C}_{5}^{2}}\right)  + \left( {{C}_{4}^{4} \times  {C}_{5}^{1}}\right)  = {105}$
+        \item ${C}_{9}^{4} \times  {C}_{5}^{3} \times  {C}_{2}^{2} = {1260}$
+    \end{enumerate}
+\end{jieda}
+
+\item 四个小球放入编号为1、2、3、4四个盒子中,依下列条件各有多少种放法.
+\begin{enumerate}
+    \item 四个小球不同,每个盒子各放一个;
+    \item 四个小球相同,每个盒子各放一个;
+    \item 四个小球不同,四个盒子恰有一个空着;
+    \item 四个小球相同,恰有一个盒子空着.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $P_4^4 = 24$
+        \item $C_4^4 = 1$
+        \item 先选出一个盒子空着$C_4^1 = 4$
+
+        再对小球分组$\dfrac{C_4^2C_2^2C_1^1}{P_2^2} = 6$
+
+        再进行分配$P_3^3 = 4$
+
+        $4 \times 6 \times 4 = 144$
+        \item 先选出一个盒子空着$C_4^1 = 4$
+
+        再对小球分组，只有$(2,1,1)$一种
+
+        再进行分配，相当于从3个盒子中选择1个放2个球，故$C _3^1 = 3$
+
+        $4 \times 1 \times 3 = 12$
+    \end{enumerate}
+\end{jieda}
+
+\item 
+\begin{enumerate}
+    \item 一条长椅上有7个座位,4个人坐,要求3个空位中恰有2个空位相邻,共有多少种不同坐法?
+    \item 一条长椅上有9个座位,3个人坐,若相邻2人之间至少有2个空椅子,共有几种不同的坐法?
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 将两个相邻空位捆绑，无顺序之别，只有1种，问题转化为6个座位，4个人坐，2个有区别的空位不相邻，采用插空法，$P_4^4 \times P_5^2 = 480$
+        \item 问题转化为3个人坐5个座位，$P_5^3 = 60$
+    \end{enumerate}
+\end{jieda}
+
+\item 有15本不同的书,其中6本是数学书,问以下方法数:
+\begin{enumerate}
+    \item 分给甲4本,且都不是数学书;
+    \item 平均分为3份;
+    \item 平均分给3个不同的人;
+    \item 甲分2本,乙分7本,丙分6本;
+    \item 1人2本,1人7本,1人6本.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $C_9^4 = 126$
+        \item $\dfrac{C_{15}^5C_{10}^5C_5^5}{P_3^3} = 126126$
+        \item $\dfrac{C_{15}^5C_{10}^5C_5^5}{P_3^3} \times P_3^3 = 756756$
+        \item $C_{15}^2C_{13}^7C_6^6 = 180180$
+        \item $C_{15}^2C_{13}^7C_6^6P_3^3 = 1081080$
+    \end{enumerate}
+\end{jieda}
+
+\item 
+\begin{enumerate}
+    \item 求$x_{1}+x_{2}+x_{3}+x_{4}=13$的正整数解的组数;
+    \item 求$x_{1}+x_{2}+x_{3}+x_{4}=13$的自然数解的组数;
+    \item 求$x_{1}+x_{2}+x_{3}+x_{4}\le13$的正整数解的组数.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 看做$13$个相同的小球排成1排，在中间12个空中选择$3$个插入隔板，$C_{12}^3 = 220$
+        \item 转化为$x_{1}+x_{2}+x_{3}+x_{4}=17$的正整数解的组数，$C_{16}^3 = 560$
+        \item $C_3^3 + C_4^3 + \cdots + C_{12}^3 = C_{13}^4 = 715$
+    \end{enumerate}
+\end{jieda}
+
+\item 设集合$I=\{1,2,3,4,\cdots,n\}$,选择$I$的两个非空子集$A$和$B$,要使$B$中最小的数大于$A$中最大的数,则不同的选择方法共有多少种?
+\begin{jieda}
+    考虑以$k$为分界线，即$A$的最大数等于$k$，$B$的最大数大于等于$k+1$，此时$A$有$2^{k-1}$种选择，$B$有$2^{n-k}-1$种，根据分步乘法原理可知此时有$2^{n-1} - 2^{k-1}$种
+
+    遍历$k$，共有$\mathop{\sum }\limits_{{k = 1}}^{n-1}(2^{n-1} - 2^{k-1}) = (n-1) \cdot 2^{n-1} - (2^{n-1}-1) = (n-2) \cdot 2^{n-1} + 1$
+\end{jieda}
+
+\end{enumerate}
+\clearpage
+
+
+
+\subsection*{二项式定理（1）}
+
+A组
+\begin{enumerate}
+\item 求值: $C_{10}^{1}(-2)+C_{10}^{2}(-2)^{2}+\cdots+C_{10}^{10}(-2)^{10}=$\blkda{0}
+
+\item $(2-\dfrac{1}{\sqrt[3]{x}})^{6}$ 的展开式中的第四项是\blkda{$-\dfrac{160}{x}$}
+
+\item $(2x-\dfrac{1}{2x})^{6}$ 的展开式的常数项是\blkda{-20}
+
+\item 把 $(\sqrt{3}i-x)^{10}$ 按二项式定理展开,展开式的第八项的系数是\blkda{$360\sqrt{3}i$}
+
+\item 在 $(\sqrt{x}+\dfrac{2}{x})^{n}$ 的二项展开式中,若常数项为60,则\blkda{6}
+
+\item 若 $(x+\dfrac{1}{x})^{n}$ 展开式的二项式系数之和为64,则展开式的常数项为\blkda{20}
+
+\item 若 $(x^{2}+\dfrac{1}{x^{3}})^{n}$ 展开式的各项系数之和为32,则 $n=$\blkda{5}, 其展开式中的常数项为\blkda{10}
+
+\item 若 $(x-1)(2x+1)^{4}=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+a_{5}x^{5},$ 则$a_3=$\blkda{-8}
+\end{enumerate}
+
+\vspace{1em}
+
+B组：
+\begin{enumerate}
+\item 化简: $1-3C_{n}^{1}+3^{2}\cdot C_{n}^{2}-3^{3}\cdot C_{n}^{3}+\cdots+(-1)^{n}3^{n}=$\blkda{$(-2)^n$}
+
+\item 若 $2000<C_{n}^{1}+C_{n}^{2}+\cdots+C_{n}^{n}<3000,$ 则正整数 $n=$\blkda{11}
+
+\item 若 $\left(x-\dfrac{a}{x}\right)^{9}$ 的展开式中$x^3$的系数是-84,则 $a=$\blkda{1}
+
+\item $(1+2x)^{3}(1-x)^{4}$ 展开式中 $x^{2}$ 的系数为\blkda{-6}
+
+\item $\left(\dfrac{\sqrt{x}}{b}+\dfrac{b}{\sqrt[3]{x}}\right)^{18}$ 的展开式中,第\blkda{10}项是中间项,中间项是\blkda{$48620x^{\frac{3}{2}}$}
+
+\item 在 $(x+\sqrt[4]{3}y)^{20}$ 的展开式中,系数为有理数的项共有\blkda{6}项.
+
+\item $(2-\sqrt{x})^{8}$ 展开式中不含$x^4$项的系数的和为\blkda{0}
+
+\item 在 $(x-1)(x-2)(x-3)(x-4)(x-5)$ 的展开式中,含 $x^{4}$ 的项的系数是\blkda{-15}.
+
+\item 若 $(1+\sqrt{2})^{5}=a+b\sqrt{2}(a,b\text{为有理数}),$ 则 $a+b=$\blkda{70}
+
+\item 在 $\left(x-\dfrac{1}{\sqrt[3]{x}}\right)^{24}$ 的展开式中,$x$的幂的指数是正整数的项共有\dotfill{(\kh{D})}
+\xx{3项}{4项}{5项}{6项}
+
+\item $(1+2\sqrt{x})^{3}(1-\sqrt[3]{x})^{5}$ 的展开式中的系数是\blkda{2}
+
+\item 若 $C_{n}^{1}x+C_{n}^{2}x^{2}+\cdots+C_{n}^{n}x^{n}$ 能被7整除,则 $x,n$ 的值可能为\dotfill{(\kh{C})}
+\xx{$x=4,n=3$}{$x=4,n=4$}{$x=5,n=4$}{$x=6,n=5$}
+
+\item 如果 $\left(3x^{2}-\dfrac{2}{x^{3}}\right)^{n}$ 的展开式中含有非零常数项,则正整数 $n$ 的最小值为\dotfill{(\kh{B})}
+\xx{3}{5}{6}{10}
+
+\item 
+\begin{enumerate}
+    \item 已知 $(1+x)^{n}$ 的展开式中, $x^{3}$ 的系数是 $x$ 的系数的7倍,求 $n$ 的值.
+    \item 已知 $(ax+1)^{7}(a\ne0)$ 的展开式中, $x^{3}$ 的系数是 $x^{2}$ 的系数与 $x^{4}$ 的系数的等差中项,求 $a$ 的值.
+\end{enumerate}
+
+\begin{jieda}
+    \begin{enumerate}
+        \item  $x$ 3的二项式系数是 ${C}_{n}^{3}$ , $x$ 的二项式系数是 ${C}_{n}^{1}$ .依题意有 ${C}_{n}^{3} = 7{C}_{n}^{1}$ ,即 $\dfrac{n\left( {n - 1}\right) \left( {n - 2}\right) }{3!} = {7n}$ .整理,得${n}^{2} - {3n} - {40} = 0,$解得 $n = 8$ . (舍去 $n =  - 5$ .)
+        \item 依题意,得
+${C}_{7}^{5}{a}^{2} + {C}_{7}^{3}{a}^{4} = 2{C}_{7}^{4}{a}^{3},$即 ${21}{a}^{2} + {35}{a}^{4} = {70}{a}^{3}$ ,
+$\because a \neq  0$ ,
+$\therefore 5{a}^{2} - {10a} + 3 = 0$ .
+解得 $a = 1 - \dfrac{\sqrt{10}}{5}$ 或 $a = 1 + \dfrac{\sqrt{10}}{5}$ .
+    \end{enumerate}
+\end{jieda}
+
+
+
+\item 已知 $m,n$ 为自然数, $f(x)=(1+x)^{m}+(1+x)^{n}$ 的展开式中$x$的系数为19,求 $f(x)$ 展开式中 $x^{2}$ 项的系数的最小值.
+\begin{jieda}
+     $\because f\left( x\right)  = 2 + \left( {{{C}}_{m}^{1} + {{C}}_{n}^{1}}\right) x + \left( {{{C}}_{m}^{2} + {{C}}_{n}^{2}}\right) {x}^{2} + \cdots$
+$\therefore$ 由条件知 ${{C}}_{m}^{1} + {{C}}_{n}^{1} = {19}$ ,即 $m + n = {19}$ .
+$\therefore {{C}}_{m}^{2} + {{C}}_{n}^{2} = \dfrac{1}{2}m\left( {m - 1}\right)  + \dfrac{1}{2}n\left( {n - 1}\right)  = \dfrac{1}{2}\left\lbrack  {\left( {{m}^{2} + {n}^{2}}\right)  - \left( {m + n}\right) }\right\rbrack$
+$= \dfrac{1}{2}\left\lbrack  {\dfrac{{\left( m + n\right) }^{2} + {\left( m - n\right) }^{2}}{2} - \left( {m + n}\right) }\right\rbrack   = \dfrac{1}{2}\left\lbrack  {\dfrac{{\left( m - n\right) }^{2} + {19}^{2}}{2} - {19}}\right\rbrack  ,$
+可见当且仅当 ${\left( m - n\right) }^{2}$ 取最小时, ${{C}}_{m}^{2} + {{C}}_{n}^{2}$ 达到最小值.
+因为 $m + n = {19}$ ,且 $m,n \in  \mathbf{N}$ ,所以当 $m = {10},n = 9$ ,或 $m = 9,n = {10}$ 时, $\left| {m - n}\right|$ 达到最小
+值 1,此时 ${{C}}_{m}^{2} + {{C}}_{n}^{2}$ 取得最小值为 81 .
+\end{jieda}
+
+
+
+\item 在二项式 $(\sqrt{x}+\dfrac{1}{2\sqrt[4]{x}})^{n}$ 的展开式中前三项系数成等差数列,求展开式中所有有理项.
+
+\begin{jieda}
+    由题意,通项为 ${T}_{k + 1} = {{C}}_{n}^{k}{\left( \sqrt{x}\right) }^{n - k}{\left( \dfrac{1}{2 \cdot  \sqrt[4]{x}}\right) }^{k} = {\left( \dfrac{1}{2}\right) }^{k}{{C}}_{n}^{k}{x}^{\dfrac{{2n} - {3k}}{4}}$ ,
+由题意 $2 \times  {\left( \dfrac{1}{2}\right) }^{1}{C}_{n}^{1} = {\left( \dfrac{1}{2}\right) }^{0}{C}_{n}^{0} + {\left( \dfrac{1}{2}\right) }^{2}{C}_{n}^{2}$ ,得 $n = 8$ 或 $n = 1$ (舍去). ${T}_{k + 1} = {\left( \dfrac{1}{2}\right) }^{k}{{C}}_{8}^{k}x\dfrac{{16} - {3k}}{4}$ ,所以当 $k$ 取0、4、8时为有理项,
+当 $k = 0$ 时, ${T}_{1} = {\left( \dfrac{1}{2}\right) }^{0}{{C}}_{8}^{0}{x}^{4} = {x}^{4}$ ,
+当 $k = 4$ 时, ${T}_{5} = {\left( \dfrac{1}{2}\right) }^{4}{{C}}_{8}^{4}x = \dfrac{35}{8}x$ ,
+当 $k = 8$ 时, ${T}_{9} = {\left( \dfrac{1}{2}\right) }^{8}{{C}}_{8}^{8}{x}^{-2} = \dfrac{1}{256}{x}^{-2}$ ,
+故展开式中的所有有理项为 ${x^4},\dfrac{35}{8}x$ 和 $\dfrac{1}{256}x^{-2}$.
+\end{jieda}
+
+
+\item 
+\begin{enumerate}
+    \item 用二项式定理证明: $7^{100}-1$ 是8的倍数;
+    \item 对于 $n\in N^{*}$,用二项式定理证明: $3^{2n+2}-8n-9$ 是64的倍数.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item  将 7 表示为 $8 - 1$ ,利用二项式定理展开
+${\left( 8 - 1\right) }^{100} :$
+${\left( 8 - 1\right) }^{100} = \mathop{\sum }\limits_{{k = 0}}^{{100}}\left( \begin{matrix} {100} \\  k \end{matrix}\right) {8}^{{100} - k}{\left( -1\right) }^{k}.$
+除末项 ${\left( -1\right) }^{100} = 1$ 外,其余项均含因子 8。故
+${7}^{100} = {\left( 8 - 1\right) }^{100} = {8M} + 1\;\left( {M \in  Z}\right) ,$
+因此 ${7}^{100} - 1 = {8M}$ ,是 8 的倍数。
+    \item 将 ${3}^{{2n} + 2}$ 写为 ${9}^{n + 1}$ ,并展开 ${\left( 8 + 1\right) }^{n + 1}$ ：
+${\left( 8 + 1\right) }^{n + 1} = \mathop{\sum }\limits_{{k = 0}}^{{n + 1}}\left( \begin{matrix} n + 1 \\  k \end{matrix}\right) {8}^{k}.$
+当 $k \geq  2$ 时, ${8}^{k}$ 含因子 64；当 $k = 0$ 时为 1, $k = 1$
+时为 $8\left( {n + 1}\right)$ 。故
+${9}^{n + 1} = 1 + 8\left( {n + 1}\right)  + {64M}\;\left( {M \in  Z}\right) .$
+代入原式：
+${3}^{{2n} + 2} - {8n} - 9 = {9}^{n + 1} - {8n} - 9 = \left\lbrack  {1 + 8\left( {n + 1}\right)  + {64}}\right\rbrack$
+即该式为 64 的倍数。
+    \end{enumerate}
+\end{jieda}
+
+
+
+
+\end{enumerate}
+\clearpage
+
+
+\subsection*{二项式定理（2）}
+
+\begin{enumerate}
+\item $(x-1)\left(x^{2}+\dfrac{1}{x}\right)^{6}$ 展开式中含$x^4$项的系数为\blkda{20}.
+
+\item $\left(2x+\dfrac{1}{x}-2\right)^{4}$ 展开式中$x^2$项系数为\blkda{128} .
+
+\item $(x^{2}-x-2y)^{5}$ 的展开式中, $x^{5}y^{2}$ 的系数为\blkda{$-120$} .
+
+\item $(1+x)^{n}$ $(n\in N^{*})$ 的二项展开式中,若只有 $x^{5}$ 的系数最大,则 $n=$\blkda{$10$} .
+\begin{jieda}
+    $(1+x)^{n} = C_n^0+C_n^1x+C_n^2x^2+\cdots + C_n^nx^n$
+
+    由题意可知$C_n^5$为唯一最大项，故$n = 10$
+\end{jieda}
+
+\item 设 $(x^{2}+1)(2x+1)^{9}=a_{0}+a_{1}(x+2)+a_{2}(x+2)^{2}+\cdots+a_{11}(x+2)^{11}$,则 $a_{0}+a_{1}+a_{2}+\cdots+a_{11}$ 的值为\blkda{$-2$}.
+\begin{jieda}
+    令$x = -1$
+\end{jieda}
+
+\item 已知 $(1+x)^{5} = a_{0} + a_{1}x + a_{2}x^{2} + a_{3}x^{3} + a_{4}x^{4} + a_{5}x^{5}$, 则 $(a_{0}+a_{2}+a_{4})(a_{1}+a_{3}+a_{5})$ 的 值等于\blkda{256} .
+\begin{jieda}
+    $(1+x)^{n} = C_n^0+C_n^1x+C_n^2x^2+\cdots + C_n^nx^n$
+
+    $(a_{0}+a_{2}+a_{4})(a_{1}+a_{3}+a_{5}) = (1+10+5)(5+10+1) = 256$
+\end{jieda}
+
+\item 已知$\left(x^{2}-\dfrac{1}{x}\right)^{n}$ 的展开式中含$x$的项为第6项, 设$(1-x+2x^{2})^{n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{2n}x^{2n}$, 则 $a_{1}+a_{2}+\cdots+a_{2n}=$\blkda{$255$} .
+\begin{jieda}
+    $T_{r+1} = C_n^rx^{2n-2r}(-1)^rx^{-r} = (-1)^rC_n^rx^{2n-3r}$，$T_6 = -C_n^5x^{2n-15}$，故$2n-15 = 1$，$n = 8$.
+
+    $a_{1}+a_{2}+\cdots+a_{2n}= a_0 + a_{1}+a_{2}+\cdots+a_{2n} - a_0 = (1-1+2)^n-a_0$
+
+    代入$n = 8, a_0 = 1$得到答案255.
+\end{jieda}
+
+\item 设 $(1+x)+(1+x)^{2} + \cdots + (1+x)^{n} = a_{0} + a_{1}x + \cdots + a_{n}x^{n}$,若 $a_{n-1} = 2009$, 则 $a_{0}+a_{1}+\cdots+a_{n-1}+a_{n}=$\blkda{$2^{2009}-2$} .
+\begin{jieda}
+    $a_{n-1} = C_n^{n-1} + C_{n-1}^{n-1} = n+1 = 2009$，故$n = 2008$
+
+    令$x = 1$，$a_{0}+a_{1}+\cdots+a_{n-1}+a_{n}=2^{2009}-2$
+\end{jieda}
+
+\item 若 $(1-2x)^{2009}=a_{0}+a_{1}x+\cdots+a_{2009}x^{2009}(x\in R)$, 则 $\dfrac{a_{1}}{2}+\dfrac{a_{2}}{2^{2}}+\cdots+\dfrac{a_{2009}}{2^{2009}}$ 的值 为\blkda{$-1$}.
+\begin{jieda}
+    令$x = \dfrac{1}{2}$，$a_0 + \dfrac{a_{1}}{2}+\dfrac{a_{2}}{2^{2}}+\cdots+\dfrac{a_{2009}}{2^{2009}} = 0$，故$\dfrac{a_{1}}{2}+\dfrac{a_{2}}{2^{2}}+\cdots+\dfrac{a_{2009}}{2^{2009}} = -a_0 = -1$ 
+\end{jieda}
+
+\item 在 $(1+x)^{n}$ 的展开式中,奇数项之和为$p$,偶数项之和为$q$, 则 $(1-x^{2})^{n}$ 等于\dotfill{(\kh{D})} 
+\xx{$0$}{$pq$}{$p^{2}+q^{2}$}{$p^{2}-q^{2}$} 
+\begin{jieda}
+    $(1-x^{2})^{n} = (1-x)^n(1+x)^n = (p-q)(p+q)$
+\end{jieda}
+
+\item 在 $(x+y)^{n}$ 的展开式中,若第七项系数最大,则$n$的值可能等于\dotfill{(\kh{D})} 
+\xx{13,14}{14,15}{12,13}{11,12,13}
+\begin{jieda}
+    $T_{r+1} = C_n^rx^{n-r}y^r$，故$C_n^6$最大，因此$n = 11, 12$或$13$.
+\end{jieda}
+
+\item $(1+ax+by)^{n}$ 展开式中不含$x$的项的系数绝对值的和为243,不含$y$的项的系数绝对值的和为32,则 $a,b,n$ 的值可能为\dotfill{(\kh{D})} 
+\xx{$a=2,b=-1,n=5$}{$a=-2,b=-1,n=6$}{$a=-1,b=2,n=6$}{$a=1,b=2,n=5$} 
+\begin{jieda}
+    令$x = 0$，$(1+by)^{n}$展开式中系数绝对值之和为$243$，即$(1+|b|)^{n} = 243$
+
+    令$y = 0$，$(1+ax)^{n}$展开式中系数绝对值之和为$32$，即$(1+|a|)^{n} = 32$
+
+    根据$3^5 = 243, 2^5 = 32$，易知$n = 5$，$|a| = 1, |b| = 2$
+\end{jieda}
+
+\item 设 $\left(\dfrac{\sqrt{2}}{2}+x\right)^{2n}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{2n-1}x^{2n-1}+a_{2n}x^{2n}$ ,则 $\mathop{lim}\limits_{n\rightarrow\infty}[(a_{0}+a_{2}+a_{4}+\cdots+a_{2n})^{2}-(a_{1}+a_{3}+a_{5}+\cdots+a_{2n-1})^{2}]=$\dotfill{(\kh{B})} 
+\xx{-1}{0}{1}{$\dfrac{\sqrt{2}}{2}$}
+\begin{jieda}
+    令$x = 1$，$\left(\dfrac{\sqrt{2}}{2}+1\right)^{2n}=a_{0}+a_{1}+a_{2}+\cdots+a_{2n-1}+a_{2n}$
+    
+    令$x = -1$，$\left(\dfrac{\sqrt{2}}{2}-1\right)^{2n}=a_{0}-a_{1}+a_{2}+\cdots+(-1)^{2n-1}a_{2n-1}+a_{2n}$
+
+    设$A = \left(\dfrac{\sqrt{2}}{2}+1\right)^{2n}, B = \left(\dfrac{\sqrt{2}}{2}-1\right)^{2n}$，故$\mathop{lim}\limits_{n\rightarrow\infty}[(a_{0}+a_{2}+a_{4}+\cdots+a_{2n})^{2}-(a_{1}+a_{3}+a_{5}+\cdots+a_{2n-1})^{2}] = \mathop{lim}\limits_{n\rightarrow\infty}\left[\left(\dfrac{A+B}{2}\right)^{2}-\left(\dfrac{A-B}{2}\right)^{2}\right] = \mathop{lim}\limits_{n\rightarrow\infty}[AB] = \mathop{lim}\limits_{n\rightarrow\infty}\left[\dfrac{1}{2}-1\right]^{2n} = 0$
+\end{jieda}
+
+\item $(1+2x)^{n}$ 的展开式中第6项与第7项的系数相等,求展开式中二项式系数最大的项和系数最大的项. 
+\begin{jieda}
+    $T_{r+1} = C_n^r (2x)^r$，根据题意有$32C_n^5 = 64C_n^6$，故$n = 8$
+
+    因此二项式系数最大的项为$T_5 = C_8^4 (2x)^4 = 1120x^4$，系数最大的项为$T_6 = 1792x^5$和$T_7 = 1792x^6$
+\end{jieda}
+
+\item 已知 $(2-\sqrt{3}x)^{100}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{100}x^{100}$,求下列各式的值: 
+\begin{enumerate}
+    \item $a_{0}$ 
+    \item $a_{1}+a_{2}+\cdots+a_{100}$ 
+    \item $a_{1}+a_{3}+a_{5}+\cdots+a_{99}$ 
+    \item $(a_{0}+a_{2}+\cdots+a_{100})^{2}-(a_{1}+a_{3}+\cdots+a_{99})^{2}$ 
+    \item $|a_{0}|+|a_{1}|+|a_{2}|+\cdots+|a_{100}|$ 
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 令$x = 0$，$a = 2^{100}$
+        \item 令$x = 1$，$a_0+a_{1}+a_{2}+\cdots+a_{100} = (2-\sqrt{3})^{100}$，故$a_{1}+a_{2}+\cdots+a_{100} = (2-\sqrt{3})^{100} - 2^{100}$
+        \item 令$x = -1$，$a_0-a_{1}+a_{2}+\cdots+(-1)^{99}a_{99}+a_{100} = (2+\sqrt{3})^{100}$
+        与$a_0+a_{1}+a_{2}+\cdots+a_{100} = (2-\sqrt{3})^{100}$两式相减除以2可得$a_{1}+a_{3}+a_{5}+\cdots+a_{99} = \dfrac{(2-\sqrt{3})^{100}-(2+\sqrt{3})^{100}}{2}$
+        \item $(a_{0}+a_{2}+\cdots+a_{100})^{2}-(a_{1}+a_{3}+\cdots+a_{99})^{2} = (a_0+a_{1}+a_{2}+\cdots+a_{100})(a_0-a_{1}+a_{2}+\cdots+(-1)^{99}a_{99}+a_{100}) = (2-\sqrt{3})^{100}(2+\sqrt{3})^{100} = 1$
+        \item $|a_{0}|+|a_{1}|+|a_{2}|+\cdots+|a_{100}|$  = $a_0-a_{1}+a_{2}+\cdots+(-1)^{99}a_{99}+a_{100} = (2+\sqrt{3})^{100}$
+    \end{enumerate}
+\end{jieda}
+
+\item 已知 $(x^{\frac{2}{3}}+3x^{2})^{n}$ 的展开式各项系数和比它的二项式系数和大992. 
+\begin{enumerate}
+    \item 求展开式中二项式系数最大的项; 
+    \item 求展开式中系数最大的项. 
+\end{enumerate}
+\begin{jieda}
+    令 $x = 1$ 得展开式各项系数和为 ${4}^{n}$ ,二项式系数为 ${C}_{n}^{0} + {C}_{n}^{1} + \ldots \ldots  + {C}_{n}^{n} = {2}^{n}$，由题意得： ${4}^{n} - {2}^{n} = {992}$ ,解得 $n = 5$
+    \begin{enumerate}
+        \item 展开式共6项,二项式系数最大项为第三、四项
+        ${T}_{3} = C_5^2x^29x^4 = 90x^6$，$T_4 = C_5^3x^\frac{4}{3}27x^6 = 270x^\frac{22}{3}$
+        \item 设第 $r + 1$ 项的系数为 ${t}_{r + 1}$ ,则 ${t}_{r + 1} = {C}_{5}^{r}{3}^{r}$
+        
+        $\dfrac{{t}_{r + 2}}{{t}_{r + 1}} = \dfrac{C_5^{r+1}3^{r+1}}{{C}_{5}^{r}{3}^{r}} = 3 \times \dfrac{5-r}{r+1}$，令$3 \times \dfrac{5-r}{r+1} = 1$，即$15-3r = r+1$，$r = 3.5$，因此$t_5$最大，故展开式系数最大项为： ${T}_{5} = {405}x^\frac{26}{3}$
+    \end{enumerate}
+\end{jieda}
+
+\item 已知 $(x^{\log_{2}x}+1)^{n}$ 的展开式中有连续三项的系数之比为1:2:3,这三项是第几项? 若展开式的倒数第二项为112,求$x$的值. 
+\begin{jieda}
+    \begin{enumerate}
+        \item 展开式各项系数为 ${C}_{n}^{r}$ ,由题意 ${C}_{n}^{r - 1} : {C}_{n}^{r} : {C}_{n}^{r + 1} = 1 : 2 : 3$，即 $\dfrac{n!}{\left( {r - 1}\right) !\left( {n - r + 1}\right) !} = \dfrac{n!}{{2r}!\left( {n - r}\right) !} = \dfrac{n!}{3\left( {r + 1}\right) !\left( {n - r - 1}\right) !}$ ,解得 $\left\{  \begin{array}{l} r = 5 \\  n = {14} \end{array}\right.$ ,
+        $\therefore$ 这三项是第5、6、7项.
+        \item 倒数第二项为 ${C}_{14}^{13}{x}^{{\log }_{2}x} = {14}{x}^{{\log }_{2}x} = {112}$，故${x}^{{\log }_{2}x} = 8$，${\log }_{2}\left( {x}^{{\log }_{2}x}\right)  = {\log }_{2}8 = 3$ ,即 ${\left( {\log }_{2}x\right) }^{2} = 3,{\log }_{2}x =  \pm  \sqrt{3}$ ,
+        $\therefore x = 2^{\sqrt{3}}$ 或 $x = {2}^{-\sqrt{3}}$ .
+    \end{enumerate}
+\end{jieda}
+
+\item 
+\begin{enumerate}
+    \item 已知对任意给定的实数$x$,都有 $(1-2x)^{100}=a_{0}+a_{1}(x+1)+a_{2}(x+1)^{2}+\cdots+a_{100}(x+1)^{100},$ 求值:$a_{0}+a_{1}+a_{2}+\cdots+a_{100}$ 
+    \item 求990除以1000的余数. 
+    \item 7本不同的书,分给甲、乙、丙3个同学,若其中一人分得2本,另一个人分得2本, 第三人分得3本,共有多少种不同的分法. 
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item 令 $x = 0$ ,得 ${\left( 1 - 2 \times  0\right) }^{100} = {a}_{0} + {a}_{1}\left( {0 + 1}\right)  + {a}_{2}{\left( 0 + 1\right) }^{2} + \cdots  + {a}_{100}{\left( 0 + 1\right) }^{100}$ ,
+        
+        整理得 ${a}_{0} + {a}_{1} + {a}_{2} + \cdots  + {a}_{100} = 1$ .
+        
+        \item ${99}^{10} = {\left( {100} - 1\right) }^{10} = {{C}}_{10}^{0}{100}^{10} + {{C}}_{10}^{1}{100}^{9}{\left( -1\right) }^{1} + \cdots  + {{C}}_{10}^{9}{100}{\left( -1\right) }^{9} + {{C}}_{10}^{10}{\left( -1\right) }^{10} = {{C}}_{10}^{0}{10}^{20} + {{C}}_{10}^{1}{10}^{18}{\left( -1\right) }^{1} + \cdots  + {{C}}_{10}^{8}{10}^{4}{\left( -1\right) }^{8} + {{C}}_{10}^{9}{10}^{2}{\left( -1\right) }^{9} + 1 = {1000}\left\lbrack  {{{C}}_{10}^{0}{10}^{17} + {{C}}_{10}^{1}{10}^{15}{\left( -1\right) }^{1} + \cdots  + {{C}}_{10}^{8}{10}^{1}{\left( -1\right) }^{8} + {\left( -1\right) }^{9}}\right\rbrack   + 1,$
+        所以 ${99}^{10}$ 除以1000的余数为1.
+        \item 第一步,将7本不同的书分成2本、2本、3本三组,方法数为 $\dfrac{{{C}}_{7}^{2}{{C}}_{5}^{2}}{{{\;A}}_{2}^{2}} = {105}$ 种.
+        第二步,将这三组书分配给甲、乙、丙3名同学,方法数为 ${{A}}_{3}^{3} = 6$ 种.
+        故共有 ${105} \times  6 = {630}$ 种不同方法.
+    \end{enumerate}
+\end{jieda}
+
+\end{enumerate}
+
+
+\clearpage
+
+\subsection*{排列组合二项式定理综合练习}
+\begin{enumerate}
+
+
+\item 已知 $(1+kx^{2})^{6}$($k$是正整数)的展开式中,$x$ 的系数小于120,则$k=$\blkda{1}
+
+
+\item 在 $(x+1)(x+2)(x+3)\cdots(x+99)(x+100)$ 的展开式中, $x^{99}$ 的系数为\blkda{5050}
+
+\item 已知 $(1+x+x^{2})(x+\dfrac{1}{x^{3}})^{n}$ 的展开式中没有常数项, $n\in N^{*}$ ,且 $2\le n\le8$,则$n=$\blkda{5}
+
+\item 求将 $(x+y+z)^{10}$ 展开为多项式,经过合并同类项后的总项数为\blkda{66}项.
+
+\item 一个袋子里有4个不同的红球,6个不同的白球,从中任取4个使得取出的球中红球比白球多的取法有\blkda{25}种;红球不少于白球的取法又有\blkda{115}种.
+
+\item 编号为1,2,3,4,5的五个球和编号为1,2,3,4,5的五个盒子,现将这五个球放入这五个盒子内,要求有一个球与盒子的编号一致,其余均不一致,有\blkda{45}种放法;要求所有球的编号与盒子的编号均不一致,则有\blkda{44}种放法.
+
+\item 已知 $m\in\{-2,-1,0,1,2,3\}$, $n\in\{-3,-2,-1,0,1,2\}$,且方程 $\dfrac{x^{2}}{m}+\dfrac{y^{2}}{n}=1$ 是表示中心在原点的双曲线,则表示不同的双曲线最多有\blkda{13}条.
+\begin{jieda}
+    $2*2+3*3=13$
+\end{jieda}
+
+\item 将数字1,2,3,4,5,6拼成一列,记第 $i$ 个数为 $a_{i}(i=1,2,\cdots,6)$,若 $a_{1}\ne1$, $a_{3}\ne3$, $a_{5}\ne5$, $a_{1}<a_{3}<a_{5}$,则不同的排列方法有\blkda{30}种.
+\begin{jieda}
+    先排$a_1、a_3、a_5$，有五种排法，然后乘剩下的元素排法$P^3_3$.
+\end{jieda}
+
+\item 有4张分别标有数字1,2,3,4的红色卡片和4张分别标有数字1,2,3,4的蓝色卡片,从这8张卡片中取出4张卡片排成一行,如果取出的4张卡片所标数字之和等于10,则不同的排法共有\blkda{432}种.
+\begin{jieda}
+    "1+1+4+4"有一种；“2+2+3+3”有一种；“1+2+3+4”有$2^4$种。从而$(1+1+2^4)*P^4_4=432$
+\end{jieda}
+
+\item 今天是星期日,再过1000天是星期几?\dotfill{(\kh{C})}
+\xx{星期一}{星期二}{星期四}{星期六}
+\begin{jieda}
+    $10^{100}=100^{50}$展开式中只有最后一项$2^{50}$不可以被7整除，$2^{50}=4*(7+1)^{16}$展开式中只有最后一项$C^{16}_{16}$不可以被7整除。所以$10^{100}$除7余4.
+\end{jieda}
+
+\item 一串装饰彩灯由灯泡串联而成,每串有20个灯泡,只要有一只灯泡坏了,整串灯泡就不亮,则因灯泡损坏致使一串彩灯不亮的可能性的种数为\dotfill{(\kh{D})}
+\xx{20}{$2^{19}$}{$2^{20}$}{$2^{20}-1$}
+
+\item $C_{4}^{0}+\dfrac{20\times19}{2!}+\dfrac{20\times19\times18\times17}{4!}+\cdots+\dfrac{20\times19\times18\times\cdots\times3\times2\times1}{20!}$ 的值是\dotfill{(\kh{C})}
+\xx{$2^{17}$}{$2^{18}$}{$2^{19}$}{$2^{20}$}
+
+\item 从6双不同的手套中任取4只,恰好取到一双的情况有\dotfill{(\kh{A})}
+\xx{240种}{180种}{120种}{60种}
+
+\item 已知集合 $A=\{(x,y)|x^{2}+y^{2}\le1,x,y\in Z\}$, $B=\{(x,y)||x|\le2,|y|\le2,x,y\in Z\}$,定义集合 $A\oplus B=\{(x_{1}+x_{2},y_{1}+y_{2})|(x_{1},y_{1})\in A,(x_{2},y_{2})\in B\}$,则 $A\oplus B$ 中元素的个数为\dotfill{(\kh{C})}
+\xx{77}{49}{45}{30}
+
+\item 
+\begin{enumerate}
+\item 已知将标号为1,2,3,4,5,6的6张卡片放入3个不同的信封中,若每个信封放2张,其中标号为1,2的卡片放入同一信封,求不同的方法共有多少种;
+\item 已知将5位志愿者分成3组,其中两组各2人,另一组1人,分赴世博会的三个不同场馆服务,求不同的分配方案有多少种;
+\item 已知将5名大学生分配到3个乡镇去当村官,每个乡镇至少一名,求不同的分配方案有多少种.
+\end{enumerate}
+\begin{jieda}
+    \begin{enumerate}
+        \item $3*C^2_4*C^2_2=18$;
+        \item 
+        $\dfrac{C^2_5*C^2_3*C^1_1}{P^2_2}*P^3_3=90$；
+        \item 
+        $(\dfrac{C^1_5*C^1_4*C^3_3}{P^2_2}+\dfrac{C^2_5*C^2_3*C^1_1}{P^2_2})*P^3_3=150$
+    \end{enumerate}
+\end{jieda}
+
+
+
+\item 对于 $n\in N^{*}$,求证:
+\begin{enumerate}
+\item $C_{n}^{0}C_{m}^{p}+C_{n}^{1}C_{m}^{p-1}+\cdots+C_{n}^{p}C_{m}^{0}=C_{m+n}^{p}$;
+\item $(C_{n}^{0})^{2}+(C_{n}^{1})^{2}+(C_{n}^{2})^{2}+\cdots+(C_{n}^{n-2})^{2}+(C_{n}^{n-1})^{2}+(C_{n}^{n})^{2}=C_{2n}^{n}$;
+\item $C_{n}^{0}+3^{2}C_{n}^{2}+3^{4}C_{n}^{4}+\cdots+3^{n}C_{n}^{n}=2\cdot4^{n-1}+2^{n-1}$ ($n$是正偶数).
+\end{enumerate}
+\begin{jieda}
+\begin{enumerate}
+    \item 【方法一】\\
+    因为 ${\left( 1 + x\right) }^{m + n} = {\left( 1 + x\right) }^{m} \cdot  {\left( 1 + x\right) }^{n}$ ,所
+以 ${\left( 1 + x\right) }^{m + n} = \left( {1 + {\mathrm{C}}_{m}^{1}x + {\mathrm{C}}_{m}^{2}{x}^{2} + \cdots  + {\mathrm{C}}_{m}^{m}{x}^{m}}\right)  \cdot  \left( {1 + {\mathrm{C}}_{n}^{1}x + {\mathrm{C}}_{n}^{2}{x}^{2} + }\right.$
+$\left. {\cdots  + {\mathrm{C}}_{n}^{n}{x}^{n}}\right)$ ,所以此式左右两边展开式中 ${x}^{p}$ 的系数必相等. 左边
+${x}^{p}$ 的系数是 ${\mathrm{C}}_{m + n}^{p}$ ,右边 ${x}^{p}$ 的系数是 ${\mathrm{C}}_{n}^{0}{\mathrm{C}}_{m}^{p} + {\mathrm{C}}_{n}^{1}{\mathrm{C}}_{m}^{p - 1} + {\mathrm{C}}_{n}^{2}{\mathrm{C}}_{m}^{p - 2} +$
+$\cdots  + {\mathrm{C}}_{n}^{p}{\mathrm{C}}_{m}^{0}$ ,所以 ${\mathrm{C}}_{n}^{0}{\mathrm{C}}_{m}^{p} + {\mathrm{C}}_{n}^{1}{\mathrm{C}}_{m}^{p - 1} + {\mathrm{C}}_{n}^{2}{\mathrm{C}}_{m}^{p - 2} + \cdots  + {\mathrm{C}}_{n}^{p}{\mathrm{C}}_{m}^{0} = {\mathrm{C}}_{m + n}^{p}$ ,等
+式成立.\\
+【方法二】\\
+设想有下面一个问题: 要从 $m + n$ 个不同元素中取出 $p$ 个
+元素,共有多少种取法? 该问题可有两种解法. 一种解法是直接
+由组合数公式可得出结论: 有 ${\mathrm{C}}_{m + n}^{p}$ 种不同取法. 第二种解法,可将
+$\left( {m + n}\right)$ 个元素分成两组,第一组有 $m$ 个元素,第二组有 $n$ 个元
+素,则从 $\left( {m + n}\right)$ 个元素中取出 $p$ 个元素,可看成由这两组元素中
+分别取出的元素组成,取法可分成 $p + 1$ 类: 从第一组取 $p$ 个,第
+二组不取,有 ${\mathrm{C}}_{m}^{p}{\mathrm{C}}_{n}^{0}$ 种取法; 从第一组取(p - 1)个,从第二组取 1
+个,有 ${\mathrm{C}}_{m}^{p - 1}{\mathrm{C}}_{n}^{1}$ 种取法, $\cdots$ ,第一组不取,从第二组取 $p$ 个,有 ${\mathrm{C}}_{m}^{0}{\mathrm{C}}_{n}^{p}$
+种取法. 因此取法总数是 ${\mathrm{C}}_{m}^{p}{\mathrm{C}}_{n}^{0} + {\mathrm{C}}_{m}^{p - 1}{\mathrm{C}}_{n}^{1} + {\mathrm{C}}_{m}^{p - 2}{\mathrm{C}}_{n}^{2} + \cdots  + {\mathrm{C}}_{m}^{0}{\mathrm{C}}_{n}^{p}$ . 而
+该问题的这两种解法答案应是一致的,故有 ${\mathrm{C}}_{n}^{0}{\mathrm{C}}_{m}^{p} + {\mathrm{C}}_{n}^{1}{\mathrm{C}}_{m}^{p - 1} +$
+${\mathrm{C}}_{n}^{2}{\mathrm{C}}_{m}^{p - 2} + \cdots  + {\mathrm{C}}_{n}^{p}{\mathrm{C}}_{m}^{0} = {\mathrm{C}}_{m + n}^{p}.$
+
+\item $(1+x)^{2n}=[(1+x)^n]^2=(C^0_n+C^1_nx+...+C^n_nx^n)^2$，上式左右两边$x^n$的系数相同，因此等式.
+
+\item 因为 $n$ 为偶数,所以 ${\left( 1 + 3\right) }^{n} = {\mathrm{C}}_{n}^{0} + 3{\mathrm{C}}_{n}^{1} + {3}^{2}{\mathrm{C}}_{n}^{2} + \cdots  + {3}^{n}{\mathrm{C}}_{n}^{n}$ ,
+${\left( 1 - 3\right) }^{n} = {\mathrm{C}}_{n}^{0} - 3{\mathrm{C}}_{n}^{1} + {3}^{2}{\mathrm{C}}_{n}^{2} - \cdots  + {3}^{n}{\mathrm{C}}_{n}^{n}$ ,两式相加得 ${4}^{n} + {2}^{n} =$
+$2\left( {{\mathrm{C}}_{n}^{0} + {3}^{2}{\mathrm{C}}_{n}^{2} + {3}^{4}{\mathrm{C}}_{n}^{4} + \cdots  + {3}^{n}{\mathrm{C}}_{n}^{n}}\right)$ ,所以 ${\mathrm{C}}_{n}^{0} + {3}^{2}{\mathrm{C}}_{n}^{2} + {3}^{4}{\mathrm{C}}_{n}^{4} + \cdots  +$
+${3}^{n}{\mathrm{C}}_{n}^{n} = 2 \cdot  {4}^{n - 1} + {2}^{n - 1}.$
+\end{enumerate}
+
+
+    
+\end{jieda}
+
+
+\end{enumerate}
+
+\clearpage
+

@@ -1,0 +1,741 @@
+\chapter*{解析几何-直线}
+\subsection*{直线的倾斜角与斜率}
+\begin{enumerate}
+    \item 
+    \begin{example}
+        如图\ref{fig:zhixian1}所示,在平面直角坐标系中，两条直线是都经过点$(1,0)$,不同之处在于相对于$x$轴而言,直线蓝线较平坦些，而红线较陡些，那么我们如何用数量来刻画直线这种“陡”的程度呢？这就需要引入直线的倾斜角和斜率的概念.
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.25\linewidth]{bodyxb//src/zhixian1.png}
+            \label{fig:zhixian1}
+        \end{figure}
+    \end{example}
+    \item 倾斜角与斜率的定义\\
+    在平面直角坐标系中,设直线$l$与$x$轴交于点$M$,将$x$轴绕点$M$按逆时针方向旋转至与直线$l$重合时所形成的最小正角$\alpha$叫做直线$l$的\textbf{倾斜角}. 特别地，当直线$l$与$x$轴平行或重合时，规定其倾斜角$\alpha = 0$,因此直线的倾斜角$\alpha$的\textbf{范围}是$[0, \pi)$.当直线的倾斜角$\alpha \neq \dfrac{\pi}{2}$时,把角$\alpha$的正切值$tan \alpha$叫做直线$l$的\textbf{斜率},记作$k = tan\alpha$.
+    \item 倾斜角与斜率的关系\\
+    直线的斜率 $k$ 与倾斜角 $\alpha$ 之间的关系
+    
+    \begin{center}
+    \adjustbox{width=0.5\linewidth}{
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    $\alpha$ & ${0}^{ \circ  }$ & ${0}^{ \circ  } < \alpha  < {90}^{ \circ  }$ & ${90}^{ \circ  }$ & ${90}^{ \circ  } < \alpha  < {180}^{ \circ  }$ \\
+    \cline{1-5}
+    $k$ & 0 & $k > 0$ & 不存在 & $k < 0$ \\
+    \cline{1-5}
+    \hline
+    \end{tabular}
+    }
+    \end{center}
+    由正切函数的性质，不难得出以下结论：
+    \begin{dingautolist}{172}
+    \item 当$\alpha = 0$时,斜率$k = 0$
+    \item 当$0 < \alpha < \dfrac{\pi}{2}$时，$k > 0$，$k$随$\alpha$增大而增大
+    \item 当$\alpha = \dfrac{\pi}{2}$时,直线的斜率$k$不存在(或称趋向于无穷大)
+    \item 当$\dfrac{\pi}{2} < \alpha < \pi$时，$k < 0$，$k$随$\alpha$增
+    
+    大而增大
+    \end{dingautolist}
+    \item 已知两点坐标：$A(x_1, y_1), B(x_2, y_2) (x_1 \neq x_2)$，可求直线$AB$的斜率：$k = \dfrac{y_1 - y_2}{x_1 - x_2}$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 下列命题中错误的是\blkda{\ding{172}\ding{173}\ding{174}}
+    \begin{dingautolist}{172}
+        \item 坐标平面内的任何一条直线均有倾斜角与斜率.
+        \item 直线的斜率越大,倾斜角就越大.
+        \item 若直线的倾斜角为 $\alpha$ ,则斜率为 $\tan \alpha$ 
+    \end{dingautolist}
+    \item 已知点 $A\left( {2,0}\right) ,B\left( {3,\sqrt{3}}\right)$ ,则直线 ${AB}$ 的倾斜角为\blkda{$\ang{60}$}
+    \begin{jieda}
+        由题意得直线 ${AB}$ 的斜率 $k = \dfrac{\sqrt{3} - 0}{3 - 2} = \sqrt{3}$ ,
+
+        设直线 ${AB}$ 的倾斜角为 $\alpha$ ,则 $\tan \alpha  = \sqrt{3},\because {0}^{ \circ  } \leq  \alpha  < {180}^{ \circ  }$ , $\therefore \alpha  = {60}^{ \circ  }$ .
+    \end{jieda}
+    \item 已知直线$l$经过两点$A, B$,求直线$l$的斜率$k$和倾斜角$\alpha$.
+    \begin{enumerate}
+        \item $A(-1, 2)$、$B(2, \sqrt{2})$
+        \item $A(2, 1)$、$B(1, m^2), m \in \mathbf{R}$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $k = \dfrac{\sqrt{2}-2}{3}$，$\alpha = arctan\left(\dfrac{\sqrt{2}-2}{3}\right) + \pi = \pi - arctan\left(\dfrac{2-\sqrt{2}}{3}\right)$
+            
+            \item $k = 1-m^2$，$\alpha = \left \{ \begin{array}{ll}
+                 arctan(1-m^2) & m \in [-1, 1] \\
+                 \pi - arctan(m^2-1) & m \in (-\infty, -1) \cup (1, +\infty)
+            \end{array} \right.$
+        \end{enumerate}
+        
+        \ps 若倾斜角为$arctan(q), q > 0$，则对应斜率$k = q$
+        
+        若倾斜角为$\pi - arctan(q), q > 0$，则对应斜率$k = -q$
+    \end{jieda}
+    
+    \item 设$\theta \in \left(\dfrac{\pi}{2}, \pi\right)$，求直线$xcos\theta+ysin\theta+1 = 0$的倾斜角$\alpha$.
+    \begin{jieda}
+        $y = -cot\theta x - \dfrac{1}{sin\theta}$，则有$tan\alpha = -cot\theta$，故$\alpha \in \left\{\alpha \left| \alpha = \theta + \dfrac{\pi}{2} + 2k\pi, k \in \mathbf{Z}\right\}\right.$，取$\alpha \in [0, \pi)$可得$\alpha = \theta - \dfrac{\pi}{2}$
+    \end{jieda}
+    
+    \item 已知两点$M(2, -3), N(-3, -2)$，直线$l$过点$P(1, 1)$，且与线段$MN$相交，分别求直线$l$的斜率和倾斜角$\alpha$的取值范围.
+    \begin{jieda}
+        绘图可知，当直线$l$过$N$的时候，其倾斜角最小，在直线$l$旋转到$PM$的过程中其倾斜角逐渐增大，故数形结合可知
+        \begin{dingautolist}{172}
+            \item 直线$PN$的斜率$k = \dfrac{3}{4}$，倾斜角$\alpha = arctan(\dfrac{3}{4})$
+            \item 直线$PM$的斜率$k = -4$，倾斜角为$\alpha = \pi - arctan(4)$
+        \end{dingautolist}
+        故斜率的取值范围为$\left[\dfrac{3}{4}, +\infty \right) \cup \left(-\infty, -4\right]$，倾斜角的取值范围为$\left[arctan\left(\dfrac{3}{4}\right), \pi - arctan\left(4\right) \right]$
+    \end{jieda}
+    \item 直线 $l : \sqrt{3}x - y + 2 = 0$ 与 $x$ 轴交于点 $A$ ,把 $l$ 绕点 $A$ 顺时针旋转 ${45}^{ \circ  }$ 得直线 $m,m$ 的倾斜角为 $\alpha$ ,则 $\cos \alpha$ 等于\blkda{$\dfrac{\sqrt{6} + \sqrt{2}}{4}$}
+    \begin{jieda}
+        设 $l$ 的倾斜角为 $\theta$ ,则 $\tan \theta  = \sqrt{3},\therefore \theta  = {60}^{ \circ  }$ ,
+
+        由题意知 $\alpha  = \theta  - {45}^{ \circ  } = {60}^{ \circ  } - {45}^{ \circ  }$ ,
+        
+        $\therefore \cos \alpha  = \cos \left( {{60}^{ \circ  } - {45}^{ \circ  }}\right)  = \cos {60}^{ \circ  }\cos {45}^{ \circ  } + \sin {60}^{ \circ  }\sin {45}^{ \circ  } = \dfrac{1}{2} \times  \dfrac{\sqrt{2}}{2} + \dfrac{\sqrt{3}}{2} \times  \dfrac{\sqrt{2}}{2} = \dfrac{\sqrt{6} + \sqrt{2}}{4}$ .
+    \end{jieda}
+    \item 若正方形一条对角线所在直线的斜率为 2 ,则该正方形的两条邻边所在直线的斜率分别为\blkda{$\dfrac{1}{3}$和$-3$}.
+    \begin{jieda}
+        如图,在正方形 ${OABC}$ 中,对角线 ${OB}$ 所在直线的斜率为 2,建立如图所示的平面直角坐标系. 设对角线 ${OB}$ 所在直线的倾斜角为 $\theta$ ,则 $\tan \theta  = 2$ ,由正方形的性质可知,直线 ${OA}$ 的倾斜角为 $\theta  - {45}^{ \circ  }$ ,直线 ${OC}$ 的倾斜角为 $\theta  + {45}^{ \circ  }$ ,
+
+        \begin{center}
+        \includegraphics[width=0.2\linewidth]{bodyxb/src/0196d77a-ddcb-7060-9d7b-57bbae276c4f_3_718_1050_208_202_0.jpg}
+        \end{center}
+        \hspace*{3em} 
+        
+        故 ${k}_{OA} = \tan \left( {\theta  - {45}^{ \circ  }}\right)  = \dfrac{\tan \theta  - \tan {45}^{ \circ  }}{1 + \tan \theta \tan {45}^{ \circ  }} = \dfrac{2 - 1}{1 + 2} = \dfrac{1}{3}$ ,
+        
+        ${k}_{OC} = \tan \left( {\theta  + {45}^{ \circ  }}\right)  = \dfrac{\tan \theta  + \tan {45}^{ \circ  }}{1 - \tan \theta \tan {45}^{ \circ  }} = \dfrac{2 + 1}{1 - 2} =  - 3.$
+
+        \ps 若给定$B(1, 2)$，求$A, C$的坐标，则可设$A(m, n)$，相应地（借助复数乘法的几何意义）可知$C(-n, m)$，故根据向量加法的坐标表示可知$\left\{\begin{array}{l}
+             m-n = 1 \\
+             m+n = 2 
+        \end{array}\right.$，解得$\left\{\begin{array}{l}
+             m = \dfrac{3}{2}  \\
+             n = \dfrac{1}{2}
+        \end{array}\right.$，故$A\left(\dfrac{3}{2}, \dfrac{1}{2}\right)$，$C\left(-\dfrac{1}{2}, \dfrac{3}{2}\right)$
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{直线的方向向量和法向量}
+\begin{enumerate}
+    \item 方向向量与法向量的定义
+    \begin{dingautolist}{172}
+        \item 我们把与直线$l$平行的非零向量$\Vec{d} = (u,v)$叫做直线$l$的\textbf{方向向量},所有与$\Vec{d}$平行的非零向量都是直线$l$的方向向量
+        \item 与直线$l$垂直的非零向量$\Vec{n} = (a,b)$叫做直线$l$的\textbf{法向量}，所有与$\Vec{n}$平行的非零向量都是直线$l$的法向量.
+    \end{dingautolist}
+    \item 方向向量、法向量、倾斜角、斜率之间的转化
+    \begin{dingautolist}{172}
+        \item 如果已知方向向量$\Vec{d} = (u, v)$，那么法向量可以是$\Vec{n} = (v, -u)$或者$\Vec{n} = (-v, u)$
+        \item 如果已知方向向量$\Vec{d} = (u, v)$，当$u \neq 0$时，斜率$k = \dfrac{v}{u}$，当$u = 0$时，斜率不存在
+        \item 如果已知斜率$k$，那么方向向量可以是$\vec{d} = (1, k)$
+        \item 如果已知倾斜角$\alpha$，那么方向向量可以是$\vec{d} = (cos\alpha, sin\alpha)$
+    \end{dingautolist}
+\end{enumerate}
+
+\subsection*{直线的点斜式方程}
+给定直线上的一个点，再给定一个方向（倾斜程度）就可以在平面直角坐标系内确定这一条直线
+\begin{enumerate}
+    \item 点斜式方程：给定斜率即可确定直线的倾斜程度 \\
+    经过点$P_0(x_0, y_0)$，且斜率为$k$的直线的方程的推导：\\
+    设$P(x, y)$是直线上异于$P_0$的一个点，因此可以确定斜率为$k = \dfrac{y - y_0}{x - x_0}$，故直线方程为：$y - y_0 = k(x-x_0)$ 
+    \begin{dingautolist}{172}
+        \item 由推导过程可知，直线上的每一个点都满足直线的方程
+        \item 反过来，可以验证满足方程的点都在直线上：若$P_1(x_1, y_1)$满足直线方程$y - y_0 = k(x-x_0)$
+        
+        若$x_1 = x_0$，则$P_1$与$P_0$重合，满足要求
+        
+        若$x_1 \neq x_0$，则有直线$P_0P_1$的斜率也为$k$，故两直线重合，因此$P_1$在直线上.
+    \end{dingautolist}
+    \textbf{点斜式方程式处于直线方程中的核心位置，点斜式方程只能表示斜率存在的直线.} \\
+    \ps \textbf{解析几何的核心要义：满足方程的点在曲线(直线)上，曲线（直线）上的点满足方程.}
+    \item 斜截式方程：点斜式的特例 \\
+    当已知的点是直线与$y$轴交点$(0, b)$的时候，点斜式方程就变成了斜截式方程：$y = kx + b$，$b$是直线与$y$轴交点的纵坐标，称为\textbf{截距}. \\
+    \ps 截距不是距离，截距可以为负数.
+    \item 点法式方程：给定法向量也可以确定出直线的方向 \\
+    经过点$P_0(x_0, y_0)$，且法向量为$\vec{n} = (a, b)$的直线的方程的推导： \\
+    设$P(x, y)$是直线上异于$P_0$的一个点，容易写出直线的方向向量$\vec{d} = (x-x_0, y - y_0)$，由于方向向量和法向量的数量积为0，因此有$a(x-x_0)+b(y-y_0) = 0$
+\end{enumerate}
+\subsection*{直线的两点式方程}
+两点可以确定一条直线
+\begin{enumerate}
+    \item 两点式方程 \\
+    经过点$P_1(x_1, y_1)， P_2(x_2, y_2)$的直线方程的推导：
+    当直线斜率存在的时候，根据两个点的坐标可以求出直线的斜率$k = \dfrac{y_2 - y_1}{x_2 - x_1}$，对于直线上异于$P_1, P_2$的点$P(x, y)$，可以得到斜率的表示为$k = \dfrac{y - y_1}{x - x_1}$，因此有$\dfrac{y_2 - y_1}{x_2 - x_1} = \dfrac{y - y_1}{x - x_1}$，变形可以得到$\dfrac{y - y_1}{y_2 - y_1} = \dfrac{x - x_1}{x_2 - x_1}$，称为直线的两点式方程. \\
+    \textbf{从两点式方程的形式可知，两点式方程不能表示与坐标轴（$x$轴、$y$轴）平行的直线.} \\
+    \ps \textbf{从两点式的推导过程中可以看出斜率的桥梁作用，斜率在直线方程的建立过程中起到至关重要的作用.} 
+    \item 点方向式方程：两点式的推广 \\
+    特别地，当已知过$(x_0, y_0)$的直线的方向向量$\vv{d} =  (a, b)$时，方向向量的两个坐标可以看做是该直线上两点之间的坐标差，因此可以写出对应的直线方程为：$\dfrac{y-y_0}{b} = \dfrac{x-x_0}{a}$
+    \item 截距式方程：两点式的特例 \\
+    若$P_1, P_2$两点是直线与坐标轴的交点，$P_1(a, 0), P_2(0, b)$，则两点式直线方程为$\dfrac{y-0}{b-0} = \dfrac{x-a}{0-a}$，变形有$\dfrac{y}{b}+\dfrac{x}{a} = 1$，称作是直线的截距式方程.
+\end{enumerate}
+\subsection*{直线的一般式方程}
+任意的一个二元一次方程$ax+by+c = 0(a^2+b^2 \neq 0)$都是直线方程，任意一条直线的方程都是一个二元一次方程$ax+by+c = 0(a^2+b^2 \neq 0)$.
+\begin{enumerate}
+    \item 对于任意的$ax+by+c = 0(a^2+b^2 \neq 0)$，当$b \neq 0$时，可以整理成斜截式方程，对应一条直线，当$b = 0$的时候，对应直线$x = -\dfrac{c}{a}$
+    \item 对于任意一条直线，如果斜率存在，则其点斜式方程可以整理成$ax+by+c = 0(a^2+b^2 \neq 0)$的形式；如果斜率不存在，设其与$x$轴交点为$(x_0, 0)$，则直线方程为：$x = x_0$，也符合$ax+by+c = 0(a^2+b^2 \neq 0)$的形式
+\end{enumerate}
+\subsection*{直线方程的七种形式}
+\begin{center}
+\adjustbox{width=0.75\linewidth}{
+\begin{tabular}{|c|c|c|}
+\hline
+名称 & 方程 & 适用范围 \\
+\cline{1-3}
+点斜式 & $y - {y}_{0} = k\left( {x - {x}_{0}}\right)$ & 不含直线 $x = {x}_{0}$ \\
+\cline{1-3}
+斜截式 & $y = {kx} + b$ & 不含垂直于 $x$ 轴的直线 \\
+\cline{1-3}
+点法式 & $a(x-x_0)+b(y-y_0) = 0$ & 平面直角坐标系内的直线都适用 \\
+\cline{1-3}
+两点式 & $\frac{y - {y}_{1}}{{y}_{2} - {y}_{1}} = \frac{x - {x}_{1}}{{x}_{2} - {x}_{1}}\left( {{x}_{1} \neq  {x}_{2},{y}_{1} \neq  {y}_{2}}\right)$ & 不含直线 $x = {x}_{1}$ 和直线 $y = {y}_{1}$ \\
+\cline{1-3}
+点方向式 & $\frac{y - {y}_{1}}{b} = \frac{x - {x}_{1}}{a}\left( ab \neq 0 \right)$ & 不含直线 $x = {x}_{1}$ 和直线 $y = {y}_{1}$ \\
+\cline{1-3}
+截距式 & $\frac{x}{a} + \frac{y}{b} = 1$ & 不含垂直于坐标轴和过原点的直线 \\
+\cline{1-3}
+一般式 & ${ax} + {by} + c = 0\left( {{a}^{2} + {b}^{2} \neq  0}\right)$ & 平面直角坐标系内的直线都适用 \\
+\cline{1-3}
+\hline
+\end{tabular}
+}
+\end{center}
+例题：
+\begin{enumerate}
+    \item 下列命题中为真命题的是\blkda{\ding{173}\ding{176}\ding{177}}
+    \begin{dingautolist}{172}
+        \item 过点$P(x_0, y_0)$的直线都可以用$y - y_0 = k(x-x_0)$表示
+        \item 过任意两点$P_1(x_1, y_1)$、$P_2(x_2, y_2)$的直线都可以用方程$(y-y_1)(x_2-x_1) = (x-x_1)(y_2-y_1)$表示
+        \item 不过原点的直线都可以用方程$\dfrac{x}{a} + \dfrac{y}{b} = 1$表示
+        \item 经过$A(0, b)$的直线都可以用方程$y = kx+b$表示
+        \item 若直线 $l$ 与 $x,y$ 轴的交点分别为 $A,B$ 且 ${AB}$ 的中点为(4,1),则直线 $l$ 的方程为 $\dfrac{x}{8} + \dfrac{y}{2} = 1$
+        \item 过点(1,1)且在两坐标轴上截距相等的直线方程为 $y = x$ 或 $x + y = 2$
+        \item 直线 ${3x} - {2y} = 4$ 的截距式方程为 $\dfrac{x}{\frac{4}{3}} + \dfrac{y}{2} = 1$
+    \end{dingautolist}
+    \begin{jieda}
+        \ding{172}\ding{175}是斜率不存在的直线表示不了，而\ding{174}是表示不了和坐标轴垂直的直线
+
+        \ding{176} ${AB}$ 的中点为(4,1), 那么 $A\left( {8,0}\right) ,B\left( {0,2}\right)$ ,则直线 $l$ 的方程为 $\dfrac{x}{8} + \dfrac{y}{2} = 1$
+
+        \ding{177} 直线过原点时方程为 $y = x$ , 不过原点时方程为 $x + y = 2$
+
+        \ding{178} 方程 ${3x} - {2y} = 4$ 可化为 $\dfrac{x}{\frac{4}{3}} + \dfrac{y}{-2} = 1$
+    \end{jieda}
+    
+    \item 下列说法正确的有\blkda{\ding{172}\ding{173}\ding{174}}
+    \begin{dingautolist}{172}
+        \item 若直线 $y = {kx} + b$ 经过第一、二、四象限,则$(k, b)$在第二象限
+        \item 直线 $y = {ax} - {3a} + 2$ 过定点$(3,2)$
+        \item 过点 $(2, - 1)$,斜率为 $- \sqrt{3}$ 的直线的点斜式方程为 $y + 1 =  - \sqrt{3}\left( {x - 2}\right)$
+        \item 斜率为 $-2$,在 $y$ 轴上截距为 3 的直线方程为 $y =  - {2x} \pm  3$
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 直线 $y = {kx} + b$ 经过第一、二、四象限,则 $k < 0,b > 0$ ,所以$(k, b)$在第二象限，故正确
+            \item 直线可写为 $y - 2 = a\left( {x - 3}\right)$ ,所以直线过定点(3,2)，故正确
+            \item 根据直线的点斜式方程知正确
+            \item 由直线的斜截式方程得 $y =  - {2x} + 3$，故错误. 
+        \end{dingautolist}
+    \end{jieda}
+    
+    \item 已知直线 $l$ 过点$(1,1)$,且倾斜角为 $\ang{90}$ ,则直线 $l$ 的方程为\blkda{$x = 1$}
+    \begin{jieda}
+        因为直线 $l$ 的倾斜角为 $\ang{90}$, 所以该直线无斜率,与 $x$ 轴垂直,又因为直线 $l$ 过点(1,1), 所以直线 $l$ 的方程为 $x = 1$ .
+    \end{jieda} 
+    \item 已知直线 $l$ 的一个方向向量为 $\vv{d} = \left( {2,3}\right)$ ,若 $l$ 过点 $A\left( {-4,3}\right)$ ,则直线 $l$ 的方程为\blkda[3]{$3x-2y+18=0$}
+    \begin{jieda}
+        根据题干条件可以写出直线的点方向式方程：$\dfrac{x+4}{2} = \dfrac{y-3}{3}$
+        
+        故直线 $l$ 的方程为 $3x-2y+18=0$ .
+    \end{jieda}
+    \item 过点 $P\left( {2,3}\right)$ 且在两坐标轴上截距相等的直线方程为\blkda[5]{${3x} - {2y} = 0$ 或 $x + y - 5 = 0$}.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 当截距为 0 时，直线方程为 ${3x} - {2y} = 0$
+            \item 当截距不为 0 时，设直线方程为 $\dfrac{x}{a} + \dfrac{y}{a} = 1$，则 $\dfrac{2}{a} + \dfrac{3}{a} = 1$，解得 $a = 5$ .
+            
+            所以直线方程为 $x + y - 5 = 0$ .
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 在$\triangle ABC$中，已知$D(-1, 2), E(2, -3), F(-3, 4)$依次为$AB, BC, AC$的中点，求$AB, BC, CA$的两点式方程.
+    \begin{jieda}
+        设$A(x_1, y_1), B(x_2, y_2), C(x_3, y_3)$，根据中点坐标公式有$\left \{ \begin{array}{l}
+             x_1 + x_2 = -2 \\
+             x_2 + x_3 = 4 \\
+             x_3 + x_1 = -6
+        \end{array}\right.$，$\left \{ \begin{array}{l}
+             y_1 + y_2 = 4 \\
+             y_2 + y_3 = -6 \\
+             y_3 + y_1 = 8
+        \end{array}\right.$，因此$A(-6, 9), B(4, -5), C(0, -1)$，故直线$AB$的两点式方程为$\dfrac{y - 9}{-14} = \dfrac{x+6}{10}$，$BC$的两点式方程为$\dfrac{y+1}{-4} = \dfrac{x}{4}$，$CA$的两点式方程为$\dfrac{y-9}{-10} = \dfrac{x+6}{6}$.
+    \end{jieda}
+    \item 已知$\triangle ABC$的三个顶点为$A(1, 6), B(-1, -2), C(6, 3)$，$D$为$BC$中点，求
+    \begin{enumerate*}
+        \item $BC$边上高所在直线的方程
+        \item 中线$AD$所在的直线方程
+        \item $\angle A$的角平分线所在直线的方程
+    \end{enumerate*}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 易知$BC$边上的高所在直线的法向量为$\vv{BC} = (7, 5)$，且过$A$点，因此直线的点法式方程为$7(x - 1)+5(y-6) = 0$，故直线一般式方程为$7x+5y-37=0$
+            \item 根据中点坐标公式可知$D(2.5, 0.5)$，因此中线$AD$所在的直线的两点式方程为：$\dfrac{y - 6}{-5.5} = \dfrac{x - 1}{1.5}$，即$\dfrac{y - 6}{-11} = \dfrac{x-1}{3}$，故直线一般式方程为$11x+3y-29 = 0$
+            \item 首先应考虑得到角分线所在直线的方向向量：$\vv{AB} = (-2, -8), \vv{AC} = (5, -3)$，其所对应的单位向量$\vv{b} = \left(\dfrac{-2}{\sqrt{68}}, \dfrac{-8}{\sqrt{68}}\right), \vv{c} = \left(\dfrac{5}{\sqrt{34}}, \dfrac{-3}{\sqrt{34}}\right)$，故角平分线上的方向向量为$\left(5\sqrt{2}-2, -3\sqrt{2}-8\right)$，因此可以写出直线的点方向式方程为$\dfrac{y-6}{-3\sqrt{2}-8} = \dfrac{x-1}{5\sqrt{2}-2}$，故直线的一般式方程为$(3\sqrt{2}+8)x+(5\sqrt{2}-2)y+(4-33\sqrt{2})=0$
+        \end{enumerate}
+    \end{jieda}
+    \item 求经过点$A(2, -5)$且平行于直线$l_1: 4x-3y+2=0$的一般式直线方程
+    \begin{jieda}
+        易知目标直线的斜率存在，与$l_1$相同，$k = \dfrac{4}{3}$，因此可以写出其点斜式方程为$(y+5) = \dfrac{4}{3}(x-2)$，整理可得一般式方程为$4x-3y-23=0$.
+    \end{jieda}
+    
+    \item 已知直线 $l$ 的倾斜角为 $\alpha ,\sin \alpha  = \dfrac{3}{5}$ ,且这条直线 $l$ 经过点 $P\left( {3,5}\right)$，求直线 $l$ 的一般式方程为.
+    \begin{jieda}
+        因为 $\sin \alpha  = \dfrac{3}{5}$，所以直线 $l$ 的斜率为 $k = \tan \alpha  =  \pm  \dfrac{3}{4}$
+        
+        又因为直线 $l$ 经过点 $P\left( {3,5}\right)$ ,所以直线 $l$ 的方程为 $y - 5 = \dfrac{3}{4}\left( {x - 3}\right)$ 或 $y - 5 =  - \dfrac{3}{4}\left( {x - 3}\right)$
+        
+        所以直线 $l$ 的一般式方程为 ${3x} - {4y} + {11} = 0$ 或 ${3x} + {4y} - {29} = 0$ .
+    \end{jieda}
+    \item 若 ${ab} > 0$ ,且 $A\left( {a,0}\right)$ , $B\left( {0,b}\right)$ , $C\left( {-2, - 2}\right)$ 三点共线,则 ${ab}$ 的最小值为\blkda{16}.
+    \begin{jieda}
+        根据 $A\left( {a,0}\right) ,B\left( {0,b}\right)$ 确定直线的方程为 $\dfrac{x}{a} + \dfrac{y}{b} = 1$ ,又因为 $C\left( {-2, - 2}\right)$ 在该直线上，故 $\dfrac{-2}{a} + \dfrac{-2}{b} = 1$，所以 $- 2\left( {a + b}\right)  = {ab}$ . 又因为 ${ab} > 0$ ,故 $a < 0,b < 0$ .
+        
+        根据基本不等式 ${ab} =  - 2\left( {a + b}\right)  \geq  4\sqrt{ab}$ ,从而 $\sqrt{ab} \geq  4$ ,故 ${ab} \geq  {16}$ ,当且仅当 $a = b =  - 4$ 时取
+        
+        等号,即 ${ab}$ 的最小值为 16 .
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{两直线位置关系}
+对于两直线$l_1:a_1 x + b_1y + c_1 = 0$和$l_2:a_2x+b_2y+c_2 = 0$：
+\begin{dingautolist}{172}
+    \item $l_1$与$l_2$平行$\Longleftrightarrow \left \{ \begin{array}{l}
+         a_1 x + b_1y + c_1 = 0  \\
+         a_2x + b_2y + c_2 = 0 
+    \end{array} \right.$ 无解 $\Longleftrightarrow$ 斜率相等或均不存在
+    \item $l_1$与$l_2$重合$\Longleftrightarrow \left \{ \begin{array}{l}
+         a_1 x + b_1y + c_1 = 0  \\
+         a_2x + b_2y + c_2 = 0 
+    \end{array} \right.$ 有无数组解 $\Longleftrightarrow $斜率相等或均不存在，且存在公共点
+    \item $l_1$与$l_2$相交$\Longleftrightarrow \left \{ \begin{array}{l}
+         a_1 x + b_1y + c_1 = 0  \\
+         a_2x + b_2y + c_2 = 0 
+    \end{array} \right.$ 有唯一解 $\Longleftrightarrow$ 斜率不相等
+    \item $l_1$与$l_2$垂直 $\Longleftrightarrow$ 斜率互为负倒数或者一条直线斜率为0另一条直线斜率不存在
+\end{dingautolist}
+例题：
+\begin{enumerate}
+    \item 下列结论中正确的序号有\blkda{\ding{174}\ding{175}}
+    \begin{dingautolist}{172}
+        \item 当直线 ${l}_{1}$ 和 ${l}_{2}$ 斜率都存在时,一定有 ${k}_{1} = {k}_{2} \Longrightarrow  {l}_{1}//{l}_{2}$ .
+        \item 若两条直线 ${l}_{1}$ 与 ${l}_{2}$ 垂直,则它们的斜率之积一定等于 $- 1.$
+        \item 直线外一点与直线上点的距离的最小值就是点到直线的距离.
+        \item 若点 $A,B$ 关于直线 $l : y = {kx} + b\left( {k \neq  0}\right)$ 对称,则直线 ${AB}$ 的斜率等于 $- \dfrac{1}{k}$ ,且线段 ${AB}$ 的中点在直线 $l$ 上.
+    \end{dingautolist}
+    \item 设直线 ${l}_{1} : y = {px} + q,{l}_{2} : y = {kx} + b$ ,则下列说法正确的序号有\blkda{\ding{173}\ding{174}}
+    \begin{dingautolist}{172}
+        \item 直线 ${l}_{1}$ 或 ${l}_{2}$ 可以表示平面直角坐标系内任意一条直线
+        \item ${l}_{1}$ 与 ${l}_{2}$ 至多有无穷多个交点
+        \item ${l}_{1}//{l}_{2}$ 的充要条件是 $p = k$ 且 $q \neq  b$
+        \item 记 ${l}_{1}$ 与 ${l}_{2}$ 的交点为 $M$ ,则 $y - {px} - q + \lambda \left( {y - {kx} - b}\right)  = 0$ 可表示过点 $M$ 的所有直线
+    \end{dingautolist}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 当直线的斜率不存在时,直线方程为 $x = m(m$ 为直线与 $x$ 轴交点的横坐标),此时直线 ${l}_{1}$ 或 ${l}_{2}$ 的方程无法表示,故错误;
+            \item 当 $p = k$ 且 $q = b$ 时,两直线重合,此时两直线有无穷多个交点,故正确;
+            \item 当 $p = k$ 且 $q \neq  b$ 时, ${l}_{1}//{l}_{2}$，故正确;
+            \item 记 ${l}_{1}$ 与 ${l}_{2}$ 的交点为 $M$ ,则 $M$ 的坐标满足 ${l}_{1} : y = {p} x + q$ 且满足 ${l}_{2} : y = {k} x + b$ ,则 $y - {p}x - q + \lambda \left( {y - {k} x - b}\right)  = 0$不表示过点 $M$ 的直线 ${l}_{2}$ ,故错误.
+        \end{dingautolist}
+    \end{jieda}
+    
+    \item 
+    \begin{enumerate}
+        \item 当实数$k$为何值时，直线$l: kx-y+3 = 0$经过直线$l_1:2x-y+1=0$和直线$l_2:y=x+5$的交点？
+        \item 若两直线$l_1:y = kx+2k+1$和$l_2:x+2y-4=0$的交点在第四象限，求实数$k$的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $l_1, l_2$的交点为$(4, 9)$，代入直线$l$的方程有$k = \dfrac{3}{2}$
+            \item 联立直线方程有$\left\{\begin{array}{l}
+                 y = kx+2k+1 \\
+                 x+2y-4=0 
+            \end{array} \right.$，得$y = k(4-2y)+2k+1$，即$(2k+1)y = 6k+1$，故交点为$\left(\dfrac{2-4k}{2k+1}, \dfrac{6k+1}{2k+1}\right)$，因为交点在第四象限，所以$\left\{\begin{array}{l}
+                 \dfrac{2-4k}{2k+1} > 0 \\
+                 \dfrac{6k+1}{2k+1} < 0
+            \end{array} \right.$，即$\left\{\begin{array}{l}
+                 (2-4k)(2k+1) > 0 \\
+                 (6k+1)(2k+1) < 0
+            \end{array} \right.$，解得$k \in \left(-\dfrac{1}{2}, -\dfrac{1}{6}\right)$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 讨论$l_1: x+m^2y+6=0, l_2: (m-2)x+3my+2m=0$之间的位置关系：
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1
+
+            \begin{dingautolist}{172}
+                \item $m = 0$时，两直线斜率均不存在，$l_1: x = -6, l_2: x = 0$，两者平行
+                \item $m \neq 0$时，$l_1$的斜率为$k_1 = -\dfrac{1}{m^2}$，$l_2$的斜率为$k_2 = \dfrac{2-m}{3m}$
+                
+                当$m^2-2m=3$，即$m = -1$或$3$的时候，两者斜率相同.
+                
+                当$m = -1$时，$l_1: x+y+6 = 0$，$l_2: -3x-3y-2=0$，两条直线平行
+                
+                当$m = 3$时，$l_1, l_2: x+9y+6=0$两直线重合
+                
+                其余情况两直线相交.
+            \end{dingautolist}
+            综上，当$m \notin \{-1, 3, 0\}$的时候，两直线相交，当$m \in \{0, -1\}$时，两直线平行，当$m = 3$时，两直线重合.
+
+            \item 方法2
+
+            $\vv{n_1} = (1, m^2)$，$\vv{n_2} = (m-2, 3m)$
+
+            当$(m-2)m^2 \neq 3m$时，即$m \notin \{0, -1, 3\}$时，$\vv{n_1}$不平行于$\vv{n_2}$，两直线相交
+
+            其余情况单独检验可知当$m = 0,-1$时，两条直线平行，当$m = 3$时，两直线重合，其余情况两直线相交.
+        \end{enumerate}
+    \end{jieda}
+    \item 已知 ${a}^{2} - {3a} + 2 = 0$ ,则直线 ${l}_{1} : {ax} + \left( {3 - a}\right) y - a = 0$ 和直线 ${l}_{2} : \left( {6 - {2a}}\right) x + \left( {{3a} - 5}\right) y - 4 + a = 0$ 的位置关系为\dotfill{(\kh{D})}
+    \xx{垂直或平行}{垂直或相交}{平行或相交}{垂直或重合}
+    \begin{jieda}
+        因为 ${a}^{2} - {3a} + 2 = 0$ ,所以 $a = 1$ 或 $a = 2$ .
+        \begin{dingautolist}{172}
+            \item 当 $a = 1$ 时, ${l}_{1} : x + {2y} - 1 = 0,{l}_{2} : {4x} - {2y} - 3 = 0$，${k}_{1} =  - \dfrac{1}{2},{k}_{2} = 2$ ,所以 ${k}_{1} \cdot  {k}_{2} =  - 1$ ,则两直线垂直
+            \item 当 $a = 2$ 时, ${l}_{1} : {2x} + y - 2 = 0$ ,
+            ${l}_{2} : {2x} + y - 2 = 0$ ,则两直线重合.
+        \end{dingautolist}
+    \end{jieda}
+        
+    \item 设 $A,B$ 是 $x$ 轴上的两点,点 $P$ 的横坐标为 2,且 $\left| {PA}\right|  = \left| {PB}\right|$ ,若直线 ${PA}$ 的方程为 $x - y + 1 = 0$ ,则直线 ${PB}$ 的方程是\blkda[3]{$x + y - 5 = 0$}
+    \begin{jieda}
+        易知直线$PA$和$PB$关于直线$x = 2$对称，$k_{PB} = -1$. 直线 ${PA}$方程中代入$P$的横坐标可得$P(2, 3)$，故$PB: y = -(x-2)+3$，即$x + y - 5 = 0$
+    \end{jieda}
+    \item 若直线 ${2x} + {my} + 1 = 0$ 与直线 ${3x} + {6y} - 1 = 0$ 平行,则 $m = $\blkda{4}
+    \begin{jieda}
+        因为直线 ${2x} + {my} + 1 = 0$ 与直线 ${3x} + {6y} - 1 = 0$ 平行,所以 $\dfrac{2}{3} = \dfrac{m}{6} \neq  \dfrac{1}{-1}$ ,解得 $m = 4$ .
+    \end{jieda}
+
+    \item 过直线 ${3x} - y + 5 = 0$ 与 ${2x} - y + 6 = 0$ 的交点,且垂直于直线 $x - {2y} + 1 = 0$ 的直线方程是\blkda[3]{${2x} + y - {10} = 0$}
+    \begin{jieda}
+        由 $\left\{  \begin{array}{l} {3x} - y + 5 = 0, \\  {2x} - y + 6 = 0, \end{array}\right.$ 解得 $\left\{  \begin{array}{l} x = 1, \\  y = 8, \end{array}\right.$ 直线 $x - {2y} + 1 = 0$ 的斜率为 $\dfrac{1}{2}$ ,
+        故过点$(1,8)$且垂直于直线 $x - {2y} + 1 = 0$ 的直线方程为 $y - 8 =  - 2\left( {x - 1}\right)$，即 ${2x} + y - {10} = 0$ .
+    \end{jieda}
+    
+\end{enumerate}
+\subsection*{两直线的夹角}
+\begin{enumerate}
+    \item 两直线相交时所形成的锐角或直角称为是两直线的夹角，当两直线平行或重合时，规定其夹角为0，因此两直线夹角的取值范围是$\left[0, \dfrac{\pi}{2}\right]$
+    \item 对于两直线$l_1:a_1 x + b_1y + c_1 = 0$和$l_2:a_2x+b_2y+c_2 = 0$，其方向向量为$\vv{d_1} = (b_1, -a_1), \vv{d_2} = (b_2, -a_2)$，两直线夹角$\alpha$的余弦值即两方向向量夹角$\theta$的余弦值的绝对值，由此可得两直线夹角的余弦值为$cos\alpha = |cos\theta| = \left|\dfrac{\vv{d_1} \cdot \vv{d_2}}{|\vv{d_1}| \cdot |\vv{d_2}|}\right| = \dfrac{|a_1a_2 + b_1b_2|}{\sqrt{a_1^2+b_1^2} \cdot \sqrt{a_2^2+b_2^2}}$
+    \item 两直线垂直的充要条件是$a_1a_2 + b_1b_2 = 0$
+    \item 若两直线斜率$k_1, k_2$均存在，则当两直线垂直时有$k_1k_2 = -1$，当两直线不垂直时，根据两角差的正切公式有$tan\alpha = \left|\dfrac{k_1 - k_2}{1+k_1k_2}\right|$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 已知直线$l_1: ax+2y+6=0, l_2: x+(a-1)y+(a^2-1) = 0$
+    \begin{enumerate}
+        \item 当$l_1 // l_2$时，求实数$a$
+        \item 当$l_1 \perp l_2$时，求实数$a$
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 当$l_1 // l_2$时，两者法向量平行，因此有$a(a-1) = 2$，解得$a = 2$或$-1$. 当$a = 2$时两直线重合，舍去。因此$a = -1$时两直线平行.
+            \item 当$l_1 \perp l_2$时，有$a+2(a-1) = 0$，因此$a = \dfrac{2}{3}$时，两直线垂直
+        \end{enumerate}
+    \end{jieda}
+    \item 已知直线$l'$经过$P(-2, \sqrt{3})$，且与直线$l: x-\sqrt{3}y+2=0$夹角为$\dfrac{\pi}{3}$，求直线$l'$的方程.
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1 \\
+            已知直线$l$的倾斜角为$\dfrac{\pi}{6}$，因此$l'$有两解，对应着倾斜角为$\dfrac{\pi}{2}$和$\dfrac{5\pi}{6}$.故其方程为$x = -2$和$y = -\dfrac{\sqrt{3}}{3}(x+2)+\sqrt{3}$，即$x+\sqrt{3}y-1 = 0$
+            \item 方法2 \\
+            设直线$l'$方程为$x+by+c=0$，因此有$\left\{\begin{array}{l}
+                 -2+\sqrt{3}b+c = 0  \\
+                 \dfrac{|1-\sqrt{3}b|}{\sqrt{1+b^2} \cdot 2} = \dfrac{1}{2}
+            \end{array}\right.$，下式整理得$1+3b^2-2\sqrt{3}b = 1+b^2$，故$b = 0$或$b = \sqrt{3}$，故直线方程为$x + 2 = 0$或$x+\sqrt{3}y-1 = 0$
+        \end{enumerate}
+    \end{jieda}
+    \item 已知直线 ${l}^{\prime }$ 经过点 $P\left( {2,1}\right)$ ,与直线 $l : x + {2y} + 1 = 0$ 的夹角为 $\arccos \dfrac{\sqrt{5}}{5}$ . 则直线 ${l}^{\prime }$ 的方程\blkda[4]{${3x} - {4y} - 2 = 0$或$x = 2$}.
+    \begin{jieda}
+
+        直线$l$的方向向量为$\vv{d} = (-2, 1)$，设$l'$的方向向量为$(cos\alpha, sin\alpha)$，则$cos\theta = \dfrac{-2cos\alpha+sin\alpha}{\sqrt{5}}$，根据题意可知$\dfrac{-2cos\alpha+sin\alpha}{\sqrt{5}} = \dfrac{\sqrt{5}}{5}$，故$-2cos\alpha+sin\alpha = 1$，即$3cos^2\alpha = 4sin\alpha cos\alpha$，故$tan\alpha = \dfrac{3}{4}$或$cos\alpha = 0$，即直线 ${l}^{\prime }$的斜率$k = \dfrac{3}{4}$或不存在.
+
+        故直线${l}^{\prime }$ 的方程为${3x} - {4y} - 2 = 0$或 $x = 2$.
+    \end{jieda}
+
+    \item 已知两点$A(-1, 1), B(1, 1)$，点$P$是直线$y = x-2$上的一动点，当$\angle APB$最大时，求点$P$的坐标及$\angle APB$的最大值.
+    \begin{jieda}
+        设$P$坐标为$(t, t-2)$，设$C(3, 1)$，当$t \neq \pm 1$的时候，直线$k_{AP} = \dfrac{t-3}{t+1}, k_{BP} = \dfrac{t-3}{t-1}$
+        \begin{center}
+            \includegraphics[width=0.3\linewidth]{bodyxb//src/zhixiandejiajiao1.png}
+        \end{center}
+        \begin{dingautolist}{172}
+            \item 当$t = 1$时，$\angle APB = \dfrac{\pi}{4}$
+            \item 当$t = -1$时，$\angle APB = arctan\left(\dfrac{1}{2}\right)$
+            \item 当$t = 3$时，$\angle APB = 0$
+            \item 当$t > 3$时，$tan\angle APB = tan(\angle PBC - \angle PAC) = \dfrac{k_{BP} - k_{AP}}{1+k_{BP} \cdot k_{AP}} = \dfrac{\dfrac{t-3}{t-1} - \dfrac{t-3}{t+1}}{1 + \dfrac{t-3}{t+1} \cdot \dfrac{t-3}{t-1}} = \dfrac{2(t-3)}{t^2-1+(t-3)^2} = \dfrac{2(t-3)}{(t-3)^2+6(t-3)+8+(t-3)^2} = \dfrac{1}{(t-3) + \dfrac{4}{(t-3)} + 3} \leq \dfrac{1}{7} $（$t=5$取等号）
+            \item 当$t < 3$且$t \neq \pm 1$时$tan\angle APB = tan(\angle PBC - \angle PAC) = \dfrac{(-k_{BP})-(-k_{AP})}{1+(-k_{BP})\cdot (-k_{AP})} = -\dfrac{1}{(t-3) + \dfrac{4}{(t-3)} + 3} < 1 $
+        \end{dingautolist}
+        综上，$\angle APB$最大值为$\dfrac{\pi}{4}$，当$P$位于$(1, -1)$时取.
+    \end{jieda}
+\end{enumerate}
+\subsection*{直线系}
+\subsubsection*{过两直线交点的直线系}
+设直线$l_1: A_1x+B_1y+C_1=0$，$l_2: A_2x+B_2y+C_2=0$相交于点$M(x_0, y_0)$，则直线$l: A_1x+B_1y+C_1 + \lambda(A_2x+B_2y+C_2) = 0$可以表示除$l_2$外一切过点$M$的直线.
+
+\begin{enumerate}
+    \item $l$过$M$：
+    
+    根据$M$在$l_1$上可知$A_1x_0+B_1y_0+C_1=0$，同理根据$M$在$l_2$上可知$A_2x_0+B_2y_0+C_2=0$，故有$A_1x_0+B_1y_0+C_1 + \lambda(A_2x_0+B_2y_0+C_2) = 0$，即$l$过点$M$.
+
+    \item $l$与$l_2$不重合
+    \begin{enumerate}
+        \item 相交直线不重合的充要条件（$l_1$与$l_2$不重合的充要条件）
+
+        首先将两直线写成点法式$l_1: A_1(x-x_0)+B_1(y-y_0) = 0$，$l_2: A_2(x-x_0)+B_2(y-y_0) = 0$，故有$\vv{n_1} = (A_1, B_1)$，$\vv{n_2} = (A_2, B_2)$，$l_1$与$l_2$不重合$\Longleftrightarrow \vv{n_1}$与$\vv{n_2}$不平行$\Longleftrightarrow A_1B_2 \neq A_2B_1$.
+
+        \item $l$与$l_2$不重合
+
+        将$l$变形：$l: (A_1+\lambda A_2)x+(B_1+\lambda B_2)y + (C_1+C_2) = 0$
+        
+        写出点法式方程：$l: (A_1+\lambda A_2)(x-x_0)+(B_1+\lambda B_2)(y-y_0) = 0$
+
+        $\vv{n} = (A_1+\lambda A_2, B_1+\lambda B_2)$，$\vv{n_2} = (A_2, B_2)$
+        
+        $(A_1+\lambda A_2)B_2 - (B_1+\lambda B_2)A_2 = A_1B_2-B_1A_2 \neq 0$，故$\vv{n}$与$\vv{n_2}$不平行$\Longleftrightarrow l$与$l_2$不重合
+    \end{enumerate}
+    \item 除$l_2$外，一切过$M$的直线均可以用$l$来表示
+
+    除$l_2$外，过$M$点的直线可以表示为$l': A(x-x_0)+B(y-y_0) = 0 (AB_2 \neq BA_2)$，若$l$与$l'$重合则应有法向量平行
+    
+    即$\vv{n'} = (A, B)$与$\vv{n} = (A_1+\lambda A_2, B_1+\lambda B_2)$平行
+    
+    即$A(B_1+\lambda B_2) = B(A_1+\lambda A_2)$，解得$\lambda = \dfrac{AB_1-BA_1}{BA_2-AB_2}$
+
+    \item 基向量视角
+
+    根据前面的推导可知，当两直线有交点时，法向量平行则两直线重合
+    
+    将$\vv{e_1} = (A_1, B_1), \vv{e_2} = (A_2, B_2)$看做是一组基来表示向量$\vv{n'} = (A, B)$，即$\vv{n'} = p \cdot \vv{e_1} + q \cdot \vv{e_2}$
+    
+    当且仅当$p \neq 0$时，存在$\vv{m'} = \dfrac{\vv{n'}}{p}$与$\vv{n'}$平行，且有$\vv{m'} = \vv{e_1} + \dfrac{q}{p} \cdot \vv{e_2}$
+    
+    故存在$\lambda = \dfrac{q}{p}$使得$l$的法向量$\vv{n} = \vv{m'}$与$l'$的法向量$\vv{n'}$平行
+\end{enumerate}
+
+\subsubsection*{平行直线系与垂直直线系}
+
+设直线$l: Ax+By+C=0$
+
+直线$m: Ax+By+p= 0$可以表示与直线$l$平行或重合的直线系.
+
+直线$n: -Bx+Ay+q = 0$可以表示与直线$l$垂直的直线系.
+
+例题：
+\begin{enumerate}
+    \item 设直线 ${2x} + \left( {k - 3}\right) y - {2k} + 6 = 0$ 过定点 $P$ ,则点 $P$ 的坐标为\blkda{$\left( {0,2}\right)$}.
+    \begin{jieda}
+        由直线方程 ${2x} + \left( {k - 3}\right) y - {2k} + 6 = 0$ ,可化简为 $\left( {{2x} - {3y} + 6}\right)  + k\left( {y - 2}\right)  = 0$ ,
+    
+        又由 $\left\{  \begin{array}{l} {2x} - {3y} + 6 = 0 \\  y - 2 = 0 \end{array}\right.$ ,解得 $x = 0,y = 2$，即直线恒经过定点 $P\left( {0,2}\right)$ .
+
+        \ps 解决直线过定点问题的问题中，实际就是将过两直线交点的直线系的方程表示出来，并求得两个方程的交点的过程.
+    \end{jieda}
+    \item 经过两直线 ${l}_{1} : {2x} - y + 3 = 0$ 与 ${l}_{2} : x + {2y} - 1 = 0$ 的交点,且平行于直线 ${3x} + {2y} + 7 = 0$ 的直线方程是\blkda[3]{${3x} + {2y} + 1 = 0$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1
+
+            由 $\left\{  {\begin{array}{l} {2x} - y + 3 = 0, \\  x + {2y} - 1 = 0, \end{array}\;\text{ 解得 }\left\{  \begin{array}{l} x =  - 1, \\  y = 1, \end{array}\right. }\right.$ 所以直线 ${l}_{1}$ 与 ${l}_{2}$ 的交点为$(-1,1)$,设与直线 ${3x} + {2y} + 7 = 0$ 平行的直线为 ${3x} + {2y} + m = 0\left( {m \neq  7}\right)$ ,所以 $3 \times  \left( {-1}\right)  + 2 \times  1 + m = 0$ ,解得 $m = 1$ ,所以所求直线方程为 ${3x} + {2y} + 1 = 0$ .
+
+            \item 方法2
+
+            经过两直线 ${l}_{1} : {2x} - y + 3 = 0$ 与 ${l}_{2} : x + {2y} - 1 = 0$ 的交点的直线可以表示为$({2x} - y + 3) + \lambda (x + {2y} - 1) = 0$，即$(2+\lambda)x + (-1+2\lambda)y + (3-\lambda) = 0$，与直线 ${3x} + {2y} + 7 = 0$ 平行则应有$2(2+\lambda) = 3(-1+2\lambda)$，解得$\lambda = \dfrac{7}{4}$
+            
+            故直线方程为$\dfrac{15}{4}x+\dfrac{10}{4}y+\dfrac{5}{4} = 0$，即${3x} + {2y} + 1 = 0$
+        \end{enumerate}
+        
+    \end{jieda}
+    \item 若直线 ${2x} - y - {10} = 0$ 经过直线 ${4x} + {3y} - {10} = 0$ 和 ${ax} + {2y} + 8 = 0$ 的交点,则实数 $a =$ \blkda{$-1$}.
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1 \\
+            直线 ${2x} - y - {10} = 0$ 和直线 ${4x} + {3y} - {10} = 0$交于$(4, -2)$，因此直线${ax} + {2y} + 8 = 0$过该点，故$a = -1$
+            \item 方法2 \\
+            ${2x} - y - {10} = \mu({4x} + {3y} - {10} + \lambda({ax} + {2y} + 8))$
+
+            则有$\left\{\begin{array}{l}
+                 2 = 4\mu +\mu \cdot a \cdot \lambda \\
+                 -1 = 3\mu + 2\mu\lambda \\
+                 -10 = -10 \mu + 8 \mu \lambda
+            \end{array}\right.$，解得$\left\{\begin{array}{l}
+                 a = -1  \\
+                 \mu = \dfrac{3}{11} \\
+                 \lambda = -\dfrac{10}{3}
+            \end{array}\right.$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{点到直线的距离}
+\begin{enumerate}
+    \item 点到直线的距离\\
+    平面上一点$P(x_0, y_0)$到直线$l: ax+by+c=0$的距离为$d = \dfrac{|ax_0+by_0+c|}{\sqrt{a^2+b^2}}$，推导如下：\\
+    设点$P$在直线$l$上的投影为点$Q(x_1, y_1)$，则点到直线的距离即$\vv{PQ} = (x_1-x_0, y_1-y_0)$的模，直线的法向量为$\vv{n} = (a, b)$，由于$\vv{PQ}$与$\vv{n}$共线，因此$|\vv{PQ}| = \dfrac{|\vv{PQ} \cdot \vv{n}|}{|\vv{n}|} = \dfrac{|a(x_1-x_0)+b(y_1-y_0)|}{\sqrt{a^2+b^2}} = \dfrac{|-ax_0-by_0-c|}{\sqrt{a^2+b^2}} = \dfrac{|ax_0+by_0+c|}{\sqrt{a^2+b^2}}$
+    \item 点到直线距离公式的推论 \\
+    在推导点到直线距离公式的过程中，若$\vv{PQ}$与$\vv{n}$同向共线，则$ax_0+by_0+c > 0$；反之，若$\vv{PQ}$与$\vv{n}$反向共线，则$ax_0+by_0+c < 0$，因此有推论：设$\delta = ax_0+by_0+c$，对于直线同侧的点，$\delta$是同号的，对于直线异侧的点，$\delta$是异号的.
+    \item 两直线间距离\\
+    根据点到直线距离公式可以进一步推得两平行直线$l_1: ax+by+c_1=0$与$l_2: ax+by+c_2=0$间的距离公式为$d = \dfrac{|c_1-c_2|}{\sqrt{a^2+b^2}}$, 推导如下：\\
+    在直线$l_1$上取点$P(x_1, y_1)$，故根据点到直线距离公式可知$P$到$l_2$的距离为$\dfrac{|ax_1+by_2+c|}{\sqrt{a^2+b^2}}$，代入$l_1$的方程即有$d = \dfrac{|c_1-c_2|}{\sqrt{a^2+b^2}}$
+\end{enumerate}
+例题：
+\begin{enumerate}
+    \item 点 $A\left( {2,5}\right)$ 到直线 $l : x - {2y} + 3 = 0$ 的距离为\blkda{$\sqrt{5}$}
+    \begin{jieda}
+        点 $A\left( {2,5}\right)$ 到直线 $l : x - {2y} + 3 = 0$ 的距离为 $d = \dfrac{\left| 2 - {10} + 3\right| }{\sqrt{1 + 4}} = \sqrt{5}$ .
+    \end{jieda}
+
+    \item 已知点$P(2, -1)$，求：
+    \begin{enumerate}
+        \item 过点$P$，且与原点距离为2的直线方程
+        \item 过点$P$，且与原点距离最大的直线方程，并求出距离最大值
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 若直线斜率不存在，则直线方程为$x = 2$，符合条件 \\
+            若直线斜率存在，则设直线方程为$y = k(x-2)-1$，代入点到直线距离公式有$d = \dfrac{|2k+1|}{\sqrt{1+k^2}} = 2$，去分母平方后有$4k^2+4k+1 = 4(1+k^2)$，解得$k = \dfrac{3}{4}$，因此存在直线$y = \dfrac{3(x-2)}{4}-1$符合条件
+            \item 若直线斜率存在，则设直线方程为$y = k(x-2)-1$，代入点到直线距离公式有$d = \dfrac{|2k+1|}{\sqrt{1+k^2}}$，距离$d$取最大值即$d^2 = \dfrac{4k^2+4k+1}{1+k^2} = 4+\dfrac{4k-3}{1+k^2}$取最大值，设$t = 4k-3$，则$\dfrac{4k-3}{1+k^2} = \dfrac{t}{1+\left(\dfrac{t+3}{4}\right)^2} = \dfrac{16t}{t^2+6t+25} = \dfrac{16}{t+\dfrac{25}{t}+6} \leq 1$，当$k = 2$时取得最大值.因此$d$的最大值为$\sqrt{5}$，此时直线方程为$y = 2x - 5$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 已知直线 $l$ 过点 $P\left( {1,2}\right)$ ,且点 $A\left( {2,3}\right) ,B\left( {4, - 5}\right)$ 到直线 $l$ 的距离相等,则 $l$ 的方程可能是\blkda[6]{${4x} + y - 6 = 0$或${3x} + {2y} - 7 = 0$}
+    \begin{jieda}
+        由条件可知直线 $l$ 平行于直线 ${AB}$ 或过线段 ${AB}$ 的中点
+        \begin{dingautolist}{172}
+            \item 当直线 $l//{AB}$ 时,因为直线 ${AB}$ 的斜率为 $\dfrac{3 - \left( {-5}\right) }{2 - 4} =  - 4$，所以直线 $l$ 的方程是 $y - 2 =  - 4\left( {x - 1}\right)$ ,即 ${4x} + y - 6 = 0$ ;
+            \item 当直线 $l$ 经过线段 ${AB}$ 的中点$(3, - 1)$时，$l$ 的斜率为 $\dfrac{2 - \left( {-1}\right) }{1 - 3} =  - \dfrac{3}{2}$ ,
+            此时 $l$ 的方程是 $y - 2 =  - \dfrac{3}{2}\left( {x - 1}\right)$ ,
+            即 ${3x} + {2y} - 7 = 0$ .
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知直线 ${l}_{1} : {2x} + y + 1 = 0$ 和直线 ${l}_{2} : x + {ay} + 3 = 0$ ,若 ${l}_{1} \bot  {l}_{2}$ ,则实数 $a$ 的值为\blkda{$-2$}; 若 ${l}_{1}//{l}_{2}$ ,则 ${l}_{1}$ 与 ${l}_{2}$之间的距离为\blkda{$\sqrt{5}$}.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 若 ${l}_{1} \bot  {l}_{2}$ ,则 $2 + a = 0$ ,解得 $a =  - 2$
+            \item 若 ${l}_{1}//{l}_{2}$ ,则 ${2a} = 1$ ,解得 $a = \dfrac{1}{2}$ ,此时直线 ${l}_{2} : {2x} + y + 6 = 0$ ,显然两直线不重合,
+            故此时 ${l}_{1}$ 与 ${l}_{2}$ 间的距离 $d = \dfrac{\left| 5\right| }{\sqrt{1 + 4}} = \sqrt{5}$ .
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知正方形的中心是点$M(-1, 0)$，并且其中一条边所在的直线方程是$x+3y-5 = 0$，求其他三边所在的直线方程
+    \begin{jieda}
+        首先根据点到直线距离公式可以算出正方形的边到中心的距离为$d = \dfrac{|-1+0-5|}{\sqrt{1+9}} = \dfrac{3}{5}\sqrt{10}$
+        \begin{dingautolist}{172}
+            \item 设与已知边平行的正方形的另一条边所在直线为$x+3y+c = 0$，因此有$d = \dfrac{|-1+0+c|}{\sqrt{1+9}} = \dfrac{3}{5}\sqrt{10}$，故$c = 7$，因此另一边所在直线为$x+3y+7 = 0$ 
+            \item 设与已知边垂直的正方形的另外两条边所在的直线为$-3x+y+c = 0$，因此有$d = \dfrac{|3+0+c|}{\sqrt{1+9}} = \dfrac{3}{5}\sqrt{10}$，故$c = 3$或$-9$，因此另两边所在直线为$-3x+y-9 = 0, -3x+y+3 = 0$
+        \end{dingautolist}
+    \end{jieda}
+    \item 已知直线：$l: y = kx+1$与两点$A(-1, 5), B(4, -2)$，若直线$l$与线段$AB$相交，求实数$k$的取值范围.
+    \begin{jieda}
+        问题可以转化为$A,B$两点在直线异侧或其一在直线上，因此有$(-k-5+1)\cdot(4k+2+1) \leq 0$，即$(k+4)(4k+3)\geq 0$，故$k \in (-\infty, -4] \cup [-\dfrac{3}{4}, +\infty)$
+    \end{jieda}
+    \item 已知倾斜角为$45^{\circ}$的直线$l$过点$A(1,-2)$和点$B$，点$B$在第一象限，$|AB| = 3\sqrt{2}$
+    \begin{enumerate}
+        \item 求点$B$的坐标
+        \item 对于平面内任一点$P$，当$Q$在线段$AB$上运动时，称$|PQ|$的最小值为$P$与线段$AB$的距离，已知点$P$在$x$轴上运动，写出点$P(t, 0)$到线段$AB$的距离$h$关于$t$的函数关系式
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 根据直线的倾斜角可设直线为$y = x-3$，根据$|AB| = 3\sqrt{2}$和$B$在第一象限可知$B(4,1)$
+            \item 过点$P$与$AB$垂直的直线为$y = -x+t$，其与直线$y = x-3$交于点$\left(\dfrac{t+3}{2}, \dfrac{t-3}{2}\right)$
+            \begin{dingautolist}{172}
+                \item 若交点横坐标$\dfrac{t+3}{2} \in [1,4]$，即$t \in [-1, 5]$，则交点在线段$AB$上，$h = \left|\dfrac{\sqrt{2}(t-3)}{2}\right|$
+                \item 若交点横坐标$\dfrac{t+3}{2} \in (4, +\infty)$，即$t \in (5,+\infty)$，则最短距离为$|PB|$，$h = \sqrt{t^2-8t+17}$
+                \item 若交点横坐标$\dfrac{t+3}{2} \in (-\infty, 1)$，即$t \in (-\infty, -1)$，则最短距离为$|PA|$，$h = \sqrt{t^2-2t+5}$
+            \end{dingautolist}
+            综上，$h = \left \{ \begin{array}{l}
+                 \sqrt{t^2-2t+5}, t \in (-\infty, -1) \\
+                 \left|\dfrac{\sqrt{2}(t-3)}{2}\right|, t \in [-1, 5] \\
+                 \sqrt{t^2-8t+17}, t \in (5, +\infty)
+            \end{array} \right.$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{对称性相关问题}
+\begin{enumerate}
+    \item 点 $P\left( {2,7}\right)$ 关于直线 $x + y + 1 = 0$ 的对称点的坐标为\blkda{$(-8, -3)$}.
+    \begin{jieda}
+        设点 $P\left( {2,7}\right)$ 关于直线 $x + y + 1 = 0$ 的对称点为 $A\left( {a,b}\right)$ ,
+        由对称性知,直线 $x + y + 1 = 0$ 与线段 ${PA}$ 垂直,所以 ${k}_{PA} = \dfrac{b - 7}{a - 2} = 1$ ,
+        所以 $a - b =  - 5$ ,又线段 ${PA}$ 的中点 $\left( {\dfrac{2 + a}{2},\dfrac{7 + b}{2}}\right)$ 在直线 $x + y + 1 = 0$ 上,
+        即 $\dfrac{2 + a}{2} + \dfrac{7 + b}{2} + 1 = 0$ ,所以 $a + b =  - {11}$ ,
+        由 $\left\{  {\begin{array}{l} a - b =  - 5, \\  a + b =  - {11}, \end{array}\;\text{ 得 }\left\{  \begin{array}{l} a =  - 8, \\  b =  - 3, \end{array}\right. }\right.$
+
+        所以点 $P\left( {2,7}\right)$ 关于直线 $x + y + 1 = 0$ 的对称点的坐标为$(-8, -3)$.
+    \end{jieda}
+
+    \item 直线 $x - {2y} - 3 = 0$ 关于 $x$ 轴对称的直线方程为\blkda[3]{$x + 2y - 3 = 0$}
+    \begin{jieda}
+        直线 $x - {2y} - 3 = 0$ 的斜率为 $k = \dfrac{1}{2}$ 且与 $x$ 轴交于点(3,0),故所求直线的斜率为 $- \dfrac{1}{2}$ ,且过点(3,0)，其方程为 $y =  - \dfrac{1}{2}\left( {x - 3}\right)$，即 $x + {2y} - 3 = 0$ .
+    \end{jieda}
+    
+    
+        \item 已知直线 $l : {2x} - {3y} + 1 = 0$ ,点 $A\left( {-1, - 2}\right)$ . 求：
+        \begin{enumerate}
+            \item 点 $A$ 关于直线 $l$ 的对称点 ${A}^{\prime }$ 的坐标；
+            \item 直线 $m : {3x} - {2y} - 6 = 0$ 关于直线 $l$ 对称的直线 ${m}^{\prime }$ 的方程；
+            \item 直线 $l$ 关于点 $A$ 的对称直线 ${l}^{\prime }$ 的方程.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 设 ${A}^{\prime }\left( {x,y}\right)$ ,由已知条件得
+                $\left\{  \begin{array}{l} \dfrac{y + 2}{x + 1} \times  \dfrac{2}{3} =  - 1, \\  2 \times  \dfrac{x - 1}{2} - 3 \times  \dfrac{y - 2}{2} + 1 = 0, \end{array}\right.$
+                
+                解得 $\left\{  {\begin{array}{l} x =  - \dfrac{33}{13}, \\  y = \dfrac{4}{13}. \end{array}\;\therefore {A}^{\prime }\left( {-\dfrac{33}{13},\dfrac{4}{13}}\right) }\right.$
+                \item
+                \begin{enumerate}[(1)]
+                    \item 方法1\\
+                    设$m'$上的点$M(x, y)$，则$M$关于直线$l$的对称点为$M'(x_1, y_1)$
+                    
+                    则有$\left\{\begin{array}{l}
+                     \dfrac{y-y_1}{x-x_1} \times \dfrac{2}{3} = -1 \\
+                     2 \times \dfrac{x+x_1}{2} - 3 \times \dfrac{y+y_1}{2} + 1 = 0
+                    \end{array}\right.$，
+                    解得 $\left\{  \begin{array}{l} 
+                        x_1 = \dfrac{5}{13}x+\dfrac{12}{13}y-\dfrac{4}{13} \\  
+                        y_1 = \dfrac{12}{13}x-\dfrac{5}{13}y+\dfrac{6}{13}, 
+                        \end{array}\right.$ (*)
+                    
+                    $\because$ 点 ${M}^{\prime }$ 在直线 ${3x} - {2y} - 6 = 0$ 上,
+                    $\therefore$ 将 (*) 式代入,得 $3\left( \dfrac{5}{13}x+\dfrac{12}{13}y-\dfrac{4}{13}\right)  - 2\left( \dfrac{12}{13}x-\dfrac{5}{13}y+\dfrac{6}{13}\right)  - 6 = 0$ ,
+                    化简得 ${9x} - {46y} + {102} = 0$ .                    
+                    \item 方法2 \\
+                    在直线 $m$ 上取一点,如 $M\left( {2,0}\right)$ ,
+                    则 $M\left( {2,0}\right)$ 关于直线 $l$ 的对称点 ${M}^{\prime }$ 必在直线 ${m}^{\prime }$ 上.
+                    设对称点为 ${M}^{\prime }\left( {a,b}\right)$ ,则
+                    $\left\{  {\begin{array}{l} 2 \times  \dfrac{a + 2}{2} - 3 \times  \dfrac{b + 0}{2} + 1 = 0, \\  \dfrac{b - 0}{a - 2} \times  \dfrac{2}{3} =  - 1, \end{array}\;\text{ 得 }{M}^{\prime }\left( {\dfrac{6}{13},\dfrac{30}{13}}\right) .}\right.$
+                    设直线 $m$ 与直线 $l$ 的交点为 $N$ ,
+                    由 $\left\{  \begin{array}{l} {2x} - {3y} + 1 = 0, \\  {3x} - {2y} - 6 = 0, \end{array}\right.$ 得 $N\left( {4,3}\right)$ .
+                    又 ${m}^{\prime }$ 经过点 $N\left( {4,3}\right)$ ,
+                    $\therefore$ 由两点式得直线 ${m}^{\prime }$ 的方程为 ${9x} - {46y} + {102} = 0$ .
+                \end{enumerate}
+                \item \begin{enumerate}[(1)]
+                    \item 方法1
+                    
+                    在 $l : {2x} - {3y} + 1 = 0$ 上任取两点,
+                    如 $P\left( {1,1}\right) ,Q\left( {4,3}\right)$ ,则 $P,Q$ 关于点 $A\left( {-1, - 2}\right)$ 的对称点 ${P}^{\prime },{Q}^{\prime }$ 均在直线 ${l}^{\prime }$ 上,
+                    易得 ${P}^{\prime }\left( {-3, - 5}\right) ,{Q}^{\prime }\left( {-6, - 7}\right)$ ,
+                    再由两点式可得 ${l}^{\prime }$ 的方程为 ${2x} - {3y} - 9 = 0$ .
+                    \item 方法2
+                    
+                    $\because l//{l}^{\prime }$ ,
+                    $\therefore$ 设 ${l}^{\prime }$ 的方程为 ${2x} - {3y} + C = 0\left( {C \neq  1}\right)$ .
+                    $\because$ 点 $A\left( {-1, - 2}\right)$ 到两直线 $l,{l}^{\prime }$ 的距离相等,
+                    $\therefore$ 由点到直线的距离公式,
+                    得 $\dfrac{\left| -2 + 6 + C\right| }{\sqrt{{2}^{2} + {3}^{2}}} = \dfrac{\left| -2 + 6 + 1\right| }{\sqrt{{2}^{2} + {3}^{2}}}$ ,
+                    解得 $C =  - 9$ ,
+                    $\therefore {l}^{\prime }$ 的方程为 ${2x} - {3y} - 9 = 0$ .
+                \end{enumerate}
+            \end{enumerate}
+        \end{jieda}
+\end{enumerate}
