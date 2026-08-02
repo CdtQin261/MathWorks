@@ -1482,3 +1482,64 @@
         \item 若直线 $m\bot$ 平面 $\alpha$ ,直线 $m//$ 平面 $\beta$ ,则 $\alpha \bot \beta$.
     \end{dingautolist}
 \end{enumerate}
+
+\section*{异面直线间的距离}
+
+在空间中, 我们已经定义了两条异面直线所成的角, 用它来刻画两条异面直线的相对位置,但这显然还不够. 对于任意给定的两条异面直线, 有且只有一条直线与这两条直线都垂直且相交.
+
+我们将与两条异面直线都垂直且相交的直线称为这两条异面直线的公垂线, 公垂线的两个垂足之间的线段称为异面直线的公垂线段. 如图所示,异面直线 $A{A}^{\prime }$ 与 $B{C}^{\prime }$ 的公垂线是直线 ${AB}$ ,公垂线段为线段 ${AB}$ . 由上面的定理,任意两条异面直线的公垂线是唯一存在的. 因此, 我们规定两条异面直线的公垂线段的长度叫做两条异面直线间的距离. 还可以证明:两条异面直线的公垂线段,是连接这两条异面直线的所有线段中最短的线段.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_37_1233_1663_298_360_0.jpg}
+\end{center}
+
+求两条异面直线之间的距离的困难在于要找到两条异面直线的公垂线，为此，给出下面的性质: \textbf{两条异面直线的距离,等于其中一条直线 $a$ 到过另一条直线 $b$ 且与直线 $a$ 平行的平面 $\alpha$ 间的距离.}
+
+例题：
+\begin{enumerate}
+    \item 已知 ${EF}$ 是异面直线 $a,b$ 的公垂线,直线 $l//{EF}$ ,则 $l$ 与 $a,b$ 交点的个数是 \dotfill{(\kh{C})}
+    \xx{0}{1}{0 或 1}{0,1或 2}
+    \begin{jieda}
+        $l$ 与 $a,b$ 不可能有两个交点,否则异面直线 $a,b$ 将同在由 ${EF}$ 与 $l$ 确定的平面内,矛盾. 以正方体 ${ABCD}$  ${A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 为例,取 $a = {AB},b = {A}^{\prime }{D}^{\prime },{EF} = A{A}^{\prime }$ ,若取 $l = C{C}^{\prime }$ 则交点个数为 0 : 若取 $l = D{D}^{\prime }$ 则交点个数为 1 .
+    \end{jieda}
+
+    \item 如图，已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 $a$ .
+
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_38_1212_521_301_291_0.jpg}
+    \end{center}
+    
+    \begin{enumerate}
+        \item 求异面直线 ${D}_{1}{B}_{1}$ 与 ${AB}$ 之间的距离
+        \item 求异面直线 $B{D}_{1}$ 与 ${AD}$ 之间的距离
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 ${AB} \bot  B{B}_{1},{D}_{1}{B}_{1} \bot  B{B}_{1}$ ,所以 $B{B}_{1}$ 就是异面直线 ${D}_{1}{B}_{1}$ 与 ${AB}$ 的公垂线段,从而所求的距离为 $a$ .
+            \item 因为 ${AD}//{BC}$ ,而 ${BC}$ 在平面 ${A}_{1}{BC}{D}_{1}$ 上,所以 ${AD}//$ 平面 ${A}_{1}{BC}{D}_{1}$ . 又因为 $B{D}_{1}$ 在平面 ${A}_{1}{BC}{D}_{1}$ 上,所以异面直线 $B{D}_{1}$ 与 ${AD}$ 之间的距离就等于直线 ${AD}$ 到平面 ${A}_{1}{BC}{D}_{1}$ 的距离,即等于点 $A$ 到平面 ${A}_{1}{BC}{D}_{1}$ 的距离,易得所求距离为 $\dfrac{\sqrt{2}}{2}a$ .
+        \end{enumerate}
+    \end{jieda}
+
+
+    
+    \item 如图,正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长是 1,则
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_172_1242_182_253_248_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 异面直线 ${A}_{1}B$ 与 ${CD}$ 之间的距离为\blkda{1}
+        \item 异面直线 ${A}_{1}B$ 与 ${C}_{1}D$ 之间的距离为\blkda{1}
+        \item 异面直线 ${A}_{1}B$ 与 ${B}_{1}{C}_{1}$ 之间的距离为\blkda{$\dfrac{\sqrt{2}}{2}$}
+        \item 与 ${AB}$ 异面,且距离为 1 的棱有\blkda{4}条
+        \item 与 ${AB}$ 异面,且距离为 1 的面对角线有\blkda{4}条.
+    \end{enumerate}
+
+
+    \item 四面体 ${SABC}$ 中, ${SA} = {BC} = {13},{SB} = {AC} = {14},{SC} = {AB} = {15}$ ,则异面直线 ${AS}$ 与 ${BC}$ 的距离为\blkda{$3\sqrt{14}$}.
+    \begin{jieda}
+        考虑长方体 ${SDCE} - {GBHA}$ ,令 ${SD} = a,{SE} = b,{SG} = c$ ,则 $\left\{  \begin{array}{l} {a}^{2} + {b}^{2} = {225}, \\  {b}^{2} + {c}^{2} = {169},\text{ 得 }a = 3\sqrt{14}\text{ ,即为所求. } \\  {a}^{2} + {c}^{2} = {196}, \end{array}\right.$ 
+
+        \ps 取$AS$中点$P$，$BC$中点$Q$，则$PQ$即为所求，解三角形亦可求得.
+    \end{jieda}
+\end{enumerate}

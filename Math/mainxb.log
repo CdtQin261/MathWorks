@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  2 AUG 2026 10:01
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  2 AUG 2026 11:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2110,7 +2110,16 @@ File: bodyxb/src/0_241_718_331_254_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_241_718_331_254_0.jpg>
 File: bodyxb/src/0_241_333_388_246_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_241_333_388_246_0.jpg>
- [40]) [41] (./mainxb.aux (./bodyxb/15_kongjianzhixianyupingmian.aux))
+ [40] [41]
+File: bodyxb/src/bo_d1i8hsn7aajc7382r7dg_37_1233_1663_298_360_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1i8hsn7aajc7382r7dg_37_1233_1663_298_360_0.jpg>
+File: bodyxb/src/bo_d1i8hsn7aajc7382r7dg_38_1212_521_301_291_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1i8hsn7aajc7382r7dg_38_1212_521_301_291_0.jpg>
+File: bodyxb/src/bo_d20aucref24c73anc48g_172_1242_182_253_248_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d20aucref24c73anc48g_172_1242_182_253_248_0.jpg>
+ [42
+
+]) [43] (./mainxb.aux (./bodyxb/15_kongjianzhixianyupingmian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -2119,12 +2128,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 50379 strings out of 468168
- 1215287 string characters out of 5432816
+ 50406 strings out of 468168
+ 1217036 string characters out of 5432816
  1727487 words of memory out of 5000000
- 78013 multiletter control sequences out of 15000+600000
+ 78037 multiletter control sequences out of 15000+600000
  646429 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,16n,128p,1674b,1334s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (41 pages).
+Output written on mainxb.pdf (43 pages).
