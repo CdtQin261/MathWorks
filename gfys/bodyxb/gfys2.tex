@@ -1,0 +1,3232 @@
+
+\section*{第 9 章 立体几何(必修 3 \& 选择性必修 1)}
+
+\section*{知识梳理*}
+
+第一部分:空间直线和平面
+
+(以下 $a\text{ 、 }b\text{ 、 }l\text{ 、 }\cdots$ 表示直线， $\alpha \text{ 、 }\beta \text{ 、 }\gamma \text{ 、 }\cdots$ 表示平面)
+
+1. 平面及其基本性质:
+
+公理一:如果一条直线有两个点在一个平面内，则这条直线上任意一点都在该平面内.
+
+作用:判定一条直线在平面内的依据；结论:平面过直线的直线的取
+
+公理二:经过不在同一条直线上的三点有且仅有一个平面.
+
+推论 \ding{172} :经过一条直线和这条直线外一点有且仅有一个平面.
+
+推论 \ding{173} :经过两条相交直线有且仅有一个平面.
+
+推论 \ding{174} :经过两条平行直线有且仅有一个平面.
+
+作用:确定平面的依据.
+
+公理三:如果两个平面有一个公共点，则这两个平面有且仅有一条过这点的公共直线。
+
+作用:判定两个平面相交的依据.
+
+2. 空间直线和平面:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\phantom{X} & \multicolumn{3}{|c|}{空间两直线} & \multicolumn{3}{|c|}{直线与平面} & \multicolumn{2}{|c|}{平面与平面} \\
+\cline{1-9}
+位置关系 & 相交 & 平行 & 异面 & 在平面内 & 平行 & 相交 & 平行 & 相交 \\
+\cline{1-9}
+记号 & $a \cap  b = P$ & $a//b$ & $a\text{ 、 }b$ 异面 & $a \subset  \alpha$ & $a//\alpha$ & $a \cap  \alpha  = P$ & $\alpha //\beta$ & $\alpha  \cap  \beta  = l$ \\
+\cline{1-9}
+公共点 & 唯一 & \multicolumn{2}{|c|}{无} & 无穷多个 & 无 & 唯一 & 无 & 无穷多个 \\
+\cline{1-9}
+\hline
+\end{tabular}
+\end{center}
+
+3. 直线与直线的位置关系:
+
+公理四:平行于同一直线的两直线平行. $\left( {a//b,b//c \Rightarrow  a//c}\right)$
+
+> 异面直线判定定理:过平面外一点与平面上一点的直线，和此平面上不经过该点的任何一条直线都是异面直线.
+
+4. 直线与平面的位置关系:
+
+$>$ 线面平行:
+
+(1)直线与平面平行的判定定理:如果不在平面上的一条直线与这个平面上的一条直线平行,那么该直线与这个平面平行. $\left( {a \text{ ⊄ } \alpha ,b \subset  \alpha ,a//b \Rightarrow  a//\alpha }\right)$
+
+(2)直线与平面平行的性质定理:如果一条直线与一个平面平行，过这条直线的一个平面与此平面相交，那么其交线必与该直线平行. $\left( {a//\alpha ,a \subset  \beta ,\alpha  \cap  \beta  = b \Rightarrow  a//b}\right)$
+
+$>$ 线面垂直:
+
+(1)定义:如果一条直线与平面上的任意一条直线都垂直，就说这条直线与这个平面互相垂直.
+
+(2)判定定理:如果一条直线与一个平面上的两条相交直线都垂直，那么此直线与该平面垂直. $\left( {l \bot  a}\right.$ , $l \bot  b,a \cap  b = P,a \subset  \alpha ,b \subset  \alpha  \Rightarrow  l \bot  \alpha )$
+
+(3)性质定理:垂直于同一个平面的两条直线互相平行. $\left( {a \bot  a,b \bot  \alpha  \Rightarrow  a//b}\right)$
+
+推论 \ding{172} :过一点有且只有一个平面与给定的直线垂直.
+
+\HRule
+
+*注:本章节所属知识模块是“图形与几何”.
+
+\HRule
+
+推论 \ding{173} :过一点有且只有一条直线与给定的平面垂直.
+
+(4)三垂线定理:平面上的一条直线和这个平面的一条斜线垂直的充要条件是它和这条斜线在平面上的投影垂直.
+
+5. 平面与平面的位置关系:
+
+> 面面平行:
+
+(1)定义:如果两平面没有公共点，则称这两平面平行.
+
+(2)判定定理:如果一个平面上的两条相交直线与另一个平面平行，那么这两个平面平行. $\left( {a \subset  \alpha ,b \subset  \alpha }\right.$ , $a \cap  b = P,a//\beta ,b//\beta  \Rightarrow  \alpha //\beta )$
+
+(3)性质定理:两平行平面和第三平面相交，则交线平行. $\left( {\alpha //\beta ,\gamma  \cap  \alpha  = a,\gamma  \cap  \beta  = b \Rightarrow  a//b}\right)$
+
+> 面面垂直:
+
+(1)二面角的平面角:从一条直线出发的两个半平面所组成的图形叫做二面角，一个二面角的大小等于它的平面角的大小.
+
+面面垂直的定义:两平面所成的二面角是直角，则这两个平面垂直.
+
+(2)判定定理:若一个平面经过另一个平面的一条垂线，则两平面垂直. $\left( {a \subset  \alpha ,a\bot \beta  \Rightarrow  \alpha \bot \beta }\right)$
+
+(3)性质定理:如果两个平面垂直，那么其中一个平面上垂直于两平面交线的直线与另一个平面垂直 $\left( {\alpha  \bot  \beta ,\alpha  \cap  \beta  = l,a \subset  \alpha ,a \bot  l \Rightarrow  a \bot  \beta }\right)$
+
+ \ding{72} 空间位置关系的证明可以借助空间向量完成，具体如下:
+
+ \ding{172} 设直线 ${l}_{1}$ 和 ${l}_{2}$ 的方向向量分别为 ${\overrightarrow{d}}_{1}$ 和 ${\overrightarrow{d}}_{2}$ ，若 ${\overrightarrow{d}}_{1}//{\overrightarrow{d}}_{2}$ ，则 ${l}_{1}//{l}_{2}$ ；若 ${\overrightarrow{d}}_{1}\bot {\overrightarrow{d}}_{2}$ ，则 ${l}_{1}\bot {l}_{2}$ ；
+
+ \ding{173} 设直线 $l$ 的方向向量为 $\overrightarrow{d}$ ，平面 $\alpha$ 的法向量为 $\overrightarrow{n}$ ，则 $\overrightarrow{d}//\overrightarrow{n} \Leftrightarrow  l\bot \alpha$ ；
+
+ \ding{174} 设平面 $\alpha$ 和 $\beta$ 的法向量分别为 ${\overrightarrow{n}}_{1}$ 和 ${\overrightarrow{n}}_{2}$ ，若 ${\overrightarrow{n}}_{1}//{\overrightarrow{n}}_{2}$ ，则 $\alpha //\beta$ ；若 ${\overrightarrow{n}}_{1}\bot {\overrightarrow{n}}_{2}$ ，则 $\alpha \bot \beta$ .
+
+6. 空间中的角(关键是构造三角形或利用空间向量的数量积):
+
+异面直线所成的角: 转化为相交直线所成的锐角或直角 (构造三角形)；范围 $\left( {0,\frac{\pi }{2}}\right\rbrack$ .
+
+ \ding{72} 异面直线所成角的向量求法:设异面直线 ${l}_{1}$ 和 ${l}_{2}$ 的方向向量分别为 ${\overrightarrow{d}}_{1}$ 和 ${\overrightarrow{d}}_{2},{\overrightarrow{d}}_{1}$ 和 ${\overrightarrow{d}}_{2}$ 的夹角为 $\varphi$ , 异面直线 ${l}_{1}$ 和 ${l}_{2}$ 所成的角为 $\theta$ ,则 $\cos \theta  = \left| {\cos \varphi }\right|  = \frac{\left| {\overrightarrow{d}}_{1} \cdot  {\overrightarrow{d}}_{2}\right| }{\left| {\overrightarrow{d}}_{1}\right|  \cdot  \left| {\overrightarrow{d}}_{2}\right| }$ .
+
+线面角:斜线与它在平面内的射影所成的锐角，直线垂直于平面时为直角，在平面内或平行于平面时为零角,取值范围是 $\left\lbrack  {0,\frac{\pi }{2}}\right\rbrack$ . (解决的关键是找到直线在平面内的射影)
+
+ \ding{72}  线面角的向量求法:设直线 $l$ 的方向向量为 $\overrightarrow{d}$ ，平面 $\alpha$ 的法向量为 $\overrightarrow{n},\overrightarrow{d}$ 和 $\overrightarrow{n}$ 的夹角为 $\varphi$ ，直线 $l$ 与平面 $\alpha$ 所成的角为 $\theta ,\sin \theta  = \left| {\cos \varphi }\right|  = \frac{\left| \overrightarrow{d} \cdot  \overrightarrow{n}\right| }{\left| \overrightarrow{d}\right|  \cdot  \left| \overrightarrow{n}\right| }$ .
+
+\begin{itemize}\relax
+\item\relax 二面角:从一条直线出发的两个半平面组成的几何图形, 用其平面角度量.
+\end{itemize}
+
+平面角的作法: \ding{172} 定义:在棱上任意取一点，过这点分别在两个面内作棱的垂线；
+
+ \ding{173} 在棱上任意取一点，过这点作棱的垂面，得两条交线(射线)所成的最小正角；
+
+ \ding{174}  当已知一个半平面的垂线时，可用三垂线定理作二面角的平面角.
+
+ \ding{72} 二面角 $\alpha  - l - \beta$ 的向量求法:设平面 $\alpha$ 和 $\beta$ 的法向量分别为 ${\overrightarrow{n}}_{1}$ 和 ${\overrightarrow{n}}_{2}$ ，向量 ${\overrightarrow{n}}_{1}$ 和 ${\overrightarrow{n}}_{2}$ 的夹角为 $\theta$ ，则 $\cos \theta  = \frac{{\overrightarrow{n}}_{1} \cdot  {\overrightarrow{n}}_{2}}{\left| {\overrightarrow{n}}_{1}\right|  \cdot  \left| {\overrightarrow{n}}_{2}\right| }$ ,若二面角 $\alpha  - l - \beta$ 是锐角,则其大小为 $\arccos \frac{\left| {\overrightarrow{n}}_{1} \cdot  {\overrightarrow{n}}_{2}\right| }{\left| {\overrightarrow{n}}_{1}\right|  \cdot  \left| {\overrightarrow{n}}_{2}\right| }$ ; 若二面角 $\alpha  - l - \beta$ 是钝角,则
+
+其大小为 $\pi  - \arccos \frac{\left| {\overrightarrow{n}}_{1} \cdot  {\overrightarrow{n}}_{2}\right| }{\left| {\overrightarrow{n}}_{1}\right|  \cdot  \left| {\overrightarrow{n}}_{2}\right| }$ . 7. 空间中的距离(转化为两点间的距离构造三角形或利用空间向量的投影或模):
+
+ \ding{72} 点到平面的距离 (也可用等积法): 设平面 $\alpha$ 的斜线段是 ${AB}\left( {B \in  \alpha }\right)$ ,平面 $\alpha$ 的法向量为 $\overrightarrow{n}$ ,点 $A$ 到平面 $\alpha$ 的距离为 $d$ ,则 $d = \frac{\left| \overrightarrow{AB} \cdot  \overrightarrow{n}\right| }{\left| \overrightarrow{n}\right| }$ .
+
+第二部分:多面体与旋转体
+
+1. 棱柱的概念和主要性质:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+名称 & 棱柱 & 直棱柱。 & 正棱柱 \\
+\cline{1-4}
+图形 & \includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_165_389_532_221_176_0.jpg} & \includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_165_741_526_184_189_0.jpg} & \includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_165_1074_527_189_189_0.jpg} \\
+\cline{1-4}
+定义 & 有一对互相平行的面, 且这两个面是两个全等的三角形或平面多边形; 不在这两个面上的棱都相互平行. 这样的多面体叫做棱柱 & 侧棱垂直于底面的棱柱 & 底面是正多边形的直棱柱 \\
+\cline{1-4}
+侧棱 & 平行且相等 & 平行且相等 & 平行且相等 \\
+\cline{1-4}
+侧面 & 平行四边形 & 矩形 & 全等的矩形 \\
+\cline{1-4}
+对角面 & 平行四边形 & 矩形 & 矩形 \\
+\cline{1-4}
+平行于底面的截面 & 与底面全等的多边形 & 与底面全等的多边形 & 与底面全等的正多边形 \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+2. 棱锥的基本概念和主要性质:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+名称 & 棱锥 & 正棱锥 \\
+\cline{1-3}
+图形 & \includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_165_490_1307_197_149_0.jpg} & \includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_165_986_1308_197_144_0.jpg} \\
+\cline{1-3}
+定义 & 有一个面是多边形, 其余各面是有一个公共顶点的三角形的多面体 & 底面是正多边形, 且顶点在底面的射影是底面正多边形的中心 \\
+\cline{1-3}
+侧棱 & 相交于一点但不一定相等 & 相交于一点且相等 \\
+\cline{1-3}
+侧面 & 三角形 & 全等的等腰三角形 \\
+\cline{1-3}
+对角面 & 三角形 & 等腰三角形 \\
+\cline{1-3}
+平行于底的截面 & 与底面相似的多边形 & 与底面相似的正多边形 \\
+\cline{1-3}
+其他性质 & \phantom{X} & 高过底面中心; 侧棱与底面、侧面与底面、相邻两侧面所成角分别相等 \\
+\cline{1-3}
+\hline
+\end{tabular}
+\end{center}
+
+3. 几种特殊四棱柱的特殊性质:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+名称 & 定义 & \multicolumn{2}{|c|}{特殊性质} \\
+\cline{1-4}
+平行六面体 & 底面是平行四边形的棱柱 & \multirow{4}{*}{对角线交于一点且被这点平分} & 底面和侧面都是平行四边形; 四条对角线交于一点, 且 被该点平分 \\
+\cline{1-2}
+\cline{4-4}
+直平行六面体 & 侧棱垂直于底面的平行六面体 &  & 侧棱垂直于底面, 各侧面都是矩形; 四条对角线交于一点, 且被该点平分 \\
+\cline{1-2}
+\cline{4-4}
+长方体 & 底面是矩形的直平行六面体 &  & 底面和侧面都是矩形; 四条对角线相等, 交于一点,且被该点平分 \\
+\cline{1-2}
+\cline{4-4}
+正方体 & 底面边长和侧棱长相等的长方体 &  & 棱长都相等，各面都是正方形四条对角线相等， 交于一点,且被该点平分 \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+4. 几种特殊的四棱柱的关系:
+
+\{正方体\} $\subseteq  \{$ 正四棱柱 $\}  \subseteq  \{$ 长方体 $\}  \subseteq  \{$ 直平行六面体 $\}  \subseteq  \{$ 平行六面体 $\}  \subseteq  \{$ 四棱柱 $\}$ .
+
+5. 圆柱、圆锥、球的概念和基本性质:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+名称 & 圆柱 & 圆锥 & 球 \\
+\cline{1-4}
+定义 & 矩形面绕其一边旋转一周所形成的几何体 & 直角三角形面绕其一直角边旋转一周所形成的几何体 & 半圆面绕其直径旋转一周所形成的几何体 \\
+\cline{1-4}
+过轴的截面 & 全等的矩形 & 全等的等腰三角形 & 以球的半径为半径的圆 \\
+\cline{1-4}
+垂直于轴的截面 & 与底面相等的圆 & 半径小于底面半径的圆 & 半径不大于球的半径的圆 \\
+\cline{1-4}
+重要图形 & 母线、高、相应的半径构成的矩形 & 母线、高、相应的半径构成的直角三角形 & 小圆和大圆圆心连线、和相应的截面半径 \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+6．棱柱、正棱锥、圆柱、圆锥、球的表面积和体积:[表中字母: $S$ (面积), $V$ (体积), $c$ (底面周长), ${c}^{\prime }$ (直截面周长)， $h$ (高)， ${h}^{\prime }$ (斜高)， $l$ (侧棱(母线)长)， $r$ (底面半径).]
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+名称 & \multicolumn{2}{|c|}{棱柱} & 正棱锥 & 圆锥 & 圆柱 & 球 (半径 $R$ ) \\
+\cline{1-7}
+\multirow{2}{*}{展开图} & ${c}^{\prime }$ 斜棱柱 & 直棱柱 & \multirow{2}{*}{\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_166_711_1297_165_171_0.jpg}} & \multirow{2}{*}{\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_166_883_1298_165_156_0.jpg}} & \multirow{2}{*}{\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_166_1064_1305_171_137_0.jpg}} & \multirow{2}{*}{\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_166_1252_1288_162_168_0.jpg}} \\
+\cline{2-3}
+ & \includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_166_334_1350_177_125_0.jpg} & \includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_166_524_1342_175_138_0.jpg} &  &  &  &  \\
+\cline{1-7}
+侧面积 ( ${S}_{\text{ 侧 }}$ ) & ${S}_{\text{ 侧 }} = {c}^{\prime }l$ & ${S}_{\text{ 侧 }} = {cl}$ & ${S}_{\text{ 侧 }} = \frac{1}{2}c{h}^{\prime }$ & ${S}_{\text{ 侧 }} = \frac{1}{2}{cl}$ & ${S}_{\text{ 侧 }} = {cl}$ & \multirow{2}{*}{${S}_{\text{ 表 }} = {4\pi }{R}^{2}$} \\
+\cline{1-6}
+全面积 ( ${S}_{\text{ 全 }}$ ) & \multicolumn{2}{|c|}{${S}_{\text{ 全 }} = {S}_{\text{ 侧 }} + 2{S}_{\text{ 底 }}$} & \multicolumn{2}{|c|}{${S}_{\text{ 全 }} = {S}_{\text{ 侧 }} + {S}_{\text{ 底 }}$} & ${S}_{\text{ 全 }} = {S}_{\text{ 侧 }} + 2{S}_{\text{ 底 }}$ &  \\
+\cline{1-7}
+体积 (V) & \multicolumn{2}{|c|}{$V = {Sh}$} & $V = \frac{1}{3}{Sh}$ & $V = \frac{1}{3}\pi {r}^{2}h$ & $V = {Sh}$ & $V = \frac{4}{3}\pi {R}^{3}$ \\
+\cline{1-7}
+\hline
+\end{tabular}
+\end{center}
+
+7. “斜二侧”画法 (横等长,纵折半,纵横相交 ${45}^{ \circ  }$ 或 ${135}^{ \circ  }$ ) 的两条重要性质:
+
+(1)平行直线的斜二测图仍是平行直线；
+
+(2)线段及线段上定比分点的斜二测图保持原比例不变.
+
+8. 空间中的面积和体积的计算:关键要记住公式，特别是公式中的系数，找到相应的元素.
+
+
+提醒:立体几何的求解问题分为“作、证、算、结”四个部分，任意一个环节都不能省略.
+
+9. 祖暅原理:夹在两个平行平面间的两个几何体，如果被平行于这两个平面的任意平面截得的两个截面都有相等的面积, 那么这两个几何体的体积必相等.
+
+\section*{$\text{ § }{9.1}$ 空间直线与平面}
+
+\section*{典型例题精讲}
+
+【例 1】已知 $a$ 、 $b$ 、 $c$ 、 $d$ 是空间的 4 条直线.
+
+(1)若 $a//b//c$ ，且 $d$ 与 $a$ 、 $b$ 、 $c$ 都相交，求证:直线 $a$ 、 $b$ 、 $c$ 、 $d$ 在同一平面上；
+
+(2)若 $a$ 、 $b$ 、 $c$ 、 $d$ 两两相交且不过同一点，求证:直线 $a$ 、 $b$ 、 $c$ 、 $d$ 在同一平面上.
+
+【例 2】已知异面直线 $a$ 、 $b$ 所成的角为 $\theta$ ，过空间中一点的直线 $l$ 与 $a$ 、 $b$ 所成的角都是 $\alpha$ .
+
+(1)若 $\theta  = {60}^{ \circ  }$ ， $\alpha  = {75}^{ \circ  }$ ，求直线 $l$ 的条数；
+
+(2)试根据 $\theta$ 和 $\alpha$ 的大小讨论直线 $l$ 的条数.
+
+【例 3】在空间中,过点 $A$ 作平面 $\pi$ 的垂线,垂足为 $B$ ,记 $B = {f}_{\pi }\left( A\right)$ . 设 $\alpha \text{ 、 }\beta$ 是两个不同的平面,对空间任意一点 $P,{Q}_{1} = {f}_{\beta }\left\lbrack  {{f}_{\alpha }\left( P\right) }\right\rbrack  ,{Q}_{2} = {f}_{\alpha }\left\lbrack  {{f}_{\beta }\left( P\right) }\right\rbrack$ ,恒有 $P{Q}_{1} = P{Q}_{2}$ ,则 ( )
+
+A. 平面 $\alpha$ 与平面 $\beta$ 垂直. B. 平面 $\alpha$ 与平面 $\beta$ 所成的 (锐) 二面角为 ${45}^{ \circ  }$ .
+
+C. 平面 $\alpha$ 与平面 $\beta$ 平行. D. 平面 $\alpha$ 与平面 $\beta$ 所成的 (锐) 二面角为 ${60}^{ \circ  }$ .
+
+【例 4】如图,已知二面角 $\alpha  - {MN} - \beta$ 的大小为 ${60}^{ \circ  }$ ,菱形 ${ABCD}$ 在面 $\beta$ 内, $A\text{ 、 }B$ 两点在棱 ${MN}$ 上, $\angle {BAD} = {60}^{ \circ  },E$ 是 ${AB}$ 的中点, ${DO} \bot$ 面 $\alpha$ ,垂足为 $O$ .
+
+(1)证明: ${AB}\bot$ 平面 ${ODE}$ ;
+
+(2)求异面直线 ${BC}$ 与 ${OD}$ 所成角的余弦值.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_168_1148_1099_344_192_0.jpg}
+\end{center}
+ 
+
+(例 4 图)
+
+
+【例 5】如图,在四棱锥 $P - {ABCD}$ 中, ${AB}//{CD},{AB} \bot  {AD},{CD} = {2AB}$ ,平面 ${PAD} \bot$ 底面 ${ABCD},{PA}  \bot  {AD}.E$ 和 $F$ 分别是 ${CD}$ 和 ${PC}$ 的中点,求证:
+
+(1) ${PA} \bot$ 底面 ${ABCD}$ ；
+
+(2) ${BE}//$ 平面 ${PAD}$ ；
+
+(3)平面 ${BEF} \bot$ 平面 ${PCD}$ .
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_169_1149_367_296_307_0.jpg}
+\end{center}
+ 
+
+(例 5 图)
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 三个平面两两相交得到三条交线，则这三条交线的位置关系是\_\_\_\_\_.
+
+2. 垂直于同一直线的两直线位置关系是\_\_\_\_\_.
+
+3. 设 $m\text{ 、 }n$ 是两条不同的直线, $\alpha \text{ 、 }\beta$ 是两个不同的平面,若 $m \bot  \beta ,n \bot  \beta ,n \bot  \alpha$ ,则 $m$ 与平面 $\alpha$ 的位置关系的最精确的描述是\_\_\_\_\_.
+
+4. 已知三棱锥 $V - {ABC}$ 中， ${VA} = {VB} = {VC}$ ，则 $V$ 在平面 ${ABC}$ 内的射影是 $\bigtriangleup  {ABC}$ 的\_\_\_\_\_，心.
+
+5. 垂直于同一平面的两直线的位置关系是\_\_\_\_\_.
+
+6. 已知直线 $l\bot$ 平面 $\alpha$ ,直线 $m \subset$ 平面 $\beta$ ,有下列命题: \ding{172}  $\alpha //\beta  \Rightarrow  l\bot m$ ;  \ding{173}  $\alpha \bot \beta  \Rightarrow  l//m$ ;  \ding{174}  $l//m \Rightarrow  \alpha \bot \beta$ ；  \ding{175}  $l\bot m \Rightarrow  \alpha //\beta$ . 其中正确命题的序号是\_\_\_\_\_.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_169_1117_1679_330_279_0.jpg}
+\end{center}
+ 
+
+(第 7 题图)
+
+7. 如图，三棱锥 $V - {ABC}$ 中， $\angle {AVB} = \angle {AVC} = {45}^{ \circ  }$ ， $\angle {BVC} = {60}^{ \circ  }$ ， ${VA} = {VB}  = {VC} = 2$ ，过点 $A$ 作的截面分别交 ${VB}$ 、 ${VC}$ 于点 $E$ 、 $F$ ，则截面周长的最小值为\_\_\_\_\_.
+
+8. 设 $E\text{ 、 }F$ 是空间四边形 ${ABCD}$ 的边 ${AD}\text{ 、 }{BC}$ 的中点,则 ${EF}$ 与 $\frac{1}{2}({AB} +  {CD})$ 的大小关系是\_\_\_\_\_.
+
+9. 已知正三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱长与底面边长相等,则 $A{B}_{1}$ 与侧面 ${AC}{C}_{1}{A}_{1}$ 所成角的正弦值等于\_\_\_\_\_.
+
+\section*{二、选择题}
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_170_1179_202_301_272_0.jpg}
+\end{center}
+ 
+
+(第 10 题图)
+
+10. 如图,在棱长为 10 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中, $P$ 为左侧面 ${AD}{D}_{1}{A}_{1}$ 上一点,已知点 $P$ 到 ${A}_{1}{D}_{1}$ 的距离为 $3,P$ 到 $A{A}_{1}$ 的距离为 2,则过点 $P$ 且与 ${A}_{1}C$ 平行的直线相交的面是 ( )
+
+A. $A{A}_{1}{B}_{1}B$ . B. $B{B}_{1}{C}_{1}C$ .
+
+C. $C{C}_{1}{D}_{1}D$ . D.ABCD.
+
+11. 已知直线 $a$ 与 $b$ 所成的角和直线 $c$ 与 $b$ 所成的角的大小都是 ${60}^{ \circ  }$ ,则直线 $a$ 与 $c$ 的位置关系是 ( )
+
+A. 平行. B. 相交.
+
+C. 异面. D. 平行、相交、异面都可能.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_170_1183_595_301_270_0.jpg}
+\end{center}
+ 
+
+(第 14 题图)
+
+12. 如图，正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中， $E$ 、 $F$ 分别为 ${A}_{1}{B}_{1}$ 、 ${CD}$ 的中点，则异面直线 ${D}_{1}E$ 与 ${A}_{1}F$ 所成的角的余弦值为 ( )
+
+A. $\frac{\sqrt{5}}{5}$ . B. $\frac{\sqrt{5}}{6}$ .
+
+C. $\frac{\sqrt{3}}{3}$ . D. $\frac{\sqrt{3}}{6}$ .
+
+\section*{三、解答题}
+
+13. 已知 $\bigtriangleup {ABC}$ 在平面 $\alpha$ 外, ${AB} \cap  \alpha  = P,{BC} \cap  \alpha  = Q,{AC} \cap  \alpha  = R$ .
+
+(1)证明 $\bigtriangleup  {ABC}$ 是平面图形；
+
+(2)证明 $P\text{ 、 }Q\text{ 、 }R$ 在同一直线上.
+
+14. 如图所示，在四棱锥 $P - {ABCD}$ 中， ${PA}\bot$ 底面 ${ABCD},{AB}\bot {AD},{AC}\bot {CD},\angle {ABC} = {60}^{ \circ  },{PA} = {AB}  = {BC},E$ 是 ${PC}$ 的中点. 证明:
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_170_1232_1613_266_354_0.jpg}
+\end{center}
+ 
+
+(第 14 题图)
+
+(1) ${CD} \bot  {AE}$ ；
+
+(2) ${PD} \bot$ 平面 ${ABE}$ .
+
+15. 已知 $E$ 、 $F$ 、 $G$ 、 $H$ 分别是空间四边形 ${ABCD}$ 的边 ${AB}$ 、 ${BC}$ 、 ${CD}$ 、 ${DA}$ 上的点,若 $\frac{AE}{EB} = \frac{CF}{FB} = \frac{DG}{GC} = \frac{DH}{HA} = \frac{1}{2}$ . 求证:(1) ${EF}$ 、 ${CD}$ 是异面直线；
+
+(2)四边形 ${EFGH}$ 是梯形.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_171_1139_319_303_252_0.jpg}
+\end{center}
+ 
+
+(第 15 题图)
+
+16. 如图， ${AB}$ 是圆 $O$ 的直径， ${PA}\bot$ 圆 $O$ 所在的平面， $C$ 是圆 $O$ 上的点.
+
+(1)求证: ${BC}\bot$ 平面 ${PAC}$ ；
+
+(2)若Q为 ${PA}$ 的中点， $G$ 为 $\bigtriangleup  {AOC}$ 的重心，求证: ${QG}//$ 平面 ${PBC}$ .
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_171_1097_1147_346_257_0.jpg}
+\end{center}
+ 
+
+(第 16 题图)
+
+\section*{§ 9.2 多面体与旋转体}
+
+\section*{典型例题精讲}
+
+【例 1】如图,将圆心角为 ${288}^{ \circ  }$ 的扇形卷成一个底面半径为 4 的圆锥的侧面.
+
+(1)求圆锥母线的长.
+
+(2)求过圆锥顶点 $O$ 所作截面的最大面积.
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{images/bo_d7tk7oc91nqc73875fu0_172_919_584_565_222_0.jpg}
+\end{center}
+ 
+
+(例 1 图)
+
+【例 2】如图,在棱长为 $a$ 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中, $E\text{ 、 }F$ 分别为棱 ${A}_{1}{B}_{1}\text{ 、 }{B}_{1}{C}_{1}$ 的中点.
+
+(1)求二面角 ${B}_{1} - {BF} - E$ 的大小；
+
+(2)求点 $D$ 到平面 ${BEF}$ 的距离；
+
+(3)能否在棱 ${B}_{1}B$ 上找到一点 $M$ ，使 ${DM}\bot$ 面 ${BEF}$ ？若能，请确定点 $M$ 的位置；若不能，请说明理由.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_172_1213_1501_278_242_0.jpg}
+\end{center}
+ 
+
+(例 2 图)
+
+【例 3】如图,在底面为等腰直角三角形的直三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中, ${AC} = {BC} = A{A}_{1} = a,\angle {ACB} = {90}^{ \circ  }$ .
+
+(1)求 $A{B}_{1}$ 与 $B{C}_{1}$ 所成角的大小；
+
+(2)求 ${A}_{1}C$ 与平面 ${AB}{B}_{1}{A}_{1}$ 所成角的大小；
+
+(3)求二面角 ${A}_{1} - A{B}_{1} - {C}_{1}$ 的大小.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_173_1259_334_228_256_0.jpg}
+\end{center}
+ 
+
+(例 3 图)
+
+【例 4】在棱长为 $a$ 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中, $E\text{ 、 }F$ 分别为 ${AB}$ 与 ${C}_{1}{D}_{1}$ 的中点.
+
+(1)求证:四边形 ${A}_{1}{ECF}$ 是菱形；
+
+(2)求证: ${EF}\bot$ 平面 ${A}_{1}{B}_{1}C$ ；
+
+(3)求 ${A}_{1}{B}_{1}$ 与平面 ${A}_{1}{ECF}$ 所成角的正切值.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_173_1206_1249_278_259_0.jpg}
+\end{center}
+ 
+
+(例 4 图)
+
+【例 5】春节期间，佳怡准备去探望奶奶，她到商店买了一盒点心. 为了美观起见，售货员对点心盒做了一个捆扎[如图()所示]，并在角上配了一个花结. 售货员说，这样的捆扎不仅漂亮，而且比一般的十字捆扎 [如图(2)所示]包装更节省彩绳. 你同意这种说法吗? 请给出你的理由. (注:长方体点心盒的高小于长、宽)
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{images/bo_d7tk7oc91nqc73875fu0_174_906_290_562_181_0.jpg}
+\end{center}
+ 
+
+(例 5 图)
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，异面直线 $C{D}_{1}$ 和 $B{C}_{1}$ 所成的角是\_\_\_\_\_.
+
+2. 一个棱柱有 10 个顶点, 其所有的侧棱长的和为 60, 则每条侧棱长为\_\_\_\_\_.
+
+3. 正四面体的中心到底面的距离与这个四面体的高的比值是\_\_\_\_\_.
+
+4. 用与球心距离为 2 的平面截球 $O$ ，得到半径为 $\sqrt{5}$ 的圆面，则球 $O$ 的半径是\_\_\_\_\_.
+
+5．在半径为 30 米的圆形广场中央设置一个照明光源，它射向地面的光呈圆锥形，其轴截面顶角为 120 米， 若要光源恰好照亮整个广场，则光源的高度应为\_\_\_\_\_米。
+
+6. 将半径为 1 的圆分割成面积之比为 $1 : 2 : 3$ 的三个扇形作为三个圆锥的侧面,设这三个圆锥底面半径依次为 ${r}_{1}\text{ 、 }{r}_{2}\text{ 、 }{r}_{3}$ ，那么 ${r}_{1} + {r}_{2} + {r}_{3} =$ \_\_\_\_\_.
+
+7. 用一个平行于圆锥底面的平面截这个圆锥, 截得的圆台上、下底面的面积之比为 1 : 16，若截去的圆锥的母线长是 3 ，则圆台的母线长是\_\_\_\_\_.
+
+8. 在棱长为 1 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,点 $P$ 在侧面 ${BC}{C}_{1}{B}_{1}$ 上运动. 若点 $P$ 到点 $A$ 的距离为 $\frac{2\sqrt{3}}{3}$ ，则动点 $P$ 的轨迹在正方形 ${BC}{C}_{1}{B}_{1}$ 内的一段曲线长为\_\_\_\_\_.
+
+9. 有四根长度都为 2 的直铁条,若再选两根长度都为 $a$ 的直铁条,使这六根铁条端点处相连能够焊接成一个三棱锥形的铁架,则 $a$ 的取值范围是\_\_\_\_\_.
+
+\section*{二、选择题}
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_174_1154_1744_343_259_0.jpg}
+\end{center}
+ 
+
+(第 10 题图)
+
+10. 纸制的正方体的六个面根据其方位分别标记为上、下、东、南、西、北. 现在沿该正方体的一些棱将正方体剪开、外面朝上展平, 得到如图的平面图形, 则标“ $\bigtriangleup$ ”的面的方位是(从上往下看“东、南、西、北”顺时针排列)(
+
+A. 南. B.北.
+
+C. 西. D. 下.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_175_1075_156_374_224_0.jpg}
+\end{center}
+ 
+
+(第 11 题图)
+
+11. 如图,三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 被平面 ${DE}{E}_{1}{D}_{1}$ 截成两个几何体 ${I}$ 、 II,且平面 ${DE}{E}_{1}{D}_{1}//$ 平面 ${AB}{B}_{1}{A}_{1}$ ,则 ( )
+
+A. I 是棱柱, II 是棱台.
+
+B. I 是棱锥, II 是棱台.
+
+C. I 是棱锥, II 是棱柱.
+
+D. I 是棱柱, II 是棱柱.
+
+12. 如图所示的几何体是由一个圆柱挖去一个以圆柱上底面为底面、下底面圆心为顶点的圆锥而得到的组合体, 现用一个竖直的平面去截这个组合体, 则截面图形可能是 ( )
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_175_149_524_184_202_0.jpg}
+\end{center}
+ 
+
+A.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_175_403_529_215_199_0.jpg}
+\end{center}
+ 
+
+B.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_175_683_535_203_193_0.jpg}
+\end{center}
+ 
+
+C.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_175_954_536_205_193_0.jpg}
+\end{center}
+ 
+
+D.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_175_1229_510_166_222_0.jpg}
+\end{center}
+ 
+
+\section*{三、解答题}
+
+13. 如图,圆锥的顶点为 $P$ ,底面圆为 $O$ ,底面的一条直径为 ${AB},C$ 为半圆弧 $\overset{\text{ ⏜ }}{AB}$ 的中点, $E$ 为劣弧 $\overset{\text{ ⏜ }}{CB}$ 的中点,已知 ${PO} = 2,{OA} = 1$ .
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_175_1149_912_296_316_0.jpg}
+\end{center}
+ 
+
+(第 13 题图)
+
+(1)求证: ${AO}\bot {PC}$ ；
+
+(2)求异面直线 ${PA}$ 和 ${OE}$ 所成角的大小.
+
+14. 如图,在正三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中,已知 $D$ 是 ${AC}$ 的中点.
+
+(1)求证: $A{B}_{1}//$ 平面 ${DB}{C}_{1}$ ；
+
+(2)若 $A{B}_{1} \bot  B{C}_{1}$ ，求二面角 $D - B{C}_{1} - C$ 的大小.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_175_1044_1571_401_180_0.jpg}
+\end{center}
+ 
+
+(第 14 题图)
+
+15. 如图,现有一块边长为 $a{{cm}}$ 的正方形铁皮，将它的四个角上的阴影部分去掉，然后焊成一个底面边长为 $x{{cm}}$ 的正四棱锥状的无盖容器.
+
+(1)当 $a = 2\sqrt{5},x = 2$ 时，求该容器的高 $h$ ；
+
+(2)求该容器的高 $h$ 关于 $x$ 的函数 $h = f\left( x\right)$ ，指出定义域.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/bo_d7tk7oc91nqc73875fu0_176_878_338_606_248_0.jpg}
+\end{center}
+ 
+
+(第 15 题图)
+
+16. 在棱长为 1 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中， $M$ 和 $N$ 分别为 ${A}_{1}{B}_{1}$ . 和 $B{B}_{1}$ 的中点.
+
+(1)求直线 ${AM}$ 和 ${CN}$ 所成角；
+
+(2)求直线 ${CN}$ 与平面 ${AC}{C}_{1}{A}_{1}$ 所成的角.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_176_1218_1228_281_243_0.jpg}
+\end{center}
+ 
+
+(第 16 题图)
+
+\section*{§ 9.3 多面体与旋转体的表面积与体积}
+
+\section*{典型例题精讲}
+
+【例 1】如图,在四棱锥 $P - {ABCD}$ 中,底面 ${ABCD}$ 是矩形, ${PA}$ 为点 $P$ 到平面 ${ABCD}$ 的距离, ${AB} = 4$ , ${AD} = 3,{PA} = 3$ ,点 $E\text{ 、 }M$ 分别在线段 ${AB}\text{ 、 }{PC}$ 上,其中 $E$ 是 ${AB}$ 的中点, $\frac{PM}{MC} = \lambda$ ,连接 ${ME}$ .
+
+(1)当 $\lambda  = 1$ 时,证明: 直线 ${ME}//$ 平面 ${PAD}$ ;
+
+(2)当 $\lambda  = 2$ 时,求三棱锥 $M - {BCD}$ 的体积.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_177_1113_649_332_230_0.jpg}
+\end{center}
+ 
+
+(例 1 图)
+
+【例 2】边长为 $a$ 的正三角形,要拼接成一个正三棱柱且不剩料.
+
+(1)应如何设计？(在图中用虚线画出)
+
+(2)求拼得的三棱柱的体积.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_177_1186_1390_259_256_0.jpg}
+\end{center}
+ 
+
+(例 2 图)
+
+【例 3】如图,三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中, $A{A}_{1} \bot  {BC},{A}_{1}B \bot  B{B}_{1}$ .
+
+(1)求证: ${A}_{1}C \bot  C{C}_{1}$ ；
+
+(2)若 ${AB} = 2,{AC} = \sqrt{3},{BC} = \sqrt{7}$ ，问 $A{A}_{1}$ 为何值时，三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 体积最大，并求此最大值.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_178_1086_289_398_189_0.jpg}
+\end{center}
+ 
+
+(例 3 图)
+
+【例 4】正三棱锥的高为 1,底面边长为 $2\sqrt{6}$ ,内有一个球与它的四个面都相切. 求:
+
+(1)棱锥的表面积；
+
+(2)内切球的半径.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_178_1121_1203_381_298_0.jpg}
+\end{center}
+ 
+
+(例 4 图)
+
+【例 5】如图,某地质队自水平地面 $A\text{ 、 }B\text{ 、 }C$ 三处垂直向地下钻探,自点 $A$ 向下钻到 ${A}_{1}$ 处发现矿藏,再继续下钻到 ${A}_{2}$ 处后下面已无矿,从而得到在 $A$ 处正下方的矿层厚度为 ${A}_{1}{A}_{2} = {d}_{1}$ . 同样可得在 $B\text{ 、 }C$ 处正下方的矿层厚度分别为 ${B}_{1}{B}_{2} = {d}_{2},{C}_{1}{C}_{2} = {d}_{3}$ ,且 ${d}_{1} < {d}_{2} < {d}_{3}$ . 过 ${AB}\text{ 、 }{AC}$ 的中点 $M\text{ 、 }N$ 且与直线 $A{A}_{2}$ 平行的平面截多面体 ${A}_{1}{B}_{1}{C}_{1} - {A}_{2}{B}_{2}{C}_{2}$ 所得的截面 ${DEFG}$ 为该多面体的一个中截面,其面积记为 ${S}_{\text{ 中 }}$ .
+
+(1)证明:中截面 ${DEFG}$ 是梯形；
+
+(2)在 $\bigtriangleup  {ABC}$ 中，记 ${BC} = a,{BC}$ 边上的高为 $h$ ，面积为 $S$ . 在估测三角形 ${ABC}$ 区域内正下方的矿藏储量 (即多面体 ${A}_{1}{B}_{1}{C}_{1} - {A}_{2}{B}_{2}{C}_{2}$ 的体积 $V$ )时,可用近似公式 ${V}_{\text{ 估 }} = {S}_{\text{ 中 }} \cdot  h$ 来估算. 已知 $V = \frac{1}{3}\left( {{d}_{1} + {d}_{2} + {d}_{3}}\right)  S$ ,试判断 ${V}_{\text{ 估 }}$ 与 $V$ 的大小关系,并加以证明.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_179_1116_541_317_322_0.jpg}
+\end{center}
+ 
+
+(例 5 图)
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 已知长方体全部棱长的和为 36 ，表面积为 52 ，则其体对角线的长为\_\_\_\_\_.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_179_1158_1241_272_244_0.jpg}
+\end{center}
+ 
+
+(第 2 题图)
+
+2. 如图，在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中， $P$ 为对角线 $B{D}_{1}$ 的三等分点，点 $P$ 到各顶点的距离的不同取值的个数是\_\_\_\_\_.
+
+3. 两相邻边长分别为 3 和 4 的矩形, 以一边所在的直线为轴旋转所成的圆柱的底面积为\_\_\_\_\_.
+
+4. 棱长为 $a$ 的正方体中,连接相邻面的中心,以这些线段为棱的八面体的体积为\_\_\_\_\_.
+
+5. 若圆柱的底面半径是 1 ，其侧面展开是一个正方形，则这个圆柱的侧面积是\_\_\_\_\_.
+
+6. 一个密闭且透明的正方体容器中装有部分液体，已知该正方体的棱长为 1 ，如果任意转动该正方体， 液面的形状都不可能是三角形，那么液体体积的取值范围是\_\_\_\_\_.
+
+7. 有一棱长为 $a$ 的正方体框架,其内放置一气球,使其充气且尽可能地膨胀 (仍保持为球的形状),则气球表面积的最大值为\_\_\_\_\_.
+
+8. 已知三边长分别为 $4\text{ 、 }5\text{ 、 }6$ 的 $\bigtriangleup {ABC}$ 的外接圆恰好是球 $O$ 的一个大圆, $P$ 为球面上一点,若点 $P$ 到 $\bigtriangleup  {ABC}$ 的三个顶点的距离相等，则三棱锥 $P - {ABC}$ 的体积为\_\_\_\_\_.
+
+9. 三棱锥一条棱长为 $x$ ，其余各条棱长都等于 1，则体积 $F\left( x\right)$ 关于 $x$ 的函数解析式是\_\_\_\_\_.
+
+\section*{二、选择题}
+
+10. 将棱长为 $a$ 的正方体切成 27 个全等的小正方体，则这些小正方体的表面积之和是原正方体表面积的 ( )
+
+A. 2 倍. B. 3 倍. C. 4 倍. D. 5 倍.
+
+(第 11 题图)
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_180_1135_143_353_244_0.jpg}
+\end{center}
+ 
+
+11. 如图,已知正四棱台 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 由正四棱锥 $S - {ABCD}$ 截得,且 ${AB} = 6,{A}_{1}{B}_{1} = 4$ ,正四棱台的高为 $\sqrt{2},E$ 是 ${A}_{1}{B}_{1}$ 的中点,有下列说法:  \ding{172}  正四棱锥 $S - {ABCD}$ 的体积为 ${24}\sqrt{2}$ ;  \ding{173}  平面 $B{C}_{1}D \bot$ 平面 $A{A}_{1}{C}_{1}C$ ;  \ding{174}  ${AE}//$ 平面 $B{C}_{1}D$ ； \ding{175}  正四棱台 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的表面积为 ${{20}\sqrt{3}} + {52}$ . 其中正确的个数是 ( )
+
+A.1. B.2. C.3. D. 4.
+
+12. 已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 $1,\overrightarrow{AP} = \lambda \overrightarrow{AB} + \mu \overrightarrow{AD}$ ,其中 $\lambda \text{ 、 }\mu  \in  \left\lbrack  {0,1}\right\rbrack$ ,点 $E$ 为线段 $A{A}_{1}$ 的中点,则下列选项错误的是 ( )
+
+A. $\mu  = \frac{1}{2}$ 时， ${A}_{1}P \bot  E{D}_{1}$ .
+
+B. $\lambda  = \mu$ 时,三棱锥 ${D}_{1} - {EBP}$ 的体积为定值.
+
+C. $\lambda  + \mu  = 1$ 时,直线 ${A}_{1}P$ 与面 ${B}_{1}{D}_{1}E$ 的交点轨迹长度为 $\frac{\sqrt{2}}{3}$ .
+
+D. 当点 $P$ 落在以 ${C}_{1}$ 为球心、 $\sqrt{2}$ 为半径的球面上时, $\lambda  + \mu$ 的最小值为 1 .
+
+\section*{三、解答题}
+
+13. 圆锥的母线长是它的高的 2 倍, 过顶点最大的截面交底面得一条弦, 底面圆心到弦的距离为 1 , 求:
+
+(1)圆锥的侧面展开图的圆心角的大小；
+
+(2)圆锥的高和侧面积.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_180_1166_969_331_226_0.jpg}
+\end{center}
+ 
+
+(第 13 题图)
+
+14. 已知 ${ABCD}$ 是边长为 1 的正方形,正方形 ${ABCD}$ 绕 ${AB}$ 旋转形成一个圆柱.
+
+(1)求该圆柱的表面积；
+
+(2)正方形 ${ABCD}$ 绕 ${AB}$ 逆时针旋转 $\frac{\pi }{2}$ 至 ${AB}{C}_{1}{D}_{1}$ ，求线段 $C{D}_{1}$ 与平面 ${ABCD}$ 所成的角.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_180_1211_1619_298_242_0.jpg}
+\end{center}
+ 
+
+(第 14 题图)
+
+15. 如图,已知正三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的底面边长是 $2,D\text{ 、 }E$ 是 $C{C}_{1}\text{ 、 }{BC}$ 的中点, ${AE} = {DE}$ . 求:
+
+(1)正三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱长;
+
+(2)正三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的表面积.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_181_1111_281_326_279_0.jpg}
+\end{center}
+ 
+
+(第 15 题图)
+
+16. 已知四棱锥 $P - {ABCD}$ 的底面 ${ABCD}$ 为菱形， ${PD}\bot$ 平面 ${ABCD},{PD} = {AD} = {CD} = 2,\angle {BAD} = \frac{\pi }{3}$ ， $E$ 为 ${PC}$ 上一点.
+
+(1)设平面 ${PAD} \cap$ 平面 ${PBC} = l$ ，证明: ${BC}//l$ ；
+
+(2)当直线 ${BE}$ 与平面 ${BCD}$ 的夹角为 $\frac{\pi }{6}$ 时，求三棱锥 $P - {BDE}$ 体积.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_181_1131_1270_302_298_0.jpg}
+\end{center}
+ 
+
+(第 16 题图)
+
+\section*{§ 9.4 空间向量及其运算}
+
+\section*{典型例题精讲}
+
+【例 1】已知点 $A\left( {-2,3, - 3}\right) ,B\left( {4,5,9}\right)$ .
+
+(1)设平面 $\alpha$ 经过线段 ${AB}$ 的中点，且与直线 ${AB}$ 垂直， $M\left( {x,y,z}\right)$ 是平面 $\alpha$ 内任意一点，求 $x$ 、 $y$ 、 $z$ 满足的关系式;
+
+(2)求到 $A$ 、 $B$ 两点距离相等的点 $P\left( {x,y,z}\right)$ 的坐标 $x$ 、 $y$ 、 $z$ 满足的关系式；
+
+(3)比较 (1) (2) 的结论, 你发现了什么结论?
+
+【例 2】如图,已知平行六面体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,对角线 $B{D}_{1}$ 与平面 $A{B}_{1}C$ 交于点 $F$ ,连接 ${AF}$ 交 ${B}_{1}C$ 于点 $E$ . 证明:
+
+(1)点 $E$ 为 ${B}_{1}C$ 的中点；
+
+(2) ${AF} = \frac{2}{3}{AE}$ ，且 ${BF} = \frac{1}{3}{B{D}_{1}}$ .
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_182_1116_1425_390_261_0.jpg}
+\end{center}
+ 
+
+(例 2 图)
+
+【例 3】已知四棱锥 $P - {ABCD}$ 中,底面 ${ABCD}$ 是边长为 $2\sqrt{2}$ 的正方形,平面 ${PAC} \bot$ 底面 ${ABCD},{PA}  = {PC} = 2\sqrt{2}$ .
+
+(1)求证: ${PB} = {PD}$ ；
+
+(2)若点 $M$ 、 $N$ 分别是棱 ${PA}$ 、 ${PC}$ 的中点，平面 ${DMN}$ 与棱 ${PB}$ 的交点 $Q$ ，在线段 ${BC}$ 上是否存在点 $H$ ， 使得 ${DQ} \bot  {PH}$ ，若存在，求 ${BH}$ 的长，否则请说明理由.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_183_1050_391_390_262_0.jpg}
+\end{center}
+ 
+
+(例 3 图)
+
+【例 4】已知空间向量 $\overrightarrow{a} = \left( {{a}_{1},{a}_{2},{a}_{3}}\right) ,\overrightarrow{b} = \left( {{b}_{1},{b}_{2},{b}_{3}}\right)$ ,定义两个空间向量 $- 4) = \left( {k - 1}\right) \left( {k + 2}\right)  + {k}^{2} -  8 = 0$ 与 $2{k}^{2} + k - {10} = 0$ 之间的距离为 $d\left( {\overrightarrow{a},\overrightarrow{b}}\right)  = \left| {{b}_{1} - {a}_{1}}\right|  + \left| {{b}_{2} - {a}_{2}}\right|  + \left| {{b}_{3} - {a}_{3}}\right|$ .
+
+(1)若 $\overrightarrow{a} = \left( {1,2,3}\right) ,\overrightarrow{b} = \left( {4,1,1}\right) ,\overrightarrow{c} = \left( {\frac{11}{2},\frac{1}{2},0}\right)$ ,证明: $d\left( {\overrightarrow{a},\overrightarrow{b}}\right)  + d\left( {\overrightarrow{b},\overrightarrow{c}}\right)  = d\left( {\overrightarrow{a},\overrightarrow{c}}\right)$ ；
+
+(2)已知 $\overrightarrow{c} = \left( {{c}_{1},{c}_{2},{c}_{3}}\right)$ .
+
+ \ding{172}  证明:若存在 $\lambda  > 0$ ，使 $\overrightarrow{b} - \overrightarrow{a} = \lambda \left( {\overrightarrow{c} - \overrightarrow{b}}\right)$ ，则 $d\left( {\overrightarrow{a},\overrightarrow{b}}\right)  + d\left( {\overrightarrow{b},\overrightarrow{c}}\right)  = d\left( {\overrightarrow{a},\overrightarrow{c}}\right)$ ；
+
+ \ding{173}  若 $d\left( {\overrightarrow{a},\overrightarrow{b}}\right)  + d\left( {\overrightarrow{b},\overrightarrow{c}}\right)  = d\left( {\overrightarrow{a},\overrightarrow{c}}\right)$ ，是否一定存在 $\lambda  > 0$ ，使 $\overrightarrow{b} - \overrightarrow{a} = \lambda \left( {\overrightarrow{c} - \overrightarrow{b}}\right)$ ？请说明理由.
+
+【例 5】如图,在直角梯形 ${ABCD}$ 中, ${AB}//{DC},\angle {ABC} = {90}^{ \circ  },{AB} = {2DC} = {2BC},E$ 为 ${AB}$ 的中点,沿 ${DE}$ 将 $\bigtriangleup {ADE}$ 折起,使得点 $A$ 到点 $P$ 位置,且 ${PE} \bot  {EB},M$ 为 ${PB}$ 的中点, $N$ 是 ${BC}$ 上的动点 (与点 $B\text{ 、 }C$ 不重合).
+
+(1)求证:平面 ${EMN} \bot$ 平面 ${PBC}$ ；
+
+(2)是否存在点 $N$ ，使得二面角 $B - {EN} - M$ 的余弦值为 $\frac{\sqrt{6}}{6}$ ？若存在，确定 $N$ 点位置；若不存在，说明理由.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/bo_d7tk7oc91nqc73875fu0_184_823_409_664_220_0.jpg}
+\end{center}
+ 
+
+(例 5 图)
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 已知向量 $\overrightarrow{a} = \left( {1,0,2}\right) ,\overrightarrow{b} = \left( {2,1,0}\right)$ ，则 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 的夹角为\_\_\_\_\_.
+
+2. 在空间直角坐标系中，设点 $A\left( {1, - 3,\sqrt{6}}\right)$ 关于原点的对称点是 $B$ ，则 $\left| {AB}\right|  =$ \_\_\_\_\_.
+
+3. 已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 $a$ ，则 $\overrightarrow{AB} \cdot  \overrightarrow{{A}_{1}{C}_{1}} =$ \_\_\_\_\_.
+
+4. 已知平面 $\alpha$ 的一个法向量是 $\overrightarrow{n} = \left( {1, - 1,2}\right)$ ，且点 $A\left( {0,3,1}\right)$ 在平面 $\alpha$ 上，若 $P\left( {x,y,z}\right)$ 是平面 $\alpha$ 上任意一点,则点 $P$ 的坐标满足\_\_\_\_\_.
+
+5. 已知 $\overrightarrow{a} = \left( {1 - t,{2t} - 1,0}\right) ,\overrightarrow{b} = \left( {3,t,t}\right)$ ,则 $\left| {\overrightarrow{b} - \overrightarrow{a}}\right|$ 的最小值为\_\_\_\_\_.
+
+6. 在空间直角坐标系 $O - {xyz}$ 中, $\overrightarrow{a} = \left( {x - 2,{2y}, - 2}\right) ,\overrightarrow{b} = \left( {{3x},{2y}, - {3x}}\right)$ ,且 $\overrightarrow{a} \cdot  \overrightarrow{b} = {12}$ ,则 $m = {x}^{2} + {y}^{2}  + {2x}$ 的最大值是\_\_\_\_\_.
+
+7. 平行六面体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中, $\angle {BA}{A}_{1} = \angle {BAD} = \angle {DA}{A}_{1} = {60}^{ \circ  },{AB} = 3,{AD} = 4,A{A}_{1} = 5$ , 则 $A{C}_{1} =$ \_\_\_\_\_.
+
+8. 在空间直角坐标系 $O - {xyz}$ 中,点 $A\left( {3,4,5}\right)$ 在平面 ${xOy}\text{ 、 }{xOz}$ 内的射影分别为点 $B\text{ 、 }C$ ,则 $\left| \overrightarrow{BC}\right|  =$
+
+9. 已知棱长为 1 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中， $E$ 为侧面 $B{B}_{1}{C}_{1}C$ 中心， $F$ 在棱 ${AD}$ 上运动，正方体表面上有一点 $P$ 满足 $\overrightarrow{{D}_{1}P} = x\overrightarrow{{D}_{1}F} + y\overrightarrow{{D}_{1}E}\left( {x \geq  0,y \geq  0}\right)$ ,则所有满足条件的点 $P$ 构成图形的面积为\_\_\_\_\_.
+
+\section*{二、选择题}
+
+D. $\overrightarrow{PA} \cdot  \overrightarrow{PC}$ .
+
+( ) 10. 在四棱锥 $P - {ABCD}$ 中, ${PA} \bot$ 平面 ${ABCD}$ ,底面 ${ABCD}$ 是正方形, ${PA} = {AB}$ ,则下列数量积最大的是
+
+A. $\overrightarrow{BD} \cdot  \overrightarrow{PC}$ . B. $\overrightarrow{PB} \cdot  \overrightarrow{PC}$ . C. $\overrightarrow{BC} \cdot  \overrightarrow{PC}$ .
+
+11. 如图, $M\text{ 、 }N$ 分别是四面体 ${OABC}$ 的边 ${OA}\text{ 、 }{BC}$ 的中点, $P$ 是 ${MN}$ 的中点,设 $\overrightarrow{OA} = \overrightarrow{a},\overrightarrow{OB} = \overrightarrow{b},\overrightarrow{OC} =  \overrightarrow{c}$ ,用 $\overrightarrow{a}\text{ 、 }\overrightarrow{b}\text{ 、 }\overrightarrow{c}$ 表示 $\overrightarrow{OP}$ ,则 ( )
+
+A. $\overrightarrow{OP} = \frac{1}{2}\overrightarrow{a} + \frac{1}{3}\overrightarrow{b} + \frac{1}{4}\overrightarrow{c}$ . B. $\overrightarrow{OP} = \frac{1}{2}\overrightarrow{a} + \frac{1}{4}\overrightarrow{b} + \frac{1}{4}\overrightarrow{c}$ .
+
+C. $\overrightarrow{OP} = \frac{1}{3}\overrightarrow{a} + \frac{1}{2}\overrightarrow{b} + \frac{1}{4}\overrightarrow{c}$ . D. $\overrightarrow{OP} = \frac{1}{4}\overrightarrow{a} + \frac{1}{4}\overrightarrow{b} + \frac{1}{4}\overrightarrow{c}$ .
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_185_264_422_290_281_0.jpg}
+\end{center}
+ 
+
+(第 11 题图)
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_185_884_470_378_232_0.jpg}
+\end{center}
+ 
+
+(第 12 题图)
+
+12. 如图,四个棱长为 1 的正方体排成一个正四棱柱, ${AB}$ 是一条侧棱, ${P}_{i}\left( {i = 1,2,\cdots ,8}\right)$ 是上底面上其余的八个点,则 $\overrightarrow{AB} \cdot  \overrightarrow{A{P}_{i}}\left( {i = 1,2,\cdots ,8}\right)$ 的不同值的个数为 ( )
+
+A.1. B.2. C.3. D.4.
+
+\section*{三、解答题}
+
+13. 已知空间向量 $\overrightarrow{a} = \left( {x,4,1}\right) ,\overrightarrow{b} = \left( {-2,y, - 1}\right) ,\overrightarrow{c} = \left( {3, - 2,z}\right) ,\overrightarrow{a}//\overrightarrow{b},\overrightarrow{b} \bot  \overrightarrow{c}$ .
+
+(1)求 $x$ 、 $y$ 、 $z$ 的值；
+
+(2) $\left( {\overrightarrow{a} + \overrightarrow{c}}\right)$ 与 $\left( {\overrightarrow{b} + \overrightarrow{c}}\right)$ 所成的角.
+
+14. 已知空间三点 $A\left( {-2,0,2}\right)$ 、 $B\left( {-1,1,2}\right)$ 、 $C\left( {-3,0,4}\right)$ ，设 $\overrightarrow{a} = \overrightarrow{AB}$ ， $\overrightarrow{b} = \overrightarrow{AC}$ .
+
+(1)求 $\overrightarrow{a}$ 和 $\overrightarrow{b}$ 的夹角的余弦值；
+
+(2)若向量 $k\overrightarrow{a} + \overrightarrow{b}$ 与 $k\overrightarrow{a} - 2\overrightarrow{b}$ 互相垂直，求实数 $k$ 的值.
+
+15. 已知空间三点 $A\left( {0,2,3}\right)$ 、 $B\left( {-2,1,6}\right)$ 、 $C\left( {1, - 1,5}\right)$ .
+
+(1)求 $\bigtriangleup  {ABC}$ 的面积；
+
+(2)若向量 $\overrightarrow{CD}//\overrightarrow{AB}$ ，且 $\left| \overrightarrow{CD}\right|  = \sqrt{21}$ ，求向量 $\overrightarrow{CD}$ 的坐标.
+
+16. 一个几何体由一个直三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 切割而成，如图，已知 ${AB}\bot {BC},{AB} = {BC} = 4,B{B}_{1} =  {2AN} = 8$ .
+
+(1)求证: ${B}_{1}N \bot  {CN}$ ；
+
+(2)设 $M$ 为 ${AB}$ 的中点，在棱 ${BC}$ 上是否存在一点 $P$ ，使 ${MP}//$ 平面 ${B}_{1}{CN}$ ？若存在，求 $\frac{BP}{PC}$ 的值；若不存在, 请说明理由.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_186_1183_1180_309_222_0.jpg}
+\end{center}
+ 
+
+(第 16 题图)
+
+\section*{$\text{ § }{9.5}$ 空间角和距离的度量}
+
+\section*{典型例题精讲}
+
+【例 1】在三棱锥 $A - {BCD}$ 中, ${AB} = {AD} = {BD} = 2,{BC} = {DC} = \sqrt{2},{AC} = 2$ .
+
+(1)求证: ${BD}\bot {AC}$ ；
+
+(2)若 $P$ 为 ${AC}$ 上一点，且 ${AP} = \frac{3}{4}{AC}$ ，求直线 ${BP}$ 与平面 ${ACD}$ 所成角的正弦值.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_187_1177_608_273_326_0.jpg}
+\end{center}
+ 
+
+(例 1 图)
+
+【例 2】如图,平行六面体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中, $\angle {BAD} = \angle {DA}{A}_{1} = \angle {BA}{A}_{1} = {60}^{ \circ  },A{A}_{1} = 2$ , ${AB} = {AD} = 1$ . 求:
+
+(1) $A{C}_{1}$ 的长；
+
+(2)异面直线 $B{D}_{1}$ 与 ${AC}$ 所成的角的大小.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_187_1023_1397_423_292_0.jpg}
+\end{center}
+ 
+
+(例 2 图)
+
+【例 3】如图,由直三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 和四棱锥 $D - B{B}_{1}{C}_{1}C$ 构成的几何体中, $\angle {BAC} = {90}^{ \circ  }$ , ${AB} = 1,{BC} = B{B}_{1} = 2,{C}_{1}D = {CD} = \sqrt{5}$ ,平面 $C{C}_{1}D \bot$ 平面 ${AC}{C}_{1}{A}_{1}$ .
+
+(1)求证: ${AC}\bot {DC}{\text{ ， }}_{1}$ ；
+
+(2)若 $M$ 为 $D{C}_{1}$ 的中点，求证: ${AM}//$ 平面 ${DB}{B}_{1}$ .
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_188_1189_318_306_270_0.jpg}
+\end{center}
+ 
+
+(例 3 图)
+
+【例 4】如图,在四棱锥 $S - {ABCD}$ 中底面 ${ABCD}$ 是直角梯形,侧棱 ${SA} \bot$ 底面 ${ABCD},{AB}$ 垂直于 ${AD}$ 和 ${BC},M$ 为棱 ${SB}$ 上的点, ${SM} = {2MB},{SA} = {AB} = {BC} = 2,{AD} = 1$ .
+
+(1)求平面 ${AMC}$ 与平面 ${SAB}$ 所成的锐二面角的余弦值；
+
+(2)设点 $N$ 是线段 ${CD}$ 上的动点， ${MN}$ 与平面 ${SAB}$ 所成的角为 $\theta$ ，求当 $\sin \theta$ 取最大值时点 $N$ 的位置.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_188_1213_1204_295_308_0.jpg}
+\end{center}
+ 
+
+(例 4 图)
+
+【例 5】如图所示,在直三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中, ${AB} = {BC} = a,{A}_{1}A = {AC} = \sqrt{2}a,D$ 为 $B{B}_{1}$ 的中点.
+
+(1)证明:平面 ${AD}{C}_{1} \bot$ 平面 ${AC}{C}_{1}{A}_{1}$ ；
+
+(2)求点 $B$ 到平面 ${AD}{C}_{1}$ 的距离；
+
+(3)求平面 ${AD}{C}_{1}$ 与平面 ${ABC}$ 所成的二面角大小.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_189_1151_326_286_304_0.jpg}
+\end{center}
+ 
+
+(例 5 图)
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 一条长度为 8 的线段 ${AB}$ 的两个端点到平面 $\alpha$ 的距离分别为 2 和 8,则该线段的中点到这个平面的距离是\_\_\_\_\_.
+
+2. 若球心到截面距离为 $d$ ,球的半径为 $R$ ,截面半径为 $r$ ,则它们的关系是\_\_\_\_\_.
+
+3. 长方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的一条对角线 $A{C}_{1}$ 与从 $A$ 出发的三条棱所成的锐角分别是 $\alpha$ 、 $\beta$ 、 $\gamma$ ,则 ${\sin }^{2}\alpha  + {\sin }^{2}\beta  + {\sin }^{2}\gamma  =$ \_\_\_\_\_.
+
+4. 在空间四边形 ${ABCD}$ 中， $E$ 、 $H$ 分别是 ${AB}$ 、 ${AD}$ 的中点， $F$ 、 $G$ 分别是 ${CB}$ 、 ${CD}$ 上的点，且 $\frac{CF}{CB} = \frac{CG}{CD} =  \frac{2}{3}$ ，若 ${BD} = 6$ ，梯形 ${EFGH}$ 的面积是 28，则平行线 ${EH}$ 与 ${FG}$ 间的距离是\_\_\_\_\_.
+
+5. 已知正六边形 ${ABCDEF}$ 边长为 $a,{PA}\bot$ 平面 ${AC},{PA} = a$ ，则点 $P$ 到直线 ${CD}$ 的距离是\_\_\_\_\_.
+
+6. 已知长方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，棱 $A{A}_{1} = 3,{AB} = 4$ ，那么直线 ${BC}$ 与平面 ${A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的距离是\_\_\_\_\_.
+
+7.过正方形 ${ABCD}$ 的顶点 $A$ 作 ${PA} \bot$ 平面 ${ABCD}$ ,若 ${AB} = {PA}$ ,则平面 ${PAB}$ 与平面 ${PCD}$ 所成的角为\_\_\_\_\_.
+
+8. ${{Rt}} \bigtriangleup  {ABC}$ 的斜边 ${AB}$ 在平面 $\alpha$ 内, ${AC}\text{ 、 }{BC}$ 与平面 $\alpha$ 分别成 ${45}^{ \circ  }$ 和 ${30}^{ \circ  }$ 角,则平面 ${ABC}$ 和平面 $\alpha$ 所成的角等于\_\_\_\_\_.
+
+9. 若 $\angle {BAC} = {120}^{ \circ  },{BC} \subset  \alpha ,A \notin  \alpha$ ，则 $\angle {BAC}$ 在 $\alpha$ 内的影角 $\angle {B{A}^{\prime }}C$ 的取值范围是\_\_\_\_\_.
+
+\section*{二、选择题}
+
+10. 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中, $M$ 为 $D{D}_{1}$ 的中点, $O$ 为底面 ${ABCD}$ 的中心, $P$ 为棱 ${A}_{1}{B}_{1}$ 上任意一点,则直线 ${OP}$ 与直线 ${AM}$ 所成的角是 ( )
+
+A. $\frac{\pi }{6}$ . B. $\frac{\pi }{4}$ . C. $\frac{\pi }{3}$ . D. $\frac{\pi }{2}$ .
+
+11. 如果空间四边形的对角线相等, 那么顺次连接它的各边中点所成的四边形一定是 ( )
+
+A. 梯形. B.长方形. C. 菱形. D. 正方形.
+
+12. 若直角三角形的斜边与平面 $M$ 平行,两直角边所在的直线与平面 $M$ 所成的角分别是 $\alpha$ 和 $\beta$ ,则
+
+( )
+
+A. ${\sin }^{2}\alpha  + {\sin }^{2}\beta  \geq  1$ . B. ${\sin }^{2}\alpha  + {\sin }^{2}\beta  \leq  1$ . C. ${\sin }^{2}\alpha  + {\sin }^{2}\beta  > 1$ . D. ${\sin }^{2}\alpha  + {\sin }^{2}\beta  < 1$ .
+
+\section*{三、解答题}
+
+13. 已知 ${OA}$ 、 ${OB}$ 、 ${OC}$ 两两垂直， ${OA} = {OC} = 3,{OB} = 2,M$ 为 ${OB}$ 的中点，点 $N$ 在 ${AC}$ 上， ${AN} = {2NC}$ .
+
+(1)求 ${MN}$ 的长；
+
+(2)若点 $P$ 在线段 ${BC}$ 上，设 $\frac{BP}{PC} = \lambda$ ，当 ${AP}\bot {MN}$ 时，求实数 $\lambda$ 的值.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_190_1197_818_301_305_0.jpg}
+\end{center}
+ 
+
+(第 13 题图)
+
+14. 如图，在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，点 $E$ 在 ${BD}$ 上，且 ${BE} = \frac{1}{3}{BD}$ ，点 $F$ 在 $C{B}_{1}$ 上，且 ${CF} = \frac{1}{3}{C{B}_{1}}$ . 求证:
+
+(1) ${EF}\bot {BD}$ ；
+
+(2) ${EF}\bot C{B}_{1}$ .
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_190_1227_1599_281_242_0.jpg}
+\end{center}
+ 
+
+(第 14 题图)
+
+
+15. 如图,在棱长为 1 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中, $P$ 是侧棱 $C{C}_{1}$ 上一点, ${CP} = m$ . 试确定 $m$ 的值, 使得直线 ${AP}$ 与平面 ${BD}{D}_{1}{B}_{1}$ 所成的角为 ${60}^{ \circ  }$ .
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_191_1137_244_310_289_0.jpg}
+\end{center}
+ 
+
+(第 15 题图)
+
+16. 如图,直三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中, ${AB} \bot  {AC},{AB} = {AC} = 2,A{A}_{1} = 4$ ,点 $D$ 是 ${BC}$ 的中点.
+
+(1)求异面直线 ${A}_{1}B$ 与 ${C}_{1}D$ 所成角的大小；
+
+(2)求点 ${B}_{1}$ 到平面 ${AD}{C}_{1}$ 的距离.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_191_1163_1073_284_290_0.jpg}
+\end{center}
+ 
+
+(第 16 题图)
+
+
+\section*{第 10 章 解析几何(选择性必修 1)}
+
+\section*{知识梳理*}
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_192_1260_442_232_266_0.jpg}
+\end{center}
+ 
+
+\section*{一、直线的方程与直线的位置关系}
+
+1. 直线的斜率 $k$ 、倾斜角 $\alpha$ 之间的对应关系是:
+
+若 $\alpha  \neq  \frac{\pi }{2}$ ,则 $k = \tan \alpha$ ; 若 $\alpha  = \frac{\pi }{2}$ ,则 $k$ 不存在.
+
+若 $k \geq  0$ ,则 $\alpha  = \arctan k$ ; 若 $k < 0$ ,则 $\alpha  = \pi  - \arctan \left( {-k}\right)$ .
+
+设直线的方向向量为 $\overrightarrow{d} = \left( {u,v}\right)$ ,法向量是 $\overrightarrow{n} = \left( {a,b}\right)$ .
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\phantom{X} & 直线方程的形式 & 条件 & 适用范围 \\
+\cline{1-4}
+点斜式 & $y - {y}_{0} = k\left( {x - {x}_{0}}\right)$ & $k$ 和点 $P\left( {{x}_{0},{y}_{0}}\right)$ & 不垂直于 $x$ 轴 \\
+\cline{1-4}
+两点式 & $\frac{x - {x}_{1}}{{x}_{2} - {x}_{1}} = \frac{y - {y}_{1}}{{y}_{2} - {y}_{1}}$ & 点 $P\left( {{x}_{1},{y}_{1}}\right)$ 和 $Q\left( {{x}_{2},{y}_{2}}\right)$ & 不垂直于坐标轴 \\
+\cline{1-4}
+斜截式 & $y = {kx} + b$ & $k$ 和在 $y$ 轴上的截距 & 不垂直于 $x$ 轴 \\
+\cline{1-4}
+截距式 & $\frac{x}{a} + \frac{y}{b} = 1$ & 在 $x\text{ 、 }y$ 轴上的截距 $a\text{ 、 }b$ & $a$ 、 $b$ 存在，且都不为 0 \\
+\cline{1-4}
+* 点方向式 & $\frac{x - {x}_{0}}{u} = \frac{y - {y}_{0}}{v}$ & 方向向量 $\overrightarrow{d}$ 和点 $P\left( {{x}_{0},{y}_{0}}\right)$ & ${uv} \neq  0$ \\
+\cline{1-4}
+* 点法向式 & $a\left( {x - {x}_{0}}\right)  + b\left( {y - {y}_{0}}\right)  = 0$ & 法向量 $\overrightarrow{n}$ 和点 $P\left( {{x}_{0},{y}_{0}}\right)$ & 任意情形 \\
+\cline{1-4}
+一般式 & ${ax} + {by} + c = 0\left( {{a}^{2} + {b}^{2} \neq  0}\right)$ & 系数 $a$ 、 $b$ 、 $c$ & 任意情形 \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+2. 直线 $l : y = {kx} + b$ 上两点 ${P}_{1}\left( {{x}_{1},{y}_{1}}\right)$ 和 ${P}_{2}\left( {{x}_{2},{y}_{2}}\right)$ 间的距离:
+
+$\left| {{P}_{1}{P}_{2}}\right|  = \sqrt{{\left( {x}_{2} - {x}_{1}\right) }^{2} + {\left( {y}_{2} - {y}_{1}\right) }^{2}} = \sqrt{1 + {k}^{2}}\left| {{x}_{1} - {x}_{2}}\right|  = \sqrt{1 + {\left( \frac{1}{k}\right) }^{2}}\left| {{y}_{1} - {y}_{2}}\right| .$
+
+3. 设直角坐标平面内直线 $l : {ax} + {by} + c = 0$ 和直线外一点 $P\left( {{x}_{0},{y}_{0}}\right)$ ，则点 $P$ 到直线 $l$ 的距离 $d = \frac{\left| a{x}_{0} + b{y}_{0} + c\right| }{\sqrt{{a}^{2} + {b}^{2}}}.$
+
+4. 设直角坐标平面内直线 ${l}_{1} : {Ax} + {By} + {C}_{1} = 0$ 和直线 ${l}_{2} : {Ax} + {By} + {C}_{2} = 0\left( {{C}_{1} \neq  {C}_{2}}\right)$ ，且 ${l}_{1}//{l}_{2}$ ，则 ${l}_{1}$ 和 ${l}_{2}$ 的距离 $d = \frac{\left| {C}_{1} - {C}_{2}\right| }{\sqrt{{A}^{2} + {B}^{2}}}$ .
+
+5. 当点 $P\left( {{x}_{0},{y}_{0}}\right)$ 位于直线 $l : {ax} + {by} + c = 0$ 的法向量 $\overrightarrow{n} = \left( {a,b}\right)$ 指向的一侧时， $\delta  = \frac{a{x}_{0} + b{y}_{0} + c}{\sqrt{{a}^{2} + {b}^{2}}} =  d > 0$ ; 位于 $\overrightarrow{n} = \left( {a,b}\right)$ 指向的另一侧时, $\delta  = \frac{a{x}_{0} + b{y}_{0} + c}{\sqrt{{a}^{2} + {b}^{2}}} =  - d < 0$ ; 位于直线上时, $\delta  = \frac{a{x}_{0} + b{y}_{0} + c}{\sqrt{{a}^{2} + {b}^{2}}} = 0$ .
+
+6. 两直线的夹角:在直角坐标平面内直线 ${l}_{1} : {a}_{1}x + {b}_{1}y + {c}_{1} = 0\left( {{a}_{1}^{2} + {b}_{1}^{2} \neq  0}\right)$ 和直线 ${l}_{2} : {a}_{2}x + {b}_{2}y + {c}_{2} =  0\left( {{a}_{2}^{2} + {b}_{2}^{2} \neq  0}\right)$ 的夹角为 $\alpha$ ,则 $\cos \alpha  = \frac{\left| {a}_{1}{a}_{2} + {b}_{1}{b}_{2}\right| }{\sqrt{{a}_{1}^{2} + {b}_{1}^{2}}\sqrt{{a}_{2}^{2} + {b}_{2}^{2}}}$ . 若直线 ${l}_{1}$ 和 ${l}_{2}$ 的斜率分别是 ${k}_{1}$ 、 ${k}_{2}$ ，则 ${l}_{1}$ 和 ${l}_{2}$ 的夹角 $\alpha$ 可由 $\tan \alpha  = \left| \frac{{k}_{2} - {k}_{1}}{1 + {k}_{2}{k}_{1}}\right|$ 确定；
+
+若直线 ${l}_{1}$ 和 ${l}_{2}$ 的方向向量分别是 ${\overrightarrow{d}}_{1}\text{ 、 }{\overrightarrow{d}}_{2}$ ,则 ${l}_{1}$ 和 ${l}_{2}$ 的夹角 $\alpha$ 可由 $\cos \alpha  = \frac{\left| {\overrightarrow{d}}_{1} \cdot  {\overrightarrow{d}}_{2}\right| }{\left| {\overrightarrow{d}}_{1}\right|  \cdot  \left| {\overrightarrow{d}}_{2}\right| }$ 确定;
+
+若直线 ${l}_{1}$ 和 ${l}_{2}$ 的法向量分别是 ${\overrightarrow{n}}_{1},{\overrightarrow{n}}_{2}$ ,则 ${l}_{1}$ 和 ${l}_{2}$ 的夹角 $\alpha$ 可由 $\cos \alpha  = \frac{\left| {\overrightarrow{n}}_{1} \cdot  {\overrightarrow{n}}_{2}\right| }{\left| {\overrightarrow{n}}_{1}\right|  \cdot  \left| {\overrightarrow{n}}_{2}\right| }$ 确定;
+
+直线 ${l}_{1}$ 和 ${l}_{2}$ 的夹角 $\alpha$ 的取值范围是 $\left\lbrack  {0,\frac{\pi }{2}}\right\rbrack$ .
+
+7. 过两直线 ${l}_{1} : {A}_{1}x + {B}_{1}y + {C}_{1} = 0,{l}_{2} : {A}_{2}x + {B}_{2}y + {C}_{2} = 0$ 交点的直线系方程: ${A}_{1}x + {B}_{1}y + {C}_{1} +  \lambda \left( {{A}_{2}x + {B}_{2}y + {C}_{2}}\right)  = 0\left( {\text{ 除去 }{l}_{2}}\right)$ .
+
+\section*{二、圆的方程、直线与圆、圆与圆的位置关系}
+
+8. 圆的标准方程: ${x}^{2} + {y}^{2} = {r}^{2}$ (圆心(0，0)，半径 $r$ )；
+
+\[
+{\left( x - a\right) }^{2} + {\left( y - b\right) }^{2} = {r}^{2}\text{ (圆心 }\left( {a,b}\right) \text{ ,半径 }r\text{ ). }
+\]
+
+9. 圆的一般方程: ${x}^{2} + {y}^{2} + {Dx} + {Ey} + F = 0\left( {{D}^{2} + {E}^{2} - {4F} > 0}\right)$ .
+
+10. 直线与圆(圆与圆)的位置关系:
+
+设圆 $C : {\left( x - a\right) }^{2} + {\left( y - b\right) }^{2} = {r}^{2}$ 的圆心 $C$ 到直线 ${Ax} + {By} + C = 0$ 的距离为 $d$ ；
+
+圆 ${C}_{1} : {\left( x - {a}_{1}\right) }^{2} + {\left( y - {b}_{1}\right) }^{2} = {r}_{1}^{2}$ 与圆 ${C}_{2} : {\left( x - {a}_{2}\right) }^{2} + {\left( y - {b}_{2}\right) }^{2} = {r}_{2}^{2}$ 的圆心间的距离为 ${d}^{\prime }$ ,则
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{直线与圆的位置关系} \\
+\cline{1-3}
+关系 & 特征 & 表达式 \\
+\cline{1-3}
+相离 & 无公共点 & $d > r$ \\
+\cline{1-3}
+相切 & 唯一公共点 & $d = r$ \\
+\cline{1-3}
+相交 & 两个不同公共点 & $d < r$ \\
+\cline{1-3}
+\multicolumn{3}{|c|}{也可以利用联立方程组解的个数判断} \\
+\cline{1-3}
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{圆与圆的位置关系} \\
+\cline{1-3}
+关系 & 特征 & 表达式 \\
+\cline{1-3}
+外离 & 无公共点 & ${d}^{\prime } > {r}_{1} + {r}_{2}$ \\
+\cline{1-3}
+外切 & 唯一公共点 & ${d}^{\prime } = {r}_{1} + {r}_{2}$ \\
+\cline{1-3}
+相交 & 两个不同公共点 & $\left| {{r}_{1} - {r}_{2}}\right|  < {d}^{\prime } < {r}_{1} + {r}_{2}$ \\
+\cline{1-3}
+内切 ${r}_{1} \neq  {r}_{2}$ & 唯一公共点 & ${d}^{\prime } = \left| {{r}_{1} - {r}_{2}}\right|$ \\
+\cline{1-3}
+内含 ${r}_{1} \neq  {r}_{2}$ & 无公共点 & ${d}^{\prime } < \left| {{r}_{1} - {r}_{2}}\right|$ \\
+\cline{1-3}
+\hline
+\end{tabular}
+\end{center}
+
+11. 过两圆 ${C}_{1} : {x}^{2} + {y}^{2} + {D}_{1}x + {E}_{1}y + {F}_{1} = 0,{C}_{2} : {x}^{2} + {y}^{2} + {D}_{2}x + {E}_{2}y + {F}_{2} = 0$ 交点的圆系方程: ${x}^{2} +  {y}^{2} + {D}_{1}x + {E}_{1}y + {F}_{1} + \lambda \left( {{x}^{2} + {y}^{2} + {D}_{2}x + {E}_{2}y + {F}_{2}}\right)  = 0$ (除去 ${C}_{2}$ ).
+
+12. 过圆 ${x}^{2} + {y}^{2} = {r}^{2}$ 上一点 $P\left( {{x}_{0},{y}_{0}}\right)$ 的圆的切线方程为 ${x}_{0}x + {y}_{0}y = {r}^{2}$ .
+
+13. 以 $A\left( {{x}_{1},{y}_{1}}\right)$ 、 $B\left( {{x}_{2},{y}_{2}}\right)$ 为直径端点的圆的方程 $\left( {x - {x}_{1}}\right) \left( {x - {x}_{2}}\right)  + \left( {y - {y}_{1}}\right) \left( {y - {y}_{2}}\right)  = 0$ .
+
+14. 用圆的切线到圆心的距离等于圆的半径可求与切线或圆有关的参数 (如斜率、半径等).
+
+15. 在圆中, 注意利用半径、半弦长, 以及弦心距构成的直角三角形.
+
+\section*{三、圆锥曲线、直线与圆锥曲线的位置关系}
+
+16. 圆锥曲线及其性质:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+椭圆定义 & \multicolumn{2}{|c|}{$\left| {M{F}_{1}}\right|  + \left| {M{F}_{2}}\right|  = {2a}\left( {{2a} > \left| {{F}_{1}{F}_{2}}\right| }\right)$} \\
+\cline{1-3}
+椭圆标准方程 & $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ & $\frac{{y}^{2}}{{a}^{2}} + \frac{{x}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ \\
+\cline{1-3}
+参数 & ${a}^{2} = {b}^{2} + {c}^{2}$ & ${a}^{2} = {b}^{2} + {c}^{2}$ \\
+\cline{1-3}
+范围 & $\left| x\right|  \leq  a,\left| y\right|  \leq  b$ & $\left| y\right|  \leq  a,\left| x\right|  \leq  b$ \\
+\cline{1-3}
+对称性 & 轴: $x = 0\text{ 、 }y = 0$ ; 中心: $\left( {0,0}\right)$ & 轴: $x = 0\text{ 、 }y = 0$ ; 中心: $\left( {0,0}\right)$ \\
+\cline{1-3}
+顶点 & ${A}_{1,2}\left( {\pm a,0}\right)$ 和 ${B}_{1,2}\left( {0, \pm  b}\right)$ & ${A}_{1,2}\left( {0, \pm  a}\right)$ 和 ${B}_{1,2}\left( {\pm b,0}\right)$ \\
+\cline{1-3}
+离心率 $e \in  \left( {0,1}\right)$ & $\frac{c}{a}$ & $\frac{c}{a}$ \\
+\cline{1-3}
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+双曲线定义 & \multicolumn{2}{|c|}{$\left. {\left. \right| M{F}_{1}\left| -\right| M{F}_{2}\left| \right|  = {2a}\left( {a > 0,{2a} < }\right. \left| {{F}_{1}{F}_{2}}\right| }\right)$} \\
+\cline{1-3}
+双曲线标准方程 & $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a,b > 0}\right)$ & $\frac{{y}^{2}}{{a}^{2}} - \frac{{x}^{2}}{{b}^{2}} = 1\left( {a\text{ 、 }b > 0}\right)$ \\
+\cline{1-3}
+参数 & ${c}^{2} = {a}^{2} + {b}^{2}$ & ${c}^{2} = {a}^{2} + {b}^{2}$ \\
+\cline{1-3}
+范围 & $\left| x\right|  \geq  a$ & $\left| y\right|  \geq  a$ \\
+\cline{1-3}
+对称性 & 轴: $x = 0\text{ 、 }y = 0$ ; 中心: $\left( {0,0}\right)$ & 轴: $x = 0\text{ 、 }y = 0$ ; 中心: $\left( {0,0}\right)$ \\
+\cline{1-3}
+顶点 & ${A}_{1.2}\left( {\pm a,0}\right)$ & ${A}_{1,2}\left( {0, \pm  a}\right)$ \\
+\cline{1-3}
+渐近线 & $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 0$ & $\frac{{y}^{2}}{{a}^{2}} - \frac{{x}^{2}}{{b}^{2}} = 0$ \\
+\cline{1-3}
+离心率 $e \in  \left( {1, + \infty }\right)$ & $\frac{c}{a}$ & $\frac{c}{a}$ \\
+\cline{1-3}
+\hline
+\end{tabular}
+\end{center}
+
+ \ding{72} 椭圆的定义中距离和要大于两定点之间的距离，双曲线定义中距离之差的绝对值要小于两定点之间的距离，解有关题目要能联想到这两个定义；
+
+ \ding{72}  椭圆和双曲线中 $a$ 、 $b$ 、 $c$ 、抛物线中 $p$ 的几何意义在解题过程中有重要作用.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+抛物线定义 & \multicolumn{4}{|c|}{$\left| {MF}\right|  = d$ ( $d$ 为 $M$ 到定直线的距离)} \\
+\cline{1-5}
+抛物线标准方程 & ${y}^{2} = {2px}$ & ${y}^{2} =  - {2px}$ & ${x}^{2} = {2py}$ & ${x}^{2} =  - {2py}$ \\
+\cline{1-5}
+焦参数 & \multicolumn{4}{|c|}{$p\left( {p > 0}\right)$ 为定点到定直线的距离} \\
+\cline{1-5}
+范围 & $x \geq  0$ & $x \leq  0$ & $y \geq  0$ & $y \leq  0$ \\
+\cline{1-5}
+对称性 & 轴: $y = 0$ & 轴: $y = 0$ & 轴: $x = 0$ & 轴: $x = 0$ \\
+\cline{1-5}
+顶点 & $O\left( {0,0}\right)$ & $O\left( {0,0}\right)$ & $O\left( {0,0}\right)$ & $O\left( {0,0}\right)$ \\
+\cline{1-5}
+\hline
+\end{tabular}
+\end{center}
+
+17. 圆锥曲线中各几何元素间的相对位置关系:如椭圆中，注意焦点、中心、短轴端点所组成的直角三角形，双曲线的中心、顶点和虚轴端点构成的直角三角形。
+
+18. 在用圆锥曲线与直线联立求解时,消元后得到的方程中要注意:二次项的系数是否为零，判别式 $\Delta  > 0$ 或 $\Delta  \geq  0$ 的限制(求交点，弦长，中点，斜率，对称，存在性问题都在 $\Delta  > 0$ 下进行).
+
+19. 解析几何中的取值范围问题解法有二:  \ding{172} 建立某个变量的函数关系,求函数的值域;  \ding{173} 建立有关的等式 (组) 并解之, 有时还需要一些等量关系; 判别式常用于建立不等式, 韦达定理是常用的工具.
+
+20. “点差法” 很有用，但要注意在解题中的局限性.
+
+21. 椭圆的通径 (过焦点垂直于长轴的弦),长为 $\frac{2{b}^{2}}{a}$ ,它是焦点弦中长度最短的弦;
+
+双曲线的通径 (过焦点垂直于实轴的弦),长为 $\frac{2{b}^{2}}{a}$ ,它和实轴长之一是焦点弦中长度最短的弦;
+
+抛物线的通径 (过焦点垂直于对称轴的弦),长为 ${2p}$ 是抛物线焦点弦中长度最短的弦.
+
+22. 点 $P$ 在椭圆上， $\bigtriangleup  P{F}_{1}{F}_{2}$ 的面积 ${b}^{2}\tan \frac{\alpha }{2}$ ；点 $P$ 在双曲线上， $\bigtriangleup  P{F}_{1}{F}_{2}$ 的面积 ${b}^{2}\cot \frac{\alpha }{2}$ ，(其中 ${F}_{1}$ 、 ${F}_{2}$ 是焦点， $\left. {\angle {F}_{1}P{F}_{2} = \alpha }\right)$ .
+
+23. 求圆锥曲线的标准方程时, 要注意焦点所在的位置.
+
+24. 抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 的焦点弦长 $\left| {AB}\right|  = \frac{2p}{{\sin }^{2}\theta } = {x}_{1} + {x}_{2} + p$ .
+
+25. 曲线上 $A\text{ 、 }B$ 与原点的连线垂直 $\Leftrightarrow  {x}_{1}{x}_{2} + {y}_{1}{y}_{2} = 0 \Leftrightarrow$ 以线段 ${AB}$ 为直径的圆过原点.
+
+26. 抛物线上找一点使这点到抛物线内一点和到焦点的距离之和最小, 只要作抛物线对称轴的平行线抛物线上找一点使这点到抛物线外一点和到焦点 (或准线) 的距离之和最小, 只要连结这点和焦点.
+
+27. 求弦的中点轨迹要注意含于曲线的内部.
+
+28. 一般弦长公式 $\left| {AB}\right|  = \sqrt{1 + {k}^{2}}\left| {{x}_{1} - {x}_{2}}\right|  = \sqrt{1 + {k}^{2}}\frac{\sqrt{\Delta }}{\left| a\right| }$ (其中 $a$ 是化简后所得一元二次方程的二次项系数; ${x}_{1}\text{ 、 }{x}_{2}$ 分别是 $A\text{ 、 }B$ 两点的横坐标; $k$ 是直线 ${AB}$ 的斜率).
+
+29. 双曲线上任意一点到两渐近线的距离之积为常数.
+
+30. 求抛物线的焦点坐标时要先将抛物线方程标准化.
+
+31. ”圆的参数方程 $\left\{  {\begin{array}{l} x = a + r\cos \theta , \\  y = b + r\sin \theta  \end{array}\text{ ( }\theta }\right.$ 为参数),其中 $\theta$ 的几何意义是旋转角, $\left( {a,b}\right)$ 是圆心, $r$ 是半径.
+
+\section*{§ 10.1 直线及其位置关系}
+
+\section*{典型例题精讲}
+
+【例 1】过点 $P\left( {1,2}\right)$ ,作直线 $l$ 与 $x$ 轴、 $y$ 轴正半轴分别交于 $A\text{ 、 }B$ 两点, $O$ 为坐标原点.
+
+(1)求 $\bigtriangleup  {AOB}$ 面积的最小值及此时直线 $l$ 的方程；
+
+(2)求直线 $l$ 在两坐标轴上截距之和的最小值及此时直线 $l$ 的方程.
+
+【例 2】已知实数 $a$ 满足 $0 < a < 2$ ,直线 ${l}_{1} : {ax} - {2y} - {2a} + 4 = 0$ 和 ${l}_{2} : {2x} + {a}^{2}y - 2{a}^{2} - 4 = 0$ 与两坐标轴围成一个四边形.
+
+(1)求证:无论实数 $a$ 如何变化，直线 ${l}_{1}$ 、 ${l}_{2}$ 必过定点.
+
+(2)求实数 $a$ 取何值时，所围成的四边形面积最小?
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_195_1147_1591_296_239_0.jpg}
+\end{center}
+ 
+
+(例 2 图)
+
+【例 3】已知三条直线 ${l}_{1} : {2x} - y + a = 0\left( {a > 0}\right)$ ，直线 ${l}_{2} :  - {4x} + {2y} + 1 = 0$ 和直线 ${l}_{3} : x + y - 1 = 0$ ，且 ${l}_{1}$ 与 ${l}_{2}$ 的距离是 $\frac{7}{10}\sqrt{5}$ .
+
+(1) 求 $a$ 的值； $P$ 到 ${l}_{2}$ 的距离的 $\frac{1}{2}$ ； \ding{174}  点 $P$ 到 ${l}_{1}$ 的距离与点 $P$ 到 ${l}_{3}$ 的距离之比是 $\sqrt{2}$ ； $\sqrt{5}$ . 若能，求点 $P$ 坐标； 明理由.
+
+【例 4】已知直线 $l : \left( {{2m} + 1}\right) x + \left( {m - 1}\right) y - {5m} - 1 = 0$ ,且与坐标轴形成的三角形面积为 $S$ . 求:
+
+(1)求证:不论 $m$ 为何实数，直线 $l$ 过定点 $P$ ；
+
+(2)分别求 $S = 3$ 和 $S = 5$ 时，所对应的直线条数；
+
+(3)针对 $S$ 的不同取值，讨论集合 $\{ l \mid$ 直线经过 $P$ 且与坐标轴围成的三角形面积为 $S$ \}中的元系个数.
+
+【例 5】在平面直角坐标系 ${xOy}$ 中,对于直线 $l : {ax} + {by} + c = 0$ 和点 ${P}_{1}\left( {{x}_{1},{y}_{1}}\right)$ 、 ${P}_{2}\left( {{x}_{2},{y}_{2}}\right)$ ，记 $\eta  =  \left( {a{x}_{1} + b{y}_{1} + c}\right) \left( {a{x}_{2} + b{y}_{2} + c}\right)$ ,若 $\eta  < 0$ ,则称点 ${P}_{1}\text{ 、 }{P}_{2}$ 被直线 $l$ 分隔,若曲线 $C$ 与直线 $l$ 没有公共点,且曲线 $C$ 上存在点 ${P}_{1}\text{ 、 }{P}_{2}$ 被直线 $l$ 分隔,则称直线 $l$ 为曲线 $C$ 的一条分隔线.
+
+(1)求证:点 $A\left( {1,2}\right)$ 、 $B\left( {-1,0}\right)$ 被直线 $x + y - 1 = 0$ 分隔；
+
+(2)若直线 $y = {kx}$ 是曲线 ${x}^{2} - 4{y}^{2} = 1$ 的分隔线，求实数 $k$ 的取值范围；
+
+(3)动点 $M$ 到点 $Q\left( {0,2}\right)$ 的距离与到 $y$ 轴的距离之积为 1，设点 $M$ 的轨迹为曲线 $E$ ，求证:通过原点的直线中,有且仅有一条直线是 $E$ 的分隔线.
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 过点 $P\left( {0,1}\right)$ 且与两点 $A\left( {-2,0}\right) ,B\left( {2, - 3}\right)$ 距离相等的直线方程是 .
+
+2. 已知点 $A\left( {-2, - 2}\right) \text{ 、 }B\left( {5,3}\right)$ 和 $P\left( {-4,2}\right)$ ,若过点 $P$ 的直线 $l$ 与线段 ${AB}$ 有公共点,则 $l$ 的倾斜角的取值范围是\_\_\_\_\_.
+
+3. 已知三角形 ${ABC}$ 的三个顶点为 $A\left( {2,1}\right) \text{ 、 }B\left( {6,1}\right) \text{ 、 }C\left( {5,5}\right)$ ,则 $\angle A$ 平分线所在直线的方程为\_\_\_\_\_.
+
+4. 若直线 $\sqrt{3}x - y - 1 = 0$ 与直线 $x - {ay} = 0$ 的夹角为 $\frac{\pi }{6}$ ，则实数 $a =$ \_\_\_\_\_.
+
+5. 在直角坐标平面内,向量 $\overrightarrow{OA} = \left( {1,3}\right) ,\overrightarrow{OB} = \left( {-3,1}\right)$ 在直线 $l$ 上的射影长度相等,则直线 $l$ 的斜率为\_\_\_\_\_.
+
+6. 平面直角坐标系中,给出点 $A\left( {1,0}\right) \text{ 、 }B\left( {4,0}\right)$ ,若直线 $x + {my} - 1 = 0$ 上存在点 $P$ ,使得 $\left| {PA}\right|  = 2\left| {PB}\right|$ ,则实数 $m$ 的取值范围是\_\_\_\_\_.
+
+7. 已知 $A\left( {4,0}\right)$ 、 $B\left( {0,4}\right)$ ，从点 $P\left( {2,0}\right)$ 射出的光线经直线 ${AB}$ 反射后再射到直线 ${OB}$ 上，最后经直线 ${OB}$ 反射后又回到点 $P$ ，则光线所经过的路程为\_\_\_\_\_.
+
+8. 在平面直角坐标系中，已知点 $P\left( {-2,2}\right)$ ，对于任意不全为零的实数 $a$ 、 $b$ ，直线 $l : {ax} + {by} + {2b} - a = 0$ ， 若点 $P$ 到直线 $l$ 的距离为 $d$ ，则 $d$ 的取值范围是\_\_\_\_\_.
+
+9. 在平面直角坐标系中,若 $x$ 与 $y$ 都是整数,就称 $\left( {x,y}\right)$ 为整点,下列命题中:
+
+ \ding{172} 存在这样的直线，既不与坐标轴平行又不经过任何整点；
+
+ \ding{173} 如果 $k$ 与 $b$ 都是无理数，则直线 $y = {kx} + b$ 不经过任何整点；
+
+ \ding{174} 直线 $l$ 经过无穷多个整点，当且仅当 $l$ 经过两个不同的整点；
+
+ \ding{175} 直线 $y = {kx} + b$ 经过无穷多个整点的充分必要条件是: $k$ 与 $b$ 都是有理数；
+
+ \circled{5} 存在恰经过一个整点的直线. 其中真命题的序号为\_\_\_\_\_.
+
+\section*{二、选择题}
+
+10. $A\left( {3,0}\right) ,B\left( {0,4}\right)$ ,动点 $P\left( {x,y}\right)$ 在线段 ${AB}$ 上移动,则 ${xy}$ 的最大值为 ( )
+
+A. $\frac{12}{5}$ . B. $\frac{144}{49}$ . C. 3. D. 4.
+
+11. 已知直线 ${l}_{1} : y = x\sin \alpha \left( {\alpha  \in  \mathbf{R}}\right)$ 和直线 ${l}_{2} : y = {2x} + c$ ,则下述关于直线 ${l}_{1}\text{ 、 }{l}_{2}$ 关系的判断正确的是 ( )
+
+A. 通过平移可以重合. B. 不可能垂直.
+
+C. 可能与 $x$ 轴围成等腰直角三角形. D. 通过绕 ${l}_{1}$ 上某点旋转可以重合.
+
+12. 已知点 $M\left( {a,b}\right)$ 与点 $N\left( {0, - 1}\right)$ 在直线 ${3x} - {4y} + 5 = 0$ 的异侧，给出以下结论: \ding{172}  ${3a} - {4b} + 5 > 0$ ；  \ding{173} 当 $a > 0$ 时， $a + b$ 有最小值，无最大值； \ding{174}  ${a}^{2} + {b}^{2} > 1$ ； \ding{175}  当 $a > 0$ 且 $a \neq  1$ 时， $\frac{b + 1}{a - 1}$ 的取值范围是 $( - \infty$ ， $\left. {-\frac{9}{4}}\right)  \cup  \left( {\frac{3}{4}, + \infty }\right)$ . 其中正确命题的个数是 ( )
+
+A.1. B.2. C. 3. D. 4.
+
+\section*{三、解答题}
+
+13. 已知直线 $l : x + {2y} - 2 = 0$ . 试求:
+
+(1)点 $P\left( {-2, - 1}\right)$ 关于直线 $l$ 的对称点坐标；
+
+(2)直线 $l$ 关于点 $\left( {1,1}\right)$ 对称的直线方程.
+
+14. 直线 ${l}_{1} : y = {mx} + 1,{l}_{2} : x =  - {my} + 1$ 相交于点 $P$ ,其中 $\left| m\right|  \leq  1$ .
+
+(1)求证: ${l}_{1}$ 、 ${l}_{2}$ 分别过定点 $A$ 、 $B$ ，并求点 $A$ 、 $B$ 的坐标；
+
+(2)当 $m$ 为何值时， $\bigtriangleup  {ABP}$ 的面积 $S$ 取得最大值，并求出最大值.
+
+15. 已知点 $A\left( {0,1}\right) \text{ 、 }B\left( {1,1}\right)$ ,设过点 $P\left( {0, - 1}\right)$ 的直线 $l$ 与 $\bigtriangleup {AOB}$ 的边 ${AB}$ 交于点 $M$ (其中点 $M$ 异于 $A\text{ 、 }B$ 两点),与边 ${OB}$ 交于 $N$ (其中点 $N$ 异于 $O\text{ 、 }B$ 两点),若设直线 $l$ 的斜率为 $k\left( {k > 2}\right)$ .
+
+(1)试用 $k$ 来表示点 $M$ 和 $N$ 的坐标；
+
+(2)当 $k$ 为何值时， $\bigtriangleup  {OMN}$ 的面积 $S$ 取得最大值？并求此最大值.
+
+16. 如图，Rt $\bigtriangleup  {OAB}$ 的直角边 ${OA}$ 在 $x$ 轴上，顶点 $B$ 的坐标为 $\left( {6,8}\right)$ ，直线 ${CD}$ 交 ${AB}$ 于点 $D\left( {6,3}\right)$ ，交 $x$ 轴于点 $C\left( {{12},0}\right)$ .
+
+(1)求直线 ${CD}$ 的方程；
+
+(2)动点 $P$ 在 $x$ 轴上从点 $\left( {-{10},0}\right)$ 出发，向 $x$ 轴正方向运动，点 $P$ 在运动过程中，是否存在某个位置， 使得 $\angle {PDA} = \angle B$ ？若存在，请求出点 $P$ 的坐标；若不存在，请说明理由.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_199_1180_1160_293_219_0.jpg}
+\end{center}
+ 
+
+(第 16 题图)
+
+\section*{§ 10.2 圆的方程与性质}
+
+\section*{典型例题精讲}
+
+【例 1】已知 $\odot  O$ 的圆心为坐标原点， $\odot  O$ 上的点到直线 $l : x + y - 2\sqrt{2} = 0$ 的距离的最小值为 1 .
+
+(1)求 $\odot  O$ 的方程；
+
+(2)过点 $P\left( {4,2}\right)$ 作 $\odot  O$ 的两条切线，切点分别为 $A$ 、 $B$ ，求直线 ${AB}$ 的方程.
+
+【例 2】已知直线 $l : y = {kx}\left( {k \neq  0}\right)$ 与圆 $C : {x}^{2} + {y}^{2} - {2x} - 3 = 0$ 相交于 $A\text{ 、 }B$ 两点.
+
+(1)若 $\left| {AB}\right|  = \sqrt{13}$ ，求 $k$ ；
+
+(2)在 $x$ 轴上是否存在点 $M$ ，使得当 $k$ 变化时，总有直线 ${MA}$ 、 ${MB}$ 的斜率之和为 0 ？若存在，求出点 $M$ 的坐标; 若不存在, 说明理由.
+
+
+【例 3】已知矩形 ${ABCD}$ 的对角线交于点 $P\left( {2,0}\right)$ ,边 ${AB}$ 所在直线的方程为 $x - {3y} - 6 = 0$ ,点 $\left( {-1,1}\right)$ 在边 ${AD}$ 所在的直线上,
+
+(1)求矩形 ${ABCD}$ 的外接圆的方程；
+
+(2)已知直线 $l : \left( {1 - {2k}}\right) x + \left( {1 + k}\right) y - 5 + {4k} = 0\left( {k \in  \mathbf{R}}\right)$ ，求证:直线 $l$ 与矩形 ${ABCD}$ 的外接圆恒相交， 并求出相交的弦长最短时的直线 $l$ 的方程.
+
+【例 4】已知过点 $A\left( {-1,0}\right)$ 的直线 $l$ 与圆 $C : {x}^{2} + {\left( y - 3\right) }^{2} = 4$ 相交于 $P\text{ 、 }Q$ 两点, $M$ 是弦 ${PQ}$ 的中点; 且直线 $l$ 与直线 $m : x + {3y} + 6 = 0$ 相交于点 $N$ .
+
+(1)当直线 $l$ 与直线 $m$ 垂直时,求证:直线 $l$ 经过圆心 $C$ ；
+
+(2)设 $t = \overrightarrow{AM} \cdot  \overrightarrow{AN}$ ，试问 $t$ 是否为定值？若为定值，请求出 $t$ 的值；若不为定值，请说明理由.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_201_1147_1293_303_268_0.jpg}
+\end{center}
+ 
+
+(例 4 图)
+
+【例 5】已知圆 $C$ 过点 $P\left( {1,1}\right)$ ,且与圆 $M : {\left( x + 2\right) }^{2} + {\left( y + 2\right) }^{2} = {r}^{2}\left( {r > 0}\right)$ 关于直线 $x + y + 2 = 0$ 对称.
+
+(1)求圆 $C$ 的方程；
+
+(2)直线 $l$ 过点 $Q\left( {1,\frac{1}{2}}\right)$ ，截圆 $C$ 所得的弦长为 2，求直线 $l$ 的方程；
+
+(3)过点 $P$ 作两条相异直线分别与圆 $C$ 相交于 $A$ 、 $B$ ，且直线 ${PA}$ 和直线 ${PB}$ 的倾斜角互补， $O$ 为坐标原点,试判断直线 ${OP}$ 和 ${AB}$ 是否平行? 请说明理由.
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 若不过第四象限的直线 $l$ 平分圆 ${x}^{2} + {y}^{2} - {2x} - {4y} = 0$ ，则 $l$ 斜率的取值范围是\_\_\_\_\_.
+
+2.过点 $P\left( {2,3}\right)$ 且与圆 ${\left( x + 1\right) }^{2} + {\left( y + 1\right) }^{2} = 9$ 相切的直线方程为\_\_\_\_\_.
+
+3. 过点 $\left( {1,\sqrt{2}}\right)$ 的直线 $l$ 将圆 ${\left( x - 2\right) }^{2} + {y}^{2} = 4$ 分成两段弧,当劣弧所对的圆心角最小时,直线 $l$ 的斜率 $k =$ \_\_\_\_\_.
+
+4. 若 $y = x + b$ 与曲线 $x = \sqrt{1 - {y}^{2}}$ 恰有一个公共点,则实数 $b$ 的取值范围是\_\_\_\_\_.
+
+5. 若函数 $y = {ax} + {2a} - \sqrt{1 - {x}^{2}}$ 存在零点,则实数 $a$ 的取值范围是\_\_\_\_\_.
+
+6. 若圆 ${x}^{2} + {y}^{2} - {4x} - {4y} - {10} = 0$ 上至少有三个不同的点到直线 $l : {ax} + {by} = 0$ 的距离为 $2\sqrt{2}$ ，则直线 $l$ 倾斜角的取值范围是\_\_\_\_\_.
+
+7. 已知圆 $O$ 的半径为 $1,{PA}\text{ 、 }{PB}$ 为该圆的两条切线， $A$ 、 $B$ 为两切点，那么 $\overrightarrow{PA}$ . $\overrightarrow{PB}$ 的最小值为\_\_\_\_\_.
+
+8. 已知圆 ${x}^{2} + {y}^{2} = 1$ 与圆 ${x}^{2} + {2mx} + {y}^{2} + {ny} = 0\left( {m\text{ 、 }n}\right.$ 是正实数) 相交于 $A\text{ 、 }B$ 两点， $O$ 为坐标原点,当 $\bigtriangleup {AOB}$ 的面积最大时,则 $\frac{\left( {4{m}^{2} + 1}\right) \left( {{n}^{2} + 1}\right) }{mn}$ 的最小值为\_\_\_\_\_.
+
+9. 已知正方形 ${ABCD}$ 边长为 $8,\overrightarrow{BE} = \overrightarrow{EC},\overrightarrow{DF} = 3\overrightarrow{FA}$ ，若在正方形边上恰有 6 个不同的点 $P$ ，使 $\overrightarrow{PE}$ . $\overrightarrow{PF} = \lambda$ ，则实数 $\lambda$ 的取值范围是\_\_\_\_\_.
+
+\section*{二、选择题}
+
+10. 若圆 ${C}_{1} : {x}^{2} + {y}^{2} = 1$ 和圆 ${C}_{2} : {x}^{2} + {y}^{2} - {6x} - {8y} - k = 0$ 没有公共点,则实数 $k$ 的取值范围是( )
+
+A. $\left( {-9,{11}}\right)$ . B. $\left( {-{25}, - 9}\right)$ .
+
+C. $\left( {-\infty , - 9}\right)  \cup  \left( {{11}, + \infty }\right)$ . D. $\left( {-{25}, - 9}\right)  \cup  \left( {{11}, + \infty }\right)$ .
+
+11. 已知 $x\text{ 、 }y$ 满足 ${x}^{2} + {y}^{2} = {4y} - 3$ ,则 $\frac{\sqrt{3}x + y}{\sqrt{{x}^{2} + {y}^{2}}}$ 的最大值为 ( )
+
+A.1. B.2. C. $\sqrt{3}$ . D. $\sqrt{5}$ .
+
+12. 已知圆 $M : {\left( x + \cos \theta \right) }^{2} + {\left( y - \sin \theta \right) }^{2} = 1$ ,直线 $l : y = {kx}$ ,下面四个命题:
+
+ \ding{172} 对任意实数 $k$ 与 $\theta$ ，直线 $l$ 和圆 $M$ 相切；
+
+ \ding{173} 对任意实数 $k$ 与 $\theta$ ，直线 $l$ 和圆 $M$ 有公共点；
+
+ \ding{174} 对任意实数 $\theta$ ，必存在实数 $k$ ，使得直线 $l$ 与圆 $M$ 相切；
+
+ \ding{175} 对任意实数 $k$ ，必存在实数 $\theta$ ，使得直线 $l$ 与圆 $M$ 相切.
+
+其中真命题为 ( )
+
+A.  \ding{172}  \ding{173} . B.  \ding{173}  \ding{174} . C.  \ding{173}  \ding{175} . D.  \ding{172}  \ding{175} .
+
+\section*{三、解答题}
+
+13. 已知 $P\left( {x,y}\right)$ 为圆 $C : {\left( x + 3\right) }^{2} + {\left( y - 4\right) }^{2} = 1$ 上任意一点.
+
+(1)求 $\frac{y - 6}{x}$ 的最值;
+
+(2)求 $x - {2y}$ 的最值.
+
+14. 已知点 $A\left( {1,2}\right)$ ,圆 $C : {x}^{2} + {y}^{2} + {2mx} + {2y} + 2 = 0$ .
+
+(1)若过点 $A$ 可以做两条圆的切线，求 $m$ 的取值范围；
+
+(2)当 $m =  - 2$ 时,过直线 ${2x} - y + 3 = 0$ 上一点 $P$ 作圆的两条切线 ${PM}$ 、 ${PN}$ ，求四边形 ${PMCN}$ 面积的最小值.
+
+15. 已知半径为 $\frac{8}{3}$ 的圆 $C$ 的圆心在 $y$ 轴的正半轴上,且直线 $l : {2x} - {9y} - 1 = 0$ 与圆 $C$ 相切.
+
+(1)求圆 $C$ 的标准方程；
+
+(2)已知 $A\left( {0, - 1}\right)$ ， $P$ 为圆 $C$ 上任意一点，试问在 $y$ 轴上是否存在定点 $B$ (异于点 $A$ ，使得 $\frac{\left| PB\right| }{\left| PA\right| }$ 为定值? 若存在,求点 $B$ 的坐标; 若不存在,请说明理由.
+
+16. 点 $P$ 到 $A\left( {-2,0}\right)$ 的距离是点 $P$ 到 $B\left( {1,0}\right)$ 的距离的 2 倍.
+
+(1)求点 $P$ 的轨迹方程；
+
+(2)点 $P$ 与点 $Q$ 关于点 $\left( {2,1}\right)$ 对称，点 $C\left( {3,0}\right)$ ，求 ${\left| QA\right| }^{2} + {\left| QC\right| }^{2}$ 的最大值和最小值.
+
+\section*{§ 10.3 椭圆及其性质}
+
+\section*{典型例题精讲}
+
+【例 1】设椭圆 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的左焦点为 $F$ ，左顶点为 $A$ ，上顶点为 $B$ . 已知、 $\sqrt{3}\left| {OA}\right|  = 2\left| {OB}\right|$ ( $O$ 为原点).
+
+(1)求椭圆的离心率；
+
+(2)设经过点 $F$ 且斜率为 $\frac{3}{4}$ 的直线 $l$ 与椭圆在 $x$ 轴上方的交点为 $P$ ，圆 $C$ 同时与 $x$ 轴和直线 $l$ 相切，圆心 $C$ 在直线 $x = 4$ 上,且 ${OC}//{AP}$ . 求椭圆的方程.
+
+【例 2】设常数 $m > 0$ 且 $m \neq  1$ ,椭圆 $\Gamma  : \frac{{x}^{2}}{{m}^{2}} + {y}^{2} = 1$ ,点 $P$ 是 $\Gamma$ 上的动点.
+
+(1)若点 $P$ 的坐标为 $\left( {2,0}\right)$ ，求 $\Gamma$ 的焦点坐标；
+
+(2)设 $m = \frac{1}{2}$ ，若 $\Gamma$ 上的另一动点 $Q$ 满足 ${OP} \bot  {OQ}$ ( $O$ 为坐标原点)，求证: $O$ 到直线 ${PQ}$ 的距离是定值.
+
+【例 3】已知曲线 $E : \frac{{x}^{2}}{2} + {y}^{2} = 1\left( {y \neq  0}\right)$ 的左右焦点为 ${F}_{1}\text{ 、 }{F}_{2},P$ 是曲线 $E$ 上一动点.
+
+(1)过 ${F}_{2}$ 的直线与曲线 $E$ 交于 ${AB}$ 两点，且 $\overrightarrow{A{F}_{2}} = 2\overrightarrow{{F}_{2}B}$ ，求直线 ${AB}$ 的斜率；
+
+(2)若存在过点 $H\left( {0,h}\right) \left( {h > 0}\right)$ 的两条直线 ${l}_{1}$ 和 ${l}_{2}$ 与曲线 $E$ 都只有一个公共点,且 ${l}_{1} \bot  {l}_{2}$ ,求 $h$ 的值.
+
+【例 4】如图所示,由半椭圆 ${C}_{1} : \frac{{x}^{2}}{4} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {y < 0}\right)$ 和两个半圆 ${C}_{2} : {\left( x + 1\right) }^{2} + {y}^{2} = 1\left( {y \geq  0}\right) \text{ 、 }{C}_{3}$ : ${\left( x - 1\right) }^{2} + {y}^{2} = 1\left( {y \geq  0}\right)$ 组成曲线 $C : F\left( {x,y}\right)  = 0$ ,其中点 ${A}_{1}\text{ 、 }{A}_{2}$ 依次为 ${C}_{1}$ 的左、右顶点,点 $B$ 为 ${C}_{1}$ 的下顶点,点 ${F}_{1}\text{ 、 }{F}_{2}$ 依次为 ${C}_{1}$ 的左、右焦点. 若点 ${F}_{1}\text{ 、 }{F}_{2}$ 分别为曲线 ${C}_{2}\text{ 、 }{C}_{3}$ 的圆心.
+
+(1)求 ${C}_{1}$ 的方程；
+
+(2)若点 $P$ 、 $Q$ 分别在 ${C}_{2}$ 、 ${C}_{3}$ 上运动，求 $\left| {BP}\right|  + \left| {BQ}\right|$ 的最大值，并求出此时点 $P$ 、 $Q$ 的坐标；
+
+(3)若点 $M$ 在曲线 $C : F\left( {x,y}\right)  = 0$ 上运动，点 $N\left( {0, - 1}\right)$ ，求 $\left| {NM}\right|$ 的取值范围.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_206_1176_1279_321_233_0.jpg}
+\end{center}
+ 
+
+(例 4 图)
+
+【例 5】已知 ${F}_{1}\text{ 、 }{F}_{2}$ 分别为椭圆 $C : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的左、右焦点， $P\left( {\sqrt{3},\frac{1}{2}}\right)$ 在椭圆 $C$ 上，且 $P{F}_{2} \bot  x$ 轴.
+
+(1)求椭圆 $C$ 的方程；
+
+(2)设 $Q$ 是椭圆 $C$ 上一点， $T\left( {\frac{\sqrt{3}}{2},\frac{\sqrt{3}}{2}}\right)$ ，求 $\left| {QT}\right|  + \left| {Q{F}_{1}}\right|$ 的最大值；
+
+(3)已知点 $A\left( {0,1}\right)$ 及椭圆 $C$ 上的点 $M$ 、 $N$ 满足 ${AM}\bot {AN}$ ,过点 ${F}_{2}$ 作直线 ${MN}$ 的垂线,垂足为 $H$ ,求点 $H$ 的轨迹方程.
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 方程 $5{x}^{2} + k{y}^{2} = {5k}$ 表示焦点在 $y$ 轴上的椭圆，则 $k$ 的取值范围是\_\_\_\_\_.
+
+2. ${F}_{1}$ 是 $\frac{{x}^{2}}{9} + \frac{{y}^{2}}{5} = 1$ 的左焦点， $P$ 是椭圆上的动点， $A\left( {1,1}\right)$ 为定点，则 $\left| {PA}\right|  + \left| {P{F}_{1}}\right|$ 的最小值是\_\_\_\_\_.
+
+3. 椭圆 $\frac{{x}^{2}}{9} + \frac{{y}^{2}}{4} = 1$ 的焦点为 ${F}_{1}\text{ 、 }{F}_{2}$ ,点 $P$ 为其上的动点,当 $\angle {F}_{1}P{F}_{2}$ 为锐角时,点 $P$ 横坐标的取值范围为\_\_\_\_\_.
+
+4. 设 $A$ 是椭圆 $\frac{{x}^{2}}{{a}^{2} + {b}^{2} - {1}^{2}} = 1\left( {a > 0}\right)$ 上的动点,点 $F$ 的坐标为 $\left( {-2,0}\right)$ ,若满足 $\left| {AF}\right|  = {10}$ 的点 $A$ 有且仅有两个，则实数 $a$ 的取值范围为\_\_\_\_\_.
+
+5. 已知 $c$ 是椭圆 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的半焦距,则 $\frac{b + c}{a}$ 的取值范围是\_\_\_\_\_.
+
+6. 已知椭圆 $\frac{{x}^{2}}{4} + \frac{{y}^{2}}{3} = 1$ 上有不同的两点关于直线 $y = {4x} + m$ 对称，则实数 $m$ 的取值范围是\_\_\_\_\_.
+
+7. 已知椭圆 $\frac{{x}^{2}}{16} + \frac{{y}^{2}}{9} = 1$ 的左、右焦点分别为 ${F}_{1}$ 、 ${F}_{2}$ ，过焦点 ${F}_{1}$ 的直线交椭圆于 $A$ 、 $B$ 两点， $\bigtriangleup  {AB}{F}_{2}$ 的内切圆的面积为 $\pi$ ,若 $A\text{ 、 }B$ 两点的坐标分别为 $\left( {{x}_{1},{y}_{1}}\right)$ 和 $\left( {{x}_{2},{y}_{2}}\right)$ ,则 $\left| {{y}_{2} - {y}_{1}}\right|$ 的值为\_\_\_\_\_.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_207_1134_1771_311_258_0.jpg}
+\end{center}
+ 
+
+(第 9 题图)
+
+8. 点 ${F}_{1}$ 、 ${F}_{2}$ 分别是椭圆 $C : \frac{{x}^{2}}{2} + {y}^{2} = 1$ 的左、右两焦点,点 $N$ 为椭圆 $C$ 的上顶点, 若动点 $M$ 满足: ${\left| \overrightarrow{MN}\right| }^{2} = 2\overrightarrow{M{F}_{1}} \cdot  \overrightarrow{M{F}_{2}}$ ,则 $\left| {\overrightarrow{M{F}_{1}} + 2\overrightarrow{M{F}_{2}}}\right|$ 的最大值为\_\_\_\_\_.
+
+9. 如图,椭圆 $C : \frac{{x}^{2}}{9} + \frac{{y}^{2}}{4} = 1$ 的上、下顶点分别为 $A\text{ 、 }C$ ,点 $B$ 在椭圆上运动且不与 $A\text{ 、 }C$ 重合,平面四边形 ${ABCD}$ 满足 $\angle {BAD} = \angle {BCD} = {90}^{ \circ  }$ ,则 $\frac{{S}_{\bigtriangleup {ABC}}}{{S}_{\bigtriangleup {ADC}}} =$ \_\_\_\_\_.
+
+\section*{二、选择题}
+
+10. 设 $\frac{{x}^{2}}{\sin \alpha } + \frac{{y}^{2}}{\cos \alpha } = 1\left( {0 < \alpha  < \frac{\pi }{2}}\right)$ 表示焦点在 $x$ 轴上的椭圆,则 $\alpha$ 的取值范围是 ( )
+
+A. $\left( {0,\frac{\pi }{4}}\right\rbrack$ . B. $\left( {\frac{\pi }{4},\frac{\pi }{2}}\right)$ . C. $\left( {0,\frac{\pi }{4}}\right)$ . D. $\left\lbrack  {\frac{\pi }{4},\frac{\pi }{2}}\right)$ .
+
+11. 已知 ${F}_{1}\text{ 、 }{F}_{2}$ 是椭圆的两个焦点,满足 $\overrightarrow{M{F}_{1}} \cdot  \overrightarrow{M{F}_{2}} = 0$ 的点 $M$ 总在椭圆内部,则椭圆离心率的取值范围是 ( )
+
+A. $\left( {0,1}\right)$ . B. $\left( {0,\frac{1}{2}}\right\rbrack$ . C. $\left( {0,\frac{\sqrt{2}}{2}}\right)$ . D. $\left\lbrack  {\frac{\sqrt{2}}{2},1}\right)$ .
+
+12. 设 ${F}_{1}$ 、 ${F}_{2}$ 是椭圆 $\frac{{x}^{2}}{9} + \frac{{y}^{2}}{4} = 1$ 的两焦点， $A$ 与 $B$ 分别是该椭圆的右顶点与上顶点， $P$ 是该椭圆上的一个动点, $O$ 是坐标原点,记 $s = 2\overrightarrow{O{P}^{2}} - \overrightarrow{{F}_{1}P} \cdot  \overrightarrow{{F}_{2}P}$ ,在动点 $P$ 在第一象限内从 $A$ 沿椭圆向左上方运动到 $B$ 的过程中, $s$ 的大小的变化情况为 ( )
+
+A. 逐渐变大. B. 逐渐变小. C. 先变大后变小. D. 先变小后变大.
+
+\section*{三、解答题}
+
+13. 设椭圆 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的左、右顶点分别为 ${A}_{1}$ 、 ${A}_{2}$ ，右焦点为 $F$ ，已知 $\left| {{A}_{1}F}\right|  = 3$ ， $\left| {{A}_{2}F}\right|  = 1$ .
+
+(1)求椭圆方程及其离心率；
+
+(2)已知点 $P$ 是椭圆上一动点 (不与顶点重合),直线 ${A}_{2}P$ 交 $y$ 轴于点 $Q$ ，若 $\bigtriangleup {A}_{1}{PQ}$ 的面积是 $\bigtriangleup {A}_{2}{FP}$ 面积的两倍,求直线 ${A}_{2}P$ 的方程.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_208_1155_1026_334_273_0.jpg}
+\end{center}
+ 
+
+(第 13 题图)
+
+14. 已知椭圆 $C : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 经过点 $A\left( {-2,0}\right)$ 且两个焦点及短轴两顶点围成四边形的面积为 4 .
+
+(1)求椭圆 $C$ 的方程和离心率；
+
+(2)设 $P\text{ 、 }Q$ 为椭圆 $C$ 上不同的两个点，直线 ${AP}$ 与 $y$ 轴交于点 $E$ ，直线 ${AQ}$ 与 $y$ 轴交于点 $F$ ，且 $P\text{ 、 }O\text{ 、 }Q$ 三点共线. 其中 $O$ 为坐标原点. 问: $x$ 轴上是否存在点 $M$ ,使得 $\angle {AME} = \angle {EFM}$ ? 若存在,求点 $M$ 的坐标; 若不存在, 说明理由.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_208_1162_1720_335_295_0.jpg}
+\end{center}
+ 
+
+(第 14 题图)
+
+15. 已知椭圆 $E : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 经过点 $A\left( {0, - 1}\right)$ ，且离心率为 $e = \frac{\sqrt{2}}{2}$ .
+
+(1)求椭圆 $E$ 的方程和焦点 ${F}_{1}$ 、 ${F}_{2}$ 的坐标；
+
+(2)设点 $P$ 为椭圆 $E$ 上的任一点(不在坐标轴上)，直线 $P{F}_{1}$ 与椭圆 $E$ 交于另一点 $M$ ， $P{F}_{2}$ 与 $E$ 交于另一点 $N,O$ 为坐标原点,证明: 直线 ${OP}$ 与 ${MN}$ 的斜率之积为定值.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_209_1107_376_336_260_0.jpg}
+\end{center}
+ 
+
+(第 15 题图)
+
+16. 已知椭圆 $C : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的一个焦点为 ${F}_{1}\left( {-1,0}\right)$ ，其左顶点为 $A$ ，上顶点为 $B$ ，且 ${F}_{1}$ 到直线 ${AB}$ 的距离为 $\frac{\sqrt{7}}{7}\left| {OB}\right|$ ( $O$ 为坐标原点).
+
+(1)求 $C$ 的方程；
+
+(2)若椭圆 $E : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = \lambda \left( {\lambda  > 0\text{ 且 }\lambda  \neq  1}\right)$ ，则称椭圆 $E$ 为椭圆 $C$ 的 $\lambda$ 倍相似椭圆. 已知椭圆 $E$ 的 3 倍相似椭圆,直线 $l : y = {kx} + m$ 与椭圆 $C$ 、椭圆 $E$ 交于四点 (依次为 $M\text{ 、 }N\text{ 、 }P\text{ 、 }Q$ ,如图),且 $\overrightarrow{MQ} + \overrightarrow{PQ} =  2\overrightarrow{NQ}$ ，证明:点 $T\left( {k,m}\right)$ 在定曲线上.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_209_1080_1323_366_271_0.jpg}
+\end{center}
+ 
+
+(第 16 题图)
+
+\section*{§ 10.4 双曲线及其性质}
+
+\section*{典型例题精讲}
+
+【例 1】双曲线 $\Gamma  : \frac{{x}^{2}}{16} - \frac{{y}^{2}}{9} = 1$ 的左、右焦点分别为 ${F}_{1}\text{ 、 }{F}_{2}$ ,直线 $l$ 经过 ${F}_{2}$ 且与 $\Gamma$ 的两条渐近线中的一条平行,与另一条相交且交点在第一象限.
+
+(1)设 $P$ 为 $\Gamma$ 右支上的任意一点，求 $\left| {P{F}_{1}}\right|$ 的最小值；
+
+(2)设 $O$ 为坐标原点，求 $O$ 到 $l$ 的距离，并求 $l$ 与 $\Gamma$ 的交点坐标.
+
+【例 2】已知 ${F}_{1}\text{ 、 }{F}_{2}$ 分别是双曲线 $C : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的左、右焦点,其中一条渐近线的倾斜角为 ${150}^{ \circ  }$ ,点 $M$ 在双曲线上,且 $\left| {\overrightarrow{M{F}_{1}} - \overrightarrow{M{F}_{2}}}\right|  = 4$ .
+
+(1)求双曲线 $C$ 的标准方程；
+
+(2)设椭圆 $M$ 以双曲线 $C$ 的顶点为焦点,焦点为顶点,直线 $l : y = {kx} + m\left( {0 < m < 1}\right)$ 交 $M$ 于 $A$ 、 $B$ 两点 (均不在坐标轴上),若 $\bigtriangleup {AOB}$ 的面积为 1,求 $2{k}^{2} - {m}^{2}$ 的值.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_210_1082_1481_419_264_0.jpg}
+\end{center}
+ 
+
+(例 2 图)
+
+【例 3】已知双曲线 $C : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的离心率为 $\frac{5}{3}$ ，点 $A\left( {a,0}\right)$ 到一条渐近线的距离为 $\frac{12}{5}$ .
+
+(1)求双曲线的方程；
+
+(2)若直线 $l$ 与双曲线 $C$ 交于 $M$ 、 $N$ 两点，且 $\overrightarrow{AM} \cdot  \overrightarrow{AN} = 0$ ，试探究直线 $l$ 是否过定点？若过定点，求出该定点坐标; 若不过定点,说明理由.
+
+【例 4】已知双曲线 $C$ 中心为坐标原点,左焦点为 $\left( {-2\sqrt{5},0}\right)$ ,离心率为 $\sqrt{5}$ .
+
+(1)求 $C$ 的方程；
+
+(2)记 $C$ 的左、右顶点分别为 ${A}_{1}$ 、 ${A}_{2}$ ，过点 $\left( {-4\text{ ， }0}\right)$ 的直线与 $C$ 的左支交于 $M$ 、 $N$ 两点， $M$ 在第二象限， 直线 $M{A}_{1}$ 与 $N{A}_{2}$ 交于 $P$ ,证明 $P$ 在定直线上.
+
+【例 5】数学家将几何学原理运用到折纸中, 并且利用折纸来研究几何学, 很好地把折纸艺术与数学相结合. 将一张纸片折叠一次，纸片上会留下一条折痕，如果在纸片上按照一定的规律折出很多折痕后，纸上能显现出一条漂亮曲线的轮廓.
+
+如图，一张圆形纸片的圆心为点 $D$ ， $A$ 是圆外的一个定点， $P$ 是圆 $D$ 上任意一点，把纸片折叠使得点 $A$ 与 $P$ 重合,然后展平纸片,折痕与直线 ${DP}$ 相交于点 $Q$ ,当点 $P$ 在圆上运动时,得到点 $Q$ 的轨迹.
+
+(1)证明:点 $Q$ 的轨迹是双曲线；
+
+(2)设定点 $A$ 坐标为 $\left( {2,0}\right)$ ，纸片圆的边界方程为 ${\left( x + 2\right) }^{2} + {y}^{2} = {r}^{2}$ . 若点 $M\left( {2,3}\right)$ 位于 (1) 中所描述的双曲线上,过点 $M$ 的直线 $l$ 交该双曲线的渐近线于 $E\text{ 、 }F$ 两点,且点 $E\text{ 、 }F$ 位于 $y$ 轴右侧, $O$ 为坐标原点,求 $\bigtriangleup {EOF}$ 面积的最小值.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_212_1180_538_304_264_0.jpg}
+\end{center}
+ 
+
+(例 5 图)
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 双曲线 $\frac{{x}^{2}}{9} - \frac{{y}^{2}}{4} = 1$ 上一点 $P$ 到左焦点的距离为 2，则 $P$ 到右焦点的距离为\_\_\_\_\_.
+
+2. 已知双曲线 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的一条渐近线平行于直线 $l : y = {2x} + {10}$ ，双曲线的一个焦点在直线 $l$ 上，则双曲线的方程为\_\_\_\_\_.
+
+3. 已知 $F$ 是双曲线 $\frac{{x}^{2}}{4} - \frac{{y}^{2}}{12} = 1$ 的左焦点， $A\left( {1,4}\right)$ ，点 $P$ 是双曲线右支上的动点，则 $\left| {PF}\right|  + \left| {PA}\right|$ 的最小值为\_\_\_\_\_.
+
+4. 已知双曲线 ${x}^{2} - m{y}^{2} = 1\left( {m > 0}\right)$ 的右顶点为 $A$ ,而 $B\text{ 、 }C$ 是双曲线右支上两点,若三角形 ${ABC}$ 为等边三角形,则 $m$ 的取值范围是\_\_\_\_\_.
+
+5. 已知双曲线 $\frac{{x}^{2}}{9} - \frac{{y}^{2}}{16} = 1$ ，其右焦点为 $F$ ， $P$ 为双曲线上一点，点 $M$ 满足 $\left| \overrightarrow{MF}\right|  = 1$ ， $\overrightarrow{MF} \cdot  \overrightarrow{MP} = 0$ ，则 $\overrightarrow{MP} \mid$ 的最小值为
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_213_1170_285_267_256_0.jpg}
+\end{center}
+ 
+
+(第 6 题图)
+
+6. $P$ 是双曲线 $\frac{{x}^{2}}{4} - \frac{{y}^{2}}{5} = 1$ 右支在第一象限内一点， ${F}_{1}$ 、 ${F}_{2}$ 分别为其左、右焦点， $A$ 为右顶点,如图圆 $C$ 是 $\bigtriangleup P{F}_{1}{F}_{2}$ 的内切圆,设圆与 $P{F}_{1}\text{ 、 }P{F}_{2}$ 分别切于点 $D\text{ 、 }E$ ,当圆 $C$ 的面积为 ${4\pi }$ 时,直线 $P{F}_{2}$ 的斜率为\_\_\_\_\_.
+
+7. 已知 ${F}_{1}$ 、 ${F}_{2}$ 为双曲线 $\frac{{x}^{2}}{2} - {y}^{2} = 1$ 的左、右焦点,过 ${F}_{2}$ 且斜率为 $k\left( {k <  - 1}\right)$ 的直线 $l$ 交双曲线右支于 $P\text{ 、 }Q$ 两点,若 $\bigtriangleup {F}_{1}{PQ}$ 的面积为 4,则直线 $l$ 与 $y$ 轴的交点坐标为\_\_\_\_\_.
+
+8. 过双曲线 $C : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 右焦点 $F$ 作直线 $l$ ,且直线 $l$ 与双曲线 $C$ 的一条渐近线垂直,垂足为 $A$ ,直线 $l$ 与另一条渐近线交于点 $B$ . 已知 $O$ 为坐标原点,若 $\bigtriangleup {OAB}$ 的内切圆的半径为 $\frac{\sqrt{3} - 1}{2}a$ ,则双曲线 $C$ 的离心率为\_\_\_\_\_.
+
+9. 已知 $P$ 为双曲线 $C : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 右支上的任意一点,经过点 $P$ 的直线与双曲线 $C$ 的两条渐近线分别相交于 $A\text{ 、 }B$ 两点. 若点 $A\text{ 、 }B$ 分别位于第一、第四象限, $O$ 为坐标原点,当 $\overrightarrow{AP} = \frac{1}{2}\overrightarrow{PB}$ 时, $\bigtriangleup {AOB}$ 的面积为 ${2b}$ ，则双曲线 $C$ 的实轴长为\_\_\_\_\_.
+
+\section*{二、选择题}
+
+10. 过双曲线 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的右焦点 $F$ 作倾斜角为 ${60}^{ \circ  }$ 的直线交双曲线右支于 $A$ 、 $B$ 两点,若 $\overrightarrow{AF} = 5\overrightarrow{FB}$ ,则双曲线的离心率为 ( )
+
+A. $\frac{6}{5}$ . B. $\sqrt{3}$ . C. 2.
+
+D. $\frac{4}{3}$ .
+
+11. 已知 $O$ 为坐标原点,双曲线 $C : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的左、右焦点分别为 ${F}_{1}\text{ 、 }{F}_{2}$ ,离心率为 $\frac{\sqrt{6}}{2}$ ,点 $P\left( {{x}_{1},{y}_{1}}\right)$ 是 $C$ 的右支上异于顶点的一点,过 ${F}_{2}$ 作 $\angle {F}_{1}P{F}_{2}$ 的平分线的垂线,垂足是 $M,\left| {MO}\right|  = \sqrt{2}$ ,则 $b$ 等于 ( )
+
+A. $\sqrt{2}$ . B. $\sqrt{3}$ . C.1. D.2.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_213_1128_1527_318_273_0.jpg}
+\end{center}
+ 
+
+(第 12 题图)
+
+12. 如图， ${F}_{1}$ 、 ${F}_{2}$ 为双曲线的左、右焦点，过 ${F}_{2}$ 的直线交双曲线于 $B$ 、 $D$ 两点， 且 $\overrightarrow{{F}_{2}D} = 3\overrightarrow{{F}_{2}B},E$ 为线段 $D{F}_{1}$ 的中点,若对于线段 $D{F}_{1}$ 上的任意点 $P$ ，都有 $\overrightarrow{P{F}_{1}} \cdot  \overrightarrow{PB} \geq  \overrightarrow{E{F}_{1}} \cdot  \overrightarrow{EB}$ 成立，则双曲线的离心率是 ( )
+
+A. $\sqrt{2}$ . B. $\sqrt{3}$ .
+
+C. 2. D. $\sqrt{5}$
+
+\section*{三、解答题}
+
+13. 已知双曲线 $C$ 的渐近线方程为 $x \pm  \sqrt{3}y = 0$ ,且过点 $\left( {3,\sqrt{2}}\right)$ .
+
+(1)求双曲线 $C$ 的标准方程；
+
+(2)若点 $Q\left( {\frac{3}{2},0}\right)$ ，过右焦点 $F$ 且与坐标轴都不垂直的直线 $l$ 与 $C$ 交于 $A$ 、 $B$ 两点，求证: $\angle {AQF}  = \angle {BQF}.$
+
+14. 已知双曲线 $C : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 经过点 $P\left( {-2,1}\right)$ 且 $C$ 的右顶点到一条渐近线的距离为 $\frac{\sqrt{6}}{3}$ .
+
+(1)求双曲线 $C$ 的方程；
+
+(2)过点 $P$ 分别作两条直线 ${l}_{1}$ 、 ${l}_{2}$ 与 $C$ 交于 $A$ 、 $B$ 两点( $A$ 、 $B$ 两点均不与点 $P$ 重合)，设直线 ${l}_{1}$ 、 ${l}_{2}$ 的斜率分别为 ${k}_{1}$ 、 ${k}_{2}$ ，若 ${k}_{1} + {k}_{2} = 1$ ，试问直线 ${AB}$ 是否经过定点？若经过定点，求出定点坐标；若不经过定点，请说明理由.
+
+15. 已知双曲线 $C : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的焦距为 $2\sqrt{5}$ ,坐标原点 $O$ 到直线 ${BD}$ 的距离是 $\frac{3\sqrt{13}}{13}$ ,其中 $B\text{ 、 }D$ 的坐标分别为 $\left( {0,b}\right) \text{ 、 }\left( {-\frac{3}{2},0}\right)$ .
+
+(1)求双曲线 $C$ 的方程；
+
+(2)是否存在过点 $D$ 的直线 $l$ 与双曲线 $C$ 交于 $M\text{ 、 }N$ 两点，使得 $\bigtriangleup  {BMN}$ 构成以 $B$ 为顶点的等腰三角形? 若存在,求出所有直线 $l$ 的方程; 若不存在,请说明理由.
+
+16. 已知双曲线 ${C}_{1} : \frac{{x}^{2}}{4} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {b > 0}\right)$ 与圆 ${C}_{2} : {x}^{2} + {y}^{2} = 4 + {b}^{2}\left( {b > 0}\right)$ 在第一象限的交点为 $A\left( {{x}_{A},{y}_{A}}\right)$ , 圆 ${C}_{2}$ 与 $x$ 轴交于 ${F}_{1}\text{ 、 }{F}_{2}$ ,曲线 $\Gamma$ 满足 $\left\{  \begin{array}{l} \frac{{x}^{2}}{4} - \frac{{y}^{2}}{{b}^{2}} = 1,\left| x\right|  > {x}_{A}, \\  {x}^{2} + {y}^{2} = 4 + {b}^{2},\left| x\right|  \leq  {x}_{A}. \end{array}\right.$
+
+(1)当 $b = \sqrt{5}$ ，第一象限一点 $P$ 在曲线 ${C}_{1}$ 上，且 $\left| {P{F}_{1}}\right|  = 8$ ，求 $\angle {F}_{1}P{F}_{2}$ ；
+
+(2)过点 $D\left( {0,2 + \frac{{b}^{2}}{2}}\right)$ 且斜率为 $- \frac{b}{2}$ 的直线 $l$ 与曲线 $\Gamma$ 有且只有两个交点 $M$ 、 $N$ ，用含 $b$ 的代数式表示 $\overrightarrow{OM} \cdot  \overrightarrow{ON}$ ，并求 $\overrightarrow{OM} \cdot  \overrightarrow{ON}$ 的取值范围.
+
+\section*{§ 10.5 抛物线及其性质}
+
+\section*{典型例题精讲}
+
+【例 1】设抛物线 $C : {y}^{2} = {2px}\left( {p > 0}\right)$ 的焦点为 $F$ ，点 $P\left( {4,m}\right)$ 是抛物线 $C$ 上一点，且 $\left| {PF}\right|  = 5$ .
+
+(1)求抛物线 $C$ 的方程；
+
+(2)设直线 $l : y = {kx} + m$ 与抛物线 $C$ 交于 $A$ 、 $B$ 两点,若 $\left| {AF}\right|  + \left| {BF}\right|  = 6$ ,求证: 线段 ${AB}$ 的垂直平分线过定点.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_216_1213_592_275_261_0.jpg}
+\end{center}
+ 
+
+(例 1 图)
+
+【例 2】已知抛物线 $C : {y}^{2} = {2px}\left( {0 < p < 4}\right)$ 的焦点为 $F$ ，直线 $l$ 与抛物线 $C$ 交于不同的两点 $A$ 、 $B$ . 当 $\left| {AF}\right|  = 5$ 时,以线段 ${AF}$ 为直径的圆过点 $\left( {0,2}\right)$ .
+
+(1)求抛物线 $C$ 的方程；
+
+(2)若线段 ${AB}$ 的中点在曲线 ${y}^{2} = {2x} - 4$ 上运动，求 $\bigtriangleup  {AOB}$ (其中 $O$ 为平面直角坐标系的原点)的面积的最小值.
+
+
+【例 3】已知动点 $M$ 到直线 $x + 2 = 0$ 的距离比到点 $F\left( {1,0}\right)$ 的距离大 1 .
+
+(1)求动点 $M$ 所在的曲线 $C$ 的方程；
+
+(2)已知点 $P\left( {1,2}\right)$ ， $A$ 、 $B$ 是曲线 $C$ 上的两个动点，如果直线 ${PA}$ 的斜率与直线 ${PB}$ 的斜率互为相反数， 证明直线 ${AB}$ 的斜率为定值，并求出这个定值；
+
+(3)已知点 $P\left( {1,2}\right)$ ， $A$ 、 $B$ 是曲线 $C$ 上的两个动点，如果直线 ${PA}$ 的斜率与直线 ${PB}$ 的斜率之和为 2，证明: 直线 ${AB}$ 过定点.
+
+【例 4】已知动圆 $M$ 过点 $F\left( {1,0}\right)$ ,且与直线 $x =  - 1$ 相切,圆心 $M$ 的轨迹是曲线 $C$ .
+
+(1)求曲线 $C$ 的方程；
+
+(2)过 $F$ 作弦 ${PQ}$ 、 ${RS}$ ，设 ${PQ}$ 、 ${RS}$ 的中点分别为 $A$ 、 $B$ ，若 $\overrightarrow{PQ} \cdot  \overrightarrow{RS} = 0$ ，求 $\left| \overrightarrow{AB}\right|$ 最小时，弦 ${PQ}$ 、 ${RS}$ 所在直线的方程;
+
+(3)在(2)条件下，是否存在一定点 $T$ ，使得 $\overrightarrow{AF} = \lambda \overrightarrow{TB} - \overrightarrow{FT}$ ？若存在，求出 $T$ 的坐标；若不存在，试说明理由.
+
+【例 5】已知抛物线 $C : {x}^{2} = {2py}\left( {p > 0}\right)$ 的焦点为 $F$ ， $M$ 是抛物线 $C$ 上位于第一象限内的任意一点， $O$ 为坐标原点,记经过 $M\text{ 、 }F\text{ 、 }O$ 三点的圆的圆心为 $Q$ ,且点 $Q$ 到抛物线 $C$ 的准线的距离为 $\frac{3}{2}$ .
+
+(1)求点 $Q$ 的纵坐标 (用 $p$ 表示)；
+
+(2)求抛物线 $C$ 的方程；
+
+(3)设直线 $l : y = {kx} + \frac{1}{2}$ 与抛物线 $C$ 有两个不同的交点 $A$ 、 $B$ . 若点 $M$ 的横坐标为 2，且 $\bigtriangleup  {QAB}$ 的面积为 $2\sqrt{5}$ ，求直线 $l$ 的方程.
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 经过点 $\left( {2,4}\right)$ 的抛物线 $y = a{x}^{2}$ 焦点坐标是\_\_\_\_\_.
+
+2. 抛物线 ${y}^{2} = {2x}$ 上的动点 $P$ 到直线 $y = {2x} + 1$ 的距离最小值是\_\_\_\_\_.
+
+3. 过抛物线 ${y}^{2} = {8x}$ 的焦点 $F$ ，斜率为 $- \sqrt{3}$ 的直线 $l$ 与抛物线相交于点 $A$ 、 $B$ ，则弦 ${AB}$ 的长度为\_\_\_\_\_.
+
+4. 已知点 $P$ 是抛物线 ${y}^{2} = {4x}$ 上的动点,点 $P$ 在 $y$ 轴上的射影是 $M$ ,点 $A$ 的坐标是 $\left( {4,a}\right)$ ,则当 $\left| a\right|  > 4$ 时, $\left| {PA}\right|  + \left| {PM}\right|$ 的最小值是\_\_\_\_\_.
+
+5. 设抛物线 $y = {x}^{2} + m$ 过椭圆 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的两个焦点,且和椭圆有三个交点,以这三个交点为顶点的三角形面积为 1,则 $m =$ \_\_\_\_\_.
+
+6. 已知 $F$ 是抛物线 ${y}^{2} = {4x}$ 的焦点,其准线与 $x$ 轴交于 $P$ 点,过 $P$ 的直线 $l$ 与抛物线交于 $A\text{ 、 }B$ 两点,设 ${FA}\text{ 、 }{FB}$ 的斜率分别为 $m\text{ 、 }n$ ,则 $\frac{m}{n} =$ \_\_\_\_\_.
+
+7. 已知不过原点的直线 $l$ 与抛物线 $C : {y}^{2} = {2px}\left( {p > 0}\right)$ 交于 $A\text{ 、 }B$ 两点,若 $\left| {AF}\right|  = 2\left| {BF}\right|$ 且 $\angle {AFB} =  {90}^{ \circ  }$ ,则直线 $l$ 的斜率为\_\_\_\_\_.
+
+8. 已知 $F$ 是抛物线 ${y}^{2} = {4x}$ 的焦点,其准线与 $x$ 轴交于 $P$ 点,过 $P$ 的直线 $l$ 与抛物线交于 $A\text{ 、 }B$ 两点,若线段 ${AB}$ 上有一点 $M\left( {x,y}\right)$ ，满足 $\left| \overrightarrow{AM}\right|$ ， $\left| \overrightarrow{PB}\right|  = \left| \overrightarrow{BM}\right|$ ， $\left| \overrightarrow{PA}\right|$ ，则 $M$ 点的轨迹方程是\_\_\_\_\_.
+
+9. 已知斜率为 $k$ 的直线 $l$ 过抛物线 $E : {y}^{2} = 4\sqrt{3}x$ 的焦点 $F$ ，分别与抛物线 $E$ 和 $\odot  {O}_{1} : {\left( x - \sqrt{3}\right) }^{2} + {y}^{2} = 3$ 从上到下依次交于为 $A\text{ 、 }B\text{ 、 }C\text{ 、 }D$ 四点,则 $\left| {AB}\right|  \cdot  \left| {CD}\right|  =$ \_\_\_\_\_.
+
+\section*{二、选择题}
+
+10. 设 $O$ 为坐标原点, $F$ 为抛物线 $C : {x}^{2} = {2py}\left( {p > 0}\right)$ 的焦点,直线 $y = 1$ 与抛物线 $C$ 交于 $A\text{ 、 }B$ 两点,若 $\angle {AFB} = {120}^{ \circ  }$ ,则抛物线 $C$ 的准线方程为 ( )
+
+A. $y =  - \frac{2}{3}$ . B. $y =  - 3$ .
+
+C. $y =  - \frac{1}{3}$ 或 $y =  - 3$ . D. $y =  - \frac{2}{3}$ 或 $y =  - 6$ .
+
+11. 设抛物线焦点为 $F$ ,准线与对称轴交于点 $E$ ,过 $F$ 的直线交抛物线于 $A\text{ 、 }B$ 两点,对称轴上一点 $C$ 满足 $\overrightarrow{CA} = 3\overrightarrow{BE}$ ,若 $\bigtriangleup {ACF}$ 的面积为 $\frac{9\sqrt{3}}{4}$ ,则 $F$ 到抛物线准线的距离为 ( )
+
+A. $\sqrt{6}$ .
+
+B. $\frac{\sqrt{6}}{2}$ . C. $\frac{2\sqrt{3}}{3}$ . D. $\frac{\sqrt{3}}{3}$ .
+
+12. 设 $A\text{ 、 }B$ 是抛物线 $C : {y}^{2} = {4x}$ 上两个不同的点, $O$ 为坐标原点,若直线 ${OA}$ 与 ${OB}$ 的斜率之积为 -4, 有下列结论:  \ding{172}  $\left| {AB}\right|  \geq  4$ ;  \ding{173}  $\left| {OA}\right|  + \left| {OB}\right|  > 8$ ;  \ding{174}  直线 ${AB}$ 过抛物线 $C$ 的焦点;  \ding{175}  $\bigtriangleup {OAB}$ 面积的最小值是 2.其中正确的有 ( )
+
+A.  \ding{172}  \ding{174}  \ding{175} . B.  \ding{172}  \ding{173}  \ding{175} . C.  \ding{173}  \ding{174}  \ding{175} . D.  \ding{172}  \ding{173}  \ding{174}  \ding{175} .
+
+\section*{三、解答题}
+
+13. 设抛物线 $\Gamma  : {y}^{2} = {4x}$ 的焦点为 $F$ ，直线 $l : x - {my} - n = 0$ 经过 $F$ 且与 $\Gamma$ 交于 $A$ 、 $B$ 两点.
+
+(1)若 $\left| {AB}\right|  = 8$ ，求 $m$ 的值；
+
+(2)设 $O$ 为坐标原点，直线 ${AO}$ 与 $\Gamma$ 的准线交于点 $C$ ,求证: 直线 ${BC}$ 平行于 $x$ 轴.
+
+14. 已知抛物线 ${y}^{2} = {4x}$ 的焦点为 $F$ ,直线 $l$ 交抛物线于不同的 $A$ 、 $B$ 两点.
+
+(1)若直线 $l$ 经过点 $P\left( {-1,0}\right)$ ，点 $A$ 关于 $x$ 轴的对称点为 ${A}^{\prime }$ ，求证: ${A}^{\prime }$ 、 $F$ 、 $B$ 三点共线；
+
+(2)若直线 $l$ 经过点 $M\left( {8, - 4}\right)$ ，抛物线上是否存在定点 $N$ ，使得以线段 ${AB}$ 为直径的圆恒过点 $N$ ？若存在,求出点 $N$ 的坐标; 若不存在,请说明理由.
+
+15. 已知过点 $P\left( {1,0}\right)$ 的直线 $l$ 与抛物线 $C : {x}^{2} = {2py}\left( {p > 0}\right)$ 相交于 $A$ 、 $B$ 两点,当直线 $l$ 过抛物线 $C$ 的焦点时, $\left| {AB}\right|  = 8$ .
+
+(1)求抛物线 $C$ 的方程；
+
+(2)若点 $Q\left( {0, - 2}\right)$ ，连接 ${QA}\text{ 、 }{QB}$ 分别交抛物线 $C$ 于点 $E\text{ 、 }F$ ，且 $\bigtriangleup  {QAB}$ 与 $\bigtriangleup  {QEF}$ 的面积之比为 1:2， 求直线 ${AB}$ 的方程.
+
+16. 设抛物线 $C : {y}^{2} = {2px}\left( {p > 0}\right)$ ，直线 $x - {2y} + 1 = 0$ 与 $C$ 交于 $A$ 、 $B$ 两点，且 $\left| {AB}\right|  = 4\sqrt{15}$ .
+
+(1)求 $p$ 的值；
+
+(2) $F$ 为 ${y}^{2} = {2px}$ 的焦点， $M$ 、 $N$ 为抛物线上的两点，且 $\overrightarrow{MF} \cdot  \overrightarrow{NF} = 0$ ，求 $\bigtriangleup  {MNF}$ 面积的最小值.
+
+\section*{§ 10.6 圆锥曲线综合一}
+
+\section*{典型例题精讲}
+
+【例 1】已知: 以点 $C\left( {t,\frac{2}{t}}\right) \left( {t \in  \mathbf{R},t \neq  0}\right)$ 为圆心的圆与 $x$ 轴交于点 $O\text{ 、 }A$ ,与 $y$ 轴交于点 $O\text{ 、 }B$ ,其中 $O$ 为坐标原点.
+
+(1)求证: $\bigtriangleup  {OAB}$ 的面积为定值；
+
+(2)设直线 $y =  - {2x} + 4$ 与圆 $C$ 交于点 $M$ 、 $N$ ，若 $\left| {OM}\right|  = \left| {ON}\right|$ ，求圆 $C$ 的方程.
+
+【例 2】在平面直角坐标系 ${xOy}$ 中,抛物线 $C$ 的顶点在原点,经过点 $A\left( {2,2}\right)$ ,其焦点 $F$ 在 $x$ 轴上.
+
+(1)求抛物线 $C$ 的标准方程；
+
+(2)求过点 $F$ ，且与直线 ${OA}$ 垂直的直线方程；
+
+(3)设过点 $M\left( {m,0}\right)$ 的直线交抛物线 $C$ 于 $D$ 、 $E$ 两点， $\left| {ME}\right|  = 2\left| {DM}\right|$ ，记 $D$ 和 $E$ 两点间的距离为 $f\left( m\right)$ ,求 $f\left( m\right)$ 关于 $m$ 的表达式.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_221_1228_1440_211_239_0.jpg}
+\end{center}
+ 
+
+(例 2 图)
+
+【例 3】已知两定点 ${F}_{1}\left( {-\sqrt{2},0}\right) ,{F}_{2}\left( {\sqrt{2},0}\right)$ ,满足 $\left| {\overrightarrow{PF}}_{2}\right|  - \left| {\overrightarrow{PF}}_{1}\right|  = 2$ 的点 $P$ 的轨迹是曲线 $E$ ,直线 $y = {kx} - 1$ 与曲线 $E$ 交于 $A\text{ 、 }B$ 两点.
+
+(1)求 $k$ 的取值范围；
+
+(2)如果 $\left| \overrightarrow{AB}\right|  = 6\sqrt{3}$ ，且曲线 $E$ 上存在点 $C$ ，使 $\overrightarrow{OA} + \overrightarrow{OB} = m\overrightarrow{OC}$ ，求 $m$ 的值和 $\bigtriangleup  {ABC}$ 的面积 $S$ .
+
+【例 4】已知抛物线 $C : {y}^{2} = x$ 上有两点 $A\text{ 、 }B$ ，且 $A$ 在 $x$ 轴上方， $O$ 为坐标原点， $F$ 为抛物线焦点，若 $\angle {AOB} = {90}^{ \circ  }$ ,求 ${S}_{\bigtriangleup {AOB}} + {S}_{\bigtriangleup {AOF}}$ 的最小值.
+
+【例 5】若椭圆 ${E}_{1} : \frac{{x}^{2}}{{a}_{1}^{2}} + \frac{{y}^{2}}{{b}_{1}^{2}} = 1$ 和椭圆 ${E}_{2} : \frac{{x}^{2}}{{a}_{2}^{2}} + \frac{{y}^{2}}{{b}_{2}^{2}} = 1$ 满足 $\frac{{a}_{2}}{{a}_{1}} = \frac{{b}_{2}}{{b}_{1}} = m\left( {m > 0}\right)$ ,则称这两个椭圆相似, $m$ 称为其相似比.
+
+(1)求经过点 $\left( {2,\sqrt{6}}\right)$ ，且与椭圆 $\frac{{x}^{2}}{4} + \frac{{y}^{2}}{2} = 1$ 相似的椭圆方程；
+
+(2)设过原点的一条射线 $l$ 分别与(1)中的两个椭圆交于 $A$ 、 $B$ 两点(其中点 $A$ 在线段 ${OB}$ 上)，求 $\left| {OA}\right|  \cdot  \left| {OB}\right|$ 的最大值和最小值;
+
+(3)对于真命题“过原点的一条射线分别与相似比为 2 的两个椭圆 ${C}_{1} : \frac{{x}^{2}}{{2}^{2}} + \frac{{y}^{2}}{{\left( \sqrt{2}\right) }^{2}} = 1$ 和 ${C}_{2} : \frac{{x}^{2}}{{4}^{2}} +  \frac{{y}^{2}}{{\left( 2\sqrt{2}\right) }^{2}} = 1$ 交于 $A\text{ 、 }B$ 两点, $P$ 为线段 ${AB}$ 上的一点,若 $\left| {OA}\right| \text{ 、 }\left| {OP}\right| \text{ 、 }\left| {OB}\right|$ 成等比数列,则点 $P$ 的轨迹方程为 $\frac{{x}^{2}}{{\left( 2\sqrt{2}\right) }^{2}} + \frac{{y}^{2}}{{2}^{2}} = 1$ ”. 请用推广或类比的方法提出类似的一个真命题，并给予证明.
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 已知椭圆中心在原点，一个焦点为 $F\left( {\sqrt{3},0}\right)$ ，且长轴长是短轴长的 2 倍，则该椭圆的标准方程是\_\_\_\_\_.
+
+2. 已知椭圆 $\frac{{x}^{2}}{16} + \frac{{y}^{2}}{7} = 1$ 的右焦点为 $F$ ，过原点 $O$ 作直线交椭圆于 $A$ 、 $B$ 两点，点 $A$ 在 $x$ 轴的上方，若三角形 ${ABF}$ 的面积为 2，则点 $A\left( {p,q}\right)$ 的纵坐标 $q =$ \_\_\_\_\_.
+
+3. 若实数 $x$ 、 $y$ 满足 $y = 2\sqrt{1 - {x}^{2}}$ ，则 $y - {2x}$ 的取值范围为\_\_\_\_\_.
+
+4. 已知双曲线 $\Gamma  : \frac{{x}^{2}}{3} - \frac{{y}^{2}}{2} = 1,{F}_{1}\text{ 、 }{F}_{2}$ 是 $\Gamma$ 的左、右焦点，点 $P$ 是 $\Gamma$ 上的点,若 $\left| {P{F}_{1}}\right|  \cdot  \left| {P{F}_{2}}\right|  = 4$ ,则 $\overrightarrow{P{F}_{1}} \cdot  \overrightarrow{P{F}_{2}}$ 的值为\_\_\_\_\_.
+
+5. 设直线 $l$ 与抛物线 ${y}^{2} = {4x}$ 相交于 $A$ 、 $B$ 两点,与圆 ${\left( x - 5\right) }^{2} + {y}^{2} = {r}^{2}\left( {r > 0}\right)$ 相切于点 $M$ ，且 $M$ 为线段 ${AB}$ 的中点，若这样的直线 $l$ 恰有 4 条，则 $r$ 的取值范围是\_\_\_\_\_.
+
+6. 设 $P$ 是双曲线 ${x}^{2} - \frac{{y}^{2}}{15} = 1$ 的右支上一点，过点 $P$ 分别作圆 ${\left( x + 4\right) }^{2} + {y}^{2} = 4$ 和 ${\left( x - 4\right) }^{2} + {y}^{2} = 1$ 的切线，切点分别为 $M$ 、 $N$ ，则 ${\left| PM\right| }^{2} - {\left| PN\right| }^{2}$ 的最小值为\_\_\_\_\_.
+
+7. 已知椭圆 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的左、右焦点分别为 ${F}_{1}\left( {-c,0}\right)$ 、 ${F}_{2}\left( {c,0}\right)$ ，若椭圆上存在一点 $P$ 使 $\frac{a}{\sin \angle P{F}_{1}{F}_{2}} = \frac{c}{\sin \angle P{F}_{2}{F}_{1}}$ ，则椭圆离心率 $e$ 的取值范围是\_\_\_\_\_.
+
+8. 已知 ${F}_{1}$ 、 ${F}_{2}$ 分别为双曲线 ${x}^{2} - \frac{{y}^{2}}{3} = 1$ 的左、右焦点,过 ${F}_{2}$ 的直线与双曲线的右支交于 $A$ 、 $B$ 两点,记 $\bigtriangleup A{F}_{1}{F}_{2}$ 的内切圆 ${O}_{1}$ 的半径为 ${r}_{1},\bigtriangleup B{F}_{1}{F}_{2}$ 的内切圆 ${O}_{2}$ 的半径为 ${r}_{2}$ ,圆 ${O}_{1}\text{ 、 }{O}_{2}$ 的面积分别为 ${S}_{1}\text{ 、 }{S}_{2}$ , 则 ${S}_{1} + {S}_{2}$ 的取值范围是\_\_\_\_\_.
+
+9. 以下四个关于圆锥曲线的命题中: \ding{172}  当 $1 < k < 4$ 时，曲线 $C : \frac{{x}^{2}}{4 - k} + \frac{{y}^{2}}{k - 1} = 1$ 表示椭圆； \ding{173}  双曲线 $\frac{{x}^{2}}{25} -  \frac{{y}^{2}}{9} = 1$ 和椭圆 $\frac{{x}^{2}}{35} + {y}^{2} = 1$ 有相同的焦点;  \ding{174} 设 $A\text{ 、 }B$ 为两个定点, $k$ 为非零常数, $\left| \overrightarrow{PA}\right|  - \left| \overrightarrow{PB}\right|  = k$ ,则动点 $P$ 的轨迹为双曲线;  \ding{175} 过定圆 $C$ 上一定点 $A$ 和动点 $B$ 作圆的弦 ${AB},O$ 为坐标原点,若 $\overrightarrow{OA} + \overrightarrow{OB} = 2\overrightarrow{OP}$ 则动点 $P$ 的轨迹为圆; 其中真命题的序号为\_\_\_\_\_(写出所有真命题的序号).
+
+\section*{二、选择题}
+
+10. 已知 $A\text{ 、 }B$ 是双曲线 $\Gamma  : \frac{{x}^{2}}{4} - \frac{{y}^{2}}{3} = 1$ 的左、右顶点,动点 $P$ 在 $\Gamma$ 上且 $P$ 在第一象限,若 ${PA}\text{ 、 }{PB}$ 的斜率分别为 ${k}_{1}\text{ 、 }{k}_{2}$ ,则以下总为定值的是 ( )
+
+A. ${k}_{1} + {k}_{2}$ . B. $\left| {{k}_{1} - {k}_{2}}\right|$ . C. ${k}_{1} \cdot  {k}_{2}$ . D. ${k}_{1}^{2} + {k}_{2}^{2}$ .
+
+11. 已知椭圆 ${C}_{1} : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 与圆 ${C}_{2} : {x}^{2} + {y}^{2} = \frac{4{b}^{2}}{5}$ ,若在椭圆 ${C}_{1}$ 上不存在点 $P$ ,使得由点 $P$ 所作的圆 ${C}_{2}$ 的两条切线互相垂直,则椭圆 ${C}_{1}$ 的离心率的取值范围是 ( )
+
+A. $\left( {0,\frac{\sqrt{3}}{3}}\right)$ . B. $\left( {0,\frac{\sqrt{6}}{4}}\right)$ . C. $\left\lbrack  {\frac{\sqrt{3}}{3},1}\right)$ . D. $\left\lbrack  {\frac{\sqrt{6}}{4},1}\right)$ .
+
+12. 在圆锥 ${PO}$ 中,已知高 ${PO} = 2$ ,底面圆的半径为 $4,M$ 为母线 ${PB}$ 的中点; 根据圆锥曲线的定义,下列四个图中的截面边界曲线分别为圆、椭圆、双曲线及抛物线,下面四个命题:  \ding{172}  圆的面积为 ${4\pi }$ ;  \ding{173}  椭圆的长轴为 $\sqrt{37}$ ;  \ding{174}  双曲线两渐近线的夹角正切值为 $- \frac{3}{4}$ ;  \ding{175} 抛物线中焦点到准线的距离为 $\frac{4\sqrt{5}}{5}$ . 其中正确的个数为 ( )
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_224_1073_1626_312_180_0.jpg}
+\end{center}
+ 
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_224_248_1636_288_174_0.jpg}
+\end{center}
+ 
+
+$P$
+
+$M  M$
+
+O B $O \cdot$
+
+(第 12 题图)
+
+A. 1 个. B. 2 个. C. 3 个. D. 4 个.
+
+\section*{三、解答题}
+
+13. 设椭圆 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的左、右顶点分别为是 $A\text{ 、 }B$ ,点 $P$ 在椭圆上且异于 $A\text{ 、 }B$ 两点, $O$ 为坐标原点.
+
+(1)若直线 ${AP}$ 与 ${BP}$ 的斜率之积为 $- \frac{1}{2}$ ，求椭圆的离心率；
+
+(2)若 $\left| {AP}\right|  = \left| {OA}\right|$ ，证明直线 ${OP}$ 的斜率 $k$ 满足 $\left| k\right|  > \sqrt{3}$ .
+
+14. 已知抛物线 $\Gamma  : {y}^{2} = {2px}$ 的焦点为 $F\left( {2,0}\right)$ ,点 $P$ 在抛物线 $\Gamma$ 上.
+
+(1)求抛物线 $\Gamma$ 的方程；
+
+(2)过点 $T\left( {t,0}\right) \left( {t > 0}\right)$ 作两条互相垂直的直线分别交抛物线 $\Gamma$ 于 $A$ 、 $B$ 、 $C$ 、 $D$ 四点，且点 $M$ 、 $N$ 分别为线段 ${AB}$ 、 ${CD}$ 的中点,求 $\bigtriangleup {TMN}$ 的面积的最小值.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_225_1172_1266_273_309_0.jpg}
+\end{center}
+ 
+
+(第 14 题图)
+
+15. 已知双曲线 ${x}^{2} - {y}^{2} = 2$ 的左、右焦点分别为 ${F}_{1}$ 、 ${F}_{2}$ ，过点 ${F}_{2}$ 的动直线与双曲线相交于 $A$ 、 $B$ 两点.
+
+(1)若动点 $M$ 满足 $\overrightarrow{{F}_{1}M} = \overrightarrow{{F}_{1}A} + \overrightarrow{{F}_{1}B} + \overrightarrow{{F}_{1}O}$ (其中 $O$ 为坐标原点)，求点 $M$ 的轨迹方程；
+
+(2)在 $x$ 轴上是否存在定点 $C$ ，使 $\overrightarrow{CA}$ - $\overrightarrow{CB}$ 为常数？若存在，求出点 $C$ 的坐标；若不存在，请说明理由.
+
+16. 已知椭圆 $C : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的右焦点为 $F\left( {1,0}\right)$ ，且点 $P\left( {1,\frac{3}{2}}\right)$ 在椭圆 $C$ 上.
+
+(1)求椭圆 $C$ 的标准方程；
+
+(2)过椭圆 ${C}_{1} : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2} - \frac{5}{3}} = 1$ 上异于其顶点的任意一点 $Q$ 作圆 $O : {x}^{2} + {y}^{2} = \frac{4}{3}$ 的两条切线，切点分别为 $M\text{ 、 }N\left( {M\text{ 、 }N}\right.$ 不在坐标轴上 $)$ ,若直线 ${MN}$ 在 $x$ 轴、 $y$ 轴上的截距分别为 $m\text{ 、 }n$ ,证明: $\frac{1}{3{m}^{2}} + \frac{1}{{n}^{2}}$ 为定值.
+
+\section*{§ 10.7 圆锥曲线综合二}
+
+\section*{典型例题精讲}
+
+【例 1】已知椭圆 $C : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的离心率为 $\frac{1}{2}$ ，左、右焦点分别为 ${F}_{1}$ 、 ${F}_{2}$ ， $O$ 为坐标原点，点 $P$ 在椭圆 $C$ 上，且满足 $\left| {P{F}_{1}}\right|  + \left| {P{F}_{2}}\right|  = 8$ .
+
+(1)求椭圆 $C$ 的方程；
+
+(2)已知过点 $\left( {2,0}\right)$ 且不与 $x$ 轴重合的直线 $l$ 与椭圆 $C$ 交于 $M$ ， $N$ 两点，在 $x$ 轴上是否存在定点 $Q$ ，使得 $\angle {MQO} = \angle {NQO}$ ? 若存在,求出点 $Q$ 的坐标; 若不存在,说明理由.
+
+【例 2】已知双曲线 $C : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的一个焦点为 $F\left( {\sqrt{2},0}\right)$ ,且经过点 $T\left( {\frac{\sqrt{5}}{2},\frac{1}{2}}\right)$ .
+
+(1)求双曲线 $C$ 的标准力程；
+
+(2)已知点 $A$ 是 $C$ 上一定点，过点 $B\left( {0,1}\right)$ 的动直线与双曲线 $C$ 交于 $P$ 、 $Q$ 两点，若 ${k}_{AP} + {k}_{AQ}$ 为定值 $\lambda$ ， 求点 $A$ 的坐标及实数 $\lambda$ 的值.
+
+【例 3】已知斜率为 $k$ 的直线 $l$ 经过抛物线 $C : {y}^{2} = {4x}$ 的焦点 $F$ ，且与抛物线 $C$ 交于不同的两点 $A\left( {{x}_{1},{y}_{1}}\right)$ 、 $B\left( {{x}_{2},{y}_{2}}\right)$ .
+
+(1)若点 $A$ 和 $B$ 到抛物线准线的距离分别为 $\frac{3}{2}$ 和3，求 $\left| {AB}\right|$ ；
+
+(2)若 $\left| {AF}\right|  + \left| {AB}\right|  = 2\left| {BF}\right|$ ，求 $k$ 的值.
+
+【例 4】在平面直角坐标系 ${xOy}$ 中,已知椭圆 $\Gamma  : \frac{{x}^{2}}{2} + {y}^{2} = 1$ ,过右焦点 $F$ 做两条互相垂直的弦 ${AB}$ 、 ${CD}$ ,设 ${AB}\text{ 、 }{CD}$ 的中点分别为 $M\text{ 、 }N$ .
+
+(1)写出椭圆右焦点 $F$ 的坐标及椭圆的离心率；
+
+(2)证明:直线 ${MN}$ 必过定点,并求出该定点坐标.
+
+【例 5】在 ${xOy}$ 坐标平面内,已知椭圆 $\Gamma  : \frac{{x}^{2}}{9} + \frac{{y}^{2}}{5} = 1$ 的左、右焦点分别为 ${F}_{1}\text{ 、 }{F}_{2}$ ,直线 $y = {k}_{1}x\left( {{k}_{1} \neq  0}\right)$ 与 $\Gamma$ 相交于 $A\text{ 、 }B$ 两点.
+
+(1)记 $d$ 为 $A$ 到直线 ${2x} + 9 = 0$ 的距离，当 ${k}_{1}$ 变化时，求证: $\frac{\left| A{F}_{1}\right| }{d}$ 为定值；
+
+(2)当 $\angle {A{F}_{2}B} = {120}^{ \circ  }$ 时，求 $\left| {A{F}_{2}}\right|  \cdot  \left| {B{F}_{2}}\right|$ 的值；
+
+(3)过 $B$ 作 ${BM} \bot  x$ 轴,垂足为 $M,{OM}$ 的中点为 $N$ ,延长 ${AN}$ 交 $\Gamma$ 于另一点 $P$ ,记直线 ${PB}$ 的斜率为 ${k}_{2}$ ,当 ${k}_{1}$ 取何值时, $\left| {{k}_{1} - {k}_{2}}\right|$ 有最小值? 并求出此最小值.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_229_1131_504_306_258_0.jpg}
+\end{center}
+ 
+
+(例 5 图)
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 抛物线 ${y}^{2} = {4x}$ 的焦点为 $F$ ，过 $F$ 的直线交该抛物线于 $A$ 、 $B$ 两点，则 $\left| {AF}\right|  + 4\left| {BF}\right|$ 的最小值为\_\_\_\_\_.
+
+2. 已知 $M\text{ 、 }N$ 为双曲线 $\frac{{x}^{2}}{4} - {y}^{2} = 1$ 上关于坐标原点 $O$ 对称的两点, $P$ 为双曲线上异于 $M\text{ 、 }N$ 的点,若直线 ${PM}$ 的斜率的取值范围是 $\left\lbrack  {\frac{1}{2},2}\right\rbrack$ ，则直线 ${PN}$ 的斜率的取值范围是\_\_\_\_\_.
+
+3. 从一块短轴长为 ${2b}$ 的椭圆形玻璃镜中划出一块面积最大的矩形,其面积的取值范围是 $\left\lbrack  {3{b}^{2},4{b}^{2}}\right\rbrack$ ,则这个椭圆的离心率的取值范围是\_\_\_\_\_.
+
+4. 设 $O$ 是坐标原点, $F$ 是抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 的焦点, $A$ 是抛物线上的一点, $\overrightarrow{FA}$ 与 $x$ 轴正向的夹角为 ${60}^{ \circ  }$ ,则 $\left| \overrightarrow{OA}\right|  =$ \_\_\_\_\_.
+
+5. 如图, $A\text{ 、 }B$ 是直线 $l$ 上的两点,且 ${AB} = 2$ . 两个半径相等的动圆分别与 $l$ 相切于 $A\text{ 、 }B$ 点, $C$ 是这两个圆的公共点,则圆弧 $\overset{\text{ ⏜ }}{AC}\text{ 、 }\overset{\text{ ⏜ }}{CB}$ 与线段 ${AB}$ 围成图形面积 $S$ 的取值范围是\_\_\_\_\_.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_229_1113_1491_326_146_0.jpg}
+\end{center}
+ 
+
+(第 5 题图)
+
+6. 设 $F$ 是双曲线 $\frac{{x}^{2}}{4} - \frac{{y}^{2}}{12} = 1$ 的左焦点, $A\left( {1,4}\right) ,P$ 是双曲线右支上的动点, 则 $\left| {PA}\right|  + \left| {PF}\right|$ 的最小值为\_\_\_\_\_.
+
+7. 过抛物线 ${y}^{2} = {4x}$ 的焦点 $F$ 的直线交抛物线于 $A$ 、 $B$ 两点，则 $\frac{1}{\left| AF\right| } + \frac{1}{\left| BF\right| } =$ \_\_\_\_\_.
+
+8. 已知 $m\text{ 、 }n$ 是正常数， $s\text{ 、 }t \in  {\mathbf{R}}^{ + },m + n = 2$ ， $\frac{m}{s} + \frac{n}{t} = 9$ ，其中 $m\text{ 、 }n$ 是常数，且 $s + t$ 的最小值是 $\frac{4}{9}$ ，满足条件的点 $\left( {m,n}\right)$ 是圆 ${\left( x - 2\right) }^{2} + {\left( y - 2\right) }^{2} = 4$ 中一条弦的中点,则此弦所在的直线方程为\_\_\_\_\_.
+
+9. 在直线 $l : y =  - 2$ 上取一点 $D$ 作抛物线 $C : {x}^{2} = {4y}$ 的切线，切点分别为 $A$ 、 $B$ ，直线 ${AB}$ 与圆 $E$ : ${x}^{2} +  {y}^{2} - {2x} - {2020} = 0$ 交于 $M$ 、 $N$ 两点，当 $\left| {MN}\right|$ 最小时，点 $D$ 的横坐标是\_\_\_\_\_.
+
+\section*{二、选择题}
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_230_1245_213_249_274_0.jpg}
+\end{center}
+ 
+
+(第 10 题图)
+
+( )
+
+10. 从双曲线 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的左焦点 $F$ 引圆 ${x}^{2} + {y}^{2} = {a}^{2}$ 的切线，切点为 $T$ ,延长 ${FT}$ 交双曲线右支于 $P$ 点,若 $M$ 为线段 ${FP}$ 的中点, $O$ 为坐标原点,则 $\left| {MO}\right|  -  \left| {MT}\right|$ 与 $b - a$ 的大小关系为 ( )
+
+A. $\left| {MO}\right|  - \left| {MT}\right|  > b - a$ . B. $\left| {MO}\right|  - \left| {MT}\right|  = b - a$ .
+
+C. $\left| {MO}\right|  - \left| {MT}\right|  < b - a$ . D. 不确定.
+
+11. 点 $P$ 在直线 $l : y = x - 3$ 上,若存在过 $P$ 的直线交抛物线 ${x}^{2} = {4y}$ 于 $A\text{ 、 }B$ 两点, 且 $\left| {PA}\right|  = \left| {AB}\right|$ ,则称点 $P$ 是“倍起点”,那么下列结论中正确的是
+
+A. 直线 $l$ 上仅有有限个点是 “倍起点”. B. 直线 $l$ 上不存在 “倍起点”.
+
+C. 直线 $l$ 上有无穷多个点 (不是所有点) 是 “倍起点”. D. 直线 $l$ 上每个点都是 “倍起点”.
+
+12. 设双曲线 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的左、右焦点为 ${F}_{1}\text{ 、 }{F}_{2}$ ,若双曲线右支上存在点 $P$ ,使得 $\left| {P{F}_{2}}\right|$ , $\left| {P{F}_{1}}\right| ,\left| {{F}_{1}{F}_{2}}\right|$ 依次成等差数列,则该双曲线的离心率的取值范围为 ( )
+
+A. $\lbrack 3, + \infty )$ . B. $\left( {1,3}\right)$ . C. $\left( {3, + \infty }\right)$ . D. $\left( {1,3}\right)$ .
+
+\section*{三、解答题}
+
+13. 已知双曲线 $\Gamma  : \frac{{x}^{2}}{2} - \frac{{y}^{2}}{4} = 1$ 的右顶点为 $A$ ,点 $B$ 的坐标为 $\left( {1,\sqrt{2}}\right)$ .
+
+(1)设点 $D$ 是双曲线 $\Gamma$ 上的动点，若点 $N$ 满足 $\overrightarrow{BN} = \overrightarrow{ND}$ ，求点 $N$ 的轨迹方程；
+
+(2)过点 $B$ 的动直线 $l$ 交双曲线 $\Gamma$ 于 $P$ 、 $Q$ 两个不同的点， $M$ 为线段 ${PQ}$ 的中点，求直线 ${AM}$ 斜率的取值范围.
+
+14. 已知抛物线 $\Gamma  : {y}^{2} = {4x}$ .
+
+(1)求抛物线 $\Gamma$ 的焦点 $F$ 的坐标和准线 $l$ 的方程；
+
+(2)过焦点 $F$ 且斜率为 $\frac{1}{2}$ 的直线与抛物线 $\Gamma$ 交于不同两点 $A$ 、 $B$ ，求线段 ${AB}$ 的长；
+
+(3)已知点 $P\left( {1,2}\right)$ ，是否存在定点 $Q$ ，使得过点 $Q$ 的直线与抛物线 $\Gamma$ 交于两个不同的点 $M$ 、 $N$ (均不与点 $P$ 重合),且以线段 ${MN}$ 为直径的圆恒过点 $P$ ? 若存在,求出点 $Q$ 的坐标; 若不存在,请说明理由.
+
+
+15. 已知 $a > b > 0$ ,如图,曲线 $\Gamma$ 由曲线 ${C}_{1} : \frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {y \leq  0}\right)$ 和曲线 ${C}_{2} : \frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {y > 0}\right)$ 组成,其中点 ${F}_{1}\text{ 、 }{F}_{2}$ 为曲线 ${C}_{1}$ 所在圆锥曲线的焦点,点 ${F}_{3}\text{ 、 }{F}_{4}$ 为曲线 ${C}_{2}$ 所在圆锥曲线的焦点.
+
+(1)若 ${F}_{2}\left( {2,0}\right)$ ， ${F}_{3}\left( {-6,0}\right)$ ，求曲线 $\Gamma$ 的方程；
+
+(2)对于(1)中的曲线 $\Gamma$ ，若直线 ${l}_{1}$ 过点 ${F}_{4}$ 交曲线 ${C}_{1}$ 于点 $C$ 、 $D$ ，求 $\bigtriangleup  {CD}{F}_{1}$ 面积的最大值.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_231_1072_363_374_274_0.jpg}
+\end{center}
+ 
+
+(第 15 题图)
+
+16. 已知双曲线 $C$ 的中心在坐标原点,左焦点 ${F}_{1}$ 与右焦点 ${F}_{2}$ 都在 $x$ 轴上,离心率为 3,过点 ${F}_{2}$ 的动直线 $l$ 与双曲线 $C$ 交于点 $A\text{ 、 }B$ ,设 $\frac{\left| {A{F}_{2}}\right|  \cdot  \left| {B{F}_{2}}\right| }{{\left| AB\right| }^{2}} = \lambda$ .
+
+(1)求双曲线 $C$ 的渐近线方程；
+
+(2)若点 $A$ 、 $B$ 都在双曲线 $C$ 的右支上，求 $\lambda$ 的最大值以及 $\lambda$ 取最大值时 $\angle {A{F}_{1}}B$ 的正切值；(关于求 $\lambda$ 的最值,某学习小组提出了如下的思路可供参考: \ding{172}  利用基本不等式求最值;  \ding{173}  设 $\frac{\left| A{F}_{2}\right| }{\left| AB\right| }$ 为 $\mu$ ，建立相应数量关系并利用它求最值;  \ding{174} 设直线 $l$ 的斜率为 $k$ ，建立相应数量关系并利用它求最值).
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_231_1186_1361_260_320_0.jpg}
+\end{center}
+ 
+
+(第 16 题图)
+元)对年销售额 $y$ (单位:亿元)的影响,对近 10 年研发资金投入量 ${x}_{i}$ 和销售额 ${y}_{i}\left( {i = 1,2,\cdots ,{10}}\right)$ 数据作了初步处理,得到如图的散点图.
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{images/bo_d7tk7oc91nqc73875fu0_277_981_574_486_458_0.jpg}
+\end{center}
+ 
+
+(例 1 图)
+
+(1)根据散点图判断， $y = a + {bx}$ 与 $y = {{e}}^{c + {dx}}$ 哪一个适宜作为年销售额 $y$ 关于年研发资金投入量 $x$ 的回归方程类型? (给出判断即可, 不必说明理由)
+
+(2) \ding{172} 根据(1)的选择及表中数据，建立 $y$ 关于 $x$ 的回归方程 (精确到 0.001 );
+
+ \ding{173} 若下一年销售额 $y$ 需达到 90 亿元，预测下一年的研发资金投入量 $x$ 约为多少亿元? (精确到 1 )
+
+附:对于一组数据 $\left( {{\mu }_{1},{v}_{1}}\right) ,\left( {{\mu }_{2},{v}_{2}}\right) ,\cdots ,\left( {{\mu }_{n},{v}_{n}}\right)$ ,其回归直线 $v = {a\mu } + b$ 的斜率和截距的最小二乘估计分别为:
+
+$\widehat{a} = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}\left( {{\mu }_{i} - \overline{\mu }}\right) \left( {{v}_{i} - \bar{v}}\right) }{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {\mu }_{i} - \overline{\mu }\right) }^{2}},\widehat{b} = \bar{v} - \widehat{a}\overline{\mu }$ . 参考数据: 其中 $w = \ln y$ .
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$\frac{ - }{x}$ & − & $\bar{w}$ & $\mathop{\sum }\limits_{{i = 1}}^{{10}}{\left( {x}_{i} - \bar{x}\right) }^{2}$ & $\mathop{\sum }\limits_{{i = 1}}^{{10}}{\left( {y}_{i} - \bar{y}\right) }^{2}$ & $\mathop{\sum }\limits_{{i = 1}}^{{10}}{\left( {w}_{i} - \bar{w}\right) }^{2}$ & $\mathop{\sum }\limits_{{i = 1}}^{{10}}\left( {{x}_{i} - \bar{x}}\right) \left( {{y}_{i} - \bar{y}}\right)$ & $\mathop{\sum }\limits_{{i = 1}}^{{10}}\left( {{x}_{i} - \bar{x}}\right) \left( {{w}_{i} - \bar{w}}\right)$ \\
+\cline{1-8}
+20 & 30 & 3.2 & 900 & 300 & 3.78 & 1600 & 58.21 \\
+\cline{1-8}
+\hline
+\end{tabular}
+\end{center}
+
+【例 2】为了监控某种零件的一条生产线的生产过程,检验员每隔 ${30}{{min}}$ 从该生产线上随机抽取一个零件,并测量其尺寸 (单位:cm). 下面是检验员在一天内依次抽取的 16 个零件的尺寸:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+抽取次序 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+\cline{1-9}
+零件尺寸 & 9.95 & 10.12 & 9.96 & 9.96 & 10.01 & 9.92 & 9.98 & 10.04 \\
+\cline{1-9}
+抽取次序 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
+\cline{1-9}
+零件尺寸 & 10.26 & 9.91 & 10.13 & 10.02 & 9.22 & 10.04 & 10.05 & 9.95 \\
+\cline{1-9}
+\hline
+\end{tabular}
+\end{center}
+
+(1)求 $\left( {{x}_{i},i}\right) \left( {i = 1,2,\cdots ,{16}}\right)$ 的相关系数 $r$ ，并回答是否可以认为这一天生产的零件尺寸不随生产过程的进行而系统地变大或变小 (若 $\left| r\right|  < {0.25}$ ，则可以认为零件的尺寸不随生产过程的进行而系统地变大或变小).
+
+(2)一天内抽检零件中，如果出现了尺寸在 $\left( {\bar{x} - {3s},\bar{x} + {3s}}\right)$ 之外的零件，就认为这条生产线在这一天的生产过程可能出现了异常情况，需对当天的生产过程进行检查.
+
+(1)从这一天抽检的结果看，是否需对当天的生产过程进行检查？
+
+(ii)在( $\bar{x} - {3s},\bar{x} + {3s}$ )之外的数据称为离群值，试剔除离群值，估计这条生产线当天生产的零件尺寸的均值与标准差. (精确到 0.01)
+
+附:样本 $\left( {{x}_{i},{y}_{i}}\right) \left( {i = 1,2,\cdots ,n}\right)$ 的相关系数 $r = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}\left( {{x}_{i} - \bar{x}}\right) \left( {{y}_{i} - \bar{y}}\right) }{\sqrt{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - \bar{x}\right) }^{2}}\sqrt{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {y}_{i} - \bar{y}\right) }^{2}}}$ .
+
+【例 3】“绿色出行, 低碳环保”已成为新的时尚, 近几年国家相继出台了一系列的环保政策, 为新能源汽车行业的发展开辟了广阔的前景. 某公司对 $A$ 充电桩进行生产投资，所获得的利润有如下统计数据:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$A$ 充电桩投资金额 $x/$ 万元 & 3 & 4 & 6 & 7 & 9 & 10 \\
+\cline{1-7}
+所获利润 $y/$ 百万元 & 1.5 & 2 & 3 & 4.5 & 6 & 7 \\
+\cline{1-7}
+\hline
+\end{tabular}
+\end{center}
+
+(1)已知可用一元线性回归模型拟合 $y$ 与 $x$ 的关系,求其回归方程；
+
+(2)若规定所获利润 $y$ 与投资金额 $x$ 的比值不低于 $\frac{2}{3}$ ，则称对应的投入额为 “优秀投资额”. 记 2 分，所获利润 $y$ 与投资金额 $x$ 的比值低于 $\frac{2}{3}$ 且大于 $\frac{1}{2}$ ，则称对应的投入额为 “良好投资额”，记 1 分，所获利润 $y$ 与投资金额 $x$ 的比值不超过 $\frac{1}{2}$ ，则称对应的投入额为 “不合格投资额”，记 0 分，现从表中 6 个投资金额中任意选 2 个,用 $X$ 表示记分之和,求 $X$ 的分布及数学期望.
+
+附:对于一组数据 $\left( {{x}_{1},{y}_{1}}\right) ,\left( {{x}_{2},{y}_{2}}\right) ,\cdots ,\left( {{x}_{n},{y}_{n}}\right)$ ,其回归直线方程 $\widehat{y} = \widehat{a}x + \widehat{b}$ 的斜率和截距的最小二乘法估计公式分别为: $\widehat{a} = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}\left( {{x}_{i} - \bar{x}}\right) \left( {{y}_{i} - \bar{y}}\right) }{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - \bar{x}\right) }^{2}} = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}{y}_{i} - n\bar{x} \cdot  \bar{y}}{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} - n{\bar{x}}^{2}},\widehat{b} = \bar{y} - \widehat{a}\bar{x}$ .
+
+【例 4】一医疗团队为研究某地的一种地方性疾病与当地居民的卫生习惯 (卫生习惯分为良好和不够良好两类)的关系，在已患该疾病的病例中随机调查了 100 例(称为病例组)，同时在未患该疾病的人群中随机调查了 100 人(称为对照组)，得到如下数据:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\phantom{X} & 不够良好 & 良好 \\
+\cline{1-3}
+病例组 & 40 & 60 \\
+\cline{1-3}
+对照组 & 10 & 90 \\
+\cline{1-3}
+\hline
+\end{tabular}
+\end{center}
+
+(1)能否有 99\% 的把握认为患该疾病群体与未患该疾病群体的卫生习惯有差异？
+
+(2)从该地的人群中任选一人，A 表示事件“选到的人卫生习惯不够良好”，B 表示事件“选到的人患有该疾病”, $\frac{P\left( {B \mid  A}\right) }{P\left( {\bar{B} \mid  A}\right) }$ 与 $\frac{P\left( {B \mid  \bar{A}}\right) }{P\left( {\bar{B} \mid  \bar{A}}\right) }$ 的比值是卫生习惯不够良好对患该疾病风险程度的一项度量指标,记该指标为 $R$ .
+
+ \ding{172}  证明: $R = \frac{P\left( {A \mid  B}\right) }{P\left( {\overline{A} \mid  B}\right) }$ . $\frac{P\left( {\overline{A} \mid  \overline{B}}\right) }{P\left( {A \mid  \overline{B}}\right) }$ ；
+
+ \ding{173}  利用该调查数据，给出 $P\left( {A \mid  B}\right)$ 、 $P\left( {A \mid  \bar{B}}\right)$ 的估计值，并利用 \ding{172} 的结果给出 $R$ 的估计值.
+
+附: ${K}^{2} = \frac{n{\left( ad - bc\right) }^{2}}{\left( {a + b}\right) \left( {c + d}\right) \left( {a + c}\right) \left( {b + d}\right) }$ .
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$P\left( {{K}^{2} \geq  k}\right)$ & 0.050 & 0.010 & 0.001 \\
+\cline{1-4}
+$k$ & 3.841 & 6.635 & 10.828 \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+【例 5】某地在种植棉花有着得天独厚的自然条件，土质呈碱性，夏季温差大，阳光充足，光合作用充分，生长时间长，这种环境下种植的棉花绒长、品质好、产量高，但每年五月，该地进入灾害天气高发期，灾害天数对当年棉花产量有着重要影响，根据过去五年的数据统计，得到相关数据如下表:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+灾害天气天数 $x$ (天) & 2 & 3 & 4 & 5 & 8 \\
+\cline{1-6}
+棉花产量 $y$ (吨/公顷) & 3.2 & 2.4 & 2 & 1.9 & 1.7 \\
+\cline{1-6}
+\hline
+\end{tabular}
+\end{center}
+
+根据以上数据, 技术人员分别借助甲、乙两种不同的回归模型, 得到两个回归方程,
+
+模型甲: ${\widehat{y}}_{1} = \frac{4}{x} + {1.1}$ ,模型乙: ${\widehat{y}}_{2} = \frac{6.4}{{x}^{2}} + {1.6}$ .
+
+(1)分别利用这两个模型, 求受灾害天气为 7 天时, 当年棉花产量的预测值; (精确到 0.01
+
+(2)你认为用哪个模型得到的预测值更可靠？并说明理由.
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_280_1213_1568_257_259_0.jpg}
+\end{center}
+ 
+
+(第 1 题图)
+
+1. 如图所示，有 $A$ 、 $B$ 、 $C$ 、 $D$ 、 $E$ 共 5 组数据，去掉\_\_\_\_\_组数据后，剩下的 4 组数据具有较强的线性相关关系. (请用 $A$ 、 $B$ 、 $C$ 、 $D$ 、 $E$ 作答)
+
+2. 甲、乙、丙、丁四位同学各自对 $x$ 、 $y$ 两变量的线性相关性作试验,求得相关系数 $r$ 如表:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+相关系数 & 甲 & 乙 & 丙 & 丁 \\
+\cline{1-5}
+$r$ & -0.82 & 0.78 & 0.69 & 0.87 \\
+\cline{1-5}
+\hline
+\end{tabular}
+\end{center}
+
+则\_\_\_\_\_同学的试验结果体现两变量有更强的线性相关性.
+
+3. 在一组样本数据 $\left( {{x}_{1},{y}_{1}}\right) ,\left( {{x}_{2},{y}_{2}}\right) ,\cdots ,\left( {{x}_{n},{y}_{n}}\right) \left( {n \geq  2}\right.$ ,且 ${x}_{1}\text{ 、 }{x}_{2}\text{ 、 }\cdots \text{ 、 }{x}_{n}$ 不全相等) 的散点图中,若所有样本点 $\left( {{x}_{i},{y}_{i}}\right) \left( {i = 1,2,\cdots ,n}\right)$ 都在直线 $y =  - \frac{1}{2}x + 1$ 上，则这组数据的样本相关系数为\_\_\_\_\_.
+
+4. 调查某种花萼长度和花瓣长度,所得数据如图所示,其中相关系数 $r = {0.8245}$ ,下列说法正确的是\_\_\_\_\_.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/bo_d7tk7oc91nqc73875fu0_281_478_242_642_260_0.jpg}
+\end{center}
+ 
+
+(第 3 题图)
+
+ \ding{172} 花瓣长度和花萼长度没有相关性； \ding{173} 花瓣长度和花萼长度呈现负相关； \ding{174} 花瓣长度和花萼长度呈现正相关;  \ding{175} 若从样本中抽取一部分, 则这部分的相关系数一定是 0.8245 .
+
+5. 为了规定工时定额，需要确定加工零件所花费的时间，为此进行了 5 次试验. 根据收集到的数据(如表),由最小二乘法求得回归方程为 $y = {0.67x} + {54.9}$ .
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+零件数 $x$ 个 & 10 & 20 & 30 & 40 & 50 \\
+\cline{1-6}
+加工时间 $y/{{min}}$ & 62 & \includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_281_760_784_118_76_0.jpg} & 75 & 81 & 89 \\
+\cline{1-6}
+\hline
+\end{tabular}
+\end{center}
+
+现发现表中有一个数据模糊看不清，则该数据为\_\_\_\_\_.
+
+6. 调查了某地若干户家庭的年收入 $x$ (单位:万元)和年饮食支出 $y$ (单位:万元). 调查显示年收入 $x$ 与年饮食支出 $y$ 具有线性相关关系,并由调查数据得到 $y$ 对 $x$ 的回归方程: $y = {0.254x} + {0.321}$ . 由回归方程可知, 家庭年收入每增加 1 万元，年饮食支出平均增加\_\_\_\_\_万元.
+
+7. 某池塘中水生植物的覆盖水塘面积 $x$ (单位: ${{{dm}}}^{2}$ ) 与水生植物的株数 $y$ (单位:株) 之间的相关关系,收集了 4 组数据,用模型 $y = c{{e}}^{kx}\left( {c > 0}\right)$ 去拟合 $x$ 与 $y$ 的关系,设 $z = \ln y,x$ 与 $z$ 的数据如表格所示:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$x$ & 3 & 4 & 6 & 7 \\
+\cline{1-5}
+$z$ & 2.5 & 3 & 4 & 5.9 \\
+\cline{1-5}
+\hline
+\end{tabular}
+\end{center}
+
+得到 $x$ 与 $z$ 的线性回归方程 $\widehat{z} = {0.7x} + a$ ,则 $c =$ \_\_\_\_\_. (用指数形式表示)
+
+8. 某数学老师身高 ${176}{{cm}}$ ，他爷爷、父亲和儿子的身高分别是 ${173}{{cm}}$ 、 ${170}{{cm}}$ 和 ${182}{{cm}}$ . 因儿子的身高与父亲的身高有关，该老师用线性回归分析的方法预测他孙子的身高为\_\_\_\_\_cm.
+
+9. 足球是一项大众喜爱的运动，为了解喜爱足球是否与性别有关，随机抽取了若干人进行调查，抽取女性人数是男性的 2 倍，男性喜爱足球的人数占男性人数的 $\frac{5}{6}$ ，女性喜爱足球的人数占女性人数的 $\frac{1}{3}$ ，若本次调查得出“在犯错误的概率不超过 0.005 的前提下认为喜爱足球与性别有关”的结论，则被调查的男性至少有\_\_\_\_\_人。
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$a$ & 0.10 & 0.05 & 0.01 & 0.005 & 0.001 \\
+\cline{1-6}
+${x}_{a}$ & 2.706 & 3.841 & 5.635 & 7.879 & 10.828 \\
+\cline{1-6}
+\hline
+\end{tabular}
+\end{center}
+
+附: ${\chi }^{2} = \frac{n{\left( ad - bc\right) }^{2}}{\left( {a + b}\right) \left( {c + d}\right) \left( {a + c}\right) \left( {b + d}\right) }$
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{images/bo_d7tk7oc91nqc73875fu0_281_938_1816_518_213_0.jpg}
+\end{center}
+ 
+
+(第 10 题图)
+
+\section*{二、选择题}
+
+10. 根据散点图, 下列说法正确的是 ( )
+
+A. 身高越大，体重越大.
+
+B. 身高越大，体重越小.
+
+C. 身高和体重成正相关.
+
+D. 身高和体重成负相关.
+
+11. 在某次独立性检验中, 得到如下列联表:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\phantom{X} & $A$ & $\bar{A}$ & 总计 \\
+\cline{1-4}
+$B$ & 200 & 800 & 1000 \\
+\cline{1-4}
+$\bar{B}$ & 180 & $a$ & ${180} + a$ \\
+\cline{1-4}
+总计 & 380 & ${800} + a$ & ${1180} + a$ \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+最后发现,两个分类变量没有关联,则 $a$ 的值可能是 ( )
+
+A. 960. B. 720. C. 360. D. 180.
+
+12.某学校对高二学生是否喜欢阅读进行随机调查, 调查的数据如表所示:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\phantom{X} & 喜欢阅读 & 不喜欢阅读 & 总计 \\
+\cline{1-4}
+男学生 & 30 & 20 & 50 \\
+\cline{1-4}
+女学生 & 40 & 10 & 50 \\
+\cline{1-4}
+总计 & 70 & 30 & 100 \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$P\left( {{\chi }^{2} \geq  k}\right)$ & 0.25 & 0.15 & 0.10 & 0.05 & 0.025 & 0.010 & 0.001 \\
+\cline{1-8}
+$k$ & 1.323 & 2.072 & 2.706 & 3.841 & 5.024 & 6.635 & 10.828 \\
+\cline{1-8}
+\hline
+\end{tabular}
+\end{center}
+
+根据表中的数据, 下列对该校高二学生的说法正确的是 ( )
+
+A. 没有 95\%以上的把握认为“性别与是否喜欢阅读有关”.
+
+B. 有 99\%以上的把握认为“性别与是否喜欢阅读有关”.
+
+C. 在犯错误的概率不超过 0.025 的前提下认为 “性别与是否喜欢阅读有关”.
+
+D. 在犯错误的概率不超过 0.05 的前提下认为“性别与是否喜欢阅读有关".
+
+\section*{三、解答题}
+
+13. 某地经过多年的环境治理, 已将荒山改造成了绿水青山. 为估计一林区某种树木的总材积量, 随机选取了10棵这种树木，测量每棵树的根部横截面积(单位: ${{m}}^{2}$ )和树积量(单位: ${{m}}^{3}$ )，得到数据，并计算得 $\mathop{\sum }\limits_{{i = 1}}^{{10}}{x}_{i} = {0.6},\mathop{\sum }\limits_{{i = 1}}^{{10}}{y}_{i} = {3.9},\mathop{\sum }\limits_{{i = 1}}^{{10}}{x}_{i}^{2} = {0.038},\mathop{\sum }\limits_{{i = 1}}^{{10}}{y}_{i}^{2} = {1.6158},\mathop{\sum }\limits_{{i = 1}}^{{10}}{x}_{i}{y}_{i} = {0.2474}.$
+
+(1)求该林区这种树木的根部横截面积与材积量的样本相关系数(精确到 0.01)；
+
+(2)现测量了该林区所有这种树木的根部横截面积, 并得到所有这种树木的根部横截面积总和为 ${186}{{m}}^{2}$ . 利用以上数据和回归方程 $y = \widehat{a}x + \widehat{b}$ ,给出该林区这种树木的总材积量的估计值.
+
+附:相关系数 $r = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}{y}_{i} - n\bar{x} \cdot  \bar{y}}{\sqrt{\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} - n{\bar{x}}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{y}_{i}^{2} - n{\bar{y}}^{2}}\right) }\text{ ,回归系数 }\widehat{a} = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}{y}_{i} - n\bar{x} \cdot  \bar{y}}{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} - n{\bar{x}}^{2}},\widehat{b} = \bar{y} - \widehat{a}\bar{x}}$ .
+
+14. 一项试验旨在研究臭氧效应, 试验方案如下: 选 40 只小白鼠, 随机地将其中 20 只分配到试验组, 另外 20 只分配到对照组, 试验组的小白鼠饲养在高浓度臭氧环境, 对照组的小白鼠饲养在正常环境, 一段时间后统计每只小白鼠体重的增加量(单位:g).试验结果如下:
+
+对照组的小白鼠体重的增加量从小到大排序为:
+
+15.2 18.8 20.2 21.3 22.5 23.2 25.8 26.5 27.5 30.1
+
+32.634.334.835.635.635.836.237.340.543.2
+
+试验组的小白鼠体重的增加量从小到大排序为:
+
+7.8 9.2 11.4 12.4 13.2 15.5 16.5 18.0 18.8 19.2
+
+19.8 20.2 21.6 22.8 23.6 23.9 25.1 28.2 32.3 36.5
+
+(1)计算试验组的样本平均数；
+
+(2) \ding{172}  求 40 只小白鼠体重的增加量的中位数 $m$ ，再分别统计两样本中小于 $m$ 与不小于 $m$ 的数据的个数，完成如下列联表；
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\phantom{X} & $< m$ & $\geq  m$ \\
+\cline{1-3}
+对照组 & \phantom{X} & \phantom{X} \\
+\cline{1-3}
+试验组 & \phantom{X} & \phantom{X} \\
+\cline{1-3}
+\hline
+\end{tabular}
+\end{center}
+
+ \ding{173} 根据(i)中的列联表，能否有 95\%的把握认为小白鼠在高浓度臭氧环境中与在正常环境中体重的增加量有差异?
+
+附: ${K}^{2} = \frac{n{\left( ad - bc\right) }^{2}}{\left( {a + b}\right) \left( {c + d}\right) \left( {a + c}\right) \left( {b + d}\right) }$ .
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$P\left( {{K}^{2} \geq  k}\right)$ & 0.100 & 0.050 & 0.010 \\
+\cline{1-4}
+$k$ & 2.706 & 3.841 & 6.635 \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_284_1095_142_390_315_0.jpg}
+\end{center}
+ 
+
+15.某同学用随机抽样的办法对所在学校老师的饮食习惯进行了一次调查, 饮食指数结果用茎叶图表示如图, 图中饮食指数低于 70 的人是饮食以蔬菜为主: 饮食指数高于 70 的人是饮食以肉类为主.
+
+(1)完成下列 $2 \times  2$ 列联表:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\phantom{X} & 主食蔬菜 & 主食肉类 & 总计 \\
+\cline{1-4}
+不超过 45 岁 & 4 & \_\_\_\_\_ & \_\_\_\_\_ \\
+\cline{1-4}
+45 岁以上 & \_\_\_\_\_ & \_\_\_\_\_ & \_\_\_\_\_ \\
+\cline{1-4}
+总计 & \_\_\_\_\_ & \_\_\_\_\_ & \_\_\_\_\_ \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+能否有 99\% 的把握认为老师的饮食习惯与年龄有关？
+
+(2)从所在学校任一名老师设“选到 45 岁以上老师为事件 $A$ ”，“饮食指数高于 70 的老师”为事件 $B$ ，用调查的结果估计 $P\left( {B \mid  A}\right)$ 及 $P\left( {B \mid  \bar{A}}\right)$ (用最简分数作答)；
+
+(3)为了给食堂提供老师的饮食信息，根据(1)(2)的结论，能否有更好的抽样方法来估计老师的饮食习惯, 并说明理由.
+
+附:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$P\left( {{K}^{2} \geq  {k}_{0}}\right)$ & 0.050 & 0.010 & 0.001 \\
+\cline{1-4}
+${k}_{0}$ & 3.841 & 6.635 & 10.828 \\
+\cline{1-4}
+\hline
+\end{tabular}
+\end{center}
+
+${K}^{2} = \frac{n{\left( ad - bc\right) }^{2}}{\left( {a + b}\right) \left( {c + d}\right) \left( {a + c}\right) \left( {b + d}\right) }$
+
+16. 为了选拔培养有志于服务国家重大战略需求且综合素质优秀或基础学科拔尖的学生, 聚焦高端芯片与软件、智能科技、新材料、先进制造和国家安全等关键领域以及国家人才紧缺的人文社会科学领域, 某校在一次模拟考试后,从全体考生中随机抽取 52 名,获取他们本次考试的数学成绩 $\left( x\right)$ 和物理成绩 $\left( y\right)$ ，绘制成如图散点图:根据散点图可以看出 $y$ 与 $x$ 之间有线性相关关系，但图中有两个异常点 $A$ 、 $B$ . 经调查得知， $A$ 考生由于重感冒导致物理考试发挥失常， $B$ 考生因故未能参加物理考试，为了使分析结果更科学准确,剔除这两组数据后,对剩下的数据作处理,得到一些统计的值: $\mathop{\sum }\limits_{{i = 1}}^{{50}}{x}_{i} = {5800},\mathop{\sum }\limits_{{i = 1}}^{{50}}{y}_{i} = {3900}$ , $\mathop{\sum }\limits_{{i = 1}}^{{50}}{x}_{i}{y}_{i} = {462770},\mathop{\sum }\limits_{{i = 1}}^{{50}}{\left( {x}_{i} - \bar{x}\right) }^{2} = {28540},\mathop{\sum }\limits_{{i = 1}}^{{50}}{\left( {y}_{i} - \bar{y}\right) }^{2} = {18930}$ ,其中 ${x}_{i}\text{ 、 }{y}_{i}$ 分别表示这 50 名考生的数学成绩、 物理成绩, $i = 1,2,\cdots ,{50},y$ 与 $x$ 的相关系数 $r \approx  {0.45}$ .
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/bo_d7tk7oc91nqc73875fu0_285_335_550_939_284_0.jpg}
+\end{center}
+ 
+
+(1)若不剔除 $A$ 、 $B$ 两名考生的数据，用 52 组数据作回归分析，设此时 $y$ 与 $x$ 的相关系数为 ${r}_{0}$ . 试判断 ${r}_{0}$ 与 $r$ 的大小关系 (不必说明理由);
+
+(2)求 $y$ 关于 $x$ 的线性回归方程(系数精确到 0.01)，并估计如果 $B$ 考生加了这次物理考试，物理成绩是多少? (精确到 1)
+
+参考数据: $r = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}\left( {{x}_{i} - \bar{x}}\right) \left( {{y}_{i} - \bar{y}}\right) }{\sqrt{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - \bar{x}\right) }^{2}\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {y}_{i} - \bar{y}\right) }^{2}}},\widehat{a} = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}{y}_{i} - n\bar{x} \cdot  \bar{y}}{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} - n{\bar{x}}^{2}},\widehat{b} = \bar{y} - \widehat{a}\bar{x}$ .
+
+\section*{第 13 章 数学建模(必修 4 \& 选择性必修 3)}
+
+\section*{知识梳理}
+
+\section*{1. 数学建模的概念}
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_286_1161_480_320_402_0.jpg}
+\end{center}
+ 
+
+数学建模是对某个现实问题经过必要的简化、合理的假设得到一个数学问题, 称为数学模型, 再求解所得到的数学问题, 然后根据实际情况验证该数学答案是否合理；在合理性得不到保证时，还要进行反复迭代和修正模型.
+
+数学建模是一个建立数学模型的过程, 而数学模型是数学建模的一个结果. 数学建模的全过程一般包括在实际情境中从数学的视角发现问题、提出问题、分析问题、建立模型、求解模型得到答案、回到实际情境验证答案、如果答案不合理则加以改进等步骤, 如此循环直到实际情境中的问题得到合理的回答. 这个过程统称为数学建模活动.
+
+2. 数学建模的基本过程
+
+数学建模的基本过程包括:
+
+ \ding{172} 在实际情境中从数学的视角发现问题
+
+ \ding{173} 提出问题
+
+ \ding{174}  分析问题、建立模型
+
+ \ding{175}  确定参数、计算求解
+
+ \circled{5} 检验结果、改进模型
+
+ \circled{6} 最终解决实际问题、形成报告
+
+3. 数学建模的水平要求
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+情境与问题 & \makecell{ 水平一:了解熟悉的数学模型的实际背景及其数学描述，了解数学模型中的参数、结论的实际含义水平二:能够在熟悉的情境中，发现问题并转化为数学问题，知道数学问题的价值与作用 \\ 水平三:能够在综合的情境中，运用数学思维进行分析，发现情境中的数学关系，提出数学问题 } \\
+\cline{1-2}
+知识与技能 & \makecell{ 水平一:知道数学建模的过程包括:提出问题、建立模型、求解模型、检验结果、完善模型.能够在熟悉的实际情境中, 模仿学过的数学建模过程解决问题 \\ 水平二、能够选择合适的数学模型表达所要解决的数学问题; 理解模型中参数的意义, 知道如何确定参数, 律立模型, 求解模型; 能够根据问题的实际意义检验结果, 完善模型, 解决问题 \\ 水平三:能够运用数学建模的一般方法和相关知识，创造性地建立数学模型，解决问题 } \\
+\cline{1-2}
+思维与表达 & \makecell{ 水平一:对于学过的数学模型，能够举例说明建模的意义，体会其蕴含的数学思想；感悟数学表达对数学建模的重要性 \\ 水平二:能够在关联的情境中，经历数学建模的过程，理解数学建模的意义；能够运用数学语言，表述数学律模过程中的问题以及解决问题的过程和结果，形成研究报告，展示研究成果 \\ 水平三、能够理解数学建模的意义和作用; 能够运用数学语言, 清晰、准确地表达数学建模的过程和结果 } \\
+\cline{1-2}
+交流与反思 & \makecell{ 水平一:在交流的过程中，能够借助或引用已有数学建模的结果说明问题 \\ 水平二:在交流的过程中，能够用模型的思想说明问题 \\ 水平三.在交流的过程中, 能够通过数学建模的结论和思想阐释科学规律和社会现象 } \\
+\cline{1-2}
+\hline
+\end{tabular}
+\end{center}
+
+\section*{§ 13.1 数学建模的基本步骤}
+
+\section*{典型例题精讲}
+
+【例 1】某晚报曾刊登过一则生活趣事, 市民唐某乘坐出租车时, 在半途中骂骂咧咧要求司机临时停靠，打表计价结账，然后重新计价，继续前行，该市民解释说，根据经验，这样分开支付车费比一次性付费便宜一些, 他的这一说法有道理吗?
+
+确实, 由于出租车运价上调, 有些人出行时会估计一下可能的价格, 再决定是否乘坐出租车.
+
+据了解，该市出租车在 5 时到 23 时之间起租价为 14 元/3 km，超起租里程单价为 2.50 元/km，总里程超过 ${15}{{km}}$ (不含 ${15}{{km}}$ ) 部分按超起租里程单价加 50\%. 此外，相关部门还规定了低速等候费和其他时段的计价办法, 以及适合其他车型的计价办法.
+
+你乘坐过出租车吗? 你会仿效那位市民唐某的做法吗? 为什么?
+
+(1)根据上述情境你能提出什么数学问题？为了解决你的问题，请给出一些合理假设；
+
+(2)你能否根据你的假设建立数学模型, 并回答你所提出的问题.
+
+【例 2】雨天外出虽然有雨伞，却时常免不了淋湿衣袖、裤脚、背包等，小明想通过数学建模的方法研究如何撑伞可以让淋湿的面积尽量小. 为了简化问题小明做出下列假设:
+
+假设 1 :在网上查阅了人均身高和肩宽的数据后，小明把人假设为身高、肩宽分别为 170cm、40cm 的矩形“纸片人”:
+
+假设 2 : 受风的影响,雨滴下落轨迹视为与水平地面所成角为 ${60}^{ \circ  }$ 的直线;
+
+假设 3: 伞柄 ${OT}$ 长为 ${60}{{cm}}$ ,可绕矩形 “纸片人”上点 $O$ 旋转;
+
+假设 4: 伞面为被伞柄 ${OT}$ 垂直平分的线段 ${AB},{AB} = {120}{{cm}}$ .
+
+以如图 1 方式撑伞，矩形“纸片人”将淋湿“裤脚”；以如图 2 方式撑，则矩形“纸片人”将淋湿“头和肩膀”。
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{images/bo_d7tk7oc91nqc73875fu0_288_409_511_791_301_0.jpg}
+\end{center}
+ 
+
+(例 2 图)
+
+(1)如图 3 在矩形“纸片人”上身恰好不被淋湿时，求其“裤脚”被淋湿(阴影)部分的面积(结果精确到 0.1c ${\text{ m }}^{2}$ );
+
+(2)请根据你的生活经验对小明建立的数学模型提出两条改进建议 (无需求解改进后的模型，如果建议超过两条仅对前两条评分).
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_289_1290_160_169_307_0.jpg}
+\end{center}
+ 
+
+(例 3 图)
+
+【例 3】小明同学最近注意到一条新闻, 易拉罐 (如右图所示) 作为饮品的容器, 每年的用量可达数万亿个. 这让他想到一个用料最优化的问题, 即在易拉罐的体积一定的情况下，如何确定易拉罐的高和半径才能使得用料最省？他研究发现易拉罐的上盖、下底和侧壁的厚度是不同的, 进而结合数学建模知识进行了深入研究.
+
+以下是小明的研究过程, 请你补全缺失的部分.
+
+(1)模型假设: \ding{172} 易拉罐近似看成圆柱体； \ding{173} 上盖、下底、侧壁的厚度处处均匀； \ding{174} 上盖、 下底、侧壁所用金属相同； \ding{175} 易拉罐接口处的所用材料忽略不计.
+
+(2)建立模型:记圆柱体积为 $V$ ，高为 $h$ ，底面半径为 $r$ ，上盖、下底和侧壁的厚度分别为 ${d}_{1}$ 、 ${d}_{2}$ 、 ${d}_{3}$ ，金属用料总量为 $C$ . 由几何知识得到如下数量关系:
+
+$\left\{  \begin{array}{l} V = \pi {r}^{2}h,\text{  \ding{172}  } \\  C = \pi {r}^{2}{d}_{1} + \pi {r}^{2}{d}_{2} + {2\pi rh}{d}_{3}. \end{array}\right.$
+
+由  \ding{172}  得 $h = \frac{V}{\pi {r}^{2}}$ ，代入  \ding{173}  得: $C = \pi \left( {{d}_{1} + {d}_{2}}\right) {r}^{2} + \frac{{2V}{d}_{3}}{r}$
+
+$\because V\text{ 、 }{d}_{1}\text{ 、 }{d}_{2}\text{ 、 }{d}_{3}$ 都是常数,不妨设 $a = \pi \left( {{d}_{1} + {d}_{2}}\right) ,b = {2V}{d}_{3}$ ,
+
+则用料总量的函数简化为 $C = a{r}^{2} + \frac{b}{r}$ .
+
+请写出表格中代入整理这一步的目的是:\_\_\_\_\_【分】
+
+(3)求解模型:
+
+$\therefore$ 当 $r =$ \_\_\_\_\_(用 $a\text{ 、 }b$ 表示)时， $C$ 取得最小值，即在此种情况下用料最省.
+
+(4)检验模型:小明上网查阅到目前 330 毫升可乐易拉罐的数据，得知 ${d}_{1} = {0.028}{{cm}}$ ， ${d}_{2} = {0.021}{{cm}}$ ， ${d}_{3} = {0.011}{{cm}}$ ，代入(3)的模型结果，经计算得 $r \approx  {2.868}{{cm}}$ .
+
+经验算,确认计算无误,但是这与实际罐体半径 ${3.305}{{cm}}$ 差异较大.
+
+实际上, 在经济利益驱动之下, 目前的罐体成本应该已经达最优.
+
+(5)模型评价与改进:
+
+模型计算结果与现实数据存在较大差异的原因可能为:\_\_\_\_\_，
+
+相应改进措施为:\_\_\_\_\_
+
+【例 4】某企业新研发了一种产品, 产品的成本由原料成本及非原料成本组成. 每件产品的非原料成本 $y$ (单位:元) 与生产该产品的数量 $x$ (单位:千件) 有关，经统计得到如下数据:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+\cline{1-9}
+$y$ & 112 & 61 & 44.5 & 35 & 30.5 & 28 & 25 & 24 \\
+\cline{1-9}
+\hline
+\end{tabular}
+\end{center}
+
+根据以上数据,绘制了散点图.
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_290_1107_409_378_472_0.jpg}
+\end{center}
+ 
+
+(例 4 图)
+
+观察散点图, 两个变量不具有线性相关关系, 现考虑用反比例函数模型 $y = a + \frac{b}{x}$ 和指数函数模型 $y = c{{e}}^{ax}$ 分别对两个变量的关系进行拟合. 已求得用指数函数模型拟合的经验回归方程为 $\widehat{y} = {96.54}{{e}}^{-{0.2x}},\ln y$ 与 $x$ 的相关系数 ${r}_{1} =  - {0.94}$ .
+
+(1)用反比例函数模型求 $y$ 关于 $x$ 的经验回归方程；
+
+(2)用相关系数对模型进行分析，问上述两个函数模型哪一个拟合效果更好(精确到 0.01)，并用其估计产量为 10 千件时每件产品的非原料成本；
+
+(3)该企业采取订单生产模式(根据订单数量进行生产，即产品全部售出). 根据市场调研数据, 若该产品单价定为 100 元, 则签订 9 千件订单的概率为 0.8 ，签订 10 千件订单的概率为 0.2 ；若单价定为 90 元，则签订 10 千件订单的概率为 0.3 ，签订 11 千件订单的概率为 0.7 . 已知每件产品的原料成本为 10 元, 根据(2)的结果, 企业要想获得更高利润, 产品单价应选择 100 元还是 90 元, 请说明理由.
+
+参考公式: 数据 $\left( {{u}_{1},{v}_{1}}\right) ,\left( {{u}_{2},{v}_{2}}\right) ,\cdots ,\left( {{u}_{n},{v}_{n}}\right)$ 的经验回归直线 $\widehat{v} = \widehat{\alpha }u + \widehat{\beta }$ 的斜率和截距的最小二乘估计为:
+
+$\widehat{\alpha } = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{u}_{i}{v}_{i} - n\bar{u}\bar{v}}{\mathop{\sum }\limits_{{i = 1}}^{n}{u}_{i}^{2} - n{\bar{u}}^{2}},\widehat{\beta } = \bar{v} - \widehat{\alpha }\bar{u}$ ,相关系数 $r = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{u}_{i}{v}_{i} - n\bar{u}\bar{v}}{\sqrt{\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{u}_{i}^{2} - n{\bar{u}}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{v}_{i}^{2} - n{\bar{v}}^{2}}\right) }}$ .
+
+【例 5】一种微生物群体可以经过自身繁殖不断生存下来,设一个这种微生物为第 0 代,经过 $k(k = 0$ , $1,2,\cdots )$ 次繁殖后为第 $k$ 代,该微生物每代繁殖的个数相互独立,且具有相同的分布,设 $X$ 表示 1 个微生物个体繁殖下一代的个数, $P\left( {X = i}\right)  = {p}_{i}\left( {i = 0,1,2,3}\right)$ .
+
+(1)已知 ${p}_{0} = {0.4},{p}_{1} = {0.3},{p}_{2} = {0.2},{p}_{3} = {0.1}$ ,求 $E\left\lbrack  X\right\rbrack$ ;
+
+(2)已知该种微生物经过多代繁殖后临近灭绝的概率 $p$ 是方程 ${p}_{0} + {p}_{1}x + {p}_{2}{x}^{2} + {p}_{3}{x}^{3} = x$ 的一个最小正实根，求证:当 $E\left\lbrack  X\right\rbrack   \leq  1$ 时， $p = 1$ ，当 $E\left\lbrack  X\right\rbrack   > 1$ 时， $p < 1$ ；
+
+(3)利用数学模型解释现实生活，根据你的理解说明(2)问结论的实际含义.
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1.一般的数学建模包含如下活动过程: \ding{172} 建立模型； \ding{173} 实际情境； \ding{174} 提出问题； \ding{175} 求解模型； \circled{5} 实际结果；  \circled{6} 检验结果，请写出正确的序号顺序\_\_\_\_\_.
+
+2. 珠穆朗玛峰高达 8848.86m，但即使你拥有良好的视力，你也无法在上海看到它. 一个观察者距离珠穆朗玛峰多远，才能在地面上看到它呢？为了能够通过几何方法解决这个问题，需要利用简单的几何模型表示这个问题情境，在此过程中，有下列假设: \ding{172}  珠穆朗玛峰的形状为等腰梯形； \ding{173}  地球的形状是一个球体；  \ding{174} 太阳光线沿直线传播； \ding{175} 没有事物可以阻碍人们看到珠穆朗玛峰的视线，你认为最不重要的一个假设是\_\_\_\_\_.
+
+3. 某兴趣小组设计制作一枚不均匀的骰子, 满足:
+
+假设1:这枚骰子有六个面，点数分别为1、2、3、4、5、6；
+
+假设 2 : 当投掷骰子的时候, 偶数点出现的概率比奇数点出现的概率大一倍;
+
+假设 3: 不同偶数点出现的概率相同, 不同奇数点出现的概率也相同.
+
+现将骰子投掷一次，则求点数不小于 4 的概率为\_\_\_\_\_.
+
+4. "学如逆水行舟，不进则退；心似平原跑马，易放难收” (明。《增广贤文》) 是勉励人们专心学习的. 如果每天的“进步”率都是 $1\%$ ，那么一年后是 ${\left( 1 + 1\% \right) }^{365} = {1.01}^{365}$ ；如果每天的“退步”率都是 $1\%$ ，那么一年后是 ${\left( 1 - 1\% \right) }^{365} = {0.99}^{365}$ . 一年后“进步”的是“退步”的 $\frac{{1.01}^{365}}{{0.99}^{365}} = {\left( \frac{1.01}{0.99}\right) }^{365} \approx  {1481}$ 倍. 如果每月的“进步”率和“退步”率都是 20\%，那么大约经过\_\_\_\_\_月后“进步”的是 “退步”的一万倍. (精确到 1 月)
+
+5.2023 年 1 月底, 人工智能研究公司 OpenAI 发布的名为 “ChatGTP”的人工智能聊天程序进入中国，迅速以其极高的智能化水平引起国内关注. 深度学习是人工智能的一种具有代表性的实现方法, 它是以神经网络为出发点的,在神经网络优化中,指数衰减的学习率模型为 $L = {L}_{0}{D}^{\frac{G}{G0}}$ ,其中 $L$ 表示每一轮优化时使用的学习率, ${L}_{0}$ 表示初始学习率, $D$ 表示衰减系数, $G$ 表示训练迭代轮数, ${G}_{0}$ 表示衰减速度. 已知某个指数衰减的学习率模型的初始学习率为 0.8 , 衰减速度为 12 , 且当训练迭代轮数为 12 时, 学习率衰减为 0.5 . 则学习率衰减到 0.2 以下(不含 0.2 )所需的训练迭代轮数至少为\_\_\_\_\_.
+
+6. 某传染病在某地蔓延，当地医疗机构采取了各种针对性的治疗方法，取得了不错的成效，每日治愈的患者人数如表所示: 由表格可得 $y$ 关于 $x$ 的线性回归方程为 $\widehat{y} = \widehat{b}x + 1$ ,若第 6 日实际治愈人数为18人,则此回归模型第 6 日的离差(实际值减去预报值)为\_\_\_\_\_.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+第 $x$ 日 & 1 & 2 & 3 & 4 & 5 \\
+\cline{1-6}
+治愈人数 $y$ (人) & 2 & 9 & 10 & 13 & 16 \\
+\cline{1-6}
+\hline
+\end{tabular}
+\end{center}
+
+7.小明和他的数学建模小队现有这样一个问题:提高过江大桥的车辆通行能力可改善整个城市的交通状况，那么，怎样才可以提高呢? 他们理想化地建立这样一个关系，在一般情况下，大桥上的车流速度 $v$ (单位: ${k}{m}/{h}$ )是车流密度 $x$ (单位:辆/ ${{km}}$ )的函数，当桥上的车流密度达到 200 辆/ ${{km}}$ 时，造成堵塞，此时车流速度为 0 ; 当车流密度不超过 20 辆/km 时,车流速度为 60 km/h. 研究表明,当 $x \in  \left\lbrack  {{20},{200}}\right\rbrack$ 时,车流速度 $v$ 是车流密度 $x$ 的一次函数. 问:当车流密度为\_\_\_\_\_辆/ ${{km}}$ 时，车流量(单位时间内通过桥上某观测点的车辆数，单位:辆/h)可以达到最大.
+
+8. 某一时段内，从天空降落到地面上的雨水，未经蒸发、渗漏、流失而在水平面上积聚的深度，称为这个时段的降雨量(单位:mm).24h 降雨量的等级划分如下:
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+等级 & 24 小时降雨量(精确到 0.1) \\
+\cline{1-2}
+... ... & ... ... \\
+\cline{1-2}
+小雨 & 0.1\textasciitilde 9.9 \\
+\cline{1-2}
+中雨 & 10.0\textasciitilde 24.9 \\
+\cline{1-2}
+大雨 & 25.0\textasciitilde 49.9 \\
+\cline{1-2}
+暴雨 & 50.0\textasciitilde 99.9 \\
+\cline{1-2}
+... ... & ... ... \\
+\cline{1-2}
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_292_1007_933_303_285_0.jpg}
+\end{center}
+ 
+
+在综合实践活动中,某小组自制了一个底面直径为 ${200}{{mm}}$ 、高为 ${300}{{mm}}$ 的圆锥形雨量器. 若一次降雨过程中，该雨量器收集的 24h 的雨水高度是 150mm (如图所示)，则这 24h 降雨量的等级是\_\_\_\_\_. (填 “小雨”“中雨”“大雨”或“暴雨”)
+
+9. 某公司通过统计分析发现，工人工作效率 $E$ 与工作年限 $r$ ( $r > 0$ )、劳累程度 $T\left( {0 < T < 1}\right)$ 、劳动动机 $b\left( {1 < b < 5}\right)$ 相关,并建立了数学模型 $E = {10} - {10T} \cdot  {b}^{-{0.14r}}$ . 已知甲、乙为该公司的员工，则下列说法正确的有\_\_\_\_\_.
+
+ \ding{172} 甲与乙工作年限相同，且甲比乙工作效率高，劳动动机低，则甲比乙劳累程度强；
+
+ \ding{173} 甲与乙劳动动机相同，且甲比乙工作效率高，工作年限短，则甲比乙劳累程度弱；
+
+ \ding{174} 甲与乙劳累程度相同，且甲比乙工作年限长，劳动动机高，则甲比乙工作效率高；
+
+ \ding{175} 甲与乙劳动动机相同，且甲比乙工作年限长，劳累程度弱，则甲比乙工作效率高。
+
+\section*{二、选择题}
+
+10. 工厂需定期购买原料并存放在仓库供生产之用，因此必须考虑解决什么才是合理的存贮量问题. 为了建立数学模型解决相关问题，需要分析问题情境，提出合理假设，以便简化实际问题情境，抓住问题核心， 如我们可以提出:“假设1:该工厂对于原料的需求量是恒定的”“假设2:为了保障生产，仓库内的原料不可以缺货”. 那么为了更好地建立模型, 你认为还需要下面哪些假设 ( )
+
+ \ding{172} 该厂每天的产能是个定值，所有产品都能售出； \ding{173} 每件产品所需原料的每日存储费用是个常数；
+
+ \ding{174}  每件产品所需购买原料的价格不变；  \ding{175} 工厂不能保证所生产的每一件产品都是正品.
+
+A.  \ding{172}  \ding{173}  \ding{174}  \ding{175} . B.  \ding{172}  \ding{173} . C.  \ding{172}  \ding{173}  \ding{174} . D.  \ding{172}  \ding{175} .
+
+11. 数学与音乐有着紧密的关联. 声音中也包含正弦函数，声音是由于物体的振动产生的能引起听觉的波，每一个音都是由纯音合成的. 纯音的数学模型是函数 $y = A\sin {\omega x}$ ，我们平时听到的音乐一般不是纯音，而是有多种波叠加而成的复合音. 已知刻画某复合音的函数为 $\sin x + \frac{1}{2}\sin {2x} + \frac{1}{3}\sin {3x}$ ,则其部分图像大致为 ( )
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_293_1114_379_298_202_0.jpg}
+\end{center}
+ 
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_293_206_376_304_208_0.jpg}
+\end{center}
+ 
+
+y y
+
+0
+
+A. B. C. D.
+
+(第 11 题图)
+
+12. 为了估计一批产品的不合格品率 $p$ ,现从这批产品中随机抽取一个样本容量为 $n$ 的样本 ${\xi }_{1}\text{ 、 }{\xi }_{2}$ 、 ${\xi }_{3}\text{ 、 }\cdots \text{ 、 }{\xi }_{n}$ ,定义 ${\xi }_{i} = \left\{  \begin{array}{l} 1,\text{ 第 }i\text{ 次不合格,则 }P\left( {{\xi }_{i} = 1}\right)  = p,P\left( {{\xi }_{i} = 0}\right)  = 1 - p,\text{ 其中 }i = 1,2,\cdots ,n,\text{ 记 }L\left( p\right)  =  \end{array}\right.  P\left( {{\xi }_{1} = {x}_{1},{\xi }_{2} = {x}_{2},\cdots ,{\xi }_{n} = {x}_{n}}\right)$ (其中 ${x}_{i} = 0$ 或 $1,i = 1,2,\cdots ,n$ ),称 $L\left( p\right)$ 表示 $p$ 为参数的似然函数. 极大似然估计法是建立在极大似然原理基础上的一个统计方法, 极大似然原理的直观想法是: 一个随机试验如有若干个可能的结果 $A\text{ 、 }B\text{ 、 }C\text{ 、 }\cdots$ ,若在一次试验中,结果 $A$ 出现,则一般认为试验条件对 $A$ 出现有利,也即 $A$ 出现的概率很大. 极大似然估计是一种用给定观察数据来评估模型参数的统计方法, 即 “模型已定, 参数未知", 通过若干次试验, 观察其结果, 利用试验结果得到某个参数值能够使样本出现的概率为最大.根据以上原理, 下面说法不正确的是 ( )
+
+A. 有外形完全相同的两个箱子, 甲箱有 99 个白球 1 个黑球, 乙箱有 1 个白球 99 个黑球. 今随机地抽取一箱, 再从取出的一箱中抽取一球, 结果取得白球, 那么该球一定是从甲箱子中抽出的.
+
+B. 一个池塘里面有鲤鱼和草鱼，打捞了 100 条鱼，其中鲤鱼 80 条、草鱼 20 条，那么推测鲤鱼和草鱼的比例为 $4 : 1$ 时,出现 80 条鲤鱼、 20 条草鱼的概率是最大的.
+
+C. $L\left( p\right)  = {p}^{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}}{\left( 1 - p\right) }^{n - \mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}}\left( {{x}_{i} = 0\text{ 或 }1,i = 1,2,\cdots ,n}\right)$ .
+
+D. $L\left( p\right)$ 达到极大值时,参数 $p$ 的极大似然估计值为 $\frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}$ .
+
+\section*{三、解答题}
+
+13. 甲虫是行动较快的昆虫之一，如表记录了某种类型的甲虫的爬行速度:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+时间 $t\left( {s}\right)$ & 1 & 2 & 3 & ... & ? & ... & 60 \\
+\cline{1-8}
+距离 $s\left( {{cm}}\right)$ & 9.8 & 19.6 & 29.4 & ... & 49 & ... & ? \\
+\cline{1-8}
+\hline
+\end{tabular}
+\end{center}
+
+(1)你能建立一个等差数列的模型, 表示甲虫的爬行距离和时间之间的关系吗？
+
+(2)利用建立的模型计算，甲虫 $1{{min}}$ 能爬多远？它爬行 ${49}{{cm}}$ 需要多长时间？
+
+14. 学校新建的体育器材室的一面外墙如图 1 所示,它的轮廓由抛物线和矩形 ${ABCD}$ 构成. 数学兴趣小组要为器材室设计一个矩形标牌 ${EFGH}$ ,要求矩形 ${EFGH}$ 的顶点 $E\text{ 、 }H$ 在抛物线上,顶点 $F\text{ 、 }G$ 在矩形 ${ABCD}$ 的边 ${AD}$ 上. 为了设计面积最大的矩形 ${EFGH}$ ,兴趣小组对矩形 ${EFGH}$ 的面积与它的一边 ${FG}$ 的长之间的关系进行研究.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/bo_d7tk7oc91nqc73875fu0_294_490_355_673_340_0.jpg}
+\end{center}
+ 
+
+(第 14 题图)
+
+具体研究过程如下, 请补充完整.
+
+(1)建立模型:
+
+以 ${FG}$ 的中点为坐标原点,建立如图 2 所示的平面直角坐标系 ${xOy}$ ,通过研究发现,抛物线满足函数关系 $y =  - \frac{1}{4}{x}^{2} + 1\left( {-2 \leq  x \leq  2}\right)$ . 设矩形 ${EFGH}$ 的面积为 $S{{m}}^{2},{FG}$ 的长为 $a{m}$ ,则另一边 ${HG}$ 的长为 m(用含 $a$ 的代数式表示)，得到 $S$ 与 $a$ 的关系式为:\_\_\_\_\_ $\left( {0 < a < 4}\right)$ ；
+
+我们的数学模型为: 当 ${FG}$ 为多长时,矩形 ${EFGH}$ 面积最大.
+
+(2)求解模型:
+
+利用数学知识,求解上述数学模型:
+
+(3)模型总结:
+
+当 ${FG}$ 的长约为\_\_\_\_\_ ${m}$ 时,矩形面积最大. (精确到 0.1)
+
+
+15.  \ding{172}  在菜市上，摊主小王叫卖:“洋芋便宜卖了，两元一斤，三元两斤，四元三斤，五元四斤，六元五斤，快来买啊！”结果一群人都在买六元五斤的. 由此得到如下结论:一次购买的斤数越多，单价越低，请建立一个函数模型,来说明以上结论;
+
+ \ding{173} 小王卖洋芋赚到了钱，想进行某个项目的投资，约定如下: \ding{172} 投资金额固定； \ding{173} 投资年数可自由选择，但最短 3 年，最长不超过 10 年； \ding{174} 投资年数 $x\left( {x \in  {\mathbf{N}}^{ * }}\right)$ 与总回报 $y$ 的关系，可选择下述三种方案中的一种:
+
+方案一:当 $x = 3$ 时， $y = 6$ ，以后 $x$ 每增加 1 时， $y$ 增加 2；
+
+方案二: $y = \frac{1}{3}{x}^{2}$ ;
+
+方案三: $y = {\left( \sqrt[3]{3}\right) }^{x}$ .
+
+请你根据以上材料，结合你的分析，为小王提供一个最佳投资方案.
+
+16. 小张决定加盟某专营店自主创业,该专营店统计了近五年来创收利润数 ${y}_{i}$ (单位: 万元) 与时间 ${t}_{i}$ (单位:年)的数据，列表如下:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+${t}_{i}$ & 1 & 2 & 3 & 4 & 5 \\
+\cline{1-6}
+${y}_{i}$ & 2.4 & 2.7 & 4.1 & 6.4 & 7.9 \\
+\cline{1-6}
+\hline
+\end{tabular}
+\end{center}
+
+(1)依据表中给出的数据，是否可用线性回归模型拟合 $y$ 与 $t$ 的关系，请计算相关系数 $r$ ，并加以说明 (计算结果精确到 0.01)(若 $\left| r\right|  > {0.75}$ ，则线性相关程度很高，可用线性回归模型拟合)；
+
+(2)该专营店为吸引顾客，特推出两种促销方案.
+
+方案一:每满 500 元可减 50 元；
+
+方案二:每满 500 元可抽奖一次，每次中奖的概率都为 $\frac{2}{5}$ ，中奖就可以获得 100 元现金奖励. 假设顾客每次抽奖的结果相互独立.
+
+ \ding{172} 某位顾客购买了 1050 元的产品，该顾客选择参加两次抽奖，求该顾客获得 100 元现金奖励的概率；
+
+ \ding{173} 某位顾客购买了 1500 元的产品，作为专营店老板，是希望该顾客直接选择返回 150 元现金，还是选择参加三次抽奖? 说明理由.
+
+\section*{§ 13.2 数学建模案例}
+
+\section*{典型例题精讲}
+
+【例 1】如图, “十字歇山”是由两个直三棱柱重叠后的景象, 重叠后的底面为正方形, 直三棱柱的底面是顶角为 ${120}^{ \circ  }$ ,腰为 3 的等腰三角形,求该几何体的体积.
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{images/bo_d7tk7oc91nqc73875fu0_296_938_531_543_266_0.jpg}
+\end{center}
+ 
+
+(例 1 图)
+
+【例 2】某企业因技术升级,决定实行新的绩效方案.方案起草后,为了解员工对新绩效方案是否满意, 决定采取如下“随机化回答技术”进行问卷调查:
+
+一个袋子中装有三个大小相同的小球, 其中 1 个黑球、 2 个白球. 企业所有员工从袋子中有放回的随机摸两次球, 每次摸出一球. 约定 “若两次摸到的球的颜色不同, 则按方式 I 回答问卷, 否则按方式 II 回答问卷”.
+
+方式 I :若第一次摸到的是白球，则在问卷中画“○”，否则画“ \ding{55} ”；
+
+方式 II :若你对新绩效方案满意，则在问卷中画“○”，否则画“ \ding{55} ”.
+
+当所有员工完成问卷调查后, 统计画  \bigcirc , 画 $\times$ 的比例. 用频率估计概率, 由所学概率知识即可求得该企业员工对新绩效方案的满意度的估计值. 其中，满意度 $= \frac{\text{ 企业所有对新绩效方案满意的员工人数 }}{\text{ 企业所有员工人数 }}$
+
+(1)若该企业某部门有 9 名员工，用 $X$ 表示其中按方式 I 回答问卷的人数，求 $X$ 的数学期望；
+
+(2)若该企业的所有调查问卷中，画“○”与画“ \ding{55} ”的比例为 $4 : 5$ ，试估计该企业员工对新绩效方案的满意度.
+
+【例 3】为了节能环保、节约材料，定义建筑物的“体形系数” $S = \frac{{F}_{0}}{{V}_{0}}$ ，其中 ${F}_{0}$ 为建筑物暴露在空气中的面积 (单位: ${{m}}^{2}$ ), ${V}_{0}$ 为建筑物的体积 (单位: ${{m}}^{3}$ ).
+
+(1)若有一个圆柱体建筑的底面半径为 $R$ ，高度为 $H$ ，暴露在空气中的部分为上底面和侧面，试求该建筑体的“体形系数” $S$ ; (结果用含 $R$ 、 $H$ 的代数式表示)
+
+(2)定义建筑物的“形状因子”为 $f = \frac{{L}^{2}}{A}$ ，其中 $A$ 为建筑物底面面积， $L$ 为建筑物底面周长，又定义 $T$ 为总建筑面积,即为每层建筑面积之和 (每层建筑面积为每一层的底面面积). 设 $n$ 为某宿舍楼的层数,层高为 $3{m}$ ,则可以推导出该宿舍楼的 “体形系数”为 $S = \sqrt{\frac{f \cdot  n}{T}} + \frac{1}{3n}$ . 当 $f = {18},T = {10000}$ 时,试求当该宿舍楼的层数 $n$ 为多少时,“体形系数” $S$ 最小.
+
+【例 4】有一条长为 ${120}{m}$ 的步行道 ${OA},A$ 是垃圾投放点 ${\omega }_{1}$ ,若以 $O$ 为原点, ${OA}$ 为 $x$ 轴正半轴建立直角坐标系,设点 $B\left( {x,0}\right)$ ,现要建设另一座垃圾投放点 ${\omega }_{2}\left( {t,0}\right)$ ,函数 ${f}_{t}\left( x\right)$ 表示与点 $B$ 距离最近的垃圾投放点的距离.
+
+(1)若 $t = {60}$ ，求 ${f}_{60}\left( {10}\right)$ 、 ${f}_{60}\left( {80}\right)$ 、 ${f}_{60}\left( {95}\right)$ 的值，并写出 ${f}_{60}\left( x\right)$ 的函数解析式；
+
+(2)若可以通过 ${f}_{t}\left( x\right)$ 与坐标轴围成的面积来测算扔垃圾的便利程度，面积越小越便利. 问:垃圾投放点 ${\omega }_{2}$ 建在何处才能比建在中点时更加便利?
+
+【例 5】某制药公司研制了一款针对某种病毒的新疫苗. 该病毒一般通过病鼠与白鼠之间的接触传染， 现有 $n$ 只白鼠,每只白鼠在接触病鼠后被感染的概率为 $\frac{1}{2}$ ,被感染的白鼠数用随机变量 $X$ 表示,假设每只白鼠是否被感染之间相互独立.
+
+(1)若 $P\left( {X = 5}\right)  = P\left( {X = {95}}\right)$ ，求数学期望 $E\left\lbrack  X\right\rbrack$ ；
+
+(2)接种疫苗后的白鼠被病鼠感染的概率为 $p$ ，现有两个不同的研究团队理论研究发现概率 $p$ 与参数 $\theta \left( {0 < \theta  < 1}\right)$ 的取值有关. 团队 $A$ 提出函数模型为 $p = \ln \left( {1 + \theta }\right)  - \frac{2}{3}{\theta }^{2}$ . 团队 $B$ 提出函数模型为 $p = \frac{1}{2}(1 -  {{e}}^{-\theta }$ ). 现将白鼠分成 10 组，每组 10 只，进行实验，随机变量 ${X}_{i}\left( {i = 1,2,\cdots ,{10}}\right)$ 表示第 $i$ 组被感染的白鼠数， 现将随机变量 ${X}_{i}\left( {i = 1,2,\cdots ,{10}}\right)$ 的实验结果 ${x}_{i}\left( {i = 1,2,\cdots ,{10}}\right)$ 绘制成频数分布图，如图所示.
+
+ \ding{172} 试写出事件“ ${X}_{1} = {x}_{1},{X}_{2} = {x}_{2},\cdots ,{X}_{10} = {x}_{10}$ ”发生的概率表达式(用 $p$ 表示，组合数不必计算)；
+
+ \ding{173} 在统计学中，若参数 $\theta  = {\theta }_{0}$ 时使得概率 $P\left( {{X}_{1} = {x}_{1},{X}_{2} = {x}_{2},\cdots ,{X}_{10} = {x}_{10}}\right)$ 最大，称 ${\theta }_{0}$ 是 $\theta$ 的最大似然估计. 根据这一原理和团队 $A\text{ 、 }B$ 提出的函数模型,判断哪个团队的函数模型可以求出 $\theta$ 的最大似然估计, 并求出最大似然估计.
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{images/bo_d7tk7oc91nqc73875fu0_298_902_745_580_342_0.jpg}
+\end{center}
+ 
+
+\section*{四基达标精练}
+
+\section*{一、填空题}
+
+1. 青少年视力是社会普遍关注的问题, 视力情况可借助视力表测量. 通常用五分记录法和小数记录法记录视力数据,五分记录法的数据 $L$ 和小数记录法的数据 $V$ 满足 $L = 5 + \lg V$ . 已知某同学视力的五分记录法的数据为 4.9 ，则其视力的小数记录法的数据约为\_\_\_\_\_. (精确到 0.1)
+
+2. 从某网络平台推荐的影视作品中抽取 400 部, 统计其评分数据,将所得 400 个评分数据分为 8 组: $\lbrack {66},{70})$ , $\lbrack {70},{74}),\cdots \left\lbrack  {{94},{98}}\right\rbrack$ ,并整理得到如图所示频率分布直方图, 则评分在区间 $\lbrack {82},{86})$ 内的影视作品数量是\_\_\_\_\_.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/bo_d7tk7oc91nqc73875fu0_298_877_1675_621_371_0.jpg}
+\end{center}
+ 
+
+3. 图 1 是中国古代建筑中的举架结构， $A{A}^{\prime }$ 、 $B{B}^{\prime }$ 、 $C{C}^{\prime }$ 、 $D{D}^{\prime }$ 是桁，相邻桁的水平距离称为步，垂直距离称为举. 图 2 是某古代建筑屋顶截面的示意图,其中 $D{D}_{1}$ 、 $C{C}_{1}$ 、 $B{B}_{1}$ 、 $A{A}_{1}$ 是举, $O{D}_{1}$ 、 $D{C}_{1}$ 、 $C{B}_{1}$ 、 $B{A}_{1}$ 是相等的步,相邻桁的举步之比分别为 $\frac{D{D}_{1}}{O{D}_{1}} = {0.5},\frac{C{C}_{1}}{D{C}_{1}} = {k}_{1},\frac{B{B}_{1}}{C{B}_{1}} = {k}_{2},\frac{A{A}_{1}}{B{A}_{1}} = {k}_{3}$ . 已知 ${k}_{1},{k}_{2},{k}_{3}$ 成公是为 0.1 的等差数列,且直线 ${OA}$ 的斜率为 0.725 ,则 ${k}_{3} =$ \_\_\_\_\_.
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{images/bo_d7tk7oc91nqc73875fu0_299_433_380_743_247_0.jpg}
+\end{center}
+ 
+
+(第 3 题图)
+
+4. 在卫星导航系统中,地球静止同步轨道卫星的轨道位于地球赤道所在平面,轨道高度为 ${36000}{{km}}$ (轨道高度是指卫星到地球表面的距离). 将地球看作是一个球心为 $O$ ,半径 $r$ 为 ${6400}{{km}}$ 的球,其上点 $A$ 的纬度是指 ${OA}$ 与赤道平面所成角的度数. 地球表面上能直接观测到的一颗地球静止同步轨道卫星点的纬度最大值为 $\alpha$ ,该卫星信号覆盖地球表面的表面积 $S = {2\pi }{r}^{2}\left( {1 - \cos \alpha }\right)$ (单位: ${{{km}}}^{2}$ ),则 $S$ 占地球表面积的百分比约为\_\_\_\_\_. (精确到 $1\%$ )
+
+5. 某年 $A$ 公司的股价在年初 $\left( {t = 0\text{ 时 }}\right)$ 的股价是每股 5 元人民币,到了年末 $\left( {t = {12}\text{ 时 }}\right)$ 涨到了每股 6 元人民币. 经过建立模型分析发现,在该年第 $t$ 个月的时候, $A$ 公司的股价可以用函数 $A = {A}_{0}{{e}}^{kt}$ 来表示,其中 $k$ 为常数. 假设 $A$ 公司的股价继续按照上述的模型持续增长,则当 $A$ 公司的股价涨到 10 元时, $t$ 的值约为\_\_\_\_\_(结果精确到个位数).
+
+6. 甲烷分子式为 ${{{CH}}}_{4}$ ，其结构抽象成的立体几何模型如图所示，碳原子位于四个氢原子的正中间位置，四个碳氢键长度相等,且任意两个氢原子等距排列. 用 $C$ 表示碳原子的位置,用 ${H}_{1}\text{ 、 }{H}_{2}\text{ 、 }{H}_{3}\text{ 、 }{H}_{4}$ 表示四个氢原子的位置，设 $\alpha  = \left\langle  {\overrightarrow{C{H}_{1}},\overrightarrow{C{H}_{4}}}\right\rangle$ ，则 $\cos {2\alpha } =$ \_\_\_\_\_.
+
+7.2020 年 12 月 8 日,中国和尼泊尔联合公布珠穆朗玛峰最新高程为 8848.86 (单位: ${m}$ ),三角高程测量法是珠峰高程测量方法之一. 如图是三角高程测量法的一个示意图,现有 $A\text{ 、 }B\text{ 、 }C$ 三点在同一水平面上的投影 ${A}^{\prime }\text{ 、 }{B}^{\prime }\text{ 、 }{C}^{\prime }$ ,且 $\angle {A}^{\prime }{C}^{\prime }{B}^{\prime } = {45}^{ \circ  },\angle {A}^{\prime }{B}^{\prime }{C}^{\prime } = {60}^{ \circ  }$ ,由点 $C$ 测得点 $B$ 的仰角为 ${15}^{ \circ  },B{B}^{\prime }$ 与 $C{C}^{\prime }$ 的差为 100 ; 由点 $B$ 测得点 $A$ 的仰角为 ${45}^{ \circ  }$ ，则 $A$ 、 $C$ 两点到水平面 ${A}^{\prime }{B}^{\prime }{C}^{\prime }$ 的高度差 $A{A}^{\prime } - C{C}^{\prime }$ 约为\_\_\_\_\_m.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_299_373_1426_263_228_0.jpg}
+\end{center}
+ 
+
+(第 6 题图)
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_299_927_1389_298_314_0.jpg}
+\end{center}
+ 
+
+(第 7 题图)
+
+8. 某公园欲建设一段斜坡，坡顶是一条直线，斜坡顶点距水平地面的高度为 4m，坡面与水平面所成夹角为 $\theta$ . 行人每沿着斜坡向上走 $1{m}$ 消耗的体力为 $\left( {{1.025} - \cos \theta }\right)$ ,欲使行人走上斜坡所消耗的总体力最小，则 $\theta  =$
+
+9. 上海海关大楼的顶部为逐级收拢的四面钟楼，如图，四个大钟分布在四棱柱的四个侧面, 则每天 0 点至 12 点 (包含 0 点, 不含 12 点) 相邻两钟面上的时针相互垂直的次数为\_\_\_\_\_.
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/bo_d7tk7oc91nqc73875fu0_299_1179_1837_278_227_0.jpg}
+\end{center}
+ 
+
+(第 9 题图)
+
+\section*{二、选择题}
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{images/bo_d7tk7oc91nqc73875fu0_300_938_228_543_308_0.jpg}
+\end{center}
+ 
+
+(第 10 题图)
+
+10.某社区通过公益讲座以普及社区居民的垃圾分类知识. 为了解讲座效果，随机抽取 10 位社区居民，让他们在讲座前和讲座后各回答一份垃圾分类知识问卷, 这 10 位社区居民在讲座前和讲座后问卷答题的正确率如图: 则 ( )
+
+A. 讲座前问卷答题的正确率的中位数小于 70\%.
+
+B. 讲座后问卷答题的正确率的平均数大于 85\%.
+
+C. 讲座前问卷答题的正确率的标准差小于讲座后正确率的标准差.
+
+D. 讲座后问卷答题的正确率的极差大于讲座前正确率的极差.
+
+11. 关于外来物种泛滥的有害性经常引起热议. 为了研究某池塘里某种植物生长面积 $S$ (单位: ${{m}}^{2}$ ) 与时间 $t$ (单位: 月)之间的关系,通过观察建立了函数模型 $S\left( t\right)  = k{a}^{t}\left( {t \in  \mathbf{Z},k > 0,a > 0\text{ 且 }a \neq  1}\right)$ . 已知第一个月该植物的生长面积为 $1{{m}}^{2}$ ，第 3 个月该植物的生长面积为 $4{{m}}^{2}$ ，则该植物的生长面积达到 ${100}{{m}}^{2}$ ，至少要经过\_\_\_\_\_ ( )
+
+A. 6 个月. B. 8 个月. C. 9 个月. D. 11 个月.
+
+12. 阻尼器是一种以提供运动的阻力, 从而达到减振效果的专业工程装置. 如图, 某阻尼器模型的运动过程可近似为单摆运动,其离开平衡位置的位移 $s\left( {{cm}}\right)$ 和时间 $t\left( {s}\right)$ 的函数关系式 $\left( {\omega  > 0}\right)$ 为 $s\left( t\right)  = 3\sin \left( {{\omega t} + \varphi }\right)$ ,若该阻尼器模型在摆动过程中连续三次位移为 ${s}_{0}\left( {-3 < {s}_{0} < 3}\right)$ 的时间分别为 ${t}_{1}\text{ 、 }{t}_{2}\text{ 、 }{t}_{3}$ ,且 ${t}_{1} + {t}_{2} = 2,{t}_{2} + {t}_{3} = 4$ ,则 $s\left( t\right)$ 的单调区间是 ( )
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_300_1131_951_354_243_0.jpg}
+\end{center}
+ 
+
+(第 12 题图)
+
+A. $\left\lbrack  {k,k + 1}\right\rbrack  \left( {k \in  \mathbf{N}}\right)$ .
+
+B. $\left\lbrack  {k + \frac{1}{2},k + \frac{3}{2}}\right\rbrack  \left( {k \in  \mathbf{N}}\right)$ .
+
+C. $\left\lbrack  {{2k} + 1,{2k} + 2}\right\rbrack  \left( {k \in  \mathbf{N}}\right)$ .
+
+D. $\left\lbrack  {{2k} + \frac{1}{2},{2k} + \frac{3}{2}}\right\rbrack  \left( {k \in  \mathbf{N}}\right)$ .
+
+\section*{三、解答题}
+
+13. 甲、乙两地相距 1004km，汽车从甲地匀速驶向乙地，速度不得超过 120km/h，已知汽车每小时的运输成本 (以 1 元为单位) 由可变部分和固定部分组成:可变部分与速度 $v\left( {{{km}}/{h}}\right)$ 的立方成正比，比例系数为 2，固定部分为 $a$ 元 $\left( {a > 0}\right)$ .
+
+(1)把全部运输成本 $y$ 元表示为速度 $v\left( {{{km}}/{h}}\right)$ 的函数，并指出这个函数的定义域；
+
+(2)为了使全部运输成本最小，汽车应以多大速度行驶 利(用 $a$ 表示)？
+
+
+14. 某学校组织科普知识竞赛, 有 A、B 两类问题. 每位参加比赛的同学先在两类问题中选择一类并从中随机抽取一个问题回答, 若回答错误则该同学比赛结束; 若回答正确则从另一类问题中再随机抽取一个问题回答，无论回答正确与否，该同学比赛结束. A 类问题中的每个问题回答正确得 20 分，否则得 0 分；B 类问题中的每个问题回答正确得 80 分，否则得 0 分.
+
+已知小明能正确回答 A 类问题的概率为 0.8 ，能正确回答 B 类问题的概率为 0.6 ，且能正确回答问题的概率与回答次序无关.
+
+(1)若小明先回答 A 类问题，记 $X$ 为小明的累计得分，求 $X$ 的分布；
+
+(2)为使累计得分的期望最大，小明应选择先回答哪类问题？并说明理由.
+
+15. 摩天轮是一种大型转轮状的机械建筑设施, 游客坐在摩天轮的座舱里慢慢地往上转, 可以从高处俯瞰四周景色，如图，某摩天轮最高点距离地面 100m，最低点距离地面 10m，摩天轮上均匀设置了依次标号为 1\textasciitilde 36 号的 36 个座舱. 开启后摩天轮按照逆时针方向匀速旋转，游客在座舱转到距离地面最近的位置进舱， 开始转动 $t$ 分钟后距离地面的高度为 $H{m}$ ，转一周需要 ${30}{{min}}$ .
+
+(1)求在转动一周的过程中， $H$ 关于 $t$ 的函数解析式；
+
+(2)若甲、乙两人分别坐在 1 号和 7 号座舱里，在转动一周的过程中，求两人距离地面的高度差 $h$ (单位: ${m}$ ) 关于 $t$ 的函数解析式，并求高度差的最大值.
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{images/bo_d7tk7oc91nqc73875fu0_301_716_1432_707_292_0.jpg}
+\end{center}
+ 
+
+(第 15 题图)
+
+16. 近年来短视频平台吸引了大量流量和网络博主的加入. 红人榜的数据推出是体现各平台 KOL 网络博主商业价值的榜单. 每周一期，红人榜能反应最近一周 KOL 网络的综合价值，以粉丝数、集均评论、集均赞，以及集均分享来进行综合衡量. 红人榜单在统计时发现某平台一网络博主的累计粉丝数 $y$ (百万) 与人驻平台周次 $x$ (周)之间的关系如图所示.
+
+设 $\omega  = \ln x$ ,数据经过初步处理得 $\mathop{\sum }\limits_{{i = 1}}^{5}{y}_{i} = {73},\mathop{\sum }\limits_{{i = 1}}^{5}{w}_{i} = 5,\mathop{\sum }\limits_{{i = 1}}^{5}{w}_{i}^{2} = {6.3},\mathop{\sum }\limits_{{i = 1}}^{5}{x}_{i}{y}_{i} = {258},\mathop{\sum }\limits_{{i = 1}}^{5}{w}_{i}{y}_{i} = {86},\mathop{\sum }\limits_{{i = 1}}^{5}\left( {{y}_{i} - }\right.  \bar{y}{)}^{2} = {160}$ ,线性回归模型残差平方和 $\mathop{\sum }\limits_{{i = 1}}^{5}{\left( {y}_{i} - \widehat{y}\right) }^{2} = 9$ . (其中 ${x}_{1}\text{ 、 }{y}_{i}$ 分别为观测数据中的周次和累计粉丝数)
+
+(1)求出 $y$ 关于 $x$ 的线性回归模型 $\widehat{y} = \widehat{b}x + \widehat{a}$ 的相关指数 ${R}_{1}^{2}$ . 若用非线性回归模型 $\widehat{y} = \widehat{c}\ln x + \widehat{d}$ 求得的相关指数 ${R}_{2}^{2} = {0.9998}$ ,试用相关指数 ${R}^{2}$ 判断哪种模型的拟合效果较好? (相关指数越接近于 1,拟合效果越好)
+
+(2)根据(1)中拟合效果较好的模型求出 $y$ 关于 $x$ 的回归方程，并由此预测入驻平台 8 周后，对应的累计粉丝数 $y$ 为多少?
+
+附参考公式: 相关指数 ${R}^{2} = 1 - \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {y}_{i} - {\widehat{y}}_{i}\right) }^{2}}{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {y}_{i} - \bar{y}\right) }^{2}}$ ,
+
+$y$ 与 $x$ 的线性回归方程 $\widehat{y} = \widehat{b}x + \widehat{a}$ 中, $\widehat{b} = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}{y}_{i} - n\overline{xy}}{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} - n{\bar{x}}^{2}},\widehat{a} = \bar{y} - \widehat{b}\bar{x}$ .
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{images/bo_d7tk7oc91nqc73875fu0_302_1023_915_462_284_0.jpg}
+\end{center}

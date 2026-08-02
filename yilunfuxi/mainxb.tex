@@ -1,0 +1,28 @@
+%%# -*- coding:utf-8 -*-
+%!TEX program  = xelatex
+
+\documentclass{xbcls}
+
+
+% 答案部分是否显示: 0不显示, 1显示
+\myanswer{1}
+\newif\ifjieda
+\jiedatrue % 添加此句将输出答案
+
+\newif\ifvspace
+%\vspacetrue % 添加此句将输出垂直空白
+
+
+\begin{document}
+% 以下两行是为了目录只显示到节, 因为小节是单节课分成一二三四几部分过程.
+\setcounter{tocdepth}{2}      % 控制目录的深度:  0表示只有章,1表示到节,2表示到小节.
+\setcounter{secnumdepth}{3}   % 实际正文章节编号的深度. LaTeX标准文档类用来控制章节编号深度，book和report默认为2，article默认为3.  secnumdepth≥tocdepth
+
+% \tableofcontents            % 生成目录
+% \mainmatter                 % 正文开始重新排页码. 
+
+%\include{bodyxb/bx01ch00}  
+%\include{bodyxb/bx01ch00}           % 测试用
+% \part{必修一}
+\include{bodyxb/hanshu}  
+\end{document}

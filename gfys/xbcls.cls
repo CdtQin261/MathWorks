@@ -1,0 +1,1 @@
+../xbcls.cls
