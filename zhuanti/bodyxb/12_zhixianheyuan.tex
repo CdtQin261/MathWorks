@@ -1035,4 +1035,38 @@
             $OM: y = \dfrac{2}{x_0}x$，故$y_H = \dfrac{2}{x_0}x_H$，故$x_0 = \dfrac{2x_H}{y_H}$，代入可得$x_H = \dfrac{8x_0}{4+x_0^2} = \dfrac{\dfrac{16x_H}{y_H}}{4+\left(\dfrac{2x_H}{y_H}\right)^2} = \dfrac{4x_Hy_H}{y_H^2 + x_H^2} (y_H \neq 0)$，即$x_H^2+y_H^2 - 4y_H = 0(y_H \neq 0)$，故轨迹方程为 ${x}^{2} + {\left( y - 2\right) }^{2} = 4\left( {y \neq  0}\right)$
         \end{jieda}
     \end{enumerate}
+
+    \item 平面向量与解析几何结合
+    \begin{enumerate}
+        \item 若向量$\vv{a} = (1, 1), \vv{b} = (1, -1), \vv{c} = (\sqrt{2} cos\alpha, \sqrt{2}sin\alpha) (\alpha \in \mathbf{R})$，实数$m, n$满足$m \vv{a} + n \vv{b} = \vv{c}$，则$(m-3)^2+n^2$的取值范围是\blkda{$[4, 16]$}
+        \begin{jieda}
+            $\left \{ \begin{array}{l}
+                 m+n = \sqrt{2}cos\alpha  \\
+                 m-n = \sqrt{2}sin\alpha
+            \end{array} \right.$，平方相加即得$m^2+n^2 = 1$，因此，点$(m,n)$在单位圆上，$(m-3)^2+n^2$为点$(m,n)$到$(3,0)$的距离平方，根据几何关系可知其取值范围是$[4, 16]$
+        \end{jieda}
+        
+        \item 已知平面向量满足$|\vv{a}| = |\vv{b}| = \vv{a} \cdot \vv{b} = \vv{c} \cdot (\vv{a} + 2\vv{b}-2\vv{c}) = 2$，若$|\vv{a} - \vv{c}|$的最大值、最小值分别为$M, N$，则$\dfrac{M}{N} = $\blkda{$\dfrac{5+\sqrt{21}}{2}$}
+        \begin{jieda}
+            以$\vv{a}$为$x$轴正方向建立平面直角坐标系，故设$\vv{a} = (2, 0), \vv{b} = (1, \sqrt{3}), \vv{c} = (x, y)$，故$\vv{c} \cdot (\vv{a} + 2\vv{b}-2\vv{c}) = 2$即$x \cdot (4-2x) + y \cdot (2\sqrt{3} - 2y) = 2$，化简配方可得$(x-1)^2 + (y - \dfrac{\sqrt{3}}{2})^2 = \dfrac{3}{4}$，故$\vv{c}$的终点位于圆心为$(1, \dfrac{\sqrt{3}}{2})$，半径为$\dfrac{\sqrt{3}}{2}$的圆上，故根据几何关系可知$\dfrac{\sqrt{7} - \sqrt{3}}{2} \leq |\vv{a} - \vv{c}| \leq \dfrac{\sqrt{7} + \sqrt{3}}{2}$，即$M = \dfrac{\sqrt{7}+\sqrt{3}}{2}, N = \dfrac{\sqrt{7} - \sqrt{3}}{2}$，故$\dfrac{M}{N} = \dfrac{5+\sqrt{21}}{2}$
+        \end{jieda}
+
+        
+        \item 已知向量$\vv{a}, \vv{b}, \vv{c}$满足$|\vv{a}| = 2, |\vv{b}| = 3, \vv{a} \cdot \vv{b} = 3, |\vv{c}|^2 - 2\vv{b} \cdot \vv{c} + 8 = 0$，若$\vv{c} = \lambda \vv{a} + (1-\lambda) \vv{b}$，则$\lambda$的值为\blkda{$\pm \dfrac{\sqrt{7}}{7}$}
+        \begin{jieda}
+            根据条件可知$\vv{a}, \vv{b}$夹角为$\dfrac{\pi}{3}$，以$\vv{b}$的方向为$x$轴正方向，设$B(3, 0), A(1, \sqrt{3})$即$\vv{OA} = \vv{a}, \vv{OB} = \vv{b}$，建立平面直角坐标系。根据等和线结论可知$\vv{OC} = \vv{c}$的终点$C$在直线$AB: y = -\dfrac{\sqrt{3}}{2}(x-3)$上。\\
+            设$C(x, y)$，所以$|\vv{c}|^2 - 2\vv{b} \cdot \vv{c} + 8 = 0$可以转化为$x^2+y^2 - 6x + 8 = 0$，故$C$在以$(3, 0)$为圆心，1为半径的圆上。 \\
+            综上，$C$有两个可能的坐标，为直线$y = -\dfrac{\sqrt{3}}{2}(x-3)$与圆$(x-3)^2+y^2=1$的交点，即$(3-\dfrac{2\sqrt{7}}{7}, \dfrac{\sqrt{21}}{7}), (3+\dfrac{2\sqrt{7}}{7}, -\dfrac{\sqrt{21}}{7})$. \\
+            根据纵坐标的数值可以得到向量的等式：$\vv{OC} = \vv{OB} + \vv{BC} = \vv{OB} \pm \dfrac{\sqrt{7}}{7}\vv{BA}$，即$\vv{c} = \vv{b} \pm \dfrac{\sqrt{7}}{7}(\vv{a} - \vv{b})$，故$\lambda = \pm \dfrac{\sqrt{7}}{7}$
+        \end{jieda}
+        
+        \item 已知圆$O$的半径为1，直线$PA$与圆$O$相切于点$A$，直线$PB$与圆$O$交于$B$，$C$两点，$D$为$BC$的中点，若$|PO| = \sqrt{2}$，则$\vv{PA} \cdot \vv{PD}$的最大值为\blkda{$\dfrac{1+\sqrt{2}}{2}$}
+        \begin{jieda}
+            以$A$为原点建系，设圆$O:x^2+(y-1)^2 = 1$，$P(1, 0)$
+
+            根据过定点的弦的中点轨迹的性质可知$D$在圆$x^2 + y^2 - x - y = 0$上（利用点差法/$\angle ODP = \ang{90}$的性质均可求），故设$D\left(\dfrac{1}{2}+\dfrac{\sqrt{2}}{2}cos\theta, \dfrac{1}{2}+\dfrac{\sqrt{2}}{2}sin\theta\right), \theta \in \left(\dfrac{3\pi}{4}, \dfrac{5\pi}{4}\right)$
+            
+            故$\vv{PA} = (-1, 0), \vv{PD} = \left(-\dfrac{1}{2}+\dfrac{\sqrt{2}}{2}cos\theta, \dfrac{1}{2}+\dfrac{\sqrt{2}}{2}sin\theta\right)$，故$\vv{PA}  \cdot \vv{PD} = \dfrac{1}{2}-\dfrac{\sqrt{2}}{2}cos\theta \in \left(0, \dfrac{1+\sqrt{2}}{2}\right]$.
+        \end{jieda}
+    \end{enumerate}
 \end{enumerate}

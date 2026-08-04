@@ -774,12 +774,6 @@
     
     \item 范围与最值
     \begin{enumerate}
-        \item 若点$A, B$在圆$x^2+y^2 = 4$上，则$S_{\triangle AOB}$的最大面积是\blkda{2};若点$A, B$在椭圆$\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$上，则$S_{\triangle AOB}$的最大面积是\blkda{$\sqrt{3}$}
-        \begin{jieda}
-            $S = \dfrac{1}{2} \times 2 \times 2 \times sin\theta \leq 2$
-
-            $S = \dfrac{1}{2} \left|2cos\alpha \cdot \sqrt{3}sin\beta - 2cos\beta \cdot \sqrt{3} sin\alpha\right| = \sqrt{3}|sin(\alpha - \beta)| =\sqrt{3}$
-        \end{jieda}
         \item 已知椭圆 $E : \dfrac{{x}^{2}}{4} + \dfrac{{y}^{2}}{3} = 1$ 的一个顶点为 $H\left( {2,0}\right)$ ,对于 $x$ 轴上的点 $P\left( {t,0}\right)$ ,椭圆 $E$ 上存在点 $M$ ,使得 ${MP} \bot  {MH}$ ,求实数 $t$ 的取值范围.
         \begin{jieda}
             设$M(x_0, y_0)$，则$\vv{MP} = (t-x_0, -y_0), \vv{MH} = (2-x_0, -y_0)$，根据垂直关系有$(2-x_0)(t-x_0)+y_0^2 = 0$，整理得$t = x_0+\dfrac{y_0^2}{x_0-2}$，代入椭圆方程有$t = \dfrac{3+\dfrac{1}{4}x_0^2-2x_0}{x_0-2} = \dfrac{x_0-6}{4}$，该方程在$x_0 \in (-2, 2)$内有解，即$t$在函数$f(x) = \dfrac{x-6}{4}, x \in (-2, 2)$的值域内，因此$t \in (-2, -1)$.
@@ -814,6 +808,34 @@
                     
                     综上可得：直线 $l$ 的斜率的取值范围是 $\left\lbrack  {-\dfrac{1}{4},0}\right)  \cup  \left( {1, + \infty }\right)$ .
                 \end{dingautolist}
+            \end{enumerate}
+        \end{jieda}
+        \item 已知 $O$ 为坐标原点,椭圆 $C : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的离心率为 $\dfrac{\sqrt{6}}{3}$ ,且经过点 $P\left( {\sqrt{6},1}\right)$ .
+        \begin{enumerate}
+            \item 求椭圆 $C$ 的方程
+            \item 直线 $l$ 与椭圆 $C$ 交于 $A,B$ 两点,直线 ${OA}$ 的斜率为 ${k}_{1}$ ,直线 ${OB}$ 的斜率为 ${k}_{2}$ ,且 ${k}_{1}{k}_{2} =  - \dfrac{1}{3}$ ,求 $\vv{OA} \cdot  \vv{OB}$ 的取值范围.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 由题意可得 $\left\{  \begin{array}{l} \dfrac{c}{a} = \dfrac{\sqrt{6}}{3}, \\  \dfrac{6}{{a}^{2}} + \dfrac{1}{{b}^{2}} = 1, \end{array}\right.$，因为${a}^{2} = {b}^{2} + {c}^{2}$，解得 $a = 3,b = \sqrt{3}$ .
+                
+                所以椭圆 $C$ 的方程为 $\dfrac{{x}^{2}}{9} + \dfrac{{y}^{2}}{3} = 1$ .
+                \item 设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$
+                \begin{dingautolist}{172}
+                    \item 当直线 $l$ 的斜率不存在时, ${x}_{2} = {x}_{1},{y}_{2} =  - {y}_{1}$ ,则 ${k}_{1}{k}_{2} =  - \dfrac{{y}_{1}^{2}}{{x}_{1}^{2}} =  - \dfrac{1}{3}$ ,又 $\dfrac{{x}_{1}^{2}}{9} + \dfrac{{y}_{1}^{2}}{3} = 1$ ,解得 ${x}_{1}^{2} = \dfrac{9}{2}$ ,则 $\vv{OA} \cdot  \vv{OB} = {x}_{1}^{2} - {y}_{1}^{2} = \dfrac{2}{3}{x}_{1}^{2} = 3$ .
+                    \item 当直线 $l$ 的斜率存在时,设 $l : y = {kx} + t$，联立直线和椭圆方程有 $\left\{  \begin{array}{l} y = {kx} + t, \\  \dfrac{x^2}{9} + \dfrac{{y}^{2}}{3} = 1, \end{array}\right.$
+                    
+                    消去 $y$ 得 $\left( {1 + 3{k}^{2}}\right) {x}^{2} + {6ktx} + 3{t}^{2} - 9 = 0$，根据题意可得$\Delta  = {12}\left( {3 + 9{k}^{2} - {t}^{2}}\right)  > 0$ ,
+                    
+                    根据韦达定理有$\left\{  {\begin{array}{l} {x}_{1} + {x}_{2} = \dfrac{-{6kt}}{1 + 3{k}^{2}}, \\  {x}_{1}{x}_{2} = \dfrac{3{t}^{2} - 9}{1 + 3{k}^{2}}, \end{array}}\right.$
+                    
+                    ${k}_{1}{k}_{2} = \dfrac{{y}_{1}{y}_{2}}{{x}_{1}{x}_{2}} =  - \dfrac{1}{3}$，代入直线方程可得$\dfrac{{y}_{1}{y}_{2}}{{x}_{1}{x}_{2}} = \dfrac{\left( {k{x}_{1} + t}\right) \left( {k{x}_{2} + t}\right) }{{x}_{1}{x}_{2}} = {k}^{2} + \dfrac{{kt}\left( {{x}_{1} + {x}_{2}}\right)  + {t}^{2}}{{x}_{1}{x}_{2}} = {k}^{2} + \dfrac{\dfrac{-6{k}^{2}{t}^{2}}{1 + 3{k}^{2}} + {t}^{2}}{\dfrac{3{t}^{2} - 9}{1 + 3{k}^{2}}} = \dfrac{{t}^{2} - 9{k}^{2}}{3{t}^{2} - 9} =  - \dfrac{1}{3},$
+                    
+                    整理得 $2{t}^{2} = 9{k}^{2} + 3$且$t^2 \neq 3$，故${t}^{2} \geq \dfrac{3}{2}$且$t^2 \neq 3$，经检验$\Delta  > 0$ 恒成立.
+                    
+                    $\vv{OA} \cdot  \vv{OB} = {x}_{1}{x}_{2} + {y}_{1}{y}_{2} = {x}_{1}{x}_{2} - \dfrac{1}{3}{x}_{1}{x}_{2} = \dfrac{2}{3}{x}_{1}{x}_{2} = \dfrac{2}{3} \cdot  \dfrac{3{t}^{2} - 9}{1 + 3{k}^{2}} = 3 \cdot  \dfrac{{t}^{2} - 3}{{t}^{2}} = 3\left( {1 - \dfrac{3}{{t}^{2}}}\right) \in  \lbrack  - 3,0) \cup  \left( {0,3}\right)$ .
+                \end{dingautolist}
+                综上, $\vv{OA} \cdot  \vv{OB}$ 的取值范围为 $\left\lbrack  {-3,0)\cup (0,3}\right\rbrack$ .
             \end{enumerate}
         \end{jieda}
         \item 已知椭圆 $C : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0,b > 0}\right)$ 的左、右焦点分别为 ${F}_{1},{F}_{2}$ ,离心率为 $\dfrac{\sqrt{6}}{3}$ ,直线 $x$  $= \sqrt{2}$ 被 $C$ 截得的线段长为 $\dfrac{2\sqrt{3}}{3}$ .
@@ -866,33 +888,96 @@
                 
             \end{enumerate}
         \end{jieda}
-        \item 已知 $O$ 为坐标原点,椭圆 $C : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的离心率为 $\dfrac{\sqrt{6}}{3}$ ,且经过点 $P\left( {\sqrt{6},1}\right)$ .
+    \end{enumerate}
+
+    \item 任意直线与三角换元
+    \begin{enumerate}
+        \item 若点$A, B$在圆$x^2+y^2 = 4$上，则$S_{\triangle AOB}$的最大面积是\blkda{2};若点$A, B$在椭圆$\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$上，则$S_{\triangle AOB}$的最大面积是\blkda{$\sqrt{3}$}
+        \begin{jieda}
+            $S = \dfrac{1}{2} \times 2 \times 2 \times sin\theta \leq 2$
+
+            $S = \dfrac{1}{2} \left|2cos\alpha \cdot \sqrt{3}sin\beta - 2cos\beta \cdot \sqrt{3} sin\alpha\right| = \sqrt{3}|sin(\alpha - \beta)| =\sqrt{3}$
+        \end{jieda}
+
+        \item 如图,直线 $y = {kx} + b\left( {k > 0,b > 0}\right)$ 与椭圆 $\dfrac{{x}^{2}}{4} + {y}^{2} = 1$ 交于 $A\text{ 、 }B$ 两点,记 $\bigtriangleup {AOB}$ 的面积为 $S$ .
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/0_92_183_382_263_0.jpg}
+        \end{center}
+
         \begin{enumerate}
-            \item 求椭圆 $C$ 的方程
-            \item 直线 $l$ 与椭圆 $C$ 交于 $A,B$ 两点,直线 ${OA}$ 的斜率为 ${k}_{1}$ ,直线 ${OB}$ 的斜率为 ${k}_{2}$ ,且 ${k}_{1}{k}_{2} =  - \dfrac{1}{3}$ ,求 $\vv{OA} \cdot  \vv{OB}$ 的取值范围.
+            \item 当 $k = 1$ ， $b = 1$ 时，求 $S$
+            \item 当 $\left| {AB}\right|  = 2$ ， $S = 1$ 时，求直线 ${AB}$ 的方程
+            \item 求 $S$ 的最大值
         \end{enumerate}
         \begin{jieda}
-            \begin{enumerate}
-                \item 由题意可得 $\left\{  \begin{array}{l} \dfrac{c}{a} = \dfrac{\sqrt{6}}{3}, \\  \dfrac{6}{{a}^{2}} + \dfrac{1}{{b}^{2}} = 1, \end{array}\right.$，因为${a}^{2} = {b}^{2} + {c}^{2}$，解得 $a = 3,b = \sqrt{3}$ .
-                
-                所以椭圆 $C$ 的方程为 $\dfrac{{x}^{2}}{9} + \dfrac{{y}^{2}}{3} = 1$ .
-                \item 设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$
-                \begin{dingautolist}{172}
-                    \item 当直线 $l$ 的斜率不存在时, ${x}_{2} = {x}_{1},{y}_{2} =  - {y}_{1}$ ,则 ${k}_{1}{k}_{2} =  - \dfrac{{y}_{1}^{2}}{{x}_{1}^{2}} =  - \dfrac{1}{3}$ ,又 $\dfrac{{x}_{1}^{2}}{9} + \dfrac{{y}_{1}^{2}}{3} = 1$ ,解得 ${x}_{1}^{2} = \dfrac{9}{2}$ ,则 $\vv{OA} \cdot  \vv{OB} = {x}_{1}^{2} - {y}_{1}^{2} = \dfrac{2}{3}{x}_{1}^{2} = 3$ .
-                    \item 当直线 $l$ 的斜率存在时,设 $l : y = {kx} + t$，联立直线和椭圆方程有 $\left\{  \begin{array}{l} y = {kx} + t, \\  \dfrac{x^2}{9} + \dfrac{{y}^{2}}{3} = 1, \end{array}\right.$
+            \begin{dingautolist}{172}
+                \item 通解法
+                \begin{enumerate}[(1)]
+                    \item 设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$ . 由 $\left\{  \begin{array}{l} \dfrac{{x}^{2}}{4} + {y}^{2} = 1, \\  y = x + 1, \end{array}\right.$ 得 $\dfrac{5{x}^{2}}{4} + {2x} = 0$ ，解得 ${x}_{1} = 0,{x}_{2} =  - \dfrac{8}{5}$ ，则 $\left| {{x}_{1} - {x}_{2}}\right|  = \dfrac{8}{5}$ . 因此 $S = \dfrac{1}{2}\left| b\right| \left| {{x}_{1} - {x}_{2}}\right|  = \dfrac{4}{5}$ .
+
+                    \item 由 $\left\{  \begin{array}{l} \dfrac{{x}^{2}}{4} + {y}^{2} = 1, \\  y = {kx} + b, \end{array}\right.$ 得 $\left( {\dfrac{1}{4} + {k}^{2}}\right) {x}^{2} + {2kbx} + {b}^{2} - 1 = 0$ .
+
+                    由 $\Delta  = {\left( 2kb\right) }^{2} - 4 \cdot  \left( {\dfrac{1}{4} + {k}^{2}}\right)  \cdot  \left( {{b}^{2} - 1}\right)  = 4{k}^{2} - {b}^{2} + 1 > 0$ , 可得 $\left\{\begin{array}{l} {x}_{1} + {x}_{2} =  - \dfrac{8kb}{1 + 4{k}^{2}} \\  {x}_{1}{x}_{2} = \dfrac{4{b}^{2} - 4}{1 + 4{k}^{2}} \end{array} \right.$
+
+                    由 $\left| {AB}\right|  = \left| {{x}_{1} - {x}_{2}}\right| \sqrt{1 + {k}^{2}} = 2,S = \dfrac{\left| b\right| }{2}\left| {{x}_{1} - {x}_{2}}\right|  = 1$ 得 $1 + {k}^{2} = {b}^{2}$ .
+
+                    又 $\left| {{x}_{1} - {x}_{2}}\right|  = \sqrt{{\left( {x}_{1} + {x}_{2}\right) }^{2} - 4{x}_{1}{x}_{2}} = \dfrac{4\sqrt{4{k}^{2} + 1 - {b}^{2}}}{1 + 4{k}^{2}}$ ,
+
+                    代入 $\left| {AB}\right|  = \left| {{x}_{1} - {x}_{2}}\right| \sqrt{1 + {k}^{2}} = 2$ ，得 $4{k}^{4} - 4{k}^{2} + 1 = 0$ ，解得 $k = \dfrac{\sqrt{2}}{2}$ ， $b = \dfrac{\sqrt{6}}{2}$ .
+
+                    直线 ${AB}$ 的方程是 $y = \dfrac{\sqrt{2}}{2}x + \dfrac{\sqrt{6}}{2}$ .
+
+                    \item $S = \dfrac{\left| b\right| }{2}\left| {{x}_{1} - {x}_{2}}\right|  = \dfrac{\left| b\right| }{2} \cdot  \dfrac{4\sqrt{4{k}^{2} + 1 - {b}^{2}}}{1 + 4{k}^{2}} = \dfrac{2\left| b\right| \sqrt{4{k}^{2} + 1 - {b}^{2}}}{4{k}^{2} + 1}$ .
+
+                    由基本不等式得 $\dfrac{2\left| b\right| \sqrt{4{k}^{2} + 1 - {b}^{2}}}{4{k}^{2} + 1} \leq  \dfrac{4{k}^{2} + 1 - {b}^{2} + {b}^{2}}{4{k}^{2} + 1} = 1$ ,
+
+                    当且仅当 $2{b}^{2} = 4{k}^{2} + 1$ ,等号成立.
+
+                    由第(2)小题的结论知, $S$ 可以取到 1,因此 $S$ 的最大值是 1.
+                \end{enumerate}
+                \item 三角换元
+                \begin{enumerate}[(1)]
+                    \item 同上
+                    \item 设$A(2cos\alpha, sin\alpha)$，$B(2cos\beta, sin\beta)$，$1 = S = \dfrac{1}{2}|2sin(\alpha - \beta)|$，由于$A, B$的轮换对称性，不妨设$\beta = \alpha + \dfrac{\pi}{2}$，因为$k > 0, b > 0$，故应有$\alpha \in \left(\dfrac{\pi}{4}, \dfrac{3\pi}{4}\right)$
                     
-                    消去 $y$ 得 $\left( {1 + 3{k}^{2}}\right) {x}^{2} + {6ktx} + 3{t}^{2} - 9 = 0$，根据题意可得$\Delta  = {12}\left( {3 + 9{k}^{2} - {t}^{2}}\right)  > 0$ ,
-                    
-                    根据韦达定理有$\left\{  {\begin{array}{l} {x}_{1} + {x}_{2} = \dfrac{-{6kt}}{1 + 3{k}^{2}}, \\  {x}_{1}{x}_{2} = \dfrac{3{t}^{2} - 9}{1 + 3{k}^{2}}, \end{array}}\right.$
-                    
-                    ${k}_{1}{k}_{2} = \dfrac{{y}_{1}{y}_{2}}{{x}_{1}{x}_{2}} =  - \dfrac{1}{3}$，代入直线方程可得$\dfrac{{y}_{1}{y}_{2}}{{x}_{1}{x}_{2}} = \dfrac{\left( {k{x}_{1} + t}\right) \left( {k{x}_{2} + t}\right) }{{x}_{1}{x}_{2}} = {k}^{2} + \dfrac{{kt}\left( {{x}_{1} + {x}_{2}}\right)  + {t}^{2}}{{x}_{1}{x}_{2}} = {k}^{2} + \dfrac{\dfrac{-6{k}^{2}{t}^{2}}{1 + 3{k}^{2}} + {t}^{2}}{\dfrac{3{t}^{2} - 9}{1 + 3{k}^{2}}} = \dfrac{{t}^{2} - 9{k}^{2}}{3{t}^{2} - 9} =  - \dfrac{1}{3},$
-                    
-                    整理得 $2{t}^{2} = 9{k}^{2} + 3$且$t^2 \neq 3$，故${t}^{2} \geq \dfrac{3}{2}$且$t^2 \neq 3$，经检验$\Delta  > 0$ 恒成立.
-                    
-                    $\vv{OA} \cdot  \vv{OB} = {x}_{1}{x}_{2} + {y}_{1}{y}_{2} = {x}_{1}{x}_{2} - \dfrac{1}{3}{x}_{1}{x}_{2} = \dfrac{2}{3}{x}_{1}{x}_{2} = \dfrac{2}{3} \cdot  \dfrac{3{t}^{2} - 9}{1 + 3{k}^{2}} = 3 \cdot  \dfrac{{t}^{2} - 3}{{t}^{2}} = 3\left( {1 - \dfrac{3}{{t}^{2}}}\right) \in  \lbrack  - 3,0) \cup  \left( {0,3}\right)$ .
-                \end{dingautolist}
-                综上, $\vv{OA} \cdot  \vv{OB}$ 的取值范围为 $\left\lbrack  {-3,0)\cup (0,3}\right\rbrack$ .
-            \end{enumerate}
+                    故根据诱导公式有$B(-2sin\alpha, cos\alpha)$，$4 = |AB|^2 = 4(sin\alpha + cos\alpha)^2 + (sin\alpha - cos\alpha)^2 = 5 + 3 sin2\alpha$，因此$sin2\alpha = -\dfrac{1}{3}$，根据$\alpha \in \left(\dfrac{\pi}{4}, \dfrac{3\pi}{4}\right)$可知$cos 2\alpha = -\dfrac{2\sqrt{2}}{3}$，故$tan\alpha = \dfrac{1-cos2\alpha}{sin2\alpha} = -(3+2\sqrt{2})$
+
+                    故$k = \dfrac{sin\alpha - cos\alpha}{2(cos\alpha+sin\alpha)} = \dfrac{1}{2} \cdot \dfrac{tan\alpha - 1}{1+tan\alpha} = \dfrac{\sqrt{2}}{2}$，$b = sin\alpha - \sqrt{2}cos\alpha = -3(1+\sqrt{2})cos\alpha = 3(1+\sqrt{2}) \times \sqrt{\dfrac{1}{1+(3+2\sqrt{2})^2}} = 3\sqrt{\dfrac{3+2
+                    \sqrt{2}}{18+12\sqrt{2}}} = \dfrac{\sqrt{6}}{2}$
+
+                    直线 ${AB}$ 的方程是 $y = \dfrac{\sqrt{2}}{2}x + \dfrac{\sqrt{6}}{2}$.
+                    \item $S = |sin(\alpha - \beta)| \leq 1$， 由第(2)小题的结论知, $S$ 可以取到 1,因此 $S$ 的最大值是 1.
+                \end{enumerate}
+            \end{dingautolist}
+        \end{jieda}
+
+
+        \item 设椭圆 $\Gamma  : \dfrac{{x}^{2}}{16} + \dfrac{{y}^{2}}{4} = 1,{F}_{1}\text{ 、 }{F}_{2}$ 分别为 $\Gamma$ 的左、右两个焦点,直线 $l : y = {kx} + m$ 与 $\Gamma$ 交于 $A,B$ 两点， $O$ 为坐标原点，直线 ${OA}$ 与 ${OB}$ 的斜率之积为 $- \dfrac{1}{4}$ ， $C$ 为 ${OA}$ 上的一点， 且 $\vv{OA} = \vv{AC}$ ,直线 ${BC}$ 与椭圆 $\Gamma$ 交于点 $D$ ,且 $\vv{BD} = \lambda \vv{DC}$ ,求 $\lambda$ 的值以及 $\bigtriangleup {ABD}$ 的面积 ${S}$ 的值
+        \begin{jieda}
+            设$A(4cos\alpha, 2sin\alpha)$，$B(4cos\beta, 2sin\beta)$，
+            
+            则有$C(8cos\alpha, 4sin\alpha)$，$D\left(\dfrac{\lambda(8cos\alpha)+(4cos\beta)}{1+\lambda}, \dfrac{\lambda(4sin\alpha)+(2sin\beta)}{1+\lambda}\right)$
+
+            $k_{OA} = \dfrac{1}{2}tan\alpha$，$k_{OB} = \dfrac{1}{2}tan\beta$，故$tan\alpha \cdot tan\beta = -1$
+
+            将$D$的坐标代入椭圆方程$\left[\dfrac{\lambda(8cos\alpha)+(4cos\beta)}{1+\lambda}\right]^2+4\left[\dfrac{\lambda(4sin\alpha)+(2sin\beta)}{1+\lambda}\right]^2 = 16$
+
+            即$[\lambda(2cos\alpha)+cos\beta]^2+[\lambda(2sin\alpha)+sin\beta]^2 = (1+\lambda)^2$
+
+            即$4\lambda^2 + 4cos(\alpha - \beta)\lambda = \lambda^2+2\lambda$，代入$tan\alpha \cdot tan\beta = -1$即$3\lambda^2 = 2\lambda$
+
+            故$\lambda = \dfrac{2}{3}$或$0$（舍）
+
+            $S_{\triangle ABD} = \dfrac{2}{5}S_{\triangle ABC} = \dfrac{2}{5}S_{\triangle ABO}$
+
+            $S_{\triangle ABO} = 4\left|sin(\alpha - \beta)\right| = 4$，因此$S_{\triangle ABD} = \dfrac{8}{5}$
+
+            
+            \begin{center}
+            \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d5gv9kref24c73bkubog_2_241_1243_424_254_0.jpg}
+            \end{center}
+            
         \end{jieda}
     \end{enumerate}
 
@@ -935,6 +1020,107 @@
             因为$2kx_1x_2 = -\dfrac{3}{2}(x_1+x_2)$，故$(x_1-3x_2)y_0 + -\dfrac{3}{2}(x_1+x_2)+x_1+3x_2 = \left(y_0-\dfrac{1}{2}\right) (x_1-3x_2)= 0$，故$y_0 = \dfrac{1}{2}$
             
             故直线 ${BP}$ 与直线 ${AQ}$ 的交点 $D$ 在定直线 $y = \dfrac{1}{2}$ 上.
+        \end{jieda}
+
+        \item 已知 $A\text{ 、 }B$ 分别为椭圆 $E : \dfrac{{x}^{2}}{{a}^{2}} + {y}^{2} = 1\left( {a > 1}\right)$ 的左、右顶点, $G$ 为 $E$ 的上顶点, $\vv{AG} \cdot  \vv{GB} = 8,P$ 为直线 $x = 6$ 上的动点, ${PA}$ 与 $E$ 的另一交点为 $C,{PB}$ 与 $E$ 的另一交点为 $D$ .
+        \begin{enumerate*}
+            \item 求 $E$ 的方程
+            \item 证明:直线 ${CD}$ 过定点
+        \end{enumerate*}
+        \begin{jieda}
+        \begin{enumerate}
+            \item 由椭圆方程 $E : \dfrac{{x}^{2}}{{a}^{2}} + {y}^{2} = 1\left( {a > 1}\right)$ 可得: $A\left( {-a,0}\right) ,B\left( {a,0}\right) ,G\left( {0,1}\right)$
+    
+            $\vv{AG} = \left( {a,1}\right) ,\vv{GB} = \left( {a, - 1}\right)$，故$\vv{AG} \cdot  \vv{GB} = {a}^{2} - 1 = 8$，所以${a}^{2} = 9$，故椭圆方程为: $\dfrac{{x}^{2}}{9} + {y}^{2} = 1$
+            \item 依据题意作出如下图象，根据对称性可知该点在$x$轴上
+            
+            \begin{center}
+            \includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d42u9js601uc738mlqp0_3_241_198_468_302_0.jpg}
+            \end{center}
+
+            方法1
+    
+                设直线$CD$：$x = my+n$，$C(x_1, y_1)$，$D(x_1, y_2)$，$P(6, t)$
+    
+                $\vv{AC} = (x_1+3, y_1), \vv{AP} = (9, t)$，$\vv{BD} = (x_2-3, y_2), \vv{BP} = (3, t)$
+    
+                根据$\vv{AC} // \vv{AP}$，$\vv{BD} // \vv{BP}$有$\left\{\begin{array}{l}
+                     9y_1 = t(x_1+3)  \\
+                     3y_2 = t(x_2-3) 
+                \end{array}\right.$，故$9y_1(x_2-3) = 3y_2(x_1+3)$，即$2my_1y_2+3y_1(n-3)-y_2(n+3) = 0$
+    
+                联立直线和椭圆方程有$\left\{\begin{array}{l}
+                     x = my+n \\
+                     \dfrac{{x}^{2}}{9} + {y}^{2} = 1
+                \end{array}\right.$，消去$x$有$(my+n)^2+9y^2 = 9$，即$(9+m^2)y^2+2mny+(n^2-9) = 0$
+    
+                $\Delta > 0 \Longleftrightarrow 4m^2n^2 - 4(n^2-9)(9+m^2) > 0$
+    
+                根据韦达定理有$\left\{\begin{array}{l}
+                     y_1+y_2 = -\dfrac{2mn}{9+m^2} \\
+                     y_1y_2 = \dfrac{n^2-9}{9+m^2}
+                \end{array}\right.$
+                \begin{dingautolist}{172}
+                    \item 考虑$CD$斜率不存在的特例，发现当$CD$为$x = \dfrac{3}{2}$时满足，故将$n = \dfrac{3}{2}$代入检验发现满足条件
+                    \item 考虑让$2my_1y_2+3y_1(n-3)-y_2(n+3) = 0$中$y_1, y_2$的系数相等，求解$3(n-3) = -(n+3)$，得到$n = \dfrac{3}{2}$，代入检验发现满足条件
+                    \item 考虑寻找两根的和与积之间的关系，$y_1y_2 = \dfrac{9-n^2}{2mn}(y_1+y_2)$
+    
+                    故$2my_1y_2+3y_1(n-3)-y_2(n+3) = 0$即$\dfrac{9-n^2}{n}(y_1+y_2)+3y_1(n-3)-y_2(n+3) = 0$，即$\left(2n+\dfrac{9}{n}-9\right)y_1 + \left(-2n+\dfrac{9}{n}-3\right)y_2 = 0$，当$n = \dfrac{3}{2}$时$\left(2n+\dfrac{9}{n}-9\right) = \left(-2n+\dfrac{9}{n}-3\right) = 0$，满足要求.
+                \end{dingautolist}
+            方法2
+    
+                设 $P\left( {6,t}\right)$ ,则直线 ${PA}$ 的方程为 $y = \dfrac{t}{9}\left( {x + 3}\right)$ ,即 ${tx} - {9y} + {3t} = 0$ .
+                
+                同理,可求直线 ${PB}$ 的方程为 ${tx} - {3y} - {3t} = 0$ .
+                
+                则经过直线 ${PA}$ 和直线 ${PB}$ 的曲线的方程可写为 $\left( {{tx} - {9y} + {3t}}\right) \left( {{tx} - {3y} - {3t}}\right)  = 0$ .
+                
+                可化为 ${t}^{2}\left( {{x}^{2} - 9}\right)  + {27}{y}^{2} - {12txy} + {18ty} = 0$ .
+                
+                易知 $A,B,C,D$ 四个点满足上述方程,同时 $A,B,C,D$ 又在椭圆上
+                
+                联立椭圆和两直线的方程：$\left\{\begin{array}{l}
+                     {t}^{2}\left( {{x}^{2} - 9}\right)  + {27}{y}^{2} - {12txy} + {18ty} = 0  \\
+                     \dfrac{{x}^{2}}{9} + {y}^{2} = 1 
+                \end{array}\right.$，消去$x^2$可得 $\left( {{27} - 9{t}^{2}}\right) {y}^{2} - {12txy} + {18ty} = 0$ .
+                
+                故 $y\left\lbrack  {\left( {{27} - 9{t}^{2}}\right) y - {12tx} + {18t}}\right\rbrack   = 0$ ,可得 $y = 0$ 或 $\left( {{27} - 9{t}^{2}}\right) y - {12tx} + {18t} = 0$ .
+                
+                其中 $y = 0$ 表示直线 ${AB}$ ,则 $\left( {{27} - 9{t}^{2}}\right) y - {12tx} + {18t} = 0$ 表示直线 ${CD}$ .
+                
+                令 $y = 0$ ,得 $x = \dfrac{3}{2}$ ,即直线 ${CD}$ 恒过点 $\left( {\dfrac{3}{2},0}\right)$ .
+         
+            方法3
+    
+            设 $P\left( {6,{y}_{0}}\right)$ ,
+            
+            则直线 ${AP}$ 的方程为: $y = \dfrac{{y}_{0} - 0}{6 - \left( {-3}\right) }\left( {x + 3}\right)$ ,即: $y = \dfrac{{y}_{0}}{9}\left( {x + 3}\right)$
+            
+            联立直线 ${AP}$ 的方程与椭圆方程可得: $\left\{  \begin{array}{l} \dfrac{{x}^{2}}{9} + {y}^{2} = 1 \\  y = \dfrac{{y}_{0}}{9}\left( {x + 3}\right)  \end{array}\right.$ ,整理得:
+            
+            $\left( {{y}_{0}^{2} + 9}\right) {x}^{2} + 6{y}_{0}^{2}x + 9{y}_{0}^{2} - {81} = 0$ ,解得: $x =  - 3$ 或 $x = \dfrac{-3{y}_{0}^{2} + {27}}{{y}_{0}^{2} + 9}$
+            
+            将 $x = \dfrac{-3{y}_{0}^{2} + {27}}{{y}_{0}^{2} + 9}$ 代入直线 $y = \dfrac{{y}_{0}}{9}\left( {x + 3}\right)$ 可得: $y = \dfrac{6{y}_{0}}{{y}_{0}^{2} + 9}$
+            
+            所以点 $C$ 的坐标为 $\left( {\dfrac{-3{y}_{0}^{2} + {27}}{{y}_{0}^{2} + 9},\dfrac{6{y}_{0}}{{y}_{0}^{2} + 9}}\right)$ .
+            
+            同理可得: 点 $D$ 的坐标为 $\left( {\dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1},\dfrac{-2{y}_{0}}{{y}_{0}^{2} + 1}}\right)$
+            
+            当 ${y}_{0}^{2} \neq  3$ 时,
+            
+            $\therefore$ 直线 ${CD}$ 的方程为: $y - \left( \dfrac{-2{y}_{0}}{{y}_{0}^{2} + 1}\right)  = \dfrac{\dfrac{6{y}_{0}}{{y}_{0}^{2} + 9} - \left( \dfrac{-2{y}_{0}}{{y}_{0}^{2} + 1}\right) }{\dfrac{-3{y}_{0}^{2} + {27}}{{y}_{0}^{2} + 9} - \dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1}}\left( {x - \dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1}}\right)$ ,
+            
+            整理可得: $y + \dfrac{2{y}_{0}}{{y}_{0}^{2} + 1} = \dfrac{8{y}_{0}\left( {{y}_{0}^{2} + 3}\right) }{6\left( {9 - {y}_{0}^{4}}\right) }\left( {x - \dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1}}\right)  = \dfrac{8{y}_{0}}{6\left( {3 - {y}_{0}^{2}}\right) }\left( {x - \dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1}}\right)$
+            
+            整理得: $y = \dfrac{4{y}_{0}}{3\left( {3 - {y}_{0}^{2}}\right) }x + \dfrac{2{y}_{0}}{{y}_{0}^{2} - 3} = \dfrac{4{y}_{0}}{3\left( {3 - {y}_{0}^{2}}\right) }\left( {x - \dfrac{3}{2}}\right)$
+            
+            所以直线 ${CD}$ 过定点 $\left( {\dfrac{3}{2},0}\right)$ .
+            
+            当 ${y}_{0}^{2} = 3$ 时,直线 ${CD} : x = \dfrac{3}{2}$ ,直线过点 $\left( {\dfrac{3}{2},0}\right)$ .
+            
+            故直线 ${CD}$ 过定点 $\left( {\dfrac{3}{2},0}\right)$ .
+        \end{enumerate}
+            
         \end{jieda}
     \end{enumerate}
 
@@ -1194,106 +1380,6 @@
             \end{array}\right.$，代入可得$LHS = k\left(4+x_1x_2-\dfrac{5}{2}(x_1+x_2)\right) = 0 = RHS$
         \end{jieda}
         
-        \item 已知 $A\text{ 、 }B$ 分别为椭圆 $E : \dfrac{{x}^{2}}{{a}^{2}} + {y}^{2} = 1\left( {a > 1}\right)$ 的左、右顶点, $G$ 为 $E$ 的上顶点, $\vv{AG} \cdot  \vv{GB} = 8,P$ 为直线 $x = 6$ 上的动点, ${PA}$ 与 $E$ 的另一交点为 $C,{PB}$ 与 $E$ 的另一交点为 $D$ .
-        \begin{enumerate*}
-            \item 求 $E$ 的方程
-            \item 证明:直线 ${CD}$ 过定点
-        \end{enumerate*}
-        \begin{jieda}
-        \begin{enumerate}
-            \item 由椭圆方程 $E : \dfrac{{x}^{2}}{{a}^{2}} + {y}^{2} = 1\left( {a > 1}\right)$ 可得: $A\left( {-a,0}\right) ,B\left( {a,0}\right) ,G\left( {0,1}\right)$
-    
-            $\vv{AG} = \left( {a,1}\right) ,\vv{GB} = \left( {a, - 1}\right)$，故$\vv{AG} \cdot  \vv{GB} = {a}^{2} - 1 = 8$，所以${a}^{2} = 9$，故椭圆方程为: $\dfrac{{x}^{2}}{9} + {y}^{2} = 1$
-            \item 依据题意作出如下图象，根据对称性可知该点在$x$轴上
-            
-            \begin{center}
-            \includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d42u9js601uc738mlqp0_3_241_198_468_302_0.jpg}
-            \end{center}
-
-            方法1
-    
-                设直线$CD$：$x = my+n$，$C(x_1, y_1)$，$D(x_1, y_2)$，$P(6, t)$
-    
-                $\vv{AC} = (x_1+3, y_1), \vv{AP} = (9, t)$，$\vv{BD} = (x_2-3, y_2), \vv{BP} = (3, t)$
-    
-                根据$\vv{AC} // \vv{AP}$，$\vv{BD} // \vv{BP}$有$\left\{\begin{array}{l}
-                     9y_1 = t(x_1+3)  \\
-                     3y_2 = t(x_2-3) 
-                \end{array}\right.$，故$9y_1(x_2-3) = 3y_2(x_1+3)$，即$2my_1y_2+3y_1(n-3)-y_2(n+3) = 0$
-    
-                联立直线和椭圆方程有$\left\{\begin{array}{l}
-                     x = my+n \\
-                     \dfrac{{x}^{2}}{9} + {y}^{2} = 1
-                \end{array}\right.$，消去$x$有$(my+n)^2+9y^2 = 9$，即$(9+m^2)y^2+2mny+(n^2-9) = 0$
-    
-                $\Delta > 0 \Longleftrightarrow 4m^2n^2 - 4(n^2-9)(9+m^2) > 0$
-    
-                根据韦达定理有$\left\{\begin{array}{l}
-                     y_1+y_2 = -\dfrac{2mn}{9+m^2} \\
-                     y_1y_2 = \dfrac{n^2-9}{9+m^2}
-                \end{array}\right.$
-                \begin{dingautolist}{172}
-                    \item 考虑$CD$斜率不存在的特例，发现当$CD$为$x = \dfrac{3}{2}$时满足，故将$n = \dfrac{3}{2}$代入检验发现满足条件
-                    \item 考虑让$2my_1y_2+3y_1(n-3)-y_2(n+3) = 0$中$y_1, y_2$的系数相等，求解$3(n-3) = -(n+3)$，得到$n = \dfrac{3}{2}$，代入检验发现满足条件
-                    \item 考虑寻找两根的和与积之间的关系，$y_1y_2 = \dfrac{9-n^2}{2mn}(y_1+y_2)$
-    
-                    故$2my_1y_2+3y_1(n-3)-y_2(n+3) = 0$即$\dfrac{9-n^2}{n}(y_1+y_2)+3y_1(n-3)-y_2(n+3) = 0$，即$\left(2n+\dfrac{9}{n}-9\right)y_1 + \left(-2n+\dfrac{9}{n}-3\right)y_2 = 0$，当$n = \dfrac{3}{2}$时$\left(2n+\dfrac{9}{n}-9\right) = \left(-2n+\dfrac{9}{n}-3\right) = 0$，满足要求.
-                \end{dingautolist}
-            方法2
-    
-                设 $P\left( {6,t}\right)$ ,则直线 ${PA}$ 的方程为 $y = \dfrac{t}{9}\left( {x + 3}\right)$ ,即 ${tx} - {9y} + {3t} = 0$ .
-                
-                同理,可求直线 ${PB}$ 的方程为 ${tx} - {3y} - {3t} = 0$ .
-                
-                则经过直线 ${PA}$ 和直线 ${PB}$ 的曲线的方程可写为 $\left( {{tx} - {9y} + {3t}}\right) \left( {{tx} - {3y} - {3t}}\right)  = 0$ .
-                
-                可化为 ${t}^{2}\left( {{x}^{2} - 9}\right)  + {27}{y}^{2} - {12txy} + {18ty} = 0$ .
-                
-                易知 $A,B,C,D$ 四个点满足上述方程,同时 $A,B,C,D$ 又在椭圆上
-                
-                联立椭圆和两直线的方程：$\left\{\begin{array}{l}
-                     {t}^{2}\left( {{x}^{2} - 9}\right)  + {27}{y}^{2} - {12txy} + {18ty} = 0  \\
-                     \dfrac{{x}^{2}}{9} + {y}^{2} = 1 
-                \end{array}\right.$，消去$x^2$可得 $\left( {{27} - 9{t}^{2}}\right) {y}^{2} - {12txy} + {18ty} = 0$ .
-                
-                故 $y\left\lbrack  {\left( {{27} - 9{t}^{2}}\right) y - {12tx} + {18t}}\right\rbrack   = 0$ ,可得 $y = 0$ 或 $\left( {{27} - 9{t}^{2}}\right) y - {12tx} + {18t} = 0$ .
-                
-                其中 $y = 0$ 表示直线 ${AB}$ ,则 $\left( {{27} - 9{t}^{2}}\right) y - {12tx} + {18t} = 0$ 表示直线 ${CD}$ .
-                
-                令 $y = 0$ ,得 $x = \dfrac{3}{2}$ ,即直线 ${CD}$ 恒过点 $\left( {\dfrac{3}{2},0}\right)$ .
-         
-            方法3
-    
-            设 $P\left( {6,{y}_{0}}\right)$ ,
-            
-            则直线 ${AP}$ 的方程为: $y = \dfrac{{y}_{0} - 0}{6 - \left( {-3}\right) }\left( {x + 3}\right)$ ,即: $y = \dfrac{{y}_{0}}{9}\left( {x + 3}\right)$
-            
-            联立直线 ${AP}$ 的方程与椭圆方程可得: $\left\{  \begin{array}{l} \dfrac{{x}^{2}}{9} + {y}^{2} = 1 \\  y = \dfrac{{y}_{0}}{9}\left( {x + 3}\right)  \end{array}\right.$ ,整理得:
-            
-            $\left( {{y}_{0}^{2} + 9}\right) {x}^{2} + 6{y}_{0}^{2}x + 9{y}_{0}^{2} - {81} = 0$ ,解得: $x =  - 3$ 或 $x = \dfrac{-3{y}_{0}^{2} + {27}}{{y}_{0}^{2} + 9}$
-            
-            将 $x = \dfrac{-3{y}_{0}^{2} + {27}}{{y}_{0}^{2} + 9}$ 代入直线 $y = \dfrac{{y}_{0}}{9}\left( {x + 3}\right)$ 可得: $y = \dfrac{6{y}_{0}}{{y}_{0}^{2} + 9}$
-            
-            所以点 $C$ 的坐标为 $\left( {\dfrac{-3{y}_{0}^{2} + {27}}{{y}_{0}^{2} + 9},\dfrac{6{y}_{0}}{{y}_{0}^{2} + 9}}\right)$ .
-            
-            同理可得: 点 $D$ 的坐标为 $\left( {\dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1},\dfrac{-2{y}_{0}}{{y}_{0}^{2} + 1}}\right)$
-            
-            当 ${y}_{0}^{2} \neq  3$ 时,
-            
-            $\therefore$ 直线 ${CD}$ 的方程为: $y - \left( \dfrac{-2{y}_{0}}{{y}_{0}^{2} + 1}\right)  = \dfrac{\dfrac{6{y}_{0}}{{y}_{0}^{2} + 9} - \left( \dfrac{-2{y}_{0}}{{y}_{0}^{2} + 1}\right) }{\dfrac{-3{y}_{0}^{2} + {27}}{{y}_{0}^{2} + 9} - \dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1}}\left( {x - \dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1}}\right)$ ,
-            
-            整理可得: $y + \dfrac{2{y}_{0}}{{y}_{0}^{2} + 1} = \dfrac{8{y}_{0}\left( {{y}_{0}^{2} + 3}\right) }{6\left( {9 - {y}_{0}^{4}}\right) }\left( {x - \dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1}}\right)  = \dfrac{8{y}_{0}}{6\left( {3 - {y}_{0}^{2}}\right) }\left( {x - \dfrac{3{y}_{0}^{2} - 3}{{y}_{0}^{2} + 1}}\right)$
-            
-            整理得: $y = \dfrac{4{y}_{0}}{3\left( {3 - {y}_{0}^{2}}\right) }x + \dfrac{2{y}_{0}}{{y}_{0}^{2} - 3} = \dfrac{4{y}_{0}}{3\left( {3 - {y}_{0}^{2}}\right) }\left( {x - \dfrac{3}{2}}\right)$
-            
-            所以直线 ${CD}$ 过定点 $\left( {\dfrac{3}{2},0}\right)$ .
-            
-            当 ${y}_{0}^{2} = 3$ 时,直线 ${CD} : x = \dfrac{3}{2}$ ,直线过点 $\left( {\dfrac{3}{2},0}\right)$ .
-            
-            故直线 ${CD}$ 过定点 $\left( {\dfrac{3}{2},0}\right)$ .
-        \end{enumerate}
-            
-        \end{jieda}
         % \item 已知椭圆 $E$ 的中心为坐标原点,对称轴为 $x$ 轴、 $y$ 轴,且过 $A\left( {0, - 2}\right) ,B\left( {\dfrac{3}{2}, - 1}\right)$ 两点. 
         % \begin{enumerate}
         %     \item 求 $E$ 的方程
