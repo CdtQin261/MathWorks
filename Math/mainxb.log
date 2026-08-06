@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  6 AUG 2026 20:56
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  6 AUG 2026 07:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/yudan/Documents/CdtQin/Math/MathWorks/zhuanti/mainxb
-(/Users/yudan/Documents/CdtQin/Math/MathWorks/zhuanti/mainxb.tex
+**/Users/yudan/Documents/CdtQin/Math/MathWorks/Math/mainxb
+(/Users/yudan/Documents/CdtQin/Math/MathWorks/Math/mainxb.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./xbcls.cls
@@ -1721,30 +1721,30 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 \sl@BankOfErrors=\toks67
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 17.
- (./mainxb.aux (./bodyxb/17_jiandanjiheti.aux))
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
+ (./mainxb.aux (./bodyxb/10_zhixian.aux) (./bodyxb/11_yuan.aux))
 \openout1 = `mainxb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1783,70 +1783,85 @@ LaTeX Font Info:    ... okay on input line 17.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 17.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 16.
 
 
 Package picture Warning: The picture package has been disabled as most
 (picture)                of its functionality is now provided by LaTeX directly.
 (picture)                To force the loading of the previous version use
 (picture)                `\usepackage{picture}[=v1]`
-(picture)                or `\usepackage[calc]{picture}`  on input line 17.
+(picture)                or `\usepackage[calc]{picture}`  on input line 16.
 
-Package hyperref Info: Link coloring ON on input line 17.
+Package hyperref Info: Link coloring ON on input line 16.
 (./mainxb.out) (./mainxb.out)
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/17_jiandanjiheti.aux'.
+\openout2 = `bodyxb/10_zhixian.aux'.
 
- (./bodyxb/17_jiandanjiheti.tex
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
+ (./bodyxb/10_zhixian.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 5.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 5.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 5.
+(Font)              <10.53937> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 5.
+(Font)              <7> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 5.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+(Font)              <5> on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 5.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 5.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 5.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 50.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 50.
+
+[1
+
+
+
+]
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
+[2] [3] [4]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1880,182 +1895,36 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
+ [5] [6] [7]) [8]
+\openout2 = `bodyxb/11_yuan.aux'.
 
+ (./bodyxb/11_yuan.tex [9
 
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 66.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 66.
-
-[1
 
 
 
 ]
-File: bodyxb/src/0_254_1658_174_107_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_254_1658_174_107_0.jpg>
- [2]
-File: bodyxb/src/bo_d5aaqaf7aajc73815vqg_2_233_216_299_304_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5aaqaf7aajc73815vqg_2_233_216_299_304_0.jpg>
-File: bodyxb/src/bo_d5abfif7aajc738167kg_0_240_576_299_370_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5abfif7aajc738167kg_0_240_576_299_370_0.jpg>
-File: bodyxb/src/bo_d5abfif7aajc738167kg_0_242_1048_357_245_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5abfif7aajc738167kg_0_242_1048_357_245_0.jpg>
-File: bodyxb/src/bo_d5abfif7aajc738167kg_0_241_1568_236_371_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5abfif7aajc738167kg_0_241_1568_236_371_0.jpg>
- [3]
-File: bodyxb//src/falhr'oaqb'ewihbfqw.png Graphic file (type bmp)
-<bodyxb//src/falhr'oaqb'ewihbfqw.png>
-File: bodyxb/src/bo_d5aaqaf7aajc73815vqg_2_231_1720_253_287_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5aaqaf7aajc73815vqg_2_231_1720_253_287_0.jpg>
-File: bodyxb/src/bo_d5acvjbef24c73bijrlg_0_244_1622_336_393_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5acvjbef24c73bijrlg_0_244_1622_336_393_0.jpg>
- [4]
-File: bodyxb/src/1_1220_229_314_391_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_1220_229_314_391_0.jpg>
- [5]
-File: bodyxb//src/flafajlbf'kahef;kbhaw.png Graphic file (type bmp)
-<bodyxb//src/flafajlbf'kahef;kbhaw.png>
-
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-File: bodyxb//src/gsljghsejrnfbjhebrfq.png Graphic file (type bmp)
-<bodyxb//src/gsljghsejrnfbjhebrfq.png>
-[6] [7] [8
-
-]
-File: bodyxb/src/2_1353_1442_208_219_0.jpg Graphic file (type bmp)
-<bodyxb/src/2_1353_1442_208_219_0.jpg>
-File: bodyxb/src/2_1325_1877_205_192_0.jpg Graphic file (type bmp)
-<bodyxb/src/2_1325_1877_205_192_0.jpg>
- [9]
-File: bodyxb/src/0_1221_1189_271_213_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1221_1189_271_213_0.jpg>
-File: bodyxb/src/1_1087_490_242_237_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_1087_490_242_237_0.jpg>
- [10]
-File: bodyxb/src/2_1340_1097_287_230_0.jpg Graphic file (type bmp)
-<bodyxb/src/2_1340_1097_287_230_0.jpg>
- [11]
-File: bodyxb/src/1_1215_2022_415_220_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_1215_2022_415_220_0.jpg>
-File: bodyxb/src/1_1087_1572_327_194_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_1087_1572_327_194_0.jpg>
+File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_1107_647_108_103_0.jpg Graphic file (type bmp)
+<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_1107_647_108_103_0.jpg>
+File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_922_646_124_108_0.jpg Graphic file (type bmp)
+<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_922_646_124_108_0.jpg>
+File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_738_646_142_108_0.jpg Graphic file (type bmp)
+<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_738_646_142_108_0.jpg>
+ [10] [11]
+File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_679_1053_158_107_0.jpg Graphic file (type bmp)
+<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_679_1053_158_107_0.jpg>
+File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_680_1182_151_111_0.jpg Graphic file (type bmp)
+<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_680_1182_151_111_0.jpg>
+File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_682_1310_149_112_0.jpg Graphic file (type bmp)
+<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_682_1310_149_112_0.jpg>
+File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_681_1440_149_126_0.jpg Graphic file (type bmp)
+<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_681_1440_149_126_0.jpg>
+File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_676_1583_158_130_0.jpg Graphic file (type bmp)
+<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_676_1583_158_130_0.jpg>
  [12]
-File: bodyxb/src/2_1280_200_246_142_0.jpg Graphic file (type bmp)
-<bodyxb/src/2_1280_200_246_142_0.jpg>
-File: bodyxb/src/0_1370_539_242_281_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1370_539_242_281_0.jpg>
-File: bodyxb/src/0_877_836_263_244_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_877_836_263_244_0.jpg>
- [13]
-File: bodyxb/src/bo_d5b4icbef24c73bio840_1_238_208_302_324_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5b4icbef24c73bio840_1_238_208_302_324_0.jpg>
-File: bodyxb//src/zhuiti4.png Graphic file (type bmp)
-<bodyxb//src/zhuiti4.png>
-File: bodyxb/src/0_1322_113_200_278_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1322_113_200_278_0.jpg>
-File: bodyxb/src/0_937_302_204_194_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_937_302_204_194_0.jpg>
- [14]
-File: bodyxb/src/0_1352_1376_219_227_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1352_1376_219_227_0.jpg>
-File: bodyxb/src/0_1280_1762_256_368_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1280_1762_256_368_0.jpg>
-File: bodyxb/src/bo_d5b4icbef24c73bio840_1_232_1116_292_383_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5b4icbef24c73bio840_1_232_1116_292_383_0.jpg>
- [15]
-File: bodyxb//src/zhuiti5.png Graphic file (type bmp)
-<bodyxb//src/zhuiti5.png>
-File: bodyxb/src/0_91_247_334_304_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_91_247_334_304_0.jpg>
-File: bodyxb/src/0_1169_759_377_361_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1169_759_377_361_0.jpg>
- [16]
-File: bodyxb/src/1_90_172_297_368_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_90_172_297_368_0.jpg>
-File: bodyxb/src/1_1203_822_334_414_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_1203_822_334_414_0.jpg>
- [17]
-File: bodyxb/src/1_114_1421_337_348_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_114_1421_337_348_0.jpg>
-File: bodyxb/src/1_1253_1800_328_346_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_1253_1800_328_346_0.jpg>
-File: bodyxb/src/2_91_227_343_350_0.jpg Graphic file (type bmp)
-<bodyxb/src/2_91_227_343_350_0.jpg>
- [18]
-File: bodyxb/src/2_1123_1103_389_444_0.jpg Graphic file (type bmp)
-<bodyxb/src/2_1123_1103_389_444_0.jpg>
- [19]
-File: bodyxb/src/3_1179_513_298_347_0.jpg Graphic file (type bmp)
-<bodyxb/src/3_1179_513_298_347_0.jpg>
- [20]
-File: bodyxb/src/3_87_1928_201_281_0.jpg Graphic file (type bmp)
-<bodyxb/src/3_87_1928_201_281_0.jpg>
-File: bodyxb/src/4_1155_179_284_413_0.jpg Graphic file (type bmp)
-<bodyxb/src/4_1155_179_284_413_0.jpg>
- [21]
-File: bodyxb/src/6_1187_1336_324_325_0.jpg Graphic file (type bmp)
-<bodyxb/src/6_1187_1336_324_325_0.jpg>
-File: bodyxb/src/7_1086_350_347_317_0.jpg Graphic file (type bmp)
-<bodyxb/src/7_1086_350_347_317_0.jpg>
- [22]
-File: bodyxb/src/7_1107_1203_380_338_0.jpg Graphic file (type bmp)
-<bodyxb/src/7_1107_1203_380_338_0.jpg>
- [23]
-File: bodyxb/src/4_1145_1973_389_366_0.jpg Graphic file (type bmp)
-<bodyxb/src/4_1145_1973_389_366_0.jpg>
-File: bodyxb/src/5_1206_1792_319_368_0.jpg Graphic file (type bmp)
-<bodyxb/src/5_1206_1792_319_368_0.jpg>
- [24] [25] [26
-
-]
-File: bodyxb/src/bo_d5aaqaf7aajc73815vqg_1_329_1931_259_152_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5aaqaf7aajc73815vqg_1_329_1931_259_152_0.jpg>
-File: bodyxb/src/bo_d5aaqaf7aajc73815vqg_1_630_1913_259_171_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5aaqaf7aajc73815vqg_1_630_1913_259_171_0.jpg>
-File: bodyxb/src/bo_d5aaqaf7aajc73815vqg_1_919_1847_194_275_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5aaqaf7aajc73815vqg_1_919_1847_194_275_0.jpg>
-File: bodyxb//src/zugengyuanli2.png Graphic file (type bmp)
-<bodyxb//src/zugengyuanli2.png>
-File: bodyxb//src/zugengyuanli3.png Graphic file (type bmp)
-<bodyxb//src/zugengyuanli3.png>
- [27]
-File: bodyxb//src/neiqieqiu2.png Graphic file (type bmp)
-<bodyxb//src/neiqieqiu2.png>
-File: bodyxb//src/neiqieqiu3.png Graphic file (type bmp)
-<bodyxb//src/neiqieqiu3.png>
- [28]
-File: bodyxb//src/neiqieqiu5.png Graphic file (type bmp)
-<bodyxb//src/neiqieqiu5.png>
-File: bodyxb//src/neiqieqiu6.png Graphic file (type bmp)
-<bodyxb//src/neiqieqiu6.png>
- [29]
-File: bodyxb//src/waijieqiuqiangjiao2.png Graphic file (type bmp)
-<bodyxb//src/waijieqiuqiangjiao2.png>
-File: bodyxb//src/waijieqiuduileng3.png Graphic file (type bmp)
-<bodyxb//src/waijieqiuduileng3.png>
- [30]
-File: bodyxb//src/waijieqiugao4.png Graphic file (type bmp)
-<bodyxb//src/waijieqiugao4.png>
-File: bodyxb//src/waijieqiuermianjiao2.png Graphic file (type bmp)
-<bodyxb//src/waijieqiuermianjiao2.png>
- [31]
-File: bodyxb//src/waijieyuanmianmianchuizhi1.png Graphic file (type bmp)
-<bodyxb//src/waijieyuanmianmianchuizhi1.png>
-File: bodyxb//src/waijieqiuermianjiao3.png Graphic file (type bmp)
-<bodyxb//src/waijieqiuermianjiao3.png>
-File: bodyxb//src/waijieqiuermianjiao4.png Graphic file (type bmp)
-<bodyxb//src/waijieqiuermianjiao4.png>
- [32]
-File: bodyxb//src/waijieqiuermianjiaotigan4.png Graphic file (type bmp)
-<bodyxb//src/waijieqiuermianjiaotigan4.png>
-File: bodyxb//src/waijieqiuermianjiao1.png Graphic file (type bmp)
-<bodyxb//src/waijieqiuermianjiao1.png>
-File: bodyxb//src/qiudeduidie.png Graphic file (type bmp)
-<bodyxb//src/qiudeduidie.png>
-) [33] (./mainxb.aux (./bodyxb/17_jiandanjiheti.aux))
+File: bodyxb//src/cd337247ddf6e26618bee99814784b36.jpg Graphic file (type bmp)
+<bodyxb//src/cd337247ddf6e26618bee99814784b36.jpg>
+) [13] (./mainxb.aux (./bodyxb/10_zhixian.aux) (./bodyxb/11_yuan.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -2064,12 +1933,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 50169 strings out of 468168
- 1189727 string characters out of 5432816
- 1740487 words of memory out of 5000000
- 77817 multiletter control sequences out of 15000+600000
- 656718 words of font info for 126 fonts, out of 8000000 for 9000
+ 49675 strings out of 468168
+ 1171133 string characters out of 5432816
+ 1737835 words of memory out of 5000000
+ 77382 multiletter control sequences out of 15000+600000
+ 656662 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,21n,128p,733b,1346s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,17n,128p,622b,1203s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (33 pages).
+Output written on mainxb.pdf (13 pages).
