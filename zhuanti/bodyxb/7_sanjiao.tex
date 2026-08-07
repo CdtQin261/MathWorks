@@ -1515,6 +1515,21 @@
             \item 根据正弦定理有$\dfrac{a}{sinA} = \dfrac{b}{sinB} = \dfrac{c}{sinC} = \dfrac{2}{\dfrac{\sqrt{3}}{2}} = \dfrac{4\sqrt{3}}{3}$，因此$a^2+b^2 = \dfrac{16}{3}(sin^2A + sin^2B) = \dfrac{16}{3}(sin^2A + sin^2(\dfrac{2\pi}{3}-A)) = \dfrac{16}{3}(1+\dfrac{1}{2}sin(2A - \dfrac{\pi}{6}))(A \in (\dfrac{\pi}{6}, \dfrac{\pi}{2}))$，因此$a^2+b^2 \in \left(\dfrac{20}{3}, 8 \right]$
         \end{enumerate}        
     \end{jieda}
+    \item 已知 $\bigtriangleup {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,角 $B$ 为钝角,设 $\bigtriangleup {ABC}$ 的面积为 $S$ ,若 ${4bS} = a\left( {{b}^{2} + {c}^{2} - {a}^{2}}\right)$，则 $\sin A + 2\sin C$ 的取值范围为\blkda{$\left( {\dfrac{\sqrt{2}}{2},\dfrac{33}{16}}\right\rbrack$}
+    \begin{jieda}
+        ${4bS} = a\left( {{b}^{2} + {c}^{2} - {a}^{2}}\right)$，即$4bS = 2abc cosA$，即$\sin B = \cos A$，因为 $B$ 是钝角，所以 $B = \dfrac{\pi }{2} + A$
+        
+        所以 $\sin A + 2\sin C = \sin A + 2\sin \left\lbrack  {\pi  - \left( {\dfrac{\pi }{2} + A}\right)  - A}\right\rbrack   = \sin A + 2\sin \left( {\dfrac{\pi }{2} - {2A}}\right)$
+        $= \sin A + 2\cos {2A} =  - 4{\sin }^{2}A + \sin A + 2$
+
+        因为 $B$ 为钝角,所以 $\left\{  \begin{array}{l} 0 < A < \dfrac{\pi }{2} \\  0 < \dfrac{\pi }{2} - {2A} < \dfrac{\pi }{2} \end{array}\right.$ ,解得 $0 < A < \dfrac{\pi }{4}$ ,所以 $\sin A \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$
+        
+        令 $y =  - 4{\sin }^{2}A + \sin A + 2,\sin A \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,
+        令 $t = \sin A,t \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,所以 $y =  - 4{t}^{2} + t + 2$ ,对称轴为 $t = \dfrac{1}{8} \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,
+        所以 ${y}_{\max } =  - 4{\left( \dfrac{1}{8}\right) }^{2} + \dfrac{1}{8} + 2 = \dfrac{33}{16}$ ,当 $t \rightarrow  \dfrac{\sqrt{2}}{2}$ 时, $y \rightarrow  \dfrac{\sqrt{2}}{2}$ ,
+        所以 $\sin A + 2\sin C$ 的取值范围为 $\left( {\dfrac{\sqrt{2}}{2},\dfrac{33}{16}}\right\rbrack$
+    \end{jieda}
+
     \item 设锐角 $\bigtriangleup  {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,若 $C = {2A}$ ,则 $\dfrac{{2c} + b}{a}$ 的取值范围是\blkda[4]{$\left( {2\sqrt{2} + 1,2\sqrt{3} + 2}\right)$}
     \begin{jieda}
         因为 $C = {2A}$，所以$B = \pi -3A$，故$\dfrac{{2c} + b}{a} = \dfrac{2sinC+sinB}{sinA} = \dfrac{2sin2A+sin3A}{sinA} = 4cosA + 3 - 4sin^2A = 4cos^2A + 4cosA - 1$

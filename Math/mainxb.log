@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  6 AUG 2026 07:29
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  7 AUG 2026 08:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,7 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/10_zhixian.aux) (./bodyxb/11_yuan.aux))
+ (./mainxb.aux (./bodyxb/13_shuangquxian.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1797,71 +1797,77 @@ Package hyperref Info: Link coloring ON on input line 16.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/10_zhixian.aux'.
+\openout2 = `bodyxb/13_shuangquxian.aux'.
 
- (./bodyxb/10_zhixian.tex
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6.
+ (./bodyxb/13_shuangquxian.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 6.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 6.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 6.
+(Font)              <10.53937> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 6.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 6.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+(Font)              <5> on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 6.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 6.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 6.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 50.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 50.
-
-[1
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_410_747_306_289_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_410_747_306_289_0.jpg>
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_896_784_308_255_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_896_784_308_255_0.jpg>
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_1185_1610_309_261_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_0_1185_1610_309_261_0.jpg>
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_1_1178_939_284_357_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_1_1178_939_284_357_0.jpg>
+ [1
 
 
 
 ]
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-[2] [3] [4]
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 59.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 59.
+
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1895,36 +1901,46 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
- [5] [6] [7]) [8]
-\openout2 = `bodyxb/11_yuan.aux'.
-
- (./bodyxb/11_yuan.tex [9
-
-
-
-
-]
-File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_1107_647_108_103_0.jpg Graphic file (type bmp)
-<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_1107_647_108_103_0.jpg>
-File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_922_646_124_108_0.jpg Graphic file (type bmp)
-<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_922_646_124_108_0.jpg>
-File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_738_646_142_108_0.jpg Graphic file (type bmp)
-<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_738_646_142_108_0.jpg>
- [10] [11]
-File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_679_1053_158_107_0.jpg Graphic file (type bmp)
-<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_679_1053_158_107_0.jpg>
-File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_680_1182_151_111_0.jpg Graphic file (type bmp)
-<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_680_1182_151_111_0.jpg>
-File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_682_1310_149_112_0.jpg Graphic file (type bmp)
-<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_682_1310_149_112_0.jpg>
-File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_681_1440_149_126_0.jpg Graphic file (type bmp)
-<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_681_1440_149_126_0.jpg>
-File: bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_676_1583_158_130_0.jpg Graphic file (type bmp)
-<bodyxb/src/01972b2d-adb6-7aca-bab1-e684ea51e946_0_676_1583_158_130_0.jpg>
- [12]
-File: bodyxb//src/cd337247ddf6e26618bee99814784b36.jpg Graphic file (type bmp)
-<bodyxb//src/cd337247ddf6e26618bee99814784b36.jpg>
-) [13] (./mainxb.aux (./bodyxb/10_zhixian.aux) (./bodyxb/11_yuan.aux))
+[2]
+File: bodyxb/src/bo_d3eri7s601uc738iqr70_2_240_1616_444_409_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d3eri7s601uc738iqr70_2_240_1616_444_409_0.jpg>
+ [3]
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1205_1034_270_314_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1205_1034_270_314_0.jpg>
+ [4]
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1180_1728_303_298_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1180_1728_303_298_0.jpg>
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1157_270_304_303_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1157_270_304_303_0.jpg>
+ [5]
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1060_879_413_292_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1060_879_413_292_0.jpg>
+ [6]
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_624_857_239_159_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_624_857_239_159_0.jpg>
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_1042_851_203_176_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_1042_851_203_176_0.jpg>
+ [7] [8]
+File: bodyxb//src/jianjinxian2.png Graphic file (type bmp)
+<bodyxb//src/jianjinxian2.png>
+ [9]
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_8_433_1272_768_453_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_8_433_1272_768_453_0.jpg>
+ [10] [11] [12]
+File: bodyxb//src/shuangquxiandisandingyi.png Graphic file (type bmp)
+<bodyxb//src/shuangquxiandisandingyi.png>
+File: bodyxb//src/disandingyi3.png Graphic file (type bmp)
+<bodyxb//src/disandingyi3.png>
+ [13] [14]
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
+File: bodyxb/src/bo_d3mggojef24c73cuv41g_0_235_629_430_302_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d3mggojef24c73cuv41g_0_235_629_430_302_0.jpg>
+File: bodyxb/src/bo_d3mggojef24c73cuv41g_3_236_262_430_302_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d3mggojef24c73cuv41g_3_236_262_430_302_0.jpg>
+[15] [16]
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg>
+ [17] [18] [19]) [20] (./mainxb.aux (./bodyxb/13_shuangquxian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1933,12 +1949,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49675 strings out of 468168
- 1171133 string characters out of 5432816
- 1737835 words of memory out of 5000000
- 77382 multiletter control sequences out of 15000+600000
- 656662 words of font info for 119 fonts, out of 8000000 for 9000
+ 49739 strings out of 468168
+ 1173260 string characters out of 5432816
+ 1733486 words of memory out of 5000000
+ 77433 multiletter control sequences out of 15000+600000
+ 656726 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,17n,128p,622b,1203s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,14n,128p,665b,1381s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (13 pages).
+Output written on mainxb.pdf (20 pages).
