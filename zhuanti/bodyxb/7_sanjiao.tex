@@ -200,7 +200,7 @@
         \begin{jieda}
             首先判断出所求和已知的角之间的关系：$\beta = \alpha - (\alpha - \beta)$ \\
             $tan\beta = tan(\alpha - (\alpha - \beta)) = \dfrac{tan\alpha - tan(\alpha - \beta)}{1 + tan\alpha \cdot tan(\alpha - \beta)}$ \\
-            $cos\alpha = \dfrac{4}{5} \Rightarrow tan\alpha = \dfrac{3}{4}$，代入得到$tan\beta = \dfrac{\dfrac{3}{4} - \left(-\dfrac{1}{3}\right)}{1 + \dfrac{3}{4} \cdot \left (-\dfrac{1}{3} \right)} = \dfrac{13}{9}$\\
+            $cos\alpha = \dfrac{4}{5} \Longrightarrow tan\alpha = \dfrac{3}{4}$，代入得到$tan\beta = \dfrac{\dfrac{3}{4} - \left(-\dfrac{1}{3}\right)}{1 + \dfrac{3}{4} \cdot \left (-\dfrac{1}{3} \right)} = \dfrac{13}{9}$\\
             故由$1 + tan^2\beta = \dfrac{1}{cos^2\beta}$，得到$cos\beta = \dfrac{9\sqrt{10}}{50}$ \\
             \ps \textbf{三角求值类问题，可以先从已知条件的角和未知的角之间的联系入手进行分析.}
         \end{jieda}
@@ -225,7 +225,7 @@
                 \item 方法1 \\
                 $8cos(2\alpha+\beta)+5cos\beta = 8cos[(\alpha+\beta)+\alpha]+5cos[(\alpha+\beta)-\alpha] \\
                 = 13cos(\alpha+\beta)cos\alpha - 3sin(\alpha+\beta)sin\alpha = 0$
-                故$13cos(\alpha+\beta)cos\alpha = 3sin(\alpha+\beta)sin\alpha \Rightarrow tan(\alpha+\beta)tan\alpha = \dfrac{13}{3}$
+                故$13cos(\alpha+\beta)cos\alpha = 3sin(\alpha+\beta)sin\alpha \Longrightarrow tan(\alpha+\beta)tan\alpha = \dfrac{13}{3}$
                 \item 方法2 \\
                 $tan(\alpha + \beta) \cdot tan\alpha = \dfrac{sin(\alpha+\beta) \cdot sin\alpha}{cos(\alpha + \beta) \cdot cos\alpha} = \dfrac{-\dfrac{1}{2}[cos(2\alpha+\beta) - cos\beta]}{\dfrac{1}{2}[cos(2\alpha+\beta) + cos\beta]} = \dfrac{1 + \dfrac{5}{8}}{1 - \dfrac{5}{8}} = \dfrac{13}{3}$
             \end{enumerate}
@@ -257,8 +257,8 @@
         $0<\beta<\dfrac{\pi}{4}<\alpha<\dfrac{\pi}{2}$, 求$\alpha+\beta$的值. 
         \begin{jieda}
         首先判断出所求和已知的角之间的关系：$\alpha+\beta = (2\alpha-\beta)-(\alpha-2\beta)$ \\
-        $2\alpha \in \left(\dfrac{\pi}{2}, \pi \right), -\beta \in \left(-\dfrac{\pi}{4}, 0 \right) \Rightarrow 2\alpha-\beta \in \left(\dfrac{\pi}{4}, \pi \right)$, 故$sin(2\alpha-\beta)=\dfrac{5\sqrt{3}}{14}$. \\
-        $\alpha \in \left(\dfrac{\pi}{4}, \dfrac{\pi}{2} \right), -2\beta \in \left(-\dfrac{\pi}{2}, 0 \right) \Rightarrow \alpha-2\beta \in \left(-\dfrac{\pi}{4}, \dfrac{\pi}{2} \right)$，故$cos(\alpha-2\beta)=\dfrac{1}{7}$. \\
+        $2\alpha \in \left(\dfrac{\pi}{2}, \pi \right), -\beta \in \left(-\dfrac{\pi}{4}, 0 \right) \Longrightarrow 2\alpha-\beta \in \left(\dfrac{\pi}{4}, \pi \right)$, 故$sin(2\alpha-\beta)=\dfrac{5\sqrt{3}}{14}$. \\
+        $\alpha \in \left(\dfrac{\pi}{4}, \dfrac{\pi}{2} \right), -2\beta \in \left(-\dfrac{\pi}{2}, 0 \right) \Longrightarrow \alpha-2\beta \in \left(-\dfrac{\pi}{4}, \dfrac{\pi}{2} \right)$，故$cos(\alpha-2\beta)=\dfrac{1}{7}$. \\
         计算目标角的取值范围：$\alpha+\beta\in\left(\dfrac{\pi}{4},\dfrac{3\pi}{4}\right)$，于是$cos(\alpha+\beta)=cos((2\alpha-\beta)-(\alpha-2\beta))=\dfrac{1}{2}$, 故$\alpha+\beta=\dfrac{\pi}{3}$. 
         \end{jieda}
         \item 已知$\tan(\alpha-\beta)=\dfrac{1}{2}$, $\tan\beta=-\dfrac{1}{7}$, 且$\alpha,\beta\in(0,\pi)$, 求$2\alpha-\beta$的大小. 
@@ -375,8 +375,8 @@
         \end{jieda}
         \item 若三角形的两内角$\alpha, \beta$满足$sin\alpha = \dfrac{3}{5}, cos\beta = \dfrac{5}{13}$，则此三角形的另一内角$\gamma$的余弦值等于\blkda{$\dfrac{16}{65}$}
         \begin{jieda}
-            $cos\beta = \dfrac{5}{13} \Rightarrow sin\beta = \dfrac{12}{13}$ \\
-            $sin\alpha = \dfrac{3}{5} \Rightarrow cos\alpha = \pm \dfrac{4}{5}$，若$cos\alpha = -\dfrac{4}{5}$，则$sin(\alpha+\beta) < 0$，必不可能，故$cos\alpha = \dfrac{4}{5}$ \\
+            $cos\beta = \dfrac{5}{13} \Longrightarrow sin\beta = \dfrac{12}{13}$ \\
+            $sin\alpha = \dfrac{3}{5} \Longrightarrow cos\alpha = \pm \dfrac{4}{5}$，若$cos\alpha = -\dfrac{4}{5}$，则$sin(\alpha+\beta) < 0$，必不可能，故$cos\alpha = \dfrac{4}{5}$ \\
             因此有$cos\gamma = -cos(\alpha + \beta) = \dfrac{16}{65}$
         \end{jieda}
         \item 设$A,B,C$是$\triangle{ABC}$的三内角, 已知$\dfrac{tan{A}-tan{B}}{tan{A}+tan{B}}=\dfrac{sin{C}-sin{B}}{sin{C}}$, 求$cos\dfrac{B+C}{2}$的值. 
@@ -431,9 +431,9 @@
         \item 若$sinx - \sqrt{3}cosx = \dfrac{4m-6}{4-m}$有解，则$m$的取值范围是\blkda{$\left[-1, \dfrac{7}{3}\right]$}
         \begin{jieda}
             $sinx - \sqrt{3}cosx = 2sin\left(x-\dfrac{\pi}{3}\right)$，故$sin\left(x-\dfrac{\pi}{3}\right) = \dfrac{2m-3}{4-m}$有解\\
-            $\Rightarrow \dfrac{2m-3}{4-m} \in [-1, 1] 
-            \Rightarrow \left |\dfrac{2m-3}{4-m} \right| \leq 1 
-            \Rightarrow |2m-3| \leq |4-m| \Rightarrow 4m^2 - 12m + 9 \leq 16 + m^2 - 8m \Rightarrow 3m^2 -4m - 7 \leq 0 \Rightarrow m \in \left[-1, \dfrac{7}{3}\right]$
+            $\Longrightarrow \dfrac{2m-3}{4-m} \in [-1, 1] 
+            \Longrightarrow \left |\dfrac{2m-3}{4-m} \right| \leq 1 
+            \Longrightarrow |2m-3| \leq |4-m| \Longrightarrow 4m^2 - 12m + 9 \leq 16 + m^2 - 8m \Longrightarrow 3m^2 -4m - 7 \leq 0 \Longrightarrow m \in \left[-1, \dfrac{7}{3}\right]$
         \end{jieda}
     \end{enumerate}
     \item 辅助角公式与$y = \dfrac{asinx+bcosx+c}{a'sinx+b'cosx+c'}$的值域
@@ -482,7 +482,7 @@
             \end{array} \right.$，故$\left \{\begin{array}{l}
                  sin\alpha = \dfrac{\sqrt{5}}{5} \\
                  cos\alpha = \dfrac{2\sqrt{5}}{5}
-            \end{array} \right.$，下面考虑出$2\beta$相关式子. $sin\left(\beta - \dfrac{\pi}{4}\right) = \dfrac{3}{5} \Rightarrow cos\left(\beta - \dfrac{\pi}{4}\right) = \dfrac{4}{5}$，故$sin\left(2\beta - \dfrac{\pi}{2}\right) = \dfrac{24}{25}$，即$cos\left(2\beta\right) = -\dfrac{24}{25}$，进一步有$sin\left(2\beta\right) = \dfrac{7}{25}$，因此有$cos(\alpha + 2\beta) = \dfrac{-11\sqrt{5}}{25}$
+            \end{array} \right.$，下面考虑出$2\beta$相关式子. $sin\left(\beta - \dfrac{\pi}{4}\right) = \dfrac{3}{5} \Longrightarrow cos\left(\beta - \dfrac{\pi}{4}\right) = \dfrac{4}{5}$，故$sin\left(2\beta - \dfrac{\pi}{2}\right) = \dfrac{24}{25}$，即$cos\left(2\beta\right) = -\dfrac{24}{25}$，进一步有$sin\left(2\beta\right) = \dfrac{7}{25}$，因此有$cos(\alpha + 2\beta) = \dfrac{-11\sqrt{5}}{25}$
         \end{jieda}
         \item 若$\alpha \in (0, \pi), sin\alpha + cos\alpha = \dfrac{1}{3}$，则$cos2\alpha = $\blkda{$-\dfrac{\sqrt{17}}{9}$}
         \begin{jieda}
@@ -921,7 +921,7 @@
                 $y = |cosx|$的最小正周期为$\pi$ \\
                 \ps $y = |tanx| + |cotx| = \dfrac{|sinx|}{|cosx|} + \dfrac{|cosx|}{|sinx|} = \dfrac{1}{|sinx \cdot cosx|} = \dfrac{2}{|sin2x|}$.
             \end{jieda}
-        \item 已知$f(x) = a \cdot tan\dfrac{x}{2} - b \cdot sinx + 4$（其中$a, b$为常数且$ab \neq 0$），如果$f(3) = 5$，则$f(2010\pi-3)$的值为\blkda{3}
+        \item 已知$f(x) = a \cdot tan\dfrac{x}{2} - b \cdot sinx + 4$（$a, b$为常数且$ab \neq 0$），若$f(3) = 5$，则$f(2010\pi-3)=$\blkda{3}
         \begin{jieda}
             易知函数关于$(0, 4)$中心对称，即$f(x) + f(-x) = 8$。函数周期为$2\pi$，故推得$f(2010\pi - 3) = f(-3) = 8 - 5 = 3$
         \end{jieda}
@@ -936,7 +936,7 @@
 
 \item 函数图像的变换
     \begin{enumerate}
-        \item 函数$y = sin(2x+\dfrac{\pi}{3})$的图像可由函数$y = sin2x$通过向\blkda{左}平移\blkda{$\dfrac{\pi}{6}$}个单位长度得到.
+        \item 函数$y = sin\left(2x+\dfrac{\pi}{3}\right)$的图像可由函数$y = sin2x$向\blkda{左}平移\blkda{$\dfrac{\pi}{6}$}个单位长度得到.
         \begin{jieda}
             $y = sin(2x+\dfrac{\pi}{3}) = sin(2(x+\dfrac{\pi}{6}))$
         \end{jieda}
@@ -993,7 +993,7 @@
             \item $f(x) = cos2x - sinx + 2$的值域为\blkda{$\left[0, \dfrac{25}{8}\right]$}
             \begin{jieda}
                 $f(x) = 1-2sin^2x - sinx + 2 = -2sin^2x - sinx + 3$ \\
-                令$t = sinx, t \in [-1, 1]$，$f(x) = g(t) = -2t^2 - t + 3$，对称轴为$t = -\dfrac{1}{4}$，因此$f(x)$的值域为$[g(1), g(-\dfrac{1}{4})]$，即$\left[0, \dfrac{25}{8}\right]$
+                令$t = sinx, t \in [-1, 1]$，$f(x) = g(t) = -2t^2 - t + 3$，对称轴为$t = -\dfrac{1}{4}$，因此$f(x)$的值域为$\left[g\left(1\right), g\left(-\dfrac{1}{4}\right)\right]$，即$\left[0, \dfrac{25}{8}\right]$
             \end{jieda}
             \item 函数$f(x) = 2cos\left(x-\dfrac{\pi}{4}\right)+sin2x$的值域为\blkda{$\left[-\dfrac{3}{2}, 3\right]$}
             \begin{jieda}
@@ -1008,6 +1008,14 @@
                 \end{dingautolist}
             \end{jieda}
 
+            \item 已知关于$x$的方程$sin^2x+cosx+a = 0$有解，求$a$的范围.
+            \begin{jieda}
+                $a+1 = cos^2x - cosx \in \left[-\dfrac{1}{4}, 2\right]$，故$a \in \left[-\dfrac{5}{4}, 1\right]$
+            \end{jieda}
+            \item 已知$cos^2x - sinx + a = 0$在$\left(0, \dfrac{\pi}{2}\right]$范围内有解，求$a$的范围.
+            \begin{jieda}
+                $a+1 = sin^2x + sinx \in (0, 2] \left(x \in \left(0, \dfrac{\pi}{2}\right]\right)$，故$a \in (-1, 1]$
+            \end{jieda}
 
             \item 若$cosx + siny = \dfrac{1}{4}$，则$sin^2x - siny$的取值范围是\blkda{$\left[-\dfrac{9}{16}, 1 \right]$}
             \begin{jieda}
@@ -1083,7 +1091,7 @@
                 $\left \{ \begin{array}{l}
                      sinxcosy + cosxsiny \in [-1, 1] \\
                      sinxcosy - cosxsiny \in [-1, 1] \\
-                \end{array}\right. \Rightarrow cosxsiny \in \left[-\dfrac{1}{2}, \dfrac{1}{2}\right]$
+                \end{array}\right. \Longrightarrow cosxsiny \in \left[-\dfrac{1}{2}, \dfrac{1}{2}\right]$
             \end{jieda}
         \end{enumerate}
     \end{enumerate}
@@ -1147,28 +1155,6 @@
     \end{jieda}
     \item 已知函数 $f\left( x\right)  = \sin \left( {{\omega x} - \dfrac{\pi }{6}}\right) \left( {\omega  > 0}\right)$ 在 $\left\lbrack  {\dfrac{\pi }{3},\pi }\right\rbrack$ 上单调递增,则实数 $\omega$ 的取值范围是\blkda{$\left(0, \dfrac{2}{3}\right]$}
 
-\end{enumerate}
-\item 求$\omega$ - 问题转化
-\begin{enumerate}
-    
-    \item 已知函数$f(x) = sin\left(\omega x + \dfrac{\pi}{3}\right) (\omega > 0)$，若将$f(x)$的图象向左平移$\dfrac{\pi}{2}$个单位后关于$y$轴对称，则$\omega$的最小值为\blkda{$\dfrac{1}{3}$}
-        \begin{jieda}
-            代入$x = \dfrac{\pi}{2}$，$f\left(\dfrac{\pi}{2}\right) = sin\left(\dfrac{\omega \pi}{2} + \dfrac{\pi}{3}\right) = \pm 1$，因此$\dfrac{\omega \pi}{2} + \dfrac{\pi}{3} = k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})$，即$\omega = 2k + \dfrac{1}{3} (k \in \mathbf{Z})$，又因为$\omega > 0$，因此当$k = 0$时$\omega$取最小值$\dfrac{1}{3}$.
-        \end{jieda}
-    
-    \item 若存在实数 $\varphi$ ,使函数 $f\left( x\right)  = \cos \left( {{\omega x} + \varphi }\right)  - \dfrac{1}{2}\left( {\omega  > 0}\right)$ 在 $x \in  \left\lbrack  {\pi ,{3\pi }}\right\rbrack$ 上有且仅有 2 个零点,则 $\omega$ 的取值范围\blkda{$\left[\dfrac{1}{3}, \dfrac{5}{3}\right)$}
-    \begin{jieda}
-        令$t = \omega x + \varphi$，故$cos t  = \dfrac{1}{2}$在$t \in [\omega \pi + \varphi, 3\omega \pi + \varphi]$恰有两个解
-
-        $cost = \dfrac{1}{2}$的解集为$\{x| x = \pm \dfrac{\pi}{3} + 2k\pi, k \in \mathbf{Z}\}$，
-        
-        故存在长度为$2\omega \pi$的区间与$\{x| x = \pm \dfrac{\pi}{3} + 2k\pi, k \in \mathbf{Z}\}$有且仅有两个公共元素，数形结合可知$2\omega\pi \in \left[\dfrac{2\pi}{3}, \dfrac{10\pi}{3}\right)$，即$\omega \in \left[\dfrac{1}{3}, \dfrac{5}{3}\right)$
-    \end{jieda}
-    
-    \item 已知函数 $f\left( x\right)  = \sin {\omega x} + \sqrt{3}\cos {\omega x}$ ,若存在 $0 < {x}_{1} < {x}_{2} < \dfrac{\pi }{2}$ ,使得 $f\left( {x}_{1}\right)  - f\left( {x}_{2}\right) = -4$,则正数$\omega$的取值范围是\blkda{$\left(\dfrac{13}{3}, +\infty\right)$}
-    \begin{jieda}
-        $f(x) = 2sin(\omega x + \dfrac{\pi}{3})$，令$t = \omega x + \dfrac{\pi}{3}$，则存在 $\dfrac{\pi}{3} < {t}_{1} < {t}_{2} < \dfrac{\omega\pi}{2}+\dfrac{\pi}{3}$，使得$sint_1 = -1, sint_2 = 1$，故$t_1 = \dfrac{3\pi}{2}, t_2 = \dfrac{5\pi}{2} + 2k\pi, k \in \mathbf{N}$，故$\dfrac{\omega\pi}{2}+\dfrac{\pi}{3} > \dfrac{5\pi}{2}$，故$\omega \in \left(\dfrac{13}{3}, +\infty\right)$
-    \end{jieda}
 \end{enumerate}
 \item 求$\omega$ - 动点定区间
 \begin{enumerate}
@@ -1240,20 +1226,45 @@
     
     \item 已知函数 $f\left( x\right)  = \cos {\omega x} - 1\left( {\omega  > 0}\right)$ 在区间 $\left\lbrack  {0,{2\pi }}\right\rbrack$ 有且仅有 3 个零点,则 $\omega$ 的取值范围是\blkda{$[2, 3)$}
 \end{enumerate}
+\item 求$\omega$ - 问题转化
+\begin{enumerate}
+    
+    \item 已知函数$f(x) = sin\left(\omega x + \dfrac{\pi}{3}\right) (\omega > 0)$，若将$f(x)$的图象向左平移$\dfrac{\pi}{2}$个单位后关于$y$轴对称，则$\omega$的最小值为\blkda{$\dfrac{1}{3}$}
+        \begin{jieda}
+            代入$x = \dfrac{\pi}{2}$，$f\left(\dfrac{\pi}{2}\right) = sin\left(\dfrac{\omega \pi}{2} + \dfrac{\pi}{3}\right) = \pm 1$，因此$\dfrac{\omega \pi}{2} + \dfrac{\pi}{3} = k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})$，即$\omega = 2k + \dfrac{1}{3} (k \in \mathbf{Z})$，又因为$\omega > 0$，因此当$k = 0$时$\omega$取最小值$\dfrac{1}{3}$.
+        \end{jieda}
+    
+    \item 若存在实数 $\varphi$ ,使函数 $f\left( x\right)  = \cos \left( {{\omega x} + \varphi }\right)  - \dfrac{1}{2}\left( {\omega  > 0}\right)$ 在 $x \in  \left\lbrack  {\pi ,{3\pi }}\right\rbrack$ 上有且仅有 2 个零点,则 $\omega$ 的取值范围\blkda{$\left[\dfrac{1}{3}, \dfrac{5}{3}\right)$}
+    \begin{jieda}
+        令$t = \omega x + \varphi$，故$cos t  = \dfrac{1}{2}$在$t \in [\omega \pi + \varphi, 3\omega \pi + \varphi]$恰有两个解
+
+        $cost = \dfrac{1}{2}$的解集为$\{x| x = \pm \dfrac{\pi}{3} + 2k\pi, k \in \mathbf{Z}\}$，
+        
+        故存在长度为$2\omega \pi$的区间与$\{x| x = \pm \dfrac{\pi}{3} + 2k\pi, k \in \mathbf{Z}\}$有且仅有两个公共元素，数形结合可知$2\omega\pi \in \left[\dfrac{2\pi}{3}, \dfrac{10\pi}{3}\right)$，即$\omega \in \left[\dfrac{1}{3}, \dfrac{5}{3}\right)$
+    \end{jieda}
+    
+    \item 已知函数 $f\left( x\right)  = \sin {\omega x} + \sqrt{3}\cos {\omega x}$ ,若存在 $0 < {x}_{1} < {x}_{2} < \dfrac{\pi }{2}$ ,使得 $f\left( {x}_{1}\right)  - f\left( {x}_{2}\right) = -4$,则正数$\omega$的取值范围是\blkda{$\left(\dfrac{13}{3}, +\infty\right)$}
+    \begin{jieda}
+        $f(x) = 2sin(\omega x + \dfrac{\pi}{3})$，令$t = \omega x + \dfrac{\pi}{3}$，则存在 $\dfrac{\pi}{3} < {t}_{1} < {t}_{2} < \dfrac{\omega\pi}{2}+\dfrac{\pi}{3}$，使得$sint_1 = -1, sint_2 = 1$，故$t_1 = \dfrac{3\pi}{2}, t_2 = \dfrac{5\pi}{2} + 2k\pi, k \in \mathbf{N}$，故$\dfrac{\omega\pi}{2}+\dfrac{\pi}{3} > \dfrac{5\pi}{2}$，故$\omega \in \left(\dfrac{13}{3}, +\infty\right)$
+    \end{jieda}
+\end{enumerate}
 
 \item 三角复合根的分布问题
 \begin{enumerate}
-    \item 已知关于$x$的方程$sin^2x+cosx+a = 0$有解，求$a$的范围.
-    \begin{jieda}
-        $a+1 = cos^2x - cosx \in \left[-\dfrac{1}{4}, 2\right]$，故$a \in \left[-\dfrac{5}{4}, 1\right]$
-    \end{jieda}
-    \item 已知$cos^2x - sinx + a = 0$在$\left(0, \dfrac{\pi}{2}\right]$范围内有解，求$a$的范围.
-    \begin{jieda}
-        $a+1 = sin^2x + sinx \in (0, 2] (x \in (0, \dfrac{\pi}{2}])$，故$a \in (-1, 1]$
-    \end{jieda}
     \item 已知方程$sin^2x - sinx + k = 0$在$\left[-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right]$上有两根求实数$k$的取值范围.
     \begin{jieda}
-        令$t = sinx, t \in [-1, 1]$，$t$与$x$一一对应，$k = t - t^2$，当$k \in [0, \dfrac{1}{4})$时方程有两解.
+        令$t = sinx, t \in [-1, 1]$，$t$与$x$一一对应，$k = t - t^2$，当$k \in \left[0, \dfrac{1}{4}\right)$时方程有两解.
+    \end{jieda}
+    \item 已知方程$sin^2x - sinx + k = 0$在$\left[0, 2\pi\right)$上有两根求实数$k$的取值范围.
+    \begin{jieda}
+        令$t = sinx, t \in [-1, 1]$，$k = t - t^2$
+
+        \begin{dingautolist}{172}
+            \item $t = \dfrac{\pi}{2}$或$\dfrac{3\pi}{2}$，$t$与$x$一一对应
+            \item $t \neq \dfrac{\pi}{2}$或$\dfrac{3\pi}{2}$，一个$t$对应两个$x$
+        \end{dingautolist}
+        
+        当$k \in [-2,0) \cup \left\{\dfrac{1}{4}\right\}$时方程有两解.
     \end{jieda}
     \item 设$a$为常数，函数$f(x) = 2cos^2x-asinx-1$在区间$(0, n\pi)$上恰有$2024$个零点，则所有可能的正整数$n$组成的集合为\blkda[5]{$\{1349, 1012, 2024, 2023,2025\}$}
     \begin{jieda}
@@ -1488,9 +1499,27 @@
     \begin{jieda}
         根据余弦定理有$c^2 = 1 + b^2 - 2bcosC$，题干条件可转化为$b^2 + 1 + 4bcosC = 0$两者联立可得$c^2 = \dfrac{3}{2}(1+b^2)$。再根据余弦定理有$b^2 = 1 + c^2 - 2c \cdot cosB$，即$b^2 = 1 + \dfrac{3}{2}(1+b^2) - \sqrt{3}\sqrt{\dfrac{3}{2}(b^2+1)}$，解得$b^2 = 1 \mbox{或} 7$。因为三边互不相等，所以$b = \sqrt{7}$，即$c = 2\sqrt{3}$。代入三角形面积公式$S = \dfrac{1}{2}(1 \times 2\sqrt{3} \times \dfrac{1}{2}) = \dfrac{\sqrt{3}}{2}$
     \end{jieda}
+    \item 在$\triangle{ABC}$中, $\cos\dfrac{A}{2}=\dfrac{2\sqrt{5}}{5}$, $\triangle{ABC}$的面积为2, 且$b+c=6$, 则$a$=\blkda{$2\sqrt{5}$}. 
+    \begin{jieda}
+        $cos\dfrac{A}{2} = \dfrac{2\sqrt{5}}{5} \Longrightarrow sin\dfrac{A}{2} = \dfrac{\sqrt{5}}{5} \Longrightarrow sinA = \dfrac{4}{5}$，$cosA = cos^2\dfrac{A}{2} - sin^2\dfrac{A}{2} = \dfrac{3}{5}$ \\
+        $S = \dfrac{1}{2}bcsinA = 2$，因此$bc = 5$，故$cosA = \dfrac{b^2+c^2-a^2}{2bc} = \dfrac{(b+c)^2-a^2}{2bc} - 1 = \dfrac{36-a^2}{10} - 1$，故$a = 2\sqrt{5}$
+    \end{jieda}
     \item 在$\triangle{ABC}$中, $A=\ang{60}$, $b=1$, $S_{\triangle{ABC}}=\sqrt{3}$, 则$\dfrac{a+b+c}{\sin{A}+\sin{B}+\sin{C}}$=\blkda{$\dfrac{2\sqrt{39}}{3}$}. 
     \begin{jieda}
         $\dfrac{1}{2}bcsinA = \sqrt{3}$，故$c = 4$，故$a^2 = b^2+c^2-2bccosA = 1 + 16 - 4 = 13$，故$a = \sqrt{13}$，因此$\dfrac{a+b+c}{\sin{A}+\sin{B}+\sin{C}} = \dfrac{a}{sinA} = \dfrac{\sqrt{13}}{\dfrac{\sqrt{3}}{2}} = \dfrac{2\sqrt{39}}{3}$
+    \end{jieda}
+    \item 在$\triangle{ABC}$中, 角$A, B, C$所对的边分别为$a, b, c$，且$sinA = \dfrac{\sqrt{5}}{5}$，$sinB = \dfrac{\sqrt{10}}{10}$
+    \begin{enumerate}
+        \item 求$A+B$的值
+        \item 若$a-b = \sqrt{2} - 1$，求$a, b, c$的值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $cosB = \dfrac{3\sqrt{10}}{10}$，$cosA = \dfrac{2\sqrt{5}}{5}$或$-\dfrac{2\sqrt{5}}{5}$ \\
+            $cos(A+B) = \dfrac{\sqrt{2}}{2}$或$-\dfrac{7\sqrt{2}}{10}$，故$A+B = \dfrac{\pi}{4}$或$arccos(-\dfrac{7\sqrt{2}}{10})$
+            \item 根据$\dfrac{a}{sinA} = \dfrac{b}{sinB}$可知$a:b = \sqrt{2}:1$，故$a = \sqrt{2}, b = 1$ \\
+            $c^2 = a^2+b^2-2abcosC = 2+1+2\sqrt{2}\cdot cos(A+B) = 5$或$\dfrac{1}{5}$
+        \end{enumerate}
     \end{jieda}
 \end{enumerate}
     
@@ -1547,7 +1576,7 @@
         \begin{jieda}
             设$\triangle ABC$外接圆直径为$D$，根据正弦定理，原式$ = \dfrac{a(b-c)+b(c-a)+c(a-b)}{D} = 0$
         \end{jieda}
-        \item 若方程$x^2sinA + 2xsinB + sinC = 0$有两等根，则$\triangle ABC$的三边$a, b, c$满足关系式\dotfill(\kh{D})
+        \item 若关于$x$的方程$x^2sinA + 2xsinB + sinC = 0$有两等根，则$\triangle ABC$的三边$a, b, c$满足关系式\dotfill(\kh{D})
         \xx{$b = ac$}{$a = b = c$}{$c = ab$}{$b^2 = ac$}
         \begin{jieda}
             $\Delta = 4sin^2B - 4sinAsinC = 0$，故$sin^2B = sinAsinC$，根据正弦定理有$b^2 = ac$.
@@ -1579,9 +1608,19 @@
     \item 在$\triangle{ABC}$中，若$a=2,b=2\sqrt{3},A=\ang{30}$,则C的值为\blkda[3]{$\dfrac{\pi}{6}$或$\dfrac{\pi}{2}$}
     \begin{jieda}
         $\dfrac{a}{sinA} = \dfrac{b}{sinB}$，因此$sinB = \dfrac{\sqrt{3}}{2}$，故$B = \dfrac{\pi}{3}$或$\dfrac{2\pi}{3}$，因此$C = $$\dfrac{\pi}{6}$或$\dfrac{\pi}{2}$
-    \end{jieda}
+    \end{jieda}    
+    \item 在 $\bigtriangleup  {ABC}$ 中, ${AB} = 2,{AC} = \sqrt{2},B = {30}^{ \circ  }$ ,则 $A =$\blkda{${105}^{ \circ  }$ 或 ${15}^{ \circ  }$}
+    \item 在 $\bigtriangleup {ABC}$ 中, $b = {10},A = \dfrac{\pi }{6}$ .
+    \begin{dingautolist}{172}
+        \item 若 $a = 5$ ,则角 $B$ 的大小为\blkda{$\dfrac{\pi}{2}$}
+        \item 若符合条件的 $\bigtriangleup  {ABC}$ 有两个,则 $a$ 的取值范围是\blkda{$(5, 10)$}
+    \end{dingautolist}
     \item 在 $\triangle A B C$ 中，角 $A, B,C$ 的对边分别是 $a, b, c, A=30^{\circ}, a=3$，若这个三角形有两解，则 $b$ 的取值范围是 \blkda{$3<b<6$}.
+    \item 已知 $\bigtriangleup  {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,且 $b = 6,A = \dfrac{\pi }{3}$ ,若 $\bigtriangleup  {ABC}$ 有两解,则 $a$的取值范围为\blkda{$\left( {3\sqrt{3},6}\right)$}
+    \item 已知 $\bigtriangleup  {ABC}$ 三个内角 $A,B,C$ 的对边分别为 $a,b,c$ ,若满足条件 $A = \dfrac{\pi }{3},b = 2$ 的三角形有两解,则边长 $a$ 的取值范围为\blkda{$(\sqrt{3}, 2)$}
     \item 在 $\triangle A B C$ 中，$A C=8, A=45^{\circ}$ ，要使 $\triangle A B C$ 被唯一确定，那么 $B C$ 的取值范围是 \blkda[3]{$\{4 \sqrt{2}\} \cup[8,+\infty)$}.
+    \item 在 $\bigtriangleup  {ABC}$ 中, $A = \dfrac{\pi }{6},{BC} = 2$ ,若满足上述条件的 $\bigtriangleup  {ABC}$ 恰有一解,则边长 ${AC}$ 的取值范围是\blkda{$(0,2\rbrack  \cup  \{ 4\}$}
+    \item 在 $\bigtriangleup  {ABC}$ 中,角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ,已知 $a = 8,B = \dfrac{\pi }{6}$ ,要使该三角形有唯一解,则 $b$ 的取值范围为\blkda[3]{$\{4\} \cup[8,+\infty)$}
 \end{enumerate}
 \item 已知一组对边和对角
 \begin{enumerate}
@@ -1604,6 +1643,7 @@
 \item 化角主元归一求取值范围（最值）
 \begin{enumerate}
     \item  在锐角 $\bigtriangleup  {ABC}$ 中,内角 $A,B,C$ 的对边分别为 $a,b,c$ ,已知 $c \cdot  \cos A = \left( {{2b} - a}\right) \cos C$ .
+    
     \begin{enumerate}
         \item 求 $\angle C$ 的值
         \item 求 $\dfrac{a}{b}$ 的取值范围.
@@ -1625,10 +1665,11 @@
     \end{jieda}
     
     \item 在$\triangle{ABC}$中, $a,b,c$分别为内角$A,B,C$的对边，且满足$\sqrt{3}tanAtanB - tanA - tanB = \sqrt{3}$
-    \begin{enumerate}
-        \item 求C的大小
+    
+    \begin{enumerate*}
+        \item 求$C$的大小
         \item 若$c = 2$，且$\triangle{ABC}$为锐角三角形，求$a^2+b^2$的取值范围
-    \end{enumerate}
+    \end{enumerate*}
 
     \begin{jieda}
         \begin{enumerate}
@@ -1647,10 +1688,9 @@
 
         令 $y =  - 4{\sin }^{2}A + \sin A + 2,\sin A \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,
         令 $t = \sin A,t \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,所以 $y =  - 4{t}^{2} + t + 2$ ,对称轴为 $t = \dfrac{1}{8} \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,
-        所以 ${y}_{\max } =  - 4{\left( \dfrac{1}{8}\right) }^{2} + \dfrac{1}{8} + 2 = \dfrac{33}{16}$ ,当 $t \rightarrow  \dfrac{\sqrt{2}}{2}$ 时, $y \rightarrow  \dfrac{\sqrt{2}}{2}$ ,
+        所以 ${y}_{\max } =  - 4{\left( \dfrac{1}{8}\right) }^{2} + \dfrac{1}{8} + 2 = \dfrac{33}{16}$ ,当 $t \Longrightarrow  \dfrac{\sqrt{2}}{2}$ 时, $y \Longrightarrow  \dfrac{\sqrt{2}}{2}$ ,
         所以 $\sin A + 2\sin C$ 的取值范围为 $\left( {\dfrac{\sqrt{2}}{2},\dfrac{33}{16}}\right\rbrack$
     \end{jieda}
-
     \item 设锐角 $\bigtriangleup  {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,若 $C = {2A}$ ,则 $\dfrac{{2c} + b}{a}$ 的取值范围是\blkda[4]{$\left( {2\sqrt{2} + 1,2\sqrt{3} + 2}\right)$}
     \begin{jieda}
         因为 $C = {2A}$，所以$B = \pi -3A$，故$\dfrac{{2c} + b}{a} = \dfrac{2sinC+sinB}{sinA} = \dfrac{2sin2A+sin3A}{sinA} = 4cosA + 3 - 4sin^2A = 4cos^2A + 4cosA - 1$
@@ -1667,12 +1707,12 @@
         
         由 $0 < B = {2A} < \dfrac{\pi }{2},0 < C = \pi  - {3A} < \dfrac{\pi }{2}$ 可得 $\dfrac{\pi }{6} < A < \dfrac{\pi }{4}$，故$\dfrac{c}{a} \in \left( {1,2}\right)$
     \end{jieda}
-
-    \item 记 $\bigtriangleup  {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,已知 $\dfrac{\cos A}{1 + \sin A} = \dfrac{\sin {2B}}{1 + \cos {2B}}$ .
-    \begin{enumerate}
+    \item 记 $\bigtriangleup  {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,已知 $\dfrac{\cos A}{1 + \sin A} = \dfrac{\sin {2B}}{1 + \cos {2B}}$.
+    
+    \begin{enumerate*}
         \item 若 $C = \dfrac{2\pi }{3}$ ,求 $B$
         \item 求 $\dfrac{{a}^{2} + {b}^{2}}{{c}^{2}}$ 的最小值.
-    \end{enumerate}
+    \end{enumerate*}
     \begin{jieda}
         $\dfrac{\cos A}{1 + \sin A} = \dfrac{\sin {2B}}{1 + \cos {2B}}$即$tan\left(\dfrac{\pi}{4}-\dfrac{A}{2}\right) = tanB$，故$\dfrac{A}{2}+B = \dfrac{\pi}{4} + k\pi, k \in \mathbf{Z}$
 
@@ -1689,10 +1729,11 @@
         \end{enumerate}
     \end{jieda}
     \item 记 $\bigtriangleup {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,已知$\cos {2B} - \cos {2A} = 4\left( {\cos C - {\cos }^{3}C}\right) .$
-    \begin{enumerate}
+    
+    \begin{enumerate*}
         \item 若 $C = \dfrac{\pi }{3}$ ,求 $A$
         \item 若 $\bigtriangleup {ABC}$ 为锐角三角形,求 $\dfrac{a}{b} + \dfrac{{b}^{2}}{{c}^{2}}$ 的取值范围.
-    \end{enumerate}
+    \end{enumerate*}
     \begin{jieda}
         $\cos {2B} - \cos {2A} = 4\left( {\cos C - {\cos }^{3}C}\right) \Longleftrightarrow -sin(A+B)sin(B-A) = 4(cosC-cos^3C) \Longleftrightarrow sinCsin(A-B) = 4cosCsin^2C$，故$sin(A-B) = sin2C$
         \begin{enumerate}
@@ -1721,21 +1762,8 @@
         $\tan \varphi  = \dfrac{\sqrt{3}}{5},A \in  \left( {0,\dfrac{2\pi }{3}}\right)$，当 $A + \varphi  = {90}^{ \circ  }$ 时取得最大值 $\dfrac{4\sqrt{21}}{3}$ ,所以 ${2a} + c$ 的最大值为 $\dfrac{4\sqrt{21}}{3}$ .
     \end{jieda}
 \end{enumerate}
-\item 解三角综合
+\item $\dfrac{b}{a}+\dfrac{a}{b}$
 \begin{enumerate}
-    \item 在$\triangle{ABC}$中, 角$A, B, C$所对的边分别为$a, b, c$，且$sinA = \dfrac{\sqrt{5}}{5}$，$sinB = \dfrac{\sqrt{10}}{10}$
-    \begin{enumerate}
-        \item 求$A+B$的值
-        \item 若$a-b = \sqrt{2} - 1$，求$a, b, c$的值.
-    \end{enumerate}
-    \begin{jieda}
-        \begin{enumerate}
-            \item $cosB = \dfrac{3\sqrt{10}}{10}$，$cosA = \dfrac{2\sqrt{5}}{5}$或$-\dfrac{2\sqrt{5}}{5}$ \\
-            $cos(A+B) = \dfrac{\sqrt{2}}{2}$或$-\dfrac{7\sqrt{2}}{10}$，故$A+B = \dfrac{\pi}{4}$或$arccos(-\dfrac{7\sqrt{2}}{10})$
-            \item 根据$\dfrac{a}{sinA} = \dfrac{b}{sinB}$可知$a:b = \sqrt{2}:1$，故$a = \sqrt{2}, b = 1$ \\
-            $c^2 = a^2+b^2-2abcosC = 2+1+2\sqrt{2}\cdot cos(A+B) = 5$或$\dfrac{1}{5}$
-        \end{enumerate}
-    \end{jieda}
         
     \item 在锐角$\triangle{ABC}$中, $\dfrac{b}{a}+\dfrac{a}{b}=6\cos{C}$, 则$\dfrac{\tan{C}}{\tan{A}}+\dfrac{\tan{C}}{\tan{B}}$=\blkda{4}. 
     \begin{jieda}
@@ -1815,6 +1843,12 @@
             即 ${b}^{2} + {c}^{2} = \dfrac{7}{2}$ ,得 ${2bc} \leq  {b}^{2} + {c}^{2} = \dfrac{7}{2} \Longrightarrow  {bc} \leq  \dfrac{7}{4}$ ,当且仅当 $b = c = \dfrac{\sqrt{7}}{2}$ 取等号,
             所以 ${bc}$ 最大值为 $\dfrac{7}{4}$ .
         \end{jieda}
+
+        \item 如图，在滕王阁旁的水平地面上共线的三点$A,B,C$处测得其顶点$p$的仰角分别为$\ang{30}, \ang{60}, \ang{45}$，且$AB = BC = 75$米，则滕王阁的高度\blkda{$15\sqrt{15}$}米.
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/tengwangge.png}
+        \end{center}
+
         \item 在 $\bigtriangleup {ABC}$ 中,角 $A,B,C$ 的对边分别是 $a,b,c$ ,若 $a = 2,b = 3,\angle {ACB}$ 的平分线 ${CD}$ 的长为 $\dfrac{4\sqrt{6}}{5}$ ,则 ${AB}$ 边上的中线 ${CE}$ 的长为\blkda{$\dfrac{\sqrt{17}}{2}$}.
         \begin{jieda}
             \begin{dingautolist}{172}
@@ -1922,7 +1956,7 @@
 
                 \ps 选择$\angle B$很重要，计算面积的时候幂次低
 
-                \item 阿氏圆（选择非解析计算）
+                \item 阿氏圆（这里仅用平面几何推导）
                 
                 根据阿氏圆定义可知满足${AC} = \sqrt{2}{BC}$的$C$的轨迹为圆，圆心在$AB$延长线上，设圆和直线$AB$交于$D_1, D_2$
                 

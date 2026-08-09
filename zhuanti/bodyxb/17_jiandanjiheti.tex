@@ -282,6 +282,42 @@
                 其中点 $ A $到平面 $ {A}_{1}{PO} $的距离为 $ h = \dfrac{\left| \vv{A{A}_{1}} \cdot  \vv{n}\right| }{\left| \vv{n}\right| } = \dfrac{\left| \left( 0,0,3\right)  \cdot  \left( -\sqrt{3},3,2\right) \right| }{\sqrt{3 + 9 + 4}} = \dfrac{3}{2} $.
                     \end{enumerate}
     \end{jieda}
+    \item 如图,直三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的体积为 4, $\bigtriangleup  {A}_{1}{BC}$ 的面积为 $2\sqrt{2}$ .
+
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/12_1298_871_281_264_0.jpg}
+    \end{center}
+    
+    \begin{enumerate}
+        \item 求 $A$ 到平面 ${A}_{1}{BC}$ 的距离
+        \item 设 $D$ 为 ${A}_{1}C$ 的中点， $A{A}_{1} = {AB}$ ，平面 ${A}_{1}{BC}\bot$ 平面 ${AB}{B}_{1}{A}_{1}$ ，求二面角 $A - {BD} - C$ 的正弦值
+    \end{enumerate}
+    
+    \begin{jieda}
+        \begin{enumerate}
+            \item 在直三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中，设点 $A$ 到平面 ${A}_{1}{BC}$ 的距离为 $h$ ，
+
+            则 ${V}_{A - {A}_{1}{BC}} = \dfrac{1}{3}{S}_{\bigtriangleup {A}_{1}{BC}} \cdot  h = \dfrac{2\sqrt{2}}{3}h = {V}_{{A}_{1} - {ABC}} = \dfrac{1}{3}{S}_{\bigtriangleup {ABC}} \cdot  {A}_{1}A = \dfrac{1}{3}{V}_{{ABC} - {A}_{1}{B}_{1}{C}_{1}} = \dfrac{4}{3}$，解得 $h = \sqrt{2}$，所以点 $A$ 到平面 ${A}_{1}{BC}$ 的距离为 $\sqrt{2}$
+
+            \item 取 ${A}_{1}B$ 的中点 $E$ ，连接 ${AE}$. 因为 $A{A}_{1} = {AB}$ ，所以 ${AE}\bot {A}_{1}B$
+            
+            又平面 ${A}_{1}{BC} \bot$ 平面 ${AB}{B}_{1}{A}_{1}$ ,平面 ${A}_{1}{BC} \cap$ 平面 ${AB}{B}_{1}{A}_{1} = {A}_{1}B$，且 ${AE} \subset$ 平面 ${AB}{B}_{1}{A}_{1}$ ,所以 ${AE} \bot$ 平面 ${A}_{1}{BC}$，由 ${BC} \subset$ 平面 ${A}_{1}{BC}$可得 ${AE} \bot BC$
+
+            在直三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中， $B{B}_{1} \bot$ 平面 ${ABC}, {BC} \subset$ 平面 ${ABC}$，故$B{B}_{1} \bot  {BC}$
+
+            又 ${AE},B{B}_{1} \subset$ 平面 ${AB}{B}_{1}{A}_{1}$ 且相交，所以 ${BC} \bot$ 平面 ${AB}{B}_{1}{A}_{1}$，所以 ${BC},{BA},B{B}_{1}$ 两两垂直,以 $B$ 为原点,建立空间直角坐标系
+
+            \begin{center}
+            \includegraphics[width=0.2\textwidth]{bodyxb/src/13_1224_175_270_265_0.jpg}
+            \end{center}
+
+            由(1)得 ${AE} = \sqrt{2}$ ，所以 ${A{A}_{1}} = {AB} = 2,{A}_{1}B = {2\sqrt{2}}$ ，所以 ${BC} = 2$ ，则 $A\left( {0,2,0}\right) ,{A}_{1}\left( {0,2,2}\right) ,B\left( {0,0,0}\right) ,C\left( {2,0,0}\right)$ ,所以 ${A}_{1}C$ 的中点 $D\left( {1,1,1}\right)$
+            
+            则 $\vv{BD} = \left( {1,1,1}\right) ,\vv{BA} = \left( {0,2,0}\right) ,\vv{BC} = \left( {2,0,0}\right)$ ,
+
+            设平面 ${ABD}$ 的一个法向量 $\vv{m} = \left( {x,y,z}\right)$ ,则 $\left\{  \begin{array}{l} \vv{m} \cdot  \vv{BD} = x + y + z = 0 \\  \vv{m} \cdot  \vv{BA} = {2y} = 0 \end{array}\right.$ ,可取 $\vv{m} = \left( {1,0, - 1}\right)$ , 设平面 ${BDC}$ 的一个法向量 $\vv{n} = \left( {a,b,c}\right)$ ,则 $\left\{  \begin{array}{l} \vv{n} \cdot  \vv{BD} = a + b + c = 0 \\  \vv{n} \cdot  \vv{BC} = {2a} = 0 \end{array}\right.$ ,可取 $\vv{n} = \left( {0,1, - 1}\right)$ , 则 $\cos \vv{m},\vv{n} = \dfrac{\vv{m} \cdot  \vv{n}}{\left| \vv{m}\right|  \cdot  \left| \vv{n}\right| } = \dfrac{1}{\sqrt{2} \times  \sqrt{2}} = \dfrac{1}{2}$ ,所以二面角 $A - {BD} - C$ 的正弦值为 $\sqrt{1 - {\left( \dfrac{1}{2}\right) }^{2}} = \dfrac{\sqrt{3}}{2}$ .
+        \end{enumerate}
+    \end{jieda}
 \end{enumerate}
 \section*{锥体}
 \subsection*{锥、台的概念}
@@ -753,6 +789,31 @@
         依题意, $A\left( {0, - 1,0}\right) ,B\left( {0,1,0}\right) ,C\left( {0,0,\sqrt{2}}\right) ,D\left( {\dfrac{\sqrt{3}}{2},\dfrac{1}{2},0}\right)$ ,则 $\vv{AD} = \left( {\dfrac{\sqrt{3}}{2},\dfrac{3}{2},0}\right) ,\vv{BC} = \left( {0, - 1,\sqrt{2}}\right)$ , 设直线 ${AD}$ 与 ${BC}$ 所成的角为 $\theta ,0 < \theta  < \dfrac{\pi }{2}$ ,则 $\cos \theta  = \left| {\cos \langle \vv{AD},\vv{BC}\rangle }\right|  = \dfrac{\left| \vv{AD} \cdot  \vv{BC}\right| }{\left| \vv{AD}\right| \left| \vv{BC}\right| } = \dfrac{\dfrac{3}{2}}{\sqrt{3} \times  \sqrt{3}} = \dfrac{1}{2}$ 解得 $\theta  = {60}^{ \circ  }$ ,所以直线 ${AD}$ 与 ${BC}$ 所成的角为 ${60}^{ \circ  }$ .
     \end{jieda}
     
+    \item 如图，在正四棱锥 $S - {ABCD}$ 中，底边 ${AB} = 2$ ，侧棱 ${SA} = 3$ ， $P$ 为侧棱 ${SD}$ 上一点， 若 ${SD}\bot$ 平面 ${PAC}$ ，则二面角 $P - {AC} - D$ 的余弦值是\blkda{$\dfrac{\sqrt{7}}{3}$}.
+
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/8_1221_1412_351_301_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        连接 ${BD}$ 交 ${AC}$ 于 $O$，在正四棱锥 $S - {ABCD}$ 中,可得 ${SO} \bot$ 平面 ${ABCD}$ ,
+
+        以 $O$ 为坐标原点, $\vv{OB},\vv{OC},\vv{OS}$ 分别为 $x$ 轴, $y$ 轴, $z$ 轴正方向,建立空间直角坐标系
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/8_1218_1792_323_329_0.jpg}
+        \end{center}
+
+
+        如图所示,因为底边 ${AB} = 2$ ,侧棱 ${SA} = 3$ ,则高 ${SO} = \sqrt{S{A}^{2} - A{O}^{2}} = \sqrt{9 - 2} = \sqrt{7}$ ,
+
+        所以 $S\left( {0,0,\sqrt{7}}\right) ,D\left( {-\sqrt{2},0,0}\right) ,C\left( {0,\sqrt{2},0}\right)$ ,可得 $\vv{OS} = \left( {0,0,\sqrt{7}}\right) ,\vv{DS} = \left( {\sqrt{2},0,\sqrt{7}}\right)$ ,
+
+        因为 ${SD} \bot$ 平面 ${PAC}$ ,所以平面 ${PAC}$ 的一个法向量为 $\vv{DS} = \left( {\sqrt{2},0,\sqrt{7}}\right)$，平面 ${DAC}$ 的一个法向量 $\vv{OS} = \left( {0,0,\sqrt{7}}\right)$
+
+        设二面角 $P - {AC} - D$ 的平面角为 $\theta$ ,则 $\cos \theta  = \cos \langle \vv{DS},\vv{OS}\rangle  = \dfrac{\vv{DS} \cdot  \vv{OS}}{\left| \vv{DS}\right| \left| \vv{OS}\right| } = \dfrac{7}{\left| \vv{DS}\right| \left| \vv{OS}\right| } = \dfrac{7}{\sqrt{9} \times  \sqrt{7}} = \dfrac{\sqrt{7}}{3}$，所以二面角 $P - {AC} - D$ 的余弦值为 $\dfrac{\sqrt{7}}{3}$ .
+    \end{jieda}
+
     \item 如图，在三棱锥 $P - {ABC}$ 中， ${AB} = {BC} = 2\sqrt{2}$ ， ${PA} = {PB} = {PC} = {AC} = 4$ ， $O$ 为 ${AC}$ 的中点，若点 $M$ 在棱 ${BC}$ 上， 且二面角 $M - {PA} - C$ 的大小为 ${30}^{ \circ  }$ ，则 ${PC}$ 与平面 ${PA}M$ 所成角的正弦值为\blkda{$\dfrac{\sqrt{3}}{4}$}.
     
     \begin{center}
@@ -775,7 +836,7 @@
         则 $O\left( {0,0,0}\right) ,B\left( {2,0,0}\right) ,A\left( {0, - 2,0}\right) ,C\left( {0,2,0}\right) ,P\left( {0,0,2\sqrt{3}}\right)$ ,
         
         \begin{center}
-        \includegraphics[width=0.3\textwidth]{bodyxb/src/2_1123_1103_389_444_0.jpg}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/2_1123_1103_389_444_0.jpg}
         \end{center}
         
         
@@ -793,9 +854,7 @@
         
         又 $\vv{PC} = \left( {0,2, - 2\sqrt{3}}\right)$ ,设 ${PC}$ 与平面 ${PAM}$ 所成角为 $\theta$ ,
         
-        所以 $\sin \theta  = \left| {\cos \vv{PC},\vv{n}}\right|  = \dfrac{\left| \vv{PC} \cdot  \vv{n}\right| }{\left| \vv{PC}\right|  \cdot  \left| \vv{n}\right| } = \dfrac{\left| 2 \times  \dfrac{4\sqrt{3}}{3} + \left( -2\sqrt{3}\right)  \times  \left( -\dfrac{4}{3}\right) \right| }{\sqrt{{2}^{2} + {\left( -2\sqrt{3}\right) }^{2}} \cdot  \sqrt{{\left( -\dfrac{8\sqrt{3}}{3}\right) }^{2} + {\left( \dfrac{4\sqrt{3}}{3}\right) }^{2} + {\left( -\dfrac{4}{3}\right) }^{2}}} = \dfrac{\sqrt{3}}{4}$ ,
-        
-        所以 ${PC}$ 与平面 ${PAM}$ 所成角的正弦值为 $\dfrac{\sqrt{3}}{4}$ .
+        所以 $\sin \theta  = \left| {\cos \vv{PC},\vv{n}}\right|  = \dfrac{\left| \vv{PC} \cdot  \vv{n}\right| }{\left| \vv{PC}\right|  \cdot  \left| \vv{n}\right| } = \dfrac{\sqrt{3}}{4}$，以 ${PC}$ 与平面 ${PAM}$ 所成角的正弦值为 $\dfrac{\sqrt{3}}{4}$.
         
         方法二: 设 ${PC}$ 与平面 ${PAM}$ 所成角为 $a$ . 由题意知, $\angle {CPA} = {60}^{ \circ  }$ ，二面角 $M - {AP} - C$ 的大小是 ${30}^{ \circ  }$ ， 由三正弦定理得 $\sin a = \sin {60}^{ \circ  } \cdot  \sin {30}^{ \circ  } = \dfrac{\sqrt{3}}{4}$ .
     \end{jieda}
@@ -879,26 +938,6 @@
         所以 $\cos \vv{AB},\vv{CD} = \dfrac{{a}^{2}}{\sqrt{{a}^{2} + 3{a}^{2}}\sqrt{3{a}^{2} + {a}^{2}}} = \dfrac{1}{4}$ ;
         
         所以异面 ${AB}$ 与 ${CD}$ 所成角的余弦值为 $\dfrac{1}{4}$.
-    \end{jieda}
-    
-    \item 在三棱锥 $S - {ABC}$ 中, ${SA} = {BC} = 2,{SC} = {AB} = \sqrt{3},{SB} = {AC} = \sqrt{5}$ . 记 ${BC}$ 的中点为 $M,{SA}$ 的中点为 $N$ ,则异面直线 ${AM}$ 与 ${CN}$ 的距离为\blkda{$\dfrac{\sqrt{66}}{11}$}.
-    \begin{jieda}
-        三棱锥 $S - {ABC}$ 的三组对棱分别相等，因此三棱锥 $S - {ABC}$ 的外接平行六面体为长方体，将三棱锥 $S - {ABC}$ 放在长方体中，设长方体的长、宽、高分别为 $a,b,c$ ，且 $\left\{  \begin{array}{l} {a}^{2} + {b}^{2} = S{A}^{2}, \\  {b}^{2} + {c}^{2} = S{C}^{2}, \\  {a}^{2} + {c}^{2} = S{B}^{2}, \end{array}\right.$ 即 $\left\{  \begin{array}{l} {a}^{2} + {b}^{2} = 4, \\  {b}^{2} + {c}^{2} = 3, \\  {a}^{2} + {c}^{2} = 5, \end{array}\right.$ 解得 $\left\{  \begin{array}{l} a = \sqrt{3}, \\  b = 1, \\  c = \sqrt{2}, \end{array}\right.$
-        
-        \begin{center}
-        \includegraphics[width=0.2\textwidth]{bodyxb/src/6_1187_1336_324_325_0.jpg}
-        \end{center}
-        
-        
-        因此以 $B$ 为坐标原点,建立空间直角坐标系,如图所示:
-        
-        则 $S\left( {0,\sqrt{3},\sqrt{2}}\right) ,A\left( {1,0,\sqrt{2}}\right) ,B\left( {0,0,0}\right) ,C\left( {1,\sqrt{3},0}\right) ,M\left( {\dfrac{1}{2},\dfrac{\sqrt{3}}{2},0}\right) ,N\left( {\dfrac{1}{2},\dfrac{\sqrt{3}}{2},\sqrt{2}}\right)$ . $\vv{AM} = \left( {-\dfrac{1}{2},\dfrac{\sqrt{3}}{2}, - \sqrt{2}}\right) ,\vv{CN} = \left( {-\dfrac{1}{2}, - \dfrac{\sqrt{3}}{2},\sqrt{2}}\right)$ .
-        
-        设 $\vv{n} = \left( {x,y,z}\right)$ 垂直于 $\vv{AM}$ 和 $\vv{CN}$ ,所以 $\left\{  \begin{array}{l} \vv{n} \cdot  \vv{AM} =  - \dfrac{1}{2}x + \dfrac{\sqrt{3}}{2}y - \sqrt{2}z = 0, \\  \vv{n} \cdot  \vv{CN} =  - \dfrac{1}{2}x - \dfrac{\sqrt{3}}{2}y + \sqrt{2}z = 0, \end{array}\right.$
-        
-        令 $y = \sqrt{2}$ ,则 $z = \dfrac{\sqrt{3}}{2},x = 0$ ,所以 $\vv{n} = \left( {0,\sqrt{2},\dfrac{\sqrt{3}}{2}}\right)$ .
-        
-        又 $\vv{MN} = \left( {0,0,\sqrt{2}}\right)$ ,所以异面直线 ${AM}$ 与 ${CN}$ 的距离 $d = \dfrac{\left| \vv{MN} \cdot  \vv{n}\right| }{\left| \vv{n}\right| } = \dfrac{\dfrac{\sqrt{6}}{2}}{\sqrt{2 + \dfrac{3}{4}}} = \dfrac{\sqrt{66}}{11}$.
     \end{jieda}
     
     \item 在三棱锥 $P - {ABC}$ 中， ${PC} \bot$ 底面 ${ABC},\angle {BAC} = {90}^{ \circ  },{AB} = {AC} = 4,\angle {PBC} = {45}^{ \circ  }$ ，则点 $C$ 到平面 ${PAB}$ 的距离是\blkda{$\dfrac{4\sqrt{6}}{3}$}.
