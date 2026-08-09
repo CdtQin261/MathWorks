@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  9 AUG 2026 15:42
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  9 AUG 2026 23:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,7 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/litijihezhongdian.aux))
+ (./mainxb.aux (./bodyxb/12_tuoyuan.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1891,21 +1891,29 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
- [2]
+ [2] [3]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_6_1135_556_354_312_0.jpg Graphic file (type bmp)
 <bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_6_1135_556_354_312_0.jpg>
+[4]
 File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_6_1160_1180_332_240_0.jpg Graphic file (type bmp)
 <bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_6_1160_1180_332_240_0.jpg>
-[3]
 File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_0_662_922_220_148_0.jpg Graphic file (type bmp)
 <bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_0_662_922_220_148_0.jpg>
 File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_0_1053_916_173_162_0.jpg Graphic file (type bmp)
 <bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_0_1053_916_173_162_0.jpg>
- [4]
+ [5]
 File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_9_982_994_489_307_0.jpg Graphic file (type bmp)
 <bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_9_982_994_489_307_0.jpg>
- [5] [6] [7]) [8] (./mainxb.aux (./bodyxb/12_tuoyuan.aux))
+ [6] [7] [8]
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
+[9] [10] [11] [12] [13] [14]
+File: bodyxb//src/tuoyuandingdian3.png Graphic file (type bmp)
+<bodyxb//src/tuoyuandingdian3.png>
+ [15] [16] [17] [18]
+File: bodyxb/src/2_239_1397_380_329_0.jpg Graphic file (type bmp)
+<bodyxb/src/2_239_1397_380_329_0.jpg>
+ [19]) [20] (./mainxb.aux (./bodyxb/12_tuoyuan.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1914,12 +1922,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49614 strings out of 468168
- 1168246 string characters out of 5432816
- 1729487 words of memory out of 5000000
- 77329 multiletter control sequences out of 15000+600000
+ 49632 strings out of 468168
+ 1168847 string characters out of 5432816
+ 1739487 words of memory out of 5000000
+ 77344 multiletter control sequences out of 15000+600000
  645717 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,758b,1230s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,20n,128p,758b,1268s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (8 pages).
+Output written on mainxb.pdf (20 pages).

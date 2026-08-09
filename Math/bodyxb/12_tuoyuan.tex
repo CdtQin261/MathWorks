@@ -725,6 +725,52 @@
     \end{jieda}
 
 
+    \item 已知椭圆 $C : \dfrac{{x}^{2}}{4} + \dfrac{{y}^{2}}{3} = 1$
+    \begin{enumerate}
+        \item 点$H(0, \sqrt{3})$，过$H$做两条相互垂直的直线，分别交椭圆于$P,Q$两点 (异于点 $H$ ),证明: $PQ$过定点.
+        \item 点 $H\left( {1,\dfrac{3}{2}}\right)$ 在 $C$ 上,过点 $T\left( {4,0}\right)$ 的直线 ${l}_{2}$ 交椭圆 $C$ 于 $P,Q$ 两点 (异于点 $H$ ),设直线 ${HP}$，${HQ}$ 的斜率分别为 ${k}_{1},{k}_{2}$ ,证明: ${k}_{1} + {k}_{2}$ 为定值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 根据对称性可知若$PQ$过定点，则必在$y$轴上，根据特值可知定点坐标为$M\left(0, -\dfrac{\sqrt{3}}{7}\right)$
+
+            设$HP: y = k_1x+\sqrt{3}$，$HQ: y = k_2x+\sqrt{3}$，$k_1k_2 = -1$
+
+            联立$HP$和椭圆可得$3x^2+4(k_1x+\sqrt{3})^2 = 12$，即$(3+4k_1^2)x^2+8\sqrt{3}k_1x = 0$
+
+            故$x_P = \dfrac{-8\sqrt{3}k_1}{3+4k_1^2}$，故$P\left(\dfrac{-8\sqrt{3}k_1}{3+4k_1^2}, \dfrac{3\sqrt{3}-4\sqrt{3}k_1^2}{3+4k_1^2}\right)$，因此$\vv{MP} = \left(\dfrac{-8\sqrt{3}k_1}{3+4k_1^2}, \dfrac{24\sqrt{3}(1-k_1^2)}{7(3+4k_1^2)}\right)$
+
+            同理可得$\vv{MQ} = \left(\dfrac{-8\sqrt{3}k_2}{3+4k_2^2}, \dfrac{24\sqrt{3}(1-k_2^2)}{7(3+4k_2^2)}\right) = \left(\dfrac{8\sqrt{3}k_1}{3k_1^2+4}, \dfrac{24\sqrt{3}(k_1^2-1)}{7(3k_1^2+4)}\right)$
+
+            易知$\vv{MP} // \vv{MQ}$，因此$P,M,Q$三点共线，即$PQ$过定点为$M\left(0, -\dfrac{\sqrt{3}}{7}\right)$.
+            \item 
+            \begin{dingautolist}{172}
+                \item 当直线 ${l}_{2}$ 的斜率为 0 时,方程为 $y = 0$ ,
+                此时 $P,Q$ 两点坐标为 $\left( {-2,0}\right) ,\left( {2,0}\right)$ ,又 $H\left( {1,\dfrac{3}{2}}\right)$ ,
+                则 ${k}_{1} + {k}_{2} = \dfrac{\dfrac{3}{2} - 0}{1 - \left( {-2}\right) } + \dfrac{\dfrac{3}{2} - 0}{1 - 2} =  - 1$ .
+                当直线 ${l}_{2}$ 的斜率不为 0 时,由已知设直线 ${l}_{2} : x = {my} + 4\left( {m \neq  0}\right)$ ,
+                设点 $P\left( {{x}_{3},{y}_{3}}\right) ,Q\left( {{x}_{4},{y}_{4}}\right)$ 且与点 $H\left( {1,\dfrac{3}{2}}\right)$ 不重合,
+                联立直线 ${l}_{2}$ 与椭圆 $C$ 的方程 $\left\{  \begin{array}{l} x = {my} + 4 \\  \dfrac{{x}^{2}}{4} + \dfrac{{y}^{2}}{3} = 1 \end{array}\right.$ ,消去 $x$ ,得 $\dfrac{{\left( my + 4\right) }^{2}}{4} + \dfrac{{y}^{2}}{3} = 1$ ,
+                整理得 $\left( {3{m}^{2} + 4}\right) {y}^{2} + {24my} + {36} = 0$ ,则 $\Delta  = {\left( {24}m\right) }^{2} - {144}\left( {3{m}^{2} + 4}\right)  > 0$ ,即 ${m}^{2} - 4 > 0$ ,
+                解得 $m > 2$ 或 $m <  - 2$ ,且 ${y}_{3} + {y}_{4} =  - \dfrac{24m}{3{m}^{2} + 4},{y}_{3}{y}_{4} = \dfrac{36}{3{m}^{2} + 4}$ ,
+                则 ${k}_{1} + {k}_{2} = \dfrac{{y}_{3} - \dfrac{3}{2}}{{x}_{3} - 1} + \dfrac{{y}_{4} - \dfrac{3}{2}}{{x}_{4} - 1} = \dfrac{{y}_{3} - \dfrac{3}{2}}{m{y}_{3} + 3} + \dfrac{{y}_{4} - \dfrac{3}{2}}{m{y}_{4} + 3}$
+                $= \dfrac{\left( {{y}_{3} - \dfrac{3}{2}}\right) \left( {m{y}_{4} + 3}\right)  + \left( {{y}_{4} - \dfrac{3}{2}}\right) \left( {m{y}_{3} + 3}\right) }{\left( {m{y}_{3} + 3}\right) \left( {m{y}_{4} + 3}\right) } = \dfrac{{2m}{y}_{3}{y}_{4} + \left( {3 - \dfrac{3}{2}m}\right) \left( {{y}_{3} + {y}_{4}}\right)  - 9}{{m}^{2}{y}_{3}{y}_{4} + {3m}\left( {{y}_{3} + {y}_{4}}\right)  + 9},$
+                代入 ${y}_{3} + {y}_{4} =  - \dfrac{24m}{3{m}^{2} + 4},{y}_{3}{y}_{4} = \dfrac{36}{3{m}^{2} + 4}$ ,
+                得 ${k}_{1} + {k}_{2} = \dfrac{{2m} \times  \dfrac{36}{3{m}^{2} + 4} - \left( {3 - \dfrac{3}{2}m}\right)  \times  \dfrac{24m}{3{m}^{2} + 4} - 9}{{m}^{2} \times  \dfrac{36}{3{m}^{2} + 4} - {3m} \times  \dfrac{24m}{3{m}^{2} + 4} + 9} = \dfrac{\dfrac{9\left( {{m}^{2} - 4}\right) }{3{m}^{2} + 4}}{\dfrac{9\left( {{m}^{2} - 4}\right) }{3{m}^{2} + 4}} =  - 1$ .
+                综上, ${k}_{1} + {k}_{2}$ 为定值,且 ${k}_{1} + {k}_{2} =  - 1$ .
+                \item 以$H$为原点建立平面直角坐标系，$T$的坐标变为$\left(3, -\dfrac{3}{2}\right)$，椭圆方程变为$\dfrac{(x+1)^2}{4}+\dfrac{\left(y+\dfrac{3}{2}\right)^2}{3} = 1$，即$3x^2+6x+4y^2+12y=0$
+
+                设$PQ$方程为$mx+ny=1$，根据$PQ$过$T$可知满足$3m-\dfrac{3}{2}n = 1$
+
+                利用$PQ$方程将椭圆方程齐次化有$3x^2+6x(mx+ny)+4y^2+12y(mx+ny)=0$，即$(3+6m)x^2+(4+12n)y^2+(6n+12m)xy = 0$
+
+                同除得到$(3+6m)+(4+12n)k^2+(6n+12m)k = 0$
+
+                根据韦达定理可得$k_1+k_2 = \dfrac{-(6n+12m)}{4+12n}$，代入$3m-\dfrac{3}{2}n = 1$可得$k_1+k_2 = -1$
+            \end{dingautolist}
+        \end{enumerate}
+    \end{jieda}
+
     \item 求证：
     \begin{enumerate}
         \item 椭圆$E: \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1(a > b > 0)$在椭圆上点$M(x_0, y_0)$处的切线为$l:\dfrac{x_0x}{a^2}+\dfrac{y_0y}{b^2} = 1$
@@ -786,4 +832,50 @@
             故存在$\lambda  = \dfrac{5}{4}$ ，使得 $\left| {\vv{PA} \cdot  \vv{PB}}\right|  = \lambda {\left| \vv{PT}\right| }^{2}$ 恒成立.
         \end{enumerate}
     \end{jieda}
+    
+    \item 已知椭圆 $C : \dfrac{{y}^{2}}{{a}^{2}} + \dfrac{{x}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的右顶点为 $P\left( {1,0}\right) ,C$ 的两个焦点为 ${F}_{1},{F}_{2}$ ,且 $\sin \angle P{F}_{1}{F}_{2} + \sin \angle P{F}_{2}{F}_{1} = \dfrac{2\sqrt{3}}{3}\sin \angle {F}_{1}P{F}_{2}.$
+    \begin{enumerate}
+        \item 求 $C$ 的方程
+        \item 设直线 $l : y = {kx} + \sqrt{3}$ 与 $C$ 相交于 $A,B$ 两点， $B$ 关于 $y$ 轴的对称点为 $D$
+        \begin{dingautolist}{172}
+            \item 若 $k =  - 4\sqrt{3}$ ， $B$ 的横坐标大于 $A$ 的横坐标，求直线 ${AD}$ 的斜率.
+            \item 试问直线 ${AD}$ 是否过定点? 若过定点,求出定点的坐标; 若不过定点,请说明理由.
+        \end{dingautolist}
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 $\sin \angle P{F}_{1}{F}_{2} + \sin \angle P{F}_{2}{F}_{1} = \dfrac{2\sqrt{3}}{3}\sin \angle {F}_{1}P{F}_{2}$ ,
+
+            所以由正弦定理得 $\left| {P{F}_{2}}\right|  + \left| {P{F}_{1}}\right|  = \dfrac{2\sqrt{3}}{3}\left| {{F}_{1}{F}_{2}}\right|$，则 ${2a} = \dfrac{2\sqrt{3}}{3} \times  {2c},$
+
+            则 ${a}^{2} = \dfrac{4}{3}{c}^{2} = \dfrac{4}{3}\left( {{a}^{2} - {b}^{2}}\right)$ ,又因为椭圆 $C$ 的右顶点为 $P\left( {1,0}\right)$ ,故 $b = 1$ ,
+
+            所以 ${a}^{2} = 4$ ,所以 $C$ 的方程为 $\dfrac{{y}^{2}}{4} + {x}^{2} = 1$.
+
+            \item 设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$ ，将 $y = {kx} + \sqrt{3}$ 代入 $\dfrac{{y}^{2}}{4} + {x}^{2} = 1$ ，得 $\left( {{k}^{2} + 4}\right) {x}^{2} + {2\sqrt{3}}{kx} - 1 = 0$ ，
+
+            则 $\Delta  = {12}{k}^{2} + 4\left( {{k}^{2} + 4}\right)  = {16}\left( {{k}^{2} + 1}\right)  > 0$ 恒成立，$\left\{\begin{array}{l}
+                {x}_{1} + {x}_{2} =  - \dfrac{2\sqrt{3}k}{{k}^{2} + 4} \\
+                {x}_{1}{x}_{2} =  - \dfrac{1}{{k}^{2} + 4}
+            \end{array}\right. $.
+            \begin{dingautolist}{172}
+                \item 若 $k =  - 4\sqrt{3}$ ，则有 ${52}{x}^{2} - {24x} - 1 = 0$ ，解得 $x =  - \dfrac{1}{26}$ 或 $\dfrac{1}{2}$ .
+
+                依题意得 ${x}_{1} =  - \dfrac{1}{26}$ ,则 ${y}_{1} = \dfrac{{15}\sqrt{3}}{13},{x}_{2} = \dfrac{1}{2},{y}_{2} =  - \sqrt{3}$ ,
+
+                因为点 $B$ 关于 $y$ 轴的对称点为 $D$ ,所以 $D\left( {-{x}_{2},{y}_{2}}\right)$ ,则 ${k}_{AD} = \dfrac{{y}_{2} - {y}_{1}}{-{x}_{2} - {x}_{1}} = \dfrac{{14}\sqrt{3}}{3}$.
+
+                \item 当 $k = 0$ 时, $A,D$ 重合,与条件矛盾,
+
+                直线 ${AD}$ 的方程为 $y - {y}_{1} = \dfrac{{y}_{1} - {y}_{2}}{{x}_{1} + {x}_{2}}\left( {x - {x}_{1}}\right)$ ,
+
+                假设直线 ${AD}$ 过定点,根据对称性可知,定点必在 $y$ 轴上,
+
+                令 $x = 0$ ,得
+
+                $y = {y}_{1} - \dfrac{{x}_{1}\left( {{y}_{1} - {y}_{2}}\right) }{{x}_{1} + {x}_{2}} = \dfrac{{x}_{1}{y}_{2} + {x}_{2}{y}_{1}}{{x}_{1} + {x}_{2}} = \dfrac{{x}_{1}\left( {k{x}_{2} + \sqrt{3}}\right)  + {x}_{2}\left( {k{x}_{1} + \sqrt{3}}\right) }{{x}_{1} + {x}_{2}} = \dfrac{{2k}{x}_{1}{x}_{2}}{{x}_{1} + {x}_{2}} + \sqrt{3} = \dfrac{-\dfrac{2k}{{k}^{2} + 4}}{-\dfrac{2\sqrt{3}k}{{k}^{2} + 4}} + \sqrt{3} = \dfrac{4\sqrt{3}}{3}$ , 所以直线 ${AD}$ 过定点,且定点的坐标为 $\left( {0,\dfrac{4\sqrt{3}}{3}}\right)$.
+            \end{dingautolist}
+        \end{enumerate}
+    \end{jieda}
+
 \end{enumerate}
