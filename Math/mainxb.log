@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  9 AUG 2026 12:26
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  9 AUG 2026 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,7 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/15_kongjianzhixianyupingmian.aux))
+ (./mainxb.aux (./bodyxb/litijihezhongdian.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1797,62 +1797,115 @@ Package hyperref Info: Link coloring ON on input line 16.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/litijihezhongdian.aux'.
+\openout2 = `bodyxb/12_tuoyuan.aux'.
 
- (./bodyxb/litijihezhongdian.tex
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6.
+ (./bodyxb/12_tuoyuan.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 6.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 6.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 6.
+(Font)              <10.53937> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 6.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 6.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+(Font)              <5> on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 6.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 6.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 6.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 3.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
-) [1
+)
+File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_0_455_1386_750_281_0.jpg Graphic file (type bmp)
+<bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_0_455_1386_750_281_0.jpg>
+File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_1_1084_118_391_283_0.jpg Graphic file (type bmp)
+<bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_1_1084_118_391_283_0.jpg>
+File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_1_1119_1264_360_377_0.jpg Graphic file (type bmp)
+<bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_1_1119_1264_360_377_0.jpg>
+ [1
 
 
 
-]) [2
+]
 
-] (./mainxb.aux (./bodyxb/litijihezhongdian.aux))
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STFangsong'. Check the typeset output, and if it is
+(fontspec)             okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'STFangsong(0)' created for font
+(fontspec)             'STFangsong' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
+
+ [2]
+Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
+File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_6_1135_556_354_312_0.jpg Graphic file (type bmp)
+<bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_6_1135_556_354_312_0.jpg>
+File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_6_1160_1180_332_240_0.jpg Graphic file (type bmp)
+<bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_6_1160_1180_332_240_0.jpg>
+[3]
+File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_0_662_922_220_148_0.jpg Graphic file (type bmp)
+<bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_0_662_922_220_148_0.jpg>
+File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_0_1053_916_173_162_0.jpg Graphic file (type bmp)
+<bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_0_1053_916_173_162_0.jpg>
+ [4]
+File: bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_9_982_994_489_307_0.jpg Graphic file (type bmp)
+<bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_9_982_994_489_307_0.jpg>
+ [5] [6] [7]) [8] (./mainxb.aux (./bodyxb/12_tuoyuan.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1861,12 +1914,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49430 strings out of 468168
- 1158379 string characters out of 5432816
- 1735487 words of memory out of 5000000
- 77178 multiletter control sequences out of 15000+600000
- 645589 words of font info for 101 fonts, out of 8000000 for 9000
+ 49614 strings out of 468168
+ 1168246 string characters out of 5432816
+ 1729487 words of memory out of 5000000
+ 77329 multiletter control sequences out of 15000+600000
+ 645717 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,7n,128p,622b,1076s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,128p,758b,1230s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (2 pages).
+Output written on mainxb.pdf (8 pages).

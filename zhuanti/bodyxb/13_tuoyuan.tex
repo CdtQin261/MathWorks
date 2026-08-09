@@ -370,9 +370,9 @@
                 如图所示,当直线与椭圆相切时,与 ${AM}$ 距离比较远的直线与椭圆的切点为 $N$ ,此时 $\bigtriangleup {AMN}$ 的面积取得最大值.
                 
                 \begin{center}
-                \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d3rh65ref24c73d0uhog_3_242_1272_391_323_0.jpg}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d3rh65ref24c73d0uhog_3_242_1272_391_323_0.jpg}
                 \end{center}
-                \begin{enumerate}
+                \begin{enumerate}[(1)]
                     \item 方法1
     
                     设切点为$(x_0, y_0)$，则切线方程为$\dfrac{x_0x}{16} + \dfrac{y_0y}{12} = 1$，令其与$AM$平行，故$\dfrac{x_0}{16} \times (-2) = \dfrac{y_0}{12}$，故$\dfrac{x_0}{4} = -\dfrac{y_0}{6}$，即$\dfrac{x_0^2}{16} = \dfrac{y_0^2}{36}$，带回切线方程有$\dfrac{y_0^2}{9} = 1$，故$y_0 = \pm 3$，故切点为$(2, -3)$或$(-2, 3)$
@@ -794,6 +794,60 @@
     
     \item 椭圆中的三角形（四边形）面积
     \begin{enumerate}
+        \item 已知椭圆 $C : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的离心率为 $\dfrac{1}{2}$ ，且过点 $P\left( {1,\dfrac{3}{2}}\right)$.
+        \begin{enumerate}
+            \item 求椭圆的标准方程
+            \item 若过点 $Q\left( {0,2}\right)$ 的直线交椭圆 $C$ 于 $M$ ， $N$ 两点，且 ${OM}\bot {ON}$ (其中 $O$ 为坐标原点)，求 $\bigtriangleup  {MON}$ 的面积
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$
+                \item 设$MN: y = kx+2$，$M(x_1, y_1), N(x_2, y_2)$
+                
+                $\vv{OM} \cdot \vv{ON} = 0$，即$x_1x_2+y_1y_2 = x_1x_2+(kx_1+2)(kx_2+2) = (1+k^2)x_1x_2+2k(x_1+x_2)+4 = 0$
+
+
+                $S_{\triangle OMN} = \dfrac{|x_1y_2-x_2y_1|}{2} = \dfrac{|x_1(kx_2+2)-x_2(kx_1+2)|}{2} = |x_1-x_2|$
+
+                联立直线和椭圆方程$\left\{\begin{array}{l}
+                     \dfrac{{x}^{2}}{4} + \dfrac{{y}^{2}}{3} = 1  \\
+                     y = kx+2
+                \end{array}\right.$，消去$y$得$3x^2+4(kx+2)^2 = 12$，即$(3+4k^2)x^2+16kx + 4 = 0$，$\Delta > 0$解得$k^2 > \dfrac{1}{4}$
+                
+                根据韦达定理有$\left\{\begin{array}{l}
+                    x_1+x_2 = \dfrac{-16k}{3+4k^2} \\
+                    x_1x_2 = \dfrac{4}{3+4k^2}
+                \end{array} \right.$，故$(4+4k^2)-32k^2+12+16k^2 = 0$，解得$k^2 = \dfrac{4}{3}$
+
+                $S_{\triangle OMN} = \sqrt{(x_1+x_2)^2-4x_1x_2} = \sqrt{\left(\dfrac{48}{25}\right)^2 \times \dfrac{4}{3} - \dfrac{48}{25}} = \dfrac{12\sqrt{13}}{25}$
+            \end{enumerate}
+        \end{jieda}
+
+
+        \item 在平面直角坐标系 ${xOy}$ 中,已知点 $P$ 到直线 $x = 4$ 的距离与点 $P$ 到点 $F\left( {1,0}\right)$ 的距离之比为常数 2. 记 $P$ 的轨迹为$C$ ,曲线 $C$ 的上顶点为 $B$.
+        \begin{enumerate}
+            \item 推导 $C$ 的标准方程
+            \item 过 $B$ 的直线与 $C$ 相交于另一点 $A$. 若 $\bigtriangleup {ABF}$ 面积为 $\sqrt{3}$ ，求直线 ${AB}$ 的方程.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$
+                \item $B(0, \sqrt{3})$，$|BF| = 2$，$A$到$BF: \sqrt{3}x+y-\sqrt{3} = 0$距离为$\sqrt{3}$
+                
+                $A(2cos\theta, \sqrt{3}sin\theta), d = \dfrac{|2\sqrt{3}cos\theta+\sqrt{3}sin\theta-\sqrt{3}|}{2} = \sqrt{3}$，即$|2cos\theta+sin\theta-1| = 2$
+
+                $2cos\theta+sin\theta = -1$或$3$（舍），故$4cos^2\theta = 1+2sin\theta+sin^2\theta$，即$5sin^2\theta + 2sin\theta -3 = 0$
+
+                解得$sin\theta = -1$或$\dfrac{3}{5}$，经检验原方程的解为$\left\{\begin{array}{l}
+                    cos\theta = 0 \\
+                    sin\theta = -1
+                \end{array} \right.$或$\left\{\begin{array}{l}
+                    cos\theta = -\dfrac{4}{5} \\
+                    sin\theta = \dfrac{3}{5}
+                \end{array} \right.$，即$A(0, -\sqrt{3})$或$A\left(-\dfrac{8}{5}, \dfrac{3\sqrt{3}}{5}\right)$，故$AB$方程为$x = 0$或$\sqrt{3}x - 4y + 4\sqrt{3} =0$
+            \end{enumerate}
+        \end{jieda}
+
         \item 已知焦点在 $x$ 轴上的椭圆 $C : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ ,短轴长为 $2\sqrt{3}$ ,椭圆左顶点 $A$ 到左焦点 ${F}_{1}$ 的距离为 1.
         \begin{enumerate}
             \item 求椭圆 $C$ 的标准方程
@@ -848,11 +902,12 @@
                 设$t = \sqrt{1+k^2}, t \in (1, 3)$，则$\dfrac{S_1}{S_2} = \dfrac{48t}{9t^2-1} = \dfrac{48}{9t - \dfrac{1}{t}} \in \left(\dfrac{9}{5}, 6\right)$
             \end{enumerate}
         \end{jieda}
-        \item 已知椭圆 $M : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的左、右焦点分别为 ${F}_{1}\text{ 、 }{F}_{2}$ ,离心率等于 $\dfrac{1}{2}$ , 点 $N\left( {1,\dfrac{3}{2}}\right)$ 在椭圆 $M$ 上.
+        
+        \item 已知椭圆 $M : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的左、右焦点分别为 ${F}_{1},{F}_{2}$ ,离心率等于 $\dfrac{1}{2}$ , 点 $N\left( {1,\dfrac{3}{2}}\right)$ 在椭圆 $M$ 上.
         \begin{enumerate}
             \item 求椭圆 $M$ 的标准方程；
             \item 若过点 ${F}_{1}$ 的直线 $l$ 与椭圆 $M$ 交于 $P$ 、 $Q$ 两点,且 $\left| {PQ}\right|  = \dfrac{60}{19}$ ,求直线 $l$ 的方程；
-            \item 如图所示,四边形 ${ABCD}$ 是矩形, ${AB}$ 与椭圆 $M$ 相切于点 $F,{AD}$ 与椭圆 $M$ 相切于点 $E,{BC}$ 与椭圆 $M$ 相切于点 $G,{CD}$ 与椭圆 $M$ 相切于点 $H$ ,求矩形 ${ABCD}$ 面积的取值范围.
+            \item 如图所示，四边形 ${ABCD}$ 是矩形, ${AB}$ 与椭圆 $M$ 相切于点 $F,{AD}$ 与椭圆 $M$ 相切于点 $E,{BC}$ 与椭圆 $M$ 相切于点 $G,{CD}$ 与椭圆 $M$ 相切于点 $H$ ,求矩形 ${ABCD}$ 面积的取值范围.
         \end{enumerate}
         \begin{center}
         \includegraphics[width=0.3\linewidth]{0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg}
@@ -997,7 +1052,7 @@
         \begin{jieda}
             设直线$PQ: y = kx + m$，$P(x_1, y_2), Q(x_2, y_2)$
 
-            联立$PQ$与椭圆的方程可得 $\left( {4{k}^{2} + 1}\right) {x2} + {8kmx} + 4$，则 $\left\{ \begin{array}{l}
+            联立$PQ$与椭圆的方程可得 $\left( {4{k}^{2} + 1}\right) {x^2} + {8kmx} + 4$，则 $\left\{ \begin{array}{l}
                 {x}_{1} + {x}_{2} = \dfrac{-{8km}}{4{k}^{2} + 1} \\
                 {x}_{1}{x}_{2} = \dfrac{4{m}^{2} - {16}}{4{k}^{2} + 1}
             \end{array} \right.$
@@ -1012,7 +1067,7 @@
         \end{jieda}
     \end{enumerate}
 
-    \item 任意直线与三角换元
+    \item 有点无线与三角换元
     \begin{enumerate}
         \item 已知椭圆 $E : \dfrac{{x}^{2}}{4} + \dfrac{{y}^{2}}{3} = 1$ 的一个顶点为 $H\left( {2,0}\right)$ ,对于 $x$ 轴上的点 $P\left( {t,0}\right)$ ,椭圆 $E$ 上存在点 $M$ ,使得 ${MP} \bot  {MH}$ ,求实数 $t$ 的取值范围.
         \begin{jieda}
@@ -1023,6 +1078,49 @@
             根据垂直关系有$(2-2cos\alpha)(t-2cos\alpha)+3sin^2\alpha = 0$，整理得$t = \dfrac{cos^2\alpha - 4cos\alpha + 3}{2cos\alpha - 2} = \dfrac{cos\alpha - 3}{2}\in (-2, -1)$.
         \end{jieda}
 
+        \item 点 $A,B$ 分别是椭圆 $\dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的上顶点和左顶点， $P$ 是椭圆上一动点(不与右端点重合)， $P$ 的横坐标非负, ${BP}$ 的中点是 $M$ ,当 $P$ 位于下顶点时 $\bigtriangleup {APM}$ 的面积为 1,椭圆离心率为 $\dfrac{\sqrt{3}}{2}$.
+
+        \begin{enumerate}
+            \item 求椭圆方程
+            \item 记 $\bigtriangleup  {POM}$ 的面积为 $S_1$ ， $\bigtriangleup  {AOM}$ 的面积为 $S_2$ ，求 $\dfrac{S_1}{S_2}$ 的最小值.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\dfrac{x^2}{2}+2y^2 = 1$
+                \item $S_{\triangle POM} = S_{\triangle BOM} = \dfrac{\sqrt{2}|y_M|}{2}$，$S_{\triangle AOM} = \dfrac{\sqrt{2}(-x_M)}{4}$，故$\dfrac{S_1}{S_2} = \dfrac{2|y_M|}{-x_M}$
+                \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/0_1111_1615_324_224_0.jpg}
+                \end{center}
+
+                不妨设$P$在第一象限，因此$M$在第二象限，设$P\left(\sqrt{2}cos\theta, \dfrac{\sqrt{2}}{2}sin\theta\right), \theta \in \left(0, \dfrac{\pi}{2}\right]$，故$M\left(\dfrac{\sqrt{2}}{2}(cos\theta-1), \dfrac{\sqrt{2}}{4}sin\theta\right)$，故$\dfrac{S_1}{S_2} = \dfrac{sin\theta}{1-cos\theta} = cot\dfrac{\theta}{2} \geq 1$
+            \end{enumerate}
+        \end{jieda}
+        
+        \item 已知椭圆 $C : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 经过点 $A\left( {-2,0}\right)$ 和点 $B\left( {2,0}\right)$ ，椭圆 $C$ 的焦距为 2.
+        \begin{enumerate}
+            \item 求椭圆 $C$ 的方程
+            \item $P$ 和 $Q$ 是椭圆 $C$ 上异于 $A,B$ 的两点，四边形 ${APBQ}$ 是平行四边形，直线 ${AP}$ 、 ${AQ}$ 分别交 $y$ 轴于点 $M$ 和点 $N,F$ 是椭圆的右焦点，求四边形 ${AMFN}$ 面积的最小值.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$
+                \item $S_{AMFN} = S_{\triangle AMF} + S_{\triangle ANF} = \dfrac{3}{2}\left(|y_M|+|y_N|\right)$
+                
+                \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/1_1222_631_310_258_0.jpg}
+                \end{center}
+                
+                易知$P, Q$关于原点对称，故设$P(2cos\theta, \sqrt{3}sin\theta)$，故$Q(-2cos\theta, -\sqrt{3}sin\theta)$
+
+                $AP: y = \left(\dfrac{\sqrt{3}sin\theta}{2cos\theta+2}\right)(x+2)$，故$y_M = \dfrac{2\sqrt{3}sin\theta}{2cos\theta+2}$，同理$y_N = \dfrac{2\sqrt{3}sin\theta}{2cos\theta-2}$
+
+                $S_{AMFN} = \dfrac{3}{2}\left|\dfrac{2\sqrt{3}sin\theta}{2cos\theta+2} - \dfrac{2\sqrt{3}sin\theta}{2cos\theta-2}\right| = 3\sqrt{3}\left|\dfrac{1}{sin\theta}\right| \geq 3\sqrt{3}$
+            \end{enumerate}
+        \end{jieda}
+    \end{enumerate}
+
+    \item 任意直线与三角换元
+    \begin{enumerate}
         \item 若点$A, B$在圆$x^2+y^2 = 4$上，则$S_{\triangle AOB}$的最大面积是\blkda{2};若点$A, B$在椭圆$\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$上，则$S_{\triangle AOB}$的最大面积是\blkda{$\sqrt{3}$}
         \begin{jieda}
             $S = \dfrac{1}{2} \times 2 \times 2 \times sin\theta \leq 2$
@@ -1250,7 +1348,7 @@
 
         \item 在平面直角坐标系 ${xOy}$ 中,已知椭圆 $\Gamma  : \dfrac{{x}^{2}}{2} + {y}^{2} = 1$ ,过右焦点 $F$ 作两条互相垂直的弦 ${AB},{CD}$，设 ${AB},{CD}$ 中点分别为 $M,N$ .
         \begin{center}
-            \includegraphics[width=0.3\linewidth]{bodyxb//src/tuoyuan9.png}
+            \includegraphics[width=0.2\linewidth]{bodyxb//src/tuoyuan9.png}
         \end{center}
         \begin{enumerate}
             \item 写出椭圆右焦点 $F$ 的坐标及该椭圆的长轴长
@@ -1272,6 +1370,36 @@
 
                 设$t = |m| + \dfrac{1}{|m|} \geq 2$，故$S_{\triangle FMN} = \dfrac{1}{2} \times \dfrac{t}{2t^2+1} = \dfrac{1}{2} \times \dfrac{1}{2t+\dfrac{1}{t}} \leq \dfrac{1}{9}$，当$t = 2$时取等.
             \end{enumerate}
+        \end{jieda}
+        
+
+        \item 已知椭圆 $C : \dfrac{{x}^{2}}{16} + \dfrac{{y}^{2}}{12} = 1,{A}_{1},{A}_{2}$ 分别为椭圆 $C$ 的左、右顶点， ${F}_{1},{F}_{2}$ 分别为椭圆 $C$ 的左、右焦点，斜率存在的直线 $l$ 交椭圆 $C$ 于 $P,Q$ 两点,记直线 ${A}_{1}P,P{A}_{2},{A}_{2}Q,Q{A}_{1}$ 的斜率分别为 ${k}_{1},{k}_{2},{k}_{3},{k}_{4}$，若 ${k}_{1} + {k}_{4} = \dfrac{5}{3}\left( {{k}_{2} + {k}_{3}}\right)$ ，求 ${S}_{\bigtriangleup {F_2PQ}}$ 的取值范围.
+        \begin{jieda}
+            易知 ${A}_{1}\left( {-4,0}\right) ,{A}_{2}\left( {4,0}\right)$，设 $P\left( {{x}_{1},{y}_{1}}\right) ,Q\left( {{x}_{2},{y}_{2}}\right)$
+            \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/1_89_183_389_347_0.jpg}
+            \end{center}
+            所以 ${k}_{1} \cdot  {k}_{2} = {k}_{P{A}_{1}} \cdot  {k}_{P{A}_{2}} = \dfrac{{y}_{1}}{{x}_{1} + 4} \cdot  \dfrac{{y}_{1}}{{x}_{1} - 4} = \dfrac{{y}_{1}^{2}}{{x}_{1}^{2} - {16}} = \dfrac{{y}_{1}^{2}}{-\dfrac{4}{3}{y}_{1}^{2}} =  - \dfrac{3}{4}$
+
+            同理 ${k}_{3} \cdot  {k}_{4} = {k}_{Q{A}_{1}} \cdot  {k}_{Q{A}_{2}} = \dfrac{{y}_{2}}{{x}_{2} + 4} \cdot  \dfrac{{y}_{2}}{{x}_{2} - 4} = \dfrac{{y}_{2}^{2}}{{x}_{2}^{2} - {16}} = \dfrac{{y}_{2}^{2}}{-\dfrac{4}{3}{y}_{2}^{2}} =  - \dfrac{3}{4}$
+             
+            ${k}_{1} + {k}_{4} = \dfrac{5}{3}\left( {{k}_{2} + {k}_{3}}\right)$，即${k}_{1} + {k}_{4} = -\dfrac{5}{4}\left( {\dfrac{1}{k_1} + \dfrac{1}{k_4}}\right)$，即$k_1k_4 = -\dfrac{5}{4}$
+            
+            设 $l$ 的方程为 $x = {ty} + m\left( {t \neq  0}\right)$ ,联立 $\left\{  \begin{array}{l} x = {ty} + m \\  \dfrac{{x}^{2}}{16} + \dfrac{{y}^{2}}{12} = 1 \end{array}\right.$，消去 $x$ ,得 $\left( {3{t}^{2} + 4}\right) {y}^{2} + {6mty} + 3{m}^{2} - {48} = 0$ ,需满足 $\Delta  > 0$，根据韦达定理有$\left\{\begin{array}{l}
+                {y}_{1} + {y}_{2} = \dfrac{-{6mt}}{3{t}^{2} + 4} \\
+                {y}_{1}{y}_{2} = \dfrac{3{m}^{2} - {48}}{3{t}^{2} + 4}
+            \end{array}\right.$ 
+
+            $k_1 = \dfrac{y_1}{x_1+4} = \dfrac{y_1}{ty_1+m+4}, k_4 = \dfrac{y_2}{ty_2+m+4}$
+            
+            $k_1k_4 = \dfrac{y_1y_2}{t^2y_1y_2 + (m+4)t(y_1+y_2) + (m+4)^2} \\
+            = \dfrac{3m^2-48}{t^2(3m^2-48)+(m+4)(-6mt^2)+(m+4)^2(3t^2+4)} = \dfrac{3(m-4)}{4(m+4)}= -\dfrac{5}{4}$，解得$m = -1$
+
+            故$PQ$恒过$(-1, 0)$，故${S}_{\bigtriangleup {F_2PQ}} = \dfrac{3}{2}|y_1-y_2| = \dfrac{18\sqrt{4t^2+5}}{3t^2+4}$
+
+            设 $\sqrt{4{t}^{2} + 5} = \lambda$ ,则 ${t}^{2} = \dfrac{{\lambda }^{2} - 5}{4}$ ,由 $l$ 与 $x$ 轴不垂直得 $\lambda  > \sqrt{5}$，且 ${S}_{\bigtriangleup {F}_{2}{PQ}} = \dfrac{{18}\sqrt{4{t}^{2} + 5}}{3{t}^{2} + 4} = \dfrac{72\lambda }{3{\lambda }^{2} + 1} = \dfrac{72}{{3\lambda } + \dfrac{1}{\lambda }}$
+
+            因为函数 $y = \dfrac{72}{{3x} + \dfrac{7}{x}}$ 在 $\lbrack \sqrt{5}, + \infty )$ 上为减函数,所以 ${S}_{\bigtriangleup {F}_{2}{PQ}}$ 的取值范围为 $\left( {0,\dfrac{9\sqrt{5}}{2}}\right)$ .
         \end{jieda}
     \end{enumerate}
 
@@ -1417,6 +1545,35 @@
             
         \end{jieda}
 
+        \item 已知 $A,B$ 是椭圆 $C : \dfrac{{x}^{2}}{25} + \dfrac{{y}^{2}}{9} = 1$ 的左、右顶点，直线 $l$ 交椭圆 $C$ 于 $M,N$ 两点， 记 ${AM}$ 的斜率为 ${k}_{1},{BN}$ 的斜率为 ${k}_{2}$ ,且 ${k}_{1} : {k}_{2} = 1 : 9$.
+        \begin{enumerate}
+            \item 求证:直线 $l$ 过定点
+            \item 记 $\bigtriangleup  {AMN}$ 的面积为 ${S}_{1}$ ， $\bigtriangleup  {BMN}$ 的面积为 ${S}_{2}$ ，求 ${S}_{1} + {S}_{2}$ 的最大值.
+        \end{enumerate}
+
+        \begin{jieda}
+            \begin{enumerate}
+                \item 设$AM, BN$交于$P$，${k}_{1} : {k}_{2} = 1 : 9$即$\dfrac{y_P}{x_P - x_B} = 9 \times \dfrac{y_P}{x_P - x_A}$，故$x_P = \dfrac{25}{4}$
+                \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/1_91_1242_405_267_0.jpg}
+                \end{center}
+
+                $l$过点$(4, 0)$
+                \item 设直线 $l : x = {ty} + 4$ ,代入椭圆 $C : \dfrac{{x}^{2}}{25} + \dfrac{{y}^{2}}{9} = 1$ ,得 $9{\left( ty + 4\right) }^{2} + {25}{y}^{2} = {225}$，即 $\left( {9{t}^{2} + {25}}\right) {y}^{2} + {72ty} - {81} = 0, \Delta>0$，根据韦达定理有$\left\{\begin{array}{l}
+                    y_1+y_2 = \dfrac{-72t}{9t^2+25} \\
+                    y_1y_2 = \dfrac{-81}{9t^2+25}
+                \end{array}\right.$
+                
+                设 $M\left( {{x}_{1},{y}_{1}}\right) ,N\left( {{x}_{2},{y}_{2}}\right)$ ,
+                则 ${S}_{1} + {S}_{2} = \dfrac{1}{2} \times  \left| {AB}\right|  \times  \left| {{y}_{1} - {y}_{2}}\right|  = 5\left| {{y}_{1} - {y}_{2}}\right| = \dfrac{{450}\sqrt{{t}^{2} + 1}}{9{t}^{2} + {25}}$.
+
+                令 $\sqrt{{t}^{2} + 1} = m$ ,则 ${S}_{1} + {S}_{2} = \dfrac{450m}{9{m}^{2} + {16}} \leq  \dfrac{450m}{2\sqrt{9{m}^{2} \cdot  {16}}} = \dfrac{450}{2 \times  3 \times  4} = \dfrac{75}{4}$
+                
+                故 $m = \dfrac{4}{3}$ 时, ${S}_{1} + {S}_{2}$ 取得最大值为 $\dfrac{75}{4}$ .
+            \end{enumerate}
+        \end{jieda}
+
+
         \item 已知椭圆 $ \Gamma  : \dfrac{{x}^{2}}{2} + {y}^{2} = 1,{F}_{1},{F}_{2} $ 分别是 $ \Gamma $ 的左右焦点,点 $ A,B,C,D $ 均在 $ \Gamma $ 上,且点 $ A $ 是第一象限点,直线 $ {AB} $ 经过点 $ {F}_{1} $ ,直线 $ {AC},{BD} $ 均经过点 $ {F}_{2} $ .
         \begin{enumerate}
             \item 求椭圆 $ \Gamma $ 的离心率
@@ -1446,6 +1603,46 @@
                 故$k_{CD} = \dfrac{\dfrac{y_1}{2m_1y_1 - 1} - \dfrac{y_3}{2m_2y_3 - 1}}{\dfrac{m_1y_1}{2m_1y_1 - 1} - \dfrac{m_2y_3}{2m_2y_3 - 1}} = \dfrac{2(m_2-m_1)y_1y_3+(y_3-y_1)}{m_2y_3-m_1y_1} = \dfrac{5(y_3-y_1)}{m_2y_3-m_1y_1}$
 
                 故$ \dfrac{{k}_{CD}}{{k}_{AB}} = 5$.
+            \end{enumerate}
+        \end{jieda}
+
+
+        \item 设动点 $G\left( {x,y}\right)$ 到点 $F\left( {1,0}\right)$ 的距离与它到直线 $l : x = 4$ 的距离之比为 $\dfrac{1}{2}$ ，记点 $G$ 的轨迹为曲线 $C$ 
+        \begin{enumerate}
+            \item 求 $C$ 的方程
+            \item $A$ 为 $C$ 与 $x$ 轴的负半轴的交点， $B$ 为直线 $x = 1$ 与 $C$ 在第一象限的交点，直线 $l$ 过点 $\left( {-2,3}\right)$ ， 且与 $C$ 相交于 $M,N$ 两点，过点 $N$ 作垂直于 $x$ 轴的直线分别与直线 ${AB},{AM}$ 相交于点 $P,Q$ ，分别记 $\bigtriangleup {ANQ}$ 与 $\bigtriangleup {APQ}$ 的面积为 ${S}_{1}$ 与 ${S}_{2}$ ,求证: ${S}_{1} = 2{S}_{2}$.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$
+                \item 如图所示，$\dfrac{S_1}{S_2} = \dfrac{NQ}{PQ}$，即证$P$为$NQ$中点.
+                \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/0_1311_1040_312_281_0.jpg}
+                \end{center}
+
+                $A(-2, 0), B\left(1, \dfrac{3}{2}\right)$，则直线$AB: y = \dfrac{x}{2}+1$
+
+                设$N(x_1, y_2), M(x_2, y_2)$，直线$MN: y = k(x+2)+3$
+                
+                $P\left(x_1, \dfrac{x_1}{2}+1\right)$，$Q\left(x_1, \left[k+\dfrac{3}{x_2+2}\right](x_1+2)\right)$
+                
+                联立直线与椭圆得$3x^2+4(k(x+2)+3)^2 = 12$，即$(3+4k^2)x^2+(16k^2+24k)x+16k^2+48k+24 = 0$，$\Delta > 0$解得$k < -\dfrac{1}{2}$
+
+                根据韦达定理有$\left\{\begin{array}{l}
+                    x_1+x_2 = \dfrac{-16k^2-24k}{3+4k^2} \\
+                    x_1x_2 = \dfrac{16k^2+48k+24}{3+4k^2}
+                \end{array}\right.$
+
+                $y_N+y_Q-2y_P = k(x_1+2)+3+\left[k+\dfrac{3}{x_2+2}\right](x_1+2) - (x_1+2) \\
+                = \left[2k+\dfrac{3}{x_2+2}-1\right](x_1+2)+3\\
+                = \left[2k-1+\dfrac{3}{x_2+2}+\dfrac{3}{x_1+2}\right](x_1+2)$
+
+                $\left\{\begin{array}{l}
+                    x_1+2+x_2+2 = \dfrac{12-24k}{3+4k^2} \\
+                    (x_1+2)(x_2+2) = \dfrac{16k^2+48k+24}{3+4k^2} + 2 \times \dfrac{-16k^2-24k}{3+4k^2} + 4 = \dfrac{36}{3+4k^2}
+                \end{array}\right.$
+
+                故$\dfrac{3}{x_2+2}+\dfrac{3}{x_1+2} = 1-2k$，因此$y_N+y_Q-2y_P = 0$
             \end{enumerate}
         \end{jieda}
     \end{enumerate}
@@ -1559,6 +1756,59 @@
                 $\dfrac{(t_1+t_2)^2 - 2t_1t_2}{t_1t_2} = \dfrac{(t_1+t_2)^2}{t_1t_2} - 2 = \dfrac{\left(-\dfrac{3sin\alpha + cos\alpha}{2sin^2\alpha + 1}\right)^2}{\left(-\dfrac{2}{2sin^2\alpha + 1}\right)} - 2 = -\dfrac{(3sin\alpha + cos\alpha)^2}{2(2sin^2\alpha + 1)} - 2 = -\dfrac{5}{2}$
     
                 故$-\dfrac{(3sin\alpha + cos\alpha)^2}{2(2sin^2\alpha + 1)} = -\dfrac{1}{2}$，即$(2sin^2\alpha + 1) = (3sin\alpha + cos\alpha)^2$，即$2sin^2\alpha + 1 = 8sin^2\alpha + 6sin\alpha cos\alpha + 1$，故$6sin^2\alpha + 6sin\alpha cos\alpha = 0$，即$k^2+k = 0$，解得$k = -1$或$0$（舍），因此直线方程为$y = 1-x$.
+            \end{enumerate}
+        \end{jieda}
+
+        \item 已知椭圆 $C : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的离心率为 $\dfrac{\sqrt{3}}{2}$ ，且过点 $P\left( {2,\sqrt{2}}\right)$.
+        \begin{enumerate}
+            \item 求椭圆 $C$ 的方程
+            \item 过右焦点 $F$ 的直线 $l$ 与椭圆 $C$ 交于 $A,B$ 两点，若 $\vv{AF} = 3\vv{FB}$ ，求 $\bigtriangleup  {PAB}$ 的面积.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\dfrac{x^2}{12}+\dfrac{y^2}{3} = 1$
+                \item 易知直线$AB$斜率不为$0$，故设直线$AB: x = my + 3$，$A(x_1, y_1), B(x_2, y_2)$
+                
+                $\left\{\begin{array}{l}
+                    \dfrac{x^2}{12}+\dfrac{y^2}{3} = 1 \\
+                    x = my + 3
+                \end{array}\right.$，消去$x$得$(4+m^2)y^2+6my-3 = 0$，$\Delta > 0$
+
+                根据韦达定理可知$\left\{\begin{array}{l}
+                    y_1+y_2 = \dfrac{-6m}{4+m^2} \\
+                    y_1y_2 = \dfrac{-3}{4+m^2}
+                \end{array}  \right.$，$\vv{AF} = 3\vv{FB} \Longleftrightarrow y_1 = -3 y_2$，$-\dfrac{10}{3} = \dfrac{y_1}{y_2} + \dfrac{y_2}{y_1} = \dfrac{(y_1+y_2)^2}{y_1y_2} - 2$，即$-\dfrac{4}{3} = \dfrac{-12m^2}{4+m^2}$，解得$m^2 = \dfrac{1}{2}$
+
+                $\vv{PA} = (x_1-2, y_1-\sqrt{2}) = (my_1+1, y_1-\sqrt{2}), \vv{PB} = (x_2-2, y_2-\sqrt{2}) = (my_2+1, y_2-\sqrt{2})$
+                
+                故$S_{\bigtriangleup  {PAB}} = \dfrac{|(my_1+1)(y_2-\sqrt{2})-(my_2+1)(y_1-\sqrt{2})|}{2} = \dfrac{|(1+\sqrt{2}m)(y_1-y_2)|}{2} = |y_1-y_2| = 4|y_2| = 2|y_1+y_2| = \dfrac{4\sqrt{2}}{3}$
+            \end{enumerate}
+        \end{jieda}
+
+        \item 已知椭圆 $\dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的长轴长为 4，离心率 $e = \dfrac{1}{2}$.
+        \begin{enumerate}
+            \item 求椭圆的标准方程
+            \item 若椭圆的左、右顶点分别为 $A$ 、 $B$ ，过椭圆的左焦点 ${F}_{1}$ 的直线交椭圆于 $C$ 、 $D$ 两点，求 $\bigtriangleup  A{F}_{1}C$ 与 $\bigtriangleup B{F}_{1}D$ 的面积之比的取值范围.
+        \end{enumerate}
+
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$
+                \item 如图所示，$S_{\bigtriangleup  A{F}_{1}C} = \dfrac{1}{2} \times 1 \times |y_C|$，$S_{\bigtriangleup  B{F}_{1}D} = \dfrac{1}{2} \times 3 \times |y_D|$，因此$\dfrac{S_{\bigtriangleup  A{F}_{1}C}}{S_{\bigtriangleup  B{F}_{1}D}} = -\dfrac{y_C}{3y_D}$
+                \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/1_90_1859_368_332_0.jpg}
+                \end{center}
+                易知直线斜率为0时不符合要求，设$PQ: x = my - 1$，联立直线和椭圆方程$\left\{\begin{array}{l}
+                     \dfrac{{x}^{2}}{4} + \dfrac{{y}^{2}}{3} = 1  \\
+                     x = my - 1
+                \end{array}\right.$，则$3(my - 1)^2 + 4y^2 = 12$，即$(3m^2+4)y^2-6my-9=0$，$\Delta > 0$
+                
+                $\left\{\begin{array}{l}
+                     y_C+y_D = \dfrac{6m}{3m^2+4} \\
+                     y_Cy_D = \dfrac{-9}{3m^2+4}
+                \end{array}\right.$，$\dfrac{y_C}{y_D} + \dfrac{y_D}{y_C} = \dfrac{(y_C+y_D)^2}{y_Dy_D} - 2 = \dfrac{-4m^2}{3m^2+4} - 2 \in \left(-\dfrac{10}{3}, -2\right]$
+                
+                故$\dfrac{y_D}{y_C} \in \left(-3, -\dfrac{1}{3}\right)$，故$\dfrac{S_{\bigtriangleup  A{F}_{1}C}}{S_{\bigtriangleup  B{F}_{1}D}} \in \left(\dfrac{1}{9}, 1\right)$
             \end{enumerate}
         \end{jieda}
     \end{enumerate}
