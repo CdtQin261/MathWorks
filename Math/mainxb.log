@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  10 AUG 2026 10:55
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  10 AUG 2026 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1901,49 +1901,34 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
-[2]
-File: bodyxb/src/bo_d3eri7s601uc738iqr70_2_240_1616_444_409_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d3eri7s601uc738iqr70_2_240_1616_444_409_0.jpg>
- [3]
 File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1205_1034_270_314_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1205_1034_270_314_0.jpg>
- [4]
+[2]
 File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1180_1728_303_298_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d17r1jf7aajc7388ojlg_5_1180_1728_303_298_0.jpg>
 File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1157_270_304_303_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1157_270_304_303_0.jpg>
- [5]
+ [3]
 File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1060_879_413_292_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d17r1jf7aajc7388ojlg_6_1060_879_413_292_0.jpg>
- [6]
+ [4]
 File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_624_857_239_159_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_624_857_239_159_0.jpg>
 File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_1042_851_203_176_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1chk83ef24c73d2s6gg_0_1042_851_203_176_0.jpg>
- [7] [8]
-File: bodyxb//src/jianjinxian2.png Graphic file (type bmp)
-<bodyxb//src/jianjinxian2.png>
- [9]
+ [5]
 File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_8_433_1272_768_453_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d17r1jf7aajc7388ojlg_8_433_1272_768_453_0.jpg>
- [10] [11] [12]
+ [6] [7]
 File: bodyxb//src/shuangquxiandisandingyi.png Graphic file (type bmp)
 <bodyxb//src/shuangquxiandisandingyi.png>
+ [8]
 File: bodyxb//src/disandingyi3.png Graphic file (type bmp)
 <bodyxb//src/disandingyi3.png>
- [13] [14]
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
+ [9]
 File: bodyxb/src/bo_d3mggojef24c73cuv41g_0_235_629_430_302_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d3mggojef24c73cuv41g_0_235_629_430_302_0.jpg>
-File: bodyxb/src/bo_d3mggojef24c73cuv41g_3_236_262_430_302_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d3mggojef24c73cuv41g_3_236_262_430_302_0.jpg>
-[15] [16] [17]
-File: bodyxb/src/0_1186_533_385_309_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1186_533_385_309_0.jpg>
- [18] [19]
-File: bodyxb/src/1_1089_1872_450_301_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_1089_1872_450_301_0.jpg>
-) [20] (./mainxb.aux (./bodyxb/13_shuangquxian.aux))
+ [10]) [11] (./mainxb.aux (./bodyxb/13_shuangquxian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1952,12 +1937,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49748 strings out of 468168
- 1173414 string characters out of 5432816
- 1734487 words of memory out of 5000000
- 77441 multiletter control sequences out of 15000+600000
+ 49703 strings out of 468168
+ 1171286 string characters out of 5432816
+ 1730487 words of memory out of 5000000
+ 77401 multiletter control sequences out of 15000+600000
  656726 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,14n,128p,665b,1381s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,14n,128p,665b,1199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (20 pages).
+Output written on mainxb.pdf (11 pages).

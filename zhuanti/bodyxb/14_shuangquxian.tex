@@ -841,6 +841,26 @@
 
                 $\dfrac{S}{S_1} + \dfrac{S}{S_2} = \dfrac{\lambda + 5}{\lambda + 1} \times \left(1+\dfrac{1}{\lambda}\right) + \left(1+\lambda\right) = 2+\lambda+\dfrac{5}{\lambda} \geq 2+2\sqrt{5}$
 
+                \item $\dfrac{S}{S_1} = \dfrac{|PF_1|\cdot|PA|}{|PF_2|\cdot|PB|} = \dfrac{(\sqrt{2}+\sqrt{2}x_1)[\sqrt{2}(x_1+x_2)-2\sqrt{2}]}{(\sqrt{2}x_1-\sqrt{2})(\sqrt{2}+\sqrt{2}x_1-2\sqrt{2})} = \dfrac{(x_1+1)(x_1+x_2-2)}{(x_1-1)^2}$
+                
+                $\dfrac{S}{S_2} = \dfrac{|PA|}{|AF_2|} = \dfrac{[\sqrt{2}(x_1+x_2)-2\sqrt{2}]}{\sqrt{2}x_2-\sqrt{2}} = \dfrac{x_1+x_2-2}{x_2-1} = 1 + \dfrac{x_1-1}{x_2-1}$
+
+                $\dfrac{S}{S_1} + \dfrac{S}{S_2} = \dfrac{x_1+1}{x_1-1}\left(1+\dfrac{x_2-1}{x_1-1}\right) + \left(1+\dfrac{x_1-1}{x_2-1}\right)$
+
+                设直线$PA: y = k(x-2)$，联立得$(1-k^2)x^2+4k^2x-(4k^2+2) = 0$，满足$\Delta > 0, k^2 > 1$
+
+                根据韦达定理有$\left\{\begin{array}{l}
+                    x_1+x_2 = \dfrac{-4k^2}{1-k^2} \\
+                    x_1x_2 = \dfrac{-(4k^2+2)}{1-k^2}
+                \end{array}\right.$，$\left\{\begin{array}{l}
+                    x_1-1+x_2-1 =  \dfrac{-2(1+k^2)}{1-k^2} \\
+                    (x_1-1)(x_2-1) = \dfrac{-(1+k^2)}{1-k^2}
+                \end{array}\right.$
+
+                故$\dfrac{1}{x_1-1} + \dfrac{1}{x_2-1} = 2$，令$u = x_1-1, v = x_2-1$，则$v = \dfrac{u}{2u-1}$
+                
+                $\dfrac{S}{S_1} + \dfrac{S}{S_2} = \left(1+\dfrac{2}{u}\right)\left(1+\dfrac{v}{u}\right) + \left(1+\dfrac{u}{v}\right) = 2+\dfrac{2}{u}+\dfrac{v}{u}+\dfrac{2v}{u^2} + \dfrac{u}{v} = 1+2u+\dfrac{2}{u}+\dfrac{1}{2u-1}+\dfrac{2}{u(2u-1)} = 2+(2u-1)+\dfrac{5}{2u-1} \geq 2+2\sqrt{5}$
+
                 \item $\dfrac{S}{S_1} = \dfrac{|PF_1|\cdot|PA|}{|PF_2|\cdot|PB|} = \dfrac{\left(\dfrac{\sqrt{2}}{1-\sqrt{2}cos\theta} + 2\sqrt{2}\right) \cdot \dfrac{2\sqrt{2}}{1-2cos^2\theta}}{\left(\dfrac{\sqrt{2}}{1-\sqrt{2}cos\theta}\right)^2} \\
                 = \left(1+2-2\sqrt{2}cos\theta\right) \cdot \dfrac{2}{1+\sqrt{2}cos\theta} = \dfrac{6-4\sqrt{2}cos\theta}{1+\sqrt{2}cos\theta} = \dfrac{10}{1+\sqrt{2}cos\theta} - 4$
 
