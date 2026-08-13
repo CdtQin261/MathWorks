@@ -1,12 +1,45 @@
+\section*{四个公理}
+\subsection*{公理2与个数问题}
+\begin{enumerate}
+    \item 过一条直线和这条直线外不共线的三点,最多可确定\dotfill{(\kh{B})}
+    \xx{三个平面}{四个平面}{五个平面}{六个平面}
+    \begin{jieda}
+        记直线为 $l,l$ 外不共线的 3 点为 $P,Q,R$ . 根据公理 2 及其推论 1,直线 $l$ 和 $P,Q,R$ 任意一点各能确定 1 个平面; $P,Q,R$ 三点又能确定 1 个平面. 这 4 个平面可以两两不重合 (例: 正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中, $D{D}^{\prime }$ 与 $A,B,C$ 三点),故最多可确定 4 个平面. 
+        
+        \ps 过一条直线和这条直线外不共线的三点,由于平面 ${PQR}$ 必然存在,因此最少可以确定 1 个平面,可以确定 1 或 3 或 4 个平面. 确定 1 个平面的情况是直线 $l$ 恰好在平面 ${PQR}$ 上且不过 $P,Q,R$ 任意一点. 确定 3 个平面的情况如: 正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中, ${A}^{\prime }{B}^{\prime }$ 与 $A,B,C$ 三点.
+    \end{jieda}
+    \item 若三条直线两两相交, 则最多可以确定平面的个数是 \dotfill{(\kh{C})}
+    \xx{1}{2}{3}{4}
+    \begin{jieda}
+        根据公理 2 的推论 2,任意两条相交直线可以确定一个平面,三条直线最多可以确定 3 个平面,且可以两两不重合(例:正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,直线 ${AB}$ 、直线 ${AD}$ 、直线 $A{A}^{\prime }$ ,确定了平面 ${ABCD}$ 、平面 ${AB}{B}^{\prime }{A}^{\prime }$ 、平面 ${AD}{D}^{\prime }{A}^{\prime }$ ). 
+        
+        \ps 三条直线 $l,m,n$ 两两相交,可以确定 1 或 3 个平面. 确定 1 个平面的情况是这 3 条直线共面.
+    \end{jieda}
+    
+    \item \begin{enumerate}
+        \item 若共面的三条直线两两相交,则交点的个数是\blkda{1 或 3}
+        \begin{jieda}
+            交点最少为 1 个,此时三条直线交于同一点: 最多为个 ${C}_{3}^{2} = 3$ 个,例如三角形三边所在直线. 仅有 2 个交点是不可能的,因为根据 “过两点有且只有一条直线” ,这必会导致这三条直线中的两条重合.
+        \end{jieda}
+        \item 四条直线过同一点,过每两条直线作一个平面,则可以作\blkda[2]{1 或 4 或 6}个不同的平面
+        \begin{jieda}
+            记直线为 $a,b,c,d$ ,根据共面直线条数,分以下 3 种情况讨论: 
+            \begin{dingautolist}{172}
+                \item 四条直线共面,只能作 1 个平面
+                \item 三条直线共面,不失一般性,假设 $a,b,c \subset  {\alpha }$ 但 $d \not \subset {\alpha }$ . 由于直线 $a,b,c$ 互不重合,根据公理 3,直线 $d$ 与直线 $a$ 或 $b$ 或 $c$ 确定的平面也互不重合,且异于平面 $\alpha$ (例:正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,直线 ${AB}$ 、直线 ${AC}$ 、直线 ${AD}$ 、直线 $\left. {{{AA}}}^{\prime }\right)$ ,此时可作 4 个不同平面
+                \item 任意三条直线都不共面,根据公理 2 的推论 2,此时最多能作 ${C}_{4}^{2} = 6$ 个平面 (例: 四棱锥的四条棱), 且这 6 个面两两不重合 (否则至少有三条直线共面), 因此可作 6 个不同平面.
+            \end{dingautolist}
+        \end{jieda}
+        \item 互相平行的四条直线,每两条确定一个平面,最多可确定\blkda{6}个平面,最少可确定\blkda{1}个平面
+        \begin{jieda}
+            最多可确定 ${C}_{4}^{2} = 6$ 个平面 (例:正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,直线 $A{A}^{\prime }$ 、直线 $B{B}^{\prime }$ 、直线 $C{C}^{\prime }$ 、直线 $D{D}^{\prime }$ ). 最少可确定 1 个平面,此时四条直线在同一平面上. 
+            
+            \ps 仿照第(2)问,根据共面直线条数分类,可知互相平行的四条直线, 可以确定 1 个或 4 个或 6 个平面.
+        \end{jieda}
+    \end{enumerate}
+\end{enumerate}
 \subsection*{三点共线与三线共点}
-公理3：如果两个不同的平面有一个公共点, 那么它们有且只有一条过该点的公共直线
 
-公理3的理解：
-\begin{dingautolist}{172}
-    \item 如果两个相交平面有两个公共点，那么过这两点的直线就是他们的交线
-    \item 如果两个相交平面有三个公共点，那么这三点共线
-    \item 如果两个平面相交，那么一个平面内的直线和另一个平面的交点必在这两个平面的交线上
-\end{dingautolist}
 \subsubsection*{三点共线}
 \begin{enumerate}
     \item \begin{enumerate}
@@ -126,7 +159,476 @@
         又因为 ${GH} \neq  {EF}$ ,所以 ${EH}$ 与 ${FG}$ 相交,设交点为 $P$ . 因为 ${EH} \subset$ 平面 ${ABD}$ ,所以 $P \in$ 平面 ${ABD}$ ,同理 $P \in$ 平面 ${BCD}$ . 又由平面 ${ABD} \cap$ 平面 ${BCD} = {BD}$ ,因此 $P \in  {BD}$ . 所以,直线 ${EH}\text{ 、 }{BD}\text{ 、 }{FG}$ 相交于一点.
     \end{jieda}
 \end{enumerate}
-\subsection*{线线平行}
+
+\section*{线线位置关系}
+\subsection*{异面直线}
+\begin{enumerate}
+    \item 两条异面直线是指\dotfill{(\kh{D})}
+    \xx{空间两条没有公共点的直线}{平面上一直线与这平面外的一条直线}{分别在两个平面上的两条直线}{不同在任何一个平面上的两条直线}
+    \begin{jieda}
+        选项 (D) 是异面直线的定义. 其余 3 个选项的反例如下:对于选项 (A),两条平行直线；对于选项 (B),正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,平面 ${ABCD}$ 内的直线 ${AB}$ 与平面外的直线 ${A}^{\prime }{B}^{\prime }$ ; 对于选项 (D),正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,平面 ${ABCD}$ 内的直线 ${AB}$ 与平面 ${A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 内的直线 ${A}^{\prime }{B}^{\prime }$
+    \end{jieda}
+    \item 已知平面 $\alpha  \cap$ 平面 $\beta  =$ 直线 $c$ ,直线 $a \subset  \alpha ,a//c$ ,直线 $b \subset  \beta$ ,且 $b$ 与 $c$ 相交,则 $a$ 和 $b$ 的位置关系是\dotfill{(\kh{C})}
+    \xx{平行}{相交}{异面}{上述三种情况都有可能}
+    \begin{jieda}
+        符合异面直线判定定理的条件
+    \end{jieda}
+    \item 已知 $a,b$ 是异面直线,直线 $c//a$ ,那么 $c$ 与 $b$ \dotfill{(\kh{C})}
+    \xx{一定是异面直线}{一定是相交直线}{不可能是平行直线}{不可能是相交直线}
+    \begin{jieda}
+        根据公理 4 ; 空间内,平行于同一直线的两直线互相平行. $c//b$ 是不可能的. 直线 $c$ 和 $b$ 异面和相交均有可能,例如,正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,取 $a = {AB},b = {A}_{1}{D}_{1},c = {CD}$ 时, $b$ 与 $c$ 异面; $c = {D}_{1}{C}_{1}$ 时, $b$ 与 $c$ 相交. 因此只有选项 (C) 正确.
+    \end{jieda}
+    \item 若 $a,b$ 是异面直线, $b,c$ 也是异面直线,则 $a,c$ 的位置关系是\dotfill{(\kh{A})}
+    \xx{相交、平行或异面}{相交或平行}{异面}{平行或异面}
+    \begin{jieda}
+        以正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 为例,取 $a = {AB},b = {A}_{1}{D}_{1}$ ,若 $c = {BD}$ ,则 $a$ , $c$ 相交；若 $c = {CD}$ ,则 $a$ , $c$ 平行；若 $c =$  $C{C}_{1}$ ,则 $a,c$ 异面.
+    \end{jieda}
+    \item 经过空间一点 $A$ ,作与直线 $l$ 成 $\dfrac{\pi }{3}$ 角的直线共有 \dotfill{(\kh{D})}
+    \xx{2 条}{3 条}{4 条}{无数条}
+    \begin{jieda}
+        若直线 $l$ 不经过点 $A$ ,则过 $A$ 点作直线 ${l}^{\prime }//l$ ,若直线 $l$ 经过点 $A$ ,取 ${l}^{\prime } = l$ . 在空间中,任作一条过点 $A$ 且与直线 ${l}^{\prime }$ 成 $\dfrac{\pi }{3}$ 角的直线,再将该直线绕着直线 ${l}^{\prime }$ 旋转一周 (得到两个对顶的圆锥),即得到无数条符合要求的直线.
+    \end{jieda}
+    \item 已知异面直线 $a$ 与 $b$ 满足 $a \subset  \alpha ,b \subset  \beta$ ,且 $\alpha  \cap  \beta  = l$ ,则直线 $l$ 与 $a,b$ 的位置关系一定是\dotfill{(\kh{B})}
+    \xx{$l$ 与 $a,b$ 都相交}{$l$ 至少与 $a,b$ 中的一条相交}{$l$ 至多与 $a,b$ 中的一条相交}{$l$ 至少与 $a,b$ 中的一条平行}
+    \begin{jieda}
+        由于 $l \subset  \alpha ,l \subset  \beta$ ,若 $l$ 与直线 $a,b$ 均无交点,则 $a//l,b//l$ ,根据公理 $4,a//b$ ,这与 $a,b$ 是异面直线矛盾,故 $l$ 至少与 $a,b$ 中的一条相交,选项 (B) 正确,而选项 (C) 错误. 以正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 为例,取 $\alpha  =$ 平面 ${ABCD},\beta  =$ 平面 ${AD}{D}^{\prime }{A}^{\prime }$ ,则 $l = {AD}$ ,选项 (A) 反例: 取 $a = {AB},b = {A}^{\prime }{D}^{\prime }$ ; 选项 (D) 的反例: 取 $a = {AB},b = {A}^{\prime }D$
+    \end{jieda}
+    \item 有以下三个命题:\ding{172}若两条直线和第三条直线成等角,则这两条直线互相平行；\ding{173}若两条直线都和第三条直线垂直,则这两条直线互相平行；\ding{174}若两条直线都和第三条直线平行, 则这两条直线互相平行. 其中不正确的个数为\dotfill{(\kh{C})}
+    \xx{0}{1}{2}{3}
+    \begin{jieda}
+        \ding{174}是公理4，\ding{172}\ding{173}均有异面的可能
+    \end{jieda}
+    \item 分别和两条异面直线都相交的两直线一定是\dotfill{(\kh{A})}
+    \xx{不平行的直线}{不相交的直线}{相交直线或平行直线}{既不相交又不平行的直线}
+    \begin{jieda}
+        如果和两条异面直线都相交的两直线平行, 由于两平行直线可确定一个平面, 根据公理 1, 推知这两条异面直线在同一平面内,矛盾,故选项 $A$ 正确,选项 $C$ 错误. 以正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 为例, ${AB}$ 和 ${A}^{\prime }{D}^{\prime }$ 是两条异面直线,与它们都相交的两直线 $A{A}^{\prime },A{D}^{\prime }$ 相交,而 $A{A}^{\prime },B{D}^{\prime }$ 异面,故选项 $B,D$ 均错误.
+    \end{jieda}
+    \item 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,各面对角线所在的直线中与 ${B}_{1}D$ 成异面直线的条数是\dotfill{(\kh{D})}
+    \xx{3}{4}{5}{6}
+    \begin{jieda}
+        各个面总计 12 条对角线,首先排除从点 ${B}_{1}$ 或点 $D$ 出发的 6 条,其余 6 条可使用异面直线判定定理 (平面外一点与平面内一点的连线,和平面内不经过该点的直线是异面直线),观察对角线、对角线所在的侧面和 ${B}_{1}D$ ,不难判定剩余 6 条都与 ${B}_{1}D$ 异面.
+    \end{jieda}
+\end{enumerate}
+\subsection*{线线角}
+\begin{enumerate}
+    \item 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,
+    \begin{enumerate}
+        \item 各个面的对角线所在直线中,与 $A{B}_{1}$ 异面且所成角为 ${60}^{ \circ  }$ 的直线有\blkda{4}条
+        \begin{jieda}
+            各个面总计 12 条对角线,与 $A{B}_{1}$ 成异面直线的是 $B{C}_{1},{A}_{1}D,{A}_{1}{C}_{1},{BD},{D}_{1}C$ ,通过平移,可知前 4 条与 $A{B}_{1}$ 成 ${60}^{ \circ  }$ 角,而 ${D}_{1}C$ 与 $A{B}_{1}$ 成 ${45}^{ \circ  }$ 角,因此共 4 条满足题意.
+        \end{jieda}
+        \item 若 $E$ , $F$ 分别为棱 ${A}_{1}{B}_{1}$ , $B{B}_{1}$ 的中点,则 ${AE}$ 和 ${CF}$ 所成角的余弦值为\blkda{$\dfrac{2}{5}$}
+        \begin{jieda}
+            取平面$CC_1D_1D$的中点$O$，连接$EO$，$EO // CF$，则$\angle{AEO}$即为异面直线所成角（或其补角），根据余弦定理可知$cos\angle{AEO} = \dfrac{5+5-6}{10} = \dfrac{2}{5}$
+        \end{jieda}
+        \item 若 $G$ 为 ${CD}$ 的中点,则异面直线 ${B}_{1}C$ 与 ${AG}$ 所成角的正弦值是\blkda{$\dfrac{\sqrt{15}}{5}$}
+        \begin{jieda}
+
+
+
+
+            
+            取$AB$中点$H$，连接$CH$，$CH // AG$，故$\angle{B_1CH}$即为异面直线所成角（或其补角），根据余弦定理可知$cos\angle{B_1CH} = \dfrac{5+8-5}{4\sqrt{10}} = \dfrac{\sqrt{10}}{5}$，故$sin\angle{B_1CH} = \dfrac{\sqrt{15}}{5}$
+        \end{jieda}
+    \end{enumerate}
+    \item 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,
+    \begin{enumerate}
+        \item 若 $F$ , $G$ 分别是棱 $B{B}_{1}$ , ${DC}$ 的中点,则 ${AF}$ 与 ${D}_{1}G$ 所成角为\blkda{${90}^{ \circ  }$}
+        \begin{jieda}
+            取$CC_1$中点$H$，$DH // AF$，设$D_1G$与$DH$交于$M$，则$\angle{DMD_1}$即为异面直线所成角（或其补角），根据勾股定理可知$\angle{DMD_1} = 90^{\circ}$
+        \end{jieda}
+        \item 已知 $E,F$ 分别是棱 $B{B}_{1},C{C}_{1}$ 的中点,则异面直线 ${AE},{BF}$ 所成角的余弦值等于\blkda{$\dfrac{1}{5}$}
+        \begin{jieda}
+            取$DD_1$中点$H$，$AH // BF$，则$\angle{HAE}$即为异面直线所成角（或其补角），根据余弦定理可知$cos\angle{HAE} = \dfrac{5+5-8}{10} = \dfrac{1}{5}$
+        \end{jieda}
+    \end{enumerate}
+    \item  在长方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,
+    
+    \begin{center}
+    \includegraphics[width=0.15\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_134_1256_820_186_303_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 若棱 $B{B}_{1} = {BC} = 1,{AB} = \sqrt{3}$ ,则 $A{D}_{1}$ 与 ${BC}$ 所成角等于\blkda{${45}^{ \circ  }$}, $C{D}_{1}$ 与 ${AB}$ 所成角等于\blkda{${30}^{ \circ  }$}, $C{D}_{1}$ 与 ${A}_{1}D$ 所成角的正弦值等于\blkda{$\dfrac{\sqrt{14}}{4}$}
+        \begin{jieda}
+            ${BC} \bot  {AD}$ ,故 $A{D}_{1}$ 与 ${BC}$ 所成角为 $\angle {D}_{1}{AD} = \arctan \dfrac{{D}_{1}D}{AD} = \arctan \dfrac{1}{1} = {45}^{ \circ  }$
+            
+            ${AB} \bot  {CD}$ ,故 $C{D}_{1}$ 与 ${AB}$ 所成角为 $\angle {D}_{1}{CD} = \arctan \dfrac{{D}_{1}D}{CD} = \arctan \dfrac{1}{\sqrt{3}} = {30}^{ \circ  }$
+            
+            易证四边形 ${A}_{1}{B}_{1}{CD}$ 是平行四边形,故 ${A}_{1}D\bot {B}_{1}C$，不难求得 ${B}_{1}C = \sqrt{2},{D}_{1}C = {D}_{1}{B}_{1} = 2,C{D}_{1}$ 与 ${A}_{1}D$ 所成角为 $\angle {D}_{1}C{B}_{1},\cos \angle {D}_{1}C{B}_{1} = \dfrac{C{D}_{1}^{2} + C{B}_{1}^{2} - {B}_{1}{D}_{1}^{2}}{2 \cdot  C{D}_{1} \cdot  C{B}_{1}} = \dfrac{\sqrt{2}}{4}$ ,故 $\sin \angle {D}_{1}{CD} = \dfrac{\sqrt{14}}{4}.$
+        \end{jieda}
+        \item 若 $\angle {BA}{B}_{1} = \angle {B}_{1}{A}_{1}{C}_{1} = {60}^{ \circ  }$，则 $A{A}_{1}$ 与 ${B}_{1}C$ 所成角的余弦值等于\blkda{$\dfrac{\sqrt{2}}{2}$}, ${B}_{1}C$ 与 ${A}_{1}{C}_{1}$ 所成角的余弦值等于\blkda{$\dfrac{\sqrt{6}}{4}$}
+        \begin{jieda}
+            $\angle{BB_1C}$即为异面直线所成角（或其补角） $\angle B{B}_{1}C = {45}^{ \circ  },\cos \angle B{B}_{1}C = \dfrac{\sqrt{2}}{2}$ .
+            
+            $\angle{DA_1C_1}$即为异面直线所成角（或其补角） $\cos \angle DA_1C_1 = \dfrac{6+4-4}{4\sqrt{6}} = \dfrac{\sqrt{6}}{4}$ .
+        \end{jieda}
+        \item 若底面边长 ${AB} = {BC} = 3$ ,棱 $A{A}_{1} = 4$ ,则异面直线 $A{B}_{1}$ 与 ${A}_{1}D$ 所成角的余弦值等于\blkda{$\dfrac{16}{25}$}
+        \begin{jieda}
+            $\angle{AB_1C}$即为异面直线所成角（或其补角） $\cos \angle AB_1C = \dfrac{25+25-18}{50} = \dfrac{16}{25}$ 
+        \end{jieda}
+    \end{enumerate}
+    \item 在四面体 ${ABCD}$ 中,
+    \begin{enumerate}
+        \item 若棱 ${AB} = {CD} = 2,E,F$ 分别是棱 ${AC},{BD}$ 的中点,且 ${EF} = \sqrt{3}$ ,则 ${AB}$ 与 ${CD}$ 所成角等于\blkda{$60^\circ$}
+        \begin{jieda}
+            取$BC$中点$G$，连接$EG, FG$，$\angle{EGF}$即为异面直线所成角（或其补角），$\cos \angle EGF = \dfrac{1+1-3}{2} = -\dfrac{1}{2}$，故异面直线所成角为$60^\circ$
+        \end{jieda}
+        \item 若 ${AC}$ 与 ${BD}$ 所成角为 ${60}^{ \circ  }$ ,且 ${AC} = {BD} = a$ ,则连接 ${AB},{BC},{CD},{DA}$ 这四条棱的中点所得四边形的面积等于\blkda{$\dfrac{\sqrt{3}}{8}{a}^{2}$}
+        \begin{jieda}
+            根据几何关系可知${AB},{BC},{CD},{DA}$ 这四条棱的中点所得四边形为边长为$\dfrac{a}{2}$的菱形，该菱形的的内角即异面直线所成角（或其补角），故其面积$S = \dfrac{1}{2}\times \dfrac{a}{2} \times \dfrac{\sqrt{3}a}{2} = \dfrac{\sqrt{3}}{8}{a}^{2}$
+        \end{jieda}
+    \end{enumerate}
+    \item 正方体的两条体对角线相交, 其夹角的正弦值等于 \dotfill{(\kh{C})}
+    \xx{$\dfrac{\sqrt{2}}{2}$}{$\dfrac{1}{3}$}{$\dfrac{2\sqrt{2}}{3}$}{$\dfrac{\sqrt{10}}{10}$}
+    \begin{jieda}
+        设正方体棱长为 1 . 正方体共有 4 条体对角线,任意两条都共面,且是长、宽分别为 $\sqrt{2}$ 、 1 的矩形的对角线. 对角线长 $\sqrt{3}$ ,且两条对角线分矩形为 4 个相等面积的三角形,设对角线所成角为 $\theta ,\therefore 4 \cdot  \dfrac{1}{2} \cdot  {\left( \dfrac{\sqrt{3}}{2}\right) }^{2} \cdot  \sin \theta  = \sqrt{2} \cdot  1$ ,
+        $\therefore \sin \theta  = \dfrac{2\sqrt{2}}{3}$ (也可用余弦定理结合三角恒等式求解).
+    \end{jieda}
+    \item 在正方体 ${EFGH} - {E}^{\prime }{F}^{\prime }{G}^{\prime }{H}^{\prime }$ 中, $F{G}^{\prime }$ 与 ${EG}$ 所成的角等于 \dotfill{(\kh{B})}
+    \xx{${45}^{ \circ  }$}{${60}^{ \circ  }$}{${90}^{ \circ  }$}{${120}^{ \circ  }$}
+    \begin{jieda}
+        易证 ${EF}{G}^{\prime }{H}^{\prime }$ 是平行四边形,故 $E{H}^{\prime }//F{G}^{\prime }$ . 而 $\bigtriangleup {EG}{H}^{\prime }$ 是等边三角形,故 $F{G}^{\prime }$ 与 ${EG}$ 所成的角为 $\angle {GE}{H}^{\prime } = {60}^{ \circ  }$ .
+    \end{jieda}
+
+    \item 在正四面体 ${ABCD}$ 中,
+    \threetu{\includegraphics[width=0.6\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_136_277_839_266_240_0.jpg}}{\includegraphics[width=0.6\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_136_652_841_261_237_0.jpg}}{\includegraphics[width=0.6\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_136_1040_837_267_239_0.jpg}}
+    \begin{enumerate}
+        \item 若 $E$ 为棱 ${CD}$ 的中点 (如图),求 ${AE}$ 和 ${BC}$ 所成角的余弦值
+        \begin{jieda}
+            取$BD$中点$F$，则$\angle{AEF}$即为异面直线所成角（或其补角），根据余弦定理$cos\angle{AEF} = \dfrac{1+3-3}{2\sqrt{3}} = \dfrac{\sqrt{3}}{6}$
+        \end{jieda}
+        \item 已知 $E,F$ 分别是棱 ${CD},{AD}$ 的中点(如图),求 ${AE},{BF}$ 所成角的余弦值
+        \begin{jieda}
+            取$ED$中点$G$，则$\angle{BFG}$即为异面直线所成角（或其补角），根据余弦定理$cos\angle{BFG} = \dfrac{3+\dfrac{3}{4}-\dfrac{13}{4}}{3} = \dfrac{1}{6}$
+        \end{jieda}
+        \item 若 $E$ , $F$ 分别为棱 ${AB}$ , ${CD}$ 的中点(如图),求 ${AF}$ 与 ${CE}$ 所成角的正切值
+        \begin{jieda}
+            取$BF$中点$G$，则$\angle{CEG}$即为异面直线所成角（或其补角），根据余弦定理$cos\angle{BFG} = \dfrac{3+\dfrac{3}{4}-\dfrac{7}{4}}{3} = \dfrac{2}{3}$，故$tan\angle{BFG} = \dfrac{\sqrt{5}}{2}$
+        \end{jieda}
+    \end{enumerate}
+\end{enumerate}
+
+\section*{线面平行}
+\subsection*{根据线线平行求线段长度/面积}
+\begin{enumerate}
+    \item 如图,正方体的棱长是 $a$ ,点 $E\text{ 、 }F$ 分别是两条棱的中点. 求四边形 ${BDEF}$ 的面积.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_11_241_208_336_326_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        易知四边形 ${BDEF}$ (图中阴影部分)是一个梯形.
+    
+        因为正方体的棱长为 $a$ ，所以 ${BD} = \sqrt{2}a,{EF} = \dfrac{\sqrt{2}}{2}a,{ED} = {BF} = \dfrac{\sqrt{5}}{2}a$ ， 如图所示， ${DM} = \dfrac{1}{2}\left( {{BD} - {EF}}\right)  = \dfrac{\sqrt{2}}{4}a$ ，
+        
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_11_243_1855_408_242_0.jpg}
+        \end{center}
+        
+        
+        而梯形 ${BDEF}$ 的高 ${EM} = \sqrt{E{D}^{2} - D{M}^{2}} = \sqrt{\dfrac{5}{4}{a}^{2} - \dfrac{1}{8}{a}^{2}} = \dfrac{3\sqrt{2}}{4}a$ ，
+        
+        可得梯形 ${BDEF}$ 的面积为 $S = \dfrac{1}{2} \times  \left( {\dfrac{\sqrt{2}}{2}a + \sqrt{2}a}\right)  \times  \dfrac{3\sqrt{2}}{4}a = \dfrac{9}{8}{a}^{2}$ .
+    \end{jieda}
+
+    \item 如图，在四棱锥 $P - {ABCD}$ 中，底面 ${ABCD}$ 是正方形. ${PD} \bot$ 平面 ${ABCD}$ ， ${PD} = {AD} = 2$ ，点 $E$ 是棱 ${PC}$ 的中点,平面 ${ABE}$ 与棱 ${PD}$ 交于点 $F$，求四边形$ABEF$的面积.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_13_241_198_342_344_0.jpg}
+    \end{center}
+    \begin{jieda}
+        ${CD}//{AB},{AB} \subset$ 平面 ${ABE},{CD} \subset$ 平面 ${ABE}$，所以${CD}//$ 平面 ${ABE}$
+        
+        又 ${CD} \subset$ 平面 ${PCD}$ ,平面 ${PCD} \cap$ 平面 ${ABE} = {EF}$，故${CD}//{EF}$，故$EF$为$\triangle PAC$的中位线，所以$EF = 1$
+        
+        由于$CD//AB$，根据平行的传递性可知${AB}//{EF}$，故$ABEF$为梯形
+
+        根据三垂线定理可知$AB \bot AF$，故$ABEF$为直角梯形，$EF = 1, AB = 2, AF = \sqrt{5}$，故面积为$\dfrac{3\sqrt{5}}{2}$.
+    \end{jieda}
+
+    
+    \item 如图,已知点 $P$ 在平行四边形 ${ABCD}$ 所在平面外, $E$ 为线段 ${AD}$ 上靠近 $A$ 的三等分点, $F$ 为线段 ${PC}$ 上一点,当 ${PA}//$ 平面 ${EBF}$ 时, $\dfrac{PC}{PF} =$ \blkda{4}
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_3_241_1515_352_258_0.jpg}
+    \end{center}
+    \begin{jieda}
+        如图,连结 ${AC}$ ,交 ${BE}$ 于点 $M$ ,连结 ${FM}$
+        
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_4_240_477_352_256_0.jpg}
+        \end{center}
+
+        因为 ${PA}//$ 平面 ${EBF}$ ,且 ${PA} \subset$ 平面 ${PAC}$ ,平面 ${PAC} \cap$ 平面 ${BEF} = {FM}$，所以$PA//FM$
+        
+        因为 ${AE}//{BC}$ ，且 ${AE} : {BC} = 1 : 3$ ，所以 ${AM} : {MC} = 1 : 3$ ，即 ${AM} : {AC} = 1 : 4$，所以 $\dfrac{PC}{PF} = 4$ .
+    \end{jieda}
+\end{enumerate}
+\section*{线面垂直}
+\subsection*{三垂线定理}
+\begin{enumerate}
+    \item 如图所示,在三棱锥 $P - {ABC}$ 中, ${PA} \bot$ 平面 ${PBC},{PB} = {PC},M$ 是 ${BC}$ 的中点,求证: ${BC} \bot  {AM}$ .
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ogc4bef24c73bbtdng_1_1225_223_565_440_0.jpg}
+    \end{center}
+    \begin{jieda}
+        因为$PB = PC, M$ 是 ${BC}$ 的中点所以$PM \bot BC$
+
+        因为${PA} \bot$ 平面 ${PBC}$，所以$AM$在直线内的射影为$PM$，根据三垂线定理可知$BC \bot AM$
+    \end{jieda}
+    \item 如图所示,点 $O$ 是 $\bigtriangleup {ABC}$ 的垂心, ${OP} \bot$ 平面 ${ABC}$ . 求证: ${PA} \bot  {BC}$ .
+
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ogc4bef24c73bbtdng_1_482_1083_610_385_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        因为${PO} \bot$ 平面 ${ABC}$，所以$PA$在直线内的射影为$AO$，因为$O$为垂心，所以$BC \bot AO$，故根据三垂线定理可知$BC \bot PA$
+    \end{jieda}
+    \item 如图所示,在空间四边形 ${ABCD}$ 中,已知 ${AB} \bot  {CD},{BC} \bot  {AD}$ . 求证: ${AC} \bot  {BD}$ .
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ogc4bef24c73bbtdng_2_607_317_489_390_0.jpg}
+    \end{center}
+    \begin{jieda}
+        设$A$在面$BCD$内的射影为$O$，则根据三垂线定理可知$BO \bot CD$，$DO \bot BC$，因此$O$为$\triangle BCD$的垂心，故$CO \bot BD$，根据三垂线定理可知$AC \bot BD$
+    \end{jieda}
+    
+    \item 已知矩形 ${ABCD}$ 的边长 ${AB} = 6{{cm}},{BC} = 4{{cm}}$ ,在 ${CD}$ 上截取 ${CE} =$  $4{{cm}}$ ,以 ${BE}$ 为棱将矩形折起,使 $\bigtriangleup B{C}^{\prime }E$ 的高 ${C}^{\prime }F \bot$ 平面 ${ABED}$ (如图), 求:
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_149_1145_141_264_187_0.jpg}
+    \end{center}
+    \begin{enumerate}
+        \item 点 ${C}^{\prime }$ 到平面 ${ABED}$ 的距离
+        \item 点 ${C}^{\prime }$ 到边 ${AB}$ 的距离
+        \item 点 ${C}^{\prime }$ 到 ${AD}$ 的距离
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 作 ${FH}\bot {AB}$ 于 $H$ ,作 ${FG}\bot {AD}$ 于 $G$ ,则 ${C}^{\prime }H\bot {AB}$ , ${C}^{\prime }G\bot {AD}$ ,可算得 ${BE} = 4\sqrt{2}{{cm}}$ , ${HB} = 2{{cm}}$，$\therefore {C}^{\prime }$ 到面 ${ABED}$ 的距离为 ${C}^{\prime }F = 2\sqrt{2}{{cm}}$ .
+            \item ${C}^{\prime }$ 到 ${AB}$ 的距离为 ${C}^{\prime }H = 2\sqrt{3}{{cm}}$ .
+            \item ${C}^{\prime }$ 到 ${AD}$ 的距离为 ${C}^{\prime }G = 2\sqrt{6}{{cm}}$ .
+        \end{enumerate}
+    \end{jieda}
+
+    \item 如图所示,在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,点 $P,Q,R$ 分别是线段 ${B}_{1}B,{AB},{A}_{1}C$ 上的动点
+        
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ogc4bef24c73bbtdng_2_1348_173_546_529_0.jpg}
+    \end{center}
+
+    观察直线 ${CP}$ 与 ${D}_{1}Q,{CP}$ 与 ${D}_{1}R$ ,给出下列结论:
+    \begin{dingautolist}{172}
+        \item 存在点 $P$ ，对于任意给定的点 $Q$ ，使得 ${CP}\bot {D}_{1}Q$
+        \item 存在点 $Q$ ，对于任意给定的点 $P$ ，使得 ${D}_{1}Q \bot  {CP}$
+        \item 存在点 $P$ ,对于任意给定的点 $R$ ,使得 ${CP} \bot  {D}_{1}R$
+        \item 存在点 $R$ ,对于任意给定的点 $P$ ,使得 ${D}_{1}R \bot  {CP}$
+    \end{dingautolist}
+    其中正确的是\blkda{\ding{172}}.
+\end{enumerate}
+
+
+\section*{线面角}
+\subsection*{线面角}
+\begin{enumerate}
+    \item 如图，在正三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中， ${AB} = 1,{A{A}_{1}} = \sqrt{2}$ . 则直线 $A{C}_{1}$ 与平面 ${AB}{B}_{1}{A}_{1}$ 所成角的大小为\blkda{${30}^{ \circ  }$}
+    
+    \begin{center}
+    \includegraphics[width=0.35\textwidth]{bodyxb/src/bo_d4q3m9bef24c73bcm6mg_2_261_1302_308_348_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        取 ${A}_{1}{B}_{1}$ 的中点 $D$ ,连接 ${C}_{1}D\text{ 、 }{AD}$ ,如图:
+        
+        \begin{center}
+        \includegraphics[width=0.35\textwidth]{bodyxb/src/bo_d4q3m9bef24c73bcm6mg_3_254_210_315_356_0.jpg}
+        \end{center}
+        
+        
+        因为三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 是正三棱柱，所以 $\bigtriangleup  {A}_{1}{B}_{1}{C}_{1}$ 为等边三角形,所以 ${C}_{1}D\bot {A}_{1}{B}_{1}$ , 又 $A{A}_{1} \bot$ 平面 ${A}_{1}{B}_{1}{C}_{1},{C}_{1}D \subset$ 平面 ${A}_{1}{B}_{1}{C}_{1}$ ,所以 ${C}_{1}D \bot  A{A}_{1}$，又 ${A}_{1}{B}_{1} \cap  A{A}_{1} = {A}_{1},{A}_{1}{B}_{1},A{A}_{1} \subset$ 平面 ${AB}{B}_{1}{A}_{1}$ ,所以 ${C}_{1}D \bot$ 平面 ${AB}{B}_{1}{A}_{1}$，所以 $\angle {C}_{1}{AD}$ 为直线 $A{C}_{1}$ 与平面 ${AB}{B}_{1}{A}_{1}$ 所成角.
+        
+        又 ${C}_{1}D = \sqrt{{1}^{2} - {\left( \dfrac{1}{2}\right) }^{2}} = \dfrac{\sqrt{3}}{2},A{C}_{1} = \sqrt{{1}^{2} + {\left( \sqrt{2}\right) }^{2}} = \sqrt{3}$，$\sin \angle {C}_{1}{AD} = \dfrac{{C}_{1}D}{A{C}_{1}} = \dfrac{1}{2}$ ,所以 $\angle {C}_{1}{AD} = {30}^{ \circ  }$，即直线 $A{C}_{1}$ 与平面 ${AB}{B}_{1}{A}_{1}$ 所成角的大小为 ${30}^{ \circ  }$ .
+    \end{jieda}
+    
+    \item 正四面体 $P - {ABC}$ 中,直线 ${PC}$ 与平面 ${PAB}$ 所成角的余弦值为\blkda{$\dfrac{\sqrt{3}}{3}$}
+
+    \begin{jieda}
+        如图,取 ${AB}$ 中点 $D$ ,在线段 ${PD}$ 上取点 $E$ ,使得 ${PE} = {2ED}$ ,连接 ${DP},{DC},{EC}$ .
+        
+        \begin{center}
+        \includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d4q3m9bef24c73bcm6mg_2_243_207_484_495_0.jpg}
+        \end{center}
+        
+        
+        因为 $P - {ABC}$ 为正四面体，所以 $E$ 为正 $\bigtriangleup  {PAB}$ 的重心，且 ${CE}\bot$ 平面 ${PAB}$，所以 $\angle {CPD}$ 即为直线 ${PC}$ 与平面 ${PAB}$ 所成的角.
+        
+        不妨设 ${AB} = 2$ ，则在 $\bigtriangleup  {PCE}$ 中， ${PE}\bot {CE}$ ， ${PE} = \dfrac{2}{3}{PD} = \dfrac{2\sqrt{3}}{3}$ ， ${PC} = 2$ ，所以 $\cos \angle {CPD} = \dfrac{PE}{PC} = \dfrac{\dfrac{2\sqrt{3}}{3}}{2} = \dfrac{\sqrt{3}}{3}$ .
+    \end{jieda}
+    
+    \item 正三棱锥 $P - {ABC}$ 中，$AB = 1, PA = 3$，直线 ${PC}$ 与平面 ${ABC}$ 所成角的正弦值为\blkda{$\dfrac{\sqrt{78}}{9}$}
+
+    \item 如图，在棱长为 1 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，那么直线 ${B}_{1}{D}_{1}$ 与平面 ${AC}{D}_{1}$ 所成的角的余弦值是\blkda{$\dfrac{\sqrt{3}}{3}$}
+
+    \begin{center}
+    \includegraphics[width=0.35\textwidth]{bodyxb/src/bo_d4q3m9bef24c73bcm6mg_4_241_1380_340_320_0.jpg}
+    \end{center}
+    \begin{jieda}
+        连接$D_1$和$AC$中点$O$，取$D_1G = \dfrac{2}{3}D_1O$，易知$G$为$\triangle ACD_1$的重心，$B_1G \bot \triangle ACD_1$，故$\angle{B_1D_1G}$即为线面角.
+
+        $D_1G = \dfrac{\sqrt{6}}{3}$，$D_1B_1 = \sqrt{2}$，故$cos\angle{B_1D_1G} = \dfrac{\sqrt{3}}{3}$
+    \end{jieda}
+
+
+    \item 如图,在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,点 $O$ 为线段 ${BD}$ 的中点,设点 $P$ 在线段 $C{C}_{1}$ 上,直线 ${OP}$ 与平面 ${A}_{1}{BD}$ 所成的角为 $\alpha$ ,则 $\sin \alpha$ 的最小值为\blkda{$\dfrac{\sqrt{6}}{3}$}
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_2_245_749_414_371_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        易知$A_1, O, P \in $面$AA_1C_1C$，做$PH \bot A_1O$，故$H \in A_1O$，故$\angle{POA_1}$即为线面所成角或其补角.
+
+        注意到 $A{C}_{1} \bot$ 平面 ${A}_{1}{BD}$，所以移动 $P$ 的位置，当$OP$和$AC_1$平行时取得最大值，故当 $P$ 在 $C$ 或 ${C}_{1}$ 处时,线面角 $\alpha$ 才可能最小.
+    
+        在平面$AA_1C_1C$中，计算可得$\sin \alpha$ 的最小值为 $\dfrac{\sqrt{6}}{3}$ .
+    \end{jieda}
+    
+\end{enumerate}
+
+\subsection*{三余弦定理与最小角定理}
+\begin{enumerate}
+    \item ${PA},{PB},{PC}$ 是从点 $P$ 出发的不共面的三条射线,每两条射线的夹角均为 ${60}^{ \circ  }$ ,那么直线 ${PC}$ 与平面 ${PAB}$ 所成角的余弦值是\blkda{$\dfrac{\sqrt{3}}{3}$}
+    \begin{jieda}
+        如图,设直线 ${PC}$ 在平面 ${PAB}$ 的射影为 ${PD}$ ,
+        
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_1_243_274_288_325_0.jpg}
+        \end{center}
+
+        根据三余弦定理可知$cos\angle{APC} = cos\angle{APD} \cdot cos\angle{CPD}$
+
+        易知$\angle{APC} = \ang{60}$，$\angle{APD} = \ang{30}$，故$cos\angle{CPD} = \dfrac{\sqrt{3}}{3}$.
+    \end{jieda}
+
+    \item 已知三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱与底面边长都相等， ${A}_{1}$ 在底面 ${ABC}$ 上的射影为 ${BC}$ 的中点,则异面直线 ${AB}$ 与 $C{C}_{1}$ 所成的角的余弦值为\blkda{$\dfrac{3}{4}$}
+    \begin{jieda}
+        设 ${BC}$ 的中点为 $D$，由题意可知 ${A}_{1}D \bot$ 平面 ${ABC}$，连接 ${A}_{1}D\text{ 、 }{AD}\text{ 、 }{A}_{1}B$ ,易知 $\theta  = \angle {A}_{1}{AB}$ 即为异面直线 ${AB}$ 与 $C{C}_{1}$ 所成的角.
+
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src//bo_d4op0rv7aajc73fs5h4g_0_265_1176_414_277_0.jpg}
+        \end{center}
+
+        设三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱与底面边长为 2，根据几何关系可知$A_1D = 1$，故$\angle{A_1AD} = \angle{BAD} = \ang{30}$，故根据三余弦定理可知$cos\angle{A_1AB} = \dfrac{3}{4}$.
+    \end{jieda}
+    \item 已知三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱与底面边长都相等， ${A}_{1}$ 在底面 ${ABC}$ 上的射影为底面的中心，则 ${AB_1}$ 与 底面$ABC$ 所成的角的正弦值为\blkda{$\dfrac{\sqrt{2}}{3}$}
+    \begin{jieda}
+        设底面的中心为 $O$，由题意可知 ${A}_{1}O \bot$ 平面 ${ABC}$
+        
+        设三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱与底面边长为 1，根据几何关系可知$AO = \dfrac{\sqrt{3}}{3}$，故$A_1O = \dfrac{\sqrt{6}}{3}$，故$cos\angle{A_1AO} = \dfrac{\sqrt{3}}{3}$，又因为$\angle{BAO} = \dfrac{\pi}{6}$，故根据三余弦定理可知$cos\angle{A_1AB} = \dfrac{1}{2}$.
+
+        因此$\angle{A_1AB} = \ang{60}$，故$AB_1 = 2\sqrt{3}$，所以所求角的正弦值为$\dfrac{B_1O_1}{AB_1} = \dfrac{A_1O_1}{AB_1} = \dfrac{\sqrt{2}}{3}$
+    \end{jieda}
+    \item 已知 $\angle {ACB} = {90}^{ \circ  }$ ， $P$ 为平面 ${ABC}$ 外一点， ${PC} = 2$ ，点 $P$ 到 $\angle {ACB}$ 两边 ${AC}$ ， ${BC}$ 的距离均为 $\sqrt{3}$ ，那么 $P$ 到平面 ${ABC}$ 的距离为\blkda{$\sqrt{2}$}.
+    \begin{jieda}
+
+        做$PO \bot $面$ACB$，根据对称性可知$\angle{ACO} = \angle{BCO} = \ang{45}$，根据几何关系可知$\angle{PCB} = \angle{PCA} = \ang{60}$，故根据三余弦定理可知$\angle{PCO} = \ang{45}$，所以$PO = CO = \sqrt{2}$
+        
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src//bo_d4op0rv7aajc73fs5h4g_1_245_1319_416_484_0.jpg}
+        \end{center}
+    \end{jieda}
+
+
+    \item 如图,已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 $2,M,N$ 分别为棱 ${AB},{BC}$ 的中点,若点 $P$ 为线段 ${B}_{1}N$ 上的动点,不包括端点),设异面直线 ${C}_{1}P$ 与 ${MN}$ 所成的角为 $\theta$ ,则 $\cos \theta$ 的取值范围是\blkda[2]{$\left( {\dfrac{\sqrt{10}}{10},\dfrac{\sqrt{2}}{2}}\right)$}
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_5_239_263_376_348_0.jpg}
+    \end{center}
+    \begin{jieda}
+        如图所示,连接 ${AC},{A}_{1}{C}_{1}$ ,因为 $M,N$ 分别为棱 ${AB},{BC}$ 的中点,可得 ${MN}//{AC}$ 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,可得 ${A}_{1}{C}_{1}//{AC}$ ,所以 ${MN}//{A}_{1}{C}_{1}$，所以$\angle {A}_{1}{C}_{1}P$为异面直线 ${C}_{1}P$ 与 ${MN}$ 所成的角或其补角.
+
+        由三余弦定理可知$cos\angle{A_1C_1P} = cos\angle{A_1C_1B_1} \cdot cos\angle{PC_1B_1} = \dfrac{\sqrt{2}}{2} \cdot cos\angle{PC_1B_1}$
+
+        因为$cos\angle{PC_1B_1} \in \left(\dfrac{\sqrt{5}}{5}, 1\right)$，所以$cos\angle{A_1C_1P} \in \left( {\dfrac{\sqrt{10}}{10},\dfrac{\sqrt{2}}{2}}\right)$
+    \end{jieda}
+    
+    \item 如图所示，在侧棱垂直于底面的三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中， $P$ 是棱 ${BC}$ 上的动点，记直线 ${A}_{1}P$ 与平面 ${ABC}$ 所成的角为 ${\theta }_{1}$ ,与直线 ${BC}$ 所成的角为 ${\theta }_{2}$ ,则 ${\theta }_{1},{\theta }_{2}$ 的大小关系是
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_0_242_626_445_446_0.jpg}
+    \end{center}
+
+    \xx{${\theta }_{1} = {\theta }_{2}$}{${\theta }_{1} > {\theta }_{2}$}{${\theta }_{1} < {\theta }_{2}$}{不能确定}
+
+    \begin{jieda}
+        根据线面角是该直线与对应平面内的任意直线所成角中最小的角，所以有 ${\theta }_{1} < {\theta }_{2}$ ,故选 C.
+    \end{jieda}
+
+    \item 在侧棱垂直于底面的三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中，$\angle{ABC} = \ang{90}$，直线$l$和面$ABB_1A_1$和面$ACC_1A_1$的夹角为$\theta_1, \theta_2$,则 ${\theta }_{1},{\theta }_{2}$ 满足\dotfill{(\kh{C})}
+    \xx{${\theta }_{1}+{\theta }_{2} = \dfrac{\pi}{2}$}{${\theta }_{1}+{\theta }_{2} \geq \dfrac{\pi}{2}$}{${\theta }_{1}+{\theta }_{2} \leq \dfrac{\pi}{2}$}{${\theta }_{1}+{\theta }_{2} < \dfrac{\pi}{2}$}
+
+    \begin{jieda}
+        设直线$l$和面$ABB_1A_1$和面$ACC_1A_1$交于$P, Q$，过$P, Q$分别$AA_1$的垂线，设垂足为$H_1, H_2$，则$\theta_1 = \angle{QPH_2}, \theta_2 = \angle{PQH_1}$，故$\theta_1 \leq \angle{PQH_2}$，$\theta_2 + \angle{PQH_2} = \ang{90}$
+    \end{jieda}
+
+    \item 已知等腰$Rt \bigtriangleup {ABC}$ 内接于圆 $O$，连接$OC$，交点圆 $O$于$C'$， $M$ 是下半圆弧上的动点 (如图所示),现将上半圆面沿 ${AB}$ 折起，使得$\angle{COC'} = \dfrac{\pi }{4}$ . 则直线 ${AC}$ 与直线 ${OM}$ 所成角的最小值是\blkda{$\dfrac{\pi }{6}$}
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d4onr53ef24c73bc3ut0_0_246_691_285_267_0.jpg}
+    \end{center}
+    \begin{jieda}
+        ${AC}$ 与直线 ${OM}$ 所成角的最小值是$AC$与平面$ABM$的线面所成角
+
+        做$CH \bot $面$AOM$，则$CH = \dfrac{r}{\sqrt{2}}$，$AC = \sqrt{2}r$，故线面所成角为$\dfrac{\pi}{6}$.
+    \end{jieda}
+    
+    \item 在三棱台 ${BCD} - {B}_{1}{C}_{1}{D}_{1}$ 中, $C{C}_{1} \bot$ 底面 ${BCD},{BC} \bot  {CD},{BC} = {CD} = C{C}_{1} = 2$ , ${B}_{1}{C}_{1} = 1$ . 若 $A$ 是 ${BD}$ 中点,点 $P$ 在侧面 ${BD}{D}_{1}{B}_{1}$ 内,则直线 $D{C}_{1}$ 与 ${AP}$ 夹角的正弦值的最小值是\blkda{$\dfrac{\sqrt{2}}{6}$}
+    \begin{center}
+        \includegraphics[width=0.3\linewidth]{bodyxb//src/df7f9ca0e5e44e3a5c6bfc4fa7b2c1a5.jpg}
+    \end{center}
+    \begin{jieda}
+        根据最小角定理可知$DC_1$与$AP$的夹角最小值为$DC_1$和平面$BDD_1B_1$的夹角.
+
+        延长$BB_1$，$CC_1$，$DD_1$交于$S$，连接$AS$，做$C_1H \bot AS$
+
+        $SC \bot $面$BCD \Longrightarrow SC \bot BD$，又因为$AC \bot BD$，所以$BD \bot $面$PAC$，故$BD \bot C_1H$
+
+        因此$C_1H \bot $面$BDD_1B_1$，$C_1D = 2\sqrt{2}$，$C_1H = \dfrac{2}{3}$.
+
+        直线 $D{C}_{1}$ 与 ${AP}$ 夹角的正弦值的最小值是$\dfrac{\sqrt{2}}{6}$.
+    \end{jieda}
+    
+    \item 在立方体$ABCD-A_1B_1C_1D_1$中，$P$为底面$ABCD$内的动点，异面直线$BD_1$和$DP$夹角的最小值为\blkda[2]{$arcsin\left(\dfrac{\sqrt{3}}{3}\right)$}
+    
+    
+    \item 如图,已知正三棱锥 ${ABCD},{BC} = {CD} = {BD} = \sqrt{3},{AB} = {AC} = {AD} = 2$ ,点 $P,Q$ 分别在棱 ${BC},{CD}$ 上(不包含端点)，则直线 ${AP},{BQ}$ 所成的角的取值范围是\blkda{$\left( {\dfrac{\pi }{3},\dfrac{\pi }{2}}\right\rbrack$}
+    
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_6_241_910_382_394_0.jpg}
+    \end{center}
+
+    \begin{jieda}
+        如下图所示:
+        
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_6_242_1650_380_393_0.jpg}
+        \end{center}
+
+        当$P, Q$分别为中点时$AP \bot BQ$
+
+        根据最小角定理可知$AP$和$BQ$所成角大于等于$AP$和面$BCD$的夹角，$\angle{AOP}$即为线面角，而$P$位于$BC$端点处会有$\angle{APO}$的下限$\dfrac{\pi}{3}$，故${AP},{BQ}$ 所成的角的取值范围是$\left( {\dfrac{\pi }{3},\dfrac{\pi }{2}}\right\rbrack$.
+    \end{jieda}
+\end{enumerate}
+
+\section*{面面平行}
+\section*{面面垂直}
+\section*{二面角}
+\subsection*{三正弦定理与最大角定理}
+\section*{证明专题}
+\subsection*{证明线线平行}
 证明线线平行涉及到的方法如下：
 \begin{dingautolist}{172}
     \item 平面几何：中位线、平行四边形
@@ -383,9 +885,7 @@
     \end{jieda}
 
 \end{enumerate}
-
-\subsection*{线面平行}
-\subsubsection*{线面平行的判定定理}
+\subsection*{证明线面平行}
 \begin{enumerate}
     \item 如图，EA和DC都垂直于平面 ${ABC},{\text{ 且 }{EA} = {2DC}},{CA} = {CB}$ ，点 $F$ 为 ${BE}$ 中点，求证：$DF // $平面 ${ABC}$
 
@@ -456,66 +956,7 @@
         因为 $B{C}^{2} + A{B}^{2} = A{C}^{2}$ ,所以 ${BC} \bot  {AB}$ ,根据平面知识可知 ${AD}//{BC}$，又 ${AD} \not \subset$ 平面 ${PBC},{BC} \subset$ 平面 ${PBC}$ ,所以 ${AD}//$ 平面 ${PBC}$ .
     \end{jieda}
 \end{enumerate}
-
-\subsubsection*{根据线线平行求线段长度/面积}
-\begin{enumerate}
-    \item 如图,正方体的棱长是 $a$ ,点 $E\text{ 、 }F$ 分别是两条棱的中点. 求四边形 ${BDEF}$ 的面积.
-    
-    \begin{center}
-    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_11_241_208_336_326_0.jpg}
-    \end{center}
-
-    \begin{jieda}
-        易知四边形 ${BDEF}$ (图中阴影部分)是一个梯形.
-    
-        因为正方体的棱长为 $a$ ，所以 ${BD} = \sqrt{2}a,{EF} = \dfrac{\sqrt{2}}{2}a,{ED} = {BF} = \dfrac{\sqrt{5}}{2}a$ ， 如图所示， ${DM} = \dfrac{1}{2}\left( {{BD} - {EF}}\right)  = \dfrac{\sqrt{2}}{4}a$ ，
-        
-        \begin{center}
-        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_11_243_1855_408_242_0.jpg}
-        \end{center}
-        
-        
-        而梯形 ${BDEF}$ 的高 ${EM} = \sqrt{E{D}^{2} - D{M}^{2}} = \sqrt{\dfrac{5}{4}{a}^{2} - \dfrac{1}{8}{a}^{2}} = \dfrac{3\sqrt{2}}{4}a$ ，
-        
-        可得梯形 ${BDEF}$ 的面积为 $S = \dfrac{1}{2} \times  \left( {\dfrac{\sqrt{2}}{2}a + \sqrt{2}a}\right)  \times  \dfrac{3\sqrt{2}}{4}a = \dfrac{9}{8}{a}^{2}$ .
-    \end{jieda}
-
-    \item 如图，在四棱锥 $P - {ABCD}$ 中，底面 ${ABCD}$ 是正方形. ${PD} \bot$ 平面 ${ABCD}$ ， ${PD} = {AD} = 2$ ，点 $E$ 是棱 ${PC}$ 的中点,平面 ${ABE}$ 与棱 ${PD}$ 交于点 $F$，求四边形$ABEF$的面积.
-    
-    \begin{center}
-    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_13_241_198_342_344_0.jpg}
-    \end{center}
-    \begin{jieda}
-        ${CD}//{AB},{AB} \subset$ 平面 ${ABE},{CD} \subset$ 平面 ${ABE}$，所以${CD}//$ 平面 ${ABE}$
-        
-        又 ${CD} \subset$ 平面 ${PCD}$ ,平面 ${PCD} \cap$ 平面 ${ABE} = {EF}$，故${CD}//{EF}$，故$EF$为$\triangle PAC$的中位线，所以$EF = 1$
-        
-        由于$CD//AB$，根据平行的传递性可知${AB}//{EF}$，故$ABEF$为梯形
-
-        根据三垂线定理可知$AB \bot AF$，故$ABEF$为直角梯形，$EF = 1, AB = 2, AF = \sqrt{5}$，故面积为$\dfrac{3\sqrt{5}}{2}$.
-    \end{jieda}
-
-    
-    \item 如图,已知点 $P$ 在平行四边形 ${ABCD}$ 所在平面外, $E$ 为线段 ${AD}$ 上靠近 $A$ 的三等分点, $F$ 为线段 ${PC}$ 上一点,当 ${PA}//$ 平面 ${EBF}$ 时, $\dfrac{PC}{PF} =$ \blkda{4}
-    
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_3_241_1515_352_258_0.jpg}
-    \end{center}
-    \begin{jieda}
-        如图,连结 ${AC}$ ,交 ${BE}$ 于点 $M$ ,连结 ${FM}$
-        
-        \begin{center}
-        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4lnl5ref24c739do320_4_240_477_352_256_0.jpg}
-        \end{center}
-
-        因为 ${PA}//$ 平面 ${EBF}$ ,且 ${PA} \subset$ 平面 ${PAC}$ ,平面 ${PAC} \cap$ 平面 ${BEF} = {FM}$，所以$PA//FM$
-        
-        因为 ${AE}//{BC}$ ，且 ${AE} : {BC} = 1 : 3$ ，所以 ${AM} : {MC} = 1 : 3$ ，即 ${AM} : {AC} = 1 : 4$，所以 $\dfrac{PC}{PF} = 4$ .
-    \end{jieda}
-\end{enumerate}
-
-\subsection*{线面垂直}
-\subsubsection*{线面垂直判定定理}
+\subsection*{证明线面垂直}
 \begin{enumerate}
     \item 如图，在$P - {ABCD}$ 中,侧棱 ${PD} \bot$ 长方形底面 ${ABCD}$ , 且 ${PD} = {CD}$ ,过棱 ${PC}$ 的中点 $E$ ,作 ${EF} \bot  {PB}$ 交 ${PB}$ 于点 $F$ ,连接 ${DE},{DF},{BD},{BE}$ . 证明: ${PB} \bot$ 平面 ${DEF}$ .
     
@@ -586,261 +1027,8 @@
         又因为$AH \bot BE$，因此$AH \bot$平面$BCD$.
     \end{jieda}
 \end{enumerate}
-\subsubsection*{三垂线定理}
-\begin{enumerate}
-    \item 如图所示,在三棱锥 $P - {ABC}$ 中, ${PA} \bot$ 平面 ${PBC},{PB} = {PC},M$ 是 ${BC}$ 的中点,求证: ${BC} \bot  {AM}$ .
-    
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ogc4bef24c73bbtdng_1_1225_223_565_440_0.jpg}
-    \end{center}
-    \begin{jieda}
-        因为$PB = PC, M$ 是 ${BC}$ 的中点所以$PM \bot BC$
-
-        因为${PA} \bot$ 平面 ${PBC}$，所以$AM$在直线内的射影为$PM$，根据三垂线定理可知$BC \bot AM$
-    \end{jieda}
-    \item 如图所示,点 $O$ 是 $\bigtriangleup {ABC}$ 的垂心, ${OP} \bot$ 平面 ${ABC}$ . 求证: ${PA} \bot  {BC}$ .
-
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ogc4bef24c73bbtdng_1_482_1083_610_385_0.jpg}
-    \end{center}
-
-    \begin{jieda}
-        因为${PO} \bot$ 平面 ${ABC}$，所以$PA$在直线内的射影为$AO$，因为$O$为垂心，所以$BC \bot AO$，故根据三垂线定理可知$BC \bot PA$
-    \end{jieda}
-    \item 如图所示,在空间四边形 ${ABCD}$ 中,已知 ${AB} \bot  {CD},{BC} \bot  {AD}$ . 求证: ${AC} \bot  {BD}$ .
-    
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ogc4bef24c73bbtdng_2_607_317_489_390_0.jpg}
-    \end{center}
-    \begin{jieda}
-        设$A$在面$BCD$内的射影为$O$，则根据三垂线定理可知$BO \bot CD$，$DO \bot BC$，因此$O$为$\triangle BCD$的垂心，故$CO \bot BD$，根据三垂线定理可知$AC \bot BD$
-    \end{jieda}
-    
-    \item 已知矩形 ${ABCD}$ 的边长 ${AB} = 6{{cm}},{BC} = 4{{cm}}$ ,在 ${CD}$ 上截取 ${CE} =$  $4{{cm}}$ ,以 ${BE}$ 为棱将矩形折起,使 $\bigtriangleup B{C}^{\prime }E$ 的高 ${C}^{\prime }F \bot$ 平面 ${ABED}$ (如图), 求:
-    
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_149_1145_141_264_187_0.jpg}
-    \end{center}
-    \begin{enumerate}
-        \item 点 ${C}^{\prime }$ 到平面 ${ABED}$ 的距离
-        \item 点 ${C}^{\prime }$ 到边 ${AB}$ 的距离
-        \item 点 ${C}^{\prime }$ 到 ${AD}$ 的距离
-    \end{enumerate}
-    \begin{jieda}
-        \begin{enumerate}
-            \item 作 ${FH}\bot {AB}$ 于 $H$ ,作 ${FG}\bot {AD}$ 于 $G$ ,则 ${C}^{\prime }H\bot {AB}$ , ${C}^{\prime }G\bot {AD}$ ,可算得 ${BE} = 4\sqrt{2}{{cm}}$ , ${HB} = 2{{cm}}$，$\therefore {C}^{\prime }$ 到面 ${ABED}$ 的距离为 ${C}^{\prime }F = 2\sqrt{2}{{cm}}$ .
-            \item ${C}^{\prime }$ 到 ${AB}$ 的距离为 ${C}^{\prime }H = 2\sqrt{3}{{cm}}$ .
-            \item ${C}^{\prime }$ 到 ${AD}$ 的距离为 ${C}^{\prime }G = 2\sqrt{6}{{cm}}$ .
-        \end{enumerate}
-    \end{jieda}
-
-    \item 如图所示,在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,点 $P,Q,R$ 分别是线段 ${B}_{1}B,{AB},{A}_{1}C$ 上的动点
-        
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ogc4bef24c73bbtdng_2_1348_173_546_529_0.jpg}
-    \end{center}
-
-    观察直线 ${CP}$ 与 ${D}_{1}Q,{CP}$ 与 ${D}_{1}R$ ,给出下列结论:
-    \begin{dingautolist}{172}
-        \item 存在点 $P$ ，对于任意给定的点 $Q$ ，使得 ${CP}\bot {D}_{1}Q$
-        \item 存在点 $Q$ ，对于任意给定的点 $P$ ，使得 ${D}_{1}Q \bot  {CP}$
-        \item 存在点 $P$ ,对于任意给定的点 $R$ ,使得 ${CP} \bot  {D}_{1}R$
-        \item 存在点 $R$ ,对于任意给定的点 $P$ ,使得 ${D}_{1}R \bot  {CP}$
-    \end{dingautolist}
-    其中正确的是\blkda{\ding{172}}.
-\end{enumerate}
-
-\section*{线面角}
-\subsection*{线面角}
-\begin{enumerate}
-    \item 如图，在正三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中， ${AB} = 1,{A{A}_{1}} = \sqrt{2}$ . 则直线 $A{C}_{1}$ 与平面 ${AB}{B}_{1}{A}_{1}$ 所成角的大小为\blkda{${30}^{ \circ  }$}
-    
-    \begin{center}
-    \includegraphics[width=0.35\textwidth]{bodyxb/src/bo_d4q3m9bef24c73bcm6mg_2_261_1302_308_348_0.jpg}
-    \end{center}
-
-    \begin{jieda}
-        取 ${A}_{1}{B}_{1}$ 的中点 $D$ ,连接 ${C}_{1}D\text{ 、 }{AD}$ ,如图:
-        
-        \begin{center}
-        \includegraphics[width=0.35\textwidth]{bodyxb/src/bo_d4q3m9bef24c73bcm6mg_3_254_210_315_356_0.jpg}
-        \end{center}
-        
-        
-        因为三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 是正三棱柱，所以 $\bigtriangleup  {A}_{1}{B}_{1}{C}_{1}$ 为等边三角形,所以 ${C}_{1}D\bot {A}_{1}{B}_{1}$ , 又 $A{A}_{1} \bot$ 平面 ${A}_{1}{B}_{1}{C}_{1},{C}_{1}D \subset$ 平面 ${A}_{1}{B}_{1}{C}_{1}$ ,所以 ${C}_{1}D \bot  A{A}_{1}$，又 ${A}_{1}{B}_{1} \cap  A{A}_{1} = {A}_{1},{A}_{1}{B}_{1},A{A}_{1} \subset$ 平面 ${AB}{B}_{1}{A}_{1}$ ,所以 ${C}_{1}D \bot$ 平面 ${AB}{B}_{1}{A}_{1}$，所以 $\angle {C}_{1}{AD}$ 为直线 $A{C}_{1}$ 与平面 ${AB}{B}_{1}{A}_{1}$ 所成角.
-        
-        又 ${C}_{1}D = \sqrt{{1}^{2} - {\left( \dfrac{1}{2}\right) }^{2}} = \dfrac{\sqrt{3}}{2},A{C}_{1} = \sqrt{{1}^{2} + {\left( \sqrt{2}\right) }^{2}} = \sqrt{3}$，$\sin \angle {C}_{1}{AD} = \dfrac{{C}_{1}D}{A{C}_{1}} = \dfrac{1}{2}$ ,所以 $\angle {C}_{1}{AD} = {30}^{ \circ  }$，即直线 $A{C}_{1}$ 与平面 ${AB}{B}_{1}{A}_{1}$ 所成角的大小为 ${30}^{ \circ  }$ .
-    \end{jieda}
-    
-    \item 正四面体 $P - {ABC}$ 中,直线 ${PC}$ 与平面 ${PAB}$ 所成角的余弦值为\blkda{$\dfrac{\sqrt{3}}{3}$}
-
-    \begin{jieda}
-        如图,取 ${AB}$ 中点 $D$ ,在线段 ${PD}$ 上取点 $E$ ,使得 ${PE} = {2ED}$ ,连接 ${DP},{DC},{EC}$ .
-        
-        \begin{center}
-        \includegraphics[width=0.4\textwidth]{bodyxb/src/bo_d4q3m9bef24c73bcm6mg_2_243_207_484_495_0.jpg}
-        \end{center}
-        
-        
-        因为 $P - {ABC}$ 为正四面体，所以 $E$ 为正 $\bigtriangleup  {PAB}$ 的重心，且 ${CE}\bot$ 平面 ${PAB}$，所以 $\angle {CPD}$ 即为直线 ${PC}$ 与平面 ${PAB}$ 所成的角.
-        
-        不妨设 ${AB} = 2$ ，则在 $\bigtriangleup  {PCE}$ 中， ${PE}\bot {CE}$ ， ${PE} = \dfrac{2}{3}{PD} = \dfrac{2\sqrt{3}}{3}$ ， ${PC} = 2$ ，所以 $\cos \angle {CPD} = \dfrac{PE}{PC} = \dfrac{\dfrac{2\sqrt{3}}{3}}{2} = \dfrac{\sqrt{3}}{3}$ .
-    \end{jieda}
-    
-    \item 正三棱锥 $P - {ABC}$ 中，$AB = 1, PA = 3$，直线 ${PC}$ 与平面 ${ABC}$ 所成角的正弦值为\blkda{$\dfrac{\sqrt{78}}{9}$}
-
-    \item 如图，在棱长为 1 的正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，那么直线 ${B}_{1}{D}_{1}$ 与平面 ${AC}{D}_{1}$ 所成的角的余弦值是\blkda{$\dfrac{\sqrt{3}}{3}$}
-
-    \begin{center}
-    \includegraphics[width=0.35\textwidth]{bodyxb/src/bo_d4q3m9bef24c73bcm6mg_4_241_1380_340_320_0.jpg}
-    \end{center}
-    \begin{jieda}
-        连接$D_1$和$AC$中点$O$，取$D_1G = \dfrac{2}{3}D_1O$，易知$G$为$\triangle ACD_1$的重心，$B_1G \bot \triangle ACD_1$，故$\angle{B_1D_1G}$即为线面角.
-
-        $D_1G = \dfrac{\sqrt{6}}{3}$，$D_1B_1 = \sqrt{2}$，故$cos\angle{B_1D_1G} = \dfrac{\sqrt{3}}{3}$
-    \end{jieda}
-
-
-    \item 如图,在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,点 $O$ 为线段 ${BD}$ 的中点,设点 $P$ 在线段 $C{C}_{1}$ 上,直线 ${OP}$ 与平面 ${A}_{1}{BD}$ 所成的角为 $\alpha$ ,则 $\sin \alpha$ 的最小值为\blkda{$\dfrac{\sqrt{6}}{3}$}
-    
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_2_245_749_414_371_0.jpg}
-    \end{center}
-
-    \begin{jieda}
-        易知$A_1, O, P \in $面$AA_1C_1C$，做$PH \bot A_1O$，故$H \in A_1O$，故$\angle{POA_1}$即为线面所成角或其补角.
-
-        注意到 $A{C}_{1} \bot$ 平面 ${A}_{1}{BD}$，所以移动 $P$ 的位置，当$OP$和$AC_1$平行时取得最大值，故当 $P$ 在 $C$ 或 ${C}_{1}$ 处时,线面角 $\alpha$ 才可能最小.
-    
-        在平面$AA_1C_1C$中，计算可得$\sin \alpha$ 的最小值为 $\dfrac{\sqrt{6}}{3}$ .
-    \end{jieda}
-    
-\end{enumerate}
-
-\subsection*{三余弦定理与最小角定理}
-\begin{enumerate}
-    \item ${PA},{PB},{PC}$ 是从点 $P$ 出发的不共面的三条射线,每两条射线的夹角均为 ${60}^{ \circ  }$ ,那么直线 ${PC}$ 与平面 ${PAB}$ 所成角的余弦值是\blkda{$\dfrac{\sqrt{3}}{3}$}
-    \begin{jieda}
-        如图,设直线 ${PC}$ 在平面 ${PAB}$ 的射影为 ${PD}$ ,
-        
-        \begin{center}
-        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_1_243_274_288_325_0.jpg}
-        \end{center}
-
-        根据三余弦定理可知$cos\angle{APC} = cos\angle{APD} \cdot cos\angle{CPD}$
-
-        易知$\angle{APC} = \ang{60}$，$\angle{APD} = \ang{30}$，故$cos\angle{CPD} = \dfrac{\sqrt{3}}{3}$.
-    \end{jieda}
-
-    \item 已知三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱与底面边长都相等， ${A}_{1}$ 在底面 ${ABC}$ 上的射影为 ${BC}$ 的中点,则异面直线 ${AB}$ 与 $C{C}_{1}$ 所成的角的余弦值为\blkda{$\dfrac{3}{4}$}
-    \begin{jieda}
-        设 ${BC}$ 的中点为 $D$，由题意可知 ${A}_{1}D \bot$ 平面 ${ABC}$，连接 ${A}_{1}D\text{ 、 }{AD}\text{ 、 }{A}_{1}B$ ,易知 $\theta  = \angle {A}_{1}{AB}$ 即为异面直线 ${AB}$ 与 $C{C}_{1}$ 所成的角.
-
-        \begin{center}
-        \includegraphics[width=0.3\textwidth]{bodyxb/src//bo_d4op0rv7aajc73fs5h4g_0_265_1176_414_277_0.jpg}
-        \end{center}
-
-        设三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱与底面边长为 2，根据几何关系可知$A_1D = 1$，故$\angle{A_1AD} = \angle{BAD} = \ang{30}$，故根据三余弦定理可知$cos\angle{A_1AB} = \dfrac{3}{4}$.
-    \end{jieda}
-    \item 已知三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱与底面边长都相等， ${A}_{1}$ 在底面 ${ABC}$ 上的射影为底面的中心，则 ${AB_1}$ 与 底面$ABC$ 所成的角的正弦值为\blkda{$\dfrac{\sqrt{2}}{3}$}
-    \begin{jieda}
-        设底面的中心为 $O$，由题意可知 ${A}_{1}O \bot$ 平面 ${ABC}$
-        
-        设三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 的侧棱与底面边长为 1，根据几何关系可知$AO = \dfrac{\sqrt{3}}{3}$，故$A_1O = \dfrac{\sqrt{6}}{3}$，故$cos\angle{A_1AO} = \dfrac{\sqrt{3}}{3}$，又因为$\angle{BAO} = \dfrac{\pi}{6}$，故根据三余弦定理可知$cos\angle{A_1AB} = \dfrac{1}{2}$.
-
-        因此$\angle{A_1AB} = \ang{60}$，故$AB_1 = 2\sqrt{3}$，所以所求角的正弦值为$\dfrac{B_1O_1}{AB_1} = \dfrac{A_1O_1}{AB_1} = \dfrac{\sqrt{2}}{3}$
-    \end{jieda}
-    \item 已知 $\angle {ACB} = {90}^{ \circ  }$ ， $P$ 为平面 ${ABC}$ 外一点， ${PC} = 2$ ，点 $P$ 到 $\angle {ACB}$ 两边 ${AC}$ ， ${BC}$ 的距离均为 $\sqrt{3}$ ，那么 $P$ 到平面 ${ABC}$ 的距离为\blkda{$\sqrt{2}$}.
-    \begin{jieda}
-
-        做$PO \bot $面$ACB$，根据对称性可知$\angle{ACO} = \angle{BCO} = \ang{45}$，根据几何关系可知$\angle{PCB} = \angle{PCA} = \ang{60}$，故根据三余弦定理可知$\angle{PCO} = \ang{45}$，所以$PO = CO = \sqrt{2}$
-        
-        \begin{center}
-        \includegraphics[width=0.3\textwidth]{bodyxb/src//bo_d4op0rv7aajc73fs5h4g_1_245_1319_416_484_0.jpg}
-        \end{center}
-    \end{jieda}
-
-
-    \item 如图,已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 $2,M,N$ 分别为棱 ${AB},{BC}$ 的中点,若点 $P$ 为线段 ${B}_{1}N$ 上的动点,不包括端点),设异面直线 ${C}_{1}P$ 与 ${MN}$ 所成的角为 $\theta$ ,则 $\cos \theta$ 的取值范围是\blkda[2]{$\left( {\dfrac{\sqrt{10}}{10},\dfrac{\sqrt{2}}{2}}\right)$}
-    
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_5_239_263_376_348_0.jpg}
-    \end{center}
-    \begin{jieda}
-        如图所示,连接 ${AC},{A}_{1}{C}_{1}$ ,因为 $M,N$ 分别为棱 ${AB},{BC}$ 的中点,可得 ${MN}//{AC}$ 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,可得 ${A}_{1}{C}_{1}//{AC}$ ,所以 ${MN}//{A}_{1}{C}_{1}$，所以$\angle {A}_{1}{C}_{1}P$为异面直线 ${C}_{1}P$ 与 ${MN}$ 所成的角或其补角.
-
-        由三余弦定理可知$cos\angle{A_1C_1P} = cos\angle{A_1C_1B_1} \cdot cos\angle{PC_1B_1} = \dfrac{\sqrt{2}}{2} \cdot cos\angle{PC_1B_1}$
-
-        因为$cos\angle{PC_1B_1} \in \left(\dfrac{\sqrt{5}}{5}, 1\right)$，所以$cos\angle{A_1C_1P} \in \left( {\dfrac{\sqrt{10}}{10},\dfrac{\sqrt{2}}{2}}\right)$
-    \end{jieda}
-    
-    \item 如图所示，在侧棱垂直于底面的三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中， $P$ 是棱 ${BC}$ 上的动点，记直线 ${A}_{1}P$ 与平面 ${ABC}$ 所成的角为 ${\theta }_{1}$ ,与直线 ${BC}$ 所成的角为 ${\theta }_{2}$ ,则 ${\theta }_{1},{\theta }_{2}$ 的大小关系是
-    
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_0_242_626_445_446_0.jpg}
-    \end{center}
-
-    \xx{${\theta }_{1} = {\theta }_{2}$}{${\theta }_{1} > {\theta }_{2}$}{${\theta }_{1} < {\theta }_{2}$}{不能确定}
-
-    \begin{jieda}
-        根据线面角是该直线与对应平面内的任意直线所成角中最小的角，所以有 ${\theta }_{1} < {\theta }_{2}$ ,故选 C.
-    \end{jieda}
-
-    \item 在侧棱垂直于底面的三棱柱 ${ABC} - {A}_{1}{B}_{1}{C}_{1}$ 中，$\angle{ABC} = \ang{90}$，直线$l$和面$ABB_1A_1$和面$ACC_1A_1$的夹角为$\theta_1, \theta_2$,则 ${\theta }_{1},{\theta }_{2}$ 满足\dotfill{(\kh{C})}
-    \xx{${\theta }_{1}+{\theta }_{2} = \dfrac{\pi}{2}$}{${\theta }_{1}+{\theta }_{2} \geq \dfrac{\pi}{2}$}{${\theta }_{1}+{\theta }_{2} \leq \dfrac{\pi}{2}$}{${\theta }_{1}+{\theta }_{2} < \dfrac{\pi}{2}$}
-
-    \begin{jieda}
-        设直线$l$和面$ABB_1A_1$和面$ACC_1A_1$交于$P, Q$，过$P, Q$分别$AA_1$的垂线，设垂足为$H_1, H_2$，则$\theta_1 = \angle{QPH_2}, \theta_2 = \angle{PQH_1}$，故$\theta_1 \leq \angle{PQH_2}$，$\theta_2 + \angle{PQH_2} = \ang{90}$
-    \end{jieda}
-
-    \item 已知等腰$Rt \bigtriangleup {ABC}$ 内接于圆 $O$，连接$OC$，交点圆 $O$于$C'$， $M$ 是下半圆弧上的动点 (如图所示),现将上半圆面沿 ${AB}$ 折起，使得$\angle{COC'} = \dfrac{\pi }{4}$ . 则直线 ${AC}$ 与直线 ${OM}$ 所成角的最小值是\blkda{$\dfrac{\pi }{6}$}
-    
-    \begin{center}
-    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d4onr53ef24c73bc3ut0_0_246_691_285_267_0.jpg}
-    \end{center}
-    \begin{jieda}
-        ${AC}$ 与直线 ${OM}$ 所成角的最小值是$AC$与平面$ABM$的线面所成角
-
-        做$CH \bot $面$AOM$，则$CH = \dfrac{r}{\sqrt{2}}$，$AC = \sqrt{2}r$，故线面所成角为$\dfrac{\pi}{6}$.
-    \end{jieda}
-    
-    \item 在三棱台 ${BCD} - {B}_{1}{C}_{1}{D}_{1}$ 中, $C{C}_{1} \bot$ 底面 ${BCD},{BC} \bot  {CD},{BC} = {CD} = C{C}_{1} = 2$ , ${B}_{1}{C}_{1} = 1$ . 若 $A$ 是 ${BD}$ 中点,点 $P$ 在侧面 ${BD}{D}_{1}{B}_{1}$ 内,则直线 $D{C}_{1}$ 与 ${AP}$ 夹角的正弦值的最小值是\blkda{$\dfrac{\sqrt{2}}{6}$}
-    \begin{center}
-        \includegraphics[width=0.3\linewidth]{bodyxb//src/df7f9ca0e5e44e3a5c6bfc4fa7b2c1a5.jpg}
-    \end{center}
-    \begin{jieda}
-        根据最小角定理可知$DC_1$与$AP$的夹角最小值为$DC_1$和平面$BDD_1B_1$的夹角.
-
-        延长$BB_1$，$CC_1$，$DD_1$交于$S$，连接$AS$，做$C_1H \bot AS$
-
-        $SC \bot $面$BCD \Longrightarrow SC \bot BD$，又因为$AC \bot BD$，所以$BD \bot $面$PAC$，故$BD \bot C_1H$
-
-        因此$C_1H \bot $面$BDD_1B_1$，$C_1D = 2\sqrt{2}$，$C_1H = \dfrac{2}{3}$.
-
-        直线 $D{C}_{1}$ 与 ${AP}$ 夹角的正弦值的最小值是$\dfrac{\sqrt{2}}{6}$.
-    \end{jieda}
-    
-    \item 在立方体$ABCD-A_1B_1C_1D_1$中，$P$为底面$ABCD$内的动点，异面直线$BD_1$和$DP$夹角的最小值为\blkda[2]{$arcsin\left(\dfrac{\sqrt{3}}{3}\right)$}
-    
-    
-    \item 如图,已知正三棱锥 ${ABCD},{BC} = {CD} = {BD} = \sqrt{3},{AB} = {AC} = {AD} = 2$ ,点 $P,Q$ 分别在棱 ${BC},{CD}$ 上(不包含端点)，则直线 ${AP},{BQ}$ 所成的角的取值范围是\blkda{$\left( {\dfrac{\pi }{3},\dfrac{\pi }{2}}\right\rbrack$}
-    
-    \begin{center}
-    \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_6_241_910_382_394_0.jpg}
-    \end{center}
-
-    \begin{jieda}
-        如下图所示:
-        
-        \begin{center}
-        \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d4ojskjef24c73bc0dj0_6_242_1650_380_393_0.jpg}
-        \end{center}
-
-        当$P, Q$分别为中点时$AP \bot BQ$
-
-        根据最小角定理可知$AP$和$BQ$所成角大于等于$AP$和面$BCD$的夹角，$\angle{AOP}$即为线面角，而$P$位于$BC$端点处会有$\angle{APO}$的下限$\dfrac{\pi}{3}$，故${AP},{BQ}$ 所成的角的取值范围是$\left( {\dfrac{\pi }{3},\dfrac{\pi }{2}}\right\rbrack$.
-    \end{jieda}
-\end{enumerate}
+\subsection*{证明面面平行}
+\subsection*{证明面面垂直}
 
 \section*{动点轨迹}
 \subsection*{动点与平行结合}

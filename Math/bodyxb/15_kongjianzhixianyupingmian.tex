@@ -65,6 +65,18 @@
             \item $a \cap b = M$，$M \in C$
         \end{enumerate}
     \end{jieda}
+
+    \item 已知点 $P$ 在直线 $l$ 上, $l$ 在平面 $\alpha$ 上,则 $P,l,\alpha$ 之间的关系是\dotfill{(\kh{B})}
+    \xx{$P \in  l \in  \alpha$}{$P \in  l \subset  \alpha$}{$P \subset  l \in  \alpha$}{$P \subset  l \subset  \alpha$}
+    \begin{jieda}
+        点是(三维)空间的元素,直线和平面都是由点构成的集合,因此有 $P \in  l \subset  \alpha$
+    \end{jieda}
+    \item 用集合符号表示“点 $P$ 在直线 $l$ 外, $l$ 在平面 $\alpha$ 上“，正确的是 \dotfill{(\kh{B})}
+    \xx{$P \notin  l,l \in  \alpha$}{$P \notin  l,l \subset  \alpha$}{$P \not\subset l,l \in  \alpha$}{$P \not\subset l,l \subset  \alpha$}
+    \begin{jieda}
+        点是(三维)空间的元素,直线和平面都是由点构成的集合,因此有 $P \notin  l,l \subset  \alpha$
+    \end{jieda}
+
 \end{enumerate}
 \subsection*{点、直线、平面的基本事实}
 
@@ -147,6 +159,48 @@
 \end{center}
 例题：
 \begin{enumerate}
+    \item 下列四个条件中,能确定一个平面的是\dotfill{(\kh{C})}
+    \xx{空间任意三点}{空间两条直线}{两条平行直线}{一条直线和一个点}
+    \begin{jieda}
+        选项 C 即公理 2 的推论 3. 其余 3 个选项的反例如下: 对于选项 A,空间内共线的三点; 对于选项 B,两条异面直线；对于选项 D,该直线恰好经过该点.
+    \end{jieda}
+    \item 已知空间中四点, 如果其中任意三点都不共线, 那么经过其中三个点的平面共有 \dotfill{(\kh{D})}
+    \xx{一个或两个}{一个或三个}{两个或三个}{一个或四个}
+    \begin{jieda}
+        记4个点为 $A,B,C,P$ ,由题意,记 $A,B,C$ 三点确定平面 $\alpha$ .
+        \begin{dingautolist}{172}
+            \item $P \in  \alpha$ ,则这 4 点共面,经过任意三个点的平面仅有平面 $\alpha$ 一个.
+            \item $P \notin  \alpha$ ,则平面 $\alpha$ 、平面 ${PAB}$ 、平面 ${PBC}$ 、平面 ${PAC}$ 两两不重合(反证法:若任意两个平面重合,则 $A$ , $B,C,P$ 四点共面,从而 $P \in  \alpha$ ,矛盾),此时经过其中三个点的平面共有四个.
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 四条直线过同一点,过每两条直线作一个平面,则可以作\blkda[2]{1 或 4 或 6}个不同的平面
+    \begin{jieda}
+        记直线为 $a,b,c,d$,根据共面直线条数,分以下 3 种情况讨论: 
+        \begin{dingautolist}{172}
+            \item 四条直线共面,只能作 1 个平面
+            \item 三条直线共面,不失一般性,假设 $a,b,c \subset  {\alpha }$ 但 $d \not \subset {\alpha }$. 由于直线 $a,b,c$ 互不重合,根据公理 3,直线 $d$ 与直线 $a$ 或 $b$ 或 $c$ 确定的平面也互不重合,且异于平面 $\alpha$ (例:正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,直线 ${AB}$ 、直线 ${AC}$ 、直线 ${AD}$ 、直线 $\left. AA^{\prime }\right)$,此时可作 4 个不同平面
+            \item 任意三条直线都不共面,根据公理 2 的推论 2,此时最多能作 ${C}_{4}^{2} = 6$ 个平面 (例: 四棱锥的四条棱), 且这 6 个面两两不重合 (否则至少有三条直线共面), 因此可作 6 个不同平面.
+        \end{dingautolist}
+    \end{jieda}
+
+
+    \item 已知平面 $\alpha$ 与另外两个平面 $\beta ,\gamma$ 都相交,则这三个平面可能的交线有 \dotfill{(\kh{D})}
+
+    \xx{1 条或 2 条}{2 条或 3 条}{1 条或 3 条}{1 条或 2 条或 3 条}
+
+    \begin{jieda}
+        由题意,记 $\alpha  \cap  \beta  = {l}_{1},\alpha  \cap  \gamma  = {l}_{2}$ 
+        \begin{dingautolist}{172}
+            \item 若 ${l}_{1},{l}_{2}$ 重合,则 $\beta  \cap  \gamma  = {l}_{1}$ ,故三个平面两两之间的交线重合,仅 1 条.
+            \item 若 ${l}_{1},{l}_{2}$ 不重合,且 $\beta  \cap  \gamma  = \varnothing$ ,此时有 2 条交线 (例: 正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,平面 ${AB}{B}^{\prime }{A}^{\prime }$ 分别与平面 ${ABCD}$ 、平面 ${A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ ).
+            \item 若 ${l}_{1},{l}_{2}$ 不重合,且 $\beta  \cap  \gamma  \neq  \varnothing$ ,此时可有 3 条交线 (例: 正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,平面 ${AB}{B}^{\prime }{A}^{\prime }$ 分别与平面 ${ABCD}$ 、平面 ${AD}{D}^{\prime }{A}^{\prime }$ ). 
+        \end{dingautolist}
+        根据公理 $3,{C}_{3}^{1} = 3$ 条交线是最大可能数量.
+        
+         \ps \ding{172}若题干改成三个平面两两相交,则有 1 条或 3 条, 2 条是不可能的, 可根据公理 2 的推论 2、3 给予证明. \ding{173}对于这类题目, 可以有两种思路:其一,先确定可能情况的下界和上界,再对介于其间的每一种可能性举例说明存在性,或通过证明来否定；其二, 选择一种合适的分类方式. 这两种思路都能确保讨论不重复、不遗漏.
+    \end{jieda}
+
     \item 已知三角形 ${ABC}$ 的三个顶点 $A$ 、 $B$ 、 $C$ 都在平面 $\alpha$ 上,求证: 该三角形 ${ABC}$ 的重心 $G$ 也在平面 $\alpha$ 上.
     \begin{jieda}
         \begin{center}
@@ -193,15 +247,6 @@
     \item 已知三个平面 $\alpha \text{ 、 }\beta \text{ 、 }\gamma$ 两两相交,有三条交线 $a\text{ 、 }b\text{ 、 }c$,且 $\alpha  \cap  \beta  = a,\alpha  \cap  \gamma  = b,\beta  \cap$  $\gamma  = c$,若直线 $a \cap  b = O$,求证: $O \in  c$.
     \begin{jieda}
         $a \cap  b = O \Longrightarrow O \in a, O \in b \Longrightarrow O \in \beta, O \in \gamma \Longrightarrow O \in c$
-    \end{jieda}
-    \item 四条直线过同一点,过每两条直线作一个平面,则可以作\blkda[2]{1 或 4 或 6}个不同的平面
-    \begin{jieda}
-        记直线为 $a,b,c,d$,根据共面直线条数,分以下 3 种情况讨论: 
-        \begin{dingautolist}{172}
-            \item 四条直线共面,只能作 1 个平面
-            \item 三条直线共面,不失一般性,假设 $a,b,c \subset  {\alpha }$ 但 $d \not \subset {\alpha }$. 由于直线 $a,b,c$ 互不重合,根据公理 3,直线 $d$ 与直线 $a$ 或 $b$ 或 $c$ 确定的平面也互不重合,且异于平面 $\alpha$ (例:正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,直线 ${AB}$ 、直线 ${AC}$ 、直线 ${AD}$ 、直线 $\left. AA^{\prime }\right)$,此时可作 4 个不同平面
-            \item 任意三条直线都不共面,根据公理 2 的推论 2,此时最多能作 ${C}_{4}^{2} = 6$ 个平面 (例: 四棱锥的四条棱), 且这 6 个面两两不重合 (否则至少有三条直线共面), 因此可作 6 个不同平面.
-        \end{dingautolist}
     \end{jieda}
     \item 已知一条直线与三条平行直线都相交, 求证: 这四条直线在同一平面上.
     \begin{jieda}
@@ -454,7 +499,7 @@
 
     \item 特别地,如果两条异面直线 $a$ 、 $b$ 所成的角是直角,就说这两条异面直线互相垂直,记作 $a \bot  b$. 由上述定义容易推出: 如果 $a \bot  b,b//c$,那么 $a \bot  c$.
 \end{enumerate}
-\clearpage
+
 例题：
 \begin{enumerate}
     \item 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,求下列异面直线所成角的大小.

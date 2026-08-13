@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  11 AUG 2026 18:28
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  13 AUG 2026 21:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1721,30 +1721,30 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 \sl@BankOfErrors=\toks67
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 17.
- (./mainxb.aux (./bodyxb/7_sanjiao.aux))
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
+ (./mainxb.aux (./bodyxb/13_tuoyuan.aux))
 \openout1 = `mainxb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1783,23 +1783,23 @@ LaTeX Font Info:    ... okay on input line 17.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 17.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 18.
 
 
 Package picture Warning: The picture package has been disabled as most
 (picture)                of its functionality is now provided by LaTeX directly.
 (picture)                To force the loading of the previous version use
 (picture)                `\usepackage{picture}[=v1]`
-(picture)                or `\usepackage[calc]{picture}`  on input line 17.
+(picture)                or `\usepackage[calc]{picture}`  on input line 18.
 
-Package hyperref Info: Link coloring ON on input line 17.
+Package hyperref Info: Link coloring ON on input line 18.
 (./mainxb.out) (./mainxb.out)
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/7_sanjiao.aux'.
+\openout2 = `bodyxb/13_tuoyuan.aux'.
 
- (./bodyxb/7_sanjiao.tex
+ (./bodyxb/13_tuoyuan.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1880,34 +1880,46 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
+ [1
 
+
+
+]
+File: bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg>
+ [2]
+File: bodyxb//src/jiaobanjing.png Graphic file (type bmp)
+<bodyxb//src/jiaobanjing.png>
+ [3]
+File: bodyxb/src/bo_d42u9js601uc738mlqp0_5_242_192_390_356_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d42u9js601uc738mlqp0_5_242_192_390_356_0.jpg>
+ [4] [5]
+File: bodyxb//src/tuoyuan9.png Graphic file (type bmp)
+<bodyxb//src/tuoyuan9.png>
+ [6] [7]
+File: ./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg Graphic file (type bmp)
+<./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg>
+File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_92_183_382_263_0.jpg>
+ [8]
+File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_92_183_382_263_0.jpg>
+File: bodyxb/src/1_243_196_546_393_0.jpg Graphic file (type bmp)
+<bodyxb/src/1_243_196_546_393_0.jpg>
+ [9] [10]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 9.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 1935.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 9.
-
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-[1
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 1935.
 
 
+LaTeX Warning: Command \~ invalid in math mode on input line 2010.
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
-File: bodyxb/src/0_238_279_274_244_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_238_279_274_244_0.jpg>
-File: bodyxb/src/0_240_726_259_253_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_240_726_259_253_0.jpg>
-File: bodyxb/src/0_240_1232_306_343_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_240_1232_306_343_0.jpg>
- [25]
-File: bodyxb/src/zhendongtuxiangshitu.png Graphic file (type bmp)
-<bodyxb/src/zhendongtuxiangshitu.png>
- [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40]
-File: bodyxb/src/tengwangge.png Graphic file (type bmp)
-<bodyxb/src/tengwangge.png>
- [41] [42]) [43] (./mainxb.aux (./bodyxb/7_sanjiao.aux))
+Missing character: There is no ̃ ("303) in font lmmi10!
+) [11] (./mainxb.aux (./bodyxb/13_tuoyuan.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1916,12 +1928,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49588 strings out of 468168
- 1164205 string characters out of 5432816
- 1750487 words of memory out of 5000000
- 77306 multiletter control sequences out of 15000+600000
- 656662 words of font info for 119 fonts, out of 8000000 for 9000
+ 49617 strings out of 468168
+ 1165998 string characters out of 5432816
+ 1744487 words of memory out of 5000000
+ 77327 multiletter control sequences out of 15000+600000
+ 656678 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,11n,128p,632b,1648s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,128p,946b,1379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (43 pages).
+Output written on mainxb.pdf (11 pages).

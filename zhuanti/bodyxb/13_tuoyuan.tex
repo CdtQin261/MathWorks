@@ -435,7 +435,7 @@
     
             设$M(2cos\alpha, \sqrt{3}sin\alpha)$，则$\dfrac{9}{5} = \dfrac{|6cos\alpha-4\sqrt{3}sin\alpha+3|}{5}$，即$6cos\alpha-4\sqrt{3}sin\alpha+3 = \pm 9$
             
-            移项平方，解得$\left\{\begin{array}{l}
+            移项平方，齐次同除，代回检验，解得$\left\{\begin{array}{l}
                  cos\alpha = 1  \\
                  sin\alpha = 0
             \end{array}\right.$或$\left\{\begin{array}{l}
@@ -975,9 +975,7 @@
 
                     综上,直线 ${PQ}$ 为 $x =  - 6$ ;
 
-                    \item 设直线 ${A}_{1}M : x = {ty} - 2$ ，与椭圆联立并整理得 $\left( {{t}^{2} + 2}\right) {y}^{2} - {4ty} = 0$ ，易得 ${y}_{1} = \dfrac{4t}{{t}^{2} + 2}$ ，同理可得 ${y}_{2} =  - \dfrac{4t}{2{t}^{2} + 1}$ ， 又 $\left\{  {\begin{array}{l} x = {ty} - 2 \\  x =  - 6 \end{array} \Rightarrow  {y}_{Q} =  - \dfrac{4}{t}}\right.$ ,同理可得 ${y}_{P} = {4t}$ ,
-
-                    所以 $\dfrac{{S}_{1}}{{S}_{2}} = \dfrac{\dfrac{1}{2}\left| {{A}_{1}M}\right| \left| {{A}_{1}N}\right| \sin \angle M{A}_{1}N}{\dfrac{1}{2}\left| {{A}_{1}Q}\right| \left| {{A}_{1}P}\right| \sin \angle P{A}_{1}Q} = \dfrac{\left| {{A}_{1}M}\right| \left| {{A}_{1}N}\right| }{\left| {{A}_{1}Q}\right| \left| {{A}_{1}P}\right| } = \dfrac{\left| {y}_{1}\right| \left| {y}_{2}\right| }{\left| {{y}_{Q}\parallel {y}_{P}}\right|  = \dfrac{{t}^{2}}{\left( {{t}^{2} + 2}\right) \left( {2{t}^{2} + 1}\right) }}$
+                    \item 设直线 ${A}_{1}M : x = {ty} - 2$ ，与椭圆联立并整理得 $\left( {{t}^{2} + 2}\right) {y}^{2} - {4ty} = 0$ ，易得 ${y}_{1} = \dfrac{4t}{{t}^{2} + 2}$ ，同理可得 ${y}_{2} =  - \dfrac{4t}{2{t}^{2} + 1}$ ， 又 $\left\{  {\begin{array}{l} x = {ty} - 2 \\  x =  - 6 \end{array} \Rightarrow  {y}_{Q} =  - \dfrac{4}{t}}\right.$ ,同理可得 ${y}_{P} = {4t}$，所以 $\dfrac{{S}_{1}}{{S}_{2}} = \dfrac{\dfrac{1}{2}\left| {{A}_{1}M}\right| \left| {{A}_{1}N}\right| \sin \angle M{A}_{1}N}{\dfrac{1}{2}\left| {{A}_{1}Q}\right| \left| {{A}_{1}P}\right| \sin \angle P{A}_{1}Q} = \dfrac{\left| {{A}_{1}M}\right| \left| {{A}_{1}N}\right| }{\left| {{A}_{1}Q}\right| \left| {{A}_{1}P}\right| } = \dfrac{\left| {y}_{1}\right| \left| {y}_{2}\right| }{\left| {{y}_{Q}\parallel {y}_{P}}\right|}  = \dfrac{{t}^{2}}{\left( {{t}^{2} + 2}\right) \left( {2{t}^{2} + 1}\right) }$
 
                     $= \dfrac{1}{2{t}^{2} + \dfrac{2}{{t}^{2}} + 5} \leq  \dfrac{1}{2\sqrt{2{t}^{2} \cdot  \dfrac{2}{{t}^{2}}} + 5} = \dfrac{1}{9}$ ,当且仅当 $t =  \pm  1$ 时取等号,所以 $\dfrac{{S}_{1}}{{S}_{2}}$ 最大值为 $\dfrac{1}{9}$ .
                 \end{dingautolist}
@@ -1130,6 +1128,57 @@
             \end{enumerate}
         \end{jieda}
 
+
+        \item 设动点 $G\left( {x,y}\right)$ 到点 $F\left( {1,0}\right)$ 的距离与它到直线 $l : x = 4$ 的距离之比为 $\dfrac{1}{2}$ ，记点 $G$ 的轨迹为曲线 $C$ 
+        \begin{enumerate}
+            \item 求 $C$ 的方程
+            \item $A$ 为 $C$ 与 $x$ 轴的负半轴的交点， $B$ 为直线 $x = 1$ 与 $C$ 在第一象限的交点，直线 $l$ 过点 $\left( {-2,3}\right)$ ， 且与 $C$ 相交于 $M,N$ 两点，过点 $N$ 作垂直于 $x$ 轴的直线分别与直线 ${AB},{AM}$ 相交于点 $P,Q$ ，分别记 $\bigtriangleup {ANQ}$ 与 $\bigtriangleup {APQ}$ 的面积为 ${S}_{1}$ 与 ${S}_{2}$ ,求证: ${S}_{1} = 2{S}_{2}$.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$
+                \item 如图所示，$\dfrac{S_1}{S_2} = \dfrac{NQ}{PQ}$，即证$P$为$NQ$中点.
+                \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/0_1311_1040_312_281_0.jpg}
+                \end{center}
+
+                $A(-2, 0), B\left(1, \dfrac{3}{2}\right)$，则直线$AB: y = \dfrac{x}{2}+1$
+
+                设$N(x_1, y_2), M(x_2, y_2)$，直线$MN: y = k(x+2)+3$
+                
+                $P\left(x_1, \dfrac{x_1}{2}+1\right)$，$Q\left(x_1, \left[k+\dfrac{3}{x_2+2}\right](x_1+2)\right)$
+                
+                联立直线与椭圆得$3x^2+4(k(x+2)+3)^2 = 12$，即$(3+4k^2)x^2+(16k^2+24k)x+16k^2+48k+24 = 0$，$\Delta > 0$解得$k < -\dfrac{1}{2}$
+
+                根据韦达定理有$\left\{\begin{array}{l}
+                    x_1+x_2 = \dfrac{-16k^2-24k}{3+4k^2} \\
+                    x_1x_2 = \dfrac{16k^2+48k+24}{3+4k^2}
+                \end{array}\right.$
+                \begin{dingautolist}{172}
+                    \item $y_N+y_Q-2y_P = k(x_1+2)+3+\left[k+\dfrac{3}{x_2+2}\right](x_1+2) - (x_1+2) \\
+                            = \left[2k+\dfrac{3}{x_2+2}-1\right](x_1+2)+3\\
+                            = \dfrac{(2k-1)(x_1+2)(x_2+2)+3(x_1+2)+3(x_2+2)}{x_2+2}$
+
+                            $\left\{\begin{array}{l}
+                                x_1+2+x_2+2 = \dfrac{12-24k}{3+4k^2} \\
+                                (x_1+2)(x_2+2) = \dfrac{16k^2+48k+24}{3+4k^2} + 2 \times \dfrac{-16k^2-24k}{3+4k^2} + 4 = \dfrac{36}{3+4k^2}
+                            \end{array}\right.$
+
+                            故$y_N+y_Q-2y_P = 0$
+                    \item $y_N+y_Q-2y_P = k(x_1+2)+3+\left[k+\dfrac{3}{x_2+2}\right](x_1+2) - (x_1+2) \\
+                            = \left[2k+\dfrac{3}{x_2+2}-1\right](x_1+2)+3\\
+                            = \left[2k-1+\dfrac{3}{x_2+2}+\dfrac{3}{x_1+2}\right](x_1+2)$
+
+                            $\left\{\begin{array}{l}
+                                x_1+2+x_2+2 = \dfrac{12-24k}{3+4k^2} \\
+                                (x_1+2)(x_2+2) = \dfrac{16k^2+48k+24}{3+4k^2} + 2 \times \dfrac{-16k^2-24k}{3+4k^2} + 4 = \dfrac{36}{3+4k^2}
+                            \end{array}\right.$
+
+                            故$\dfrac{3}{x_2+2}+\dfrac{3}{x_1+2} = 1-2k$，因此$y_N+y_Q-2y_P = 0$
+                \end{dingautolist}
+                
+            \end{enumerate}
+        \end{jieda}
 
         \item 如图,直线 $y = {kx} + b\left( {k > 0,b > 0}\right)$ 与椭圆 $\dfrac{{x}^{2}}{4} + {y}^{2} = 1$ 交于 $A\text{ 、 }B$ 两点,记 $\bigtriangleup {AOB}$ 的面积为 $S$ .
 
@@ -1597,46 +1646,6 @@
                 故$k_{CD} = \dfrac{\dfrac{y_1}{2m_1y_1 - 1} - \dfrac{y_3}{2m_2y_3 - 1}}{\dfrac{m_1y_1}{2m_1y_1 - 1} - \dfrac{m_2y_3}{2m_2y_3 - 1}} = \dfrac{2(m_2-m_1)y_1y_3+(y_3-y_1)}{m_2y_3-m_1y_1} = \dfrac{5(y_3-y_1)}{m_2y_3-m_1y_1}$
 
                 故$ \dfrac{{k}_{CD}}{{k}_{AB}} = 5$.
-            \end{enumerate}
-        \end{jieda}
-
-
-        \item 设动点 $G\left( {x,y}\right)$ 到点 $F\left( {1,0}\right)$ 的距离与它到直线 $l : x = 4$ 的距离之比为 $\dfrac{1}{2}$ ，记点 $G$ 的轨迹为曲线 $C$ 
-        \begin{enumerate}
-            \item 求 $C$ 的方程
-            \item $A$ 为 $C$ 与 $x$ 轴的负半轴的交点， $B$ 为直线 $x = 1$ 与 $C$ 在第一象限的交点，直线 $l$ 过点 $\left( {-2,3}\right)$ ， 且与 $C$ 相交于 $M,N$ 两点，过点 $N$ 作垂直于 $x$ 轴的直线分别与直线 ${AB},{AM}$ 相交于点 $P,Q$ ，分别记 $\bigtriangleup {ANQ}$ 与 $\bigtriangleup {APQ}$ 的面积为 ${S}_{1}$ 与 ${S}_{2}$ ,求证: ${S}_{1} = 2{S}_{2}$.
-        \end{enumerate}
-        \begin{jieda}
-            \begin{enumerate}
-                \item $\dfrac{x^2}{4}+\dfrac{y^2}{3} = 1$
-                \item 如图所示，$\dfrac{S_1}{S_2} = \dfrac{NQ}{PQ}$，即证$P$为$NQ$中点.
-                \begin{center}
-                \includegraphics[width=0.2\textwidth]{bodyxb/src/0_1311_1040_312_281_0.jpg}
-                \end{center}
-
-                $A(-2, 0), B\left(1, \dfrac{3}{2}\right)$，则直线$AB: y = \dfrac{x}{2}+1$
-
-                设$N(x_1, y_2), M(x_2, y_2)$，直线$MN: y = k(x+2)+3$
-                
-                $P\left(x_1, \dfrac{x_1}{2}+1\right)$，$Q\left(x_1, \left[k+\dfrac{3}{x_2+2}\right](x_1+2)\right)$
-                
-                联立直线与椭圆得$3x^2+4(k(x+2)+3)^2 = 12$，即$(3+4k^2)x^2+(16k^2+24k)x+16k^2+48k+24 = 0$，$\Delta > 0$解得$k < -\dfrac{1}{2}$
-
-                根据韦达定理有$\left\{\begin{array}{l}
-                    x_1+x_2 = \dfrac{-16k^2-24k}{3+4k^2} \\
-                    x_1x_2 = \dfrac{16k^2+48k+24}{3+4k^2}
-                \end{array}\right.$
-
-                $y_N+y_Q-2y_P = k(x_1+2)+3+\left[k+\dfrac{3}{x_2+2}\right](x_1+2) - (x_1+2) \\
-                = \left[2k+\dfrac{3}{x_2+2}-1\right](x_1+2)+3\\
-                = \left[2k-1+\dfrac{3}{x_2+2}+\dfrac{3}{x_1+2}\right](x_1+2)$
-
-                $\left\{\begin{array}{l}
-                    x_1+2+x_2+2 = \dfrac{12-24k}{3+4k^2} \\
-                    (x_1+2)(x_2+2) = \dfrac{16k^2+48k+24}{3+4k^2} + 2 \times \dfrac{-16k^2-24k}{3+4k^2} + 4 = \dfrac{36}{3+4k^2}
-                \end{array}\right.$
-
-                故$\dfrac{3}{x_2+2}+\dfrac{3}{x_1+2} = 1-2k$，因此$y_N+y_Q-2y_P = 0$
             \end{enumerate}
         \end{jieda}
     \end{enumerate}
