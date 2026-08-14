@@ -957,6 +957,58 @@
             \end{enumerate}
         \end{jieda}
     \end{enumerate}
+
+    \item 过两点的动圆
+    \begin{enumerate}
+        \item 已知直线 $x + {2y} - 3 = 0$ 和圆 ${x}^{2} + {y}^{2} + x - {2ay} + a = 0$ 相交于 $A$ 、 $B$ 两点,且以 ${AB}$ 为直径的圆经过坐标原点,求实数 $a$ 的值.
+        \begin{jieda}
+            过$A,B$两点的圆系方程为$x^2+y^2+(1-\lambda)x-2(a+\lambda)y+(a+3\lambda) = 0$
+            \begin{enumerate}
+                \item 方法1
+                
+                    半径$r = \dfrac{1}{2}\sqrt{(1-\lambda)^2+4(a+\lambda)^2-4(a+3\lambda)} = \dfrac{1}{2}\sqrt{5\lambda^2+(8a-14)\lambda + (4a^2-4a+1)}$，当$\lambda = \dfrac{7-4a}{5}$时，半径取得最小值，即以$A, B$为直径的圆，又因为该圆过原点，所以有$a + 3\lambda = 0$，两式联立$\left\{\begin{array}{l}
+                    \lambda = \dfrac{7-4a}{5}  \\
+                    a + 3\lambda = 0
+                \end{array}\right.$，解得$\left\{\begin{array}{l}
+                    \lambda = -1  \\
+                    a = 3
+                \end{array}\right.$.
+                \item 方法2
+                
+                $x^2+y^2+(1-\lambda)x-2(a+\lambda)y+(a+3\lambda) = 0$应满足两个约束：过原点，圆心在$x + {2y} - 3 = 0$上
+
+                满足过原点时方程变为$x^2+y^2+(1-\lambda)x+4\lambda y = 0$，圆心为$\left(\dfrac{\lambda-1}{2}, -2\lambda\right)$，代入直线方程可得$\lambda = -1$，故$a=3$.
+            \end{enumerate}
+            
+        \end{jieda}
+        \item 已知圆$C_1: x^2+y^2+2x+2y-8=0$与圆$C_2: x^2+y^2-2x+10y-24 = 0$相交于$A, B$两点
+        \begin{enumerate}
+            \item 求公共弦$AB$所在的直线的方程
+            \item 求公共弦$AB$的长
+            \item 求经过$A, B$两点且面积最小的圆的方程
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 因为$A, B$两点为两圆的交点，故联立两圆方程的解为两点坐标，\\
+                $\left\{\begin{array}{l}
+                x^2+y^2+2x+2y-8=0 \\
+                x^2+y^2-2x+10y-24 = 0
+                \end{array}\right.$，\\
+                两式相减可得$4x-8y+16=0$，故$AB$所在直线方程为$x-2y+4=0$
+                \item $C_1: x^2+y^2+2x+2y-8=0$的标准方程为$(x+1)^2+(y+1)^2 = 10$，根据点到直线距离可知圆心$O_1(-1, -1)$到直线$x-2y+4=0$的距离为$d = \sqrt{5}$，故根据垂径定理可知$|AB| = 2\times \sqrt{10-5} = 2\sqrt{5}$
+                \item 经过$A, B$两点且面积最小的圆的方程即以$AB$为直径的圆的方程
+                \begin{enumerate}
+                    \item 方法1 \\
+                    设$AB$中点，即圆心为$M$，故$MO_1 \perp AB$，$MO_1$的斜率为$k = -2$，因此$MO_1$方程为$y = -2(x+1)-1$，其与直线$AB$交于点$M(-2, 1)$，因此满足要求的圆的标准方程为$(x+2)^2+(y-1)^2 = 5$
+                    \item 方法2 \\
+                    根据公共弦可以写出过两圆交点的圆系方程为$x^2+y^2+2x+2y-8+\lambda(x-2y+4)=0$，即$x^2 + y^2+(2+\lambda)x+(2-2\lambda)y+(4\lambda-8) = 0$，配方有${\left( x + \dfrac{2 + \lambda }{2}\right) }^{2} + {\left( y + 1 - \lambda \right) }^{2} = \dfrac{5{\lambda }^{2}}{4} - {5\lambda } +10$，故半径平方$r^2 = \dfrac{5{\lambda }^{2}}{4} - {5\lambda } +10$
+
+                    当$\lambda = 2$时半径平方最小，故圆的方程为$(x+2)^2+(y-1)^2 = 5$
+                \end{enumerate}
+                
+            \end{enumerate}
+        \end{jieda}
+    \end{enumerate}
     
     \item 与圆有关的轨迹问题（定义法、直接法）
     \begin{enumerate}
