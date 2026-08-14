@@ -563,12 +563,13 @@
 
 例题：
 \begin{enumerate}
-    \item 下列命题中正确的是\blkda{\ding{175}}
+    \item 下列命题中正确的是\blkda{\ding{175}\ding{176}}
     \begin{dingautolist}{172}
         \item 若直线 $a$ 上有无数个点不在平面 $\alpha$ 上,则 $a//\alpha$
         \item 若直线 $a$ 与平面 $\alpha$ 上的一条直线平行,则 $a$ 与平面 $\alpha$上的任意一条直线都平行
         \item 若两条平行直线中的一条平行于一个平面,则另一条直线也平行于这个平面
         \item 设直线 $a$ 在平面 $\alpha$ 上,直线 $b$ 不在平面 $\alpha$ 上,并且 $a//b$,则 $b//\alpha$.
+        \item 若直线 $l$ 与平面 $\alpha$ 平行,则 $l$ 与平面 $\alpha$ 内的任意一条直线都没有公共点
     \end{dingautolist}
     \begin{jieda}
         \begin{dingautolist}{172}
@@ -576,6 +577,7 @@
             \item 存在异面直线
             \item 可能线在面内
             \item 符合线面平行判定定理
+            \item 正确
         \end{dingautolist}
     \end{jieda}
     \item 求证:空间四边形的对角线平行于四边中点所确定的平面.
@@ -591,6 +593,22 @@
 
         根据中位线定理可知$BD // EH$，$BD \not \subset$平面 ${EFGH}$，$EH \subset$平面 ${EFGH}$，故根据线面平行判定定理可知$BD//$ 平面 ${EFGH}$
     \end{jieda}
+
+    \item 如图，点 $E$ 不在平面 ${ABCD}$ 上， ${ABCD}$ 是正方形， $F$ 为 ${BE}$ 的中点. 求证: ${DE}//$ 平面 ${ACF}$ .
+
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/0_1184_1745_349_310_0.jpg}
+    \end{center}
+    \begin{jieda}
+        连接 ${BD}$ 交 ${AC}$ 于 $G$ ,连接 ${FG}$ .
+
+        $\because F\text{ 、 }G$ 分别为 ${BE}\text{ 、 }{BD}$ 的中点,
+
+        $\therefore {FG}//{DE},{FG} \subset$ 平面 ${ACF},{DE} \not \subset$ 面 ${ACF}$ ,
+
+        $\therefore {DE}//$ 平面 ${ACF}$
+    \end{jieda}
+
     \item 在正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中, $E$ 是 $D{D}^{\prime }$ 的中点 (如图),求证: ${B}^{\prime }D//$ 平面 ${A}^{\prime }{C}^{\prime }E$
         \begin{center}
         \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_139_366_1352_239_241_0.jpg}
@@ -605,23 +623,6 @@
     \end{center}
     \begin{jieda}
         取$D_1E$的中点$M_2$，根据几何条件可知$AE // CN$，$AE = 2, CN = 1$，$M_1M_2 // AE$，$M_1M_2 = 1$，故$M_1M_2 // CN$，因此$M_1M_2CN$为平行四边形，故$M_1N // CM_2$，而$CM_2 \subset CED_1$，故${M}_{1}N//$ 平面 $C{D}_{1}E$ 
-    \end{jieda}
-    
-    \item 已知两个全等的正方形 ${ABCD}$ 和 ${ABEF}$ 所在平面相交于 ${AB}$,点 $M$ 、 $N$ 分别在线段 ${AC}$ 、 ${FB}$ 上(与端点不重合),且 ${AM} = {FN}$. 求证: ${MN}//$ 平面 ${BCE}$.
-
-    \begin{center}
-    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_19_1194_240_312_235_0.jpg}
-    \end{center}
-
-    \begin{jieda}
-    \begin{center}
-    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_19_1191_547_315_234_0.jpg}
-    \end{center}
-    作 ${MP}//{AB}$ 交 ${BC}$ 于点 $P,{NQ}//$  ${AB}$ 交 ${BE}$ 于点 $Q$,所以 ${MP}//{NQ}$.
-    
-    因为 ${AM} = {FN}$,所以 ${MP} = \dfrac{\sqrt{2}}{2}{MC} = \dfrac{\sqrt{2}}{2}{BN} = {NQ}$. 所以 ${MP} // {NQ}$且$MP = NQ$. 所以四边形 ${MNQP}$ 为平行四边形,所以 ${MN}//{PQ}$.
-    
-    因为 ${MN} \not \subset$ 平面 ${BCE},{PQ} \subset$ 平面 ${BCE}$,所以 ${MN}//$ 平面 ${BCE}$.
     \end{jieda}
 \end{enumerate}
 \subsection*{线面平行性质定理}
@@ -790,6 +791,28 @@
 例题：
 \begin{enumerate}
     \item 如果一条直线垂直于一个平面内的: \ding{172}三角形的两边; \ding{173}梯形的两边; \ding{174}圆的两条直径；\ding{175}正六边形的两条边,则能保证该直线与平面垂直的是\blkda{\ding{172}\ding{174}}.
+    \item 下列命题正确的是\dotfill{(\kh{D})}
+    \xx{如果两条直线都与第三条直线垂直, 那么这两条直线互相平行}{如果两条直线都与同一平面平行, 那么这两条直线互相平行}{如果一条直线与一个平面上的无数条直线垂直, 那么这条直线与这个平面垂直}{如果两条平行直线中的一条垂直于一个平面, 那么另一条也垂直于这个平面}
+    \begin{jieda}
+        选项 (D) 即线面垂直判定定理的推论. 借助正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ ,对其余选项分析如下:选项 (A) ,也可以相交或异面,如:两直线为 ${AB}$ , ${AD}$ (或 ${AB}$ , ${A}^{\prime }{D}^{\prime }$ ),第三条直线为 $A{A}^{\prime }$ ,则两直线相交(异面)；选项(B),也可以相交或异面,如: 取两直线为 ${AB}$ , ${AD}$ ,平面为 ${A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ ,则两直线相交; 选项 (C),也可以相交 (但不垂直)、平行或在平面内,需注意“无数条直线”和“任意直线”的区别.
+    \end{jieda}
+    \item 已知三条直线 $a,b,l$ 及平面 $\alpha ,\beta$ ,则下列命题正确的是 \dotfill{(\kh{B})}
+    \xx{若 $b \subset  \alpha ,a//b$ ,则 $a//\alpha$}{若 $a \bot  \alpha ,b \bot  \alpha$ ,则 $a//b$}{若 $a//\alpha ,\alpha  \cap  \beta  = b$ ,则 $a//b$}{若 $a \subset  \alpha ,b \subset  \alpha ,l \bot  a,l \bot  b$ ,则 $l \bot  \alpha$}
+    \begin{jieda}
+        选项 (A) 需注意直线 $a$ 在平面 $\alpha$ 内的可能性. 错误；选项 (B) 即线面垂直的性质定理,正确；选项 (C) 中,平面 $\beta$ 不一定通过直线 $a$ ,故直线 $b$ 事实上是任意的,因此直线 $a$ , $b$ 也可能异面,错误；选项 (D),需注意 $a//b$ 的可能性,此时 $l$ 与 $\alpha$ 可以相交 (但不垂直)、平行或在平面 $\alpha$ 内,错误.
+    \end{jieda}
+    \item 给出以下四个命题:
+    \begin{dingautolist}{172}
+        \item 若直线 $l$ 不在平面平面 $\alpha$ 上,则 $l$ 不可能与 $\alpha$ 内无数条直线相交
+        \item 若直线 $l$ 与平面 $\alpha$ 不平行,则 $l$ 与 $\alpha$ 内任一直线都不平行
+        \item 若直线 $l$ 与平面 $\alpha$ 不垂直,则 $l$ 不可能垂直于 $\alpha$ 内无数条直线
+        \item 若平面 $\alpha$ 内有一条直线和直线 $l$ 异面,则 $l$ 不在平面 $\alpha$ 上
+    \end{dingautolist}
+    
+    其中正确的是\blkda{\ding{175}}
+    \begin{jieda}
+        对于\ding{172},设直线 $l$ 与平面 $\alpha$ 相交于 $O$ 点,则平面 $\alpha$ 内过 $O$ 点的任意直线都满足要求,错误；对于\ding{173},若直线 $l$ 在平面 $\alpha$ 内,则平面 $\alpha$ 内可以作无数条直线与 $l$ 平行,错误；对于\ding{174},不论直线 $l$ 与平面 $\alpha$ 相交(但不垂直)、平行或在平面 $\alpha$ 内, 都能在 $\alpha$ 内找到无数条直线与直线 $l$ 垂直,例如在正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 中,取 $\alpha  =$ 平面 ${ABCD},l = A{D}^{\prime }$ (或 ${A}^{\prime }{D}^{\prime }$ 或 ${AD}$ ),则 $\alpha$ 内任意与 ${AB}$ 平行的直线均符合要求,错误; 对于\ding{175},本命题的逆否命题是: 若 $l \subset  \alpha$ ,则平面 $\alpha$ 内的所有直线都与直线 $l$ 共面,这是真命题,正确. 综上,正确的个数是 1 个. 注: 对于\ding{175},也可使用反证法. 另外,“平面 $\alpha$ 内有一条直线和直线 $l$ 异面”,即“平面 $\alpha$ 内存在一条直线和直线 $l$ 不共面”,特别注意:其否定并不是 “平面 $\alpha$ 内存在一条直线和直线 $l$ 共面”.
+    \end{jieda}
     \item  已知 $O$ 是平行四边形 ${ABCD}$ 两条对角线的交点, $P$ 是平面 ${ABCD}$ 外一点,且 ${PA} = {PC},{PB} = {PD}$. 求证: ${PO} \bot$ 平面 ${ABCD}$.
     \begin{center}
     \includegraphics[width=0.3\textwidth]{bodyxb/src/bo_d1i8hsn7aajc7382r7dg_22_1121_129_373_283_0.jpg}
@@ -872,6 +895,23 @@
 
 例题：
 \begin{enumerate}
+    \item 如图，已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 1 .
+
+    \begin{center}
+        \centering
+        \includegraphics[width=0.25\linewidth]{bodyxb//src/akuihfai'bf'ihqwiherfvq.png}
+    \end{center}
+    \begin{enumerate}
+        \item 点 $A$ 到平面 $B{B}_{1}{C}_{1}C$ 的距离为\blkda{1}；
+        \item 直线 ${B}_{1}{D}_{1}$ 和平面 ${ABCD}$ 的距离为\blkda{1}；
+        \item 直线 ${A}_{1}{B}_{1}$ 和平面 ${AB}{C}_{1}{D}_{1}$ 的距离为\blkda{$\dfrac{\sqrt{2}}{2}$}.
+    \end{enumerate}
+
+    \item 平面 $\alpha$ 外两点 $A,B$ 到 $\alpha$ 的距离分别为 $a,b,P$ 是线段 ${AB}$ 上一点,且 ${AP} : {PB} = 1: 2$，则 $P$ 到平面 $\alpha$ 的距离是\blkda[3]{$\dfrac{{2a} + b}{3}$ 或 $\dfrac{\left| {2a} - b\right| }{3}$}
+    \begin{jieda}
+        在 ${AB}$ 和它在平面 $\alpha$ 上的射影 ${A}^{\prime }{B}^{\prime }$ 确定的平面内,将问题转化为点 $P$ 到 ${A}^{\prime }{B}^{\prime }$ 的距离问题 (平面几何). 当 $A,B$ 在平面 $\alpha$ 同侧时,所求距离为 $a + \dfrac{1}{3}\left( {b - a}\right)  = \dfrac{{2a} + b}{3}$ ; 当 $A,B$ 在平面 $\alpha$ 异侧时,所求距离为 $\left| {a - \dfrac{1}{3}\left( {a + b}\right) }\right|  = \dfrac{\left| 2a - b\right| }{3}.$
+    \end{jieda}
+
     \item 已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的边长为 $a$.
     \begin{enumerate}
         \item 求证: ${B}_{1}D \bot  C{D}_{1}$
@@ -962,6 +1002,39 @@
         
         在直角三角形 $\bigtriangleup {B}_{1}{OM}$ 中,易得 $\tan \angle {B}_{1}{OM} = \dfrac{{B}_{1}M}{OM} = \sqrt{2}$,所以 $\angle {B}_{1}{OM} = \arctan \sqrt{2}$. 即直线 ${B}_{1}D$ 与平面 ${AB}{C}_{1}{D}_{1}$ 所成角的大小为  $\arctan\sqrt{2}$.
     \end{jieda}
+    \item \begin{enumerate}
+        \item 在正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中,求面对角线 ${A}_{1}B$ 与对角面 $B{B}_{1}{D}_{1}D$ 所成的角
+        \begin{jieda}
+            连接 ${A}_{1}{C}_{1}$ 与 ${B}_{1}{D}_{1}$ 交于点 $E$ ,连接 ${BE}.{A}_{1}{C}_{1} \bot  {B}_{1}{D}_{1},{A}_{1}{C}_{1} \bot  {B}_{1}B,\therefore {A}_{1}{C}_{1} \bot$ 平面 $B{B}_{1}{D}_{1}D,\therefore {A}_{1}B$ 与平面 $B{B}_{1}{D}_{1}D$ 所成的角是 $\angle {A}_{1}{BE}.\sin \angle {A}_{1}{BE} = \dfrac{{A}_{1}E}{{A}_{1}B} = \dfrac{\dfrac{\sqrt{2}}{2}{A}_{1}{B}_{1}}{\sqrt{2}{A}_{1}{B}_{1}} = \dfrac{1}{2},\therefore \angle {A}_{1}{BE} = {30}^{ \circ  }$ .
+        \end{jieda}
+        \item 在正四面体 ${ABCD}$ 中,已知 $M$ 是棱 ${AB}$ 的中点,求 ${CM}$ 与底面 ${BCD}$ 所成角的正弦值
+        \begin{jieda}
+            取 ${CD}$ 中点 $N$ ,连接 ${AN}$ , ${BN}$ ,则 ${CD} \bot$ 平面 ${ABN}$ . 在平面 ${ABN}$ 中,作 ${MP}\bot {BN}$ 于 $P,\because {MP} \bot  {BN},{MP} \bot  {CD},\therefore {MP} \bot$ 平面 ${BCD}$ ,即 $P$ 是 $M$ 在平面 ${BCD}$ 上的射影. 记 $\bigtriangleup {ABN}$ 中 ${BN}$ 边上的高为 $h$ ,则 ${MP} = \dfrac{1}{2}h = \dfrac{1}{2} \cdot  \dfrac{{AB} \cdot  {MN}}{BN}$ (面积法),得 ${MP} = \dfrac{\sqrt{6}}{6},\therefore \sin \angle {MCP} = \dfrac{MP}{MC} = \dfrac{\sqrt{2}}{3}$ . 
+            
+            \ps 先找到 ${AB}$ 在平面 ${BCD}$ 上的射影,此时再确定 ${AB}$ 上一点 $M$ 在该平面上的射影就相对容易了.
+        \end{jieda}
+        \item 从点 $P$ 出发的三条射线 ${PA},{PB},{PC}$ 两两都成 ${60}^{ \circ  }$ 角,求 ${PC}$ 与面 ${PAB}$ 所成角的余弦值
+        \begin{jieda}
+            在射线 ${PA}$ , ${PB}$ , ${PC}$ 上取 ${A}^{\prime }$ , ${B}^{\prime }$ , ${C}^{\prime }$ ,使 $P{A}^{\prime } = P{B}^{\prime } = P{C}^{\prime } = a$ ,可得正四面体 $P{A}^{\prime }{B}^{\prime }{C}^{\prime }$ ,问题转化为求棱 $P{C}^{\prime }$ 与底面 $P{A}^{\prime }{B}^{\prime }$ 所成角的余弦. ${C}^{\prime }$ 在 $P{A}^{\prime }{B}^{\prime }$ 上的射影是 $\bigtriangleup P{A}^{\prime }{B}^{\prime }$ 的中心,记为 $O$ ,则 $\cos \angle {C}^{\prime }{PO} = \dfrac{PO}{P{C}^{\prime }} = \dfrac{\dfrac{2}{3} \cdot  \dfrac{\sqrt{3}}{2}a}{a}$  $= \dfrac{\sqrt{3}}{3}$ .
+        \end{jieda}
+    \end{enumerate}
+
+    \item 从平面 $\alpha$ 外一点 $P$ 向平面 $\alpha$ 引垂线 ${PO}$ 和斜线 ${PA},{PB}$ ,垂足为 $O$ ,斜足为 $A,B$ 
+    \begin{enumerate}
+        \item 若 ${PA}$ , ${PB}$ 和平面 $\alpha$ 所成角的差为 ${45}^{ \circ  }$ ,且在平面 $\alpha$ 上的射影长分别为 2 和 12,求 ${PO}$ 的长
+        \begin{jieda}
+            根据题意可知$\angle{PAO} = \angle{PBO} + \ang{45}$，$tan\angle{PAO} = \dfrac{PO}{2}, tan\angle{PBO} = \dfrac{PO}{12}$，故根据两角和的正切公式可知$\dfrac{PO}{2} = \dfrac{1+\dfrac{PO}{12}}{1-\dfrac{PO}{12}} = \dfrac{12+PO}{12-PO}$，解得$PO = 4$或$6$.
+        \end{jieda}
+        \item 若 $\angle {APB} = {60}^{ \circ  },{PA},{PB}$ 分别和 $\alpha$ 成 ${30}^{ \circ  },{45}^{ \circ  }$ 角,求 $\cos \angle {AOB}$ 的值
+        \begin{jieda}
+            设 ${OB} = a$ ,则 ${OP} = a$ , ${PB} = \sqrt{2}a$ , ${OA} = \sqrt{3}a$ , ${PA} = {2a}$ . 由余弦定理, $A{B}^{2} = P{A}^{2} + P{B}^{2} - 2 \cdot  {PA} \cdot  {PB} \cdot  \cos \angle {APB} = \left( {6 - 2\sqrt{2}}\right) {a}^{2},\cos \angle {AOB} = \dfrac{O{A}^{2} + O{B}^{2} - A{B}^{2}}{2 \cdot  {OA} \cdot  {OB}} = \dfrac{\sqrt{6} - \sqrt{3}}{3}\text{ . }$
+        \end{jieda}
+        \item 若 ${PA} : {PB} = 2 : 3,{PA},{PB}$ 与 $\alpha$ 所成角之比为 $2 : 1$ ,求 ${PB}$ 与 $\alpha$ 所成角的正弦值
+        \begin{jieda}
+            记 ${PB}$ 与 $\alpha$ 所成角为 $\theta  \in  \left( {0,\dfrac{\pi }{4}}\right)$ ,由题意, $\sin {2\theta } = \dfrac{PO}{PA}$ , $\sin \theta  = \dfrac{PO}{PB}$ , $\therefore \dfrac{\sin {2\theta }}{\sin \theta } = 2\cos \theta  = \dfrac{PB}{PA} = \dfrac{3}{2}$ , $\therefore \cos \theta  =$  $\dfrac{3}{4},\therefore \sin \theta  = \dfrac{\sqrt{7}}{4}$ .
+        \end{jieda}
+    \end{enumerate}
+
     \item 在 ${{Rt}} \bigtriangleup  {ACB}$ 中,已知 $\angle {ACB} = {90}^{ \circ  },{AC} = {BC} = 1,{PA}\bot$ 平面 ${ABC}$,且 ${PA} = \sqrt{2}$ (如图),则 ${BP}$ 与平面 ${PAC}$ 所成的角等于\blkda{$\ang{30}$}
     \begin{center}
     \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_148_454_647_255_218_0.jpg}
@@ -969,25 +1042,6 @@
     \begin{jieda}
         ${BC}$ 垂直于相交直线 ${AC}\text{ 、 }{AP}$,故 ${BC} \bot$ 平面 ${PAC}$, $\therefore {BP}$ 与平面 ${PAC}$ 所成的角为 $\angle {BPC}$ (锐角). 不难求得 ${AB} = \sqrt{2},{BP} = 2,\therefore \sin \angle {BPC} = \dfrac{BC}{BP} = \dfrac{1}{2},\therefore \angle {BPC} = {30}^{ \circ  }$ 
     \end{jieda}
-      \item 已知 $P$ 为 $\bigtriangleup {ABC}$ 所在平面外一点,且在平面 ${ABC}$ 上的射影为 $O$.
-      \begin{enumerate}
-          \item 若 ${PA} = {PB} = {PC}$,则 $O$ 为 $\bigtriangleup  {ABC}$ 的\blkda{外}心,又若 $\angle {ACB} = {90}^{ \circ  }$,则 $O$ 在\blkda[2.5]{边 ${AB}$ 的中点}
-          \begin{jieda}
-              ${PA} = {PB} = {PC} \Longrightarrow  {OA} = {OB} = {OC}$,故 $O$ 为 $\bigtriangleup  {ABC}$ 的外心；又直角三角形的外心在斜边的中点,故 $\angle {ACB} = {90}^{ \circ  }$ 时, $O$ 在边 ${AB}$ 的中点.
-          \end{jieda}
-          \item 若 ${PA},{PB},{PC}$ 与平面 ${ABC}$ 所成的角相等,则 $O$ 为 $\bigtriangleup  {ABC}$ 的\blkda{外}心
-          \begin{jieda}
-              由题意, $\bigtriangleup {PAO}$, $\bigtriangleup {PBO}$, $\bigtriangleup {PCO}$ 是全等三角形,故 ${OA} = {OB} = {OC}$, $O$ 为 $\bigtriangleup {ABC}$ 的外心.
-          \end{jieda}
-          \item 若 $O$ 在 $\bigtriangleup {ABC}$ 内,且 $P$ 到 $\bigtriangleup {ABC}$ 的三边距离相等,则 $O$ 为 $\bigtriangleup {ABC}$ 的\blkda{内}心
-          \begin{jieda}
-              过点 $O$ 作 $\bigtriangleup {ABC}$ 三边 ${AB},{BC},{CA}$ 的垂线,垂足分别为 $D,E,F$. 由三垂线定理,点 $P$ 到 $\bigtriangleup {ABC}$ 三边 ${AB}$ 、 ${BC}\text{ 、 }{CA}$ 的距离就是 ${PD},{PE},{PF}\text{ 、 }{PD} = {PE} = {PF} \Longrightarrow  {OD} = {OE} = {OF}$,又 $O$ 在 $\bigtriangleup {ABC}$ 内,故 $O$ 为 $\bigtriangleup {ABC}$ 的内心. (注: 若不限定 $O$ 在 $\bigtriangleup {ABC}$ 内,则 $O$ 为 $\bigtriangleup {ABC}$ 的内心或旁心)
-          \end{jieda}
-          \item 若四面体 ${PABC}$ 的两组对棱互相垂直,则 $O$ 为 $\bigtriangleup  {ABC}$ 的\blkda{垂}心
-          \begin{jieda}
-              连接 ${AO}$,它是 ${AP}$ 在平面 ${ABC}$ 上的射影. 由三垂线定理, ${PA} \bot  {BC} \Longrightarrow  {AO} \bot  {BC}$. 同理 ${CO} \bot  {AB}$ 、 ${BO} \bot  {AC}$, 故 $O$ 为 $\bigtriangleup {ABC}$ 的垂心.
-          \end{jieda}
-      \end{enumerate}
     \item 已知不共面的三条射线 ${OA}\text{ 、 }{OB}\text{ 、 }{OC}$ 两两成 ${60}^{ \circ  }$ 角,求直线 ${OA}$ 与平面 ${BOC}$ 所成角的大小.
     \begin{jieda}
         在$OA, OB, OC$上取$A',B',C'$，满足$OA' = OB' = OC' = d$，则根据题意可知$A'B' =  B'C' = A'C' = d$. 设$A'$在平面$BOC$内的投影点为$H$，取$B'C'$中点$M$，则$H$在$OM$上，故$\angle{A'OM}$即为所求
@@ -1029,59 +1083,29 @@
         
         因为 ${AD}$ 是平面 ${BCD}$ 的斜线, ${DO}$ 是其在平面 ${BCD}$ 上的射影,且 ${BC} \subset$ 平面 ${BCD},{BC} \bot  {DO}$,所以根据三垂线定理可得 ${AD} \bot  {BC}$.
     \end{jieda}
-    \item 已知矩形 ${ABCD}$ 的边长 ${AB} = 6{{cm}},{BC} = 4{{cm}}$,在 ${CD}$ 上截取 ${CE} =$  $4{{cm}}$,以 ${BE}$ 为棱将矩形折起,使 $\bigtriangleup B{C}^{\prime }E$ 的高 ${C}^{\prime }F \bot$ 平面 ${ABED}$ (如图), 求:
-    
-    \begin{center}
-    \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d20aucref24c73anc48g_149_1145_141_264_187_0.jpg}
-    \end{center}
+
+    \item 如图， $ {AB} $ 为 $ \odot  O $ 的直径， $ {PA} $ 垂直于 $ \odot  O $ 所在的平面， $ M $ 为圆周上任意一点， $ {AN}\bot {PM} $ ， $ N $ 为垂足.
+
     \begin{enumerate}
-        \item 点 ${C}^{\prime }$ 到平面 ${ABED}$ 的距离
-        \item 点 ${C}^{\prime }$ 到边 ${AB}$ 的距离
-        \item 点 ${C}^{\prime }$ 到 ${AD}$ 的距离
+        \item 求证： $ {AN}\bot $ 平面 $ {PBM} $ ；
+        \item 若 $ {AQ}\bot {PB} $ ，垂足为 $ Q $ ，求证： $ {NQ}\bot {PB} $ .
     \end{enumerate}
+
+    \begin{center}
+        \includegraphics[width=0.3\textwidth]{asfashf'oauhfasd.png}
+    \end{center}
+
+
     \begin{jieda}
         \begin{enumerate}
-            \item 作 ${FH}\bot {AB}$ 于 $H$,作 ${FG}\bot {AD}$ 于 $G$,则 ${C}^{\prime }H\bot {AB}$, ${C}^{\prime }G\bot {AD}$,可算得 ${BE} = 4\sqrt{2}{{cm}}$, ${HB} = 2{{cm}}$，$\therefore {C}^{\prime }$ 到面 ${ABED}$ 的距离为 ${C}^{\prime }F = 2\sqrt{2}{{cm}}$.
-            \item ${C}^{\prime }$ 到 ${AB}$ 的距离为 ${C}^{\prime }H = 2\sqrt{3}{{cm}}$.
-            \item ${C}^{\prime }$ 到 ${AD}$ 的距离为 ${C}^{\prime }G = 2\sqrt{6}{{cm}}$.
+            \item $ \because {{AB}} $ 为 $ \odot  {O} $ 的直径, $ \therefore {{AM}}\bot {{BM}} $ .
+            又 $ {{PA}} \bot $ 平面 $ {{ABM}} $ , $ \therefore {{PA}} \bot  {{BM}} $ ,
+            又 $ \because {{PA}} \cap  {{AM}} = {A},\therefore {{BM}}\bot $ 平面 $ {{PAM}} $ .
+            又 $ {{AN}} \subset $ 平面 $ {{PAM}},\therefore {{BM}}\bot {{AN}} $ .
+            又 $ {{AN}} \bot  {{PM}} $ ,且 $ {{BM}} \cap  {{PM}} = {M} $ ,
+            $ \therefore {{AN}} \bot $ 平面 $ {{PBM}} $ .
+        \item 由(1)知 $ {{AN}}\bot $ 平面 $ {{PBM}}$，故$AQ$在面$PBM$内的射影为$NQ$，因为$AQ \bot PB, PB \subset $平面 $ {{PBM}}$，根据三垂线定理可知$NQ \bot PB$.
         \end{enumerate}
-    \end{jieda}
-    \item 已知 ${PA}\text{ 、 }{PB}\text{ 、 }{PC}$ 两两互相垂直,且 ${PA} = 3,{PB} = 4,{PC} = 6$,求点 $P$ 到平面 ${ABC}$ 的距离.
-    \begin{jieda}
-        \begin{enumerate}
-            \item 等体积法
-
-            由题意知 ${PA},{PB},{PC}$ 两两垂直，${V}_{C - {PAB}} = \dfrac{1}{3}{S}_{\bigtriangleup {PAB}} \cdot  {PC} = \dfrac{1}{3} \times  \dfrac{1}{2} \times  3 \times  4 \times  6 = {12},$
-
-                
-            在直角三角形 ${PAB}$ 中, ${AB} = \sqrt{P{A}^{2} + P{B}^{2}} = \sqrt{{3}^{2} + {4}^{2}} = 5$
-            
-            在直角三角形 ${PAC}$ 中, ${AC} = \sqrt{P{A}^{2} + P{B}^{2}} = \sqrt{{3}^{2} + {6}^{2}} = 3\sqrt{5}$
-            
-            在直角三角形 ${PBC}$ 中, ${BC} = \sqrt{P{B}^{2} + P{C}^{2}} = \sqrt{{4}^{2} + {6}^{2}} = 2\sqrt{13}$
-        
-            由余弦定理得$\cos \angle {ACB} = \dfrac{A{C}^{2} + B{C}^{2} - A{B}^{2}}{{2AC} \cdot  {BC}} = \dfrac{{\left( 3\sqrt{5}\right) }^{2} + {\left( 2\sqrt{13}\right) }^{2} - {5}^{2}}{2 \times  3\sqrt{5} \times  2\sqrt{13}} = \dfrac{6\sqrt{65}}{65}$
-            
-            故$\sin \angle {ACB} = \sqrt{1 - {\cos }^{2}\angle {ACB}} = \sqrt{1 - {\left( \dfrac{6\sqrt{65}}{65}\right) }^{2}} = \dfrac{\sqrt{1885}}{65}$
-            
-            设点 $P$ 到平面 ${ABC}$ 的距离为 $h$，所以 ${V}_{P - {ABC}} = \dfrac{1}{3}{S}_{\bigtriangleup {ABC}} \cdot  h = \dfrac{1}{3} \times  \dfrac{1}{2}{AC} \cdot  {BC}\sin \angle {ACB} \cdot  h = \dfrac{1}{3} \times  \dfrac{1}{2} \times  3\sqrt{5} \times  2\sqrt{13} \times  \dfrac{\sqrt{1885}}{65}h = \sqrt{29}h$
-            
-            由${V}_{P - {ABC}} = {V}_{C - {PAB}}$可知$h = \dfrac{{12}\sqrt{29}}{29}$
-            \item 解三角形
-            
-            设点 $P$ 在平面 ${ABC}$ 的投影为$H$，根据三垂线定理可知$H$为$\triangle ABC$的垂心
-
-            根据垂心到顶点距离可知$CH = 2R \cdot |cos\angle{ACB}| = \dfrac{AB}{\sin \angle {ACB}} \cdot cos\angle{ACB}$
-            
-            同上可知${AB} = 5, {AC} = 3\sqrt{5}, {BC} = 2\sqrt{13}$，$\cos \angle {ACB} = \dfrac{6\sqrt{65}}{65}, \sin \angle {ACB} = \dfrac{\sqrt{1885}}{65}$，故$CH = \dfrac{30\sqrt{29}}{29}$
-
-            故根据勾股定理可知$PH = \dfrac{12\sqrt{29}}{29}$
-
-            \ps 证明垂心到顶点距离公式：$CH = 2R \cdot |cosC|$
-
-            设$BC$边上的高的垂足为$F$，则$CF = AC \cdot |cosC|$，$CH = \dfrac{CF}{sin\angle{CHF}}$，根据三角形相似可知$\angle{B} = \angle{CHF}$，故$CH = \dfrac{CF}{sinB} = \dfrac{AC}{sinB}\cdot |cosC| = 2R |cosC|$
-        \end{enumerate}
-        
     \end{jieda}
 \end{enumerate}
 
@@ -1242,7 +1266,6 @@
             \item 由(1)可知,平面 ${BCF}//$ 平面 ${ADE}$,所以点 $F$ 到平面 ${ADE}$ 的距离就是平面 ${BCF}$ 到平面 ${ADE}$ 的距离,因为平面 ${BCF}$ 上的任意一点到平面 ${ADE}$ 的距离都相等,所以可求点 $B$ 到平面 ${ADE}$ 的距离. 因为 ${AE} \bot$ 平面 ${ABCD},{AB} \subset$ 平面 ${ABCD}$,所以 ${AE} \bot  {AB}$,又已知 ${AD} \bot$  ${AB},{AE} \cap  {AD} = A$,所以 ${AB} \bot$ 平面 ${ADE}$. 即 ${AB}$ 的长度就是点 $B$ 到平面 ${ADE}$ 的距离,因为 ${AB} = 1$,所以点 $F$ 到平面 ${ADE}$ 的距离等于 1.
         \end{enumerate}
     \end{jieda}
-
 \end{enumerate}
 \section*{平面与平面垂直}
 \subsection*{二面角}
