@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  14 AUG 2026 17:19
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  16 AUG 2026 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,8 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
-
-No file mainxb.aux.
+ (./mainxb.aux (./bodyxb/bx03ch10.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1746,6 +1745,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1793,15 +1793,13 @@ Package picture Warning: The picture package has been disabled as most
 (picture)                or `\usepackage[calc]{picture}`  on input line 18.
 
 Package hyperref Info: Link coloring ON on input line 18.
+(./mainxb.out) (./mainxb.out)
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \openout2 = `bodyxb/bx03ch10.aux'.
 
-(./bodyxb/bx03ch10.tex
+ (./bodyxb/bx03ch10.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 15.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -2016,11 +2014,9 @@ File: ./bodyxb/src/imfsdhfffage.png Graphic file (type bmp)
 File: ./bodyxb/src/ahfa'ouhfaaf.png Graphic file (type bmp)
 <./bodyxb/src/ahfa'ouhfaaf.png>
 [19] [20]
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: ./bodyxb/src/imaarfharhfafge.png Graphic file (type bmp)
 <./bodyxb/src/imaarfharhfafge.png>
-[21
+ [21
 
 ]
 File: ./bodyxb/src/fsajhsdfa'hsud.png Graphic file (type bmp)
@@ -2087,66 +2083,11 @@ Missing character: There is no 面 ("9762) in font rm-lmr10!
 [30]
 File: bodyxb//src/fasha'sjdhf'asfh.png Graphic file (type bmp)
 <bodyxb//src/fasha'sjdhf'asfh.png>
-
-./bodyxb/bx03ch10.tex:1247: Extra }, or forgotten $.
-l.1247 ...item 如图，已知空间四边形 ${ABCD}$ 中各边长和对角线长 $a,E}
-                                                  \text{ 、 }\;F}$ 分别为边 ${AD}...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./bodyxb/bx03ch10.tex:1247: Extra }, or forgotten $.
-l.1247 ...形 ${ABCD}$ 中各边长和对角线长 $a,E}\text{ 、 }\;F}
-                                                  $ 分别为边 ${AD}}\text{ 、 }{BC...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./bodyxb/bx03ch10.tex:1247: Extra }, or forgotten $.
-l.1247 ...边长和对角线长 $a,E}\text{ 、 }\;F}$ 分别为边 ${AD}}
-                                                  \text{ 、 }{BC}}$ 的中点，求 ${A...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./bodyxb/bx03ch10.tex:1247: Extra }, or forgotten $.
-l.1247 ...ext{ 、 }\;F}$ 分别为边 ${AD}}\text{ 、 }{BC}}
-                                                  $ 的中点，求 ${AF}}$ 与 ${CE}}$ ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./bodyxb/bx03ch10.tex:1247: Extra }, or forgotten $.
-l.1247 ...分别为边 ${AD}}\text{ 、 }{BC}}$ 的中点，求 ${AF}}
-                                                  $ 与 ${CE}}$ 所成的角的大小.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./bodyxb/bx03ch10.tex:1247: Extra }, or forgotten $.
-l.1247 ...}\text{ 、 }{BC}}$ 的中点，求 ${AF}}$ 与 ${CE}}
-                                                  $ 所成的角的大小.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 File: ./bodyxb/src/afha'ouhfaof.png Graphic file (type bmp)
 <./bodyxb/src/afha'ouhfaof.png>
 File: bodyxb//src/aisufghaiuhfa.png Graphic file (type bmp)
 <bodyxb//src/aisufghaiuhfa.png>
-[31]
+ [31]
 File: bodyxb//src/aofuahsoduhfaouhfa.png Graphic file (type bmp)
 <bodyxb//src/aofuahsoduhfaouhfa.png>
 File: ./bodyxb/src/asuhfouhfaoh.png Graphic file (type bmp)
@@ -2191,32 +2132,24 @@ File: bodyxb//src/a'ouhsf'ouahs'fouhasodf.png Graphic file (type bmp)
  [39
 
 ]
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/auhf'aoshfasd.png Graphic file (type bmp)
 <bodyxb//src/auhf'aoshfasd.png>
-[40]
+ [40]
 File: ./bodyxb/src/auufh'aoushf'aouhfa.png Graphic file (type bmp)
 <./bodyxb/src/auufh'aoushf'aouhfa.png>
-
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/au;ghf;aighf'aisfa.png Graphic file (type bmp)
 <bodyxb//src/au;ghf;aighf'aisfa.png>
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
-[41]
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
+ [41]
 File: bodyxb//src/ahkfa'khfg'afsd.png Graphic file (type bmp)
 <bodyxb//src/ahkfa'khfg'afsd.png>
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/aufhaosufha'ouhdf.png Graphic file (type bmp)
 <bodyxb//src/aufhaosufha'ouhdf.png>
 File: bodyxb//src/a;kjsfh'akhf'ashdfds.png Graphic file (type bmp)
 <bodyxb//src/a;kjsfh'akhf'ashdfds.png>
-[42]
+ [42]
 File: bodyxb//src/;yafga;iygf;afawsfa.png Graphic file (type bmp)
 <bodyxb//src/;yafga;iygf;afawsfa.png>
 
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 Missing character: There is no 则 ("5219) in font rm-lmr10!
 File: bodyxb//src/asufha'ufh'auwsdfa.png Graphic file (type bmp)
 <bodyxb//src/asufha'ufh'auwsdfa.png>
@@ -2232,27 +2165,21 @@ File: bodyxb//src/a'osuhf'aiuhf'asf.png Graphic file (type bmp)
 Missing character: There is no ⫫ ("2AEB) in font rm-lmr10!
 Missing character: There is no ⫫ ("2AEB) in font rm-lmr10!
 Missing character: There is no ⫫ ("2AEB) in font rm-lmr10!
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/asufgh'aiuhf'aiuhsfd.png Graphic file (type bmp)
 <bodyxb//src/asufgh'aiuhf'aiuhsfd.png>
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 [44]
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 Missing character: There is no ⫫ ("2AEB) in font rm-lmr10!
 Missing character: There is no ⫫ ("2AEB) in font rm-lmr10!
 File: bodyxb//src/aiushf'aih'fudafsd.png Graphic file (type bmp)
 <bodyxb//src/aiushf'aih'fudafsd.png>
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/asfuha'iuhf'aushdfa.png Graphic file (type bmp)
 <bodyxb//src/asfuha'iuhf'aushdfa.png>
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/ufha'shf'aosuhfa'oud.png Graphic file (type bmp)
 <bodyxb//src/ufha'shf'aosuhfa'oud.png>
 [45]
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/a'oushfaouhf'shdfas.png Graphic file (type bmp)
 <bodyxb//src/a'oushfaouhf'shdfas.png>
-[46]
+ [46]
 File: bodyxb//src/asuhf'aouhfasfa.png Graphic file (type bmp)
 <bodyxb//src/asuhf'aouhfasfa.png>
 File: bodyxb//src/hf'ahf'ahf;haosfhasfa.png Graphic file (type bmp)
@@ -2288,15 +2215,12 @@ File: bodyxb//src/hf'ihfuu'shdfui'sdfh.png Graphic file (type bmp)
 [50]
 File: bodyxb//src/foushf'oushf'ouhsdfsdfs.png Graphic file (type bmp)
 <bodyxb//src/foushf'oushf'ouhsdfsdfs.png>
-
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/fhs'ofhaoighaouhfaohfa.png Graphic file (type bmp)
 <bodyxb//src/fhs'ofhaoighaouhfaohfa.png>
-[51]
+ [51]
 File: bodyxb//src/glahgd'ush'fouhsdgfa.png Graphic file (type bmp)
 <bodyxb//src/glahgd'ush'fouhsdgfa.png>
 
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 Missing character: There is no 作 ("4F5C) in font rm-lmr10!
 File: bodyxb//src/gsrhg'uahgifa'fhaw.png Graphic file (type bmp)
 <bodyxb//src/gsrhg'uahgifa'fhaw.png>
@@ -2319,14 +2243,9 @@ File: bodyxb//src/gijsdohg;dgas.png Graphic file (type bmp)
 <bodyxb//src/gijsdohg;dgas.png>
 File: bodyxb//src/sdigjh'aouhrfaoiehFAI.png Graphic file (type bmp)
 <bodyxb//src/sdigjh'aouhrfaoiehFAI.png>
-
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/'doigjsdigjh'gadg.png Graphic file (type bmp)
 <bodyxb//src/'doigjsdigjh'gadg.png>
-[56]
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
-[57]
+ [56] [57]
 File: bodyxb//src/auhf'ahfafsfafa.png Graphic file (type bmp)
 <bodyxb//src/auhf'ahfafsfafa.png>
 File: bodyxb//src/gsddlihjgsoigo'aedgs.png Graphic file (type bmp)
@@ -2355,9 +2274,9 @@ File: bodyxb//src/lfhajhfAOHFwfa.png Graphic file (type bmp)
 
 Missing character: There is no 作 ("4F5C) in font rm-lmr10!
 [61]
-Missing character: There is no ⊄ ("2284) in font rm-lmr10!
 File: bodyxb//src/alhfaouhfaohwfawef.png Graphic file (type bmp)
 <bodyxb//src/alhfaouhfaohwfawef.png>
+
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
@@ -2373,21 +2292,14 @@ File: bodyxb//src/alfhaouhfaefae.png Graphic file (type bmp)
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
  ***********
-
-
-Package rerunfilecheck Warning: File `mainxb.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mainxb.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `mainxb.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 50925 strings out of 468168
- 1223946 string characters out of 5432816
+ 50935 strings out of 468168
+ 1224088 string characters out of 5432816
  1733265 words of memory out of 5000000
- 78518 multiletter control sequences out of 15000+600000
+ 78520 multiletter control sequences out of 15000+600000
  656718 words of font info for 126 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,10n,128p,630b,1404s stack positions out of 10000i,1000n,20000p,200000b,200000s
