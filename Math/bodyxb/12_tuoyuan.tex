@@ -318,48 +318,6 @@
 
         
     \end{jieda}
-
-    \item  已知椭圆 $\dfrac{{x}^{2}}{2} + {y}^{2} = 1$ 的右准线 $l$ 与 $x$ 轴相交于点 $E$ ,过椭圆右焦点 $F$ 的直线与椭圆相交于 $A,B$ 两点,点 $C$ 在右准线 $l$ 上,且 ${BC}//x$ 轴,求证: 直线 ${AC}$ 经过线段 ${EF}$ 的中点.
-    
-        \begin{jieda}
-            由 $\dfrac{{x}^{2}}{2} + {y}^{2} = 1$ 知 $a = \sqrt{2},b = 1,c = 1$ ,故右焦点为 $F\left( {1,0}\right)$，故右准线方程为 $x = \dfrac{{a}^{2}}{c} = 2$ ,点 $E$ 的坐标为 $\left( {2,0}\right) ,{EF}$ 的中点为 $N\left( {\dfrac{3}{2},0}\right)$
-    
-            易知直线$AB$的斜率不为0，因此可设$AB$为$x = my+1$，记 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$ ,则 $C\left( {2,{y}_{2}}\right)$
-            
-            联立直线与椭圆的方程 $\left\{  \begin{array}{l} x = my+1 \\  \dfrac{{x}^{2}}{2} + {y}^{2} = 1 \end{array}\right.$ ,则 $(my+1)^2 + 2y^2 = 2$，即$(2+m^2)y^2+2my-1 = 0$，易知$\Delta>0$
-    
-            根据韦达定理有$\left\{\begin{array}{l}
-                 y_1+y_2 = \dfrac{-2m}{2+m^2} \\
-                 y_1y_2 = -\dfrac{1}{2+m^2}
-            \end{array}\right.$
-    
-            $\vv{NA} = \left(x_1-\dfrac{3}{2}, y_1\right) = \left(my_1-\dfrac{1}{2}, y_1\right)$，$\vv{NC} = \left(\dfrac{1}{2}, y_2\right)$，因为$\left(my_1-\dfrac{1}{2}\right)\cdot y_2 - \dfrac{1}{2}y_2 = my_1y_2 + \dfrac{y_1+y_2}{2} = 0$，所以$N,A,C$三点共线，即直线 ${AC}$ 经过线段 ${EF}$ 的中点.
-        \end{jieda}
-
-    \item 椭圆 $\dfrac{x^2}{4} + \dfrac{{y}^{2}}{3} = 1$ 的上有两点 $A\text{ 、 }B$ ,点 $B$ 在直线 $x = 4$ 上的射影是点 ${B}^{\prime }$ ,若直线 ${AB}$ 过右焦点,则直线 $A{B}^{\prime }$ 必定经过的定点坐标为\blkda{$\left(\dfrac{5}{2}, 0\right)$}.
-    \begin{jieda}
-        设$A(x_1, y_1), B(x_2, y_2)， B'\left(4, y_2\right)$，右焦点$F(1, 0)$
-
-        设$AB: y = k(x-1), k = \dfrac{y_2 - y_1}{x_2 - x_1}$，设$AB': y - y_1 = k'(x - x_1), k' = \dfrac{y_2-y_1}{4 - x_1} = \dfrac{x_2-x_1}{4 - x}k$，故$AB'$可以表示为$y - k(x_1-1) = \dfrac{x_2-x_1}{4 - x_1}k(x-x_1)$
-
-        易知$x_1 \neq 4$，故欲证$AB'$过定点，可以先去分母，即证方程$\left(4 - x_1\right)y + k(x_1-1)\left(x_1-4\right) = (x_2 - x_1)kx -x_1x_2k + kx_1^2$存在一组对任意的参数恒成立的解$(x_0, y_0)$.
-
-        易知该方程对于$x_1, x_2$应是轮换对称的，故可以将其整理成$x_1, x_2$为主元的式子，即$\left(-y -5k+kx\right)x_1  - (kx)x_2 + \left(4y+4k+x_1x_2k\right) = 0$. 最后一项对于$x_1, x_2$是轮换对称的，因此必有前两项的系数相等，即$y + 5k - kx = kx$
-
-        若$AB'$过定点$(x_0, y_0)$，则对任意的$x_1, x_2$，等式代入$(x_0, y_0)$均成立，则应有$y_0 + 5k - kx_0 = kx_0$恒成立，而$k$并非定值，因此$x_0 = \dfrac{5}{2}, y_0 = 0$可以使得等式恒成立，故若存在满足题干要求的顶点，则必为$\left(\dfrac{5}{2}, 0\right)$
-
-        下证$A{B}^{\prime }$ 必定经过的定点$\left(\dfrac{5}{2}, 0\right)$：
-
-        将$\left(\dfrac{5}{2}, 0\right)$代入$\left(-y -5k+kx\right)x_1  - (kx)x_2 + \left(4y+4k+x_1x_2k\right) = 0$，可得$LHS = -\dfrac{5}{2}k(x_1+x_2)+(4+x_1x_2)k = k\left(4+x_1x_2-\dfrac{5}{2}(x_1+x_2)\right)$
-        
-        联立$\left\{\begin{array}{l}
-                y = k(x-1) \\
-                \dfrac{x^2}{4} + \dfrac{{y}^{2}}{3} = 1
-        \end{array}\right.$，消去$y$可得$3x^2+4k^2(x-1)^2 = 12$，整理得$(3+4k^2)x^2-8k^2x+(4k^2-12) = 0$，根据韦达定理有$\left\{\begin{array}{l}
-                x_1+x_2 = \dfrac{8k^2}{4k^2+3} \\
-                x_1x_2 = \dfrac{4k^2-12}{4k^2+3}
-        \end{array}\right.$，代入可得$LHS = k\left(4+x_1x_2-\dfrac{5}{2}(x_1+x_2)\right) = 0 = RHS$
-    \end{jieda}
     
     \item 设点$AB$过椭圆$\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1(a>b>0)$的右焦点$F$，设其倾斜角为$\theta$，试求$FA, FB$
     \begin{jieda}
@@ -414,6 +372,48 @@
                  x_1x_2 = \dfrac{225k^2 - 400}{16+25k^2}
             \end{array}\right.$，代入可得$\dfrac{1}{\left| FA\right| } + \dfrac{1}{\left| FB\right| } = \dfrac{160 + 250k^2 - 90k^2}{400 + 625k^2 - 450k^2 + 81k^2 - 144} = \dfrac{160 + 160k^2}{256 + 256k^2} = \dfrac{5}{8}$
         \end{dingautolist}
+    \end{jieda}
+    
+    \item  已知椭圆 $\dfrac{{x}^{2}}{2} + {y}^{2} = 1$ 的右准线 $l$ 与 $x$ 轴相交于点 $E$ ,过椭圆右焦点 $F$ 的直线与椭圆相交于 $A,B$ 两点,点 $C$ 在右准线 $l$ 上,且 ${BC}//x$ 轴,求证: 直线 ${AC}$ 经过线段 ${EF}$ 的中点.
+    
+        \begin{jieda}
+            由 $\dfrac{{x}^{2}}{2} + {y}^{2} = 1$ 知 $a = \sqrt{2},b = 1,c = 1$ ,故右焦点为 $F\left( {1,0}\right)$，故右准线方程为 $x = \dfrac{{a}^{2}}{c} = 2$ ,点 $E$ 的坐标为 $\left( {2,0}\right) ,{EF}$ 的中点为 $N\left( {\dfrac{3}{2},0}\right)$
+    
+            易知直线$AB$的斜率不为0，因此可设$AB$为$x = my+1$，记 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$ ,则 $C\left( {2,{y}_{2}}\right)$
+            
+            联立直线与椭圆的方程 $\left\{  \begin{array}{l} x = my+1 \\  \dfrac{{x}^{2}}{2} + {y}^{2} = 1 \end{array}\right.$ ,则 $(my+1)^2 + 2y^2 = 2$，即$(2+m^2)y^2+2my-1 = 0$，易知$\Delta>0$
+    
+            根据韦达定理有$\left\{\begin{array}{l}
+                 y_1+y_2 = \dfrac{-2m}{2+m^2} \\
+                 y_1y_2 = -\dfrac{1}{2+m^2}
+            \end{array}\right.$
+    
+            $\vv{NA} = \left(x_1-\dfrac{3}{2}, y_1\right) = \left(my_1-\dfrac{1}{2}, y_1\right)$，$\vv{NC} = \left(\dfrac{1}{2}, y_2\right)$，因为$\left(my_1-\dfrac{1}{2}\right)\cdot y_2 - \dfrac{1}{2}y_2 = my_1y_2 + \dfrac{y_1+y_2}{2} = 0$，所以$N,A,C$三点共线，即直线 ${AC}$ 经过线段 ${EF}$ 的中点.
+        \end{jieda}
+
+    \item 椭圆 $\dfrac{x^2}{4} + \dfrac{{y}^{2}}{3} = 1$ 的上有两点 $A\text{ 、 }B$ ,点 $B$ 在直线 $x = 4$ 上的射影是点 ${B}^{\prime }$ ,若直线 ${AB}$ 过右焦点,则直线 $A{B}^{\prime }$ 必定经过的定点坐标为\blkda{$\left(\dfrac{5}{2}, 0\right)$}.
+    \begin{jieda}
+        设$A(x_1, y_1), B(x_2, y_2)， B'\left(4, y_2\right)$，右焦点$F(1, 0)$
+
+        设$AB: y = k(x-1), k = \dfrac{y_2 - y_1}{x_2 - x_1}$，设$AB': y - y_1 = k'(x - x_1), k' = \dfrac{y_2-y_1}{4 - x_1} = \dfrac{x_2-x_1}{4 - x}k$，故$AB'$可以表示为$y - k(x_1-1) = \dfrac{x_2-x_1}{4 - x_1}k(x-x_1)$
+
+        易知$x_1 \neq 4$，故欲证$AB'$过定点，可以先去分母，即证方程$\left(4 - x_1\right)y + k(x_1-1)\left(x_1-4\right) = (x_2 - x_1)kx -x_1x_2k + kx_1^2$存在一组对任意的参数恒成立的解$(x_0, y_0)$.
+
+        易知该方程对于$x_1, x_2$应是轮换对称的，故可以将其整理成$x_1, x_2$为主元的式子，即$\left(-y -5k+kx\right)x_1  - (kx)x_2 + \left(4y+4k+x_1x_2k\right) = 0$. 最后一项对于$x_1, x_2$是轮换对称的，因此必有前两项的系数相等，即$y + 5k - kx = kx$
+
+        若$AB'$过定点$(x_0, y_0)$，则对任意的$x_1, x_2$，等式代入$(x_0, y_0)$均成立，则应有$y_0 + 5k - kx_0 = kx_0$恒成立，而$k$并非定值，因此$x_0 = \dfrac{5}{2}, y_0 = 0$可以使得等式恒成立，故若存在满足题干要求的顶点，则必为$\left(\dfrac{5}{2}, 0\right)$
+
+        下证$A{B}^{\prime }$ 必定经过的定点$\left(\dfrac{5}{2}, 0\right)$：
+
+        将$\left(\dfrac{5}{2}, 0\right)$代入$\left(-y -5k+kx\right)x_1  - (kx)x_2 + \left(4y+4k+x_1x_2k\right) = 0$，可得$LHS = -\dfrac{5}{2}k(x_1+x_2)+(4+x_1x_2)k = k\left(4+x_1x_2-\dfrac{5}{2}(x_1+x_2)\right)$
+        
+        联立$\left\{\begin{array}{l}
+                y = k(x-1) \\
+                \dfrac{x^2}{4} + \dfrac{{y}^{2}}{3} = 1
+        \end{array}\right.$，消去$y$可得$3x^2+4k^2(x-1)^2 = 12$，整理得$(3+4k^2)x^2-8k^2x+(4k^2-12) = 0$，根据韦达定理有$\left\{\begin{array}{l}
+                x_1+x_2 = \dfrac{8k^2}{4k^2+3} \\
+                x_1x_2 = \dfrac{4k^2-12}{4k^2+3}
+        \end{array}\right.$，代入可得$LHS = k\left(4+x_1x_2-\dfrac{5}{2}(x_1+x_2)\right) = 0 = RHS$
     \end{jieda}
 \end{enumerate}
 

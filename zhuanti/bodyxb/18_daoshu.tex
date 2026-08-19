@@ -1825,6 +1825,43 @@
                 所以 $\ln 2$ 的近似值为 $0.693$.
             \end{enumerate}
         \end{jieda}
+        \item 已知关于 $x$ 的不等式 $\left( {\ln x - {kx}}\right) \left\lbrack  {{x}^{2} - \left( {k + 3}\right) x + 4}\right\rbrack   \leq  0$ 对任意 $x \in  \left( {0, + \infty }\right)$ 均成立，则实数 $k$ 的取值范围为\blkda[2]{$\left\lbrack  {\dfrac{1}{{e}},1}\right\rbrack$}.
+        \begin{jieda}
+            $\left( {\ln x - {kx}}\right) \left\lbrack  {{x}^{2} - \left( {k + 3}\right) x + 4}\right\rbrack   \leq  0$ 对任意 $x \in  (0$ , $+ \infty )$ 均成立
+            
+            即$\left( {\dfrac{\ln x}{x} - k}\right) \left\lbrack  {x + \dfrac{4}{x} - \left( {k + 3}\right) }\right\rbrack   \leq  0$在$(0, +\infty)$恒成立
+            
+            即$ \left( {k - \dfrac{\ln x}{x}}\right)  \left\lbrack  {k - \left( {x + \dfrac{4}{x} - 3}\right) }\right\rbrack   \leq  0$在$(0, +\infty)$恒成立
+            
+            即$\dfrac{\ln x}{x} \leq  k \leq  x + \dfrac{4}{x} - 3$在$(0, +\infty)$恒成立
+            
+            ${y}_{1} = \dfrac{\ln x}{x} \leq  \dfrac{1}{{e}},{y}_{2} = x + \dfrac{4}{x} - 3 \geq  2\sqrt{x \times  \dfrac{4}{x}} - 3 = 1$ , 所以实数 $k$ 的取值范围为 $k \in  \left\lbrack  {\dfrac{1}{{e}},1}\right\rbrack$ .
+
+            \begin{center}
+            \includegraphics[width=0.2\textwidth]{bodyxb/src/12_423_1184_221_274_0.jpg}
+            \end{center}
+        \end{jieda}
+        \item 设 $k \in  \mathbf{R}$ ,函数 $y = f\left( x\right)$ 和 $y = g\left( x\right)$ 的表达式分别为$f\left( x\right)  = e^{x} - {kx},g\left( x\right)  = {x}^{2} + \left( {k - 2}\right) x + \dfrac{1}{4}$ ,若对任意的实数 ${x}_{0}$ ,皆有 $f\left( {x}_{0}\right)  \cdot  g\left( {x}_{0}\right)  \geq  0$ 成立,则 $k$ 的取值范围是\blkda{$[1,e]$}.
+        \begin{jieda}
+            $f\left( {x}_{0}\right)  \cdot  g\left( {x}_{0}\right)  \geq  0$即$\left[e^{x_0} - {kx_0}\right] \cdot \left[x_0^{2} + \left( {k - 2}\right) x_0 + \dfrac{1}{4}\right] \geq 0$
+
+            \begin{dingautolist}{172}
+                \item 易知$x_0 = 0$时不等式成立
+                \item 当$x_0 \neq 0$时，即$\left[\dfrac{e^{x_0}}{x_0} - k\right] \cdot \left[x_0 + \left( {k - 2}\right) + \dfrac{1}{4x_0}\right] \geq 0$
+                
+                即$\left[k - \dfrac{e^{x_0}}{x_0}\right] \cdot \left[k - \left(2 - \left(x_0 + \dfrac{1}{4x_0}\right)\right)\right] \leq 0$
+
+                \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/2026putuoyimo12.png}
+                \end{center}
+
+                当$x_0 < 0$，$\dfrac{e^x_0}{x_0} \in (-\infty, 0)$，$2 - \left(x_0 + \dfrac{1}{4x_0}\right) \in [3, +\infty)$
+
+                当$x_0 > 0$，$\dfrac{e^x_0}{x_0} \in [e, +\infty)$，$2 - \left(x_0 + \dfrac{1}{4x_0}\right) \in (-\infty, 1]$
+
+                故$k \in [1, e]$
+            \end{dingautolist}
+        \end{jieda}
     \end{enumerate}
 
     
