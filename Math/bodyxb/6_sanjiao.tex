@@ -995,6 +995,235 @@ $\alpha$的三角函数值可以用$tan\dfrac{\alpha}{2}$来表示
     \end{jieda}
 
 \end{enumerate}
+\subsection*{三角函数的图像与性质}
+\subsubsection*{函数的周期性}
+    如果对于函数$f(x)$，在定义域内的任意一个自变量$x$，都有一个\textbf{非零的常数}$T$，使得$x+T$也在定义域内，并且$f(x) = f(x+T)$.那么我们说$f(x)$是\textbf{周期函数}，$T$为$f(x)$的一个周期.如果在所有的周期中存在一个最小的正数，那么这个周期我们称作最小正周期.如不加说明，周期通常指最小正周期.
+    
+    性质推论：
+    \begin{enumerate}
+        \item 如果$T$是$f(x)$的周期，那么$k \cdot T (k \in \mathbf{Z} \mbox{且} k \neq 0)$都是$f(x)$的周期
+        \item 不是所有周期函数都有最小正周期，例如：常函数$y = c$
+        \item 若函数在两个不同位置具有对称性，则其具有周期性.
+    \end{enumerate}
+\subsubsection*{正弦函数的图像和性质}
+
+    \begin{center}
+        \includegraphics[width=1\linewidth]{bodyxb//src/sinx.png}
+    \end{center}
+        
+    \begin{enumerate}
+        \item 定义：对于任意一个实数$x$，都有唯一确定的正弦值$sinx$与之对应，按照这个对应关系建立的函数就叫做正弦函数，记作$y = sinx$.正弦函数的定义域是实数集$\mathbf{R}$.
+        \item 绘制函数图像：借助单位圆可以做出图像；绘制简图方法：五点法
+        \item 定义域：$\mathbf{R}$
+        \item 周期性：最小正周期为$2\pi$
+        \item 奇偶性：奇函数
+        \item 对称轴：$k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}$
+        \item 对称中心：$(k\pi, 0), k \in \mathbf{Z}$
+        \item 单调性：在$\left[2k\pi-\dfrac{\pi}{2}, 2k\pi+\dfrac{\pi}{2}\right]$内单调递增，在$\left[2k\pi+\dfrac{\pi}{2}, 2k\pi+\dfrac{3\pi}{2}\right]$内单调递减，其中$k \in \mathbf{Z}$
+        \item 最值：最大值为1，最小值为-1，值域为$[-1, 1]$
+    \end{enumerate}
+\subsection*{余弦函数的图像和性质}
+    \begin{center}
+        \includegraphics[width=1\linewidth]{bodyxb//src/cosx.png}
+    \end{center}
+        
+    \begin{enumerate}
+        \item 定义：对于任意一个实数$x$，都有唯一确定的余弦值$cosx$与之对应，按照这个对应关系建立的函数就叫做余弦函数，记作$y = cosx$.余弦函数的定义域是实数集$\mathbf{R}$.
+        \item 绘制函数图像：借助单位圆可以做出图像；绘制简图方法：五点法；可以利用正弦函数图像向左平移$\dfrac{\pi}{2}$得到余弦函数的图像.
+        \item 定义域：$\mathbf{R}$
+        \item 周期性：最小正周期为$2\pi$
+        \item 奇偶性：偶函数
+        \item 对称轴：$k\pi, k \in \mathbf{Z}$
+        \item 对称中心：$\left(k\pi + \dfrac{\pi}{2}, 0\right), k \in \mathbf{Z}$
+        \item 单调性：在$[2k\pi-\pi, 2k\pi]$内单调递增，在$[2k\pi, 2k\pi+\pi]$内单调递减，其中$k \in \mathbf{Z}$
+        \item 最值：最大值为1，最小值为-1，值域为$[-1, 1]$
+    \end{enumerate}
+例题：
+\begin{enumerate}
+    \item 已知正弦函数过点$\left(\dfrac{\pi}{6}, m\right)$，则$m = $\blkda{$\dfrac{1}{2}$}
+    \item 函数$y=\sin{x}$的单调增区间为\blkda[4]{$\left[2k\pi - \dfrac{\pi}{2}, 2k\pi+\dfrac{\pi}{2}\right], k \in \mathbf{Z}$}
+    \item 函数$y = sin2x$的严格减区间为\blkda[4]{$\left[k\pi+\dfrac{\pi}{4}, k\pi+\dfrac{3\pi}{4}\right], k \in \mathbf{Z}$}
+    \item 函数$y = sinx, x \in \left[-\dfrac{\pi}{6}, \dfrac{2\pi}{3}\right]$的值域是\blkda{$\left[-\dfrac{1}{2}, 1\right]$}
+    \item 函数$y = sin\left(x - \dfrac{\pi}{4}\right)$的图象的对称轴为\blkda[4]{直线$x = k\pi+\dfrac{3\pi}{4}, k \in \mathbf{Z}$}，对称中心为\blkda[4]{点$\left(k\pi + \dfrac{\pi}{4}, 0\right), k\in \mathbf{Z}$}    
+
+    \item 下列说法中不正确的是\dotfill(\kh{C})
+    \xx
+    {正弦函数，余弦函数的定义域是 $\mathbf{R}$ ，值域是 $[-1,1]$}
+    {余弦函数当且仅当 $x=2 k \pi(k \in \mathbf{Z})$ 时，取得最大值 1}
+    {余弦函数在 $\left[2 k \pi+\frac{\pi}{2}, 2 k \pi+\frac{3 \pi}{2}\right](k \in \mathbf{Z})$ 上都是严格减函数}
+    {余弦函数在 $[2 k \pi-\pi, 2 k \pi](k \in \mathbf{Z})$ 上都是严格增函数}
+    
+    \item 函数$f(x)=\cos x, x \in \left[-\dfrac{\pi}{4}, \dfrac{5 \pi}{6}\right]$ 的值域为 \blkda[2]{$\left[-\dfrac{\sqrt{3}}{2},1\right]$}.
+
+    \item 函数$f(x)=\cos{x}+\cos{2x}$的值域是\blkda[2]{$\left[-\dfrac{9}{8},2\right]$}.
+
+    \item 函数$y=\cos{2x},x\in \left[-\dfrac{\pi}{6},\dfrac{2\pi}{3}\right]$的单调增区间是\blkda[4]{$\left[-\dfrac{\pi}{6},0\right]$和$\left[\dfrac{\pi}{2},\dfrac{2\pi}{3}\right]$}.
+
+    \item 已知函数$y = 2\cos \left(2 x-\dfrac{\pi}{4}\right)$  ，当函数值为 -2 时，自变量 $x$ 的取值集合为 \blkda[4]{$\{x|x=\dfrac{5\pi}{8}+k\pi,k\in Z\}$}.
+
+    \item 函数$y=\dfrac{\sqrt{\sin{x}}}{1+\cos{x}}$的定义域是\blkda[4]{$[2k\pi,2k\pi+\pi)(k\zz)$}. 
+
+    \item 函数$y=\cos2x+\sin^2x$的值域是\blkda{$[0,1]$}
+    
+    \item 若函数 $y = {\log }_{2}\sin x + {\log }_{2}\cos x$ ，则下列命题正确的是 \dotfill{(\kh{C})}
+    \xx{函数是偶函数}{函数定义域是 $\left( {0,\dfrac{\pi }{2}}\right)$}{函数最大值 $-1$}{函数的最小正周期为 $\pi$}
+    \begin{jieda}
+        由题意知 $\left\{  {\begin{array}{l} \sin x > 0 \\  \cos x > 0 \end{array} \Longrightarrow  x \in  \left( {{2k\pi },{2k\pi } + \dfrac{\pi }{2}}\right) ,k \in  \mathbf{Z}}\right.$，定义域不关于原点对称,则不具有奇偶性，最小正周期为$2\pi$.
+        
+        
+        $y = {\log }_{2}\sin x +  {\log }_{2}\cos x = {\log }_{2}\sin x\cos x = {\log }_{2}\left( {\dfrac{1}{2}\sin {2x}}\right)$ ,因为 $\dfrac{1}{2}\sin {2x} \in  \left( {0,\dfrac{1}{2}}\right\rbrack$ ,所以 ${\log }_{2}\left( {\dfrac{1}{2}\sin {2x}}\right)  \in  ( - \infty , - 1\rbrack$ ,则函数的最大值为 $-1$
+    \end{jieda}
+\end{enumerate}
+
+
+\subsection*{$Asin(\omega x+\varphi)$的图像和性质}
+在物理学和工程技术的许多问题中，经常会遇到形如$y = Asin(\omega x + \varphi)$的函数（其中$A, \omega, \varphi$为常数），例如：物体做简谐运动，如单摆摆动或者弹簧在震动的过程中，物体离开平衡位置的位移$y$与时间$x$的关系为$y = Asin(\omega x + \varphi) (A > 0, \omega > 0)$ \\
+若$A < 0$或者$\omega < 0$，可以利用诱导公式$sin(-\alpha) = -sin\alpha, -sin\alpha = sin(\alpha+\pi)$将$A, \omega$化为正数.\\
+下面给出$Asin(\omega x + \varphi) (A > 0, \omega > 0)$的函数图像和性质.
+\begin{enumerate}
+    \item $A$ \\
+    $A$是物体振动时离开平衡位置的最大距离，称为该震动的\textbf{振幅}.$A$越大，震动的幅度越大.
+    \item $\omega$ \\
+    单摆或者弹簧往复振动一次所需的时间$T = \dfrac{2\pi}{\omega}$，称为该震动的\textbf{周期}（最小正周期）.单位时间内振动的次数，$f = \dfrac{1}{T} = \dfrac{\omega}{2\pi}$称为振动的\textbf{频率}.$\omega = 2\pi f$称为\textbf{圆频率}.$\omega$越大，周期越小，频率越大.
+    \item $\varphi$ \\
+    $\omega x + \varphi$称为该振动的\textbf{相位}.当$x=0$时的相位，即$\varphi$称为初始相位，简称\textbf{初相}，$\varphi$的改变会使得图像左右平移.
+\end{enumerate}
+
+例题：
+\begin{enumerate}
+    \item 函数 $y=-2 \sin \left(\dfrac{\pi}{4}-\dfrac{x}{2}\right)$ 的振幅为\blkda[1]{2}
+    
+    
+    \item 函数 $y=2 \sin \left[2\left(x+\dfrac{1}{6}\right)\right]$ 的初始相位是\blkda[1]{$\dfrac{1}{3}$}
+    
+    
+    \item 将函数 $y=\sin x$ 图像上各点的横坐标缩小为原来的 $\dfrac{1}{4}$ ，纵坐标不变，再将所得图像向左平移 $\dfrac{\pi}{24}$ 个单位长度得到函数 $y=f(x)$ 的图像，则 $f(x)$ 的解析式为\blkda[2]{$\sin{\left(4x+\dfrac{\pi}{6}\right)}$}．
+    
+    \item 已知函数 $f(x)=2 \cos \left(\frac{\pi}{4}-3 x\right), x \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ ，则 $f(x)$ 的单调递增区间是\blkda[3]{$\left[-\frac{\pi}{4}, \frac{\pi}{12}\right] $和$ [\frac{5\pi}{12}, \frac{\pi}{2}]$}
+    
+    \item 关于函数$f(x) = 2sin\left(3x - \dfrac{3\pi}{4}\right)$，以下说法：
+    \begin{dingautolist}{172}
+        \item 其最小正周期为$\dfrac{2\pi}{3}$
+        \item 图像关于点$\left(\dfrac{\pi}{4}, 0\right)$对称
+        \item 直线$x = -\dfrac{\pi}{4}$是其一条对称轴
+    \end{dingautolist} 其中说法正确的序号是\blkda{\ding{172}, \ding{173}, \ding{174}}
+
+    \item 已知函数$f(x) = sin\omega x+acos\omega x (\omega > 0)$的最小正周期为$2\pi$
+    \begin{enumerate}
+        \item 求$\omega$的值
+        \item 已知直线$x = -\dfrac{\pi}{4}$是函数$f(x)$的一条对称轴，求$f(x)$的最大值与最小值
+    \end{enumerate}
+    \begin{jieda}
+        $f(x) = \sqrt{a^2+1}sin(\omega x + \varphi)$（$cos\varphi = \dfrac{1}{\sqrt{a^2+1}}, sin\varphi = \dfrac{a}{\sqrt{a^2+1}}$）$\dfrac{2\pi}{\omega} = T = 2\pi$，故$\omega = 1$
+        \begin{enumerate}
+            \item 方法1 \\
+             $f(x) = sinx + a \cdot cosx$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$f\left(-\dfrac{\pi}{4}\right) = \pm \sqrt{a^2+1}$，即$-\dfrac{\sqrt{2}}{2} + a \cdot \dfrac{\sqrt{2}}{2} = \pm \sqrt{a^2+1}$，即$a-1 = \pm \sqrt{2(a^2+1)}$，即$a^2-2a+1 = 2(a^2+1)$，即$a^2+2a+1 = 0$，因此$a = -1$，故$f(x)$的最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
+            \item 方法2 \\
+            $f(x) = \sqrt{a^2+1} sin(x+\varphi)$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$-\dfrac{\pi}{4} + \varphi = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}$，因此$\varphi = k\pi + \dfrac{3\pi}{4}, k \in \mathbf{Z}$因此$tan\varphi = a = -1$，因此$f(x) = \sqrt{2}sin(x - \dfrac{\pi}{4})$，故其最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
+            \item 方法3 \\
+            $f(x) = sinx + a \cdot cosx$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$f(0) = f(-\dfrac{\pi}{2})$，故$a = -1$，经检验$f(x) = sinx - cosx$符合要求，故$f(x)$的最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
+        \end{enumerate}
+        当$x = 2k\pi - \dfrac{\pi}{4}, k \in \mathbf{Z}$的时候取得最小值，当$x = 2k\pi + \dfrac{\pi}{4}, k \in \mathbf{Z}$的时候取得最大值
+    \end{jieda}
+    
+    \item 判断下列函数的奇偶性，并写出最小正周期
+    \begin{dingautolist}{172}
+        \item $f(x) = sin^6x + cos^6x$；\blkda[3]{偶函数}，\blkda{$\dfrac{\pi}{2}$}
+        \item $f(x) = asin^2x + bcos^2x(a^2+b^2 \neq 0, b \neq a)$；\blkda[3]{偶函数}，\blkda{$\pi$}
+    \end{dingautolist}
+
+
+    \item 已知函数 $f(x)=\cos \omega x(\omega>0)$ 在区间 $[0,2 \pi]$ 有且仅有 3 个零点，则 $\omega$ 的取值范围是 \blkda[2]{$\left[\dfrac{5}{4},\dfrac{7}{4}\right)$} ．
+    \begin{jieda}
+        设$t = \omega x$，$f(x) = g(t) = cost$在$\left[0, 2\omega\pi\right]$上有三个零点 \\
+        故$\left[0, 2\omega\pi\right]$与$\left \{ x | x = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\}\right.$有三个公共元素. \\
+        即$\left[0, 2\omega\right]$与$\left \{ x | x = k + \dfrac{1}{2}, k \in \mathbf{Z}\}\right.$有三个公共元素，故公共元素为$\dfrac{1}{2}, \dfrac{3}{2}, \dfrac{5}{2}$，因此$\omega \in \left[\dfrac{5}{4},\dfrac{7}{4}\right)$
+    \end{jieda}
+    \item 已知函数 $f(x)=\cos(\omega x + \dfrac{\pi}{3})(\omega>0)$ 在区间 $[\pi,2 \pi]$ 有且仅有 3 个零点，则 $\omega$ 的取值范围是 \blkda[6]{$\left[\dfrac{25}{12}, \dfrac{13}{6}\right] \cup \left[\dfrac{31}{12}, \dfrac{37}{12}\right)\cup \left(\dfrac{19}{6}, \dfrac{43}{12}\right) $} ．
+    \begin{jieda}
+        设$t = \omega x + \dfrac{\pi}{3}$，$f(x) = g(t) = cost$在$\left[\omega \pi + \dfrac{\pi}{3}, 2\omega\pi+\dfrac{\pi}{3}\right]$上有三个零点 \\
+        故$\left[\omega \pi + \dfrac{\pi}{3}, 2\omega\pi+\dfrac{\pi}{3}\right]$与$\left \{ x | x = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\right\}.$有三个公共元素. \\
+        即$\left[\omega, 2\omega\right]$与$\left \{ x | x = k + \dfrac{1}{6}, k \in \mathbf{Z}\}\right.$有三个公共元素. 
+        故根据区间长度必有$2 < \omega < 4$，故可行的公共元素有$\dfrac{13}{6},\dfrac{19}{6}, \dfrac{25}{6}, \dfrac{31}{6}, \dfrac{37}{6}, \dfrac{43}{6}$
+        \begin{dingautolist}{172}
+            \item 若交集为$\left \{ \dfrac{13}{6}, \dfrac{19}{6}, \dfrac{25}{6} \right \}$，则有$\left \{ \begin{array}{l}
+                 \dfrac{7}{6} < \omega \leq \dfrac{13}{6} \\
+                 \dfrac{25}{6} \leq 2\omega < \dfrac{31}{6}
+            \end{array} \right.$，即$\omega \in \left[\dfrac{25}{12}, \dfrac{13}{6}\right]$
+            \item 若交集为$\left \{ \dfrac{19}{6}, \dfrac{25}{6}, \dfrac{31}{6} \right \}$，则有$\left \{ \begin{array}{l}
+                 \dfrac{13}{6} < \omega \leq \dfrac{19}{6} \\
+                 \dfrac{31}{6} \leq 2\omega < \dfrac{37}{6}
+            \end{array} \right.$，即$\omega \in \left[\dfrac{31}{12}, \dfrac{37}{12}\right)$
+            \item 若交集为$\left \{ \dfrac{25}{6}, \dfrac{31}{6}, \dfrac{37}{6} \right \}$，则有$\left \{ \begin{array}{l}
+                 \dfrac{19}{6} < \omega \leq \dfrac{25}{6} \\
+                 \dfrac{37}{6} \leq 2\omega < \dfrac{43}{6}
+            \end{array} \right.$，即$\omega \in \left(\dfrac{19}{6}, \dfrac{43}{12}\right)$
+            \item 其余情况无解.
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{正切函数的图像和性质}
+    \begin{center}
+        \includegraphics[width=1\linewidth]{bodyxb//src/tanx.png}
+    \end{center}
+    \begin{enumerate}
+        \item 定义：对于任意一个不等于$k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})$的实数$x$，都有唯一确定的正切值$tanx$与之对应，按照这个对应关系建立的函数就叫做正切函数，记作$y = tanx$.正切函数的定义域是$\{x | x \neq k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})\}$.
+        \item 绘制函数图像：借助单位圆可以做出图像.
+        \item 定义域：$\{x | x \neq k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\}$
+        \item 周期性：最小正周期为$\pi$
+        \item 奇偶性：奇函数
+        \item 对称中心：$\left(\dfrac{k\pi}{2}, 0\right), k \in \mathbf{Z}$
+        \item 单调性：在$\left(k\pi - \dfrac{\pi}{2}, k\pi + \dfrac{\pi}{2}\right)$内单调递增，其中$k \in \mathbf{Z}$
+        \item 最值：没有最大值或最小值，值域为$\mathbf{R}$
+    \end{enumerate}
+例题：
+
+\begin{enumerate}
+\item 正切函数的最小正周期是\blkda{$\pi$}，对称中心为\blkda[3]{$\left(\dfrac{k\pi}{2}, 0\right), k \in \mathbf{Z}$}
+\item 有人说: ``正切函数在整个定义域内是单调递增的函数.'' 这句话对吗? 为什么? \blkda{不对}. 
+\begin{jieda}
+反例: $\tan\frac{\pi}{3}>\tan(\pi+\frac{\pi}{6})$. 
+\end{jieda}
+\item 函数$tan(ax+b)(a \neq 0)$的最小正周期为\blkda{$\dfrac{\pi}{|a|}$}
+\item 根据正切函数的图像，写出使下列不等式成立的$x$值的集合：\\
+\begin{enumerate*}
+    \item $1+tanx \geq 0$
+    \item $tanx - \sqrt{3} \geq 0$
+\end{enumerate*}
+\begin{jieda}
+    \begin{enumerate*}
+    \item $\{x | -\dfrac{\pi}{4}+k\pi \leq x < \dfrac{\pi}{2}+k\pi, k \in \mathbf{Z}\}$
+    \item $\{x | \dfrac{\pi}{3}+k\pi \leq x < \dfrac{\pi}{2}+k\pi, k \in \mathbf{Z}\}$
+\end{enumerate*}
+\end{jieda}
+\item 函数$y=\abs{\tan{x}}$的最小正周期为\blkda{$\pi$}
+    \item 函数$y=\sqrt{1-\tan^2x}$的定义域为\blkda[4]{$\left[k\pi-\dfrac{\pi}{4},k\pi+\dfrac{\pi}{4}\right](k\zz)$}
+    \item 关于$x$的不等式$\tan2x\leq-1$的解集为\blkda[4]{$\left(\dfrac{k\pi}{2}-\dfrac{\pi}{4},\dfrac{k\pi}{2}-\dfrac{\pi}{8}\right](k\zz)$}
+    \begin{jieda}
+    $k\pi-\frac{\pi}{2}<2x\leq k\pi-\frac{\pi}{4}$. 
+    \end{jieda}
+    \item $f(x) = \left \{ \begin{array}{l}
+         tan(\pi x), x \geq 0 \\
+         f(x+1), x < 0
+    \end{array} \right.$，则$f\left(-\dfrac{2}{3}\right) = $\blkda{$\sqrt{3}$}
+    \begin{jieda}
+        $f\left(-\dfrac{2}{3}\right) = f\left(\dfrac{1}{3}\right) = tan\left(\dfrac{\pi}{3}\right) = \sqrt{3}$
+    \end{jieda}
+    \item 已知函数$f(x) = tan\left(\omega x + \dfrac{\pi}{3}\right) (\omega > 0)$在区间$\left(-\dfrac{\pi}{3}, \dfrac{\pi}{3}\right)$上单调，则$\omega$的取值范围为\blkda{$\left(0, \dfrac{1}{2}\right]$}
+    \begin{jieda}
+        换元$t = \omega x + \dfrac{\pi}{3}$，故问题等价于$tant$在$\left((1-\omega) \cdot \dfrac{\pi}{3}, (1+\omega) \cdot \dfrac{\pi}{3}\right)$上单调递增，又因为$tant$在$\left(k\pi - \dfrac{\pi}{2}, k\pi+\dfrac{\pi}{2} \right), k \in \mathbf{Z}$上单调递增 \\
+        因此$\left((1-\omega) \cdot \dfrac{\pi}{3}, (1+\omega) \cdot \dfrac{\pi}{3}\right) \subseteq \left(k\pi - \dfrac{\pi}{2}, k\pi+\dfrac{\pi}{2} \right), k \in \mathbf{Z}$，\\
+        即$\left(1-\omega, 1+\omega\right) \subseteq \left(3k-\dfrac{3}{2}, 3k+\dfrac{3}{2}\right), k \in \mathbf{Z}$，易知$1 \in \left(3k-\dfrac{3}{2}, 3k+\dfrac{3}{2}\right), k \in \mathbf{Z}$，因此必有$k = 0$，故$\omega \in \left(0, \dfrac{1}{2}\right]$
+    \end{jieda}
+\end{enumerate}
+\subsection*{反三角函数}
+函数 $y = arcsinx(x \in [-1,1])$、 $y = arccosx (x \in [-1,1])$与 $y = arctanx (x \in (-\infty, +\infty))$分别称为反正弦函数、反余弦函数与反正切函数.这些函数统称为反三角函数.
+\par $y = sinx\left(x \in \left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]\right)$与$y = arcsinx(x \in [-1,1])$互为反函数.
+\par $y = cosx(x \in [0,\pi])$与$y = arccosx(x \in [-1,1])$互为反函数.
+\par $y = tanx\left(x \in \left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)\right)$与$y = arctanx(x \in (-\infty, +\infty))$互为反函数.
+
+
 \subsection*{正弦定理和余弦定理}
 \subsubsection*{解三角形}
 解三角形是指在三角形的三条边和三个角中至少已知其中三个(至少已知一条边)求其余的边和角的任务.
@@ -1170,222 +1399,3 @@ $S_{\triangle ABC} = \dfrac{1}{2}absinC = \dfrac{1}{2}acsinB = \dfrac{1}{2}bcsin
         \end{dingautolist}
     \end{jieda}
 \end{enumerate}
-
-\subsection*{三角函数的图像与性质}
-\subsubsection*{函数的周期性}
-    如果对于函数$f(x)$，在定义域内的任意一个自变量$x$，都有一个\textbf{非零的常数}$T$，使得$x+T$也在定义域内，并且$f(x) = f(x+T)$.那么我们说$f(x)$是\textbf{周期函数}，$T$为$f(x)$的一个周期.如果在所有的周期中存在一个最小的正数，那么这个周期我们称作最小正周期.如不加说明，周期通常指最小正周期.
-    
-    性质推论：
-    \begin{enumerate}
-        \item 如果$T$是$f(x)$的周期，那么$k \cdot T (k \in \mathbf{Z} \mbox{且} k \neq 0)$都是$f(x)$的周期
-        \item 不是所有周期函数都有最小正周期，例如：常函数$y = c$
-        \item 若函数在两个不同位置具有对称性，则其具有周期性.
-    \end{enumerate}
-\subsubsection*{正弦函数的图像和性质}
-
-    \begin{center}
-        \includegraphics[width=1\linewidth]{bodyxb//src/sinx.png}
-    \end{center}
-        
-    \begin{enumerate}
-        \item 定义：对于任意一个实数$x$，都有唯一确定的正弦值$sinx$与之对应，按照这个对应关系建立的函数就叫做正弦函数，记作$y = sinx$.正弦函数的定义域是实数集$\mathbf{R}$.
-        \item 绘制函数图像：借助单位圆可以做出图像；绘制简图方法：五点法
-        \item 定义域：$\mathbf{R}$
-        \item 周期性：最小正周期为$2\pi$
-        \item 奇偶性：奇函数
-        \item 对称轴：$k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}$
-        \item 对称中心：$(k\pi, 0), k \in \mathbf{Z}$
-        \item 单调性：在$\left[2k\pi-\dfrac{\pi}{2}, 2k\pi+\dfrac{\pi}{2}\right]$内单调递增，在$\left[2k\pi+\dfrac{\pi}{2}, 2k\pi+\dfrac{3\pi}{2}\right]$内单调递减，其中$k \in \mathbf{Z}$
-        \item 最值：最大值为1，最小值为-1，值域为$[-1, 1]$
-    \end{enumerate}
-\subsection*{余弦函数的图像和性质}
-    \begin{center}
-        \includegraphics[width=1\linewidth]{bodyxb//src/cosx.png}
-    \end{center}
-        
-    \begin{enumerate}
-        \item 定义：对于任意一个实数$x$，都有唯一确定的余弦值$cosx$与之对应，按照这个对应关系建立的函数就叫做余弦函数，记作$y = cosx$.余弦函数的定义域是实数集$\mathbf{R}$.
-        \item 绘制函数图像：借助单位圆可以做出图像；绘制简图方法：五点法；可以利用正弦函数图像向左平移$\dfrac{\pi}{2}$得到余弦函数的图像.
-        \item 定义域：$\mathbf{R}$
-        \item 周期性：最小正周期为$2\pi$
-        \item 奇偶性：偶函数
-        \item 对称轴：$k\pi, k \in \mathbf{Z}$
-        \item 对称中心：$\left(k\pi + \dfrac{\pi}{2}, 0\right), k \in \mathbf{Z}$
-        \item 单调性：在$[2k\pi-\pi, 2k\pi]$内单调递增，在$[2k\pi, 2k\pi+\pi]$内单调递减，其中$k \in \mathbf{Z}$
-        \item 最值：最大值为1，最小值为-1，值域为$[-1, 1]$
-    \end{enumerate}
-例题：
-\begin{enumerate}
-    \item 已知正弦函数过点$\left(\dfrac{\pi}{6}, m\right)$，则$m = $\blkda{$\dfrac{1}{2}$}
-    \item 函数$y=\sin{x}$的单调增区间为\blkda[4]{$\left[2k\pi - \dfrac{\pi}{2}, 2k\pi+\dfrac{\pi}{2}\right], k \in \mathbf{Z}$}
-    \item 函数$y = sin2x$的严格减区间为\blkda[4]{$\left[k\pi+\dfrac{\pi}{4}, k\pi+\dfrac{3\pi}{4}\right], k \in \mathbf{Z}$}
-    \item 函数$y = sinx, x \in \left[-\dfrac{\pi}{6}, \dfrac{2\pi}{3}\right]$的值域是\blkda{$\left[-\dfrac{1}{2}, 1\right]$}
-    \item 函数$y = sin\left(x - \dfrac{\pi}{4}\right)$的图象的对称轴为\blkda[4]{直线$x = k\pi+\dfrac{3\pi}{4}, k \in \mathbf{Z}$}，对称中心为\blkda[4]{点$\left(k\pi + \dfrac{\pi}{4}, 0\right), k\in \mathbf{Z}$}    
-
-    \item 下列说法中不正确的是\dotfill(\kh{C})
-    \xx
-    {正弦函数，余弦函数的定义域是 $\mathbf{R}$ ，值域是 $[-1,1]$}
-    {余弦函数当且仅当 $x=2 k \pi(k \in \mathbf{Z})$ 时，取得最大值 1}
-    {余弦函数在 $\left[2 k \pi+\frac{\pi}{2}, 2 k \pi+\frac{3 \pi}{2}\right](k \in \mathbf{Z})$ 上都是严格减函数}
-    {余弦函数在 $[2 k \pi-\pi, 2 k \pi](k \in \mathbf{Z})$ 上都是严格增函数}
-    
-    \item 函数$f(x)=\cos x, x \in \left[-\dfrac{\pi}{4}, \dfrac{5 \pi}{6}\right]$ 的值域为 \blkda[2]{$\left[-\dfrac{\sqrt{3}}{2},1\right]$}.
-
-    \item 函数$f(x)=\cos{x}+\cos{2x}$的值域是\blkda[2]{$\left[-\dfrac{9}{8},2\right]$}.
-
-    \item 函数$y=\cos{2x},x\in \left[-\dfrac{\pi}{6},\dfrac{2\pi}{3}\right]$的单调增区间是\blkda[4]{$\left[-\dfrac{\pi}{6},0\right]$和$\left[\dfrac{\pi}{2},\dfrac{2\pi}{3}\right]$}.
-
-    \item 已知函数$y = 2\cos \left(2 x-\dfrac{\pi}{4}\right)$  ，当函数值为 -2 时，自变量 $x$ 的取值集合为 \blkda[4]{$\{x|x=\dfrac{5\pi}{8}+k\pi,k\in Z\}$}.
-
-    \item 函数$y=\dfrac{\sqrt{\sin{x}}}{1+\cos{x}}$的定义域是\blkda[4]{$[2k\pi,2k\pi+\pi)(k\zz)$}. 
-
-    \item 函数$y=\cos2x+\sin^2x$的值域是\blkda{$[0,1]$}
-\end{enumerate}
-
-
-\subsection*{$Asin(\omega x+\varphi)$的图像和性质}
-在物理学和工程技术的许多问题中，经常会遇到形如$y = Asin(\omega x + \varphi)$的函数（其中$A, \omega, \varphi$为常数），例如：物体做简谐运动，如单摆摆动或者弹簧在震动的过程中，物体离开平衡位置的位移$y$与时间$x$的关系为$y = Asin(\omega x + \varphi) (A > 0, \omega > 0)$ \\
-若$A < 0$或者$\omega < 0$，可以利用诱导公式$sin(-\alpha) = -sin\alpha, -sin\alpha = sin(\alpha+\pi)$将$A, \omega$化为正数.\\
-下面给出$Asin(\omega x + \varphi) (A > 0, \omega > 0)$的函数图像和性质.
-\begin{enumerate}
-    \item $A$ \\
-    $A$是物体振动时离开平衡位置的最大距离，称为该震动的\textbf{振幅}.$A$越大，震动的幅度越大.
-    \item $\omega$ \\
-    单摆或者弹簧往复振动一次所需的时间$T = \dfrac{2\pi}{\omega}$，称为该震动的\textbf{周期}（最小正周期）.单位时间内振动的次数，$f = \dfrac{1}{T} = \dfrac{\omega}{2\pi}$称为振动的\textbf{频率}.$\omega = 2\pi f$称为\textbf{圆频率}.$\omega$越大，周期越小，频率越大.
-    \item $\varphi$ \\
-    $\omega x + \varphi$称为该振动的\textbf{相位}.当$x=0$时的相位，即$\varphi$称为初始相位，简称\textbf{初相}，$\varphi$的改变会使得图像左右平移.
-\end{enumerate}
-
-例题：
-\begin{enumerate}
-    \item 函数 $y=-2 \sin \left(\frac{\pi}{4}-\frac{x}{2}\right)$ 的振幅为\blkda[1]{2}
-    
-    
-    \item 函数 $y=2 \sin \left[2\left(x+\frac{1}{6}\right)\right]$ 的初始相位是\blkda[1]{$\dfrac{1}{3}$}
-    
-    
-    \item 将函数 $y=\sin x$ 图像上各点的横坐标缩小为原来的 $\dfrac{1}{4}$ ，纵坐标不变，再将所得图像向左平移 $\dfrac{\pi}{24}$ 个单位长度得到函数 $y=f(x)$ 的图像，则 $f(x)$ 的解析式为\blkda[2]{$\sin{\left(4x+\dfrac{\pi}{6}\right)}$}．
-    
-    \item 已知函数 $f(x)=2 \cos \left(\frac{\pi}{4}-3 x\right), x \in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ ，则 $f(x)$ 的单调递增区间是\blkda[3]{$\left[-\frac{\pi}{4}, \frac{\pi}{12}\right] $和$ [\frac{5\pi}{12}, \frac{\pi}{2}]$}
-    
-    \item 关于函数$f(x) = 2sin\left(3x - \dfrac{3\pi}{4}\right)$，以下说法：
-    \begin{dingautolist}{172}
-        \item 其最小正周期为$\dfrac{2\pi}{3}$
-        \item 图像关于点$\left(\dfrac{\pi}{4}, 0\right)$对称
-        \item 直线$x = -\dfrac{\pi}{4}$是其一条对称轴
-    \end{dingautolist} 其中说法正确的序号是\blkda{\ding{172}, \ding{173}, \ding{174}}
-
-    \item 已知函数$f(x) = sin\omega x+acos\omega x (\omega > 0)$的最小正周期为$2\pi$
-    \begin{enumerate}
-        \item 求$\omega$的值
-        \item 已知直线$x = -\dfrac{\pi}{4}$是函数$f(x)$的一条对称轴，求$f(x)$的最大值与最小值
-    \end{enumerate}
-    \begin{jieda}
-        $f(x) = \sqrt{a^2+1}sin(\omega x + \varphi)$（$cos\varphi = \dfrac{1}{\sqrt{a^2+1}}, sin\varphi = \dfrac{a}{\sqrt{a^2+1}}$）$\dfrac{2\pi}{\omega} = T = 2\pi$，故$\omega = 1$
-        \begin{enumerate}
-            \item 方法1 \\
-             $f(x) = sinx + a \cdot cosx$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$f\left(-\dfrac{\pi}{4}\right) = \pm \sqrt{a^2+1}$，即$-\dfrac{\sqrt{2}}{2} + a \cdot \dfrac{\sqrt{2}}{2} = \pm \sqrt{a^2+1}$，即$a-1 = \pm \sqrt{2(a^2+1)}$，即$a^2-2a+1 = 2(a^2+1)$，即$a^2+2a+1 = 0$，因此$a = -1$，故$f(x)$的最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
-            \item 方法2 \\
-            $f(x) = \sqrt{a^2+1} sin(x+\varphi)$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$-\dfrac{\pi}{4} + \varphi = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}$，因此$\varphi = k\pi + \dfrac{3\pi}{4}, k \in \mathbf{Z}$因此$tan\varphi = a = -1$，因此$f(x) = \sqrt{2}sin(x - \dfrac{\pi}{4})$，故其最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
-            \item 方法3 \\
-            $f(x) = sinx + a \cdot cosx$，因为$x = -\dfrac{\pi}{4}$是函数的一条对称轴，因此$f(0) = f(-\dfrac{\pi}{2})$，故$a = -1$，经检验$f(x) = sinx - cosx$符合要求，故$f(x)$的最大值为$\sqrt{2}$，最小值为$-\sqrt{2}$
-        \end{enumerate}
-        当$x = 2k\pi - \dfrac{\pi}{4}, k \in \mathbf{Z}$的时候取得最小值，当$x = 2k\pi + \dfrac{\pi}{4}, k \in \mathbf{Z}$的时候取得最大值
-    \end{jieda}
-    
-    \item 判断下列函数的奇偶性，并写出最小正周期
-    \begin{dingautolist}{172}
-        \item $f(x) = sin^6x + cos^6x$；\blkda[3]{偶函数}，\blkda{$\dfrac{\pi}{2}$}
-        \item $f(x) = asin^2x + bcos^2x(a^2+b^2 \neq 0, b \neq a)$；\blkda[3]{偶函数}，\blkda{$\pi$}
-    \end{dingautolist}
-
-
-    \item 已知函数 $f(x)=\cos \omega x(\omega>0)$ 在区间 $[0,2 \pi]$ 有且仅有 3 个零点，则 $\omega$ 的取值范围是 \blkda[2]{$\left[\dfrac{5}{4},\dfrac{7}{4}\right)$} ．
-    \begin{jieda}
-        设$t = \omega x$，$f(x) = g(t) = cost$在$\left[0, 2\omega\pi\right]$上有三个零点 \\
-        故$\left[0, 2\omega\pi\right]$与$\left \{ x | x = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\}\right.$有三个公共元素. \\
-        即$\left[0, 2\omega\right]$与$\left \{ x | x = k + \dfrac{1}{2}, k \in \mathbf{Z}\}\right.$有三个公共元素，故公共元素为$\dfrac{1}{2}, \dfrac{3}{2}, \dfrac{5}{2}$，因此$\omega \in \left[\dfrac{5}{4},\dfrac{7}{4}\right)$
-    \end{jieda}
-    \item 已知函数 $f(x)=\cos(\omega x + \dfrac{\pi}{3})(\omega>0)$ 在区间 $[\pi,2 \pi]$ 有且仅有 3 个零点，则 $\omega$ 的取值范围是 \blkda[6]{$\left[\dfrac{25}{12}, \dfrac{13}{6}\right] \cup \left[\dfrac{31}{12}, \dfrac{37}{12}\right)\cup \left(\dfrac{19}{6}, \dfrac{43}{12}\right) $} ．
-    \begin{jieda}
-        设$t = \omega x + \dfrac{\pi}{3}$，$f(x) = g(t) = cost$在$\left[\omega \pi + \dfrac{\pi}{3}, 2\omega\pi+\dfrac{\pi}{3}\right]$上有三个零点 \\
-        故$\left[\omega \pi + \dfrac{\pi}{3}, 2\omega\pi+\dfrac{\pi}{3}\right]$与$\left \{ x | x = k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\right\}.$有三个公共元素. \\
-        即$\left[\omega, 2\omega\right]$与$\left \{ x | x = k + \dfrac{1}{6}, k \in \mathbf{Z}\}\right.$有三个公共元素. 
-        故根据区间长度必有$2 < \omega < 4$，故可行的公共元素有$\dfrac{13}{6},\dfrac{19}{6}, \dfrac{25}{6}, \dfrac{31}{6}, \dfrac{37}{6}, \dfrac{43}{6}$
-        \begin{dingautolist}{172}
-            \item 若交集为$\left \{ \dfrac{13}{6}, \dfrac{19}{6}, \dfrac{25}{6} \right \}$，则有$\left \{ \begin{array}{l}
-                 \dfrac{7}{6} < \omega \leq \dfrac{13}{6} \\
-                 \dfrac{25}{6} \leq 2\omega < \dfrac{31}{6}
-            \end{array} \right.$，即$\omega \in \left[\dfrac{25}{12}, \dfrac{13}{6}\right]$
-            \item 若交集为$\left \{ \dfrac{19}{6}, \dfrac{25}{6}, \dfrac{31}{6} \right \}$，则有$\left \{ \begin{array}{l}
-                 \dfrac{13}{6} < \omega \leq \dfrac{19}{6} \\
-                 \dfrac{31}{6} \leq 2\omega < \dfrac{37}{6}
-            \end{array} \right.$，即$\omega \in \left[\dfrac{31}{12}, \dfrac{37}{12}\right)$
-            \item 若交集为$\left \{ \dfrac{25}{6}, \dfrac{31}{6}, \dfrac{37}{6} \right \}$，则有$\left \{ \begin{array}{l}
-                 \dfrac{19}{6} < \omega \leq \dfrac{25}{6} \\
-                 \dfrac{37}{6} \leq 2\omega < \dfrac{43}{6}
-            \end{array} \right.$，即$\omega \in \left(\dfrac{19}{6}, \dfrac{43}{12}\right)$
-            \item 其余情况无解.
-        \end{dingautolist}
-    \end{jieda}
-\end{enumerate}
-
-\subsection*{正切函数的图像和性质}
-    \begin{center}
-        \includegraphics[width=1\linewidth]{bodyxb//src/tanx.png}
-    \end{center}
-    \begin{enumerate}
-        \item 定义：对于任意一个不等于$k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})$的实数$x$，都有唯一确定的正切值$tanx$与之对应，按照这个对应关系建立的函数就叫做正切函数，记作$y = tanx$.正切函数的定义域是$\{x | x \neq k\pi + \dfrac{\pi}{2} (k \in \mathbf{Z})\}$.
-        \item 绘制函数图像：借助单位圆可以做出图像.
-        \item 定义域：$\{x | x \neq k\pi + \dfrac{\pi}{2}, k \in \mathbf{Z}\}$
-        \item 周期性：最小正周期为$\pi$
-        \item 奇偶性：奇函数
-        \item 对称中心：$\left(\dfrac{k\pi}{2}, 0\right), k \in \mathbf{Z}$
-        \item 单调性：在$\left(k\pi - \dfrac{\pi}{2}, k\pi + \dfrac{\pi}{2}\right)$内单调递增，其中$k \in \mathbf{Z}$
-        \item 最值：没有最大值或最小值，值域为$\mathbf{R}$
-    \end{enumerate}
-例题：
-
-\begin{enumerate}
-\item 正切函数的最小正周期是\blkda{$\pi$}，对称中心为\blkda[3]{$\left(\dfrac{k\pi}{2}, 0\right), k \in \mathbf{Z}$}
-\item 有人说: ``正切函数在整个定义域内是单调递增的函数.'' 这句话对吗? 为什么? \blkda{不对}. 
-\begin{jieda}
-反例: $\tan\frac{\pi}{3}>\tan(\pi+\frac{\pi}{6})$. 
-\end{jieda}
-\item 函数$tan(ax+b)(a \neq 0)$的最小正周期为\blkda{$\dfrac{\pi}{|a|}$}
-\item 根据正切函数的图像，写出使下列不等式成立的$x$值的集合：\\
-\begin{enumerate*}
-    \item $1+tanx \geq 0$
-    \item $tanx - \sqrt{3} \geq 0$
-\end{enumerate*}
-\begin{jieda}
-    \begin{enumerate*}
-    \item $\{x | -\dfrac{\pi}{4}+k\pi \leq x < \dfrac{\pi}{2}+k\pi, k \in \mathbf{Z}\}$
-    \item $\{x | \dfrac{\pi}{3}+k\pi \leq x < \dfrac{\pi}{2}+k\pi, k \in \mathbf{Z}\}$
-\end{enumerate*}
-\end{jieda}
-\item 函数$y=\abs{\tan{x}}$的最小正周期为\blkda{$\pi$}
-    \item 函数$y=\sqrt{1-\tan^2x}$的定义域为\blkda[4]{$\left[k\pi-\dfrac{\pi}{4},k\pi+\dfrac{\pi}{4}\right](k\zz)$}
-    \item 关于$x$的不等式$\tan2x\leq-1$的解集为\blkda[4]{$\left(\dfrac{k\pi}{2}-\dfrac{\pi}{4},\dfrac{k\pi}{2}-\dfrac{\pi}{8}\right](k\zz)$}
-    \begin{jieda}
-    $k\pi-\frac{\pi}{2}<2x\leq k\pi-\frac{\pi}{4}$. 
-    \end{jieda}
-    \item $f(x) = \left \{ \begin{array}{l}
-         tan(\pi x), x \geq 0 \\
-         f(x+1), x < 0
-    \end{array} \right.$，则$f\left(-\dfrac{2}{3}\right) = $\blkda{$\sqrt{3}$}
-    \begin{jieda}
-        $f\left(-\dfrac{2}{3}\right) = f\left(\dfrac{1}{3}\right) = tan\left(\dfrac{\pi}{3}\right) = \sqrt{3}$
-    \end{jieda}
-    \item 已知函数$f(x) = tan\left(\omega x + \dfrac{\pi}{3}\right) (\omega > 0)$在区间$\left(-\dfrac{\pi}{3}, \dfrac{\pi}{3}\right)$上单调，则$\omega$的取值范围为\blkda{$\left(0, \dfrac{1}{2}\right]$}
-    \begin{jieda}
-        换元$t = \omega x + \dfrac{\pi}{3}$，故问题等价于$tant$在$\left((1-\omega) \cdot \dfrac{\pi}{3}, (1+\omega) \cdot \dfrac{\pi}{3}\right)$上单调递增，又因为$tant$在$\left(k\pi - \dfrac{\pi}{2}, k\pi+\dfrac{\pi}{2} \right), k \in \mathbf{Z}$上单调递增 \\
-        因此$\left((1-\omega) \cdot \dfrac{\pi}{3}, (1+\omega) \cdot \dfrac{\pi}{3}\right) \subseteq \left(k\pi - \dfrac{\pi}{2}, k\pi+\dfrac{\pi}{2} \right), k \in \mathbf{Z}$，\\
-        即$\left(1-\omega, 1+\omega\right) \subseteq \left(3k-\dfrac{3}{2}, 3k+\dfrac{3}{2}\right), k \in \mathbf{Z}$，易知$1 \in \left(3k-\dfrac{3}{2}, 3k+\dfrac{3}{2}\right), k \in \mathbf{Z}$，因此必有$k = 0$，故$\omega \in \left(0, \dfrac{1}{2}\right]$
-    \end{jieda}
-\end{enumerate}
-\subsection*{反三角函数}
-函数 $y = arcsinx(x \in [-1,1])$、 $y = arccosx (x \in [-1,1])$与 $y = arctanx (x \in (-\infty, +\infty))$分别称为反正弦函数、反余弦函数与反正切函数.这些函数统称为反三角函数.
-\par $y = sinx\left(x \in \left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]\right)$与$y = arcsinx(x \in [-1,1])$互为反函数.
-\par $y = cosx(x \in [0,\pi])$与$y = arccosx(x \in [-1,1])$互为反函数.
-\par $y = tanx\left(x \in \left(-\dfrac{\pi}{2},\dfrac{\pi}{2}\right)\right)$与$y = arctanx(x \in (-\infty, +\infty))$互为反函数.

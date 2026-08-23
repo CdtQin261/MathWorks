@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  19 AUG 2026 15:57
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  23 AUG 2026 18:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,7 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/yuanzhuiquxianjielun.aux))
+ (./mainxb.aux (./bodyxb/6_sanjiao.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1797,9 +1797,9 @@ Package hyperref Info: Link coloring ON on input line 16.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/yuanzhuiquxianjielun.aux'.
+\openout2 = `bodyxb/10_zhixian.aux'.
 
- (./bodyxb/yuanzhuiquxianjielun.tex
+ (./bodyxb/10_zhixian.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1846,11 +1846,62 @@ LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 6
  (/usr/local/texlive/2026/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
-) [1
+)
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 50.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 50.
+
+[1
 
 
 
-] [2]) [3] [4] (./mainxb.aux (./bodyxb/yuanzhuiquxianjielun.aux))
+]
+File: bodyxb/src/0196d77a-ddcb-7060-9d7b-57bbae276c4f_3_718_1050_208_202_0.jpg Graphic file (type bmp)
+<bodyxb/src/0196d77a-ddcb-7060-9d7b-57bbae276c4f_3_718_1050_208_202_0.jpg>
+ [2]
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
+[3] [4] [5] [6] [7]
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STFangsong'. Check the typeset output, and if it is
+(fontspec)             okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'STFangsong(0)' created for font
+(fontspec)             'STFangsong' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
+
+ [8] [9]
+File: bodyxb//src/zhixiandejiajiao1.png Graphic file (type bmp)
+<bodyxb//src/zhixiandejiajiao1.png>
+ [10] [11] [12] [13] [14]) [15] (./mainxb.aux (./bodyxb/10_zhixian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1859,12 +1910,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49374 strings out of 468168
- 1154829 string characters out of 5432816
- 1748487 words of memory out of 5000000
- 77123 multiletter control sequences out of 15000+600000
- 645589 words of font info for 101 fonts, out of 8000000 for 9000
+ 49618 strings out of 468168
+ 1166830 string characters out of 5432816
+ 1735487 words of memory out of 5000000
+ 77331 multiletter control sequences out of 15000+600000
+ 656694 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,14n,128p,622b,1195s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,17n,128p,622b,1348s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (4 pages).
+Output written on mainxb.pdf (15 pages).

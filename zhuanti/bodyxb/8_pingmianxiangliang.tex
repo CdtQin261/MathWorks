@@ -366,10 +366,9 @@
                 因此$\vv{BD} \cdot \vv{AE} = (\vv{AD} - \vv{AB}) \cdot (\vv{AB} - \dfrac{2}{5}\vv{AD}) = -\dfrac{2}{5} |\vv{AD}|^2 - |\vv{AB}|^2 + \dfrac{7}{5} \vv{AB} \cdot \vv{AD} = -10 - 12 + \dfrac{7}{5} \cdot 2\sqrt{3} \cdot 5 \cdot \dfrac{\sqrt{3}}{2} = -1$
                 \item 坐标法\\
                 如图所示，题目可以以$A$为原点，以$\vv{AB}$方向为$x$轴正方向建立平面直角坐标系。则$B(2\sqrt{3}, 0), D(\dfrac{5\sqrt{3}}{2}, \dfrac{5}{2})$ \\
-                \begin{figure}[h]
-                    \centering
+                \begin{center}
                     \includegraphics[width=0.25\linewidth]{bodyxb/src/pingmianxiangliang_a15.png}
-                \end{figure} \\
+                \end{center}
                 根据几何关系可以得出直线$BC$的斜率为$\dfrac{\sqrt{3}}{3}$故直线$BC$的方程为$y = \dfrac{\sqrt{3}}{3}(x - 2\sqrt{3})$。同样地直线$AE$的斜率为$-\dfrac{\sqrt{3}}{3}$故直线$AE$的方程为$y = -\dfrac{\sqrt{3}}{3}x$，联立求得$E(\sqrt{3}, -1)$，所以$\vv{BD} = 
                 (\dfrac{\sqrt{3}}{2}, \dfrac{5}{2}), \vv{AE} = (\sqrt{3}, -1)$，故$\vv{BD} \cdot \vv{AE} = \dfrac{3}{2} - \dfrac{5}{2}= -1$
             \end{enumerate}
@@ -385,17 +384,30 @@
         \begin{jieda}
             两个向量所成角为钝角则其夹角余弦值为负数（即数量积为负数），并且两个向量不能达到方向相反。故有$(3t+1) + 2t < 0, 2 \neq t(3t+1)$。故$t \in (-\infty, -1) \cup (-1, -\dfrac{1}{5})$
         \end{jieda}
-        \item 已知向量$\vv{OA} = (cos\alpha, sin\alpha), \vv{OB} = (-sin(\alpha+\dfrac{\pi}{6}), cos(\alpha + \dfrac{\pi}{6}))$，其中$O$的坐标系原点，实数$\lambda$满足$|\lambda \vv{OA} - \vv{OB}| \geq \sqrt{3}|\vv{OB}|$，则$\lambda$的取值范围是\blkda[4]{$(-\infty, -2] \cup [1, +\infty)$}
-        \begin{jieda}
-            易知$A, B$在单位圆上，故$|\vv{OB}| = 1$，故有$|\lambda \vv{OA} - \vv{OB}| \geq \sqrt{3}$\\
-            即$\lambda^2 |\vv{OA}|^2 + |\vv{OB}|^2 - 2\lambda \cdot \vv{OA} \cdot\vv{OB} \geq 3$ \\ 
-            $\vv{OA} \cdot \vv{OB} = sin\alpha \cdot cos(\alpha + \dfrac{\pi}{6}) - cos\alpha \cdot sin(\alpha + \dfrac{\pi}{6}) = -\dfrac{1}{2}$，故$\lambda^2 + 1 + \lambda \geq 3$，解得$\lambda \in (-\infty, -2] \cup [1, +\infty)$
-        \end{jieda}
+
         
         \item 已知向量$\vv{a} = (-2, 1), \vv{b} = (1, m)$，且$\vv{a} \perp \vv{b}$那么$m = $\blkda{2}，若$\vv{a} - \vv{b}$与$\vv{a} + k\vv{b}$共线，则$k = $\blkda{$-1$}
         \begin{jieda}
-            根据平面向量的数量积运算的坐标表示，$\vv{a} \cdot \vv{b} = m - 2$，又因为两向量垂直，所以$m - 2 = 0$，故$m = 2$。因此$\vv{b} = (1, 2)$ \\
-            $\vv{a} - \vv{b} = (-3, -1), \vv{a} + k \vv{b} = (k-2, 2k+1)$，根据向量平行的充要条件的坐标表示，应有$k-2 = 6k+3$，因此$k = -1$
+            $m - 2 = 0$，故$m = 2$，$\vv{b} = (1, 2)$
+            
+            $1 \cdot k = -1 \cdot 1$，$k = -1$
+        \end{jieda}
+
+        \item 已知向量$\vv{OA} = (cos\alpha, sin\alpha), \vv{OB} = \left(-sin\left(\alpha+\dfrac{\pi}{6}\right), cos\left(\alpha + \dfrac{\pi}{6}\right)\right)$，其中$O$的坐标系原点，实数$\lambda$满足$|\lambda \vv{OA} - \vv{OB}| \geq \sqrt{3}|\vv{OB}|$，则$\lambda$的取值范围是\blkda[4]{$(-\infty, -2] \cup [1, +\infty)$}
+        \begin{jieda}
+            易知$A, B$在单位圆上，故$|\vv{OB}| = 1$，故有$|\lambda \vv{OA} - \vv{OB}| \geq \sqrt{3}$
+            \begin{dingautolist}{172}
+                \item 方法1
+                
+                $\lambda^2 |\vv{OA}|^2 + |\vv{OB}|^2 - 2\lambda \cdot \vv{OA} \cdot\vv{OB} \geq 3$ \\ 
+                $\vv{OA} \cdot \vv{OB} = sin\alpha \cdot cos\left(\alpha + \dfrac{\pi}{6}\right) - cos\alpha \cdot sin\left(\alpha + \dfrac{\pi}{6}\right) = -\dfrac{1}{2}$，故$\lambda^2 + 1 + \lambda \geq 3$，解得$\lambda \in (-\infty, -2] \cup [1, +\infty)$
+
+                \item 方法2
+                
+                $\vv{OB} = \left(cos\left(\alpha+\dfrac{2\pi}{3}\right), sin\left(\alpha + \dfrac{2\pi}{3}\right)\right)$，故$\vv{OA}, \vv{OB}$是夹角为$\dfrac{2\pi}{3}$的两个单位向量
+
+                以$\vv{OA}$为$x$轴正方向重新建系，$A(1, 0), B\left(-\dfrac{1}{2}, \dfrac{\sqrt{3}}{2}\right)$，$\vv{OA'} = \lambda \vv{OA}$终点$A'$在$x$轴上，$|\lambda \vv{OA} - \vv{OB}|$即$|A'B|$，数形结合可知$\lambda \in (-\infty, -2] \cup [1, +\infty)$
+            \end{dingautolist}
         \end{jieda}
 
         
@@ -543,11 +555,9 @@
     \begin{enumerate}
         \item 在边长为1的正三角形$ABC$中, 若$\vv{BC}=\vv{a}$, $\vv{CA}=\vv{b}$, $\vv{AB}=\vv{c}$, 则$\vv{a}\cdot\vv{b}+\vv{b}\cdot\vv{c}+\vv{c}\cdot\vv{a}=$\blkda{$-\dfrac{3}{2}$}
         \item 已知向量$\vv{a}, \vv{b}, \vv{c}$满足$|\vv{a}| = |\vv{b}| = 1, |\vv{c}| = \sqrt{2}$，且$\vv{a} + \vv{b} + \vv{c} = \vv{0}$，则$cos<\vv{a} - \vv{c}, \vv{b} - \vv{c}> = $ \blkda{$\dfrac{4}{5}$}
-        \item 已知$\vv{e_1}, \vv{e_2}$是两个夹角为$30^{\circ}$的单位向量，且$\vv{a} \cdot \vv{e_1} + 2 = 0$，$|\vv{b} - \vv{e_2}| = \dfrac{1}{2}$，则$|3\vv{a} - 2\vv{b}|$的最小值为\blkda{$5+\sqrt{3}$}
+        \item 已知$\vv{e_1}, \vv{e_2}$是两个夹角为$30^{\circ}$的单位向量，且$\vv{a} \cdot \vv{e_1} + 2 = 0$，$|\vv{b} - \vv{e_2}| = \dfrac{1}{2}$，则$|\vv{a} - \vv{b}|$的最小值为\blkda{$\dfrac{3+\sqrt{3}}{2}$}
         \begin{jieda}
-            首先以$\vv{e_1}$为正方向，$\vv{e_2}$在第一象限，建立平面直角坐标系，由此$\vv{e_1} = (1, 0), \vv{e_2} = (\dfrac{\sqrt{3}}{2}, \dfrac{1}{2})$，设$\vv{a} = (m, n), \vv{b} = (p, q)$，则题干条件可以转化为：$m = -2$，$(p-\dfrac{\sqrt{3}}{2})^2+(q-\dfrac{1}{2})^2 = \dfrac{1}{4}$ \\
-            设原点为$O$，故$\vv{OA} = \vv{a}$的终点$A$在直线$x = -2$上，$\vv{OB} = \vv{b}$的终点$B$在以$(\dfrac{\sqrt{3}}{2}, \dfrac{1}{2})$为圆心，$\dfrac{1}{2}$为半径的圆上，进一步转化有$\vv{OC} = 3\vv{a}$的终点$C$在直线$x = -6$上，$\vv{OD} = 2\vv{b}$的终点$D$在以$(\sqrt{3}, 1)$为圆心，1为半径的圆上。\\
-            因此$|3\vv{a} - 2\vv{b}|$即为以圆$(x-\sqrt{3})^2+(y-1)^2 = 1$上一点为起点，以直线$x = -6$上一点为终点的向量的模，故其最小值为$5+\sqrt{3}$
+            $\vv{OA} = \vv{a}$的终点$A$在直线$x = -2$上，$\vv{OB} = \vv{b}$的终点$B$在以$(\dfrac{\sqrt{3}}{2}, \dfrac{1}{2})$为圆心，$\dfrac{1}{2}$为半径的圆上，最小值为$\dfrac{3+\sqrt{3}}{2}$
         \end{jieda} 
         
         \item 已知 $f\left( x\right)  = \left\{  \begin{array}{ll} 1, & x > 0 \\  0, & x = 0 \\   - 1, & x < 0 \end{array}\right. ,\vv{a}\text{ 、 }\vv{b}\text{ 、 }\vv{c}$ 是平面内三个不同的单位向量. 若 $f\left( {\vv{a} \cdot  \vv{b}}\right)  + f\left( {\vv{b} \cdot  \vv{c}}\right)  + f\left( {\vv{c} \cdot  \vv{a}}\right)  = 0$ ，则 $\left| {\vv{a} + \vv{b} + \vv{c}}\right|$ 的取值范围是\blkda{$\left( {1,\sqrt{5}}\right)$}.
@@ -970,6 +980,14 @@
             \vv{PC} = (-1-2cos\theta, -\sqrt{3}-2sin\theta), \vv{PB} + \vv{PC} = (-2-4cos\theta, -4sin\theta)$，\\
             故$\vv{PA} \cdot \vv{PB} + \vv{PA} \cdot \vv{PC} = \vv{PA} \cdot (\vv{PB}+\vv{PC}) = (2-2cos\theta) \cdot (-2-4cos\theta) + (-2sin\theta) \cdot (-4sin\theta) = -4 - 4cos\theta + 8cos^2\theta + 8sin^2\theta = 4 - 4cos\theta \in [0, 8]$
         \end{jieda}
+        
+        \item 已知$\vv{e_1}, \vv{e_2}$是两个夹角为$30^{\circ}$的单位向量，且$\vv{a} \cdot \vv{e_1} + 2 = 0$，$|\vv{b} - \vv{e_2}| = \dfrac{1}{2}$，则$|3\vv{a} - 2\vv{b}|$的最小值为\blkda{$5+\sqrt{3}$}
+        \begin{jieda}
+            首先以$\vv{e_1}$为正方向，$\vv{e_2}$在第一象限，建立平面直角坐标系，由此$\vv{e_1} = (1, 0), \vv{e_2} = (\dfrac{\sqrt{3}}{2}, \dfrac{1}{2})$，设$\vv{a} = (m, n), \vv{b} = (p, q)$，则题干条件可以转化为：$m = -2$，$(p-\dfrac{\sqrt{3}}{2})^2+(q-\dfrac{1}{2})^2 = \dfrac{1}{4}$ \\
+            设原点为$O$，故$\vv{OA} = \vv{a}$的终点$A$在直线$x = -2$上，$\vv{OB} = \vv{b}$的终点$B$在以$(\dfrac{\sqrt{3}}{2}, \dfrac{1}{2})$为圆心，$\dfrac{1}{2}$为半径的圆上，进一步转化有$\vv{OC} = 3\vv{a}$的终点$C$在直线$x = -6$上，$\vv{OD} = 2\vv{b}$的终点$D$在以$(\sqrt{3}, 1)$为圆心，1为半径的圆上。\\
+            因此$|3\vv{a} - 2\vv{b}|$即为以圆$(x-\sqrt{3})^2+(y-1)^2 = 1$上一点为起点，以直线$x = -6$上一点为终点的向量的模，故其最小值为$5+\sqrt{3}$
+        \end{jieda} 
+
         \item 已知正方形$ABCD$的边长为2，以$AB$为直径的圆$M$上的动点为$P$，则$\vv{PC} \cdot \vv{PD}$的取值范围是\blkda{$[0, 8]$}
         \begin{jieda}
             以$M$为原点，$\vv{AB}$为$x$轴正方向，因此可设$P(cos\theta, sin\theta)$，同时有$A(-1, 0)$，$B(1, 0)$，$C(1, 2)$，$D(-1, 2)$，故$\vv{PC} = (1-cos\theta, 2-sin\theta), \vv{PD} = (-1-cos\theta, 2-sin\theta)$\\
