@@ -1306,96 +1306,45 @@ $S_{\triangle ABC} = \dfrac{1}{2}absinC = \dfrac{1}{2}acsinB = \dfrac{1}{2}bcsin
     
     $\therefore A=\dfrac{\pi}{3}$ ，设该三角形外接圆的半径为 $r$，由正弦定理得$\dfrac{a}{\sin A}=\dfrac{\sqrt{3}}{\dfrac{\sqrt{3}}{2}}=2=2 r, \therefore r=1$
     \end{jieda}
-    \item 在$\triangle{ABC}$中, $a,b,c$分别为内角$A,B,C$的对边，且满足$\sqrt{3}tanAtanB - tanA - tanB = \sqrt{3}$
-    \begin{enumerate}
-        \item 求C的大小
-        \item 若$c = 2$，且$\triangle{ABC}$为锐角三角形，求$a^2+b^2$的取值范围
-    \end{enumerate}
-    \begin{jieda}
-        \begin{enumerate}
-            \item $\sqrt{3}tanAtanB - tanA - tanB = \sqrt{3}$即$-\sqrt{3}(1-tanAtanB) = -(tanA + tanB)$，即$\sqrt{3} = -tan(A+B) = tanC$，故$C = \dfrac{\pi}{3}$
-            \item 根据正弦定理有$\dfrac{a}{sinA} = \dfrac{b}{sinB} = \dfrac{c}{sinC} = \dfrac{2}{\dfrac{\sqrt{3}}{2}} = \dfrac{4\sqrt{3}}{3}$，因此$a^2+b^2 = \dfrac{16}{3}(sin^2A + sin^2B) = \dfrac{16}{3}(sin^2A + sin^2(\dfrac{2\pi}{3}-A)) = \dfrac{16}{3}(1+\dfrac{1}{2}sin(2A - \dfrac{\pi}{6}))(A \in (\dfrac{\pi}{6}, \dfrac{\pi}{2}))$，因此$a^2+b^2 \in \left(\dfrac{20}{3}, 8 \right]$
-        \end{enumerate}        
-    \end{jieda}
     \item 已知半径为$R$的圆外接于$\triangle{ABC}$, 且$2R(\sin^2A-\sin^2C)=(\sqrt{3}a-b)\sin{B}$. 
     \begin{enumerate}
     \item 求角$C$; 
     \item 求$\triangle{ABC}$面积的最大值. 
     \end{enumerate}
     \begin{jieda}
-    \begin{enumerate}
-    \item $\iff a^2-c^2=(\sqrt{3}a-b)b\iff a^2+b^2-c^2=\sqrt{3}ab$, 于是$2ab\cos{C}=\sqrt{3}ab$. \\
-    于是$\cos{C}=\dfrac{\sqrt{3}}{2}$, 故$C=\dfrac{\pi}{6}$. 
-    
-    \item 因为面积必须是长度的平方, 条件中又没有边长, 故$S$用$R$表示. \\
-    $S=2R^2\sin{A}\sin{B}\sin{C}=R^2\sin{C}(\cos(A-B)-\cos(A+B))=\frac{1}{2}R^2(\cos(A-B)+\frac{\sqrt{3}}{2})$, \\
-    故$S_{\max}=\dfrac{2+\sqrt{3}}{4}R^2(A=B=\frac{5\pi}{12})$
-    \end{enumerate}
-    \end{jieda}
-    
-    \item 在$\triangle{ABC}$中, 角$A, B, C$所对的边分别为$a, b, c$，且$sinA = \dfrac{\sqrt{5}}{5}$，$sinB = \dfrac{\sqrt{10}}{10}$
-    \begin{enumerate}
-        \item 求$A+B$的值
-        \item 若$a-b = \sqrt{2} - 1$，求$a, b, c$的值.
-    \end{enumerate}
-    \begin{jieda}
         \begin{enumerate}
-            \item $cosB = \dfrac{3\sqrt{10}}{10}$，$cosA = \dfrac{2\sqrt{5}}{5}$或$-\dfrac{2\sqrt{5}}{5}$ \\
-            $cos(A+B) = \dfrac{\sqrt{2}}{2}$或$-\dfrac{7\sqrt{2}}{10}$，故$A+B = \dfrac{\pi}{4}$或$arccos(-\dfrac{7\sqrt{2}}{10})$
-            \item 根据$\dfrac{a}{sinA} = \dfrac{b}{sinB}$可知$a:b = \sqrt{2}:1$，故$a = \sqrt{2}, b = 1$ \\
-            $c^2 = a^2+b^2-2abcosC = 2+1+2\sqrt{2}\cdot cos(A+B) = 5$或$\dfrac{1}{5}$
-        \end{enumerate}
-    \end{jieda}
+        \item $\iff a^2-c^2=(\sqrt{3}a-b)b\iff a^2+b^2-c^2=\sqrt{3}ab$, 于是$2ab\cos{C}=\sqrt{3}ab$. \\
+        于是$\cos{C}=\dfrac{\sqrt{3}}{2}$, 故$C=\dfrac{\pi}{6}$. 
         
-    \item 在锐角$\triangle{ABC}$中, $\dfrac{b}{a}+\dfrac{a}{b}=6\cos{C}$, 则$\dfrac{\tan{C}}{\tan{A}}+\dfrac{\tan{C}}{\tan{B}}$=\blkda{4}. 
-    \begin{jieda}
-    $\iff a^2+b^2=6ab\cos{C}=3(a^2+b^2-c^2)\iff3c^2=2(a^2+b^2)$, 
-    于是
-    \begin{align*}
-    \dfrac{\tan{C}}{\tan{A}}+\dfrac{\tan{C}}{\tan{B}}
-    & =\dfrac{\sin{C}}{\cos{C}}\left(\dfrac{\cos{A}}{\sin{A}}+\dfrac{\cos{B}}{\sin{B}}\right)\\
-    & =\dfrac{\sin{C}}{\cos{C}}\cdot\dfrac{\cos{A}\sin{B}+\cos{B}\sin{A}}{\sin{A}\sin{B}}\\
-    & =\dfrac{\sin{C}}{\cos{C}}\cdot\dfrac{\sin(A+B)}{\sin{A}\sin{B}}\\
-    & =\dfrac{c^2}{ab\cos{C}}\\
-    & =\dfrac{2c^2}{a^2+b^2-c^2}\\
-    & =4.
-    \end{align*}
-    \end{jieda}
-    
-    \item 在$\triangle{ABC}$中, $A=\ang{60}$, $b=1$, $S_{\triangle{ABC}}=\sqrt{3}$, 则$\dfrac{a+b+c}{\sin{A}+\sin{B}+\sin{C}}$=\blkda{$\dfrac{2\sqrt{39}}{3}$}. 
-    \begin{jieda}
-        $\dfrac{1}{2}bcsinA = \sqrt{3}$，故$c = 4$，故$a^2 = b^2+c^2-2bccosA = 1 + 16 - 4 = 13$，故$a = \sqrt{13}$，因此$\dfrac{a+b+c}{\sin{A}+\sin{B}+\sin{C}} = \dfrac{a}{sinA} = \dfrac{\sqrt{13}}{\dfrac{\sqrt{3}}{2}} = \dfrac{2\sqrt{39}}{3}$
-    \end{jieda}
-    \item $\triangle ABC$中$\dfrac{b}{a} + \dfrac{a}{b} = 4cosC$，且$cos(A-B) = \dfrac{1}{6}$，则$cosC = $\blkda{$\dfrac{2}{3}$}.
-    \begin{jieda}
-        \begin{enumerate}
-            \item 方法一 \\
-            $\dfrac{b}{a} + \dfrac{a}{b} = 4cosC$即$\dfrac{a^2+b^2}{ab} = 4cosC$，根据余弦定理有$a^2+b^2 = 4abcosC = 2(a^2+b^2-c^2)$，故$a^2+b^2 = 2c^2$，利用正弦定理有$sin^2A + sin^2B = 2sin^2C$，即$\dfrac{1-cos2A}{2} + \dfrac{1-cos2B}{2} = 2sin^2C$，即$2 - (cos2A + cos2B) = 4sin^2C$，和差化积有$2 - 2cos(A+B) \cdot cos(A-B) = 4-4cos^2C$，即$1+cosC \cdot \dfrac{1}{6} = 2-2cos^2C$，整理有$12cos^2C + cosC - 6 = 0$，$cosC = \dfrac{2}{3}$
-            \item 方法二 \\
-            $\dfrac{b}{a} + \dfrac{a}{b} = 4cosC$即$\dfrac{a^2+b^2}{ab} = 4cosC$，根据余弦定理有$a^2+b^2 = 4abcosC = 2(a^2+b^2-c^2)$，故$a^2+b^2 = 2c^2$，故根据余弦定理有$cosC = \dfrac{c^2}{2ab} = \dfrac{sin^2C}{2sinAsinB} = \dfrac{1-cos^2C}{cos(A-B) - cos(A+B)} = \dfrac{1-cos^2C}{\dfrac{1}{6}+cosC}$，整理有$12cos^2C + cosC - 6 = 0$，$cosC = \dfrac{2}{3}$
-            \item 方法三 \\
-            首先利用正弦定理有$4cosC = \dfrac{sinB}{sinA} + \dfrac{sinA}{sinB} = \dfrac{sin^2A + sin^2B}{sinA \cdot sinB} = \dfrac{(sinA + sinB)^2}{sinA \cdot sinB} - 2$，分母积化和差，分子和差化积有$4cosC + 2 = \dfrac{(2sin(\dfrac{A+B}{2}) \cdot cos(\dfrac{A-B}{2}))^2}{-\dfrac{1}{2}(cos(A+B) - cos(A-B))}$，即$2cosC + 1 = \dfrac{4 \cdot (\dfrac{1-cos(A+B)}{2}) \cdot (\dfrac{1+cos(A-B)}{2})}{cos(A-B)-cos(A+B)} = \dfrac{(1+cosC)\cdot\dfrac{7}{6}}{\dfrac{1}{6}+cosC}$，故$12cos^2C + 8cosC + 1 = 7 + 7cosC$，即$12cos^2C + cosC - 6 = 0$，$cosC = \dfrac{2}{3}$
+        \item 因为面积必须是长度的平方, 条件中又没有边长, 故$S$用$R$表示. \\
+        $S=2R^2\sin{A}\sin{B}\sin{C}=R^2\sin{C}(\cos(A-B)-\cos(A+B))=\frac{1}{2}R^2(\cos(A-B)+\frac{\sqrt{3}}{2})$, \\
+        故$S_{\max}=\dfrac{2+\sqrt{3}}{4}R^2(A=B=\frac{5\pi}{12})$
         \end{enumerate}
     \end{jieda}
-    \item 设$\triangle ABC$的三边分别为$a, b, c$，设$BC$边中线为$AM$，高线为$AH$，$A$的角平分线为$AE$，求$AM, AH, AE$及$\triangle ABC$的内切圆和外接圆半径$r, R$的长度
+    \item 已知点 $B$ 在点 $C$ 正北方向，点 $D$ 在点 $C$ 的正东方向， ${BC} = {CD}$ ，存在点$A$满足 $\angle {BAC} = {16.5}^{ \circ  }$ ， $\angle {DAC} = {37}^{ \circ  }$ ，则 $\angle {BCA} =$ \blkda[2]{${7.8}^{ \circ  }$}.(精确到 ${0.1}^{ \circ  }$)
     \begin{jieda}
-        \begin{dingautolist}{172}
-        \item 求$AM$ \\
-        设$AM = x_1, \angle AMB = \theta$，\\
-        在$\triangle AMB$和$\triangle AMC$中应用余弦定理有$\left \{ \begin{array}{l}
-             c^2 = \left(\dfrac{a}{2}\right)^2 + x_1^2 - ax_1cos\theta \\
-             b^2 = \left(\dfrac{a}{2}\right)^2 + x_1^2 + ax_1cos\theta
-        \end{array} \right.$，两式相加有$b^2 + c^2 = \dfrac{a^2}{2} + 2x_1^2$，故$x_1 = \sqrt{\dfrac{b^2+c^2-\dfrac{a^2}{2}}{2}}$
-        \item 求$AH$ \\
-        设$AH = h$，则$S = \dfrac{1}{2}bcsinA = \dfrac{1}{2}ah$，即$h = \dfrac{bcsinA}{a}$，其中$sinA = \sqrt{1-cos^2A} = \sqrt{1 - \left ( \dfrac{b^2+c^2-a^2}{2bc}\right)^2}$
-        \item 求$AE$ \\
-        $AE$是角平分线，因此有$\dfrac{BE}{CE} = \dfrac{c}{b}$，证明如下：在$\triangle AEB$中应用正弦定理有$\dfrac{BE}{c} = \dfrac{sin\angle BAE}{sin\angle AEB}$，在$\triangle AEC$中应用正弦定理有$\dfrac{CE}{b} = \dfrac{sin\angle CAE}{sin\angle AEC}$，因为$sin\angle CAE = sin\angle BAE$，$sin\angle AEC = sin \angle AEB$，因此$\dfrac{BE}{c} = \dfrac{CE}{b}$，即$\dfrac{BE}{CE} = \dfrac{c}{b}$ \\
-        设$AE = x_2, \angle AEB = \theta$，\\
-        在$\triangle AEB$中应用余弦定理有$x_2^2 = \left(\dfrac{ac}{b+c}\right)^2 + c^2 - \dfrac{2ac^2}{b+c}cosB$，其中$cosB = \dfrac{a^2+c^2-b^2}{2ac}$
-        \item 求$r$ \\
-        $S = \dfrac{1}{2}bcsinA = \dfrac{1}{2}(a+b+c) \cdot r$，即$r = \dfrac{bcsinA}{a+b+c}$，其中$sinA = \sqrt{1-cos^2A} = \sqrt{1 - \left ( \dfrac{b^2+c^2-a^2}{2bc}\right)^2}$
-        \item 求$R$ \\
-        $\dfrac{a}{sinA} = 2R$，$R = \dfrac{a}{2sinA}$，其中$sinA = \sqrt{1-cos^2A} = \sqrt{1 - \left ( \dfrac{b^2+c^2-a^2}{2bc}\right)^2}$
-        \end{dingautolist}
+        设 $\angle {BCA} = \theta$ ，则 $\angle {ACD} = {90}^{\circ} - \theta$，$\angle ADC = \ang{53} + \theta$，$\angle ABC = \ang{163.5} - \theta$
+        
+        由正弦定理，在 $\bigtriangleup  {DCA}$ 中，$\dfrac{CD}{sin\ang{37}} = \dfrac{AC}{sin(\ang{53} + \theta)}$，在 $\bigtriangleup {BCA}$ 中，$\dfrac{BC}{sin\ang{16.5}} = \dfrac{AC}{sin(\ang{163.5} - \theta)}$
+
+        故$\dfrac{sin(\ang{53} + \theta)}{cos\ang{53}} = \dfrac{sin(\ang{16.5} + \theta)}{sin\ang{16.5}}$，即$tan\ang{53}cos\theta + sin\theta = cos\theta + cot\ang{16.5}sin\theta$
+        
+        故$tan\theta = \dfrac{tan\ang{53}-1}{cot\ang{16.5}-1}$，$\theta = arctan\left(\dfrac{tan\ang{53}-1}{cot\ang{16.5}-1}\right) \approx \ang{7.8}$
+
+        \ps 题目条件集中在角上，故先标出角，利用正弦定理建立等量关系
+        \begin{center}
+            \includegraphics[width=0.15\textwidth]{bodyxb/src/35_1339_1865_192_231_0.jpg}
+        \end{center}
+    \end{jieda}
+    \item 在 $\bigtriangleup  {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ，且 $c = 5$.
+    \begin{enumerate}
+        \item 若 $\dfrac{a}{4b} = \dfrac{\sin B}{\sin A},C = \dfrac{\pi }{2}$ ,求 $a$
+        \item 若 ${ab} = {20}$ ，求 $\bigtriangleup  {ABC}$ 的面积的最大值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由 $\dfrac{a}{4b} = \dfrac{\sin B}{\sin A}$ ，根据正弦定理得 $\dfrac{a}{4b} = \dfrac{b}{a}$ ，化简得 $a =  {2b}$ . 因为 $C = \dfrac{\pi }{2},c = 5$ ,所以 ${a}^{2} + {b}^{2} = {c}^{2} = {25}$ ,即 $4{b}^{2} + {b}^{2} =$ 25，解得 $b = \sqrt{5}$ ，所以 $a = {2b} = {2\sqrt{5}}$
+            \item 由余弦定理可得 $\cos C = \dfrac{{a}^{2} + {b}^{2} - {c}^{2}}{2ab} = \dfrac{1}{40}\left( {{a}^{2} + {b}^{2} - {25}}\right)  \geq  \dfrac{1}{40}\left( {{2ab} - {25}}\right)  = \dfrac{3}{8}$ ,当且仅当 $a = b = 2\sqrt{5}$ 时,等号成立. 所以 ${\cos }^{2}C \geq  \dfrac{9}{64}$ ,即 $1 - {\sin }^{2}C \geq  \dfrac{9}{64}$ ,所以 ${\sin }^{2}C \leq  \dfrac{55}{64}$ ,又因为 $C \in  \left( {0,\pi }\right)$ ,所以 $\sin C > 0$ ,故 $\sin C \leq  \dfrac{\sqrt{55}}{8}$ ,由 ${S}_{\bigtriangleup {ABC}} =  \dfrac{1}{2}{ab}\sin C$ 得 ${S}_{\bigtriangleup {ABC}} = \dfrac{1}{2} \times  {20} \times  \sin C = {10}\sin C \leq  {10} \times  \dfrac{\sqrt{55}}{8} =  \dfrac{5\sqrt{55}}{4}$ ,故当 $a = b = 2\sqrt{5}$ 时, ${\left( {S}_{\bigtriangleup {ABC}}\right) }_{\max } = \dfrac{5\sqrt{55}}{4}$.
+        \end{enumerate}
     \end{jieda}
 \end{enumerate}

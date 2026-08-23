@@ -1716,6 +1716,14 @@
         $\dfrac{a}{sinA} = \dfrac{b}{sinB}$，因此$sinB = \dfrac{\sqrt{3}}{2}$，故$B = \dfrac{\pi}{3}$或$\dfrac{2\pi}{3}$，因此$C = $$\dfrac{\pi}{6}$或$\dfrac{\pi}{2}$
     \end{jieda}    
     \item 在 $\bigtriangleup  {ABC}$ 中, ${AB} = 2,{AC} = \sqrt{2},B = {30}^{ \circ  }$ ,则 $A =$\blkda{${105}^{ \circ  }$ 或 ${15}^{ \circ  }$}
+    \item 在 $\bigtriangleup  {ABC}$ 中， $a = 5$ ， $b = 6$. 若 $\bigtriangleup  {ABC}$ 的面积 $S = \dfrac{{15}\sqrt{7}}{4}$ ，求 $c$ 的值.
+    \begin{jieda}
+        由 ${S}_{\bigtriangleup {ABC}} = \dfrac{1}{2}{ab}\sin C$ 得 $\sin C = \dfrac{2{S}_{\bigtriangleup {ABC}}}{ab} = \dfrac{2 \times  \dfrac{{15}\sqrt{7}}{4}}{5 \times  6} =  \dfrac{\sqrt{7}}{4}$ ,于是 $\cos C =  \pm  \sqrt{1 - {\sin }^{2}C} =  \pm  \dfrac{3}{4}$
+        \begin{dingautolist}{172}
+            \item 当 $\cos C = \dfrac{3}{4}$ 时,由余弦定理,得 ${c}^{2} = {5}^{2} + {6}^{2} - 2 \times  5 \times  6 \times  \dfrac{3}{4} = {16}$
+            \item 当 $\cos C =  - \dfrac{3}{4}$ 时,由余弦定理,得 ${c}^{2} = {5}^{2} + {6}^{2} - 2 \times  5 \times  6 \times  \left( {-\dfrac{3}{4}}\right)  = {106}$ . 所以, $c = 4$ 或 $c = \sqrt{106}$.
+        \end{dingautolist}
+    \end{jieda}
     \item 在 $\bigtriangleup {ABC}$ 中, $b = {10},A = \dfrac{\pi }{6}$ .
     \begin{dingautolist}{172}
         \item 若 $a = 5$ ,则角 $B$ 的大小为\blkda{$\dfrac{\pi}{2}$}
@@ -1748,6 +1756,20 @@
 \end{enumerate}
 \item 化角主元归一求取值范围（最值）
 \begin{enumerate}
+    \item 在 $\bigtriangleup  {ABC}$ 中，已知 ${b}^{2} + {c}^{2} = {a}^{2} + {bc}$.
+    \begin{enumerate}
+        \item 若 $\sin C = {2\sin B}$ ，且 $b = 2$ ，求 $\bigtriangleup  {ABC}$ 的面积
+        \item 若 $b + c = 1$ ，求 $a$ 的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由正弦定理得 $\dfrac{c}{b} = \dfrac{\sin C}{\sin B} = 2$ ，又 $b = 2$ ，从而 $c = 4$ ，由 ${b}^{2} + {c}^{2} = {a}^{2} + {bc}$ 得 $\cos A = \dfrac{{b}^{2} + {c}^{2} - {a}^{2}}{2bc} = \dfrac{bc}{2bc} = \dfrac{1}{2}$ ，从而 $A = \dfrac{\pi }{3}$ ， 所以 $\bigtriangleup {ABC}$ 的面积 $S = \dfrac{1}{2}{bc}\sin A = \dfrac{1}{2} \times  2 \times  4 \times  \sin \dfrac{\pi }{3} = 2\sqrt{3}$
+            \item $1 = b + c = \dfrac{a}{sinA} \cdot (sinB + sinC) = \dfrac{a}{sinA} \cdot \left(sinB + sin\left(\dfrac{2\pi}{3} - B\right)\right) = \dfrac{a}{sinA} \cdot \sqrt{3}sin\left(B + \dfrac{\pi}{6}\right)$
+            
+            $a = \dfrac{sinA}{\sqrt{3}sin\left(B + \dfrac{\pi}{6}\right)} = \dfrac{1}{2sin\left(B + \dfrac{\pi}{6}\right)}$，$B+\dfrac{\pi}{6} \in \left(\dfrac{\pi}{6}, \dfrac{5\pi}{6}\right)$，故$a \in \left[\dfrac{1}{2}, 1\right)$
+        \end{enumerate}
+    \end{jieda}
+
     \item  在锐角 $\bigtriangleup  {ABC}$ 中,内角 $A,B,C$ 的对边分别为 $a,b,c$ ,已知 $c \cdot  \cos A = \left( {{2b} - a}\right) \cos C$ .
     
     \begin{enumerate}
@@ -2082,6 +2104,22 @@
             
             所以 ${S}_{\bigtriangleup {ADC}} = \dfrac{1}{2} \times  3 \times  3 \times  \dfrac{2\sqrt{2}}{3} = 3\sqrt{2}$，所以 $\bigtriangleup {ABC}$ 面积最大时,四边形 ${ABCD}$ 的面积是 $3\sqrt{2} + 2\sqrt{2} = 5\sqrt{2}$ .
         \end{jieda}
+        \item 在 $\bigtriangleup  {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 的对边分别为 $a$ 、 $b$ 、 $c$.
+        \begin{enumerate}
+            \item 若 ${2a}\sin B = \sqrt{3}b$ 求角 $A$ 的大小
+            \item 若 ${BC}$ 边上的高等于 $\dfrac{a}{2}$ ，求 $\dfrac{c}{b} + \dfrac{b}{c}$ 的最大值.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 根据正弦定理得 $2\sin A\sin B = \sqrt{3}\sin B$ ,所以 $\sin A =  \dfrac{\sqrt{3}}{2}$ ，所以 $A = \dfrac{\pi }{3}$ 或 $\dfrac{2\pi }{3}$
+                \item $\dfrac{c}{b} + \dfrac{b}{c} = \dfrac{b^2+c^2}{bc} = \dfrac{a^2+2bccosA}{bc} = \dfrac{a^2}{bc}+2cosA = \dfrac{sin^2A}{sinBsinC}+2cosA$
+                
+                $\dfrac{a}{2} = bsinC$，故$sinA = 2sinBsinC$，因此$\dfrac{sin^2A}{sinBsinC} = 2sinA$
 
+                $\dfrac{c}{b} + \dfrac{b}{c} = 2\left( {\sin A + \cos A}\right)  = 2\sqrt{2}\sin \left( {A + \dfrac{\pi }{4}}\right)$ . 当$A = \dfrac{\pi }{4}$ 时 $\dfrac{{b}^{2} + {c}^{2}}{bc}$ 有最大值 $2\sqrt{2}$.
+
+                \ps 高的条件用面积处理亦可.
+            \end{enumerate}
+        \end{jieda}
     \end{enumerate}
 \end{enumerate}
