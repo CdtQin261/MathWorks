@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  23 AUG 2026 21:39
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  24 AUG 2026 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,7 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/6_sanjiao.aux))
+ (./mainxb.aux (./bodyxb/10_zhixian.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1917,9 +1917,19 @@ File: bodyxb//src/cosx.png Graphic file (type bmp)
 File: bodyxb//src/tanx.png Graphic file (type bmp)
 <bodyxb//src/tanx.png>
  [26] [27] [28] [29]
+File: bodyxb/src/55_1095_1384_335_219_0.jpg Graphic file (type bmp)
+<bodyxb/src/55_1095_1384_335_219_0.jpg>
+ [30]
+File: bodyxb/src/39_989_1509_409_236_0.jpg Graphic file (type bmp)
+<bodyxb/src/39_989_1509_409_236_0.jpg>
 File: bodyxb/src/35_1339_1865_192_231_0.jpg Graphic file (type bmp)
 <bodyxb/src/35_1339_1865_192_231_0.jpg>
-) [30] (./mainxb.aux (./bodyxb/6_sanjiao.aux))
+File: bodyxb/src/56_1042_919_248_253_0.jpg Graphic file (type bmp)
+<bodyxb/src/56_1042_919_248_253_0.jpg>
+ [31]
+File: bodyxb/src/40_691_903_177_185_0.jpg Graphic file (type bmp)
+<bodyxb/src/40_691_903_177_185_0.jpg>
+) [32] (./mainxb.aux (./bodyxb/6_sanjiao.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1928,12 +1938,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49642 strings out of 468168
- 1167499 string characters out of 5432816
+ 49682 strings out of 468168
+ 1169044 string characters out of 5432816
  1739487 words of memory out of 5000000
- 77358 multiletter control sequences out of 15000+600000
+ 77393 multiletter control sequences out of 15000+600000
  656662 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,12n,128p,847b,1378s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,12n,128p,858b,1378s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (30 pages).
+Output written on mainxb.pdf (32 pages).

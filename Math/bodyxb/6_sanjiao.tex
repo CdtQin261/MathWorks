@@ -1321,6 +1321,59 @@ $S_{\triangle ABC} = \dfrac{1}{2}absinC = \dfrac{1}{2}acsinB = \dfrac{1}{2}bcsin
         故$S_{\max}=\dfrac{2+\sqrt{3}}{4}R^2(A=B=\frac{5\pi}{12})$
         \end{enumerate}
     \end{jieda}
+
+    \item 在 $\bigtriangleup  {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ，且 $c = 5$.
+    \begin{enumerate}
+        \item 若 $\dfrac{a}{4b} = \dfrac{\sin B}{\sin A},C = \dfrac{\pi }{2}$ ,求 $a$
+        \item 若 ${ab} = {20}$ ，求 $\bigtriangleup  {ABC}$ 的面积的最大值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由 $\dfrac{a}{4b} = \dfrac{\sin B}{\sin A}$ ，根据正弦定理得 $\dfrac{a}{4b} = \dfrac{b}{a}$ ，化简得 $a =  {2b}$ . 因为 $C = \dfrac{\pi }{2},c = 5$ ,所以 ${a}^{2} + {b}^{2} = {c}^{2} = {25}$ ,即 $4{b}^{2} + {b}^{2} =$ 25，解得 $b = \sqrt{5}$ ，所以 $a = {2b} = {2\sqrt{5}}$
+            \item 由余弦定理可得 $\cos C = \dfrac{{a}^{2} + {b}^{2} - {c}^{2}}{2ab} = \dfrac{1}{40}\left( {{a}^{2} + {b}^{2} - {25}}\right)  \geq  \dfrac{1}{40}\left( {{2ab} - {25}}\right)  = \dfrac{3}{8}$ ,当且仅当 $a = b = 2\sqrt{5}$ 时,等号成立. 所以 ${\cos }^{2}C \geq  \dfrac{9}{64}$ ,即 $1 - {\sin }^{2}C \geq  \dfrac{9}{64}$ ,所以 ${\sin }^{2}C \leq  \dfrac{55}{64}$ ,又因为 $C \in  \left( {0,\pi }\right)$ ,所以 $\sin C > 0$ ,故 $\sin C \leq  \dfrac{\sqrt{55}}{8}$ ,由 ${S}_{\bigtriangleup {ABC}} =  \dfrac{1}{2}{ab}\sin C$ 得 ${S}_{\bigtriangleup {ABC}} = \dfrac{1}{2} \times  {20} \times  \sin C = {10}\sin C \leq  {10} \times  \dfrac{\sqrt{55}}{8} =  \dfrac{5\sqrt{55}}{4}$ ,故当 $a = b = 2\sqrt{5}$ 时, ${\left( {S}_{\bigtriangleup {ABC}}\right) }_{\max } = \dfrac{5\sqrt{55}}{4}$.
+        \end{enumerate}
+    \end{jieda}
+
+    \item 设$\triangle ABC$的三边分别为$a, b, c$，设$BC$边中线为$AM$，高线为$AH$，$A$的角平分线为$AE$，求$AM, AH, AE$及$\triangle ABC$的内切圆和外接圆半径$r, R$的长度
+    \begin{jieda}
+        \begin{dingautolist}{172}
+        \item 求$AH$ \\
+        设$AH = h$，则$h = csinB$，其中$sinB = \sqrt{1-cos^2B} = \sqrt{1 - \left ( \dfrac{a^2+c^2-b^2}{2ac}\right)^2}$
+
+        \ps 实际应用中，求高经常利用面积.
+        \item 求$AM$ \\
+        设$AM = x_1, \angle AMB = \theta$，\\
+        在$\triangle AMB$和$\triangle AMC$中应用余弦定理有$\left \{ \begin{array}{l}
+                c^2 = \left(\dfrac{a}{2}\right)^2 + x_1^2 - ax_1cos\theta \\
+                b^2 = \left(\dfrac{a}{2}\right)^2 + x_1^2 + ax_1cos\theta
+        \end{array} \right.$，两式相加有$b^2 + c^2 = \dfrac{a^2}{2} + 2x_1^2$，故$x_1 = \sqrt{\dfrac{b^2+c^2-\dfrac{a^2}{2}}{2}}$
+        \item 求$AE$ 
+
+        \begin{dingautolist}{172}
+            \item $AE$是角平分线，因此有$\dfrac{BE}{CE} = \dfrac{c}{b}$，证明如下：在$\triangle AEB$中应用正弦定理有$\dfrac{BE}{c} = \dfrac{sin\angle BAE}{sin\angle AEB}$，在$\triangle AEC$中应用正弦定理有$\dfrac{CE}{b} = \dfrac{sin\angle CAE}{sin\angle AEC}$，因为$sin\angle CAE = sin\angle BAE$，$sin\angle AEC = sin \angle AEB$，因此$\dfrac{BE}{c} = \dfrac{CE}{b}$，即$\dfrac{BE}{CE} = \dfrac{c}{b}$ 
+            在两个小三角形中列余弦定理（互补或相等的角均可）
+            \item 利用等面积法+半角公式
+        \end{dingautolist}
+        
+        \item 求$r$ \\
+        $S = \dfrac{1}{2}bcsinA = \dfrac{1}{2}(a+b+c) \cdot r$，即$r = \dfrac{bcsinA}{a+b+c}$，其中$sinA = \sqrt{1-cos^2A} = \sqrt{1 - \left ( \dfrac{b^2+c^2-a^2}{2bc}\right)^2}$
+        \item 求$R$ \\
+        $\dfrac{a}{sinA} = 2R$，$R = \dfrac{a}{2sinA}$，其中$sinA = \sqrt{1-cos^2A} = \sqrt{1 - \left ( \dfrac{b^2+c^2-a^2}{2bc}\right)^2}$
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 小申同学观察发现，生活中有些时候影子可以完全投射在斜面上. 某斜面上有两根长为 $1{m}$ 的垂直于水平面放置的杆子，与斜面的接触点分别为 $A$ 、 $B$ ，它们在阳光的照射下呈现出影子. 阳光可视为平行光,其中一根杆子的影子在水平面上,长度为 ${0.4}{m}$ ,另一根杆子的影子完全在斜面上，长度为 ${0.45}{m}$. 则斜面的底角 $\theta  =$ \blkda[2]{${12.58}^{ \circ  }$}.(结果用角度制表示，精确到 0.01 \textdegree )
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/55_1095_1384_335_219_0.jpg}
+    \end{center}
+    \begin{jieda}
+        如图,在 $A$ 处, $\tan x = \dfrac{1}{0.4} = {2.5}$ ,在 $B$ 处满足 $\tan \angle {CED} = {2.5}$ ,(其中 ${ED}//$ 水平面, ${CE}$ 是射过 $B$ 处杆子最高点的光线,光线交斜面于 $E$ ),故设 ${BD} = y$ ,则 ${ED} =  \dfrac{1 + y}{2.5}$ ,由勾股定理, ${y}^{2} + {\left( \dfrac{1 + y}{2.5}\right) }^{2} = {0.45}^{2}$ ,解得 $y \approx  {0.098}$ , 于是 $\theta  = \arcsin \dfrac{0.098}{0.45} \approx  {12.58}^{ \circ  }$.
+
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/39_989_1509_409_236_0.jpg}
+        \end{center}
+    \end{jieda}
+
     \item 已知点 $B$ 在点 $C$ 正北方向，点 $D$ 在点 $C$ 的正东方向， ${BC} = {CD}$ ，存在点$A$满足 $\angle {BAC} = {16.5}^{ \circ  }$ ， $\angle {DAC} = {37}^{ \circ  }$ ，则 $\angle {BCA} =$ \blkda[2]{${7.8}^{ \circ  }$}.(精确到 ${0.1}^{ \circ  }$)
     \begin{jieda}
         设 $\angle {BCA} = \theta$ ，则 $\angle {ACD} = {90}^{\circ} - \theta$，$\angle ADC = \ang{53} + \theta$，$\angle ABC = \ang{163.5} - \theta$
@@ -1336,15 +1389,15 @@ $S_{\triangle ABC} = \dfrac{1}{2}absinC = \dfrac{1}{2}acsinB = \dfrac{1}{2}bcsin
             \includegraphics[width=0.15\textwidth]{bodyxb/src/35_1339_1865_192_231_0.jpg}
         \end{center}
     \end{jieda}
-    \item 在 $\bigtriangleup  {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ，且 $c = 5$.
-    \begin{enumerate}
-        \item 若 $\dfrac{a}{4b} = \dfrac{\sin B}{\sin A},C = \dfrac{\pi }{2}$ ,求 $a$
-        \item 若 ${ab} = {20}$ ，求 $\bigtriangleup  {ABC}$ 的面积的最大值.
-    \end{enumerate}
+    \item 一个机器零件的形状是有缺口的圆形铁片，如图中实线部分为裁剪后的形状. 已知这个圆的半径是 ${13}{{cm}},{AB} = 8{{cm}},{BC} = 6{{cm}}$ ，且 ${AB}\bot {BC}$ ，则圆心到点 $B$ 的距离约为\blkda[2]{$7.3$}cm. (结果精确到 ${0.1}{{cm}}$ )
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/56_1042_919_248_253_0.jpg}
+    \end{center}
     \begin{jieda}
-        \begin{enumerate}
-            \item 由 $\dfrac{a}{4b} = \dfrac{\sin B}{\sin A}$ ，根据正弦定理得 $\dfrac{a}{4b} = \dfrac{b}{a}$ ，化简得 $a =  {2b}$ . 因为 $C = \dfrac{\pi }{2},c = 5$ ,所以 ${a}^{2} + {b}^{2} = {c}^{2} = {25}$ ,即 $4{b}^{2} + {b}^{2} =$ 25，解得 $b = \sqrt{5}$ ，所以 $a = {2b} = {2\sqrt{5}}$
-            \item 由余弦定理可得 $\cos C = \dfrac{{a}^{2} + {b}^{2} - {c}^{2}}{2ab} = \dfrac{1}{40}\left( {{a}^{2} + {b}^{2} - {25}}\right)  \geq  \dfrac{1}{40}\left( {{2ab} - {25}}\right)  = \dfrac{3}{8}$ ,当且仅当 $a = b = 2\sqrt{5}$ 时,等号成立. 所以 ${\cos }^{2}C \geq  \dfrac{9}{64}$ ,即 $1 - {\sin }^{2}C \geq  \dfrac{9}{64}$ ,所以 ${\sin }^{2}C \leq  \dfrac{55}{64}$ ,又因为 $C \in  \left( {0,\pi }\right)$ ,所以 $\sin C > 0$ ,故 $\sin C \leq  \dfrac{\sqrt{55}}{8}$ ,由 ${S}_{\bigtriangleup {ABC}} =  \dfrac{1}{2}{ab}\sin C$ 得 ${S}_{\bigtriangleup {ABC}} = \dfrac{1}{2} \times  {20} \times  \sin C = {10}\sin C \leq  {10} \times  \dfrac{\sqrt{55}}{8} =  \dfrac{5\sqrt{55}}{4}$ ,故当 $a = b = 2\sqrt{5}$ 时, ${\left( {S}_{\bigtriangleup {ABC}}\right) }_{\max } = \dfrac{5\sqrt{55}}{4}$.
-        \end{enumerate}
+        如图所示,设圆心为 $D,{AC}$ 的中点为 $E$ ,则 ${AD} = {13}$ ,在 $\operatorname{Rt}\bigtriangleup {ABC}$ 中, ${AC} =  \sqrt{{8}^{2} + {6}^{2}} = {10} = {2AE} \Longrightarrow  {AE} = 5,\cos \angle {BAC}  = \dfrac{AB}{AC} = \dfrac{8}{10} = \dfrac{4}{5} \Longrightarrow  \sin \angle {BAC} = \dfrac{3}{5}$ ,在 ${{Rt}}\bigtriangleup {DEA}$ 中, $\cos \angle {DAE} = \dfrac{AE}{AD} = \dfrac{5}{13} \Longrightarrow  \sin \angle {DAE} = \dfrac{12}{13}$ ,在 $\bigtriangleup {DAB}$ 中, $\cos \angle {BAD} = \cos \left( {\angle {DAE} - \angle {BAC}}\right)  = \dfrac{5}{13} \times  \dfrac{4}{5} +  \dfrac{12}{13} \times  \dfrac{3}{5} = \dfrac{56}{65} \Longrightarrow  B{D}^{2} = {13}^{2} + {8}^{2} - 2 \cdot  {13} \cdot  8 \cdot  \dfrac{56}{65} = {53.8} \Longrightarrow  {BD} \approx  {7.3}{{cm}}.$
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/40_691_903_177_185_0.jpg}
+        \end{center}
     \end{jieda}
 \end{enumerate}
