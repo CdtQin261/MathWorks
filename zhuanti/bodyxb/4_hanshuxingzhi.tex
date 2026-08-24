@@ -118,6 +118,18 @@
     \begin{jieda}
     $g(x)$为奇函数，则$|g(x)|$为偶函数，偶函数$+$偶函数还是偶函数，故$A, B$都是偶函数，$A$正确，$B$错误。$f(x)$是偶函数，$|f(x)|$还是偶函数。奇函数$+$偶函数的结果是不确定的（如果两个函数都不是“既是奇函数又是偶函数”的话，结果必然非奇非偶函数）。故$C,D$都错.
     \end{jieda}
+    \item 如果 “若 $p$ ,则 $q$ ” 和 “若 $q$ ,则 $p$ ” 中有且仅有一个真命题命题,称 $p$ 与 $q$ 具有 “ $U-$关系”.已知函数 $y = f\left( x\right)$ 的定义域为 $\mathbf{R},p : y = f\left( x\right)$ 为偶函数,则 $p$ 与下列选项中的 $q$ 具有 “$U-$关系” 的为\dotfill{(\kh{C})}
+    \xx{$q$ : 对任意 $x \in  \mathbf{R}$ 都有 $- f\left( x\right)  \geq  f\left( x\right)$}{$q$ : 对任意 $x \in  \mathbf{R}$ 都有 $f\left( {-x}\right)  \geq  f\left( x\right)$}{$q$ : 对任意 $x \in  \mathbf{R}$ 都有 $f\left( {-x}\right)  = \left| {f\left( x\right) }\right|$}{$q$ : 对任意 $x \in  \mathbf{R}$ 都有 $f\left( {-x}\right)  = f\left( \left| x\right| \right)$}
+    \begin{jieda}
+        $q_A: f(x) \leq 0$，$p$是$q_A$的既非充分也非必要条件.
+
+        $q_B$迭代可得$f(x) \geq f(-x)$，故$q_B: f(x) = f(-x)$，因此$p$是$q_A$的充要条件.
+
+        $q_C$迭代可得$f(x) = |f(-x)|$，因此$f(x) \geq 0$，故$f(-x) = f(x)$，故$q_C: f(-x) = f(x)$且$f(x) \geq 0$，故$p$是$q_C$的充分非必要条件.
+
+        $q_D$迭代可得$f(x) = f(|-x|) = f(|x|)$，故$q_D: f(x) = f(-x)$，因此$p$是$q_A$的充要条件.
+    \end{jieda}
+
     \item 已知函数$f(x) = x^3+2x$，若$m > 0, n>0$且有$f(2m)+f(n-1) = f(0)$，则$\dfrac{1}{m}+\dfrac{2}{n}$的最小值为\blkda{8}
     \begin{jieda}
         $f(x)$为奇函数（单调递增），因此$f(2m)+f(n-1) = f(0) \Longleftrightarrow 2m+n=1$，故$\dfrac{1}{m}+\dfrac{2}{n} = \left(\dfrac{1}{m}+\dfrac{2}{n}\right) \cdot (2m+n) = 4+\dfrac{n}{m}+\dfrac{4m}{n} \geq 8$，当$n = \dfrac{1}{2}, m = \dfrac{1}{4}$时取最小值.

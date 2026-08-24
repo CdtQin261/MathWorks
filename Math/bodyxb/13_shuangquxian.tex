@@ -679,6 +679,41 @@ t > 1 & \text{点在双曲线内}.
             \end{dingautolist}
         \end{enumerate}
     \end{jieda}
+
+    \item 已知双曲线 $\Gamma  : {x}^{2} - {y}^{2} = 1$ ,直线 $l$ 过点 $M\left( {m,0}\right) ,m \in  \mathbf{R}$ ,且与 $\Gamma$ 的右支交于 $P\text{、}Q$ 两点，与 $\Gamma$ 的两条渐近线分别交于 $A$ 、 $B$ 两点,其中 $A$ 、 $P$ 在第一象限, $B$ 、 $Q$ 在第四象限.
+    \begin{enumerate}
+        \item 求 $\Gamma$ 的两条渐近线的夹角
+        \item 若 $M$ 为 $\Gamma$ 的右焦点,求 $\bigtriangleup {OAB}$ 的面积的最小值
+        \item 若 $\left| {AP}\right|  = \left| {PQ}\right|  = \left| {QB}\right|$ ,求 $m$ 的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 两条渐近线为$y = \pm x$，故夹角为$\dfrac{\pi}{2}$
+            \item 当直线$l$斜率为0时不符合要求，故设直线$l: x = ty+m$，由$l$与 $\Gamma$ 的右支交于 $P\text{、}Q$两点，且$P$在第一象限，$Q$在第四象限，易知$t \in (-1, 1), m > 1$（第三问相同约束）
+            
+            联立两条渐近线和直线$l$：$\left\{\begin{array}{l}
+                x^2-y^2 = 0 \\
+                x = ty+m
+            \end{array} \right.$，$(t^2-1)y^2+2tmy+m^2 = 0$，必有$\Delta > 0$，故$\left\{\begin{array}{l}
+                y_A + y_B = \dfrac{-2tm}{t^2-1} \\
+                y_Ay_B = \dfrac{m^2}{t^2-1}
+            \end{array}\right.$
+
+            $S_{\triangle OAB} = S_{\triangle MOA} + S_{\triangle MOB} = \dfrac{m}{2} \cdot |y_A - y_B| = \dfrac{|m|}{2} \cdot \dfrac{\sqrt{4t^2m^2 - 4m^2(t^2-1)}}{t^2-1} = \dfrac{m^2}{1-t^2}$
+
+            因为$l$过右焦点，所以$m = \sqrt{2}$，因此$S_{\triangle OAB} = \dfrac{2}{1-t^2} \leq 2$（$t = 0$）
+
+            \item 联立两条渐近线和直线$l$：$\left\{\begin{array}{l}
+                x^2-y^2 = 1 \\
+                x = ty+m
+            \end{array} \right.$，$(t^2-1)y^2+2tmy+m^2 - 1 = 0$，必有$\Delta > 0$，故$\left\{\begin{array}{l}
+                y_P + y_Q = \dfrac{-2tm}{t^2-1} \\
+                y_Py_Q = \dfrac{m^2-1}{t^2-1}
+            \end{array}\right.$
+            
+            因为$y_P + y_Q = y_A + y_B$，所以$|AB|, |PQ|$共中点，因此$\left| {AP}\right|  = \left| {PQ}\right|  = \left| {QB}\right|$即$|AB| = 3|PQ|$，即$|y_A-y_B| = 3|y_P - y_Q|$，即$\dfrac{\sqrt{4t^2m^2 - 4m^2(t^2-1)}}{t^2-1} = 3\dfrac{\sqrt{4t^2m^2 - 4(m^2-1)(t^2-1)}}{t^2-1}$，即$\sqrt{4m^2}  = 3\sqrt{4(m^2+t^2-1)}$，即$m^2 = \dfrac{9(1-t^2)}{8} \in \left(0, \dfrac{9}{8}\right]$，又因为$m > 1$，所以$m \in \left(1, \dfrac{3\sqrt{2}}{4}\right]$
+        \end{enumerate}
+    \end{jieda}
     
     \item 已知双曲线 $\Gamma  : \dfrac{{x}^{2}}{2} - \dfrac{{y}^{2}}{2} = 1$ ,过点 $M\left( {m,0}\right)$ 作不垂直于 $x$ 轴的直线 $l$ 交双曲线 $\Gamma$ 于 $A$ 、 $B$ 两点.
     \begin{enumerate}
@@ -708,7 +743,6 @@ t > 1 & \text{点在双曲线内}.
 
             代入$4m^2+8t^2-8 > 0$可得$m^2+2(m-1)^2-2>0$，解得$m < 0$或$m > \dfrac{4}{3}$，又因为$m > 0, t^2 \neq 1$，所以$m \in \left(\dfrac{4}{3}, 2\right) \cup (2, +\infty)$
         \end{enumerate}
-        
     \end{jieda}
 
     \item 定义 $\Gamma  : {x}^{2} - {y}^{2} = 1,{F}_{1}\text{、}{F}_{2}$ 为 $\Gamma$ 的左右焦点 

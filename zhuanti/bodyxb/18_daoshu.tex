@@ -1825,6 +1825,16 @@
                 所以 $\ln 2$ 的近似值为 $0.693$.
             \end{enumerate}
         \end{jieda}
+        \item 已知集合 $T = \{ \left( {x,y}\right)  \mid  x > 1,y \in  \mathbf{R}\} ,{M}_{a} = \left\{  \left( {x,y}\right)  \left|y = {\left( a\ln x + \dfrac{1}{a}\right) }^{2} \right. \right\}$. 如果存在$\left( {{x}_{0},{y}_{0}}\right)  \in  {M}_{{a}_{0}}$ ,对属于 $T$ 且不属于任意 ${M}_{a}\left( {a \neq  0}\right)$ 的所有元素$(x,y)$,都有 $y - x \leq  {y}_{0} - {x}_{0}$ 成立,则 ${y}_{0} - {x}_{0}$ 的取值范围是\blkda[3]{$\left[8ln2 - 4, +\infty\right)$}.
+        \begin{jieda}
+            当固定$x$的时候$y = \left( a\ln x + \dfrac{1}{a}\right)^2 \geq (2\sqrt{lnx})^2 = 4lnx$，故所有${M}_{a}\left( {a \neq  0}\right)$的并集为$y = 4lnx$及其上方部分.
+
+            故属于 $T$ 且不属于任意 ${M}_{a}\left( {a \neq  0}\right)$ 的所有元素$(x,y)$构成集合$\{(x, y)| y < 4lnx, x > 1\}$
+
+            设$z = y - x$，即$y = x+z$，为斜率为1的动直线，其纵截距为$z$. 数形结合，寻找边界$y = 4lnx$的斜率为1的切线为$y = x + 4ln4 - 4$，故$z < 4ln4 - 4 = 8ln2 - 4$
+
+            因此${y}_{0} - {x}_{0} \in \left[8ln2 - 4, +\infty\right)$
+        \end{jieda}
         \item 已知关于 $x$ 的不等式 $\left( {\ln x - {kx}}\right) \left\lbrack  {{x}^{2} - \left( {k + 3}\right) x + 4}\right\rbrack   \leq  0$ 对任意 $x \in  \left( {0, + \infty }\right)$ 均成立，则实数 $k$ 的取值范围为\blkda[2]{$\left\lbrack  {\dfrac{1}{{e}},1}\right\rbrack$}.
         \begin{jieda}
             $\left( {\ln x - {kx}}\right) \left\lbrack  {{x}^{2} - \left( {k + 3}\right) x + 4}\right\rbrack   \leq  0$ 对任意 $x \in  (0$ , $+ \infty )$ 均成立

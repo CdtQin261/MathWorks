@@ -2266,6 +2266,32 @@ C. $\sin x > \sin y$ D. ${x}^{3} > {y}^{3}$
             \item 在 $\bigtriangleup {ABC}$ 中， $\angle {BAC} = {93}^{ \circ  },{BC} = 4$ ，由正弦定理得 $\dfrac{BC}{\sin \angle {BAC}} = \dfrac{AC}{\sin \angle {ABC}}$ ,所以 ${AC} = \dfrac{{BC} \cdot  \sin \angle {ABC}}{\sin \angle {BAC}} \approx 3.281$，在 $\bigtriangleup {ACD}$ 中,由余弦定理得${AD} = \sqrt{A{C}^{2} + D{C}^{2} - {2AC} \cdot  {DC} \cdot  \cos \angle {ACD}} \approx  {1.75}.$
         \end{enumerate}
     \end{jieda}
+
+    \item (2024$\cdot$青浦区一模$\cdot$18)在 $\bigtriangleup {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ，且满足 ${a}^{2} + {c}^{2} - {b}^{2} +  {ac} = 0.$
+    \begin{enumerate}
+        \item 求角 $B$ 的大小
+        \item 若 $b = 2\sqrt{3}$ ，求 $\bigtriangleup  {ABC}$ 的周长的最大值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 ${a}^{2} + {c}^{2} - {b}^{2} =  - {ac}$ ，由余弦定理得 $\cos \angle B =  \dfrac{{a}^{2} + {c}^{2} - {b}^{2}}{2ac} =  - \dfrac{1}{2},\angle B = {120}^{ \circ  }$
+            
+            \item 由正弦定理得， $a = 4\sin A$ ， $c = 4\sin \left( {{60}^{ \circ  } - A}\right)$ ，所以 $\bigtriangleup {ABC}$ 的周长为 $a + b + c = 4\sin A + 4\sin \left( {{60}^{ \circ  } - A}\right)  + 2\sqrt{3} =  4\sin \left( {A + {60}^{ \circ  }}\right)  + 2\sqrt{3},{0}^{ \circ  } < A < {60}^{ \circ  }$ ,当 $A = {30}^{ \circ  }$ 时, $\bigtriangleup {ABC}$ 的周长的最大值为 $4 + 2\sqrt{3}$.
+        \end{enumerate}
+    \end{jieda}
+
+    \item (2025$\cdot$杨浦区 一模$\cdot$18)已知 $\bigtriangleup  {ABC}$ 的内角 $A$ 、 $B$ 、 $C$ 所对边的长度分别为 $a$ 、 $b$ 、 $c$.
+    \begin{enumerate}
+        \item 若 ${\left( a + b\right) }^{2} - {c}^{2} = 4,C = {60}^{ \circ  }$ ，求 $\bigtriangleup  {ABC}$ 的面积
+        \item 若 $\dfrac{\cos C}{c} = \dfrac{\cos A}{{3b} - a}$ ，求 $\sin C$ 的值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由 ${\left( a + b\right) }^{2} - {c}^{2} = 4$ ，得 ${a}^{2} + {b}^{2} - {c}^{2} = 4 - {2ab}$ ，由余弦定理得 ${c}^{2} = {a}^{2} + {b}^{2} - {2ab}\cos C$ ，即 ${a}^{2} + {b}^{2} - {c}^{2} = {ab}$ ，所以 4- ${2ab} = {ab}$ ,即 ${ab} = \dfrac{4}{3}$ ,所以 $\bigtriangleup {ABC}$ 的面积为 $\dfrac{1}{2}{ab}\sin C = \dfrac{1}{2} \times  \dfrac{4}{3} \times  \dfrac{\sqrt{3}}{2} = \dfrac{\sqrt{3}}{3}$
+            
+            \item 因为 $\dfrac{\cos C}{c} = \dfrac{\cos A}{{3b} - a}$ ，由正弦定理得 $\dfrac{\cos C}{\sin C} = \dfrac{\cos A}{3\sin B - \sin A}$ ， 可得 $3\sin B\cos C - \sin A\cos C = \cos A\sin C$ ,则 $3\sin B\cos C =  \cos A\sin C + \sin A\cos C = \sin \left( {A + C}\right)  = \sin B$ ,因为 $B \in  \left( {0,\pi }\right)$ , 所以 $\sin B > 0$ ,则 $\cos C = \dfrac{1}{3}$ ,又 $C \in  \left( {0,\pi }\right)$，所以 $\sin C = \sqrt{1 - {\cos }^{2}C} = \dfrac{2\sqrt{2}}{3}$.
+        \end{enumerate}
+    \end{jieda}
 \end{enumerate}
 
 \subsection*{考点6 解三角形之实际应用}
@@ -2732,40 +2758,90 @@ C. $\sin x > \sin y$ D. ${x}^{3} > {y}^{3}$
         \item 求函数 $y = f\left( x\right)$ 的最小正周期及最大值
         \item 若 $\alpha  \in  \left( {\dfrac{\pi }{2},\pi }\right)$ ，且 $f\left( \alpha \right)  = \dfrac{\sqrt{2}}{2}$ ，求 $\alpha$ 的值.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 $f\left( x\right)  = \left( {2{\cos }^{2}x - 1}\right) \sin {2x} + \dfrac{1}{2}\cos {4x} =  \cos {2x}\sin {2x} + \dfrac{1}{2}\cos {4x} = \dfrac{1}{2}\left( {\sin {4x} + \cos {4x}}\right)  = \dfrac{\sqrt{2}}{2}\sin ({4x} +  \left. \dfrac{\pi }{4}\right)$ ,所以 $y = f\left( x\right)$ 的最小正周期为 $\dfrac{\pi }{2}$ ,最大值为 $\dfrac{\sqrt{2}}{2}$
+            
+            \item 因为 $\alpha  \in  \left( {\dfrac{\pi }{2},\pi }\right)$ ，所以 ${4\alpha } + \dfrac{\pi }{4} \in  \left( {\dfrac{9\pi }{4},\dfrac{17\pi }{4}}\right)$ . 因为 $f\left( \alpha \right)  =  \dfrac{\sqrt{2}}{2}$ ,所以 $f\left( \alpha \right)  = \dfrac{\sqrt{2}}{2}\sin \left( {{4\alpha } + \dfrac{\pi }{4}}\right)  = \dfrac{\sqrt{2}}{2}$ ,即 $\sin \left( {{4\alpha } + \dfrac{\pi }{4}}\right)  = 1$ . 所以 ${4\alpha } + \dfrac{\pi }{4} = \dfrac{5\pi }{2}$ ,故 $\alpha  = \dfrac{9\pi }{16}$ .
+        \end{enumerate}
+    \end{jieda}
     \item (2025$\cdot$浦东新区 一模$\cdot$17)已知函数 $y = f\left( x\right)$ 的表达式为 $f\left( x\right)  = \sin {\omega x},\omega  > 0$.
     \begin{enumerate}
         \item 若函数 $y = f\left( x\right)$ 的最小正周期为 $\dfrac{\pi }{2}$ ，求 $\omega$ 的值及 $y = f\left( x\right)$ 的单调增区间
         \item 若 $\omega  = 2$ ，设函数 $y = g\left( x\right)$ 的表达式为 $g\left( x\right)  = f\left( x\right)  + \sqrt{3}\cos {2x}$. 求当 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 时， $y =  g\left( x\right)$ 的值域.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 $\omega  > 0$ ，所以 $\dfrac{2\pi }{\omega } = \dfrac{\pi }{2}$ ，解得 $\omega  = 4$ ， $f\left( x\right)  = \sin {4x}$ ，令 $- \dfrac{\pi }{2} + {2k\pi } \leq  {4x} \leq  \dfrac{\pi }{2} + {2k\pi },k \in  \mathbf{Z}$ ,解得 $- \dfrac{\pi }{8} + \dfrac{k\pi }{2} \leq  x \leq  \dfrac{\pi }{8} +  \dfrac{k\pi }{2},k \in  \mathbf{Z}$ ,故单调递增区间为 $\left\lbrack  {-\dfrac{\pi }{8} + \dfrac{k\pi }{2},\dfrac{\pi }{8} + \dfrac{k\pi }{2}}\right\rbrack  ,k \in  \mathbf{Z}$
+            \item $\omega  = 2,g\left( x\right)  = \sin {2x} + \sqrt{3}\cos {2x} = 2\sin \left( {{2x} + \dfrac{\pi }{3}}\right) ,x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 时, ${2x} + \dfrac{\pi }{3} \in  \left\lbrack  {\dfrac{\pi }{3},\dfrac{4\pi }{3}}\right\rbrack$ ,故 $\sin \left( {{2x} + \dfrac{\pi }{3}}\right)  \in  \left\lbrack  {-\dfrac{\sqrt{3}}{2},1}\right\rbrack$ , 所以 $g\left( x\right)  = 2\sin \left( {{2x} + \dfrac{\pi }{3}}\right)  \in  \left\lbrack  {-\sqrt{3},2}\right\rbrack$ .
+        \end{enumerate}
+    \end{jieda}
     \item (2025$\cdot$徐汇区一模$\cdot$17)已知 $f\left( x\right)  = a\sin {\omega x} + b\cos {\omega x}\left( {\omega  > 0}\right)$ ，若定义在 $\mathbf{R}$ 上的函数 $y = f\left( x\right)$ 的最小正周期为 $\pi$ ,且对任意的 $x \in  \mathbf{R}$ ,都有 $f\left( x\right)  \leq  f\left( \dfrac{\pi }{12}\right)  = 4$.
     \begin{enumerate}
         \item 求实数 $a$ 、 $b$ 的值
         \item 设 ${x}_{1}\text{ 、 }{x}_{2} \in  \left( {0,\pi }\right)$ ，当 ${x}_{1} \neq  {x}_{2}$ 时， $f\left( {x}_{1}\right)  = f\left( {x}_{2}\right)  =  - 2$ ，求 ${x}_{1} + {x}_{2}$ 的值
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $f\left( x\right)  = a\sin {\omega x} + b\cos {\omega x} = \sqrt{{a}^{2} + {b}^{2}}\sin \left( {{\omega x} + \varphi }\right)$ ,由 $y = f\left( x\right)$ 的最小正周期为 $\pi$ ,知 $\omega  = 2$ ,因为 $f\left( x\right)  \leq  f\left( \dfrac{\pi }{12}\right)  =  a\sin \dfrac{\pi }{6} + b\cos \dfrac{\pi }{6} = 4$ ,所以 $\left\{  {\begin{array}{l} \dfrac{1}{2}a + \dfrac{\sqrt{3}}{2}b = 4 \\  {a}^{2} + {b}^{2} = {16} \end{array} \Longrightarrow  \left\{  \begin{array}{l} a = 2 \\  b = 2\sqrt{3} \end{array}\right. }\right.$
+            \item 由(1)可得: $f\left( x\right)  = 2\sin {2x} + 2\sqrt{3}\cos {2x} = 4\sin \left( {{2x} + }\right.  \left. \dfrac{\pi }{3}\right)$ ,因为 $4\sin \left( {{2x} + \dfrac{\pi }{3}}\right)  =  - 2 \Longrightarrow  \sin \left( {{2x} + \dfrac{\pi }{3}}\right)  =  - \dfrac{1}{2}$ ,所以 ${2x} + \dfrac{\pi }{3} = {2k\pi } - \dfrac{\pi }{6}$ 或 ${2x} + \dfrac{\pi }{3} = {2k\pi } + \dfrac{7}{6}\pi$ ,即 $x = {k\pi } -  \dfrac{\pi }{4}$ 或 $x = {k\pi } + \dfrac{5}{12}\pi ,k \in  \mathbf{Z}$ ,又 ${x}_{1},{x}_{2} \in  \left( {0,\pi }\right)$ ,则不妨令 ${x}_{1} =  \dfrac{3}{4}\pi ,{x}_{2} = \dfrac{5}{12}\pi$ ,故 ${x}_{1} + {x}_{2} = \dfrac{7}{6}\pi$ .
+        \end{enumerate}
+    \end{jieda}
 
     \item (2024$\cdot$静安区一模$\cdot$17)记 $f\left( x\right)  = {\sin }^{2}x - {\cos }^{2}x + 2\sqrt{3}\sin x\cos x + \lambda \left( {x \in  \mathbf{R}}\right)$ ，其中 $\lambda$ 为实常数.
     \begin{enumerate}
         \item 求函数 $y = f\left( x\right)$ 的最小正周期
         \item 若函数 $y = f\left( x\right)$ 的图像经过点 $\left( {\dfrac{\pi }{2},0}\right)$ ，求该函数在区间 $\left\lbrack  {0,\dfrac{2}{3}\pi }\right\rbrack$ 上的最大值和最小值.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $f\left( x\right)  =  - \cos {2x} + \sqrt{3}\sin {2x} + \lambda  = 2\sin \left( {{2x} - \dfrac{\pi }{6}}\right)  +  \lambda$ . 所以函数 $y = f\left( x\right)$ 的最小正周期为 $\pi$
+            
+            \item 因为 $f\left( \dfrac{\pi }{2}\right)  = 1 + \lambda  = 0$ ，所以 $\lambda  =  - 1$ ，则 $f\left( x\right)  =  2\sin \left( {{2x} - \dfrac{\pi }{6}}\right)  - 1$ . 令 ${2x} - \dfrac{\pi }{6} = t$ ,则 $t \in  \left\lbrack  {-\dfrac{\pi }{6},\dfrac{7\pi }{6}}\right\rbrack$ . 当 ${2x} - \dfrac{\pi }{6} =  - \dfrac{\pi }{6}$ 或 $\dfrac{7\pi }{6}$ ,即 $x = 0$ 或 $\dfrac{2\pi }{3}$ 时, $f{\left( x\right) }_{\min } =  - 2$ . 当 ${2x} - \dfrac{\pi }{6} = \dfrac{\pi }{2}$ ,即 $x = \dfrac{\pi }{3}$ 时, $f{\left( x\right) }_{\max } = 1$ .
+        \end{enumerate}
+    \end{jieda}
 
     \item (2025$\cdot$虹口区一模$\cdot$17)设 $f\left( x\right)  = \sin {\omega x}\left( {\omega  > 0}\right)$.
     \begin{enumerate}
         \item 当函数 $y = f\left( x\right)$ 的最小正周期为 ${2\pi }$ 时,求 $y = f\left( x\right)  + \cos x$ 在 $\left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 上的最大值
         \item 若 $\omega  = 2$ ，且在 $\bigtriangleup  {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对的边长为 $a$ 、 $b$ 、 $c$ ，锐角 $A$ 满足 $f\left( {A + \dfrac{\pi }{6}}\right)  = 0$ ， $\vv{AB} \cdot  \vv{AC} = 4$ ，求 $a$ 的最小值.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为函数 $y = f\left( x\right)$ 的最小正周期为 ${2\pi }$ ，所以 $\omega  = 1$ ， 故 $y = f\left( x\right)  + \cos x = \sin x + \cos x = \sqrt{2}\sin \left( {x + \dfrac{\pi }{4}}\right)$ ,因为 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ ,所以 $x + \dfrac{\pi }{4} \in  \left\lbrack  {\dfrac{\pi }{4},\dfrac{3\pi }{4}}\right\rbrack$ ,故当 $x + \dfrac{\pi }{4} = \dfrac{\pi }{2}$ ,即 $x = \dfrac{\pi }{4}$ 时,取到最大值 $\sqrt{2}$
+            \item $f\left( x\right)  = \sin {2x}$ ，当 $f\left( {A + \dfrac{\pi }{6}}\right)  = 0$ 时， $\sin \left( {{2A} + \dfrac{\pi }{3}}\right)  = 0$ ， 即 ${2A} + \dfrac{\pi }{3} = {k\pi },k \in  \mathbf{Z}$ ，由于 $A$ 为锐角，解得 $A = \dfrac{\pi }{3}$ ，由 $\vv{AB}$ . $\vv{AC} = 4 \Longrightarrow  {cb}\cos \dfrac{\pi }{3} = 4 \Longrightarrow  {bc} = 8$ ，所以 ${a}^{2} = {b}^{2} + {c}^{2} - {2bc}\cos \dfrac{\pi }{3} \geq  {2bc} - {bc} = {bc} = 8$ ,等号当且仅当 $b = c = 2\sqrt{2}$ 时成立,此时 $a$ 的最小值为 $2\sqrt{2}$ .
+        \end{enumerate}
+    \end{jieda}
 
     \item (2024$\cdot$青浦区二模$\cdot$17)对于函数 $y = f\left( x\right)$ ，其中 $f\left( x\right)  = 2\sin x\cos x + 2\sqrt{3}{\cos }^{2}x - \sqrt{3},x \in  \mathbf{R}$.
     \begin{enumerate}
         \item 求函数 $y = f\left( x\right)$ 的单调增区间
         \item 在锐角三角形 ${ABC}$ 中，若 $f\left( A\right)  = 1,\vv{AB} \cdot  \vv{AC} = \sqrt{2}$ ，求 $\bigtriangleup  {ABC}$ 的面积.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $f\left( x\right)  = 2\sin x\cos x + 2\sqrt{3}{\cos }^{2}x - \sqrt{3} = 2\sin x\cos x +  \sqrt{3}\left( {2{\cos }^{2}x - 1}\right)  = \sin {2x} + \sqrt{3}\cos {2x} = 2\sin \left( {{2x} + \dfrac{\pi }{3}}\right)$ ,令 $u =  {2x} + \dfrac{\pi }{3}$ ,则 $f\left( u\right)  = 2\sin u$ ,函数 $u = {2x} + \dfrac{\pi }{3}$ 为严格增函数, 当 $u \in  \left\lbrack  {{2k\pi } - \dfrac{\pi }{2},{2k\pi } + \dfrac{\pi }{2}}\right\rbrack  ,k \in  \mathbf{Z}$ 时函数 $f\left( u\right)  = 2\sin u$ 为严格增函数,即 ${2k\pi } - \dfrac{\pi }{2} \leq  {2x} + \dfrac{\pi }{3} \leq  {2k\pi } + \dfrac{\pi }{2},k \in  \mathbf{Z}$ ,得 ${k\pi } - \dfrac{5\pi }{12} \leq  x \leq  {k\pi } + \dfrac{\pi }{12},k \in  \mathbf{Z}$ ,所以函数 $y = f\left( x\right)$ 的单调增区间是 $\left\lbrack  {{k\pi } - \dfrac{5\pi }{12},{k\pi } + \dfrac{\pi }{12}}\right\rbrack  ,\left( {k \in  \mathbf{Z}}\right)$
+            
+            \item 由已知 $f\left( A\right)  = 2\sin \left( {{2A} + \dfrac{\pi }{3}}\right)  = 1$ ，所以 $\sin \left( {{2A} + \dfrac{\pi }{3}}\right)  =  \dfrac{1}{2}$ ,因为 $0 < A < \dfrac{\pi }{2}$ ,所以 $\dfrac{\pi }{3} < {2A} + \dfrac{\pi }{3} < \dfrac{4\pi }{3}$ ,即 ${2A} + \dfrac{\pi }{3} =  \dfrac{5\pi }{6}$ ,所以 $A = \dfrac{\pi }{4}$ ,又 $\vv{AB} \cdot  \vv{AC} = \left| \vv{AB}\right|  \cdot  \left| \vv{AC}\right| \cos A = \sqrt{2}$ ,所以 $\left| \vv{AB}\right|  \cdot  \left| \vv{AC}\right|  = 2$ ,所以 $\bigtriangleup {ABC}$ 的面积 $S = \dfrac{1}{2}\left| \vv{AB}\right|$ . $\left| \vv{AC}\right| \sin A = \dfrac{1}{2} \times  2 \times  \dfrac{\sqrt{2}}{2} = \dfrac{\sqrt{2}}{2}$.
+        \end{enumerate}
+    \end{jieda}
 
     \item (2024$\cdot$金山区二模$\cdot$17)已知函数 $y = f\left( x\right)$ ，记 $f\left( x\right)  = \sin \left( {{\omega x} + \varphi }\right) ,\omega  > 0,0 < \varphi  < \pi ,x \in  \mathbf{R}$.
     \begin{enumerate}
         \item 若函数 $y = f\left( x\right)$ 的最小正周期为 $\pi$ ,当 $f\left( \dfrac{\pi }{6}\right)  = 1$ 时,求 $\omega$ 和 $\varphi$ 的值
         \item 若 $\omega  = 1$ ， $\varphi  = \dfrac{\pi }{6}$ ，函数 $y = {f}^{2}\left( x\right)  - {2f}\left( x\right)  - a$ 有零点，求实数 $a$ 的取值范围.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为函数 $y = f\left( x\right)$ 的最小正周期 $\dfrac{2\pi }{\omega } = \pi$ ，所以 $\omega  = 2$ . 当 $x = \dfrac{\pi }{6}$ 时, $\sin \left( {\dfrac{\pi }{3} + \varphi }\right)  = 1$ ,所以 $\dfrac{\pi }{3} + \varphi  = {2k\pi } + \dfrac{\pi }{2}\left( {k \in  \mathbf{Z}}\right)$ ,得 $\varphi  = {2k\pi } + \dfrac{\pi }{6}\left( {k \in  \mathbf{Z}}\right)$ ,因为 $0 < \varphi  < \pi$ ,所以取 $k = 0$ 得 $\varphi  = \dfrac{\pi }{6}$
+            
+            \item 当 $\omega  = 1,\varphi  = \dfrac{\pi }{6}$ 时， $f\left( x\right)  = \sin \left( {x + \dfrac{\pi }{6}}\right) ,x \in  \mathbf{R}$ ,设 $t =  f\left( x\right)  = \sin \left( {x + \dfrac{\pi }{6}}\right)  \in  \left\lbrack  {-1,1}\right\rbrack$ . 由题意得， ${t}^{2} - {2t} - a = 0$ 在 $x \in  \left\lbrack  {-1,1}\right\rbrack$ 有解.
+            \begin{dingautolist}{172}
+                \item 化简得 $a = {t}^{2} - {2t}$ . 又因为 $g\left( t\right)  = {t}^{2} - {2t}$ 在 $t \in  \left\lbrack  {-1,1}\right\rbrack$ 上严格减，所以 $a \in  \left\lbrack  {-1,3}\right\rbrack$.
+                \item 记 $g\left( t\right)  = {t}^{2} - {2t} - a$ ,由根的分布可得 $\left\{  \begin{array}{l} \Delta  \geq  0, \\  g\left( {-1}\right)  \geq  0 \end{array}\right.$ , 所以 $a \in  \left\lbrack  {-1,3}\right\rbrack$.
+            \end{dingautolist}
+        \end{enumerate}
+    \end{jieda}
 
     \item (2025$\cdot$闵行区二模$\cdot$18)已知 $f\left( x\right)  = \sin \left( {{\omega x} + \varphi }\right) \left( {\omega  > 0,0 < \varphi  < \pi }\right)$ ，函数 $y = f\left( x\right)$ 的部分图像如图所示，图中最高点 $S\left( {\dfrac{\pi }{3},1}\right)$ ，最低点 $T\left( {\dfrac{4\pi }{3}, - 1}\right)$.
 
@@ -2777,78 +2853,169 @@ C. $\sin x > \sin y$ D. ${x}^{3} > {y}^{3}$
         \item 求函数 $y = f\left( x\right)$ 的解析式
         \item 若 $\bigtriangleup  {ABC}$ 的内角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ，若 $A \neq  B$ ， $f\left( A\right)  = f\left( B\right) ,c = 2$ ,求 $\bigtriangleup {ABC}$ 面积的取值范围.
     \end{enumerate}
-
-    \item (2024$\cdot$青浦区一模$\cdot$18)在 $\bigtriangleup {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ，且满足 ${a}^{2} + {c}^{2} - {b}^{2} +  {ac} = 0.$
-    \begin{enumerate}
-        \item 求角 $B$ 的大小
-        \item 若 $b = 2\sqrt{3}$ ，求 $\bigtriangleup  {ABC}$ 的周长的最大值.
-    \end{enumerate}
-
-    \item (2025$\cdot$杨浦区 一模$\cdot$18)已知 $\bigtriangleup  {ABC}$ 的内角 $A$ 、 $B$ 、 $C$ 所对边的长度分别为 $a$ 、 $b$ 、 $c$.
-    \begin{enumerate}
-        \item 若 ${\left( a + b\right) }^{2} - {c}^{2} = 4,C = {60}^{ \circ  }$ ，求 $\bigtriangleup  {ABC}$ 的面积
-        \item 若 $\dfrac{\cos C}{c} = \dfrac{\cos A}{{3b} - a}$ ，求 $\sin C$ 的值.
-    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 $f\left( x\right)  = \sin \left( {{\omega x} + \varphi }\right)$ 图像经过 $S\left( {\dfrac{\pi }{3},1}\right)$ , $T\left( {\dfrac{4\pi }{3}, - 1}\right)$ ,所以 $\dfrac{4\pi }{3} - \dfrac{\pi }{3} = \dfrac{T}{2}$ 得周期 $T = {2\pi }$ ,由 $\dfrac{2\pi }{\omega } = {2\pi }$ 得, $\omega  = 1$ . 又 $f\left( \dfrac{\pi }{3}\right)  = 1$ 得 $\dfrac{\pi }{3} + \varphi  = {2k\pi } + \dfrac{\pi }{2},k \in  \mathbf{Z}$ ,又因为 $0 <  \varphi  < \pi$ ,所以 $\varphi  = \dfrac{\pi }{6}$ ,所以 $f\left( x\right)  = \sin \left( {x + \dfrac{\pi }{6}}\right)$
+            
+            \item 因为 $f\left( A\right)  = f\left( B\right)$ ，又 $0 < A + B < \pi$ ，结合图像对称性可知: $A + B = \dfrac{2\pi }{3}$ ,则 $C = \dfrac{\pi }{3}$ ,又 $c = 2$ ,由正弦定理得: $\dfrac{a}{\sin A} =  \dfrac{b}{\sin B} = \dfrac{c}{\sin C} = \dfrac{4\sqrt{3}}{3}$ ,则 $a = \dfrac{4\sqrt{3}}{3}\sin A,b = \dfrac{4\sqrt{3}}{3}\sin B$ ,所以 ${ab} = \dfrac{16}{3}\sin A\sin B = \dfrac{16}{3}\sin A\sin \left( {\dfrac{2\pi }{3} - A}\right)  = \dfrac{16}{3}\sin A\left( {\dfrac{\sqrt{3}}{2}\cos A + }\right.  \left. {\dfrac{1}{2}\sin A}\right)  = \dfrac{8\sqrt{3}}{3}\sin A\cos A + \dfrac{8}{3}{\sin }^{2}A = \dfrac{4\sqrt{3}}{3}\sin {2A} + \dfrac{4}{3} -  \dfrac{4}{3}\cos {2A} = \dfrac{8}{3}\sin \left( {{2A} - \dfrac{\pi }{6}}\right)  + \dfrac{4}{3}$ ,由 $A + B = \dfrac{2\pi }{3},A \neq  B$ ,可得 $A \in  \left( {0,\dfrac{\pi }{3}}\right)  \cup  \left( {\dfrac{\pi }{3},\dfrac{2\pi }{3}}\right)$ ,所以 ${2A} - \dfrac{\pi }{6} \in  \left( {-\dfrac{\pi }{6},\dfrac{\pi }{2}}\right)  \cup  \left( \dfrac{\pi }{2}, \dfrac{7\pi }{6}\right)$ ,则 $\sin \left( {{2A} - \dfrac{\pi }{6}}\right)  \in  \left( {-\dfrac{1}{2},1}\right)$ ,故 ${ab} \in  \left( {0,4}\right)$ ,于是可得 $\bigtriangleup {ABC}$ 的面积为 $\dfrac{1}{2}{ab}\sin C = \dfrac{1}{2}{ab} \cdot  \dfrac{\sqrt{3}}{2} = \dfrac{\sqrt{3}}{4}{ab} \in  \left( {0,\sqrt{3}}\right)$ , 故 $\bigtriangleup {ABC}$ 面积的取值范围为 $\left( {0,\sqrt{3}}\right)$.
+        \end{enumerate}
+    \end{jieda}
 
     \item (2025$\cdot$普陀区一模$\cdot$18)设函数 $y = f\left( x\right)$ 的表达式为 $f\left( x\right)  = \sin \left( {\omega x}\right)$ ，其中 $\omega  > 0$.
     \begin{enumerate}
         \item 设 $\omega  = 1,m \in  \mathbf{R}$ ，若有且只有一个 ${x}_{0} \in  \left( {0,m}\right)$ ，使得函数 $y = f\left( {x + \dfrac{\pi }{4}}\right)$ 取得最小值，求 $m$ 的取值范围
         \item 若对任意的 $x \in  \mathbf{R}$ ，皆有 $f\left( x\right)  + f\left( {\dfrac{2\pi }{3} - x}\right)  = 0$ 成立，且函数 $y = f\left( x\right)$ 在区间 $\left( {-\dfrac{\pi }{8},0}\right)$ 上是严格增函数,求函数 $y = f\left( x\right)$ 的最小正周期.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 当 $\omega  = 1$ 时， $f\left( x\right)  = \sin x$ ，所以函数 $y = f\left( {x + \dfrac{\pi }{4}}\right)  =  \sin \left( {x + \dfrac{\pi }{4}}\right)$ 在区间 $\left( {0,m}\right)$ 上只有一个最小值点，又因为 $\dfrac{\pi }{4} <  x + \dfrac{\pi }{4} < \dfrac{\pi }{4} + m$ ,由正弦函数的图像可知: $\dfrac{3\pi }{2} < m + \dfrac{\pi }{4} \leq  \dfrac{7\pi }{2}$ , 解得 $\dfrac{5\pi }{4} < m \leq  \dfrac{13\pi }{4}$ ,所以 $m$ 的取值范围为 $\left( {\dfrac{5\pi }{4},\dfrac{13\pi }{4}}\right\rbrack$ 
+            
+            \item 由 $f\left( x\right)  + f\left( {\dfrac{2\pi }{3} - x}\right)  = 0$ ，可知函数 $y = f\left( x\right)$ 关于点 $\left( {\dfrac{\pi }{3},0}\right)$ 对称. 因此 $\sin \left( \dfrac{\omega \pi }{3}\right)  = 0$ ,解得 $\omega  = {3k}$ ,其中 $k$ 为整数. 由于函数在区间 $\left( {-\dfrac{\pi }{8},0}\right)$ 上是严格增函数,所以 $\dfrac{T}{2} \geq  0 - \left( {-\dfrac{\pi }{8}}\right)  = \dfrac{\pi }{8}$ ,所以 $T = \dfrac{2\pi }{\omega } \geq  \dfrac{\pi }{4}$ ,结合 $\omega  = {3k}$ ,其中 $k$ 为整数,所以 $0 < \omega  \leq  8$ ,又 $\omega  = {3k}$ ,其中 $k$ 为整数,所以 $\omega  = 3$ 或 $\omega  = 6$ ,当 $\omega  = 6$ 时, $f\left( x\right)  = \sin \left( {6x}\right)$ ,函数在区间 $\left( {-\dfrac{\pi }{8},0}\right)$ 上不是严格增函数; 当 $\omega  = 3$ 时, $f\left( x\right)  = \sin \left( {3x}\right)$ ,函数在区间 $\left( {-\dfrac{\pi }{8},0}\right)$ 上是严格增函数,且关于点 $\left( {\dfrac{\pi }{3},0}\right)$ 对称. 所以 $\omega  = 3$ . 因此函数 $y = f\left( x\right)$ 的最小正周期为 $T = \dfrac{2\pi }{3}$ .
+        \end{enumerate}
+    \end{jieda}
 
     \item (2025$\cdot$普陀区二模$\cdot$18)设 $\omega  > 0$ ，函数 $y = f\left( x\right)$ 的表达式为 $f\left( x\right)  = \cos \left( {{\omega x} - \dfrac{\pi }{6}}\right)$.
     \begin{enumerate}
         \item 若 $\omega  = 2$ ，设 $\bigtriangleup  {ABC}$ 的内角 $A$ 、 $B$ 、 $C$ 的对边分别为 $a$ 、 $b$ 、 $c$ ， $,f\left( C\right)  =  - \dfrac{\sqrt{3}}{2}$ ，且 ${c}^{2} - {a}^{2} - {b}^{2} = 4$ ，求 $\bigtriangleup  {ABC}$ 的面积
         \item 对任意的 ${x}_{0} \in  \mathbf{R}$ ，皆有 $f\left( {x}_{0}\right)  \leq  f\left( \dfrac{\pi }{3}\right)$ 成立，且该函数在区间 $\left( {\dfrac{\pi }{6},\dfrac{\pi }{2}}\right)$ 上不存在最小值，求函数 $y = f\left( x\right)$ 在 $x \in  \left( {\dfrac{4\pi }{3},\dfrac{17\pi }{6}}\right)$ 的单调区间.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 $\omega  = 2$ ，所以 $f\left( x\right)  = \cos \left( {{2x} - \dfrac{\pi }{6}}\right)$ ，所以 $f\left( C\right)  =  \cos \left( {{2C} - \dfrac{\pi }{6}}\right)  =  - \dfrac{\sqrt{3}}{2}$ ,解得 ${2C} - \dfrac{\pi }{6} = \dfrac{7\pi }{6}$ 或 $\dfrac{5\pi }{6}$ ,所以 $C = \dfrac{\pi }{2}$ 或 $\dfrac{2\pi }{3}$ ,若 $C = \dfrac{\pi }{2}$ ,则 ${c}^{2} = {a}^{2} + {b}^{2}$ ,不符; 所以 $C = \dfrac{2\pi }{3}$ ,所以 $\cos C = \dfrac{{a}^{2} + {b}^{2} - {c}^{2}}{2ab} =  - \dfrac{1}{2}$ ,所以 ${c}^{2} = {a}^{2} + {b}^{2} + {ab}$ ,由 ${c}^{2} -  {a}^{2} - {b}^{2} = 4$ ,得 $4 + {a}^{2} + {b}^{2} = {a}^{2} + {b}^{2} + {ab}$ ,所以 ${ab} = 4,{S}_{\bigtriangleup {ABC}} =  \dfrac{1}{2}{ab}\sin C = \dfrac{1}{2} \times  4 \times  \dfrac{\sqrt{3}}{2} = \sqrt{3}$
+            
+            \item 由 $f\left( \dfrac{\pi }{3}\right)  = 1$ ，得 $\dfrac{\omega \pi }{3} - \dfrac{\pi }{6} = {2k\pi }$ ，所以 $\omega  = {6k} + \dfrac{1}{2}$ ， $k \in  \mathbf{Z}$ ，令 $t = {\omega x} - \dfrac{\pi }{6}$ ,因为 $x \in  \left( {\dfrac{\pi }{6},\dfrac{\pi }{2}}\right)$ ,所以 $t \in  \left( {\dfrac{\pi }{6}\omega  - \dfrac{\pi }{6},\dfrac{\pi }{2}\omega  - }\right.  \left. \dfrac{\pi }{6}\right)$ ,又函数在 $\left( {\dfrac{\pi }{6},\dfrac{\pi }{2}}\right)$ 无最小值,所以 $\left\{  \begin{array}{l} \dfrac{\pi }{6}\omega  - \dfrac{\pi }{6} >  - \dfrac{\pi }{2} \\  \dfrac{\pi }{2}\omega  - \dfrac{\pi }{6} < \dfrac{3\pi }{2} \end{array}\right.$ ,解得 $\omega  \in  \left( {0,\dfrac{10}{3}}\right)$ ,所以 $k = 0$ ,则 $\omega  = \dfrac{1}{2}$ ,所以 $f\left( x\right)  = \cos \left( {\dfrac{1}{2}x}\right.  \left. {-\dfrac{\pi }{6}}\right)$ ,令 ${2k\pi } \leq  \dfrac{1}{2}x - \dfrac{\pi }{6} \leq  {2k\pi } + \pi$ ,所以 ${4k\pi } + \dfrac{\pi }{3} \leq  x \leq  {4k\pi }  + \dfrac{7\pi }{3},k \in  \mathbf{Z}$ ,当 $k = 0$ 时, $\dfrac{\pi }{3} \leq  x \leq  \dfrac{7\pi }{3}$ ,因为 $x \in  \left( {\dfrac{4\pi }{3},\dfrac{17\pi }{6}}\right)$ ,所以 $y = f\left( x\right)$ 在 $\left( {\dfrac{4\pi }{3},\dfrac{7\pi }{3}}\right)$ 单调递减,在 $\left( {\dfrac{7\pi }{3},\dfrac{17\pi }{6}}\right)$ 单调递增.
+        \end{enumerate}
+    \end{jieda}
 
     \item (2025$\cdot$黄浦区一模$\cdot$18)已知 $f\left( x\right)  = \sin x$.
     \begin{enumerate}
         \item 求函数 $y = f\left( x\right)  \cdot  f\left( {\dfrac{\pi }{2} - x}\right)$ 的最小正周期
         \item 求函数 $y = f\left( {{2x} + \dfrac{\pi }{3}}\right) ,x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 的单调减区间.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由 $f\left( x\right)  = \sin x$ ,得 $f\left( {\dfrac{\pi }{2} - x}\right)  = \sin \left( {\dfrac{\pi }{2} - x}\right)  =  \cos x$ ,则函数 $y = f\left( x\right)  \cdot  f\left( {\dfrac{\pi }{2} - x}\right)  = \sin x \cdot  \cos x = \dfrac{1}{2}\sin {2x}$ , 故最小正周期为 $\dfrac{2\pi }{2} = \pi$
+            
+            \item 由 $f\left( x\right)  = \sin x$ ，得 $y = f\left( {{2x} + \dfrac{\pi }{3}}\right)  = \sin \left( {{2x} + \dfrac{\pi }{3}}\right) ,x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ ; 由 $0 \leq  x \leq  \dfrac{\pi }{2}$ ,得 $\dfrac{\pi }{3} \leq  {2x} + \dfrac{\pi }{3} \leq  \dfrac{4\pi }{3}$ ,令 $\dfrac{\pi }{2} \leq  {2x} +  \dfrac{\pi }{3} \leq  \dfrac{4\pi }{3}$ ,解得 $\dfrac{\pi }{12} \leq  x \leq  \dfrac{\pi }{2}$ ,故单调减区间为 $\left\lbrack  {\dfrac{\pi }{12},\dfrac{\pi }{2}}\right\rbrack$ .
+        \end{enumerate}
+    \end{jieda}
 \end{enumerate}
 \subsection*{考点8 三角函数图像的伸缩平移变换}
 
 \subsubsection*{一、填空题}
 
 \begin{enumerate}
-    \item (2024$\cdot$闵行区一模$\cdot$7)若将函数 $y = \sin \left( {{2x} + \varphi }\right) \left( {0 < \varphi  < \pi }\right)$ 的图像向右平移 $\dfrac{\pi }{3}$ 个单位,得到的图像所对应的函数为奇函数,则 $\varphi  =$ \blkda[2]{}.
+    \item (2024$\cdot$闵行区一模$\cdot$7)若将函数 $y = \sin \left( {{2x} + \varphi }\right) \left( {0 < \varphi  < \pi }\right)$ 的图像向右平移 $\dfrac{\pi }{3}$ 个单位,得到的图像所对应的函数为奇函数,则 $\varphi  =$ \blkda[2]{$\dfrac{2\pi }{3}$}.
+    \begin{jieda}
+        原函数有对称中心$\left(-\dfrac{\pi}{3}, 0\right)$，故$2 \times \left(-\dfrac{\pi}{3}\right) + \varphi = k\pi, k \in \mathbf{Z}$，故$\varphi = \dfrac{2\pi}{3} + k\pi, k \in \mathbf{Z}$，又因为$0 < \varphi  < \pi $，所以$\varphi = \dfrac{2\pi}{3}$
+    \end{jieda}
 
-    \item (2024$\cdot$虹口区一模$\cdot$8)已知函数 $f\left( x\right)  = \cos \left( {{\omega x} + \varphi }\right) (\omega  > 0$ ， $\left| \varphi \right|  < \dfrac{\pi }{2})$ 的部分图像如图所示，则 $f\left( x\right)  =$ \blkda[2]{}.
+    \item (2024$\cdot$虹口区一模$\cdot$8)已知函数 $f\left( x\right)  = \cos \left( {{\omega x} + \varphi }\right) (\omega  > 0$ ， $\left| \varphi \right|  < \dfrac{\pi }{2})$ 的部分图像如图所示，则 $f\left( x\right)  =$ \blkda[2]{$\cos \left( {{2x} - \dfrac{\pi }{6}}\right)$}.
     \begin{center}
     \includegraphics[width=0.2\textwidth]{bodyxb/src/68_1078_908_343_267_0.jpg}
     \end{center}
 
-    \item (2024 $\cdot$春贤区一模$\cdot$9)设函数 $y = \sin {\omega x}\left( {\omega  > 0}\right)$ 在区间 $\left( {0,{2\pi }}\right)$ 上恰有三个极值点，则 $\omega$ 的取值范围为\blkda[2]{}.
+    \item (2024 $\cdot$奉贤区一模$\cdot$9)设函数 $y = \sin {\omega x}\left( {\omega  > 0}\right)$ 在区间 $\left( {0,{2\pi }}\right)$ 上恰有三个极值点，则 $\omega$ 的取值范围为\blkda[2]{$\left( {\dfrac{5}{4},\dfrac{7}{4}}\right\rbrack$}.
+    \begin{jieda}
+        $x \in  \left( {0,{2\pi }}\right) ,{\omega x}  \in  \left( {0,{2\pi \omega }}\right)  \Longrightarrow  \dfrac{5\pi }{2} < {2\pi \omega } \leq  \dfrac{7\pi }{2} \Longrightarrow  \omega  \in  \left( {\dfrac{5}{4},\dfrac{7}{4}}\right\rbrack$.
 
-    \item (2024$\cdot$浦东新区一模$\cdot$10)如图所示，已知函数 $y = A\sin \left( {{\omega x} + \varphi }\right)  \left( {A > 0,\omega  > 0,0 < \varphi  < \dfrac{\pi }{2}}\right)$ 的图像与 $y$ 轴的交点为 $\left( {0,1}\right)$ ,并已知其在 $y$ 轴右侧的第一个最高点和第一个最低点的坐标分别为 $\left( {{x}_{0},2}\right)$ 和 $\left( {{x}_{0} + {2\pi }, - 2}\right)$. 记 $y = f\left( x\right)$ ,则 $f\left( \dfrac{\pi }{3}\right)  =$ \blkda[2]{}.
+        \begin{center}
+        \includegraphics[width=0.4\textwidth]{bodyxb/src/46_1219_1003_360_168_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2024$\cdot$浦东新区一模$\cdot$10)如图所示，已知函数 $y = A\sin \left( {{\omega x} + \varphi }\right)  \left( {A > 0,\omega  > 0,0 < \varphi  < \dfrac{\pi }{2}}\right)$ 的图像与 $y$ 轴的交点为 $\left( {0,1}\right)$ ,并已知其在 $y$ 轴右侧的第一个最高点和第一个最低点的坐标分别为 $\left( {{x}_{0},2}\right)$ 和 $\left( {{x}_{0} + {2\pi }, - 2}\right)$. 记 $y = f\left( x\right)$ ,则 $f\left( \dfrac{\pi }{3}\right)  =$ \blkda[2]{$\sqrt{3}$}.
 
     \begin{center}
     \includegraphics[width=0.3\textwidth]{bodyxb/src/68_1024_1329_399_220_0.jpg}
     \end{center}
+    \begin{jieda}
+        $\dfrac{T}{2} = {2\pi },T = {4\pi } = \dfrac{2\pi }{\omega } \Longrightarrow  \omega  = \dfrac{1}{2},A = 2 \Longrightarrow  f\left( x\right)  =  2\sin \left( {\dfrac{1}{2}x + \varphi }\right) ,f\left( 0\right)  = 1 \Longrightarrow  \varphi  = \dfrac{\pi }{6},f\left( x\right)  = 2\sin \left( {\dfrac{1}{2}x + \dfrac{\pi }{6}}\right)  \Longrightarrow  f\left( \dfrac{\pi }{3}\right)  = \sqrt{3}.$
+    \end{jieda}
 
-    \item (2024$\cdot$普陀区一模$\cdot$10)设函数 $y = \sin \left( {{2x} + \varphi }\right) \left( {0 < \varphi  < \dfrac{\pi }{2}}\right)$ 的图像与直线 $y = t$ 相交的连续的三个公共点从左到右依次记为 $A\text{ 、 }B\text{ 、 }C$ ，若 $\left| {BC}\right|  = 2\left| {AB}\right|$ ，则正实数 $t$ 的值为\blkda[2]{}.
+    \item (2024$\cdot$普陀区一模$\cdot$10)设函数 $y = \sin \left( {{2x} + \varphi }\right) \left( {0 < \varphi  < \dfrac{\pi }{2}}\right)$ 的图像与直线 $y = t$ 相交的连续的三个公共点从左到右依次记为 $A\text{ 、 }B\text{ 、 }C$ ，若 $\left| {BC}\right|  = 2\left| {AB}\right|$ ，则正实数 $t$ 的值为\blkda[2]{$\dfrac{1}{2}$}.
+    \begin{jieda}
+        作出函数 $y = \sin \left( {{2x} + \varphi }\right)$ ,的大致图象,如图,令 ${2x} + \varphi  = {2k\pi } + \dfrac{\pi }{2},k \in  {Z}$ ,
 
-    \item (2025$\cdot$黄浦区二模$\cdot$12)设 $a$ 、 $b$ 为常数， $f\left( x\right)  = \left| {a + \sin x}\right|  + \left| {a - \sin x}\right|$ ，若对任意的 $b \in  \left( {1,2}\right)$ ，函数 $y = f\left( x\right)  - b$ 在区间 $\left\lbrack  {0,{2\pi }}\right\rbrack$ 上恰有 4 个零点，则 $a$ 的取值范围是\blkda[2]{}.
+        解得 $x = {k\pi } + \dfrac{\pi }{4} - \dfrac{\varphi }{2},k \in  {Z}$ ,
 
-    \item (2025$\cdot$徐汇区二模$\cdot$12)设实数 $\omega  > 0$ ，若 $f\left( x\right)  = \sin {\omega x}$ 满足对任意 ${x}_{1} \in  \left\lbrack  {0,\pi }\right\rbrack$ ，都存在 ${x}_{2} \in  \left\lbrack  {\pi ,{2\pi }}\right\rbrack$ ，使得 $f\left( {x}_{1}\right)  + f\left( {x}_{2}\right)  = 0$ 成立，则 $\omega$ 的最小值是\blkda[2]{}.
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/1_87_1144_381_303_0.jpg}
+        \end{center}
 
-    \item (2025$\cdot$闵行区一模$\cdot$12)已知 $f\left( x\right)  = \left| {\sin {\omega x}}\right|$ ，若存在 ${x}_{1}$ 、 ${x}_{2} \in  \left\lbrack  {{\omega \pi },{2\omega \pi }}\right\rbrack$ ，且 ${x}_{1} \neq  {x}_{2}$ ，使得 $\dfrac{1}{f\left( {x}_{1}\right)  + 1} + \dfrac{1}{f\left( {x}_{2}\right)  + 1} = 1$ 成立，则 $\omega$ 的取值范围是\blkda[2]{}.
+
+        则函数 $y = \sin \left( {{2x} + \varphi }\right)$ 的图象与直线 $y = t\left( {0 < t < 1}\right)$ 连续的三个公共点 $A,B,C$ ,(可以同时往左或往右移动正整数倍周期长度)
+
+        即 $A,B$ 关于直线 $x = {k\pi } + \dfrac{\pi }{4} - \dfrac{\varphi }{2},k \in  {Z}$ 对称, $\left| {AC}\right|  = T = \dfrac{2\pi }{2} = \pi$ ,
+
+        由于 $\left| {BC}\right|  = 2\left| {AB}\right|$ ,故 $\left| {AB}\right|  = \dfrac{1}{3}\left| {AC}\right|  = \dfrac{\pi }{3}$ ,
+
+        而 $A,B$ 关于直线 $x = {k\pi } + \dfrac{\pi }{4} - \dfrac{\varphi }{2},k \in  {Z}$ 对称,
+
+        故 $A$ 点横坐标为 ${k\pi } + \dfrac{\pi }{4} - \dfrac{\varphi }{2} - \dfrac{\pi }{6} = {k\pi } + \dfrac{\pi }{12} - \dfrac{\varphi }{2}$ ,
+
+        将 $A$ 点横坐标代入 $y = \sin \left( {{2x} + \varphi }\right)$ ，得 $\sin \left( {\dfrac{\pi }{6} + {2k\pi }}\right)  = t = \dfrac{1}{2}$
+    \end{jieda}
+
+    \item (2025$\cdot$黄浦区二模$\cdot$12)设 $a$ 、 $b$ 为常数， $f\left( x\right)  = \left| {a + \sin x}\right|  + \left| {a - \sin x}\right|$ ，若对任意的 $b \in  \left( {1,2}\right)$ ，函数 $y = f\left( x\right)  - b$ 在区间 $\left\lbrack  {0,{2\pi }}\right\rbrack$ 上恰有 4 个零点，则 $a$ 的取值范围是\blkda[2]{$\left[-\dfrac{1}{2}, \dfrac{1}{2}\right]$}.
+    \begin{jieda}
+        由 $x \in  \left\lbrack  {0,{2\pi }}\right\rbrack$ ,则 $\sin x \in  \left\lbrack  {-1,1}\right\rbrack$ ,又 $b \in  \left( {1,2}\right)$
+        
+        当 $a \geq  1,f\left( x\right)  = a + \sin x + a - \sin x = {2a} \geq  2$ ,此时 $y = {2a} - b$ 无零点
+        
+        当 $a \leq   - 1,f\left( x\right)  =  - a - \sin x - a + \sin x =  - {2a} \geq  2$ ,此时 $y =  - {2a} - b$ 无零点
+        
+        当 $0 \leq  \left| a\right|  < 1,f\left( x\right)  = \left\{  \begin{array}{l} 2\left| a\right| ,0 \leq  \left| {\sin x}\right|  \leq  \left| a\right| \\  2\left| {\sin x}\right| ,\left| a\right|  < \left| {\sin x}\right|  \leq  1 \end{array}\right.$ 如图,此时 $f\left( x\right)  \in  \left\lbrack  {2\left| a\right| ,2}\right\rbrack$ ,而 $b \in  \left( {1,2}\right)$ ,要使 $f\left( x\right)  = b$ 在区间 $\left\lbrack  {0,{2\pi }}\right\rbrack$ 上恰有 4 个根,则 $2\left| a\right|  \leq  1$ ,则 $- \dfrac{1}{2} \leq  a \leq  \dfrac{1}{2}$.
+        \begin{center}
+            \includegraphics[width=0.4\textwidth]{bodyxb/src/47_552_466_266_169_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2025$\cdot$徐汇区二模$\cdot$12)设实数 $\omega  > 0$ ，若 $f\left( x\right)  = \sin {\omega x}$ 满足对任意 ${x}_{1} \in  \left\lbrack  {0,\pi }\right\rbrack$ ，都存在 ${x}_{2} \in  \left\lbrack  {\pi ,{2\pi }}\right\rbrack$ ，使得 $f\left( {x}_{1}\right)  + f\left( {x}_{2}\right)  = 0$ 成立，则 $\omega$ 的最小值是\blkda[2]{$\dfrac{3}{4}$}.
+    \begin{jieda}
+        换元$t = \omega x$，故$\forall t_1 \in [0, \omega\pi]$，$\exists t_2 \in [\omega\pi, 2\omega\pi]$使得$sint_1 + sint_2 = 0$
+
+        假设$\omega < \dfrac{\pi}{2}$，则$sint_1, sint_2 \geq 0$，不满足要求.
+
+        故$sint_1$可以取到$1$，故$sint_2$应可以取到$-1$，故$\omega \geq \dfrac{3}{4}$，经检验$\omega = \dfrac{3}{4}$满足要求.
+    \end{jieda}
+
+    \item (2025$\cdot$闵行区一模$\cdot$12)已知 $f\left( x\right)  = \left| {\sin {\omega x}}\right|$ ，若存在 ${x}_{1}$ 、 ${x}_{2} \in  \left\lbrack  {{\omega \pi },{2\omega \pi }}\right\rbrack$ ，且 ${x}_{1} \neq  {x}_{2}$ ，使得 $\dfrac{1}{f\left( {x}_{1}\right)  + 1} + \dfrac{1}{f\left( {x}_{2}\right)  + 1} = 1$ 成立，则 $\omega$ 的取值范围是\blkda[4]{$\left\lbrack  {\dfrac{\sqrt{5}}{2},\dfrac{\sqrt{6}}{2}}\right\rbrack   \cup  \left\lbrack  {\dfrac{\sqrt{7}}{2}, + \infty }\right)$}.
+    \begin{jieda}
+        原问题转化为$y = sinx$在$[\omega^2\pi, 2\omega^2\pi]$上存在至少两个对称轴.
+    \end{jieda}
 \end{enumerate}
 
 \subsubsection*{二、选择题}
 \begin{enumerate}
-    \item (2024$\cdot$虹口区二模$\cdot$14)设 $f\left( x\right)  = \sin {2x} + \sqrt{3}\cos {2x}$ ，将函数 $y = f\left( x\right)$ 的图像沿 $x$ 轴向右平移 $\dfrac{\pi }{6}$ 个单位,得到函数 $y = g\left( x\right)$ 的图像,则 \dotfill{(\kh{})}
+    \item (2024$\cdot$虹口区二模$\cdot$14)设 $f\left( x\right)  = \sin {2x} + \sqrt{3}\cos {2x}$ ，将函数 $y = f\left( x\right)$ 的图像沿 $x$ 轴向右平移 $\dfrac{\pi }{6}$ 个单位,得到函数 $y = g\left( x\right)$ 的图像,则 \dotfill{(\kh{D})}
     \xx{函数 $y = g\left( x\right)$ 是偶函数}{函数 $y = g\left( x\right)$ 的图像关于直线 $x = \dfrac{\pi }{2}$ 对称}{函数 $y = g\left( x\right)$ 在 $\left\lbrack  {\dfrac{\pi }{4},\dfrac{\pi }{2}}\right\rbrack$ 上是严格增函数}{函数 $y = g\left( x\right)$ 在 $\left\lbrack  {\dfrac{\pi }{6},\dfrac{2\pi }{3}}\right\rbrack$ 上的值域为 $\left\lbrack  {-\sqrt{3},2}\right\rbrack$}
-    \item (2025$\cdot$嘉定区二模$\cdot$15)已知关于 $x$ 的不等式 $\left| {\sin {2x}}\right|  > \cos x$ 在区间 $\left\lbrack  {0,{2\pi }}\right\rbrack$ 内有 $k$ 个整数解，则 $k$ 的值为 \dotfill{(\kh{})}
+    \item (2025$\cdot$嘉定区二模$\cdot$15)已知关于 $x$ 的不等式 $\left| {\sin {2x}}\right|  > \cos x$ 在区间 $\left\lbrack  {0,{2\pi }}\right\rbrack$ 内有 $k$ 个整数解，则 $k$ 的值为 \dotfill{(\kh{C})}
     \xx{3}{4}{5}{6}
-    \item (2024$\cdot$崇明区二模$\cdot$15)设函数 $f\left( x\right)  = \sin \left( {x - \dfrac{\pi }{6}}\right)$ ，若对于任意 $\alpha  \in  \left\lbrack  {-\dfrac{5\pi }{6}, - \dfrac{\pi }{2}}\right\rbrack$ ，在区间 $\left\lbrack  {0,m}\right\rbrack$ 上总存在唯一确定的 $\beta$ ,使得 $f\left( \alpha \right)  + f\left( \beta \right)  = 0$ ,则 $m$ 的最小值为 \dotfill{(\kh{})}
+    \begin{jieda}
+        由题设 $2\left| {\sin x\cos x}\right|  > \cos x$ ,显然 $x \notin  \left\{  {0,\dfrac{\pi }{2},\dfrac{3\pi }{2},{2\pi }}\right\}$ , 当 $x \in  \left( {0,\dfrac{\pi }{2}}\right)  \cup  \left( {\dfrac{3\pi }{2},{2\pi }}\right)$ ,则 $\left| {\sin x}\right|  > \dfrac{1}{2}$ ,此时 $x \in  \left( \dfrac{\pi }{6}\right.$ , $\left. \dfrac{\pi }{2}\right)  \cup  \left( {\dfrac{3\pi }{2},\dfrac{11\pi }{6}}\right)$ ,当 $x \in  \left( {\dfrac{\pi }{2},\dfrac{3\pi }{2}}\right)$ ,则 $2\left| {\sin x\cos x}\right|  \geq  0 >  \cos x$ ,此时 $x \in  \left( {\dfrac{\pi }{2},\dfrac{3\pi }{2}}\right)$ ,所以,整数解有1,2,3,4,5,共 5 个整数解.
+
+        \ps 绘制振动图像即可.
+    \end{jieda}
+    \item (2024$\cdot$崇明区二模$\cdot$15)设函数 $f\left( x\right)  = \sin \left( {x - \dfrac{\pi }{6}}\right)$ ，若对于任意 $\alpha  \in  \left\lbrack  {-\dfrac{5\pi }{6}, - \dfrac{\pi }{2}}\right\rbrack$ ，在区间 $\left\lbrack  {0,m}\right\rbrack$ 上总存在唯一确定的 $\beta$ ,使得 $f\left( \alpha \right)  + f\left( \beta \right)  = 0$ ,则 $m$ 的最小值为 \dotfill{(\kh{B})}
     \xx{$\dfrac{\pi }{6}$}{$\dfrac{\pi }{2}$}{$\dfrac{7\pi }{6}$}{$\pi$}
-    \item (2025$\cdot$闵行区二模$\cdot$15)已知函数 $y = \cos \left( {\dfrac{\pi }{6}x + \dfrac{\pi }{3}}\right)$ 在区间 $\left\lbrack  {a,a + 9}\right\rbrack$ 上既有最大值又有最小值， 则关于实数 $a$ 的取值，以下不可能的是 \dotfill{(\kh{})}
-    \xx{2024}{2025}{2026}{2027} 
-    \item (2025$\cdot$奉贤区二模$\cdot$16)若 ${5\pi }$ 是函数 $y = \cos {nx}\sin \dfrac{2000}{{n}^{2}}x$ 的一个周期，则正整数 $n$ 所有可能取值个数是 \dotfill{(\kh{})}
+    \begin{jieda}
+        $f(\beta)$的值域包含$\left[0, \dfrac{\sqrt{3}}{2}\right]$，并且$\left[0, \dfrac{\sqrt{3}}{2}\right]$内的函数值和自变量一一对应.
+    \end{jieda}
+    \item (2025$\cdot$闵行区二模$\cdot$15)已知函数 $y = \cos \left( {\dfrac{\pi }{6}x + \dfrac{\pi }{3}}\right)$ 在区间 $\left\lbrack  {a,a + 9}\right\rbrack$ 上既有最大值又有最小值， 则关于实数 $a$ 的取值，以下不可能的是 \dotfill{(\kh{D})}
+    \xx{2024}{2025}{2026}{2027}
+    \begin{jieda}
+        由题意可得函数的周期为 $T = \dfrac{2\pi }{\dfrac{\pi }{6}} = {12}$ ,最大值点满足 $\dfrac{\pi }{6}x + \dfrac{\pi }{3} = {2k\pi },k \in  \mathbf{Z}$ ,解得 $x = {12k} - 2,k \in  \mathbf{Z}$ ,最小值点满足 $\dfrac{\pi }{6}x + \dfrac{\pi }{3} = {2k\pi } + \pi ,k \in  \mathbf{Z}$ ,解得 $x = {12k} + 4,k \in  \mathbf{Z}$ ,因为函数 $y = \cos \left( {\dfrac{\pi }{6}x + \dfrac{\pi }{3}}\right)$ 在区间 $\left\lbrack  {a,a + 9}\right\rbrack$ 上既有最大值又有最小值,区间的长度为 9,对于 ${A}$ ,若 $a = {2024}$ ,当 $k = {169}$ 时，最大值点为 2026，最小值点为 2032，此时位于区间 [2024,2033]内，故 A 正确；对于 B，若 $a = {2025}$ ，当 $k = {169}$ 时，最大值点为 2026，最小值点为 2032，此时位于区间 [2025,2034]内，故 B 正确；对于 C，若 $a = {2026}$ ，当 $k = {169}$ 时，最大值点为 2026，最小值点为 2032，此时位于区间 [2026,2035]内，故 C 正确；对于 D，若 $a = {2027}$ ，当 $k = {169}$ 时，最大值点为 2026，当 $k = {170}$ 时，最大值点为 2038，此时不位于区间 $\left\lbrack  {{2027},{2036}}\right\rbrack$ 内，故 D 错误. 故选:D.
+    \end{jieda}
+    \item (2025$\cdot$奉贤区二模$\cdot$16)若 ${5\pi }$ 是函数 $y = \cos {nx}\sin \dfrac{2000}{{n}^{2}}x$ 的一个周期，则正整数 $n$ 所有可能取值个数是 \dotfill{(\kh{B})}
     \xx{2}{3}{4}{9}
+    \begin{jieda}
+        由题意可得 $\cos n\left( {x + {5\pi }}\right)  \cdot  \sin \dfrac{2000}{{n}^{2}}\left( {x + {5\pi }}\right)  =  \cos \left( {{nx} + {5n\pi }}\right)  \cdot  \sin \left( {\dfrac{2000}{{n}^{2}}x + \dfrac{10000}{{n}^{2}}\pi }\right)  = \cos {nx}\sin \dfrac{2000}{{n}^{2}}x$
+        \begin{dingautolist}{172}
+            \item ${5n\pi } = 2{k}_{1}\pi ,{k}_{1} \in  \mathbf{Z},\dfrac{10000}{{n}^{2}}\pi  = 2{k}_{2}\pi ,{k}_{2} \in  \mathbf{Z}$，解得 $n = \dfrac{2}{5}{k}_{1},{k}_{1} \in  \mathbf{Z},n =  {50}\sqrt{\dfrac{2}{{k}_{2}}},{k}_{2} \in  \mathbf{Z}$，由 $n$ 为正整数，且 50 的因数为1,2,5,10,25,50，则 ${k}_{2}$ 的取值可能有2,8,50,200,1250,5000,此时 $n$ 的可能取值有 50,25,10,5,2,1,由 ${k}_{1} \in  \mathbf{Z}$ ,则 $n$ 为 2 的倍数,故 $n$ 的可能取值有 50,10,2.
+            \item ${5n\pi } = 2{k}_{1}\pi  + \pi$ , ${k}_{1} \in  \mathbf{Z},\dfrac{10000}{{n}^{2}}\pi  = 2{k}_{2}\pi  + \pi ,{k}_{2} \in  \mathbf{Z}$，解得$n = \dfrac{2{k}_{1} + 1}{5},{k}_{1} \in  \mathbf{Z},n = {100}\sqrt{\dfrac{1}{2{k}_{2} + 1}}$ , ${k}_{2} \in  \mathbf{Z}$，由 $n$ 为正整数，且 100 的因数为1,2,4,5,10,20,25,50, 100,则奇数 $\sqrt{2{k}_{2} + 1}$ 的取值只可能有 5,25,此时 $n$ 的可能取值有 20,4,由 ${k}_{1} \in  \mathbf{Z}$ ,则 $n$ 奇数,所以此时 $n$ 无取值.
+        \end{dingautolist}
+    \end{jieda}
 \end{enumerate}
 \subsubsection*{三、解答题}
 \begin{enumerate}
@@ -2869,21 +3036,71 @@ C. $\sin x > \sin y$ D. ${x}^{3} > {y}^{3}$
         \item 请将上表 $\Delta$ 处的数据补充完整，并直接写出函数 $y = f\left( x\right)$ 的解析式
         \item 设 $\omega  = 1,\varphi  = 0,g\left( x\right)  = {f}^{2}\left( x\right)  + f\left( x\right) f\left( {\dfrac{\pi }{2} - x}\right) \left( {x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack  }\right)$ ，求函数 $y = g\left( x\right)$ 的值域.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由题意 $\left\{  \begin{array}{l} \omega  \cdot  \dfrac{\pi }{6} + \varphi  = \dfrac{\pi }{2} \\  \omega  \cdot  \dfrac{2\pi }{3} + \varphi  = \dfrac{3\pi }{2} \end{array}\right.$ ，解得 $\omega  = 2$ ， $\varphi  = \dfrac{\pi }{6}$ ，所以函数 $y = f\left( x\right)$ 的解析式为 $f\left( x\right)  = \sin \left( {{2x} + \dfrac{\pi }{6}}\right) ,{2x} + \dfrac{\pi }{6} = 0$ 时,解得 $x =  - \dfrac{\pi }{12}$ ,当 $x = \dfrac{5\pi }{12}$ 时, ${2x} + \dfrac{\pi }{6} = \pi ,\sin \left( {{2x} + \dfrac{\pi }{6}}\right)  = 0$ ,将表中 $\Delta$ 处的数据补充完整如下表:
+
+            \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            ${\omega x} + \varphi$ & 0 & $\dfrac{\pi }{2}$ & $\pi$ & $\dfrac{3\pi }{2}$ & ${2\pi }$ \\
+            \cline{1-6}
+            $x$ & $- \dfrac{\pi }{12}$ & $\dfrac{\pi }{6}$ & $\dfrac{5\pi }{12}$ & $\dfrac{2\pi }{3}$ & $\dfrac{11\pi }{12}$ \\
+            \cline{1-6}
+            $\sin \left( {{\omega x} + \varphi }\right)$ & 0 & 1 & 0 & -1 & 0 \\
+            \cline{1-6}
+            \hline
+            \end{tabular}
+            \end{center}
+
+            \item 若 $\omega  = 1,\varphi  = 0$ ，则 $g\left( x\right)  = {\sin }^{2}x + \sin x\sin \left( {\dfrac{\pi }{2} - x}\right)  =  {\sin }^{2}x + \sin x\cos x = \dfrac{1 - \cos {2x}}{2} + \dfrac{1}{2}\sin {2x} = \dfrac{\sqrt{2}}{2}\sin \left( {{2x} - \dfrac{\pi }{4}}\right)  +  \dfrac{1}{2}\left( {x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack  }\right)$ ,因为 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ ,所以 ${2x} - \dfrac{\pi }{4} \in  \left\lbrack  {-\dfrac{\pi }{4}}\right.$ , $\left. \dfrac{3\pi }{4}\right\rbrack$ ,进而 $\sin \left( {{2x} - \dfrac{\pi }{4}}\right)  \in  \left\lbrack  {-\dfrac{\sqrt{2}}{2},1}\right\rbrack$ ,所以函数 $y = g\left( x\right)$ 的值域为 $\left\lbrack  {0,\dfrac{\sqrt{2} + 1}{2}}\right\rbrack$.
+        \end{enumerate}
+    \end{jieda}
     \item (2024$\cdot$浦东新区二模$\cdot$17)已知函数 $y = f\left( x\right)$ ，其中 $f\left( x\right)  = \sin x$.
     \begin{enumerate}
         \item 求 $f\left( {x - \dfrac{\pi }{4}}\right)  = \dfrac{\sqrt{3}}{2}$ 在 $x \in  \left\lbrack  {0,\pi }\right\rbrack$ 上的解
         \item 已知 $g\left( x\right)  = \sqrt{3}f\left( x\right) f\left( {x + \dfrac{\pi }{2}}\right)  - f\left( x\right) f\left( {x + \pi }\right)$ ，若关于 $x$ 的方程 $g\left( x\right)  - m = \dfrac{1}{2}$ 在 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 时有解,求实数 $m$ 的取值范围.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由题,原式等价于求 $\sin \left( {x - \dfrac{\pi }{4}}\right)  = \dfrac{\sqrt{3}}{2}$ 在 $x \in  \left\lbrack  {0,\pi }\right\rbrack$ 上的解. 从而有 $x - \dfrac{\pi }{4} = {2k\pi } + \dfrac{\pi }{3}$ 或 $x - \dfrac{\pi }{4} = {2k\pi } + \dfrac{2\pi }{3},k \in$ Z,解得 $x = {2k\pi } + \dfrac{7\pi }{12}$ 或 $x = {2k\pi } + \dfrac{11\pi }{12},k \in  \mathbf{Z}$ ,又 $x \in  \left\lbrack  {0,\pi }\right\rbrack$ , 所以 $x = \dfrac{7\pi }{12}$ 或 $x = \dfrac{11\pi }{12}$ . 因此 $f\left( {x - \dfrac{\pi }{4}}\right)  = \dfrac{\sqrt{3}}{2}$ 在 $x \in  \left\lbrack  {0,\pi }\right\rbrack$ 上的解为 $\dfrac{7\pi }{12},\dfrac{11\pi }{12}$ ;
+
+            \begin{center}
+            \includegraphics[width=0.4\textwidth]{bodyxb/src/48_1278_373_301_212_0.jpg}
+            \end{center}
+            
+
+            \item 由题, $g\left( x\right)  = \sqrt{3}\sin x\sin \left( {x + \dfrac{\pi }{2}}\right)  - \sin x\sin \left( {x + \pi }\right)  =  \sqrt{3}\sin x\cos x + {\sin }^{2}x = \dfrac{\sqrt{3}}{2}\sin {2x} + \dfrac{1 - \cos {2x}}{2} = \sin \left( {{2x} - \dfrac{\pi }{6}}\right)  +  \dfrac{1}{2}$ ,故 $g\left( x\right)  - m = \dfrac{1}{2}$ 在 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 时有解,等价于 $m =  \sin \left( {{2x} - \dfrac{\pi }{6}}\right)$ 在 $x \in  \left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 时有解. 可知 ${2x} - \dfrac{\pi }{6} \in  \left\lbrack  {-\dfrac{\pi }{6}}\right.$ , $\left. \dfrac{5\pi }{6}\right\rbrack$ ,因而 $\sin \left( {{2x} - \dfrac{\pi }{6}}\right)  \in  \left\lbrack  {-\dfrac{1}{2},1}\right\rbrack$ ,所以实数 $m$ 的取值范围是 $\left\lbrack  {-\dfrac{1}{2},1}\right\rbrack$.
+        \end{enumerate}
+    \end{jieda}
     \item (2024$\cdot$普陀区二模$\cdot$18)设函数 $f\left( x\right)  = \sin \left( {{\omega x} + \varphi }\right) ,\omega  > 0,0 < \varphi  < \pi$ ，它的最小正周期为 $\pi$.
     \begin{enumerate}
         \item 若函数 $y = f\left( {x - \dfrac{\pi }{12}}\right)$ 是偶函数，求 $\varphi$ 的值
         \item 在 $\bigtriangleup  {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 的对边分别为 $a$ 、 $b$ 、 $c$ ，若 $a = 2$ ， $A = \dfrac{\pi }{6}$ ， $f\left( \dfrac{B - \varphi }{2}\right)  = \dfrac{\sqrt{3}}{4}c$ ，求 $b$ 的值.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为函数 $f\left( x\right)  = \sin \left( {{\omega x} + \varphi }\right)$ 的最小正周期为 $\pi$ ，且 $\omega  > 0$ ,所以 $\dfrac{2\pi }{\omega } = \pi$ ,即 $\omega  = 2$ ,则 $y = f\left( {x - \dfrac{\pi }{12}}\right)  = \sin \left({2x} + {\varphi  - \dfrac{\pi }{6}}\right)$ ,又函数 $y = f\left( {x - \dfrac{\pi }{12}}\right)$ 是偶函数,则 $\varphi  - \dfrac{\pi }{6} = {k\pi } +  \dfrac{\pi }{2},k \in  \mathbf{Z}$ ,即 $\varphi  = {k\pi } + \dfrac{2\pi }{3}$ ,又 $0 < \varphi  < \pi$ ,则 $\varphi  = \dfrac{2\pi }{3}$ ;
+            
+            \item 由 $f\left( \dfrac{B - \varphi }{2}\right)  = \dfrac{\sqrt{3}}{4}c$ ，得 $\sin B = \dfrac{\sqrt{3}}{4}c$ ，又 $a = 2$ ， $A = \dfrac{\pi }{6}$ ，则 $\sin B = \dfrac{b\sin A}{a} = \dfrac{b}{4} = \dfrac{\sqrt{3}}{4}c$ ,即 $b = \sqrt{3}c$ ,由余弦定理,得 ${a}^{2} = {b}^{2} +  {c}^{2} - {2bc}\cos A = 3{c}^{2} + {c}^{2} - 2\sqrt{3}c \cdot  c \cdot  \dfrac{\sqrt{3}}{2}$ ,解得 $c = 2$ ,则 $b =  2\sqrt{3}$.
+        \end{enumerate}
+    \end{jieda}
     \item (2025$\cdot$嘉定区一模$\cdot$18)已知 $f\left( x\right)  = 2\cos \left( {{\omega x} + \dfrac{3\pi }{4}}\right)$ ，其中 $\omega  > 0$.
     \begin{enumerate}
         \item 若 $\omega  = 2$ ，求函数 $y = f\left( x\right) ,x \in  \left\lbrack  {-\dfrac{\pi }{4},\dfrac{\pi }{4}}\right\rbrack$ 的值域
         \item 若 $f\left( \dfrac{\pi }{4}\right)  = 0$ ，且函数 $y = f\left( x\right)$ 在 $\left( {\dfrac{\pi }{4},\dfrac{\pi }{3}}\right)$ 内有极小值，但无极大值，求 $\omega$ 的值.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\omega  = 2,f\left( x\right)  = 2\cos \left( {{2x} + \dfrac{3\pi }{4}}\right)$ ，因为 $x \in  \left\lbrack  {-\dfrac{\pi }{4},\dfrac{\pi }{4}}\right\rbrack$ ， 所以 ${2x} + \dfrac{3\pi }{4} \in  \left\lbrack  {\dfrac{\pi }{4},\dfrac{5\pi }{4}}\right\rbrack$ ,所以 $\cos \left( {{2x} + \dfrac{3\pi }{4}}\right)  \in  \left\lbrack  {-1,\dfrac{\sqrt{2}}{2}}\right\rbrack$ , 因此函数 $y = f\left( x\right) ,x \in  \left\lbrack  {-\dfrac{\pi }{4},\dfrac{\pi }{4}}\right\rbrack$ 的值域为 $\left\lbrack  {-2,\sqrt{2}}\right\rbrack$ ;
+            
+            \item $\omega \cdot \dfrac{\pi }{4} + \dfrac{3\pi }{4} = {2k\pi } + \dfrac{\pi }{2},k \in  \mathbf{Z}$ ,可得 $\omega  = {8k} - 1,k \in  \mathbf{Z}$
+            
+            $\left\{  \begin{array}{l} \dfrac{\pi }{4} + \dfrac{1}{4}T < \dfrac{\pi }{3} \\  \dfrac{\pi }{4} + \dfrac{3}{4}T \geq  \dfrac{\pi }{3} \end{array}\right.$ ，所以 $\left\{  \begin{array}{l} \dfrac{\pi }{4} + \dfrac{1}{4} \cdot  \dfrac{2\pi }{\omega } < \dfrac{\pi }{3} \\  \dfrac{\pi }{4} + \dfrac{3}{4} \cdot  \dfrac{2\pi }{\omega } \geq  \dfrac{\pi }{3} \end{array}\right.$ ，即 $6 < \omega  \leq  {18}$  
+            
+            因此$\omega  = 7$ 或 $15$.
+        \end{enumerate}
+    \end{jieda}
 \end{enumerate}
 
 \section*{第 6 章 数 列}
