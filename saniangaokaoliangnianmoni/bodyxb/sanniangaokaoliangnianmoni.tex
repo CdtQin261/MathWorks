@@ -4808,74 +4808,111 @@ C. 双曲线的一支 D. 直线
 \subsection*{考点1 平面量的概念及其线性运算}
 
 \subsubsection*{一、填空题}
+\begin{enumerate}
+    \item (2023$\cdot$上海春季卷$\cdot$2)已知向量 $\vv{a} = \left( {3,4}\right) ,\vv{b} = \left( {1,2}\right)$ ，则 $\vv{a} - 2\vv{b} =$ \blkda[2]{$\left( {1,0}\right)$}.
 
-1.(2023$\cdot$上海春季卷$\cdot$2)已知向量 $\vv{a} = \left( {3,4}\right) ,\vv{b} = \left( {1,2}\right)$ ，则 $\vv{a} - 2\vv{b} =$ \blkda[2]{}.
+    \item (2024$\cdot$浦东新区一模$\cdot$4)已知直线 $l$ 的倾斜角为 $\dfrac{\pi }{3}$ ，请写出直线 $l$ 的一个法向量\blkda[2]{$\left( {\sqrt{3}, - 1}\right)$}.
+    \begin{jieda}
+        $\alpha  = \dfrac{\pi }{3},k = \sqrt{3},\vv{d} = \left( {1,\sqrt{3}}\right)  \Longrightarrow  \vv{n} = \left( {\sqrt{3}, - 1}\right)$.
+    \end{jieda}
 
-2.(2024$\cdot$浦东新区一模$\cdot$4)已知直线 $l$ 的倾斜角为 $\dfrac{\pi }{3}$ ，请写出直线 $l$ 的一个法向量\blkda[2]{}.
+    \item (2025$\cdot$闵行区二模$\cdot$6)已知向量 $\vv{a} = \left( {3,4}\right) ,\vv{b} = \left( {\cos \theta ,\sin \theta }\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $\tan \theta  =$ \blkda[2]{$\dfrac{4}{3}$}.
+    \begin{jieda}
+        因为 $\vv{a}//\vv{b}$ ,且 $\vv{a} = \left( {3,4}\right) ,\vv{b} = \left( {\cos \theta ,\sin \theta }\right)$ ,所以 $4\cos \theta  = 3\sin \theta$，所以 $\tan \theta  = \dfrac{4}{3}$
+    \end{jieda}
 
-3.(2025$\cdot$闵行区二模$\cdot$6)已知向量 $\vv{a} = \left( {3,4}\right) ,\vv{b} = \left( {\cos \theta ,\sin \theta }\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $\tan \theta  =$ \blkda[2]{}.
+    \item (2025$\cdot$上海春季卷$\cdot$12)在平面中， ${\vv{e}}_{1}$ 和 ${\vv{e}}_{2}$ 是互相垂直的单位向量，向量 $\vv{a}$ 满足 $\left|\vv{a} - 4\vv{e_1}\right|  = 2$ ，向量 $\vv{b}$ 满足 $\left|\vv{b} - 6\vv{e_2}\right|  = 1$ ，则 $\vv{b}$ 在 $\vv{a}$ 方向上的数量投影的最大值\blkda[2]{4}.
+    \begin{jieda}
+        设 $\vv{a} = \vv{OA},\vv{b} = \vv{OB}$ ,在坐标系中,不妨设 $4{\vv{e}}_{1} = \left( {0,4}\right)  = \vv{O{O}_{1}},6{\vv{e}}_{2} = \left( {6,0}\right)  = \vv{O{O}_{2}}$ ,则 $\left|\vv{OA} -  \vv{O{O}_{1}}\right|  = \left| \vv{{O}_{1}A}\right| = 2, \left|\vv{OB} - \vv{O{O}_{2}}\right| = \left|\vv{{O}_{2}B} \right| = 1$
+        
+        如图,显然 ${OA}$ 与圆 ${O}_{1}$ 相切在右侧时, $\vv{b}$ 在 $\vv{a}$ 方向上的数量投影最大, 当 ${BH} \bot  {OA}$ ,且 ${BH}$ 与圆 ${O}_{2}$ 相切时, $\vv{b}$ 在 $\vv{a}$ 方向上的数量投影 $\left| {OH}\right|$ 最大,由题意,得 $\angle {O}_{1}{OA} = {30}^{ \circ  } = \angle {HTO} \Longrightarrow  \left| {{O}_{2}T}\right|  = 2$ ,因为 $\bigtriangleup {HOT} \backsim  \bigtriangleup B{O}_{2}T$ ,所以 $\left| {OH}\right|  = 4$，故 $\vv{b}$ 在 $\vv{a}$ 方向上的数量投影的最大值为4.
+        \begin{center}
+            \includegraphics[width=0.4\textwidth]{bodyxb/src/95_516_1093_304_208_0.jpg}
+        \end{center}
+    \end{jieda}
 
-4.(2025$\cdot$上海春季卷$\cdot$12)在平面中， ${\vv{e}}_{1}$ 和 ${\vv{e}}_{2}$ 是互相垂直的单位向量，向量 $\vv{a}$ 满足 $\left| {\vv{a} - 4{\vv{e}}_{1}}\right|  = 2$ ，向量 $\vv{b}$ 满足 $\left| {\vv{b} - 6{\vv{e}}_{2}}\right|  = 1$ ，则 $\vv{b}$ 在 $\vv{a}$ 方向上的数量投影的最大值\blkda[2]{}.
+    \item (2025$\cdot$奉贤区二模$\cdot$12) $\bigtriangleup  {ABC}$ 内一点 $F$ (如图 1)，式子 ${FA} + {FC} + {FB}$ 可以写成 $1 \times  {FA} + 1 \times  {FC} + 1 \times  {FB}$ ,这个式子中 ${FA}\text{ 、 }{FC}\text{ 、 }{FB}$ 的系数均为 1,以三个系数 1 作为边长可构造一个等边三角形，因此我们尝试把 $\bigtriangleup  {AFC}$ 绕点 $C$ 顺时针旋转 $\dfrac{\pi }{3}$ ，得到 $\bigtriangleup  {A}^{\prime }{F}^{\prime }C$ (如图 2)，所以 ${FA} + {FC} + {FB} =  {F}^{\prime }{A}^{\prime } + {F}^{\prime }F + {FB}$ ，显然 ${F}^{\prime }{A}^{\prime } + {F}^{\prime }F + {FB} \geq  {A}^{\prime }B$ ，当 ${A}^{\prime }$ 、 ${F}^{\prime }$ 、 $F$ 、 $B$ 四点共线时 (如图 3)， ${FA} +  {FC} + {FB}$ 最小.
 
-5.(2025$\cdot$奉贤区二模$\cdot$12) $\bigtriangleup  {ABC}$ 内一点 $F$ (如图 1)，式子 ${FA} + {FC} + {FB}$ 可以写成 $1 \times  {FA} + 1 \times  {FC} + 1 \times  {FB}$ ,这个式子中 ${FA}\text{ 、 }{FC}\text{ 、 }{FB}$ 的系数均为 1,以三个系数 1 作为边长可构造一个等边三角形，因此我们尝试把 $\bigtriangleup  {AFC}$ 绕点 $C$ 顺时针旋转 $\dfrac{\pi }{3}$ ，得到 $\bigtriangleup  {A}^{\prime }{F}^{\prime }C$ (如图 2)，所以 ${FA} + {FC} + {FB} =  {F}^{\prime }{A}^{\prime } + {F}^{\prime }F + {FB}$ ，显然 ${F}^{\prime }{A}^{\prime } + {F}^{\prime }F + {FB} \geq  {A}^{\prime }B$ ，当 ${A}^{\prime }$ 、 ${F}^{\prime }$ 、 $F$ 、 $B$ 四点共线时 (如图 3)， ${FA} +  {FC} + {FB}$ 最小.
+    \begin{center}
+    \includegraphics[width=0.8\textwidth]{bodyxb/src/132_276_480_308_217_0.jpg}
+    \end{center}
 
-\begin{center}
-\includegraphics[width=0.8\textwidth]{bodyxb/src/132_276_480_308_217_0.jpg}
-\end{center}
+    试用类似的方法解答下面这道题目: 已知 $\vv{a}$ 是平面内的任意一个向量,向量 $\vv{b}\text{ 、 }\vv{c}$ 满足 $\vv{b} \cdot  \vv{c} = 0$ , 且 $\left| \vv{b}\right|  = 4,\left| \vv{c}\right|  = 4$ ，则 $\sqrt{2}\left| {\vv{a} - \vv{b}}\right|  + \left| {\vv{a} - \vv{c}}\right|  + \left| {\vv{a} + \vv{c}}\right|$ 的最小值为\blkda[2]{$8\sqrt{2}$}.
+    \begin{jieda}
+        在如图所示的平面直角坐标系 ${xOy}$ 中,设 $B\left( {4,0}\right) \text{ 、 }{C}_{1}\left( {0,4}\right)$ 、 ${C}_{2}\left( {0, - 4}\right)$ ,不妨设 $\vv{a} = \vv{OA},\vv{b} = \vv{OB}$ , $\vv{c} = \vv{O{C}_{1}}$ ,由题意可得 $\sqrt{2}\left| {\vv{a} - \vv{b}}\right|  + \left| {\vv{a} - }\right|  \vv{c}\left| +\right| \vv{a} + \vv{c}\left| { = \sqrt{2}}\right| {AB}\left| +\right| A{C}_{1} \mid   +  \left| {A{C}_{2}}\right|$ ,将 $\bigtriangleup {AB}{C}_{2}$ 绕点 $B$ 逆时针旋转 $\dfrac{\pi }{2}$ 得到 $\bigtriangleup {A}^{\prime }B{C}^{\prime }$ ,则 $\left| {A{A}^{\prime }}\right|  = \sqrt{2}\left| {AB}\right| ,\left| {{A}^{\prime }{C}^{\prime }}\right|  = \left| {A{C}_{2}}\right|$ , 其中点 ${C}^{\prime }\left( {8, - 4}\right)$ ,故 $\sqrt{2}\left| {\vv{a} - \vv{b}}\right|  + \left| {\vv{a} - \vv{c}}\right|  + \left| {\vv{a} + \vv{c}}\right|  = \sqrt{2}\left| {AB}\right|  +  \left| {A{C}_{1}}\right|  + \left| {A{C}_{2}}\right|  = \left| {A{A}^{\prime }}\right|  + \left| {A{C}_{1}}\right|  + \left| {{A}^{\prime }{C}^{\prime }}\right|  \geq  \left| {{C}_{1}{C}^{\prime }}\right|  =  \sqrt{{\left( 8 - 0\right) }^{2} + {\left( -4 - 4\right) }^{2}} = 8\sqrt{2}$ ,当且仅当点 $A$ 与点 $B$ 重合时,此时,点 ${A}^{\prime }$ 也与点 $B$ 重合,等号成立,故 $\sqrt{2}\left| {\vv{a} - \vv{b}}\right|  + \left| \vv{a}  -  \vv{c}\right| +\left| \vv{a} + \vv{c} \right|$ 的最小值为 $8\sqrt{2}$.
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/95_578_1402_242_227_0.jpg}
+        \end{center}
+    \end{jieda}
 
-试用类似的方法解答下面这道题目: 已知 $\vv{a}$ 是平面内的任意一个向量,向量 $\vv{b}\text{ 、 }\vv{c}$ 满足 $\vv{b} \cdot  \vv{c} = 0$ , 且 $\left| \vv{b}\right|  = 4,\left| \vv{c}\right|  = 4$ ，则 $\sqrt{2}\left| {\vv{a} - \vv{b}}\right|  + \left| {\vv{a} - \vv{c}}\right|  + \left| {\vv{a} + \vv{c}}\right|$ 的最小值为\blkda[2]{}.
+    \item (2025$\cdot$嘉定区二模$\cdot$12)在平面直角坐标系中，一质点 $P$ 从原点 $O$ 出发，第一次从点 $O$ 移动到点 ${P}_{1}$ ,第二次从点 ${P}_{1}$ 移动到点 ${P}_{2},\cdots$ ,第 $k$ 次从点 ${P}_{k - 1}$ (规定 ${P}_{0} = O$ )移动到点 ${P}_{k}$. 记向量 ${\vv{v}}_{k} =  \vv{{P}_{k - 1}{P}_{k}}$ ，其模长为 $k$ ，方向与 $x$ 轴正方向成 ${\left( {90}k\right) }^{ \circ  }$ 角，设 $\vv{{S}_{n}}$ 为经过 $n$ 次移动的位移向量，即 $\vv{{S}_{n}} =  \vv{O{P}_{n}}$ ，则当 $\left| \vv{{S}_{n}}\right|  = \sqrt{85}$ 时， $n$ 的值为\blkda[2]{$13$}.
+    \begin{jieda}
+        根据题意可知 ${\vv{v}}_{k} = \vv{{P}_{k - 1}{P}_{k}}$ 的模长为 $k$ ,方向与 $x$ 轴正方向成 ${\left( {90}k\right) }^{ \circ  }$ 角,所以 ${\vv{v}}_{k} = \vv{{P}_{k - 1}{P}_{k}} = \left( {k\cos {\left( {90}k\right) }^{ \circ  },k\sin }\right.  \left. {\left( {90}k\right) }^{ \circ  }\right)$ ,所以 $\vv{{S}_{n}} = \vv{O{P}_{n}} = \left( {1 \times  \cos {90}^{ \circ  } + 2\cos {180}^{ \circ  } + 3\cos {270}^{ \circ  }}\right.  + \cdots  + n\cos {\left( {90}n\right) }^{ \circ  },1 \times  \sin {90}^{ \circ  } + 2\sin {180}^{ \circ  } + 3\sin {270}^{ \circ  } + \cdots  +  \left. {n\sin {\left( {90}n\right) }^{ \circ  }}\right)$
+        
+        ${\vv{S}}_{4} = \vv{O{P}_{4}} = \left( {-2 + 4,1 - 3}\right)  = \left( {2, - 2}\right),\left| {\vv{S}}_{4}\right|  = 2\sqrt{2}\\
+        {\vv{S}}_{8} = \vv{O{P}_{8}} = \left( {-2 + 4 - 6 + 8,1 - 3 + 5 - 7}\right)  = (4$ , $- 4),\left| \vv{{S}_{8}}\right|  = 4\sqrt{2}\\
+        \vv{{S}_{12}} = \vv{O{P}_{12}} = ( - 2 + 4 - 6 + 8 - {10} + {12}$ , $1 - 3 + 5 - 7 + 9 - {11}) = \left( {6, - 6}\right) ,\left| \vv{{S}_{12}}\right|  = 6\sqrt{2}\\
+        \vv{{S}_{13}} = \vv{O{P}_{13}} =  \left( {-2 + 4 - 6 + 8 - {10} + {12},1 - 3 + 5 - 7 + 9 - {11} + {13}}\right)  = (6$ , 7), $\left| \vv{{S}_{13}}\right|  = \sqrt{85}$.
+        
+        \ps 找规律即可.
+    \end{jieda}
 
-6.(2025$\cdot$嘉定区二模$\cdot$12)在平面直角坐标系中，一质点 $P$ 从原点 $O$ 出发，第一次从点 $O$ 移动到点 ${P}_{1}$ ,第二次从点 ${P}_{1}$ 移动到点 ${P}_{2},\cdots$ ,第 $k$ 次从点 ${P}_{k - 1}$ (规定 ${P}_{0} = O$ )移动到点 ${P}_{k}$. 记向量 ${\vv{v}}_{k} =  \vv{{P}_{k - 1}{P}_{k}}$ ，其模长为 $k$ ，方向与 $x$ 轴正方向成 ${\left( {90}k\right) }^{ \circ  }$ 角，设 $\vv{{S}_{n}}$ 为经过 $n$ 次移动的位移向量，即 $\vv{{S}_{n}} =  \vv{O{P}_{n}}$ ，则当 $\left| \vv{{S}_{n}}\right|  = \sqrt{85}$ 时， $n$ 的值为\blkda[2]{}.
+    \item (2024$\cdot$虹口区一模$\cdot$12)设 $\vv{a_1}$ 、 $\vv{a_2}$ 、 $\vv{a_3}$ 、 $\vv{b_1}$ 、 $\vv{b_2}$ 、 $\vv{b_3}$ 是平面上两两不相等的向量，若 $\left|\vv{a_1} - \vv{a_2}\right|  = \left|\vv{a_2} - \vv{a_3}\right|  = \left|\vv{a_3} - \vv{a_1}\right| = 2$ ，且对任意的 $i$ 、 $j \in  \{ 1,2,3\}$ ，均有 $\left| {{\vv{a}}_{i} - {\vv{b}}_{j}}\right|  \in  \{ 1,\sqrt{3}\}$ ，则 $\left|\vv{b_1} - \vv{b_2}\right|  + \left| \vv{b_2} - \vv{b_3}\right|  +  \left|\vv{b_3} - \vv{b_1}\right|  =$\blkda[2]{$3$}.
+    \begin{jieda}
+        向量 $\vv{O{A}_{i}} = {\vv{a}}_{i},\vv{O{B}_{i}} = {\vv{b}}_{i},i\text{ 、 }j \in  \{ 1,2,3\}$ ,则 ${A}_{1}{A}_{2} =  {A}_{2}{A}_{3} = {A}_{3}{A}_{1} = 2$ ,因为 $\left| {{\vv{a}}_{i} - {\vv{b}}_{j}}\right|  \in  \{ 1,\sqrt{3}\}$ ,所以 $\left| {\vv{{A}_{i}{B}_{j}} \mid   = 1\text{ 或 }}\right|  \vv{{A}_{i}{B}_{j}} \mid   = \sqrt{3}$ ，又等边 $\bigtriangleup {A}_{1}{A}_{2}{A}_{3}$ 边长为 2，高线 ${A}_{1}{B}_{2} = {A}_{2}{B}_{3} =  {A}_{3}{B}_{1} = \sqrt{3}$ ,故 ${B}_{1}\text{ 、 }{B}_{2}\text{ 、 }{B}_{3}$ 分别为 ${A}_{1}{A}_{2}\text{ 、 }{A}_{2}{A}_{3}\text{ 、 }{A}_{3}{A}_{1}$ 中点 $\Longrightarrow  {B}_{1}{B}_{2} = {B}_{2}{B}_{3} = {B}_{3}{B}_{1} = 1$ ,即 $\left| {{\vv{b}}_{1} - {\vv{b}}_{2}}\right|  + \left| {{\vv{b}}_{2} - {\vv{b}}_{3}}\right|  +  \left| {{\vv{b}}_{3} - {\vv{b}}_{1}}\right|  = 1 + 1 + 1 = 3.$
 
-7.(2024$\cdot$虹口区一模$\cdot$12)设 ${\vv{a}}_{1}$ 、 ${\vv{a}}_{2}$ 、 ${\vv{a}}_{3}$ 、 ${\vv{b}}_{1}$ 、 ${\vv{b}}_{2}$ 、 ${\vv{b}}_{3}$ 是平面上两两不相等的向量，若 $\left| {{\vv{a}}_{1} - {\vv{a}}_{2}}\right|  = \left| {{\vv{a}}_{2} - }\right|  {\vv{a}}_{3}\left|  = \right| {\vv{a}}_{3} - {\vv{a}}_{1} \mid   = 2$ ，且对任意的 $i$ 、 $j \in  \{ 1,2,3\}$ ，均有 $\left| {{\vv{a}}_{i} - {\vv{b}}_{j}}\right|  \in  \{ 1,\sqrt{3}\}$ ，则 $\left| {{\vv{b}}_{1} - {\vv{b}}_{2}}\right|  + \left| {{\vv{b}}_{2} - {\vv{b}}_{3}}\right|  +  \left| {{\vv{b}}_{3} - {\vv{b}}_{1}}\right|  =$
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/95_1056_787_275_280_0.jpg}
+        \end{center}
+    \end{jieda}
+\end{enumerate}
 
 \subsubsection*{二、选择题}
+\begin{enumerate}
+    \item (2024$\cdot$杨浦区二模$\cdot$16)平面上的向量 $\vv{a}$ 、 $\vv{b}$ 满足: $\left| \vv{a}\right|  = 3$ ， $\left| \vv{b}\right|  = 4$ ， $\vv{a}\bot \vv{b}$ ，定义该平面上的向量集合 $A = \left\{ \vv{x}\left| \left|  \vv{x} + \vv{a}\right|  < \left|\vv{x} + \vv{b} \right| ,\vv{x} \cdot  \vv{a} > \vv{x} \cdot  \vv{b}\right. \right\}$. 给出如下两个结论:
 
-8.(2024$\cdot$杨浦区二模$\cdot$16)平面上的向量 $\vv{a}$ 、 $\vv{b}$ 满足: $\left| \vv{a}\right|  = 3$ ， $\left| \vv{b}\right|  = 4$ ， $\vv{a}\bot \vv{b}$ ，定义该平面上的向量集合 $A = \{ \vv{x}\left| \right| \vv{x} + \vv{a}\left|  < \right| \vv{x} + \vv{b} \mid  ,\vv{x} \cdot  \vv{a} > \vv{x} \cdot  \vv{b}\}$. 给出如下两个结论:
+    \ding{172}  对任意 $\vv{c} \in  A$ ，存在该平面的向量 $\vv{d} \in  A$ ，满足 $\left| {\vv{c} - \vv{d}}\right|  = 0.5$;
 
- \ding{172}  对任意 $\vv{c} \in  A$ ，存在该平面的向量 $\vv{d} \in  A$ ，满足 $\left| {\vv{c} - \vv{d}}\right|  = 0$.5;
+    \ding{173}  对任意 $\vv{c} \in  A$ ，存在该平面的向量 $\vv{d} \notin  A$ ，满足 $\left| {\vv{c} - \vv{d}}\right|  = 0.5$.
 
- \ding{173}  对任意 $\vv{c} \in  A$ ，存在该平面的向量 $\vv{d} \notin  A$ ，满足 $\left| {\vv{c} - \vv{d}}\right|  = 0$. 5.
-
-则下面判断正确的是 \dotfill{(\kh{})}
-
-\xx{}{}{}{} \ding{172} 正确， \ding{173} 错误 B.  \ding{172} 错误， \ding{173} 正确
-
-C.  \ding{172}  \ding{173} 均正确 D.  \ding{172}  \ding{173} 均错误
-
-9.(2025$\cdot$闵行区二模$\cdot$16)设 $n$ 为正整数，空间中 $n$ 个单位向量构成集合 ${A}_{n} = \left\{  {{\vv{a}}_{1},{\vv{a}}_{2},\cdots ,{\vv{a}}_{n}}\right\}$ ，若存在实数 $t$ ,满足对任意 ${\vv{a}}_{i} \in  {A}_{n},{\vv{a}}_{j} \in  {A}_{n},{\vv{a}}_{i} \neq  {\vv{a}}_{j}$ ,都有 ${\vv{a}}_{i} \cdot  {\vv{a}}_{j} = t$ ,则当 $n$ 取得最大值时, $t$ 的值为 \dotfill{(\kh{})}
-
-\xx{}{}{}{}$- \dfrac{1}{2}$ B. $\dfrac{1}{2}$ C. $- \dfrac{1}{3}$ D. $\dfrac{1}{3}$
-
+    则下面判断正确的是 \dotfill{(\kh{C})}
+    \xx{\ding{172} 正确， \ding{173} 错误}{\ding{172} 错误， \ding{173} 正确}{\ding{172}  \ding{173} 均正确}{\ding{172}  \ding{173} 均错误}
+    \begin{jieda}
+        设 $\vv{x} = \left( {m,n}\right) ,\vv{a} = \left( {3,0}\right) ,\vv{b} = \left( {0,4}\right) ,\left| {\vv{x} + \vv{a}}\right|  <  \mid  \vv{x} +  \vv{b}\left|  \Longrightarrow  \right| \vv{x} + \vv{a}{\left. \right| }^{2} < {\left| \vv{x} + \vv{b}\right| }^{2}$ ,而 $\vv{x} + \vv{a} = \left( {m + 3,n}\right) ,\vv{x} + \vv{b} = (m, n + 4),{\left( m + 3\right) }^{2} + {n}^{2} < {m}^{2} + {\left( n + 4\right) }^{2} \Longrightarrow  {6m} - {8n} - 7 < 0$  
+        
+        $\vv{x} \cdot  \vv{a} > \vv{x} \cdot  \vv{b} \Longrightarrow  {3m} - {4n} > 0$
+        
+        $A$对应直线 ${6m} - {8n} - 7 = 0$ 和 ${3m} -  {4n} = 0$ 间的区域（不含边界），无论 $\vv{d}$ 是否属于 $A$ ,都有 $\left| {\vv{c} - \vv{d}}\right|  = 0.5$.
+    \end{jieda}
+\end{enumerate}
 \subsection*{考点2 向量的基本定理及其应用}
 
 \subsubsection*{一、填空题}
+\begin{enumerate}
+    \item (2025$\cdot$金山区一模$\cdot$2)已知向量 $\vv{a} = \left( {1,2}\right)$ ， $\vv{b} = \left( {3,k}\right)$ ，若 $\vv{a}//\vv{b}$ ，则实数 $k =$ \blkda[2]{}.
 
-1.(2025$\cdot$金山区一模$\cdot$2)已知向量 $\vv{a} = \left( {1,2}\right)$ ， $\vv{b} = \left( {3,k}\right)$ ，若 $\vv{a}//\vv{b}$ ，则实数 $k =$ \blkda[2]{}.
+    \item (2025$\cdot$闵行区二模$\cdot$3)已知向量 $\vv{a} = \left( {x,1}\right)$ ， $\vv{b} = \left( {1,2 - x}\right)$ ，若 $\vv{a}//\vv{b}$ ，则实数 $x =$ \blkda[2]{}.
 
-2.(2025$\cdot$闵行区二模$\cdot$3)已知向量 $\vv{a} = \left( {x,1}\right)$ ， $\vv{b} = \left( {1,2 - x}\right)$ ，若 $\vv{a}//\vv{b}$ ，则实数 $x =$ \blkda[2]{}.
+    \item (2025$\cdot$徐汇区二模$\cdot$3)在空间直角坐标系中，向量 $\vv{a} = \left( {-m,6,3}\right)$ 、 $\vv{b} = \left( {2,n,1}\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $m + n =$ \blkda[2]{}.
 
-3.(2025$\cdot$徐汇区二模$\cdot$3)在空间直角坐标系中，向量 $\vv{a} = \left( {-m,6,3}\right)$ 、 $\vv{b} = \left( {2,n,1}\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $m + n =$ \blkda[2]{}.
+    \item (2025$\cdot$上海春季卷$\cdot$4)已知 $\vv{a} = \left( {2,1}\right)$ ， $\vv{b} = \left( {1,x}\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $x =$ \blkda[2]{}.
 
-4.(2025$\cdot$上海春季卷$\cdot$4)已知 $\vv{a} = \left( {2,1}\right)$ ， $\vv{b} = \left( {1,x}\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $x =$ \blkda[2]{}.
+    \item (2024$\cdot$长宁区一模$\cdot$4)设向量 $\vv{a} = \left( {1, - 2}\right)$ ， $\vv{b} = \left( {-1,m}\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $m =$ \blkda[2]{}.
 
-5.(2024$\cdot$长宁区一模$\cdot$4)设向量 $\vv{a} = \left( {1, - 2}\right)$ ， $\vv{b} = \left( {-1,m}\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $m =$ \blkda[2]{}.
+    \item (2024$\cdot$上海秋季卷$\cdot$5)已知 $k \in  \mathbf{R},\vv{a} = \left( {2,5}\right) ,\vv{b} = \left( {6,k}\right)$ ，且 $\vv{a}//\vv{b}$ ，则 $k$ 的值为\blkda[2]{}.
 
-6.(2024$\cdot$上海秋季卷$\cdot$5)已知 $k \in  \mathbf{R},\vv{a} = \left( {2,5}\right) ,\vv{b} = \left( {6,k}\right)$ ，且 $\vv{a}//\vv{b}$ ，则 $k$ 的值为\blkda[2]{}.
+    \item (2025$\cdot$崇明区一模$\cdot$7)已知 $\vv{a} = \left( {1,2}\right)$ ， $\vv{b} = \left( {2,k}\right)$ ，如果 $\vv{a}//\vv{b}$ ，那么实数 $k$ 的值为\blkda[2]{}.
 
-7.(2025$\cdot$崇明区一模$\cdot$7)已知 $\vv{a} = \left( {1,2}\right)$ ， $\vv{b} = \left( {2,k}\right)$ ，如果 $\vv{a}//\vv{b}$ ，那么实数 $k$ 的值为\blkda[2]{}.
+    \item (2024$\cdot$青浦区一模$\cdot$9)已知向量 $\vv{d} = \left( {1, - 1}\right)$ 垂直于直线 $l$ 的法向量，过 $A\left( {1,1}\right)$ 、 $B\left( {-1,8}\right)$ 分别作直线 $l$ 的垂线，对应垂足为 ${A}_{1}$ 和 ${B}_{1}$ ，若 $\vv{{A}_{1}{B}_{1}} = \lambda \vv{d}$ ，则实数 $\lambda$ 的值为\blkda[2]{}.
 
-8.(2024$\cdot$青浦区一模$\cdot$9)已知向量 $\vv{d} = \left( {1, - 1}\right)$ 垂直于直线 $l$ 的法向量，过 $A\left( {1,1}\right)$ 、 $B\left( {-1,8}\right)$ 分别作直线 $l$ 的垂线，对应垂足为 ${A}_{1}$ 和 ${B}_{1}$ ，若 $\vv{{A}_{1}{B}_{1}} = \lambda \vv{d}$ ，则实数 $\lambda$ 的值为\blkda[2]{}.
-
-9.(2024$\cdot$松江区二模$\cdot$10)已知正三角形 ${ABC}$ 的边长为 2，点 $D$ 满足 $\vv{CD} = m\vv{CA} + n\vv{CB}$ ，且 $m > 0$ ， $n > 0,{2m} + n = 1$ ，则 $\left| \vv{CD}\right|$ 的取值范围是\blkda[2]{}.
+    \item (2024$\cdot$松江区二模$\cdot$10)已知正三角形 ${ABC}$ 的边长为 2，点 $D$ 满足 $\vv{CD} = m\vv{CA} + n\vv{CB}$ ，且 $m > 0$ ， $n > 0,{2m} + n = 1$ ，则 $\left| \vv{CD}\right|$ 的取值范围是\blkda[2]{}.
+\end{enumerate}
 
 \subsubsection*{二、选择题}
-
-10.(2025$\cdot$宝山区二模$\cdot$13)已知向量 $\vv{a} = \left( {1,x}\right)$ ， $\vv{b} = \left( {3,1}\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $x$ 的值为 \dotfill{(\kh{})}
-
-\xx{}{}{}{}-3 B. 3
-
-C. $- \dfrac{1}{3}$ D. $\dfrac{1}{3}$
+\begin{enumerate}
+    \item (2025$\cdot$宝山区二模$\cdot$13)已知向量 $\vv{a} = \left( {1,x}\right)$ ， $\vv{b} = \left( {3,1}\right)$ ，若 $\vv{a}//\vv{b}$ ，则 $x$ 的值为 \dotfill{(\kh{})}
+    \xx{$-3$}{$3$}{$- \dfrac{1}{3}$}{$\dfrac{1}{3}$}
+\end{enumerate}
 
 \subsection*{考点3}
 
@@ -5208,11 +5245,9 @@ D. 若 $1 - 3{i}$ 是关于 $x$ 的方程 ${x}^{2} + {px} + q = 0\left( {p\text{
 \cline{1-2}
 1. 空间几何体的结构特征、表面积和体积 & \ding{172}  利用实物、计算机软件等观察空间图形，认识柱、锥、台、球及简单组合体的结构特征， 能运用这些特征描述现实生活中简单物体的结构 \ding{173}  知道球、棱柱、棱锥、棱台的表面积和体积的计算公式, 能用公式解决简单的实际问题 \ding{174}  能用斜二测法画出简单空间图形(长方体、棱柱及其简单组合)的直观图 \ding{175} 借助长方体，在直观认识空间点、直线、平面的位置关系的基础上，抽象出空间点、直线、平面的位置关系的定义，了解基本事实(基本事实 1-4 也称公理)和定理 \\
 \cline{1-2}
-2. 空间向量及其应用 & \ding{172}  在平面直角坐标系的基础上，了解空间直角坐标系，感受建立空间直角坐标系的必要性，会用空间直角坐标系刻画点的位置；借助特殊长方体(所有被分别与坐标轴平行) 顶点的坐标; 探索并得出空间两点间的距离公式 \ding{173}  经历由平面向量推广到空间向量的过程，了解空间向量的概念；经历由平面向量的运算及其法则推广到空间向量的过程 \ding{174}  了解空间向量基本定理及其意义，掌握空间向量的正交分解及其坐标表示. \\ 掌握空间向量的线性运算及其坐标表示; 掌握空间向量的数量积及其坐标表示; 了解空间向量投影的概念以及投影向量的意义 \ding{175}  能用向量语言表述直线和平面，理解直线的方向向量与平面的法向量；能用向量语言表述直线与直线、直线与平面、平面与平面的夹角以及垂直与平行关系; 能用向量方法证明必修内容中有关直线、平面位置关系的判定定理; 能用向量方法解决点到直线、点到平面、相互平行的直线、相互平行的平面的距离问题和简单夹角问题，并能描述解决这一类问题的程序，体会向量方法在研究几何问题中的作用 \\
+2. 空间向量及其应用 & \ding{172}  在平面直角坐标系的基础上，了解空间直角坐标系，感受建立空间直角坐标系的必要性，会用空间直角坐标系刻画点的位置；借助特殊长方体(所有被分别与坐标轴平行) 顶点的坐标; 探索并得出空间两点间的距离公式 \ding{173}  经历由平面向量推广到空间向量的过程，了解空间向量的概念；经历由平面向量的运算及其法则推广到空间向量的过程 \ding{174}  了解空间向量基本定理及其意义，掌握空间向量的正交分解及其坐标表示. 掌握空间向量的线性运算及其坐标表示; 掌握空间向量的数量积及其坐标表示; 了解空间向量投影的概念以及投影向量的意义 \ding{175}  能用向量语言表述直线和平面，理解直线的方向向量与平面的法向量；能用向量语言表述直线与直线、直线与平面、平面与平面的夹角以及垂直与平行关系; 能用向量方法证明必修内容中有关直线、平面位置关系的判定定理; 能用向量方法解决点到直线、点到平面、相互平行的直线、相互平行的平面的距离问题和简单夹角问题，并能描述解决这一类问题的程序，体会向量方法在研究几何问题中的作用 \\
 \cline{1-2}
-3. 直线、平面平行的判定与性质 & \multirow{2}{*}{\ding{172}  从定义和基本事实出发，借助长方体，通过直观感知，了解空间中直线与直线、直线与平面、平面与平面的平行和垂直的关系，归纳出相应的判定定理，并加以证明 \ding{173}  能用已获得的结论，证明空间基本图形位置关系的简单命题 \ding{174}  理解、掌握空间中点线面的位置关系及相关的图形和符号语言，熟练掌握平行关系的判定定理和性质定理及其应用，熟练掌握垂直关系的判定定理和性质定理及其应用， 该内容是上海高考的常考内容，需强化巩固复习 } \\
-\cline{1-1}
-4. 直线、平面垂直的判定与性质 &  \\
+3. 直线、平面平行的判定与性质 4. 直线、平面垂直的判定与性质& \ding{172}  从定义和基本事实出发，借助长方体，通过直观感知，了解空间中直线与直线、直线与平面、平面与平面的平行和垂直的关系，归纳出相应的判定定理，并加以证明 \ding{173}  能用已获得的结论，证明空间基本图形位置关系的简单命题 \ding{174}  理解、掌握空间中点线面的位置关系及相关的图形和符号语言，熟练掌握平行关系的判定定理和性质定理及其应用，熟练掌握垂直关系的判定定理和性质定理及其应用， 该内容是上海高考的常考内容，需强化巩固复习 \\
 \cline{1-2}
 5. 空间角与距离 & \ding{172}  熟练掌握几何法和向量法求解空间角与空间距离，该内容是上海高考的常考内容，要熟练掌握方程思想求值，需强化巩固复习 \ding{173}  立体几何研究现实世界中物体的形状、大小与位置关系. 以长方体为载体, 认识和理解空间点、直线、平面的位置关系; 用数学语言表述有关平行、垂直的性质与判定, 并对某些结论进行论证; 了解一些简单几何体的表面积与体积的计算方法; 运用直观感知、操作确认、推理论证、度量计算等认识和探索空间图形的性质, 建立空间观念 \\
 \cline{1-2}
@@ -5596,6 +5631,13 @@ C. $\vv{BD}$ D. $\vv{B{D}_{1}}$
 \xx{}{}{}{}$\sqrt{2}$ B. $\dfrac{\sqrt{2}}{3}$
 
 C. $2\sqrt{3}$ D. $\dfrac{\sqrt{3}}{3}$
+
+
+7. (2025$\cdot$闵行区二模$\cdot$16)设 $n$ 为正整数，空间中 $n$ 个单位向量构成集合 ${A}_{n} = \left\{  {{\vv{a}}_{1},{\vv{a}}_{2},\cdots ,{\vv{a}}_{n}}\right\}$ ，若存在实数 $t$ ,满足对任意 ${\vv{a}}_{i} \in  {A}_{n},{\vv{a}}_{j} \in  {A}_{n},{\vv{a}}_{i} \neq  {\vv{a}}_{j}$ ,都有 ${\vv{a}}_{i} \cdot  {\vv{a}}_{j} = t$ ,则当 $n$ 取得最大值时, $t$ 的值为 \dotfill{(\kh{})}
+\xx{$- \dfrac{1}{2}$}{$\dfrac{1}{2}$}{$- \dfrac{1}{3}$}{$\dfrac{1}{3}$}
+\begin{jieda}
+    类比二维，直观可得，$n$为$4$，故解正四面体的两个外接球半径和棱构成的三角形可得.
+\end{jieda}
 
 \section*{直线、平面平行的判定与性质}
 

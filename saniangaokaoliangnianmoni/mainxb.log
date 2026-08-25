@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  24 AUG 2026 22:57
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  25 AUG 2026 22:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2169,28 +2169,27 @@ File: bodyxb/src/130_1144_442_331_371_0.jpg Graphic file (type bmp)
  [117] [118
 
 ]
+File: bodyxb/src/95_516_1093_304_208_0.jpg Graphic file (type bmp)
+<bodyxb/src/95_516_1093_304_208_0.jpg>
 File: bodyxb/src/132_276_480_308_217_0.jpg Graphic file (type bmp)
 <bodyxb/src/132_276_480_308_217_0.jpg>
  [119
 
-] [120]
+]
+File: bodyxb/src/95_578_1402_242_227_0.jpg Graphic file (type bmp)
+<bodyxb/src/95_578_1402_242_227_0.jpg>
+File: bodyxb/src/95_1056_787_275_280_0.jpg Graphic file (type bmp)
+<bodyxb/src/95_1056_787_275_280_0.jpg>
+ [120] [121] [122]
 File: bodyxb/src/135_1120_548_330_144_0.jpg Graphic file (type bmp)
 <bodyxb/src/135_1120_548_330_144_0.jpg>
- [121] [122] [123] [124
+ [123] [124] [125
 
-] [125
+] [126
 
-] [126] [127]
-Overfull \hbox (1738.6376pt too wide) in paragraph at lines 5213--5214
-[]|[]| 
- []
-
-[128
+] [127] [128] [129
 
 ]
-Overfull \vbox (133.74586pt too high) has occurred while \output is active []
-
- [129]
 Missing character: There is no π (U+03C0) in font [lmroman10-regular]:mapping=tex-text;!
 File: bodyxb/src/144_1221_389_249_289_0.jpg Graphic file (type bmp)
 <bodyxb/src/144_1221_389_249_289_0.jpg>
@@ -2649,10 +2648,10 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 52088 strings out of 468168
- 1275163 string characters out of 5432816
- 1774487 words of memory out of 5000000
- 79558 multiletter control sequences out of 15000+600000
+ 52148 strings out of 468168
+ 1278523 string characters out of 5432816
+ 1786487 words of memory out of 5000000
+ 79615 multiletter control sequences out of 15000+600000
  656686 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,20n,128p,2233b,1397s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -660,13 +660,33 @@
             即 $ k \cdot  \dfrac{{y}_P}{{x}_P} =  - \dfrac{{b}^{2}}{{a}^{2}} $ ,即 $ {y}_P =  - \dfrac{{b}^{2}}{k{a}^{2}}{x}_P $ ,即在过原点的定直线 $ {b}^{2}x + {a}^{2}{ky} = 0 $ 上. \\
             \ps 弦的两个端点所对应的方程作差可以得到其中点坐标和弦的斜率之间的关系，已知中点坐标可以求出对应的斜率.
         \end{jieda}
-
             
-         \item 已知椭圆 $\dfrac{{x}^{2}}{4} + \dfrac{{y}^{2}}{3} = 1$ 上存在两个不同的点关于直线 $y = {4x} + m$ 对称,求实数 $m$ 的取值范围.
-         \begin{jieda}
-             由点差法，中点轨迹方程为$3x-y=0$，又因为中点在直线$y = {4x} + m$ 上，因此联立可得中点坐标为$（-m,-3m）$。因为弦中点在椭圆内，所以$\dfrac{m^2}{4}+\dfrac{9m^2}{3}<1$，从而可得$m\in \left(-\dfrac{2\sqrt{13}}{13},\dfrac{2\sqrt{13}}{13}\right)$
-         \end{jieda}
-     
+        \item 已知椭圆 $C : \dfrac{{x}^{2}}{{a}^{2}} + \dfrac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 的左、右焦点分别为 ${F}_{1},{F}_{2}$ ,离心率为 $\dfrac{1}{2}$ ,长轴长为 4.
+        \begin{enumerate}
+            \item 求椭圆 $C$ 的标准方程
+            \item 已知直线 $l$ 过定点 $E\left( {\dfrac{1}{4},0}\right)$ ,若椭圆 $C$ 上存在两点 $A,B$ 关于直线 $l$ 对称,求直线 $l$ 的斜率 $k$ 的取值范围.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 因为椭圆的离心率为 $e = \dfrac{c}{a} = \dfrac{1}{2}$ ,长轴长为 ${2a} = 4$，解得 $a = 2,c = 1$ ,则 ${b}^{2} = 3$
+                
+                所以椭圆 $C$ 的标准方程是 $\dfrac{{x}^{2}}{4} + \dfrac{{y}^{2}}{3} = 1$ .
+                \item 易知直线的斜率存在,设直线 $l$ 的方程为$y = k\left( {x - \dfrac{1}{4}}\right) ,A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$
+                
+                \begin{dingautolist}{172}
+                    \item 当 $k = 0$ 时,易得在椭圆 $C$ 上有无数对 $A,B$ 关于直线 $y = 0$ 对称
+                    \item 当 $k \neq  0$ 时,有 ${k}_{AB} = \dfrac{{y}_{1} - {y}_{2}}{{x}_{1} - {x}_{2}} =  - \dfrac{1}{k}$
+
+                    ${AB}$ 中点的坐标为 $\left( {{x}_{0},{y}_{0}}\right)$，则 $\left\{  \begin{array}{l} \dfrac{{x}_{1}^{2}}{4} + \dfrac{{y}_{1}^{2}}{3} = 1, \\  \dfrac{{x}_{2}^{2}}{4} + \dfrac{{y}_{2}^{2}}{3} = 1, \end{array}\right.$
+                    
+                    两式相减得 $3\left( {{x}_{1} + {x}_{2}}\right) \left( {{x}_{1} - {x}_{2}}\right)  =  - 4\left( {{y}_{1} + {y}_{2}}\right) \left( {{y}_{1} - {y}_{2}}\right)$，即 ${3k}{x}_{0} = 4{y}_{0}$，又 ${y}_{0} = k\left( {{x}_{0} - \dfrac{1}{4}}\right)$，解得 ${x}_{0} = 1,{y}_{0} = \dfrac{3k}{4}$
+                    
+                    因为线段 ${AB}$ 的中点在椭圆内部，所以 $\dfrac{{x}_{0}^{2}}{4} + \dfrac{{y}_{0}^{2}}{3} < 1$，即 $\dfrac{1}{4} + \dfrac{{\left( \dfrac{3k}{4}\right) }^{2}}{3} < 1$，解得 $- 2 < k < 0$ 或 $0 < k < 2$
+                \end{dingautolist}
+                综上，直线 $l$ 的斜率 $k$ 的取值范围为$(-2,2)$.
+            \end{enumerate}
+        \end{jieda}
+        
         \item 已知 $ A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right) $ 是椭圆 $ P : \dfrac{{x}^{2}}{18} + \dfrac{{y}^{2}}{9} = 1 $ 上不同的两点,线段 $ {AB} $ 的中点为 $ M\left( {2,1}\right) $.
         \begin{enumerate}
             \item 求直线 $ {AB} $ 的方程.
