@@ -1165,12 +1165,6 @@
             \end{array} \right.$，平方相加即得$m^2+n^2 = 1$，因此，点$(m,n)$在单位圆上，$(m-3)^2+n^2$为点$(m,n)$到$(3,0)$的距离平方，根据几何关系可知其取值范围是$[4, 16]$
         \end{jieda}
         
-        \item 已知平面向量满足$|\vv{a}| = |\vv{b}| = \vv{a} \cdot \vv{b} = \vv{c} \cdot (\vv{a} + 2\vv{b}-2\vv{c}) = 2$，若$|\vv{a} - \vv{c}|$的最大值、最小值分别为$M, N$，则$\dfrac{M}{N} = $\blkda{$\dfrac{5+\sqrt{21}}{2}$}
-        \begin{jieda}
-            以$\vv{a}$为$x$轴正方向建立平面直角坐标系，故设$\vv{a} = (2, 0), \vv{b} = (1, \sqrt{3}), \vv{c} = (x, y)$，故$\vv{c} \cdot (\vv{a} + 2\vv{b}-2\vv{c}) = 2$即$x \cdot (4-2x) + y \cdot (2\sqrt{3} - 2y) = 2$，化简配方可得$(x-1)^2 + (y - \dfrac{\sqrt{3}}{2})^2 = \dfrac{3}{4}$，故$\vv{c}$的终点位于圆心为$(1, \dfrac{\sqrt{3}}{2})$，半径为$\dfrac{\sqrt{3}}{2}$的圆上，故根据几何关系可知$\dfrac{\sqrt{7} - \sqrt{3}}{2} \leq |\vv{a} - \vv{c}| \leq \dfrac{\sqrt{7} + \sqrt{3}}{2}$，即$M = \dfrac{\sqrt{7}+\sqrt{3}}{2}, N = \dfrac{\sqrt{7} - \sqrt{3}}{2}$，故$\dfrac{M}{N} = \dfrac{5+\sqrt{21}}{2}$
-        \end{jieda}
-
-        
         \item 已知向量$\vv{a}, \vv{b}, \vv{c}$满足$|\vv{a}| = 2, |\vv{b}| = 3, \vv{a} \cdot \vv{b} = 3, |\vv{c}|^2 - 2\vv{b} \cdot \vv{c} + 8 = 0$，若$\vv{c} = \lambda \vv{a} + (1-\lambda) \vv{b}$，则$\lambda$的值为\blkda{$\pm \dfrac{\sqrt{7}}{7}$}
         \begin{jieda}
             根据条件可知$\vv{a}, \vv{b}$夹角为$\dfrac{\pi}{3}$，以$\vv{b}$的方向为$x$轴正方向，设$B(3, 0), A(1, \sqrt{3})$即$\vv{OA} = \vv{a}, \vv{OB} = \vv{b}$，建立平面直角坐标系。根据等和线结论可知$\vv{OC} = \vv{c}$的终点$C$在直线$AB: y = -\dfrac{\sqrt{3}}{2}(x-3)$上.
@@ -1178,6 +1172,11 @@
             设$C(x, y)$，所以$|\vv{c}|^2 - 2\vv{b} \cdot \vv{c} + 8 = 0$可以转化为$x^2+y^2 - 6x + 8 = 0$，故$C$在以$B$为圆心，1为半径的圆上.
             
             $\vv{OC} = \vv{OB} + \vv{BC} = \vv{OB} \pm \dfrac{\sqrt{7}}{7}\vv{BA}$，即$\vv{c} = \vv{b} \pm \dfrac{\sqrt{7}}{7}(\vv{a} - \vv{b})$，故$\lambda = \pm \dfrac{\sqrt{7}}{7}$
+        \end{jieda}
+
+        \item 已知平面向量满足$|\vv{a}| = |\vv{b}| = \vv{a} \cdot \vv{b} = \vv{c} \cdot (\vv{a} + 2\vv{b}-2\vv{c}) = 2$，若$|\vv{a} - \vv{c}|$的最大值、最小值分别为$M, N$，则$\dfrac{M}{N} = $\blkda{$\dfrac{5+\sqrt{21}}{2}$}
+        \begin{jieda}
+            以$\vv{a}$为$x$轴正方向建立平面直角坐标系，故设$\vv{a} = (2, 0), \vv{b} = (1, \sqrt{3}), \vv{c} = (x, y)$，故$\vv{c} \cdot (\vv{a} + 2\vv{b}-2\vv{c}) = 2$即$x \cdot (4-2x) + y \cdot (2\sqrt{3} - 2y) = 2$，化简配方可得$(x-1)^2 + (y - \dfrac{\sqrt{3}}{2})^2 = \dfrac{3}{4}$，故$\vv{c}$的终点位于圆心为$(1, \dfrac{\sqrt{3}}{2})$，半径为$\dfrac{\sqrt{3}}{2}$的圆上，故根据几何关系可知$\dfrac{\sqrt{7} - \sqrt{3}}{2} \leq |\vv{a} - \vv{c}| \leq \dfrac{\sqrt{7} + \sqrt{3}}{2}$，即$M = \dfrac{\sqrt{7}+\sqrt{3}}{2}, N = \dfrac{\sqrt{7} - \sqrt{3}}{2}$，故$\dfrac{M}{N} = \dfrac{5+\sqrt{21}}{2}$
         \end{jieda}
         
         \item 已知圆$O$的半径为1，直线$PA$与圆$O$相切于点$A$，直线$PB$与圆$O$交于$B$，$C$两点，$D$为$BC$的中点，若$|PO| = \sqrt{2}$，则$\vv{PA} \cdot \vv{PD}$的最大值为\blkda{$\dfrac{1+\sqrt{2}}{2}$}
@@ -1187,6 +1186,35 @@
             根据过定点的弦的中点轨迹的性质可知$D$在圆$x^2 + y^2 - x - y = 0$上（利用点差法/$\angle ODP = \ang{90}$的性质均可求），故设$D\left(\dfrac{1}{2}+\dfrac{\sqrt{2}}{2}cos\theta, \dfrac{1}{2}+\dfrac{\sqrt{2}}{2}sin\theta\right), \theta \in \left(\dfrac{3\pi}{4}, \dfrac{5\pi}{4}\right)$
             
             故$\vv{PA} = (-1, 0), \vv{PD} = \left(-\dfrac{1}{2}+\dfrac{\sqrt{2}}{2}cos\theta, \dfrac{1}{2}+\dfrac{\sqrt{2}}{2}sin\theta\right)$，故$\vv{PA}  \cdot \vv{PD} = \dfrac{1}{2}-\dfrac{\sqrt{2}}{2}cos\theta \in \left(0, \dfrac{1+\sqrt{2}}{2}\right]$.
+        \end{jieda}
+
+        \item 设平面上四点 $P$ 、 $Q$ 、 $M$ 、 $N$ 满足: $\left| {PM}\right|  = \left| {PN}\right|  = 4$ ， $\left| {PQ}\right|  = 2$ ，若 $\vv{QM} \cdot  \vv{QN} = 0$ ，则 $\left| {MN}\right|$ 的最小值为\blkda[2]{$2\sqrt{7} - 2$}.
+        \begin{jieda}
+            以$P$为原点，$\vv{PQ}$为$x$轴正方向建系，$Q(2, 0)$，$M,N$在以$P$为圆心，$4$为半径的圆上，根据垂径定理可知$P$到$MN$距离越大，$|MN|$越小.
+            
+            取 ${MN}$ 的中点 $F$，则$|PF|$为$P$到$MN$距离，根据几何关系应满足$|PF| \leq |PQ| + |QF|$，设$|MN| = 2t, t > 0$，则$|PF| = \sqrt{16-t^2}$，$|QF| = \dfrac{|MN|}{2} = t$，因此$\sqrt{16-t^2} \leq 2+t$，解得$t \geq \sqrt{7}-1$，故$\left| {MN}\right|$ 的最小值为 $2\sqrt{7}-2$.
+            \begin{center}
+            \includegraphics[width=0.2\textwidth]{bodyxb/src/97_576_1182_244_234_0.jpg}
+            \end{center}
+        \end{jieda}
+        
+        \item 已知平面向量 $\vv{a}$ 、 $\vv{b}$ 、 $\vv{c}$ 满足: $\left| \vv{a}\right|  = \left| \vv{b}\right|  = \sqrt{10}$ ， $\left| \vv{c}\right|  = 2$ ，若 $\left( {\vv{c} - \vv{a}}\right) \cdot \left(\vv{c} - \vv{b}\right) = 0$ ,则 $\left| {\vv{a} - \vv{b}}\right|$ 的最小值为\blkda[2]{2}.
+        
+
+        \item 已知圆$O$的半径为2，$P$是圆内一定点，$|OP| = 1$，$A, B$为圆$O$上两个动点满足$PA \perp PB$，存在$C$使得$PACD$为矩形，则$\vv{OC} \cdot \vv{OP}$的取值范围是\blkda[2]{$[-\sqrt{7}, \sqrt{7}]$}
+        \begin{jieda}
+            如图，连接 ${AB}$ ,设 ${AB}$ 与 ${CP}$ 交于点 $M,C\left( {x,y}\right)$ ,不妨设 $P\left( {1,0}\right)$
+            \begin{center}
+                \includegraphics[width=0.2\textwidth]{bodyxb/src/juxing1.png}
+            \end{center}
+            因为 $\vv{PA} \cdot  \vv{PB} = 0,\vv{PC} = \vv{PA} + \vv{PB}$，所以四边形 ${PACB}$ 是矩形,则 $M\left( {\dfrac{x + 1}{2},\dfrac{y}{2}}\right) ,{PM} = {MB}$ .
+            连接 ${OM},{OB}$ ,在 ${Rt\Delta OBM}$ 中, ${OM} \bot  {BM}$，所以 $O{B}^{2} = O{M}^{2} + B{M}^{2} = O{M}^{2} + M{P}^{2}$，即$4 = {\left( \dfrac{x + 1}{2}\right) }^{2} + {\left( \dfrac{y}{2}\right) }^{2} + {\left( \dfrac{x + 1}{2} - 1\right) }^{2} + {\left( \dfrac{y}{2}\right) }^{2}$ ,即 ${x^2} + {y^2} = 7$ ,
+            所以 $x \in  \left\lbrack  {-\sqrt{7},\sqrt{7}}\right\rbrack$ ,所以 $\vv{OC} \cdot  \vv{OP} = x \in  \left\lbrack  {-\sqrt{7},\sqrt{7}}\right\rbrack$ .
+            故$\vv{OC} \cdot \vv{OP}$的取值范围是$[-\sqrt{7}, \sqrt{7}]$
+        \end{jieda}
+        \item 在平面上，$\vv{AB_1} \perp \vv{AB_2}, |\vv{OB_1}| = |\vv{OB_2}| = 1$，$\vv{AP} = \vv{AB_1} + \vv{AB_2}$，若$|\vv{OP}| < \dfrac{1}{2}$，则$|\vv{OA}|$的取值范围是\blkda{$\left(\dfrac{\sqrt{7}}{2}, \sqrt{2}\right]$}
+        \begin{jieda}
+            设$A(a, 0)$，方法同上，可得$P$的方程为$x^2+y^2 = 2-a^2$，因此$2-a^2 \in \left[0, \dfrac{1}{4}\right)$，故$a \in \left(\dfrac{\sqrt{7}}{2}, \sqrt{2}\right]$
         \end{jieda}
     \end{enumerate}
 \end{enumerate}
