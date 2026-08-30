@@ -71,9 +71,10 @@
     \begin{jieda}
         $\neg p$是假命题即$p$是真命题。$p: \forall x \in \{x | -3 \leq x \leq 2\}$，都有$x \in \{x|a-4 \leq x \leq a+5\}$可以转化为$[-3, 2] \subseteq [a-4, a+5]$。故有$a + 5 \geq 2, a -4 \leq -3$，综上$a \in [-3, 1]$
     \end{jieda}
+
     \item 已知集合$A = [2, 5]$，$B = \{x | m+1 \leq x \leq 2m-1\}$，且$B \neq \varnothing$，若命题$p: \exists x \in A, x \in B$为真命题，求$m$的取值范围．
     \begin{jieda}
-        首先根据$B \neq \varnothing$知$2m-1 \geq m+1$，即$m \geq 2$ \\ 根据$p$是真命题可知$A \cap B \neq \varnothing$故有$2 \leq 2m-1$且$5 \geq m+1$，解得$m \in [\dfrac{3}{2}, 4]$，结合$m \geq 2$，有$m \in [2, 4]$
+        首先根据$B \neq \varnothing$知$2m-1 \geq m+1$，即$m \geq 2$ \\ 根据$p$是真命题可知$A \cap B \neq \varnothing$故有$2 \leq 2m-1$且$5 \geq m+1$，解得$m \in \left[\dfrac{3}{2}, 4\right]$，结合$m \geq 2$，有$m \in [2, 4]$
     \end{jieda}
     \item 已知$p: -5 < a < 7$；$q:$“集合$A = \{x | x^2 + (a+2)x + 1 = 0, x \in \mathbf{R}\}$”，“$B = \{x | x > 0\}$，且$A \cap B = \varnothing$”，求实数$a$的取值范围，使得$p, q$中只有一个为真。
     \begin{jieda}
@@ -171,7 +172,7 @@
         $q$所对应的集合$Q = [m-1, m+1]$，故$\neq q$对应的集合$\overline{Q} = (-\infty, m-1) \cup (m+1, +\infty)$ \\
         $\neg p$是$\neg q$的充分非必要条件即$\overline{P} \subset \overline{Q}$，即$m+1 \leq 5$，解得$m \in (-\infty, 4]$.
     \end{jieda}
-    \item 设集合$A = \{x | x-3 < 2\}, B = \{x |3 < x < 3m+1\}$，若“$x \in A$”是“$x \in B$”的必要不充分条件，实数$m$的取值范围是\blkda{$(-\infty, \dfrac{4}{3}]$}.
+    \item 设集合$A = \{x | x-3 < 2\}, B = \{x |3 < x < 3m+1\}$，若“$x \in A$”是“$x \in B$”的必要不充分条件，实数$m$的取值范围是\blkda{$\left(-\infty, \dfrac{4}{3}\right]$}.
     \begin{jieda}
         $A = (-\infty, 5)$，因为“$x \in A$”是“$x \in B$”的必要不充分条件,所以$B \subset A$，故应有$3m+1 \leq 5$，即$m \leq \dfrac{4}{3}$
     \end{jieda}

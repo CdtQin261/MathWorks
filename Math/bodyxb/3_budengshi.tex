@@ -533,6 +533,18 @@ $a, b, c$均为实数
         \end{dingautolist}
         \ps 参数会影响二次方程的两个根的大小关系，而最高次项含参则会涉及到退化回一次函数，以及二次函数开口方向.
     \end{jieda}
+    \item 已知集合$M = \{x | \dfrac{ax- 5}{x^2-a} < 0\}$，若$3 \in M, 5 \notin M$，则实数$a$的取值范围是\blkda[3]{$\left[1, \dfrac{5}{3}\right) \cup (9, 25]$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $3 \in M \Longrightarrow \dfrac{3a - 5}{9-a} < 0$
+            \item $5 \notin M \Longrightarrow \dfrac{5a - 5}{25-a} \geq 0$ 或 $a = 25$(此时$\dfrac{5a - 5}{25-a}$无意义，满足条件）
+        \end{enumerate}
+        求解分式不等式：
+        \begin{enumerate}
+            \item $\dfrac{3a - 5}{9-a} < 0 \Longrightarrow (3a-5)(9-a) < 0 \Longrightarrow a \in \left(-\infty, \dfrac{5}{3}\right) \cup (9, +\infty)$
+            \item $\dfrac{5a - 5}{25-a} \geq 0 \Longrightarrow (5a-5)(25-a) \geq 0, a \neq 25 \Longrightarrow a \in [1, 25)$
+        \end{enumerate}
+    \end{jieda}
     \item 不等式$\dfrac{2x^2+2kx+k}{4x^2+6x+3} < 1$的解集为$\mathbf{R}$，求实数$k$的取值范围.
     \begin{jieda}
         因为$4x^2+6x+3 > 0$恒成立，因此原不等式等价于$2x^2+2kx+k < 4x^2+6x+3$，整理有$2x^2+(6-2k)x+(3-k) > 0$在$\mathbf{R}$上恒成立，因此$\Delta = (6-2k)^2 - 8(3-k) < 0$，解得$k \in (1, 3)$
@@ -824,7 +836,7 @@ $a, b, c$均为实数
     \end{jieda}
     \item 已知正数$x, y$满足$x+y = 5$，则$\dfrac{1}{x+2} + \dfrac{1}{y+2}$的最小值是 \blkda{$\dfrac{4}{9}$ }
     \begin{jieda}
-        $x+y=5 \Rightarrow (x+2)+(y+2) = 9$，因此$\dfrac{1}{x+2}+\dfrac{1}{y+2} = \left(\dfrac{1}{x+2}+\dfrac{1}{y+2}\right) \cdot ((x+2)+(y+2)) \cdot \dfrac{1}{9} = \dfrac{1}{9} \left(2 + \dfrac{x+2}{y+2} + \dfrac{y+2}{x+2}\right) \geq \dfrac{4}{9}$
+        $x+y=5 \Longrightarrow (x+2)+(y+2) = 9$，因此$\dfrac{1}{x+2}+\dfrac{1}{y+2} = \left(\dfrac{1}{x+2}+\dfrac{1}{y+2}\right) \cdot ((x+2)+(y+2)) \cdot \dfrac{1}{9} = \dfrac{1}{9} \left(2 + \dfrac{x+2}{y+2} + \dfrac{y+2}{x+2}\right) \geq \dfrac{4}{9}$
     \end{jieda}
 
     \item 已知$x > 0, y > 0$，$2xy = x + 4y + a$

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  30 AUG 2026 15:36
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  30 AUG 2026 22:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1891,20 +1891,20 @@ Package fontspec Info:
 ]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 274.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 272.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 274.
 
-[6] [7] [8] [9] [10]
+[6] [7] [8] [9] [10] [11]
 Missing character: There is no ， ("FF0C) in font rm-lmr10!
-[11] [12]
+[12]
 File: bodyxb/src/8_1383_1050_190_187_0.jpg Graphic file (type bmp)
 <bodyxb/src/8_1383_1050_190_187_0.jpg>
+ [13]
 File: bodyxb/src/11_1169_698_222_236_0.jpg Graphic file (type bmp)
 <bodyxb/src/11_1169_698_222_236_0.jpg>
- [13]
 File: bodyxb/src/8_1407_1815_169_253_0.jpg Graphic file (type bmp)
 <bodyxb/src/8_1407_1815_169_253_0.jpg>
  [14]

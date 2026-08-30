@@ -1,0 +1,364 @@
+\chapter*{集合、常用逻辑用语}
+\subsection*{描述法与表示符号}
+\begin{enumerate}
+    \item 求下列集合运算的结果
+        \begin{enumerate}
+            \item 已知集合$A = \left\{y | y = x^2+1\right\}$，$B = \left\{y | y = \dfrac{1}{x}\right\}$，求$A \cap B$，$A \cup B$
+            \item 已知集合$A = \left\{x | y = x^2+1\right\}$，$B = \left\{x | y = \dfrac{1}{x}\right\}$，求$A \cap B$，$A \cup B$
+            \item 已知集合$A = \left\{(x, y) | y = x^2+1\right\}$，$B = \left\{(x, y) \left| y = \dfrac{x^2-1}{x-1}\right. \right\}$，求$A \cap B$
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $A = [1, +\infty)$，$B = (-\infty, 0) \cup (0, +\infty)$，故$A \cap B = [1, +\infty)$，$A \cup B = (-\infty, 0) \cup (0, +\infty)$
+                \item $A = \mathbf{R}$，$B = (-\infty, 0) \cup (0, +\infty)$，故$A \cap B = (-\infty, 0) \cup (0, +\infty)$，$A \cup B = \mathbf{R}$
+                \item 集合$A$是抛物线$y = x^2+1$上的点，集合$B$是曲线$y = \dfrac{x^2-1}{x-1}$上的点，即直线$y = x+1$上除$(1,2)$之外的点。故两者交点仅有$(0, 1)$，因此$A \cap B$为$\left\{(0,1)\right\}$。
+            \end{enumerate}
+        \end{jieda}
+    \item 设集合$M = \left\{y | y = \sqrt{x} - 1 \right\}， N = \left\{y | y = -x^2+1 \right\}$，则$M \cap N = $\blkda{$[-1, 1]$}
+    \begin{jieda}
+        $M = [-1, +\infty), N = (-\infty, 1]$
+    \end{jieda}      
+    \item 设集合$M = \left\{x | y = \sqrt{x} - 1 \right\}， N = \left\{y | y = -x^2+1 \right\}$，则$M \cap N = $\blkda{$[0, 1]$}
+    \begin{jieda}
+        $M = [0, +\infty), N = (-\infty, 1]$ \\
+        \ps 描述法需要看清表示元素的符号。
+    \end{jieda}
+    \item 设集合$M = \left\{(x, y) | y = \sqrt{x} - 1 \right\}， N = \left\{(x, y) | y = -x^2+1 \right\}$，则$M \cap N = $\blkda{$\left\{(1, 0)\right\}$}
+    \begin{jieda}
+        $\sqrt{x} - 1 = -x^2+1$，解得$x = 1$，故$M \cap N = \left\{(1, 0)\right\}$ \\
+        \ps 本题两个集合为两曲线，求交集即两曲线求交点。两曲线求交点联立！数集不联立！
+    \end{jieda}
+\end{enumerate}
+\subsection*{根据集合间关系求值}
+\begin{enumerate}
+    \item 已知集合$A = \left\{x | a-2 \leq x \leq a+2\right\}, B = \left\{x|x \leq 2 \mbox{或} x \geq 4\right\}$，若$A \subseteq B$，则$a$的取值范围是\blkda[4]{$(-\infty, 0] \cup [6, +\infty)$}.
+    \begin{jieda}
+        $A \subseteq B$即$a+2 \leq 2$或$a-2 \geq 4$，解得$a \in (-\infty, 0] \cup [6, +\infty)$
+    \end{jieda}
+    \item 设$a, b \in \mathbf{R}$，集合$A = \left\{x | x^2 - 3x - 4 \leq 0\right\}, B = \left\{x | x^2 - (2a+1)x < 0\right\}, C = [2b-1, b+5]$.
+    \begin{enumerate}
+        \item 若$B \subseteq A$，求$a$的取值范围.
+        \item 若$A \subseteq C$，求$b$的取值范围.
+        \item 若$a = 6, C \subseteq B$，求$b$的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        $A = [-1, 4]$ \\
+        若$a = -\dfrac{1}{2}$，则$B = \varnothing$，
+        若$a > -\dfrac{1}{2}$，则$B = (0, 2a+1)$，
+        若$a < -\dfrac{1}{2}$，则$B = (2a+1, 0)$，
+        \begin{enumerate}
+            \item $B = \varnothing$满足要求，若$B \neq \varnothing$，则有$2a+1 \in [-1, 4]$，因此有$a \in \left[-1, \dfrac{3}{2}\right]$
+            \item $A \subseteq C$即$2b-1 \leq -1 < 4 \leq b+5$，故$b \in [-1, 0]$
+            \item $a = 6, B = (0, 13)$，$C \subseteq B$即$0 < 2b-1 < b + 5 < 13$，故$b \in \left(\dfrac{1}{2}, 6\right)$
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{集合的运算转化为集合间的关系}
+\begin{enumerate}
+    \item 集合$M = \left\{x | ax + 1 = 0\right\}$，$N = \left\{x | x^2-3x+2=0\right\}$， 且$M \cap N = M$，则 $a = $ \blkda[3]{0, -1, 或 -$\dfrac{1}{2}$}.
+    \begin{jieda}
+        $N = \left\{1, 2\right\}$. 
+        \begin{dingautolist}{172}
+            \item 若$a = 0$, 则$M = \varnothing$, 符合。
+            \item 若$a \neq 0$，$M = \left\{-\dfrac{1}{a} \right\}$， 因此 $\dfrac{1}{a} = -1 \mbox{或} -2$, 即$a = -1 \mbox{或} -\dfrac{1}{2}$
+        \end{dingautolist}
+        综上，$a = 0, -1$, 或 $-\dfrac{1}{2}$
+    \end{jieda}
+    \item 已知集合$A = \left\{x | -2 \leq x \leq 7\right\}, B = \left\{x | m+1 < x < 2m-1\right\}$，若$A \cup B = A$，则$m$的取值范围为\blkda{$(-\infty, 4]$}
+    \begin{jieda}
+        首先根据$A \cup B = A$可知$B \subset A$。由于$B$是描述法表示的集合，因此需要分其是否为空集进行讨论。
+        \begin{enumerate}
+            \item $B = \varnothing$，此时$m+1 \geq 2m -1$，即$m \leq 2$，满足题意
+            \item $B \neq \varnothing$，此时应有$m+1 \geq -2, 2m-1 \leq 7, m > 2$，故$m \in (2, 4]$
+        \end{enumerate}
+        综上，$m \in (-\infty, 4]$
+    \end{jieda}
+\end{enumerate}
+\subsection*{推理求值类问题}
+\begin{enumerate}
+    \item (2024$\cdot$宝山区二模$\cdot$7)已知集合 $A = \left\{  {2,\left| {a + 1}\right| ,a + 3}\right\}$ ，且 $1 \in  A$ ，则实数 $a$ 的值为\blkda[2]{0}.
+    \begin{jieda}
+        $|a+1| = 1$，解得$a = -2$或$0$，代入检验，$a = -2$时违背互异性.
+
+        $a+3 = 1$，解得$a = -2$，舍.
+    \end{jieda}
+    \item 设集合$A = \left\{a, a^2, ab\right\}$，集合$B = \left\{1, a, b\right\}$，若$A = B$，求实数$a,b$
+    \begin{jieda}
+        首先可以判断出来元素1应该是突破口。在集合A中，$a \neq 1$否则违背互异性。由于集合元素的无序性，此时要分类讨论。
+        \begin{enumerate}
+            \item $a^2 = 1$，此时对应于$a = -1, ab = b$，所以$b = 0$
+            \item $ab = 1$，此时对应于$a = \dfrac{1}{b}, a^2 = b$，解得$a = b = 1$（舍去）
+        \end{enumerate}
+        综上，$a = -1, b = 0$
+    \end{jieda}
+    \item 已知 $A = \left\{  {{a}_{1},{a}_{2},{a}_{3},{a}_{4}}\right\}  ,B = \left\{  {{a}_{1}^{2},{a}_{2}^{2},{a}_{4}^{2}}\right\}$ 且 ${a}_{1} < {a}_{2} < {a}_{3} < {a}_{4}$ ,其中 ${\mathbf{a}}_{\mathbf{i}} \in  \mathbf{Z}(i = 1,2,3,4)$,若 $A \cap  B = \left\{  {{a}_{2},{a}_{3}}\right\}  ,{a}_{1} + {a}_{3} = 0$ ,且 $A \cup  B$ 的所有元素之和为 56 ,求 ${a}_{3} + {a}_{4} =$ \blkda{8}.
+    \begin{jieda}
+        由 ${a}_{1} + {a}_{3} = 0$ 得 ${a}_{1} =  - {a}_{3}$ ,所以 ${a}_{1}^{2} = {a}_{3}^{2}$，故$a_2^2 < a_1^2 = a_3^2 < a_4^2$
+
+        由${\mathbf{a}}_{\mathbf{i}} \in  \mathbf{Z}(i = 1,2,3,4)$可知$a_2^2 \geq 0, a_3^2 \geq 1, a_4^2 \geq 4$，因此必有$a_4^2 > a_4$，故$\left\{\begin{array}{l}
+                a_2^2 = a_2 \\
+                a_3^2 = a_3
+        \end{array}\right.$，即$\left\{\begin{array}{l}
+                a_2 = 0 \\
+                a_3 = 1
+        \end{array}\right.$，故$A \cup  B = \left\{-1, 0, 1, a_4, a_4^2\right\}$，故$a_4 = 7$，因此$a_3+a_4 = 8$
+    \end{jieda}
+    \item 设集合$A=\left\{1, 2, m\right\}$，其中$m$为实数，令$B=\left\{a^2|a \in A\right\}$， $C = A \cup B$。若$C$中所有元素之和为6，则$C$中所有元素之积为\blkda{$-8$}
+    \begin{jieda}
+        $B = \left\{1, 4, m^2\right\}$，则$1, 2, 4, m, m^2 \in C$。根据$C$中元素和为6，而$1+2+4 > 6$，又因为$m^2+m > -1$恒成立，故应有$m < 0$ 且 $m^2 \in \left\{1, 2, 4\right\}$。故可知$m = -1$, $C = \left\{1, 2, 4, -1\right\}$，因此$C$中所有元素之积为-8.
+    \end{jieda}
+
+    \item (2024$\cdot$宝山区一模$\cdot$16)已知集合 $S$ 是由某些正整数组成的集合，且满足:若 $a \in  S$ ，则当且仅当 $a = m + n$ (其中 $m,n \in  S,m \neq  n$ )，或 $a = p + q$ (其中正整数 $p,q \notin  S$ ,且 $p \neq  q$ ).
+    
+    现有如下两个命题: \ding{172}  $4 \in  S$ ;  \ding{173}  集合 $\{ x \mid  x = {3n} + 5,n \in  \mathbf{N}\}  \subseteq  S$，则下列选项中正确的是 \dotfill{(\kh{C})}
+    \xx{\ding{172}  \ding{173} 都是真命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}{\ding{172}  \ding{173} 都是假命题}
+    \begin{jieda}
+        $1 \notin S, 2 \notin S, 3=1+2 \in S, 4 \notin S, 5 = 1+4 \in S$.
+
+        当$n = 0$时，满足${3n} + 5 \in S$，假设$n = k$时${3n} + 5 \in S$，则当$n = k+1$时，${3n} + 5 = 3 + (3k+5)$，因为$3 \in S, 3k+5 \in S$，因此${3n} + 5 \in S$. 根据数学归纳法可知${3n} + 5 \in S$对$n \in \mathbf{N}$恒成立.
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{元素个数与子集个数的转化}
+\begin{enumerate}
+    \item 已知集合$A$中有10个元素，那么集合$A$的非空真子集个数为\blkda{$1022$}
+    \item (2024$\cdot$普陀区一模$\cdot$7)设集合 $M = \{ 2,0, - 1\} ,N = \{ x \mid  \left| {x - a}\right|  < 1\}$ ，若 $M \cap  N$ 的真子集的个数是 1，则正实数 $a$ 的取值范围为\blkda[2]{$\left( {0,1}\right)  \cup  \left( {1,3}\right)$}.
+    \begin{jieda}
+        由题意可知：$M,N$有一个公共元素，$N = (a-1, a+1)$，画数轴分类讨论即可.
+    \end{jieda}
+\end{enumerate}
+\subsection*{转化的等价性}
+\begin{enumerate}
+    \item 若集合$A = \left\{x | (a-1)x^2+3x-2 = 0\right\}$仅有一个真子集，则实数$a$的值为\blkda[3]{$a = 1 \mbox{或} -\dfrac{1}{8}$}
+    \begin{jieda}
+        由于只有一个真子集，故集合中只有一个元素。因为二次项系数有参数$a$，所以需要分类讨论
+        \begin{enumerate}
+            \item $a = 1$，此时方程退化回一次方程，只有一个实根，满足题意  
+            \item $a \neq 1$，此时方程为二次方程，若只有一个实根，则判别式为0，即$9 + 8(a-1) = 0$，得$a = -\dfrac{1}{8}$
+        \end{enumerate}
+    \end{jieda}
+    \item 设全集$U = \left\{(x, y) | x, y \in \mathbf{R}\right\}$, $A = \left\{(x, y) \left| \dfrac{y-3}{x-2}=1, x, y \in \mathbf{R}, 且x \neq 2 \right. \right\}$, $B = \left\{(x, y) | y=x+1, x, y \in \mathbf{R}\right\}$, 则$\overline{A}\cap B = $ \dotfill{(\kh{C})}.
+    \xx{$\overline{A}$}{$\overline{B}$}{$\left\{(2, 3)\right\}$}{$\varnothing$}
+    \begin{jieda}
+        $A = \left\{(x, y) | y=x+1, x, y \in \mathbf{R}, 且x \neq 2\right\}$, 因此$A \subsetneqq B$. $(2, 3) \in B \mbox{且} (2, 3) \notin A$，故选C。
+    \end{jieda}
+    \item 已知集合$A = \left\{x | x^2 - ax + a^2 - 19 = 0\right\}, B = \left\{x|x^2-5x+6=0\right\}, C = \left\{x | x^2 + 2x - 8 = 0\right\}$，且满足$A \cap B \neq \varnothing, A \cap C = \varnothing$，求参数$a$的值.
+    \begin{jieda}
+        首先可以解方程求出$B = \left\{2,3\right\}, C = \left\{-4,2\right\}$。由$A \cap B \neq \varnothing, A \cap C = \varnothing$可知$2 \notin A, 3 \in A$; 代入$A$中有$9 - 3a + a^2 - 19 = 0$，解得$a = 5 \mbox{或} -2$; 代入$A$中检验发现当$a = 5$时$A = B, 2 \in A$不符合题意。故$a = -2$.
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{新定义（题干信息翻译）}
+\begin{enumerate}
+
+    \item (2024$\cdot$徐汇区一模$\cdot$15)已知集合 $M = \{ \left( {x,y}\right)  \mid  y = f\left( x\right) \}$ ，若对于任意 $\left( {x,y}\right)  \in  M$ ，总存在与之相应的 $\left( {{x}^{\prime },{y}^{\prime }}\right)  \in  M$ (其中 $x \neq  {x}^{\prime }$ ),使得 $\left| {x{x}^{\prime } + y{y}^{\prime }}\right|  = \sqrt{{x}^{2} + {y}^{2}} \cdot  \sqrt{{\left( {x}^{\prime }\right) }^{2} + {\left( {y}^{\prime }\right) }^{2}}$ 成立,则称集合 $M$ 是“$\Omega$ 集合”. 下列选项为“$\Omega$ 集合”的是 \dotfill{(\kh{D})}
+    \xx{$M = \left\{ \left( {x,y}\right)  \left |  y = \dfrac{1}{x},x > 0 \right. \right\}$}{$M = \left\{  {\left( {x,y}\right)  \mid  y = {{e}}^{x} - 2}\right\}$}{$M = \{ \left( {x,y}\right)  \mid  y = \cos x\}$}{$M = \left\{  {\left( {x,y}\right)  \mid  y = {x}^{3}}\right\}$} 
+    \begin{jieda}
+        记点 $P\left( {x,y}\right)$ ,点 $Q\left( {{x}^{\prime },{y}^{\prime }}\right)$ ,则 $\left| {x{x}^{\prime } + y{y}^{\prime }}\right|  = \sqrt{{x}^{2} + {y}^{2}} \cdot  \sqrt{{\left( {x}^{\prime }\right) }^{2} + {\left( {y}^{\prime }\right) }^{2}} \Longleftrightarrow  \left| {\vv{OP} \cdot  \vv{OQ}}\right|  = \left| \vv{OP}\right|  \cdot  \left| \vv{OQ}\right|$ , 即 $P,O,Q$ 三点共线.
+        
+        由于 $P,Q$ 不重合,故问题转化为直线 ${OP}$ 与函数 $y = f\left( x\right)$ 的图像至少还有另一个不同的交点. 对于 ${A}$ 项，取 $P\left( {1,1}\right)$ ，排除；对于 ${B}$ 项，取 $P\left( {0, - 1}\right)$ ，排除；对于 $C$ 项，取 $P\left( {0,1}\right)$ ，排除. 而函数 $y = {x}^{3}$ 为奇函数，对于任意非原点的点 $P$ ,均存在与之关于原点对称的点 $Q$ 符合题意,故选 D.
+    \end{jieda}
+    \item (2025$\cdot$普陀区二模$\cdot$10)设: ${i,j}$ ， $n$ 为正整数，集合 $M = \{ 1,3,5,\cdots ,{{2n} - 1}\}$ ，若集合 $A$ 满足 $A \subseteq  M$ ， 且对 $A$ 中任意的两个元素 $i,j$ ，皆有 $\left| {i - j}\right|  > 4$ 成立，记满足条件的集合 $A$ 的个数为 ${a}_{n}$ ，则 ${a}_{8} =$ \blkda[2]{28}.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 枚举
+            
+            当 $n = 8$ 时, $M = \{ 1,3,5,\cdots ,{15}\}$. 
+            
+            若 $A$ 为空集，符合题意,只有 1 种; 
+            
+            若 $A$ 为一元集: 共有 8 种; 
+            
+            若 $A$ 为二元集: 如 $\{ 1,7\} ,\{ 1,9\} ,\{ 1,{11}\} ,\{ 1,{13}\} ,\{ 1,{15}\}, \\
+            \{ 3,9\} ,\{ 3,{11}\}, \{ 3,{13}\} ,\{ 3,{15}\} ,\{ 5,{11}\} ,\{ 5,{13}\} ,\{ 5,{15}\} ,\{ 7,{13}\} ,\{ 7,{15}\} ,  \{ 9,{15}\}$ ,共有 15 种; 
+            
+            若 $A$ 为三元集: 如 $\{ 1,7,{13}\} ,\{ 1,7,{15}\}$ , $\{ 1,9,{15}\} ,\{ 3,9,{15}\}$ ,共有 4 种
+            
+            所以总共有: ${a}_{8} = 1 + 8 +  {15} + 4 = {28}$ 种
+
+            \item 寻找递推关系
+            
+            $a_n = a_{n-1}+a_{n-3}$，$a_1 = 2, a_2 = 3, a_3 = 4, a_4 = 6, a_5 = 9, a_6 = 13, a_7 = 19, a_8 = 28$
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
+\subsection*{根据命题的真假求参数范围}
+
+\begin{enumerate}
+    \item 已知$p: \exists x < 0, x + a - 1 = 0$，若$p$的否定为真命题，则$a$的取值范围是\blkda{$(-\infty, 1]$}
+    \begin{jieda}
+        首先写出$p$的否定：$\forall x < 0, x + a - 1 \neq 0$，该命题为真命题可以转化为$(-\infty, 0) \subseteq \{x | x \neq 1-a\}$，由此可以推出$1 - a \geq 0$，即$a \leq 1$
+    \end{jieda}
+    \item 已知命题$p: \forall x \in \{x | -3 \leq x \leq 2\}$，都有$x \in \{x|a-4 \leq x \leq a+5\}$，且$\neg p$是假命题，求实数$a$的取值范围．
+    \begin{jieda}
+        $\neg p$是假命题即$p$是真命题。$p: \forall x \in \{x | -3 \leq x \leq 2\}$，都有$x \in \{x|a-4 \leq x \leq a+5\}$可以转化为$[-3, 2] \subseteq [a-4, a+5]$。故有$a + 5 \geq 2, a -4 \leq -3$，综上$a \in [-3, 1]$
+    \end{jieda}
+    \item 已知$p: -5 < a < 7$；$q:$“集合$A = \{x | x^2 + (a+2)x + 1 = 0, x \in \mathbf{R}\}$”，“$B = \{x | x > 0\}$，且$A \cap B = \varnothing$”，求实数$a$的取值范围，使得$p, q$中只有一个为真。
+    \begin{jieda}
+        首先应分析$p, q$的真假与$a$的取值之间的对应关系。
+        \begin{dingautolist}{172}
+            \item $p$真，则$a \in (-5, 7)$
+            \item $p$假，则$a \in (-\infty, -5) \cup [7, +\infty)$
+            \item $q$真，应分情况进行讨论
+                \begin{enumerate}[1.]
+                    \item $A = \varnothing$ \\
+                    A为空集对应着方程$x^2 + (a+2)x + 1 = 0$的判别式小于0，即$(a+2)^2 - 4 < 0$，因此有$a + 2 \in (-2, 2)$，即$a \in (-4, 0)$
+                    \item $A \neq \varnothing$ \\
+                    A不为空集对应着方程$x^2 + (a+2)x + 1 = 0$只有负根（必没有零根）。根据判别式大于等于0，应有$a \in (-\infty, -4] \cup [0, +\infty)$。考察函数$y = x^2 + (a+2)x + 1$，开口向上，过$(0, 1)$，对称轴为$x = -\dfrac{a+2}{2}$。若要方程只有负根则应使得$-\dfrac{a+2}{2} < 0$，因此$a \in (-2 +\infty)$ \\
+                    故此时有$a \in [0, +\infty)$
+                \end{enumerate}
+                综上，$a \in (-4, +\infty)$
+            \item $q$假，则对应着$a \in (-\infty, -4]$
+        \end{dingautolist}
+        
+        两者只有一真，则对应着$p$真$q$假，或者$p$假$q$真。
+        \begin{dingautolist}{172}
+            \item $p$真$q$假：$a \in (-5, -4]$
+            \item $p$假$q$真：$a \in [7, +\infty)$
+        \end{dingautolist}
+        故$a$的取值范围是$(-5, -4] \cup [7, +\infty)$
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{充分条件、必要条件}
+\begin{enumerate}
+    \item 对于集合$P$，$Q$下列四个命题中正确的是\dotfill{(\kh{D})}
+    \xx{“$P$不是$Q$的子集”的充要条件是“对任意$x \in P$，都有$x \notin Q$”}{“$P$不是$Q$的子集”的充要条件是“$P \cap Q = \varnothing$”}{“$P$不是$Q$的子集”的充要条件是“$Q$不是$P$的子集”}{“$P$不是$Q$的子集”的充要条件是“存在$x \in P$，使得$x \notin Q$”}
+    \item 有限集$S$中的元素个数记作$card(S)$，设$A, B$都是有限集合，以下命题中正确的是\blkda{\ding{172}\ding{173}}
+    \begin{dingautolist}{172}
+        \item $A \cap B = \varnothing$的充要条件是$card(A \cup B) = card(A) + card(B)$
+        \item $A \subseteq B$的必要非充分条件是$card(A) \leq card(B)$
+        \item $A \nsubseteq B$的充分非必要条件是$card(A) \leq card(B)$
+        \item $A = B$的充要条件是$card(A) = card(B)$
+    \end{dingautolist}
+
+    \item (2025$\cdot$嘉定区一模$\cdot$13)已知 $a$ 为正数，则“$a > 3$”是“${a}^{a} > {a}^{3}$”的 \dotfill{(\kh{A})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分又非必要条件}
+    \begin{jieda}
+        根据幂函数的单调性可知充分性显然
+        
+        当$a \in (0, 1)$时，指数函数$y = a^x$严减，故$a^a > a^3$依然成立，故必要性不成立.
+    \end{jieda}
+    
+    \item (2025$\cdot$宝山区二模$\cdot$14)“ $a > b$ ”的一个必要非充分条件是 \dotfill{(\kh{C})}
+    \xx{$\ln \left( {a - b}\right)  > 0$}{${2}^{a} > {2}^{b}$}{${\left( \dfrac{1}{2}\right) }^{a - b} \leq  1$}{${a}^{3} > {b}^{3}$}
+
+    \item (2025$\cdot$闵行区二模$\cdot$14)已知 $a > 0,b > 0$ ，则“ $a + b > 2$ ”是“ ${ab} > 1$ ”的 \dotfill{(\kh{B})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分又非必要条件}
+    \begin{jieda}
+        在平面直角坐标系上找出对应区域即可知.
+    \end{jieda}
+    
+    \item (2024$\cdot$浦东新区二模$\cdot$13)“$a = 1$” 是 “直线 $ax - {2y} - 2 = 0$ 与直线 $x - \left( {a + 1}\right) y + 1 = 0$ 平行”的 \dotfill{(\kh{C})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分又非必要条件}
+    \begin{jieda}
+        $\vv{n_1} = (a, -2), \vv{n_2} = (1, -(a+1))$，$\vv{n_1} // \vv{n_2} \Longleftrightarrow a^2+a-2 = 0$，解得$a = 1$或$-2$，代回检验可知$a = 1$时两直线平行，$a = -2$时两直线重合.
+    \end{jieda}
+
+
+    \item (2025$\cdot$浦东新区二模$\cdot$14)“$a>b$”是“$\lg a > \lg b$ ”的 \dotfill{(\kh{B})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分又非必要条件}
+    \begin{jieda}
+        $a, b$未必在定义域内.
+    \end{jieda}
+\end{enumerate}
+\subsection*{包含关系与推出关系}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        推出关系 & 逻辑关系 & 命题判断 & 集合关系 \\
+        \hline
+        $p \Rightarrow q, q \Rightarrow p$ & $p$是$q$的充要条件 & 若$p$则$q$是真命题，若$q$则$p$是真命题 & $P = Q$\\
+        \hline
+        $p \nRightarrow q, q \Rightarrow p$ & $p$是$q$的必要非充分条件 & 若$p$则$q$是假命题，若$q$则$p$是真命题 & $Q \subset P$ \\
+        \hline
+        $p \Rightarrow q, q \nRightarrow p$ & $p$是$q$的充分非必要条件 & 若$p$则$q$是真命题，若$q$则$p$是假命题 & $P \subset Q$ \\
+        \hline
+        $p \nRightarrow q, q \nRightarrow p$ & $p$是$q$的既非充分也非必要条件 & 若$p$则$q$是假命题，若$q$则$p$是假命题 & $P \not\subseteq Q$，$Q \not\subseteq P$\\
+        \hline
+    \end{tabular}
+    \caption{推出关系，逻辑关系，命题判断和集合关系, 其中$P = \{x|x\mbox{满足}p\}$，$Q = \{x|x\mbox{满足}q\}$}
+\end{table}
+\begin{enumerate}
+    \item 已知$p: 1 \leq x \leq 4, q: x \in (-\infty, -3) \cup (4, +\infty)$，则$p$是$\neg{q}$的\dotfill{(\kh{B})}
+    \xx{必要非充分条件}{充分非必要条件}{充要条件}{既非充分也非必要条件}
+    \begin{jieda}
+        $\neg{q}: x \in [-3, 4]$，根据“小推大”可知$p$是$\neg{q}$的充分非必要条件.
+    \end{jieda}
+    \item 已知$p: x^2 +x - 2 > 0$，$q: x > a$.若$q$是$p$的充分非必要条件，则实数$a$的取值范围是\blkda{$[1, +\infty)$}
+    \begin{jieda}
+        $p$所对应的集合$P = (-\infty, -2) \cup (1, +\infty)$，$q$所对应的集合$Q = (a, +\infty)$，因为$q$是$p$的充分非必要条件，所以有$Q \subset P$，因此有$a \geq 1$
+    \end{jieda}
+    \item 设集合$A = \{x | x-3 < 2\}, B = \{x |3 < x < 3m+1\}$，若“$x \in A$”是“$x \in B$”的必要不充分条件，实数$m$的取值范围是\blkda{$\left(-\infty, \dfrac{4}{3}\right]$}.
+    \begin{jieda}
+        $A = (-\infty, 5)$，因为“$x \in A$”是“$x \in B$”的必要不充分条件,所以$B \subset A$，故应有$3m+1 \leq 5$，即$m \leq \dfrac{4}{3}$
+    \end{jieda}
+    \item (2025$\cdot$长宁区一模$\cdot$9)已知 $\alpha  : {2}^{x} + {\log }_{2}x \leq  2,\beta  : x < m$ ，若 $\alpha$ 是 $\beta$ 的充分条件，则实数 $m$ 的取值范围是\blkda[2]{$(1, +\infty)$}.
+    \begin{jieda}
+        $y = {2}^{x} + {\log }_{2}x$严增，$\alpha : x \in (-\infty, 1]$，$(-\infty, 1] \subseteq (-\infty, m)$，故$m > 1$.
+    \end{jieda}
+\end{enumerate}
+\subsection*{新定义（题干信息翻译）}
+\begin{enumerate}
+    \item (2025$\cdot$青浦区一模$\cdot$16)对于数列 $\left\{  {a}_{n}\right\}$ ，设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，给出下列两个命题: \ding{172}  存在函数 $y = f\left( x\right)$ ，使得 ${S}_{n} = f\left( {a}_{n}\right)$ ； \ding{173}  存在函数 $y = g\left( x\right)$ ，使得 $n = g\left( {a}_{n}\right)$. 则 \ding{172} 是 \ding{173} 的 \dotfill{(\kh{B})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分又非必要条件}
+    \begin{jieda}
+        取 ${S}_{n} = {a}_{n} = 0$ ,存在 $y = f\left( x\right)  = 0$ ,使得 ${S}_{n} = f\left( {a}_{n}\right)$ 成立,此时由函数定义知,不存在函数 $y = g\left( x\right)$ ,使得 $n =  g\left( {a}_{n}\right)$
+        
+        当存在函数 $y = g\left( x\right)$ ,使得 $n = g\left( {a}_{n}\right)$ 成立时,由于 $n$ 与 ${a}_{n}$ 为一一对应关系，所以$\{a_n\}$中每一项各不相同，所以存在函数 $y = f\left( x\right)$ ，使得 ${S}_{n} = f\left( {a}_{n}\right)$.
+    \end{jieda}
+
+    \item (2024$\cdot$上海秋季卷$\cdot$15)定义一个集合 $\Omega$ ，集合中的元素是空间内的点，任取 ${P}_{1}$ 、 ${P}_{2}$ 、 ${P}_{3} \in  \Omega$ ， 存在不全为 0 的实数 ${\lambda }_{1}$ 、 ${\lambda }_{2}$ 、 ${\lambda }_{3}$ ，使得 ${\lambda }_{1}\vv{O{P}_{1}} + {\lambda }_{2}\vv{O{P}_{2}} + {\lambda }_{3}\vv{O{P}_{3}} = \vv{0}$. 已知 $\left( {1,0,0}\right)  \in  \Omega$ ，则 $\left( {0,0,1}\right)  \notin  \Omega$ 的充分条件是 \dotfill{(\kh{C})}
+    \xx{$\left( {0,0,0}\right)  \in  \Omega$}{$\left( {-1,0,0}\right)  \in  \Omega$}{$\left( {0,1,0}\right)  \in  \Omega$}{$\left( {0,0, - 1}\right)  \in  \Omega$}
+    \begin{jieda}
+        存在不全为 0 的实数 ${\lambda }_{1}$ 、 ${\lambda }_{2}$ 、 ${\lambda }_{3}$ ，使得 ${\lambda }_{1}\vv{O{P}_{1}} + {\lambda }_{2}\vv{O{P}_{2}} + {\lambda }_{3}\vv{O{P}_{3}} = \vv{0}$即$\vv{O{P}_{1}}, \vv{O{P}_{2}}, \vv{O{P}_{3}}$不构成一组基. 故应有$\left( {1,0,0}\right)，\left( {0,0,1}\right)$与选项构成一组基.
+    \end{jieda}
+
+
+    \item (2023$\cdot$上海秋季卷$\cdot$16)对于一段曲线C，若存在点 $M$ ，使得对于任意的点 $P \in  C$ ，都存在点 $Q \in  C$ ,使得 $\left| {PM}\right|  \cdot  \left| {QM}\right|  = 1$ ,则称曲线 $C$ 为“自相关曲线”. 现有如下两个命题：\ding{172}  任何椭圆都是“自相关曲线”;  \ding{173}  存在双曲线是“自相关曲线”. 则下列正确的是 \dotfill{(\kh{B})}
+    \xx{\ding{172} 真命题， \ding{173} 真命题}{\ding{172} 真命题， \ding{173} 假命题}{\ding{172} 假命题， \ding{173} 真命题}{\ding{172} 假命题， \ding{173} 假命题}
+    \begin{jieda}
+        曲线 $C$ 为“自相关曲线”即存在点 $M$ ，使得$C$上点到$M$的距离取值范围为$\left[\dfrac{1}{t}, t\right]$，显然对于椭圆肯定存在$M$，而对于双曲线肯定不存在$M$.
+    \end{jieda}
+
+
+    \item (2024$\cdot$青浦区一模$\cdot$16)定义:如果曲线段 $C$ 可以一笔画出，那么称曲线段 $C$ 为单轨道曲线，比如圆、椭圆都是单轨道曲线；如果曲线段 $C$ 由两条单轨道曲线构成，那么称曲线段 $C$ 为双轨道曲线. 对于曲线 $\Gamma  : \sqrt{{\left( x + 1\right) }^{2} + {y}^{2}} \cdot  \sqrt{{\left( x - 1\right) }^{2} + {y}^{2}} = m\left( {m > 0}\right)$ 有如下命题:
+
+    $p$ : 存在常数 $m$ ,使得曲线 $\Gamma$ 为单轨道曲线; $q$ : 存在常数 $m$ ,使得曲线 $\Gamma$ 为双轨道曲线.
+
+    下列判断正确的是 \dotfill{(\kh{A})}
+    \xx{$p$ 和 $q$ 均为真命题}{$p$ 和 $q$ 均为假命题}{$p$ 为真命题， $q$ 为假命题}{$p$ 为假命题， $q$ 为真命题}
+    \begin{jieda}
+        记 $f\left( {x,y}\right)  = \sqrt{{\left( x + 1\right) }^{2} + {y}^{2}} \cdot  \sqrt{{\left( x - 1\right) }^{2} + {y}^{2}} - m$ , 易得 $f\left( {-x,y}\right)  = f\left( {x, - y}\right)  = f\left( {-x, - y}\right)  = f\left( {x,y}\right)  = 0$ , 因此曲线 $f\left( {x,y}\right)  = 0$ 关于 $x$ 轴、 $y$ 轴成轴对称,关于原点成中心对称,从几何上讲,曲线 $\Gamma$ 是到两定点 $\left( {1,0}\right)$ 和 $\left( {-1,0}\right)$ 的距离乘积为 $m$ 的点的轨迹,由 $f\left( {x,y}\right)  = 0$ 可得 $y =  \pm  \sqrt{\sqrt{4{x}^{2} + {m}^{2}} - {x}^{2} - 1}$ ,因此它在 $x$ 轴上方和下方分别是两个函数的图像,这两个函数图像在 $x$ 轴上有公共点 (方程 $y = 0$ 的解相同),由 $\sqrt{4{x}^{2} + {m}^{2}} - {x}^{2} - 1 \geq  0$ 得 $1 - m \leq  {x}^{2} \leq  1 + m,0 < m < 1$ 时, $- \sqrt{1 + m} \leq  x \leq   - \sqrt{1 - m}$ 或 $\sqrt{1 - m} \leq  x \leq  \sqrt{1 + m}$ ,所以曲线 $\Gamma$ 与 $y$ 轴无公共点,曲线 $\Gamma$ 是在 $y$ 轴两侧的两个曲线构成,是双轨道曲线; 当 $m > 1$ 时, $- \sqrt{1 + m} \leq  x \leq  \sqrt{1 + m}$ ,结合对称性知,曲线 $\Gamma$ 是一个封闭曲线,是单轨道曲线 (实际上上述过程中只要对 $m$ 取一个特定值讨论即可),命题 $p,q$ 均正确.
+        
+        \ps 卡西尼卵形线.
+    \end{jieda}
+
+    \item (2024$\cdot$奉贤区二模$\cdot$16)如图，在等腰梯形 ${ABCD}$ 中， ${AD}//{BC},{AD} = 1,{BC} = m(m>1), \angle {ABC} = \dfrac{\pi }{3}$. 点 $E$ 是线段 ${AB}$ 上的一点,点 $F$ 在线段 ${DC}$ 上, $\dfrac{DF}{DC} = t$.
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/11_1169_698_222_236_0.jpg}
+    \end{center}
+
+    命题 \ding{172} :若 $\vv{AE} = \dfrac{1}{2}\vv{EB}$ ，则 $\vv{EF} \cdot \vv{AD}$ 随着 $t$ 的增大而减小
+
+    命题 \ding{173} :设 $\dfrac{AE}{AB} = x$ ，若存在线段 ${EF}$ 把梯形 ${ABCD}$ 的面积分成上下相等的两个部分,那么 $x \geq  \dfrac{m - 1}{2m},t = f\left( x\right)$ 随着 $x$ 的增大而减小.
+
+    则下列选项正确的是 \dotfill{(\kh{A})}
+    
+    \xx{命题 \ding{172} 不正确，命题 \ding{173} 正确}{命题 \ding{172} 、命题 \ding{173} 都不正确}{命题 \ding{172} 正确，命题 \ding{173} 不正确}{命题 \ding{172} 、命题 \ding{173} 都正确}
+    \begin{jieda}
+        命题 \ding{172} 错误,理由如下: $\vv{EF} \cdot  \vv{AD}$ 的大小等价于 $\vv{EF}$ 在 $\vv{AD}$ 上的投影，由图可知，投影是不断增大的；
+        
+        命题 \ding{173}  正确,理由如下: 
+        延长$BA, CD$交于$G$，易知$\triangle GBC$为正三角形，$\dfrac{\dfrac{m^2+1}{2}}{m^2} = \dfrac{S_{\triangle GEF}}{S_{\triangle GBC}} = \dfrac{|GE|\cdot|GF|}{|GB| \cdot |GC|} = \dfrac{[x(m-1)+1][t(m-1)+1]}{m^2}$，故$\dfrac{m^2+1}{2} = [x(m-1)+1][t(m-1)+1]$
+
+        故$\left\{\begin{array}{l}
+            2x = \dfrac{(m+1) - 2t}{t(m-1)+1} \\
+            2t = \dfrac{(m+1) - 2x}{x(m-1)+1} 
+        \end{array}\right.$，根据反比例函数性质可知均为严减，代入边界值可知$2x \geq \dfrac{m-1}{m}$
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/8_1407_1815_169_253_0.jpg}
+        \end{center}
+    \end{jieda}
+\end{enumerate}

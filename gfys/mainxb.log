@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  30 AUG 2026 15:42
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  30 AUG 2026 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1849,11 +1849,11 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 33.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 31.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 33.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 31.
 
 [1
 
@@ -1899,11 +1899,11 @@ File: images/bo_d7tk7oc91nqc73875fu0_1_1166_1790_304_248_0.jpg Graphic file (typ
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.045> on input line 151.
+(Font)              <12.045> on input line 149.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 151.
+(Font)              <8> on input line 149.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 151.
+(Font)              <6> on input line 149.
  [4
 
 ]
@@ -2397,25 +2397,25 @@ File: images/bo_d7tk7oc91nqc73875fu0_165_986_1308_197_144_0.jpg Graphic file (ty
 File: images/bo_d7tk7oc91nqc73875fu0_166_711_1297_165_171_0.jpg Graphic file (type bmp)
 <images/bo_d7tk7oc91nqc73875fu0_166_711_1297_165_171_0.jpg>
 
-Overfull \vbox (70.53563pt too high) detected at line 4783
+Overfull \vbox (70.53563pt too high) detected at line 4781
  []
 
 File: images/bo_d7tk7oc91nqc73875fu0_166_883_1298_165_156_0.jpg Graphic file (type bmp)
 <images/bo_d7tk7oc91nqc73875fu0_166_883_1298_165_156_0.jpg>
 
-Overfull \vbox (61.89651pt too high) detected at line 4783
+Overfull \vbox (61.89651pt too high) detected at line 4781
  []
 
 File: images/bo_d7tk7oc91nqc73875fu0_166_1064_1305_171_137_0.jpg Graphic file (type bmp)
 <images/bo_d7tk7oc91nqc73875fu0_166_1064_1305_171_137_0.jpg>
 
-Overfull \vbox (48.18388pt too high) detected at line 4783
+Overfull \vbox (48.18388pt too high) detected at line 4781
  []
 
 File: images/bo_d7tk7oc91nqc73875fu0_166_1252_1288_162_168_0.jpg Graphic file (type bmp)
 <images/bo_d7tk7oc91nqc73875fu0_166_1252_1288_162_168_0.jpg>
 
-Overfull \vbox (70.60126pt too high) detected at line 4783
+Overfull \vbox (70.60126pt too high) detected at line 4781
  []
 
 File: images/bo_d7tk7oc91nqc73875fu0_166_334_1350_177_125_0.jpg Graphic file (type bmp)
@@ -2949,10 +2949,10 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 51625 strings out of 468168
- 1290451 string characters out of 5432816
+ 51596 strings out of 468168
+ 1288468 string characters out of 5432816
  1758487 words of memory out of 5000000
- 79146 multiletter control sequences out of 15000+600000
+ 79117 multiletter control sequences out of 15000+600000
  672079 words of font info for 156 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,21n,128p,964b,1007s stack positions out of 10000i,1000n,20000p,200000b,200000s

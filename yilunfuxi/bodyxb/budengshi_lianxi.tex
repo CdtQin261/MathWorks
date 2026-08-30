@@ -1,0 +1,61 @@
+\subsection*{不等式求解}
+\begin{enumerate}
+    \item 不等式$\dfrac{x^2(x+3)(x^2-x+1)}{x^2 - 5x + 4} > 0$的解集为\blkda[5]{$(-3, 0) \cup (0, 1) \cup (4, +\infty)$}
+    \begin{jieda}
+        \ps 穿针引线法求解，奇穿偶回，\textbf{偶次方根绝对不能丢弃，且易出错}.
+    \end{jieda}
+
+    \item 已知 $\alpha  : \dfrac{2}{x + 1} > 1,\beta  : m \leq  x \leq  2$ ,若 $\alpha$ 是 $\beta$ 的充分条件,则实数 $m$ 的取值范围是\blkda[4]{$(-\infty, -1]$}.
+    \begin{jieda}
+        $\dfrac{2}{x + 1} > 1 \Longleftrightarrow \dfrac{1 - x}{x + 1} > 0\Longleftrightarrow \left( {1 - x}\right) \left( {1 + x}\right)  > 0$，解得 $- 1 < x < 1$，即 $\alpha  :  - 1 < x < 1$ 
+        
+        若 $\alpha$ 是 $\beta$ 的充分条件,则 $(-1, 1) \subseteq \{ x \mid  m \leq  x \leq  2\}$ ，可得 $m \in (-\infty, -1]$ .
+    \end{jieda}
+
+    \item 已知集合$M = \{x | \dfrac{ax- 5}{x^2-a} < 0\}$，若$3 \in M, 5 \notin M$，则实数$a$的取值范围是\blkda[3]{$\left[1, \dfrac{5}{3}\right) \cup (9, 25]$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $3 \in M \Longrightarrow \dfrac{3a - 5}{9-a} < 0$
+            \item $5 \notin M \Longrightarrow \dfrac{5a - 5}{25-a} \geq 0$ 或 $a = 25$(此时$\dfrac{5a - 5}{25-a}$无意义，满足条件）
+        \end{enumerate}
+        求解分式不等式：
+        \begin{enumerate}
+            \item $\dfrac{3a - 5}{9-a} < 0 \Longrightarrow (3a-5)(9-a) < 0 \Longrightarrow a \in \left(-\infty, \dfrac{5}{3}\right) \cup (9, +\infty)$
+            \item $\dfrac{5a - 5}{25-a} \geq 0 \Longrightarrow (5a-5)(25-a) \geq 0, a \neq 25 \Longrightarrow a \in [1, 25)$
+        \end{enumerate}
+    \end{jieda}
+    
+    \item 解不等式：$\left|\dfrac{2x+1}{3x-4}\right| > x-1$
+    \begin{jieda}
+        $\left|\dfrac{2x+1}{3x-4}\right| > x-1 \Longleftrightarrow \dfrac{2x+1}{3x-4} > x-1$或$\dfrac{2x+1}{3x-4} < 1-x$ \\
+        $\dfrac{2x+1}{3x-4} > x-1$即$\dfrac{2x+1 + (1-x) \cdot (3x-4)}{3x-4} > 0$，即$\dfrac{-3x^2+9x-3}{3x-4} > 0$，即$\dfrac{x^2-3x+1}{3x-4} < 0$，解得$x \in \left(-\infty, \dfrac{3-\sqrt{5}}{2}\right) \cup \left(\dfrac{4}{3}, \dfrac{3+\sqrt{5}}{2}\right)$ \\
+        $\dfrac{2x+1}{3x-4} < 1-x$即$\dfrac{2x+1 + (x-1) \cdot (3x-4)}{3x-4} < 0$，即$\dfrac{3x^2-5x+5}{3x-4} < 0$，$3x^2-5x+5 > 0$恒成立，因此$x \in \left(-\infty, \dfrac{4}{3}\right)$ \\
+        两者取并集得到原不等式解集为$\left(-\infty, \dfrac{4}{3}\right) \cup \left(\dfrac{4}{3}, \dfrac{3+\sqrt{5}}{2}\right)$
+    \end{jieda}
+
+    \item 若不等式$(2a-b)x +3a - 4b < 0$的解集是$\left(\dfrac{9}{4}, +\infty\right)$，则不等式$(a-4b)x + 2a - 3b > 0$的解集是\blkda[2]{$\left(-\dfrac{8}{19}, +\infty\right)$}
+    \begin{jieda}
+        从解集形式可知\ding{172} $2a-b < 0$，\ding{173}$(2a-b)x +3a - 4b = 0$的根是$\dfrac{9}{4}$，即$a = \dfrac{5}{6}b$，故$(a-4b)x + 2a - 3b > 0$可转化为$\left(-\dfrac{19}{5}a\right)x - \left(\dfrac{8}{5}a\right) > 0$，因为$2a-b < 0$，所以$a < 0$，故可以进一步转化为$\dfrac{19}{5}x + \dfrac{8}{5} < 0$，解得$x \in \left(-\dfrac{8}{19}, +\infty\right)$
+    \end{jieda}
+
+    \item 若 ${\log }_{2026}x + {2026}^{x} > {2026}$ ,则 $x$ 的取值范围为\blkda{$\left( {1, + \infty }\right)$}
+
+    \item 已知不等式组$ \left\{ \begin{array}{l}
+         x^2-x+a-a^2 < 0  \\
+         x + 2a > 1
+    \end{array} \right.$的整数解恰好有两个，$a$的取值范围是\blkda[4]{$(1, 2]$}
+    \begin{jieda}
+        设函数$f(x) = x^2 - x$，则第一个不等式即$f(x) < f(a)$，根据函数的性质可知不等式即$\left|x-\dfrac{1}{2}\right| < \left|a - \dfrac{1}{2}\right|$，故$\dfrac{1}{2}-\left|a - \dfrac{1}{2}\right| < x < \dfrac{1}{2} + \left|a - \dfrac{1}{2}\right|$，故第一个不等式解集为$(1 - a, a)$或$(a, 1-a)$，第二个不等式解集为$(1-2a, +\infty)$
+        \begin{dingautolist}{172}
+            \item $a \in [0, 1]$，此时第一个不等式中不含有两个整数解，不符合要求.
+            \item $a < 0$，第一个不等式解集为$(a, 1-a)$，而$1-a < 1-2a$，故不等式组解集为空集，不符合要求.
+            \item $a > 1$，第一个不等式解集为$(1 - a, a)$，故不等式解集为$(1 - a, a)$，当$a \in (1, 2]$满足要求.
+        \end{dingautolist}
+    \end{jieda}
+    \item 若关于$x$的不等式$k|x| > |x - 2|$恰有4个整数解，则实数$k$的取值范围是\blkda[4]{$\left(\dfrac{3}{5}, \dfrac{2}{3}\right]$}
+    \begin{jieda}
+        易知$x = 0$不是不等式的解，故$k|x| > |x - 2|$进行参变分离，同解变形$k > \left|\dfrac{x-2}{x}\right|$，即$k > \left|1 - \dfrac{2}{x}\right|$ \\
+        由函数$f(x) = \left|1 - \dfrac{2}{x}\right|$的图像可知整根的集合为$\{2, 3, 4, 5\}$，故$f(5) < k \leq f(6)$，即$k \in \left(\dfrac{3}{5}, \dfrac{2}{3}\right]$
+        \ps \textbf{解决整根问题的第一步往往是确认整根的集合}
+    \end{jieda}
+\end{enumerate}
