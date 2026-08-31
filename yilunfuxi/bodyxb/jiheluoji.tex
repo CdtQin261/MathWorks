@@ -35,6 +35,13 @@
     \begin{jieda}
         $A \subseteq B$即$a+2 \leq 2$或$a-2 \geq 4$，解得$a \in (-\infty, 0] \cup [6, +\infty)$
     \end{jieda}
+    \item 已知集合$A = \left\{x | 5a-2 \leq x \leq a+2\right\}, B = \left\{x|x \leq 2 \mbox{或} x \geq 4\right\}$，若$A \subseteq B$，则$a$的取值范围是\blkda[4]{$(-\infty, 0] \cup (1, +\infty)$}.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $A = \varnothing$，即$5a-2 > a+2$，解得$a > 1$
+            \item $A \neq \varnothing$，$a \leq 1$， 应满足$a+2 \leq 2$或$5a-2 \geq 4$，故$a \leq 0$
+        \end{dingautolist}
+    \end{jieda}
     \item 设$a, b \in \mathbf{R}$，集合$A = \left\{x | x^2 - 3x - 4 \leq 0\right\}, B = \left\{x | x^2 - (2a+1)x < 0\right\}, C = [2b-1, b+5]$.
     \begin{enumerate}
         \item 若$B \subseteq A$，求$a$的取值范围.
@@ -137,7 +144,7 @@
             \item $a \neq 1$，此时方程为二次方程，若只有一个实根，则判别式为0，即$9 + 8(a-1) = 0$，得$a = -\dfrac{1}{8}$
         \end{enumerate}
     \end{jieda}
-    \item 设全集$U = \left\{(x, y) | x, y \in \mathbf{R}\right\}$, $A = \left\{(x, y) \left| \dfrac{y-3}{x-2}=1, x, y \in \mathbf{R}, 且x \neq 2 \right. \right\}$, $B = \left\{(x, y) | y=x+1, x, y \in \mathbf{R}\right\}$, 则$\overline{A}\cap B = $ \dotfill{(\kh{C})}.
+    \item 设全集$U = \left\{(x, y) | x, y \in \mathbf{R}\right\}$, $A = \left\{(x, y) \left| \dfrac{y-3}{x-2}=1\right. \right\}$, $B = \left\{(x, y) | y=x+1\right\}$, 则$\overline{A}\cap B = $ \dotfill{(\kh{C})}.
     \xx{$\overline{A}$}{$\overline{B}$}{$\left\{(2, 3)\right\}$}{$\varnothing$}
     \begin{jieda}
         $A = \left\{(x, y) | y=x+1, x, y \in \mathbf{R}, 且x \neq 2\right\}$, 因此$A \subsetneqq B$. $(2, 3) \in B \mbox{且} (2, 3) \notin A$，故选C。

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  31 AUG 2026 13:21
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  31 AUG 2026 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1682,7 +1682,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/jiheluoji.aux) (./bodyxb/jiheluoji_lianxi.aux) (./bodyxb/budengshi.aux) (./bodyxb/budengshi_lianxi.aux))
+ (./mainxb.aux (./bodyxb/jiheluoji.aux) (./bodyxb/budengshi.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1807,22 +1807,17 @@ LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 6
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 16.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 45.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 16.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 45.
 
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-[1
-
-
-
-] [2]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1856,61 +1851,27 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
+[1
 
-Missing character: There is no 且 ("4E14) in font rm-lmr10!
-Missing character: There is no 且 ("4E14) in font rm-lmr10!
-[3] [4] [5]
-Overfull \hbox (38.09901pt too wide) in paragraph at lines 268--281
+
+
+] [2]
+Overfull \hbox (38.09901pt too wide) in paragraph at lines 275--288
  [][] 
  []
 
-[6]
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-[7]
+[3]
 File: bodyxb/src/11_1169_698_222_236_0.jpg Graphic file (type bmp)
 <bodyxb/src/11_1169_698_222_236_0.jpg>
-File: bodyxb/src/8_1407_1815_169_253_0.jpg Graphic file (type bmp)
-<bodyxb/src/8_1407_1815_169_253_0.jpg>
-) [8]
-\openout2 = `bodyxb/jiheluoji_lianxi.aux'.
-
- (./bodyxb/jiheluoji_lianxi.tex [9
-
-
-
-] [10]
-File: bodyxb/src/1_150_1623_342_219_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_150_1623_342_219_0.jpg>
-File: bodyxb/src/0_163_428_318_317_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_163_428_318_317_0.jpg>
- [11]
-File: bodyxb/src/1_151_874_378_247_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_151_874_378_247_0.jpg>
-) [12]
+ [4]) [5]
 \openout2 = `bodyxb/budengshi.aux'.
 
- (./bodyxb/budengshi.tex [13
+ (./bodyxb/budengshi.tex [6
 
 
 
 
-] [14] [15] [16] [17]
-File: bodyxb/src/26jinshanyimo16.png Graphic file (type bmp)
-<bodyxb/src/26jinshanyimo16.png>
- [18] [19]
-File: bodyxb/src/12_423_1184_221_274_0.jpg Graphic file (type bmp)
-<bodyxb/src/12_423_1184_221_274_0.jpg>
-) [20]
-\openout2 = `bodyxb/budengshi_lianxi.aux'.
-
- (./bodyxb/budengshi_lianxi.tex [21
-
-
-
-] [22]
-File: bodyxb/src/2026putuoyimo12.png Graphic file (type bmp)
-<bodyxb/src/2026putuoyimo12.png>
- [23]) [24] (./mainxb.aux (./bodyxb/jiheluoji.aux) (./bodyxb/jiheluoji_lianxi.aux) (./bodyxb/budengshi.aux) (./bodyxb/budengshi_lianxi.aux))
+] [7] [8]) [9] (./mainxb.aux (./bodyxb/jiheluoji.aux) (./bodyxb/budengshi.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1919,12 +1880,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49691 strings out of 468168
- 1170432 string characters out of 5432815
- 1738221 words of memory out of 5000000
- 77395 multiletter control sequences out of 15000+600000
+ 49519 strings out of 468168
+ 1162323 string characters out of 5432815
+ 1734701 words of memory out of 5000000
+ 77245 multiletter control sequences out of 15000+600000
  656614 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,1028b,1366s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,14n,128p,1028b,1279s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (24 pages).
+Output written on mainxb.pdf (9 pages).
