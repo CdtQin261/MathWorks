@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  30 AUG 2026 22:36
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  31 AUG 2026 10:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/yudan/Documents/CdtQin/Math/MathWorks/fenceng/mainxb
-(/Users/yudan/Documents/CdtQin/Math/MathWorks/fenceng/mainxb.tex
+**/Users/haoyu/Documents/MathWorks/fenceng/mainxb
+(/Users/haoyu/Documents/MathWorks/fenceng/mainxb.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./xbcls.cls
@@ -293,40 +293,51 @@ File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
 File: ctex-c5size.clo 2022/07/14 v2.5.10 c5size option (CTEX)
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-mac.def
 File: ctex-fontset-mac.def 2022/07/14 v2.5.10 macOS fonts definition (CTEX)
- (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macnew.def
-File: ctex-fontset-macnew.def 2022/07/14 v2.5.10 macOS fonts definition for El Capitan or later version (CTEX)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.def
+File: ctex-fontset-macold.def 2022/07/14 v2.5.10 macOS fonts definition for Yosemite or earlier version (CTEX)
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'Songti SC Light'. Check the typeset output, and if it
-(fontspec)             is okay then ignore this warning. Otherwise a different
-(fontspec)             font should be chosen.
+(fontspec)             'STSong'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'SongtiSCLight(0)' created for font 'Songti
-(fontspec)             SC Light' with options
-(fontspec)             [Script={CJK},BoldItalicFont={Kaiti SC
-(fontspec)             Bold},BoldFont={Songti SC Bold},ItalicFont={Kaiti SC}].
+(fontspec)             Could not resolve font "STKaiti/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STHeiti/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STSong/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'STSong(0)' created for font 'STSong' with
+(fontspec)             options
+(fontspec)             [Script={CJK},BoldFont={STHeiti},ItalicFont={STKaiti}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Songti SC
-(fontspec)             Light/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Songti SC
-(fontspec)             Bold/OT:script=hani;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Kaiti
-(fontspec)             SC/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Kaiti SC
-(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STSong/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"STHeiti/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"STKaiti/OT:script=hani;language=dflt;"
 
 ))) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
 )
 
-Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault'
-(xeCJK)                (SongtiSCLight(0)).
+Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (STSong(0)).
 
 
 Package fontspec Info: 
@@ -2086,12 +2097,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 50199 strings out of 468168
- 1200798 string characters out of 5432816
- 1735487 words of memory out of 5000000
- 77863 multiletter control sequences out of 15000+600000
- 656686 words of font info for 122 fonts, out of 8000000 for 9000
+ 50179 strings out of 468168
+ 1200252 string characters out of 5432815
+ 1734817 words of memory out of 5000000
+ 77837 multiletter control sequences out of 15000+600000
+ 656710 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,12n,128p,965b,1506s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,12n,128p,953b,1506s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on mainxb.pdf (94 pages).

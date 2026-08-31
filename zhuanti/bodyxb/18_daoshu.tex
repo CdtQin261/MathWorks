@@ -1463,88 +1463,6 @@
         \end{jieda}
     \end{enumerate}
 
-    \item 恒成立问题求参数
-    \begin{enumerate}
-        
-        \item 已知函数 $f\left( x\right)  = e^x - 2ax \geq  0$在$(0, +\infty)$恒成立,则实数 $a$ 的取值范围是\blkda{$\left(-\infty, \dfrac{e}{2}\right]$}
-        \begin{jieda}
-            \begin{dingautolist}{172}
-                \item 直曲分离：$y = 2ax$恒在$y = e^x$下方，相切为边界，$y = e^x$过原点的切线为$y = ex$，故$2a \in (0, e]$，因此$a \in \left(-\infty, \dfrac{e}{2}\right]$
-                \item 参变分离：$2a \leq \dfrac{e^x}{x}$，设$g(x) = \dfrac{e^x}{x}$，$g'(x) = \dfrac{e^x(x-1)}{x^2}$，故$g(x)$在$(0, 1)$严减，在$(1, +\infty)$严增，故$2a \leq e$，因此$a \in \left(-\infty, \dfrac{e}{2}\right]$
-                \item 含参求导：$f''(x) = e^x - 2a$
-                
-                若$a \leq 0$，则$f'(x)$严增，$f'(x) \geq f'(0) = 1$满足要求
-
-                若$a > 0$，则$f'(x)$在$(0, ln(2a))$严减，在$(ln(2a), +\infty)$严增，故$f'(x) \geq f'(ln(2a)) = 2a - 2aln(2a) \geq 0$，故$a \leq \dfrac{e}{2}$
-
-                综上，$a \in \left(-\infty, \dfrac{e}{2}\right]$
-            \end{dingautolist}
-        \end{jieda}
-        
-        \item 已知函数 $f\left( x\right)  = {2a}\left( {x - 1}\right) {{e}}^{x} - {x}^{2}\left( {a > 0}\right)$ .
-        \begin{enumerate}
-            \item 当 $0 < a < 1$ 时，讨论 $f\left( x\right)$ 的单调性
-            \item 若不等式 $f\left( x\right)  > x - {4a}{{e}}^{x}$ 对 $x \in  \left( {-1, + \infty }\right)$ 恒成立，求 $a$ 的取值范围
-        \end{enumerate}
-
-        \begin{jieda}
-            \begin{enumerate}
-                \item 由题意得 ${f}^{\prime }\left( x\right)  = {2a}{{e}}^{x} + {2a}\left( {x - 1}\right) {{e}}^{x} - {2x} = {2ax}{{e}}^{x} - {2x} = {2x}\left( {a{{e}}^{x} - 1}\right)$ ,
-                
-                因为 $0 < a < 1$ 时,令 ${f}^{\prime }\left( x\right)  = 0$ ,得 $x = \ln \dfrac{1}{a} =  - \ln a > 0$ 或 $x = 0$ ,
-                
-                当 $x < 0$ 时， ${f}^{\prime }\left( x\right)  > 0,f\left( x\right)$ 在 $\left( {-\infty ,0}\right)$ 上单调递增，
-                
-                当 $0 < x <  - \ln a$ 时， ${f}^{\prime }\left( x\right)  < 0,f\left( x\right)$ 在 $\left( {0, - \ln a}\right)$ 上单调递减，
-                
-                当 $x >  - \ln a$ 时, ${f}^{\prime }\left( x\right)  > 0,f\left( x\right)$ 在 $\left( {-\ln a, + \infty }\right)$ 上单调递增,
-                
-                故当 $0 < a < 1$ 时， $f\left( x\right)$ 在 $\left( {-\infty ,0}\right)$ 上单调递增，在 $\left( {0, - \ln a}\right)$ 上单调递减，在 $\left( {-\ln a, + \infty }\right)$ 上单调递增.
-
-                \item 由 $f\left( x\right)  > x - {4a}{{e}}^{x}$ ，得到 $\left( {x + 1}\right) \left( {{2a}{{e}}^{x} - x}\right)  > 0$ ，
-                
-                因为 $x >  - 1$ ，所以 $x + 1 > 0$ ，则 ${2a} > {\left( \dfrac{x}{{{e}}^{x}}\right) }_{\max }$ ，
-                
-                令 $g\left( x\right)  = \dfrac{x}{{{e}}^{x}}\left( {x >  - 1}\right)$ ，则 ${g}^{\prime }\left( x\right)  = \dfrac{1 - x}{{{e}}^{x}}$ ，
-                
-                当 $- 1 < x < 1$ 时， ${g}^{\prime }\left( x\right)  > 0$ ，即 $g\left( x\right)$ 在区间 $\left( {-1,1}\right)$ 上单调递增，
-                
-                当 $x > 1$ 时， ${g}^{\prime }\left( x\right)  < 0$ ，即 $g\left( x\right)$ 在区间 $\left( {1, + \infty }\right)$ 上单调递减，所以 $g\left( x\right)  \leq  g\left( 1\right)  = \dfrac{1}{{e}}$ ，
-                
-                得到 ${2a} > \dfrac{1}{{e}}$ ,所以 $a > \dfrac{1}{2{e}}$ ,故 $a$ 的取值范围为 $\left( {\dfrac{1}{2{e}}, + \infty }\right)$ .
-            \end{enumerate}
-        \end{jieda}
-        \item 已知函数 $f\left( x\right)  = x - \ln x - 2$ .
-        \begin{enumerate}
-            \item 求曲线 $y = f\left( x\right)$ 在点 $\left( {1,f\left( 1\right) }\right)$ 处的切线方程
-            \item 函数 $f\left( x\right)$ 在区间 $\left( {k,k + 1}\right) \left( {k \in  \mathbf{N}}\right)$ 上有零点,求 $k$ 的值
-            \item 记函数 $g\left( x\right)  = \dfrac{1}{2}{x}^{2} - {bx} - 2 - f\left( x\right)$ ,设 ${x}_{1},{x}_{2}\left( {{x}_{1} < {x}_{2}}\right)$ 是函数 $g\left( x\right)$ 的两个极值点,若 $b \geq  \dfrac{3}{2}$ ,且$g\left( {x}_{1}\right)  - g\left( {x}_{2}\right)  \geq  k$ 恒成立,求实数 $k$ 的最大值.
-        \end{enumerate}
-        \begin{jieda}
-            \begin{enumerate}
-                \item 因为 $f\left( x\right)  = x - \ln x - 2$ ,所以 ${f}^{\prime }\left( x\right)  = 1 - \dfrac{1}{x}$ ,则切线斜率为 ${f}^{\prime }\left( 1\right)  = 0$ ,又 $f\left( 1\right)  =  - 1$ ,切点为(1, - 1),所以切线方程为 $y =  - 1$ ;
-                \item $\because {f}^{\prime }\left( x\right)  = \dfrac{x - 1}{x},x \in  \left( {0, + \infty }\right)$ ,当 $0 < x < 1$ 时, ${f}^{\prime }\left( x\right)  < 0$ ,函数 $f\left( x\right)$ 单调递减；当 $x > 1$ 时, ${f}^{\prime }\left( x\right)  > 0$ ,函数 $f\left( x\right)$ 单调递增,所以 $f\left( x\right)$ 的极小值为 $f\left( 1\right)  =  - 1 < 0,f\left( {{e}}^{-2}\right)  = {{e}}^{-2} - \ln {{e}}^{-2} - 2 = {{e}}^{-2} > 0$ ,
-                $\therefore f\left( x\right)$ 在区间(0,1)上存在一个零点 ${x}_{3}$ ,此时 $k = 0$ ;
-                又 $f\left( 3\right)  = 3 - \ln 3 - 2 = 1 - \ln 3 < 0$ , $f\left( 4\right)  = 4 - \ln 4 - 2 = 2 - 2\ln 2 = 2\left( {1 - \ln 2}\right)  > 0$ ,
-                $\therefore f\left( x\right)$ 在区间(3,4)上存在一个零点 ${x}_{4}$ ,此时 $k = 3$ ,
-                综上, $k$ 的值为 0 或 3 ;
-                \item 函数 $g\left( x\right)  = \dfrac{1}{2}{x}^{2} - {bx} - 2 - f\left( x\right)  = \ln x + \dfrac{1}{2}{x}^{2} - \left( {b + 1}\right) x,x \in  \left( {0, + \infty }\right)$ ,
-                所以 ${g}^{\prime }\left( x\right)  = \dfrac{1}{x} + x - \left( {b + 1}\right)  = \dfrac{{x}^{2} - \left( {b + 1}\right) x + 1}{x}$ ,
-                由 ${g}^{\prime }\left( x\right)  = 0$ 得 ${x}^{2} - \left( {b + 1}\right) x + 1 = 0$ ,依题意方程 ${x}^{2} - \left( {b + 1}\right) x + 1 = 0$ 有两不相等的正实根 ${x}_{1}\text{、}{x}_{2}$，根据韦达定理有$\left\{\begin{array}{l}
-                     {x}_{1} + {x}_{2} = b + 1  \\
-                     {x}_{1}{x}_{2} = 1
-                \end{array} \right.$ ,
-                又 $b \geq  \dfrac{3}{2},{x}_{1} + \dfrac{1}{{x}_{1}} = b + 1 \geq  \dfrac{5}{2},0 < {x}_{1} < {x}_{2} = \dfrac{1}{{x}_{1}}$ ,解得 $0 < {x}_{1} \leq  \dfrac{1}{2}$ ,
-                $\therefore g\left( {x}_{1}\right)  - g\left( {x}_{2}\right)  = \ln \dfrac{{x}_{1}}{{x}_{2}} + \dfrac{1}{2}\left( {{x}_{1}^{2} - {x}_{2}^{2}}\right)  - \left( {b + 1}\right) \left( {{x}_{1} - {x}_{2}}\right)  = 2\ln {x}_{1} - \dfrac{1}{2}\left( {{x}_{1}^{2} - \dfrac{1}{{x}_{1}^{2}}}\right)$ ,
-                构造函数 $F\left( x\right)  = 2\ln x - \dfrac{1}{2}\left( {{x}^{2} - \dfrac{1}{{x}^{2}}}\right) ,x \in  \left( {0,\dfrac{1}{2}}\right\rbrack$ ,
-                所以 ${F}^{\prime }\left( x\right)  = \dfrac{2}{x} - x - \dfrac{1}{{x}^{3}} = \dfrac{-{\left( {x}^{2} - 1\right) }^{2}}{{x}^{3}} < 0,\therefore F\left( x\right)$ 在 $\left( {0,\dfrac{1}{2}}\right\rbrack$ 上单调递减,
-                所以当 $x = \dfrac{1}{2}$ 时, $F{\left( x\right) }_{\min } = F\left( \dfrac{1}{2}\right)  = \dfrac{15}{8} - 2\ln 2$ ,
-                因为 $g\left( {x}_{1}\right)  - g\left( {x}_{2}\right)  \geq  k$ 恒成立,所以 $k \leq  \dfrac{15}{8} - 2\ln 2$ ,则 $k$ 的最大值为 $\dfrac{15}{8} - 2\ln 2$ .
-            \end{enumerate}
-        \end{jieda}
-    \end{enumerate}
-
-    
     \item 由函数的单调性求参数
     \begin{enumerate}
         \item 已知函数 $f\left( x\right)  = e^x - ax^2$在$(0, +\infty)$单调递增,则实数 $a$ 的取值范围是\blkda{$\left(-\infty, \dfrac{e}{2}\right]$}
@@ -1649,6 +1567,87 @@
                 当 $x \in  \left\lbrack  {1,a}\right\rbrack$ 时， $y = \dfrac{2}{x} - \dfrac{x}{2}$ 为减函数，则 ${\left( \dfrac{2}{x} - \dfrac{x}{2}\right) }_{\max } = \dfrac{2}{1} - \dfrac{1}{2} = \dfrac{3}{2}$ .
                 
                 所以 $a \geq  \dfrac{3}{2}$ ，又 $a > 1$ ，所以 $a$ 的取值范围为 $\left\lbrack  {\dfrac{3}{2}, + \infty }\right)$ .
+            \end{enumerate}
+        \end{jieda}
+    \end{enumerate}
+
+    \item 恒成立问题求参数
+    \begin{enumerate}
+        
+        \item 已知函数 $f\left( x\right)  = e^x - 2ax \geq  0$在$(0, +\infty)$恒成立,则实数 $a$ 的取值范围是\blkda{$\left(-\infty, \dfrac{e}{2}\right]$}
+        \begin{jieda}
+            \begin{dingautolist}{172}
+                \item 直曲分离：$y = 2ax$恒在$y = e^x$下方，相切为边界，$y = e^x$过原点的切线为$y = ex$，故$2a \in (0, e]$，因此$a \in \left(-\infty, \dfrac{e}{2}\right]$
+                \item 参变分离：$2a \leq \dfrac{e^x}{x}$，设$g(x) = \dfrac{e^x}{x}$，$g'(x) = \dfrac{e^x(x-1)}{x^2}$，故$g(x)$在$(0, 1)$严减，在$(1, +\infty)$严增，故$2a \leq e$，因此$a \in \left(-\infty, \dfrac{e}{2}\right]$
+                \item 含参求导：$f''(x) = e^x - 2a$
+                
+                若$a \leq 0$，则$f'(x)$严增，$f'(x) \geq f'(0) = 1$满足要求
+
+                若$a > 0$，则$f'(x)$在$(0, ln(2a))$严减，在$(ln(2a), +\infty)$严增，故$f'(x) \geq f'(ln(2a)) = 2a - 2aln(2a) \geq 0$，故$a \leq \dfrac{e}{2}$
+
+                综上，$a \in \left(-\infty, \dfrac{e}{2}\right]$
+            \end{dingautolist}
+        \end{jieda}
+        
+        \item 已知函数 $f\left( x\right)  = {2a}\left( {x - 1}\right) {{e}}^{x} - {x}^{2}\left( {a > 0}\right)$ .
+        \begin{enumerate}
+            \item 当 $0 < a < 1$ 时，讨论 $f\left( x\right)$ 的单调性
+            \item 若不等式 $f\left( x\right)  > x - {4a}{{e}}^{x}$ 对 $x \in  \left( {-1, + \infty }\right)$ 恒成立，求 $a$ 的取值范围
+        \end{enumerate}
+
+        \begin{jieda}
+            \begin{enumerate}
+                \item 由题意得 ${f}^{\prime }\left( x\right)  = {2a}{{e}}^{x} + {2a}\left( {x - 1}\right) {{e}}^{x} - {2x} = {2ax}{{e}}^{x} - {2x} = {2x}\left( {a{{e}}^{x} - 1}\right)$ ,
+                
+                因为 $0 < a < 1$ 时,令 ${f}^{\prime }\left( x\right)  = 0$ ,得 $x = \ln \dfrac{1}{a} =  - \ln a > 0$ 或 $x = 0$ ,
+                
+                当 $x < 0$ 时， ${f}^{\prime }\left( x\right)  > 0,f\left( x\right)$ 在 $\left( {-\infty ,0}\right)$ 上单调递增，
+                
+                当 $0 < x <  - \ln a$ 时， ${f}^{\prime }\left( x\right)  < 0,f\left( x\right)$ 在 $\left( {0, - \ln a}\right)$ 上单调递减，
+                
+                当 $x >  - \ln a$ 时, ${f}^{\prime }\left( x\right)  > 0,f\left( x\right)$ 在 $\left( {-\ln a, + \infty }\right)$ 上单调递增,
+                
+                故当 $0 < a < 1$ 时， $f\left( x\right)$ 在 $\left( {-\infty ,0}\right)$ 上单调递增，在 $\left( {0, - \ln a}\right)$ 上单调递减，在 $\left( {-\ln a, + \infty }\right)$ 上单调递增.
+
+                \item 由 $f\left( x\right)  > x - {4a}{{e}}^{x}$ ，得到 $\left( {x + 1}\right) \left( {{2a}{{e}}^{x} - x}\right)  > 0$ ，
+                
+                因为 $x >  - 1$ ，所以 $x + 1 > 0$ ，则 ${2a} > {\left( \dfrac{x}{{{e}}^{x}}\right) }_{\max }$ ，
+                
+                令 $g\left( x\right)  = \dfrac{x}{{{e}}^{x}}\left( {x >  - 1}\right)$ ，则 ${g}^{\prime }\left( x\right)  = \dfrac{1 - x}{{{e}}^{x}}$ ，
+                
+                当 $- 1 < x < 1$ 时， ${g}^{\prime }\left( x\right)  > 0$ ，即 $g\left( x\right)$ 在区间 $\left( {-1,1}\right)$ 上单调递增，
+                
+                当 $x > 1$ 时， ${g}^{\prime }\left( x\right)  < 0$ ，即 $g\left( x\right)$ 在区间 $\left( {1, + \infty }\right)$ 上单调递减，所以 $g\left( x\right)  \leq  g\left( 1\right)  = \dfrac{1}{{e}}$ ，
+                
+                得到 ${2a} > \dfrac{1}{{e}}$ ,所以 $a > \dfrac{1}{2{e}}$ ,故 $a$ 的取值范围为 $\left( {\dfrac{1}{2{e}}, + \infty }\right)$ .
+            \end{enumerate}
+        \end{jieda}
+        \item 已知函数 $f\left( x\right)  = x - \ln x - 2$ .
+        \begin{enumerate}
+            \item 求曲线 $y = f\left( x\right)$ 在点 $\left( {1,f\left( 1\right) }\right)$ 处的切线方程
+            \item 函数 $f\left( x\right)$ 在区间 $\left( {k,k + 1}\right) \left( {k \in  \mathbf{N}}\right)$ 上有零点,求 $k$ 的值
+            \item 记函数 $g\left( x\right)  = \dfrac{1}{2}{x}^{2} - {bx} - 2 - f\left( x\right)$ ,设 ${x}_{1},{x}_{2}\left( {{x}_{1} < {x}_{2}}\right)$ 是函数 $g\left( x\right)$ 的两个极值点,若 $b \geq  \dfrac{3}{2}$ ,且$g\left( {x}_{1}\right)  - g\left( {x}_{2}\right)  \geq  k$ 恒成立,求实数 $k$ 的最大值.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 因为 $f\left( x\right)  = x - \ln x - 2$ ,所以 ${f}^{\prime }\left( x\right)  = 1 - \dfrac{1}{x}$ ,则切线斜率为 ${f}^{\prime }\left( 1\right)  = 0$ ,又 $f\left( 1\right)  =  - 1$ ,切点为(1, - 1),所以切线方程为 $y =  - 1$ ;
+                \item $\because {f}^{\prime }\left( x\right)  = \dfrac{x - 1}{x},x \in  \left( {0, + \infty }\right)$ ,当 $0 < x < 1$ 时, ${f}^{\prime }\left( x\right)  < 0$ ,函数 $f\left( x\right)$ 单调递减；当 $x > 1$ 时, ${f}^{\prime }\left( x\right)  > 0$ ,函数 $f\left( x\right)$ 单调递增,所以 $f\left( x\right)$ 的极小值为 $f\left( 1\right)  =  - 1 < 0,f\left( {{e}}^{-2}\right)  = {{e}}^{-2} - \ln {{e}}^{-2} - 2 = {{e}}^{-2} > 0$ ,
+                $\therefore f\left( x\right)$ 在区间(0,1)上存在一个零点 ${x}_{3}$ ,此时 $k = 0$ ;
+                又 $f\left( 3\right)  = 3 - \ln 3 - 2 = 1 - \ln 3 < 0$ , $f\left( 4\right)  = 4 - \ln 4 - 2 = 2 - 2\ln 2 = 2\left( {1 - \ln 2}\right)  > 0$ ,
+                $\therefore f\left( x\right)$ 在区间(3,4)上存在一个零点 ${x}_{4}$ ,此时 $k = 3$ ,
+                综上, $k$ 的值为 0 或 3 ;
+                \item 函数 $g\left( x\right)  = \dfrac{1}{2}{x}^{2} - {bx} - 2 - f\left( x\right)  = \ln x + \dfrac{1}{2}{x}^{2} - \left( {b + 1}\right) x,x \in  \left( {0, + \infty }\right)$ ,
+                所以 ${g}^{\prime }\left( x\right)  = \dfrac{1}{x} + x - \left( {b + 1}\right)  = \dfrac{{x}^{2} - \left( {b + 1}\right) x + 1}{x}$ ,
+                由 ${g}^{\prime }\left( x\right)  = 0$ 得 ${x}^{2} - \left( {b + 1}\right) x + 1 = 0$ ,依题意方程 ${x}^{2} - \left( {b + 1}\right) x + 1 = 0$ 有两不相等的正实根 ${x}_{1}\text{、}{x}_{2}$，根据韦达定理有$\left\{\begin{array}{l}
+                     {x}_{1} + {x}_{2} = b + 1  \\
+                     {x}_{1}{x}_{2} = 1
+                \end{array} \right.$ ,
+                又 $b \geq  \dfrac{3}{2},{x}_{1} + \dfrac{1}{{x}_{1}} = b + 1 \geq  \dfrac{5}{2},0 < {x}_{1} < {x}_{2} = \dfrac{1}{{x}_{1}}$ ,解得 $0 < {x}_{1} \leq  \dfrac{1}{2}$ ,
+                $\therefore g\left( {x}_{1}\right)  - g\left( {x}_{2}\right)  = \ln \dfrac{{x}_{1}}{{x}_{2}} + \dfrac{1}{2}\left( {{x}_{1}^{2} - {x}_{2}^{2}}\right)  - \left( {b + 1}\right) \left( {{x}_{1} - {x}_{2}}\right)  = 2\ln {x}_{1} - \dfrac{1}{2}\left( {{x}_{1}^{2} - \dfrac{1}{{x}_{1}^{2}}}\right)$ ,
+                构造函数 $F\left( x\right)  = 2\ln x - \dfrac{1}{2}\left( {{x}^{2} - \dfrac{1}{{x}^{2}}}\right) ,x \in  \left( {0,\dfrac{1}{2}}\right\rbrack$ ,
+                所以 ${F}^{\prime }\left( x\right)  = \dfrac{2}{x} - x - \dfrac{1}{{x}^{3}} = \dfrac{-{\left( {x}^{2} - 1\right) }^{2}}{{x}^{3}} < 0,\therefore F\left( x\right)$ 在 $\left( {0,\dfrac{1}{2}}\right\rbrack$ 上单调递减,
+                所以当 $x = \dfrac{1}{2}$ 时, $F{\left( x\right) }_{\min } = F\left( \dfrac{1}{2}\right)  = \dfrac{15}{8} - 2\ln 2$ ,
+                因为 $g\left( {x}_{1}\right)  - g\left( {x}_{2}\right)  \geq  k$ 恒成立,所以 $k \leq  \dfrac{15}{8} - 2\ln 2$ ,则 $k$ 的最大值为 $\dfrac{15}{8} - 2\ln 2$ .
             \end{enumerate}
         \end{jieda}
     \end{enumerate}
