@@ -15,7 +15,10 @@
         \ps 含有n个元素的有限集的非空真子集个数为$2^n -2$
     \end{jieda}
 
-    \item 已知集合 $A = \left\{  {x\left| {a{x}^{2} - {3x} + 2 = 0}\right. }\right\}$ 中有且仅有一个元素，则 $a$ 的取值组成的集合为\blkda{}.
+    \item 已知集合 $A = \left\{  {x\left| {a{x}^{2} - {3x} + 2 = 0}\right. }\right\}$ 中有且仅有一个元素，则 $a$ 的取值组成的集合为\blkda{$\left\{0, \dfrac{9}{8}\right\}$}.
+    \begin{jieda}
+        $a = 0$或$\Delta = 0$
+    \end{jieda}
 
     \item 若规定集合 $E = \{ 0,1,2,\cdots ,n\}$ 的子集 $\left\{  {{a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{m}}\right\}$ 为 $E$ 的第 $k$ 个子集，其中 $k = {2}^{{a}_{1}} + {2}^{{a}_{2}} + {2}^{{a}_{3}} + \cdots  + {2}^{{a}_{m}}$ ，则 $E$ 的第 211 个子集是\blkda[2]{$\{0,1,4,6,7\}$}.
     \begin{jieda}
@@ -26,16 +29,58 @@
         \item 若 $A \cap  B = B$ ，求实数 $m$ 的取值范围
         \item 当 $x \in  \mathbf{R}$ 时，不存在 $x$ 使得 $x \in  A$ 与 $x \in  B$ 同时成立，求实数 $m$ 的取值范围.
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\because A \cap  B = B,\therefore B \subseteq  A$
+            
+            当 $m + 1 > {2m} - 1$ ,即 $m < 2$ 时, $B = \varnothing$ ,满足 $B \subseteq  A$
+            
+            当 $m + 1 \leq  {2m} - 1$ ,即 $m \geq  2$ 时,要使 $B \subseteq  A$ 成立,必须且只需 $\left\{  \begin{array}{l} m + 1 \geq   - 2, \\  {2m} - 1 \leq  5, \end{array}\right.$ 可得 $2 \leq  m \leq  3$ ,综上,若 $A \cap  B = B$ ,则 $m \leq  3$ .
+            \item 依题意, $A \cap  B = \varnothing$ . 
+            
+            若 $B = \varnothing$ ,即 $m + 1 > {2m} - 1$ ,得 $m < 2$ 时满足条件；
+            
+            若 $B \neq  \varnothing$ ,则 $\left\{  \begin{array}{l} m + 1 \leq  {2m} - 1, \\  m + 1 > 5 \end{array}\right.$ 或 $\begin{array}{l} m + 1 \leq  {2m} - 1, \\  {2m} - 1 <  - 2, \end{array}$ 解得 $m > 4$. 
+            
+            综上,有 $m < 2$ 或 $m > 4$.
+        \end{enumerate}
+    \end{jieda}
     
     \item 已知 $a,m \in  \mathbf{R}$ ,集合 $A = \left\{  {x \mid  {x}^{2} - {3x} + 2 = 0}\right\} $，$B = \left\{  {x \mid  {x}^{2} + 2\left( {m + 1}\right) x + {m}^{2} - 5 = 0,x \in  \mathbf{R}}\right\} $，$C =  \left\{  {x \mid  {x}^{2} - {ax} + a - 1 = 0,x \in  \mathbf{R}}\right\} .$
     \begin{enumerate}
         \item 若 $A \cup  C = A$ ，求实数 $a$ 的值
         \item 若 $A \cap  B = B$ ，求实数 $m$ 的取值范围
     \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $A = \{ 1,2\}$，由 ${x}^{2} - {ax} + a - 1 = 0$ 得 $x = 1$ 或 $a - 1$ ,所以 $1 \in  C,a - 1 \in  C$
+            
+            因为 $A \cup  C = A$ ,所以 $C \subseteq  A$ ,所以 $a - 1 = 1$ 或 2,所以 $a = 2$ 或 3;
+            \item 因为 $A \cap  B = B$ ,所以 $B \subseteq  A$
+            
+            当 $B = \varnothing$ 时, $\Delta  = 4{\left( m + 1\right) }^{2} - 4\left( {{m}^{2} - 5}\right)  < 0$ ,解得 $m <  - 3$
+            
+            当 $B = \{ 1\}$ 时, $\left\{  \begin{array}{l} \Delta  = 4{\left( m + 1\right) }^{2} - 4\left( {{m}^{2} - 5}\right)  = 0 \\  1 + 2\left( {m + 1}\right)  + {m}^{2} - 5 = 0 \end{array}\right.$ ,无解
+            
+            当 $B = \{ 2\}$ 时, $\left\{  \begin{array}{l} \Delta  = 4{\left( m + 1\right) }^{2} - 4\left( {{m}^{2} - 5}\right)  = 0 \\  4 + 4\left( {m + 1}\right)  + {m}^{2} - 5 = 0 \end{array}\right.$ ,解得 $m =  - 3$
+            
+            当 $B = \{ 1,2\}$ 时, $\left\{  \begin{array}{l} 1 + 2 =  - 2\left( {m + 1}\right) \\  1 \cdot  2 = {m}^{2} - 5 \end{array}\right.$ ,无解.
+            
+            综上,实数 $m$ 的取值范围是 $( - \infty , - 3\rbrack$.
+        \end{enumerate}
+    \end{jieda}
     
     \item 设 $f\left( x\right)  = {x}^{2} + {ax} + b\left( {a,b \in  \mathbf{R}}\right) ,A = \{ x \mid  f\left( x\right)  = x\} ,B = \left\{  {x\left| {f\left\lbrack  {f\left( x\right) }\right\rbrack   = x}\right. }\right\}$，若 $A = \{  - 1,3\}$ ，求集合 $B$.
+    \begin{jieda}
+        $A = \{  - 1,3\}  \Longrightarrow  a - 1 =  - 2,b =  - 3 \Longrightarrow  f\left( x\right)  = {x}^{2} - x - 3$，于是 $A = \{  - 1,3\}  \Longrightarrow  a - 1 =  - 2,b =  - 3 \Longrightarrow  f\left\lbrack  {f\left( x\right) }\right\rbrack   = {\left( {x}^{2} - x - 3\right) }^{2} - \left( {{x}^{2} - x - 3}\right)  - 3 = x,\therefore B = \{  - 1,3, - \sqrt{3},\sqrt{3}\}$
+    \end{jieda}
     
-    \item 已知实数集 $A = \left\{  {{a}_{1},{a}_{2},\cdots ,{a}_{n}}\right\}  \left( {n \in  \mathbf{N},n \geq  3}\right)$ ，定义 $\varphi \left( A\right)  = \left\{  {{a}_{i}{a}_{j} \mid  {a}_{i},{a}_{j} \in  A\left( {i \neq  j}\right) }\right.$， 若 $\varphi \left( A\right)  = \{ 0, - 6, - 8, - {12},{12},{18},{24}\}$ ，求集合 $A$.
+    \item 设 $a$ 、 $b$ 、 $c \in  \mathbf{R}$ ,函数 $f\left( x\right)  = \left( {x + a}\right) \left( {{x}^{2} + {bx} + c}\right) ,g\left( x\right)  = \left( {{ax} + 1}\right) \left( {c{x}^{2} + {bx} + 1}\right)$ . 记集合 $S = \{ x \mid  f\left( x\right)  = 0$ , $x \in  \mathbf{R}\} ,T = \{ x \mid  g\left( x\right)  = 0,x \in  \mathbf{R}\}$ . 若 $\left| S\right| ,\left| T\right|$ 分别为集合 $S,T$ 的元素个数,则下列结论不可能的是\dotfill{(\kh{D})}
+    \xx{$\left| S\right|  = 1,\left| T\right|  = 0$}{$\left| S\right|  = 1,\left| T\right|  = 1$}{$\left| S\right|  = 2,\left| T\right|  = 2$}{$\left| S\right|  = 2,\left| T\right|  = 3$}
+    \begin{jieda}
+        $|S|$最多3个元素，$|T|$最多和$|S|$相等，且元素间有一一对应的倒数关系. 当$a,c$中至少有一个为0， $|T|$比$|S|$少一个元素.
+    \end{jieda}
+
 \end{enumerate}
 
 \subsection*{逻辑}
@@ -49,9 +94,20 @@
         $\neg p$是$\neg q$的充分非必要条件即$\overline{P} \subset \overline{Q}$，即$m+1 \leq 5$，解得$m \in (-\infty, 4]$.
     \end{jieda}
 
-    \item 已知 $A = \{ x \mid  \left| {x - a}\right|  < 4\} ,B = \{ x \mid  \left( {x - 1}\right) \left( {2 - x}\right)  > 0\}$ ,若 $x \in  A$ 是 $x \in  B$ 的必要非充分条件,则实数 $a$ 的取值范围是\blkda{}
+    \item 已知 $A = \{ x \mid  \left| {x - a}\right|  < 4\} ,B = \{ x \mid  \left( {x - 1}\right) \left( {2 - x}\right)  > 0\}$ ,若 $x \in  A$ 是 $x \in  B$ 的必要非充分条件,则实数 $a$ 的取值范围是\blkda{$[-2, 5]$}
+    \begin{jieda}
+        $A = (a-4, a+4)$，$B = (1,2)$，$B \subset A$
+    \end{jieda}
     
     \item 已知集合 $A = \left\{  {y\left| {y = {x}^{2} - \dfrac{3}{2}x + 1}\right. ,x \in  \left\lbrack  {\dfrac{3}{4},2}\right\rbrack  }\right\}  ,B = \left\{  {x\left| {x + {m}^{2} \geq  1}\right. }\right\}$，若 $p : x \in  A;q : x \in  B$ 且 $p$ 是 $q$ 的充分条件，求实数 $m$ 的取值范围.
+    \begin{jieda}
+        \begin{enumerate}
+            \item $y = {x}^{2} - \dfrac{3}{2}x + 1 = {\left( x - \dfrac{3}{4}\right) }^{2} + \dfrac{7}{16},\because x \in  \left\lbrack  {\dfrac{3}{4},2}\right\rbrack  ,\therefore \dfrac{7}{16} \leq  y \leq  2$ ,即集合 $A = \left\lbrack  {\dfrac{7}{16},2}\right\rbrack$ ；
+            \item $B = \left\{  {x \mid  x + {m}^{2} \geq  1}\right\}   = \left\{  {x \mid  x \geq  1 - {m}^{2}}\right\}$.
+            
+            若 $p : x \in  A;q : x \in  B$ 且 $p$ 是 $q$ 的充分条件,则 $A \subseteq  B,1 - {m}^{2} \leq  \dfrac{7}{16}$ ,解得 $m \geq  \dfrac{3}{4}$ 或 $m \leq   - \dfrac{3}{4}$，即实数 $m$ 的取值范围是 $\left\{ m \left|  m \geq  \dfrac{3}{4} \text{或} m \leq   - \dfrac{3}{4} \right. \right\}$.
+        \end{enumerate}
+    \end{jieda}
     
     \item 已知直线 ${l}_{1} : {ax} + {2y} - a + 1 = 0,{l}_{2} : {3x} + \left( {a - 1}\right) y - 2 = 0$ ,则 “ $a =  - 2$ ” 是 “ ${l}_{1}//{l}_{2}$ ” 的\dotfill{(\kh{C})}
     \xx{充分不必要条件}{必要不充分条件}{充要条件}{既不充分也不必要条件}

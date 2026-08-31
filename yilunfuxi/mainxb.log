@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  30 AUG 2026 23:21
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  31 AUG 2026 08:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1670,7 +1670,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/jiheluoji.aux) (./bodyxb/jiheluoji_lianxi.aux) (./bodyxb/budengshi.aux) (./bodyxb/budengshi_lianxi.aux))
+ (./mainxb.aux (./bodyxb/jiheluoji_lianxi.aux) (./bodyxb/budengshi_lianxi.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1803,6 +1803,10 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 12.
 
+[1
+
+
+]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1836,25 +1840,22 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
-[1
-
-
-]
+ [2]
 File: bodyxb/src/1_150_1623_342_219_0.jpg Graphic file (type bmp)
 <bodyxb/src/1_150_1623_342_219_0.jpg>
 File: bodyxb/src/0_163_428_318_317_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_163_428_318_317_0.jpg>
- [2]
+ [3]
 File: bodyxb/src/1_151_874_378_247_0.jpg Graphic file (type bmp)
 <bodyxb/src/1_151_874_378_247_0.jpg>
-) [3]
+) [4]
 \openout2 = `bodyxb/budengshi_lianxi.aux'.
 
- (./bodyxb/budengshi_lianxi.tex [4
+ (./bodyxb/budengshi_lianxi.tex [5
 
 
 
-]) [5] (./mainxb.aux (./bodyxb/jiheluoji_lianxi.aux) (./bodyxb/budengshi_lianxi.aux))
+]) [6] (./mainxb.aux (./bodyxb/jiheluoji_lianxi.aux) (./bodyxb/budengshi_lianxi.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1863,12 +1864,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49480 strings out of 468168
- 1159803 string characters out of 5432816
- 1741259 words of memory out of 5000000
- 77214 multiletter control sequences out of 15000+600000
- 656534 words of font info for 103 fonts, out of 8000000 for 9000
+ 49490 strings out of 468168
+ 1160741 string characters out of 5432816
+ 1734737 words of memory out of 5000000
+ 77224 multiletter control sequences out of 15000+600000
+ 656566 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,627b,1310s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,128p,627b,1351s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (5 pages).
+Output written on mainxb.pdf (6 pages).
