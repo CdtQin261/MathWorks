@@ -6597,66 +6597,139 @@ C. 双曲线的一支 D. 直线
 
     \item (2025$\cdot$嘉定区一模$\cdot$10)已知空间向量 $\vv{O{B}_{1}}$ 、 $\vv{O{B}_{2}}$ 、 $\vv{O{B}_{3}}$ 两两垂直，若空间点 $A$ 满足 $\left| \vv{A{B}_{1}}\right|  = \left| \vv{A{B}_{2}}\right|  = \left| \vv{A{B}_{3}}\right|  = 1$ ，记 $\vv{OP} = \vv{O{B}_{1}} + \vv{O{B}_{2}} + \vv{O{B}_{3}}$ ， 且 $\left| \vv{AP}\right|  \leq  1$ ，则 $\left| \vv{OA}\right|$ 的取值范围是\blkda[2]{$\left\lbrack  {1,\dfrac{\sqrt{6}}{2}}\right\rbrack$}.
     \begin{jieda}
-        由题意 ${\vv{AB}}_{1}^{2} + {\vv{AB}}_{2}^{2} + {\vv{AB}}_{3}^{2} = {\left( \vv{O{B}_{1}} - \vv{OA}\right) }^{2} +  {\left( \vv{O{B}_{2}} - \vv{OA}\right) }^{2} + {\left( \vv{O{B}_{3}} - \vv{OA}\right) }^{2} = 3\vv{OA}{}^{2} - 2\vv{OA} \cdot  (\vv{O{B}_{1}} + \vv{O{B}_{2}} +  \vv{O{B}_{3}}) + \left( {{\vv{O{B}_{1}}}^{2} + {\vv{O{B}_{2}}}^{2} + {\vv{O{B}_{3}}}^{2}}\right)  = 2{\vv{OA}}^{2} + {\vv{OA}}^{2} - 2\vv{OA} \cdot  (\vv{O{B}_{1}} +  \vv{O{B}_{2}} + \vv{O{B}_{3}}) + {\left( \vv{O{B}_{1}} + \vv{O{B}_{2}} + \vv{O{B}_{3}}\right) }^{2} = 2\vv{O{A}^{2}} + \left\lbrack  {\vv{OA}-(\vv{OA}-(\vv{O{B}_{1}} + }\right.  \vv{O{B}_{2}} + \vv{O{B}_{3}}){\rbrack }^{2} = 2\vv{O{A}^{2}} + \vv{A{P}^{2}} = 3$ ,又 $0 \leq  \left| \vv{AP}\right|  \leq  1$ ,所以 ${\vv{OA}}^{2} = \dfrac{3 - {\vv{AP}}^{2}}{2} \in  \left\lbrack  {1,\dfrac{3}{2}}\right\rbrack$ ,所以 $\left| \vv{OA}\right|  \in  \left\lbrack  {1,\dfrac{\sqrt{6}}{2}}\right\rbrack$.
+        $B_1(a, 0, 0), B_2(0, b, 0), B_3(0, 0, c)， P(a, b, c)$，$A(x, y, z)$
+
+        $\left\{\begin{array}{l}
+            (x-a)^2 + y^2 +z^2 = 1 \\
+            x^2 + (y-b)^2 +z^2 = 1 \\
+            x^2 + y^2 +(z-c)^2 = 1 \\
+            (x-a)^2+(y-b)^2+(z-c)^2 \leq 1
+        \end{array}\right. \Longrightarrow 2(x^2+y^2+z^2) + [(x-a)^2+(y-b)^2+(z-c)^2] = 3$，故$x^2+y^2+z^2 \in \left[1, \dfrac{3}{2}\right]$，即$\left| \vv{OA}\right| \in \left\lbrack  {1,\dfrac{\sqrt{6}}{2}}\right\rbrack$
     \end{jieda}
 
-    \item (2025$\cdot$黄浦区一模$\cdot$8)在正四面体 ${ABCD}$ 中，点 $N$ 是 $\bigtriangleup  {ABC}$ 的中心，若 $\vv{DN} = \lambda \vv{DA} + \mu \vv{DB} +  \nu \vv{BC}\left( {\lambda ,\mu ,\nu  \in  \mathbf{R}}\right)$ ，则 $\lambda  + \mu  + \nu  =$ \blkda[2]{}.
+    \item (2025$\cdot$黄浦区一模$\cdot$8)在正四面体 ${ABCD}$ 中，点 $N$ 是 $\bigtriangleup  {ABC}$ 的中心，若 $\vv{DN} = \lambda \vv{DA} + \mu \vv{DB} +  \nu \vv{BC}\left( {\lambda ,\mu ,\nu  \in  \mathbf{R}}\right)$ ，则 $\lambda  + \mu  + \nu  =$ \blkda[2]{$\dfrac{4}{3}$}.
+    \begin{jieda}
+        $\vv{DN} = \lambda \vv{DA} + \mu \vv{DB} +  \nu (\vv{DC} - \vv{DB}) = \lambda \vv{DA} + (\mu - \nu) \vv{DB} + \nu \vv{DC} = \dfrac{1}{3} \vv{DA} + \dfrac{1}{3} \vv{DB} + \dfrac{1}{3} \vv{DC}$
 
-    \item (2024$\cdot$上海春季卷$\cdot$10)在棱柱 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，底面 ${ABCD}$ 为平行四边形， $\left| {A{A}_{1}}\right|  = 3$ ， $\left| {BD}\right|  = 4$ ，且 $\vv{A{B}_{1}} \cdot  \vv{BC} - \vv{A{D}_{1}} \cdot  \vv{DC} = 5$ ，则异面直线 $A{A}_{1}$ 与 ${BD}$ 的夹角为\blkda[2]{}.
+        故$\left\{\begin{array}{l}
+            \lambda = \dfrac{1}{3} \\
+            \mu = \dfrac{2}{3} \\
+            \nu = \dfrac{1}{3}
+        \end{array}\right.$
+    \end{jieda}
 
-    \item (2025$\cdot$浦东新区一模$\cdot$11)已知空间中三个单位向量 $\vv{O{A}_{1}}$ 、 $\vv{O{A}_{2}}$ 、 $\vv{O{A}_{3}}$ ， $\vv{O{A}_{1}} \cdot  \vv{O{A}_{2}} = \vv{O{A}_{2}}$ 。 $\vv{O{A}_{3}} = \vv{O{A}_{3}} \cdot  \vv{O{A}_{1}} = 0,P$ 为空间中一点，且满足 $\left| {\vv{OP} \cdot  \vv{O{A}_{1}}}\right|  = 1,\left| {\vv{OP} \cdot  \vv{O{A}_{2}}}\right|  = 2,\left| {\vv{OP} \cdot  \vv{O{A}_{3}}}\right|  = 3$ , 则点 $P$ 个数的最大值为\blkda[2]{}.
+    \item (2024$\cdot$上海春季卷$\cdot$10)在棱柱 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，底面 ${ABCD}$ 为平行四边形， $\left| {A{A}_{1}}\right|  = 3$ ， $\left| {BD}\right|  = 4$ ，且 $\vv{A{B}_{1}} \cdot  \vv{BC} - \vv{A{D}_{1}} \cdot  \vv{DC} = 5$ ，则异面直线 $A{A}_{1}$ 与 ${BD}$ 的夹角为\blkda[2]{$\arccos \dfrac{5}{12}$}.
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/160_170_1508_320_230_0.jpg}
+    \end{center}
+    \begin{jieda}
+        $\vv{A{B}_{1}} \cdot  \vv{BC}  - \vv{A{D}_{1}} \cdot  \vv{DC} = \left( {\vv{AB} + \vv{A{A}_{1}}}\right)  \cdot  \vv{AD} - \left( {\vv{AD} + \vv{A{A}_{1}}}\right)  \cdot  \vv{DC} = 5$ , $\vv{AB} \cdot  \vv{AD} + \vv{A{A}_{1}} \cdot  \vv{AD} - \vv{AD} \cdot  \vv{DC} - \vv{A{A}_{1}} \cdot  \vv{DC} = \vv{A{A}_{1}} \cdot  \vv{AD}  - \vv{A{A}_{1}} \cdot  \vv{DC} = \vv{A{A}_{1}} \cdot  \left( {\vv{AD} - \vv{DC}}\right)  = \vv{A{A}_{1}} \cdot  \left( {\vv{BC} + \vv{CD}}\right)  =  5 = \vv{A{A}_{1}} \cdot  \vv{BD} = 3 \times  4 \times  \cos \theta  = 5 \Longrightarrow  \cos \theta  = \dfrac{5}{12}$ ,故 $\theta  =  \arccos \dfrac{5}{12}$.
+    \end{jieda}
 
-    \item (2024$\cdot$虹口区二模$\cdot$11)如图所示，在直四棱柱 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，底面 ${ABCD}$ 为菱形，且 $\angle {BAD} = {60}^{ \circ  }$. 若 ${AB} = {A{A}_{1}} = 2$ ，点 $M$ 为棱 $C{C}_{1}$ 的中点，点 $P$ 在 ${A}_{1}B$ 上，则线段 ${PA}$ 、 ${PM}$ 的长度和的最小值为\blkda[2]{}.
+    \item (2025$\cdot$浦东新区一模$\cdot$11)已知空间中三个单位向量 $\vv{O{A}_{1}}$ 、 $\vv{O{A}_{2}}$ 、 $\vv{O{A}_{3}}$ ， $\vv{O{A}_{1}} \cdot  \vv{O{A}_{2}} = \vv{O{A}_{2}} \cdot \vv{O{A}_{3}} = \vv{O{A}_{3}} \cdot  \vv{O{A}_{1}} = 0,P$ 为空间中一点，且满足 $\left| {\vv{OP} \cdot  \vv{O{A}_{1}}}\right|  = 1,\left| {\vv{OP} \cdot  \vv{O{A}_{2}}}\right|  = 2,\left| {\vv{OP} \cdot  \vv{O{A}_{3}}}\right|  = 3$ , 则点 $P$ 个数的最大值为\blkda[2]{8}.
 
-    \item (2025$\cdot$长宁区一模$\cdot$12)点 $P$ 、 $M$ 、 $N$ 分别位于正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 的面上， ${AB} = 1$ ，则 $\vv{PM} \cdot  \vv{PN}$ 的最小值是\blkda[2]{}.
-
-    \item (2025$\cdot$青浦区二模$\cdot$12)如图，正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 绕直线 $D{B}_{1}$ 旋转 $\dfrac{\pi }{3}$ ，直线 ${AB}$ 旋转至直线 ${A}^{\prime }{B}^{\prime }$ ，则直线 ${AB}$ 与直线 ${A}^{\prime }{B}^{\prime }$ 所成角的大小为\blkda[2]{}.
-
-    \item (2024$\cdot$浦东新区二模$\cdot$12)正三棱锥 S-ABC 中，底面边长 ${AB} = 2$ ，侧棱 ${AS} = 3$ ，向量 $\vv{a}$ 、 $\vv{b}$ 满足 $\vv{a} \cdot  \left( {\vv{a} + \vv{AC}}\right)  = \vv{a} \cdot  \vv{AB},\vv{b} \cdot  \left( {\vv{b} + \vv{AC}}\right)  = \vv{b} \cdot  \vv{AS}$ ，则 $\left| {\vv{a} - \vv{b}}\right|$ 的最大值为\blkda[2]{}.
-
-\begin{center}
-\includegraphics[width=0.2\textwidth]{bodyxb/src/160_170_1508_320_230_0.jpg}
-\end{center}
-
-
-第 15 题图
-
-\begin{center}
-\includegraphics[width=0.2\textwidth]{bodyxb/src/160_529_1447_309_293_0.jpg}
-\end{center}
-
-
-第 17 题图
-
-\begin{center}
-\includegraphics[width=0.2\textwidth]{bodyxb/src/160_880_1445_304_292_0.jpg}
-\end{center}
-
-
-第 19 题图
-
-\begin{center}
-\includegraphics[width=0.2\textwidth]{bodyxb/src/160_1228_1463_278_272_0.jpg}
-\end{center}
-
-
-第 20 题图
-
-    \item (2025$\cdot$宝山区二模$\cdot$12)空间中有相互垂直的两条异面直线 ${l}_{1}$ 、 ${l}_{2}$ ，点 $A$ 、 $B \in  {l}_{1}$ ， $C$ 、 $D \in  {l}_{2}$ ，且 ${AB} =$ 4， ${CD} = 1$ ，若 ${DA}\bot {DB}$ ，且 ${AC} = {BC} + 2$ ，则二面角 $D - {AB} - C$ 平面角的余弦值最小为\blkda[2]{}.
-    
-    \item (2024$\cdot$宝山区二模$\cdot$12)在空间直角坐标系中，从原点出发的两个向量 $\vv{a}$ 、 $\vv{b}$ 满足: $\vv{a} \cdot  \vv{b} = 2$ ， $\left| \vv{b}\right|  = 1$ ， 且存在实数 $t$ ，使得 $\left| \vv{a}\right|  - 2\left| {\vv{a} + t\vv{b}}\right|  \geq  0$ 成立，则由 $\vv{a}$ 构成的空间几何体的体积是\blkda[2]{}.
-
-    \item (2024$\cdot$松江区一模$\cdot$12)已知正四面体 $A - {BCD}$ 的棱长为 2√2. 空间内任意点 $P$ 满足 $\left| {\vv{PB} + \vv{PC}}\right|  = 2$ ， 则 $\vv{AP} \cdot  \vv{AD}$ 的取值范围是\blkda[2]{}.
-
-    \item (2024$\cdot$奉贤区一模$\cdot$12)已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 $1,{\lambda }_{i} \in  \{  - 1,1\} (i = 1,2,3$ , 4),则 $\left| {{\lambda }_{1}\vv{AB} + {\lambda }_{2}\vv{BC} + {\lambda }_{3}\vv{A{C}_{1}} + {\lambda }_{4}\vv{B{D}_{1}}}\right|$ 的最大值是\blkda[2]{}.
-
-    \item (2024$\cdot$黄浦区一模$\cdot$12)若正三棱锥 $A - {BCD}$ 的底面边长为 6，高为 $\sqrt{13}$ ，动点 $P$ 满足(DA)+ $\vv{CB})\bot \left( {\vv{PA} + \vv{PB} + \vv{PC} + \vv{PD}}\right)$ ，则 $\left| {\vv{PA} + \vv{PB}}\right|  + 2\left| \vv{PA}\right|$ 的最小值为\blkda[2]{}.
-
-    \item (2023$\cdot$上海春季卷$\cdot$12)设 $\vv{OA}$ ， $\vv{OB}$ ， $\vv{OC}$ 为空间中三组单位向量，且 $\vv{OA}\bot \vv{OB}$ ， $\vv{OA}\bot \vv{OC}$ ， $\vv{OB}$ 与 $\vv{OC}$ 夹角为 ${60}^{ \circ  },P$ 为空间任意一点,且 $\left| \vv{OP}\right|  = 1$ ,满足 $\left| {\vv{OP} \cdot  \vv{OC}}\right|  \leq  \left| {\vv{OP} \cdot  \vv{OB}}\right|  \leq  \left| {\vv{OP} \cdot  \vv{OA}}\right|$ ,则 $\left| {\vv{OP} \cdot  \vv{OC}}\right|$ 的最大值为\blkda[2]{}.
+    \item (2024$\cdot$虹口区二模$\cdot$11)如图所示，在直四棱柱 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 中，底面 ${ABCD}$ 为菱形，且 $\angle {BAD} = {60}^{ \circ  }$. 若 ${AB} = {A{A}_{1}} = 2$ ，点 $M$ 为棱 $C{C}_{1}$ 的中点，点 $P$ 在 ${A}_{1}B$ 上，则线段 ${PA}$ 、 ${PM}$ 的长度和的最小值为\blkda[2]{$\sqrt{9 + 2\sqrt{10}}$}.
 
     \begin{center}
-    \includegraphics[width=0.2\textwidth]{bodyxb/src/161_1127_623_323_216_0.jpg}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/160_529_1447_309_293_0.jpg}
     \end{center}
+    \begin{jieda}
+        如图所示,将平面 $A{A}_{1}B$ 和平面 ${A}_{1}{BM}$ 翻折到同一平面, $\angle {AB}{A}_{1} = \dfrac{\pi }{4},{A}_{1}B = 2\sqrt{2},{BM} = \sqrt{5},{A}_{1}M =  \sqrt{{2}^{2} + {2}^{2} - 2 \times  2 \times  2\cos {120}^{2} + {1}^{2}} = \sqrt{13} \Longrightarrow  {A}_{1}{B}^{2} + B{M}^{2} =  {A}_{1}{M}^{2} \Longrightarrow  {A}_{1}B \bot  {BM}$ ,在翻折后的平面中, $\angle {ABM} = \dfrac{3}{4}\pi  \Longrightarrow  {PA} + {PM} \geq \sqrt{{2}^{2} + {\left( \sqrt{5}\right) }^{2} - 2 \times  2 \times  \sqrt{5}\cos \dfrac{3}{4}\pi } = \sqrt{9 + 2\sqrt{10}}$ ,线段 ${PA},{PM}$ 的长度和的最小值为 $\sqrt{9 + 2\sqrt{10}}$ .
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/118_987_1960_222_210_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2025$\cdot$长宁区一模$\cdot$12)点 $P$ 、 $M$ 、 $N$ 分别位于正方体 ${ABCD} - {A}^{\prime }{B}^{\prime }{C}^{\prime }{D}^{\prime }$ 的面上， ${AB} = 1$ ，则 $\vv{PM} \cdot  \vv{PN}$ 的最小值是\blkda[2]{$- \dfrac{1}{2}$}.
+    \begin{jieda}
+        如图建立以 $D$ 为原点的空间直角坐标系,设 $P\left( {{x}_{0},{y}_{0},{z}_{0}}\right) ,M  \left( {{x}_{1},{y}_{1},{z}_{1}}\right) ,N\left( {{x}_{2},{y}_{2},{z}_{2}}\right)$ ,其中 ${x}_{i}$ 、 ${y}_{i},{z}_{i}\left( {i = 0,1,2}\right)  \in  \left\lbrack  {0,1}\right\rbrack$ . 则 $\vv{PM} =  \left( {{x}_{1} - {x}_{0},{y}_{1} - {y}_{0},{z}_{1} - {z}_{0}}\right) ,\vv{PN} =  \left( {{x}_{2} - {x}_{0},{y}_{2} - {y}_{0},{z}_{2} - {z}_{0}}\right)$ . 则 $\vv{PM}$ . $\vv{PN} = \left( {{x}_{1} - {x}_{0}}\right) \left( {{x}_{2} - {x}_{0}}\right)  + \left( {{y}_{1} - {y}_{0}}\right) \left( {{y}_{2} - {y}_{0}}\right)  + \left( {{z}_{1} - {z}_{0}}\right)  \left( {{z}_{2} - {z}_{0}}\right)  = {x}_{0}^{2} - \left( {{x}_{1} + {x}_{2}}\right) {x}_{0} + {x}_{1}{x}_{2} + {y}_{0}^{2} - \left( {{y}_{1} + {y}_{2}}\right) {y}_{0} + {y}_{1}{y}_{2}  + {z}_{0}^{2} - \left( {{z}_{1} + {z}_{2}}\right) {z}_{0} + {z}_{1}{z}_{2} = {\left( {x}_{0} - \dfrac{{x}_{1} + {x}_{2}}{2}\right) }^{2} + {\left( {y}_{0} - \dfrac{{y}_{1} + {y}_{2}}{2}\right) }^{2}  + {\left( {z}_{0} - \dfrac{{z}_{1} + {z}_{2}}{2}\right) }^{2} + {x}_{1}{x}_{2} - \dfrac{{\left( {x}_{1} + {x}_{2}\right) }^{2}}{4} + {y}_{1}{y}_{2} - \dfrac{{\left( {y}_{1} + {y}_{2}\right) }^{2}}{4} +  \dfrac{{z}_{1}{z}_{2} - \dfrac{{\left( {z}_{1} + {z}_{2}\right) }^{2}}{4}}{4} \geq  {x}_{1}{x}_{2} - \dfrac{{\left( {x}_{1} + {x}_{2}\right) }^{2}}{4} + {y}_{1}{y}_{2} - \dfrac{{\left( {y}_{1} + {y}_{2}\right) }^{2}}{4} +  {z}_{1}{z}_{2} - \dfrac{{\left( {z}_{1} + {z}_{2}\right) }^{2}}{4} =  - \dfrac{{\left( {x}_{1} - {x}_{2}\right) }^{2}}{4} - \dfrac{{\left( {y}_{1} - {y}_{2}\right) }^{2}}{4} - \dfrac{{\left( {z}_{1} - {z}_{2}\right) }^{2}}{4} =  - \dfrac{1}{4}\left\lbrack  {{\left( {x}_{1} - {x}_{2}\right) }^{2} + {\left( {y}_{1} - {y}_{2}\right) }^{2} + {\left( {z}_{1} - {z}_{2}\right) }^{2}}\right\rbrack   =  - \dfrac{1}{4}{\left| \vv{MN}\right| }^{2},$ 当且仅当 ${x}_{0} = \dfrac{{x}_{1} + {x}_{2}}{2},{y}_{0} = \dfrac{{y}_{1} + {y}_{2}}{2},{z}_{0} = \dfrac{{z}_{1} + {z}_{2}}{2}$ 时取等号. 则为使 $\vv{PM} \cdot  \vv{PN}$ 最小,则应使 $\left| \vv{MN}\right|$ 尽量的大,且 $P$ 为 ${MN}$ 中点. 又点 $P,M,N$ 均位于正方体表面上,则 $P,M,N$ 在正方体同一面上,则当 $\left| \vv{MN}\right|$ 为正方体一面的对角线, $P$ 为对角线中点时,满足题意,此时 $\left| \vv{MN}\right|  = \sqrt{2}$ ,则 $- \dfrac{1}{4}{\left| \vv{MN}\right| }^{2} \geq   - \dfrac{1}{2}$.
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/119_578_543_240_240_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2025$\cdot$青浦区二模$\cdot$12)如图，正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 绕直线 $D{B}_{1}$ 旋转 $\dfrac{\pi }{3}$ ，直线 ${AB}$ 旋转至直线 ${A}^{\prime }{B}^{\prime }$ ，则直线 ${AB}$ 与直线 ${A}^{\prime }{B}^{\prime }$ 所成角的大小为\blkda[2]{$\arccos \dfrac{2}{3}$}.
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/160_880_1445_304_292_0.jpg}
+    \end{center}
+    \begin{jieda}
+        根据 ${AB}//{{A}_{1}{B}_{1}}$ ，可由题意将所求角转化为将 ${A}_{1}{B}_{1}$ 绕 ${B}_{1}D$ 旋转 $\dfrac{\pi }{3}$ 所得到的直线 ${B}_{1}{A}_{1}{}^{\prime }$ 与 ${A}_{1}{B}_{1}$ 所成的角,即可将其转移到圆锥 ${B}_{1}O$ 中求解,图中直线 ${B}_{1}O$ 与 ${B}_{1}D$ 重合,圆锥母线为 ${A}_{1}{B}_{1}$ ,如图: 由旋转 $\dfrac{\pi }{3}$ 可转化到 $\angle {A}_{1}{}^{\prime }O{A}_{1} = \dfrac{\pi }{3}$ ,在正方体中,假设正方体的边长为 1,则可知 ${A}_{1}{B}_{1} = 1,{A}_{1}D =  \sqrt{2},{B}_{1}D = \sqrt{3}$ ,所以 $\cos \angle {A}_{1}{B}_{1}D = \dfrac{1}{\sqrt{3}}$ ,即在圆锥中有 $\cos \angle {A}_{1}{B}_{1}O = \dfrac{1}{\sqrt{3}},\sin \angle {A}_{1}{B}_{1}O = \dfrac{\sqrt{2}}{\sqrt{3}}$ ,由 ${A}_{1}{B}_{1} = 1$ ,可得 ${A}_{1}O = {A}_{1}{B}_{1}\sin \angle {A}_{1}{B}_{1}O  = \dfrac{\sqrt{2}}{\sqrt{3}}$ ,由等边三角形 $O{A}_{1}{A}_{1}{}^{\prime }$ ,可得 ${A}_{1}{A}_{1}{}^{\prime }  = \dfrac{\sqrt{2}}{\sqrt{3}}$ ,在 $\bigtriangleup {A}_{1}{B}_{1}{A}_{1}{}^{\prime }$ 中,由余弦定理, $\cos \angle {A}_{1}{B}_{1}{A}_{1}{}^{\prime } =  \dfrac{1 + 1 - \dfrac{2}{3}}{2} = \dfrac{2}{3}$ ,从而可得旋转后直线 ${A}^{\prime }{B}^{\prime }$ 方向向量与直线 ${AB}$ 方向向量夹角的余弦值为 $\dfrac{2}{3}$ ，所以直线 ${AB}$ 与直线 ${A}^{\prime }{B}^{\prime }$ 所成角的大小为 $\arccos \dfrac{2}{3}$.
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/119_632_1958_189_208_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2024$\cdot$浦东新区二模$\cdot$12)正三棱锥 S-ABC 中，底面边长 ${AB} = 2$ ，侧棱 ${AS} = 3$ ，向量 $\vv{a}$ 、 $\vv{b}$ 满足 $\vv{a} \cdot  \left( {\vv{a} + \vv{AC}}\right)  = \vv{a} \cdot  \vv{AB},\vv{b} \cdot  \left( {\vv{b} + \vv{AC}}\right)  = \vv{b} \cdot  \vv{AS}$ ，则 $\left| {\vv{a} - \vv{b}}\right|$ 的最大值为\blkda[2]{4}.
+
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/160_1228_1463_278_272_0.jpg}
+    \end{center}
+    \begin{jieda}
+        如图所示,正三棱锥 $S - {ABC}$ 中,底面边长 ${AB} =$ 2,侧棱 ${AS} = 3,\vv{a} \cdot  \left( {\vv{a} + \vv{AC}}\right)  = \vv{a} \cdot  \vv{AB} \Longrightarrow  {\vv{a}}^{2} + (\vv{a} \cdot  \vv{AC} - \vv{a} \cdot  \vv{AB}) = 0,{\vv{a}}^{2} + \vv{a}\left( {\vv{AC} - \vv{AB}}\right)  = 0,\vv{a} \cdot  \left( {\vv{a} + \vv{BC}}\right)  = 0,\vv{a}\bot (\vv{a} +  \vv{BC})$ ,同理: $\vv{b} \cdot  \left( {\vv{b} + \vv{AC}}\right)  = \vv{b} \cdot  \vv{AS} \Longrightarrow  \vv{b} \bot  \left( {\vv{b} + \vv{SC}}\right)$
+        
+        将 $\vv{a},\vv{b}$ 的起点平移到点 $C$ ,终点分别记为 $M,N,\vv{a} + \vv{BC} = \vv{CM} +  \vv{BC} = \vv{BM} \Longrightarrow  {CM} \bot  {BM}$ ，点 $M$ 在以 ${BC}$ 为直径的球面上，同理,点 $N$ 在以 ${SC}$ 为直径的球面上,球心分别为 ${G}_{1},{G}_{2}$ , $\left| {\vv{a} - \vv{b}}\right|  = \left| {\vv{CM} - \vv{CN}}\right|  = \left| {MN}\right|  \Longrightarrow  {\left| MN\right| }_{\max } = \dfrac{3}{2} + r + R =  \dfrac{3}{2} + 1 + \dfrac{3}{2} = 4.$
+        \begin{center}
+        \includegraphics[width=0.4\textwidth]{bodyxb/src/119_958_932_472_232_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2025$\cdot$宝山区二模$\cdot$12)空间中有相互垂直的两条异面直线 ${l}_{1}$ 、 ${l}_{2}$ ，点 $A$ 、 $B \in  {l}_{1}$ ， $C$ 、 $D \in  {l}_{2}$ ，且 ${AB} =$ 4， ${CD} = 1$ ，若 ${DA}\bot {DB}$ ，且 ${AC} = {BC} + 2$ ，则二面角 $D - {AB} - C$ 平面角的余弦值最小为\blkda[2]{$\dfrac{4\sqrt{3}}{9}$}.
+    \begin{jieda}
+        根据双曲线的定义,平面内到两个定点 $A,B$ (焦点) 的距离之差的绝对值为定值 (小于 $\left| {AB}\right|$ ) 的点的轨迹为双曲线. 由 ${AC} = {BC} + 2$ ,可知 $\left| {{AC} - {BC}}\right|  = 2$ ,所以点 $C$ 在以 $A,B$ 为焦点的双曲线上. 在空间中,是此双曲线绕 ${AB}$ 旋转得到的曲面. 因为 ${DA} \bot  {DB}$ ,根据直径所对的圆周角是直角,所以点 $D$ 同时在以 ${AB}$ 为直径的球面上. 由于 ${l}_{1} \bot  {l}_{2}$ ,所以 $C,D$ 在与 ${AB}$ 垂直的面上. 不妨令 $C$ 固定在一支双曲线上,设双曲线方程为 ${y}^{2} - \dfrac{{x}^{2}}{3} = 1$ . 过 $C$ 作 ${CE} \bot  {AB}$ 于 $E$ ,在双曲线 ${y}^{2} - \dfrac{{x}^{2}}{3} = 1$ 中,变形可得 ${x}^{2} = 3\left( {{y}^{2} - 1}\right)$ . 在 $\operatorname{Rt}\bigtriangleup {CEB}$ (因为 ${CE} \bot  {AB}$ ) 中， ${CE}$ 的长度可根据坐标关系得到， ${CE} =  \sqrt{3{y}^{2} - 3}$ ,因为 $D$ 在过 $C$ 与 ${AB}$ 垂直的面与球的交线上,设球心为 $O\left( {{AB}\text{ 中点 }}\right)$ ,由 $D{E}^{2} + O{E}^{2} = 4$ (球的半径的平方为 4, 根据勾股定理得到此关系), ${OE}$ 的长度与 $y$ 有关 $(E$ 点坐标与 $C$ 点纵坐标 $y$ 有关),且 ${OE}$ 在 $y$ 轴上的投影长度就是 $y$ , 所以 ${DE} = \sqrt{4 - {y}^{2}}$ . 在 $\bigtriangleup  {CED}$ 中，根据余弦定理 $\cos \angle {CED}  = \dfrac{C{E}^{2} + D{E}^{2} - C{D}^{2}}{2 \cdot  {CE} \cdot  {DE}}$ ，通过 $C{E}^{2} = 3{y}^{2} - 3,D{E}^{2} = 4 - {y}^{2}$ 代入余弦定理公式化简得到, $\cos \angle {CED} = \dfrac{3{y}^{2} - 3 + 4 - {y}^{2} - 1}{2\sqrt{\left( {3{y}^{2} - 3}\right) \left( {4 - {y}^{2}}\right) }}  = \dfrac{\sqrt{3}}{3} \cdot  \sqrt{\dfrac{{y}^{4}}{-{y}^{4} + 5{y}^{2} - 4}} = \dfrac{\sqrt{3}}{3} \cdot  \sqrt{\dfrac{1}{-1 - \dfrac{4}{{y}^{4}} + \dfrac{5}{{y}^{2}}}}$ . 令 $t = \dfrac{1}{{y}^{2}}  \left( {t > 0}\right)$ ,则 $\cos \angle {CED} = \dfrac{\sqrt{3}}{3} \cdot  \sqrt{\dfrac{1}{-4{t}^{2} + {5t} - 1}}$ . 对于二次函数 $f\left( t\right)  =  - 4{t}^{2} + {5t} - 1$ ,其对称轴为 $t =  - \dfrac{5}{2 \times  \left( {-4}\right) } = \dfrac{5}{8}$ , 当 $t = \dfrac{5}{8}$ 时, $f\left( t\right)$ 取得最大值 $f\left( \dfrac{5}{8}\right)  =  - 4 \times  {\left( \dfrac{5}{8}\right) }^{2} + 5 \times  \dfrac{5}{8} -  1 = \dfrac{9}{16}$ . 所以 $\cos \angle {CED} = \dfrac{\sqrt{3}}{3} \cdot  \sqrt{\dfrac{1}{-4{t}^{2} + {5t} - 1}} \geq  \dfrac{\sqrt{3}}{3}$ . $\sqrt{\dfrac{1}{\dfrac{9}{16}}} = \dfrac{4\sqrt{3}}{9}$.
+
+        \begin{center}
+        \includegraphics[width=0.4\textwidth]{bodyxb/src/120_285_568_501_211_0.jpg}
+        \end{center}
+    \end{jieda}
+    
+    \item (2024$\cdot$宝山区二模$\cdot$12)在空间直角坐标系中，从原点出发的两个向量 $\vv{a}$ 、 $\vv{b}$ 满足: $\vv{a} \cdot  \vv{b} = 2$ ， $\left| \vv{b}\right|  = 1$ ， 且存在实数 $t$ ，使得 $\left| \vv{a}\right|  - 2\left| {\vv{a} + t\vv{b}}\right|  \geq  0$ 成立，则由 $\vv{a}$ 构成的空间几何体的体积是\blkda[2]{$\dfrac{8\pi }{9}$}.
+    \begin{jieda}
+        存在实数 $t$ ，使得 $\left| \vv{a}\right| \geq  2\left| {\vv{a} + t\vv{b}}\right|$ 成立，故应使得左侧大于右侧最小值恒成立，根据模的几何意义可知最小值为$2\sqrt{|\vv{a}|^2 - 4}$，解得$|\vv{a}| \leq \dfrac{4\sqrt{3}}{4}$，所以 $\vv{a}$ 围成的、空间几何体是以原点为顶点,高为 2,母线长为 $\dfrac{4\sqrt{3}}{4}$ 的圆锥,故由 $\vv{a}$ 构成的空间几何体的体积 $\dfrac{1}{3}\pi  \cdot  {\left( \dfrac{2}{\sqrt{3}}\right) }^{2} \cdot  2 = \dfrac{8\pi }{9}$ .
+    \end{jieda}
+
+    \item (2024$\cdot$松江区一模$\cdot$12)已知正四面体 $A - {BCD}$ 的棱长为 $2\sqrt{2}$. 空间内任意点 $P$ 满足 $\left| {\vv{PB} + \vv{PC}}\right|  = 2$ ， 则 $\vv{AP} \cdot  \vv{AD}$ 的取值范围是\blkda[4]{$\left\lbrack  {4 - 2\sqrt{2},4 + 2\sqrt{2}}\right\rbrack$}.
+    \begin{jieda}
+        设 ${BC}$ 中点为 $M,{AD}$ 中点为 $M$ ,根据正四面体性质知, ${MN} \bot  {AD}$ ,因为棱长为 $2\sqrt{2}$ ,所以 ${AM} = \sqrt{6},{MN} = 2$ ,因为 $\left| {\vv{PB} + \vv{PC}}\right|  = 2 \Longrightarrow  \left| \vv{PM}\right|  = 1$ ，所以动点 $P$ 在以 $M$ 为球心，半径为 1 的球面上.
+        
+        以$A$为原点建系，$A(0,0,0),\quad B(2,0,2),\quad C(2,2,0),\quad D(0,2,2)$，则 $BC$ 中点 $M(2,1,1)$
+        
+        $P(2+cos\theta,1+sin\theta cos\varphi,1+sin\theta sin\varphi)$，故$\vv{AP} \cdot \vv{AD} = 4+2sin\theta(cos\varphi + sin\varphi) \in [4-2\sqrt{2},\ 4+2\sqrt{2}]$.
+    \end{jieda}
+
+    \item (2024$\cdot$奉贤区一模$\cdot$12)已知正方体 ${ABCD} - {A}_{1}{B}_{1}{C}_{1}{D}_{1}$ 的棱长为 $1,{\lambda }_{i} \in  \{  - 1,1\} (i = 1,2,3$ , 4),则 $\left| {{\lambda }_{1}\vv{AB} + {\lambda }_{2}\vv{BC} + {\lambda }_{3}\vv{A{C}_{1}} + {\lambda }_{4}\vv{B{D}_{1}}}\right|$ 的最大值是\blkda[2]{$\sqrt{14}$}.
+    \begin{jieda}
+        如图所示, $A\left( {0,0,0}\right) ,B(1,0$ , $0),C\left( {1,1,0}\right) ,{C}_{1}\left( {1,1,1}\right) ,{D}_{1}\left( {0,1,1}\right)$ , $\vv{AB} = \left( {1,0,0}\right) ,\vv{BC} = \left( {0,1,0}\right) ,\vv{A{C}_{1}} =  \left( {1,1,1}\right) ,\vv{B{D}_{1}} = \left( {-1,1,1}\right) ,{\lambda }_{1}\vv{AB} + {\lambda }_{2}  \vv{BC} + {\lambda }_{3}\vv{A{C}_{1}} + {\lambda }_{4}\vv{B{D}_{1}} = \left( {{\lambda }_{1} + {\lambda }_{3} - {\lambda }_{4}}\right.$ , $\left. {{\lambda }_{2} + {\lambda }_{3} + {\lambda }_{4},{\lambda }_{3} + {\lambda }_{4}}\right) ,\left| {{\lambda }_{1}\vv{AB} + }\right.  {\lambda }_{2}\vv{BC} + {\lambda }_{3}\vv{A{C}_{1}} + {\lambda }_{4}\vv{B{D}_{1}} \mid   = \sqrt{{\left( {\lambda }_{1} + {\lambda }_{3} - {\lambda }_{4}\right) }^{2} + {\left( {\lambda }_{2} + {\lambda }_{3} + {\lambda }_{4}\right) }^{2} + {\left( {\lambda }_{3} + {\lambda }_{4}\right) }^{2}}$ ,当 ${\lambda }_{1} = {\lambda }_{2} =  {\lambda }_{3} = {\lambda }_{4} = 1$ 时最大值是 $\sqrt{{\left( 1 + 1 - 1\right) }^{2} + {\left( 1 + 1 + 1\right) }^{2} + {\left( 1 + 1\right) }^{2}}  = \sqrt{14}$.
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/120_1350_342_227_217_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2024$\cdot$黄浦区一模$\cdot$12)若正三棱锥 $A - {BCD}$ 的底面边长为 6，高为 $\sqrt{13}$ ，动点 $P$ 满足$(\vv{DA} + \vv{CB})\bot \left( {\vv{PA} + \vv{PB} + \vv{PC} + \vv{PD}}\right)$ ，则 $\left| {\vv{PA} + \vv{PB}}\right|  + 2\left| \vv{PA}\right|$ 的最小值为\blkda[2]{8}.
+    \begin{jieda}
+        正三棱锥 $A - {BCD}$ 的底面边长为 6,高为 $\sqrt{13}$ ,如图,设 ${AB}$ 、 ${CD}$ 中点分别为 $E,F,{EF}$ 中点为 $G$ , ${BF} = 3\sqrt{3},{BH} = 2\sqrt{3},{AB} = {AC} =  {AD} = 5,{AF} = 4$
+        
+        $\vv{DA} + \vv{CB} = \vv{DA} +  \vv{DB} - \vv{DC} = 2\vv{DE} - 2\vv{DF} = 2\vv{FE}$，$\vv{PA} +  \vv{PB} + \vv{PC} + \vv{PD} = 2\vv{PE} + 2\vv{PF} = 4\vv{PG}$
+        
+        $\left( {\vv{DA} + \vv{CB}}\right)  \bot  (\vv{PA} +  \vv{PB} + \vv{PC} + \vv{PD}) \Leftrightarrow  \vv{FE} \bot  \vv{PG}$ ,动点 $P$ 在 ${EF}$ 的中垂面上, $\left| {\vv{PA} + \vv{PB}}\right|  + 2\left| \vv{PA}\right|  = 2\left| \vv{PE}\right|  + 2\left| \vv{PA}\right|  = 2\left| \vv{PF}\right|  + 2\left| \vv{PA}\right|  \geq  2\left| \vv{AF}\right|  = 8$ .
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/120_1331_802_245_211_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2023$\cdot$上海春季卷$\cdot$12)设 $\vv{OA}$ ， $\vv{OB}$ ， $\vv{OC}$ 为空间中三组单位向量，且 $\vv{OA}\bot \vv{OB}$ ， $\vv{OA}\bot \vv{OC}$ ， $\vv{OB}$ 与 $\vv{OC}$ 夹角为 ${60}^{ \circ  },P$ 为空间任意一点,且 $\left| \vv{OP}\right|  = 1$ ,满足 $\left| {\vv{OP} \cdot  \vv{OC}}\right|  \leq  \left| {\vv{OP} \cdot  \vv{OB}}\right|  \leq  \left| {\vv{OP} \cdot  \vv{OA}}\right|$ ,则 $\left| {\vv{OP} \cdot  \vv{OC}}\right|$ 的最大值为\blkda[2]{$\dfrac{\sqrt{21}}{7}$}.
+    \begin{jieda}
+        设 $\vv{OA} = \left( {0,0,1}\right) ,\vv{OB} = \left( {\dfrac{\sqrt{3}}{2},\dfrac{1}{2},0}\right) ,\vv{OC} = (0,1,0),\vv{OP} = \left( {x,y,z}\right)$ ,不妨设 $x,y,z > 0$ ,所以 ${x}^{2} + {y}^{2} + {z}^{2} = 1$ , $y \leq  \dfrac{\sqrt{3}}{2}x + \dfrac{1}{2}y \leq  z$ ,所以 $x \geq  \dfrac{\sqrt{3}}{3}y,z \geq  y$ , ${x}^{2} + {y}^{2} + {z}^{2} = 1 \geq  \dfrac{{y}^{2}}{3} + {y}^{2} + {y}^{2}$，故$\dfrac{7}{3}{y}^{2} \leq  1,{y}^{2} \leq  \dfrac{3}{7}$ ,可得 $y \leq  \dfrac{\sqrt{21}}{7}$ .
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/120_1376_1600_200_227_0.jpg}
+        \end{center}
+ 
+    \end{jieda}
+
 
 \end{enumerate}
 
@@ -6668,6 +6741,9 @@ C. 双曲线的一支 D. 直线
 
 C. $B{D}_{1}$ 和 ${B}_{1}D$ D. ${A}_{1}{D}_{1}$ 和 ${AB}$
 
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/161_1127_623_323_216_0.jpg}
+    \end{center}
 28.(2025$\cdot$青浦区一模$\cdot$14)若点 $P\left( {x,y,z}\right)$ ( ${xyz} \neq  0$ )关于 ${xOy}$ 的对称点为 $A$ ，关于 $z$ 轴的对称点为 $B$ ,则 $A,B$ 两点的对称是 \dotfill{(\kh{})}
 
 \xx{}{}{}{}关于 ${xOz}$ 平面对称 B. 关于 $x$ 轴对称
@@ -9905,9 +9981,9 @@ $k$ & 2.706 & 3.841 & 6.635 & 10.828 \\
 
 (2)请根据 2014 年至 2023 年(剔除 2022 年的数据)的数据建立 $y$ 与 $x$ 的线性回归模型 \ding{172} ；根据 2019 年至 2023 年的数据建立 $y$ 与 $x$ 的线性回归模型 \ding{173}. 分别用这两个模型，预测 2024 年该便利店的利润额并说明这样的预测值是否可靠? (回归系数精确到 0.001 , 利润精确到 0.1 万元) 回归系数 $\widehat{a}$ 与 $\widehat{b}$ 的公式如下:
 
-\[
+$
 \widehat{a} = \dfrac{\mathop{\sum }\limits_{{i = 1}}^{n}\left( {{x}_{i} - \overline{x}}\right) \left( {{y}_{i} - \overline{y}}\right) }{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - \overline{x}\right) }^{2}} = \dfrac{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}{y}_{i} - n\overline{x}\overline{y}}{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} - n{\overline{x}}^{2}},\widehat{b} = \overline{y} - \widehat{a}\overline{x} = \dfrac{\mathop{\sum }\limits_{{i = 1}}^{n}{y}_{i} - \widehat{a}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}}{n}
-\]
+$
 
 \subsection*{考点11、> 离散型分布及期望、方差}
 
