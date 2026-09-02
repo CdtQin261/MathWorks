@@ -2892,8 +2892,7 @@ ${t}^{2} = 2$ ,由 $\left\{  \begin{array}{l} {x}^{2} + {y}^{2} = 2 \\  {x}^{2} 
 \end{center}
 
 \section*{第 10 章 空间向量与立体几何}
- 
-56. ( 1 )
+
 
 57. ( 1 )连接 ${CF}$ ，因为底面为正八边形，所以 ${CF}\bot {BC}$ ，又正八棱柱侧棱 $C{C}_{1} \bot$ 底面 ${ABCDEFGH},{BC} \subset$ 底面 ${ABCDEFGH}$ ,所以 $C{C}_{1} \bot  {BC},C{C}_{1} \cap  {CF} = C,C{C}_{1},{CF} \subset$ 平面 ${CF}{C}_{1}$ ,所以 ${BC} \bot$ 平面 ${CF}{C}_{1}$ ,又 ${C}_{1}F \subset$ 平面 ${CF}{C}_{1}$ ,所以 ${BC} \bot  {C}_{1}F$ ;
 

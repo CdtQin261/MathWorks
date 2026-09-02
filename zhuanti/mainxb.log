@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  2 SEP 2026 08:22
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  2 SEP 2026 16:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1733,7 +1733,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./mainxb.aux (./bodyxb/1_jihe.aux))
+ (./mainxb.aux (./bodyxb/3_budengshi.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1808,9 +1808,9 @@ Package hyperref Info: Link coloring ON on input line 18.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/1_jihe.aux'.
+\openout2 = `bodyxb/3_budengshi.aux'.
 
- (./bodyxb/1_jihe.tex
+ (./bodyxb/3_budengshi.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1860,11 +1860,11 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 7.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 43.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 7.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 43.
 
 
 Package fontspec Info: 
@@ -1903,11 +1903,9 @@ Package fontspec Info:
 
 
 
-]
+] [2] [3] [4] [5]
 Missing character: There is no ， ("FF0C) in font rm-lmr10!
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-[2]) [3] (./mainxb.aux (./bodyxb/1_jihe.aux))
+[6]) [7] (./mainxb.aux (./bodyxb/3_budengshi.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1916,12 +1914,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49423 strings out of 468168
- 1155965 string characters out of 5432815
- 1742817 words of memory out of 5000000
- 77145 multiletter control sequences out of 15000+600000
+ 49537 strings out of 468168
+ 1163748 string characters out of 5432815
+ 1739817 words of memory out of 5000000
+ 77259 multiletter control sequences out of 15000+600000
  656670 words of font info for 120 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,12n,128p,613b,1246s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,9n,128p,613b,1417s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (3 pages).
+Output written on mainxb.pdf (7 pages).
