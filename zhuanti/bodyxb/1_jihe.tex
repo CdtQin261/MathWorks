@@ -198,6 +198,52 @@
             \end{enumerate}
             综上，$m \in (-\infty, 4]$
         \end{jieda}
+
+        \item 设集合 $A = \{ x \mid   - 2 \leq  x \leq  5\} ,B = \{ x \mid  m + 1 \leq  x \leq  {2m} - 1\}$.
+        \begin{enumerate}
+            \item 若 $A \cap  B = B$ ，求实数 $m$ 的取值范围
+            \item 当 $x \in  \mathbf{R}$ 时，不存在 $x$ 使得 $x \in  A$ 与 $x \in  B$ 同时成立，求实数 $m$ 的取值范围.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\because A \cap  B = B,\therefore B \subseteq  A$
+                
+                当 $m + 1 > {2m} - 1$ ,即 $m < 2$ 时, $B = \varnothing$ ,满足 $B \subseteq  A$
+                
+                当 $m + 1 \leq  {2m} - 1$ ,即 $m \geq  2$ 时,要使 $B \subseteq  A$ 成立,必须且只需 $\left\{  \begin{array}{l} m + 1 \geq   - 2, \\  {2m} - 1 \leq  5, \end{array}\right.$ 可得 $2 \leq  m \leq  3$ ,综上,若 $A \cap  B = B$ ,则 $m \leq  3$ .
+                \item 依题意, $A \cap  B = \varnothing$ . 
+                
+                若 $B = \varnothing$ ,即 $m + 1 > {2m} - 1$ ,得 $m < 2$ 时满足条件；
+                
+                若 $B \neq  \varnothing$ ,则 $\left\{  \begin{array}{l} m + 1 \leq  {2m} - 1, \\  m + 1 > 5 \end{array}\right.$ 或 $\begin{array}{l} m + 1 \leq  {2m} - 1, \\  {2m} - 1 <  - 2, \end{array}$ 解得 $m > 4$. 
+                
+                综上,有 $m < 2$ 或 $m > 4$.
+            \end{enumerate}
+        \end{jieda}
+        
+        \item 已知 $a,m \in  \mathbf{R}$ ,集合 $A = \left\{  {x \mid  {x}^{2} - {3x} + 2 = 0}\right\} $，$B = \left\{  {x \mid  {x}^{2} + 2\left( {m + 1}\right) x + {m}^{2} - 5 = 0,x \in  \mathbf{R}}\right\} $，$C =  \left\{  {x \mid  {x}^{2} - {ax} + a - 1 = 0,x \in  \mathbf{R}}\right\} .$
+        \begin{enumerate}
+            \item 若 $A \cup  C = A$ ，求实数 $a$ 的值
+            \item 若 $A \cap  B = B$ ，求实数 $m$ 的取值范围
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $A = \{ 1,2\}$，由 ${x}^{2} - {ax} + a - 1 = 0$ 得 $x = 1$ 或 $a - 1$ ,所以 $1 \in  C,a - 1 \in  C$
+                
+                因为 $A \cup  C = A$ ,所以 $C \subseteq  A$ ,所以 $a - 1 = 1$ 或 2,所以 $a = 2$ 或 3;
+                \item 因为 $A \cap  B = B$ ,所以 $B \subseteq  A$
+                
+                当 $B = \varnothing$ 时, $\Delta  = 4{\left( m + 1\right) }^{2} - 4\left( {{m}^{2} - 5}\right)  < 0$ ,解得 $m <  - 3$
+                
+                当 $B = \{ 1\}$ 时, $\left\{  \begin{array}{l} \Delta  = 4{\left( m + 1\right) }^{2} - 4\left( {{m}^{2} - 5}\right)  = 0 \\  1 + 2\left( {m + 1}\right)  + {m}^{2} - 5 = 0 \end{array}\right.$ ,无解
+                
+                当 $B = \{ 2\}$ 时, $\left\{  \begin{array}{l} \Delta  = 4{\left( m + 1\right) }^{2} - 4\left( {{m}^{2} - 5}\right)  = 0 \\  4 + 4\left( {m + 1}\right)  + {m}^{2} - 5 = 0 \end{array}\right.$ ,解得 $m =  - 3$
+                
+                当 $B = \{ 1,2\}$ 时, $\left\{  \begin{array}{l} 1 + 2 =  - 2\left( {m + 1}\right) \\  1 \cdot  2 = {m}^{2} - 5 \end{array}\right.$ ,无解.
+                
+                综上,实数 $m$ 的取值范围是 $( - \infty , - 3\rbrack$.
+            \end{enumerate}
+        \end{jieda}
     \end{enumerate}
     \item 元素个数与子集个数的转化
     \begin{enumerate}
