@@ -1,0 +1,46 @@
+\chapter*{解析几何}
+\subsection*{圆锥曲线定义识别}
+\begin{enumerate}
+    \item 已知向量$\vv{e_1}, \vv{e_2}$是相互垂直的单位向量，$\vv{a}$是平面内的向量，若对任意的$\lambda \in \mathbf{R}$，都有$|\vv{a}+\lambda \vv{e_1}| \geq |\vv{a} - \vv{e_2}|$，且存在$\lambda$使得等号成立，则$|\vv{e_1}+3\vv{e_2}-\vv{a}| + |\vv{a} - \vv{e_2}|$的最小值为\blkda{3}
+    \begin{jieda}
+        $|\vv{a}+\lambda \vv{e_1}| \geq |\vv{a} - \vv{e_2}|$恒成立，且可以取等即在共起点的情况下，$\vv{a}$终点到过起点$\vv{e_1}$所在的直线的距离等于$\vv{a}$与$\vv{e_2}$终点的距离（符合抛物线的定义） \\
+        设$\vv{e_1} = (1, 0), \vv{e_2} = (0, 1), \vv{a} = (x, y)$，则有$y^2 = x^2 + (y-1)^2$，即$y = \dfrac{x^2+1}{2}$，故$\vv{a}$的终点在抛物线上. \\
+        $|\vv{e_1}+3\vv{e_2}-\vv{a}| + |\vv{a} - \vv{e_2}|$即$\vv{a}$的终点到$\vv{e_1}+3\vv{e_2}$终点距离与$\vv{a}$终点到$\vv{e_2}$终点距离之和，设其为$s$，$s = \sqrt{(x-1)^2+(y-3)^2} + \sqrt{x^2 + (y-1)^2} = \sqrt{(x-1)^2+(y-3)^2}+\sqrt{y^2} \geq 3$
+        （\ps $\vv{a}$终点到$\vv{e_2}$终点距离即抛物线上点到焦点的距离，等于抛物线上点到准线的距离，故当$\vv{a}$终点位于$\vv{e_1}+3\vv{e_2}$终点到准线的垂线与抛物线交点，即$\vv{a} = (1,1)$，时$s$最小为3）
+    \end{jieda}
+
+    \item (2024$\cdot$金山区一模$\cdot$12改)已知平面向量 $\vv{a}$ 、 $\vv{b}$ 、 $\vv{c}$ 满足 $\left| \vv{a}\right| = |\vv{c}| = 2$ ， $\left| {\vv{a} + \vv{b}}\right|  = \left| {\vv{a} - \vv{b}}\right|  + \left| \vv{a}\right|$ ，且 $\langle \vv{a},\vv{c}\rangle  = \dfrac{\pi }{3}$，若有$\vv{b} = \lambda \vv{a} + (1-\lambda)\vv{c}$，则 $\lambda = $\blkda[2]{$\dfrac{1}{4}$}.
+    \begin{jieda}
+        根据题意不妨设 $\vv{a} = \left( {2,0}\right)  = \vv{OA},\vv{b} = \left( {x,y}\right)  = \vv{OB}$ , $\vv{c} = \vv{OC},O$ 为坐标原点,则 $\left| {\vv{a} + \vv{b}}\right|  = \left| {\vv{a} - \vv{b}}\right|  + \left| \vv{a}\right|  \Longrightarrow  \sqrt{{\left( x + 2\right) }^{2} + {y}^{2}} = \sqrt{{\left( x - 2\right) }^{2} + {y}^{2}} + 2$ ,即点 $B$ 到 $\left( {-2,0}\right)$ 的距离比到点 $A$ 的距离大 2,根据双曲线的定义可知 $B$ 的轨迹为双曲线的一支,以 2 为长轴,4 为焦距,则 ${x}^{2} - \dfrac{{y}^{2}}{3} = 1(x >$ 1),又 $\langle \vv{a},\vv{c}\rangle  = \dfrac{\pi }{3}$ ,易知 $C$ 点轨迹为 $l : y =  \pm  \sqrt{3}x\left( {x > 0}\right)$ ,显然 $C$ 点轨迹为 $B$ 点轨迹双曲线的渐近线，又因为$|\vv{c}| = 2$，所以不妨设$C(1, \sqrt{3})$，根据$\vv{b} = \lambda \vv{a} + (1-\lambda)\vv{c}$可知$A, B, C$共线，联立求得$B\left(\dfrac{5}{4}, \dfrac{3\sqrt{3}}{4}\right)$，故$\lambda = \dfrac{1}{4}$.
+    \end{jieda}
+
+    \item (2025$\cdot$宝山区二模$\cdot$12)空间中有相互垂直的两条异面直线 ${l}_{1}$ 、 ${l}_{2}$ ，点 $A$ 、 $B \in  {l}_{1}$ ， $C$ 、 $D \in  {l}_{2}$ ，且 ${AB} =$ 4， ${CD} = 1$ ，若 ${DA}\bot {DB}$ ，且 ${AC} = {BC} + 2$ ，则二面角 $D - {AB} - C$ 平面角的余弦值最小为\blkda[2]{$\dfrac{4\sqrt{3}}{9}$}.
+    \begin{jieda}
+        根据双曲线的定义,平面内到两个定点 $A,B$ (焦点) 的距离之差的绝对值为定值 (小于 $\left| {AB}\right|$ ) 的点的轨迹为双曲线. 由 ${AC} = {BC} + 2$ ,可知点 $C$ 在以 $A,B$ 为焦点的双曲线靠近$B$的一支上. 在空间中,是此双曲线绕 ${AB}$ 旋转得到的曲面. 因为 ${DA} \bot  {DB}$ ,根据直径所对的圆周角是直角,所以点 $D$ 同时在以 ${AB}$ 为直径的球面上. 由于 ${l}_{1} \bot  {l}_{2}$ ,所以 $C,D$ 在与 ${AB}$ 垂直的面上. 
+        
+        设双曲线方程为 ${y}^{2} - \dfrac{{x}^{2}}{3} = 1$ . 过 $C$ 作 ${CE} \bot  {AB}$ 于 $E$，则$\angle CED$即为二面角 $D - {AB} - C$ 平面角.
+        
+        ${CE} =  \sqrt{3{y}^{2} - 3}$， ${DE} = \sqrt{4 - {y}^{2}}$ . 在 $\bigtriangleup  {CED}$ 中，根据余弦定理 $\cos \angle {CED}  = \dfrac{C{E}^{2} + D{E}^{2} - C{D}^{2}}{2 \cdot  {CE} \cdot  {DE}}$ ，通过 $C{E}^{2} = 3{y}^{2} - 3,D{E}^{2} = 4 - {y}^{2}$ 代入余弦定理公式化简得到, $\cos \angle {CED} = \dfrac{3{y}^{2} - 3 + 4 - {y}^{2} - 1}{2\sqrt{\left( {3{y}^{2} - 3}\right) \left( {4 - {y}^{2}}\right) }}  = \dfrac{\sqrt{3}}{3} \cdot  \sqrt{\dfrac{{y}^{4}}{-{y}^{4} + 5{y}^{2} - 4}} = \dfrac{\sqrt{3}}{3} \cdot  \sqrt{\dfrac{1}{-1 - \dfrac{4}{{y}^{4}} + \dfrac{5}{{y}^{2}}}}, y \in [-2, -1]$. 
+        
+        令 $t = \dfrac{1}{{y}^{2}}, t \in \left(\dfrac{1}{4}, 1\right)$ ,则 $\cos \angle {CED} = \dfrac{\sqrt{3}}{3} \cdot  \sqrt{\dfrac{1}{-4{t}^{2} + {5t} - 1}}$ . 对于二次函数 $f\left( t\right)  =  - 4{t}^{2} + {5t} - 1$ ,其对称轴为 $t =  - \dfrac{5}{2 \times  \left( {-4}\right) } = \dfrac{5}{8}$ , 当 $t = \dfrac{5}{8}$ 时, $f\left( t\right)$ 取得最大值 $f\left( \dfrac{5}{8}\right)  =  - 4 \times  {\left( \dfrac{5}{8}\right) }^{2} + 5 \times  \dfrac{5}{8} -  1 = \dfrac{9}{16}$ . 所以 $\cos \angle {CED} = \dfrac{\sqrt{3}}{3} \cdot  \sqrt{\dfrac{1}{-4{t}^{2} + {5t} - 1}} \geq  \dfrac{\sqrt{3}}{3}$ . $\sqrt{\dfrac{1}{\dfrac{9}{16}}} = \dfrac{4\sqrt{3}}{9}$.
+
+        \begin{center}
+        \includegraphics[width=0.4\textwidth]{bodyxb/src/120_285_568_501_211_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item (2025$\cdot$宝山区一模$\cdot$16)设 $\bigtriangleup {A}_{n}{B}_{n}{C}_{n}$ 的三边长分别为 ${a}_{n}$ 、 ${b}_{n}$ 、 ${c}_{n}$ ，面积为 ${S}_{n}$ ( $n$ 为正整数). 若 ${b}_{1} - {c}_{1} = \dfrac{1}{2}{a}_{1}$ ,其中 ${c}_{1} > \dfrac{1}{4}{a}_{1},{a}_{n + 1} = {a}_{n},{b}_{n + 1} = {c}_{n} + \dfrac{1}{4}{a}_{n},{c}_{n + 1} = {b}_{n} + \dfrac{1}{4}{a}_{n}$ ,则 \dotfill{(\kh{B})}
+    \xx{$\left\{  {S}_{n}\right\}$ 为严格减数列}{$\left\{  {S}_{n}\right\}$ 为严格增数列}{$\left\{  {S}_{{2n} - 1}\right\}$ 为严格增数列, $\left\{  {S}_{2n}\right\}$ 为严格减数列}{$\left\{  {S}_{{2n} - 1}\right\}$ 为严格减数列, $\left\{  {S}_{2n}\right\}$ 为严格增数列}
+    \begin{jieda}
+        由已知 ${a}_{n + 1} = {a}_{n}$ ,即 $\bigtriangleup {A}_{n}{B}_{n}{C}_{n}$ 的边 $\left| {{B}_{n}{C}_{n}}\right|$ 为定值，不妨设 ${B}_{n}$ 、 ${C}_{n}$ 为定点,如图所示,又 ${b}_{n + 1} = {c}_{n} + \dfrac{1}{4}{a}_{n},{c}_{n + 1} =  {b}_{n} + \dfrac{1}{4}{a}_{n}$ ,则 ${b}_{n + 1} - {c}_{n + 1} = {c}_{n} - {b}_{n} =  - \left( {{b}_{n} - }\right.  \left. {c}_{n}\right)$ ,即 $\left| {{b}_{n} - {c}_{n}}\right|$ 为定值,又 ${b}_{1} - {c}_{1} = \dfrac{1}{2}{a}_{1}$ ,所以 $\left| {{b}_{n} - {c}_{n}}\right|  =  \dfrac{1}{2}{a}_{1}$ 为定值,即 $\left|\left|{{A}_{n}{B}_{n}}\right| - \left| {{A}_{n}{C}_{n}}\right|  \right|   = \dfrac{1}{2}{a}_{1}$ ,所以动点 ${A}_{n}$ 到定点 ${B}_{n},{C}_{n}$ 的距离之差的绝对值为定值,满足双曲线定义,所以动点 ${A}_{n}$ 的轨迹为以 ${B}_{n},{C}_{n}$ 为焦点的双曲线,如图所示,所以 ${S}_{n} = \dfrac{1}{2}\left| {{B}_{n}{C}_{n}}\right|  \cdot  \left| {y}_{{A}_{n}}\right|  = \dfrac{1}{2}{a}_{1}\left| {y}_{{A}_{n}}\right|$ ,又 ${b}_{n + 1} +  {c}_{n + 1} = {b}_{n} + {c}_{n} + \dfrac{1}{2}{a}_{n} = {b}_{n} + {c}_{n} + \dfrac{1}{2}{a}_{1}$ ,所以数列 $\left\{  {{b}_{n} + {c}_{n}}\right\}$ 是以 ${b}_{1} + {c}_{1}$ 为首项, $\dfrac{1}{2}{a}_{1}$ 为公差的等差数列,则数列 $\left\{  {{b}_{n} + }\right.  \left. {c}_{n}\right\}$ 为递增数列,所以当 $n$ 增大时, ${b}_{n} + {c}_{n}$ 变大,即 $\left| {{A}_{n}{C}_{n}}\right|  +  \left| {{A}_{n}{B}_{n}}\right|$ 变大,此时 ${A}_{n}$ 向远离 $A$ 处运动,即 $\left| {y}_{{A}_{n}}\right|$ 变大,所以 ${S}_{n} = \dfrac{1}{2}{a}_{1}\left| {y}_{{A}_{n}}\right|$ 变大,即数列 $\left\{  {S}_{n}\right\}$ 为严格增数列,且 $\left\{  {S}_{{2n} - 1}\right\}$ , $\left\{  {S}_{2n}\right\}$ 均为严格增数列,故选: B.
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/49_634_1228_185_207_0.jpg}
+        \end{center}
+
+        \ps 设$a_n = a$，迭代可知$\left\{\begin{array}{l}
+            b_{n+2} = b_n + \dfrac{a}{2} \\
+            c_{n+2} = c_n + \dfrac{a}{2}
+        \end{array}\right.$，故易知$\left\{  {S}_{{2n} - 1}\right\}$ 为严格增数列, $\left\{  {S}_{2n}\right\}$ 为严格增数列，结合选项可知选B.
+    \end{jieda}
+\end{enumerate}

@@ -1,15 +1,12 @@
 \subsection*{不等式求解}
 \begin{enumerate}
-    \item 不等式$\dfrac{x^2(x+3)(x^2-x+1)}{x^2 - 5x + 4} > 0$的解集为\blkda[5]{$(-3, 0) \cup (0, 1) \cup (4, +\infty)$}
+    \item 已知不等式$|x+3| \leq 5x$和$\dfrac{x^2(x+3)(x^2-x+1)}{x^2 - 5x + 4} > 0$中有且仅有一个成立，则实数$x$的范围是\blkda[4]{$(-3, 0) \cup \left(0, \dfrac{3}{4}\right) \cup [1, 4]$ }
     \begin{jieda}
-        \ps 穿针引线法求解，奇穿偶回，\textbf{偶次方根绝对不能丢弃，且易出错}.
-    \end{jieda}
+        第一个不等式的解集为$\left[\dfrac{3}{4}, +\infty\right)$，第二个不等式的解集为$(-3, 0) \cup (0, 1) \cup (4, +\infty)$
 
-    \item 已知 $\alpha  : \dfrac{2}{x + 1} > 1,\beta  : m \leq  x \leq  2$ ,若 $\alpha$ 是 $\beta$ 的充分条件,则实数 $m$ 的取值范围是\blkda[4]{$(-\infty, -1]$}.
-    \begin{jieda}
-        $\dfrac{2}{x + 1} > 1 \Longleftrightarrow \dfrac{1 - x}{x + 1} > 0\Longleftrightarrow \left( {1 - x}\right) \left( {1 + x}\right)  > 0$，解得 $- 1 < x < 1$，即 $\alpha  :  - 1 < x < 1$ 
-        
-        若 $\alpha$ 是 $\beta$ 的充分条件,则 $(-1, 1) \subseteq \{ x \mid  m \leq  x \leq  2\}$ ，可得 $m \in (-\infty, -1]$ .
+        因此第一个不等式成立第二个不等式不成立时$x \in [1, 4]$，第二个不等式成立，第一个不等式不成立时$(-3, 0) \cup \left(0, \dfrac{3}{4}\right)$
+
+        两者取并集，得到$(-3, 0) \cup \left(0, \dfrac{3}{4}\right) \cup [1, 4]$ 
     \end{jieda}
 
     \item 已知集合$M = \left\{x \left| \dfrac{ax- 5}{x^2-a} < 0\right. \right\}$，若$3 \in M, 5 \notin M$，则实数$a$的取值范围是\blkda[3]{$\left[1, \dfrac{5}{3}\right) \cup (9, 25]$}
@@ -23,14 +20,6 @@
             \item $\dfrac{3a - 5}{9-a} < 0 \Longrightarrow (3a-5)(9-a) < 0 \Longrightarrow a \in \left(-\infty, \dfrac{5}{3}\right) \cup (9, +\infty)$
             \item $\dfrac{5a - 5}{25-a} \geq 0 \Longrightarrow (5a-5)(25-a) \geq 0, a \neq 25 \Longrightarrow a \in [1, 25)$
         \end{enumerate}
-    \end{jieda}
-    
-    \item 解不等式：$\left|\dfrac{2x+1}{3x-4}\right| > x-1$
-    \begin{jieda}
-        $\left|\dfrac{2x+1}{3x-4}\right| > x-1 \Longleftrightarrow \dfrac{2x+1}{3x-4} > x-1$或$\dfrac{2x+1}{3x-4} < 1-x$ \\
-        $\dfrac{2x+1}{3x-4} > x-1$即$\dfrac{2x+1 + (1-x) \cdot (3x-4)}{3x-4} > 0$，即$\dfrac{-3x^2+9x-3}{3x-4} > 0$，即$\dfrac{x^2-3x+1}{3x-4} < 0$，解得$x \in \left(-\infty, \dfrac{3-\sqrt{5}}{2}\right) \cup \left(\dfrac{4}{3}, \dfrac{3+\sqrt{5}}{2}\right)$ \\
-        $\dfrac{2x+1}{3x-4} < 1-x$即$\dfrac{2x+1 + (x-1) \cdot (3x-4)}{3x-4} < 0$，即$\dfrac{3x^2-5x+5}{3x-4} < 0$，$3x^2-5x+5 > 0$恒成立，因此$x \in \left(-\infty, \dfrac{4}{3}\right)$ \\
-        两者取并集得到原不等式解集为$\left(-\infty, \dfrac{4}{3}\right) \cup \left(\dfrac{4}{3}, \dfrac{3+\sqrt{5}}{2}\right)$
     \end{jieda}
 
     \item 若不等式$(2a-b)x +3a - 4b < 0$的解集是$\left(\dfrac{9}{4}, +\infty\right)$，则不等式$(a-4b)x + 2a - 3b > 0$的解集是\blkda[2]{$\left(-\dfrac{8}{19}, +\infty\right)$}
@@ -62,7 +51,7 @@
 
 \subsection*{平均值不等式、三角不等式、恒成立问题}
 \begin{enumerate}
-    \item 已知 $a > 0,b > 0$ ,且 ${ab} = a - b + 3$ ,则 $a + b$ 的最小值为\blkda[4]{$2\sqrt{2}$}.
+    \item 已知 $a > 0,b > 0$ ,且 ${ab} = a - b + 3$ ,则 $a + b$ 的最小值为\blkda{$2\sqrt{2}$}.
     \begin{jieda}
         因为 ${ab} = a - b + 3$ ,解得: $b = \dfrac{a + 3}{a + 1} = 1 + \dfrac{2}{a + 1}$，则 $a + b = a + 1 + \dfrac{2}{a + 1} \geq  2\sqrt{2}$
         
