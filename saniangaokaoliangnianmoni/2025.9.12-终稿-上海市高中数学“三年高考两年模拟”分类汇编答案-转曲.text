@@ -903,19 +903,14 @@ $\cos \omega {x}_{0} = \dfrac{-{x}_{0}}{{\omega }^{2}} < 0$ ,所以 ${2k\pi } + 
 
 \section*{考点 2 数列的递推公式}
 
-5. 7
-
-【解析】 故答案为: 7 .
 
 6. -6
 
-【解析】 \ding{172}  当 $- b \leq  1$ ,即 $b \geq   - 1$ 时,数列 $\left\{  {a}_{n}\right\}$ 在正整数上单调递增,此时 ${\left( {a}_{m} + {a}_{m + 1} + {a}_{m + 2}\right) }_{\min } = {a}_{1} + {a}_{2} + {a}_{3} =  - 7 \Longrightarrow  {\left( 1 + b\right) }^{2} + \dfrac{b}{2} + {\left( 2 + b\right) }^{2} + \dfrac{b}{2} + {\left( 3 + b\right) }^{2} + \dfrac{b}{2} =  - 7$ ,化简得 $2{b}^{2} + {9b} + {14} = 0$ ,因为 $\Delta  = {9}^{2} - 4 \times  2 \times  {14} =  - {31} < 0$ ,所以方程无解, 不符合题意;
+【解析】  ; 综上所述, $b =  - 6$ .
 
- \ding{173}  当 $- b \geq  2$ ,即 $b \leq   - 2$ 时,根据二次函数的性质可知, $\left( {{a}_{m} + }\right.  {\left. {a}_{m + 1} + {a}_{m + 2}\right) }_{\min } = {a}_{-b - 1} + {a}_{-b} + {a}_{-b + 1} =  - 7 \Longrightarrow  {\left( -1\right) }^{2} +  \dfrac{b}{2} + \dfrac{b}{2} + {1}^{2} + \dfrac{b}{2} =  - 7$ ,解得 $b =  - 6$ ; 综上所述, $b =  - 6$ .
+7. 
 
-7. ${2}^{2022} + 1$
-
-【解析】由已知,当 $\Delta  = 0$ 时,得 ${a}_{n + 1} - 2{a}_{n}\left( {2 - {a}_{n}}\right)  = 0$ ,又 ${a}_{n + 1} = 2{a}_{n}\left( {2 - {a}_{n}}\right)  \geq  0$ ,得 $0 \leq  {a}_{n} \leq  2$ ; 反之,若 $0 \leq  {a}_{n} \leq  2$ , ${a}_{n + 1} =  - 2{\left( {a}_{n} - 1\right) }^{2} + 2 \in  \left\lbrack  {0,2}\right\rbrack$ ,所以 ${a}_{n} \in  \left\lbrack  {0,2}\right\rbrack$ . 设 $a =  2{\sin }^{2}\alpha ,0 \leq  \alpha  \leq  \dfrac{\pi }{2}$ ,则 ${a}_{1} = 2{\sin }^{2}\alpha ,{a}_{2} = 2\left( {2{\sin }^{2}\alpha }\right) \left( {2{\cos }^{2}\alpha }\right)  =  2{\sin }^{2}{2\alpha },{a}_{3} = 2\left( {2{\sin }^{2}{2\alpha }}\right) \left( {2{\cos }^{2}{2\alpha }}\right)  = 2{\sin }^{2}{4\alpha },\cdots ,{a}_{n} =  2{\sin }^{2}\left( {{2}^{n - 1}\alpha }\right) ,{a}_{n + 1} = 2\left( {2{\sin }^{2}\left( {{2}^{n - 1}\alpha }\right) }\right) \left( {2{\cos }^{2}\left( {{2}^{n - 1}\alpha }\right) }\right)  =  2{\sin }^{2}\left( {{2}^{n}\alpha }\right)$ 成立,于是对任意 $n \geq  1,n \in  \mathbf{N}$ ,有 ${a}_{n} =  2{\sin }^{2}\left( {{2}^{n - 1}\alpha }\right)$ ,由 ${a}_{2024} = 0$ ,可得 $2{\sin }^{2}\left( {{2}^{2023}\alpha }\right)  = 0$ ,从而 ${2}^{2023}\alpha  =  {k\pi }$ ,即 $\alpha  = \dfrac{k\pi }{{2}^{2023}},k \in  \mathbf{Z}$ ,结合 $0 \leq  \alpha  \leq  \dfrac{\pi }{2}$ ,知 $0 \leq  k \leq  {2}^{2022}$ ,利用正弦函数在 $\left\lbrack  {0,\dfrac{\pi }{2}}\right\rbrack$ 上是非负的,且是严格递增的,可得有 ${2}^{2022} +$ 1 个不同的实数 $a$ ,使得 ${a}_{2024} = 0$ .
+【解析】
 
 \section*{二、选择题}
 

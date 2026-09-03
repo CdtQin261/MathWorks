@@ -489,7 +489,7 @@ $S_n = \left \{\begin{array}{ll}
 
 \section*{由递推公式求通项公式}
 \subsection*{不动点法构造辅助数列求$a_{n+1} = f(a_n)$的通项公式}
-不动点法的本质是构造同构
+不动点法的本质是构造同构，适用场景：$f$为一次函数、一次比一次、二次比一次.
 
 例题：
 \begin{enumerate}
@@ -635,6 +635,26 @@ $S_n = \left \{\begin{array}{ll}
         
         于是 ${\log }_{2}{a}_{n} + 1 = {2}^{n - 1},{\log }_{2}{a}_{n} = {2}^{n - 1} - 1$ ,所以 ${a}_{n} = {2}^{{2}^{n - 1} - 1}$ .
     \end{jieda}   
+    \item 二次函数型\\
+    在数列 $\left\{  {a}_{n}\right\}$ 中，已知$a_{n+1} = a_n^2+4a_n+2$，$a_1 = 1$,求 $\left\{  {a}_{n}\right\}$ 的通项公式.
+    \begin{jieda}
+        $a_{n+1} = (a_n+2)^2-2$，故$a_{n+1}+2 = (a_n+2)^2$，设$b_n = a_n+2$，则$b_1 = 3, b_{n+1} = b_n^2$，故$b_n = 3^{2^{n-1}}$，$a_n = 3^{2^{n-1}} - 2$.
+    \end{jieda}
+    在数列 $\left\{  {a}_{n}\right\}$ 中，已知$a_{n+1} = -2a_n^2+4a_n$，$a_1 = 1+\dfrac{\sqrt{2}}{2}$,求 $\left\{  {a}_{n}\right\}$ 的通项公式.
+    \begin{jieda}
+        $a_{n+1} = -2a_n^2+4a_n = -2(a_n^2-2a_n)$，故$a_{n+1}-2 = -2(a_n-1)^2$，故有$a_{n+1} - 1 = 1 - 2(a_n-1)^2$
+
+        设$cos\theta_n = a_n - 1$，则$cos\theta_{n+1} = -cos2\theta_n = cos(\pi+2\theta_n)$
+
+        迭代可知$\theta_n = \pi + 2^{n-1}\theta_1$，故$a_n = 1+cos\theta_n = 1+cos(\pi + 2^{n-1}\theta_1)$
+
+        $cos\theta_1 = a_1-1 = \dfrac{\sqrt{2}}{2}$，故可取$\theta_1 = \dfrac{\pi}{4}$，因此$a_n = 1+cos\theta_n = 1+cos[(1+2^{n-3})\pi]$
+
+        \ps 不动点法不行：不动点为0和$\dfrac{3}{2}$，故$\left\{\begin{array}{l}
+            a_{n+1} = -2a_n(a_n-2) \\
+            a_{n+1}-\dfrac{3}{2} = -2\left(a_n-\dfrac{1}{2}\right)\left(a_n-\dfrac{3}{2}\right)
+        \end{array}\right.$
+    \end{jieda}
 \end{enumerate}
 \subsection*{二阶线性递推}
 \begin{enumerate}
