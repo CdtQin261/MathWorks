@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  5 SEP 2026 09:40
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  5 SEP 2026 22:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1670,7 +1670,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/budengshi.aux))
+ (./mainxb.aux (./bodyxb/shulie.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1745,9 +1745,9 @@ Package hyperref Info: Link coloring ON on input line 16.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/budengshi.aux'.
+\openout2 = `bodyxb/shulie.aux'.
 
- (./bodyxb/budengshi.tex
+ (./bodyxb/shulie.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1832,20 +1832,16 @@ Package fontspec Info:
 
 
 
-] [2]
+]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 191.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 76.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 191.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 76.
 
-[3
-
-] [4] [5]) [6
-
-] (./mainxb.aux (./bodyxb/budengshi.aux))
+) [2] (./mainxb.aux (./bodyxb/shulie.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1854,12 +1850,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49483 strings out of 468168
- 1161384 string characters out of 5432816
- 1736320 words of memory out of 5000000
- 77223 multiletter control sequences out of 15000+600000
- 656598 words of font info for 111 fonts, out of 8000000 for 9000
+ 49409 strings out of 468168
+ 1156947 string characters out of 5432816
+ 1741320 words of memory out of 5000000
+ 77155 multiletter control sequences out of 15000+600000
+ 656566 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,17n,128p,655b,1231s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,6n,128p,1424b,1116s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (6 pages).
+Output written on mainxb.pdf (2 pages).

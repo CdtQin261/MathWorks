@@ -3298,75 +3298,86 @@ C. $\sin x > \sin y$ D. ${x}^{3} > {y}^{3}$
     \end{jieda}
 \end{enumerate}
 \subsubsection*{二、选择题}
+\begin{enumerate}
+    \item (2025$\cdot$上海秋季卷$\cdot$16)已知数列 $\left\{  {a}_{n}\right\}$ 、 $\left\{  {b}_{n}\right\}$ 、 $\left\{  {c}_{n}\right\}$ 的通项公式分别为 ${a}_{n} = {10n} - 9,{b}_{n} = {2}^{n},{c}_{n} = \lambda {a}_{n} +  \left( {1 - \lambda }\right) {b}_{n}$. 若对任意的 $\lambda  \in  \left\lbrack  {0,1}\right\rbrack$ ， ${a}_{n}$ 、 ${b}_{n}$ 、 ${c}_{n}$ 的值均能构成三角形，则满足条件的正整数 $n$ 有\dotfill{(\kh{B})}
+    \xx{4 个}{3 个}{1 个}{无数个}
+    \begin{jieda}
+        由题意可知$min\{a_n, b_n\} \times 2 > max\{a_n, b_n\}$，易知$\{b_n\}$增长快于$\{a_n\}$，故枚举前几项即可.
+    \end{jieda}
 
-8.(2025$\cdot$上海秋季卷$\cdot$16)已知数列 $\left\{  {a}_{n}\right\}$ 、 $\left\{  {b}_{n}\right\}$ 、 $\left\{  {c}_{n}\right\}$ 的通项公式分别为 ${a}_{n} = {10n} - 9,{b}_{n} = {2}^{n},{c}_{n} = \lambda {a}_{n} +  \left( {1 - \lambda }\right) {b}_{n}$. 若对任意的 $\lambda  \in  \left\lbrack  {0,1}\right\rbrack$ ， ${a}_{n}$ 、 ${b}_{n}$ 、 ${c}_{n}$ 的值均能构成三角形，则满足条件的正整数 $n$ 有\blkda[2]{}匈椒
+    \item (2025$\cdot$嘉定区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{n} = \sin \left( \dfrac{n\pi }{3}\right)  + {\left( -1\right) }^{n}\cos \left( \dfrac{n\pi }{4}\right)$ ，记其前 $n$ 项和为 ${S}_{n}$ ，前 $n$ 项积为 ${T}_{n}$ ,则下列结论正确的是 \dotfill{(\kh{B})}
+    \xx{数列 $\left\{  {S}_{n}\right\}$ 和数列 $\left\{  {T}_{n}\right\}$ 均不是周期数列}{数列 $\left\{  {S}_{n}\right\}$ 是周期数列,数列 $\left\{  {T}_{n}\right\}$ 不是周期数列}{数列 $\left\{  {S}_{n}\right\}$ 不是周期数列,数列 $\left\{  {T}_{n}\right\}$ 是周期数列}{数列 $\left\{  {S}_{n}\right\}$ 和数列 $\left\{  {T}_{n}\right\}$ 均为周期数列}
+    \begin{jieda}
+        令 ${b}_{n} = \sin \left( \dfrac{n\pi }{3}\right)$ ,则数列 $\left\{  {b}_{n}\right\}$ 的一个周期为 6,又 ${b}_{1} = \dfrac{\sqrt{3}}{2},{b}_{2} = \dfrac{\sqrt{3}}{2},{b}_{3} = 0,{b}_{4} =  - \dfrac{\sqrt{3}}{2},{b}_{5} =  - \dfrac{\sqrt{3}}{2},{b}_{6} = 0$ ,则 ${b}_{1} + {b}_{2} + {b}_{3} + {b}_{4} + {b}_{5} + {b}_{6} = 0$ ,令 ${c}_{n} = {\left( -1\right) }^{n}\cos \left( \dfrac{n\pi }{4}\right)$ ,则数列 $\left\{  {c}_{n}\right\}$ 的一个周期为 8,又 ${c}_{1} =  - \dfrac{\sqrt{2}}{2},{c}_{2} = 0,{c}_{3} = \dfrac{\sqrt{2}}{2},{c}_{4} =  - 1,{c}_{5} = \dfrac{\sqrt{2}}{2},{c}_{6} = 0,{c}_{7} =  - \dfrac{\sqrt{2}}{2},{c}_{8} = 1$ ,则 ${c}_{1} + {c}_{2} + {c}_{3} + {c}_{4} +  {c}_{5} + {c}_{6} + {c}_{7} + {c}_{8} = 0$ ,所以数列 $\left\{  {a}_{n}\right\}$ 的一个周期为 24,且 ${S}_{24} = 0$ ,所以 ${S}_{n} = {S}_{n + {24}}$ ,则 $\left\{  {S}_{n}\right\}$ 的一个周期为 24,又 ${a}_{1} =  {b}_{1} + {c}_{1} = \dfrac{\sqrt{3}}{2} - \dfrac{\sqrt{2}}{2} \neq  0,{a}_{6} = 0$ ,所以 ${T}_{1} = \dfrac{\sqrt{3}}{2} - \dfrac{\sqrt{2}}{2},{T}_{6} = 0$ ,故 ${T}_{n} = 0\left( {n \geq  6,n \in  \mathbf{N}}\right)$ ,所以 $\left\{  {T}_{n}\right\}$ 不是周期数列.
 
-\xx{}{}{}{}4 个 B. 3 个 C. 1 个 D. 无数个
+        \ps 容易判断$\{a_n\}$有周期，则$\{S_n\}$有周期即一个周期内的和为0，$\{T_n\}$有周期即一个周期内的积为1（或为每一项都是0的常数列）
+    \end{jieda}
 
-9.(2025$\cdot$嘉定区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{n} = \sin \left( \dfrac{n\pi }{3}\right)  + {\left( -1\right) }^{n}\cos \left( \dfrac{n\pi }{4}\right)$ ，记其前 $n$ 项和为 ${S}_{n}$ ，前 $n$ 项积为 ${T}_{n}$ ,则下列结论正确的是 \dotfill{(\kh{})}
+    \item (2024$\cdot$宝山区二模$\cdot$16)数列 $\left\{  {a}_{n}\right\}$ 中， ${S}_{n}$ 是其前 $n$ 项的和，若对任意正整数 $n$ ，总存在正整数 $m$ ， 使得 ${S}_{n} = {a}_{m}$ ,则称数列 $\left\{  {a}_{n}\right\}$ 为 “某数列”. 现有如下两个命题:  \ding{172}  等比数列 $\left\{  {2}^{n}\right\}$ 为 “某数列”;  \ding{173}  对任意的等差数列 $\left\{  {a}_{n}\right\}$ ，总存在两个“某数列” $\left\{  {b}_{n}\right\}$ 和 $\left\{  {c}_{n}\right\}$ ，使得 ${a}_{n} = {b}_{n} + {c}_{n}$. 下列选项中正确的是 \dotfill{(\kh{C})}
+    \xx{\ding{172}  \ding{173} 均为真命题}{\ding{172} 为真命题， \ding{173} 为假命题}{\ding{172} 为假命题， \ding{173} 为真命题}{\ding{172}  \ding{173} 均为假命题}
+    \begin{jieda}
+        对于 \ding{172} ,由等比数列 $\left\{  {2}^{n}\right\}$ 可得 ${S}_{n} = {2}^{n + 1} - 2$ ,若对任意正整数 $n$ ,总存在正整数 $m$ ,使得 ${S}_{n} = {a}_{m}$ ,则 ${2}^{n + 1} - 2 = {2}^{m}$ , 即 ${2}^{n + 1} = {2}^{m} + 2$ ,显然不成立,故 \ding{172} 为假命题; 对于 \ding{173} ,设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ ,则 ${a}_{n} = {a}_{1} + \left( {n - 1}\right) d = n{a}_{1} + \left( {n - 1}\right) (d  \left. {-{a}_{1}}\right) \left( {n\text{ 为正整数 }}\right)$ . 令 ${b}_{n} = n{a}_{1},{c}_{n} = \left( {n - 1}\right) \left( {d - {a}_{1}}\right)$ ,则 ${a}_{n} =  {b}_{n} + {c}_{n}\left( {n\text{ 为正整数 }}\right)$ . 下面证 $\left\{  {b}_{n}\right\}$ 是 “某数列”. 设 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和为 ${T}_{n}$ ,则 ${T}_{n} = \dfrac{n\left( {n + 1}\right) }{2}{a}_{1}\left( n\right.$ 为正整数). 于是对任意的正整数 $n$ ,总存在正整数 $m = \dfrac{n\left( {n + 1}\right) }{2}$ ,使得 ${T}_{n} = {b}_{n}$ ,所以 $\left\{  {b}_{n}\right\}$ 是 “某数列”. 同理,可证 $\left\{  {c}_{n}\right\}$ 也是“某数列”. 所以对任意的等差数列 $\left\{  {a}_{n}\right\}$ ,总存在两个 “某数列” $\left\{  {b}_{n}\right\}$ 和 $\left\{  {c}_{n}\right\}$ ,使得 ${a}_{n} =  {b}_{n} + {c}_{n}$ ( $n$ 为正整数)成立,故 \ding{173} 为真命题. 故选:C.
 
-\xx{}{}{}{}数列 $\left\{  {S}_{n}\right\}$ 和数列 $\left\{  {T}_{n}\right\}$ 均不是周期数列
+        \ps 首先还是要判断出$a_n = p(n+q)$型的数列是某数列. 可以先从举出正例$a_n = n$开始，再拓展到$a_n = n+q$和$a_n = pn$（若一个数列是某数列，则其每一项都乘同一个常数后依然是某数列），再拓展到$a_n = p(n+q)$.
+    \end{jieda}
 
-B. 数列 $\left\{  {S}_{n}\right\}$ 是周期数列,数列 $\left\{  {T}_{n}\right\}$ 不是周期数列
+    \item (2025$\cdot$徐汇区一模$\cdot$16)已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，设 ${t}_{n} = \dfrac{{S}_{n}}{n}$ ( $n$ 为正整数). 若存在常数 $c$ ， 使得任意两两不相等的正整数 $i,j,k$ ,都有 $\left( {i - j}\right) {t}_{k} + \left( {j - k}\right) {t}_{i} + \left( {k - i}\right) {t}_{j} = c$ ,则称数列 $\left\{  {a}_{n}\right\}$ 为 “轮换均值数列”. 现有下列两个命题: \ding{172}  任意等差数列 $\left\{  {a}_{n}\right\}$ 都是“轮换均值数列”， \ding{173}  存在公比不为 1 的等比数列 $\left\{  {b}_{n}\right\}$ 是“轮换均值数列”. 则下列说法正确的是 \dotfill{(\kh{A})}
+    \xx{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}{\ding{172}  \ding{173} 都是真命题}{\ding{172}  \ding{173} 都是假命题}
+    \begin{jieda}
+        对于等差数列 $\left\{  {a}_{n}\right\}$可设$t_n = pn+q$，显然满足要求.
 
-C. 数列 $\left\{  {S}_{n}\right\}$ 不是周期数列,数列 $\left\{  {T}_{n}\right\}$ 是周期数列
+        对于公比不为 1 的等比数列 $\left\{  {b}_{n}\right\}$可设$t_n = \dfrac{A}{n}(1-q^n)$，显然不满足要求.
+    \end{jieda}
 
-D. 数列 $\left\{  {S}_{n}\right\}$ 和数列 $\left\{  {T}_{n}\right\}$ 均为周期数列
+    \item (2025$\cdot$杨浦区一模$\cdot$16)设无穷数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，且对任意的正整数 $n$ ， ${a}_{n + 1} = \dfrac{{S}_{n}}{{a}_{n}}$ ，则 $\mathop{\sum }\limits_{{i = 1}}^{5}{a}_{2i} - \mathop{\sum }\limits_{{i = 1}}^{6}{a}_{{2i} - 1}$ 的值可能为 \dotfill{(\kh{A})}
+    \xx{$-6$}{$0$}{$6$}{$12$}
+    \begin{jieda}
+        当 $n = 1$ 时, ${a}_{2} = \dfrac{{S}_{1}}{{a}_{1}} = 1$ . 当 $n \geq  2$ 时, ${S}_{n} = {a}_{n}{a}_{n + 1}$ , 所以 ${S}_{n - 1} = {a}_{n - 1}{a}_{n}$ ,两式相减得: ${a}_{n} = {a}_{n}\left( {{a}_{n + 1} - {a}_{n - 1}}\right)$ ,因为 ${a}_{n} \neq  0$ ,所以 ${a}_{n + 1} - {a}_{n - 1} = 1$ . 所以数列 $\left\{  {a}_{n}\right\}$ 的奇数项是以 ${a}_{1}$ 为首项,1 为公差的等差数列,且 ${a}_{1} \neq  0$ . 所以 $\mathop{\sum }\limits_{{i = 1}}^{6}{a}_{{2i} - 1} =  6{a}_{1} + \dfrac{6 \times  5}{2} \times  1 = 6{a}_{1} + {15}$ . 同理,数列 $\left\{  {a}_{n}\right\}$ 的偶数项是以 1 为首项，1 为公差的等差数列，所以 $\mathop{\sum }\limits_{{i = 1}}^{5}{a}_{2i} = 5 \times  1 + \dfrac{5 \times  4}{2} \times  1 = {15}$ . 所以 $\mathop{\sum }\limits_{{i = 1}}^{5}{a}_{2i} - \mathop{\sum }\limits_{{i = 1}}^{6}{a}_{{2i} - 1} = {15} - 6{a}_{1} - {15} =  - 6{a}_{1}$ . 若 $- 6{a}_{1} =  - 6 \Longrightarrow  {a}_{1} = 1$ ,则数列 $\left\{  {a}_{n}\right\}$ 各项均不为 0,数列 $\left\{  {a}_{n}\right\}$ 是无穷数列,故 ${A}$ 正确; 若 $- 6{a}_{1} = 0 \Longrightarrow  {a}_{1} = 0$ ,这与 ${a}_{1} \neq  0$ 矛盾,故 B 错误; 若 $- 6{a}_{1} = 6 \Longrightarrow  {a}_{1} =  - 1$ ,根据奇数项成公差为 1 的等差数列,则 ${a}_{3} = 0$ ,则 ${a}_{4}$ 无法求出,这与数列 $\left\{  {a}_{n}\right\}$ 是无穷数列矛盾,故 ${C}$ 错误; 若 $- 6{a}_{1} = {12} \Longrightarrow  {a}_{1} =  - 2$ ,根据奇数项成公差为 1 的等差数列,则 ${a}_{5} = 0$ ,则 ${a}_{6}$ 无法求出,这与数列 $\left\{  {a}_{n}\right\}$ 是无穷数列矛盾,故 ${D}$ 错误. 故选: A.
+    \end{jieda}
 
-10.(2024$\cdot$宝山区二模$\cdot$16)数列 $\left\{  {a}_{n}\right\}$ 中， ${S}_{n}$ 是其前 $n$ 项的和，若对任意正整数 $n$ ，总存在正整数 $m$ ， 使得 ${S}_{n} = {a}_{m}$ ,则称数列 $\left\{  {a}_{n}\right\}$ 为 “某数列”. 现有如下两个命题:  \ding{172}  等比数列 $\left\{  {2}^{n}\right\}$ 为 “某数列”;  \ding{173}  对任意的等差数列 $\left\{  {a}_{n}\right\}$ ，总存在两个“某数列” $\left\{  {b}_{n}\right\}$ 和 $\left\{  {c}_{n}\right\}$ ，使得 ${a}_{n} = {b}_{n} + {c}_{n}$. 下列选项中正确的是 \dotfill{(\kh{})}
+    \item (2025$\cdot$长宁区一模$\cdot$16)数列 $\left\{  {a}_{n}\right\}$ 为严格增数列，且对任意的正整数 $n$ ，都有 $\dfrac{{a}_{n + 1}}{n + 1} \geq  \dfrac{{a}_{n}}{n}$ ，则称数列 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”. 现给出两个命题:
+    \ding{172}  存在等差数列 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”；
 
-\xx{}{}{}{} \ding{172}  \ding{173} 均为真命题 B.  \ding{172} 为真命题， \ding{173} 为假命题
+    \ding{173}  任意等比数列 $\left\{  {a}_{n}\right\}$ ，若首项 ${a}_{1} > 0$ ，则 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”.
 
-C.  \ding{172} 为假命题， \ding{173} 为真命题 D.  \ding{172}  \ding{173} 均为假命题
+    下列判断正确的是 \dotfill{(\kh{B})}
 
-11.(2025$\cdot$徐汇区一模$\cdot$16)已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，设 ${t}_{n} = \dfrac{{S}_{n}}{n}$ ( $n$ 为正整数). 若存在常数 $c$ ， 使得任意两两不相等的正整数 $i,j,k$ ,都有 $\left( {i - j}\right) {t}_{k} + \left( {j - k}\right) {t}_{i} + \left( {k - i}\right) {t}_{j} = c$ ,则称数列 $\left\{  {a}_{n}\right\}$ 为 “轮换均值数列”. 现有下列两个命题: \ding{172}  任意等差数列 $\left\{  {a}_{n}\right\}$ 都是“轮换均值数列”， \ding{173}  存在公比不为 1 的等比数列 $\left\{  {b}_{n}\right\}$ 是“轮换均值数列”. 则下列说法正确的是 \dotfill{(\kh{})}
+    \xx{\ding{172}  \ding{173} 都是真命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}{\ding{172}  \ding{173} 都是假命题}
+    \begin{jieda}
+        设等差数列 $\left\{  {a}_{n}\right\}$通项公式为$a_n = an+b, a > 0$，则满足“性质 $\Omega$ ”即$\dfrac{a(n+1)+b}{n+1} \geq \dfrac{an+b}{n}$，当$b = 0$时即可.
 
-\xx{}{}{}{} \ding{172} 是真命题， \ding{173} 是假命题 B.  \ding{172} 是假命题， \ding{173} 是真命题
+        设等比数列 $\left\{  {a}_{n}\right\}$通项公式为$a_n = a_1q^{n-1}, a_1 > 0, q > 1$，则满足“性质 $\Omega$ ”即$\dfrac{a_1q^n}{n+1} \geq \dfrac{a_1q^{n-1}}{n}$，即$q \geq \dfrac{n+1}{n}$，故$q \geq 2$.
 
-C.  \ding{172}  \ding{173} 都是真命题 D.  \ding{172}  \ding{173} 都是假命题
+        \ps 举反例$q = 1$也可.
+    \end{jieda}
 
-12.(2025$\cdot$杨浦区一模$\cdot$16)设无穷数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，且对任意的正整数 $n$ ， ${a}_{n + 1} = \dfrac{{S}_{n}}{{a}_{n}}$ ，则 $\mathop{\sum }\limits_{{i = 1}}^{5}{a}_{2i} - \mathop{\sum }\limits_{{i = 1}}^{6}{a}_{{2i} - 1}$ 的值可能为 \dotfill{(\kh{})}
+    \item (2024$\cdot$长宁区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若存在非零常数 $c$ ，使得对任意正整数 $n$ ， 都有 $2\sqrt{{S}_{n}} = {a}_{n} + c$ ,则称数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$. 现有如下两个命题: \ding{172}  存在等差数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$ ;  \ding{173}  不存在等比数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$. 下列判断正确的是 \dotfill{(\kh{B})}
+    \xx{\ding{172}  \ding{173} 均是真命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}{\ding{172}  \ding{173} 均是假命题}
+    \begin{jieda}
+        根据等差数列前$n$项和的形式可知$S_n = k\cdot n^2$可以满足要求，具体计算可知对 ${a}_{n} = {2n} - 1$ ,知 $\left\{  {a}_{n}\right\}$ 是等差数列,而 ${S}_{n} =  \dfrac{1}{2}n \cdot  \left( {1 + {2n} - 1}\right)  = {n}^{2}$ ,令 $c = 1$ 就有 $2\sqrt{{S}_{n}} = {2n} = {2n} -  1 + 1 = {a}_{n} + c$ ,所以 $\left\{  {a}_{n}\right\}$ 具有性质 $p$ ,这表明存在等差数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$
+        
+        根据等比数列前$n$项和的形式可知$q = -1$可以满足要求，故根据前两项有$\left\{\begin{array}{l}
+            2\sqrt{a_1} = a_1+c \\
+            0 = -a_1+c
+        \end{array}\right.$，解得$\left\{\begin{array}{l}
+            a_1 = 1 \\
+            c = 1
+        \end{array}\right.$，经检验$a_n = (-1)^{n-1}$满足要求，所以$\left\{  {a}_{n}\right\}$ 具有性质 $p$ ,这表明存在等比数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$ . 综上, \ding{172}  真、 \ding{173} 假. 故选: B.
+    \end{jieda}
 
-\xx{}{}{}{}-6 B. 0
+    \item (2025$\cdot$奉贤区一模$\cdot$16)已知数列 $\left\{  {a}_{n}\right\}$ 不是常数列，前 $n$ 项和为 ${S}_{n}$ ， ${a}_{n} > 0$. 若对任意正整数列，存在正整数 $m$ ,使得 $\left| {{S}_{n} - {a}_{m}}\right|  < {a}_{1}$ ,则称 $\left\{  {a}_{n}\right\}$ 是 “可控数列”. 现给出两个命题:
 
-C. 6 D. 12
+    \ding{172}  若各项均为正整数的等差数列 $\left\{  {a}_{n}\right\}$ 满足: $d = 3$ ，则 $\left\{  {a}_{n}\right\}$ 是“可控数列”；
 
-13.(2025$\cdot$长宁区一模$\cdot$16)数列 $\left\{  {a}_{n}\right\}$ 为严格增数列，且对任意的正整数 $n$ ，都有 $\dfrac{{a}_{n + 1}}{n + 1} \geq  \dfrac{{a}_{n}}{n}$ ，则称数列 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”. 现给出两个命题:
+    \ding{173}  若等比数列 $\left\{  {a}_{n}\right\}$ 是“可控数列”，则其公比为 $q \in  \left( {0,1}\right)$.
 
- \ding{172}  存在等差数列 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”；
+    下列判断正确的是 \dotfill{(\kh{})}
 
- \ding{173}  任意等比数列 $\left\{  {a}_{n}\right\}$ ，若首项 ${a}_{1} > 0$ ，则 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”.
+    \xx{\ding{172} 与 \ding{173} 均为真命题}{\ding{172} 与 \ding{173} 均为假命题}{\ding{172} 为假命题， \ding{173} 为真命题}{\ding{172} 为真命题， \ding{173} 为假命题}
 
-下列判断正确的是 \dotfill{(\kh{})}
-
-\xx{}{}{}{} \ding{172}  \ding{173} 都是真命题 B.  \ding{172} 是真命题， \ding{173} 是假命题
-
-C.  \ding{172} 是假命题， \ding{173} 是真命题 D.  \ding{172}  \ding{173} 都是假命题
-
-14.(2024$\cdot$长宁区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若存在非零常数 $c$ ，使得对任意正整数 $n$ ， 都有 $2\sqrt{{S}_{n}} = {a}_{n} + c$ ,则称数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$. 现有如下两个命题: \ding{172}  存在等差数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$ ;  \ding{173}  不存在等比数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$. 下列判断正确的是 \dotfill{(\kh{})}
-
-\xx{}{}{}{} \ding{172}  \ding{173} 均是真命题 B.  \ding{172} 是真命题， \ding{173} 是假命题
-
-C.  \ding{172} 是假命题， \ding{173} 是真命题 D.  \ding{172}  \ding{173} 均是假命题
-
-15.(2025$\cdot$奉贤区一模$\cdot$16)已知数列 $\left\{  {a}_{n}\right\}$ 不是常数列，前 $n$ 项和为 ${S}_{n}$ ， ${a}_{n} > 0$. 若对任意正整数列，存在正整数 $m$ ,使得 $\left| {{S}_{n} - {a}_{m}}\right|  < {a}_{1}$ ,则称 $\left\{  {a}_{n}\right\}$ 是 “可控数列”. 现给出两个命题:
-
- \ding{172}  若各项均为正整数的等差数列 $\left\{  {a}_{n}\right\}$ 满足: $d = 3$ ，则 $\left\{  {a}_{n}\right\}$ 是“可控数列”；
-
- \ding{173}  若等比数列 $\left\{  {a}_{n}\right\}$ 是“可控数列”，则其公比为 $q \in  \left( {0,1}\right)$.
-
-下列判断正确的是 \dotfill{(\kh{})}
-
-\xx{}{}{}{} \ding{172} 与 \ding{173} 均为真命题 B.  \ding{172} 与 \ding{173} 均为假命题
-
-C.  \ding{172} 为假命题， \ding{173} 为真命题 D.  \ding{172} 为真命题， \ding{173} 为假命题
-
-16.(2024$\cdot$黄浦区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若对任意的正整数 $n$ ， ${S}_{n}$ 都是数列 $\left\{  {a}_{n}\right\}$ 中的项，则称数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 对于命题: \ding{172}  存在“ $T$ 数列” $\left\{  {a}_{n}\right\}$ ，使得数列 $\left\{  {S}_{n}\right\}$ 为公比不为 1 的等比数列;  \ding{173}  对于任意的实数 ${a}_{1}$ ,都存在实数 $d$ ,使得以 ${a}_{1}$ 为首项、 $d$ 为公差的等差数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 下列判断正确的是 \dotfill{(\kh{})}
-
-\xx{}{}{}{} \ding{172} 和 \ding{173} 均为真命题 B.  \ding{172} 和 \ding{173} 均为假命题
-
-C.  \ding{172} 是真命题， \ding{173} 是假命题 D.  \ding{172} 是假命题， \ding{173} 是真命题
-
+    \item (2024$\cdot$黄浦区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若对任意的正整数 $n$ ， ${S}_{n}$ 都是数列 $\left\{  {a}_{n}\right\}$ 中的项，则称数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 对于命题: \ding{172}  存在“ $T$ 数列” $\left\{  {a}_{n}\right\}$ ，使得数列 $\left\{  {S}_{n}\right\}$ 为公比不为 1 的等比数列;  \ding{173}  对于任意的实数 ${a}_{1}$ ,都存在实数 $d$ ,使得以 ${a}_{1}$ 为首项、 $d$ 为公差的等差数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 下列判断正确的是 \dotfill{(\kh{})}
+    \xx{\ding{172} 和 \ding{173} 均为真命题}{\ding{172} 和 \ding{173} 均为假命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题} 
+\end{enumerate}
 \subsection*{考点 3 等差数列及其前 $n$ 项和}
 
 \subsubsection*{一、填空题}

@@ -196,16 +196,12 @@
     \begin{jieda}
         首先写出$p$的否定：$\forall x < 0, x + a - 1 \neq 0$，该命题为真命题可以转化为$(-\infty, 0) \subseteq \{x | x \neq 1-a\}$，由此可以推出$1 - a \geq 0$，即$a \leq 1$
     \end{jieda}
-    \item 已知命题$p: \forall x \in \{x | -3 \leq x \leq 2\}$，都有$x \in \{x|a-4 \leq x \leq a+5\}$，且$\neg p$是假命题，求实数$a$的取值范围．
-    \begin{jieda}
-        $\neg p$是假命题即$p$是真命题。$p: \forall x \in \{x | -3 \leq x \leq 2\}$，都有$x \in \{x|a-4 \leq x \leq a+5\}$可以转化为$[-3, 2] \subseteq [a-4, a+5]$。故有$a + 5 \geq 2, a -4 \leq -3$，综上$a \in [-3, 1]$
-    \end{jieda}
     \item 已知$p: -5 < a < 7$；$q:$“集合$A = \{x | x^2 + (a+2)x + 1 = 0, x \in \mathbf{R}\}$”，“$B = \{x | x > 0\}$，且$A \cap B = \varnothing$”，求实数$a$的取值范围，使得$p, q$中只有一个为真。
     \begin{jieda}
         首先应分析$p, q$的真假与$a$的取值之间的对应关系。
         \begin{dingautolist}{172}
             \item $p$真，则$a \in (-5, 7)$
-            \item $p$假，则$a \in (-\infty, -5) \cup [7, +\infty)$
+            \item $p$假，则$a \in (-\infty, -5] \cup [7, +\infty)$
             \item $q$真，应分情况进行讨论
                 \begin{enumerate}[1.]
                     \item $A = \varnothing$ \\
