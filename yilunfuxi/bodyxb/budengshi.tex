@@ -177,7 +177,7 @@
         \ps 本题画数轴可以更方便分析，本题判断出$a$和$1-a$关于$\dfrac{1}{2}$对称后可以猜测到两个整根是0和1.
     \end{jieda}
 \end{enumerate}
-
+\clearpage
 \subsection*{平均值不等式（基础）}
 
 \begin{table}[h]
@@ -284,7 +284,7 @@ $H_n \leq G_n \leq A_n \leq Q_n$，其中：
 
         $(ac + bd)^2 \leq (1+2) \cdot (1+x+1-x) = 6$，$ac+bd \leq \sqrt{6}$
     \end{jieda}
-    \item  (2026$\cdot$金山区一模$\cdot$16)记曲线 $C : \dfrac{{\left| x\right| }^{n}}{a} + \dfrac{{\left| y\right| }^{n}}{b} = 1\left( {a > 0\text{且}b > 0,n > 0\text{且}n \in  \mathbf{R}}\right)$ 为 ${C}_{\left( a,b\right) }^{n}$ ,称其为 “超椭圆”. 命题\ding{172} : 直线 $l : {2x} + {9y} - {12} = 0$ 与超椭圆 ${C}_{\left( 3,2\right) }^{\frac{1}{2}}$ 有 3 个不同交点; 命题\ding{173} : 超椭圆 ${C}_{\left( 9,1\right) }^{8}$ 上的点到坐标原点距离的取值范围为 $\left\lbrack  {1,{2}^{\frac{5}{8}}}\right\rbrack$ . 则下列说法正确的是\dotfill{(\kh{B})}
+    \item  (2026$\cdot$金山区一模$\cdot$16)记曲线 $C : \dfrac{{\left| x\right| }^{n}}{a} + \dfrac{{\left| y\right| }^{n}}{b} = 1\left( {a > 0\text{且}b > 0,n > 0\text{且}n \in  \mathbf{R}}\right)$ 为 ${C}_{\left( a,b\right) }^{n}$ ,称其为 “超椭圆”. 命题\ding{172} : 直线 $l : {2x} + {9y} - {12} = 0$ 与超椭圆 ${C}_{\left( 3,2\right) }^{\dfrac{1}{2}}$ 有 3 个不同交点; 命题\ding{173} : 超椭圆 ${C}_{\left( 9,1\right) }^{8}$ 上的点到坐标原点距离的取值范围为 $\left\lbrack  {1,{2}^{\dfrac{5}{8}}}\right\rbrack$ . 则下列说法正确的是\dotfill{(\kh{B})}
     \xx{\ding{172}  \ding{173} 都正确}{\ding{172} 正确， \ding{173} 错误}{\ding{172} 错误， \ding{173} 正确}{\ding{172}  \ding{173} 错误}
     \begin{jieda}
         \begin{dingautolist}{172}
@@ -356,22 +356,6 @@ $H_n \leq G_n \leq A_n \leq Q_n$，其中：
         \end{enumerate}
         \ps 恒成立问题，首先考虑主元应该是谁，然后考虑是否要参变分离.
     \end{jieda}
-    \item 若存在 $x \in  \left\lbrack  {1,3}\right\rbrack$ ,使不等式 ${x}^{2} - {2ax} + a + 2 \leq  0$ 成立,则 $a$ 的取值范围为\blkda[4]{$\lbrack 2, + \infty )$}.
-    \begin{jieda}
-        由 ${x}^{2} - {2ax} + a + 2 \leq  0 \Longrightarrow  {x}^{2} + 2 \leq  a\left( {{2x} - 1}\right)$
-
-        因为 $x \in  \left\lbrack  {1,3}\right\rbrack$ ,所以 ${2x} - 1 \in  \left\lbrack  {1,5}\right\rbrack$ ,令 $t = {2x} - 1 \in  \left\lbrack  {1,5}\right\rbrack  ,x = \dfrac{t + 1}{2}$ ,
-        
-        由 ${x}^{2} + 2 \leq  a\left( {{2x} - 1}\right)  \Longrightarrow  a \geq  \dfrac{{x}^{2} + 2}{{2x} - 1} = \dfrac{\dfrac{1}{4}\left( {{t}^{2} + {2t} + 9}\right) }{t} = \dfrac{1}{4}\left( {t + \dfrac{9}{t} + 2}\right)$ ,
-        
-        构造函数 $g\left( t\right)  = \dfrac{1}{4}\left( {t + \dfrac{9}{t} + 2}\right)  \geq  \dfrac{1}{4}\left( {2\sqrt{t \cdot  \dfrac{9}{t}} + 2}\right)  = 2$ ,
-        
-        即 $g{\left( t\right) }_{\min } = 2$ ,当且仅当 $t = 3 \in  \left\lbrack  {1,5}\right\rbrack$ 时取等号，所以 $a \geq  g{\left( t\right) }_{\min } = 2$
-    \end{jieda} 
-    \item (2024$\cdot$长宁区一模$\cdot$10) 若 “存在 $x > 0$ ，使得 ${x}^{2} + {ax} + 1 < 0$”是假命题，则实数 $a$ 的取值范围为\blkda[2]{$\lbrack  - 2, + \infty )$}.
-    \begin{jieda}
-        由题意可得: “任意 $x > 0$ ,使得 ${x}^{2} + {ax} + 1 \geq  0$ ” 是真命题，等价于 “任意 $x > 0$ ,使得 $x + \dfrac{1}{x} \geq   - a$ ” 是真命题,因为 $x + \dfrac{1}{x} \geq  2\sqrt{x \cdot  \dfrac{1}{x}} = 2$ ,当且仅当 $x = \dfrac{1}{x}$ ,即 $x = 1$ 时,等号成立,所以 $2 \geq   - a$，所以实数 $a$ 的取值范围 $\lbrack  - 2, +\infty )$.
-    \end{jieda}
 
     \item 已知函数 $f\left( x\right)  = e^x - 2ax \geq  0$在$(0, +\infty)$恒成立,则实数 $a$ 的取值范围是\blkda{$\left(-\infty, \dfrac{e}{2}\right]$}
     \begin{jieda}
@@ -388,6 +372,81 @@ $H_n \leq G_n \leq A_n \leq Q_n$，其中：
         \end{dingautolist}
 
         \ps 题干可以改成“已知函数 $f\left( x\right)  = e^x - ax^2$在$(0, +\infty)$单调递增”.
+    \end{jieda}
+
+    \item (2024$\cdot$长宁区一模$\cdot$10) 若 “存在 $x > 0$ ，使得 ${x}^{2} + {ax} + 1 < 0$”是假命题，则实数 $a$ 的取值范围为\blkda[2]{$\lbrack  - 2, + \infty )$}.
+    \begin{jieda}
+        由题意可得: “任意 $x > 0$ ,使得 ${x}^{2} + {ax} + 1 \geq  0$ ” 是真命题，等价于 “任意 $x > 0$ ,使得 $x + \dfrac{1}{x} \geq   - a$ ” 是真命题,因为 $x + \dfrac{1}{x} \geq  2\sqrt{x \cdot  \dfrac{1}{x}} = 2$ ,当且仅当 $x = \dfrac{1}{x}$ ,即 $x = 1$ 时,等号成立,所以 $2 \geq   - a$，所以实数 $a$ 的取值范围 $\lbrack  - 2, +\infty )$.
+    \end{jieda}
+
+    \item 已知函数$f(x) = x - 2$，$g(x) = mx^2-2mx+1(m \in \mathbf{R})$. 
+    \begin{enumerate}
+        \item 对任意的$x \in \mathbf{R}$，不等式$g(x) > f(x)$恒成立，求$m$取值范围.
+        \item 对任意的$x_1 \in [1, 2], x_2 \in [-1, 0]$，不等式$g(x_1) > f(x_2)$恒成立，求$m$取值范围.
+        \item 对任意的$x_1 \in [1, 2]$，存在$x_2 \in [3, 4]$，使得$g(x_1) = f(x_2)$，求$m$取值范围.
+        \item 对任意的$x_1 \in [1, 2]$，存在$x_2 \in [0, 2]$，使得$g(x_1) > f(x_2)$，求$m$取值范围.
+    \end{enumerate}
+    
+    \begin{jieda}
+        \begin{enumerate}
+            \item 问题转化为$g(x) - f(x) > 0$在$\mathbf{R}$上恒成立，即$mx^2-(2m+1)x+3 > 0$恒成立. $m = 0$不满足要求，$m < 0$不满足要求，$m > 0$时应有$\Delta < 0$，即$m \in \left(\dfrac{2-\sqrt{3}}{2}, \dfrac{2+\sqrt{3}}{2}\right)$
+            \item 问题转化为$g(x)$在$[1, 2]$上的最小值大于$f(x)$在$[3, 4]$上的最大值. $f(x)$在$[-1, 0]$上的最大值为$-2$，故问题转化为$g(x) + 2 > 0$在$[1, 2]$上恒成立，设$h(x) = g(x) + 2 = mx^2-2mx + 3 = m(x-1)^2-(m-3)$，下面分析$h(x)$的最值
+            \begin{dingautolist}{172}
+                \item $m > 0$，$h(x)$在$[1, 2]$内单调递增，因此最小值为$h(1) = 3-m$
+                \item $m = 0$，$h(x) = 3$，最小值为$3$
+                \item $m < 0$，$h(x)$在$[1, 2]$内单调递减，因此最小值为$h(2) = 3$
+            \end{dingautolist}
+            故当$m \in (-\infty, 3)$时，满足要求.
+            \item 问题转化为$g(x)$在$[1, 2]$上的值域是$f(x)$在$[3, 4]$上值域的子集. $f(x)$在$[3, 4]$上值域为$[1, 2]$，$g(x) = m(x-1)^2 + (1-m)$，下面分析$g(x)$的值域
+            \begin{dingautolist}{172}
+                \item $m > 0$，$g(x)$在$[1, 2]$内单调递增，值域为$[1-m, 1]$
+                \item $m = 0$，$g(x) = 1$，值域为$\{1\}$
+                \item $m < 0$，$g(x)$在$[1, 2]$内单调递增，值域为$[1, 1-m]$
+            \end{dingautolist}
+            故当$m \in [-1, 0]$时满足要求.
+            \item 问题转化为$g(x)$在$[1, 2]$上的最小值大于$f(x)$在$[0, 2]$上的最小值. $f(x)$在$[0, 2]$上最小值为-2，下面分析$g(x)$的最值
+            \begin{dingautolist}{172}
+                \item $m > 0$，$g(x)$在$[1, 2]$内单调递增，因此最小值为$g(1) = 1-m$
+                \item $m = 0$，$g(x) = -1$，最小值为$-1$
+                \item $m < 0$，$g(x)$在$[1, 2]$内单调递减，因此最小值为$g(2) = 1$
+            \end{dingautolist}
+            故当$m \in (-\infty, 3)$时，满足要求.
+        \end{enumerate}
+    \end{jieda}
+
+    \item (2026$\cdot$上海秋季卷$\cdot$20)定义 $\Gamma  : {x}^{2} - {y}^{2} = 1,{F}_{1}\text{、}{F}_{2}$ 为 $\Gamma$ 的左右焦点 
+    \begin{enumerate}
+        \item 求点$(2,0)$到 $\Gamma$ 渐近线的距离
+        \item ${P}$ 为 $\Gamma$ 上一点, $\vv{P{F}_{1}} \cdot  \vv{P{F}_{2}} = 1$ ,求 $\bigtriangleup P{F}_{1}{F}_{2}$ 的面积
+        \item 设 $\Omega  : {x}^{2} - {y}^{2} = 1$ ,其中 $\left\{  \begin{array}{l} x < 0 \\  y \leq   - 1 \end{array}\right.$ 或 $\left\{  \begin{array}{l} x > 0 \\  y \geq   - 1 \end{array}\right.$ ,过点 ${F}_{2}$ 的直线 $l$ 交 $\Omega$ 于 $P\text{、}Q$ 两点(分别位于一、四象限),过点 ${F}_{2}$ 直线 $m$ 交$\Omega$ 于 $M\text{、}N$ 两点 (分别位于三、四象限),是否存在正数 $\lambda$ ,对于任意的 $l$ ,都存在唯一的 $m$ ,使 $\left| {MN}\right|  = \lambda \left| {PQ}\right|$ 成立,若存在,求出所有的 $\lambda$ ,若不存在,请说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 渐近线为$y = \pm x$，$(2, 0)$到渐近线的距离为$d = \sqrt{2}$
+            \item $F_1(-\sqrt{2}, 0), F_2(\sqrt{2}, 0)$
+            \begin{dingautolist}{172}
+                \item 设$P(x_0, y_0)$，$\vv{PF_1} \cdot \vv{PF_2} = |\vv{OP}|^2 - 2 = 1$，故$\left\{\begin{array}{l}
+                     x_0^2 + y_0^2 = 3 \\
+                     x_0^2 - y_0^2 = 1
+                \end{array}\right.$，故$y_0 = \pm 1$
+                \item 设$P\left(\dfrac{1}{cos\theta}, tan\theta\right), \theta \in \left[0, 2\pi\right)$且$\theta \neq \dfrac{\pi}{2}, \dfrac{3\pi}{2}$，则$\vv{PF_1} = \left(-\sqrt{2} - \dfrac{1}{cos\theta}, -tan\theta\right)$，$\vv{PF_2} = \left(\sqrt{2} - \dfrac{1}{cos\theta}, -tan\theta\right)$，$1 = \vv{PF_1} \cdot \vv{PF_2} = \dfrac{1}{cos^2\theta} - 2 + tan^2\theta$，即$3cos^2\theta = 1 + sin^2\theta$，即$cos^2\theta = \dfrac{1}{2}$，故$y_P = \pm 1$
+            \end{dingautolist}
+            故$S_{\triangle{PF_1F_2}} = \sqrt{2}$
+            
+            \item 由题可知$x_M < 0 < x_N$，$x_Q < \sqrt{2} < x_P$，$k_l \in (1, +\infty)$，或$k_l$不存在，$k_m \in \left[\dfrac{\sqrt{2}}{4}, 1\right)$
+            
+            $|F_2M| = \sqrt{(x_M-\sqrt{2})^2+y_M^2} = -\sqrt{2}x_M+1$，同理$|F_2N| = \sqrt{2}x_N - 1$，故$|MN| = 2-\sqrt{2}(x_M+x_N)$
+
+            $|F_2P| = \sqrt{2}x_P - 1$，$|F_2Q| = \sqrt{2}x_Q - 1$，故$|PQ| = \sqrt{2}(x_P + x_Q) - 2$
+
+            设直线$PQ: y = k_l(x-\sqrt{2})$，与双曲线联立得$(1-k_l^2)x^2+2\sqrt{2}k_l^2x-(2k_l^2+1)=0$
+
+            $\Delta>0$, $x_P+x_Q=-\dfrac{2\sqrt{2}k_l^2}{1-k_l^2}$，故$|PQ|= \dfrac{-4k_l^2}{1-k_l^2}-2 \in (2,+\infty)$, 当$k_l$不存在时，$|PQ|=2$，故$|PQ|\in [2,+\infty)$
+
+            同理可得$|MN|=2+\dfrac{4k_m^2}{1-k_m^2}$，故$|MN|$随$k_m$增大严增，$|MN|\in \left[\dfrac{18}{7},+\infty\right)$
+
+            因此当$\lambda \geq \dfrac{9}{7}$满足要求.
+        \end{enumerate}
     \end{jieda}
 
     \item (2024$\cdot$虹口区二模$\cdot$12)已知关于 $x$ 的不等式 $\left( {\ln x - {kx}}\right) \left\lbrack  {{x}^{2} - \left( {k + 3}\right) x + 4}\right\rbrack   \leq  0$ 对任意 $x \in  \left( {0, + \infty }\right)$ 均成立，则实数 $k$ 的取值范围为\blkda[2]{$\left\lbrack  {\dfrac{1}{{e}},1}\right\rbrack$}.
@@ -407,6 +466,7 @@ $H_n \leq G_n \leq A_n \leq Q_n$，其中：
         \end{center}
     \end{jieda}
 \end{enumerate}
+\clearpage
 \subsection*{一元二次函数零点的分布}
 已知$y = ax^2+bx+c$，$a > 0$
 \begin{center}
