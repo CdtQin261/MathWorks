@@ -3371,112 +3371,191 @@ C. $\sin x > \sin y$ D. ${x}^{3} > {y}^{3}$
 
     \ding{173}  若等比数列 $\left\{  {a}_{n}\right\}$ 是“可控数列”，则其公比为 $q \in  \left( {0,1}\right)$.
 
-    下列判断正确的是 \dotfill{(\kh{})}
+    下列判断正确的是 \dotfill{(\kh{C})}
 
     \xx{\ding{172} 与 \ding{173} 均为真命题}{\ding{172} 与 \ding{173} 均为假命题}{\ding{172} 为假命题， \ding{173} 为真命题}{\ding{172} 为真命题， \ding{173} 为假命题}
+    \begin{jieda}
+        对于 \ding{172} ,若 ${a}_{1} = 1,\left| {{S}_{n} - {a}_{m}}\right|  < {a}_{1} \Longrightarrow  {S}_{n} - {a}_{m} = 0 \Longrightarrow  n + \dfrac{n\left( {n - 1}\right) }{2} \times  3 = 1 + 3\left( {m - 1}\right)$ ,当 $n = 2$ 时, $m = \dfrac{7}{3}$ ,不符合题意,则不是 “可控数列”,则 \ding{172}  错误; 对于 \ding{173} ,数列 $\left\{  {a}_{n}\right\}$ 不是常数列且 ${a}_{n} > 0$ ,所以 $q \neq  1,q > 0,\left| {{S}_{n} - {a}_{m}}\right|  < {a}_{1} \Leftrightarrow  \left| {\dfrac{{a}_{1}\left( {1 - {q}^{n}}\right) }{1 - q} - {a}_{1}{q}^{m - 1}}\right|  < {a}_{1} \Leftrightarrow  \left| {\dfrac{1 - {q}^{n}}{1 - q} - {q}^{m - 1}}\right|  < 1$
+        
+        若 $m =  1,\left| {{S}_{n} - {a}_{m}}\right|  < {a}_{1} \Leftrightarrow  q + {q}^{2} + \cdots  + {q}^{n - 1} < 1$ 对任意 $n \geq  2$ 成立, 故得 ${\left( q + {q}^{2} + \cdots  + {q}^{n - 1}\right) }_{\min } = q < 1$ ,故 $q \in  \left( {0,1}\right)$
+        
+        若 $m \in  \{ 2,\cdots ,n\}$ ,则 $\left| {\dfrac{1 - {q}^{n}}{1 - q} - {q}^{m - 1}}\right|  = 1 + q + {q}^{2} + \cdots  + {q}^{n - 1} - {q}^{m - 1} \geq 1$
+        
+        若 $m \geq  n + 1$ ,设 $m = n + k,k \in  {\mathbf{N}}^{ * }$ ,则 $\left| {\dfrac{1 - {q}^{n}}{1 - q} - {q}^{m - 1}}\right|  =  \left| {\dfrac{1 - {q}^{n}}{1 - q} - {q}^{n + k - 1}}\right|  = \left| {\dfrac{1 - {q}^{n}}{1 - q} - {q}^{n + k - 1}}\right|  = \left| \dfrac{{q}^{k - 1}\left( {q - 1}\right)  - 1}{q - 1}{q}^{n} +  \dfrac{1}{q - 1}\right|$ ,若 ${q}^{k - 1}\left( {q - 1}\right)  - 1 = 0$ ,则 $\dfrac{1}{q - 1} < 1 \Longrightarrow  q > 2$ ,但此时 ${q}^{k - 1}\left( {q - 1}\right)  > {q}^{k - 1} > 1$ 矛盾,故 ${q}^{k - 1}\left( {q - 1}\right)  - 1 \neq  0$ ,故当 $q > 1$ 时,当 $n \rightarrow   + \infty$ 时, $\left| {\dfrac{{q}^{k - 1}\left( {q - 1}\right)  - 1}{q - 1}{q}^{n} + \dfrac{1}{q - 1}}\right|  \rightarrow   + \infty$ ,不符题意；综上所述，若等比数列 $\left\{  {a}_{n}\right\}$ 是“可控数列”，则其公比为 $q \in  \left( {0,1}\right)$ , \ding{173} 为真命题；故选 C.
+    \end{jieda}
 
-    \item (2024$\cdot$黄浦区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若对任意的正整数 $n$ ， ${S}_{n}$ 都是数列 $\left\{  {a}_{n}\right\}$ 中的项，则称数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 对于命题: \ding{172}  存在“ $T$ 数列” $\left\{  {a}_{n}\right\}$ ，使得数列 $\left\{  {S}_{n}\right\}$ 为公比不为 1 的等比数列;  \ding{173}  对于任意的实数 ${a}_{1}$ ,都存在实数 $d$ ,使得以 ${a}_{1}$ 为首项、 $d$ 为公差的等差数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 下列判断正确的是 \dotfill{(\kh{})}
+    \item (2024$\cdot$黄浦区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若对任意的正整数 $n$ ， ${S}_{n}$ 都是数列 $\left\{  {a}_{n}\right\}$ 中的项，则称数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 对于命题: \ding{172}  存在“ $T$ 数列” $\left\{  {a}_{n}\right\}$ ，使得数列 $\left\{  {S}_{n}\right\}$ 为公比不为 1 的等比数列;  \ding{173}  对于任意的实数 ${a}_{1}$ ,都存在实数 $d$ ,使得以 ${a}_{1}$ 为首项、 $d$ 为公差的等差数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 下列判断正确的是 \dotfill{(\kh{A})}
     \xx{\ding{172} 和 \ding{173} 均为真命题}{\ding{172} 和 \ding{173} 均为假命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题} 
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 设$S_n = a_1q^{n-1}$，$a_n = S_n - S_{n-1} = a_1q^{n-2}(q-1), n \geq 2$，故$a_1q^{n-2}(q-1) = a_1q^{m-1}$对任意的$m$，存在$n$使得方程有解. 故考虑$q = 2$，此时$n = m+1$，故$a_n = \left\{\begin{array}{l}
+                a_1, n = 1\\
+                a_1 \times 2^{n-2}, n \geq 2
+            \end{array}\right.$满足要求.
+            \item 当$a_1 \geq 0$时，$d  = 1$即可，当$a_1 < 0$，$d = -1$即可.
+        \end{dingautolist}
+    \end{jieda}
 \end{enumerate}
 \subsection*{考点 3 等差数列及其前 $n$ 项和}
 
 \subsubsection*{一、填空题}
+\begin{enumerate}
+    \item (2025$\cdot$奉贤区二模$\cdot$1)等差数列首项为 1 ，公差是 3 ，则第 5 项等于\blkda[2]{13}.
 
-1.(2025$\cdot$奉贤区二模$\cdot$1)等差数列首项为 1 ，公差是 3 ，则第 5 项等于\blkda[2]{}.
+    \item (2025$\cdot$上海秋季卷$\cdot$3)已知等差数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} =  - 3$ ，公差 $d = 2$ ，则该数列的前 6 项和为\blkda[2]{12}.
 
-2.(2025$\cdot$上海秋季卷$\cdot$3)已知等差数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} =  - 3$ ，公差 $d = 2$ ，则该数列的前 6 项和为\blkda[2]{}.
+    \item (2024$\cdot$浦东新区二模$\cdot$3)已知等差数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} + {a}_{6} = {12},{a}_{4} = 7$ ，则\blkda[2]{5}。
 
-3.(2024$\cdot$浦东新区二模$\cdot$3)已知等差数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} + {a}_{6} = {12},{a}_{4} = 7$ ，则\blkda[2]{}。
+    \item (2024$\cdot$宝山区一模$\cdot$3)已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{4} + {a}_{13} = 1$ 则 ${S}_{16} =$ \blkda[2]{8}.
 
-4.(2024$\cdot$宝山区一模$\cdot$3)已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{4} + {a}_{13} = 1$ 则 ${S}_{16} =$ \blkda[2]{}.
+    \item (2025$\cdot$普陀区二模$\cdot$4)设 $n \geq  1,n \in  \mathbf{N}$ ， ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 ${a}_{3n} = 3{a}_{n} \neq  0$ ，则 $\dfrac{{S}_{5}}{{a}_{10}}$ 的值为\blkda[2]{$\dfrac{3}{2}$}.
 
-5.(2025$\cdot$普陀区二模$\cdot$4)设 $n \geq  1,n \in  \mathbf{N}$ ， ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 ${a}_{3n} = 3{a}_{n} \neq  0$ ，则 $\dfrac{{S}_{5}}{{a}_{10}}$ 的值为\blkda[2]{}.
+    \item (2025$\cdot$静安区一模$\cdot$4)设 $\left\{  {a}_{n}\right\}$ 是等差数列， ${a}_{1} =  - 6,{a}_{3} = 0$ ，则该数列的前 8 项的和 ${S}_{8}$ 的值为\blkda[2]{36}.
 
-6.(2025$\cdot$静安区一模$\cdot$4)设 $\left\{  {a}_{n}\right\}$ 是等差数列， ${a}_{1} =  - 6,{a}_{3} = 0$ ，则该数列的前 8 项的和 ${S}_{8}$ 的值为\blkda[2]{}.
+    \item (2024$\cdot$崇明区二模$\cdot$5)若等差数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} = 1$ ，前 5 项和 ${S}_{5} = {25}$ ，则 ${a}_{5} =$ \blkda[2]{9}.
 
-7.(2024$\cdot$崇明区二模$\cdot$5)若等差数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} = 1$ ，前 5 项和 ${S}_{5} = {25}$ ，则 ${a}_{5} =$ \blkda[2]{}.
+    \item (2025$\cdot$普陀区一模$\cdot$5)设 $n \geq  1$ ， $m \geq  1$ ， $m$ 、 $n \in  \mathbf{N}$ ，等差数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} = 0$ ，公差 $d \neq  0$ ，若 ${a}_{m} =  \mathop{\sum }\limits_{{i = 1}}^{{11}}{a}_{i}$ ，则 $m$ 的值为\blkda[2]{56}.
 
-8.(2025$\cdot$普陀区一模$\cdot$5)设 $n \geq  1$ ， $m \geq  1$ ， $m$ 、 $n \in  \mathbf{N}$ ，等差数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} = 0$ ，公差 $d \neq  0$ ，若 ${a}_{m} =  \mathop{\sum }\limits_{{i = 1}}^{{11}}{a}_{i}$ ，则 $m$ 的值为\blkda[2]{}.
+    \item (2025$\cdot$浦东新区二模$\cdot$6)设数列 $\left\{  {a}_{n}\right\}$ 为等差数列，其前 $n$ 项和为 ${S}_{n}$ ，已知 ${a}_{3} + {a}_{15} = 2$ ，则 ${S}_{17} =$ \blkda[2]{17}.
 
-9.(2025$\cdot$浦东新区二模$\cdot$6)设数列 $\left\{  {a}_{n}\right\}$ 为等差数列，其前 $n$ 项和为 ${S}_{n}$ ，已知 ${a}_{3} + {a}_{15} = 2$ ，则 ${S}_{17} =$ \blkda[2]{}.
+    \item (2024$\cdot$上海春季卷$\cdot$6)在等差数列 $\left\{  {a}_{n}\right\}$ 中， ${a}_{n} = n + c$ ， ${S}_{n}$ 是数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 ${S}_{7} < 0$ ，则 $c$ 的取值范围是\blkda[2]{$\left( {-\infty , - 4}\right)$}.
 
-10.(2024$\cdot$上海春季卷$\cdot$6)在等差数列 $\left\{  {a}_{n}\right\}$ 中， ${a}_{n} = n + c$ ， ${S}_{n}$ 是数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 ${S}_{7} < 0$ ，则 $c$ 的取值范围是\blkda[2]{}.
+    \item (2025$\cdot$青浦区一模$\cdot$6)已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} + 2{a}_{2} + 3{a}_{3} + \cdots  + n{a}_{n} = n\left( {n + 2}\right)$ ，则 ${a}_{66} =$ \blkda[2]{$\dfrac{133}{66}$}.
+    \begin{jieda}
+        因为 ${a}_{1} + 2{a}_{2} + 3{a}_{3} + \cdots  + n{a}_{n} = n\left( {n + 2}\right)$  \ding{172} ,当 $n \geq  2$ 时, ${a}_{1} + 2{a}_{2} + 3{a}_{3} + \cdots  + \left( {n - 1}\right) {a}_{n - 1} = \left( {n - 1}\right) \left( {n + 1}\right)$  \ding{173} ,  \ding{172} - \ding{173} 得 $n{a}_{n} = {2n} + 1$ ，所以 ${a}_{n} = \dfrac{{2n} + 1}{n}\left( {n \geq  2}\right)$ ，所以 ${a}_{66} =  \dfrac{133}{66}$.
+    \end{jieda}
 
-11.(2025$\cdot$青浦区一模$\cdot$6)已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} + 2{a}_{2} + 3{a}_{3} + \cdots  + n{a}_{n} = n\left( {n + 2}\right)$ ，则 ${a}_{66} =$ \blkda[2]{}.
+    \item (2024$\cdot$松江区二模$\cdot$7)已知等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 2，前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{3} = {S}_{5}$ ，则使得 ${S}_{n} < {a}_{n}$ 成立的 $n$ 的最大值为\blkda[2]{5}.
+    \begin{jieda}
+        ${a}_{1} + {2d} = 5{a}_{1} + \dfrac{5 \times  4}{2} \times  d \Longrightarrow  {a}_{1} =  - 4,{S}_{n} = {n}^{2} - {5n}$ , ${a}_{n} = {2n} - 6$ ,由 ${S}_{n} < {a}_{n}$ ,得 ${n}^{2} - {7n} + 6 < 0$ ,解得 $1 < n < 6$ ,故 $n$ 的最大值为 5.
+    \end{jieda}
 
-12.(2024$\cdot$松江区二模$\cdot$7)已知等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 2，前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{3} = {S}_{5}$ ，则使得 ${S}_{n} < {a}_{n}$ 成立的 $n$ 的最大值为\blkda[2]{}.
+    \item (2025$\cdot$浦东新区一模$\cdot$7)若等差数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{7} + {a}_{8} + {a}_{9} = 0,{a}_{7} + {a}_{10} = 1$ ，则 ${a}_{1} =$ \blkda[2]{$-7$}.
+    \begin{jieda}
+        因为数列 $\left\{  {a}_{n}\right\}$ 为等差数列,则 ${a}_{7} + {a}_{8} + {a}_{9} = 3{a}_{8} =$ 0,即 ${a}_{8} = 0$ ,且 ${a}_{7} + {a}_{10} = {a}_{8} + {a}_{9} = 1$ ,可得 ${a}_{9} = 1$ ,即 $\left\{  \begin{array}{l} {a}_{8} = {a}_{1} + {7d} = 0 \\  {a}_{9} = {a}_{1} + {8d} = 1 \end{array}\right.$ ,解得 $\left\{  \begin{array}{l} {a}_{1} =  - 7 \\  d = 1 \end{array}\right.$
+    \end{jieda}
 
-13.(2025$\cdot$浦东新区一模$\cdot$7)若等差数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{7} + {a}_{8} + {a}_{9} = 0,{a}_{7} + {a}_{10} = 1$ ，则 ${a}_{1} =$ \blkda[2]{}.
+    \item (2025$\cdot$闵行区二模$\cdot$8)已知 $\left\{  {a}_{n}\right\}$ 是等差数列，若 ${a}_{3}$ 、 ${a}_{7}$ 分别是函数 $y = {x}^{2} - {4x} + 2$ 的两个零点， 则 ${a}_{5} =$ \blkda[2]{2}.
+    \begin{jieda}
+        由题意得 ${a}_{3},{a}_{7}$ 是 ${x}^{2} - {4x} + 2 = 0$ 的两个根,由韦达定理得 ${a}_{3} + {a}_{7} = 4$ ,因为 $\left\{  {a}_{n}\right\}$ 是等差数列,所以 ${a}_{5} = \dfrac{{a}_{3} + {a}_{7}}{2} = 2.$
+    \end{jieda}
 
-14.(2025$\cdot$闵行区二模$\cdot$8)已知 $\left\{  {a}_{n}\right\}$ 是等差数列，若 ${a}_{3}$ 、 ${a}_{7}$ 分别是函数 $y = {x}^{2} - {4x} + 2$ 的两个零点， 则 ${a}_{5} =$ \blkda[2]{}.
+    \item (2025$\cdot$金山区一模$\cdot$8)已知 ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 $2{a}_{1} + 3{a}_{11} = {20}$ ，则 ${S}_{13}$ 的值为\blkda[2]{52}.
+    \begin{jieda}
+        设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ ,则由题得 $2{a}_{1} + 3{a}_{11} =  5{a}_{1} + {30d} = {20}$ 即 ${a}_{1} + {6d} = 4$ ,所以 ${S}_{13} = {13}{a}_{1} + \dfrac{{13} \times  {12}}{2}d =  {13}\left( {{a}_{1} + {6d}}\right)  = {13} \times  4 = {52}$.
+    \end{jieda}
 
-15.(2025$\cdot$金山区一模$\cdot$8)已知 ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 $2{a}_{1} + 3{a}_{11} = {20}$ ，则 ${S}_{13}$ 的值为\blkda[2]{}.
+    \item (2024$\cdot$黄浦区二模$\cdot$10)已知数列 $\left\{  {a}_{n}\right\}$ 是给定的等差数列，其前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{9}{a}_{10} < 0$ ，且当 $m =  {m}_{0}$ 与 $n = {n}_{0}$ 时， $\left| {{S}_{m} - {S}_{n}}\right|$ ( $m,n \in  \left\{  {x \mid  x \leq  {30},x \in  {\mathbf{N}}^{ * }}\right\}$ )取得最大值，则 $\left| {{m}_{0} - {n}_{0}}\right|$ 的值为\blkda[2]{21}.
+    \begin{jieda}
+        设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ . 当 $d > 0$ 时,由于 ${a}_{9}{a}_{10} <$ 0,所以 ${a}_{9} < 0 < {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格增数列,故 ${S}_{n}$ 在区间 $\lbrack 1$ , 30]上， ${S}_{9}$ 为最小值， ${S}_{30}$ 为最大值，若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值， 则 $m = {30},n = 9$ ,故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {{30} - 9}\right|  = {21}$ ; 当 $d < 0$ 时, ${a}_{9} > 0 > {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格减数列, ${S}_{n}$ 在 $n \in  \left\lbrack  {1,{30}}\right\rbrack  ,{S}_{9}$ 为最大值, ${S}_{30}$ 为最小值,若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值,则 $m = 9,n =$ 30，故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {9 - {30}}\right|  = {21}$ ，综上， $\left| {{m}_{0} - {n}_{0}}\right|  = {21}$ .
+    \end{jieda}
 
-16.(2024$\cdot$黄浦区二模$\cdot$10)已知数列 $\left\{  {a}_{n}\right\}$ 是给定的等差数列，其前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{9}{a}_{10} < 0$ ，且当 $m =  {m}_{0}$ 与 $n = {n}_{0}$ 时， $\left| {{S}_{m} - {S}_{n}}\right|$ ( $m,n \in  \left\{  {x \mid  x \leq  {30},x \in  {\mathbf{N}}^{ * }}\right\}$ )取得最大值，则 $\left| {{m}_{0} - {n}_{0}}\right|$ 的值为\blkda[2]{}.
+    \item (2025$\cdot$黄浦区二模$\cdot$11)设 $\left\{  {a}_{n}\right\}$ 为等差数列，其前 $n$ 项和为 ${S}_{n}$ ，若 $\left( {{S}_{8} - {S}_{7}}\right)({S}_{9} - {S}_{7}) < 0$ ，则满足 ${S}_{m}{S}_{m + 1} < 0$ 的正整数 $m =$ \blkda[2]{$15$}.
+    \begin{jieda}
+        $a_8 \cdot \left(a_8+a_9\right) < 0$，不妨设公差$d < 0$，则$a_8 > 0, a_8+a_9 < 0$，故$S_{15} > 0, S_{16} < 0$，因此$m = 15$.
+    \end{jieda}
 
-17.(2025$\cdot$黄浦区二模$\cdot$11)设 $\left\{  {a}_{n}\right\}$ 为等差数列，其前 $n$ 项和为 ${S}_{n}$ ，若 $\left( {{S}_{8} - {S}_{7}}\right)$ ( ${S}_{9} - {S}_{7}$ ) $< 0$ ，则满足 ${S}_{m}{S}_{m + 1} < 0$ 的正整数 $m =$ \blkda[2]{}.
+    \item (2024$\cdot$杨浦区二模$\cdot$12)已知实数 $a$ 满足: \ding{172}  $a \in  [0,2\pi )$； \ding{173}  存在实数 $b$ 、 $c\left( {a < b < c < {2\pi }}\right)$ ，使得 $a,b,c$ 是等差数列， $\cos b,\cos a,\cos c$ 也是等差数列，则实数 $a$ 的取值范围是\blkda[2]{$\left( {\arccos \dfrac{1}{8},\pi }\right)$}.
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 由题意易知$a \in  \left( {0,\pi }\right)$，设公差为 $m$，则$m \in (0, \pi)$
+        
+            由题意: $2\cos a = \cos b + \cos c \Longrightarrow  2\cos (b -  m) = \cos b + \cos \left( {b + m}\right)  \Longrightarrow  \cos \left( {b - m}\right)  - \cos b = \cos \left( {b + m}\right)  -  \cos \left( {b - m}\right)  \Longrightarrow   - 2\sin \dfrac{{2b} - m}{2}\sin \dfrac{-m}{2} =  - 2\sin b\sin m \Longrightarrow  \sin \left(\dfrac{m}{2} - b\right) \sin \dfrac{m}{2} = \sin b\sin m = 2\sin b\sin \dfrac{m}{2}\cos \dfrac{m}{2} \Longrightarrow  \sin \dfrac{m}{2}\cos b -  \cos \dfrac{m}{2}\sin b = 2\sin b\cos \dfrac{m}{2} \Longrightarrow  \tan \dfrac{m}{2} = 3\tan b$ ,故 $b$ 随 $m$ 增大而增大，由$\dfrac{m}{2} \in \left(0, \dfrac{\pi}{2}\right)$可知$b \in  \left( {\pi ,\dfrac{3}{2}\pi }\right)$
 
-18.(2024$\cdot$杨浦区二模$\cdot$12)已知实数 $a$ 满足: \ding{172}  $a \in  \lbrack 0,{2\pi }$ )； \ding{173}  存在实数 $b$ 、 $c\left( {a < b < c < {2\pi }}\right)$ ，使得 $a,b,c$ 是等差数列， $\cos b,\cos a,\cos c$ 也是等差数列，则实数 $a$ 的取值范围是\blkda[2]{}.
+            分析$y = tan\dfrac{x}{2}$和$y = 3tanx$的增减速度可知，纵坐标增加相同量，横坐标$b$增加得比$m$少，故$b$越大，$a$越小.
+
+            一个边界情况是$a = b = c = \pi$，另一个边界情况是当 $c$ 到达 ${2\pi }$ 时是临界值,此时 $b = \dfrac{a}{2} + \pi$ ,代入 $2\cos a = \cos \left( {\dfrac{a}{2} + \pi }\right)  +  \cos {2\pi } \Longrightarrow  2\cos a =  - \cos \dfrac{a}{2} + 1 \Longrightarrow  \cos a = 1$ (舍) 或 $\cos a = \dfrac{1}{8}$ ,则 $a =  \arccos \dfrac{1}{8}$ ,综上所述实数 $a$ 的取值范围是 $a \in  \left( {\arccos \dfrac{1}{8},\pi }\right)$.
+            \item 显然 $0 < a < \pi$，否则当 $a \geq  \pi$ 时, $\cos a < \cos b < \cos c$，显然$\cos b,\cos a,\cos c$ 不成等差数列
+            
+            由题意可知，$b = \dfrac{a + c}{2},\cos b + \cos c = 2\cos a$，则 $\cos \dfrac{a + c}{2} + \cos c = 2\cos a$
+            
+            设 $f\left( x\right)  = \cos \dfrac{a + x}{2} + \cos x - 2\cos a$，则 ${f}^{\prime }\left( x\right)  =  - \dfrac{1}{2}\sin \dfrac{a + x}{2} - \sin x$，可知 ${f}^{\prime }\left( a\right)  =  - \dfrac{3}{2}\sin a < 0,{f}^{\prime }\left( {2\pi }\right)  = \dfrac{1}{2}\sin \dfrac{a}{2} > 0$，则存在 ${x}_{0} \in  \left( {a,{2\pi }}\right) ,{f}^{\prime }\left( {x}_{0}\right)  = 0$
+
+            可以证明 $x \in  \left( {a,{x}_{0}}\right)$ 时, ${f}^{\prime }\left( x\right)  < 0, x \in  \left( {x}_{0}, 2\pi\right)$ 时, ${f}^{\prime }\left( x\right)  > 0$ ,可得 $f\left( x\right)$ 在 $\left\lbrack  {a,{x}_{0}}\right\rbrack$ 上严格减,在 $\left\lbrack  {{x}_{0},{2\pi }}\right\rbrack$ 上严格增.
+
+            因为 $f\left( a\right)  = 0$，可知若存在 $a < c < {2\pi },f\left( c\right)  = 0$ ,则 $f\left( {2\pi }\right)  > 0$ ,$f\left( {2\pi }\right)  =  - \cos \dfrac{a}{2} + 1 - 2\cos a =  - 4{\cos }^{2}\dfrac{a}{2} - \cos \dfrac{a}{2} + 3 = \left( {3 - 4\cos \dfrac{a}{2}}\right) \left( {1 + \cos \dfrac{a}{2}}\right)  > 0$，则 $\cos \dfrac{a}{2} < \dfrac{3}{4}$ ,所以 $a > 2\arccos \dfrac{3}{4}$，即 $a > \arccos \dfrac{1}{8}$，又由 $a < \pi$ ,得 $a$ 的取值范围为 $\left( {\arccos \dfrac{1}{8},\pi }\right)$ .
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
 
 \subsubsection*{二、选择题}
+\begin{enumerate}
+    \item (2025$\cdot$松江区一模$\cdot$14)渐进式延迟退休方案是指采取较缓而稳妥的方式逐步延长退休年龄. 对于男职工，新方案将延迟法定退休年龄每 4 个月延迟 1 个月，逐步将男职工的法定退休年龄从原 60 周岁延迟至 63 周岁. 如果男职工延迟法定退休年龄部分对照表如下表所示:
 
-19.(2025$\cdot$松江区一模$\cdot$14)渐进式延迟退休方案是指采取较缓而稳妥的方式逐步延长退休年龄. 对于男职工，新方案将延迟法定退休年龄每 4 个月延迟 1 个月，逐步将男职工的法定退休年龄从原 60 周岁延迟至 63 周岁. 如果男职工延迟法定退休年龄部分对照表如下表所示:
+    \begin{center}
 
-\begin{center}
+    \begin{tabular}{|p{4cm}|p{4cm}|}
+    \hline
+    出生时间 & 改革后法定退休年龄 \\
+    \cline{1-2}
+    1965 年 1 月— 4 月 & 60 岁+1 个月 \\
+    \cline{1-2}
+    1965 年 5 月—8 月 & 60 岁+2 个月 \\
+    \cline{1-2}
+    1965 年 9 月—12 月 & 60 岁+3 个月 \\
+    \cline{1-2}
+    1966 年 1 月—4 月 & 60 岁+4 个月 \\
+    \cline{1-2}
+    ...... &...... \\
+    \cline{1-2}
+    \hline
+    \end{tabular}
+    \end{center}
+    那么 1974 年 5 月出生的男职工退休年龄为 \dotfill{(\kh{B})}
+    \xx{62 岁 3 个月}{62 岁 4 个月}{62 岁 5 个月}{63 岁}
+    
+    \item (2024$\cdot$奉贤区一模$\cdot$16)已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，且关于正整数 $n$ 的不等式($S_n - {2022})\left( {{S}_{n + 1} - {2022}}\right)  < 0$ 与不等式 $\left( {{S}_{n} - {2023}}\right) \left( {{S}_{n + 1} - {2023}}\right)  < 0$ 的解集均为 $M$.
 
-\begin{tabular}{|p{4cm}|p{12cm}|}
-\hline
-出生时间 & 改革后法定退休年龄 \\
-\cline{1-2}
-1965 年 1 月— 4 月 & 60 岁+1 个月 \\
-\cline{1-2}
-1965 年 5 月—8 月 & 60 岁+2 个月 \\
-\cline{1-2}
-1965 年 9 月—12 月 & 60 岁+3 个月 \\
-\cline{1-2}
-1966 年 1 月—4 月 & 60 岁+4 个月 \\
-\cline{1-2}
-...... &...... \\
-\cline{1-2}
-\hline
-\end{tabular}
-\end{center}
+    命题 $\alpha$ : 集合 $M$ 中元素的个数一定是偶数个;
 
-那么 1974 年 5 月出生的男职工退休年龄为 \dotfill{(\kh{})}
+    命题 $\beta$ : 若数列 $\left\{  {a}_{n}\right\}$ 的公差 $d > 0$ ,且 ${n}_{0} \in  M$ ,则 ${a}_{{n}_{0} + 1} > 1$.
 
-\xx{}{}{}{}62 岁 3 个月 B. 62 岁 4 个月 C. 62 岁 5 个月 D. 63 岁
+    下列说法中正确的是 \dotfill{(\kh{B})}
 
-20. (2024$\cdot$奉贤区一模$\cdot$16)已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，且关于正整数 $n$ 的不等式(S，m- ${2022})\left( {{S}_{n + 1} - {2022}}\right)  < 0$ 与不等式 $\left( {{S}_{n} - {2023}}\right) \left( {{S}_{n + 1} - {2023}}\right)  < 0$ 的解集均为 $M$.
+    \xx{命题 $\alpha$ 是真命题，命题 $\beta$ 是假命题}{命题 $\alpha$ 是假命题，命题 $\beta$ 是真命题}{命题 $\alpha$ 、命题 $\beta$ 都是假命题}{命题 $\alpha$ 、命题 $\beta$ 都是真命题} 
+    \begin{jieda}
+        命题 $\alpha  : {a}_{n} = 4,{S}_{n} = {4n},{S}_{n + 1} = {4n} + 4$ ,
 
-命题 $\alpha$ : 集合 $M$ 中元素的个数一定是偶数个;
+        $\left\{  \begin{array}{l} \left( {{S}_{n} - {2022}}\right) \left( {{S}_{n + 1} - {2022}}\right)  < 0 \Longrightarrow  \left( {{4n} - {2022}}\right) \left( {{4n} - {2018}}\right)  < 0 \\  \left( {{S}_{n} - {2023}}\right) \left( {{S}_{n + 1} - {2023}}\right)  < 0 \Longrightarrow  \left( {{4n} - {2023}}\right) \left( {{4n} - {2019}}\right)  < 0 \end{array}\right.$，$n \in  \mathbf{N} \Longrightarrow  n = {505}$ ,解集均为 $M = \{ {505}\}$ ,唯一,故命题 $\alpha$ 为假命题; 
 
-命题 $\beta$ : 若数列 $\left\{  {a}_{n}\right\}$ 的公差 $d > 0$ ,且 ${n}_{0} \in  M$ ,则 ${a}_{{n}_{0} + 1} > 1$.
+        \ps 根据等差数列前$n$项和的形式易知，一次和二次的形式均可以举出反例，上面是一次的反例，二次的情况下对称轴位置顶点纵坐标大于2023，两个第二大的纵坐标小于2022即可.
+        
+        命题 $\beta$ : 若数列 $\left\{  {a}_{n}\right\}$ 的公差 $d > 0$，则有$\left\{  {\begin{array}{l} {S}_{{n}_{0}} < {2022} \\  {S}_{{n}_{0} + 1} > {2023} \end{array} \Longrightarrow  {a}_{{n}_{0} + 1} = }\right. {S}_{{n}_{0} + 1} - {S}_{{n}_{0}} > 1$ ,命题 $\beta$ 是真命题; 综上所述: 命题 $\alpha$ 是假命题,命题 $\beta$ 是真命题.
+    \end{jieda}
+    
+    \item (2025$\cdot$杨浦区二模$\cdot$16)设 $A$ 是由 $k$ 个二次函数组成的集合，对于连续的正整数 $1,2,3,\cdots$ ， 2025，存在二次函数 $y = {f}_{i}\left( x\right)  \in  A$ (1 $\leq  i \leq  {2025}$ ， $i \in  \mathbf{Z}$ ， $y = {f}_{i}\left( x\right)$ 可重复)，使得 ${f}_{1}\left( 1\right)$ ， ${f}_{2}\left( 2\right)$ ， ${f}_{3}\left( 3\right) ,\cdots ,{f}_{2025}\left( {2025}\right)$ 是等差数列，则 $k$ 的最小可能值是 \dotfill{(\kh{B})}
+    \xx{507}{1013}{1519}{2025}
+    \begin{jieda}
+        根据题意可知一条直线上横坐标为$1,2,3,...,2025$的点都要被覆盖，一条抛物线和直线最多有两个交点，因此最少需要$1013$条抛物线才能覆盖
+    \end{jieda}
 
-下列说法中正确的是 \dotfill{(\kh{})}
+    \item (2025$\cdot$宝山区二模$\cdot$16)若对任意正整数 $n$ ，数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n}$ 都是完全平方数，则称数列 $\left\{  {a}_{n}\right\}$ 为“完全平方数列”. 有如下两个命题:  \ding{172}  若数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n} = {\left( n - t\right) }^{2}$ ( $t$ 为正整数),则使得数列 $\left\{  \left| {b}_{n}\right| \right\}$ 为“完全平方数列”的 $t$ 值有且仅有一个;  \ding{173}  存在无穷多个“完全平方数列”的等差数列. 对于以上两个命题, 下列选项中正确的是 \dotfill{(\kh{A})}
 
-\xx{}{}{}{}命题 $\alpha$ 是真命题，命题 $\beta$ 是假命题 B. 命题 $\alpha$ 是假命题，命题 $\beta$ 是真命题
-
-C. 命题 $\alpha$ 、命题 $\beta$ 都是假命题 D. 命题 $\alpha$ 、命题 $\beta$ 都是真命题
-
-21.(2025$\cdot$杨浦区二模$\cdot$16)设 $A$ 是由 $k$ 个二次函数组成的集合，对于连续的正整数 $1,2,3,\cdots$ ， 2025，存在二次函数 $y = {f}_{i}\left( x\right)  \in  A$ (1 $\leq  i \leq  {2025}$ ， $i \in  \mathbf{Z}$ ， $y = {f}_{i}\left( x\right)$ 可重复)，使得 ${f}_{1}\left( 1\right)$ ， ${f}_{2}\left( 2\right)$ ， ${f}_{3}\left( 3\right) ,\cdots ,{f}_{2025}\left( {2025}\right)$ 是等差数列，则 $k$ 的最小可能值是 \dotfill{(\kh{})}
-
-\xx{}{}{}{}507 B. 1013 C. 1519 D. 2025
-
-22.(2025$\cdot$宝山区二模$\cdot$16)若对任意正整数 $n$ ，数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n}$ 都是完全平方数，则称数列 $\left\{  {a}_{n}\right\}$ 为“完全平方数列”. 有如下两个命题:  \ding{172}  若数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n} = {\left( n - t\right) }^{2}$ ( $t$ 为正整数),则使得数列 $\left\{  \left| {b}_{n}\right| \right\}$ 为“完全平方数列”的 $t$ 值有且仅有一个;  \ding{173}  存在无穷多个“完全平方数列”的等差数列. 对于以上两个命题, 下列选项中正确的是 \dotfill{(\kh{})}
-
-\xx{}{}{}{} \ding{172}  \ding{173} 都是真命题 B.  \ding{172} 是真命题， \ding{173} 是假命题
-
-C.  \ding{172} 是假命题， \ding{173} 是真命题 D.  \ding{172}  \ding{173} 都是假命题
+    \xx{\ding{172}  \ding{173} 都是真命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}{\ding{172}  \ding{173} 都是假命题}
+    \begin{jieda}
+        对于 \ding{172} ,数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n} = {\left( n - t\right) }^{2}(t$ 为正整数),当 $n \geq  2$ 时, ${b}_{n} = {T}_{n} - {T}_{n - 1} = {\left( n - t\right) }^{2} - {\left( n - 1 - t\right) }^{2} =  {2n} - {2t} - 1$ ,当 $n = 1$ 时, ${b}_{1} = {T}_{1} = {\left( 1 - t\right) }^{2}$ 不满足上式,所以 $\left| {b}_{n}\right|  = \left\{  {\begin{array}{l} {\left( 1 - t\right) }^{2},n = 1 \\  {2n} - {2t} - 1,n \geq  2 \end{array}\text{ ,当 }t = 1,n \geq  2}\right.$ 时, ${2n} - {2t} - 1 =  {2n} - 3 > 0$ ,所以数列 $\left\{  \left| {b}_{n}\right| \right\}$ 与原数列相同,所以 ${T}_{n} = (n -  1{)}^{2}$ ,所以当 $t = 1$ 时,数列 $\left\{  \left| {b}_{n}\right| \right\}$ 为完全平方数列,当 $t \geq  2$ 时, $\left| {b}_{1}\right|  + \left| {b}_{2}\right|  = {\left( t - 1\right) }^{2} + \left| {3 - {2t}}\right|  = {t}^{2} - {2t} + 1 + {2t} - 3 =  {t}^{2} - 2$ 不是 “完全平方数，所以当 $t \geq  2$ 时，数列 $\left\{  \left| {b}_{n}\right| \right\}$ 不是完全平方数列,综上所述: 只有当 $t = 1$ 时,数列 $\left\{  \left| {b}_{n}\right| \right\}$ 为 “完全平方数列”,故 \ding{172} 是真命题；
+        
+        对于 \ding{173} ，$a_n = 1$即可, 故  \ding{173}  是真命题. 
+    \end{jieda}
+\end{enumerate}
 
 \subsubsection*{三、解答题}
+\begin{enumerate}
+    \item (2024$\cdot$虹口区二模$\cdot$17)已知等差数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{2} = 5,{a}_{9} + 7 = 2{a}_{6}$.
+    \begin{enumerate}
+        \item 求 $\left\{  {a}_{n}\right\}$ 的通项公式
+        \item 设数列 $\left\{  {b}_{n}\right\}$ 前 $n$ 项和为 ${S}_{n}$ ，且 ${b}_{n} = {a}_{n + 1}^{2} - {a}_{n}^{2}$ ，若 ${S}_{m} > {432}$ ，求正整数 $m$ 的最小值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ ，则由条件，得 $\left\{  \begin{array}{l} {a}_{1} + d = 5 \\  {a}_{1} + {8d} + 7 = 2\left( {{a}_{1} + {5d}}\right)  \end{array}\right.$ ,解得 ${a}_{1} = 3,d = 2$ ,故 ${a}_{n} = {a}_{1} +  \left( {n - 1}\right) d = {2n} + 1;$
 
-23.(2024$\cdot$虹口区二模$\cdot$17)已知等差数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{2} = 5,{a}_{9} + 7 = 2{a}_{6}$.
+            \item 由(1)可得 ${a}_{n + 1} = {2n} + 3$ ，则 ${b}_{n} = {\left( 2n + 3\right) }^{2} - {\left( 2n + 1\right) }^{2} =  8\left( {n + 1}\right)$ . 所以 ${b}_{n + 1} - {b}_{n} = 8$ ,故数列 $\left\{  {b}_{n}\right\}$ 是以 ${b}_{1} = {16}$ 为首项、 8 为公差的等差数列,故 ${S}_{m} = \dfrac{m\left\lbrack  {{16} + 8\left( {m + 1}\right) }\right\rbrack  }{2} = {4m}\left( {m + 3}\right)$ . 因为 ${S}_{m} > {432}$ ,所以 ${m}^{2} + {3m} > {108}$ ,所以 $\left( {m + {12}}\right) \left( {m - 9}\right)  > 0$ ,所以 $m > 9$ 或 $m <  - {12}$ . 因为 $m$ 为正整数,所以 $m$ 的最小值是 10 .
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
 
-(1)求 $\left\{  {a}_{n}\right\}$ 的通项公式；
-
-(2)设数列 $\left\{  {b}_{n}\right\}$ 前 $n$ 项和为 ${S}_{n}$ ，且 ${b}_{n} = {a}_{n + 1}^{2} - {a}_{n}^{2}$ ，若 ${S}_{m} > {432}$ ，求正整数 $m$ 的最小值.
-
-\subsection*{考点4 又 等比数列及其前 $n$ 项和}
+\subsection*{考点4 等比数列及其前 $n$ 项和}
 
 \subsubsection*{一、填空题}
 

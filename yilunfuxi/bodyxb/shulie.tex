@@ -1,6 +1,38 @@
 \chapter*{数列}
+\subsection*{等差中项、等比中项}
+\begin{enumerate}
+    \item (2025$\cdot$浦东新区一模$\cdot$7)若等差数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{7} + {a}_{8} + {a}_{9} = 0,{a}_{7} + {a}_{10} = 1$ ，则 ${a}_{1} =$ \blkda[2]{$-7$}.
+    \begin{jieda}
+        因为数列 $\left\{  {a}_{n}\right\}$ 为等差数列,则 ${a}_{7} + {a}_{8} + {a}_{9} = 3{a}_{8} =$ 0,即 ${a}_{8} = 0$ ,且 ${a}_{7} + {a}_{10} = {a}_{8} + {a}_{9} = 1$ ,可得 ${a}_{9} = 1$ ,即 $\left\{  \begin{array}{l} {a}_{8} = {a}_{1} + {7d} = 0 \\  {a}_{9} = {a}_{1} + {8d} = 1 \end{array}\right.$ ,解得 $\left\{  \begin{array}{l} {a}_{1} =  - 7 \\  d = 1 \end{array}\right.$
+    \end{jieda}
+    \item (2025$\cdot$黄浦区二模$\cdot$11)设 $\left\{  {a}_{n}\right\}$ 为等差数列，其前 $n$ 项和为 ${S}_{n}$ ，若 $\left( {{S}_{8} - {S}_{7}}\right)({S}_{9} - {S}_{7}) < 0$ ，则满足 ${S}_{m}{S}_{m + 1} < 0$ 的正整数 $m =$ \blkda[2]{$15$}.
+    \begin{jieda}
+        $a_8 \cdot \left(a_8+a_9\right) < 0$，不妨设公差$d < 0$，则$a_8 > 0, a_8+a_9 < 0$，故$S_{15} > 0, S_{16} < 0$，因此$m = 15$.
+    \end{jieda}
+    \item 已知$a = 243, b = 3$，$c$是$a, b$的等比中项
+    \begin{enumerate}
+        \item 若$d, e$分别是$a, c$和$c, b$的等差中项，则$a+b+c+d+e = $\blkda[4]{423或315}
+        \item 若$d, e$分别是$a, c$和$c, b$的等比中项，则$a+b+c+d+e = $\blkda[4]{363或345或201或183}
+    \end{enumerate}
+    \begin{jieda}
+        首先可以得到$c = -27$或27.
+        \begin{enumerate}
+            \item $a+b+c+d+e = a+b+c + \dfrac{a+c}{2} + \dfrac{b+c}{2} = \dfrac{3(a+b)}{2} + 2c = $ 423或315
+            \item 此时必有$c = 27$，\begin{enumerate}[1.]
+                \item $d = 81, e = 9$，$a+b+c+d+e = 363$
+                \item $d = 81, e = -9$，$a+b+c+d+e = 345$
+                \item $d = -81, e = 9$，$a+b+c+d+e = 201$
+                \item $d = -81, e = -9$，$a+b+c+d+e = 183$
+            \end{enumerate}
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
 \subsection*{等差数列、等比数列的通项公式}
 \begin{enumerate}
+    \item (2025$\cdot$金山区一模$\cdot$8)已知 ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 $2{a}_{1} + 3{a}_{11} = {20}$ ，则 ${S}_{13}$ 的值为\blkda[2]{52}.
+    \begin{jieda}
+        设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ ,则由题得 $2{a}_{1} + 3{a}_{11} =  5{a}_{1} + {30d} = {20}$ 即 ${a}_{1} + {6d} = 4$ ,所以 ${S}_{13} = {13}{a}_{1} + \dfrac{{13} \times  {12}}{2}d =  {13}\left( {{a}_{1} + {6d}}\right)  = {13} \times  4 = {52}$.
+    \end{jieda}
     \item (2025$\cdot$长宁区一模$\cdot$16)数列 $\left\{  {a}_{n}\right\}$ 为严格增数列，且对任意的正整数 $n$ ，都有 $\dfrac{{a}_{n + 1}}{n + 1} \geq  \dfrac{{a}_{n}}{n}$ ，则称数列 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”. 现给出两个命题:
     \ding{172}  存在等差数列 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”；
 
@@ -15,6 +47,17 @@
         设等比数列 $\left\{  {a}_{n}\right\}$通项公式为$a_n = a_1q^{n-1}, a_1 > 0, q > 1$，则满足“性质 $\Omega$ ”即$\dfrac{a_1q^n}{n+1} \geq \dfrac{a_1q^{n-1}}{n}$，即$q \geq \dfrac{n+1}{n}$，故$q \geq 2$.
 
         \ps 举反例$q = 1$也可.
+    \end{jieda}
+\end{enumerate}
+\subsection*{等差数列、等比数列$n$项和}
+\begin{enumerate}
+    \item (2024$\cdot$松江区二模$\cdot$7)已知等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 2，前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{3} = {S}_{5}$ ，则使得 ${S}_{n} < {a}_{n}$ 成立的 $n$ 的最大值为\blkda[2]{5}.
+    \begin{jieda}
+        ${a}_{1} + {2d} = 5{a}_{1} + \dfrac{5 \times  4}{2} \times  d \Longrightarrow  {a}_{1} =  - 4,{S}_{n} = {n}^{2} - {5n}$ , ${a}_{n} = {2n} - 6$ ,由 ${S}_{n} < {a}_{n}$ ,得 ${n}^{2} - {7n} + 6 < 0$ ,解得 $1 < n < 6$ ,故 $n$ 的最大值为 5.
+    \end{jieda}
+    \item (2024$\cdot$黄浦区二模$\cdot$10)已知数列 $\left\{  {a}_{n}\right\}$ 是给定的等差数列，其前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{9}{a}_{10} < 0$ ，且当 $m =  {m}_{0}$ 与 $n = {n}_{0}$ 时， $\left| {{S}_{m} - {S}_{n}}\right|$ ( $m,n \in  \left\{  {x \mid  x \leq  {30},x \in  {\mathbf{N}}^{ * }}\right\}$ )取得最大值，则 $\left| {{m}_{0} - {n}_{0}}\right|$ 的值为\blkda[2]{21}.
+    \begin{jieda}
+        设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ . 当 $d > 0$ 时,由于 ${a}_{9}{a}_{10} <$ 0,所以 ${a}_{9} < 0 < {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格增数列,故 ${S}_{n}$ 在区间 $\lbrack 1$ , 30]上， ${S}_{9}$ 为最小值， ${S}_{30}$ 为最大值，若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值， 则 $m = {30},n = 9$ ,故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {{30} - 9}\right|  = {21}$ ; 当 $d < 0$ 时, ${a}_{9} > 0 > {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格减数列, ${S}_{n}$ 在 $n \in  \left\lbrack  {1,{30}}\right\rbrack  ,{S}_{9}$ 为最大值, ${S}_{30}$ 为最小值,若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值,则 $m = 9,n =$ 30，故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {9 - {30}}\right|  = {21}$ ，综上， $\left| {{m}_{0} - {n}_{0}}\right|  = {21}$ .
     \end{jieda}
 \end{enumerate}
 \subsection*{等差数列、等比数列前$n$项和的形式}
@@ -40,9 +83,50 @@
             c = 1
         \end{array}\right.$，经检验$a_n = (-1)^{n-1}$满足要求，所以$\left\{  {a}_{n}\right\}$ 具有性质 $p$ ,这表明存在等比数列 $\left\{  {a}_{n}\right\}$ 具有性质 $p$ . 综上, \ding{172}  真、 \ding{173} 假. 故选: B.
     \end{jieda}
+    \item (2024$\cdot$奉贤区一模$\cdot$16)已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，且关于正整数 $n$ 的不等式($S_n - {2022})\left( {{S}_{n + 1} - {2022}}\right)  < 0$ 与不等式 $\left( {{S}_{n} - {2023}}\right) \left( {{S}_{n + 1} - {2023}}\right)  < 0$ 的解集均为 $M$.
+
+    命题 $\alpha$ : 集合 $M$ 中元素的个数一定是偶数个;
+
+    命题 $\beta$ : 若数列 $\left\{  {a}_{n}\right\}$ 的公差 $d > 0$ ,且 ${n}_{0} \in  M$ ,则 ${a}_{{n}_{0} + 1} > 1$.
+
+    下列说法中正确的是 \dotfill{(\kh{B})}
+
+    \xx{命题 $\alpha$ 是真命题，命题 $\beta$ 是假命题}{命题 $\alpha$ 是假命题，命题 $\beta$ 是真命题}{命题 $\alpha$ 、命题 $\beta$ 都是假命题}{命题 $\alpha$ 、命题 $\beta$ 都是真命题} 
+    \begin{jieda}
+        命题 $\alpha  : {a}_{n} = 4,{S}_{n} = {4n},{S}_{n + 1} = {4n} + 4$ ,
+
+        $\left\{  \begin{array}{l} \left( {{S}_{n} - {2022}}\right) \left( {{S}_{n + 1} - {2022}}\right)  < 0 \Longrightarrow  \left( {{4n} - {2022}}\right) \left( {{4n} - {2018}}\right)  < 0 \\  \left( {{S}_{n} - {2023}}\right) \left( {{S}_{n + 1} - {2023}}\right)  < 0 \Longrightarrow  \left( {{4n} - {2023}}\right) \left( {{4n} - {2019}}\right)  < 0 \end{array}\right.$，$n \in  \mathbf{N} \Longrightarrow  n = {505}$ ,解集均为 $M = \{ {505}\}$ ,唯一,故命题 $\alpha$ 为假命题; 
+
+        \ps 根据等差数列前$n$项和的形式易知，一次和二次的形式均可以举出反例，上面是一次的反例，二次的情况下对称轴位置顶点纵坐标大于2023，两个第二大的纵坐标小于2022即可.
+        
+        命题 $\beta$ : 若数列 $\left\{  {a}_{n}\right\}$ 的公差 $d > 0$，则有$\left\{  {\begin{array}{l} {S}_{{n}_{0}} < {2022} \\  {S}_{{n}_{0} + 1} > {2023} \end{array} \Longrightarrow  {a}_{{n}_{0} + 1} = }\right. {S}_{{n}_{0} + 1} - {S}_{{n}_{0}} > 1$ ,命题 $\beta$ 是真命题; 综上所述: 命题 $\alpha$ 是假命题,命题 $\beta$ 是真命题.
+    \end{jieda}
 \end{enumerate}
 \subsection*{$a_n = S_n - S_{n-1}$}
 \begin{enumerate}
+    \item (2025$\cdot$青浦区一模$\cdot$6)已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} + 2{a}_{2} + 3{a}_{3} + \cdots  + n{a}_{n} = n\left( {n + 2}\right)$ ，则 ${a}_{66} =$ \blkda[2]{$\dfrac{133}{66}$}.
+    \begin{jieda}
+        因为 ${a}_{1} + 2{a}_{2} + 3{a}_{3} + \cdots  + n{a}_{n} = n\left( {n + 2}\right)$  \ding{172} ,当 $n \geq  2$ 时, ${a}_{1} + 2{a}_{2} + 3{a}_{3} + \cdots  + \left( {n - 1}\right) {a}_{n - 1} = \left( {n - 1}\right) \left( {n + 1}\right)$  \ding{173} ,  \ding{172} - \ding{173} 得 $n{a}_{n} = {2n} + 1$ ，所以 ${a}_{n} = \dfrac{{2n} + 1}{n}\left( {n \geq  2}\right)$ ，所以 ${a}_{66} =  \dfrac{133}{66}$.
+    \end{jieda}
+    \item (2025$\cdot$宝山区二模$\cdot$16)若对任意正整数 $n$ ，数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n}$ 都是完全平方数，则称数列 $\left\{  {a}_{n}\right\}$ 为“完全平方数列”. 有如下两个命题:  \ding{172}  若数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n} = {\left( n - t\right) }^{2}$ ( $t$ 为正整数),则使得数列 $\left\{  \left| {b}_{n}\right| \right\}$ 为“完全平方数列”的 $t$ 值有且仅有一个;  \ding{173}  存在无穷多个“完全平方数列”的等差数列. 对于以上两个命题, 下列选项中正确的是 \dotfill{(\kh{A})}
+
+    \xx{\ding{172}  \ding{173} 都是真命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}{\ding{172}  \ding{173} 都是假命题}
+    \begin{jieda}
+        对于 \ding{172} ,数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${T}_{n} = {\left( n - t\right) }^{2}(t$ 为正整数),当 $n \geq  2$ 时, ${b}_{n} = {T}_{n} - {T}_{n - 1} = {\left( n - t\right) }^{2} - {\left( n - 1 - t\right) }^{2} =  {2n} - {2t} - 1$ ,当 $n = 1$ 时, ${b}_{1} = {T}_{1} = {\left( 1 - t\right) }^{2}$ 不满足上式,所以 $\left| {b}_{n}\right|  = \left\{  {\begin{array}{l} {\left( 1 - t\right) }^{2},n = 1 \\  {2n} - {2t} - 1,n \geq  2 \end{array}\text{ ,当 }t = 1,n \geq  2}\right.$ 时, ${2n} - {2t} - 1 =  {2n} - 3 > 0$ ,所以数列 $\left\{  \left| {b}_{n}\right| \right\}$ 与原数列相同,所以 ${T}_{n} = (n -  1{)}^{2}$ ,所以当 $t = 1$ 时,数列 $\left\{  \left| {b}_{n}\right| \right\}$ 为完全平方数列,当 $t \geq  2$ 时, $\left| {b}_{1}\right|  + \left| {b}_{2}\right|  = {\left( t - 1\right) }^{2} + \left| {3 - {2t}}\right|  = {t}^{2} - {2t} + 1 + {2t} - 3 =  {t}^{2} - 2$ 不是 “完全平方数，所以当 $t \geq  2$ 时，数列 $\left\{  \left| {b}_{n}\right| \right\}$ 不是完全平方数列,综上所述: 只有当 $t = 1$ 时,数列 $\left\{  \left| {b}_{n}\right| \right\}$ 为 “完全平方数列”,故 \ding{172} 是真命题；
+        
+        对于 \ding{173} ，$a_n = 1$即可, 故  \ding{173}  是真命题. 
+    \end{jieda}
+    \item (2024$\cdot$黄浦区二模$\cdot$16)设数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，若对任意的正整数 $n$ ， ${S}_{n}$ 都是数列 $\left\{  {a}_{n}\right\}$ 中的项，则称数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 对于命题: \ding{172}  存在“ $T$ 数列” $\left\{  {a}_{n}\right\}$ ，使得数列 $\left\{  {S}_{n}\right\}$ 为公比不为 1 的等比数列;  \ding{173}  对于任意的实数 ${a}_{1}$ ,都存在实数 $d$ ,使得以 ${a}_{1}$ 为首项、 $d$ 为公差的等差数列 $\left\{  {a}_{n}\right\}$ 为“ $T$ 数列”. 下列判断正确的是 \dotfill{(\kh{A})}
+    \xx{\ding{172} 和 \ding{173} 均为真命题}{\ding{172} 和 \ding{173} 均为假命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题} 
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 设$S_n = a_1q^{n-1}$，$a_n = S_n - S_{n-1} = a_1q^{n-2}(q-1), n \geq 2$，故$a_1q^{n-2}(q-1) = a_1q^{m-1}$对任意的$m$，存在$n$使得方程有解. 故考虑$q = 2$，此时$n = m+1$，故$a_n = \left\{\begin{array}{l}
+                a_1, n = 1\\
+                a_1 \times 2^{n-2}, n \geq 2
+            \end{array}\right.$满足要求.
+            \item 当$a_1 \geq 0$时，$d  = 1$即可，当$a_1 < 0$，$d = -1$即可.
+        \end{dingautolist}
+    \end{jieda}
     \item (2025$\cdot$杨浦区一模$\cdot$16)设无穷数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，且对任意的正整数 $n$ ， ${a}_{n + 1} = \dfrac{{S}_{n}}{{a}_{n}}$ ，则 $\mathop{\sum }\limits_{{i = 1}}^{5}{a}_{2i} - \mathop{\sum }\limits_{{i = 1}}^{6}{a}_{{2i} - 1}$ 的值可能为 \dotfill{(\kh{A})}
     \xx{$-6$}{$0$}{$6$}{$12$}
     \begin{jieda}
