@@ -1,0 +1,258 @@
+\chapter*{解三角}
+\subsection*{求边求角}
+\begin{enumerate}
+    \item 在$\triangle ABC$中，若$a = 6, b = 6\sqrt{3}, A = \dfrac{\pi}{6}$，则$c = $\blkda{6或12}.
+    \begin{jieda}
+        根据余弦定理有$a^2 = b^2 + c^2 - 2bc \cdot cosA$，即$36 = 108 + c^2 - 18c$，解得$c = 6$或$12$.
+    \end{jieda}
+    \item 在$\triangle ABC$中，若$a = 6, b = 6\sqrt{3}, A = \dfrac{\pi}{6}$，则$C = $\blkda{$\dfrac{\pi}{6}$或$\dfrac{\pi}{2}$}.
+    \begin{jieda}
+        根据正弦定理有$\dfrac{a}{sinA} = \dfrac{b}{sinB}$，故$sinB = \dfrac{\sqrt{3}}{2}$，故$B = \dfrac{2\pi}{3}$或$\dfrac{\pi}{3}$，故$C = \dfrac{\pi}{6}$或$\dfrac{\pi}{2}$.
+    \end{jieda}
+
+    \item (2024$\cdot$上海秋季卷$\cdot$11)已知点 $B$ 在点 $C$ 正北方向，点 $D$ 在点 $C$ 的正东方向， ${BC} = {CD}$ ，存在点$A$满足 $\angle {BAC} = {16.5}^{ \circ  }$ ， $\angle {DAC} = {37}^{ \circ  }$ ，则 $\angle {BCA} =$ \blkda[2]{${7.8}^{ \circ  }$}.(精确到 ${0.1}^{ \circ  }$)
+    \begin{jieda}
+        设 $\angle {BCA} = \theta$ ，则 $\angle {ACD} = {90}^{\circ} - \theta$，$\angle ADC = \ang{53} + \theta$，$\angle ABC = \ang{163.5} - \theta$
+        
+        由正弦定理，在 $\bigtriangleup  {DCA}$ 中，$\dfrac{CD}{sin\ang{37}} = \dfrac{AC}{sin(\ang{53} + \theta)}$，在 $\bigtriangleup {BCA}$ 中，$\dfrac{BC}{sin\ang{16.5}} = \dfrac{AC}{sin(\ang{163.5} - \theta)}$
+
+        故$\dfrac{sin(\ang{53} + \theta)}{cos\ang{53}} = \dfrac{sin(\ang{16.5} + \theta)}{sin\ang{16.5}}$，即$tan\ang{53}cos\theta + sin\theta = cos\theta + cot\ang{16.5}sin\theta$
+        
+        故$tan\theta = \dfrac{tan\ang{53}-1}{cot\ang{16.5}-1}$，$\theta = arctan\left(\dfrac{tan\ang{53}-1}{cot\ang{16.5}-1}\right) \approx \ang{7.8}$
+
+        \ps 题目条件集中在角上，故先标出角，利用正弦定理建立等量关系
+        \begin{center}
+            \includegraphics[width=0.15\textwidth]{bodyxb/src/35_1339_1865_192_231_0.jpg}
+        \end{center}
+    \end{jieda}
+\end{enumerate}
+\subsection*{正弦定理多解问题}
+\begin{enumerate}
+    \item 在 $\bigtriangleup  {ABC}$ 中, ${AB} = 2,{AC} = \sqrt{2},B = {30}^{ \circ  }$ ,则 $A =$\blkda{${105}^{ \circ  }$ 或 ${15}^{ \circ  }$}
+    \item 在 $\bigtriangleup  {ABC}$ 中, $A = \dfrac{\pi }{6},{BC} = 2$ ,若满足上述条件的 $\bigtriangleup  {ABC}$ 恰有一解,则边长 ${AC}$ 的取值范围是\blkda{$(0,2\rbrack  \cup  \{ 4\}$}
+    \item 在 $\bigtriangleup  {ABC}$ 中,角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ,已知 $a = 8,B = \dfrac{\pi }{6}$ ,要使该三角形有唯一解,则 $b$ 的取值范围为\blkda[3]{$\{4\} \cup[8,+\infty)$}
+    \item (2025$\cdot$杨浦区二模$\cdot$13) $\bigtriangleup  {ABC}$ 中，“$sinA = sinB$”是 “$A = B$” 的 \dotfill{(\kh{C})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分也非必要条件}
+    \item $\bigtriangleup  {ABC}$ 中，“$sinA > sinB$”是 “$A > B$” 的 \dotfill{(\kh{C})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分也非必要条件}
+\end{enumerate}
+\subsection*{边角转换}
+\begin{enumerate}
+    \item 在$\triangle ABC$中，若$b = 2csinB$，则$C = $\blkda{$\dfrac{\pi}{6}$或$\dfrac{5\pi}{6}$}
+    \begin{jieda}
+        根据正弦定理有$sinB = 2sinC \cdot sinB$，即$sinC = \dfrac{1}{2}$. 故$C = \dfrac{\pi}{6}$或$\dfrac{5\pi}{6}$.
+    \end{jieda}
+    \item 在$\triangle ABC$中，若$cosA = \dfrac{sinB}{2sinC}, b = 4\sqrt{3}, 2sinB = \sqrt{3}$，则$a = $\blkda{4或$4\sqrt{3}$}.
+    \begin{jieda}
+        根据题干条件有$sinB = \dfrac{\sqrt{3}}{2}$，即$B = \dfrac{\pi}{3}$或$\dfrac{2\pi}{3}$. \\
+        根据正弦定理有$cosA = \dfrac{b}{2c}$；根据余弦定理有$cosA = \dfrac{b^2+c^2-a^2}{2bc} = \dfrac{b}{2c}$，因此$a = c$，故$A = C = \dfrac{\pi}{3}$或$\dfrac{\pi}{6}$. 故$\triangle ABC$为等边三角形或者顶角$120^{\circ}$的等腰三角形，可知$a = 4$ 或$4\sqrt{3}$.
+    \end{jieda}
+    \item 在$\triangle{ABC}$中, $A=\ang{60}$, $b=1$, $S_{\triangle{ABC}}=\sqrt{3}$, 则$\dfrac{a+b+c}{\sin{A}+\sin{B}+\sin{C}}$=\blkda{$\dfrac{2\sqrt{39}}{3}$}. 
+    \begin{jieda}
+        $\dfrac{1}{2}bcsinA = \sqrt{3}$，故$c = 4$，故$a^2 = b^2+c^2-2bccosA = 1 + 16 - 4 = 13$，故$a = \sqrt{13}$，因此$\dfrac{a+b+c}{\sin{A}+\sin{B}+\sin{C}} = \dfrac{a}{sinA} = \dfrac{\sqrt{13}}{\dfrac{\sqrt{3}}{2}} = \dfrac{2\sqrt{39}}{3}$
+    \end{jieda}
+\end{enumerate}
+\subsection*{已知一组对边和对角}
+\begin{enumerate}
+    \item 在 $\bigtriangleup  {ABC}$ 中,内角 $A,B,C$ 所对的边分别为 $a,b,c,\cos C = \dfrac{1}{3},c = 8$ ,则当 $a + b$ 取得最大值时, $\sin A =$\blkda{$\dfrac{\sqrt{6}}{3}$}
+    \begin{jieda}
+        根据余弦定理有$c^2 = a^2+b^2-2abcosC$，故$64 = a^2+b^2-\dfrac{2}{3}ab = (a+b)^2 - \dfrac{8}{3}ab$，根据平均值不等式有$ab \leq \left(\dfrac{a+b}{2}\right)^2$，故$64 = (a+b)^2 - \dfrac{8}{3}ab \geq \dfrac{(a+b)^2}{3}$，$a+b \leq 8\sqrt{3}$，当且仅当$a = b = 4\sqrt{3}$时取等. 此时根据余弦定理可得$cosA = \dfrac{\sqrt{3}}{3}$，故$sinA = \dfrac{\sqrt{6}}{3}$
+    \end{jieda}
+    \item 在 $\bigtriangleup  {ABC}$ 中,内角 $A,B,C$ 所对的边分别为 $a,b,c,\cos C = \dfrac{1}{3},c = 8$ ,则当 $ab$ 取得最大值时, $\sin A =$\blkda{$\dfrac{\sqrt{6}}{3}$}\begin{jieda}
+        根据余弦定理有$c^2 = a^2+b^2-2abcosC$，故$64 = a^2+b^2-\dfrac{2}{3}ab$，根据平均值不等式有$a^2+b^2 \geq 2ab$，故$64 = a^2+b^2-\dfrac{2}{3}ab \geq \dfrac{4}{3}ab$，$ab \leq 48$，当且仅当$a = b = 4\sqrt{3}$时取等. 此时根据余弦定理可得$cosA = \dfrac{\sqrt{3}}{3}$，故$sinA = \dfrac{\sqrt{6}}{3}$
+    \end{jieda}
+    \item 在 $\bigtriangleup  {ABC}$ 中,内角 $A,B,C$ 所对的边分别为 $a,b,c,\cos C = \dfrac{1}{3},c = 8$ ,则当 $a^2 + b^2$ 取得最大值时, $\sin A =$\blkda{$\dfrac{\sqrt{6}}{3}$}
+    \begin{jieda}
+        根据余弦定理有$c^2 = a^2+b^2-2abcosC$，故$64 = a^2+b^2-\dfrac{2}{3}ab$，根据平均值不等式有$a^2+b^2 \geq 2ab$，故$64 = a^2+b^2-\dfrac{2}{3}ab \geq \dfrac{2}{3}(a^2+b^2)$，$a^2+b^2 \leq 96$，当且仅当$a = b = 4\sqrt{3}$时取等. 此时根据余弦定理可得$cosA = \dfrac{\sqrt{3}}{3}$，故$sinA = \dfrac{\sqrt{6}}{3}$
+    \end{jieda}
+    \item 在 $\bigtriangleup  {ABC}$ 中,内角 $A,B,C$ 所对的边分别为 $a,b,c,\cos C = \dfrac{1}{3},c = 8$ ,则当 $S_{\triangle ABC}$ 取得最大值时, $\sin A =$\blkda{$\dfrac{\sqrt{6}}{3}$}
+    \begin{jieda}
+        $S_{\triangle ABC} = \dfrac{1}{2}absinC$，故$S_{\triangle ABC}$取得最大值即$ab$ 取得最大值，过程同上.
+    \end{jieda}
+    \item (2024$\cdot$青浦区一模$\cdot$18)在 $\bigtriangleup {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ，且满足 ${a}^{2} + {c}^{2} - {b}^{2} +  {ac} = 0.$
+    \begin{enumerate}
+        \item 求角 $B$ 的大小
+        \item 若 $b = 2\sqrt{3}$ ，求 $\bigtriangleup  {ABC}$ 的周长的最大值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 ${a}^{2} + {c}^{2} - {b}^{2} =  - {ac}$ ，由余弦定理得 $\cos \angle B =  \dfrac{{a}^{2} + {c}^{2} - {b}^{2}}{2ac} =  - \dfrac{1}{2},\angle B = {120}^{ \circ  }$
+            
+            \item 由正弦定理得， $a = 4\sin A$ ， $c = 4\sin \left( {{60}^{ \circ  } - A}\right)$ ，所以 $\bigtriangleup {ABC}$ 的周长为 $a + b + c = 4\sin A + 4\sin \left( {{60}^{ \circ  } - A}\right)  + 2\sqrt{3} =  4\sin \left( {A + {60}^{ \circ  }}\right)  + 2\sqrt{3},{0}^{ \circ  } < A < {60}^{ \circ  }$ ,当 $A = {30}^{ \circ  }$ 时, $\bigtriangleup {ABC}$ 的周长的最大值为 $4 + 2\sqrt{3}$.
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{化角主元归一求取值范围（最值）}
+\begin{enumerate}
+    \item (2024$\cdot$闵行区一模$\cdot$18)在 $\bigtriangleup  {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对边的边长分别为 $a$ 、 $b$ 、 $c$ ，且 $a - {2c}\cos B = c$.
+    \begin{enumerate}
+        \item 若 $\cos B = \dfrac{1}{3},c = 3$ ，求 $b$ 的值
+        \item 若 $\bigtriangleup  {ABC}$ 为锐角三角形，求 $\sin C$ 的取值范围.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 将 $\cos B = \dfrac{1}{3},c = 3$ 带入条件中可得 $a = 5$ ，由余弦定理 ${b}^{2} = {a}^{2} + {c}^{2} - {2ac}\cos B$ 可得 $b = 2\sqrt{6}$
+            \item 因为 $a - {2c}\cos B = c$ ，由正弦定理可得 $\sin A - 2\sin C\cos B =  \sin C$ ,因为 $\sin A = \sin \left( {B + C}\right)  = \sin B\cos C + \cos B\sin C$ ,所以 $\sin B\cos C - \sin C\cos B = \sin C,\sin \left( {B - C}\right)  = \sin C$ ,因为 $B -  C \in  \left( {-\dfrac{\pi }{2},\dfrac{\pi }{2}}\right) ,C \in  \left( {0,\dfrac{\pi }{2}}\right)$ ,所以 $B - C = C$ ,即 $B = {2C}$ ,又因为 $\bigtriangleup {ABC}$ 为锐角三角形,所以 $C \in  \left( {\dfrac{\pi }{6},\dfrac{\pi }{4}}\right) ,\sin C \in  \left( {\dfrac{1}{2},\dfrac{\sqrt{2}}{2}}\right)$
+        \end{enumerate}
+    \end{jieda}
+    \item 在$\triangle{ABC}$中, $a,b,c$分别为内角$A,B,C$的对边，且满足$\sqrt{3}tanAtanB - tanA - tanB = \sqrt{3}$
+    \begin{enumerate*}
+        \item 求$C$的大小
+        \item 若$c = 2$，且$\triangle{ABC}$为锐角三角形，求$a^2+b^2$的取值范围
+    \end{enumerate*}
+
+    \begin{jieda}
+        \begin{enumerate}
+            \item $\sqrt{3}tanAtanB - tanA - tanB = \sqrt{3}$即$-\sqrt{3}(1-tanAtanB) = -(tanA + tanB)$，即$\sqrt{3} = -tan(A+B) = tanC$，故$C = \dfrac{\pi}{3}$
+            \item 根据正弦定理有$\dfrac{a}{sinA} = \dfrac{b}{sinB} = \dfrac{c}{sinC} = \dfrac{2}{\dfrac{\sqrt{3}}{2}} = \dfrac{4\sqrt{3}}{3}$，因此$a^2+b^2 = \dfrac{16}{3}(sin^2A + sin^2B) = \dfrac{16}{3}(sin^2A + sin^2(\dfrac{2\pi}{3}-A)) = \dfrac{16}{3}(1+\dfrac{1}{2}sin(2A - \dfrac{\pi}{6}))(A \in (\dfrac{\pi}{6}, \dfrac{\pi}{2}))$，因此$a^2+b^2 \in \left(\dfrac{20}{3}, 8 \right]$
+        \end{enumerate}        
+    \end{jieda}
+    \item 已知 $\bigtriangleup {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,角 $B$ 为钝角,设 $\bigtriangleup {ABC}$ 的面积为 $S$ ,若 ${4bS} = a\left( {{b}^{2} + {c}^{2} - {a}^{2}}\right)$，则 $\sin A + 2\sin C$ 的取值范围为\blkda{$\left( {\dfrac{\sqrt{2}}{2},\dfrac{33}{16}}\right\rbrack$}
+    \begin{jieda}
+        ${4bS} = a\left( {{b}^{2} + {c}^{2} - {a}^{2}}\right)$，即$4bS = 2abc cosA$，即$\sin B = \cos A$，因为 $B$ 是钝角，所以 $B = \dfrac{\pi }{2} + A$
+        
+        所以 $\sin A + 2\sin C = \sin A + 2\sin \left\lbrack  {\pi  - \left( {\dfrac{\pi }{2} + A}\right)  - A}\right\rbrack   = \sin A + 2\sin \left( {\dfrac{\pi }{2} - {2A}}\right)$
+        $= \sin A + 2\cos {2A} =  - 4{\sin }^{2}A + \sin A + 2$
+
+        因为 $B$ 为钝角,所以 $\left\{  \begin{array}{l} 0 < A < \dfrac{\pi }{2} \\  0 < \dfrac{\pi }{2} - {2A} < \dfrac{\pi }{2} \end{array}\right.$ ,解得 $0 < A < \dfrac{\pi }{4}$ ,所以 $\sin A \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$
+
+        令 $y =  - 4{\sin }^{2}A + \sin A + 2,\sin A \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,
+        令 $t = \sin A,t \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,所以 $y =  - 4{t}^{2} + t + 2$ ,对称轴为 $t = \dfrac{1}{8} \in  \left( {0,\dfrac{\sqrt{2}}{2}}\right)$ ,
+        所以 ${y}_{\max } =  - 4{\left( \dfrac{1}{8}\right) }^{2} + \dfrac{1}{8} + 2 = \dfrac{33}{16}$ ,当 $t \Longrightarrow  \dfrac{\sqrt{2}}{2}$ 时, $y \Longrightarrow  \dfrac{\sqrt{2}}{2}$ ,
+        所以 $\sin A + 2\sin C$ 的取值范围为 $\left( {\dfrac{\sqrt{2}}{2},\dfrac{33}{16}}\right\rbrack$
+    \end{jieda}
+        \item 设锐角 $\bigtriangleup  {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,若 $C = {2A}$ ,则 $\dfrac{{2c} + b}{a}$ 的取值范围是\blkda[4]{$\left( {2\sqrt{2} + 1,2\sqrt{3} + 2}\right)$}
+    \begin{jieda}
+        因为 $C = {2A}$，所以$B = \pi -3A$，故$\dfrac{{2c} + b}{a} = \dfrac{2sinC+sinB}{sinA} = \dfrac{2sin2A+sin3A}{sinA} = 4cosA + 3 - 4sin^2A = 4cos^2A + 4cosA - 1$
+        
+        又 $\bigtriangleup {ABC}$ 为锐角三角形,故可得$A \in  \left( {\dfrac{\pi }{6},\dfrac{\pi }{4}}\right)$ ,则 $\cos A \in  \left( {\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{3}}{2}}\right)$ ,故$\dfrac{b + {2c}}{a} \in  \left( {2\sqrt{2} + 1,2\sqrt{3} + 2}\right)$ .
+    \end{jieda}
+    \item 记 $\bigtriangleup  {ABC}$ 的内角 $A,B,C$ 的对边分别为 $a,b,c$ ,已知 $\dfrac{\cos A}{1 + \sin A} = \dfrac{\sin {2B}}{1 + \cos {2B}}$.
+    
+    \begin{enumerate*}
+        \item 若 $C = \dfrac{2\pi }{3}$ ,求 $B$
+        \item 求 $\dfrac{{a}^{2} + {b}^{2}}{{c}^{2}}$ 的最小值.
+    \end{enumerate*}
+    \begin{jieda}
+        $\dfrac{\cos A}{1 + \sin A} = \dfrac{\sin {2B}}{1 + \cos {2B}}$即$tan\left(\dfrac{\pi}{4}-\dfrac{A}{2}\right) = tanB$，故$\dfrac{A}{2}+B = \dfrac{\pi}{4} + k\pi, k \in \mathbf{Z}$
+
+        因为$\dfrac{A}{2} + B \in \left(0, \pi\right)$，所以$\dfrac{A}{2}+B = \dfrac{\pi}{4}$
+        
+        \begin{enumerate}
+            \item $\left\{\begin{array}{l}
+                 A+B = \dfrac{\pi}{3}  \\
+                 \dfrac{A}{2}+B = \dfrac{\pi}{4} 
+            \end{array}\right.$，因此$A = \dfrac{\pi}{6}, B = \dfrac{\pi}{6}$
+            \item $A = \dfrac{\pi}{2} - 2B, C = \dfrac{\pi}{2}+B$
+            
+            $\dfrac{{a}^{2} + {b}^{2}}{{c}^{2}} = \dfrac{sin^2A+sin^2B}{sin^2C} = \dfrac{cos^2(2B) + sin^2B}{cos^2B} = 4cos^2B + \dfrac{2}{cos^2B}-5$，$B \in \left(0, \dfrac{\pi}{4}\right)$，$cos^2B \in \left(\dfrac{1}{2}, 1\right)$，故$\dfrac{{a}^{2} + {b}^{2}}{{c}^{2}} \geq 4\sqrt{2} - 5$，当$cos^2B = \dfrac{\sqrt{2}}{2}$时取到.
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{中线、角分线、高线、内切圆半径、外接圆半径}
+\begin{enumerate}
+    \item (2024$\cdot$金山区二模$\cdot$11)某临海地区为保障游客安全修建了海上救生栈道，如图所示，线段 ${BC}$ 、 ${CD}$ 是救生栈道的一部分，其中 ${BC} = {300}{m}$ ， ${CD} = {800}{m}$ ， $B$ 在 $A$ 的北偏东 ${30}^{ \circ  }$ 方向， $C$ 在 $A$ 的正北方向， $D$ 在 $A$ 的北偏西 ${80}^{ \circ  }$ 方向，且 $\angle B = {90}^{ \circ  }$. 若救生艇在 $A$ 处载上遇险游客需要尽快抵达救生栈道 $B - C - D$ ，则最短距离为\blkda[2]{$475$}m. (结果精确到 $1{m}$ )
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/56_275_950_325_222_0.jpg}
+    \end{center}
+    \begin{jieda}
+        作 ${AE} \bot  {CD}$ 交与 $E$ ,由题意得 $\angle B = {90}^{ \circ  },\angle {CAB} = {30}^{ \circ  },{BC} = {300}{m}$ ，所以 ${AB} = {BC}\cot {30}^{ \circ  } = {300}\sqrt{3}{m},{AC} =  {600}{m}$ ,在 $\bigtriangleup {ADC},\cos {80}^{ \circ  } = \dfrac{{600}^{2} + A{D}^{2} - {800}^{2}}{2 \times  {600} \times  {AD}}$ ,解得 ${AD} \approx  {643.50}{m},{S}_{\bigtriangleup {ADC}} = \dfrac{1}{2}{AD} \times  {AC} \times  \sin {80}^{ \circ  } \approx  {190117.1367}{{m}}^{2},{AE} =  \dfrac{2{S}_{\bigtriangleup {ADC}}}{CD} \approx  {475.29} < {300}\sqrt{3} = {AB}$ ,所以最短距离为 ${475}{m}$ .
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/40_634_285_233_164_0.jpg}
+        \end{center}
+    \end{jieda}
+
+    \item 如图，在滕王阁旁的水平地面上共线的三点$A,B,C$处测得其顶点$P$的仰角分别为$\ang{30}, \ang{60}, \ang{45}$，且$AB = BC = 75$米，则滕王阁的高度\blkda{$15\sqrt{15}$}米.
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/tengwangge.png}
+    \end{center}
+
+
+    \item 在 $\bigtriangleup {ABC}$ 中, $\angle {BAC} = {60}^{ \circ  },{AB} = 2,{BC} = \sqrt{6},\angle {BAC}$ 的角平分线交 ${BC}$ 于 $D$ ,则 ${AD} =$\blkda{2}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 方法1 \\
+            根据余弦定理可得$AC = 1+\sqrt{3}$，故根据角分线定理可知$BD = \dfrac{\sqrt{6}}{2+(1+\sqrt{3})} \times 2 = \sqrt{6}-\sqrt{2}$，故根据余弦定理可得$AD = 2$
+            \item 方法2 \\
+            根据余弦定理可得$AC = 1+\sqrt{3}$，设$AD = x$，大三角形面积等于两个小三角形面积，故有$\dfrac{x}{2} + \dfrac{1+\sqrt{3}}{4}x = \dfrac{3+\sqrt{3}}{2}$，故$x = 2$.
+        \end{dingautolist}
+    \end{jieda}
+    \item 在 $\bigtriangleup {ABC}$ 中, $A = \dfrac{\pi}{3}$，若 $\bigtriangleup {ABC}$ 的内切圆半径 $r = \dfrac{1}{2}$ ,求 ${AB} + {AC}$ 的最小值.
+    \begin{jieda}
+        令 ${BC} = a,{AB} = c,{AC} = b$，$A = \dfrac{\pi }{3}$ .
+        由 ${S}_{\bigtriangleup {ABC}} = \dfrac{1}{2}{bc}\sin A = \dfrac{1}{2}\left( {a + b + c}\right) r$ ,得$\dfrac{\sqrt{3}}{2}{bc} = \dfrac{1}{2}\left( {a + b + c}\right)$ ,即 $\sqrt{3}bc - b - c = a$ 
+        
+        根据余弦定理得${a}^{2} = {b}^{2} + {c}^{2} - {2bc}\cos A = {b}^{2} + {c}^{2} - {bc} = (b+c)^2-3bc$
+
+        故有$\left(\sqrt{3}{bc} - b - c\right)^2 = (b+c)^2-3bc$，即$3{\left( bc\right) }^{2} + {\left( b + c\right) }^{2} - 2\sqrt{3}{bc}\left( {b + c}\right)  = {\left( b + c\right) }^{2} - {3bc}$，于是 $3{bc} = 2\sqrt{3}\left( {b + c}\right)  - 3$
+
+        $2\sqrt{3}\left( {b + c}\right)  - 3 = 3{bc} \leq  3{\left( \dfrac{b + c}{2}\right) }^{2}$当且仅当 $b = c$ 时取等号
+        
+        所以 $\sqrt{3}{\left( b + c\right) }^{2} - 8\left( {b + c}\right)  + 4\sqrt{3} \geq  0$，故$b + c \geq  2\sqrt{3}$ 或 $b + c \leq  \dfrac{2}{\sqrt{3}}$ ,
+        又 $\bigtriangleup {ABC}$ 的内切圆半径 $r = \dfrac{1}{2},A = \dfrac{\pi }{3}, \therefore b + c > \dfrac{\dfrac{1}{2}}{\tan \dfrac{\pi }{6}} \times  2 = \sqrt{3}$ ,
+        $\therefore b + c \geq  2\sqrt{3},{AB} + {AC}$ 的最小值为 $2\sqrt{3}$.
+    \end{jieda}
+
+    \item 已知 $\bigtriangleup  {ABC}$ , ${AB} = 2$ , ${AC} = \sqrt{2}{BC}$ , $\bigtriangleup  {ABC}$ 的外心是 $D$ ,则 $\bigtriangleup  {ABC}$ 面积最大时,四边形 ${ABCD}$ 的面积是\blkda{$5\sqrt{2}$}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 主元归一
+            
+
+            设 ${BC} = a$ ,则 ${AC} = \sqrt{2}a$，在 ${\Delta ABC}$ 中, $\cos B = \dfrac{A{B}^{2} + B{C}^{2} - A{C}^{2}}{{2AB} \cdot  {BC}} = \dfrac{4 - {a}^{2}}{4a}$
+
+            因为 $B \in  \left( {0,\pi }\right)$ ,所以 $\sin B = \sqrt{1 - {\cos }^{2}B} = \sqrt{1 - \dfrac{{16} + {a}^{4} - 8{a}^{2}}{{16}{a}^{2}}} = \dfrac{\sqrt{-{a}^{4} + {24}{a}^{2} - {16}}}{4a}$ .
+
+            所以 ${S}_{\bigtriangleup {ABC}} = \dfrac{1}{2}{AB} \cdot  {BC}\sin B = a \cdot  \dfrac{\sqrt{-{a^4} + {24a^2} - {16}}}{4a} = \dfrac{\sqrt{-{\left( a - {12}\right) }^{2} + {128}}}{4}$，所以当 ${a2} = {12}$ ,即 $a = 2\sqrt{3}$ 时, ${S}_{\bigtriangleup {ABC}}$ 的面积最大
+
+            此时 ${BC} = 2\sqrt{3},{AC} = 2\sqrt{6},\cos B = \dfrac{4 - {12}}{4 \times  2\sqrt{3}} =  - \dfrac{1}{\sqrt{3}},\sin B = \dfrac{\sqrt{6}}{3}$ ,
+            ${\left( {S}_{\Delta ABC}\right) }_{\max } = \dfrac{\sqrt{128}}{4} = 2\sqrt{2}$
+
+            \ps 选择$\angle B$很重要，计算面积的时候幂次低
+
+            \item 阿氏圆（这里仅用平面几何推导）
+            
+            根据阿氏圆定义可知满足${AC} = \sqrt{2}{BC}$的$C$的轨迹为圆，圆心在$AB$延长线上，设圆和直线$AB$交于$D_1, D_2$
+            
+            $\dfrac{2-BD_1}{BD_1} = \sqrt{2}$，因此$BD_1 = \dfrac{2}{\sqrt{2}+1} = 2(\sqrt{2}-1)$
+
+            $\dfrac{2+BD_2}{BD_2} = \sqrt{2}$，因此$BD_2 = \dfrac{2}{\sqrt{2}-1} = 2(\sqrt{2}+1)$
+
+            因此阿氏圆的半径为$2\sqrt{2}$，当$C$位于阿氏圆最高点时，${S}_{\bigtriangleup {ABC}}$ 的面积最大为$2\sqrt{2}$，根据几何关系可知此时$BC = 2\sqrt{3}$，$AC = 2\sqrt{6}$
+
+            \ps 利用内外角分线定理可以证明阿氏圆.
+        \end{dingautolist}
+        
+        
+        因为 $D$ 是 $\bigtriangleup  {ABC}$ 的外心,所以 ${AD} = {DC} = \dfrac{AC}{2\sin B} = \dfrac{2\sqrt{6}}{\dfrac{2\sqrt{6}}{3}} = 3$ ,
+        在 ${\Delta ADC}$ 中, $\cos D = \dfrac{A{D}^{2} + D{C}^{2} - A{C}^{2}}{{2AD} \cdot  {DC}} = \dfrac{9 + 9 - {24}}{18} =  - \dfrac{1}{3}$ .
+        所以 $\sin D = \sqrt{1 - {\cos }^{2}D} = \dfrac{2\sqrt{2}}{3}$.
+        
+        所以 ${S}_{\bigtriangleup {ADC}} = \dfrac{1}{2} \times  3 \times  3 \times  \dfrac{2\sqrt{2}}{3} = 3\sqrt{2}$，所以 $\bigtriangleup {ABC}$ 面积最大时,四边形 ${ABCD}$ 的面积是 $3\sqrt{2} + 2\sqrt{2} = 5\sqrt{2}$ .
+    \end{jieda}
+\end{enumerate}
+\subsection*{解三角与实际问题}
+\begin{enumerate}
+    \item (2025$\cdot$上海秋季卷$\cdot$11)小申同学观察发现，生活中有些时候影子可以完全投射在斜面上. 某斜面上有两根长为 $1{m}$ 的垂直于水平面放置的杆子，与斜面的接触点分别为 $A$ 、 $B$ ，它们在阳光的照射下呈现出影子. 阳光可视为平行光,其中一根杆子的影子在水平面上,长度为 ${0.4}{m}$ ,另一根杆子的影子完全在斜面上，长度为 ${0.45}{m}$. 则斜面的底角 $\theta  =$ \blkda[2]{${12.58}^{ \circ  }$}.(结果用角度制表示，精确到 0.01 \textdegree )
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/55_1095_1384_335_219_0.jpg}
+    \end{center}
+    \begin{jieda}
+        如图,在 $A$ 处, $\tan x = \dfrac{1}{0.4} = {2.5}$ ,在 $B$ 处满足 $\tan \angle {CED} = {2.5}$ ,(其中 ${ED}//$ 水平面, ${CE}$ 是射过 $B$ 处杆子最高点的光线,光线交斜面于 $E$ ),故设 ${BD} = y$ ,则 ${ED} =  \dfrac{1 + y}{2.5}$ ,由勾股定理, ${y}^{2} + {\left( \dfrac{1 + y}{2.5}\right) }^{2} = {0.45}^{2}$ ,解得 $y \approx  {0.098}$ , 于是 $\theta  = \arcsin \dfrac{0.098}{0.45} \approx  {12.58}^{ \circ  }$.
+
+        \begin{center}
+        \includegraphics[width=0.3\textwidth]{bodyxb/src/39_989_1509_409_236_0.jpg}
+        \end{center}
+    \end{jieda}
+    \item (2025$\cdot$奉贤区一模$\cdot$10)申辉中学高一(8)班设计了一个“水滴状”班徽的平面图 (如图所示),徽章由等腰三角形 ${ABC}$ 及以弦 ${BC}$ 和劣弧 ${BC}$ 所围成的弓形所组成，其中 ${AB} = {AC}$ ，劣弧 ${BC}$ 所在的圆为三角形的外接圆， 圆心为 $O$. 已知 $\angle {BAC} = \theta$ ， $\theta  \in  \left( {0, \dfrac{\pi }{2}}\right)$ ，外接圆的半径是 2，则该图形的面积为\blkda[2]{${4\theta } + 4\sin \theta$}. (用含 $\theta$ 的表达式表示)
+    \begin{jieda}
+        由正弦定理得 $\dfrac{\left| AB\right| }{\sin \left( \dfrac{\pi  - \theta }{2}\right) } = \dfrac{\left| AB\right| }{\cos \dfrac{\theta }{2}} = 4 \Longrightarrow  \left| {AB}\right|  =  4\cos \dfrac{\theta }{2}$ ,且可知 $\angle {BOC} = {2\theta }$ ,则该图形的面积为 $S = \dfrac{1}{2}\left| {AB}\right| \left| {AC}\right| \sin \theta  + {2\theta } \times  2 - \dfrac{1}{2} \times  2 \times  2 \times  \sin {2\theta },$
+
+        $S = \dfrac{1}{2}{\left( 4\cos \dfrac{\theta }{2}\right) }^{2}\sin \theta  + {4\theta } - 2\sin {2\theta } = 8{\left( \cos \dfrac{\theta }{2}\right) }^{2}\sin \theta  + {4\theta } - 2\sin {2\theta }  = 4\left( {\cos \theta  + 1}\right) \sin \theta  + {4\theta } - 2\sin {2\theta } = 2\sin {2\theta } + 4\sin \theta  + {4\theta } - 2\sin {2\theta }  = 4\sin \theta  + {4\theta }$.
+    \end{jieda}
+
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/55_1138_170_262_274_0.jpg}
+    \end{center}
+\end{enumerate}

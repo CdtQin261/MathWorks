@@ -1788,6 +1788,34 @@
     \begin{jieda}
         $S_{\triangle ABC} = \dfrac{1}{2}absinC$，故$S_{\triangle ABC}$取得最大值即$ab$ 取得最大值，过程同上.
     \end{jieda}
+    \item 在 $\bigtriangleup  {ABC}$ 中,角 $A,B,C$ 对应的边分别为 $a,b,c,A = \dfrac{\pi }{6},a = 2$.
+    \begin{enumerate}
+        \item 若 $b = 4$ ,求 $C$
+        \item 当 $b$ 为何值时, ${\Delta ABC}$ 的面积 $S$ 最大？并求出 $S$ 的最大值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由正弦定理 $\dfrac{a}{\sin A} = \dfrac{b}{\sin B}$ ,得 $\sin B = \dfrac{b\sin A}{a} = \dfrac{4 \times  \dfrac{1}{2}}{2} = 1$，因为 $0 < B < \pi$ ,所以 $B = \dfrac{\pi }{2}$ .
+            故 $C = \pi  - A - B = \dfrac{\pi }{3}$.
+            \item 由余弦定理得 ${a^2} = {b}^{2} + {c}^{2} - {2bc}\cos A$ ,即 $4 + \sqrt{3}{bc} = {b}^{2} + {c}^{2}$ .
+            又 ${b}^{2} + {c}^{2} \geq  {2bc}$ ,则 $4 + \sqrt{3}{bc} \geq  {2bc}$ ,
+            所以 ${bc} \leq  \dfrac{4}{2 - \sqrt{3}} = 4\left( {2 + \sqrt{3}}\right)$ ,当且仅当 $b = c = \sqrt{2} + \sqrt{6}$ 时,等号成立.
+            则 $S = \dfrac{1}{2}{bc}\sin A = \dfrac{1}{4}{bc} \leq  2 + \sqrt{3}$ .
+            因此,当 $b$ 为 $\sqrt{2} + \sqrt{6}$ 时, ${S}_{\bigtriangleup {ABC}}$ 取得最大值 $2 + \sqrt{3}$ .
+        \end{enumerate}
+    \end{jieda}
+    \item 在 $\bigtriangleup {ABC}$ 中，角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ ，且满足 ${a}^{2} + {c}^{2} - {b}^{2} +  {ac} = 0.$
+    \begin{enumerate}
+        \item 求角 $B$ 的大小
+        \item 若 $b = 2\sqrt{3}$ ，求 $\bigtriangleup  {ABC}$ 的周长的最大值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 ${a}^{2} + {c}^{2} - {b}^{2} =  - {ac}$ ，由余弦定理得 $\cos \angle B =  \dfrac{{a}^{2} + {c}^{2} - {b}^{2}}{2ac} =  - \dfrac{1}{2},\angle B = {120}^{ \circ  }$
+            
+            \item 由正弦定理得， $a = 4\sin A$ ， $c = 4\sin \left( {{60}^{ \circ  } - A}\right)$ ，所以 $\bigtriangleup {ABC}$ 的周长为 $a + b + c = 4\sin A + 4\sin \left( {{60}^{ \circ  } - A}\right)  + 2\sqrt{3} =  4\sin \left( {A + {60}^{ \circ  }}\right)  + 2\sqrt{3},{0}^{ \circ  } < A < {60}^{ \circ  }$ ,当 $A = {30}^{ \circ  }$ 时, $\bigtriangleup {ABC}$ 的周长的最大值为 $4 + 2\sqrt{3}$.
+        \end{enumerate}
+    \end{jieda}
 \end{enumerate}
 \item 化角主元归一求取值范围（最值）
 \begin{enumerate}
@@ -2012,7 +2040,7 @@
             所以 ${bc}$ 最大值为 $\dfrac{7}{4}$ .
         \end{jieda}
 
-        \item 如图，在滕王阁旁的水平地面上共线的三点$A,B,C$处测得其顶点$p$的仰角分别为$\ang{30}, \ang{60}, \ang{45}$，且$AB = BC = 75$米，则滕王阁的高度\blkda{$15\sqrt{15}$}米.
+        \item 如图，在滕王阁旁的水平地面上共线的三点$A,B,C$处测得其顶点$P$的仰角分别为$\ang{30}, \ang{60}, \ang{45}$，且$AB = BC = 75$米，则滕王阁的高度\blkda{$15\sqrt{15}$}米.
         \begin{center}
         \includegraphics[width=0.2\textwidth]{bodyxb/src/tengwangge.png}
         \end{center}

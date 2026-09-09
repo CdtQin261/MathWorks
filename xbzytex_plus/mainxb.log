@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  9 SEP 2026 20:33
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  9 SEP 2026 23:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,7 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./mainxb.aux (./bodyxb/bx02ch05.aux))
+ (./mainxb.aux (./bodyxb/bx02ch06.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1957,14 +1957,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
  ***********
-Package rerunfilecheck Info: File `mainxb.out' has not changed.
-(rerunfilecheck)             Checksum: 038CE547B81F3791D084036EF771757E;2637.
+
+
+Package rerunfilecheck Warning: File `mainxb.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `mainxb.out':
+(rerunfilecheck)             Before: 2608FE0FF2961BAE4B89A961E48DA2DB;1521
+(rerunfilecheck)             After:  038CE547B81F3791D084036EF771757E;2637.
  ) 
 Here is how much of TeX's memory you used:
- 50012 strings out of 468168
- 1175445 string characters out of 5432816
- 1750955 words of memory out of 5000000
- 77711 multiletter control sequences out of 15000+600000
+ 50015 strings out of 468168
+ 1175537 string characters out of 5432816
+ 1748749 words of memory out of 5000000
+ 77713 multiletter control sequences out of 15000+600000
  656750 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,19n,128p,804b,1563s stack positions out of 10000i,1000n,20000p,200000b,200000s
