@@ -1,4 +1,26 @@
 \chapter*{三角比}
+\subsection*{定义}
+\begin{enumerate}
+    \item 若$\alpha, \beta$均为第一象限角，则“$\alpha < \beta$”是“$sin\alpha < sin\beta$”的\blkda[3]{既非充分也非必要}条件.
+    \begin{jieda}
+        若条件改为$\alpha, \beta$均属于$(0, \dfrac{\pi}{2})$则“$\alpha < \beta$”是“$sin\alpha < sin\beta$”的充要条件.
+    \end{jieda}
+
+    \item $\dfrac{sinx}{|sinx|} + \dfrac{|cosx|}{cosx} + \dfrac{tanx}{|tanx|} + \dfrac{|cotx|}{cotx}$的取值范围是\blkda[2]{$\{-2, 0, 4\}$}
+    \begin{jieda}
+        $x$在第一象限，则原式取值为4，$x$在第二象限，则原式取值为$-2$，$x$在第三象限，则原式取值为0，$x$在第四象限，则原式取值为$-2$
+    \end{jieda}
+    \item 已知角 $a$ 的终边过点 $P\left(2 a, 3 a\right)\left(a<0\right)$, 则角 $a$ 的余弦值为\blkda{$-\dfrac{2\sqrt{13}}{13}$}.
+    \item 已知角$\theta$的终边上有一点$P\left(4,y\right)$, 且$\sin\theta=-\dfrac{2\sqrt{5}}{5}$, 则$y$=\blkda{$-8$}. 
+\end{enumerate}
+\subsection*{扇形面积公式}
+\begin{enumerate}
+    \item 一扇形周长是\SI{32}{cm}, 扇形的圆心角为多少弧度时, 这个扇形的面积最大? 最大面积是多少? 
+    \begin{jieda}
+    $l+2r=32$, $S=\dfrac{1}{2}lr=\dfrac{1}{4}\cdot l\cdot2r\leq\dfrac{1}{4}\left(\dfrac{l+2r}{2}\right)^2=64$. \\
+    $\alpha=\dfrac{l}{r}=\SI{2}{rad}$, $S_{\min}=\SI{64}{cm^2}$. 
+    \end{jieda}
+\end{enumerate}
 \subsection*{三姐妹}
 \begin{enumerate}
     \item 已知 $ sin \alpha+ cos \alpha=\dfrac{1}{5}(0<\alpha<\pi)$, 求: $ sin \alpha- cos \alpha$
@@ -37,6 +59,17 @@
     \xx{$\dfrac{\sqrt{2}}{10}$}{$\dfrac{\sqrt{2}}{5}$}{$\dfrac{3\sqrt{2}}{5}$}{$\dfrac{7\sqrt{2}}{10}$}
     \begin{jieda}
         由题可知 $\cos \left( {\alpha  + \dfrac{\pi }{4}}\right)  =  - \dfrac{3}{5}$ ,且 $0 < \alpha  < \dfrac{\pi }{2}$ ,因为 $\dfrac{\pi }{4} < \alpha  + \dfrac{\pi }{4} < \dfrac{3\pi }{4}$ ,可知 $\dfrac{\pi }{2} < \alpha  + \dfrac{\pi }{4} < \dfrac{3\pi }{4}$ ,则 $\sin \left( {\alpha  + \dfrac{\pi }{4}}\right)  =  \sqrt{1 - {\cos }^{2}\left( {\alpha  + \dfrac{\pi }{4}}\right) } = \dfrac{4}{5}$ ,所以 $\sin \alpha  = \sin \left\lbrack  {\left( {\alpha  + \dfrac{\pi }{4}}\right)  - \dfrac{\pi }{4}}\right\rbrack   =  \sin \left( {\alpha  + \dfrac{\pi }{4}}\right) \cos \dfrac{\pi }{4} - \cos \left( {\alpha  + \dfrac{\pi }{4}}\right) \sin \dfrac{\pi }{4} = \dfrac{\sqrt{2}}{2}\left( {\dfrac{4}{5} + \dfrac{3}{5}}\right)  =  \dfrac{7\sqrt{2}}{10}$.
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{两角和与差+求角}
+\begin{enumerate}
+    \item 已知函数$f(x) = -cotx$，$f(\alpha - \beta) = -2$，$f(\alpha) = -3$且$\alpha \in (0, \dfrac{\pi}{2})$，$\beta \in (\dfrac{\pi}{2}, \pi)$，则$2\alpha - \beta = $\blkda{$-\dfrac{3\pi}{4}$}
+    \begin{jieda}
+        $cot(\alpha - \beta) = 2$，$cot\alpha = 3$，即$tan(\alpha - \beta) = \dfrac{1}{2}, tan\alpha = \dfrac{1}{3}$\\
+        \textbf{易知$\alpha$是一个固定的角，因此$2\alpha - \beta$是否多解取决于$\beta$是否存在多解} \\
+            $\alpha \in (0, \dfrac{\pi}{4})$，故$\alpha - \beta \in (-\pi, -\dfrac{\pi}{4})$，故$\alpha - \beta$是固定的角，因此$2\alpha - \beta$不存在多解，$2\alpha - \beta \in (-\pi, 0)$ \\
+        $tan(2\alpha - \beta) = tan(\alpha + \alpha - \beta) = \dfrac{tan\alpha + tan(\alpha-\beta)}{1-tan\alpha \cdot tan(\alpha - \beta)} = 1$，故$2\alpha - \beta = -\dfrac{3\pi}{4}$
     \end{jieda}
 \end{enumerate}
 
@@ -79,6 +112,28 @@
         \begin{jieda}
             $cos(\dfrac{\pi}{3} + \alpha) = sin(\dfrac{\pi}{6} - \alpha) = \dfrac{1}{3}$，故$cos(\dfrac{2\pi}{3} + 2\alpha) = -\dfrac{7}{9}$
         \end{jieda}
+\end{enumerate}
+
+\subsection*{三角方程}
+\begin{enumerate}
+    \item $\sqrt{2} sinx = sin2x + cos2x$
+    \begin{jieda}
+        $sinx = sin(2x+\dfrac{\pi}{4})$ \\
+        $x = 2x+\dfrac{\pi}{4} + 2k\pi, k \in \mathbf{Z}$或$x = \pi - (2x+\dfrac{\pi}{4}) + 2k\pi, k \in \mathbf{Z}$ \\
+        即$x = -\dfrac{\pi}{4} + 2k\pi, k \in \mathbf{Z}$，或$x = \dfrac{\pi}{4} + \dfrac{2k\pi}{3}, k \in \mathbf{Z}$
+    \end{jieda}
+
+    \item $sin^2x - 3sinx\cdot cosx + 1 = 0$
+    \begin{jieda}
+        显然$cosx = 0$时方程不成立，因此方程可以变为$2tan^2x + 1 - 3tanx = 0$，解得$tanx = 1$或$\dfrac{1}{2}$，因此$x = k\pi + \dfrac{\pi}{4}$或$x = k\pi + arctan\dfrac{1}{2}$
+    \end{jieda}
+
+    \item $|sinx + 2cosx +1| = 2$
+    \begin{jieda}
+        $sinx + 2cosx = 1$或$sinx+2cosx = -3$（舍）
+        
+        方法同上. $x = \dfrac{\pi}{2}+2k\pi$或$-arctan\left(\dfrac{3}{4}\right)+2k\pi, k \in \mathbf{Z}$
+    \end{jieda}
 \end{enumerate}
 
 \subsection*{半角公式与解的个数问题}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  5 SEP 2026 09:22
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  9 SEP 2026 20:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,7 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./mainxb.aux (./bodyxb/bx01ch04.aux))
+ (./mainxb.aux (./bodyxb/bx02ch05.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1797,60 +1797,60 @@ Package hyperref Info: Link coloring ON on input line 18.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/bx01ch04.aux'.
+\openout2 = `bodyxb/bx02ch05.aux'.
 
- (./bodyxb/bx01ch04.tex
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
+ (./bodyxb/bx02ch05.tex
+第一章
+File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi01t1.png Graphic file (type bmp)
+<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi01t1.png>
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 17.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 8.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 8.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 8.
+(Font)              <10.53937> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 8.
+(Font)              <7> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 8.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+(Font)              <5> on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 8.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 8.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 8.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 8.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 17.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
-) [1
-
-
-
-]
+)
+Missing character: There is no 、 ("3001) in font rm-lmr10!
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1884,153 +1884,89 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
- [2] [3]
-File: bodyxb//src/bx01ch04sec1mihanshuB12.png Graphic file (type bmp)
-<bodyxb//src/bx01ch04sec1mihanshuB12.png>
+File: ./bodyxb/src/31247891329857981275.jpg Graphic file (type bmp)
+<./bodyxb/src/31247891329857981275.jpg>
+[1
 
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
+
+
+] [2]
+File: ./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf Graphic file (type pdf)
+<use ./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf>
+ [3] [4] [5
+
+] [6] [7] [8
+
+] [9] [10] [11] [12
+
+]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 249.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 805.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 249.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 805.
 
-[4] [5] [6
+[13] [14] [15
 
-]
-File: ./bodyxb/src/main42chap21mihanshu01.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21mihanshu01.png>
-File: ./bodyxb/src/main42chap21mihanshu02.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21mihanshu02.png>
- [7] [8] [9]
-File: ./bodyxb/src/main42chap21zhishuhanshu01.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21zhishuhanshu01.png>
- [10
+] [16] [17] [18
 
-] [11] [12] [13
+] [19]
+Missing character: There is no 、 ("3001) in font rm-lmr10!
+[20] [21
 
-]
-File: ./bodyxb/src/main42chap21zhishuhanshu03.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21zhishuhanshu03.png>
- [14]
-File: ./bodyxb/src/34713785651095890.png Graphic file (type bmp)
-<./bodyxb/src/34713785651095890.png>
-File: ./bodyxb/src/main42chap21zhishuhanshu04.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21zhishuhanshu04.png>
- [15]
-File: ./bodyxb/src/main42chap21zhishuhanshu05.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21zhishuhanshu05.png>
- [16] [17] [18
+] [22] [23] [24
 
-] [19] [20] [21
+] [25] [26] [27
 
-] [22] [23]
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt8a.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt8a.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt8b.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt8b.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt8c.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt8c.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt8d.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt8d.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt9start.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt9start.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt9a.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt9a.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt9b.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt9b.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt9c.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt9c.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt9d.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt9d.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt11.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt11.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt10a.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt10a.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt10b.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt10b.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt10c.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt10c.png>
-File: ./bodyxb/src/bx01ch03hanshudetuxiangt10d.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch03hanshudetuxiangt10d.png>
- [24
+] [28] [29] [30
 
 ]
-File: ./bodyxb/src/hstx18.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx18.jpg>
-File: ./bodyxb/src/hstx18.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx18.jpg>
-File: ./bodyxb/src/hstx18.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx18.jpg>
- [25]
-File: ./bodyxb/src/hstx18.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx18.jpg>
-File: ./bodyxb/src/hstx18.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx18.jpg>
-File: ./bodyxb/src/hstx18.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx18.jpg>
-File: ./bodyxb/src/hstx18.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx18.jpg>
-File: ./bodyxb/src/hstx19.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx19.jpg>
-File: ./bodyxb/src/hstx19.jpg Graphic file (type bmp)
-<./bodyxb/src/hstx19.jpg>
- [26]
-File: ./bodyxb/src/bx01ch21jigetesuhanshu06.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch21jigetesuhanshu06.png>
-File: ./bodyxb/src/bx01ch21jigetesuhanshu07.png Graphic file (type bmp)
-<./bodyxb/src/bx01ch21jigetesuhanshu07.png>
- [27] [28] [29
+File: ./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf Graphic file (type pdf)
+<use ./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf>
+ [31] [32] [33
 
-] [30] [31] [32
+] [34] [35] [36] [37]
+File: ./bodyxb/src/main42chap22banjiaogongshi01.png Graphic file (type bmp)
+<./bodyxb/src/main42chap22banjiaogongshi01.png>
+ [38] [39] [40
+
+] [41] [42] [43
 
 ]
-File: ./bodyxb/src/main42chap21duishuhanshu01.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21duishuhanshu01.png>
- [33]
-File: ./bodyxb/src/main42chap21zhiduishufangcheng01.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21zhiduishufangcheng01.png>
- [34] [35] [36
+File: ./bodyxb/src/afslasdjflsgag.jpg Graphic file (type bmp)
+<./bodyxb/src/afslasdjflsgag.jpg>
+ [44] [45] [46] [47
 
-] [37] [38] [39]
-File: ./bodyxb/src/main42chap21zhiduishufangcheng02.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21zhiduishufangcheng02.png>
- [40
-
-] [41] [42]
-
-LaTeX Warning: Reference `subsec:secduishuhanshudexingzhi' on page 43 undefined on input line 2556.
-
-File: ./bodyxb/src/dasfnashgkjhgkhrg.jpg Graphic file (type bmp)
-<./bodyxb/src/dasfnashgkjhgkhrg.jpg>
-File: ./bodyxb/src/main42chap21duishuhanshuzonghe01.png Graphic file (type bmp)
-<./bodyxb/src/main42chap21duishuhanshuzonghe01.png>
-[43
+] [48] [49] [50] [51
 
 ]
-File: ./bodyxb/src/ejrgfjnjanv.jpg Graphic file (type bmp)
-<./bodyxb/src/ejrgfjnjanv.jpg>
- [44]) [45] (./mainxb.aux (./bodyxb/bx01ch04.aux))
+File: bodyxb//src/jiesanjiao(3)_11.png Graphic file (type bmp)
+<bodyxb//src/jiesanjiao(3)_11.png>
+File: bodyxb//src/jiesanjiao(3)_12.png Graphic file (type bmp)
+<bodyxb//src/jiesanjiao(3)_12.png>
+File: bodyxb//src/jiesanjiao(3)_13.png Graphic file (type bmp)
+<bodyxb//src/jiesanjiao(3)_13.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[52] [53]) [54] (./mainxb.aux (./bodyxb/bx02ch05.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `mainxb.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 038CE547B81F3791D084036EF771757E;2637.
  ) 
 Here is how much of TeX's memory you used:
- 49899 strings out of 468168
- 1178910 string characters out of 5432816
- 1741265 words of memory out of 5000000
- 77579 multiletter control sequences out of 15000+600000
- 656718 words of font info for 126 fonts, out of 8000000 for 9000
+ 50012 strings out of 468168
+ 1175445 string characters out of 5432816
+ 1750955 words of memory out of 5000000
+ 77711 multiletter control sequences out of 15000+600000
+ 656750 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,12n,128p,630b,1317s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,19n,128p,804b,1563s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (45 pages).
+Output written on mainxb.pdf (54 pages).
