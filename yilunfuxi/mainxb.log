@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  11 SEP 2026 15:04
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  11 SEP 2026 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1682,7 +1682,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/shulie.aux))
+ (./mainxb.aux (./bodyxb/shulie.aux) (./bodyxb/jiesanjiao_lianxi.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1861,10 +1861,10 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49428 strings out of 468168
- 1157709 string characters out of 5432815
- 1738287 words of memory out of 5000000
- 77164 multiletter control sequences out of 15000+600000
+ 49435 strings out of 468168
+ 1157920 string characters out of 5432815
+ 1738698 words of memory out of 5000000
+ 77168 multiletter control sequences out of 15000+600000
  656614 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,11n,128p,1412b,1170s stack positions out of 10000i,1000n,20000p,200000b,200000s

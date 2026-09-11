@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  9 SEP 2026 23:02
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  10 SEP 2026 19:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1797,60 +1797,65 @@ Package hyperref Info: Link coloring ON on input line 18.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/bx02ch05.aux'.
+\openout2 = `bodyxb/bx02ch06.aux'.
 
- (./bodyxb/bx02ch05.tex
+ (./bodyxb/bx02ch06.tex
 第一章
-File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi01t1.png Graphic file (type bmp)
-<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi01t1.png>
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 17.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 17.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 17.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 17.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 17.
+(Font)              <10.53937> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 17.
+(Font)              <7> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 17.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+(Font)              <5> on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 17.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 17.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 17.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 7.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-Missing character: There is no 、 ("3001) in font rm-lmr10!
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 8.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 8.
+
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1884,96 +1889,149 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
-File: ./bodyxb/src/31247891329857981275.jpg Graphic file (type bmp)
-<./bodyxb/src/31247891329857981275.jpg>
 [1
 
 
 
-] [2]
-File: ./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf Graphic file (type pdf)
-<use ./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf>
- [3] [4] [5
+] [2] [3] [4
 
-] [6] [7] [8
+] [5] [6] [7
 
-] [9] [10] [11] [12
+] [8] [9
 
-]
+] [10] [11] [12]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12.045> on input line 569.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 569.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 569.
 
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 805.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 569.
 
 
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 805.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sin' on input line 569.
 
-[13] [14] [15
 
-] [16] [17] [18
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\omega' on input line 569.
 
-] [19]
-Missing character: There is no 、 ("3001) in font rm-lmr10!
-[20] [21
 
-] [22] [23] [24
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\varphi' on input line 569.
 
-] [25] [26] [27
 
-] [28] [29] [30
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 569.
 
-]
-File: ./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf Graphic file (type pdf)
-<use ./bodyxb/src/main42chap05renyijiaodesanjiaobi01.pdf>
- [31] [32] [33
-
-] [34] [35] [36] [37]
-File: ./bodyxb/src/main42chap22banjiaogongshi01.png Graphic file (type bmp)
-<./bodyxb/src/main42chap22banjiaogongshi01.png>
- [38] [39] [40
-
-] [41] [42] [43
+File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t7.jpg Graphic file (type bmp)
+<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t7.jpg>
+[13
 
 ]
-File: ./bodyxb/src/afslasdjflsgag.jpg Graphic file (type bmp)
-<./bodyxb/src/afslasdjflsgag.jpg>
- [44] [45] [46] [47
+File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t8.jpg Graphic file (type bmp)
+<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t8.jpg>
+File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t10.jpg Graphic file (type bmp)
+<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t10.jpg>
+ [14]
+File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t11.jpg Graphic file (type bmp)
+<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t11.jpg>
+ [15]
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
+[16]
 
-] [48] [49] [50] [51
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 791.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sin' on input line 791.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\omega' on input line 791.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\varphi' on input line 791.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 791.
+
+[17
+
+] [18] [19]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 930.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sin' on input line 930.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\omega' on input line 930.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\varphi' on input line 930.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 930.
+
+File: bodyxb//src/Asin(omega x+phi)+B(3)_A2.png Graphic file (type bmp)
+<bodyxb//src/Asin(omega x+phi)+B(3)_A2.png>
+File: bodyxb//src/Asin(omega x + phi)+B(3)_A3.png Graphic file (type bmp)
+<bodyxb//src/Asin(omega x + phi)+B(3)_A3.png>
+[20
 
 ]
-File: bodyxb//src/jiesanjiao(3)_11.png Graphic file (type bmp)
-<bodyxb//src/jiesanjiao(3)_11.png>
-File: bodyxb//src/jiesanjiao(3)_12.png Graphic file (type bmp)
-<bodyxb//src/jiesanjiao(3)_12.png>
-File: bodyxb//src/jiesanjiao(3)_13.png Graphic file (type bmp)
-<bodyxb//src/jiesanjiao(3)_13.png>
+File: bodyxb//src/Asin(omega x + phi)+B(3)_B5.png Graphic file (type bmp)
+<bodyxb//src/Asin(omega x + phi)+B(3)_B5.png>
+ [21]
+File: bodyxb//src/Asin(omega x + phi) + B(3)_B10.png Graphic file (type bmp)
+<bodyxb//src/Asin(omega x + phi) + B(3)_B10.png>
+File: bodyxb//src/Asin(omega x + phi)+B(3)_B11.png Graphic file (type bmp)
+<bodyxb//src/Asin(omega x + phi)+B(3)_B11.png>
+ [22]
+File: ./bodyxb/src/main42xbb2ch07sanjiaohanshu01.png Graphic file (type bmp)
+<./bodyxb/src/main42xbb2ch07sanjiaohanshu01.png>
+ [23] [24] [25
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+]
+File: bodyxb//src/zhengqietuxiang(1)B11.png Graphic file (type bmp)
+<bodyxb//src/zhengqietuxiang(1)B11.png>
+ [26] [27] [28] [29
 
-[52] [53]) [54] (./mainxb.aux (./bodyxb/bx02ch05.aux))
+
+]
+File: ./bodyxb/src/main42xbb2ch07sanjiaofangchengt13.png Graphic file (type bmp)
+<./bodyxb/src/main42xbb2ch07sanjiaofangchengt13.png>
+ [30]
+File: ./bodyxb/src/zhaopianch6jiandande.png Graphic file (type bmp)
+<./bodyxb/src/zhaopianch6jiandande.png>
+ [31]) [32] (./mainxb.aux (./bodyxb/bx02ch06.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
  ***********
-
-
-Package rerunfilecheck Warning: File `mainxb.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mainxb.out':
-(rerunfilecheck)             Before: 2608FE0FF2961BAE4B89A961E48DA2DB;1521
-(rerunfilecheck)             After:  038CE547B81F3791D084036EF771757E;2637.
+Package rerunfilecheck Info: File `mainxb.out' has not changed.
+(rerunfilecheck)             Checksum: 2608FE0FF2961BAE4B89A961E48DA2DB;1521.
  ) 
 Here is how much of TeX's memory you used:
- 50015 strings out of 468168
- 1175537 string characters out of 5432816
- 1748749 words of memory out of 5000000
- 77713 multiletter control sequences out of 15000+600000
- 656750 words of font info for 130 fonts, out of 8000000 for 9000
+ 49782 strings out of 468168
+ 1173042 string characters out of 5432816
+ 1744749 words of memory out of 5000000
+ 77469 multiletter control sequences out of 15000+600000
+ 671351 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,19n,128p,804b,1563s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,10n,128p,634b,1423s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (54 pages).
+Output written on mainxb.pdf (32 pages).
