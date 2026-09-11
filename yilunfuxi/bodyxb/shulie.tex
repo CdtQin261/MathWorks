@@ -9,6 +9,14 @@
     \begin{jieda}
         $a_8 \cdot \left(a_8+a_9\right) < 0$，不妨设公差$d < 0$，则$a_8 > 0, a_8+a_9 < 0$，故$S_{15} > 0, S_{16} < 0$，因此$m = 15$.
     \end{jieda}
+    \item (2025$\cdot$松江区一模$\cdot$8)已知数列 $\left\{  {a}_{n}\right\}$ 是等比数列，若 ${\log }_{2}{a}_{1} + {\log }_{2}{a}_{4} = 3$ ， ${{2}}^{{a}_{2}} \cdot  {2}^{{a}_{3}} = {64}$ ，则 ${a}_{10} =$ \blkda[2]{512 或 $\dfrac{1}{64}$}.
+    \begin{jieda}
+        因为 ${\log }_{2}{a}_{1} + {\log }_{2}{a}_{4} = {\log }_{2}\left( {{a}_{1} \cdot  {a}_{4}}\right)  = 3$ ,所以 ${a}_{1} \cdot  {a}_{4} = {a}_{2} \cdot  {a}_{3} = 8$ ,因为 ${2}^{{a}_{2}} \cdot  {2}^{{a}_{3}} = {2}^{{a}_{2} + {a}_{3}} = {64}$ ,所以 ${a}_{2} + {a}_{3} =$ 6,解得 ${a}_{2} = 2,{a}_{3} = 4$ 或 ${a}_{2} = 4,{a}_{3} = 2$ .
+
+        \ding{172}  当 ${a}_{2} = 2,{a}_{3} = 4$ 时， $q = 2 \Longrightarrow  {a}_{10} = 2 \times  {2}^{8} = {512}$ ；
+
+        \ding{173}  当 ${a}_{2} = 4,{a}_{3} = 2$ 时， $q = \dfrac{1}{2} \Longrightarrow  {a}_{10} = 4 \times  {\left( \dfrac{1}{2}\right) }^{8} = \dfrac{1}{64}$ .
+    \end{jieda}
     \item 已知$a = 243, b = 3$，$c$是$a, b$的等比中项
     \begin{enumerate}
         \item 若$d, e$分别是$a, c$和$c, b$的等差中项，则$a+b+c+d+e = $\blkda[4]{423或315}
@@ -27,6 +35,26 @@
         \end{enumerate}
     \end{jieda}
 \end{enumerate}
+
+\subsection*{等差中项：$(2n-1)a_n = S_{2n-1}$}
+\begin{enumerate}
+    \item 记两个等差数列$\{a_n\}, \{b_n\}$的前$n$项和分别是$S_n$和$T_n$，且$\dfrac{S_n}{T_n} = \dfrac{7n+1}{4n+27}(n \in \mathbf{N^*})$，则$\dfrac{a_{11}}{b_{11}} = $\blkda{$\dfrac{4}{3}$}
+    \begin{jieda}
+        $\dfrac{a_{11}}{b_{11}} = \dfrac{21 \cdot a_{11}}{21 \cdot b_{11}} = \dfrac{S_{21}}{T_{21}} = \dfrac{148}{111} = \dfrac{4}{3}$.
+
+        关键结论：$(2n-1)a_n = S_{2n-1}$
+    \end{jieda}
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 和等差数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和分别为 ${S}_{n}$ 和 ${T}_{n}$ ,且 $\dfrac{{S}_{n}}{T_n} = \dfrac{{5n} + {63}}{n + 3}$ ,则使得 $\dfrac{a_n}{b_n}$整数的正整数 $n$ 的个数为 \dotfill{(\kh{B})}
+    \xx{6}{7}{8}{9}
+    \begin{jieda}
+        由于 ${S}_{{2n} - 1} = \dfrac{\left( {{a}_{1} + {a}_{{2n} - 1}}\right) \left( {{2n} - 1}\right) }{2} = \dfrac{2{a}_{n}\left( {{2n} - 1}\right) }{2} = \left( {{2n} - 1}\right) {a}_{n}$
+        
+        所以 $\dfrac{{a}_{n}}{{b}_{n}} = \dfrac{{S}_{{2n} - 1}}{{T}_{{2n} - 1}} = \dfrac{5\left( {{2n} - 1}\right)  + {63}}{{2n} - 1 + 3} = \dfrac{{5n} + {29}}{n + 1} = 5 + \dfrac{24}{n + 1}$ 
+        
+        要使 $\dfrac{{a}_n}{b_n}$ 为整数,则 $n + 1$ 为 24 的因数,由于 $n + 1 \geq  2$ ,故 $n + 1$ 可以为2,3,4,6,8,12,24,故满足条件的正整数 $n$ 的个数为 7 个
+    \end{jieda}
+\end{enumerate}
+
 \subsection*{等差数列、等比数列的通项公式}
 \begin{enumerate}
     \item (2025$\cdot$金山区一模$\cdot$8)已知 ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 $2{a}_{1} + 3{a}_{11} = {20}$ ，则 ${S}_{13}$ 的值为\blkda[2]{52}.
@@ -48,6 +76,14 @@
 
         \ps 举反例$q = 1$也可.
     \end{jieda}
+    \item (2024$\cdot$上海秋季卷$\cdot$12)无穷等比数列 $\left\{  {a}_{n}\right\}$ 满足首项 ${a}_{1} > 0,q > 1$ ，记 ${I}_{n} = \left\{  {x - y \mid  x,y \in  \left\lbrack  {{a}_{1},{a}_{2}}\right\rbrack   \cup  }\right.  \left. \left\lbrack  {{a}_{n},{a}_{n + 1}}\right\rbrack  \right\}$ ,若对任意正整数 $n$ 集合 ${I}_{n}$ 是闭区间,则 $q$ 的取值范围是\blkda[2]{$\lbrack 2, + \infty)$}.
+    \begin{jieda}
+        根据${a}_{1} > 0,q > 1$可知$a_n$严增，不妨设$x > y$
+
+        故$I_n = [0, a_2-a_1] \cup [0, a_{n+1} - a_n] \cup [a_n-a_2, a_{n+1}-a_1]$
+
+        易知$a_{n+1} - a_n \geq a_2-a_1$，由$I_n$为闭区间可知$a_{n+1} - a_n \geq a_n-a_2$，即$a_1q^n+a_1q \geq 2a_1q^{n-1}$，故$q^n+q \geq 2q^{n-1}$，即$q + \dfrac{1}{q^{n-2}} \geq 2$恒成立，左侧随着$n$增加严减，故考虑$n \rightarrow +\infty$时，故$q \geq 2$
+    \end{jieda}
 \end{enumerate}
 \subsection*{等差数列、等比数列$n$项和}
 \begin{enumerate}
@@ -59,9 +95,53 @@
     \begin{jieda}
         设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ . 当 $d > 0$ 时,由于 ${a}_{9}{a}_{10} <$ 0,所以 ${a}_{9} < 0 < {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格增数列,故 ${S}_{n}$ 在区间 $\lbrack 1$ , 30]上， ${S}_{9}$ 为最小值， ${S}_{30}$ 为最大值，若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值， 则 $m = {30},n = 9$ ,故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {{30} - 9}\right|  = {21}$ ; 当 $d < 0$ 时, ${a}_{9} > 0 > {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格减数列, ${S}_{n}$ 在 $n \in  \left\lbrack  {1,{30}}\right\rbrack  ,{S}_{9}$ 为最大值, ${S}_{30}$ 为最小值,若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值,则 $m = 9,n =$ 30，故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {9 - {30}}\right|  = {21}$ ，综上， $\left| {{m}_{0} - {n}_{0}}\right|  = {21}$ .
     \end{jieda}
+    \item (2025$\cdot$黄浦区二模$\cdot$7)已知等比数列 $\left\{  {a}_{n}\right\}$ 为严格增数列，其前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{1}{a}_{10} = {a}_{8}$ ， ${S}_{4} - {S}_{1} = \dfrac{21}{4}$ ，则该数列的公比为\blkda[2]{4}.
+    \begin{jieda}
+        设等比数列 $\left\{  {a}_{n}\right\}$ 的公比为 $q$ ,由 ${a}_{1}{a}_{10} = {a}_{8}$ ,则 ${a}_{1}{a}_{1}{q}^{9} = {a}_{1}{q}^{7}$ ,解得 ${a}_{1} = {q}^{-2}$ ,由 ${S}_{4} - {S}_{1} = \dfrac{21}{4}$ ,则 $\dfrac{{a}_{1}\left( {1 - {q}^{4}}\right) }{1 - q} -  {a}_{1} = \dfrac{21}{4}$ ,将 ${a}_{1} = {q}^{-2}$ 代入上式可得 $\dfrac{1 - {q}^{4}}{\left( {1 - q}\right) {q}^{2}} - \dfrac{1}{{q}^{2}} = \dfrac{21}{4}$ ,去分母可得 $4{q}^{4} - {21}{q}^{3} + {21}{q}^{2} - {4q} = 0$ ,易知 $q \neq  0$ ,可得 $4{q}^{3} - {21}{q}^{2}  + {21q} - 4 = 0$ ,分解因式可得 $\left( {q - 1}\right) \left( {{4q} - 1}\right) \left( {q - 4}\right)  = 0$ ,易知 $q \neq  1$ ,解得 $q = \dfrac{1}{4}$ 或 4,当 $q = \dfrac{1}{4}$ 时, ${a}_{1} = {16}$ ,则 ${a}_{n} = {16} \times  {\left( \dfrac{1}{4}\right) }^{n - 1} = {4}^{3 - n}$ ,单调递减,不合题意.
+    \end{jieda}
+    \item (2025$\cdot$青浦区二模$\cdot$7)数列 $\left\{  {a}_{n}\right\}$ 中， ${a}_{1} = 1$ ， ${a}_{n} = 2{a}_{n + 1}$ ，则 $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}{a}_{i} =$ \blkda[2]{2}.
+    \begin{jieda}
+        ${a}_{1} = 1,{a}_{n} = 2{a}_{n + 1}$ ,即 $\dfrac{{a}_{n + 1}}{{a}_{n}} = \dfrac{1}{2},\left\{  {a}_{n}\right\}$ 是等比数列, 公比为 $\dfrac{1}{2}$ ,所以 $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}{a}_{i} = \dfrac{1}{1 - \dfrac{1}{2}} = 2$.
+    \end{jieda}
+    \item (2024$\cdot$闵行区一模$\cdot$11)已知数列 $\left\{  {a}_{n}\right\}$ 为无穷等比数列，若 $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}{a}_{i} =  - 2$ ，则 $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}\left| {a}_{i}\right|$ 的取值范围为\blkda[2]{$[2, + \infty)$}.
+    \begin{jieda}
+        因为 $\left\{  {a}_{n}\right\}$ 为无穷等比数列, $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}{a}_{i} =  - 2$ ,所以 $0 <  \left| q\right|  < 1$ ,则 $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}{a}_{i} = \dfrac{{a}_{1}}{1 - q} =  - 2$ ,则 ${a}_{1} =  - 2\left( {1 - q}\right)$ ,因为 $\dfrac{\left| {a}_{n + 1}\right| }{\left| {a}_{n}\right| } = \left| \dfrac{{a}_{n + 1}}{{a}_{n}}\right|  = \left| q\right|$ ,所以 $\left| {a}_{n}\right|$ 是以 $\left| q\right|$ 为公比的等比数列,且 $0 < \left| q\right|  < 1$ ,此时 $1 - |q| > 0$ ,所以 $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}\left| {a}_{i}\right|  = \dfrac{\left| {a}_{1}\right| }{1 - \left| q\right| } =  \dfrac{\left| -2\left( 1 - q\right) \right| }{1 - \left| q\right| } = \dfrac{2\left( {1 - q}\right) }{1 - \left| q\right| }$
+        
+        当 $0 < q < 1$ 时, $\dfrac{2\left( {1 - q}\right) }{1 - \left| q\right| } = \dfrac{2\left( {1 - q}\right) }{1 - q}  = 2$
+        
+        当 $- 1 < q < 0$ 时, $\dfrac{2\left( {1 - q}\right) }{1 - \left| q\right| } = \dfrac{2\left( {1 - q}\right) }{1 + q} = \dfrac{4 - 2\left( {1 + q}\right) }{1 + q} =  \dfrac{4}{1 + q} - 2$ ,因为 $- 1 < q < 0$ ,所以 $0 < 1 + q < 1$ ,故 $\dfrac{4}{1 + q} > 4$ ,则 $\dfrac{4}{1 + q} - 2 > 2$
+        
+        综上: $\dfrac{2\left( {1 - q}\right) }{1 - \left| q\right| } \geq  2$ ,即 $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}\left| {a}_{i}\right|  \geq  2$ ,故 $\mathop{\sum }\limits_{{i = 1}}^{{+\infty }}\left| {a}_{i}\right|$ 的取值范围为 $\lbrack 2, + \infty )$ .
+    \end{jieda}
 \end{enumerate}
 \subsection*{等差数列、等比数列前$n$项和的形式}
 \begin{enumerate}
+    \item (2024$\cdot$静安区二模$\cdot$7)已知等比数列的前 $n$ 项和为 ${S}_{n} = {\left( \dfrac{1}{2}\right) }^{n} + a$ ，则 $a$ 的值为\blkda[2]{$-1$}.
+    \begin{jieda}
+        由等比数列的前 $n$ 项和为 ${S}_{n} = A - A \cdot q^n$，故$\left\{\begin{array}{l}
+            A = a \\
+            -A \cdot q^n = {\left( \dfrac{1}{2}\right) }^{n}
+        \end{array}\right.$，故$\left\{\begin{array}{l}
+            q = \dfrac{1}{2} \\
+            A = -1.
+        \end{array}\right.$
+    \end{jieda}
+    \item 记 ${S}_{n}$ 为数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和,设甲: $\left\{  {a}_{n}\right\}$ 为等差数列; 乙: $\left\{  \dfrac{{S}_{n}}{n}\right\}$ 为等差数列, 则甲是乙的{(\kh{C})}
+    \xx{充分非必要条件}{必要非充分条件}{充要条件}{既非充分又非必要条件}
+    \item (2026$\cdot$奉贤区一模$\cdot$16)已知等差数列 $\left\{  {a}_{n}\right\}$ 的公差不为零, ${S}_{n}$ 为其前 $n$ 项和,存在正整数 $k$ 满足 ${S}_{k} = 0$ ,有两个命题:
+    
+    命题\ding{172}: 设数列公差 $d$ ,则 $d \cdot  {S}_{1} < 0$ .
+    
+    命题\ding{173}: $i, j$ 均是小于 $k$ 的正整数,则 ${S}_{i} \cdot  {S}_{j} = {S}_{k - i}{S}_{k - j}$ .
+    
+    以上判断正确的是\dotfill{(\kh{D})}
+    \xx{\ding{172}  \ding{173} 均是真命题}{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172}  \ding{173} 均是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 若$k = 1$，则$d$的正负判断不了.
+            \item 根据$S_n$是过原点的二次可知$S_i = S_{k-i}$，$S_j = S_{k-j}$
+        \end{dingautolist}
+    \end{jieda}
     \item (2025$\cdot$徐汇区一模$\cdot$16)已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ，设 ${t}_{n} = \dfrac{{S}_{n}}{n}$ ( $n$ 为正整数). 若存在常数 $c$ ， 使得任意两两不相等的正整数 $i,j,k$ ,都有 $\left( {i - j}\right) {t}_{k} + \left( {j - k}\right) {t}_{i} + \left( {k - i}\right) {t}_{j} = c$ ,则称数列 $\left\{  {a}_{n}\right\}$ 为 “轮换均值数列”. 现有下列两个命题: \ding{172}  任意等差数列 $\left\{  {a}_{n}\right\}$ 都是“轮换均值数列”， \ding{173}  存在公比不为 1 的等比数列 $\left\{  {b}_{n}\right\}$ 是“轮换均值数列”. 则下列说法正确的是 \dotfill{(\kh{A})}
     \xx{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}{\ding{172}  \ding{173} 都是真命题}{\ding{172}  \ding{173} 都是假命题}
     \begin{jieda}
@@ -100,6 +180,25 @@
         \ps 根据等差数列前$n$项和的形式易知，一次和二次的形式均可以举出反例，上面是一次的反例，二次的情况下对称轴位置顶点纵坐标大于2023，两个第二大的纵坐标小于2022即可.
         
         命题 $\beta$ : 若数列 $\left\{  {a}_{n}\right\}$ 的公差 $d > 0$，则有$\left\{  {\begin{array}{l} {S}_{{n}_{0}} < {2022} \\  {S}_{{n}_{0} + 1} > {2023} \end{array} \Longrightarrow  {a}_{{n}_{0} + 1} = }\right. {S}_{{n}_{0} + 1} - {S}_{{n}_{0}} > 1$ ,命题 $\beta$ 是真命题; 综上所述: 命题 $\alpha$ 是假命题,命题 $\beta$ 是真命题.
+    \end{jieda}
+\end{enumerate}
+\subsection*{$S_n$的不等关系}
+\begin{enumerate}
+    \item 设 $\left\{  {a}_{n}\right\}$ 是等差数列, ${S}_{n}$ 是其前 $n$ 项和,且 ${S}_{5} < {S}_{6},{S}_{6} = {S}_{7} > {S}_{8}$ ,则下列结论错误的是 \dotfill{(\kh{C})}
+    \xx{$d < 0$}{${a}_{7} = 0$}{${S}_{9} > {S}_{5}$}{${S}_{6}$ 与 ${S}_{7}$ 均为 ${S}_{n}$ 的最大值}
+    \begin{jieda}
+        ${S}_{5} < {S}_{6},{S}_{6} = {S}_{7} > {S}_{8} \Longleftrightarrow a_6 > 0, a_7 = 0, a_8 < 0$，易知$A,B,D$正确
+
+        $S_5 = S_8 > S_9$，C错误
+    \end{jieda}
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n},$ 若 ${S}_{23} > 0,{S}_{24} < 0$ ,则下列结论正确的是 \dotfill{(\kh{D})}
+    \xx{数列 $\left\{  {a}_{n}\right\}$ 是递增数列}{${a}_{13} > 0$}{当 ${S}_{n}$ 取得最大值时, $n = {13}$}{$\left| {a}_{13}\right|  > \left| {a}_{12}\right|$}
+    \item (2024$\cdot$青浦区二模$\cdot$15)设 ${S}_{n}$ 是首项为 ${a}_{1}$ 、公比为 $q$ 的等比数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，且 ${S}_{2023} <  {S}_{2025} < {S}_{2024}$ ,则 \dotfill{(\kh{C})}
+    \xx{${a}_{1} > 0$}{$q > 0$}{$\left| {S}_{n}\right|  \leq  \left| {a}_{1}\right|$}{$\left| {S}_{n}\right|  < \left| q\right|$}
+    \begin{jieda}
+        因为 ${S}_{2023} < {S}_{2025} < {S}_{2024}$ ,所以 ${S}_{2025} - {S}_{2023} > 0$ , ${S}_{2025} - {S}_{2024} < 0$ ,即 ${a}_{2024} + {a}_{2025} > 0$ 且 ${a}_{2025} < 0$ ,所以 ${a}_{2024} >  - {a}_{2025} > 0$ ,且 ${a}_{2024} > 0$ ,两边都除以 ${a}_{2024}$ ,得 $1 >  - q > 0$ ,可得 $- 1 < q < 0$.
+        
+        对于 ${A}$ ,由 ${a}_{2025} = {a}_{1}{q}^{2024} < 0$ ,可得 ${a}_{1} < 0$ ,故 A 项不正确; 对于 B,由于 $- 1 < q < 0$ ,所以 $q > 0$ 不成立,故 B 不正确; 对于 ${C}$ ,因为 $- 1 < q < 0$ ,所以 $0 < 1 - {q}^{n} \leq  1 - q$ ,可得 $0 <  \dfrac{1 - {q}^{n}}{1 - q} \leq  1$ . 结合 ${S}_{n} = \dfrac{{a}_{1}\left( {1 - {q}^{n}}\right) }{1 - q}$ ,可得 $\left| {S}_{n}\right|  = \left| {a}_{1}\right|  \cdot  \left| \dfrac{1 - {q}^{n}}{1 - q}\right|  \leq  \left| {a}_{1}\right|$ ,故 C 正确; 对于 ${D}$ ,根据 $- 1 < q < 0$ 且 ${a}_{1} < 0$ ,当 ${a}_{1} =  - 1,q =  - \dfrac{1}{2}$ 时, $\left| {S}_{1}\right|  = 1 > \left| q\right|  = \dfrac{1}{2}$ ,此时 $\left| {S}_{n}\right|  < \left| q\right|$ 不成立，故 D 不正确. 故选:C.
     \end{jieda}
 \end{enumerate}
 \subsection*{$a_n = S_n - S_{n-1}$}
