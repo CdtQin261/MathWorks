@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  13 SEP 2026 17:03
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  13 SEP 2026 20:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1745,9 +1745,9 @@ Package hyperref Info: Link coloring ON on input line 16.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/shulie.aux'.
+\openout2 = `bodyxb/gailv.aux'.
 
- (./bodyxb/shulie.tex
+ (./bodyxb/gailv.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1795,52 +1795,22 @@ LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 4
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
+File: bodyxb/src/bulangyundong.png Graphic file (type bmp)
+<bodyxb/src/bulangyundong.png>
+
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 41.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 43.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 41.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 43.
 
-
-Package fontspec Info: 
-(fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'STFangsong'. Check the typeset output, and if it is
-(fontspec)             okay then ignore this warning. Otherwise a different
-(fontspec)             font should be chosen.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "STFangsong/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "STFangsong/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "STFangsong/I" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'STFangsong(0)' created for font
-(fontspec)             'STFangsong' with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
-
-[1
+) [1
 
 
 
-] [2] [3] [4] [5] [6] [7] [8]) [9] (./mainxb.aux (./bodyxb/shulie.aux))
+] (./mainxb.aux (./bodyxb/gailv.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1849,12 +1819,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49456 strings out of 468168
- 1159380 string characters out of 5432816
- 1738320 words of memory out of 5000000
- 77195 multiletter control sequences out of 15000+600000
- 656598 words of font info for 111 fonts, out of 8000000 for 9000
+ 49378 strings out of 468168
+ 1154751 string characters out of 5432816
+ 1731320 words of memory out of 5000000
+ 77131 multiletter control sequences out of 15000+600000
+ 656526 words of font info for 102 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,11n,128p,1424b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,9n,128p,627b,928s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (9 pages).
+Output written on mainxb.pdf (1 page).
