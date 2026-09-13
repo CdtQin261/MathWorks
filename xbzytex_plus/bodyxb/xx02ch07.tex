@@ -169,7 +169,7 @@ B组
 \item 设随机变量$X$的分布列为 $P(X=i)=\dfrac{i}{2a}(i=1,2,3)$ ,则 $P(X\ge2)=$\blkda{$\dfrac{5}{6}$}.
 
 \item 数字1,2,3,4任意排成一列,如果数字$k$恰好出现在第$k$个位置上,则称有一个“巧合”,求“巧合”个数的分布列\blkda[8]{$\begin{pmatrix}
-    0&1&2&4\\$\dfrac{3}{8}$ &$\dfrac{1}{3}$ & $\dfrac{1}{4}$&$\dfrac{1}{24}$
+    0&1&2&4\\\dfrac{3}{8} &\dfrac{1}{3} & \dfrac{1}{4}&\dfrac{1}{24}
 \end{pmatrix}$}.
 
 \item 随机变量的概率分布规律为 $P(X=n)=\dfrac{a}{n(n+1)}(n=1,2,3,4)$ ,其中$a$为常数,则 $P\left(\dfrac{9}{4}<X<\dfrac{13}{4}\right)$ 的值为\blkda{$\dfrac{5}{48}$}.
@@ -195,8 +195,8 @@ $P\left( {X = 3}\right)  = \dfrac{{{C}}_{4}^{2}}{{{C}}_{5}^{2}} \cdot  \dfrac{1}
 $P\left( {X = 5}\right)  = \dfrac{{{C}}_{4}^{4}}{{{C}}_{5}^{4}} \cdot  1 = \dfrac{1}{5},$
 故随机变量 $X$ 的概率分布列为
 $\begin{pmatrix}
-    $X$& 1& 2& 3& 4& 5\\
-$P$ & $\dfrac{1}{5}$ & $\dfrac{1}{5}$ &$\dfrac{1}{5}$& $\dfrac{1}{5}$ &$\dfrac{1}{5}$
+    X & 1& 2& 3& 4& 5\\
+    P & \dfrac{1}{5} & \dfrac{1}{5} & \dfrac{1}{5} & \dfrac{1}{5} & \dfrac{1}{5}
 \end{pmatrix}$
 \end{jieda}
 
@@ -695,26 +695,26 @@ $P\left( {\xi  = 1}\right)  - P\left( {\xi  = 3}\right)  = \dfrac{1}{2}\left\lbr
 \begin{jieda}
     \begin{enumerate}
         \item 若小球落入球槽的号码为 $X = k,k = 1,2,3,4,5$ ,
-则小球共经过 4 次碰撞,向右 $k - 1$ 次,可得 $P\left( {X = k}\right)  = \dfrac{{{C}}_{4}^{k - 1}}{{2}^{4}} = \dfrac{{{C}}_{4}^{k - 1}}{16}$ ,
-则 $P\left( {X = 1}\right)  = \dfrac{{{C}}_{4}^{0}}{16} = \dfrac{1}{16};P\left( {X = 2}\right)  = \dfrac{{{C}}_{4}^{1}}{16} = \dfrac{1}{4};P\left( {X = 3}\right)  = \dfrac{{{C}}_{4}^{2}}{16} = \dfrac{3}{8};P\left( {X = 4}\right)  = \dfrac{{{C}}_{4}^{3}}{16} = \dfrac{1}{4},P\left( {X = 5}\right)  = \dfrac{{{C}}_{4}^{4}}{16} = \dfrac{1}{16}$ ,
-所以 $X$ 的分布列为
-\begin{pmatrix}
-    1& 2& 3& 4& 5\\
-    \dfrac{1}{16}&\dfrac{1}{4}&\dfrac{3}{8}&\dfrac{1}{4} & \dfrac{1}{16}
-\end{pmatrix}
+        则小球共经过 4 次碰撞,向右 $k - 1$ 次,可得 $P\left( {X = k}\right)  = \dfrac{{{C}}_{4}^{k - 1}}{{2}^{4}} = \dfrac{{{C}}_{4}^{k - 1}}{16}$ ,
+        则 $P\left( {X = 1}\right)  = \dfrac{{{C}}_{4}^{0}}{16} = \dfrac{1}{16};P\left( {X = 2}\right)  = \dfrac{{{C}}_{4}^{1}}{16} = \dfrac{1}{4};P\left( {X = 3}\right)  = \dfrac{{{C}}_{4}^{2}}{16} = \dfrac{3}{8};P\left( {X = 4}\right)  = \dfrac{{{C}}_{4}^{3}}{16} = \dfrac{1}{4},P\left( {X = 5}\right)  = \dfrac{{{C}}_{4}^{4}}{16} = \dfrac{1}{16}$ ,
+        所以 $X$ 的分布列为
+        $\begin{pmatrix}
+            1& 2& 3& 4& 5\\
+            \dfrac{1}{16}&\dfrac{1}{4}&\dfrac{3}{8}&\dfrac{1}{4} & \dfrac{1}{16}
+        \end{pmatrix}$
 
-$X$ 的期望为 $E\left( X\right)  = 1 \times  \dfrac{1}{16} + 2 \times  \dfrac{1}{4} + 3 \times  \dfrac{3}{8} + 4 \times  \dfrac{1}{4} + 5 \times  \dfrac{1}{16} = 3$ .
+        $X$ 的期望为 $E\left( X\right)  = 1 \times  \dfrac{1}{16} + 2 \times  \dfrac{1}{4} + 3 \times  \dfrac{3}{8} + 4 \times  \dfrac{1}{4} + 5 \times  \dfrac{1}{16} = 3$ .
 
-\item 若小球落入 2 号球槽,则小球共经过 4 次碰撞,向右 1 次,且每次向右的概率均为 $\dfrac{2}{3}$ ,
-则小球落入 2 号球槽的概率为 $P = {{C}}_{4}^{1} \times  \dfrac{2}{3} \times  {\left( \dfrac{1}{3}\right) }^{3} = \dfrac{8}{81}$ ,
-设 80 个小球落入 2 号球槽的个数为 $Y$ ,则 $Y \sim  B\left( {{80},\dfrac{8}{81}}\right)$ ,\\
-【法一】令 $\left\{  \begin{array}{l} P\left( {Y = k}\right)  \geq  P\left( {Y = k + 1}\right) \\  P\left( {Y = k - 1}\right)  \leq  P\left( {Y = k}\right)  \end{array}\right.$ ，\\即 $\left\{  \begin{array}{l} {{C}}_{80}^{k} \times  {\left( \dfrac{8}{81}\right) }^{k} \times  {\left( \dfrac{73}{81}\right) }^{{80} - k} \geq  {{C}}_{80}^{k + 1} \times  {\left( \dfrac{8}{81}\right) }^{k + 1} \times  {\left( \dfrac{73}{81}\right) }^{{79} - k} \\  {{C}}_{80}^{k - 1} \times  {\left( \dfrac{8}{81}\right) }^{k - 1} \times  {\left( \dfrac{73}{81}\right) }^{{81} - k} \leq  {{C}}_{80}^{k} \times  {\left( \dfrac{8}{81}\right) }^{k} \times  {\left( \dfrac{73}{81}\right) }^{{80} - k} \end{array}\right.$ ,解得 $7 \leq  k \leq  8$ ,
-且 $k \in  {\mathbf{N}}^{ * }$ ,即 $k = 7,8$ ,
-所以 2 号球槽中落入小球的概率最大的为 7 个或 8 个.\\
+        \item 若小球落入 2 号球槽,则小球共经过 4 次碰撞,向右 1 次,且每次向右的概率均为 $\dfrac{2}{3}$ ,
+        则小球落入 2 号球槽的概率为 $P = {{C}}_{4}^{1} \times  \dfrac{2}{3} \times  {\left( \dfrac{1}{3}\right) }^{3} = \dfrac{8}{81}$ ,
+        设 80 个小球落入 2 号球槽的个数为 $Y$ ,则 $Y \sim  B\left( {{80},\dfrac{8}{81}}\right)$ ,\\
+        【法一】令 $\left\{  \begin{array}{l} P\left( {Y = k}\right)  \geq  P\left( {Y = k + 1}\right) \\  P\left( {Y = k - 1}\right)  \leq  P\left( {Y = k}\right)  \end{array}\right.$ ，\\即 $\left\{  \begin{array}{l} {{C}}_{80}^{k} \times  {\left( \dfrac{8}{81}\right) }^{k} \times  {\left( \dfrac{73}{81}\right) }^{{80} - k} \geq  {{C}}_{80}^{k + 1} \times  {\left( \dfrac{8}{81}\right) }^{k + 1} \times  {\left( \dfrac{73}{81}\right) }^{{79} - k} \\  {{C}}_{80}^{k - 1} \times  {\left( \dfrac{8}{81}\right) }^{k - 1} \times  {\left( \dfrac{73}{81}\right) }^{{81} - k} \leq  {{C}}_{80}^{k} \times  {\left( \dfrac{8}{81}\right) }^{k} \times  {\left( \dfrac{73}{81}\right) }^{{80} - k} \end{array}\right.$ ,解得 $7 \leq  k \leq  8$ ,
+        且 $k \in  {\mathbf{N}}^{ * }$ ,即 $k = 7,8$ ,
+        所以 2 号球槽中落入小球的概率最大的为 7 个或 8 个.\\
 
-【法二】$\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}>1$,解得$k<7$;\\
-$\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}=1$,解得$k=7$;\\
-$\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}<1$,解得$k>7$,根据单调性可得最大项为$k=7\text{or}8$。
+        【法二】$\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}>1$,解得$k<7$;\\
+        $\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}=1$,解得$k=7$;\\
+        $\dfrac{P(Y=k+1)}{P(Y=k)}=\dfrac{8(80-k)}{73(k+1)}<1$,解得$k>7$,根据单调性可得最大项为$k=7$或$8$
     \end{enumerate}
 \end{jieda}
 

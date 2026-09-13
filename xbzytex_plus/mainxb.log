@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  10 SEP 2026 19:45
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  13 SEP 2026 17:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,7 +1722,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./mainxb.aux (./bodyxb/bx02ch06.aux))
+ (./mainxb.aux (./bodyxb/bx03ch12.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1797,65 +1797,56 @@ Package hyperref Info: Link coloring ON on input line 18.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/bx02ch06.aux'.
+\openout2 = `bodyxb/bx03ch12.aux'.
 
- (./bodyxb/bx02ch06.tex
-第一章
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7.
-(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
+ (./bodyxb/bx03ch12.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 7.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 7.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 7.
+(Font)              <10.53937> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 7.
+(Font)              <7> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 7.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+(Font)              <5> on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 7.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 7.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 7.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 7.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 9.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 8.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 8.
-
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1889,149 +1880,55 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
+
+Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
 [1
 
 
 
-] [2] [3] [4
-
-] [5] [6] [7
-
-] [8] [9
-
-] [10] [11] [12]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.045> on input line 569.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 569.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 569.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 569.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sin' on input line 569.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\omega' on input line 569.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 569.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 569.
-
-File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t7.jpg Graphic file (type bmp)
-<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t7.jpg>
-[13
+] [2] [3] [4] [5
 
 ]
-File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t8.jpg Graphic file (type bmp)
-<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t8.jpg>
-File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t10.jpg Graphic file (type bmp)
-<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t10.jpg>
- [14]
-File: ./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t11.jpg Graphic file (type bmp)
-<./bodyxb/src/main42xbb2ch06ruijiandesanjiaobi15t11.jpg>
- [15]
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-[16]
+Missing character: There is no ≤ (U+2264) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ≤ (U+2264) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ≤ (U+2264) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ≤ (U+2264) in font [lmroman10-regular]:mapping=tex-text;!
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 791.
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 260.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sin' on input line 791.
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 260.
 
+[6] [7] [8
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\omega' on input line 791.
+] [9] [10
 
+] [11]
+Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
+[12
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 791.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 791.
-
-[17
-
-] [18] [19]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 930.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sin' on input line 930.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\omega' on input line 930.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 930.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 930.
-
-File: bodyxb//src/Asin(omega x+phi)+B(3)_A2.png Graphic file (type bmp)
-<bodyxb//src/Asin(omega x+phi)+B(3)_A2.png>
-File: bodyxb//src/Asin(omega x + phi)+B(3)_A3.png Graphic file (type bmp)
-<bodyxb//src/Asin(omega x + phi)+B(3)_A3.png>
-[20
-
-]
-File: bodyxb//src/Asin(omega x + phi)+B(3)_B5.png Graphic file (type bmp)
-<bodyxb//src/Asin(omega x + phi)+B(3)_B5.png>
- [21]
-File: bodyxb//src/Asin(omega x + phi) + B(3)_B10.png Graphic file (type bmp)
-<bodyxb//src/Asin(omega x + phi) + B(3)_B10.png>
-File: bodyxb//src/Asin(omega x + phi)+B(3)_B11.png Graphic file (type bmp)
-<bodyxb//src/Asin(omega x + phi)+B(3)_B11.png>
- [22]
-File: ./bodyxb/src/main42xbb2ch07sanjiaohanshu01.png Graphic file (type bmp)
-<./bodyxb/src/main42xbb2ch07sanjiaohanshu01.png>
- [23] [24] [25
-
-
-]
-File: bodyxb//src/zhengqietuxiang(1)B11.png Graphic file (type bmp)
-<bodyxb//src/zhengqietuxiang(1)B11.png>
- [26] [27] [28] [29
-
-
-]
-File: ./bodyxb/src/main42xbb2ch07sanjiaofangchengt13.png Graphic file (type bmp)
-<./bodyxb/src/main42xbb2ch07sanjiaofangchengt13.png>
- [30]
-File: ./bodyxb/src/zhaopianch6jiandande.png Graphic file (type bmp)
-<./bodyxb/src/zhaopianch6jiandande.png>
- [31]) [32] (./mainxb.aux (./bodyxb/bx02ch06.aux))
+] [13] [14] [15]) (./mainxb.aux (./bodyxb/bx03ch12.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `mainxb.out' has not changed.
-(rerunfilecheck)             Checksum: 2608FE0FF2961BAE4B89A961E48DA2DB;1521.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49782 strings out of 468168
- 1173042 string characters out of 5432816
- 1744749 words of memory out of 5000000
- 77469 multiletter control sequences out of 15000+600000
- 671351 words of font info for 153 fonts, out of 8000000 for 9000
+ 49656 strings out of 468168
+ 1170173 string characters out of 5432816
+ 1736265 words of memory out of 5000000
+ 77376 multiletter control sequences out of 15000+600000
+ 656694 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,10n,128p,634b,1423s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,14n,128p,630b,1337s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (32 pages).
+Output written on mainxb.pdf (15 pages).
