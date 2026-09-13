@@ -3659,102 +3659,170 @@ C. $\sin x > \sin y$ D. ${x}^{3} > {y}^{3}$
 \end{enumerate}
 
 \subsubsection*{三、解答题}
+\begin{enumerate}
+    \item (2024$\cdot$黄浦区一模$\cdot$17)已知等比数列 $\left\{  {a}_{n}\right\}$ 是严格增数列，其第 3、4、5 项的乘积为 1000，并且这三项分别乘以 4、3、2 后，所得的三个数依次成等差数列.
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式
+        \item 若对任意的正整数 $n$ ，数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} = 3\left( {1 - {2}^{n}}\right)$ ， 向量 $\left( {{a}_{n},{b}_{n}}\right)$ 的模为 ${t}_{n}$ ，求数列 $\left\{  {t}_{n}\right\}$ 的前 $n$ 项和.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设等比数列 $\left\{  {a}_{n}\right\}$ 的公比为 $q$ ，由 ${a}_{3}{a}_{4}{a}_{5} = {1000}$ ,可得 ${a}_{4}^{3} = {1000}$ ,即 ${a}_{4} = {10}$ . 又由 $4{a}_{3},3{a}_{4},2{a}_{5}$ 成等差数列,可得 $4{a}_{3} + 2{a}_{5} = 6{a}_{4}$ ,即 $\dfrac{40}{q} + {20q} = {60}$ ,解得 $q = 1$ 或 2,又 $\left\{  {a}_{n}\right\}$ 是严格增数列,所以 $q = 2$ ,故 ${a}_{n} = {a}_{4}{q}^{n - 4} =  {10} \cdot  {2}^{n - 4} = 5 \cdot  {2}^{n - 3}$
+            \item 由 ${S}_{n} = 3\left( {1 - {2}^{n}}\right)$ ，可得当 $n \geq  2$ 时， ${b}_{n} = {S}_{n} - {S}_{n - 1} =  3\left( {{2}^{n - 1} - {2}^{n}}\right)  =  - 3 \cdot  {2}^{n - 1}$ ,又 ${b}_{1} = {S}_{1} =  - 3 =  - 3 \cdot  {2}^{1 - 1}$ ,所以对一切正整数 $n$ ,都有 ${b}_{n} =  - 3 \cdot  {2}^{n - 1}$ ,所以 ${t}_{n} = \sqrt{{a}_{n}^{2} + {b}_{n}^{2}} =  \sqrt{{\left( 5 \cdot  {2}^{n - 3}\right) }^{2} + {\left( -3 \cdot  {2}^{n - 1}\right) }^{2}} = {13} \cdot  {2}^{n - 3}$ ,所以 $\left\{  {t}_{n}\right\}$ 的前 $n$ 和为 $\dfrac{13}{4}\left( {1 + 2 + \cdots  + {2}^{n - 1}}\right)  = \dfrac{13}{4} \cdot  \dfrac{1 - {2}^{n}}{1 - 2} = \dfrac{13}{4}\left( {{2}^{n} - 1}\right)$ .
+        \end{enumerate}
+    \end{jieda}
 
-18.(2024$\cdot$黄浦区一模$\cdot$17)已知等比数列 $\left\{  {a}_{n}\right\}$ 是严格增数列，其第 3、4、5 项的乘积为 1000，并且这三项分别乘以 4、3、2 后，所得的三个数依次成等差数列.
-
-(1)求数列 $\left\{  {a}_{n}\right\}$ 的通项公式；
-
-(2)若对任意的正整数 $n$ ，数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} = 3\left( {1 - {2}^{n}}\right)$ ， 的量 $\left( {{a}_{n},{b}_{n}}\right)$ 的模为 ${t}_{n}$ ，求数列 $\left\{  {t}_{n}\right\}$ 的前 $n$ 项和.
-
-19.(2024$\cdot$奉贤区二模$\cdot$17)已知 $\left\{  {a}_{n}\right\}$ 是公差 $d = 2$ 的等差数列，其前 5 项和为 15， $\left\{  {b}_{n}\right\}$ 是公比 $q$ 为实数的等比数列， ${b}_{1} = 1$ ， ${b}_{4} - {b}_{2} = 6$.
-
-(1)求 $\left\{  {a}_{n}\right\}$ 和 $\left\{  {b}_{n}\right\}$ 的通项公式；
-
-(2)设 ${c}_{n} = {2}^{{a}_{n}} + {b}_{2n}\left( {n \geq  1,n \in  \mathbf{N}}\right)$ ，计算 $\mathop{\sum }\limits_{{i = 1}}^{n}{c}_{i}$.
-
-\subsection*{考点5 > 数列中的数学文化}
+    \item (2024$\cdot$奉贤区二模$\cdot$17)已知 $\left\{  {a}_{n}\right\}$ 是公差 $d = 2$ 的等差数列，其前 5 项和为 15， $\left\{  {b}_{n}\right\}$ 是公比 $q$ 为实数的等比数列， ${b}_{1} = 1$ ， ${b}_{4} - {b}_{2} = 6$.
+    \begin{enumerate}
+        \item 求 $\left\{  {a}_{n}\right\}$ 和 $\left\{  {b}_{n}\right\}$ 的通项公式
+        \item 设 ${c}_{n} = {2}^{{a}_{n}} + {b}_{2n}\left( {n \geq  1,n \in  \mathbf{N}}\right)$ ，计算 $\mathop{\sum }\limits_{{i = 1}}^{n}{c}_{i}$.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 因为 $d = 2$ ，且 ${S}_{5} = 5{a}_{1} + \dfrac{5 \times  4}{2} \times  2 = {15}$ ，所以 ${a}_{1} =$ -1,所以 ${a}_{n} = {2n} - 3$ . 因为 ${b}_{1} = 1$ ,且 ${b}_{4} - {b}_{2} = 6$ ,所以 ${q}^{3} -  q = 6$ ,所以 $q = 2$ ,所以 ${b}_{n} = {2}^{n - 1}$
+            \item 由题可知， ${c}_{n} = {2}^{{2n} - 3} + {2}^{{2n} - 1} = \dfrac{5}{8} \times  {4}^{n}$ ， $\mathop{\sum }\limits_{{i = 1}}^{n}{c}_{n}$ 为等比数列求和，首项为 $\dfrac{5}{2}$ ，公比 4，所以 $\mathop{\sum }\limits_{{i = 1}}^{n}{c}_{n} = \dfrac{\dfrac{5}{2} \times  \left( {1 - {4}^{n}}\right) }{1 - 4} = \dfrac{5}{6}\left( {{4}^{n} - 1}\right)$.
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{考点5 数列中的数学文化}
 
 \subsubsection*{一、填空题}
+\begin{enumerate}
+    \item (2024$\cdot$静安区一模$\cdot$11)在国家开发西部的号召下，某企业得到了一笔 400 万元的无息贷款用做设备更新. 据预测，该企业设备更新后，第 1 个月收入为 20 万元，在接下来的 5 个月中，每月收入都比上个月增长 20\%，从第 7 个月开始，每个月的收入都比前一个月增加 2 万元. 则从新设备使用开始计算，该企业用所得收入偿还 400 万无息贷款只需\blkda[2]{10}个月. (结果取整)
+    \begin{jieda}
+        \begin{enumerate}
+            \item 由题意设每个月的收入为数列 $\left\{  {a}_{n}\right\}$ ,其前 $n$ 项和记作 ${S}_{n}$ ,前 6 个月的收入成等比数列,且公比为 $\dfrac{6}{5}$ ,第 7 个月开始收入成等差数列,公差为 2,则 ${S}_{6} = \dfrac{{20} \times  \left\lbrack  {1 - {\left( \dfrac{6}{5}\right) }^{6}}\right\rbrack  }{1 - \dfrac{6}{5}} =  {100} \times  {\left( \dfrac{6}{5}\right) }^{6} - {100} \approx  {198.6}$ ,又 ${a}_{7} = {a}_{6} + 2 = {20} \times  {\left( \dfrac{6}{5}\right) }^{5} +  2 \approx  {51.77},{a}_{8} = {53.77},{a}_{9} = {55.77},{a}_{10} = {57.77}$ ,而 ${S}_{9} \approx  {198.6} +  {51.77} + {53.77} + {55.77} = {359.91},{S}_{10} = {S}_{9} + {a}_{10} = {417.68} >$ 400 , 所以该企业用所得收入偿还 400 万元贷款只需 10 个月.
+        \end{enumerate}
+    \end{jieda}
 
-1.(2024$\cdot$静安区一模$\cdot$11)在国家开发西部的号召下，某企业得到了一笔 400 万元的无息贷款用做设备更新. 据预测，该企业设备更新后，第 1 个月收入为 20 万元，在接下来的 5 个月中，每月收入都比上个月增长 20\%，从第 7 个月开始，每个月的收入都比前一个月增加 2 万元. 则从新设备使用开始计算，该企业用所得收入偿还 400 万无息贷款只需\blkda[2]{}个月. (结果取整)
+    \item (2024$\cdot$宝山区二模$\cdot$11)某区域的地形大致如下左图，某部门负责该区域的安全警戒，在哨位 $O$ 的正上方安装探照灯对警戒区域进行探查扫描.
 
-2.(2024$\cdot$宝山区二模$\cdot$11)某区域的地形大致如下左图，某部门负责该区域的安全警戒，在哨位 $O$ 的正上方安装探照灯对警戒区域进行探查扫描.
+    假设 1: 警戒区域为空旷的扇环形平地 ${A}_{1}{A}_{n}{B}_{n}{B}_{1}$ ;
 
-假设 1: 警戒区域为空旷的扇环形平地 ${A}_{1}{A}_{n}{B}_{n}{B}_{1}$ ;
+    假设 2: 视探照灯为点 $M$ ,且距离地面 ${20}{m}$ ;
 
-假设 2: 视探照灯为点 $M$ ,且距离地面 ${20}{m}$ ;
+    假设 3: 探照灯 $M$ 照射在地面上的光斑是椭圆.
 
-假设 3: 探照灯 $M$ 照射在地面上的光斑是椭圆.
+    当探照灯 $M$ 以某一俯角从 ${A}_{k}{A}_{k + 1}$ 侧扫描到 ${B}_{k}{B}_{k + 1}$ 侧时,记为一次扫描,此过程中照射在地面上的光斑形成一个扇环 ${S}_{k}\left( {k = 1,2,3,\cdots }\right)$. 由此,通过调整 $M$ 的俯角,逐次扫描形成扇环 ${S}_{1},{S}_{2},{S}_{3}\cdots$. 第一次扫描时,光斑的长轴为 ${EF},\left| {OE}\right|  = {30}{m}$ ,此时在探照灯 $M$ 处测得点 $F$ 的俯角为 ${30}^{ \circ  }$ (如下右图). 记 $\left| {{A}_{k}{A}_{k + 1}}\right|  = {d}_{k}$ ,经测量知 $\left| {{A}_{1}{A}_{n}}\right|  = {80}{m}$ ,且 $\left\{  {d}_{k}\right\}$ 是公差约为 ${0.1}{m}$ 的等差数列,则至少需要经过\blkda[2]{15}次扫描，才能将整个警戒区域扫描完毕.
 
-当探照灯 $M$ 以某一俯角从 ${A}_{k}{A}_{k + 1}$ 侧扫描到 ${B}_{k}{B}_{k + 1}$ 侧时,记为一次扫描,此过程中照射在地面上的光斑形成一个扇环 ${S}_{k}\left( {k = 1,2,3,\cdots }\right)$. 由此,通过调整 $M$ 的俯角,逐次扫描形成扇环 ${S}_{1},{S}_{2},{S}_{3}\cdots$. 第一次扫描时,光斑的长轴为 ${EF},\left| {OE}\right|  = {30}{m}$ ,此时在探照灯 $M$ 处测得点 $F$ 的俯角为 ${30}^{ \circ  }$ (如下右图). 记 $\left| {{A}_{k}{A}_{k + 1}}\right|  = {d}_{k}$ ,经测量知 $\left| {{A}_{1}{A}_{n}}\right|  = {80}{m}$ ,且 $\left\{  {d}_{k}\right\}$ 是公差约为 ${0.1}{m}$ 的等差数列,则至少需要经过\blkda[2]{}次扫描，才能将整个警戒区域扫描完毕.
+    \begin{center}
+    \includegraphics[width=0.6\textwidth]{bodyxb/src/80_412_1248_765_374_0.jpg}
+    \end{center}
+    \begin{jieda}
+        因为在 $Rt \bigtriangleup {MOF}$ 中, $\angle F = {30}^{ \circ  },{OM} = {20}$ ,所以 ${OF} = {20}\sqrt{3},{EF} = {20}\sqrt{3} - {30}$ ,故 $A{A}_{1} = {20}\sqrt{3} - {30}$ ,故 $\left\{  {d}_{k}\right\}$ 是以 ${20}\sqrt{3} - {30}$ 为首项，以 0.1 为公差的等差数列，故 ${S}_{k} =  \left( {{20}\sqrt{3} - {30}}\right) k + \dfrac{k\left( {k - 1}\right) }{2} \times  {0.1}$ ,而 ${S}_{14} = {74.06} < {80},{S}_{15} \approx$ 80.1>80 ,故 ${k}_{\min } = {15}$ . 所以至少需要 15 次才能将整个警戒区域扫描完毕.
+    \end{jieda}
 
-\begin{center}
-\includegraphics[width=0.6\textwidth]{bodyxb/src/80_412_1248_765_374_0.jpg}
-\end{center}
+    \item (2024$\cdot$杨浦区二模$\cdot$11)某钢材公司积压了部分圆钢，经清理知共有 2024 根，每根圆钢的直径为 ${10}{{cm}}$. 现将它们堆放在一起. 若堆成纵断面为等腰梯形 (如图所示,每一层的根数比上一层根数多 1 根),且为杜绝安全隐患,堆放高度不得高于 $\dfrac{3}{2}{m}$ ，若堆放占用场地面积最小，则最下层圆钢根数为\blkda[2]{134}.
 
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/80_1186_1735_237_135_0.jpg}
+    \end{center}
+    \begin{jieda}
+        设第一层有 $m$ 根,共有 $n$ 层,则 ${S}_{n} = {nm} + \dfrac{n\left( {n - 1}\right) }{2} =$ 2024 得: $n\left( {{2m} + n - 1}\right)  = {4048} = {2}^{4} \times  {11} \times  {23}$ ,因为 $n$ 和 ${2m} +  n - 1$ 中一个奇数一个偶数,故可能 $\left\{  {\begin{array}{l} n = {11} \\  m = {179} \end{array},\left\{  {\begin{array}{l} n = {16} \\  m = {119} \end{array},\left\{  \begin{array}{l} n = {23} \\  m = {77} \end{array}\right. }\right. }\right.$ , 因为每增加一层高度增加 $5\sqrt{3}$ 厘米
+        
+        当 $\left\{  {\begin{array}{l} n = {11} \\  m = {179} \end{array}\text{ 时, }h = {10} \times  }\right.  5\sqrt{3} + {10} \approx  {96.6}$ 厘米 $< {150}$ 厘米,此时最下层有 189 根
+        
+        当 $\left\{  {\begin{array}{l} n = {16} \\  m = {119} \end{array}\text{ 时, }h = {15} \times  5\sqrt{3} + {10} \approx  }\right.$ 139.9 厘米 $< {150}$ 厘米,此时最下层有 134 根
+        
+        当 $\left\{  \begin{array}{l} n = {23} \\  m = {77} \end{array}\right.$ 时, $h = {22} \times  5\sqrt{3} + {10} \approx  {200.52} > {150}$ 厘米,超过. 
+        
+        综上所述: 134 根占用场地面积最小.
 
-第 2 题图
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/56_613_1718_257_250_0.jpg}
+        \end{center}
+    \end{jieda}
 
-3.(2024$\cdot$杨浦区二模$\cdot$11)某钢材公司积压了部分圆钢，经清理知共有 2024 根，每根圆钢的直径为 ${10}{{cm}}$. 现将它们堆放在一起. 若堆成纵断面为等腰梯形 (如图所示,每一层的根数比上一层根数多 1 根),且为杜绝安全隐患,堆放高度不得高于 $\dfrac{3}{2}{m}$ ，若堆放占用场地面积最小，则最下层圆钢根数为\blkda[2]{}.
-
-\begin{center}
-\includegraphics[width=0.2\textwidth]{bodyxb/src/80_1186_1735_237_135_0.jpg}
-\end{center}
-
-
-第 3 题图
-
+\end{enumerate}
 \subsubsection*{二、解答题}
-
-4.(2024$\cdot$虹口区一模$\cdot$19)2022 年 12 月底,某厂的废水池已储存废水 800 t，以后每月新产生的 2 t 废水也存入废水池. 该厂 2023 年开始对处理后的废水进行排放，1 月底排放 10 t 处理后的废水， 计划以后每月月底排放一次,每月排放处理后的废水比上月增加 $2{t}$.
-
-(1)若按计划排放，该厂在哪一年的几月份排放后，可第一次将废水池中的废水排放完毕？
-
-(2)该厂加强科研攻关，提升废水处理技术，经过深度净化的废水可以再次利用. 该厂从 2023 年 7 月开始对该月计划排放的废水进行深度净化，首次净化废水 $5{t}$ ，以后每月比上月提高 20\% 的净化能力. 试问: 哪一年的几月份开始,该厂当月排放的废水能被全部净化?
+\begin{enumerate}
+    \item (2024$\cdot$虹口区一模$\cdot$19)2022 年 12 月底,某厂的废水池已储存废水 800 t，以后每月新产生的 $2t$ 废水也存入废水池. 该厂 2023 年开始对处理后的废水进行排放，1 月底排放 10 t 处理后的废水， 计划以后每月月底排放一次,每月排放处理后的废水比上月增加 $2{t}$.
+    \begin{enumerate}
+        \item 若按计划排放，该厂在哪一年的几月份排放后，可第一次将废水池中的废水排放完毕？
+        \item 该厂加强科研攻关，提升废水处理技术，经过深度净化的废水可以再次利用. 该厂从 2023 年 7 月开始对该月计划排放的废水进行深度净化，首次净化废水 $5{t}$ ，以后每月比上月提高 20\% 的净化能力. 试问: 哪一年的几月份开始,该厂当月排放的废水能被全部净化?
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设从 2023 年 1 月起第 $n$ 个月处理后的废水排放量为 ${a}_{n}$ 吨,则由已知条件知: 数列 $\left\{  {a}_{n}\right\}$ 是首项为 10,公差为 2 的等差数列,故 ${a}_{n} = {2n} + 8$ . 当 $\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{n} \geq  {800} + {2n}$ 时,即 $\dfrac{n\left\lbrack  {{10} + \left( {{2n} + 8}\right) }\right\rbrack  }{2} \geq  {800} + {2n}$ ,化简得 ${n}^{2} + {7n} - {800} \geq  0$ ,解得 $n \geq  {25}$ 或 $n \leq   - {32}$ ,由 $n$ 是正整数,故 $n \geq  {25}$ ,故该厂在 2025 年1月底第一次将废水池中的废水排放完毕.
+            \item 设从 2023 年 1 月起第 $n$ 个月深度净化的废水量为 ${b}_{n}$ 吨, 由已知条件, ${b}_{1} = {b}_{2} = \cdots  = {b}_{6} = 0$ ,当 $n \geq  7$ 时,数列 $\left\{  {b}_{n}\right\}$ 是首项为 5,公比为 1.2 的等比数列,故 ${b}_{n} = \left\{  \begin{array}{l} 0,1 \leq  n \leq  6 \\  5 \times  1.{2}^{n - 7},n \geq  7 \end{array}\right.$ (n 为正整数); 显然,当 $1 \leq  n \leq  6$ 时, ${a}_{n} > {b}_{n}$ ; 当 $n \geq  7$ 时,由 ${a}_{n} \leq  {b}_{n}$ ,得 ${2n} + 8 \leq  5 \times  {1.2}^{n - 7}\left( *\right)$ ,设 ${c}_{n} = {2n} + 8 - 5 \times  {1.2}^{n - 7}$
+            
+            方法一:令 ${c}_{n + 1} \geq  {c}_{n}$ ，则 ${2n} + 2 + 8 - 5 \times  {1.2}^{n - 6} \geq  {2n} + 8 - 5 \times$ 1. ${2}^{n - 7} \Longrightarrow  2 \geq  {0.2} \times  5 \times  {1.}{2}^{n - 7} \Longrightarrow  {1.}{2}^{n - 7} \leq  2 \Longrightarrow  n - 7 < {3.81} \Longrightarrow  n < {10.81}$ ,得 ${c}_{7} < {c}_{8} < {c}_{9} < {c}_{10} < {c}_{11} > {c}_{12} > \cdots  > {c}_{19} > 0 > {c}_{20}$. 
+            
+            方法二: 则 ${c}_{n} - {c}_{n - 1} = 2 - 1.{2}^{n - 8}$ ,所以当 $7 \leq  n \leq  {11}$ 时,数列 $\left\{  {c}_{n}\right\}$ 是严格增数列,且 ${c}_{n} > 0$ ; 当 $n \geq  {12}$ 时,数列 $\left\{  {c}_{n}\right\}$ 是严格减数列. 由于 ${c}_{19} \approx  {1.42} > 0,{c}_{20} \approx   - {5.50} < 0$ .
+            
+            所以不等式 $\left( *\right)$ 的解为 $n \geq  {20}$ ( $n$ 为正整数). 故该厂在 2024 年 8 月开始计划排放的废水能被全部净化.
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{考点 6 数列求和}
 
 \subsubsection*{一、填空题}
+\begin{enumerate}
+    \item (2024$\cdot$普陀区一模$\cdot$4)设 ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和( $n \geq  1$ ， $n \in  \mathbf{N}$ )，若 ${a}_{2} + {a}_{4} = 9 - {a}_{6}$ ，则 ${S}_{7} =$ \blkda[2]{21}.
+    \begin{jieda}
+        $a_2+a_4+a_6 = 9, a_4 = 3, S_7 = 21$.
+    \end{jieda}
+    \item (2024$\cdot$杨浦区一模$\cdot$5)等差数列 $\left\{  {a}_{n}\right\}$ 中，若 ${a}_{1} + {a}_{2} = 6,{a}_{2} + {a}_{3} = {10}$ ，则 $\left\{  {a}_{n}\right\}$ 的前 10 项和为\blkda[2]{110}.
+    \begin{jieda}
+        $4a_2 = a_1+a_2+a_2+a_3 = 16$，$a_2 = 4$，$a_1=2, d = 2$，故$S_{10} = 110$.
+    \end{jieda}
+    \item (2024$\cdot$浦东新区一模$\cdot$5)已知 ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 ${a}_{n} = {2n} - 3$ ，则满足 ${S}_{m} = {24}$ 的正整数 $m$ 的值为\blkda[2]{6}.
+    \begin{jieda}
+        ${a}_{1} =  - 1,{a}_{n} = {2n} - 3,{S}_{n} = \dfrac{\left( {-1 + {2n} - 3}\right) n}{2} = {n}^{2} -  {2n},{S}_{m} = {m}^{2} - {2m} = {24},{m}^{2} - {2m} - {24} = 0,\left( {m - 6}\right) \left( {m + 4}\right)  =  0 \Longrightarrow  m = 6\left( {m =  - 4\text{ ,舍去 }}\right)$.
+    \end{jieda}
+    \item (2025$\cdot$浦东新区二模$\cdot$12)已知数列 $\left\{  {a}_{n}\right\}$ ， ${a}_{1} = 1$ ， ${a}_{n} \in  \{ 1, - 1\}$ ， $\left( {n \geq  2}\right)$ ，并且前 $n$ 项的和 ${S}_{n}$ 满足:  \ding{172}  存在小于 1013 的正整数 $t$ ，使得 ${S}_{{2t} + 1} =  - 1$ ； \ding{173}  对任意的正整数 $k$ 和 $m$ ，都有 $\left| {{S}_{2m} - {S}_{{2k} - 1}}\right|  \leq$ 1. 满足以上条件的数列 $\left\{  {S}_{n}\right\}  \left( {1 \leq  n \leq  {2025}}\right)$ 共有\blkda[2]{${2}^{1012} - 1$}个.
+    \begin{jieda}
+        考虑\ding{173}和$S_1 = a_1 = 1$可知$S_{2m} \in \{0, 2\}$，结合\ding{172}可知$S_{2m} = 0$，故偶数项和其前一项的奇数项互为相反数.
 
-1. (2024$\cdot$普陀区一模$\cdot$4)设 ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和( $n \geq  1$ ， $n \in  \mathbf{N}$ )，若 ${a}_{2} + {a}_{4} = 9 - {a}_{6}$ ，则 ${S}_{7} =$ \blkda[2]{}.
-
-2.(2024$\cdot$杨浦区一模$\cdot$5)等差数列 $\left\{  {a}_{n}\right\}$ 中，若 ${a}_{1} + {a}_{2} = 6,{a}_{2} + {a}_{3} = {10}$ ，则 $\left\{  {a}_{n}\right\}$ 的前 10 项和为\blkda[2]{}.
-
-3. (2024$\cdot$浦东新区一模$\cdot$5)已知 ${S}_{n}$ 是等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，若 ${a}_{n} = {2n} - 3$ ，则满足 ${S}_{m} = {24}$ 的正整数 $m$ 的值为\blkda[2]{}.
-
-4.(2025$\cdot$浦东新区二模$\cdot$12)已知数列 $\left\{  {a}_{n}\right\}$ ， ${a}_{1} = 1$ ， ${a}_{n} \in  \{ 1, - 1\}$ ， $\left( {n \geq  2}\right)$ ，并且前 $n$ 项的和 ${S}_{n}$ 满足:  \ding{172}  存在小于 1013 的正整数 $t$ ，使得 ${S}_{{2t} + 1} =  - 1$ ； \ding{173}  对任意的正整数 $k$ 和 $m$ ，都有 $\left| {{S}_{2m} - {S}_{{2k} - 1}}\right|  \leq$ 1. 满足以上条件的数列 $\left\{  {S}_{n}\right\}  \left( {1 \leq  n \leq  {2025}}\right)$ 共有\blkda[2]{}个.
-
+        在$1013$个奇数项中第一项确定，故有$2^{1012}$个满足要求的$\{S_{n}\}$，又因为\ding{172}的约束，使得不能所有的奇数项都取$-1$，故有${2}^{1012} - 1$个.
+    \end{jieda}
+\end{enumerate}
 \subsubsection*{二、选择题}
+\begin{enumerate}
+    \item (2024$\cdot$松江区二模$\cdot$16)设 ${S}_{n}$ 为数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，有以下两个命题: \ding{172}  若 $\left\{  {a}_{n}\right\}$ 是公差不为零的等差数列且 $k \in  \mathbf{N},k \geq  2$ ,则 ${S}_{1} \cdot  {S}_{2} \cdot  \cdots  \cdot  {S}_{{2k} - 1} = 0$ 是 ${a}_{1} \cdot  {a}_{2} \cdot  \cdots  \cdot  {a}_{k} = 0$ 的必要非充分条件;  \ding{173}  若 $\left\{  {a}_{n}\right\}$ 是等比数列且 $k \in  \mathbf{N},k \geq  2$ ,则 ${S}_{1} \cdot  {S}_{2} \cdot  \cdots  \cdot  {S}_{k} = 0$ 的充要条件是 ${a}_{k} + {a}_{k + 1} = 0$. 则下列判断中正确的是 \dotfill{(\kh{C})}
 
-5.(2024$\cdot$松江区二模$\cdot$16)设 ${S}_{n}$ 为数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和，有以下两个命题: \ding{172}  若 $\left\{  {a}_{n}\right\}$ 是公差不为零的等差数列且 $k \in  \mathbf{N},k \geq  2$ ,则 ${S}_{1} \cdot  {S}_{2} \cdot  \cdots  \cdot  {S}_{{2k} - 1} = 0$ 是 ${a}_{1} \cdot  {a}_{2} \cdot  \cdots  \cdot  {a}_{k} = 0$ 的必要非充分条件;  \ding{173}  若 $\left\{  {a}_{n}\right\}$ 是等比数列且 $k \in  \mathbf{N},k \geq  2$ ,则 ${S}_{1} \cdot  {S}_{2} \cdot  \cdots  \cdot  {S}_{k} = 0$ 的充要条件是 ${a}_{k} + {a}_{k + 1} = 0$. 则下列判断中正确的是 \dotfill{(\kh{})}
+    \xx{\ding{172} 是真命题， \ding{173} 是假命题}{\ding{172} 是假命题， \ding{173} 是真命题}{\ding{172}  \ding{173} 都是真命题}{\ding{172}  \ding{173} 都是假命题} 
+    \begin{jieda}
+        对于 \ding{172} : 必要性: 若 ${a}_{1} \cdot  {a}_{2} \cdot  \cdots  \cdot  {a}_{k} = 0$ ,不妨设 ${a}_{i} =  0\left( {1 \leq  i \leq  k}\right)$ ,则 ${S}_{{2i} - 1} = \left( {{2i} - 1}\right) {a}_{i} = 0$ ,即必要性成立; 充分性: 举反例: 当 ${a}_{n} = {2n} - 3$ 时,则 ${S}_{2} = 0$ ,故 ${S}_{1} \cdot  {S}_{2} \cdot  \cdots  \cdot  {S}_{{2k} - 1} = 0$ ,但是 ${a}_{1} \cdot  {a}_{2} \cdot  \cdots  \cdot  {a}_{k} \neq  0$ ,即充分性不成立; 综上所述, \ding{172} 为真命题; 
+        
+        对于 \ding{173} : ${a}_{k} + {a}_{k + 1} = 0 \Longleftrightarrow q = -1 \Longleftrightarrow S_{2m} = 0$
+    \end{jieda}
 
-\xx{}{}{}{} \ding{172} 是真命题， \ding{173} 是假命题 B.  \ding{172} 是假命题， \ding{173} 是真命题
+    \item (2023$\cdot$上海春季卷$\cdot$16)数列 $\left\{  {a}_{n}\right\}$ 的各项均为实数， ${S}_{n}$ 为其前 $n$ 项和，对任意 $k > 2022$ 都有 $\left| {S}_{k}\right|  > \left| {S}_{k + 1}\right|$ ,则下列说法可能正确的是 \dotfill{(\kh{C})}
 
-C.  \ding{172}  \ding{173} 都是真命题 D.  \ding{172}  \ding{173} 都是假命题
-
-6.(2023$\cdot$上海春季卷$\cdot$16)数列 $\left\{  {a}_{n}\right\}$ 的各项均为实数， ${S}_{n}$ 为其前 $n$ 项和，对任意 $k > 2$ 022 都有 $\left| {S}_{k}\right|  > \left| {S}_{k + 1}\right|$ ,则下列说法可能正确的是 \dotfill{(\kh{})}
-
-\xx{}{}{}{}${a}_{1},{a}_{3},{a}_{5},\cdots ,{a}_{{2n} - 1}$ 为等差数到, ${a}_{2},{a}_{4},{a}_{6},\cdots ,{a}_{2n}$ 为等比数列
-
-B. ${a}_{1},{a}_{3},{a}_{5},\cdots ,{a}_{{2n} - 1}$ 为等比数列, ${a}_{2},{a}_{4},{a}_{6},\cdots ,{a}_{2n}$ 为等差数列
-
-C. ${a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{2022}$ 为等差数列, ${a}_{2022},{a}_{2023},{a}_{2024},\cdots ,{a}_{n}$ 为等比数列
-
-D. ${a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{2022}$ 为等比数列, ${a}_{2022},{a}_{2023},{a}_{2024},\cdots ,{a}_{n}$ 为等差数列
-
+    \xx{${a}_{1},{a}_{3},{a}_{5},\cdots ,{a}_{{2n} - 1}$ 为等差数到, ${a}_{2},{a}_{4},{a}_{6},\cdots ,{a}_{2n}$ 为等比数列}{${a}_{1},{a}_{3},{a}_{5},\cdots ,{a}_{{2n} - 1}$ 为等比数列, ${a}_{2},{a}_{4},{a}_{6},\cdots ,{a}_{2n}$ 为等差数列}{${a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{2022}$ 为等差数列, ${a}_{2022},{a}_{2023},{a}_{2024},\cdots ,{a}_{n}$ 为等比数列}{${a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{2022}$ 为等比数列, ${a}_{2022},{a}_{2023},{a}_{2024},\cdots ,{a}_{n}$ 为等差数列}
+    \begin{jieda}
+        等差数列前 $n$ 项和 ${S}_{n} = k{n}^{2} + {bn}$ ,当 $n$ 无穷大时, $\left| {S}_{n}\right|$ 也无穷大,当 $n$ 足够大时, $\left| {S}_{n}\right|$ 一定单调递增,不可能满足 $\left| {S}_{k}\right|  > \left| {S}_{k + 1}\right|$ ,所以选项 ${A},{B},{D}$ 都错误,所以选 C.
+    \end{jieda}
+\end{enumerate}
 \subsubsection*{三、解答题}
+\begin{enumerate}
+    \item (2024$\cdot$徐汇区一模$\cdot$17)已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ， ${a}_{1} = 2$ ， ${S}_{5} = {20}$.
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式
+        \item 若等比数列 $\left\{  {b}_{n}\right\}$ 的公比为 $q = \dfrac{1}{2}$ ，且满足 ${a}_{4} + {b}_{4} = 9$ ，求数列 $\left\{  {{a}_{n} - {b}_{n}}\right\}$ 的前 $n$ 项和 ${T}_{n}$.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ ，又因为 ${S}_{n} = n{a}_{1} +  \dfrac{n\left( {n - 1}\right) }{2}d$ ,且 ${a}_{1} = 2$ ,所以 ${S}_{5} = {10} + {10d} = {20}$ ,故 $d = 1$ . 所以 ${a}_{n} = n + 1$
+            \item 由(1)可知， ${a}_{4} = 5$ ，又 ${a}_{4} + {b}_{4} = 9$ ，所以 ${b}_{4} = 4$ . 因为 $q =  \dfrac{1}{2}$ ,可得 ${b}_{1} = \dfrac{{b}_{4}}{{q}^{3}} = {32}$ ,所以 ${T}_{n} = \left( {{a}_{1} - {b}_{1}}\right)  + \left( {{a}_{2} - {b}_{2}}\right)  + \cdots  +  \left( {{a}_{n} - {b}_{n}}\right)  = \left( {{a}_{1} + {a}_{2} + \cdots  + {a}_{n}}\right)  - \left( {{b}_{1} + {b}_{2} + \cdots  + {b}_{n}}\right)  =  \dfrac{n\left( {{a}_{1} + {a}_{n}}\right) }{2} - \dfrac{{b}_{1}\left( {1 - {q}^{n}}\right) }{1 - q} = \dfrac{n\left( {n + 3}\right) }{2} + {2}^{6 - n} - {64}.$
+        \end{enumerate}
+    \end{jieda}
 
-7.(2024$\cdot$徐汇区一模$\cdot$17)已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ， ${a}_{1} = 2$ ， ${S}_{5} = {20}$.
-
-(1)求数列 $\left\{  {a}_{n}\right\}$ 的通项公式；
-
-(2)若等比数列 $\left\{  {b}_{n}\right\}$ 的公比为 $q = \dfrac{1}{2}$ ，且满足 ${a}_{4} + {b}_{4} = 9$ ，求数列 $\left\{  {{a}_{n} - {b}_{n}}\right\}$ 的前 $n$ 项和 ${T}_{n}$.
-
-8.(2024$\cdot$嘉定区一模$\cdot$18)已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ， ${S}_{n} = {n}^{2} + n$ ，其中 $n \in  \mathbf{N}$ ， $n \geq  1$.
-
-(1)求 $\left\{  {a}_{n}\right\}$ 的通项公式；
-
-(2)求数列 $\left\{  \dfrac{1}{{a}_{n}{a}_{n + 1}}\right\}$ 的前 $n$ 项和 ${H}_{n}$.
-
-\subsection*{考点7 》数列与不等式、最值及范围问题}
+    \item (2024$\cdot$嘉定区一模$\cdot$18)已知数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n}$ ， ${S}_{n} = {n}^{2} + n$ ，其中 $n \in  \mathbf{N}$ ， $n \geq  1$.
+    \begin{enumerate}
+        \item 求 $\left\{  {a}_{n}\right\}$ 的通项公式
+        \item 求数列 $\left\{  \dfrac{1}{{a}_{n}{a}_{n + 1}}\right\}$ 的前 $n$ 项和 ${H}_{n}$.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item ${S}_{n} = {n}^{2} + n \Longrightarrow  {S}_{n - 1} = {\left( n - 1\right) }^{2} + n - 1\left( {n \geq  2}\right) ,{a}_{n} =  {S}_{n} - {S}_{n - 1} = {2n}\left( {n \geq  2}\right)$ ,又 ${a}_{1} = {S}_{1} = 2$ ,所以 ${a}_{n} = {2n}$
+            
+            \item $\dfrac{1}{{a}_{n}{a}_{n + 1}} = \dfrac{1}{4}\left( {\dfrac{1}{n} - \dfrac{1}{n + 1}}\right)$ ，所以 ${H}_{n} = \dfrac{1}{4}\left( {1 - \dfrac{1}{2} + \dfrac{1}{2} - }\right.  \left. {\dfrac{1}{3} + \cdots  + \dfrac{1}{n} - \dfrac{1}{n + 1}}\right)$ ,所以 ${H}_{n} = \dfrac{1}{4}\left( {1 - \dfrac{1}{n + 1}}\right)  = \dfrac{n}{4\left( {n + 1}\right) }$ .
+        \end{enumerate}
+    \end{jieda}
+\end{enumerate}
+\subsection*{考点7 数列与不等式、最值及范围问题}
 
 \subsubsection*{一、填空题}
 
