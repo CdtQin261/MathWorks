@@ -65,6 +65,10 @@
     \begin{jieda}
         设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ ,则由题得 $2{a}_{1} + 3{a}_{11} =  5{a}_{1} + {30d} = {20}$ 即 ${a}_{1} + {6d} = 4$ ,所以 ${S}_{13} = {13}{a}_{1} + \dfrac{{13} \times  {12}}{2}d =  {13}\left( {{a}_{1} + {6d}}\right)  = {13} \times  4 = {52}$.
     \end{jieda}
+    \item (2025$\cdot$闵行区二模$\cdot$10)已知数列 $\left\{  {a}_{n}\right\}$ 为等差数列，数列 $\left\{  {b}_{n}\right\}$ 为等比数列，且 ${a}_{1} = {b}_{1} = 1,{a}_{2} = {b}_{2} =  t$ ，若 ${a}_{6} + {b}_{6} > {38}$ ，则实数 $t$ 的取值范围为\blkda[2]{$\left( {2, + \infty }\right)$}.
+    \begin{jieda}
+        $d = t - 1, q = t$，$a_6 = 1+5(t-1) = 5t-4, b_6 = t^5$，$a_6+b_6 = t^5+5t-4$，随$t$增大而严增，而$t = 2$时，$t^5+5t-4 = 38$，故$t > 2$.
+    \end{jieda}
     \item (2025$\cdot$长宁区一模$\cdot$16)数列 $\left\{  {a}_{n}\right\}$ 为严格增数列，且对任意的正整数 $n$ ，都有 $\dfrac{{a}_{n + 1}}{n + 1} \geq  \dfrac{{a}_{n}}{n}$ ，则称数列 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”. 现给出两个命题:
     \ding{172}  存在等差数列 $\left\{  {a}_{n}\right\}$ 满足“性质 $\Omega$ ”；
 
@@ -94,10 +98,6 @@
     \item (2024$\cdot$松江区二模$\cdot$7)已知等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 2，前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{3} = {S}_{5}$ ，则使得 ${S}_{n} < {a}_{n}$ 成立的 $n$ 的最大值为\blkda[2]{5}.
     \begin{jieda}
         ${a}_{1} + {2d} = 5{a}_{1} + \dfrac{5 \times  4}{2} \times  d \Longrightarrow  {a}_{1} =  - 4,{S}_{n} = {n}^{2} - {5n}$ , ${a}_{n} = {2n} - 6$ ,由 ${S}_{n} < {a}_{n}$ ,得 ${n}^{2} - {7n} + 6 < 0$ ,解得 $1 < n < 6$ ,故 $n$ 的最大值为 5.
-    \end{jieda}
-    \item (2024$\cdot$黄浦区二模$\cdot$10)已知数列 $\left\{  {a}_{n}\right\}$ 是给定的等差数列，其前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{9}{a}_{10} < 0$ ，且当 $m =  {m}_{0}$ 与 $n = {n}_{0}$ 时， $\left| {{S}_{m} - {S}_{n}}\right|$ ( $m,n \in  \left\{  {x \mid  x \leq  {30},x \in  {\mathbf{N}}^{ * }}\right\}$ )取得最大值，则 $\left| {{m}_{0} - {n}_{0}}\right|$ 的值为\blkda[2]{21}.
-    \begin{jieda}
-        设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ . 当 $d > 0$ 时,由于 ${a}_{9}{a}_{10} <$ 0,所以 ${a}_{9} < 0 < {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格增数列,故 ${S}_{n}$ 在区间 $\lbrack 1$ , 30]上， ${S}_{9}$ 为最小值， ${S}_{30}$ 为最大值，若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值， 则 $m = {30},n = 9$ ,故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {{30} - 9}\right|  = {21}$ ; 当 $d < 0$ 时, ${a}_{9} > 0 > {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格减数列, ${S}_{n}$ 在 $n \in  \left\lbrack  {1,{30}}\right\rbrack  ,{S}_{9}$ 为最大值, ${S}_{30}$ 为最小值,若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值,则 $m = 9,n =$ 30，故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {9 - {30}}\right|  = {21}$ ，综上， $\left| {{m}_{0} - {n}_{0}}\right|  = {21}$ .
     \end{jieda}
     \item (2025$\cdot$黄浦区二模$\cdot$7)已知等比数列 $\left\{  {a}_{n}\right\}$ 为严格增数列，其前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{1}{a}_{10} = {a}_{8}$ ， ${S}_{4} - {S}_{1} = \dfrac{21}{4}$ ，则该数列的公比为\blkda[2]{4}.
     \begin{jieda}
@@ -337,5 +337,19 @@
     \item (2024$\cdot$普陀区一模$\cdot$9)若数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = {12},{a}_{n + 1} = {a}_{n} + {2n}$ ( $n \geq  1$ ， $n \in  \mathbf{N}$)，则 $\dfrac{{a}_{n}}{n}$ 的最小值是\blkda[2]{6}.
     \begin{jieda}
         对${a}_{n + 1} = {a}_{n} + {2n}$累加可得$a_n = n^2 - n + 12$，故$\dfrac{a_n}{n} = n + \dfrac{12}{n} - 1$，在$n = 3$或$n = 4$时取得最小值$6$.
+    \end{jieda}
+\end{enumerate}
+\subsection*{数列求和}
+\begin{enumerate}
+    \item (2024$\cdot$黄浦区二模$\cdot$10)已知数列 $\left\{  {a}_{n}\right\}$ 是给定的等差数列，其前 $n$ 项和为 ${S}_{n}$ ，若 ${a}_{9}{a}_{10} < 0$ ，且当 $m =  {m}_{0}$ 与 $n = {n}_{0}$ 时， $\left| {{S}_{m} - {S}_{n}}\right|$ ( $m,n \in  \left\{  {x \mid  x \leq  {30},x \in  {\mathbf{N}}^{ * }}\right\}$ )取得最大值，则 $\left| {{m}_{0} - {n}_{0}}\right|$ 的值为\blkda[2]{21}.
+    \begin{jieda}
+        设等差数列 $\left\{  {a}_{n}\right\}$ 的公差为 $d$ . 当 $d > 0$ 时,由于 ${a}_{9}{a}_{10} <$ 0,所以 ${a}_{9} < 0 < {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格增数列,故 ${S}_{n}$ 在区间 $\lbrack 1$ , 30]上， ${S}_{9}$ 为最小值， ${S}_{30}$ 为最大值，若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值， 则 $m = {30},n = 9$ ,故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {{30} - 9}\right|  = {21}$ ; 当 $d < 0$ 时, ${a}_{9} > 0 > {a}_{10}$ ,数列 $\left\{  {a}_{n}\right\}$ 为严格减数列, ${S}_{n}$ 在 $n \in  \left\lbrack  {1,{30}}\right\rbrack  ,{S}_{9}$ 为最大值, ${S}_{30}$ 为最小值,若 $\left| {{S}_{m} - {S}_{n}}\right|$ 取得最大值,则 $m = 9,n =$ 30，故 $\left| {{m}_{0} - {n}_{0}}\right|  = \left| {9 - {30}}\right|  = {21}$ ，综上， $\left| {{m}_{0} - {n}_{0}}\right|  = {21}$ .
+    \end{jieda}
+
+    \item (2024$\cdot$黄浦区一模$\cdot$11)设 ${a}_{1},{a}_{2},{a}_{3},\cdots ,{a}_{n}$ 是首项为 3 且公比为 $3\sqrt{3}$ 的等比数列，则满足不等式 ${\log }_{3}{a}_{1} - {\log }_{3}{a}_{2} + {\log }_{3}{a}_{3} - {\log }_{3}{a}_{4} + \cdots  + {\left( -1\right) }^{n + 1}{\log }_{3}{a}_{n} > {18}$ 的最小正整数$n$ 的值为\blkda[2]{25}.
+    \begin{jieda}
+        $a_n = 3 \times (3\sqrt{3})^{n-1}$，故$log_3{a_n} = \dfrac{3n-1}{2}$，设$b_n = (-1)^{n+1}log_3a_n = (-1)^{n+1}\dfrac{3n-1}{2}$
+
+        若$\mathop{\sum }\limits_{{i = 0}}^{n} b_i > 18$，则$n$为奇数，故$\mathop{\sum }\limits_{{i = 0}}^{n} b_i = {b}_{1} + \left( {-{b}_{2} + {b}_{3}}\right)  + \left( {-{b}_{4} + {b}_{5}}\right)  + \cdots  + \left(-{b}_{n-1} +  {b}_{n}\right)  = 1 + \dfrac{3(n-1)}{4} > {18}$，故$n > \dfrac{71}{3}$，故$n=25$.
     \end{jieda}
 \end{enumerate}
