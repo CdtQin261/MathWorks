@@ -84,6 +84,16 @@
 
         \ps 举反例$q = 1$也可.
     \end{jieda}
+
+    \item (2025$\cdot$崇明区一模$\cdot$16)已知数列 $\left\{  {a}_{n}\right\}$ ，若存在数列 $\left\{  {b}_{n}\right\}$ 满足对任意正整数 $n$ ，都有 $\left( {{a}_{n} - {b}_{n}}\right) \left( {{a}_{n + 1} - }\right.  \left. {b}_{n + 1}\right)  < 0$ ,则称数列 $\left\{  {b}_{n}\right\}$ 是 $\left\{  {a}_{n}\right\}$ 的交错数列. 有下列两个命题:  \ding{172}  对任意给定的等差数列 $\left\{  {a}_{n}\right\}$ ,不存在等差数列 $\left\{  {b}_{n}\right\}$ ,使得 $\left\{  {b}_{n}\right\}$ 是 $\left\{  {a}_{n}\right\}$ 的交错数列;  \ding{173}  对任意给定的等比数列 $\left\{  {a}_{n}\right\}$ ,都存在等比数列 $\left\{  {b}_{n}\right\}$ ,使得 $\left\{  {b}_{n}\right\}$ 是 $\left\{  {a}_{n}\right\}$ 的交错数列. 下列结论正确的是 \dotfill{(\kh{A})}
+    \xx{\ding{172} 与 \ding{173} 都是真命题}{\ding{172} 为真命题， \ding{173} 为假命题}{\ding{172} 为假命题， \ding{173} 为真命题}{\ding{172} 与 \ding{173} 都是假命题}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item 根据等差数列的线性性质可知正确
+            \item 若$q > 0$，则$a_1$翻倍，$q$取反即可，若$q < 0$，则$a_1$翻倍即可.
+        \end{dingautolist}
+    \end{jieda}
+
     \item (2024$\cdot$上海秋季卷$\cdot$12)无穷等比数列 $\left\{  {a}_{n}\right\}$ 满足首项 ${a}_{1} > 0,q > 1$ ，记 ${I}_{n} = \left\{  {x - y \mid  x,y \in  \left\lbrack  {{a}_{1},{a}_{2}}\right\rbrack   \cup  }\right.  \left. \left\lbrack  {{a}_{n},{a}_{n + 1}}\right\rbrack  \right\}$ ,若对任意正整数 $n$ 集合 ${I}_{n}$ 是闭区间,则 $q$ 的取值范围是\blkda[2]{$\lbrack 2, + \infty)$}.
     \begin{jieda}
         根据${a}_{1} > 0,q > 1$可知$a_n$严增，不妨设$x > y$
@@ -230,6 +240,16 @@
         
         对于 ${A}$ ,由 ${a}_{2025} = {a}_{1}{q}^{2024} < 0$ ,可得 ${a}_{1} < 0$ ,故 A 项不正确; 对于 B,由于 $- 1 < q < 0$ ,所以 $q > 0$ 不成立,故 B 不正确; 对于 ${C}$ ,因为 $- 1 < q < 0$ ,所以 $0 < 1 - {q}^{n} \leq  1 - q$ ,可得 $0 <  \dfrac{1 - {q}^{n}}{1 - q} \leq  1$ . 结合 ${S}_{n} = \dfrac{{a}_{1}\left( {1 - {q}^{n}}\right) }{1 - q}$ ,可得 $\left| {S}_{n}\right|  = \left| {a}_{1}\right|  \cdot  \left| \dfrac{1 - {q}^{n}}{1 - q}\right|  \leq  \left| {a}_{1}\right|$ ,故 C 正确; 对于 ${D}$ ,根据 $- 1 < q < 0$ 且 ${a}_{1} < 0$ ,当 ${a}_{1} =  - 1,q =  - \dfrac{1}{2}$ 时, $\left| {S}_{1}\right|  = 1 > \left| q\right|  = \dfrac{1}{2}$ ,此时 $\left| {S}_{n}\right|  < \left| q\right|$ 不成立，故 D 不正确. 故选:C.
     \end{jieda}
+    \item (2024$\cdot$杨浦区一模$\cdot$15)等比数列 $\left\{  {a}_{n}\right\}$ 的首项 ${a}_{1} = \dfrac{1}{64}$ ，公比为 $q$ ，数列 $\left\{  {b}_{n}\right\}$ 满足 ${b}_{n} = {\log }_{0.5}{a}_{n}$ ($n$ 是正整数)，若当且仅当 $n = 4$ 时， $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${B}_{n}$ 取得最大值，则 $q$ 的取值范围是\dotfill{(\kh{C})}
+    \xx{$\left( {3,2\sqrt{3}}\right)$}{$\left( {3,4}\right)$}{$\left( {2\sqrt{2},4}\right)$}{$\left( {2\sqrt{2},3\sqrt{2}}\right)$}
+    \begin{jieda}
+        $a_n = \dfrac{1}{64}q^{n-1}$，$b_n = {\log }_{0.5}\left(\dfrac{1}{64}q^{n-1}\right) = 6 + (n-1)log_{0.5}q = 6+(1-n)log_2q$
+
+        故$\left\{\begin{array}{l}
+            6-3log_2q > 0 \\
+            6-4log_2q < 0
+        \end{array}\right.$，故$q \in \left( {2\sqrt{2},4}\right)$
+    \end{jieda}
 \end{enumerate}
 \subsection*{$a_n = S_n - S_{n-1}$}
 \begin{enumerate}
@@ -280,6 +300,17 @@
     \xx{4 个}{3 个}{1 个}{无数个}
     \begin{jieda}
         由题意可知$min\{a_n, b_n\} \times 2 > max\{a_n, b_n\}$，易知$\{b_n\}$增长快于$\{a_n\}$，故枚举前几项即可.
+    \end{jieda}
+
+
+    \item (2025$\cdot$普陀区一模$\cdot$15)设$a>0$ 且 $a \neq  1$ ， $k$ 、 $m$ 、 $n$ 都是正整数，数列 $\left\{  {a}_{n}\right\}$ 的通项公式为$a_n = \left\{  \begin{array}{l} \left( {a - 6}\right) n + {21}\left( {1 \leq  n \leq  m}\right) , \\  {a}^{n - 3}\left( {n > m}\right) , \end{array}\right.$ 记数列 $\left\{  {a}_{n}\right\}$ 中前 $k$ 项的最小值为 ${h}_{k}$ ，由所有 ${h}_{k}$ 的值所组成的集合记为 $A$. 若集合 $A$ 中仅有四个元素,则下列说法中错误的是 \dotfill{(\kh{C})}
+    \xx{当 $m = 3$ 时, $a$ 的取值范围是 $\left( {1,6}\right)$}{不存在 $a$ 和 $m$ 的值,使得 ${a}_{4} \notin  A$}{当 $m = 4$ 时， $a$ 的取值范围是$(3,6)$}{存在 $a$ 和 $m$ 的值，使得 ${a}_{5} \in  A$}
+    \begin{jieda}
+        对于 ${A}$ 选项,若 $0 < a < 1$ , 则因为 $a < 6,{a}_{3} = {3a} +  3 > a = {a}_{4},0 < a < 1$ ,所以 $\left\{  {a}_{n}\right\}$ 单调递减, ${h}_{k} = {a}_{k}$ ,集合 $A$ 中有无穷多个元素,矛盾,故 $a > 1$ ,若 $1 < a < 6$ ,则 $a - 6 < 0$ ,所以 ${a}_{1} > {a}_{2} > {a}_{3}$ ,又 ${a}_{3} = {3a} + 3 > a = {a}_{4}$ ,所以 ${h}_{k} = {a}_{k}(k = 1,2,3,4)$ ,而 $a > 1$ ,所以 ${a}_{n} < {a}_{n + 1}$ 对 $n \geq  4$ 恒成立,所以 ${h}_{k} =  {a}_{4}\left( {k \geq  4}\right)$ ,故集合 $A$ 共有 4 个元素,满足; 若 $a = 6$ ,则 ${a}_{1} =  {a}_{2} = {a}_{3} = {21} > {a}_{4}$ ,且 ${a}_{n} < {a}_{n + 1}$ 对 $n \geq  4$ 恒成立,所以集合 $A = \{ {21},6\}$ ,矛盾; 若 $a > 6$ ,则 ${a}_{1} < {a}_{2} < {a}_{3}$ ,且 ${a}_{n} < {a}_{n + 1}$ 对 $n \geq  4$ 恒成立,集合 $A$ 中最多只有两个元素,矛盾; 因此 $a$ 的取值范围是 $\left( {1,6}\right) ,{A}$ 选项正确; 
+        
+        对于 ${C}$ 选项,若 $0 < a < 1$ ,则 $\left\{  {a}_{n}\right\}  \left( {1 \leq  n \leq  4}\right)$ 单调递减, ${h}_{k} = {a}_{k}\left( {k = 1,2,3,4}\right)$，考虑到$a_n > 0, n > 4$，故要使集合 $A$ 中仅有 4 个元素,则 ${4a} - 3 \leq  0$ ,即 $0 < a \leq  \dfrac{3}{4}$ 也满足要求,所以 ${C}$ 选项必定错误; 
+        
+        对于 ${B},{D}$ 选项,当 $a \geq  6$ 时, ${h}_{k} = {a}_{1}(1 \leq  k \leq  m)$ ,当 $k > m$ 时, ${h}_{k} = \min \left\{  {{a}_{1},{a}_{m + 1}}\right\}$ ,集合 $A$ 最多只有两个元素,矛盾; 若 $1 < a < 6$ ,则 ${h}_{k} = {a}_{k}\left( {1 \leq  k \leq  m}\right)$ ,所以 $m \leq  4$ ,若 $m = 4$ ,则当 ${a}_{5} = {a}^{2} \geq  {4a} - 3 = {a}_{4}$ 即 $a \geq  3$ 时,集合 $A$ 有 4 个元素,此时 $A = \left\{  {{a}_{1},{a}_{2},{a}_{3},{a}_{4}}\right\}$ ,且 $a = 3$ 时 ${a}_{5} =  {a}_{4} \in  A$ ,所以 D 选项正确; 若 $m = 3$ ,由 ${A}$ 选项分析知 ${a}_{4} \in  A,{a}_{5} \notin  A$ ,若 $m = 1$ 或 2,则集合 $A$ 不可能有 4 个元素,矛盾; 若 $0 < a < 1$ ,则 ${h}_{k} = {a}_{k}\left( {1 \leq  k \leq  m}\right)$ ,所以 $m \leq  4$ ,若 $m = 4$ , 则同 ${C}$ 选项分析知 $0 < a \leq  \dfrac{3}{4}$ ，此时 ${a}_{4} \in  A$ ，若 $m \leq  3$ ，则 ${h}_{k} = {a}_{k}\left( {k > 3}\right)$ ,集合 $A$ 中有无穷多个元素,矛盾; 综上可知, 无论 $m$ 和 $a$ 取何值，只要集合 $A$ 中仅有 4 个元素时，都有 ${a}_{4} \in  A$ , B 正确. 故选: C.
     \end{jieda}
 \end{enumerate}
 \subsection*{递推公式与数列的单调性}
