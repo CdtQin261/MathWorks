@@ -990,6 +990,42 @@
                 $\dfrac{{S}_{\bigtriangleup {APB}}}{{S}_{\bigtriangleup {APD}}} = \dfrac{t}{\dfrac{16t-16}{3t}-t} = \dfrac{3t^2}{-3t^2+16t-16} = \dfrac{3}{-\dfrac{16}{t^2}+\dfrac{16}{t}-3} \geq 3$，$t = 2$时取等.
             \end{enumerate}
         \end{jieda}
+        \item 已知双曲线 $\Gamma  : {y}^{2} - \dfrac{{x}^{2}}{2} = 1$ 的下焦点为 ${F}_{1}$ ,上焦点为 ${F}_{2}$ ,点 $D$ 为 $\Gamma$ 的上顶点.
+        \begin{enumerate}
+            \item 设 $O$ 为坐标原点, $M$ 为 $\Gamma$ 上任意一点,求 $\vv{OM} \cdot  \vv{{F}_{1}M}$ 的取值范围.
+            \item 设点 $C\left( {0, - 3}\right)$ ,过点 $C$ 任意作一条不垂直 $x$ 轴的直线 $l$ , $l$ 交 $\Gamma$ 于两个不同点 $A$ 、 $B$ ,求证： $\vv{DA} \cdot  \vv{DB}$是定值, 并给出这个定值
+            \item 过 ${F}_{2}$ 作直线 $n$ 交 $\Gamma$ 于两个不同点 $P$ 、 $Q$ ,若直线 $P{F}_{1}$ 交 $x$ 轴于点 $S$ ,直线 $Q{F}_{1}$ 交 $x$ 轴于点 $T$ ,是否存在直线 $n$ ,使得 $\triangle {F}_{1}{PQ}\text{、}\triangle {F}_{1}{ST}$ 面积相等? 若存在,求出直线 $n$ 的方程; 若不存在,说明理由.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 双曲线 $\Gamma  : {y}^{2} - \dfrac{{x}^{2}}{2} = 1$ 的焦点 ${F}_{1}\left( {0, - \sqrt{3}}\right) ,{F}_{2}\left( {0,\sqrt{3}}\right) ,D\left( {0,1}\right)$ ,设点 $M\left( {x,y}\right)$ ,则 ${x}^{2} = 2{y}^{2} - 2$，$\vv{OM} = \left( {x,y}\right) ,\vv{{F}_{1}M} = \left( {x,y + \sqrt{3}}\right)$ ,因此 $\vv{OM} \cdot  \vv{{F}_{1}M} = {x}^{2} + y\left( {y + \sqrt{3}}\right)  = 3{y}^{2} + \sqrt{3}y - 2$，而 $y \leq   - 1$ 或 $y \geq  1$ ,函数 $f\left( y\right)  = 3{y}^{2} + \sqrt{3}y - 2$ 在 $( - \infty , - 1\rbrack$ 上单调递减,在 $\lbrack 1, + \infty )$ 上单调递增，当 $y =  - 1$ 时, $f{\left( y\right) }_{\min } = 1 - \sqrt{3}$ ,所以 $\vv{OM} \cdot  \vv{{F}_{1}M}$ 的取值范围是 $\lbrack 1 - \sqrt{3}, + \infty )$.
+                \item 设直线 $l$ 的方程为 $y = {kx} - 3$ ,设 $A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right)$，由 $\left\{  \begin{array}{l} y = {kx} - 3 \\  2{y}^{2} - {x}^{2} = 2 \end{array}\right.$ 消去 $y$ ,得 $\left( {2{k}^{2} - 1}\right) {x}^{2} - {12kx} + {16} = 0,\left\{  \begin{array}{l} 2{k}^{2} - 1 \neq  0 \\  \Delta  = {16}\left( {{k}^{2} + 4}\right)  > 0 \end{array}\right.$，解得 ${k}^{2} \neq  \dfrac{1}{2},{x}_{1} + {x}_{2} = \dfrac{12k}{2{k}^{2} - 1},{x}_{1}{x}_{2} = \dfrac{16}{2{k}^{2} - 1},\vv{DA} = \left( {{x}_{1},{y}_{1} - 1}\right) ,\vv{DB} = \left( {{x}_{2},{y}_{2} - 1}\right)$，因此 $\vv{DA} \cdot  \vv{DB} = {x}_{1}{x}_{2} + \left( {{y}_{1} - 1}\right) \left( {{y}_{2} - 1}\right)  = {x}_{1}{x}_{2} + \left( {k{x}_{1} - 4}\right) \left( {k{x}_{2} - 4}\right) = \left( {{k}^{2} + 1}\right) {x}_{1}{x}_{2} - {4k}\left( {{x}_{1} + {x}_{2}}\right)  + {16} = \left( {{k}^{2} + 1}\right)  \cdot  \dfrac{16}{2{k}^{2} - 1} - {4k} \cdot  \dfrac{12k}{2{k}^{2} - 1} + {16} = 0$，所以 $\vv{DA} \cdot  \vv{DB}$ 是定值，该定值为0.
+                
+                \item 由图可知$\angle PF_1Q = \angle SF_1T$或$\angle PF_1Q = \pi - \angle SF_1T$
+                    \begin{center}
+                        \includegraphics[width=0.3\textwidth]{bodyxb/src/27jie9gaosan9yue20ti.png}
+                    \end{center}
+
+                    故$\dfrac{S_{\triangle F_1PQ}}{S_{\triangle F_1ST}} = \dfrac{|F_1P||F_1Q|}{|F_1S||F_1T|} = \left|\dfrac{x_P \cdot x_Q}{x_S \cdot x_T}\right|$
+
+                    设$PQ: y = kx+\sqrt{3}$
+
+                    $k_{F_1P} = \dfrac{y_P+\sqrt{3}}{x_P} = \dfrac{kx_P + 2\sqrt{3}}{x_P}$，故$F_1P: y = \dfrac{kx_P + 2\sqrt{3}}{x_P} x - \sqrt{3}$，令$y = 0$可得$x_S = \dfrac{\sqrt{3}x_P}{kx_P + 2\sqrt{3}}$，同理可得$x_T = \dfrac{\sqrt{3}x_Q}{kx_Q+2\sqrt{3}}$
+
+                    故$\dfrac{S_{\triangle F_1PQ}}{S_{\triangle F_1ST}} = \left|\dfrac{k^2x_Px_Q+2\sqrt{3}(x_P+x_Q) + 12}{3}\right|$，$\triangle {F}_{1}{PQ}\text{、}\triangle {F}_{1}{ST}$ 面积相等即$k^2x_Px_Q+2\sqrt{3}(x_P+x_Q) = -15$或$-9$
+
+                    联立$\left\{  \begin{array}{l} y = {kx} + \sqrt{3} \\  2{y}^{2} - {x}^{2} = 2 \end{array}\right.$ 消去 $y$ ,得 $\left( {2{k}^{2} - 1}\right) {x}^{2} + 4\sqrt{3}{kx} + 4 = 0,\left\{  \begin{array}{l} 2{k}^{2} - 1 \neq  0 \\  \Delta  = {16}\left( {k^{2} + 1}\right)  > 0 \end{array}\right.$
+                    
+                    由韦达定理有$\left\{\begin{array}{l}
+                        {x}_P + {x}_Q =  - \dfrac{4\sqrt{3}k}{2{k}^{2} - 1} \\
+                        {x}_P{x}_Q = \dfrac{4}{2{k}^{2} - 1}
+                    \end{array}\right.$
+
+                    代入可得$4k^2+2\sqrt{3}(-4\sqrt{3}k) = -15(2k^2-1)$或$-9(2k^2-1)$，即$-20k^2 = 15-30k^2$或$9-18k^2$（舍）
+
+                    故$k^2 = \dfrac{3}{2}$，故存在直线$n: y = \pm \dfrac{\sqrt{6}}{2}x+\sqrt{3}$
+            \end{enumerate}
+        \end{jieda}
     \end{enumerate}
     \item 双曲线综合
     \begin{enumerate}   
