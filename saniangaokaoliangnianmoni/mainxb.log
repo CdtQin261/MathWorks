@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  16 SEP 2026 16:12
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  17 SEP 2026 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/yudan/Documents/CdtQin/Math/MathWorks/saniangaokaoliangnianmoni/mainxb
-(/Users/yudan/Documents/CdtQin/Math/MathWorks/saniangaokaoliangnianmoni/mainxb.tex
+**/Users/haoyu/Documents/MathWorks/saniangaokaoliangnianmoni/mainxb
+(/Users/haoyu/Documents/MathWorks/saniangaokaoliangnianmoni/mainxb.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./xbcls.cls
@@ -293,40 +293,51 @@ File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
 File: ctex-c5size.clo 2022/07/14 v2.5.10 c5size option (CTEX)
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-mac.def
 File: ctex-fontset-mac.def 2022/07/14 v2.5.10 macOS fonts definition (CTEX)
- (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macnew.def
-File: ctex-fontset-macnew.def 2022/07/14 v2.5.10 macOS fonts definition for El Capitan or later version (CTEX)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.def
+File: ctex-fontset-macold.def 2022/07/14 v2.5.10 macOS fonts definition for Yosemite or earlier version (CTEX)
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'Songti SC Light'. Check the typeset output, and if it
-(fontspec)             is okay then ignore this warning. Otherwise a different
-(fontspec)             font should be chosen.
+(fontspec)             'STSong'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'SongtiSCLight(0)' created for font 'Songti
-(fontspec)             SC Light' with options
-(fontspec)             [Script={CJK},BoldItalicFont={Kaiti SC
-(fontspec)             Bold},BoldFont={Songti SC Bold},ItalicFont={Kaiti SC}].
+(fontspec)             Could not resolve font "STKaiti/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STHeiti/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STSong/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'STSong(0)' created for font 'STSong' with
+(fontspec)             options
+(fontspec)             [Script={CJK},BoldFont={STHeiti},ItalicFont={STKaiti}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Songti SC
-(fontspec)             Light/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Songti SC
-(fontspec)             Bold/OT:script=hani;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Kaiti
-(fontspec)             SC/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Kaiti SC
-(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STSong/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"STHeiti/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"STKaiti/OT:script=hani;language=dflt;"
 
 ))) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
 )
 
-Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault'
-(xeCJK)                (SongtiSCLight(0)).
+Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (STSong(0)).
 
 
 Package fontspec Info: 
@@ -2734,30 +2745,30 @@ File: bodyxb/src/194_1199_421_264_264_0.jpg Graphic file (type bmp)
  [236]
 File: bodyxb/src/194_1130_896_329_256_0.jpg Graphic file (type bmp)
 <bodyxb/src/194_1130_896_329_256_0.jpg>
- [237] [238] [239]
+ [237] [238] [239] [240]
 File: bodyxb/src/200_1095_902_329_219_0.jpg Graphic file (type bmp)
 <bodyxb/src/200_1095_902_329_219_0.jpg>
 File: bodyxb/src/200_1097_1211_329_198_0.jpg Graphic file (type bmp)
 <bodyxb/src/200_1097_1211_329_198_0.jpg>
- [240]
+ [241]
 File: bodyxb/src/201_749_1409_655_371_0.jpg Graphic file (type bmp)
 <bodyxb/src/201_749_1409_655_371_0.jpg>
- [241] [242]
+ [242]
 File: bodyxb/src/204_1097_1783_333_214_0.jpg Graphic file (type bmp)
 <bodyxb/src/204_1097_1783_333_214_0.jpg>
- [243] [244] [245] [246
+ [243] [244] [245] [246] [247
 
 ]
 File: bodyxb/src/211_1135_463_290_243_0.jpg Graphic file (type bmp)
 <bodyxb/src/211_1135_463_290_243_0.jpg>
- [247
+ [248
 
-] [248] [249] [250] [251
+] [249] [250] [251] [252
 
-] [252]
+] [253]
 File: bodyxb/src/216_1301_1880_144_152_0.jpg Graphic file (type bmp)
 <bodyxb/src/216_1301_1880_144_152_0.jpg>
- [253]
+ [254]
 File: bodyxb/src/217_1154_170_306_196_0.jpg Graphic file (type bmp)
 <bodyxb/src/217_1154_170_306_196_0.jpg>
 File: bodyxb/src/217_290_877_457_275_0.jpg Graphic file (type bmp)
@@ -2766,7 +2777,7 @@ File: bodyxb/src/217_820_876_180_277_0.jpg Graphic file (type bmp)
 <bodyxb/src/217_820_876_180_277_0.jpg>
 File: bodyxb/src/217_1069_875_293_279_0.jpg Graphic file (type bmp)
 <bodyxb/src/217_1069_875_293_279_0.jpg>
- [254]
+ [255]
 File: bodyxb/src/217_312_1886_229_115_0.jpg Graphic file (type bmp)
 <bodyxb/src/217_312_1886_229_115_0.jpg>
 File: bodyxb/src/217_612_1740_508_258_0.jpg Graphic file (type bmp)
@@ -2775,67 +2786,67 @@ File: bodyxb/src/217_1189_1793_152_205_0.jpg Graphic file (type bmp)
 <bodyxb/src/217_1189_1793_152_205_0.jpg>
 File: bodyxb/src/218_922_233_473_285_0.jpg Graphic file (type bmp)
 <bodyxb/src/218_922_233_473_285_0.jpg>
- [255]
+ [256]
 File: bodyxb/src/218_375_695_776_374_0.jpg Graphic file (type bmp)
 <bodyxb/src/218_375_695_776_374_0.jpg>
 File: bodyxb/src/218_103_1526_698_321_0.jpg Graphic file (type bmp)
 <bodyxb/src/218_103_1526_698_321_0.jpg>
 
 Missing character: There is no 〜 (U+301C) in font Songti SC Regular/OT:script=hani;language=dflt;!
-[256]
+[257]
 File: bodyxb/src/219_972_536_501_252_0.jpg Graphic file (type bmp)
 <bodyxb/src/219_972_536_501_252_0.jpg>
 File: bodyxb/src/219_922_1443_551_441_0.jpg Graphic file (type bmp)
 <bodyxb/src/219_922_1443_551_441_0.jpg>
 File: bodyxb/src/220_1210_865_219_152_0.jpg Graphic file (type bmp)
 <bodyxb/src/220_1210_865_219_152_0.jpg>
- [257]
+ [258]
 File: bodyxb/src/221_1161_388_295_253_0.jpg Graphic file (type bmp)
 <bodyxb/src/221_1161_388_295_253_0.jpg>
- [258]
+ [259]
 File: bodyxb/src/221_957_1134_500_284_0.jpg Graphic file (type bmp)
 <bodyxb/src/221_957_1134_500_284_0.jpg>
- [259]
+ [260]
 File: bodyxb/src/222_1184_617_208_235_0.jpg Graphic file (type bmp)
 <bodyxb/src/222_1184_617_208_235_0.jpg>
 File: bodyxb/src/222_323_1467_880_326_0.jpg Graphic file (type bmp)
 <bodyxb/src/222_323_1467_880_326_0.jpg>
- [260]
+ [261]
 File: bodyxb/src/224_886_542_543_396_0.jpg Graphic file (type bmp)
 <bodyxb/src/224_886_542_543_396_0.jpg>
- [261]
+ [262]
 File: bodyxb/src/225_895_540_545_439_0.jpg Graphic file (type bmp)
 <bodyxb/src/225_895_540_545_439_0.jpg>
 File: bodyxb/src/226_431_450_784_480_0.jpg Graphic file (type bmp)
 <bodyxb/src/226_431_450_784_480_0.jpg>
- [262] [263] [264]
+ [263] [264] [265]
 File: bodyxb/src/229_880_619_551_192_0.jpg Graphic file (type bmp)
 <bodyxb/src/229_880_619_551_192_0.jpg>
- [265]
+ [266]
 File: bodyxb/src/230_813_322_609_306_0.jpg Graphic file (type bmp)
 <bodyxb/src/230_813_322_609_306_0.jpg>
- [266] [267] [268] [269]
+ [267] [268] [269] [270]
 Missing character: There is no ≥ (U+2265) in font [lmroman10-regular]:mapping=tex-text;!
-[270]
+[271]
 File: bodyxb/src/236_272_1117_981_406_0.jpg Graphic file (type bmp)
 <bodyxb/src/236_272_1117_981_406_0.jpg>
 File: bodyxb/src/237_392_602_882_391_0.jpg Graphic file (type bmp)
 <bodyxb/src/237_392_602_882_391_0.jpg>
- [271] [272]
+ [272] [273]
 File: bodyxb/src/240_892_349_551_297_0.jpg Graphic file (type bmp)
 <bodyxb/src/240_892_349_551_297_0.jpg>
- [273]
+ [274]
 File: bodyxb/src/242_950_595_486_359_0.jpg Graphic file (type bmp)
 <bodyxb/src/242_950_595_486_359_0.jpg>
- [274] [275]
+ [275] [276]
 File: bodyxb/src/246_809_503_599_310_0.jpg Graphic file (type bmp)
 <bodyxb/src/246_809_503_599_310_0.jpg>
- [276] [277]
+ [277] [278]
 Missing character: There is no ≈ (U+2248) in font [lmroman10-regular]:mapping=tex-text;!
-[278] [279] [280] [281] [282]
+[279] [280] [281] [282] [283]
 Missing character: There is no ≥ (U+2265) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ∈ (U+2208) in font [lmroman10-regular]:mapping=tex-text;!
-[283]
+[284]
 File: bodyxb/src/262_223_302_92_87_0.jpg Graphic file (type bmp)
 <bodyxb/src/262_223_302_92_87_0.jpg>
 File: bodyxb/src/262_387_309_94_83_0.jpg Graphic file (type bmp)
@@ -2864,47 +2875,47 @@ File: bodyxb/src/262_1055_553_94_83_0.jpg Graphic file (type bmp)
 <bodyxb/src/262_1055_553_94_83_0.jpg>
 File: bodyxb/src/262_1224_552_94_82_0.jpg Graphic file (type bmp)
 <bodyxb/src/262_1224_552_94_82_0.jpg>
- [284] [285]
+ [285] [286]
 File: bodyxb/src/266_812_1487_583_345_0.jpg Graphic file (type bmp)
 <bodyxb/src/266_812_1487_583_345_0.jpg>
 File: bodyxb/src/267_934_344_506_396_0.jpg Graphic file (type bmp)
 <bodyxb/src/267_934_344_506_396_0.jpg>
- [286] [287] [288
+ [287] [288] [289
 
 ]
 Overfull \vbox (18.65576pt too high) has occurred while \output is active []
 
- [289]
+ [290]
 File: bodyxb/src/269_1111_1029_322_257_0.jpg Graphic file (type bmp)
 <bodyxb/src/269_1111_1029_322_257_0.jpg>
 File: bodyxb/src/270_1052_453_349_207_0.jpg Graphic file (type bmp)
 <bodyxb/src/270_1052_453_349_207_0.jpg>
 File: bodyxb/src/270_446_1162_678_141_0.jpg Graphic file (type bmp)
 <bodyxb/src/270_446_1162_678_141_0.jpg>
- [290
+ [291
 
 ]
 File: bodyxb/src/272_189_491_1116_265_0.jpg Graphic file (type bmp)
 <bodyxb/src/272_189_491_1116_265_0.jpg>
- [291]
+ [292]
 File: bodyxb/src/273_960_1641_456_287_0.jpg Graphic file (type bmp)
 <bodyxb/src/273_960_1641_456_287_0.jpg>
- [292] [293] [294
+ [293] [294] [295
 
 ]
 Overfull \vbox (84.82155pt too high) has occurred while \output is active []
 
- [295]
+ [296]
 File: bodyxb/src/276_1088_1404_325_227_0.jpg Graphic file (type bmp)
 <bodyxb/src/276_1088_1404_325_227_0.jpg>
- [296
+ [297
 
-] [297] [298]
+] [298] [299]
 File: bodyxb/src/283_1116_348_284_271_0.jpg Graphic file (type bmp)
 <bodyxb/src/283_1116_348_284_271_0.jpg>
 File: bodyxb/src/283_1089_798_315_275_0.jpg Graphic file (type bmp)
 <bodyxb/src/283_1089_798_315_275_0.jpg>
- [299]) [300] (./mainxb.aux (./bodyxb/sanniangaokaoliangnianmoni.aux))
+ [300]) [301] (./mainxb.aux (./bodyxb/sanniangaokaoliangnianmoni.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -2913,12 +2924,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 53170 strings out of 468168
- 1318649 string characters out of 5432816
- 1769341 words of memory out of 5000000
- 80515 multiletter control sequences out of 15000+600000
- 656686 words of font info for 122 fonts, out of 8000000 for 9000
+ 53150 strings out of 468168
+ 1318103 string characters out of 5432815
+ 1768669 words of memory out of 5000000
+ 80489 multiletter control sequences out of 15000+600000
+ 656710 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,22n,128p,3344b,1513s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,22n,128p,3332b,1513s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (300 pages).
+Output written on mainxb.pdf (301 pages).
