@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  16 SEP 2026 16:25
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  18 SEP 2026 13:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/yudan/Documents/CdtQin/Math/MathWorks/zhuanti/mainxb
-(/Users/yudan/Documents/CdtQin/Math/MathWorks/zhuanti/mainxb.tex
+**/Users/haoyu/Documents/MathWorks/zhuanti/mainxb
+(/Users/haoyu/Documents/MathWorks/zhuanti/mainxb.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./xbcls.cls
@@ -293,40 +293,51 @@ File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
 File: ctex-c5size.clo 2022/07/14 v2.5.10 c5size option (CTEX)
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-mac.def
 File: ctex-fontset-mac.def 2022/07/14 v2.5.10 macOS fonts definition (CTEX)
- (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macnew.def
-File: ctex-fontset-macnew.def 2022/07/14 v2.5.10 macOS fonts definition for El Capitan or later version (CTEX)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.def
+File: ctex-fontset-macold.def 2022/07/14 v2.5.10 macOS fonts definition for Yosemite or earlier version (CTEX)
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'Songti SC Light'. Check the typeset output, and if it
-(fontspec)             is okay then ignore this warning. Otherwise a different
-(fontspec)             font should be chosen.
+(fontspec)             'STSong'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'SongtiSCLight(0)' created for font 'Songti
-(fontspec)             SC Light' with options
-(fontspec)             [Script={CJK},BoldItalicFont={Kaiti SC
-(fontspec)             Bold},BoldFont={Songti SC Bold},ItalicFont={Kaiti SC}].
+(fontspec)             Could not resolve font "STKaiti/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STHeiti/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STSong/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'STSong(0)' created for font 'STSong' with
+(fontspec)             options
+(fontspec)             [Script={CJK},BoldFont={STHeiti},ItalicFont={STKaiti}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Songti SC
-(fontspec)             Light/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Songti SC
-(fontspec)             Bold/OT:script=hani;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Kaiti
-(fontspec)             SC/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Kaiti SC
-(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STSong/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"STHeiti/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"STKaiti/OT:script=hani;language=dflt;"
 
 ))) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
 )
 
-Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault'
-(xeCJK)                (SongtiSCLight(0)).
+Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (STSong(0)).
 
 
 Package fontspec Info: 
@@ -1722,7 +1733,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./mainxb.aux (./bodyxb/14_shuangquxian.aux))
+ (./mainxb.aux (./bodyxb/18_daoshu.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1797,9 +1808,9 @@ Package hyperref Info: Link coloring ON on input line 18.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/13_tuoyuan.aux'.
+\openout2 = `bodyxb/18_daoshu.aux'.
 
- (./bodyxb/13_tuoyuan.tex
+ (./bodyxb/18_daoshu.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1880,115 +1891,88 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
-File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_13_704_718_233_208_0.jpg Graphic file (type bmp)
-<bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_13_704_718_233_208_0.jpg>
-File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_4_704_314_234_189_0.jpg Graphic file (type bmp)
-<bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_4_704_314_234_189_0.jpg>
+File: bodyxb/src/bo_d5nlf73ef24c73bmm510_4_143_1619_379_287_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5nlf73ef24c73bmm510_4_143_1619_379_287_0.jpg>
  [1
 
 
 
-] [2] [3] [4]
-File: bodyxb/src/bo_d37kc177aajc738v9fhg_2_240_962_422_352_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d37kc177aajc738v9fhg_2_240_962_422_352_0.jpg>
- [5]
-File: bodyxb//src/jiaobanjing.png Graphic file (type bmp)
-<bodyxb//src/jiaobanjing.png>
-File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_5_716_1743_208_179_0.jpg Graphic file (type bmp)
-<bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_5_716_1743_208_179_0.jpg>
- [6]
-File: bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg>
-File: bodyxb/src/bo_d43g3ak601uc738mn9ng_0_241_1253_362_315_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d43g3ak601uc738mn9ng_0_241_1253_362_315_0.jpg>
- [7] [8]
+]
+File: bodyxb/src/bo_d5nlf73ef24c73bmm510_10_142_1485_349_326_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5nlf73ef24c73bmm510_10_142_1485_349_326_0.jpg>
+File: bodyxb/src/bo_d5nlf73ef24c73bmm510_8_140_1394_322_292_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5nlf73ef24c73bmm510_8_140_1394_322_292_0.jpg>
+File: bodyxb/src/bo_d5nlf73ef24c73bmm510_9_138_577_303_330_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5nlf73ef24c73bmm510_9_138_577_303_330_0.jpg>
+File: bodyxb/src/bo_d5nlf73ef24c73bmm510_10_143_271_358_241_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5nlf73ef24c73bmm510_10_143_271_358_241_0.jpg>
+ [2] [3]
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_7_247_1844_285_275_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_7_247_1844_285_275_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_7_763_1839_295_279_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_7_763_1839_295_279_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_243_210_286_272_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_243_210_286_272_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_767_206_292_276_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_767_206_292_276_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_7_247_1844_285_275_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_7_247_1844_285_275_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_7_763_1839_295_279_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_7_763_1839_295_279_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_243_210_286_272_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_243_210_286_272_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_767_206_292_276_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_767_206_292_276_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_243_1106_270_256_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_243_1106_270_256_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_764_1103_276_259_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_764_1103_276_259_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_241_1373_270_256_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_241_1373_270_256_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_766_1369_274_258_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_766_1369_274_258_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_243_1106_270_256_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_243_1106_270_256_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_764_1103_276_259_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_764_1103_276_259_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_241_1373_270_256_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_241_1373_270_256_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_766_1369_274_258_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_8_766_1369_274_258_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_254_284_215_178_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_254_284_215_178_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_778_278_208_183_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_778_278_208_183_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_253_506_233_175_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_253_506_233_175_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_770_500_261_185_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_770_500_261_185_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_254_284_215_178_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_254_284_215_178_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_778_278_208_183_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_778_278_208_183_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_253_506_233_175_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_253_506_233_175_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_770_500_261_185_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_770_500_261_185_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_142_1210_222_258_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_142_1210_222_258_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_392_1210_222_258_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_392_1210_222_258_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_649_1210_222_258_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_649_1210_222_258_0.jpg>
+File: bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_922_1210_222_258_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d5o6oibef24c73bmtjs0_9_922_1210_222_258_0.jpg>
+ [4]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 357.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 500.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 357.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 500.
 
-File: bodyxb/src/bo_d3rh65ref24c73d0uhog_3_242_1272_391_323_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d3rh65ref24c73d0uhog_3_242_1272_391_323_0.jpg>
-[9]
-File: bodyxb/src/bo_d42u9js601uc738mlqp0_5_242_192_390_356_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d42u9js601uc738mlqp0_5_242_192_390_356_0.jpg>
- [10]
-File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_13_692_1730_253_295_0.jpg Graphic file (type bmp)
-<bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_13_692_1730_253_295_0.jpg>
- [11]
-File: bodyxb//src/tuoyuanjiaodiansanjiaoxing10.png Graphic file (type bmp)
-<bodyxb//src/tuoyuanjiaodiansanjiaoxing10.png>
- [12]
-File: bodyxb/src/bo_d1flimjef24c73ahq2lg_15_678_485_283_246_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d1flimjef24c73ahq2lg_15_678_485_283_246_0.jpg>
- [13]
-File: bodyxb/src/bo_d1flimjef24c73ahq2lg_10_702_1830_236_168_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d1flimjef24c73ahq2lg_10_702_1830_236_168_0.jpg>
- [14] [15] [16] [17] [18]
-File: bodyxb//src/tuoyuan9.png Graphic file (type bmp)
-<bodyxb//src/tuoyuan9.png>
-File: bodyxb/src/1_89_183_389_347_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_89_183_389_347_0.jpg>
- [19] [20]
-File: bodyxb/src/1_243_196_546_393_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_243_196_546_393_0.jpg>
-File: bodyxb//src/tuoyuanfeiduichenweida2.png Graphic file (type bmp)
-<bodyxb//src/tuoyuanfeiduichenweida2.png>
- [21]
-File: bodyxb/src/bo_d42u9js601uc738mlqp0_3_241_198_468_302_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d42u9js601uc738mlqp0_3_241_198_468_302_0.jpg>
- [22] [23]
-File: bodyxb/src/1_91_1242_405_267_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_91_1242_405_267_0.jpg>
- [24] [25] [26] [27]
-File: bodyxb/src/1_90_1859_368_332_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_90_1859_368_332_0.jpg>
- [28]
-File: bodyxb/src/0_1194_925_352_350_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1194_925_352_350_0.jpg>
- [29] [30] [31]
-File: ./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg Graphic file (type bmp)
-<./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg>
- [32]
-File: bodyxb/src/bo_d1gd83f7aajc73d49nn0_3_678_1445_293_207_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d1gd83f7aajc73d49nn0_3_678_1445_293_207_0.jpg>
- [33]
-File: bodyxb/src/0_1311_1040_312_281_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1311_1040_312_281_0.jpg>
- [34]
-File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_92_183_382_263_0.jpg>
- [35] [36]
-File: bodyxb/src/0_1111_1615_324_224_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_1111_1615_324_224_0.jpg>
-File: bodyxb/src/1_1222_631_310_258_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_1222_631_310_258_0.jpg>
- [37]
-File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_92_183_382_263_0.jpg>
- [38]
-File: bodyxb/src/bo_d5gv9kref24c73bkubog_2_241_1243_424_254_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d5gv9kref24c73bkubog_2_241_1243_424_254_0.jpg>
- [39]
-File: bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_8_695_356_255_229_0.jpg Graphic file (type bmp)
-<bodyxb/src/01968c96-4637-7a01-8d97-98675cd6a1d6_8_695_356_255_229_0.jpg>
- [40]
-File: bodyxb/src/97_1292_157_236_202_0.jpg Graphic file (type bmp)
-<bodyxb/src/97_1292_157_236_202_0.jpg>
- [41] [42] [43]
-File: bodyxb/src/bo_d3jiq7ref24c73cufkeg_0_240_1737_344_264_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d3jiq7ref24c73cufkeg_0_240_1737_344_264_0.jpg>
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 2075.
-
-Missing character: There is no ̃ ("303) in font lmmi10!
-File: bodyxb//src/monge.png Graphic file (type bmp)
-<bodyxb//src/monge.png>
-[44]) [45] (./mainxb.aux (./bodyxb/13_tuoyuan.aux))
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14]) [15] (./mainxb.aux (./bodyxb/18_daoshu.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1997,12 +1981,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49884 strings out of 468168
- 1180332 string characters out of 5432816
- 1737487 words of memory out of 5000000
- 77568 multiletter control sequences out of 15000+600000
- 656678 words of font info for 121 fonts, out of 8000000 for 9000
+ 49694 strings out of 468168
+ 1172525 string characters out of 5432815
+ 1743817 words of memory out of 5000000
+ 77387 multiletter control sequences out of 15000+600000
+ 656702 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,946b,1590s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,14n,128p,1038b,1407s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (45 pages).
+Output written on mainxb.pdf (15 pages).
