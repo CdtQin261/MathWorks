@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  21 SEP 2026 07:51
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  21 SEP 2026 13:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1682,7 +1682,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/sanjiaohanshu.aux))
+ (./mainxb.aux (./bodyxb/shulie.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1757,9 +1757,9 @@ Package hyperref Info: Link coloring ON on input line 16.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/sanjiaohanshu.aux'.
+\openout2 = `bodyxb/shulie.aux'.
 
- (./bodyxb/sanjiaohanshu.tex
+ (./bodyxb/shulie.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1809,17 +1809,12 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 4.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 41.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 4.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 41.
 
-[1
-
-
-
-]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1853,15 +1848,11 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
- [2]
-File: bodyxb/src/68_1024_1329_399_220_0.jpg Graphic file (type bmp)
-<bodyxb/src/68_1024_1329_399_220_0.jpg>
-File: bodyxb/src/1_87_1144_381_303_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_87_1144_381_303_0.jpg>
- [3]
-File: bodyxb/src/zhendongtuxiangshitu.png Graphic file (type bmp)
-<bodyxb/src/zhendongtuxiangshitu.png>
- [4] [5]) [6] (./mainxb.aux (./bodyxb/sanjiaohanshu.aux))
+[1
+
+
+
+] [2] [3] [4] [5] [6] [7] [8] [9]) [10] (./mainxb.aux (./bodyxb/shulie.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1870,12 +1861,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49460 strings out of 468168
- 1159495 string characters out of 5432815
- 1739286 words of memory out of 5000000
- 77196 multiletter control sequences out of 15000+600000
- 656582 words of font info for 109 fonts, out of 8000000 for 9000
+ 49428 strings out of 468168
+ 1157709 string characters out of 5432815
+ 1737287 words of memory out of 5000000
+ 77164 multiletter control sequences out of 15000+600000
+ 656614 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,12n,128p,878b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,11n,128p,1412b,1263s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (6 pages).
+Output written on mainxb.pdf (10 pages).
