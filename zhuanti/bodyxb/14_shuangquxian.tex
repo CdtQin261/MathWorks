@@ -1143,4 +1143,34 @@
         \end{enumerate}
     \end{jieda}
     \end{enumerate}
+    \item 已知双曲线 $E : \dfrac{{x}^{2}}{3} - {y}^{2} = 1$ 的左、右焦点分别为 ${F}_{1}\text{ 、 }{F}_{2}$ ,过点 ${F}_{1}$ 作斜率为 ${k}_{1}\left( {{k}_{1} \neq  0}\right)$ 的直线 $l$ 交双曲线 $E$ 于 $M,N$ 两点.
+    \begin{enumerate}
+        \item 若 ${k}_{1} = 1$ ，求点 ${F}_{2}$ 到直线 $l$ 的距离
+        \item 若 $\vv{{F}_{2}M} \cdot  \vv{{F}_{2}N} =  - 1$ ，求直线 $l$ 的方程
+        \item 若点 $D\left( {1,0}\right)$ ，直线 ${MD},{ND}$ 分别交双曲线 $E$ 于 $P,Q$ 两点，设直线 ${PQ}$ 的斜率为 ${k}_{2}$ ， 问: 是否存在实数 $\lambda$ ,使得 ${k}_{1} + \lambda {k}_{2} = 0$ ? 若存在,求出 $\lambda$ 的值; 若不存在,说明理由.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item $2\sqrt{2}$
+            \item $y = \pm \dfrac{1}{5}(x+2)$
+            \item 设$M(x_1, y_1), N(x_2, y_2), P(x_3, y_3), Q(x_4, y_4)$，设$MP: x = m_1y+1, NQ: x = m_2y+1$
+            
+            $\vv{F_1M} = (x_1+2, y_1), \vv{F_1N} = (x_2+2, y_2)$，$\vv{F_1M} // \vv{F_1N} \Longleftrightarrow (x_1+2)y_2 = (x_2+2)y_1 \Longleftrightarrow (m_1y_1+3)y_2  = (m_2y_2+3)y_1 \Longleftrightarrow (m_1-m_2)y_1y_2 = 3(y_1-y_2)$
+
+            联立$MP$和双曲线，$\left\{\begin{array}{l}
+                x = m_1y+1 \\
+                \dfrac{x^2}{3} - y^2 = 1
+            \end{array}\right.$，即$(m_1y+1)^2-3y^2=3$，即$(m_1^2-3)y^2+2m_1y-2 = 0$
+
+            应满足$m_1^2 \neq 3, \Delta > 0$，根据韦达定理有$\left\{\begin{array}{l}
+                y_1+y_3 = \dfrac{-2m_1}{m_1^2-3} \\
+                y_1y_3 = \dfrac{-2}{m_1^2-3}
+            \end{array}\right.$，因此$\dfrac{1}{y_1} + \dfrac{1}{y_3} = m_1$，即$y_3 = \dfrac{1}{m_1-\dfrac{1}{y_1}} = \dfrac{y_1}{m_1y_1-1}$，同理可得$y_4 = \dfrac{y_2}{m_2y_2-1}$
+
+            $k_1 = \dfrac{y_1-y_2}{x_1-x_2} = \dfrac{y_1-y_2}{m_1y_1-m_2y_2}$，$k_2 = \dfrac{y_3-y_4}{x_3-x_4} = \dfrac{y_3-y_4}{m_1y_3-m_2y_4} = \dfrac{\dfrac{y_1}{m_1y_1-1}-\dfrac{y_2}{m_2y_2-1}}{\dfrac{m_1y_1}{m_1y_1-1}-\dfrac{m_2y_2}{m_2y_2-1}} = \dfrac{(m_2-m_1)y_1y_2+(y_2-y_1)}{m_2y_2-m_1y_1} = \dfrac{4(y_2-y_1)}{m_2y_2-m_1y_1} = 4k_1$
+
+            故存在$\lambda = -\dfrac{1}{4}$满足要求.
+        \end{enumerate}
+    \end{jieda}
+
 \end{enumerate}
