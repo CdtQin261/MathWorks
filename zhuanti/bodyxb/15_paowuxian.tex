@@ -630,5 +630,113 @@
                 所以当 $x = 2$ 时, $f\left( x\right)$ 取得最小值,即当 $t =  \pm  \sqrt{2}$ 时, $\left| {AC}\right|  + \left| {BD}\right|$ 的最小值为 ${12}\sqrt{3}$ .
             \end{enumerate}
         \end{jieda}
-\end{enumerate}
+    \end{enumerate}
+    \item 斜率之和、斜率之积为定值
+    \begin{enumerate}
+        \item 如图,过抛物线 ${y}^{2} = {2px}\left( {p > 0}\right)$ 上一点 $P\left( {{x}_{0},{y}_{0}}\right) \left( {{y}_{0} > 0}\right)$ 作两条直线分别交抛物线于 $A\left( {{x}_{1},{y}_{1}}\right) \text{ 、 }B\left( {{x}_{2},{y}_{2}}\right)$ . 
+        
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d3q39gjef24c73d0aopg_2_197_1610_292_304_0.jpg}
+        \end{center}
+        \begin{enumerate}
+            \item 求该抛物线上纵坐标为 $\dfrac{p}{2}$ 的点到其焦点 $F$ 的距离
+            \item 当 ${PA}$ 与 ${PB}$ 的斜率存在且倾斜角互补时,求 $\dfrac{{y}_{1} + {y}_{2}}{{y}_{0}}$ 的值,并证明此时直线 ${AB}$ 的斜率是非零常数.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item $\left(\dfrac{p}{2}\right)^2 = 2px$，解得$x = \dfrac{p}{8}$，故其到焦点距离为$\dfrac{p}{8} + \dfrac{p}{2} = \dfrac{5p}{8}$
+                \item 
+                $y_0^2 = 2px_0$，故$P\left(\dfrac{y_0^2}{2p}, y_0\right)$，设直线$PA$为$x = m(y - y_0) + \dfrac{y_0^2}{2p}$，则$PB$为$x = -m(y - y_0) + \dfrac{y_0^2}{2p}$
+
+                联立$PA$与抛物线方程$\left\{\begin{array}{l}
+                    y^2 = 2px \\
+                    x = m(y - y_0) + \dfrac{y_0^2}{2p}
+                \end{array}\right.$，消去$x$可得$y^2 = 2p\left(m(y - y_0) + \dfrac{y_0^2}{2p}\right)$，即$y^2 -2pmy + (2pmy_0-y_0^2) = 0$，故根据韦达定理以及$P$点纵坐标可知$A$点纵坐标$y_1 = 2pm - y_0$
+
+                同理$y_2 = -2pm-y_0$，故$\dfrac{{y}_{1} + {y}_{2}}{{y}_{0}} =  - 2$
+                
+                ${k}_{AB} = \dfrac{y_2-y_1}{x_2-x_1} = \dfrac{y_2-y_1}{\dfrac{y_2^2}{2p} - \dfrac{y_1^2}{2p},} = \dfrac{2p}{y_1+y_2}= - \dfrac{p}{{y}_{0}}$
+            \end{enumerate}
+        \end{jieda}
+        \item 过抛物线 ${y^2} = {4x}$ 上点 $P\left( {1,2}\right)$ 作三条斜率分别为 ${k}_{1},{k}_{2},{k}_{3}$ 的直线 ${l}_{1},{l}_{2},{l}_{3}$ . 与抛物线分别交于不同于 $p$ 的点 $A,B,C$ . 若 ${k}_{1} + {k}_{2} = 0,{k}_{2} \cdot  {k}_{3} =  - 1$，则以下结论正确的是\dotfill{(\kh{B})}
+        \xx{直线 ${AB}$ 过定点}{直线 ${AB}$ 斜率一定}{直线 ${BC}$ 斜率一定}{直线 ${AC}$ 斜率一定}
+        \begin{jieda}
+            由题意, ${k}_{1},{k}_{2},{k}_{3}$ 均不为 $0$,设$A\left( {{x}_{1},{y}_{1}}\right) ,B\left( {{x}_{2},{y}_{2}}\right) ,C\left( {{x}_{3},{y}_{3}}\right)$，则${k}_{1} = \dfrac{{y}_{1} - 2}{{x}_{1} - 1} = \dfrac{{y}_{1} - 2}{\dfrac{{y}_{1}^{2}}{4} - 1} = \dfrac{4}{{y}_{1} + 2}$ ,同理可得 ${k}_{2} = \dfrac{{y}_{2} - 2}{{x}_{2} - 1} = \dfrac{4}{{y}_{2} + 2}$ ,
+            ${k}_{3} = \dfrac{{y}_{3} - 2}{{x}_{3} - 1} = \dfrac{4}{{y}_{3} + 2}$
+
+            由 ${k}_{1} + {k}_{2} = 0$ ,得 $\dfrac{4}{{y}_{1} + 2} + \dfrac{4}{{y}_{2} + 2} = 0$ ,即 ${y}_{1} + {y}_{2} + 4 = 0$. 
+            设直线 ${AB}$ 的方程为 $x = {m}_{1}y + {t}_{1}$ ,联立抛物线方程可得 ${y^2} - 4{m}_{1}y - 4{t}_{1} = 0$. 
+            则 $\Delta  > 0, \left\{\begin{array}{l}
+                {y}_{1} + {y}_{2} = 4{m}_{1}  \\
+                {y}_{1}{y}_{2} =  - 4{t}_{1} 
+            \end{array}\right.$ 代入${y}_{1} + {y}_{2} + 4 = 0$可得 $4{m}_{1} + 4 = 0,{m}_{1} =  - 1$，此时直线 ${AB}$ 的方程为 $x =  - y + {t}_{1}$ ,故直线 ${AB}$ 斜率是定值,故 $\mathrm{B}$ 正确, $\mathrm{A}$ 错误
+
+            由 ${k}_{2} \cdot  {k}_{3} =  - 1$ ,得 $\dfrac{4}{{y}_{2} + 2} \times  \dfrac{4}{{y}_{3} + 2} =  - 1$ ,即 ${y}_{2}{y}_{3} + 2\left( {{y}_{2} + {y}_{3}}\right)  + {20} = 0$.
+            设直线${BC}$ 的方程为 $x = {m}_{2}y + {t}_{2}$ ,联立抛物线方程可得 ${y}^{2} - 4{m}_{2}y - 4{t}_{2} = 0$.
+            则 $\Delta  > 0, \left\{\begin{array}{l}
+                {y}_{3} + {y}_{2} = 4{m}_{2}  \\
+                {y}_{3}{y}_{2} =  - 4{t}_{2} 
+            \end{array}\right.$，代入${y}_{2}{y}_{3} + 2\left( {{y}_{2} + {y}_{3}}\right)  + {20} = 0$可得 $2{m}_{2} - {t}_{2} + 5 = 0$ ,此时 ${BC}$ 的方程为$x = {m}_{2}y + 2{m}_{2} + 5 = {m}_{2}\left( {y + 2}\right)  + 5$ ,恒过定点$(5, -2)$,斜率不是定值,故C错误
+
+            由 ${k}_{2} \cdot  {k}_{3} =  - 1,{k}_{1} + {k}_{2} = 0$ ,得 ${k}_{1} \cdot  {k}_{3} = 1$ ,即 $\dfrac{4}{{y}_{1} + 2} \times  \dfrac{4}{{y}_{3} + 2} = 1$，即 ${y}_{1}{y}_{3} + 2\left( {{y}_{1} + {y}_{3}}\right)  - {12} = 0$.
+            设直线 ${AC}$ 的方程为 $x = {m}_{3}y + {t}_{3}$ ,联立抛物线方程可得 ${y}^{2} - 4{m}_{3}y - 4{t}_{3} = 0$ ,则 $\Delta  > 0, \left\{\begin{array}{l}
+                {y}_{3} + {y}_{1} = 4{m}_{3}  \\
+                {y}_{3}{y}_{1} =  - 4{t}_{3} 
+            \end{array}\right.$代入${y}_{1}{y}_{3} + 2\left( {{y}_{1} + {y}_{3}}\right)  - {12} = 0$可得$2{m}_{3} - {t}_{3} - 3 = 0$ ,此时 ${AC}$ 的方程为 $x = {m}_{3}y + 2{m}_{3} - 3 = {m}_{2}\left( {y + 2}\right)  - 3$ 恒过定点$(-3, -2)$,斜率不为定值，故D错误.
+
+            \ps 过抛物线$y^2 = 2px$上一点$P(a, b)$作两直线分别交抛物线于$A, B$，若两直线斜率之和为0，则$k_{AB} = -\dfrac{p}{b}$ \\
+            \ps 过抛物线$y^2 = 2px$上一点$P(a, b)$作两直线分别交抛物线于$A, B$，若两直线斜率之积为常数$c$，则直线$AB$恒过定点$\left(a-\dfrac{2p}{c}, -b\right)$
+        \end{jieda}
+        \item 在平面直角坐标系 ${xOy}$ 中，已知抛物线 $C : {y}^{2} = {4x}$ 的焦点为 $F$ ，点 $A\left( {{x}_{A},{y}_{A}}\right)$ 是抛物线 $C$ 上的一点.
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/0_241_348_364_347_0.jpg}
+        \end{center}
+        \begin{enumerate}
+            \item 若 $\left| {AF}\right|  = 4$ 求点 $A$ 的坐标
+            \item 已知 $T\left( {t,0}\right)$ 是 $x$ 轴上的点，若线段 ${AT}$ 的最小值为 4，求实数 $t$ 的值
+            \item 如图，已知 ${y}_{A} = 2$ ，点 $M,N$ 在抛物线 $C$ 上，满足 ${AM}\bot {AN}$ ，作 ${AD}\bot {MN}$ ， $D$ 为垂足. 问: 是否存在定点 $Q$ ，使得 $\left| {DQ}\right|$ 为定值？若存在，求出点 $Q$ 坐标以及 $\left| {DQ}\right|$ 的值；若不存在，说明理由.
+        \end{enumerate}
+        \begin{jieda}
+            \begin{enumerate}
+                \item 由抛物线的性质可知, $F\left( {1,0}\right)$ ,准线方程为 $x =  - 1$ .
+
+                所以 ${x}_{A} + 1 = \left| {AF}\right|  = 4 \Longrightarrow  {x}_{A} = 3$ ,代入抛物线 ${y}^{2} = {4x},{y}_{A}^{2} = 3 \times  4 = {12} \Longrightarrow  {y}_{A} =  \pm  2\sqrt{3} \; \therefore A\left( {3,2\sqrt{3}}\right) ,A\left( {3, - 2\sqrt{3}}\right)$
+                \item 设 $A\left( {\dfrac{{y}_{0}^{2}}{4},{y}_{0}}\right) ,T\left( {t,0}\right) {AT} = \sqrt{{\left( \dfrac{{y}_{0}^{2}}{4} - t\right) }^{2} + {y}_{0}^{2}} = \sqrt{\dfrac{{y}_{0}^{4}}{16} + \left( {1 - \dfrac{t}{2}}\right) {y}_{0}^{2} + {t}^{2}}$
+
+                令 $m = {y}_{0}^{2}\left( {m \geq  0}\right) ,{AT} = \sqrt{\dfrac{1}{16}{m}^{2} + \left( {1 - \dfrac{t}{2}}\right) m + {t}^{2}}$ ,对称轴为 $m =  - 8 + {4t}$ ,
+
+                当 $- 8 + {4t} \leq  0$ ,即 $t \leq  2$ ,当 $m = 0$ 时取最小值, $A{T}_{\min } = \sqrt{{t}^{2}} = 4 \Longrightarrow  t =  -4$ ,
+
+                当 $- 8 + {4t} > 0$ ,即 $t > 2$ ,当 $m = {4t} - 8$ 时 取 最小值,
+
+                $A{T}_{\min } = \sqrt{\dfrac{4 \times  \dfrac{1}{16}{t}^{2} - {\left( 1 - \dfrac{1}{2}t\right) }^{2}}{4 \times  \dfrac{1}{16}}} = 4 \Longrightarrow  t = 5$
+
+                \item 设 $M\left( {{x}_{1},{y}_{1}}\right) ,N\left( {{x}_{2},{y}_{2}}\right) ,A\left( {1,2}\right)$ ,
+
+                $\vv{AM} = \left( {{x}_{1} - 1,{y}_{1} - 2}\right) ,\vv{AN} = \left( {{x}_{2} - 1,{y}_{2} - 2}\right)$ ,又 ${AM} \bot  {AN}$ ,
+
+                $\therefore \left( {{x}_{1} - 1}\right) \left( {{x}_{2} - 1}\right)  + \left( {{y}_{1} - 2}\right) \left( {{y}_{2} - 2}\right)  = {x}_{1}{x}_{2} - \left( {{x}_{1} + {x}_{2}}\right)  + {y}_{1}{y}_{2} - 2\left( {{y}_{1} + {y}_{2}}\right)  + 5 = 0$ ,
+
+                令直线 ${MN} : x = {ty} + n$ ,联立 $C : {y}^{2} = {4x}$ ,整理得 ${y}^{2} - {4ty} - {4n} = 0$ ,
+
+                且 $\left\{  \begin{array}{l} \Delta  = {16}{t}^{2} + {16n} > 0 \\  {y}_{1} + {y}_{2} = {4t},{y}_{1}{y}_{2} =  - {4n} \end{array}\right.$
+
+                则 ${x}_{1} + {x}_{2} = t\left( {{y}_{1} + {y}_{2}}\right)  + {2n} = 4{t}^{2} + {2n},{x}_{1}{x}_{2} = {t}^{2}{y}_{1}{y}_{2} + {tn}\left( {{y}_{1} + {y}_{2}}\right)  + {n}^{2} = {n}^{2}$
+
+                代入(1)式得: ${n}^{2} - 4{t}^{2} - {2n} - {4n} - {8t} + 5 = \left( {n + {2t} - 1}\right) \left( {n - {2t} - 5}\right)  = 0$
+
+                当 $n = 1 - {2t}$ 时， ${l}_{MN} : x = t\left( {y - 2}\right)  + 1$ 过定点 $\left( {1,2}\right)$ 与 $A$ 重合，不符；
+
+                当 $n = 5 + {2t}$ 时， ${l}_{MN} : x = t\left( {y + 2}\right)  + 5$ 过定点 $\left( {5, - 2}\right)$ ，
+
+                $\therefore$ 直线 ${MN}$ 过定点 $B\left( {5, - 2}\right)$
+
+                又 ${AD} \bot  {MN}$ ,故 $D$ 在以 ${AB}$ 为直径的圆上,
+
+                而 ${AB}$ 中点为 $Q\left( {3,0}\right)$ ,即 $\left| {DQ}\right|  = \dfrac{\left| AB\right| }{2} = 2\sqrt{2}$ 为定值.
+            \end{enumerate}
+        \end{jieda}
+        
+    \end{enumerate}
 \end{enumerate}

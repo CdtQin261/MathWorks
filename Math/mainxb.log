@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  28 SEP 2026 06:51
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  29 SEP 2026 21:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1873,24 +1873,11 @@ File: bodyxb/src/bo_d19nc3f7aajc73895nqg_2_1132_264_242_215_0.jpg Graphic file (
 
 
 ] [2]
-File: bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_2_583_795_206_245_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_2_583_795_206_245_0.jpg>
-File: bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_2_853_796_211_242_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_2_853_796_211_242_0.jpg>
-File: bodyxb//src/paowuxianzuizhi.png Graphic file (type bmp)
-<bodyxb//src/paowuxianzuizhi.png>
- [3]
-File: bodyxb/src/bo_d19nc3f7aajc73895nqg_3_1150_1122_357_360_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d19nc3f7aajc73895nqg_3_1150_1122_357_360_0.jpg>
- [4]
 File: bodyxb/src/bo_d19nc3f7aajc73895nqg_7_1177_427_309_362_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d19nc3f7aajc73895nqg_7_1177_427_309_362_0.jpg>
- [5] [6]
+ [3] [4]
 File: bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_3_709_1768_225_270_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_3_709_1768_225_270_0.jpg>
-File: bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_4_706_365_228_290_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d1dpf7f7aajc73ecgk4g_4_706_365_228_290_0.jpg>
- [7] [8]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1924,19 +1911,14 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
- [9]
-File: bodyxb/src/bo_d3q39gjef24c73d0aopg_2_197_1610_292_304_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d3q39gjef24c73d0aopg_2_197_1610_292_304_0.jpg>
- [10] [11]
+ [5]
 File: bodyxb//src/paowuxianqiexian.png Graphic file (type bmp)
 <bodyxb//src/paowuxianqiexian.png>
- [12]
 File: bodyxb/src/0_238_1291_365_283_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_238_1291_365_283_0.jpg>
- [13]
 File: bodyxb//src/paowuxian14.png Graphic file (type bmp)
 <bodyxb//src/paowuxian14.png>
- [14]) [15] (./mainxb.aux (./bodyxb/14_paowuxian.aux))
+ [6]) [7] (./mainxb.aux (./bodyxb/14_paowuxian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1945,12 +1927,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49618 strings out of 468168
- 1167594 string characters out of 5432815
- 1737816 words of memory out of 5000000
- 77322 multiletter control sequences out of 15000+600000
+ 49562 strings out of 468168
+ 1164401 string characters out of 5432815
+ 1737817 words of memory out of 5000000
+ 77272 multiletter control sequences out of 15000+600000
  645709 words of font info for 116 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,610b,1299s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,128p,610b,1212s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (15 pages).
+Output written on mainxb.pdf (7 pages).
