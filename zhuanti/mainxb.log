@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  1 OCT 2026 18:09
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  7 OCT 2026 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1882,11 +1882,9 @@ File: bodyxb/src/4_1207_417_334_285_0.jpg Graphic file (type bmp)
 <bodyxb/src/4_1207_417_334_285_0.jpg>
 File: bodyxb/src/0_1208_222_339_199_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_1208_222_339_199_0.jpg>
- [3]
 File: bodyxb/src/4_1127_1925_365_270_0.jpg Graphic file (type bmp)
 <bodyxb/src/4_1127_1925_365_270_0.jpg>
-File: bodyxb/src/5_1263_439_297_284_0.jpg Graphic file (type bmp)
-<bodyxb/src/5_1263_439_297_284_0.jpg>
+ [3]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1929,9 +1927,9 @@ File: bodyxb/src/7_1248_1976_303_309_0.jpg Graphic file (type bmp)
 <bodyxb/src/7_1248_1976_303_309_0.jpg>
 File: bodyxb/src/8_1236_417_310_299_0.jpg Graphic file (type bmp)
 <bodyxb/src/8_1236_417_310_299_0.jpg>
- [5]
 File: bodyxb/src/0_1287_753_287_319_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_1287_753_287_319_0.jpg>
+ [5]
 File: bodyxb/src/0_1180_1679_309_506_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_1180_1679_309_506_0.jpg>
 File: bodyxb/src/1_1220_281_312_333_0.jpg Graphic file (type bmp)
@@ -1940,25 +1938,25 @@ File: bodyxb/src/1_1235_1459_269_298_0.jpg Graphic file (type bmp)
 <bodyxb/src/1_1235_1459_269_298_0.jpg>
 File: bodyxb/src/2_1369_1574_185_275_0.jpg Graphic file (type bmp)
 <bodyxb/src/2_1369_1574_185_275_0.jpg>
- [6]
 File: bodyxb/src/3_1231_1917_258_303_0.jpg Graphic file (type bmp)
 <bodyxb/src/3_1231_1917_258_303_0.jpg>
+ [6]
 File: bodyxb/src/3_1222_1385_349_360_0.jpg Graphic file (type bmp)
 <bodyxb/src/3_1222_1385_349_360_0.jpg>
 File: bodyxb/src/5_1135_1823_370_303_0.jpg Graphic file (type bmp)
 <bodyxb/src/5_1135_1823_370_303_0.jpg>
- [7]
 File: bodyxb/src/14_93_1886_251_219_0.jpg Graphic file (type bmp)
 <bodyxb/src/14_93_1886_251_219_0.jpg>
+ [7]
 File: bodyxb/src/8_1213_416_352_250_0.jpg Graphic file (type bmp)
 <bodyxb/src/8_1213_416_352_250_0.jpg>
 File: bodyxb/src/7_1168_1520_368_282_0.jpg Graphic file (type bmp)
 <bodyxb/src/7_1168_1520_368_282_0.jpg>
 File: bodyxb/src/9_1312_460_228_261_0.jpg Graphic file (type bmp)
 <bodyxb/src/9_1312_460_228_261_0.jpg>
- [8]
 File: bodyxb//src/gos'ihdgousheoruhage.png Graphic file (type bmp)
 <bodyxb//src/gos'ihdgousheoruhage.png>
+ [8]
 File: bodyxb/src/10_1324_449_239_213_0.jpg Graphic file (type bmp)
 <bodyxb/src/10_1324_449_239_213_0.jpg>
 File: bodyxb/src/9_91_1574_336_208_0.jpg Graphic file (type bmp)
@@ -1967,18 +1965,18 @@ File: bodyxb/src/9_410_1456_424_331_0.jpg Graphic file (type bmp)
 <bodyxb/src/9_410_1456_424_331_0.jpg>
 File: bodyxb/src/16_1220_767_303_287_0.jpg Graphic file (type bmp)
 <bodyxb/src/16_1220_767_303_287_0.jpg>
- [9]
 File: bodyxb/src/15_1218_517_326_264_0.jpg Graphic file (type bmp)
 <bodyxb/src/15_1218_517_326_264_0.jpg>
+ [9]
 File: bodyxb/src/13_1222_830_287_352_0.jpg Graphic file (type bmp)
 <bodyxb/src/13_1222_830_287_352_0.jpg>
 File: bodyxb/src/15_1335_1839_219_192_0.jpg Graphic file (type bmp)
 <bodyxb/src/15_1335_1839_219_192_0.jpg>
 File: bodyxb/src/14_1349_456_214_246_0.jpg Graphic file (type bmp)
 <bodyxb/src/14_1349_456_214_246_0.jpg>
- [10]
 File: bodyxb/src/11_1182_1484_372_329_0.jpg Graphic file (type bmp)
 <bodyxb/src/11_1182_1484_372_329_0.jpg>
+ [10]
 File: bodyxb/src/10_1249_1364_326_242_0.jpg Graphic file (type bmp)
 <bodyxb/src/10_1249_1364_326_242_0.jpg>
 ) [11] (./mainxb.aux (./bodyxb/16_kongjianxiangliang.aux))
@@ -1990,12 +1988,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49881 strings out of 468168
- 1175504 string characters out of 5432816
+ 49872 strings out of 468168
+ 1175152 string characters out of 5432816
  1762487 words of memory out of 5000000
- 77558 multiletter control sequences out of 15000+600000
+ 77550 multiletter control sequences out of 15000+600000
  656694 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,21n,128p,1233b,1288s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,21n,128p,1233b,1255s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on mainxb.pdf (11 pages).

@@ -237,13 +237,34 @@
     
     ${y}_{1} + {y}_{2} = 2pm$，因为 $x = my + \dfrac{p}{2}$ ,所以$\left| {AB}\right|  = {x}_{1} + {x}_{2} + p = m(y_1+y_2) + {2p} = 2p(m^2+1)$.
     
-    又 $m = cot \alpha$ ,则 $\left| {AB}\right|  = \left( cot^{2}\alpha  + 1\right)  \cdot  {2p} = \dfrac{2p}{{\sin }^{2}\alpha }$ .
+    又 $m = cot \alpha$ ,则 $\left| {AB}\right|  = \left( cot^{2}\alpha  + 1\right)  \cdot  {2p} = \dfrac{2p}{{\sin }^{2}\alpha }$.
 
-    圆锥曲线焦点弦弦长统一公式$L = \left|\dfrac{2ep}{1-e^2cos^2\alpha}\right|$，其中$p$为焦点到准线距离，对于椭圆和双曲线，$p = \dfrac{b^2}{c}$
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    {$\alpha$为锐角、焦点在$x$轴上} & 椭圆 & 双曲线（交一支） &  双曲线（交两支）& 抛物线 \\
+    \cline{1-5}
+    长焦半径 & $\dfrac{ep}{1-ecos\alpha}$ & $\dfrac{ep}{1-ecos\alpha}$ & $-\dfrac{ep}{1-ecos\alpha}$ & $\dfrac{p}{1-cos\alpha}$ \\    
+    \cline{1-5}
+    短焦半径 & $\dfrac{ep}{1+ecos\alpha}$ & $\dfrac{ep}{1+ecos\alpha}$ & $\dfrac{ep}{1+ecos\alpha}$ & $\dfrac{p}{1+cos\alpha}$ \\
+    \cline{1-5}
+    焦点弦长 & $\dfrac{2ep}{1-e^2cos^2\alpha}$ & $\dfrac{2ep}{1-e^2cos^2\alpha}$ & $-\dfrac{2ep}{1-e^2cos^2\alpha}$ & $\dfrac{2p}{sin^2\alpha}$ \\
+    \hline
+    \end{tabular}
+    \end{center}
+
+    三种曲线性质一致，当且仅当直线和双曲线交两支的时候，$ecos\alpha > 1$，此时长焦半径（焦点和端点异侧）和焦点弦长需加负号.
     
-    根据 $\left| {AB}\right|  = \dfrac{2p}{{\sin }^{2}\alpha }$ ,当 $\alpha$ 为 $\dfrac{\pi }{2}$ 时,即 ${AB}$ 垂直于 $x$ 轴时,弦 ${AB}$ 的长最短,最小值为 ${2p}$ . 此时，${AB}$称为抛物线的\textbf{通径}.
+    根据焦点弦长可知，当 $\alpha$ 为 $\dfrac{\pi}{2}$ 时,即 ${AB}$ 垂直于 $x$ 轴时,弦 ${AB}$ 的长最短,最小值为 ${2p}$ . 此时，${AB}$称为抛物线的\textbf{通径}.
 
     过圆锥曲线的焦点且与过焦点的轴垂直的弦称为通径，通径是长度最短的焦点弦.
+
+
+    \item $\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| }$ 为定值 $\dfrac{2}{p}$.
+
+    证明如下：
+    
+    对于椭圆、双曲线（交一支）和抛物线，由焦半径公式知$\left| {AF}\right|  = \dfrac{ep}{1-ecos\alpha},\left| {BF}\right|  = \dfrac{ep}{1+ecos\alpha}$. 所以$\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| } = \dfrac{2}{ep}$. 特别地，抛物线的$e = 1$，故$\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| } = \dfrac{2}{p}$.
     
     \item $A$ 、 $B$ 两点的横坐标之积、纵坐标之积为定值,即 ${x}_{1}{x}_{2} = \dfrac{{p}^{2}}{4},{y}_{1}{y}_{2} =  - {p}^{2}$ .
 
@@ -251,26 +272,15 @@
     
     由\ding{174}可知${y}_{1}{y}_{2} =  - {p}^{2},{x}_{1}{x}_{2} = \dfrac{{y}_{1}^{2}}{2p} \cdot  \dfrac{{y}_{2}^{2}}{2p} = \dfrac{{\left( {y}_{1}{y}_{2}\right) }^{2}}{4{p}^{2}} = \dfrac{{p}^{4}}{4{p}^{2}} = \dfrac{{p}^{2}}{4}$ . 
 
-    \item 以$AB$为直径的圆与准线相切于$M_1$，且$M_1F \bot AB$
+    \item 在直角梯形$AA_1B_1B$中存在3个特殊垂直关系：以$AB$为直径的圆与准线相切于$M_1$、$M_1F \bot AB$、$A_1F \bot B_1F$
     
     证明如下：
     
     $MM_1$垂直于准线，且$|MM_1| = \dfrac{|AA_1|+|BB_1|}{2} = \dfrac{|AB|}{2}$，所以以$AB$为直径的圆与准线相切于$M_1$
 
-    $M_1\left(-\dfrac{p}{2}, \dfrac{y_1+y_2}{2}\right)$，$\vv{FM_1} = \left(-p, \dfrac{y_1+y_2}{2}\right)$，$\vv{FA} = \left(x_1-\dfrac{p}{2}, y_1\right) = \left(\dfrac{y_1^2}{2p}-\dfrac{p}{2}, y_1\right)$
+    $M_1\left(-\dfrac{p}{2}, \dfrac{y_1+y_2}{2}\right)$，$\vv{FM_1} = \left(-p, \dfrac{y_1+y_2}{2}\right)$，$\vv{FA} = \left(x_1-\dfrac{p}{2}, y_1\right) = \left(\dfrac{y_1^2}{2p}-\dfrac{p}{2}, y_1\right)$，故$\vv{FA} \cdot \vv{FM_1} = -\dfrac{y_1^2}{2}+\dfrac{p^2}{2}+\dfrac{y_1^2+y_1y_2}{2} = 0$，即$M_1F \bot AB$
 
-    故$\vv{FA} \cdot \vv{FM_1} = -\dfrac{y_1^2}{2}+\dfrac{p^2}{2}+\dfrac{y_1^2+y_1y_2}{2} = 0$，即$M_1F \bot AB$
-
-    \item $\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| }$ 为定值 $\dfrac{2}{p}$ .
-
-    证明如下：
-    
-    由焦半径公式知, $\left| {AF}\right|  = {x}_{1} + \dfrac{p}{2},\left| {BF}\right|  = {x}_{2} + \dfrac{p}{2}$ . 所以$\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| } = \dfrac{1}{{x}_{1} + \dfrac{p}{2}} + \dfrac{1}{{x}_{2} + \dfrac{p}{2}} = \dfrac{{x}_{1} + {x}_{2} + p}{{x}_{1}{x}_{2} + \dfrac{p}{2}\left( {{x}_{1} + {x}_{2}}\right)  + \dfrac{{p}^{2}}{4}}.$
-    
-    又 ${x}_{1}{x}_{2} = \dfrac{{p}^{2}}{4},{x}_{1} + {x}_{2} = \left| {AB}\right|  - p$，代入上式，得$\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| } = \dfrac{\left| AB\right| }{\dfrac{{p}^{2}}{4} + \dfrac{p}{2}\left( {\left| {AB}\right|  - p}\right)  + \dfrac{{p}^{2}}{4}} = \dfrac{2}{p}$.
-    
-    所以, $\dfrac{1}{\left| AF\right| } + \dfrac{1}{\left| BF\right| }$ 为定值 $\dfrac{2}{p}$ .
-    
+    $A_1\left(-\dfrac{p}{2}, y_1\right), B_1(-\dfrac{p}{2}, y_2)$，$FA_1 = \left(-p, y_1\right), FB_1 = \left(-p, y_2\right)$，故$FA_1 \cdot FB_1 = p^2 + y_1y_2 = 0$，即$A_1F \bot B_1F$
 \end{dingautolist}
 
 例题：

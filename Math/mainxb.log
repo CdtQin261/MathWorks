@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  29 SEP 2026 22:29
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  7 OCT 2026 21:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1905,9 +1905,10 @@ File: bodyxb//src/paowuxianqiexian.png Graphic file (type bmp)
 <bodyxb//src/paowuxianqiexian.png>
 File: bodyxb/src/0_238_1291_365_283_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_238_1291_365_283_0.jpg>
+ [6]
 File: bodyxb//src/paowuxian14.png Graphic file (type bmp)
 <bodyxb//src/paowuxian14.png>
- [6]) [7] (./mainxb.aux (./bodyxb/14_paowuxian.aux))
+) [7] (./mainxb.aux (./bodyxb/14_paowuxian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1922,6 +1923,6 @@ Here is how much of TeX's memory you used:
  77298 multiletter control sequences out of 15000+600000
  645685 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,622b,1212s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,128p,622b,1190s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on mainxb.pdf (7 pages).
