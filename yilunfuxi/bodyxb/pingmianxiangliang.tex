@@ -1,5 +1,5 @@
-\chapter*{向量}
-\subsection*{向量的加法与减法}
+\chapter*{平面向量}
+\subsection*{平面向量的加法与减法}
 \begin{enumerate}
     \item 已知向量$\vv{a} = (cos\alpha, sin\alpha), \vv{b} = (cos\beta, sin\beta)$，且$\vv{a} \neq \pm \vv{b}$，那么$\vv{a} + \vv{b}$与$\vv{a} - \vv{b}$的夹角为\blkda{$\dfrac{\pi}{2}$}
     \begin{jieda}
@@ -80,7 +80,7 @@
         \end{center}
     \end{jieda}
 \end{enumerate}
-\subsection*{向量平行}
+\subsection*{平面向量平行}
 \begin{enumerate}
     \item 已知$\vv{a}, \vv{b}$是非零不共线向量，向量$8\vv{a} - k \vv{b}$与$-k\vv{a} + \vv{b}$共线，则$k = $ \blkda{$\pm 2\sqrt{2}$}
         \begin{jieda}
@@ -142,7 +142,7 @@
     \item (2024$\cdot$青浦区二模$\cdot$2)已知向量 $\vv{a} = \left( {-1,1}\right) ,\vv{b} = \left( {3,4}\right)$ ，则 $\langle \vv{a},\vv{b}\rangle  =$ \blkda[2]{$\arccos \dfrac{\sqrt{2}}{10}$}.
     \item (2024$\cdot$静安区二模$\cdot$4)若单位向量 $\vv{a}$ 、 $\vv{b}$ 满足 $\vv{a}\bot \vv{b}$ ，则 $\left| {\vv{a} - \sqrt{3}\vv{b}}\right|  =$ \blkda[2]{2}.
 \end{enumerate}
-\subsection*{向量垂直}
+\subsection*{平面向量垂直}
 \begin{enumerate}
     \item (2025$\cdot$杨浦区一模$\cdot$6)已知 $\left| \vv{a}\right|  = \left| \vv{b}\right|  = 1$ ，若$(2\vv{a} - \vv{b})\bot \vv{b}$ ，则向量 $\vv{a}$ 与 $\vv{b}$ 的夹角的余弦值为\blkda[2]{$\dfrac{1}{2}$}.
     \begin{jieda}
@@ -195,6 +195,47 @@
         因此$|\vv{AP}|^2 = (\dfrac{1}{2}\vv{AC} + \dfrac{1}{3}\vv{AB})^2 = \dfrac{1}{4}|\vv{AC}|^2 + \dfrac{4}{3} + \dfrac{1}{9}|\vv{AB}|^2$\\
         根据$\vv{AB} \cdot \vv{AC} = 4$，$\angle BAC = \dfrac{\pi}{3}$知$|\vv{AB}| \cdot |\vv{AC}| = 8$ \\
         设$|\vv{AC}| = t$，则$|\vv{AP}|^2 = \dfrac{t^2}{4} + \dfrac{4}{3} + \dfrac{64}{9t^2} \geq 4$（当$t = \dfrac{4\sqrt{3}}{3}$时取等），故$|\vv{AP}| = 2$
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{数量积的范围（最值）问题与主元归一}
+\begin{enumerate}
+    \item (2026$\cdot$上海春季卷$\cdot$10)在 $\bigtriangleup  {ABC}$ 中， $D$ 、 $E$ 在边 ${BC}$ 上，且 $\vv{BD} = \vv{DE} = \vv{EC}$ ， $\left| \vv{AD}\right|  = 1$ ， $\vv{AD}$ 与 $\vv{AE}$ 所成的夹角为 $\dfrac{\pi }{3}$ ，则 $\vv{AB} \cdot  \vv{AC}$ 的最大值为\blkda{$- \dfrac{39}{32}$}.
+    
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{bodyxb/src/4_240_432_342_185_0.jpg}
+    \end{center}
+    \begin{jieda}
+        $\because \vv{AB} = \vv{AD} + \vv{DB} = \vv{AD} + \vv{ED} = \vv{AD} + \vv{EA} + \vv{AD} = 2\vv{AD} - \vv{AE}$
+        
+        $\vv{AC} = \vv{AD} + \vv{DC} = \vv{AD} + 2\vv{DE} = \vv{AD} + 2\left( {\vv{DA} + \vv{AE}}\right)  =  - \vv{AD} + 2\vv{AE}$
+        
+        $\therefore \vv{AB} \cdot  \vv{AC} = \left( {2\vv{AD} - \vv{AE}}\right)  \cdot  \left( {-\vv{AD} + 2\vv{AE}}\right)  =  - 2{\left| \vv{AD}\right| }^{2} + 5\vv{AD} \cdot  \vv{AE} - 2{\left| \vv{AE}\right| }^{2}$
+        
+        $\because \left| \vv{AD}\right|  = 1,\vv{AD}$ 与 $\vv{AE}$ 所成的夹角为 $\dfrac{\pi }{3}$
+        
+        $\therefore \vv{AB} \cdot  \vv{AC} =  - 2 + \dfrac{5}{2} \cdot  \left| \vv{AE}\right|  - 2{\left| \vv{AE}\right| }^{2}$
+        
+        令 $\left| \vv{AE}\right|  = t > 0$ ,则 $\vv{AB} \cdot  \vv{AC} =  - 2{t}^{2} + \dfrac{5}{2}t - 2 =  - 2{\left( t - \dfrac{5}{8}\right) }^{2} - \dfrac{39}{32},t > 0$
+        
+        当 $\left| \vv{AE}\right|  = \dfrac{5}{8}$ 时, $\vv{AB} \cdot  \vv{AC}$ 的最大值为 $- \dfrac{39}{32}$ .
+    \end{jieda}
+
+    
+    \item 在$\param ABCD$中，$E$为$CD$中点，$AB = 2$，若$AE \perp BD$，求$\vv{AC} \cdot \vv{AB}$的取值范围.
+    \begin{jieda}
+        以$\vv{AC}$和$\vv{AB}$为基底入手，表示$\vv{AE}$和$\vv{BD}$并使其数量积为0建立等式. \\
+        $\left \{\begin{array}{l}
+                \vv{AE} = \vv{AC} + \vv{CE} =  \vv{AC} - \dfrac{1}{2}\vv{AB}  \\
+                \vv{BD} = \vv{BA} + \vv{AC} + \vv{CD} = \vv{AC} - 2\vv{AB} 
+        \end{array} \right. $ \\
+        因此有$\vv{AE} \cdot \vv{BD} = (\vv{AC} - \dfrac{1}{2}\vv{AB}) \cdot (\vv{AC} - 2\vv{AB}) = |\vv{AC}|^2 - \dfrac{5}{2} \vv{AC} \cdot \vv{AB} + |\vv{AB}|^2 = 0$\\
+        设$|\vv{AC}| = x, \vv{AC}, \vv{AB}$的夹角为$\theta$，则$x^2 - 5x \cdot cos\theta + 4 = 0$，即$x + \dfrac{4}{x} = 5 cos\theta$，根据余弦函数的值域和对勾函数的性质可知$x \in (1,4)$时方程有解. 故$\vv{AC} \cdot \vv{AB} = 2x \cdot cos\theta = \dfrac{2(4+x^2)}{5} \in (2, 8)$
+    \end{jieda}
+    
+    \item 在正方形$ABCD$中，边长为2，$M$在$BC$边上，$N$在$CD$边上，满足$MN=\sqrt{2}$，求$\vv{AM}\cdot \vv{AN}$的取值范围\blkda{$[4, 8-2\sqrt{2}]$}
+    \begin{jieda}
+        以A为原点，$\vv{AB}$为$x$轴正方向建系，设$\angle MNC = \theta, \theta \in \left[0, \dfrac{\pi}{2}\right]$，则$M(2, 2-\sqrt{2}sin\theta), N(2-\sqrt{2}cos\theta, 2)$，故$\vv{AM}\cdot \vv{AN} = 4-2\sqrt{2}cos\theta + 4 - 2\sqrt{2}sin\theta = 8 - 4sin(\theta + \dfrac{\pi}{4}) \in [4, 8-2\sqrt{2}]$
     \end{jieda}
 \end{enumerate}
 \subsection*{极化恒等式}
@@ -255,8 +296,27 @@
         故 $\left| {\vv{a} + \vv{b} + \vv{c}}\right|  \in  \left( {1,\sqrt{5}}\right)$ .
     \end{jieda}
 \end{enumerate}
+
+\subsection*{圆上动点}
+\begin{enumerate}
+    \item (2025$\cdot$杨浦区二模$\cdot$15)已知 $A$ 、 $B$ 、 $C$ 是单位圆上的三个点，若 $\left| \vv{AB}\right|  = \sqrt{2}$ ，则 $\vv{AB} \cdot \vv{BC}$ 的最大值为 \dotfill{(\kh{D})}
+    \xx{$\sqrt{2}$}{$1 + \dfrac{\sqrt{2}}{2}$}{$\sqrt{2} + 1$}{$\sqrt{2} - 1$}
+
+    \item 已知等边三角形$ABC$的边长为$2\sqrt{3}$，点$P$是其外接圆上的动点，则$\vv{PA} \cdot \vv{PB} + \vv{PA} \cdot \vv{PC}$的取值范围为\blkda{$[0, 8]$}
+    \begin{jieda}
+        设$\triangle ABC$外接圆圆心为$O$，以$\vv{OA}$的方向为$x$轴正方向，设$A(2, 0)$, $B(-1, \sqrt{3})$, $C(-1, -\sqrt{3})$，建立平面直角坐标系。设$P(2cos\theta, 2sin\theta)$，由此\\
+        $\vv{PA} = (2-2cos\theta, -2sin\theta), \vv{PB} = (-1-2cos\theta, \sqrt{3}-2sin\theta), \\
+        \vv{PC} = (-1-2cos\theta, -\sqrt{3}-2sin\theta), \vv{PB} + \vv{PC} = (-2-4cos\theta, -4sin\theta)$，\\
+        故$\vv{PA} \cdot \vv{PB} + \vv{PA} \cdot \vv{PC} = \vv{PA} \cdot (\vv{PB}+\vv{PC}) = (2-2cos\theta) \cdot (-2-4cos\theta) + (-2sin\theta) \cdot (-4sin\theta) = -4 - 4cos\theta + 8cos^2\theta + 8sin^2\theta = 4 - 4cos\theta \in [0, 8]$
+    \end{jieda}
+\end{enumerate}
+
 \subsection*{模的几何意义-向量差的模}
 \begin{enumerate}
+    \item 已知平面向量 $\vv{a}$ 、 $\vv{b}$ 满足 $\left| \vv{a}\right|  = 3,\left| \vv{b}\right|  = 4,\vv{a} \cdot  \vv{b} = 4$ ，若平面向量 $\vv{c}$ 满足 $\left| {\vv{c} - \vv{b}}\right|  = 1$ ，则 $\left| {\vv{c} - \vv{a}}\right|$ 的最大值为\blkda[2]{$\sqrt{17} + 1$}.
+    \begin{jieda}
+        以$\vv{b}$为$x$轴正方向建系，$A(1, 2\sqrt{2}), B(4, 0)$，$|AB| = \sqrt{17}$，$C$在以$B$为圆心，$1$为半径的圆上，$|AC| \leq \sqrt{17} + 1$
+    \end{jieda}
     \item (2024$\cdot$崇明区一模$\cdot$11)已知不平行的两个向量 $\vv{a}$ 、 $\vv{b}$ 满足 $\left| \vv{a}\right|  = 1$ ， $\vv{a} \cdot  \vv{b} = \sqrt{3}$. 若对任意的 $t \in  \mathbf{R}$ ， 都有 $\left| {\vv{b} - t\vv{a}}\right|  \geq  2$ 成立，则 $\left| \vv{b}\right|$ 的最小值等于\blkda[2]{$\sqrt{7}$}.
     \begin{jieda}
         向量 $\vv{a},\vv{b}$ 满足 $\left| \vv{a}\right|  = 1$，$\vv{a} \cdot  \vv{b} = \sqrt{3} \Longrightarrow  \left| \vv{a}\right| \left| \vv{b}\right| \cos \theta  = \sqrt{3} \Longrightarrow  \left| \vv{b}\right| \cos \theta  = \sqrt{3}$ ,
@@ -267,6 +327,10 @@
         \includegraphics[width=0.2\textwidth]{bodyxb/src/100_1341_2020_236_140_0.jpg}
         \end{center}
     \end{jieda}
+    \item 已知平面内的向量$\vv{a}, \vv{b}, \vv{c}, \vv{e}$满足$|\vv{a}| = 4, |\vv{e}| = 1, \vv{a} \perp \vv{e}, |\vv{b} - \vv{a}| = 1$，且有$|\vv{c} - \lambda \vv{e}| \geq |\vv{c} - \vv{e}|$对任意$\lambda \in \mathbf{R}$恒成立，则$|\vv{c} - \vv{b}|$的最小值为\blkda{0}.
+    \begin{jieda}
+        以$\vv{a}$为$x$轴正方向，$\vv{e}$为$y$轴正方向建立平面直角坐标系，设$\vv{a} = (4, 0), \vv{e} = (0, 1)$，$\vv{b} = (4+cos\theta, sin\theta)$，其中$\theta$为$\vv{b} - \vv{a}$与$x$轴正方向夹角，$|\vv{c} - \lambda \vv{e}| \geq |\vv{c} - \vv{e}|$即$\vv{c} = (m, 1)$，故$|\vv{c} - \vv{b}| \geq 0$（$\vv{c} = \vv{b} = (4, 1)$时取得最小值）
+    \end{jieda}
     \item (2025$\cdot$上海春季卷$\cdot$12)在平面中， ${\vv{e}}_{1}$ 和 ${\vv{e}}_{2}$ 是互相垂直的单位向量，向量 $\vv{a}$ 满足 $\left|\vv{a} - 4\vv{e_1}\right|  = 2$ ，向量 $\vv{b}$ 满足 $\left|\vv{b} - 6\vv{e_2}\right|  = 1$ ，则 $\vv{b}$ 在 $\vv{a}$ 方向上的数量投影的最大值\blkda[2]{4}.
     \begin{jieda}
         设 $\vv{a} = \vv{OA},\vv{b} = \vv{OB}$ ,在坐标系中,不妨设 $4{\vv{e}}_{1} = \left( {0,4}\right)  = \vv{O{O}_{1}},6{\vv{e}}_{2} = \left( {6,0}\right)  = \vv{O{O}_{2}}$ ,则 $\left|\vv{OA} -  \vv{O{O}_{1}}\right|  = \left| \vv{{O}_{1}A}\right| = 2, \left|\vv{OB} - \vv{O{O}_{2}}\right| = \left|\vv{{O}_{2}B} \right| = 1$
@@ -276,5 +340,185 @@
             \includegraphics[width=0.4\textwidth]{bodyxb/src/95_516_1093_304_208_0.jpg}
         \end{center}
     \end{jieda}
-    \item (2025$\cdot$浦东新区二模$\cdot$11)已知 $\vv{a}$ 、 $\vv{b}$ 、 $\vv{c}$ 为空间中三个单位向量，且 $\vv{a} \cdot  \vv{b} = \vv{b} \cdot  \vv{c} = \vv{c} \cdot  \vv{a} = 0$ ，若向量 $\vv{p}$ 满足 $\left| {\vv{p} - 2\vv{a}}\right|  = \dfrac{3}{2},\left| {\vv{p} - 2\vv{b}}\right|  = \dfrac{3}{2}$ ，则向量 $\vv{p}$ 与向量 $\vv{c}$ 夹角的最小值为\blkda[2]{$\arccos \dfrac{\sqrt{2}}{4}$}. (用反三角表示)
+\end{enumerate}
+
+\subsection*{平面向量的外积与三角形面积}
+\begin{enumerate}
+    \item 已知向量 $\vv{AB} = \left( {1,2}\right)$ ， $\vv{AC} = \left( {4, - 2}\right)$ ，则 $\bigtriangleup  {ABC}$ 的面积为\blkda{5}.
+    \item (2020$\cdot$崇明区二模$\cdot$11)在$\triangle ABC$中，$\vv{AB} = (\sqrt{3}cosx, cosx), \vv{AC} = (cosx, sinx)$，则$\triangle ABC$面积最大值为\blkda{$\dfrac{3}{4}$}
+    \begin{jieda}
+        \newline
+        $S_{\triangle ABC} = \dfrac{|\sqrt{3}sinx \cdot cosx - cos^2x|}{2} = \dfrac{1}{2}\left| \dfrac{\sqrt{3}}{2}sin2x - \dfrac{1+cos2x}{2}\right| = \dfrac{1}{2} \left | sin(2x-\dfrac{\pi}{6}) - \dfrac{1}{2} \right| \leq \dfrac{3}{4}$\\
+        （当$x = k\pi - \dfrac{\pi}{6}, k \in \mathbf{Z}$时取最大值.）
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{平面向量的内积与三角形面积}
+\begin{enumerate}
+    \item 在$\triangle ABC$中，$BC = 2\sqrt{6}, S_{\triangle ABC} = \dfrac{\sqrt{2}}{2}(\vv{AB} \cdot \vv{AC})$，则$\triangle ABC$的外接圆半径为\blkda{$3$}
+    \begin{jieda}
+        首先根据三角形面积建立等式：$\dfrac{\sqrt{2}}{2}bc cosA = \dfrac{1}{2}bc sinA$，因此$tanA = \sqrt{2}$，故$cosA = \dfrac{\sqrt{3}}{3}, sinA = \dfrac{\sqrt{6}}{3}$。根据正弦定理可知$2R = \dfrac{a}{sinA} = \dfrac{2\sqrt{6}}{\dfrac{\sqrt{6}}{3}} = 6$，故$R = 3$
+    \end{jieda}
+
+    \item 在 $\bigtriangleup  {ABC}$ 中， $\vv{AB} = \left( {\cos \theta ,\sin \theta }\right)$ ， $\vv{BC} = \left( {3\sin \theta ,3\cos \theta }\right)$ . 若 $\vv{AB} \cdot  \vv{BC} = 2$ ，则 $\bigtriangleup  {ABC}$ 的面积为\blkda{$\dfrac{\sqrt{5}}{2}$}.
+    \begin{jieda}
+        $\left| \vv{AB}\right|  = \sqrt{{\cos }^{2}\theta  + {\sin }^{2}\theta } = 1,\left| \vv{BC}\right|  = \sqrt{9{\sin }^{2}\theta  + 9{\cos }^{2}\theta } = 3$ ,
+        
+        则 $\vv{AB} \cdot  \vv{BC} =  - \vv{BA} \cdot  \vv{BC} =  - \left| \vv{BA}\right|  \cdot  \left| \vv{BC}\right| \cos B =  - 3\cos B = 2$ ,所以 $\cos B =  - \dfrac{2}{3}$ ,
+        
+        所以 $\sin B = \sqrt{1 - {\cos }^{2}B} = \dfrac{\sqrt{5}}{3}$ .
+        
+        所以 ${S}_{\bigtriangleup {ABC}} = \dfrac{1}{2}\left| \vv{AB}\right|  \cdot  \left| \vv{BC}\right|  \cdot  \sin B = \dfrac{1}{2} \times  1 \times  3 \times  \dfrac{\sqrt{5}}{3} = \dfrac{\sqrt{5}}{2}$ .
+    \end{jieda}
+    \item 在 $\bigtriangleup  {ABC}$ 中, $\vv{AB} = \left( {\sqrt{3}\cos x,\cos x}\right) ,\vv{AC} = \left( {\cos x,\sin x}\right)$ . 对任意的实数 $t$ ,恒有 $\left| {\vv{AB} - t\vv{AC}}\right|  \geq  \left| \vv{BC}\right|$ ,则 $\bigtriangleup {ABC}$ 面积的最大值为\blkda{$\dfrac{\sqrt{3}}{2}$}.
+    \begin{jieda}
+        $\because \left| {\vv{AB} - t\vv{AC}}\right|  \geq  \left| \vv{BC}\right|$ ，故点 $B$ 到直线 ${AC}$ 的最短距离为 ${BC}$ ， $\therefore {BC}\bot {AC}$ . $\because \left| \vv{AB}\right|  = \sqrt{4{\cos }^{2}x} \leq  2,\left| \vv{AC}\right|  = 1$ ， $\therefore$ 由勾股定理可得 ${BC} = \sqrt{A{B}^2 - A{C}^2} \leq  \sqrt{4 - 1} = \sqrt{3}$ ， 故 $\bigtriangleup {ABC}$ 面积 $S = \dfrac{1}{2}{BC} \cdot  {AC} \leq  \dfrac{\sqrt{3}}{2}$.
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{平面向量与三角形的四心}
+\begin{enumerate}
+    \item 在$\triangle ABC$中，已知$G$为$\triangle ABC$的重心，内角$A,B,C$的对边长度分别为$a, b, c$，且$56a \vv{GA} + 40b \vv{GB} + 35c\vv{GC} = \vv{0}$,则$B = $\blkda{$\dfrac{\pi}{3}$}
+    \begin{jieda}
+        因为$G$为$\triangle ABC$的重心，因此$56a = 40 b = 35c$，即$a = \dfrac{5}{8}c, b = \dfrac{7}{8}c$，根据余弦定理有$cosB = \dfrac{a^2 + c^2 - b^2}{2ac} = \dfrac{\dfrac{25}{64} + 1 - \dfrac{49}{64}}{\dfrac{5}{4}} = \dfrac{1}{2}$，故$B = \dfrac{\pi}{3}$
+    \end{jieda}
+    \item 平面内不重合的点$A_1, A_2, A_3, B_1, B_2, B_3, B_4$，若$|\vv{A_1B_i} + \vv{A_2B_i} + \vv{A_3B_i}| = i$，其中$i = 1, 2, 3, 4$，则$|\vv{B_1B_2}| + |\vv{B_2B_3}| + |\vv{B_3B_4}|$的最大值与最小值之和为\blkda{6}
+    \begin{jieda}
+        设$G$为$\triangle A_1A_2A_3$的重心，则$|\vv{A_1B_i} + \vv{A_2B_i} + \vv{A_3B_i}| = 3|\vv{GB_i}|$，因此$|\vv{B_1B_2}| + |\vv{B_2B_3}| + |\vv{B_3B_4}|$取最小值的时候四个点和$G$共线，顺次排列，最小值为$\dfrac{1}{3}[1+1+1] = 1$；$|\vv{B_1B_2}| + |\vv{B_2B_3}| + |\vv{B_3B_4}|$取最大值的时候四个点和$G$共线，间隔排列，最大值为$\dfrac{1}{3}[(1+2)+(2+3)+(3+4)] = 5$，故最大值和最小值之和为6.
+    \end{jieda}
+
+    \item 在锐角$\triangle{ABC}$中，$cosB = \dfrac{1}{2}$，$O$为$\triangle{ABC}$的外心
+    \begin{enumerate}
+        \item 若$\vv{BO} = x\vv{BA} + y \vv{BC}$，求$x+y$的最大值
+        \item 若$b = \sqrt{3}$，求$|3\vv{OB} + \vv{OA} + 2\vv{OC}|$的取值范围
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate} 
+            \item 
+            \begin{enumerate}
+                \item $\vv{BO} = x\vv{BA} + y \vv{BC}$，故$\left \{ \begin{array}{l}
+                    \vv{BO} \cdot \vv{BA} = x|\vv{BA}|^2 + y \vv{BC}\cdot \vv{BA} \\
+                    \vv{BO} \cdot \vv{BC} = x\vv{BA} \cdot \vv{BC} + y |\vv{BC}|^2
+                \end{array}
+                \right.$，\\
+                即$\left \{ \begin{array}{l}
+                    \dfrac{|\vv{BA}|^2}{2} = x|\vv{BA}|^2 + y \vv{BC}\cdot \vv{BA} \\
+                    \dfrac{|\vv{BC}|^2}{2} = x\vv{BA} \cdot \vv{BC} + y |\vv{BC}|^2
+                \end{array}
+                \right.$，设$|\vv{BA}| = c, |\vv{BC}| = a$，则有\\
+                $\left \{ \begin{array}{l}
+                    \dfrac{c^2}{2} = x \cdot c^2 + \dfrac{y}{2} \cdot ac \\
+                    \dfrac{a^2}{2} = \dfrac{x}{2} \cdot ac + y \cdot a^2
+                \end{array}
+                \right.$，即$\left \{ \begin{array}{l}
+                    \dfrac{c}{2} = x \cdot c + \dfrac{y}{2} \cdot a \\
+                    \dfrac{a}{2} = \dfrac{x}{2} \cdot c + y \cdot a
+                \end{array}
+                \right.$，解得$\left \{ \begin{array}{l}
+                    x = \dfrac{2c-a}{3c} \\
+                    y = \dfrac{2a-c}{3a}
+                \end{array}
+                \right.$，故$x+y \leq \dfrac{2}{3}$，此时$x = y = \dfrac{1}{3}$
+                \item $\vv{BO} = x(\vv{BO} + \vv{OA}) + y(\vv{BO} + \vv{OC})$，故$(x+y-1)\vv{OB} = x\vv{OA} + y \vv{OC}$，两侧平方有$(x+y-1)^2|\vv{OB}|^2 = x^2|\vv{OA}|^2+y^2|\vv{OC}|^2+2xy|\vv{OB}|\cdot|\vv{OC}|cos\angle BOC$，即$(x+y-1)^2 = x^2+y^2-xy$，即$(x+y-1)^2 -(x+y)^2 = -3xy$，即$2(x+y) = 3xy+1$，根据基本不等式有$2(x+y) \leq \dfrac{3}{4}(x+y)^2+1$（$x=y$时取等号），故$x+y\leq\dfrac{2}{3}$或$x+y\geq2$（舍）因此$x+y$的最大值为$\dfrac{2}{3}$，此时$x = y = \dfrac{1}{3}$
+            \end{enumerate}
+            \ps 根据等和线的结论可以进行验证
+            \item 
+            \begin{enumerate}
+                \item $cosB = \dfrac{1}{2}$，故$sinB = \dfrac{\sqrt{3}}{2}$，根据正弦定理可知外接圆半径$R = 1$，$|3\vv{OB} + \vv{OA} + 2\vv{OC}|^2 = 9|\vv{OB}|^2+|\vv{OA}|^2+4|\vv{OC}|^2 + 6\vv{OA} \cdot \vv{OB} + 4\vv{OA} \cdot \vv{OC} + 12\vv{OB} \cdot \vv{OC} = 14 + (6cos\angle AOB -2 + 12cos\angle BOC)$，设$\angle BOC$为$\theta, \theta \in \left(\dfrac{\pi}{3}, \pi\right)$，则原式$ = 12+12cos\theta + 6 cos\left(\dfrac{4\pi}{3} - \theta\right) = 12 + 6\sqrt{3}sin\left(\dfrac{\pi}{3} - \theta\right) \in [12-6\sqrt{3}, 12)$ \\
+                因此$|3\vv{OB} + \vv{OA} + 2\vv{OC}| \in [3-\sqrt{3}, 2\sqrt{3})$
+                \item $cosB = \dfrac{1}{2}$，故$sinB = \dfrac{\sqrt{3}}{2}$，根据正弦定理可知外接圆半径$R = 1$，故以$O$为原点，$\vv{AC}$方向为$x$轴正方向建系，有$A\left(-\dfrac{\sqrt{3}}{2}, -\dfrac{1}{2}\right), C\left(\dfrac{\sqrt{3}}{2}, -\dfrac{1}{2}\right)$因为$\triangle{ABC}$为锐角三角形，因此$B(cos\theta, sin\theta), \theta \in \left(\dfrac{\pi}{6}, \dfrac{5\pi}{6}\right)$，故$3\vv{OB} + \vv{OA} + 2\vv{OC} = \left(3cos\theta+\dfrac{\sqrt{3}}{2}, 3sin\theta-\dfrac{3}{2}\right)$，故$|3\vv{OB} + \vv{OA} + 2\vv{OC}| = \sqrt{12+3\sqrt{3}cos\theta-9sin\theta} = \sqrt{12+6\sqrt{3}\left(\dfrac{1}{2}cos\theta - \dfrac{\sqrt{3}}{2}sin\theta\right)} = \sqrt{12+6\sqrt{3}sin\left(\dfrac{\pi}{6}-\theta\right)} \in [3-\sqrt{3}, 2\sqrt{3})$
+                \end{enumerate}
+        \end{enumerate}
+        \ps 分析对比
+        \begin{dingautolist}{172}
+            \item 第一问方法1是需要植入的模式，遇到三角形顶点为公共起点的一组基表示外心的式子，$\vv{BO} = x\vv{BA} + y \vv{BC}$，应考虑同时点乘，利用中垂线性质以构建关于系数的二元一次方程，目标是求解两个系数; \\
+            而方法2是利用了外心到三个顶点距离相等，但需注意平方前后对于求解系数并非充要，平方操作扩大了解的范围，类似于$A = \sqrt{B}$平方后会扩大$A$的范围. \\
+            \\
+            从图像角度理解：$2(x+y) = 3xy+1$可化为$y = \dfrac{2x-1}{3x-2}$，为双曲线形式，而原本$(x, y)$只对应双曲线左下方的一支，但平方操作扩大了其范围，对应了两支. \\
+            从图像角度线性规划理解求最值的过程，设动直线$x+y = k$，取最值对应了双曲线相切的情形. \\ 
+            \\
+            从等和线的角度来理解问题：像$\vv{BO} = x\vv{BA} + y \vv{BC}$这样共起点的一组基表示的向量，当其系数和为定值的时候，终点的运动轨迹是一条平行于这一组基的直线. \\
+            设$\vv{BO}$终点$O$所在的等和线为$l_1$，$AC$所在直线为$l_2$. 设$B$到$l_2$距离为$h$，易知当$h$大于$l_1, l_2$之间距离$d$时，系数和为正数，否则为负数. 系数和为正时，$B$到两直线距离之比即$O$所在等和线的系数和，即$x+y = \dfrac{h-d}{h}$，因此$h$越大，$x+y$越大，因此当$\triangle ABC$为等腰三角形时取得$x+y$的最大值.
+            \item 第二问利用平方操作则是合适的，因为此时对于求模长的最值平方前后是充要的，但无论是采用平方的方式还是建系的方式求解，关键都在于不能忽略锐角三角形的条件，确定好对应的变量的取值范围.
+        \end{dingautolist}
+    \end{jieda}
+
+    \item 已知$A(0, 1)$和$B(-3, 4)$，若$C$在$\angle AOB$的角平分线上，且$|\vv{OC}| = 2$，则$\vv{OC}$的坐标为\blkda[3]{$\left(-\dfrac{\sqrt{10}}{5}, \dfrac{3\sqrt{10}}{5}\right)$}
+    \begin{jieda}
+        设$D(0, 5)$，满足$|\vv{OD}| = |\vv{OB}|$，因为$C$在$\angle AOB$的角平分线上，即在$\angle DOB$的角平分线上所以存在实数$\lambda$满足$\vv{OC} = \lambda \cdot (\vv{OB} + \vv{OD})$，因此可设$C(-k, 3k), k>0$，又因为$|\vv{OC}| = 2$，所以$k = -\dfrac{\sqrt{10}}{5}$，因此$\vv{OC} = \left(-\dfrac{\sqrt{10}}{5}, \dfrac{3\sqrt{10}}{5}\right)$
+    \end{jieda}
+    
+    \item 若$|\vv{AB}| = 4$，$\vv{AC} = 3\vv{CB}$，平面内一点$P$满足$\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$，则$sin\angle PAB$的最大值为\blkda{$\dfrac{1}{3}$}
+    \begin{jieda}
+        $\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$即$cos\angle CPA = cos\angle CPB$，即$PC$为$\angle APB$的角平分线. \\
+        根据角平分线定理，以及$\vv{AC} = 3\vv{CB}$可知$\dfrac{|\vv{PA}|}{|\vv{PB}|} = 3$ \\
+        根据大角对大边可知$\angle PAB$为锐角（或零角，此时不构成三角形），因此其正弦值的最大值对应余弦值最小值，设$x = |\vv{PB}|$根据余弦定理有$cos\angle PAB = \dfrac{9x^2 + 16 - x^2}{24x} = \dfrac{1}{3} \cdot \left(x + \dfrac{2}{x}\right) \geq \dfrac{2\sqrt{2}}{3}$（当$x = \sqrt{2}$时取等号），因此$sin\angle PAB$的大值为$\dfrac{1}{3}$
+    \end{jieda}
+
+    \item 已知在$\triangle{ABC}$中，点$O$是$\triangle{ABC}$的外心，若$|\vv{AB}| = 4$，$\vv{AO} \cdot \vv{BC} = 4$，$\vv{AB} \cdot \vv{AC} = 12\sqrt{2}$，则$\triangle{ABC}$的面积为\blkda{$2\sqrt{6}$}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 方法1 \\
+            设$BC$边中点为$D$，因此$\vv{AD} \cdot \vv{BC} = \vv{AO} \cdot \vv{BC} = 4$，进一步以$\vv{AB}, \vv{AC}$为基进行拆解，得到$\dfrac{1}{2}(\vv{AB}+\vv{AC}) \cdot (\vv{AC} - \vv{AB}) = 4$
+            \item 方法2 \\
+            $\vv{AO} \cdot \vv{BC} = \vv{AO} \cdot (\vv{AC} - \vv{AB}) = \dfrac{|\vv{AC}|^2}{2} - \dfrac{|\vv{AB}|^2}{2} = 4$
+        \end{enumerate}
+        故$|\vv{AC}|^2 - |\vv{AB}|^2 = 8$，因此$|\vv{AC}| = 2\sqrt{6}$\\
+        故$cosA = \dfrac{\vv{AB} \cdot \vv{AC}}{|\vv{AB}| \cdot |\vv{AC}|} = \dfrac{\sqrt{3}}{2}$，因此$sinA = \dfrac{1}{2}$，故$S = \dfrac{1}{2} \times 4 \times 2\sqrt{6} \times \dfrac{1}{2} = 2\sqrt{6}$
+    \end{jieda}
+    \item 在$\triangle ABC$中，$\vv{AB} \perp \vv{AC}$，点$P$在线段$BC$上，且$\vv{AP} \cdot \vv{AC} = \vv{AP} \cdot \vv{AB} = 4$，则$|\vv{AB} + \vv{AC} + \vv{AP}|$的最小值为\blkda{6}
+    \begin{jieda}
+        根据$\vv{AP} \cdot \vv{AC} = \vv{AP} \cdot \vv{AB} = 4$可知$\vv{AP} \cdot (\vv{AC} - \vv{AB}) = 0$，即$\vv{AP} \perp \vv{BC}$，因此$\vv{AP} \cdot \vv{AB} = |\vv{AP}|^2 = 4$，即$|\vv{AP}| = 2$ \\
+        以$P$为原点，$\vv{PA}$为$x$轴正方向建立平面直角坐标系，故$A(2, 0)$，设$B(0, b), C(0, c)$，由$\vv{AB} \perp \vv{AC}$有$bc = -4$ \\
+        $\vv{AB} + \vv{AC} + \vv{AP} = (-6, b+c)$，$|\vv{AB} + \vv{AC} + \vv{AP}| = \sqrt{36 + (b+c)^2} \geq \sqrt{36 + b^2 + \dfrac{16}{b^2} - 8} \geq 6$（当$b = 2$时取等）
+    \end{jieda}
+\end{enumerate}
+
+\subsection*{费马点}
+\begin{enumerate}
+    \item 我们知道, 三角形中存在诸多特殊位置的点, 并且这些特殊点都具备一定的特殊性质.意大利学者托里拆利在研究时发现: 在三角形的三边分别向其外侧作等边三角形, 这三个等边三角形的外接圆交于一点 $T$ , 该点 $T$ 即称为托里拆利点 (以下简称“ $T$ 点”). 通过研究发现三角形中的“ $T$ 点”满足到三角形三个顶点的距离和 ${TA} + {TB} + {TC}$ 最小. 当 $\bigtriangleup  {ABC}$ 的三个内角均小于120 \textdegree 时,使得 $\angle {AOB} = \angle {BOC} = \angle {COA} = {120}^{ \circ  }$ 的点 $O$ 即为“ $T$ 点”，当 $\vartriangle  {ABC}$ 有一个内角大于或等于120 \textdegree 时，最大内角的顶点为“ $T$ 点”. 试用以上知识解决下面问题: 已知 $\bigtriangleup  {ABC}$ 的内角 $A,B,C$ 所对的边分别为 $a,b,c$ .
+    \begin{enumerate}
+        \item 若 $\sqrt{3}b - c\sin A = \sqrt{3}a\cos C$ ,则\ding{172}求 $A$，\ding{173}若 ${bc} = 4$ ，设点 $P$ 为 $\bigtriangleup  {ABC}$ 的“ $T$ 点”，求 $\vv{PA} \cdot  \vv{PB} + \vv{PB} \cdot  \vv{PC} + \vv{PC} \cdot  \vv{PA}$
+        \item 若 $a\cos B - b\cos A = c$ ，设 $P$ 点为 $\bigtriangleup  {ABC}$ 的“ $T$ 点”， $\left| \vv{PB}\right|  + \left| \vv{PC}\right|  = {2t}\left| \vv{PA}\right|$ ，求实数 $t$ 的最小值.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item \begin{dingautolist}{172}
+                \item 在 $\bigtriangleup  {ABC}$ 中，由正弦定理得 $\sqrt{3}\sin B - \sin C\sin A = \sqrt{3}\sin A\cos C$ ，
+
+                    $\because B = \pi  - \left( {A + C}\right)$ ,有 $\sin B = \sin \left( {A + C}\right)$ ,
+
+                    $\sqrt{3}\left( {\sin A\cos C + \cos A\sin C}\right)  - \sin C\sin A = \sqrt{3}\sin A\cos C$ ,
+
+                    $\sqrt{3}\cos A\sin C = \sin C\sin A,\therefore \sin C \neq  0,\therefore \tan A = \sqrt{3}$ ,又 $A \in  \left( {0,\pi }\right) ,\therefore A = \dfrac{\pi }{3}$
+                \item 由 \ding{172} 知 $A = \dfrac{\pi }{3}$ ，则 $\bigtriangleup  {ABC}$ 的三个角都小于 ${120}^{ \circ  }$ ，
+
+                    由 “ $T$ 点” 定义知: $\angle {APB} = \angle {BPC} = \angle {APC} = {120}^{ \circ  }$ ,
+
+                    设 $\left| \vv{PA}\right|  = x,\left| \vv{PB}\right|  = y,\left| \vv{PC}\right|  = z$ ,由 ${S}_{\bigtriangleup {APB}} + {S}_{\bigtriangleup {BPC}} + {S}_{\bigtriangleup {APC}} = {S}_{\bigtriangleup {ABC}}$ 得
+
+                    $\dfrac{1}{2}{xy} \cdot  \dfrac{\sqrt{3}}{2} + \dfrac{1}{2}{yz} \cdot  \dfrac{\sqrt{3}}{2} + \dfrac{1}{2}{xz} \cdot  \dfrac{\sqrt{3}}{2} = \dfrac{1}{2} \times  4 \times  \dfrac{\sqrt{3}}{2}$ ,整理得 ${xy} + {yz} + {xz} = 4$ ,
+
+                    所以 $\vv{PA} \cdot  \vv{PB} + \vv{PB} \cdot  \vv{PC} + \vv{PA} \cdot  \vv{PC} = {xy} \cdot  \left( {-\dfrac{1}{2}}\right)  + {yz} \cdot  \left( {-\dfrac{1}{2}}\right)  + {xz} \cdot  \left( {-\dfrac{1}{2}}\right)  =  - \dfrac{1}{2} \times  4 =  - 2$.
+
+            \end{dingautolist}
+            \item 由 $a\cos B - b\cos A = c$ ，结合正弦定理 $\sin A\cos B - \sin B\cos A = \sin C$
+
+            有 $\sin \left( {A - B}\right)  = \sin C,\because A,B,C$ 均为三角形内角, $\therefore A - B = C$ 或 $A - B + C = \pi$ (舍),即 $A = B + C = \pi  - A,\therefore A = \dfrac{\pi }{2}$ , 由点 $P$ 为 $\bigtriangleup  {ABC}$ 的“ $T$ 点”，得 $\angle {APB} = \angle {BPC} = \angle {APC} = {120}^{ \circ  }$
+
+            设 $\left| {PB}\right|  = m\left| {PA}\right| ,\left| {PC}\right|  = n\left| {PA}\right| ,\left| {PA}\right|  = x,\left( {m > 0,n > 0,x > 0}\right)$ ,
+
+            ${\left| AB\right| }^{2} = {x}^{2} + {m}^{2}{x}^{2} - {2m}{x}^{2}\cos \dfrac{2\pi }{3} = \left( {{m}^{2} + m + 1}\right) {x}^{2},$
+
+            ${\left| AC\right| }^{2} = {x}^{2} + {n}^{2}{x}^{2} - {2n}{x}^{2}\cos \dfrac{2\pi }{3} = \left( {{n}^{2} + n + 1}\right) {x}^{2},$
+
+            ${\left| BC\right| }^{2} = {m}^{2}{x}^{2} + {n}^{2}{x}^{2} - {2mn}{x}^{2}\cos \dfrac{2\pi }{3} = \left( {{m}^{2} + {n}^{2} + {mn}}\right) {x}^{2}$ ,
+
+            相加得 ${\left| AC\right| }^{2} + {\left| AB\right| }^{2} = {\left| BC\right| }^{2}$ ,得 $\left( {{n}^{2} + n + 1}\right) {x}^{2} + \left( {{m}^{2} + m + 1}\right) {x}^{2} = \left( {{m}^{2} + {n}^{2} + {mn}}\right) {x}^{2}$，整理得 $m + n + 2 = {mn}$ 
+            
+            由 $\left| {PB}\right|  + \left| {PC}\right|  = {2t}\left| {PA}\right|$ ,得 $m + n = {2t}$
+
+            于是 $m + n + 2 = {mn} \leq  {\left( \dfrac{m + n}{2}\right) }^{2}$（当且仅当 $m = n$ ,即 $m = n = 1 + \sqrt{3}$ 时取等号），即${t}^{2} - {2t} - 2 \geq  0$ ,而 $t > 0$ ,解得 $t \geq  1 + \sqrt{3}$ ,所以实数 $t$ 的最小值为 $1 + \sqrt{3}$ .
+        \end{enumerate}
+    \end{jieda}
 \end{enumerate}
