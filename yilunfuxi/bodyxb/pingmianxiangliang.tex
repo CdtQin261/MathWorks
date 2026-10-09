@@ -36,7 +36,7 @@
     \begin{jieda}
         $\vv{OP} = \dfrac{2}{3}\vv{OM} + \dfrac{1}{3} \vv{ON} = \left(5, \dfrac{10}{3}\right)$
     \end{jieda}
-    \item 已知$A(1,2), B(-4,2)$，$C$满足$\vv{AC} = \lambda \vv{CB}$，$O$为坐标原点，若$|\vv{OC}| = \sqrt{13}$，则$\lambda = $\blkda{4}.
+    \item 已知$A(1,2), B(-4,2)$，$C$满足$\vv{AC} = \lambda \vv{CB}$，$O$为坐标原点，若$|\vv{OC}| = \sqrt{13}$，则$\lambda = $\blkda{4 或$-\dfrac{2}{7}$}.
     \begin{jieda}
         $\vv{OC} = \dfrac{1}{1+\lambda} \vv{OA} + \dfrac{\lambda}{1+\lambda} \vv{OB}$，故$C\left(\dfrac{1-4\lambda}{1+\lambda}, 2\right)$，故$13 = 4 + \left(\dfrac{1-4\lambda}{1+\lambda}\right)^2$，解得$\lambda = 4$
     \end{jieda}
@@ -189,6 +189,11 @@
         即$\dfrac{9}{35} \vv{AB} \cdot \vv{AC} - \dfrac{1}{20}|\vv{AB}|^2 - \dfrac{1}{28}|\vv{AC}|^2 = 0$，代入$|\vv{AB}| = 10, |\vv{AC}| = 7$，得到$cos A = \dfrac{3}{8}$
     \end{jieda}
 
+\end{enumerate}
+
+\subsection*{数量积的范围（最值）问题与主元归一}
+\begin{enumerate}
+
     \item 在$\triangle ABC$中，$\angle BAC = \dfrac{\pi}{3}$，$\vv{AD} = 2\vv{DB}$，$P$为$CD$上一点，且满足$\vv{AP} = m\vv{AC} + \dfrac{1}{3}\vv{AB}$，若$\vv{AB} \cdot \vv{AC} = 4$，则$|\vv{AP}|$的最小值为\blkda{2}
     \begin{jieda}
         $\vv{AD} = 2\vv{DB} \Rightarrow \vv{AD} = \dfrac{2}{3}\vv{AB}$，故$\vv{AP} = m \vv{AC} + \dfrac{1}{2}\vv{AD}$，根据等和线结论可知$m = \dfrac{1}{2}$ \\
@@ -196,10 +201,6 @@
         根据$\vv{AB} \cdot \vv{AC} = 4$，$\angle BAC = \dfrac{\pi}{3}$知$|\vv{AB}| \cdot |\vv{AC}| = 8$ \\
         设$|\vv{AC}| = t$，则$|\vv{AP}|^2 = \dfrac{t^2}{4} + \dfrac{4}{3} + \dfrac{64}{9t^2} \geq 4$（当$t = \dfrac{4\sqrt{3}}{3}$时取等），故$|\vv{AP}| = 2$
     \end{jieda}
-\end{enumerate}
-
-\subsection*{数量积的范围（最值）问题与主元归一}
-\begin{enumerate}
     \item (2026$\cdot$上海春季卷$\cdot$10)在 $\bigtriangleup  {ABC}$ 中， $D$ 、 $E$ 在边 ${BC}$ 上，且 $\vv{BD} = \vv{DE} = \vv{EC}$ ， $\left| \vv{AD}\right|  = 1$ ， $\vv{AD}$ 与 $\vv{AE}$ 所成的夹角为 $\dfrac{\pi }{3}$ ，则 $\vv{AB} \cdot  \vv{AC}$ 的最大值为\blkda{$- \dfrac{39}{32}$}.
     
     \begin{center}
@@ -235,7 +236,18 @@
     
     \item 在正方形$ABCD$中，边长为2，$M$在$BC$边上，$N$在$CD$边上，满足$MN=\sqrt{2}$，求$\vv{AM}\cdot \vv{AN}$的取值范围\blkda{$[4, 8-2\sqrt{2}]$}
     \begin{jieda}
-        以A为原点，$\vv{AB}$为$x$轴正方向建系，设$\angle MNC = \theta, \theta \in \left[0, \dfrac{\pi}{2}\right]$，则$M(2, 2-\sqrt{2}sin\theta), N(2-\sqrt{2}cos\theta, 2)$，故$\vv{AM}\cdot \vv{AN} = 4-2\sqrt{2}cos\theta + 4 - 2\sqrt{2}sin\theta = 8 - 4sin(\theta + \dfrac{\pi}{4}) \in [4, 8-2\sqrt{2}]$
+        \begin{dingautolist}{172}
+            \item 方法1
+            
+            以A为原点，$\vv{AB}$为$x$轴正方向建系，设$\angle MNC = \theta, \theta \in \left[0, \dfrac{\pi}{2}\right]$，则$M(2, 2-\sqrt{2}sin\theta), N(2-\sqrt{2}cos\theta, 2)$，故$\vv{AM}\cdot \vv{AN} = 4-2\sqrt{2}cos\theta + 4 - 2\sqrt{2}sin\theta = 8 - 4sin\left(\theta + \dfrac{\pi}{4}\right) \in [4, 8-2\sqrt{2}]$
+            \item 方法2
+            
+            取$MN$中点$E$，则$\vv{AM} \cdot \vv{AN} = \left|\vv{AE}\right|^2 - \left(\dfrac{\sqrt{2}}{2}\right)^2$
+
+            $\left|\vv{CE}\right| = \dfrac{\sqrt{2}}{2}$，故$E$在以$C$为圆心的圆弧上，因此$\left|\vv{AE}\right|^2 \in \left[\dfrac{9}{2}, \dfrac{17}{2}-2\sqrt{2}\right]$
+
+            故$\vv{AM}\cdot \vv{AN} \in [4, 8-2\sqrt{2}]$
+        \end{dingautolist}
     \end{jieda}
 \end{enumerate}
 \subsection*{极化恒等式}
@@ -443,17 +455,6 @@
         \end{dingautolist}
     \end{jieda}
 
-    \item 已知$A(0, 1)$和$B(-3, 4)$，若$C$在$\angle AOB$的角平分线上，且$|\vv{OC}| = 2$，则$\vv{OC}$的坐标为\blkda[3]{$\left(-\dfrac{\sqrt{10}}{5}, \dfrac{3\sqrt{10}}{5}\right)$}
-    \begin{jieda}
-        设$D(0, 5)$，满足$|\vv{OD}| = |\vv{OB}|$，因为$C$在$\angle AOB$的角平分线上，即在$\angle DOB$的角平分线上所以存在实数$\lambda$满足$\vv{OC} = \lambda \cdot (\vv{OB} + \vv{OD})$，因此可设$C(-k, 3k), k>0$，又因为$|\vv{OC}| = 2$，所以$k = -\dfrac{\sqrt{10}}{5}$，因此$\vv{OC} = \left(-\dfrac{\sqrt{10}}{5}, \dfrac{3\sqrt{10}}{5}\right)$
-    \end{jieda}
-    
-    \item 若$|\vv{AB}| = 4$，$\vv{AC} = 3\vv{CB}$，平面内一点$P$满足$\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$，则$sin\angle PAB$的最大值为\blkda{$\dfrac{1}{3}$}
-    \begin{jieda}
-        $\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$即$cos\angle CPA = cos\angle CPB$，即$PC$为$\angle APB$的角平分线. \\
-        根据角平分线定理，以及$\vv{AC} = 3\vv{CB}$可知$\dfrac{|\vv{PA}|}{|\vv{PB}|} = 3$ \\
-        根据大角对大边可知$\angle PAB$为锐角（或零角，此时不构成三角形），因此其正弦值的最大值对应余弦值最小值，设$x = |\vv{PB}|$根据余弦定理有$cos\angle PAB = \dfrac{9x^2 + 16 - x^2}{24x} = \dfrac{1}{3} \cdot \left(x + \dfrac{2}{x}\right) \geq \dfrac{2\sqrt{2}}{3}$（当$x = \sqrt{2}$时取等号），因此$sin\angle PAB$的大值为$\dfrac{1}{3}$
-    \end{jieda}
 
     \item 已知在$\triangle{ABC}$中，点$O$是$\triangle{ABC}$的外心，若$|\vv{AB}| = 4$，$\vv{AO} \cdot \vv{BC} = 4$，$\vv{AB} \cdot \vv{AC} = 12\sqrt{2}$，则$\triangle{ABC}$的面积为\blkda{$2\sqrt{6}$}
     \begin{jieda}
@@ -466,6 +467,19 @@
         故$|\vv{AC}|^2 - |\vv{AB}|^2 = 8$，因此$|\vv{AC}| = 2\sqrt{6}$\\
         故$cosA = \dfrac{\vv{AB} \cdot \vv{AC}}{|\vv{AB}| \cdot |\vv{AC}|} = \dfrac{\sqrt{3}}{2}$，因此$sinA = \dfrac{1}{2}$，故$S = \dfrac{1}{2} \times 4 \times 2\sqrt{6} \times \dfrac{1}{2} = 2\sqrt{6}$
     \end{jieda}
+
+    \item 已知$A(0, 1)$和$B(-3, 4)$，若$C$在$\angle AOB$的角平分线上，且$|\vv{OC}| = 2$，则$\vv{OC}$的坐标为\blkda[3]{$\left(-\dfrac{\sqrt{10}}{5}, \dfrac{3\sqrt{10}}{5}\right)$}
+    \begin{jieda}
+        设$D(0, 5)$，满足$|\vv{OD}| = |\vv{OB}|$，因为$C$在$\angle AOB$的角平分线上，即在$\angle DOB$的角平分线上所以存在实数$\lambda$满足$\vv{OC} = \lambda \cdot (\vv{OB} + \vv{OD})$，因此可设$C(-k, 3k), k>0$，又因为$|\vv{OC}| = 2$，所以$k = -\dfrac{\sqrt{10}}{5}$，因此$\vv{OC} = \left(-\dfrac{\sqrt{10}}{5}, \dfrac{3\sqrt{10}}{5}\right)$
+    \end{jieda}
+
+    \item 若$|\vv{AB}| = 4$，$\vv{AC} = 3\vv{CB}$，平面内一点$P$满足$\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$，则$sin\angle PAB$的最大值为\blkda{$\dfrac{1}{3}$}
+    \begin{jieda}
+        $\dfrac{\vv{PA} \cdot \vv{PC}}{|\vv{PA}|} = \dfrac{\vv{PB} \cdot \vv{PC}}{|\vv{PB}|}$即$cos\angle CPA = cos\angle CPB$，即$PC$为$\angle APB$的角平分线. \\
+        根据角平分线定理，以及$\vv{AC} = 3\vv{CB}$可知$\dfrac{|\vv{PA}|}{|\vv{PB}|} = 3$ \\
+        根据大角对大边可知$\angle PAB$为锐角（或零角，此时不构成三角形），因此其正弦值的最大值对应余弦值最小值，设$x = |\vv{PB}|$根据余弦定理有$cos\angle PAB = \dfrac{9x^2 + 16 - x^2}{24x} = \dfrac{1}{3} \cdot \left(x + \dfrac{2}{x}\right) \geq \dfrac{2\sqrt{2}}{3}$（当$x = \sqrt{2}$时取等号），因此$sin\angle PAB$的大值为$\dfrac{1}{3}$
+    \end{jieda}
+
     \item 在$\triangle ABC$中，$\vv{AB} \perp \vv{AC}$，点$P$在线段$BC$上，且$\vv{AP} \cdot \vv{AC} = \vv{AP} \cdot \vv{AB} = 4$，则$|\vv{AB} + \vv{AC} + \vv{AP}|$的最小值为\blkda{6}
     \begin{jieda}
         根据$\vv{AP} \cdot \vv{AC} = \vv{AP} \cdot \vv{AB} = 4$可知$\vv{AP} \cdot (\vv{AC} - \vv{AB}) = 0$，即$\vv{AP} \perp \vv{BC}$，因此$\vv{AP} \cdot \vv{AB} = |\vv{AP}|^2 = 4$，即$|\vv{AP}| = 2$ \\

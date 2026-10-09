@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  8 OCT 2026 13:36
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  9 OCT 2026 11:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1682,7 +1682,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/pingmianxiangliang.aux) (./bodyxb/pingmianxiangliang_lianxi.aux))
+ (./mainxb.aux (./bodyxb/pingmianxiangliang.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1840,6 +1840,13 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
+ [1
+
+
+
+]
+File: bodyxb/src/96_701_1591_168_141_0.jpg Graphic file (type bmp)
+<bodyxb/src/96_701_1591_168_141_0.jpg>
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
@@ -1851,28 +1858,33 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
 
 File: bodyxb/src/135_1120_548_330_144_0.jpg Graphic file (type bmp)
 <bodyxb/src/135_1120_548_330_144_0.jpg>
-[1
-
-
-
-] [2]
+File: bodyxb/src/99_578_509_242_178_0.jpg Graphic file (type bmp)
+<bodyxb/src/99_578_509_242_178_0.jpg>
+[2]
+File: bodyxb/src/0_242_740_257_258_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_242_740_257_258_0.jpg>
+File: bodyxb/src/97_608_776_212_175_0.jpg Graphic file (type bmp)
+<bodyxb/src/97_608_776_212_175_0.jpg>
+ [3]
+File: bodyxb/src/98_1022_1632_180_169_0.jpg Graphic file (type bmp)
+<bodyxb/src/98_1022_1632_180_169_0.jpg>
+File: bodyxb/src/98_1275_1632_189_169_0.jpg Graphic file (type bmp)
+<bodyxb/src/98_1275_1632_189_169_0.jpg>
+ [4]
 File: bodyxb/src/4_240_432_342_185_0.jpg Graphic file (type bmp)
 <bodyxb/src/4_240_432_342_185_0.jpg>
+ [5]
 File: bodyxb/src/pingmianxiangliang_34q.png Graphic file (type bmp)
 <bodyxb/src/pingmianxiangliang_34q.png>
+ [6]
 File: bodyxb/src/1_240_198_307_304_0.jpg Graphic file (type bmp)
 <bodyxb/src/1_240_198_307_304_0.jpg>
- [3] [4]) [5]
-\openout2 = `bodyxb/pingmianxiangliang_lianxi.aux'.
-
- (./bodyxb/pingmianxiangliang_lianxi.tex
-File: bodyxb/src/3_241_1345_346_180_0.jpg Graphic file (type bmp)
-<bodyxb/src/3_241_1345_346_180_0.jpg>
- [6
-
-
-
-]) [7] (./mainxb.aux (./bodyxb/pingmianxiangliang.aux) (./bodyxb/pingmianxiangliang_lianxi.aux))
+ [7] [8]
+File: bodyxb/src/100_1341_2020_236_140_0.jpg Graphic file (type bmp)
+<bodyxb/src/100_1341_2020_236_140_0.jpg>
+File: bodyxb/src/95_516_1093_304_208_0.jpg Graphic file (type bmp)
+<bodyxb/src/95_516_1093_304_208_0.jpg>
+ [9] [10] [11] [12] [13]) [14] (./mainxb.aux (./bodyxb/pingmianxiangliang.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1881,12 +1893,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49490 strings out of 468168
- 1159861 string characters out of 5432815
- 1767703 words of memory out of 5000000
- 77213 multiletter control sequences out of 15000+600000
- 656598 words of font info for 111 fonts, out of 8000000 for 9000
+ 49606 strings out of 468168
+ 1166078 string characters out of 5432815
+ 1777287 words of memory out of 5000000
+ 77327 multiletter control sequences out of 15000+600000
+ 656614 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,18n,128p,808b,1249s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,22n,128p,808b,1364s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (7 pages).
+Output written on mainxb.pdf (14 pages).

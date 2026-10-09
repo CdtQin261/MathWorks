@@ -239,7 +239,7 @@
             $2\vv{BP} = 3\vv{AP}$，$2(\vv{OP} - \vv{OB}) = 3(\vv{OP} - \vv{OA})$，故$\vv{OP} = 3\vv{OA} - 2\vv{OB} = (-2, 15)$
         \end{jieda}
 
-        \item 已知$A(1,2), B(-4,2)$，$C$满足$\vv{AC} = \lambda \vv{CB}$，$O$为坐标原点，若$|\vv{OC}| = \sqrt{13}$，则$\lambda = $\blkda{4}.
+        \item 已知$A(1,2), B(-4,2)$，$C$满足$\vv{AC} = \lambda \vv{CB}$，$O$为坐标原点，若$|\vv{OC}| = \sqrt{13}$，则$\lambda = $\blkda{4或$-\dfrac{2}{7}$}.
         \begin{jieda}
             $\vv{OC} = \dfrac{1}{1+\lambda} \vv{OA} + \dfrac{\lambda}{1+\lambda} \vv{OB}$，故$C\left(\dfrac{1-4\lambda}{1+\lambda}, 2\right)$，故$13 = 4 + \left(\dfrac{1-4\lambda}{1+\lambda}\right)^2$，解得$\lambda = 4$
         \end{jieda}
@@ -1045,7 +1045,18 @@
         
         \item 在正方形$ABCD$中，边长为2，$M$在$BC$边上，$N$在$CD$边上，满足$MN=\sqrt{2}$，求$\vv{AM}\cdot \vv{AN}$的取值范围\blkda{$[4, 8-2\sqrt{2}]$}
         \begin{jieda}
-            以A为原点，$\vv{AB}$为$x$轴正方向建系，设$\angle MNC = \theta, \theta \in \left[0, \dfrac{\pi}{2}\right]$，则$M(2, 2-\sqrt{2}sin\theta), N(2-\sqrt{2}cos\theta, 2)$，故$\vv{AM}\cdot \vv{AN} = 4-2\sqrt{2}cos\theta + 4 - 2\sqrt{2}sin\theta = 8 - 4sin(\theta + \dfrac{\pi}{4}) \in [4, 8-2\sqrt{2}]$
+            \begin{dingautolist}{172}
+                \item 方法1
+                
+                以A为原点，$\vv{AB}$为$x$轴正方向建系，设$\angle MNC = \theta, \theta \in \left[0, \dfrac{\pi}{2}\right]$，则$M(2, 2-\sqrt{2}sin\theta), N(2-\sqrt{2}cos\theta, 2)$，故$\vv{AM}\cdot \vv{AN} = 4-2\sqrt{2}cos\theta + 4 - 2\sqrt{2}sin\theta = 8 - 4sin\left(\theta + \dfrac{\pi}{4}\right)  \in [4, 8-2\sqrt{2}]$
+                \item 方法2
+                
+                取$MN$中点$E$，则$\vv{AM} \cdot \vv{AN} = \left|\vv{AE}\right|^2 - \left(\dfrac{\sqrt{2}}{2}\right)^2$
+
+                $\left|\vv{CE}\right| = \dfrac{\sqrt{2}}{2}$，故$E$在以$C$为圆心的圆弧上，因此$\left|\vv{AE}\right|^2 \in \left[\dfrac{9}{2}, \dfrac{17}{2}-2\sqrt{2}\right]$
+
+                故$\vv{AM}\cdot \vv{AN} \in [4, 8-2\sqrt{2}]$
+            \end{dingautolist}
         \end{jieda}
         
         \item 已知圆$O$的半径为1，$PA, PB$为该圆的两条切线，$A, B$为两切点，那么$\vv{PA} \cdot \vv{PB}$的最小值是\blkda[2]{$-3 + 2\sqrt{2}$}
