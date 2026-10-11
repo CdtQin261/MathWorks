@@ -274,11 +274,17 @@
     
     由\ding{174}可知${y}_{1}{y}_{2} =  - {p}^{2},{x}_{1}{x}_{2} = \dfrac{{y}_{1}^{2}}{2p} \cdot  \dfrac{{y}_{2}^{2}}{2p} = \dfrac{{\left( {y}_{1}{y}_{2}\right) }^{2}}{4{p}^{2}} = \dfrac{{p}^{4}}{4{p}^{2}} = \dfrac{{p}^{2}}{4}$ . 
 
-    \item 在直角梯形$AA_1B_1B$中存在3个特殊垂直关系：以$AB$为直径的圆与准线相切于$M_1$、$M_1F \bot AB$、$A_1F \bot B_1F$
+    \item 在直角梯形$AA_1B_1B$中存在3个特殊垂直关系：$A,B$处的切线垂直且交点在准线上（以$AB$为直径的圆与准线相切于$M_1$）、$M_1F \bot AB$、$A_1F \bot B_1F$
     
     证明如下：
-    
+
+    两直线焦点为$\left(-\dfrac{p}{2}, \dfrac{y_1+y_2}{2}\right)$
+
     $MM_1$垂直于准线，且$|MM_1| = \dfrac{|AA_1|+|BB_1|}{2} = \dfrac{|AB|}{2}$，所以以$AB$为直径的圆与准线相切于$M_1$
+
+    $A$处切线为$l_1: y_1y = p(x_1+x)$，法向量为$\vv{n_1} = (y_1, p)$；$B$处切线为$l_2: y_2y = p(x_2+x)$，法向量为$\vv{n_2} = (y_2, p)$，根据上面的结论易知$\vv{n_1} \bot \vv{n_2}$，因此$l_1 \bot l_2$
+    
+    $M_1\left(-\dfrac{p}{2}, \dfrac{y_1+y_2}{2}\right)$，在$l_1$上，令$x = -\dfrac{p}{2}$，则$p\left(x_1-\dfrac{p}{2}\right) = \dfrac{y_1^2-p^2}{2} = \dfrac{y_1+y_2}{2}y_1$，故$M_1$在$l_1$上，同理$M_1$在$l_2$上.
 
     $M_1\left(-\dfrac{p}{2}, \dfrac{y_1+y_2}{2}\right)$，$\vv{FM_1} = \left(-p, \dfrac{y_1+y_2}{2}\right)$，$\vv{FA} = \left(x_1-\dfrac{p}{2}, y_1\right) = \left(\dfrac{y_1^2}{2p}-\dfrac{p}{2}, y_1\right)$，故$\vv{FA} \cdot \vv{FM_1} = -\dfrac{y_1^2}{2}+\dfrac{p^2}{2}+\dfrac{y_1^2+y_1y_2}{2} = 0$，即$M_1F \bot AB$
 
