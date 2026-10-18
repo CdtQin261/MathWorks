@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  21 SEP 2026 14:11
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  15 OCT 2026 10:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2716,7 +2716,7 @@ File: bodyxb/src/132_675_1218_194_163_0.jpg Graphic file (type bmp)
 File: bodyxb/src/183_167_1191_414_209_0.jpg Graphic file (type bmp)
 <bodyxb/src/183_167_1191_414_209_0.jpg>
 
-Overfull \hbox (25.67578pt too wide) in paragraph at lines 8169--8179
+Overfull \hbox (25.67578pt too wide) in paragraph at lines 8171--8181
 [][] 
  []
 
@@ -2930,7 +2930,7 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 Here is how much of TeX's memory you used:
  53159 strings out of 468168
  1318482 string characters out of 5432815
- 1768724 words of memory out of 5000000
+ 1767724 words of memory out of 5000000
  80497 multiletter control sequences out of 15000+600000
  656710 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
