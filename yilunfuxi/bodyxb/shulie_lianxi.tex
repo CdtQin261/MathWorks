@@ -1,0 +1,125 @@
+\subsection*{数列}
+\begin{enumerate}
+    \item 已知$a = 243, b = 3$，$c$是$a, b$的等比中项
+    \begin{enumerate}
+        \item 若$d, e$分别是$a, c$和$c, b$的等差中项，则$a+b+c+d+e = $\blkda[4]{423或315}
+        \item 若$d, e$分别是$a, c$和$c, b$的等比中项，则$a+b+c+d+e = $\blkda[4]{363或345或201或183}
+    \end{enumerate}
+    \begin{jieda}
+        首先可以得到$c = -27$或27.
+        \begin{enumerate}
+            \item $a+b+c+d+e = a+b+c + \dfrac{a+c}{2} + \dfrac{b+c}{2} = \dfrac{3(a+b)}{2} + 2c = $ 423或315
+            \item 此时必有$c = 27$，\begin{enumerate}[1.]
+                \item $d = 81, e = 9$，$a+b+c+d+e = 363$
+                \item $d = 81, e = -9$，$a+b+c+d+e = 345$
+                \item $d = -81, e = 9$，$a+b+c+d+e = 201$
+                \item $d = -81, e = -9$，$a+b+c+d+e = 183$
+            \end{enumerate}
+        \end{enumerate}
+    \end{jieda}
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 和等差数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和分别为 ${S}_{n}$ 和 ${T}_{n}$ ,且 $\dfrac{{S}_{n}}{T_n} = \dfrac{{5n} + {63}}{n + 3}$ ,则使得 $\dfrac{a_n}{b_n}$整数的正整数 $n$ 的个数为 \dotfill{(\kh{B})}
+    \xx{6}{7}{8}{9}
+    \begin{jieda}
+        由于 ${S}_{{2n} - 1} = \dfrac{\left( {{a}_{1} + {a}_{{2n} - 1}}\right) \left( {{2n} - 1}\right) }{2} = \dfrac{2{a}_{n}\left( {{2n} - 1}\right) }{2} = \left( {{2n} - 1}\right) {a}_{n}$
+        
+        所以 $\dfrac{{a}_{n}}{{b}_{n}} = \dfrac{{S}_{{2n} - 1}}{{T}_{{2n} - 1}} = \dfrac{5\left( {{2n} - 1}\right)  + {63}}{{2n} - 1 + 3} = \dfrac{{5n} + {29}}{n + 1} = 5 + \dfrac{24}{n + 1}$ 
+        
+        要使 $\dfrac{{a}_n}{b_n}$ 为整数,则 $n + 1$ 为 24 的因数,由于 $n + 1 \geq  2$ ,故 $n + 1$ 可以为2,3,4,6,8,12,24,故满足条件的正整数 $n$ 的个数为 7 个
+    \end{jieda}
+
+    \item (2024$\cdot$黄浦区一模$\cdot$17)已知等比数列 $\left\{  {a}_{n}\right\}$ 是严格增数列，其第 3、4、5 项的乘积为 1000，并且这三项分别乘以 4、3、2 后，所得的三个数依次成等差数列.
+    \begin{enumerate}
+        \item 求数列 $\left\{  {a}_{n}\right\}$ 的通项公式
+        \item 若对任意的正整数 $n$ ，数列 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和 ${S}_{n} = 3\left( {1 - {2}^{n}}\right)$ ， 向量 $\left( {{a}_{n},{b}_{n}}\right)$ 的模为 ${t}_{n}$ ，求数列 $\left\{  {t}_{n}\right\}$ 的前 $n$ 项和.
+    \end{enumerate}
+    \begin{jieda}
+        \begin{enumerate}
+            \item 设等比数列 $\left\{  {a}_{n}\right\}$ 的公比为 $q$ ，由 ${a}_{3}{a}_{4}{a}_{5} = {1000}$ ,可得 ${a}_{4}^{3} = {1000}$ ,即 ${a}_{4} = {10}$ . 又由 $4{a}_{3},3{a}_{4},2{a}_{5}$ 成等差数列,可得 $4{a}_{3} + 2{a}_{5} = 6{a}_{4}$ ,即 $\dfrac{40}{q} + {20q} = {60}$ ,解得 $q = 1$ 或 2,又 $\left\{  {a}_{n}\right\}$ 是严格增数列,所以 $q = 2$ ,故 ${a}_{n} = {a}_{4}{q}^{n - 4} =  {10} \cdot  {2}^{n - 4} = 5 \cdot  {2}^{n - 3}$
+            \item 由 ${S}_{n} = 3\left( {1 - {2}^{n}}\right)$ ，可得当 $n \geq  2$ 时， ${b}_{n} = {S}_{n} - {S}_{n - 1} =  3\left( {{2}^{n - 1} - {2}^{n}}\right)  =  - 3 \cdot  {2}^{n - 1}$ ,又 ${b}_{1} = {S}_{1} =  - 3 =  - 3 \cdot  {2}^{1 - 1}$ ,所以对一切正整数 $n$ ,都有 ${b}_{n} =  - 3 \cdot  {2}^{n - 1}$ ,所以 ${t}_{n} = \sqrt{{a}_{n}^{2} + {b}_{n}^{2}} =  \sqrt{{\left( 5 \cdot  {2}^{n - 3}\right) }^{2} + {\left( -3 \cdot  {2}^{n - 1}\right) }^{2}} = {13} \cdot  {2}^{n - 3}$ ,所以 $\left\{  {t}_{n}\right\}$ 的前 $n$ 和为 $\dfrac{13}{4}\left( {1 + 2 + \cdots  + {2}^{n - 1}}\right)  = \dfrac{13}{4} \cdot  \dfrac{1 - {2}^{n}}{1 - 2} = \dfrac{13}{4}\left( {{2}^{n} - 1}\right)$ .
+        \end{enumerate}
+    \end{jieda}
+
+    \item 若等差数列$\{a_n\}$的前4项和为1，前8项和为4，则$a_{17} + a_{18} +a_{19} +a_{20} = $\blkda{9}
+    \begin{jieda}
+        $a_{1} + a_{2} +a_{3} +a_{4} = 1$；$a_{5} + a_{6} +a_{7} +a_{8} = 3$；$a_{9} + a_{10} +a_{11} +a_{12} = 5$；$a_{13} + a_{14} +a_{15} +a_{16} = 7$；$a_{17} + a_{18} +a_{19} +a_{20} = 9$
+    \end{jieda}
+
+    \item 已知等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和为 ${S}_{n},$ 若 ${S}_{23} > 0,{S}_{24} < 0$ ,则下列结论正确的是 \dotfill{(\kh{D})}
+    \xx{数列 $\left\{  {a}_{n}\right\}$ 是递增数列}{${a}_{13} > 0$}{当 ${S}_{n}$ 取得最大值时, $n = {13}$}{$\left| {a}_{13}\right|  > \left| {a}_{12}\right|$}
+
+
+    \item 已知$S_n = 2^n+1$，求$\{a_n\}$的通项公式
+    \begin{jieda}
+        $a_1 = S_1 = 3$，当$n \geq 2$时，$a_n = S_n - S_{n-1} = (2^n+1) - (2^{n-1}+1) = 2^{n-1}$，故$a_n = \left\{\begin{array}{ll}
+             3, & n = 1 \\
+             2^{n-1}, & n \geq 2
+        \end{array}\right.$
+    \end{jieda}
+    \item 若数列$\{a_n\}$满足$a_1 + \dfrac{a_2}{2} + \dfrac{a_3}{3} + \cdots + \dfrac{a_n}{n} = 3^n - 2$，则$a_n = $\blkda[3.5]{$\left \{\begin{array}{ll}
+            2n \cdot3^{n-1} & ,n \geq 2  \\
+            1 & ,n = 1
+    \end{array} \right .$}
+    \begin{jieda}
+        设$b_n = \dfrac{a_n}{n}$，首先计算可知$a_1 = 1, b_1 = 1$. 设$b_n$的前$n$项和为$S_n$，则$\left \{ \begin{array}{l}
+            S_n = 3^n - 2  \\
+            S_{n-1} = 3^{n-1} - 2
+        \end{array} \right. \Rightarrow b_n = \left \{\begin{array}{ll}
+            2 \cdot 3^{n-1} & ,n \geq 2  \\
+            1 & ,n = 1 
+        \end{array} \right .$，故$a_n = \left \{\begin{array}{ll}
+            2n \cdot3^{n-1} & ,n \geq 2  \\
+            1 & ,n = 1 
+        \end{array} \right .$
+    \end{jieda}
+
+
+    \item 若数列$\{a_n\}$满足$(n-1)a_n = (n+1)a_{n-1}(n \geq 2), a_1 = 2$，则满足$a_n < 930$的最大正整数$n = $\blkda{29}
+    \begin{jieda}
+        根据递推关系可知$a_n \neq 0$，故$\dfrac{a_n}{a_{n-1}} = \dfrac{n+1}{n-1}$，故累乘得到$a_n = n(n+1)(n \geq 2)$，经检验$a_n = n(n+1)$. 故$a_{30} = 930$，因此$n = 29$.
+    \end{jieda}
+
+    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 3a_n + n + 1$，则$a_n = $\blkda[2.5]{$\dfrac{3^{n+1}-2n-3}{4}$}
+    \begin{jieda}
+        设$a_{n+1} + x \cdot (n+1) + y = 3(a_n + x \cdot n + y)$，则$\left \{\begin{array}{l}
+            3x - x = 1  \\
+            3y - y - x = 1
+        \end{array} \right.$，解得$x = \dfrac{1}{2}, y = \dfrac{3}{4}$.因此令$b_n = a_n + \dfrac{n}{2} + \dfrac{3}{4}$，则$b_1 = \dfrac{9}{4}, b_{n+1} = 3b_n$，因此$\{b_n\}$是等比数列，$b_n = \dfrac{3}{4} \cdot 3^n$，故$a_n = \dfrac{3}{4} \cdot 3^n - \dfrac{n}{2} - \dfrac{3}{4} = \dfrac{3^{n+1}-2n-3}{4}$
+    \end{jieda}
+    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 3a_n+1$，则$a_n = $\blkda{$\dfrac{1}{2}(3^n - 1)$}
+    \begin{jieda}
+        设$a_{n+1} + x = 3(a_n + x)$，解得$x = \dfrac{1}{2}$. 因此令$b_n = a_n + \dfrac{1}{2}$，则$b_1 = \dfrac{3}{2}, b_{n+1} = 3b_n$，因此$\{b_n\}$是等比数列，$b_n = \dfrac{1}{2} \cdot 3^n$，故$a_n = \dfrac{1}{2}(3^n - 1)$ 
+    \end{jieda}
+    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 2a_n + 4 \cdot 3^{n+1}$，则$a_n = $\blkda[3.5]{$4 \cdot 3^{n+1} - 35 \cdot 2^{n-1}$}
+    \begin{jieda}
+        $a_{n+1} = 2a_n + 4 \cdot 3^{n+1}$即$\dfrac{a_{n+1}}{3^{n+1}} = \dfrac{2}{3} \cdot \dfrac{a_n}{3^n} + 4$，设$b_n = \dfrac{a_n}{3^n}$，则$b_1 = \dfrac{1}{3}, b_{n+1} = \dfrac{2}{3}b_n + 4$，设$c_n = b_n - 12$，则$c_1 = -\dfrac{35}{3}, c_{n+1} = \dfrac{2}{3}c_n$，因此$\{c_n\}$是等比数列，$c_n = -\dfrac{35}{2} \cdot \left ( \dfrac{2}{3} \right )^n$，故$b_n = 12 - \dfrac{35}{2}  \cdot \left ( \dfrac{2}{3} \right )^n$，$a_n = 4 \cdot 3^{n+1} - 35 \cdot 2^{n-1}$
+    \end{jieda}
+    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 2a_n^2$，则$a_n = $\blkda{$2^{2^{n-1}-1}$}
+    \begin{jieda}
+        $a_{n+1} = 2a_n^2$即$log_2(a_{n+1}) = 2 \cdot log_2(a_n) + 1$，设$b_n = log_2(a_n)$，则$b_1 = 0, b_{n+1} = 2b_n + 1$，故设$c_n = b_n + 1$，则$c_1 = 1, c_{n+1} = 2c_n$，故$c_n = 2^{n-1}$，故$b_n = 2^{n-1}-1$，因此$a_n = 2^{2^{n-1}-1}$.
+    \end{jieda}
+    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = \dfrac{a_n}{2a_n + 3}$，则$a_n = $\blkda[2.5]{$\dfrac{1}{2\cdot 3^{n-1}-1}$}
+    \begin{jieda}
+        $a_{n+1} = \dfrac{a_n}{2a_n + 3}$即$\dfrac{1}{a_{n+1}} = 2 + \dfrac{3}{a_n}$，设$b_n = \dfrac{1}{a_n}$，则$b_1 = 1, b_{n+1} = 3b_n + 2$，设$c_n = b_n + 1$，则$c_1 = 2, c_{n+1} = 3c_n$，故$\{c_n\}$是等比数列，$c_n = 2 \cdot 3^{n-1}$，故$b_n = 2\cdot 3^{n-1}-1, a_n = \dfrac{1}{2\cdot 3^{n-1}-1}$.
+    \end{jieda}
+
+    \item 已知数列$\{a_n\}$中，$a_1 = 3, a_{n+1} = \sqrt{a_n + 2}$ \dotfill{(\kh{A})}
+    \xx{数列$\{a_n\}$严格减}{数列$\{a_n\}$严格增}{数列$\{a_n\}$先减后增}{数列$\{a_n\}$先增后减}
+    \begin{jieda}
+        $y = x$与$y = \sqrt{x+2}$相交于$(2,2)$，当$x > 2$时$y = x$在$y = \sqrt{x+2}$上方. 因为$a_1 = 3$，所以$\{a_n\}$为严格减数列，趋于$2$.
+    \end{jieda}
+    \item 已知数列$\{a_n\}$各项都是正数，且$a^2_{n+1} - a_n = d$（$d$为常数，$n \in \mathbf{N^*}$），给出下列四个结论：
+    \begin{dingautolist}{172}
+        \item $\{a_n\}$的前$n$项和$S_n$有最小值.
+        \item 若$\{a_n\}$为严格增数列，则$d>0$
+        \item 若$\{a_n\}$为周期数列，则最小正周期可能为$2$.
+        \item 若$\{a_n\}$为常数列，则$d \geq -\dfrac{1}{4}$
+    \end{dingautolist}其中正确的结论是\blkda{\ding{172} \ding{173} \ding{175}}
+    \begin{jieda}
+        \begin{dingautolist}{172}
+            \item $\{a_n\}$各项均为正数，故必有$\{S_n\}$严格增，故其最小值为$S_1 = a_1$.
+            \item $a^2_{n+1} - a_n = d$，因为$\{a_n\}$各项均为正数，所以$a_{n+1} = \sqrt{a_n + d}$，故$\{a_n\}$为严格增数列的必要条件是$y = \sqrt{x+d}$有部分图像在$y = x$上方，即$d \geq -\dfrac{1}{4}$，故可举出反例：$d = 0, a_1 = \dfrac{1}{2}$
+            \item 根据$y = \sqrt{x+d}$与$y = x$的关系可知$\{a_n\}$除常数列之外，不可能是周期数列
+            \item 只要$y = \sqrt{x+d}$与$y = x$有交点，$\{a_n\}$就可常数列.
+        \end{dingautolist}
+    \end{jieda}
+\end{enumerate}
