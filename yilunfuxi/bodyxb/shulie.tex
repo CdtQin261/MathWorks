@@ -189,6 +189,20 @@
         当 $n = 1$ 时, ${a}_{2} = \dfrac{{S}_{1}}{{a}_{1}} = 1$ . 当 $n \geq  2$ 时, ${S}_{n} = {a}_{n}{a}_{n + 1}$ , 所以 ${S}_{n - 1} = {a}_{n - 1}{a}_{n}$ ,两式相减得: ${a}_{n} = {a}_{n}\left( {{a}_{n + 1} - {a}_{n - 1}}\right)$ ,因为 ${a}_{n} \neq  0$ ,所以 ${a}_{n + 1} - {a}_{n - 1} = 1$ . 所以数列 $\left\{  {a}_{n}\right\}$ 的奇数项是以 ${a}_{1}$ 为首项,1 为公差的等差数列,且 ${a}_{1} \neq  0$ . 所以 $\mathop{\sum }\limits_{{i = 1}}^{6}{a}_{{2i} - 1} =  6{a}_{1} + \dfrac{6 \times  5}{2} \times  1 = 6{a}_{1} + {15}$ . 同理,数列 $\left\{  {a}_{n}\right\}$ 的偶数项是以 1 为首项，1 为公差的等差数列，所以 $\mathop{\sum }\limits_{{i = 1}}^{5}{a}_{2i} = 5 \times  1 + \dfrac{5 \times  4}{2} \times  1 = {15}$ . 所以 $\mathop{\sum }\limits_{{i = 1}}^{5}{a}_{2i} - \mathop{\sum }\limits_{{i = 1}}^{6}{a}_{{2i} - 1} = {15} - 6{a}_{1} - {15} =  - 6{a}_{1}$ . 若 $- 6{a}_{1} =  - 6 \Longrightarrow  {a}_{1} = 1$ ,则数列 $\left\{  {a}_{n}\right\}$ 各项均不为 0,数列 $\left\{  {a}_{n}\right\}$ 是无穷数列,故 ${A}$ 正确; 若 $- 6{a}_{1} = 0 \Longrightarrow  {a}_{1} = 0$ ,这与 ${a}_{1} \neq  0$ 矛盾,故 B 错误; 若 $- 6{a}_{1} = 6 \Longrightarrow  {a}_{1} =  - 1$ ,根据奇数项成公差为 1 的等差数列,则 ${a}_{3} = 0$ ,则 ${a}_{4}$ 无法求出,这与数列 $\left\{  {a}_{n}\right\}$ 是无穷数列矛盾,故 ${C}$ 错误; 若 $- 6{a}_{1} = {12} \Longrightarrow  {a}_{1} =  - 2$ ,根据奇数项成公差为 1 的等差数列,则 ${a}_{5} = 0$ ,则 ${a}_{6}$ 无法求出,这与数列 $\left\{  {a}_{n}\right\}$ 是无穷数列矛盾,故 ${D}$ 错误. 故选: A.
     \end{jieda}
 \end{enumerate}
+\subsection*{倒序相加、错位相减}
+\begin{enumerate}
+    \item 已知函数 $f\left( x\right)  = \dfrac{1}{2 + {4}^{x}}$ ,令 ${a}_{n} = f\left( \dfrac{n}{k}\right) \left( {k \in  {N}^{ * }}\right) ,n = 1,2,3,\cdots ,k$ ,则数列 $\left\{  {a}_{n}\right\}$ 的前 $k$ 项和 ${S}_{k} =$\blkda{$\dfrac{k}{4} - \dfrac{1}{12}$}.
+    \item 已知数列 $ \left\{  {a}_{n}\right\} $ 的通项公式为 $ {a}_{n} = \dfrac{n}{{2}^{n}} $ ,则此数列的前 $ n $ 项和 $ {S}_{n} = $\blkda[3]{$ 2 - \dfrac{1}{{2}^{n - 1}} - \dfrac{n}{{2}^{n}} $}
+    \begin{jieda}
+        由题知 $ {S}_{n} = \dfrac{1}{2} + \dfrac{2}{4} + \dfrac{3}{8} + \cdots  + \dfrac{n}{{2}^{n}} $
+        
+        所以 $ \dfrac{1}{2}{S}_{n} = \dfrac{1}{4} + \dfrac{2}{8} + \dfrac{3}{16} + \cdots  + \dfrac{n - 1}{{2}^{n}} + \dfrac{n}{{2}^{n + 1}} $ 
+        
+        两式相减有 $ \dfrac{1}{2}{S}_{n} = \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \cdots  + \dfrac{1}{{2}^{n}} - \dfrac{n}{{2}^{n + 1}} = \dfrac{\dfrac{1}{2}\left( {1 - \dfrac{1}{{2}^{n}}}\right) }{1 - \dfrac{1}{2}} - \dfrac{n}{{2}^{n + 1}} $ ,
+        所以 $ {S}_{n} = 2 - \dfrac{1}{{2}^{n - 1}} - \dfrac{n}{{2}^{n}} $ .
+        故答案为: $ 2 - \dfrac{1}{{2}^{n - 1}} - \dfrac{n}{{2}^{n}} $
+    \end{jieda}
+\end{enumerate}
 \subsection*{累加法、累乘法}
 \begin{enumerate}
     \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = a_n + 2^n$，则$a_{10} = $\blkda{1023}
