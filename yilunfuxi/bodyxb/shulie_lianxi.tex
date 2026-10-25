@@ -49,8 +49,6 @@
 
     \item 若 $ f\left( x\right)  + f\left( {1 - x}\right)  = 2,{a}_{n} = f\left( 0\right)  + f\left( \dfrac{1}{n}\right)  + f\left( \dfrac{2}{n}\right)  + \ldots  + f\left( \dfrac{n - 1}{n}\right)  + f\left( 1\right) \left( {n \in  {N}^{ * }}\right) $ ,则数列 $ \left\{  {a}_{n}\right\} $ 的通项公式是\blkda[2]{${a}_{n} = n + 1 $}.
 
-    \item 已知数列$\{a_n\}$满足$a_1 = \dfrac{3}{2}, a_{n+1} = \dfrac{3a_n}{a_n+3}$，若$c_n = \dfrac{3^n}{a_n}$，则$c_1 + c_2 + \cdots + c_n = $\blkda[3]{$\dfrac{(2n+1)\cdot3^n-1}{4}$}
-
     \item 已知$S_n = 2^n+1$，求$\{a_n\}$的通项公式
     \begin{jieda}
         $a_1 = S_1 = 3$，当$n \geq 2$时，$a_n = S_n - S_{n-1} = (2^n+1) - (2^{n-1}+1) = 2^{n-1}$，故$a_n = \left\{\begin{array}{ll}
@@ -81,29 +79,28 @@
         根据递推关系可知$a_n \neq 0$，故$\dfrac{a_n}{a_{n-1}} = \dfrac{n+1}{n-1}$，故累乘得到$a_n = n(n+1)(n \geq 2)$，经检验$a_n = n(n+1)$. 故$a_{30} = 930$，因此$n = 29$.
     \end{jieda}
 
-    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 3a_n + n + 1$，则$a_n = $\blkda[2.5]{$\dfrac{3^{n+1}-2n-3}{4}$}
+    \item 已知数列$\{a_n\}$满足$a_1 = 3, a_{n+1} = a_n + 8n+4$，则$\dfrac{1}{a_1} + \dfrac{1}{a_2} + \cdots +\dfrac{1}{a_{2025}} = $\blkda{$\dfrac{2025}{4051}$}
     \begin{jieda}
-        设$a_{n+1} + x \cdot (n+1) + y = 3(a_n + x \cdot n + y)$，则$\left \{\begin{array}{l}
-            3x - x = 1  \\
-            3y - y - x = 1
-        \end{array} \right.$，解得$x = \dfrac{1}{2}, y = \dfrac{3}{4}$.因此令$b_n = a_n + \dfrac{n}{2} + \dfrac{3}{4}$，则$b_1 = \dfrac{9}{4}, b_{n+1} = 3b_n$，因此$\{b_n\}$是等比数列，$b_n = \dfrac{3}{4} \cdot 3^n$，故$a_n = \dfrac{3}{4} \cdot 3^n - \dfrac{n}{2} - \dfrac{3}{4} = \dfrac{3^{n+1}-2n-3}{4}$
+        根据$a_{n+1} - a_n = 8n+4$，累加可得$a_n = a_1 + (12 + 8n-4) \times \dfrac{n-1}{2} = 4n^2-1 (n\geq2)$，经检验$a_n = 4n^2 - 1$，故$\dfrac{1}{a_n} = \dfrac{1}{(2n-1)\cdot(2n+1)} = \dfrac{1}{2}\left(\dfrac{1}{2n-1} - \dfrac{1}{2n+1}\right)$，故$\dfrac{1}{a_1} + \dfrac{1}{a_2} + \cdots +\dfrac{1}{a_{2025}} = \dfrac{1}{2}\left(1 - \dfrac{1}{4051}\right) = \dfrac{2025}{4051}$
     \end{jieda}
-    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 3a_n+1$，则$a_n = $\blkda{$\dfrac{1}{2}(3^n - 1)$}
+
+    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 3a_n + 2n^2 + n + 1$，则$a_n = $\blkda[3.5]{$\dfrac{7 \cdot 3^n - 4n^2 - 6n - 7}{4}$}
     \begin{jieda}
-        设$a_{n+1} + x = 3(a_n + x)$，解得$x = \dfrac{1}{2}$. 因此令$b_n = a_n + \dfrac{1}{2}$，则$b_1 = \dfrac{3}{2}, b_{n+1} = 3b_n$，因此$\{b_n\}$是等比数列，$b_n = \dfrac{1}{2} \cdot 3^n$，故$a_n = \dfrac{1}{2}(3^n - 1)$ 
+        设$a_{n+1} + x \cdot (n+1)^2 + y \cdot (n+1) + z = 3(a_n + x \cdot n^2 + y \cdot n + z)$，则$\left \{ \begin{array}{l}
+                3x - x = 2  \\
+                3y - y - 2x = 1  \\
+                3z - z - y - x = 1
+        \end{array} \right.$，解得$\left \{ \begin{array}{l}
+                x = 1  \\
+                y = \dfrac{3}{2}  \\
+                z = \dfrac{7}{4}
+        \end{array} \right.$. 因此令$b_n = a_n + n^2 + \dfrac{3n}{2} + \dfrac{7}{4}$，则$b_1 = \dfrac{21}{4}, b_{n+1} = 3b_n$，因此$\{b_n\}$是等比数列，$b_n = \dfrac{7}{4} \cdot 3^n$，故$a_n = \dfrac{7}{4} \cdot 3^n - n^2 - \dfrac{3n}{2} - \dfrac{7}{4} = \dfrac{7 \cdot 3^n - 4n^2 - 6n - 7}{4}$
     \end{jieda}
-    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 2a_n + 4 \cdot 3^{n+1}$，则$a_n = $\blkda[3.5]{$4 \cdot 3^{n+1} - 35 \cdot 2^{n-1}$}
-    \begin{jieda}
-        $a_{n+1} = 2a_n + 4 \cdot 3^{n+1}$即$\dfrac{a_{n+1}}{3^{n+1}} = \dfrac{2}{3} \cdot \dfrac{a_n}{3^n} + 4$，设$b_n = \dfrac{a_n}{3^n}$，则$b_1 = \dfrac{1}{3}, b_{n+1} = \dfrac{2}{3}b_n + 4$，设$c_n = b_n - 12$，则$c_1 = -\dfrac{35}{3}, c_{n+1} = \dfrac{2}{3}c_n$，因此$\{c_n\}$是等比数列，$c_n = -\dfrac{35}{2} \cdot \left ( \dfrac{2}{3} \right )^n$，故$b_n = 12 - \dfrac{35}{2}  \cdot \left ( \dfrac{2}{3} \right )^n$，$a_n = 4 \cdot 3^{n+1} - 35 \cdot 2^{n-1}$
-    \end{jieda}
-    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = 2a_n^2$，则$a_n = $\blkda{$2^{2^{n-1}-1}$}
-    \begin{jieda}
-        $a_{n+1} = 2a_n^2$即$log_2(a_{n+1}) = 2 \cdot log_2(a_n) + 1$，设$b_n = log_2(a_n)$，则$b_1 = 0, b_{n+1} = 2b_n + 1$，故设$c_n = b_n + 1$，则$c_1 = 1, c_{n+1} = 2c_n$，故$c_n = 2^{n-1}$，故$b_n = 2^{n-1}-1$，因此$a_n = 2^{2^{n-1}-1}$.
-    \end{jieda}
-    \item 若数列$\{a_n\}$满足$a_1 = 1, a_{n+1} = \dfrac{a_n}{2a_n + 3}$，则$a_n = $\blkda[2.5]{$\dfrac{1}{2\cdot 3^{n-1}-1}$}
-    \begin{jieda}
-        $a_{n+1} = \dfrac{a_n}{2a_n + 3}$即$\dfrac{1}{a_{n+1}} = 2 + \dfrac{3}{a_n}$，设$b_n = \dfrac{1}{a_n}$，则$b_1 = 1, b_{n+1} = 3b_n + 2$，设$c_n = b_n + 1$，则$c_1 = 2, c_{n+1} = 3c_n$，故$\{c_n\}$是等比数列，$c_n = 2 \cdot 3^{n-1}$，故$b_n = 2\cdot 3^{n-1}-1, a_n = \dfrac{1}{2\cdot 3^{n-1}-1}$.
-    \end{jieda}
+    \item 已知数列 $\left\{  {a}_{n}\right\}  ,{a}_{1} = 1,{a}_{n + 1} = \dfrac{2}{3}{a}_{n} + 1$ ,则 ${a}_{n} =$ \blkda[2]{$3-3\cdot \left(\dfrac{2}{3}\right)^n$}.
+    \item 若数列$\{a_n\}$满足 ${a}_{1} = 2,{a}_{n + 1} = 2{a}_{n} + {3}^{n + 1}$，则$a_n = $\blkda[3.5]{$3^{n+1}-7\cdot2^{n-1}$}
+    \item 若数列$\{a_n\}$满足 ${a}_{1} = 2,{a}_{n} = \sqrt{{a}_{n - 1}}$，则$a_n = $\blkda{$2^\frac{1}{{2^{n-1}}}$}
+    \item 已知数列 $\left\{  {a}_{n}\right\}$ 满足 ${a}_{1} = 1,{a}_{n + 1} = \dfrac{{a}_{n}}{3{a}_{n} + 1}$ ,则 ${a}_{n} =$ \blkda{$\dfrac{1}{3n-2}$}.
+    \item 已知数列$\{a_n\}$满足$a_1 = \dfrac{3}{2}, a_{n+1} = \dfrac{3a_n}{a_n+3}$，若$c_n = \dfrac{3^n}{a_n}$，则$c_1 + c_2 + \cdots + c_n = $\blkda[3]{$\dfrac{(2n+1)\cdot3^n-1}{4}$}
 
     \item 已知数列$\{a_n\}$中，$a_1 = 3, a_{n+1} = \sqrt{a_n + 2}$ \dotfill{(\kh{A})}
     \xx{数列$\{a_n\}$严格减}{数列$\{a_n\}$严格增}{数列$\{a_n\}$先减后增}{数列$\{a_n\}$先增后减}
