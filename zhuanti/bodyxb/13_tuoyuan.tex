@@ -509,6 +509,36 @@
     \end{enumerate}
 
     
+    \item 斜椭圆
+    \begin{enumerate}
+        \item 已知复数 ${z}_1,{z}_2$ 满足 $\left| {{z}_1 + \sqrt{3} - {i}}\right|  + \left| {{z}_1 - \sqrt{3} + {i}}\right|  = 2\sqrt{5},{z}_2 = 2 + 2\sqrt{3}{i}$ ,(其中 ${i}$ 是虚数单位),则 $\left| {{z}_1 - {z}_2}\right|$ 的最小值为\blkda{3}
+        \begin{jieda}
+            设复数 ${z}_1$，${z}_2 = 2 + 2\sqrt{3}{i}$，$- \sqrt{3} + {i}$，$\sqrt{3} - {i}$ 在复平面内对应的点分别为 ${Z}_1\left( {x,y}\right) ,{Z}_2\left( {2,2\sqrt{3}}\right) ,{F}_1\left( {-\sqrt{3},1}\right) ,{F}_2\left( {\sqrt{3}, - 1}\right)$ 
+            
+            由题意可知: $\left| {{Z}_1{F}_1}\right|  + \left| {{Z}_1{F}_2}\right|  = 2\sqrt{5} > 4 = \left| {{F}_1{F}_2}\right|$，故${Z}_1$ 的轨迹表示焦点分别为 ${F}_1\left( {-\sqrt{3},1}\right) ,{F}_2\left( {\sqrt{3}, - 1}\right)$ 的椭圆,
+
+            \begin{center}
+            \includegraphics[width=0.3\textwidth]{bodyxb/src/0_13_153_215_205_0.png}
+            \end{center}
+
+            则长半轴长为 $a = \sqrt{5}$ ,半焦距 $c = 2$ ,短半轴长为 $b = \sqrt{{a}^2 - {c}^2} = 1$ ,
+
+            且该椭圆的长轴所在直线为 $y =  - \dfrac{\sqrt{3}}{3}x$ ,短轴所在直线为 $y = \sqrt{3}x$.
+
+            ${Z}_2$ 在 $y = \sqrt{3}x$ 上,且 $\left| {O{Z}_2}\right|  = 4$，若使得 $\left| {{z}_1 - {z}_2}\right|$ 最小,则需 $\left| {{Z}_1{Z}_2}\right|$ 取得最小值，即点 ${Z}_1$ 为第一象限内的短轴端点,此时 $\left| {{z}_1 - {z}_2}\right|  = \left| {O{Z}_2}\right|  - 1 = 3$ .
+        \end{jieda}
+        \item 已知复数 $z$ 满足 $\left| {z - 4{i}}\right|  + \left| {z + 5}\right|  = \sqrt{41}$ ( ${i}$ 为虚数单位)，则 $\left| {z - {i}}\right|$ 的最小值是\blkda{$\dfrac{15\sqrt{41}}{41}$}.
+        \begin{jieda}
+            \ps 不符合椭圆定义，轨迹是线段
+        \end{jieda}
+        \item 著名物理学家、数学家阿基米德利用 “逼近法”,得到椭圆的面积除以圆周率 $\pi$ 等于椭圆的长半轴长与短半轴长的乘积. 已知平面内,椭圆 $C : \dfrac{{x}^2}{9} + \dfrac{{y}^2}{{b}^2} = 1\left( {0 < b < 3}\right)$ 经过平移和旋转后，能得到以 $O\left( {0,0}\right)$ 为一个焦点，且过点 $A\left( {3,4}\right)$ 的椭圆 ${C}^{\prime }$ ，则椭圆 $C$ 面积的最大值为\blkda{$3\sqrt{5}\pi$.}
+        \begin{jieda}
+            椭圆面积公式$S = \pi ab$，$a = 3$，故应使得$b$尽可能大，$c$尽可能小，$e$尽可能小.
+
+            问题转化为已知椭圆存在一个长为$5$的焦半径，一个长为$1$的焦半径，根据焦半径公式$5 = a + ex_0$可知当取到长轴顶点时可使$e$取最小，此时$c = 2$，$b = \sqrt{5}$，$S = 3\sqrt{5}\pi$.
+        \end{jieda}
+    \end{enumerate}
+    
     \item 直线与椭圆的位置关系
     \begin{enumerate}
         \item 已知直线 $l : {kx} + y + 1 = 0$ ,椭圆 $C : \dfrac{{x}^{2}}{16} + \dfrac{{y}^{2}}{4} = 1$ ,则直线 $l$ 与椭圆 $C$ 的位置关系是 \dotfill{(\kh{C})}
@@ -704,7 +734,7 @@
                 所以 $ 4\left( {{x}_{1} - {x}_{2}}\right)  + 4\left( {{y}_{1} - {y}_{2}}\right)  = 0 $ .
                 当 $ {x}_{1} = {x}_{2} $ 时,由上式知 $ {y}_{1} = {y}_{2} $ ,故点 $ A,B $ 重合,与已知矛盾,因此 $ {x}_{1} \neq  {x}_{2} $ ,所以 $ \dfrac{{y}_{1} - {y}_{2}}{{x}_{1} - {x}_{2}} =  - 1 $ .
                 所以直线 $ {AB} $ 的方程为 $ y - 1 =  - \left( {x - 2}\right) $ ,即 $ x + y - 3 = 0 $ .
-                所以所求直线 $ \mathrm{{AB}} $ 的方程为 $ x + y - 3 = 0 $ .
+                所以所求直线 $ {{AB}} $ 的方程为 $ x + y - 3 = 0 $ .
                 \item 
                 根据圆心位于中垂线$CD$上，因此可以考虑求出中垂线上的弦的中点$E$坐标后计算$EA$的距离，判断其是否等于$EC$即可. 
                 

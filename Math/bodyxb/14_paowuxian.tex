@@ -481,32 +481,6 @@
 
         \ps 圆锥曲线统一结论：焦点弦一顶点在准线上的射影和另一顶点连线过焦点到准线的垂线段的中点.
     \end{jieda}
-
-    \item 已知点 $M\left( {m,4}\right)$ 在抛物线 $\Gamma  : {x}^{2} = {2py}\left( {p > 0}\right)$ 上,点 $F$ 为 $\Gamma$ 的焦点,且 $\left| {MF}\right|  = 5$ . 过点 $F$ 的直线 $l$ 与 $\Gamma$ 及圆 ${x}^{2} + {\left( y - 1\right) }^{2} = 1$ 依次相交于点 $A,B,C,D$ ,如图.
-    \begin{center}
-        \includegraphics[width=0.25\linewidth]{bodyxb//src/paowuxianqiexian.png}
-    \end{center}
-    \begin{enumerate}
-        \item 求抛物线 $\Gamma$ 的方程及点 $M$ 的坐标
-        \item 求 $\left| {AC}\right|  \cdot  \left| {BD}\right|$ 的值
-        \item 过 $A,B$ 两点分别作 $\Gamma$ 的切线 ${l}_{1},{l}_{2}$ ,且 ${l}_{1}$ 与 ${l}_{2}$ 相交于点 $P$ ,已知三角形 ${ABP}$ 外接圆的圆心为 $N$ ,求 $\vv{PF} \cdot  \vv{PN}$ 的最小值.
-    \end{enumerate}
-    \begin{jieda}
-        \begin{enumerate}
-            \item 因为点 $M\left( {m,4}\right)$ 在抛物线 $\Gamma  : {x}^{2} = {2py}\left( {p > 0}\right)$ 上,点 $F$ 为 $\Gamma$ 的焦点, $\left| {MF}\right|  = 5$，所以点 $M\left( {m,4}\right)$ 到抛物线准线的距离为 $\dfrac{p}{2} + 4 = 5$ ,得 $p = 2$，所以抛物线 $\Gamma$ 的方程为 ${x}^{2} = {4y}$，代入 $M\left( {m,4}\right)$ ,得 ${m}^{2} = 4 \times  4 = {16}$，所以 $m =  \pm  4$ ,所以 $M\left( {4,4}\right)$ 或 $M\left( {-4,4}\right)$ .
-            \item 由题意得,抛物线 $\Gamma$ 的焦点与 ${x}^{2} + {\left( y - 1\right) }^{2} = 1$ 的圆心重合,即为 $F\left( {0,1}\right)$，显然直线 ${AB}$ 斜率存在,所以设直线 ${AB}$ 方程为 $y = {kx} + 1$ ,点 $A\left( {{x}_{1},{y}_{1}}\right)$ 、 $B\left( {{x}_{2},{y}_{2}}\right)$，将直线 ${AB}$ 的方程与抛物线 $\Gamma$ 的方程联立 $\left\{  \begin{array}{l} y = {kx} + 1 \\  {x}^{2} = {4y} \end{array}\right.$ ,消去 $y$ 并整理得 ${x}^{2} - {4kx} - 4 = 0$，$\Delta  = {16}\left( {{k}^{2} + 1}\right)  > 0$ ,由韦达定理得 ${x}_{1} + {x}_{2} = {4k},{x}_{1}{x}_{2} =  - 4$ .
-            
-            由抛物线的定义可知 $\left| {AF}\right|  = {y}_{1} + 1,\left| {BF}\right|  = {y}_{2} + 1,{x}_{1} < 0,{x}_{2} > 0$ .故 $\left| {AC}\right|  \cdot  \left| {BD}\right|  = \left( {\left| {AF}\right|  - 1}\right)  \cdot  \left( {\left| {BF}\right|  - 1}\right)  = {y}_{1}{y}_{2} = \dfrac{{x}_{1}^{2}{x}_{2}^{2}}{16} = \dfrac{{\left( -4\right) }^{2}}{16} = 1$ ,即 $\left| {AC}\right|  \cdot  \left| {BD}\right|$ 的值为 1 .
-
-            \item 切线 ${AP}$ 的方程为 $y - \dfrac{{x}_{1}^{2}}{4} = \dfrac{1}{2}{x}_{1}\left( {x - {x}_{1}}\right)$ ,即 $y = \dfrac{{x}_{1}x}{2} - \dfrac{{x}_{1}^{2}}{4}$ ,切线 ${BP}$ 的方程为 $y = \dfrac{{x}_{2}x}{2} - \dfrac{{x}_{2}^{2}}{4}$
-            
-            联立两切线方程 $\left\{  \begin{array}{l} y = \dfrac{{x}_{1}x}{2} - \dfrac{{x}_{1}^{2}}{4} \\  y = \dfrac{{x}_{2}x}{2} - \dfrac{{x}_{2}^{2}}{4} \end{array}\right.$ ,解得 $\left\{  \begin{array}{l} x = \dfrac{{x}_{1} + {x}_{2}}{2} = {2k} \\  y = \dfrac{{x}_{1}{x}_{2}}{4} =  - 1 \end{array}\right.$ ,即 $P\left( {{2k}, - 1}\right)$ .
-            
-            由 ${k}_{PA} \cdot  {k}_{PB} = \dfrac{{x}_{1}}{2}\dfrac{{x}_{2}}{2} = \dfrac{{x}_{1}{x}_{2}}{4} =  - 1$ 得 ${PA} \bot  {PB}$ ,故 $N$ 是 ${AB}$ 的中点，而 ${y}_{1} + {y}_{2} = k\left( {{x}_{1} + {x}_{2}}\right)  + 2 = 4{k}^{2} + 2,{y}_{1}{y}_{2} = \dfrac{{x}_{1}^{2}}{4} \cdot  \dfrac{{x}_{2}^{2}}{4} = 1$，由中点坐标公式得 $N\left( {{2k},2{k}^{2} + 1}\right)$ 
-            
-            故 $\vv{PF} = \left( {-{2k},2}\right) ,\vv{PN} = \left( {0,2{k}^{2} + 2}\right) ,\vv{AB} = \left( {{x}_{2} - {x}_{1},{y}_{2} - {y}_{1}}\right)$，$\vv{PF} \cdot  \vv{PN} = 4{k}^{2} + 4 \geq  4$，当且仅当 $k = 0$ 时等号成立,故 $\vv{PF} \cdot  \vv{PN}$ 的最小值是 4 .
-        \end{enumerate}
-    \end{jieda}
     
     \item 抛物线 $C : y^2 = 4x$ 的焦点为 $F$ ,点 $D\left(2, 0\right)$ ,过 $F$ 的直线交 $C$ 于 $A,B$ 两点. 设直线 ${AD},{BD}$ 与 $C$ 的另一个交点分别为 $M,N$.
     \begin{enumerate}
