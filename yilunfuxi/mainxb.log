@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  26 OCT 2026 07:55
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  27 OCT 2026 21:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1815,6 +1815,11 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 28.
 
+[1
+
+
+
+]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1848,11 +1853,7 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
-[1
-
-
-
-] [2] [3] [4] [5]) [6] (./mainxb.aux (./bodyxb/shulie.aux))
+ [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]) [12] (./mainxb.aux (./bodyxb/shulie.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1861,12 +1862,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49411 strings out of 468168
- 1156749 string characters out of 5432815
- 1741286 words of memory out of 5000000
- 77147 multiletter control sequences out of 15000+600000
+ 49452 strings out of 468168
+ 1159304 string characters out of 5432815
+ 1741287 words of memory out of 5000000
+ 77188 multiletter control sequences out of 15000+600000
  656614 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,12n,128p,1412b,1117s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,13n,128p,1412b,1261s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (6 pages).
+Output written on mainxb.pdf (12 pages).
