@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  27 OCT 2026 16:26
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  28 OCT 2026 13:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1733,7 +1733,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./mainxb.aux (./bodyxb/10_shulie.aux))
+ (./mainxb.aux (./bodyxb/13_tuoyuan.aux) (./bodyxb/14_shuangquxian.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -2002,7 +2002,74 @@ Missing character: There is no ̃ ("303) in font lmmi10!
 [44]
 File: bodyxb//src/monge.png Graphic file (type bmp)
 <bodyxb//src/monge.png>
-) [45] (./mainxb.aux (./bodyxb/13_tuoyuan.aux))
+) [45]
+\openout2 = `bodyxb/14_shuangquxian.aux'.
+
+ (./bodyxb/14_shuangquxian.tex
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_2_677_634_290_211_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_2_677_634_290_211_0.jpg>
+ [46
+
+
+
+
+]
+Missing character: There is no ， ("FF0C) in font rm-lmr10!
+[47] [48]
+File: bodyxb/src/bo_d2a13mv7aajc738pd0qg_0_245_868_408_307_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d2a13mv7aajc738pd0qg_0_245_868_408_307_0.jpg>
+File: bodyxb/src/bo_d2a0hlbef24c73avno0g_2_242_1520_323_355_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d2a0hlbef24c73avno0g_2_242_1520_323_355_0.jpg>
+ [49] [50]
+File: bodyxb/src/bo_d2a0hlbef24c73avno0g_1_237_1565_394_394_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d2a0hlbef24c73avno0g_1_237_1565_394_394_0.jpg>
+ [51]
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_13_673_1558_301_262_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_13_673_1558_301_262_0.jpg>
+File: ./bodyxb/src/bo_d1chk83ef24c73d2s6gg_14_700_941_245_263_0.jpg Graphic file (type bmp)
+<./bodyxb/src/bo_d1chk83ef24c73d2s6gg_14_700_941_245_263_0.jpg>
+ [52]
+File: bodyxb//src/jiaodiansanjiaoxing1.png Graphic file (type bmp)
+<bodyxb//src/jiaodiansanjiaoxing1.png>
+ [53] [54]
+File: bodyxb//src/shuangquxianzhongweixian1.png Graphic file (type bmp)
+<bodyxb//src/shuangquxianzhongweixian1.png>
+File: bodyxb//src/jianjinxian1.png Graphic file (type bmp)
+<bodyxb//src/jianjinxian1.png>
+ [55]
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_3_622_832_399_241_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_3_622_832_399_241_0.jpg>
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_7_577_1925_492_225_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_7_577_1925_492_225_0.jpg>
+ [56] [57] [58]
+File: bodyxb/src/0_1159_1373_395_332_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_1159_1373_395_332_0.jpg>
+ [59] [60]
+File: bodyxb/src/0_1134_185_398_264_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_1134_185_398_264_0.jpg>
+File: bodyxb/src/0_1147_1875_368_354_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_1147_1875_368_354_0.jpg>
+ [61] [62]
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg>
+ [63]
+File: bodyxb/src/1_1248_548_340_330_0.jpg Graphic file (type bmp)
+<bodyxb/src/1_1248_548_340_330_0.jpg>
+File: bodyxb/src/1_1231_1414_318_312_0.jpg Graphic file (type bmp)
+<bodyxb/src/1_1231_1414_318_312_0.jpg>
+ [64] [65]
+File: bodyxb/src/1_1061_1048_393_267_0.jpg Graphic file (type bmp)
+<bodyxb/src/1_1061_1048_393_267_0.jpg>
+ [66]
+File: bodyxb/src/27jie9gaosan9yue20ti.png Graphic file (type bmp)
+<bodyxb/src/27jie9gaosan9yue20ti.png>
+ [67]
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_13_1109_1372_405_233_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_13_1109_1372_405_233_0.jpg>
+ [68] [69]
+File: bodyxb/src/1_238_1408_379_351_0.jpg Graphic file (type bmp)
+<bodyxb/src/1_238_1408_379_351_0.jpg>
+ [70]) [71] (./mainxb.aux (./bodyxb/13_tuoyuan.aux) (./bodyxb/14_shuangquxian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -2011,12 +2078,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49873 strings out of 468168
- 1180078 string characters out of 5432815
- 1738817 words of memory out of 5000000
- 77550 multiletter control sequences out of 15000+600000
+ 50085 strings out of 468168
+ 1190602 string characters out of 5432815
+ 1739170 words of memory out of 5000000
+ 77735 multiletter control sequences out of 15000+600000
  656702 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,934b,1571s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,17n,128p,1135b,1571s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (45 pages).
+Output written on mainxb.pdf (71 pages).

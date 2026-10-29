@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  27 OCT 2026 21:08
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  29 OCT 2026 18:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1682,7 +1682,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 16.
- (./mainxb.aux (./bodyxb/shulie.aux))
+ (./mainxb.aux (./bodyxb/shulie.aux) (./bodyxb/shulie_lianxi.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1853,7 +1853,14 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
- [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]) [12] (./mainxb.aux (./bodyxb/shulie.aux))
+ [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]) [12]
+\openout2 = `bodyxb/shulie_lianxi.aux'.
+
+ (./bodyxb/shulie_lianxi.tex [13
+
+
+
+] [14]) [15] (./mainxb.aux (./bodyxb/shulie.aux) (./bodyxb/shulie_lianxi.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1862,12 +1869,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49452 strings out of 468168
- 1159304 string characters out of 5432815
- 1741287 words of memory out of 5000000
- 77188 multiletter control sequences out of 15000+600000
+ 49487 strings out of 468168
+ 1160814 string characters out of 5432815
+ 1741703 words of memory out of 5000000
+ 77216 multiletter control sequences out of 15000+600000
  656614 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,13n,128p,1412b,1261s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (12 pages).
+Output written on mainxb.pdf (15 pages).
