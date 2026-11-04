@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  2 NOV 2026 13:48
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  3 NOV 2026 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1811,23 +1811,29 @@ File: bodyxb/src/bo_d20aucref24c73anc48g_140_392_1501_253_253_0.jpg Graphic file
 <bodyxb/src/bo_d20aucref24c73anc48g_140_392_1501_253_253_0.jpg>
 File: bodyxb/src/0_1168_71_368_340_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_1168_71_368_340_0.jpg>
+File: bodyxb/src/0_91_1303_366_338_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_91_1303_366_338_0.jpg>
 File: bodyxb/src/bo_d4ofiljef24c73bbsnjg_0_240_718_330_301_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d4ofiljef24c73bbsnjg_0_240_718_330_301_0.jpg>
-File: bodyxb/src/10_1249_1364_326_242_0.jpg Graphic file (type bmp)
-<bodyxb/src/10_1249_1364_326_242_0.jpg>
-File: bodyxb/src/156_1099_907_329_285_0.jpg Graphic file (type bmp)
-<bodyxb/src/156_1099_907_329_285_0.jpg>
  [1
 
 
 
 ]
+File: bodyxb/src/10_1249_1364_326_242_0.jpg Graphic file (type bmp)
+<bodyxb/src/10_1249_1364_326_242_0.jpg>
+File: bodyxb/src/156_1099_907_329_285_0.jpg Graphic file (type bmp)
+<bodyxb/src/156_1099_907_329_285_0.jpg>
+ [2]
 File: bodyxb/src/166_1155_295_308_233_0.jpg Graphic file (type bmp)
 <bodyxb/src/166_1155_295_308_233_0.jpg>
 File: bodyxb/src/159_1132_527_256_261_0.jpg Graphic file (type bmp)
 <bodyxb/src/159_1132_527_256_261_0.jpg>
 File: bodyxb/src/160_1182_172_315_227_0.jpg Graphic file (type bmp)
 <bodyxb/src/160_1182_172_315_227_0.jpg>
+ [3]
+File: bodyxb/src/118_607_1193_262_186_0.jpg Graphic file (type bmp)
+<bodyxb/src/118_607_1193_262_186_0.jpg>
 File: bodyxb/src/165_1060_344_356_249_0.jpg Graphic file (type bmp)
 <bodyxb/src/165_1060_344_356_249_0.jpg>
 
@@ -1839,17 +1845,33 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 161.
 
-[2]
+[4]
 File: bodyxb/src/159_1017_1734_298_264_0.jpg Graphic file (type bmp)
 <bodyxb/src/159_1017_1734_298_264_0.jpg>
+File: bodyxb/src/118_647_540_217_196_0.jpg Graphic file (type bmp)
+<bodyxb/src/118_647_540_217_196_0.jpg>
+ [5]
+File: bodyxb/src/111_1301_1944_227_225_0.jpg Graphic file (type bmp)
+<bodyxb/src/111_1301_1944_227_225_0.jpg>
 File: bodyxb/src/0_1352_1376_219_227_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_1352_1376_219_227_0.jpg>
+File: bodyxb/src/0_1280_1762_256_368_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_1280_1762_256_368_0.jpg>
+ [6]
 File: bodyxb/src/bo_d5b4icbef24c73bio840_1_232_1116_292_383_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d5b4icbef24c73bio840_1_232_1116_292_383_0.jpg>
- [3]
+File: bodyxb//src/zhuiti5.png Graphic file (type bmp)
+<bodyxb//src/zhuiti5.png>
 File: bodyxb/src/bo_d4lnl5ref24c739do320_3_241_1515_352_258_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d4lnl5ref24c739do320_3_241_1515_352_258_0.jpg>
-) [4] (./mainxb.aux (./bodyxb/litijihe.aux))
+File: bodyxb/src/bo_d4lnl5ref24c739do320_4_240_477_352_256_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d4lnl5ref24c739do320_4_240_477_352_256_0.jpg>
+ [7]
+File: bodyxb/src/bo_d50clvjef24c73bfi5dg_3_241_1779_393_349_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d50clvjef24c73bfi5dg_3_241_1779_393_349_0.jpg>
+File: bodyxb/src/bo_d50clvjef24c73bfi5dg_8_241_1196_358_343_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d50clvjef24c73bfi5dg_8_241_1196_358_343_0.jpg>
+) [8] (./mainxb.aux (./bodyxb/litijihe.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1858,12 +1880,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49444 strings out of 468168
- 1157969 string characters out of 5432815
- 1729287 words of memory out of 5000000
- 77181 multiletter control sequences out of 15000+600000
- 656542 words of font info for 104 fonts, out of 8000000 for 9000
+ 49565 strings out of 468168
+ 1163541 string characters out of 5432815
+ 1759287 words of memory out of 5000000
+ 77285 multiletter control sequences out of 15000+600000
+ 656574 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,1304b,1214s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,20n,128p,1304b,1224s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (4 pages).
+Output written on mainxb.pdf (8 pages).
