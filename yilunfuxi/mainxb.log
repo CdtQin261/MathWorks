@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  12 NOV 2026 13:54
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.1)  12 NOV 2026 18:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/haoyu/Documents/MathWorks/yilunfuxi/mainxb
-(/Users/haoyu/Documents/MathWorks/yilunfuxi/mainxb.tex
+**/Users/yudan/Documents/CdtQin/Math/MathWorks/yilunfuxi/mainxb
+(/Users/yudan/Documents/CdtQin/Math/MathWorks/yilunfuxi/mainxb.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./xbcls.cls
@@ -293,49 +293,89 @@ File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
 File: ctex-c5size.clo 2022/07/14 v2.5.10 c5size option (CTEX)
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-mac.def
 File: ctex-fontset-mac.def 2022/07/14 v2.5.10 macOS fonts definition (CTEX)
- (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.def
-File: ctex-fontset-macold.def 2022/07/14 v2.5.10 macOS fonts definition for Yosemite or earlier version (CTEX)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macnew.def
+File: ctex-fontset-macnew.def 2022/07/14 v2.5.10 macOS fonts definition for El Capitan or later version (CTEX)
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'STSong'. Check the typeset output, and if it is okay
-(fontspec)             then ignore this warning. Otherwise a different font
-(fontspec)             should be chosen.
+(fontspec)             'Songti SC Light'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "STKaiti/B" (it probably doesn't
-(fontspec)             exist).
+(fontspec)             Font family 'SongtiSCLight(0)' created for font 'Songti
+(fontspec)             SC Light' with options
+(fontspec)             [Script={CJK},BoldItalicFont={Kaiti SC
+(fontspec)             Bold},BoldFont={Songti SC Bold},ItalicFont={Kaiti SC}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Songti SC
+(fontspec)             Light/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Songti SC
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Kaiti
+(fontspec)             SC/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Kaiti SC
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+
+))) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+)
+
+Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault'
+(xeCJK)                (SongtiSCLight(0)).
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "STHeiti/I" (it probably doesn't
-(fontspec)             exist).
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'Songti SC'. Check the typeset output, and if it is
+(fontspec)             okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "STSong/BI" (it probably doesn't
-(fontspec)             exist).
+(fontspec)             Font family 'SongtiSC(0)' created for font 'Songti SC'
+(fontspec)             with options
+(fontspec)             [Script={CJK},UprightFont={*},BoldFont={Songti SC
+(fontspec)             Bold},AutoFakeSlant={0.2}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Songti
+(fontspec)             SC/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Songti SC
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Songti
+(fontspec)             SC/OT:script=hani;language=dflt;slant=0.2;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Songti
+(fontspec)             SC/B/OT:script=hani;language=dflt;"
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'STSong(0)' created for font 'STSong' with
-(fontspec)             options
-(fontspec)             [Script={CJK},BoldFont={STHeiti},ItalicFont={STKaiti}].
+(fontspec)             Font family 'lmroman10-regular(0)' created for font
+(fontspec)             'lmroman10-regular' with options
+(fontspec)             [Ligatures=TeX,Extension = .otf,UprightFont =
+(fontspec)             *,BoldFont = lmroman10-bold,ItalicFont =
+(fontspec)             lmroman10-italic,BoldItalicFont =
+(fontspec)             lmroman10-bolditalic].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"STSong/OT:script=hani;language=dflt;"
+(fontspec)             <->"[lmroman10-regular.otf]/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"STHeiti/OT:script=hani;language=dflt;"
+(fontspec)             <->"[lmroman10-bold.otf]/OT:script=latn;language=dflt;mapping=tex-text;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"STKaiti/OT:script=hani;language=dflt;"
+(fontspec)             <->"[lmroman10-italic.otf]/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[lmroman10-bolditalic.otf]/OT:script=latn;language=dflt;mapping=tex-text;"
 
-))) (/usr/local/texlive/2026/texmf-dist/tex/latex/ctex/config/ctex.cfg
-File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
  (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
@@ -617,8 +657,7 @@ File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -646,7 +685,8 @@ File: tikzlibrarymatrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
@@ -1597,29 +1637,29 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip102
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 718.
-Package hyperref Info: Option `plainpages' set `false' on input line 718.
-Package hyperref Info: Option `breaklinks' set `true' on input line 718.
-Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 718.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 718.
+Package hyperref Info: Option `colorlinks' set `true' on input line 745.
+Package hyperref Info: Option `plainpages' set `false' on input line 745.
+Package hyperref Info: Option `breaklinks' set `true' on input line 745.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 745.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 745.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\spacefactor' on input line 718.
+(hyperref)                removing `\spacefactor' on input line 745.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@m' on input line 718.
+(hyperref)                removing `\@m' on input line 745.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\spacefactor' on input line 718.
+(hyperref)                removing `\spacefactor' on input line 745.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@m' on input line 718.
+(hyperref)                removing `\@m' on input line 745.
 
-Package hyperref Info: Option `linktocpage' set `true' on input line 718.
+Package hyperref Info: Option `linktocpage' set `true' on input line 745.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1757,9 +1797,9 @@ Package hyperref Info: Link coloring ON on input line 16.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/yuanzhuiquxian.aux'.
+\openout2 = `bodyxb/zhixianheyuan.aux'.
 
- (./bodyxb/yuanzhuiquxian.tex
+ (./bodyxb/zhixianheyuan.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1808,65 +1848,18 @@ File: OMXyhex.fd
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 
-Package fontspec Info: 
-(fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'STFangsong'. Check the typeset output, and if it is
-(fontspec)             okay then ignore this warning. Otherwise a different
-(fontspec)             font should be chosen.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "STFangsong/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "STFangsong/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "STFangsong/I" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'STFangsong(0)' created for font
-(fontspec)             'STFangsong' with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
-
- [1
-
-
-
-]
-File: bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg>
-File: bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg>
- [2]
-File: bodyxb//src/jiaobanjing.png Graphic file (type bmp)
-<bodyxb//src/jiaobanjing.png>
- [3]
-File: bodyxb//src/shuangquxiandisandingyi.png Graphic file (type bmp)
-<bodyxb//src/shuangquxiandisandingyi.png>
-File: bodyxb//src/disandingyi3.png Graphic file (type bmp)
-<bodyxb//src/disandingyi3.png>
- [4]
-
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 470.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 5.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 470.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 5.
 
-[5]) [6] (./mainxb.aux (./bodyxb/yuanzhuiquxian.aux))
+[1
+
+
+
+] [2] [3]) [4] (./mainxb.aux (./bodyxb/zhixianheyuan.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1875,12 +1868,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49484 strings out of 468168
- 1160239 string characters out of 5432815
- 1736287 words of memory out of 5000000
- 77211 multiletter control sequences out of 15000+600000
- 656614 words of font info for 113 fonts, out of 8000000 for 9000
+ 49398 strings out of 468168
+ 1154117 string characters out of 5432816
+ 1734487 words of memory out of 5000000
+ 77133 multiletter control sequences out of 15000+600000
+ 656622 words of font info for 114 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,1589b,1177s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,128p,632b,1089s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (6 pages).
+Output written on mainxb.pdf (4 pages).
