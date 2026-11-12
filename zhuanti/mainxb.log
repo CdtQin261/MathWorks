@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  11 NOV 2026 10:09
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  12 NOV 2026 09:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1733,7 +1733,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./mainxb.aux (./bodyxb/13_tuoyuan.aux))
+ (./mainxb.aux (./bodyxb/13_tuoyuan.aux) (./bodyxb/14_shuangquxian.aux) (./bodyxb/15_paowuxian.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1914,22 +1914,67 @@ File: ./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.j
  [9]
 File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_92_183_382_263_0.jpg>
+ [10]
 File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_92_183_382_263_0.jpg>
- [10] [11]
+ [11]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 2170.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 2175.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 2170.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 2175.
 
+[12]
 
-LaTeX Warning: Command \~ invalid in math mode on input line 2245.
+LaTeX Warning: Command \~ invalid in math mode on input line 2250.
 
 Missing character: There is no ̃ ("303) in font lmmi10!
-[12]) [13] (./mainxb.aux (./bodyxb/13_tuoyuan.aux))
+) [13]
+\openout2 = `bodyxb/14_shuangquxian.aux'.
+
+ (./bodyxb/14_shuangquxian.tex [14
+
+
+
+
+] [15]
+File: bodyxb//src/jiaodiansanjiaoxing1.png Graphic file (type bmp)
+<bodyxb//src/jiaodiansanjiaoxing1.png>
+ [16] [17]
+File: bodyxb/src/0_1147_1875_368_354_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_1147_1875_368_354_0.jpg>
+ [18]
+File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg>
+File: bodyxb/src/1_1231_1414_318_312_0.jpg Graphic file (type bmp)
+<bodyxb/src/1_1231_1414_318_312_0.jpg>
+File: bodyxb/src/1_1061_1048_393_267_0.jpg Graphic file (type bmp)
+<bodyxb/src/1_1061_1048_393_267_0.jpg>
+ [19]
+File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_13_1109_1372_405_233_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d17r1jf7aajc7388ojlg_13_1109_1372_405_233_0.jpg>
+ [20]) [21]
+\openout2 = `bodyxb/15_paowuxian.aux'.
+
+ (./bodyxb/15_paowuxian.tex [22
+
+
+
+
+]
+File: bodyxb/src/bo_d19nc3f7aajc73895nqg_5_469_509_245_337_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d19nc3f7aajc73895nqg_5_469_509_245_337_0.jpg>
+ [23] [24]
+File: bodyxb//src/paowuxianqiexian.png Graphic file (type bmp)
+<bodyxb//src/paowuxianqiexian.png>
+ [25]
+File: bodyxb/src/bo_d3q39gjef24c73d0aopg_2_197_1610_292_304_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d3q39gjef24c73d0aopg_2_197_1610_292_304_0.jpg>
+File: bodyxb/src/0_241_348_364_347_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_241_348_364_347_0.jpg>
+ [26]) [27] (./mainxb.aux (./bodyxb/13_tuoyuan.aux) (./bodyxb/14_shuangquxian.aux) (./bodyxb/15_paowuxian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1938,12 +1983,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49597 strings out of 468168
- 1165452 string characters out of 5432815
- 1742817 words of memory out of 5000000
- 77301 multiletter control sequences out of 15000+600000
+ 49738 strings out of 468168
+ 1171617 string characters out of 5432815
+ 1743932 words of memory out of 5000000
+ 77418 multiletter control sequences out of 15000+600000
  656702 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,938b,1471s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,128p,1135b,1483s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (13 pages).
+Output written on mainxb.pdf (27 pages).
