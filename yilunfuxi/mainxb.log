@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  12 NOV 2026 09:48
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  12 NOV 2026 13:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1845,20 +1845,28 @@ Package fontspec Info:
 
 
 ]
+File: bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg>
 File: bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg>
+ [2]
 File: bodyxb//src/jiaobanjing.png Graphic file (type bmp)
 <bodyxb//src/jiaobanjing.png>
- [2]
+ [3]
+File: bodyxb//src/shuangquxiandisandingyi.png Graphic file (type bmp)
+<bodyxb//src/shuangquxiandisandingyi.png>
+File: bodyxb//src/disandingyi3.png Graphic file (type bmp)
+<bodyxb//src/disandingyi3.png>
+ [4]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 353.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 470.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 353.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 470.
 
-[3]) [4] (./mainxb.aux (./bodyxb/yuanzhuiquxian.aux))
+[5]) [6] (./mainxb.aux (./bodyxb/yuanzhuiquxian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1867,12 +1875,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49445 strings out of 468168
- 1158178 string characters out of 5432815
- 1739287 words of memory out of 5000000
- 77175 multiletter control sequences out of 15000+600000
+ 49484 strings out of 468168
+ 1160239 string characters out of 5432815
+ 1736287 words of memory out of 5000000
+ 77211 multiletter control sequences out of 15000+600000
  656614 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,1589b,1090s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,16n,128p,1589b,1177s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (4 pages).
+Output written on mainxb.pdf (6 pages).

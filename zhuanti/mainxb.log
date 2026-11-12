@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  12 NOV 2026 09:46
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  12 NOV 2026 13:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1896,6 +1896,8 @@ Package fontspec Info:
 
 
 ] [2]
+File: bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg>
 File: bodyxb//src/jiaobanjing.png Graphic file (type bmp)
 <bodyxb//src/jiaobanjing.png>
 File: bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg Graphic file (type bmp)
@@ -1906,12 +1908,12 @@ File: bodyxb/src/bo_d42u9js601uc738mlqp0_5_242_192_390_356_0.jpg Graphic file (t
  [4] [5] [6]
 File: bodyxb//src/tuoyuan9.png Graphic file (type bmp)
 <bodyxb//src/tuoyuan9.png>
+ [7]
 File: bodyxb/src/1_243_196_546_393_0.jpg Graphic file (type bmp)
 <bodyxb/src/1_243_196_546_393_0.jpg>
- [7] [8]
+ [8] [9]
 File: ./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg Graphic file (type bmp)
 <./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg>
- [9]
 File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
 <bodyxb/src/0_92_183_382_263_0.jpg>
  [10]
@@ -1920,15 +1922,15 @@ File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
  [11]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 2175.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 2122.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 2175.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 2122.
 
 [12]
 
-LaTeX Warning: Command \~ invalid in math mode on input line 2250.
+LaTeX Warning: Command \~ invalid in math mode on input line 2197.
 
 Missing character: There is no ̃ ("303) in font lmmi10!
 ) [13]
@@ -1948,11 +1950,11 @@ File: bodyxb/src/0_1147_1875_368_354_0.jpg Graphic file (type bmp)
  [18]
 File: bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1chk83ef24c73d2s6gg_12_698_92_245_210_0.jpg>
+ [19]
 File: bodyxb/src/1_1231_1414_318_312_0.jpg Graphic file (type bmp)
 <bodyxb/src/1_1231_1414_318_312_0.jpg>
 File: bodyxb/src/1_1061_1048_393_267_0.jpg Graphic file (type bmp)
 <bodyxb/src/1_1061_1048_393_267_0.jpg>
- [19]
 File: bodyxb/src/bo_d17r1jf7aajc7388ojlg_13_1109_1372_405_233_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d17r1jf7aajc7388ojlg_13_1109_1372_405_233_0.jpg>
  [20]) [21]
@@ -1983,10 +1985,10 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49738 strings out of 468168
- 1171617 string characters out of 5432815
- 1743932 words of memory out of 5000000
- 77418 multiletter control sequences out of 15000+600000
+ 49747 strings out of 468168
+ 1172203 string characters out of 5432815
+ 1743930 words of memory out of 5000000
+ 77426 multiletter control sequences out of 15000+600000
  656702 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,16n,128p,1135b,1483s stack positions out of 10000i,1000n,20000p,200000b,200000s

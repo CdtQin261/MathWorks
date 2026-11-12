@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  2 SEP 2026 15:04
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  12 NOV 2026 13:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2271,11 +2271,6 @@ File: bodyxb/src/bo_d1ig044601uc738hj6v0_74_918_1479_383_372_0.jpg Graphic file 
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_75_1083_131_411_360_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_75_1083_131_411_360_0.jpg>
  [50]
-File: bodyxb//src/37-3.png Graphic file (type bmp)
-<bodyxb//src/37-3.png>
- [51
-
-]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -2311,61 +2306,47 @@ Package fontspec Info:
 
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_78_1121_121_388_254_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_78_1121_121_388_254_0.jpg>
- [52] [53] [54]
+ [51
+
+] [52]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_80_1076_1003_435_347_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_80_1076_1003_435_347_0.jpg>
- [55] [56] [57] [58] [59]
+ [53] [54]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_84_1067_1036_439_324_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_84_1067_1036_439_324_0.jpg>
- [60] [61]
+ [55]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_86_1154_125_357_349_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_86_1154_125_357_349_0.jpg>
- [62]
-File: bodyxb//src/image1.png Graphic file (type bmp)
-<bodyxb//src/image1.png>
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_86_1146_581_365_238_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_86_1146_581_365_238_0.jpg>
- [63] [64] [65]
-File: bodyxb//src/43-1.png Graphic file (type bmp)
-<bodyxb//src/43-1.png>
- [66]
-File: bodyxb//src/43-2.png Graphic file (type bmp)
-<bodyxb//src/43-2.png>
- [67] [68] [69]
-Missing character: There is no ， ("FF0C) in font rm-lmr10!
-[70] [71] [72]
+ [56] [57] [58] [59] [60]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg>
- [73] [74] [75] [76] [77]
+ [61] [62]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_96_1146_943_374_451_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_96_1146_943_374_451_0.jpg>
- [78]
-File: bodyxb//src/46-12.png Graphic file (type bmp)
-<bodyxb//src/46-12.png>
- [79] [80
+ [63] [64
 
-] [81]
+]
 Missing character: There is no ^^Q ("11) in font pzdr!
 Missing character: There is no ^^Q ("11) in font pzdr!
-Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
-[82] [83] [84] [85] [86] [87] [88] [89] [90] [91]
+[65] [66] [67] [68] [69]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
-[92] [93] [94] [95] [96] [97] [98] [99] [100] [101]
+[70] [71] [72] [73] [74]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_117_1039_1019_455_422_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_117_1039_1019_455_422_0.jpg>
- [102
+ [75
 
-] [103]
+] [76]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_123_1093_1199_387_290_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_123_1093_1199_387_290_0.jpg>
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_123_131_1565_317_208_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_123_131_1565_317_208_0.jpg>
-[104]
+[77]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_123_465_1556_334_214_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_123_465_1556_334_214_0.jpg>
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_123_814_1562_315_205_0.jpg Graphic file (type bmp)
@@ -2374,10 +2355,10 @@ File: bodyxb/src/bo_d1ig044601uc738hj6v0_123_1143_1555_326_211_0.jpg Graphic fil
 <bodyxb/src/bo_d1ig044601uc738hj6v0_123_1143_1555_326_211_0.jpg>
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_123_958_1823_528_270_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_123_958_1823_528_270_0.jpg>
- [105] [106]
+ [78] [79]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_127_1037_1028_443_332_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_127_1037_1028_443_332_0.jpg>
- [107]
+ [80]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
@@ -2390,24 +2371,24 @@ Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=
 Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
-[108]
+[81]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
-[109]
+[82]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
-[110] [111]
-Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
+[83] [84]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
@@ -2415,14 +2396,14 @@ Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=
 Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
-[112
+[85
 
 ]
 Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
-[113]
+[86]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_140_1191_590_326_298_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_140_1191_590_326_298_0.jpg>
 
@@ -2436,7 +2417,7 @@ Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_141_1076_1728_407_331_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_141_1076_1728_407_331_0.jpg>
-[114]
+[87]
 File: bodyxb/src/bo_d1ig044601uc738hj6v0_142_1115_272_402_405_0.jpg Graphic file (type bmp)
 <bodyxb/src/bo_d1ig044601uc738hj6v0_142_1115_272_402_405_0.jpg>
 
@@ -2444,7 +2425,7 @@ Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=
 Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=tex-text;!
-[115]) [116] (./mainxb.aux (./bodyxb/yzxt.aux))
+[88]) [89] (./mainxb.aux (./bodyxb/yzxt.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -2453,12 +2434,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 50538 strings out of 468168
- 1226245 string characters out of 5432815
- 1745817 words of memory out of 5000000
- 78158 multiletter control sequences out of 15000+600000
+ 50449 strings out of 468168
+ 1222204 string characters out of 5432815
+ 1743817 words of memory out of 5000000
+ 78076 multiletter control sequences out of 15000+600000
  656710 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,19n,128p,1050b,1258s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,19n,128p,1050b,1221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (116 pages).
+Output written on mainxb.pdf (89 pages).
