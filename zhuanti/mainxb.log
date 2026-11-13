@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  13 NOV 2026 05:01
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  13 NOV 2026 14:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1733,7 +1733,7 @@ LaTeX Info: Redefining \GenericWarning on input line 433.
 LaTeX Info: Redefining \GenericError on input line 601.
 ))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 18.
- (./mainxb.aux (./bodyxb/13_tuoyuan.aux))
+ (./mainxb.aux (./bodyxb/13_tuoyuan.aux) (./bodyxb/14_shuangquxian.aux))
 \openout1 = `mainxb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1808,9 +1808,9 @@ Package hyperref Info: Link coloring ON on input line 18.
 \@outlinefile=\write5
 \openout5 = `mainxb.out'.
 
-\openout2 = `bodyxb/13_tuoyuan.aux'.
+\openout2 = `bodyxb/15_paowuxian.aux'.
 
- (./bodyxb/13_tuoyuan.tex
+ (./bodyxb/15_paowuxian.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1859,6 +1859,21 @@ File: OMXyhex.fd
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 108.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 108.
+
+[1
+
+
+
+]
+File: bodyxb/src/bo_d19nc3f7aajc73895nqg_5_469_509_245_337_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d19nc3f7aajc73895nqg_5_469_509_245_337_0.jpg>
+
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
 (fontspec)             'STFangsong'. Check the typeset output, and if it is
@@ -1891,48 +1906,15 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
- [1
-
-
-
-] [2]
-File: bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d1ig044601uc738hj6v0_93_1055_1304_435_325_0.jpg>
-File: bodyxb//src/jiaobanjing.png Graphic file (type bmp)
-<bodyxb//src/jiaobanjing.png>
-File: bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d43fvmc601uc738mn8og_3_214_355_365_318_0.jpg>
- [3]
-File: bodyxb/src/bo_d42u9js601uc738mlqp0_5_242_192_390_356_0.jpg Graphic file (type bmp)
-<bodyxb/src/bo_d42u9js601uc738mlqp0_5_242_192_390_356_0.jpg>
- [4] [5] [6]
-File: bodyxb//src/tuoyuan9.png Graphic file (type bmp)
-<bodyxb//src/tuoyuan9.png>
- [7]
-File: bodyxb/src/1_243_196_546_393_0.jpg Graphic file (type bmp)
-<bodyxb/src/1_243_196_546_393_0.jpg>
- [8] [9]
-File: ./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg Graphic file (type bmp)
-<./bodyxb/src/0196a0c6-e677-7dd6-8032-0188357e8906_11_1101_1576_388_371_0.jpg>
-File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_92_183_382_263_0.jpg>
- [10]
-File: bodyxb/src/0_92_183_382_263_0.jpg Graphic file (type bmp)
-<bodyxb/src/0_92_183_382_263_0.jpg>
- [11]
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 2121.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 2121.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 2177.
-
-Missing character: There is no ̃ ("303) in font lmmi10!
-[12]) [13] (./mainxb.aux (./bodyxb/13_tuoyuan.aux))
+ [2] [3]
+File: bodyxb//src/paowuxianqiexian.png Graphic file (type bmp)
+<bodyxb//src/paowuxianqiexian.png>
+ [4]
+File: bodyxb/src/bo_d3q39gjef24c73d0aopg_2_197_1610_292_304_0.jpg Graphic file (type bmp)
+<bodyxb/src/bo_d3q39gjef24c73d0aopg_2_197_1610_292_304_0.jpg>
+File: bodyxb/src/0_241_348_364_347_0.jpg Graphic file (type bmp)
+<bodyxb/src/0_241_348_364_347_0.jpg>
+ [5]) [6] (./mainxb.aux (./bodyxb/15_paowuxian.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/07/14>
@@ -1941,12 +1923,12 @@ Package rerunfilecheck Info: File `mainxb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49606 strings out of 468168
- 1166038 string characters out of 5432815
- 1742816 words of memory out of 5000000
- 77309 multiletter control sequences out of 15000+600000
+ 49560 strings out of 468168
+ 1163417 string characters out of 5432815
+ 1751172 words of memory out of 5000000
+ 77264 multiletter control sequences out of 15000+600000
  656702 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,16n,128p,938b,1470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,15n,128p,636b,1481s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on mainxb.pdf (13 pages).
+Output written on mainxb.pdf (6 pages).
