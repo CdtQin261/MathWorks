@@ -133,19 +133,19 @@
     \begin{center}
     \includegraphics[width=0.2\textwidth]{bodyxb/src/0_147_394_524_340_0.jpg}
     \end{center}
-    \item 已知椭圆 $\dfrac{x^2}{4} + \dfrac{y^2}{3} = 1$ 内有一点 $P(1, - 1) ,F$ 是椭圆的右焦点，点 $M$ 在椭圆上，则 $|MP| + 2|MF|$ 的最小值是\blkda{3}，此时点 $M$ 的坐标为\blkda{$\left( \frac{2\sqrt{6}}{3}, - 1\right)$}.
+    \item 已知椭圆 $\dfrac{x^2}{4} + \dfrac{y^2}{3} = 1$ 内有一点 $P(1, - 1) ,F$ 是椭圆的右焦点，点 $M$ 在椭圆上，则 $|MP| + 2|MF|$ 的最小值是\blkda{3}，此时点 $M$ 的坐标为\blkda{$\left( \dfrac{2\sqrt{6}}{3}, - 1\right)$}.
     \begin{jieda}
-        由椭圆的方程,可知 $a = 2,b = \sqrt{3},c = 1$ ,所以 $e = \frac{1}{2}$ ,右准线 $l : x = \frac{a^2}{c} = 4$ .
+        由椭圆的方程,可知 $a = 2,b = \sqrt{3},c = 1$ ,所以 $e = \dfrac{1}{2}$ ,右准线 $l : x = \dfrac{a^2}{c} = 4$ .
 
         如图,设 $M$ 在右准线 $l : x = 4$ 上的射影为 $M_1$ ,
 
-        根据椭圆的第二定义,有 $e = \frac{|MF|}{|MM_1|} = \frac{1}{2}$ ,即 $2|MF| = |MM_1|$ ,所以 $|MP| + 2|MF| = |MP| + |MM_1|$ .
+        根据椭圆的第二定义,有 $e = \dfrac{|MF|}{|MM_1|} = \dfrac{1}{2}$ ,即 $2|MF| = |MM_1|$ ,所以 $|MP| + 2|MF| = |MP| + |MM_1|$ .
 
         显然,当 $P\text{ 、 }M\text{ 、 }M_1$ 三点共线时, $|MP| + |MM_1|$ 有最小值,
 
-        即 $\left( |MP| + 2|MF|\right)_{\min} = \frac{a^2}{c} - x_P = 4 - 1 = 3$ .
+        即 $\left( |MP| + 2|MF|\right)_{\min} = \dfrac{a^2}{c} - x_P = 4 - 1 = 3$ .
 
-        此时 $y_M = y_P = - 1$ ,将 $y_M = - 1$ 代入椭圆的方程得 $x_M = \frac{2\sqrt{6}}{3}$ 或 $x_M = - \frac{2\sqrt{6}}{3}$ (舍去),所以 $M\left( \frac{2\sqrt{6}}{3}, - 1\right)$ .
+        此时 $y_M = y_P = - 1$ ,将 $y_M = - 1$ 代入椭圆的方程得 $x_M = \dfrac{2\sqrt{6}}{3}$ 或 $x_M = - \dfrac{2\sqrt{6}}{3}$ (舍去),所以 $M\left( \dfrac{2\sqrt{6}}{3}, - 1\right)$ .
 
         \begin{center}
         \includegraphics[width=0.3\textwidth]{bodyxb/src/2_145_1093_391_288_0.jpg}
@@ -289,6 +289,54 @@
         \includegraphics[width=0.2\textwidth]{bodyxb/src/bo_d2a0hlbef24c73avno0g_1_237_1565_394_394_0.jpg}
         \end{center}
         设$|F_2B| = 3m$，则$|F_2A| = 2m$，故$|F_1B| = 3m, |F_1A| = 2a+2m$，根据勾股定理可得$m = a$，因此$cos\angle{ABF_1} = \dfrac{3}{5}$，故在$\triangle F_1BF_2$中根据余弦定理有$\dfrac{3}{5} = \dfrac{9a^2+9a^2-4c^2}{2\times 3a \times 3a} = \dfrac{18a^2-4c^2}{18a^2}$，故$e = \dfrac{3\sqrt{5}}{5}$
+    \end{jieda}
+\end{enumerate}
+\subsection*{椭圆的对称性}
+\begin{enumerate}
+    \item 已知椭圆 $\Gamma_1 : \dfrac{x^2}{a^2} + y^2 = 1(a > 1)$ 与椭圆 $\Gamma_2 : \dfrac{y^2}{b^2 + 2} + \dfrac{x^2}{b^2} = 1$ 相交于 $A$ 、 $B$ 、 $C$ 、 $D$ 四点，且与 $\Gamma_1$ 和 $\Gamma_2$ 的四个焦点在同一个圆上，则 $b^2 =$ \blkda{$\sqrt{3}$}.
+    \begin{jieda}
+        因为两个椭圆的四个焦点在同一个圆上，所以根据椭圆 $\Gamma_1$ 和 $\Gamma_2$ 的对称性可知,该圆的圆心为原点,
+
+        因此有 $\sqrt{a^2 - 1^2} = \sqrt{b^2 + 2 - b^2} \Rightarrow a^2 = 3$，且两个椭圆的半焦距为 $\sqrt{b^2 + 2 - b^2} = \sqrt{2}$，因此该圆的方程为 $x^2 + y^2 = 2$ ,
+
+        又因为 $A$ 、 $B$ 、 $C$ 、 $D$ 四点与 $\Gamma_1$ 和 $\Gamma_2$ 的四个焦点在同一个圆上，所以由椭圆和圆的对称性可知,这四个点也在圆 $x^2 + y^2 = 2$ 上,
+
+        由 $\left\{ \begin{array}{l} \dfrac{x^2}{3} + y^2 = 1 \\  x^2 + y^2 = 2 \end{array} \Rightarrow \left\{ \begin{array}{l} x^2 = \dfrac{3}{2} \\  y^2 = \dfrac{1}{2} \end{array}\right.\right.$ ,代入椭圆 $\Gamma_2 : \dfrac{y^2}{b^2 + 2} + \dfrac{x^2}{b^2} = 1$ 中,
+
+        得 $\dfrac{1}{b^2 + 2} + \dfrac{\dfrac{3}{2}}{b^2} = 1 \Rightarrow \left( b^2\right)^2 = 3$ ,又 $b^2 > 0$ ,故 $b^2 = \sqrt{3}$
+    \end{jieda}
+    \item 已知椭圆 $C : \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1(a > b > 0)$ 的左焦点为 $F$ ，过原点的直线与椭圆 $C$ 交于 $A$ ， $B$ 两点， $|AF| = 2|BF| ,\angle AFB = \dfrac{2\pi}{3}$ ，则椭圆 $C$ 的离心率为\blkda{$\dfrac{\sqrt{3}}{3}$}.
+    \begin{jieda}
+        设 $F_2$ 是椭圆 $C$ 的右焦点,连接 $AF_2,BF_2$ ,
+
+        由对称性可知: $|OA| = |OB| ,|OF| = |OF_2|$ ,则四边形 $FAF_{2}B$ 为平行四边形,
+
+        则 $|AF_2| = |BF|$ ,即 $|AF| = 2|AF_2|$ ,且 $\angle FAF_2 = \dfrac{\pi}{3}$ ,
+
+        因为 $|AF| + |AF_2| = 3|AF_2| = 2a$ ,则 $|AF_2| = \dfrac{2}{3}a,|AF| = \dfrac{4}{3}a$ ,
+
+        在 $\bigtriangleup FAF_2$ 中,由余弦定理可得 $\left| FF_2\right|^2 = \left| AF_2\right|^2 + \left| AF\right|^2 - 2|AF_2| \cdot |AF| \cdot \cos \angle FAF_2$ ,
+
+        即 $4c^2 = \dfrac{4}{9}a^2 + \dfrac{16}{9}a^2 - 2 \times \dfrac{2}{3}a \times \dfrac{4}{3}a \times \dfrac{1}{2}$ ,解得 $\dfrac{c^2}{a^2} = \dfrac{1}{3}$ ,所以椭圆 $C$ 的离心率为 $e = \dfrac{c}{a} = \dfrac{\sqrt{3}}{3}$ .
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/1_150_475_399_311_0.jpg}
+        \end{center}
+    \end{jieda}
+    
+    \item 已知椭圆 $C : \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1(a > 0,b > 0)$ 的左、右两个焦点为 $F_1,F_2$ ,若椭圆上存在两点 $P\text{ 、 }Q$ 关于原点对称,且满足 $\vv{PF_1} \cdot \vv{PF_2} = \dfrac{a^2}{2},\angle PF_{2}Q = 120^ \circ$ ,则椭圆 $C$ 的离心率\blkda{$\dfrac{1}{2}$}.
+    \begin{jieda}
+        连接 $QF_1,QF_2$ ,由点 $P\text{ 、 }Q$ 关于原点对称,得四边形 $QF_{2}PF_1$ 是平行四边形,
+
+        \begin{center}
+        \includegraphics[width=0.2\textwidth]{bodyxb/src/1_152_1368_370_301_0.jpg}
+        \end{center}
+
+        由 $\angle PF_{2}Q = 120^ \circ$ ,得 $\angle F_{2}PF_1 = 180^ \circ - \angle PF_{2}Q = 60^ \circ$ ,
+
+        由 $\vv{PF_1} \cdot \vv{PF_2} = \dfrac{a^2}{2}$ ,得 $\left| \vv{PF_1}\right| \left| \vv{PF_2}\right| \cos \angle F_{2}PF_1 = \dfrac{a^2}{2}$ ,即 $\left| \vv{PF_1}\right| \left| \vv{PF_2}\right| = a^2$ ,
+
+        又 $\left| \vv{PF_1}\right| + \left| \vv{PF_2}\right| = 2a$ ,则 $\left| \vv{PF_1}\right| = \left| \vv{PF_2}\right| = a$ ,因此 $\Delta F_{2}PF_1$ 为等边三角形, $a = 2c$，所以椭圆的离心率为 $e = \dfrac{1}{2}$ .
     \end{jieda}
 \end{enumerate}
 \subsection*{椭圆的焦半径公式}
