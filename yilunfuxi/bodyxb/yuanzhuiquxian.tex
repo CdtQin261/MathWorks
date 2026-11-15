@@ -133,6 +133,24 @@
     \begin{center}
     \includegraphics[width=0.2\textwidth]{bodyxb/src/0_147_394_524_340_0.jpg}
     \end{center}
+    \item 古希腊数学家欧几里得在《几何原本》中描述了圆锥曲线的共性, 由希腊数学家帕普斯在《数学汇编》 中进行了证明: 到定点的距离与到定直线的距离的比是常数 $e$ 的点的轨迹叫做圆锥曲线. 当 $0 < e < 1$ 时,轨迹为椭圆; 当 $e = 1$ 时,轨迹为抛物线; 当 $e > 1$ 时,轨迹为双曲线. 现有方程 $m(x^2 + y^2 - 2x + 1) = \left( 3x + 4y + 1\right)^2$ 表示的曲线是双曲线,则 $m$ 的取值范围为\blkda{$(0,25)$}.
+    \begin{jieda}
+        由方程 $m(x^2 + y^2 - 2x + 1) = \left( 3x + 4y + 1\right)^2$ ,得到 $m\left\lbrack \left( x - 1\right)^2 + y^2\right\rbrack = \left( 3x + 4y + 1\right)^2$ ,
+
+        若 $m = 0$ ,方程为 $\left( 3x + 4y + 1\right)^2 = 0$ ,表示一条直线,且该直线的方程为 $3x + 4y + 1 = 0$ ;
+
+        若 $m < 0$ ,方程左侧 $m\left\lbrack \left( x - 1\right)^2 + y^2\right\rbrack \leq 0$ ,右侧 $\left( 3x + 4y + 1\right)^2 \geq 0$ ,仅当两侧同时为 0 时成立,
+
+        但点 $(1,0)$ 不在直线 $3x + 4y + 1 = 0$ 上,故方程无解;
+
+        因此,原方程表示双曲线,必有 $m > 0$ .
+
+        当 $m > 0$ 时, $\sqrt{m}\sqrt{\left( x - 1\right)^2 + y^2} = |3x + 4y + 1|$ ,即 $\dfrac{\sqrt{\left( x - 1\right)^2 + y^2}}{\dfrac{(3x + 4y + 1)}{\sqrt{3^2 + 4^2}}} = \dfrac{\sqrt{3^2 + 4^2}}{\sqrt{m}} = \dfrac{5}{\sqrt{m}}$ ,
+
+        可得动点 $P(x,y)$ 到定点 $(1,0)$ 和定直线 $3x + 4y + 1 = 0$ 的距离的比为常数 $\dfrac{5}{\sqrt{m}}$ ,
+
+        由双曲线的定义,可得 $\dfrac{5}{\sqrt{m}} > 1$ ,解得 $0 < m < 25$ ,即 $m$ 的取值范围为 $(0,25)$ .
+    \end{jieda}
     \item 已知椭圆 $\dfrac{x^2}{4} + \dfrac{y^2}{3} = 1$ 内有一点 $P(1, - 1) ,F$ 是椭圆的右焦点，点 $M$ 在椭圆上，则 $|MP| + 2|MF|$ 的最小值是\blkda{3}，此时点 $M$ 的坐标为\blkda{$\left( \dfrac{2\sqrt{6}}{3}, - 1\right)$}.
     \begin{jieda}
         由椭圆的方程,可知 $a = 2,b = \sqrt{3},c = 1$ ,所以 $e = \dfrac{1}{2}$ ,右准线 $l : x = \dfrac{a^2}{c} = 4$ .
